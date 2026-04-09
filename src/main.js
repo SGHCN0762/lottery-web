@@ -24,7 +24,10 @@ import {
   CellGroup, 
   Cell, 
   Grid, 
-  GridItem 
+  GridItem,
+  Button,
+  Field,
+  Toast
 } from 'vant'
 
 // 主题管理
@@ -33,14 +36,14 @@ import { useThemeStore } from './stores/theme'
 // 根组件
 import App from './App.vue'
 
-// 全局样式
-import './style.css'
-
 // Vant 样式（必须在自定义样式之前引入）
 import 'vant/lib/index.css'
 
 // Font Awesome 图标库
 import '@fortawesome/fontawesome-free/css/all.css'
+
+// 全局样式
+import './style.css'
 
 // ========================================
 // 创建应用实例
@@ -67,6 +70,9 @@ app.use(CellGroup)
 app.use(Cell)
 app.use(Grid)
 app.use(GridItem)
+app.use(Button)
+app.use(Field)
+app.use(Toast)
 
 // ========================================
 // 初始化主题系统

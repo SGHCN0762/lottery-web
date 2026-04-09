@@ -112,9 +112,21 @@ const topPlayers = ref([
  */
 const handleSelectGame = (type) => {
   console.log('选择游戏:', type.name)
-  // TODO: 跳转到具体游戏页面
-  // router.push({ name: 'GameDetail', params: { id: type.id } })
+  
+  // 根据游戏ID跳转到对应的游戏页面
+  const routeMap = {
+    1: 'NumberGuess',      // 数字猜猜猜
+    2: 'LuckyWheel',       // 幸运转盘
+    3: 'QuizChallenge',    // 答题挑战
+    4: 'DailyCheckIn'      // 每日签到
+  }
+  
+  const routeName = routeMap[type.id]
+  if (routeName) {
+    router.push({ name: routeName })
+  }
 }
+
 </script>
 
 <style lang="less" scoped>

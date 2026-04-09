@@ -51,6 +51,49 @@ const routes = [
       showBack: true,
       showTabbar: false  // 不显示底部标签栏
     }
+  },
+  // ========================================
+  // 游戏详情页面路由
+  // ========================================
+  {
+    path: '/games/number-guess',
+    name: 'NumberGuess',
+    component: () => import('../views/Games/NumberGuess/index.vue'),
+    meta: {
+      title: '数字猜猜猜',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/games/lucky-wheel',
+    name: 'LuckyWheel',
+    component: () => import('../views/Games/LuckyWheel/index.vue'),
+    meta: {
+      title: '幸运转盘',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/games/quiz-challenge',
+    name: 'QuizChallenge',
+    component: () => import('../views/Games/QuizChallenge/index.vue'),
+    meta: {
+      title: '答题挑战',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/games/daily-checkin',
+    name: 'DailyCheckIn',
+    component: () => import('../views/Games/DailyCheckIn/index.vue'),
+    meta: {
+      title: '每日签到',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
   }
 ]
 
