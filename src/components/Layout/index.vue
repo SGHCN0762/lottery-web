@@ -4,6 +4,7 @@
     <van-nav-bar
       :title="pageTitle"
       :left-arrow="shouldShowBack"
+      z-index="101"
       @click-left="handleGoBack"
       fixed
       placeholder
@@ -11,9 +12,9 @@
       <template #right>
         <!-- 右侧插槽：默认显示主题切换按钮 -->
         <slot name="navbar-right">
-          <van-icon 
-            name="ellipsis" 
-            class="theme-toggle-btn" 
+          <van-icon
+            name="ellipsis"
+            class="theme-toggle-btn"
             @click="showThemeMenu = true"
             aria-label="切换主题"
           />
@@ -27,10 +28,16 @@
     </main>
 
     <!-- Vant 底部标签栏 -->
-    <van-tabbar v-if="shouldShowTabbar" v-model="activeTab" @change="handleTabChange" route>
-      <van-tabbar-item 
-        v-for="tab in navigationTabs" 
-        :key="tab.name" 
+    <van-tabbar
+      v-if="shouldShowTabbar"
+      v-model="activeTab"
+      z-index="101"
+      @change="handleTabChange"
+      route
+    >
+      <van-tabbar-item
+        v-for="tab in navigationTabs"
+        :key="tab.name"
         :name="tab.name"
         :to="{ name: tab.name }"
         :icon="convertToVantIcon(tab.icon)"
@@ -52,16 +59,16 @@
 </template>
 
 <script setup>
-import { ref, watch, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { 
-  NavBar as VanNavBar, 
-  Tabbar as VanTabbar, 
-  TabbarItem as VanTabbarItem, 
-  ActionSheet as VanActionSheet, 
-  Icon as VanIcon 
-} from 'vant'
-import { useThemeStore } from '@/stores/theme'
+import { ref, watch, computed } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import {
+  NavBar as VanNavBar,
+  Tabbar as VanTabbar,
+  TabbarItem as VanTabbarItem,
+  ActionSheet as VanActionSheet,
+  Icon as VanIcon,
+} from "vant";
+import { useThemeStore } from "@/stores/theme";
 
 // ========================================
 // Props 定义
@@ -70,36 +77,36 @@ const props = defineProps({
   /** 页面标题（可选，优先使用路由 meta.title） */
   title: {
     type: String,
-    default: ''
+    default: "",
   },
   /** 是否显示返回按钮（可选，优先使用路由 meta.showBack） */
   showBack: {
     type: Boolean,
-    default: false
+    default: false,
   },
   /** 底部导航标签配置 */
   tabs: {
     type: Array,
     default: () => [
-      { name: 'Home', label: '首页', icon: 'home-o' },
-      { name: 'Lottery', label: '娱乐', icon: 'apps-o' },
-      { name: 'Profile', label: '我的', icon: 'user-o' },
-    ]
-  }
-})
+      { name: "Home", label: "首页", icon: "home-o" },
+      { name: "Lottery", label: "娱乐", icon: "apps-o" },
+      { name: "Profile", label: "我的", icon: "user-o" },
+    ],
+  },
+});
 
 // ========================================
 // 组合式 API
 // ========================================
-const route = useRoute()
-const router = useRouter()
-const themeStore = useThemeStore()
+const route = useRoute();
+const router = useRouter();
+const themeStore = useThemeStore();
 
 // 当前激活的标签页
-const activeTab = ref(route.name || 'Home')
+const activeTab = ref(route.name || "Home");
 
 // 主题菜单显示状态
-const showThemeMenu = ref(false)
+const showThemeMenu = ref(false);
 
 // ========================================
 // 计算属性
@@ -107,28 +114,28 @@ const showThemeMenu = ref(false)
 
 /** 页面标题：优先使用路由 meta，其次使用 props */
 const pageTitle = computed(() => {
-  return route.meta.title || props.title || '彩票网站'
-})
+  return route.meta.title || props.title || "彩票网站";
+});
 
 /** 是否显示返回按钮：优先使用路由 meta，其次使用 props */
 const shouldShowBack = computed(() => {
-  return route.meta.showBack ?? props.showBack
-})
+  return route.meta.showBack ?? props.showBack;
+});
 
 /** 是否显示底部标签栏：默认显示，除非路由 meta 中明确设置为 false */
 const shouldShowTabbar = computed(() => {
-  return route.meta.showTabbar !== false
-})
+  return route.meta.showTabbar !== false;
+});
 
 /** 导航标签列表 */
-const navigationTabs = computed(() => props.tabs)
+const navigationTabs = computed(() => props.tabs);
 
 /** 主题选项列表 */
 const themeOptions = computed(() => [
-  { name: '☀️ 白天模式', value: 'light' },
-  { name: '🌙 黑夜模式', value: 'dark' },
-  { name: '⚙️ 跟随系统', value: 'auto' }
-])
+  { name: "☀️ 白天模式", value: "light" },
+  { name: "🌙 黑夜模式", value: "dark" },
+  { name: "⚙️ 跟随系统", value: "auto" },
+]);
 
 // ========================================
 // 监听器
@@ -139,10 +146,10 @@ watch(
   () => route.name,
   (newName) => {
     if (newName) {
-      activeTab.value = newName
+      activeTab.value = newName;
     }
-  }
-)
+  },
+);
 
 // ========================================
 // 工具函数
@@ -155,24 +162,24 @@ watch(
  */
 const convertToVantIcon = (icon) => {
   // 如果已经是 Vant 图标（不包含 fa-），直接返回
-  if (!icon.includes('fa-')) {
-    return icon
+  if (!icon.includes("fa-")) {
+    return icon;
   }
-  
+
   // Font Awesome 到 Vant 图标映射表
   const iconMapping = {
-    'fas fa-home': 'home-o',
-    'fas fa-dice': 'fire-o',
-    'fas fa-user': 'user-o',
-    'fas fa-info-circle': 'info-o',
-    'fa-solid fa-home': 'home-o',
-    'fa-solid fa-dice': 'fire-o',
-    'fa-solid fa-user': 'user-o',
-    'fa-solid fa-info-circle': 'info-o'
-  }
-  
-  return iconMapping[icon] || 'circle-o'
-}
+    "fas fa-home": "home-o",
+    "fas fa-dice": "fire-o",
+    "fas fa-user": "user-o",
+    "fas fa-info-circle": "info-o",
+    "fa-solid fa-home": "home-o",
+    "fa-solid fa-dice": "fire-o",
+    "fa-solid fa-user": "user-o",
+    "fa-solid fa-info-circle": "info-o",
+  };
+
+  return iconMapping[icon] || "circle-o";
+};
 
 // ========================================
 // 事件处理函数
@@ -180,20 +187,20 @@ const convertToVantIcon = (icon) => {
 
 /** 返回上一页 */
 const handleGoBack = () => {
-  router.go(-1)
-}
+  router.go(-1);
+};
 
 /** 标签页切换 */
 const handleTabChange = (name) => {
   // 由于使用了 route 属性，Vant 会自动处理路由跳转
-  console.log('切换到标签:', name)
-}
+  console.log("切换到标签:", name);
+};
 
 /** 主题选择 */
 const handleThemeSelect = (action) => {
-  themeStore.setThemeMode(action.value)
-  showThemeMenu.value = false
-}
+  themeStore.setThemeMode(action.value);
+  showThemeMenu.value = false;
+};
 </script>
 
 <style lang="less" scoped>
@@ -210,7 +217,7 @@ const handleThemeSelect = (action) => {
   :deep(.van-nav-bar) {
     /* 为 iPhone 刘海屏添加顶部安全距离 */
     padding-top: env(safe-area-inset-top, 0px);
-    
+
     .van-nav-bar__content {
       /* 确保内容在安全区域内 */
       height: auto;
@@ -254,7 +261,9 @@ const handleThemeSelect = (action) => {
       - 设备底部安全区域：env(safe-area-inset-bottom)
       总计：约 74px + 安全区域（iPhone 约 108px）
     */
-    padding-bottom: calc(var(--spacing-3xl) + 24px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(
+      var(--spacing-3xl) + 24px + env(safe-area-inset-bottom, 0px)
+    );
     overflow-y: auto;
     background: var(--color-bg-primary);
     -webkit-overflow-scrolling: touch; /* iOS 平滑滚动 */
@@ -282,7 +291,9 @@ const handleThemeSelect = (action) => {
         - 额外视觉间距：24px
         - 设备底部安全区域：env(safe-area-inset-bottom)
       */
-      padding-bottom: calc(var(--spacing-3xl) + 24px + env(safe-area-inset-bottom, 0px));
+      padding-bottom: calc(
+        var(--spacing-3xl) + 24px + env(safe-area-inset-bottom, 0px)
+      );
     }
   }
 }
