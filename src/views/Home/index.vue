@@ -196,11 +196,23 @@ const handleSpinWheel = () => {
   // 计算目标角度（让指针指向中奖扇形）
   const segmentAngle = 360 / prizes.value.length
   const prizeIndex = prizes.value.findIndex(p => p.id === wonPrize.id)
-  const targetAngle = 360 - (prizeIndex * segmentAngle + segmentAngle / 2)
   
-  // 添加多圈旋转（至少转5圈）
+  // 关键修复：基于当前角度的整圈数计算，确保精准定位
+  // 计算当前已经转过的完整圈数
+  const currentFullRotations = Math.floor(wheelRotation.value / 360) * 360
+  
+  // 奖品中心角度 = 索引 * 每段角度 + 半段角度
+  const prizeCenterAngle = prizeIndex * segmentAngle + segmentAngle / 2
+  
+  // 要让奖品中心对准顶部指针（0度），需要旋转到该位置
+  // 由于指针在顶部，我们需要让转盘旋转到让奖品到达顶部
+  const targetAngle = 360 - prizeCenterAngle
+  
+  // 添加额外的旋转圈数（至少5圈）
   const extraRotations = 5 * 360
-  const finalRotation = wheelRotation.value + extraRotations + targetAngle
+  
+  // 最终旋转角度 = 当前整圈数 + 额外圈数 + 目标角度
+  const finalRotation = currentFullRotations + extraRotations + targetAngle
   
   // 执行旋转动画
   wheelRotation.value = finalRotation
