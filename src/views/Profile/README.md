@@ -57,7 +57,10 @@ src/views/Profile/
   - 常见问题：折叠面板展示FAQ
   - 游戏说明：每个游戏的详细规则、奖励机制、注意事项
   - 积分规则：如何获得、使用积分，积分有效期
-  - 联系我们：在线客服、意见反馈、举报问题
+  - **联系我们**：
+    - **在线客服** (`/profile/help/online-service`)：实时聊天、快捷问题、联系方式
+    - **意见反馈** (`/profile/help/feedback`)：提交建议、上传截图、查看反馈记录
+    - **举报问题** (`/profile/help/report`)：举报违规行为、上传证据、查看处理进度
 
 ### 5. 积分兑换 (`/profile/exchange`)
 - **功能描述**：使用积分兑换各种商品和特权
@@ -93,7 +96,7 @@ src/views/Profile/
 
 所有个人中心子页面都遵循以下路由规范：
 
-```javascript
+```
 {
   path: '/profile/xxx',
   name: 'ProfileXxx',
@@ -117,6 +120,9 @@ src/views/Profile/
 | `/profile/exchange` | ProfileExchange | 积分兑换 |
 | `/profile/badges` | ProfileBadges | 我的成就 |
 | `/profile/invite` | ProfileInvite | 邀请好友 |
+| `/profile/help/online-service` | HelpOnlineService | 在线客服 |
+| `/profile/help/feedback` | HelpFeedback | 意见反馈 |
+| `/profile/help/report` | HelpReport | 举报问题 |
 
 ## 💾 数据持久化
 
@@ -161,7 +167,7 @@ src/views/Profile/
 
 在 [`Profile/index.vue`](./index.vue) 中，所有菜单项和快捷操作都已配置好跳转逻辑：
 
-```javascript
+```
 // 快捷操作
 router.push({ name: 'DailyCheckIn' })      // 每日签到
 router.push({ name: 'ProfileExchange' })   // 积分兑换
@@ -194,7 +200,7 @@ router.push({ name: 'ProfileHelp' })       // 帮助中心
 
 ## 🎉 总结
 
-个人中心模块共实现了 7 个子页面，涵盖了用户管理的核心功能：
+个人中心模块共实现了 **10 个子页面**，涵盖了用户管理的核心功能：
 - ✅ 游戏记录追踪
 - ✅ 积分流水管理
 - ✅ 账户安全设置
@@ -202,5 +208,8 @@ router.push({ name: 'ProfileHelp' })       // 帮助中心
 - ✅ 积分商城兑换
 - ✅ 成就系统展示
 - ✅ 邀请推广功能
+- ✅ **在线客服**（实时聊天、FAQ）
+- ✅ **意见反馈**（建议提交、进度跟踪）
+- ✅ **举报问题**（违规举报、证据上传）
 
 所有页面都遵循统一的设计规范和交互模式，提供了良好的用户体验。

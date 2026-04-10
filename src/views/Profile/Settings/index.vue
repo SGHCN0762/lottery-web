@@ -149,11 +149,310 @@
       @select="handleAvatarSelect"
       cancel-text="取消"
     />
+
+    <!-- 隐藏的文件输入框 -->
+    <input
+      ref="fileInputRef"
+      type="file"
+      accept="image/*"
+      :capture="captureType"
+      style="display: none"
+      @change="handleFileChange"
+    />
+
+    <!-- 头像裁剪弹窗 -->
+    <van-popup
+      v-model:show="showCropper"
+      position="bottom"
+      :style="{ height: '80%' }"
+      round
+      closeable
+    >
+      <div class="cropper-popup">
+        <div class="popup-header">
+          <h3>调整头像</h3>
+        </div>
+        
+        <div class="cropper-container">
+          <div class="preview-area">
+            <div class="preview-circle">
+              <img 
+                v-if="tempImage" 
+                :src="tempImage" 
+                alt="预览"
+                :style="imageStyle"
+              />
+            </div>
+          </div>
+          
+          <div class="adjust-controls">
+            <div class="control-item">
+              <span>缩放</span>
+              <van-slider 
+                v-model="scale" 
+                :min="0.5" 
+                :max="2" 
+                :step="0.1"
+                @change="handleScaleChange"
+              />
+            </div>
+            
+            <div class="control-item">
+              <span>旋转</span>
+              <van-slider 
+                v-model="rotate" 
+                :min="0" 
+                :max="360" 
+                :step="1"
+                @change="handleRotateChange"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div class="cropper-actions">
+          <van-button block round @click="cancelCropper">取消</van-button>
+          <van-button block round type="primary" @click="confirmAvatar">确认使用</van-button>
+        </div>
+      </div>
+    </van-popup>
+
+    <!-- 绑定手机弹窗 -->
+    <van-popup
+      v-model:show="showBindPhone"
+      position="bottom"
+      :style="{ height: '60%' }"
+      round
+      closeable
+    >
+      <div class="bind-phone-popup">
+        <div class="popup-header">
+          <h3>{{ userInfo.phone ? '更换手机号' : '绑定手机号' }}</h3>
+        </div>
+        
+        <div class="form-content">
+          <van-form @submit="handleBindPhoneSubmit">
+            <van-cell-group inset>
+              <van-field
+                v-model="phoneForm.phone"
+                name="phone"
+                label="手机号"
+                placeholder="请输入手机号"
+                type="tel"
+                maxlength="11"
+                :rules="[
+                  { required: true, message: '请输入手机号' },
+                  { pattern: /^1[3-9]\d{9}$/, message: '请输入正确的手机号' }
+                ]"
+              />
+              
+              <van-field
+                v-model="phoneForm.code"
+                name="code"
+                label="验证码"
+                placeholder="请输入验证码"
+                maxlength="6"
+                :rules="[{ required: true, message: '请输入验证码' }]"
+              >
+                <template #button>
+                  <van-button
+                    size="small"
+                    type="primary"
+                    plain
+                    :disabled="countdown > 0"
+                    @click="sendVerificationCode"
+                  >
+                    {{ countdown > 0 ? `${countdown}s` : '获取验证码' }}
+                  </van-button>
+                </template>
+              </van-field>
+            </van-cell-group>
+            
+            <div class="submit-btn">
+              <van-button round block type="primary" native-type="submit" :loading="phoneSubmitting">
+                {{ userInfo.phone ? '更换' : '绑定' }}
+              </van-button>
+            </div>
+          </van-form>
+          
+          <div class="tips">
+            <van-icon name="info-o" size="14" />
+            <span>绑定后可用于账号找回和安全验证</span>
+          </div>
+        </div>
+      </div>
+    </van-popup>
+
+    <!-- 修改密码弹窗 -->
+    <van-popup
+      v-model:show="showChangePassword"
+      position="bottom"
+      :style="{ height: '65%' }"
+      round
+      closeable
+    >
+      <div class="change-password-popup">
+        <div class="popup-header">
+          <h3>修改密码</h3>
+        </div>
+        
+        <div class="form-content">
+          <van-form @submit="handleChangePasswordSubmit">
+            <van-cell-group inset>
+              <van-field
+                v-model="passwordForm.oldPassword"
+                name="oldPassword"
+                label="原密码"
+                placeholder="请输入原密码"
+                type="password"
+                :rules="[{ required: true, message: '请输入原密码' }]"
+              />
+              
+              <van-field
+                v-model="passwordForm.newPassword"
+                name="newPassword"
+                label="新密码"
+                placeholder="请输入新密码（6-20位）"
+                type="password"
+                maxlength="20"
+                :rules="[
+                  { required: true, message: '请输入新密码' },
+                  { pattern: /^.{6,20}$/, message: '密码长度为6-20位' }
+                ]"
+              />
+              
+              <van-field
+                v-model="passwordForm.confirmPassword"
+                name="confirmPassword"
+                label="确认密码"
+                placeholder="请再次输入新密码"
+                type="password"
+                :rules="[
+                  { required: true, message: '请确认新密码' },
+                  { validator: validateConfirmPassword, message: '两次密码输入不一致' }
+                ]"
+              />
+            </van-cell-group>
+            
+            <div class="submit-btn">
+              <van-button round block type="primary" native-type="submit" :loading="passwordSubmitting">
+                确认修改
+              </van-button>
+            </div>
+          </van-form>
+          
+          <div class="tips">
+            <van-icon name="shield-o" size="14" />
+            <span>建议定期更换密码，保障账号安全</span>
+          </div>
+        </div>
+      </div>
+    </van-popup>
+
+    <!-- 登录设备管理弹窗 -->
+    <van-popup
+      v-model:show="showDeviceManage"
+      position="bottom"
+      :style="{ height: '75%' }"
+      round
+      closeable
+    >
+      <div class="device-manage-popup">
+        <div class="popup-header">
+          <h3>登录设备管理</h3>
+          <p class="subtitle">共 {{ deviceList.length }} 台设备</p>
+        </div>
+        
+        <div class="device-list">
+          <van-empty 
+            v-if="deviceList.length === 0" 
+            description="暂无登录设备"
+            image="search"
+          />
+          
+          <div 
+            v-for="(device, index) in deviceList" 
+            :key="device.id"
+            class="device-item"
+            :class="{ 'current-device': device.isCurrent }"
+          >
+            <div class="device-info">
+              <div class="device-icon">
+                <van-icon 
+                  :name="getDeviceIcon(device.type)" 
+                  size="32" 
+                  :color="device.isCurrent ? 'var(--color-primary)' : '#999'"
+                />
+              </div>
+              
+              <div class="device-details">
+                <div class="device-name">
+                  {{ device.name }}
+                  <van-tag v-if="device.isCurrent" type="primary" size="mini" round>当前设备</van-tag>
+                  <van-tag v-if="device.isTrusted" type="success" size="mini" round>可信设备</van-tag>
+                </div>
+                
+                <div class="device-meta">
+                  <span class="meta-item">
+                    <van-icon name="location-o" size="12" />
+                    {{ device.location || '未知位置' }}
+                  </span>
+                  <span class="meta-item">
+                    <van-icon name="clock-o" size="12" />
+                    {{ formatDeviceTime(device.lastLogin) }}
+                  </span>
+                </div>
+                
+                <div class="device-ip">
+                  IP: {{ device.ip }}
+                </div>
+              </div>
+            </div>
+            
+            <div class="device-actions" v-if="!device.isCurrent">
+              <van-button 
+                size="mini" 
+                plain 
+                type="primary"
+                @click="toggleTrustDevice(device)"
+              >
+                {{ device.isTrusted ? '取消信任' : '设为可信' }}
+              </van-button>
+              
+              <van-button 
+                size="mini" 
+                type="danger"
+                plain
+                @click="removeDevice(device)"
+              >
+                移除设备
+              </van-button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="device-footer">
+          <van-button 
+            block 
+            round 
+            type="danger"
+            @click="removeAllDevices"
+          >
+            移除所有其他设备
+          </van-button>
+          
+          <div class="footer-tips">
+            <van-icon name="info-o" size="14" />
+            <span>移除设备后，该设备需要重新登录</span>
+          </div>
+        </div>
+      </div>
+    </van-popup>
   </div>
 </template>
 
 <script setup>
-import { ref, reactive, onMounted } from 'vue'
+import { ref, reactive, onMounted, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { showToast, showConfirmDialog } from 'vant'
 import { 
@@ -164,7 +463,10 @@ import {
   Switch as VanSwitch,
   Field as VanField,
   Dialog as VanDialog,
-  ActionSheet as VanActionSheet
+  ActionSheet as VanActionSheet,
+  Popup as VanPopup,
+  Button as VanButton,
+  Slider as VanSlider
 } from 'vant'
 
 // ========================================
@@ -177,9 +479,37 @@ const router = useRouter()
 // ========================================
 const showNicknameEdit = ref(false)
 const showAvatarPicker = ref(false)
+const showCropper = ref(false)
+const showBindPhone = ref(false)
+const showChangePassword = ref(false)
+const showDeviceManage = ref(false)
 const tempNickname = ref('')
 const cacheSize = ref('12.5MB')
 const currentVersion = ref('v1.0.0')
+const fileInputRef = ref(null)
+const captureType = ref('')
+const tempImage = ref('')
+const scale = ref(1)
+const rotate = ref(0)
+const countdown = ref(0)
+const phoneSubmitting = ref(false)
+const passwordSubmitting = ref(false)
+
+// 手机号表单
+const phoneForm = reactive({
+  phone: '',
+  code: ''
+})
+
+// 密码表单
+const passwordForm = reactive({
+  oldPassword: '',
+  newPassword: '',
+  confirmPassword: ''
+})
+
+// 设备列表
+const deviceList = ref([])
 
 // 默认头像
 const defaultAvatar = 'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg'
@@ -206,6 +536,20 @@ const avatarActions = [
   { name: '拍照', value: 'camera' },
   { name: '从相册选择', value: 'album' }
 ]
+
+// ========================================
+// 计算属性
+// ========================================
+
+/**
+ * 图片样式（缩放和旋转）
+ */
+const imageStyle = computed(() => {
+  return {
+    transform: `scale(${scale.value}) rotate(${rotate.value}deg)`,
+    transition: 'transform 0.3s ease'
+  }
+})
 
 // ========================================
 // 工具函数
@@ -267,35 +611,480 @@ const handleNicknameConfirm = () => {
  * 处理头像选择
  */
 const handleAvatarSelect = (action) => {
-  showToast(`选择了${action.name}`)
   showAvatarPicker.value = false
   
-  // TODO: 实现真实的头像上传逻辑
+  // 设置捕获类型
+  if (action.value === 'camera') {
+    captureType.value = 'camera'  // 拍照
+  } else {
+    captureType.value = ''  // 相册
+  }
+  
+  // 触发文件选择
   setTimeout(() => {
-    userInfo.avatar = defaultAvatar
-    showToast('头像更新成功')
-  }, 1000)
+    fileInputRef.value?.click()
+  }, 300)
+}
+
+/**
+ * 处理文件变化
+ */
+const handleFileChange = (event) => {
+  const file = event.target.files?.[0]
+  if (!file) return
+  
+  // 验证文件类型
+  if (!file.type.startsWith('image/')) {
+    showToast({ type: 'fail', message: '请选择图片文件' })
+    return
+  }
+  
+  // 验证文件大小（限制5MB）
+  if (file.size > 5 * 1024 * 1024) {
+    showToast({ type: 'fail', message: '图片大小不能超过5MB' })
+    return
+  }
+  
+  // 读取文件并显示裁剪界面
+  const reader = new FileReader()
+  reader.onload = (e) => {
+    tempImage.value = e.target?.result
+    scale.value = 1
+    rotate.value = 0
+    showCropper.value = true
+  }
+  reader.readAsDataURL(file)
+  
+  // 清空input，允许重复选择同一文件
+  event.target.value = ''
+}
+
+/**
+ * 处理缩放变化
+ */
+const handleScaleChange = (value) => {
+  scale.value = value
+}
+
+/**
+ * 处理旋转变化
+ */
+const handleRotateChange = (value) => {
+  rotate.value = value
+}
+
+/**
+ * 取消裁剪
+ */
+const cancelCropper = () => {
+  showCropper.value = false
+  tempImage.value = ''
+  scale.value = 1
+  rotate.value = 0
+}
+
+/**
+ * 确认头像
+ */
+const confirmAvatar = () => {
+  if (!tempImage.value) {
+    showToast('请先选择图片')
+    return
+  }
+  
+  // 创建canvas进行裁剪
+  const canvas = document.createElement('canvas')
+  const ctx = canvas.getContext('2d')
+  const img = new Image()
+  
+  img.onload = () => {
+    // 设置canvas尺寸为正方形（200x200）
+    const size = 200
+    canvas.width = size
+    canvas.height = size
+    
+    // 计算绘制参数
+    const minDim = Math.min(img.width, img.height)
+    const scaleRatio = size / minDim * scale.value
+    
+    // 清空canvas
+    ctx.clearRect(0, 0, size, size)
+    
+    // 保存状态
+    ctx.save()
+    
+    // 移动到中心点
+    ctx.translate(size / 2, size / 2)
+    
+    // 旋转
+    ctx.rotate((rotate.value * Math.PI) / 180)
+    
+    // 绘制图片（居中裁剪）
+    const drawWidth = img.width * scaleRatio
+    const drawHeight = img.height * scaleRatio
+    ctx.drawImage(
+      img,
+      -drawWidth / 2,
+      -drawHeight / 2,
+      drawWidth,
+      drawHeight
+    )
+    
+    // 恢复状态
+    ctx.restore()
+    
+    // 转换为base64
+    const base64 = canvas.toDataURL('image/jpeg', 0.8)
+    
+    // 更新头像
+    userInfo.avatar = base64
+    
+    // 保存到localStorage
+    saveUserInfo()
+    
+    // 关闭弹窗
+    showCropper.value = false
+    tempImage.value = ''
+    scale.value = 1
+    rotate.value = 0
+    
+    showToast({ type: 'success', message: '头像更新成功' })
+  }
+  
+  img.src = tempImage.value
+}
+
+/**
+ * 保存用户信息
+ */
+const saveUserInfo = () => {
+  const userInfoData = {
+    id: userInfo.userId,
+    name: userInfo.nickname,
+    avatar: userInfo.avatar,
+    phone: userInfo.phone
+  }
+  localStorage.setItem('userInfo', JSON.stringify(userInfoData))
 }
 
 /**
  * 处理绑定手机
  */
 const handleBindPhone = () => {
-  showToast('绑定手机功能开发中')
+  // 如果已绑定，显示当前手机号
+  if (userInfo.phone) {
+    phoneForm.phone = userInfo.phone
+  } else {
+    phoneForm.phone = ''
+  }
+  phoneForm.code = ''
+  showBindPhone.value = true
+}
+
+/**
+ * 发送验证码
+ */
+const sendVerificationCode = async () => {
+  // 验证手机号
+  if (!/^1[3-9]\d{9}$/.test(phoneForm.phone)) {
+    showToast({ type: 'fail', message: '请输入正确的手机号' })
+    return
+  }
+  
+  // 模拟发送验证码
+  showToast({ type: 'success', message: '验证码已发送（测试：123456）' })
+  
+  // 开始倒计时
+  countdown.value = 60
+  const timer = setInterval(() => {
+    countdown.value--
+    if (countdown.value <= 0) {
+      clearInterval(timer)
+    }
+  }, 1000)
+}
+
+/**
+ * 提交绑定手机
+ */
+const handleBindPhoneSubmit = async () => {
+  // 验证手机号
+  if (!/^1[3-9]\d{9}$/.test(phoneForm.phone)) {
+    showToast({ type: 'fail', message: '请输入正确的手机号' })
+    return
+  }
+  
+  // 验证验证码（测试用：123456）
+  if (phoneForm.code !== '123456') {
+    showToast({ type: 'fail', message: '验证码错误（测试码：123456）' })
+    return
+  }
+  
+  phoneSubmitting.value = true
+  
+  // 模拟提交延迟
+  setTimeout(() => {
+    // 更新用户信息
+    userInfo.phone = phoneForm.phone
+    
+    // 保存到localStorage
+    saveUserInfo()
+    
+    phoneSubmitting.value = false
+    showBindPhone.value = false
+    
+    // 重置表单
+    phoneForm.phone = ''
+    phoneForm.code = ''
+    countdown.value = 0
+    
+    showToast({ 
+      type: 'success', 
+      message: userInfo.phone ? '手机号更换成功' : '手机号绑定成功' 
+    })
+  }, 1500)
 }
 
 /**
  * 处理修改密码
  */
 const handleChangePassword = () => {
-  showToast('修改密码功能开发中')
+  // 重置表单
+  passwordForm.oldPassword = ''
+  passwordForm.newPassword = ''
+  passwordForm.confirmPassword = ''
+  showChangePassword.value = true
+}
+
+/**
+ * 验证确认密码
+ */
+const validateConfirmPassword = (value) => {
+  return value === passwordForm.newPassword
+}
+
+/**
+ * 提交修改密码
+ */
+const handleChangePasswordSubmit = async () => {
+  // 验证原密码（测试用：123456）
+  if (passwordForm.oldPassword !== '123456') {
+    showToast({ type: 'fail', message: '原密码错误（测试密码：123456）' })
+    return
+  }
+  
+  // 验证新密码长度
+  if (passwordForm.newPassword.length < 6 || passwordForm.newPassword.length > 20) {
+    showToast({ type: 'fail', message: '新密码长度为6-20位' })
+    return
+  }
+  
+  // 验证两次密码是否一致
+  if (passwordForm.newPassword !== passwordForm.confirmPassword) {
+    showToast({ type: 'fail', message: '两次密码输入不一致' })
+    return
+  }
+  
+  // 验证新密码不能与原密码相同
+  if (passwordForm.newPassword === passwordForm.oldPassword) {
+    showToast({ type: 'fail', message: '新密码不能与原密码相同' })
+    return
+  }
+  
+  passwordSubmitting.value = true
+  
+  // 模拟提交延迟
+  setTimeout(() => {
+    passwordSubmitting.value = false
+    showChangePassword.value = false
+    
+    // 重置表单
+    passwordForm.oldPassword = ''
+    passwordForm.newPassword = ''
+    passwordForm.confirmPassword = ''
+    
+    showToast({ 
+      type: 'success', 
+      message: '密码修改成功，请使用新密码登录' 
+    })
+  }, 1500)
 }
 
 /**
  * 处理设备管理
  */
 const handleDeviceManage = () => {
-  showToast('设备管理功能开发中')
+  // 加载设备列表
+  loadDeviceList()
+  showDeviceManage.value = true
+}
+
+/**
+ * 加载设备列表
+ */
+const loadDeviceList = () => {
+  const storedDevices = localStorage.getItem('loginDevices')
+  
+  if (storedDevices) {
+    deviceList.value = JSON.parse(storedDevices)
+  } else {
+    // 初始化模拟数据
+    deviceList.value = [
+      {
+        id: 1,
+        name: 'iPhone 14 Pro',
+        type: 'mobile',
+        location: '北京',
+        ip: '192.168.1.100',
+        lastLogin: Date.now(),
+        isCurrent: true,
+        isTrusted: true
+      },
+      {
+        id: 2,
+        name: 'MacBook Pro',
+        type: 'desktop',
+        location: '上海',
+        ip: '192.168.1.101',
+        lastLogin: Date.now() - 86400000, // 1天前
+        isCurrent: false,
+        isTrusted: true
+      },
+      {
+        id: 3,
+        name: 'iPad Air',
+        type: 'tablet',
+        location: '广州',
+        ip: '192.168.1.102',
+        lastLogin: Date.now() - 259200000, // 3天前
+        isCurrent: false,
+        isTrusted: false
+      }
+    ]
+    
+    saveDeviceList()
+  }
+}
+
+/**
+ * 保存设备列表
+ */
+const saveDeviceList = () => {
+  localStorage.setItem('loginDevices', JSON.stringify(deviceList.value))
+}
+
+/**
+ * 获取设备图标
+ */
+const getDeviceIcon = (type) => {
+  const iconMap = {
+    mobile: 'phone-o',
+    tablet: 'pad',
+    desktop: 'desktop-o'
+  }
+  return iconMap[type] || 'cluster-o'
+}
+
+/**
+ * 格式化设备登录时间
+ */
+const formatDeviceTime = (timestamp) => {
+  const now = Date.now()
+  const diff = now - timestamp
+  
+  const minute = 60 * 1000
+  const hour = 60 * minute
+  const day = 24 * hour
+  
+  if (diff < minute) {
+    return '刚刚'
+  } else if (diff < hour) {
+    return `${Math.floor(diff / minute)}分钟前`
+  } else if (diff < day) {
+    return `${Math.floor(diff / hour)}小时前`
+  } else {
+    return `${Math.floor(diff / day)}天前`
+  }
+}
+
+/**
+ * 切换设备信任状态
+ */
+const toggleTrustDevice = async (device) => {
+  try {
+    await showConfirmDialog({
+      title: device.isTrusted ? '取消信任' : '设为可信设备',
+      message: device.isTrusted 
+        ? `确定要取消对 "${device.name}" 的信任吗？`
+        : `确定要将 "${device.name}" 设为可信设备吗？可信设备登录时无需验证。`
+    })
+    
+    device.isTrusted = !device.isTrusted
+    saveDeviceList()
+    
+    showToast({
+      type: 'success',
+      message: device.isTrusted ? '已设为可信设备' : '已取消信任'
+    })
+  } catch (error) {
+    // 用户取消
+  }
+}
+
+/**
+ * 移除单个设备
+ */
+const removeDevice = async (device) => {
+  try {
+    await showConfirmDialog({
+      title: '移除设备',
+      message: `确定要移除 "${device.name}" 吗？移除后该设备需要重新登录。`,
+      confirmButtonText: '确认移除',
+      cancelButtonText: '取消'
+    })
+    
+    deviceList.value = deviceList.value.filter(d => d.id !== device.id)
+    saveDeviceList()
+    
+    showToast({
+      type: 'success',
+      message: '设备已移除'
+    })
+  } catch (error) {
+    // 用户取消
+  }
+}
+
+/**
+ * 移除所有其他设备
+ */
+const removeAllDevices = async () => {
+  const otherDevices = deviceList.value.filter(d => !d.isCurrent)
+  
+  if (otherDevices.length === 0) {
+    showToast('没有其他设备可移除')
+    return
+  }
+  
+  try {
+    await showConfirmDialog({
+      title: '移除所有其他设备',
+      message: `确定要移除所有其他设备吗？共 ${otherDevices.length} 台设备将被移除，它们需要重新登录。`,
+      confirmButtonText: '确认移除',
+      cancelButtonText: '取消',
+      confirmButtonColor: '#ff4d4f'
+    })
+    
+    deviceList.value = deviceList.value.filter(d => d.isCurrent)
+    saveDeviceList()
+    
+    showToast({
+      type: 'success',
+      message: '已移除所有其他设备'
+    })
+  } catch (error) {
+    // 用户取消
+  }
 }
 
 /**
@@ -396,6 +1185,278 @@ onMounted(() => {
   :deep(.van-cell__title) {
     color: var(--color-danger);
     text-align: center;
+  }
+}
+
+/* ========================================
+   头像裁剪弹窗
+   ======================================== */
+.cropper-popup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .popup-header {
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+
+    h3 {
+      margin: 0;
+      font-size: var(--font-size-lg);
+      color: var(--color-text-primary);
+      text-align: center;
+    }
+  }
+
+  .cropper-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+
+    .preview-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: var(--spacing-xl);
+
+      .preview-circle {
+        width: 180px;
+        height: 180px;
+        border-radius: var(--radius-full);
+        overflow: hidden;
+        border: 3px solid var(--color-primary);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background: var(--color-bg-tertiary);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+    }
+
+    .adjust-controls {
+      .control-item {
+        margin-bottom: var(--spacing-lg);
+
+        span {
+          display: block;
+          font-size: var(--font-size-sm);
+          color: var(--color-text-secondary);
+          margin-bottom: var(--spacing-sm);
+        }
+
+        :deep(.van-slider) {
+          margin: 0 var(--spacing-md);
+        }
+      }
+    }
+  }
+
+  .cropper-actions {
+    padding: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    gap: var(--spacing-md);
+
+    .van-button {
+      flex: 1;
+    }
+  }
+}
+
+/* ========================================
+   绑定手机和修改密码弹窗通用样式
+   ======================================== */
+.bind-phone-popup,
+.change-password-popup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .popup-header {
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+
+    h3 {
+      margin: 0;
+      font-size: var(--font-size-lg);
+      color: var(--color-text-primary);
+      text-align: center;
+    }
+  }
+
+  .form-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+
+    .submit-btn {
+      margin-top: var(--spacing-xl);
+      padding: 0 var(--spacing-md);
+    }
+
+    .tips {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+      font-size: var(--font-size-xs);
+      color: var(--color-text-secondary);
+      margin-top: var(--spacing-lg);
+      padding: var(--spacing-md);
+      background: rgba(0, 122, 255, 0.05);
+      border-radius: var(--radius-sm);
+      justify-content: center;
+
+      .van-icon {
+        color: var(--color-primary);
+      }
+    }
+  }
+}
+
+/* ========================================
+   登录设备管理弹窗
+   ======================================== */
+.device-manage-popup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .popup-header {
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+
+    h3 {
+      margin: 0 0 var(--spacing-xs) 0;
+      font-size: var(--font-size-lg);
+      color: var(--color-text-primary);
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: var(--font-size-xs);
+      color: var(--color-text-secondary);
+    }
+  }
+
+  .device-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--spacing-md);
+
+    .device-item {
+      background: white;
+      border-radius: var(--radius-md);
+      padding: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: all var(--transition-fast);
+
+      &.current-device {
+        border: 2px solid var(--color-primary);
+        background: linear-gradient(135deg, rgba(0, 122, 255, 0.05), rgba(0, 122, 255, 0.02));
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+      .device-info {
+        display: flex;
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+
+        .device-icon {
+          flex-shrink: 0;
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--color-bg-tertiary);
+          border-radius: var(--radius-md);
+        }
+
+        .device-details {
+          flex: 1;
+          min-width: 0;
+
+          .device-name {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-xs);
+            flex-wrap: wrap;
+
+            .van-tag {
+              flex-shrink: 0;
+            }
+          }
+
+          .device-meta {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+            flex-wrap: wrap;
+
+            .meta-item {
+              display: flex;
+              align-items: center;
+              gap: var(--spacing-xs);
+              font-size: var(--font-size-xs);
+              color: var(--color-text-secondary);
+
+              .van-icon {
+                flex-shrink: 0;
+              }
+            }
+          }
+
+          .device-ip {
+            font-size: var(--font-size-xs);
+            color: var(--color-text-tertiary);
+            font-family: 'Courier New', monospace;
+          }
+        }
+      }
+
+      .device-actions {
+        display: flex;
+        gap: var(--spacing-sm);
+        padding-top: var(--spacing-md);
+        border-top: 1px dashed var(--color-border);
+
+        .van-button {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .device-footer {
+    padding: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+
+    .footer-tips {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--spacing-xs);
+      font-size: var(--font-size-xs);
+      color: var(--color-text-secondary);
+      margin-top: var(--spacing-md);
+
+      .van-icon {
+        color: var(--color-warning);
+      }
+    }
   }
 }
 </style>

@@ -161,6 +161,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
 import { showToast } from 'vant'
 import { 
   Search as VanSearch,
@@ -172,6 +173,11 @@ import {
   NoticeBar as VanNoticeBar,
   Popup as VanPopup
 } from 'vant'
+
+// ========================================
+// 路由实例
+// ========================================
+const router = useRouter()
 
 // ========================================
 // 响应式数据
@@ -276,21 +282,21 @@ const showPointsRule = (type) => {
  * 处理在线客服
  */
 const handleOnlineService = () => {
-  showToast('在线客服功能开发中')
+  router.push({ name: 'HelpOnlineService' })
 }
 
 /**
  * 处理意见反馈
  */
 const handleFeedback = () => {
-  showToast('意见反馈功能开发中')
+  router.push({ name: 'HelpFeedback' })
 }
 
 /**
  * 处理举报
  */
 const handleReport = () => {
-  showToast('举报功能开发中')
+  router.push({ name: 'HelpReport' })
 }
 </script>
 

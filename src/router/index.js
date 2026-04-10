@@ -21,7 +21,8 @@ const routes = [
     meta: {
       keepAlive: true,        // 启用页面缓存
       title: '首页',           // 页面标题
-      showBack: false         // 不显示返回按钮
+      showBack: false,        // 不显示返回按钮
+      showTabbar: true        // 显示底部标签栏
     }
   },
   {
@@ -30,7 +31,8 @@ const routes = [
     component: () => import('../views/Lottery/index.vue'), // 懒加载
     meta: {
       title: '娱乐中心',
-      showBack: true          // 显示返回按钮
+      showBack: false,        // 不显示返回按钮
+      showTabbar: true        // 显示底部标签栏
     }
   },
   {
@@ -39,7 +41,8 @@ const routes = [
     component: () => import('../views/Profile/index.vue'), // 懒加载
     meta: {
       title: '我的',
-      showBack: true
+      showBack: false,        // 不显示返回按钮
+      showTabbar: true        // 显示底部标签栏
     }
   },
   {
@@ -167,6 +170,64 @@ const routes = [
       showBack: true,        // 显示返回按钮
       showTabbar: false      // 隐藏底部标签栏
     }
+  },
+  // ========================================
+  // 帮助中心子页面路由
+  // ========================================
+  {
+    path: '/profile/help/online-service',
+    name: 'HelpOnlineService',
+    component: () => import('../views/Profile/Help/OnlineService/index.vue'),
+    meta: {
+      title: '在线客服',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/help/feedback',
+    name: 'HelpFeedback',
+    component: () => import('../views/Profile/Help/Feedback/index.vue'),
+    meta: {
+      title: '意见反馈',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/help/report',
+    name: 'HelpReport',
+    component: () => import('../views/Profile/Help/Report/index.vue'),
+    meta: {
+      title: '举报问题',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  // ========================================
+  // 认证相关页面路由
+  // ========================================
+  {
+    path: '/auth/login',
+    name: 'Login',
+    component: () => import('../views/Auth/Login/index.vue'),
+    meta: {
+      title: '登录',
+      showBack: false,       // 不显示返回按钮（独立页面）
+      showTabbar: false,     // 隐藏底部标签栏
+      requiresAuth: false    // 不需要登录即可访问
+    }
+  },
+  {
+    path: '/auth/register',
+    name: 'Register',
+    component: () => import('../views/Auth/Register/index.vue'),
+    meta: {
+      title: '注册',
+      showBack: false,       // 不显示返回按钮（独立页面）
+      showTabbar: false,     // 隐藏底部标签栏
+      requiresAuth: false    // 不需要登录即可访问
+    }
   }
 ]
 
@@ -179,12 +240,46 @@ const router = createRouter({
 })
 
 // ========================================
-// 路由守卫（可选扩展）
+// 全局前置路由守卫
 // ========================================
-// router.beforeEach((to, from, next) => {
-//   // 例如：权限验证、页面标题设置等
-//   document.title = to.meta.title || '娱乐应用'
-//   next()
-// })
+router.beforeEach((to, from, next) => {
+  // 设置页面标题
+  const title = to.meta.title
+  if (title) {
+    document.title = `${title} - 瑶光`
+  } else {
+    document.title = '瑶光'
+  }
+  
+  // 检查是否需要登录
+  const requiresAuth = to.meta.requiresAuth !== false // 默认为 true
+  const token = localStorage.getItem('token')
+  
+  if (requiresAuth && !token) {
+    // 需要登录但未登录，跳转到登录页
+    next({
+      name: 'Login',
+      query: { redirect: to.fullPath } // 保存原目标路径，登录后跳转回去
+    })
+  } else if (!requiresAuth && token) {
+    // 已登录用户访问登录/注册页，跳转到首页
+    if (to.name === 'Login' || to.name === 'Register') {
+      next({ name: 'Home' })
+    } else {
+      next()
+    }
+  } else {
+    // 正常导航
+    next()
+  }
+})
+
+// ========================================
+// 全局后置路由钩子（可选，用于日志记录等）
+// ========================================
+router.afterEach((to, from) => {
+  // 可以在这里添加页面访问统计、埋点等逻辑
+  console.log(`页面跳转: ${from.path || '初始加载'} -> ${to.path}`)
+})
 
 export default router

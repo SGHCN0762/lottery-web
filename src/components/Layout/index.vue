@@ -1,61 +1,63 @@
 <template>
-  <div class="app-layout">
-    <!-- Vant 导航栏 -->
-    <van-nav-bar
-      :title="pageTitle"
-      :left-arrow="shouldShowBack"
-      z-index="101"
-      @click-left="handleGoBack"
-      fixed
-      placeholder
-    >
-      <template #right>
-        <!-- 右侧插槽：默认显示主题切换按钮 -->
-        <slot name="navbar-right">
-          <van-icon
-            name="ellipsis"
-            class="theme-toggle-btn"
-            @click="showThemeMenu = true"
-            aria-label="切换主题"
-          />
-        </slot>
-      </template>
-    </van-nav-bar>
-
-    <!-- 主内容区域 -->
-    <main class="main-content">
-      <slot></slot>
-    </main>
-
-    <!-- Vant 底部标签栏 -->
-    <van-tabbar
-      v-if="shouldShowTabbar"
-      v-model="activeTab"
-      z-index="101"
-      @change="handleTabChange"
-      route
-    >
-      <van-tabbar-item
-        v-for="tab in navigationTabs"
-        :key="tab.name"
-        :name="tab.name"
-        :to="{ name: tab.name }"
-        :icon="convertToVantIcon(tab.icon)"
+  <van-config-provider :theme="vantTheme">
+    <div class="app-layout">
+      <!-- Vant 导航栏 -->
+      <van-nav-bar
+        :title="pageTitle"
+        :left-arrow="shouldShowBack"
+        z-index="101"
+        @click-left="handleGoBack"
+        fixed
+        placeholder
       >
-        {{ tab.label }}
-      </van-tabbar-item>
-    </van-tabbar>
+        <template #right>
+          <!-- 右侧插槽：默认显示主题切换按钮 -->
+          <slot name="navbar-right">
+            <van-icon
+              name="ellipsis"
+              class="theme-toggle-btn"
+              @click="showThemeMenu = true"
+              aria-label="切换主题"
+            />
+          </slot>
+        </template>
+      </van-nav-bar>
 
-    <!-- 主题选择弹窗 -->
-    <van-action-sheet
-      v-model:show="showThemeMenu"
-      :actions="themeOptions"
-      @select="handleThemeSelect"
-      cancel-text="取消"
-      description="选择主题模式"
-      close-on-click-action
-    />
-  </div>
+      <!-- 主内容区域 -->
+      <main class="main-content">
+        <slot></slot>
+      </main>
+
+      <!-- Vant 底部标签栏 -->
+      <van-tabbar
+        v-if="shouldShowTabbar"
+        v-model="activeTab"
+        z-index="101"
+        @change="handleTabChange"
+        route
+      >
+        <van-tabbar-item
+          v-for="tab in navigationTabs"
+          :key="tab.name"
+          :name="tab.name"
+          :to="{ name: tab.name }"
+          :icon="convertToVantIcon(tab.icon)"
+        >
+          {{ tab.label }}
+        </van-tabbar-item>
+      </van-tabbar>
+
+      <!-- 主题选择弹窗 -->
+      <van-action-sheet
+        v-model:show="showThemeMenu"
+        :actions="themeOptions"
+        @select="handleThemeSelect"
+        cancel-text="取消"
+        description="选择主题模式"
+        close-on-click-action
+      />
+    </div>
+  </van-config-provider>
 </template>
 
 <script setup>
@@ -67,6 +69,7 @@ import {
   TabbarItem as VanTabbarItem,
   ActionSheet as VanActionSheet,
   Icon as VanIcon,
+  ConfigProvider as VanConfigProvider,
 } from "vant";
 import { useThemeStore } from "@/stores/theme";
 
@@ -114,7 +117,7 @@ const showThemeMenu = ref(false);
 
 /** 页面标题：优先使用路由 meta，其次使用 props */
 const pageTitle = computed(() => {
-  return route.meta.title || props.title || "彩票网站";
+  return route.meta.title || props.title || '瑶光'
 });
 
 /** 是否显示返回按钮：优先使用路由 meta，其次使用 props */
@@ -122,9 +125,9 @@ const shouldShowBack = computed(() => {
   return route.meta.showBack ?? props.showBack;
 });
 
-/** 是否显示底部标签栏：默认显示，除非路由 meta 中明确设置为 false */
+/** 是否显示底部标签栏：默认不显示，除非路由 meta 中明确设置为 true */
 const shouldShowTabbar = computed(() => {
-  return route.meta.showTabbar !== false;
+  return route.meta.showTabbar === true;
 });
 
 /** 导航标签列表 */
@@ -136,6 +139,11 @@ const themeOptions = computed(() => [
   { name: "🌙 黑夜模式", value: "dark" },
   { name: "⚙️ 跟随系统", value: "auto" },
 ]);
+
+/** Vant 主题 */
+const vantTheme = computed(() => {
+  return themeStore.themeMode === "dark" ? "dark" : "light";
+});
 
 // ========================================
 // 监听器
