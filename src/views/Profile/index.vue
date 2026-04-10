@@ -167,16 +167,20 @@ const handleActionClick = (action) => {
   
   switch (action.action) {
     case 'checkin':
-      // TODO: 每日签到逻辑
+      // 跳转到每日签到页面
+      router.push({ name: 'DailyCheckIn' })
       break
     case 'exchange':
-      // TODO: 跳转到兑换页面
+      // 跳转到积分兑换页面
+      router.push({ name: 'ProfileExchange' })
       break
     case 'badges':
-      // TODO: 查看成就徽章
+      // 跳转到我的成就页面
+      router.push({ name: 'ProfileBadges' })
       break
     case 'invite':
-      // TODO: 分享邀请
+      // 跳转到邀请好友页面
+      router.push({ name: 'ProfileInvite' })
       break
     default:
       console.warn('未知的快捷操作:', action.action)
@@ -192,16 +196,20 @@ const handleMenuClick = (item) => {
   
   switch (item.action) {
     case 'records':
-      // TODO: 查看游戏记录
+      // 跳转到游戏记录页面
+      router.push({ name: 'ProfileRecords' })
       break
     case 'points':
-      // TODO: 查看积分明细
+      // 跳转到积分明细页面
+      router.push({ name: 'ProfilePoints' })
       break
     case 'settings':
-      // TODO: 跳转到设置页面
+      // 跳转到账户设置页面
+      router.push({ name: 'ProfileSettings' })
       break
     case 'help':
-      // TODO: 跳转到帮助页面
+      // 跳转到帮助中心页面
+      router.push({ name: 'ProfileHelp' })
       break
     case 'about':
       router.push({ name: 'About' })

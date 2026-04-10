@@ -94,6 +94,79 @@ const routes = [
       showBack: true,        // 显示返回按钮
       showTabbar: false      // 隐藏底部标签栏
     }
+  },
+  // ========================================
+  // 个人中心子页面路由
+  // ========================================
+  {
+    path: '/profile/records',
+    name: 'ProfileRecords',
+    component: () => import('../views/Profile/Records/index.vue'),
+    meta: {
+      title: '游戏记录',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/points',
+    name: 'ProfilePoints',
+    component: () => import('../views/Profile/Points/index.vue'),
+    meta: {
+      title: '积分明细',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/settings',
+    name: 'ProfileSettings',
+    component: () => import('../views/Profile/Settings/index.vue'),
+    meta: {
+      title: '账户设置',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/help',
+    name: 'ProfileHelp',
+    component: () => import('../views/Profile/Help/index.vue'),
+    meta: {
+      title: '帮助中心',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/exchange',
+    name: 'ProfileExchange',
+    component: () => import('../views/Profile/Exchange/index.vue'),
+    meta: {
+      title: '积分兑换',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/badges',
+    name: 'ProfileBadges',
+    component: () => import('../views/Profile/Badges/index.vue'),
+    meta: {
+      title: '我的成就',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
+  },
+  {
+    path: '/profile/invite',
+    name: 'ProfileInvite',
+    component: () => import('../views/Profile/Invite/index.vue'),
+    meta: {
+      title: '邀请好友',
+      showBack: true,        // 显示返回按钮
+      showTabbar: false      // 隐藏底部标签栏
+    }
   }
 ]
 
