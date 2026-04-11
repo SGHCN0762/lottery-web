@@ -2,8 +2,8 @@
   <div class="lottery-page">
     <!-- 页面标题区域 -->
     <header class="page-header">
-      <h1 class="header-title">🎪 娱乐中心</h1>
-      <p class="header-subtitle">多种趣味小游戏，轻松赚取积分</p>
+      <h1 class="header-title">🎪 {{ t('lottery.title') }}</h1>
+      <p class="header-subtitle">{{ t('lottery.subtitle') }}</p>
     </header>
 
     <!-- 游戏类型卡片列表 -->
@@ -20,13 +20,13 @@
         <div class="card-icon">{{ gameType.icon }}</div>
         <h3 class="card-title">{{ gameType.name }}</h3>
         <p class="card-description">{{ gameType.description }}</p>
-        <div class="reward-info">奖励: {{ gameType.reward }}</div>
+        <div class="reward-info">{{ t('lottery.reward') }}: {{ gameType.reward }}</div>
       </div>
     </section>
 
     <!-- 积分排行榜 -->
     <section v-if="topPlayers.length" class="leaderboard-section">
-      <h2 class="section-title">🏆 积分排行榜</h2>
+      <h2 class="section-title">🏆 {{ t('lottery.leaderboard') }}</h2>
       <div class="leaderboard-list">
         <div 
           v-for="(player, index) in topPlayers" 
@@ -37,7 +37,7 @@
           <div class="player-rank">#{{ index + 1 }}</div>
           <div class="player-details">
             <span class="player-name">{{ player.name }}</span>
-            <span class="player-points">{{ player.points }} 积分</span>
+            <span class="player-points">{{ player.points }} {{ t('common.points') }}</span>
           </div>
           <div class="player-badge" v-if="index < 3">
             {{ ['🥇', '🥈', '🥉'][index] }}
@@ -49,8 +49,14 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 路由实例
@@ -62,34 +68,34 @@ const router = useRouter()
 // ========================================
 
 /** 游戏类型列表 */
-const gameTypes = ref([
+const gameTypes = computed(() => [
   {
     id: 1,
-    name: '数字猜猜猜',
+    name: t('lottery.numberGuess'),
     icon: '🔢',
-    description: '猜测随机数字，考验你的运气',
-    reward: '10-50积分'
+    description: t('lottery.numberGuessDesc'),
+    reward: t('lottery.numberGuessReward')
   },
   {
     id: 2,
-    name: '幸运转盘',
+    name: t('lottery.luckyWheel'),
     icon: '🎡',
-    description: '转动转盘，赢取丰厚积分',
-    reward: '5-100积分'
+    description: t('lottery.luckyWheelDesc'),
+    reward: t('lottery.luckyWheelReward')
   },
   {
     id: 3,
-    name: '答题挑战',
+    name: t('lottery.quizChallenge'),
     icon: '📝',
-    description: '回答趣味问题，展示知识',
-    reward: '20-80积分'
+    description: t('lottery.quizChallengeDesc'),
+    reward: t('lottery.quizChallengeReward')
   },
   {
     id: 4,
-    name: '每日签到',
+    name: t('lottery.dailyCheckIn'),
     icon: '📅',
-    description: '每天登录即可领取积分',
-    reward: '10积分'
+    description: t('lottery.dailyCheckInDesc'),
+    reward: t('lottery.dailyCheckInReward')
   }
 ])
 

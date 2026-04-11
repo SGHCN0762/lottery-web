@@ -16,11 +16,11 @@
         <van-field
           v-model="formData.phone"
           name="phone"
-          label="手机号"
-          placeholder="请输入手机号"
+          :label="t('auth.phone')"
+          :placeholder="t('auth.phonePlaceholder')"
           :rules="[
-            { required: true, message: '请输入手机号' },
-            { pattern: /^1[3-9]\d{9}$/, message: '请输入正确的手机号' }
+            { required: true, message: t('auth.phoneRequired') },
+            { pattern: /^1[3-9]\d{9}$/, message: t('auth.invalidPhone') }
           ]"
           type="tel"
           maxlength="11"
@@ -32,9 +32,9 @@
         <van-field
           v-model="formData.code"
           name="code"
-          label="验证码"
-          placeholder="请输入验证码"
-          :rules="[{ required: true, message: '请输入验证码' }]"
+          :label="t('auth.verificationCode')"
+          :placeholder="t('auth.verificationCodePlaceholder')"
+          :rules="[{ required: true, message: t('auth.verificationCodeRequired') }]"
           center
           clearable
           left-icon="shield-o"
@@ -47,7 +47,7 @@
               @click="sendCode"
               class="code-btn"
             >
-              {{ countdown > 0 ? `${countdown}s` : '获取验证码' }}
+              {{ countdown > 0 ? `${countdown}s` : t('auth.getCode') }}
             </van-button>
           </template>
         </van-field>
@@ -57,11 +57,11 @@
           v-model="formData.password"
           type="password"
           name="password"
-          label="密码"
-          placeholder="请设置6-20位密码"
+          :label="t('auth.password')"
+          :placeholder="t('auth.passwordPlaceholder')"
           :rules="[
-            { required: true, message: '请设置密码' },
-            { pattern: /^.{6,20}$/, message: '密码长度为6-20位' }
+            { required: true, message: t('auth.passwordRequired') },
+            { pattern: /^.{6,20}$/, message: t('auth.passwordLength') }
           ]"
           clearable
           left-icon="lock"
@@ -72,11 +72,11 @@
           v-model="formData.confirmPassword"
           type="password"
           name="confirmPassword"
-          label="确认密码"
-          placeholder="请再次输入密码"
+          :label="t('auth.confirmPassword')"
+          :placeholder="t('auth.confirmPasswordPlaceholder')"
           :rules="[
-            { required: true, message: '请确认密码' },
-            { validator: validateConfirmPassword, message: '两次密码输入不一致' }
+            { required: true, message: t('auth.confirmPasswordRequired') },
+            { validator: validateConfirmPassword, message: t('auth.passwordMismatch') }
           ]"
           clearable
           left-icon="lock"
@@ -85,10 +85,10 @@
         <!-- 用户协议 -->
         <div class="agreement-section">
           <van-checkbox v-model="formData.agreeTerms" icon-size="16px">
-            我已阅读并同意
-            <span class="link-text" @click.stop="showAgreement('user')">《用户协议》</span>
-            和
-            <span class="link-text" @click.stop="showAgreement('privacy')">《隐私政策》</span>
+            {{ t('auth.agreeTerms') }}
+            <span class="link-text" @click.stop="showAgreement('user')">{{ t('auth.userAgreement') }}</span>
+            {{ t('auth.and') }}
+            <span class="link-text" @click.stop="showAgreement('privacy')">{{ t('auth.privacyPolicy') }}</span>
           </van-checkbox>
         </div>
 
@@ -100,25 +100,25 @@
             type="primary"
             native-type="submit"
             :loading="loading"
-            loading-text="注册中..."
+            :loading-text="t('auth.registering')"
             class="register-btn"
           >
-            注 册
+            {{ t('auth.register') }}
           </van-button>
         </div>
       </van-form>
 
       <!-- 登录链接 -->
       <div class="login-link">
-        已有账号？
-        <span class="link-text" @click="goToLogin">立即登录</span>
+        {{ t('auth.hasAccount') }}
+        <span class="link-text" @click="goToLogin">{{ t('auth.loginNow') }}</span>
       </div>
     </section>
 
     <!-- 其他登录方式 -->
     <section class="other-login">
       <div class="divider">
-        <span>其他登录方式</span>
+        <span>{{ t('auth.otherLoginMethods') }}</span>
       </div>
       <div class="social-login">
         <div class="social-item" @click="handleSocialLogin('wechat')">
@@ -135,6 +135,7 @@
 <script setup>
 import { ref, reactive, computed, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { showToast, showLoadingToast, closeToast, showDialog } from 'vant'
 import { useThemeStore } from '@/stores/theme'
 import { 
@@ -145,6 +146,11 @@ import {
   Icon as VanIcon,
   NoticeBar as VanNoticeBar
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 路由实例
@@ -199,14 +205,14 @@ const sendCode = async () => {
   if (!phoneRegex.test(formData.phone)) {
     showToast({
       type: 'fail',
-      message: '请输入正确的手机号'
+      message: t('auth.invalidPhone')
     })
     return
   }
 
   try {
     showLoadingToast({
-      message: '发送中...',
+      message: t('auth.sendingCode'),
       forbidClick: true,
       duration: 0
     })
@@ -220,7 +226,7 @@ const sendCode = async () => {
     closeToast()
     showToast({
       type: 'success',
-      message: '验证码已发送'
+      message: t('auth.codeSent')
     })
 
     // 开始倒计时
@@ -238,7 +244,7 @@ const sendCode = async () => {
     closeToast()
     showToast({
       type: 'fail',
-      message: '发送失败，请重试'
+      message: t('auth.sendCodeFail')
     })
   }
 }
@@ -254,7 +260,7 @@ const handleRegister = async (values) => {
   if (!formData.agreeTerms) {
     showToast({
       type: 'fail',
-      message: '请先同意用户协议和隐私政策'
+      message: t('auth.agreeTermsRequired')
     })
     return
   }
@@ -263,7 +269,7 @@ const handleRegister = async (values) => {
   if (formData.password !== formData.confirmPassword) {
     showToast({
       type: 'fail',
-      message: '两次密码输入不一致'
+      message: t('auth.passwordMismatch')
     })
     return
   }
@@ -271,7 +277,7 @@ const handleRegister = async (values) => {
   try {
     loading.value = true
     showLoadingToast({
-      message: '注册中...',
+      message: t('auth.registering'),
       forbidClick: true,
       duration: 0
     })
@@ -285,7 +291,7 @@ const handleRegister = async (values) => {
     closeToast()
     showToast({
       type: 'success',
-      message: '注册成功'
+      message: t('auth.registerSuccess')
     })
 
     // 跳转到登录页
@@ -298,7 +304,7 @@ const handleRegister = async (values) => {
     closeToast()
     showToast({
       type: 'fail',
-      message: '注册失败，请重试'
+      message: t('auth.registerFail')
     })
   } finally {
     loading.value = false
@@ -311,14 +317,14 @@ const handleRegister = async (values) => {
  */
 const showAgreement = (type) => {
   const titles = {
-    user: '用户协议',
-    privacy: '隐私政策'
+    user: t('auth.userAgreement'),
+    privacy: t('auth.privacyPolicy')
   }
   
   showDialog({
     title: titles[type],
-    message: `这里是${titles[type]}的详细内容...\n\n（实际项目中应展示完整的协议内容）`,
-    confirmButtonText: '我知道了'
+    message: `${t('auth.agreementContent')}`,
+    confirmButtonText: t('common.confirm')
   })
 }
 

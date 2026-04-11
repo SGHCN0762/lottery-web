@@ -19,24 +19,24 @@
       <div class="stats-row">
         <div class="stat-item">
           <div class="stat-value">{{ userInfo.points }}</div>
-          <div class="stat-label">总积分</div>
+          <div class="stat-label">{{ statsLabels.totalPoints }}</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
           <div class="stat-value">{{ userInfo.gamesPlayed }}</div>
-          <div class="stat-label">游戏次数</div>
+          <div class="stat-label">{{ statsLabels.gamesPlayed }}</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
           <div class="stat-value">{{ userInfo.badges }}</div>
-          <div class="stat-label">成就徽章</div>
+          <div class="stat-label">{{ statsLabels.badges }}</div>
         </div>
       </div>
     </section>
 
     <!-- 快捷操作 -->
     <section class="quick-actions">
-      <div class="section-title">快捷操作</div>
+      <div class="section-title">{{ t('profile.quickActions') }}</div>
       <van-grid :column-num="4" :border="false">
         <van-grid-item 
           v-for="action in quickActions" 
@@ -57,7 +57,7 @@
 
     <!-- 功能菜单 -->
     <section class="menu-section">
-      <div class="section-title">更多功能</div>
+      <div class="section-title">{{ t('profile.moreFunctions') }}</div>
       <van-cell-group inset>
         <van-cell 
           v-for="menuItem in menuItems" 
@@ -74,7 +74,7 @@
     <section class="tip-section">
       <van-notice-bar
         left-icon="info-o"
-        text="温馨提示：积分仅供娱乐，不可兑换现金。请理性参与，切勿沉迷。"
+        :text="t('profile.tip')"
         scrollable
       />
     </section>
@@ -82,8 +82,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { 
   CellGroup as VanCellGroup, 
   Cell as VanCell, 
@@ -92,6 +93,11 @@ import {
   Icon as VanIcon, 
   NoticeBar as VanNoticeBar 
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 路由实例
@@ -110,48 +116,57 @@ const userInfo = ref({
 })
 
 // ========================================
-// 快捷操作配置
+// 统计标签（响应式翻译）
 // ========================================
-const quickActions = ref([
+const statsLabels = computed(() => ({
+  totalPoints: t('profile.totalPoints'),
+  gamesPlayed: t('profile.gamesPlayed'),
+  badges: t('profile.badges')
+}))
+
+// ========================================
+// 快捷操作配置（响应式翻译）
+// ========================================
+const quickActions = computed(() => [
   { 
     id: 1, 
     icon: 'clock-o', 
-    text: '每日签到', 
+    text: t('profile.dailyCheckin'), 
     action: 'checkin',
     color: 'linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)'
   },
   { 
     id: 2, 
     icon: 'gift-o', 
-    text: '积分兑换', 
+    text: t('profile.exchange'), 
     action: 'exchange',
     color: 'linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%)'
   },
   { 
     id: 3, 
     icon: 'medal-o', 
-    text: '我的成就', 
+    text: t('profile.badges'), 
     action: 'badges',
     color: 'linear-gradient(135deg, #FA709A 0%, #FEE140 100%)'
   },
   { 
     id: 4, 
     icon: 'share-o', 
-    text: '邀请好友', 
+    text: t('profile.invite'), 
     action: 'invite',
     color: 'linear-gradient(135deg, #30CFD0 0%, #330867 100%)'
   }
 ])
 
 // ========================================
-// 菜单配置
+// 菜单配置（响应式翻译）
 // ========================================
-const menuItems = ref([
-  { id: 1, title: '游戏记录', icon: 'records-o', action: 'records' },
-  { id: 2, title: '积分明细', icon: 'balance-list-o', action: 'points' },
-  { id: 3, title: '账户设置', icon: 'setting-o', action: 'settings' },
-  { id: 4, title: '帮助中心', icon: 'question-o', action: 'help' },
-  { id: 5, title: '关于我们', icon: 'info-o', action: 'about' }
+const menuItems = computed(() => [
+  { id: 1, title: t('profile.records'), icon: 'records-o', action: 'records' },
+  { id: 2, title: t('profile.points'), icon: 'balance-list-o', action: 'points' },
+  { id: 3, title: t('profile.settings'), icon: 'setting-o', action: 'settings' },
+  { id: 4, title: t('profile.help'), icon: 'question-o', action: 'help' },
+  { id: 5, title: t('navigation.about'), icon: 'info-o', action: 'about' }
 ])
 
 // ========================================

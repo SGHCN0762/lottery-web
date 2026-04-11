@@ -9,6 +9,7 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Home/index.vue'
+import i18n from '@/i18n'
 
 // ========================================
 // 路由配置数组
@@ -19,40 +20,40 @@ const routes = [
     name: 'Home',
     component: HomeView,
     meta: {
-      keepAlive: true,        // 启用页面缓存
-      title: '首页',           // 页面标题
-      showBack: false,        // 不显示返回按钮
-      showTabbar: true        // 显示底部标签栏
+      keepAlive: true,
+      title: 'navigation.home',
+      showBack: false,
+      showTabbar: true
     }
   },
   {
     path: '/games',
     name: 'Lottery',
-    component: () => import('../views/Lottery/index.vue'), // 懒加载
+    component: () => import('../views/Lottery/index.vue'),
     meta: {
-      title: '娱乐中心',
-      showBack: false,        // 不显示返回按钮
-      showTabbar: true        // 显示底部标签栏
+      title: 'navigation.games',
+      showBack: false,
+      showTabbar: true
     }
   },
   {
     path: '/profile',
     name: 'Profile',
-    component: () => import('../views/Profile/index.vue'), // 懒加载
+    component: () => import('../views/Profile/index.vue'),
     meta: {
-      title: '我的',
-      showBack: false,        // 不显示返回按钮
-      showTabbar: true        // 显示底部标签栏
+      title: 'navigation.profile',
+      showBack: false,
+      showTabbar: true
     }
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About/index.vue'), // 懒加载
+    component: () => import('../views/About/index.vue'),
     meta: {
-      title: '关于我们',
+      title: 'navigation.about',
       showBack: true,
-      showTabbar: false  // 不显示底部标签栏
+      showTabbar: false
     }
   },
   // ========================================
@@ -63,9 +64,9 @@ const routes = [
     name: 'NumberGuess',
     component: () => import('../views/Games/NumberGuess/index.vue'),
     meta: {
-      title: '数字猜猜猜',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'games.numberGuess',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -73,9 +74,9 @@ const routes = [
     name: 'LuckyWheel',
     component: () => import('../views/Games/LuckyWheel/index.vue'),
     meta: {
-      title: '幸运转盘',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'games.luckyWheel',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -83,9 +84,9 @@ const routes = [
     name: 'QuizChallenge',
     component: () => import('../views/Games/QuizChallenge/index.vue'),
     meta: {
-      title: '答题挑战',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'games.quizChallenge',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -93,9 +94,9 @@ const routes = [
     name: 'DailyCheckIn',
     component: () => import('../views/Games/DailyCheckIn/index.vue'),
     meta: {
-      title: '每日签到',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'games.dailyCheckIn',
+      showBack: true,
+      showTabbar: false
     }
   },
   // ========================================
@@ -106,9 +107,9 @@ const routes = [
     name: 'ProfileRecords',
     component: () => import('../views/Profile/Records/index.vue'),
     meta: {
-      title: '游戏记录',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'records.title',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -116,9 +117,9 @@ const routes = [
     name: 'ProfilePoints',
     component: () => import('../views/Profile/Points/index.vue'),
     meta: {
-      title: '积分明细',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'points.title',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -126,9 +127,9 @@ const routes = [
     name: 'ProfileSettings',
     component: () => import('../views/Profile/Settings/index.vue'),
     meta: {
-      title: '账户设置',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'settings.title',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -136,9 +137,9 @@ const routes = [
     name: 'ProfileHelp',
     component: () => import('../views/Profile/Help/index.vue'),
     meta: {
-      title: '帮助中心',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'help.title',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -146,9 +147,9 @@ const routes = [
     name: 'ProfileExchange',
     component: () => import('../views/Profile/Exchange/index.vue'),
     meta: {
-      title: '积分兑换',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'exchange.title',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -156,9 +157,9 @@ const routes = [
     name: 'ProfileBadges',
     component: () => import('../views/Profile/Badges/index.vue'),
     meta: {
-      title: '我的成就',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'badges.title',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -166,9 +167,9 @@ const routes = [
     name: 'ProfileInvite',
     component: () => import('../views/Profile/Invite/index.vue'),
     meta: {
-      title: '邀请好友',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'invite.title',
+      showBack: true,
+      showTabbar: false
     }
   },
   // ========================================
@@ -179,9 +180,9 @@ const routes = [
     name: 'HelpOnlineService',
     component: () => import('../views/Profile/Help/OnlineService/index.vue'),
     meta: {
-      title: '在线客服',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'help.onlineService',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -189,9 +190,9 @@ const routes = [
     name: 'HelpFeedback',
     component: () => import('../views/Profile/Help/Feedback/index.vue'),
     meta: {
-      title: '意见反馈',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'help.feedback',
+      showBack: true,
+      showTabbar: false
     }
   },
   {
@@ -199,9 +200,9 @@ const routes = [
     name: 'HelpReport',
     component: () => import('../views/Profile/Help/Report/index.vue'),
     meta: {
-      title: '举报问题',
-      showBack: true,        // 显示返回按钮
-      showTabbar: false      // 隐藏底部标签栏
+      title: 'help.report',
+      showBack: true,
+      showTabbar: false
     }
   },
   // ========================================
@@ -212,10 +213,10 @@ const routes = [
     name: 'Login',
     component: () => import('../views/Auth/Login/index.vue'),
     meta: {
-      title: '登录',
-      showBack: false,       // 不显示返回按钮（独立页面）
-      showTabbar: false,     // 隐藏底部标签栏
-      requiresAuth: false    // 不需要登录即可访问
+      title: 'auth.login',
+      showBack: false,
+      showTabbar: false,
+      requiresAuth: false
     }
   },
   {
@@ -223,10 +224,10 @@ const routes = [
     name: 'Register',
     component: () => import('../views/Auth/Register/index.vue'),
     meta: {
-      title: '注册',
-      showBack: false,       // 不显示返回按钮（独立页面）
-      showTabbar: false,     // 隐藏底部标签栏
-      requiresAuth: false    // 不需要登录即可访问
+      title: 'auth.register',
+      showBack: false,
+      showTabbar: false,
+      requiresAuth: false
     }
   }
 ]
@@ -243,12 +244,14 @@ const router = createRouter({
 // 全局前置路由守卫
 // ========================================
 router.beforeEach((to, from, next) => {
-  // 设置页面标题
-  const title = to.meta.title
-  if (title) {
-    document.title = `${title} - 瑶光`
+  // 设置页面标题（支持 i18n）
+  const titleKey = to.meta.title
+  if (titleKey) {
+    const translatedTitle = i18n.global.t(titleKey)
+    const appName = i18n.global.t('app.name')
+    document.title = `${translatedTitle} - ${appName}`
   } else {
-    document.title = '瑶光'
+    document.title = i18n.global.t('app.title')
   }
   
   // 检查是否需要登录
@@ -275,11 +278,16 @@ router.beforeEach((to, from, next) => {
 })
 
 // ========================================
-// 全局后置路由钩子（可选，用于日志记录等）
+// 全局后置路由钩子（用于语言切换时更新标题）
 // ========================================
 router.afterEach((to, from) => {
-  // 可以在这里添加页面访问统计、埋点等逻辑
   console.log(`页面跳转: ${from.path || '初始加载'} -> ${to.path}`)
+  
+  // 语言切换后重新设置标题
+  if (to.meta.title) {
+    const translatedTitle = i18n.global.t(to.meta.title)
+    document.title = `${translatedTitle} - 瑶光`
+  }
 })
 
 export default router

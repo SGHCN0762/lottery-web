@@ -10,12 +10,12 @@
           <div class="online-indicator"></div>
         </div>
         <div class="status-info">
-          <h3>在线客服</h3>
+          <h3>{{ t('help.onlineService.title') }}</h3>
           <p class="status-text">
             <span class="dot" :style="{ background: serviceStatusColor }"></span>
             {{ serviceStatusText }}
           </p>
-          <p class="service-time">服务时间：9:00 - 22:00</p>
+          <p class="service-time">{{ t('help.onlineService.serviceHours') }}</p>
         </div>
       </div>
       
@@ -27,7 +27,7 @@
           @click="startChat"
         >
           <van-icon name="chat-o" />
-          开始咨询
+          {{ t('help.onlineService.startChat') }}
         </van-button>
         <van-button 
           round 
@@ -35,14 +35,14 @@
           @click="showFAQ = true"
         >
           <van-icon name="question-o" />
-          常见问题
+          {{ t('help.faq') }}
         </van-button>
       </div>
     </section>
 
     <!-- 快捷问题 -->
     <section class="quick-questions">
-      <div class="section-title">常见问题</div>
+      <div class="section-title">{{ t('help.faq') }}</div>
       <van-cell-group inset>
         <van-cell
           v-for="question in quickQuestions"
@@ -60,25 +60,25 @@
 
     <!-- 联系方式 -->
     <section class="contact-methods">
-      <div class="section-title">其他联系方式</div>
+      <div class="section-title">{{ t('help.onlineService.otherContactMethods') }}</div>
       <van-cell-group inset>
         <van-cell 
-          title="客服电话" 
+          :title="t('help.onlineService.customerServicePhone')" 
           value="400-123-4567"
           icon="phone-o"
           is-link
           @click="handleCallPhone"
         />
         <van-cell 
-          title="客服邮箱" 
+          :title="t('help.onlineService.customerServiceEmail')" 
           value="support@lottery.com"
           icon="envelope-o"
           is-link
           @click="handleSendEmail"
         />
         <van-cell 
-          title="工作时间" 
-          value="周一至周日 9:00-22:00"
+          :title="t('help.onlineService.workingHours')" 
+          :value="t('help.onlineService.workingHoursValue')"
           icon="clock-o"
         />
       </van-cell-group>
@@ -88,7 +88,7 @@
     <section class="tip-section">
       <van-notice-bar
         left-icon="info-o"
-        text="温馨提示：如遇紧急情况，建议直接拨打客服电话。我们会在工作时间内尽快回复您。"
+        :text="t('help.onlineService.tip')"
         scrollable
       />
     </section>
@@ -105,8 +105,8 @@
       <div class="chat-window">
         <div class="chat-header">
           <div class="header-info">
-            <h3>在线客服</h3>
-            <p>平均响应时间：2分钟</p>
+            <h3>{{ t('help.onlineService.title') }}</h3>
+            <p>{{ t('help.onlineService.averageResponseTime') }}</p>
           </div>
           <van-button 
             size="mini" 
@@ -114,14 +114,14 @@
             plain
             @click="clearChatHistory"
           >
-            清空记录
+            {{ t('help.onlineService.clearHistory') }}
           </van-button>
         </div>
         
         <div class="chat-messages" ref="messagesRef">
           <div v-if="chatMessages.length === 0" class="empty-chat">
             <van-icon name="chat-o" size="48" color="#ccc" />
-            <p>开始与客服对话吧</p>
+            <p>{{ t('help.onlineService.startChatHint') }}</p>
           </div>
           
           <div
@@ -151,7 +151,7 @@
         <div class="chat-input">
           <van-field
             v-model="inputMessage"
-            placeholder="请输入您的问题..."
+            :placeholder="t('help.onlineService.inputPlaceholder')"
             :border="false"
             clearable
             @keyup.enter="sendMessage"
@@ -163,7 +163,7 @@
                 :disabled="!inputMessage.trim()"
                 @click="sendMessage"
               >
-                发送
+                {{ t('help.onlineService.send') }}
               </van-button>
             </template>
           </van-field>
@@ -181,7 +181,7 @@
     >
       <div class="faq-popup">
         <div class="popup-header">
-          <h3>常见问题</h3>
+          <h3>{{ t('help.faq') }}</h3>
         </div>
         <div class="popup-content">
           <van-collapse v-model="activeFAQ">
@@ -202,6 +202,7 @@
 
 <script setup>
 import { ref, computed, nextTick, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { showToast, showConfirmDialog } from 'vant'
 import { 
   Icon as VanIcon,
@@ -214,6 +215,11 @@ import {
   Collapse as VanCollapse,
   CollapseItem as VanCollapseItem
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 计算属性
@@ -232,7 +238,7 @@ const isServiceTime = computed(() => {
  * 服务状态文本
  */
 const serviceStatusText = computed(() => {
-  return isServiceTime.value ? '在线服务中' : '离线状态'
+  return isServiceTime.value ? t('help.onlineService.onlineStatus') : t('help.onlineService.offlineStatus')
 })
 
 /**
@@ -257,11 +263,11 @@ let messageId = 0
 // 快捷问题
 // ========================================
 const quickQuestions = ref([
-  { id: 1, text: '如何充值积分？' },
-  { id: 2, text: '积分可以兑换现金吗？' },
-  { id: 3, text: '忘记密码怎么办？' },
-  { id: 4, text: '如何修改个人信息？' },
-  { id: 5, text: '游戏记录在哪里查看？' }
+  { id: 1, text: t('help.onlineService.quickQuestions.rechargePoints') },
+  { id: 2, text: t('help.onlineService.quickQuestions.cashExchange') },
+  { id: 3, text: t('help.onlineService.quickQuestions.forgotPassword') },
+  { id: 4, text: t('help.onlineService.quickQuestions.modifyProfile') },
+  { id: 5, text: t('help.onlineService.quickQuestions.viewGameRecords') }
 ])
 
 // ========================================
@@ -270,18 +276,18 @@ const quickQuestions = ref([
 const faqList = ref([
   {
     id: 1,
-    question: '如何获得积分？',
-    answer: '您可以通过每日签到、参与游戏、邀请好友等方式获得积分。具体规则请查看各游戏的说明。'
+    question: t('help.onlineService.faq.howToEarnPoints'),
+    answer: t('help.onlineService.faq.howToEarnPointsAnswer')
   },
   {
     id: 2,
-    question: '积分会过期吗？',
-    answer: '积分永久有效，不会过期。请妥善保管您的账号。'
+    question: t('help.onlineService.faq.pointsExpire'),
+    answer: t('help.onlineService.faq.pointsExpireAnswer')
   },
   {
     id: 3,
-    question: '如何联系客服？',
-    answer: '您可以通过在线客服、客服电话（400-123-4567）或客服邮箱（support@lottery.com）联系我们。'
+    question: t('help.onlineService.faq.howToContact'),
+    answer: t('help.onlineService.faq.howToContactAnswer')
   }
 ])
 
@@ -331,7 +337,7 @@ const startChat = () => {
   // 初始化欢迎消息
   if (chatMessages.value.length === 0) {
     setTimeout(() => {
-      addMessage('您好！欢迎使用在线客服，请问有什么可以帮助您的？', 'service')
+      addMessage(t('help.onlineService.welcomeMessage'), 'service')
     }, 500)
   }
 }
@@ -349,31 +355,31 @@ const sendMessage = () => {
   
   // 显示"正在输入"提示
   setTimeout(() => {
-    addMessage('客服正在输入...', 'system')
+    addMessage(t('help.onlineService.typingMessage'), 'system')
   }, 500)
   
   // 模拟客服回复
   setTimeout(() => {
     // 移除"正在输入"提示
-    chatMessages.value = chatMessages.value.filter(msg => msg.content !== '客服正在输入...')
+    chatMessages.value = chatMessages.value.filter(msg => msg.content !== t('help.onlineService.typingMessage'))
     
     // 智能回复逻辑
     let reply = ''
-    if (userMessage.includes('积分') || userMessage.includes('充值')) {
-      reply = '关于积分问题，您可以通过每日签到、参与游戏、邀请好友等方式获得积分。如需充值，可在"积分兑换"页面进行操作。'
-    } else if (userMessage.includes('密码') || userMessage.includes('账号')) {
-      reply = '如需修改密码或找回账号，请前往"账户设置"页面进行操作。如遇到问题，可提供您的用户ID，我们将协助您处理。'
-    } else if (userMessage.includes('游戏') || userMessage.includes('玩法')) {
-      reply = '我们提供多种有趣的游戏，包括数字猜猜猜、幸运转盘、答题挑战等。您可以在"帮助中心"查看详细的游戏规则说明。'
-    } else if (userMessage.includes('谢谢') || userMessage.includes('感谢')) {
-      reply = '不客气！如果您还有其他问题，随时欢迎咨询。祝您游戏愉快！😊'
+    if (userMessage.includes('积分') || userMessage.includes('充值') || userMessage.includes('points') || userMessage.includes('recharge')) {
+      reply = t('help.onlineService.replies.points')
+    } else if (userMessage.includes('密码') || userMessage.includes('账号') || userMessage.includes('password') || userMessage.includes('account')) {
+      reply = t('help.onlineService.replies.account')
+    } else if (userMessage.includes('游戏') || userMessage.includes('玩法') || userMessage.includes('game') || userMessage.includes('play')) {
+      reply = t('help.onlineService.replies.games')
+    } else if (userMessage.includes('谢谢') || userMessage.includes('感谢') || userMessage.includes('thank')) {
+      reply = t('help.onlineService.replies.thanks')
     } else {
       const replies = [
-        '感谢您的咨询，我们正在处理您的问题。',
-        '收到您的问题，请稍等片刻，我会为您查询相关信息。',
-        '好的，我了解了，让我为您详细解答。',
-        '这个问题我需要确认一下，请您稍等。',
-        '抱歉让您久等了，关于您的问题，建议您查看帮助中心的详细说明。'
+        t('help.onlineService.replies.default1'),
+        t('help.onlineService.replies.default2'),
+        t('help.onlineService.replies.default3'),
+        t('help.onlineService.replies.default4'),
+        t('help.onlineService.replies.default5')
       ]
       reply = replies[Math.floor(Math.random() * replies.length)]
     }
@@ -413,13 +419,13 @@ const handleSendEmail = () => {
 const clearChatHistory = async () => {
   try {
     await showConfirmDialog({
-      title: '清空记录',
-      message: '确定要清空所有聊天记录吗？此操作不可恢复。'
+      title: t('help.onlineService.clearHistory'),
+      message: t('help.onlineService.clearHistoryMessage')
     })
     
     chatMessages.value = []
     messageId = 0
-    showToast('聊天记录已清空')
+    showToast(t('help.onlineService.clearHistorySuccess'))
   } catch (error) {
     // 用户取消
   }
@@ -436,7 +442,7 @@ const handleChatClose = () => {
 // 生命周期
 // ========================================
 onMounted(() => {
-  console.log('在线客服页面已加载')
+  console.log(t('help.onlineService.pageLoaded'))
 })
 </script>
 
@@ -576,6 +582,16 @@ onMounted(() => {
    ======================================== */
 .quick-questions {
   margin: 0 var(--spacing-md);
+
+  :deep(.van-cell) {
+    .van-cell__title {
+      flex: 1;
+      min-width: 0;
+      word-wrap: break-word;
+      word-break: break-word;
+      line-height: 1.4;
+    }
+  }
 }
 
 /* ========================================
@@ -583,6 +599,21 @@ onMounted(() => {
    ======================================== */
 .contact-methods {
   margin: 0 var(--spacing-md);
+
+  :deep(.van-cell) {
+    .van-cell__title {
+      flex: 1;
+      min-width: 0;
+      word-wrap: break-word;
+      word-break: break-word;
+      line-height: 1.4;
+    }
+    .van-cell__value {
+      flex-shrink: 0;
+      white-space: nowrap;
+      margin-left: var(--spacing-sm);
+    }
+  }
 }
 
 /* ========================================
@@ -636,7 +667,7 @@ onMounted(() => {
       align-items: center;
       justify-content: center;
       height: 100%;
-      color: #ccc;
+      color: var(--color-text-secondary);
 
       .van-icon {
         margin-bottom: var(--spacing-md);
@@ -657,7 +688,7 @@ onMounted(() => {
         .system-message {
           display: inline-block;
           padding: var(--spacing-xs) var(--spacing-md);
-          background: rgba(0, 0, 0, 0.05);
+          background: var(--color-bg-secondary);
           border-radius: var(--radius-sm);
           font-size: var(--font-size-xs);
           color: var(--color-text-secondary);
@@ -704,7 +735,7 @@ onMounted(() => {
       &.service {
         .message-content {
           .message-bubble {
-            background: white;
+            background: var(--color-bg-secondary);
             color: var(--color-text-primary);
           }
         }
@@ -722,10 +753,11 @@ onMounted(() => {
   .chat-input {
     padding: var(--spacing-md);
     border-top: 1px solid var(--color-border);
-    background: white;
+    background: var(--color-bg-secondary);
 
     :deep(.van-field__control) {
       font-size: var(--font-size-sm);
+      color: var(--color-text-primary);
     }
   }
 }

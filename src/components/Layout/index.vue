@@ -1,5 +1,5 @@
 <template>
-  <van-config-provider :theme="vantTheme">
+  <van-config-provider :theme="vantTheme" :locale="vantLocale">
     <div class="app-layout">
       <!-- Vant 导航栏 -->
       <van-nav-bar
@@ -11,15 +11,8 @@
         placeholder
       >
         <template #right>
-          <!-- 右侧插槽：默认显示主题切换按钮 -->
-          <slot name="navbar-right">
-            <van-icon
-              name="ellipsis"
-              class="theme-toggle-btn"
-              @click="showThemeMenu = true"
-              aria-label="切换主题"
-            />
-          </slot>
+          <!-- 右侧插槽：默认空，可由子页面自定义 -->
+          <slot name="navbar-right"></slot>
         </template>
       </van-nav-bar>
 
@@ -47,15 +40,6 @@
         </van-tabbar-item>
       </van-tabbar>
 
-      <!-- 主题选择弹窗 -->
-      <van-action-sheet
-        v-model:show="showThemeMenu"
-        :actions="themeOptions"
-        @select="handleThemeSelect"
-        cancel-text="取消"
-        description="选择主题模式"
-        close-on-click-action
-      />
     </div>
   </van-config-provider>
 </template>
@@ -63,15 +47,43 @@
 <script setup>
 import { ref, watch, computed } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import { useI18n } from 'vue-i18n';
 import {
   NavBar as VanNavBar,
   Tabbar as VanTabbar,
   TabbarItem as VanTabbarItem,
-  ActionSheet as VanActionSheet,
   Icon as VanIcon,
   ConfigProvider as VanConfigProvider,
 } from "vant";
+
+// 导入 Vant 语言包
+import vantZhCN from 'vant/es/locale/lang/zh-CN';
+import vantEnUS from 'vant/es/locale/lang/en-US';
+import vantZhTW from 'vant/es/locale/lang/zh-TW';
 import { useThemeStore } from "@/stores/theme";
+
+// ========================================
+// i18n
+// ========================================
+import i18n from '@/i18n';
+const { t } = useI18n();
+
+// ========================================
+// Vant 组件国际化
+// ========================================
+const vantLocale = computed(() => {
+  const currentLocale = i18n.global.locale.value;
+  switch (currentLocale) {
+    case 'zh-CN':
+      return vantZhCN;
+    case 'en':
+      return vantEnUS;
+    case 'zh-TW':
+      return vantZhTW;
+    default:
+      return vantZhCN;
+  }
+});
 
 // ========================================
 // Props 定义
@@ -91,9 +103,9 @@ const props = defineProps({
   tabs: {
     type: Array,
     default: () => [
-      { name: "Home", label: "首页", icon: "home-o" },
-      { name: "Lottery", label: "娱乐", icon: "apps-o" },
-      { name: "Profile", label: "我的", icon: "user-o" },
+      { name: "Home", label: "navigation.home", icon: "home-o" },
+      { name: "Lottery", label: "navigation.games", icon: "apps-o" },
+      { name: "Profile", label: "navigation.profile", icon: "user-o" },
     ],
   },
 });
@@ -108,16 +120,17 @@ const themeStore = useThemeStore();
 // 当前激活的标签页
 const activeTab = ref(route.name || "Home");
 
-// 主题菜单显示状态
-const showThemeMenu = ref(false);
-
 // ========================================
 // 计算属性
 // ========================================
 
 /** 页面标题：优先使用路由 meta，其次使用 props */
 const pageTitle = computed(() => {
-  return route.meta.title || props.title || '瑶光'
+  const titleKey = route.meta.title || props.title
+  if (titleKey) {
+    return t(titleKey)
+  }
+  return t('app.name')
 });
 
 /** 是否显示返回按钮：优先使用路由 meta，其次使用 props */
@@ -130,15 +143,13 @@ const shouldShowTabbar = computed(() => {
   return route.meta.showTabbar === true;
 });
 
-/** 导航标签列表 */
-const navigationTabs = computed(() => props.tabs);
-
-/** 主题选项列表 */
-const themeOptions = computed(() => [
-  { name: "☀️ 白天模式", value: "light" },
-  { name: "🌙 黑夜模式", value: "dark" },
-  { name: "⚙️ 跟随系统", value: "auto" },
-]);
+/** 导航标签列表（将 i18n key 转换为翻译后的文本） */
+const navigationTabs = computed(() => 
+  props.tabs.map(tab => ({
+    ...tab,
+    label: t(tab.label)
+  }))
+);
 
 /** Vant 主题 */
 const vantTheme = computed(() => {
@@ -203,12 +214,6 @@ const handleTabChange = (name) => {
   // 由于使用了 route 属性，Vant 会自动处理路由跳转
   console.log("切换到标签:", name);
 };
-
-/** 主题选择 */
-const handleThemeSelect = (action) => {
-  themeStore.setThemeMode(action.value);
-  showThemeMenu.value = false;
-};
 </script>
 
 <style lang="less" scoped>
@@ -235,6 +240,25 @@ const handleThemeSelect = (action) => {
 
   /* 主题切换按钮样式 */
   .theme-toggle-btn {
+    font-size: 20px;
+    color: var(--color-primary);
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast);
+
+    &:hover {
+      background-color: rgba(0, 122, 255, 0.1);
+    }
+
+    &:active {
+      background-color: rgba(0, 122, 255, 0.2);
+      transform: scale(0.95);
+    }
+  }
+
+  /* 语言切换按钮样式 */
+  .language-toggle-btn {
     font-size: 20px;
     color: var(--color-primary);
     cursor: pointer;

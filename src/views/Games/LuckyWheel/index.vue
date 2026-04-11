@@ -3,23 +3,23 @@
     <!-- 游戏信息栏 -->
     <section class="game-info-bar">
       <div class="info-item">
-        <span class="info-label">我的积分</span>
+        <span class="info-label">{{ t('luckyWheel.myPoints') }}</span>
         <span class="info-value">{{ userPoints }}</span>
       </div>
       <div class="info-item">
-        <span class="info-label">抽奖消耗</span>
-        <span class="info-value cost">10 积分</span>
+        <span class="info-label">{{ t('luckyWheel.cost') }}</span>
+        <span class="info-value cost">10 {{ t('common.points') }}</span>
       </div>
     </section>
 
     <!-- 游戏规则 -->
     <section class="game-rules">
-      <h3 class="rules-title">📋 游戏规则</h3>
+      <h3 class="rules-title">📋 {{ t('luckyWheel.rules.title') }}</h3>
       <ul class="rules-list">
-        <li>每次转动消耗10积分</li>
-        <li>转盘有6个奖品等级，从5积分到100积分不等</li>
-        <li>点击"开始抽奖"按钮转动转盘</li>
-        <li>转盘停止后指针指向的即为您获得的奖品</li>
+        <li>{{ t('luckyWheel.rules.rule1') }}</li>
+        <li>{{ t('luckyWheel.rules.rule2') }}</li>
+        <li>{{ t('luckyWheel.rules.rule3') }}</li>
+        <li>{{ t('luckyWheel.rules.rule4') }}</li>
       </ul>
     </section>
 
@@ -61,7 +61,7 @@
             :disabled="isSpinning || userPoints < 10"
             class="spin-button"
           >
-            {{ isSpinning ? '抽奖中...' : '开始抽奖' }}
+            {{ isSpinning ? t('common.spinning') : t('luckyWheel.start') }}
           </van-button>
         </div>
 
@@ -72,7 +72,7 @@
 
     <!-- 抽奖记录 -->
     <section v-if="spinHistory.length > 0" class="history-section">
-      <h3 class="history-title">🎁 抽奖记录</h3>
+      <h3 class="history-title">🎁 {{ t('luckyWheel.history') }}</h3>
       <div class="history-list">
         <div
           v-for="(record, index) in spinHistory"
@@ -90,7 +90,13 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { showToast } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据定义
@@ -256,7 +262,7 @@ const startSpin = async () => {
   // 检查积分是否足够
   if (userPoints.value < 10) {
     showToast({
-      message: '积分不足，需要10积分',
+      message: t('luckyWheel.insufficientPoints'),
       type: 'fail',
       duration: 2000
     })
@@ -352,7 +358,7 @@ const handleWin = (prize) => {
 
   // 显示中奖提示
   showToast({
-    message: `恭喜获得 ${prize.name}！`,
+    message: t('luckyWheel.won', { prize: prize.name }),
     type: 'success',
     duration: 2000
   })

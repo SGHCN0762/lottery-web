@@ -3,29 +3,29 @@
     <!-- 游戏信息栏 -->
     <section class="game-info-bar">
       <div class="info-item">
-        <span class="info-label">我的积分</span>
+        <span class="info-label">{{ t('dailyCheckIn.myPoints') }}</span>
         <span class="info-value">{{ userPoints }}</span>
       </div>
       <div class="info-item">
-        <span class="info-label">连续签到</span>
-        <span class="info-value streak">{{ consecutiveDays }} 天</span>
+        <span class="info-label">{{ t('dailyCheckIn.consecutiveDays') }}</span>
+        <span class="info-value streak">{{ consecutiveDays }} {{ t('dailyCheckIn.days') }}</span>
       </div>
     </section>
 
     <!-- 游戏规则 -->
     <section class="game-rules">
-      <h3 class="rules-title">📋 游戏规则</h3>
+      <h3 class="rules-title">📋 {{ t('dailyCheckIn.rules.title') }}</h3>
       <ul class="rules-list">
-        <li>每天可签到一次，获得基础10积分</li>
-        <li>连续签到有额外奖励：3天+5分，7天+15分，15天+30分，30天+60分</li>
-        <li>中断后重新签到，连续天数重置为1</li>
-        <li>坚持签到，累积更多积分！</li>
+        <li>{{ t('dailyCheckIn.rules.rule1') }}</li>
+        <li>{{ t('dailyCheckIn.rules.rule2') }}</li>
+        <li>{{ t('dailyCheckIn.rules.rule3') }}</li>
+        <li>{{ t('dailyCheckIn.rules.rule4') }}</li>
       </ul>
     </section>
 
     <!-- 签到日历 -->
     <section class="calendar-section">
-      <h3 class="calendar-title">📅 本月签到记录</h3>
+      <h3 class="calendar-title">📅 {{ t('dailyCheckIn.calendar.title') }}</h3>
       <div class="calendar-grid">
         <div
           v-for="day in calendarDays"
@@ -45,7 +45,7 @@
 
     <!-- 签到奖励展示 -->
     <section class="rewards-section">
-      <h3 class="rewards-title">🎁 连续签到奖励</h3>
+      <h3 class="rewards-title">🎁 {{ t('dailyCheckIn.rewards.title') }}</h3>
       <div class="rewards-grid">
         <div
           v-for="milestone in milestones"
@@ -56,8 +56,8 @@
             'current': consecutiveDays === milestone.days - 1
           }"
         >
-          <div class="milestone-days">{{ milestone.days }}天</div>
-          <div class="milestone-bonus">+{{ milestone.bonus }}积分</div>
+          <div class="milestone-days">{{ milestone.days }}{{ t('dailyCheckIn.days') }}</div>
+          <div class="milestone-bonus">+{{ milestone.bonus }}{{ t('common.points') }}</div>
           <div class="milestone-status">
             {{ getMilestoneStatus(milestone) }}
           </div>
@@ -69,7 +69,7 @@
     <section class="action-section">
       <div v-if="canCheckIn" class="checkin-prompt">
         <div class="prompt-icon">✨</div>
-        <p class="prompt-text">今天还没有签到哦！</p>
+        <p class="prompt-text">{{ t('dailyCheckIn.notCheckedIn') }}</p>
       </div>
       
       <van-button
@@ -80,17 +80,17 @@
         :disabled="!canCheckIn || isCheckingIn"
         class="checkin-button"
       >
-        {{ isCheckingIn ? '签到中...' : canCheckIn ? '立即签到' : '今日已签到' }}
+        {{ isCheckingIn ? t('dailyCheckIn.checkingIn') : canCheckIn ? t('dailyCheckIn.checkInNow') : t('dailyCheckIn.checkedInToday') }}
       </van-button>
 
       <div v-if="!canCheckIn && !hasCheckedInToday" class="next-checkin-hint">
-        下次签到时间：{{ nextCheckInTime }}
+        {{ t('dailyCheckIn.nextCheckInTime') }}：{{ nextCheckInTime }}
       </div>
     </section>
 
     <!-- 签到历史记录 -->
     <section v-if="checkInHistory.length > 0" class="history-section">
-      <h3 class="history-title">📜 最近签到记录</h3>
+      <h3 class="history-title">📜 {{ t('dailyCheckIn.history.title') }}</h3>
       <div class="history-list">
         <div
           v-for="(record, index) in checkInHistory"
@@ -99,11 +99,11 @@
         >
           <div class="history-date">{{ record.date }}</div>
           <div class="history-details">
-            <span class="history-base">基础 +10</span>
+            <span class="history-base">{{ t('dailyCheckIn.history.base') }} +10</span>
             <span v-if="record.bonus > 0" class="history-bonus">
-              连续{{ record.consecutiveDays }}天 +{{ record.bonus }}
+              {{ t('dailyCheckIn.history.consecutive', { days: record.consecutiveDays }) }} +{{ record.bonus }}
             </span>
-            <span class="history-total">共 +{{ record.totalPoints }}</span>
+            <span class="history-total">{{ t('dailyCheckIn.history.total') }} +{{ record.totalPoints }}</span>
           </div>
         </div>
       </div>
@@ -113,7 +113,13 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { showToast } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据定义
@@ -382,11 +388,11 @@ const calculateConsecutiveBonus = (days) => {
  */
 const getMilestoneStatus = (milestone) => {
   if (consecutiveDays.value >= milestone.days) {
-    return '✓ 已获得'
+    return t('dailyCheckIn.milestone.achieved')
   } else if (consecutiveDays.value === milestone.days - 1) {
-    return '🔥 差1天'
+    return t('dailyCheckIn.milestone.oneDayLeft')
   } else {
-    return `还需${milestone.days - consecutiveDays.value}天`
+    return t('dailyCheckIn.milestone.daysLeft', { days: milestone.days - consecutiveDays.value })
   }
 }
 
@@ -460,10 +466,10 @@ const handleCheckIn = async () => {
   
   // 延迟显示成功提示，提升用户体验
   setTimeout(() => {
-    let message = `签到成功！获得 ${basePoints} 积分`
+    let message = t('dailyCheckIn.success.base', { points: basePoints })
     
     if (bonusPoints > 0) {
-      message += `，连续${consecutiveDays.value}天额外奖励 ${bonusPoints} 积分`
+      message += t('dailyCheckIn.success.bonus', { days: consecutiveDays.value, points: bonusPoints })
     }
     
     showToast({

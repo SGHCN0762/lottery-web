@@ -12,23 +12,23 @@
     <section class="stats-card">
       <div class="stat-item">
         <div class="stat-value">{{ totalGames }}</div>
-        <div class="stat-label">总场次</div>
+        <div class="stat-label">{{ t('records.totalGames') }}</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
         <div class="stat-value">{{ winRate }}%</div>
-        <div class="stat-label">胜率</div>
+        <div class="stat-label">{{ t('records.winRate') }}</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
         <div class="stat-value">{{ totalPoints }}</div>
-        <div class="stat-label">总积分</div>
+        <div class="stat-label">{{ t('records.totalPoints') }}</div>
       </div>
     </section>
 
     <!-- 记录列表 -->
     <section class="records-list">
-      <van-empty v-if="records.length === 0" description="暂无游戏记录" />
+      <van-empty v-if="records.length === 0" :description="t('records.noRecords')" />
       
       <van-cell-group v-else inset>
         <van-cell
@@ -49,11 +49,11 @@
           <template #label>
             <div class="record-details">
               <div class="detail-row">
-                <span class="detail-label">时间：</span>
+                <span class="detail-label">{{ t('records.time') }}：</span>
                 <span class="detail-value">{{ formatTime(record.time) }}</span>
               </div>
               <div class="detail-row">
-                <span class="detail-label">积分变化：</span>
+                <span class="detail-label">{{ t('records.pointsChange') }}：</span>
                 <span 
                   class="detail-value points-change"
                   :class="{ positive: record.pointsChange > 0, negative: record.pointsChange < 0 }"
@@ -69,13 +69,14 @@
 
     <!-- 加载更多 -->
     <div class="load-more" v-if="hasMore && records.length > 0">
-      <van-button block round @click="loadMore">加载更多</van-button>
+      <van-button block round @click="loadMore">{{ t('records.loadMore') }}</van-button>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { 
   DropdownMenu as VanDropdownMenu,
   DropdownItem as VanDropdownItem,
@@ -86,6 +87,11 @@ import {
   Empty as VanEmpty,
   Button as VanButton
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据
@@ -99,19 +105,19 @@ const hasMore = ref(true)
 // ========================================
 // 配置选项
 // ========================================
-const gameTypeOptions = [
-  { text: '全部游戏', value: 'all' },
-  { text: '数字猜猜猜', value: 'number-guess' },
-  { text: '幸运转盘', value: 'lucky-wheel' },
-  { text: '答题挑战', value: 'quiz-challenge' },
-  { text: '每日签到', value: 'daily-checkin' }
-]
+const gameTypeOptions = computed(() => [
+  { text: t('records.filter.all'), value: 'all' },
+  { text: t('lottery.numberGuess'), value: 'numberGuess' },
+  { text: t('lottery.luckyWheel'), value: 'luckyWheel' },
+  { text: t('lottery.quizChallenge'), value: 'quizChallenge' },
+  { text: t('lottery.dailyCheckIn'), value: 'dailyCheckIn' }
+])
 
-const timeRangeOptions = [
-  { text: '最近7天', value: 'week' },
-  { text: '最近30天', value: 'month' },
-  { text: '全部时间', value: 'all' }
-]
+const timeRangeOptions = computed(() => [
+  { text: t('records.filter.week'), value: 'week' },
+  { text: t('records.filter.month'), value: 'month' },
+  { text: t('records.filter.threeMonths'), value: 'threeMonths' }
+])
 
 // ========================================
 // 计算属性

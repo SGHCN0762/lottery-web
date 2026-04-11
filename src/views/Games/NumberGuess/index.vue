@@ -3,23 +3,23 @@
     <!-- 游戏信息栏 -->
     <section class="game-info-bar">
       <div class="info-item">
-        <span class="info-label">剩余机会</span>
+        <span class="info-label">{{ t('numberGuess.remainingAttempts') }}</span>
         <span class="info-value">{{ remainingAttempts }}</span>
       </div>
       <div class="info-item">
-        <span class="info-label">我的积分</span>
+        <span class="info-label">{{ t('numberGuess.myPoints') }}</span>
         <span class="info-value">{{ userPoints }}</span>
       </div>
     </section>
 
     <!-- 游戏规则 -->
     <section class="game-rules">
-      <h3 class="rules-title">📋 游戏规则</h3>
+      <h3 class="rules-title">📋 {{ t('numberGuess.rules.title') }}</h3>
       <ul class="rules-list">
-        <li>系统会生成一个1-100的随机数字</li>
-        <li>你有7次机会猜测这个数字</li>
-        <li>猜中奖励：第1-2次50积分，第3-4次30积分，第5-7次10积分</li>
-        <li>每次猜测后会提示"太大了"或"太小了"</li>
+        <li>{{ t('numberGuess.rules.rule1') }}</li>
+        <li>{{ t('numberGuess.rules.rule2') }}</li>
+        <li>{{ t('numberGuess.rules.rule3') }}</li>
+        <li>{{ t('numberGuess.rules.rule4') }}</li>
       </ul>
     </section>
 
@@ -28,21 +28,21 @@
       <!-- 游戏未开始 -->
       <div v-if="!gameStarted" class="game-start-screen">
         <div class="start-icon">🎯</div>
-        <h2 class="start-title">数字猜猜猜</h2>
-        <p class="start-desc">考验你的运气和直觉！</p>
+        <h2 class="start-title">{{ t('numberGuess.title') }}</h2>
+        <p class="start-desc">{{ t('numberGuess.startDesc') }}</p>
         <van-button type="primary" size="large" @click="startGame" class="start-btn">
-          开始游戏
+          {{ t('numberGuess.startGame') }}
         </van-button>
       </div>
 
       <!-- 游戏中 -->
       <div v-else-if="!gameEnded" class="game-playing-screen">
         <div class="guess-input-section">
-          <label class="input-label">请输入你的猜测 (1-100)</label>
+          <label class="input-label">{{ t('numberGuess.inputLabel') }}</label>
           <van-field
             v-model="currentGuess"
             type="number"
-            placeholder="输入1-100的数字"
+            :placeholder="t('numberGuess.inputPlaceholder')"
             :disabled="isProcessing"
             class="guess-input"
             @keyup.enter="submitGuess"
@@ -54,13 +54,13 @@
             :disabled="!isValidGuess || isProcessing"
             class="submit-btn"
           >
-            {{ isProcessing ? '验证中...' : '提交猜测' }}
+            {{ isProcessing ? t('numberGuess.processing') : t('numberGuess.submitGuess') }}
           </van-button>
         </div>
 
         <!-- 猜测历史 -->
         <div v-if="guessHistory.length > 0" class="guess-history">
-          <h4 class="history-title">猜测记录</h4>
+          <h4 class="history-title">{{ t('numberGuess.history.title') }}</h4>
           <div class="history-list">
             <div
               v-for="(record, index) in guessHistory"
@@ -81,10 +81,10 @@
           {{ winStatus === 'win' ? '🎉' : '😢' }}
         </div>
         <h2 class="end-title">{{ winMessage }}</h2>
-        <p v-if="winStatus === 'win'" class="end-reward">获得 {{ rewardPoints }} 积分！</p>
-        <p v-else class="end-answer">正确答案是：{{ targetNumber }}</p>
+        <p v-if="winStatus === 'win'" class="end-reward">{{ t('numberGuess.reward', { points: rewardPoints }) }}</p>
+        <p v-else class="end-answer">{{ t('numberGuess.correctAnswer', { number: targetNumber }) }}</p>
         <van-button type="primary" size="large" @click="resetGame" class="restart-btn">
-          再来一局
+          {{ t('numberGuess.playAgain') }}
         </van-button>
       </div>
     </section>
@@ -93,7 +93,13 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { showToast } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据定义
@@ -148,9 +154,9 @@ const isValidGuess = computed(() => {
  */
 const winMessage = computed(() => {
   if (winStatus.value === 'win') {
-    return '恭喜你，猜对了！'
+    return t('numberGuess.winMessage')
   }
-  return '很遗憾，机会用完了'
+  return t('numberGuess.loseMessage')
 })
 
 // ========================================
@@ -297,7 +303,7 @@ const handleWin = () => {
 
   // 显示成功提示
   showToast({
-    message: `恭喜！获得 ${rewardPoints.value} 积分`,
+    message: t('numberGuess.successToast', { points: rewardPoints.value }),
     type: 'success',
     duration: 2000
   })
@@ -313,7 +319,7 @@ const handleLose = () => {
   remainingAttempts.value = 0
 
   showToast({
-    message: '机会用完了，再试一次吧！',
+    message: t('numberGuess.failToast'),
     type: 'fail',
     duration: 2000
   })

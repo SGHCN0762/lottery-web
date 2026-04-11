@@ -3,17 +3,17 @@
     <!-- 积分概览卡片 -->
     <section class="overview-card">
       <div class="current-points">
-        <div class="label">当前积分</div>
+        <div class="label">{{ t('points.currentPoints') }}</div>
         <div class="value">{{ currentPoints }}</div>
       </div>
       <div class="points-trend">
         <div class="trend-item">
           <van-icon name="arrow-up" color="#52c41a" />
-          <span>本月收入 {{ monthIncome }}</span>
+          <span>{{ t('points.monthIncome') }} {{ monthIncome }}</span>
         </div>
         <div class="trend-item">
           <van-icon name="arrow-down" color="#ff4d4f" />
-          <span>本月支出 {{ monthExpense }}</span>
+          <span>{{ t('points.monthExpense') }} {{ monthExpense }}</span>
         </div>
       </div>
     </section>
@@ -21,15 +21,15 @@
     <!-- 时间筛选 -->
     <section class="filter-section">
       <van-tabs v-model:active="activeTab" @change="handleTabChange">
-        <van-tab title="全部" name="all" />
-        <van-tab title="收入" name="income" />
-        <van-tab title="支出" name="expense" />
+        <van-tab :title="t('points.tabs.all')" name="all" />
+        <van-tab :title="t('points.tabs.income')" name="income" />
+        <van-tab :title="t('points.tabs.expense')" name="expense" />
       </van-tabs>
     </section>
 
     <!-- 积分明细列表 -->
     <section class="points-list">
-      <van-empty v-if="filteredRecords.length === 0" description="暂无积分记录" />
+      <van-empty v-if="filteredRecords.length === 0" :description="t('points.noRecords')" />
       
       <van-cell-group v-else inset>
         <van-cell
@@ -65,13 +65,14 @@
 
     <!-- 加载更多 -->
     <div class="load-more" v-if="hasMore && filteredRecords.length > 0">
-      <van-button block round @click="loadMore">加载更多</van-button>
+      <van-button block round @click="loadMore">{{ t('points.loadMore') }}</van-button>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { 
   Tabs as VanTabs,
   Tab as VanTab,
@@ -81,6 +82,11 @@ import {
   Empty as VanEmpty,
   Button as VanButton
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据

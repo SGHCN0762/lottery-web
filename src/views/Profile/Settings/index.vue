@@ -2,9 +2,9 @@
   <div class="settings-page">
     <!-- 个人信息 -->
     <section class="settings-section">
-      <div class="section-title">个人信息</div>
+      <div class="section-title">{{ t('settings.personalInfo') }}</div>
       <van-cell-group inset>
-        <van-cell title="头像" is-link @click="showAvatarPicker = true">
+        <van-cell :title="t('settings.avatar')" is-link @click="showAvatarPicker = true">
           <template #right-icon>
             <van-image
               round
@@ -16,14 +16,14 @@
         </van-cell>
         
         <van-cell 
-          title="昵称" 
+          :title="t('settings.nickname')" 
           :value="userInfo.nickname"
           is-link 
           @click="showNicknameEdit = true"
         />
         
         <van-cell 
-          title="用户ID" 
+          :title="t('settings.userId')" 
           :value="userInfo.userId"
           readonly
         />
@@ -32,27 +32,27 @@
 
     <!-- 账号安全 -->
     <section class="settings-section">
-      <div class="section-title">账号安全</div>
+      <div class="section-title">{{ t('settings.accountSecurity') }}</div>
       <van-cell-group inset>
         <van-cell 
-          title="绑定手机" 
-          :value="userInfo.phone || '未绑定'"
+          :title="t('settings.bindPhone')" 
+          :value="userInfo.phone || t('settings.notBound')"
           is-link 
           @click="handleBindPhone"
         >
           <template #right-icon>
-            <van-tag v-if="!userInfo.phone" type="danger" size="medium">未绑定</van-tag>
+            <van-tag v-if="!userInfo.phone" type="danger" size="medium">{{ t('settings.notBound') }}</van-tag>
           </template>
         </van-cell>
         
         <van-cell 
-          title="修改密码" 
+          :title="t('settings.changePassword')" 
           is-link 
           @click="handleChangePassword"
         />
         
         <van-cell 
-          title="登录设备管理" 
+          :title="t('settings.deviceManage')" 
           is-link 
           @click="handleDeviceManage"
         />
@@ -61,21 +61,21 @@
 
     <!-- 通知设置 -->
     <section class="settings-section">
-      <div class="section-title">通知设置</div>
+      <div class="section-title">{{ t('settings.notification') }}</div>
       <van-cell-group inset>
-        <van-cell title="游戏结果通知">
+        <van-cell :title="t('settings.gameNotification')">
           <template #right-icon>
             <van-switch v-model="settings.gameNotification" size="20" />
           </template>
         </van-cell>
         
-        <van-cell title="签到提醒">
+        <van-cell :title="t('settings.checkinReminder')">
           <template #right-icon>
             <van-switch v-model="settings.checkinReminder" size="20" />
           </template>
         </van-cell>
         
-        <van-cell title="系统消息">
+        <van-cell :title="t('settings.systemMessage')">
           <template #right-icon>
             <van-switch v-model="settings.systemMessage" size="20" />
           </template>
@@ -85,15 +85,15 @@
 
     <!-- 隐私设置 -->
     <section class="settings-section">
-      <div class="section-title">隐私设置</div>
+      <div class="section-title">{{ t('settings.privacy') }}</div>
       <van-cell-group inset>
-        <van-cell title="显示在线状态">
+        <van-cell :title="t('settings.showOnlineStatus')">
           <template #right-icon>
             <van-switch v-model="settings.showOnlineStatus" size="20" />
           </template>
         </van-cell>
         
-        <van-cell title="允许陌生人查看战绩">
+        <van-cell :title="t('settings.allowViewRecords')">
           <template #right-icon>
             <van-switch v-model="settings.allowViewRecords" size="20" />
           </template>
@@ -101,26 +101,52 @@
       </van-cell-group>
     </section>
 
-    <!-- 其他设置 -->
+    <!-- 语言设置 -->
     <section class="settings-section">
-      <div class="section-title">其他</div>
+      <div class="section-title">{{ t('settings.language') }}</div>
       <van-cell-group inset>
         <van-cell 
-          title="清除缓存" 
+          :title="t('settings.currentLanguage')" 
+          :value="currentLanguageName"
+          is-link 
+          @click="showLanguagePicker = true"
+        />
+      </van-cell-group>
+    </section>
+
+    <!-- 主题设置 -->
+    <section class="settings-section">
+      <div class="section-title">{{ t('settings.theme') }}</div>
+      <van-cell-group inset>
+        <van-cell 
+          :title="t('settings.currentTheme')" 
+          :value="currentThemeName"
+          is-link 
+          @click="showThemePicker = true"
+        />
+      </van-cell-group>
+    </section>
+
+    <!-- 其他设置 -->
+    <section class="settings-section">
+      <div class="section-title">{{ t('settings.others') }}</div>
+      <van-cell-group inset>
+        <van-cell 
+          :title="t('settings.clearCache')" 
           :value="cacheSize"
           is-link 
           @click="handleClearCache"
         />
         
         <van-cell 
-          title="检查更新" 
+          :title="t('settings.checkUpdate')" 
           :value="currentVersion"
           is-link 
           @click="handleCheckUpdate"
         />
         
         <van-cell 
-          title="退出登录" 
+          :title="t('settings.logout')" 
           class="logout-cell"
           @click="handleLogout"
         />
@@ -130,13 +156,13 @@
     <!-- 昵称编辑弹窗 -->
     <van-dialog
       v-model:show="showNicknameEdit"
-      title="修改昵称"
+      :title="t('settings.changeNickname')"
       show-cancel-button
       @confirm="handleNicknameConfirm"
     >
       <van-field
         v-model="tempNickname"
-        placeholder="请输入昵称"
+        :placeholder="t('settings.nicknamePlaceholder')"
         maxlength="20"
         show-word-limit
       />
@@ -147,7 +173,25 @@
       v-model:show="showAvatarPicker"
       :actions="avatarActions"
       @select="handleAvatarSelect"
-      cancel-text="取消"
+      :cancel-text="t('common.cancel')"
+    />
+
+    <!-- 语言选择器 -->
+    <van-action-sheet
+      v-model:show="showLanguagePicker"
+      :actions="languageOptions"
+      @select="handleLanguageSelect"
+      :cancel-text="t('common.cancel')"
+      :description="t('language.selectLanguage')"
+    />
+
+    <!-- 主题选择器 -->
+    <van-action-sheet
+      v-model:show="showThemePicker"
+      :actions="themeOptions"
+      @select="handleThemeSelect"
+      :cancel-text="t('common.cancel')"
+      :description="t('theme.selectTheme')"
     />
 
     <!-- 隐藏的文件输入框 -->
@@ -170,7 +214,7 @@
     >
       <div class="cropper-popup">
         <div class="popup-header">
-          <h3>调整头像</h3>
+          <h3>{{ t('settings.adjustAvatar') }}</h3>
         </div>
         
         <div class="cropper-container">
@@ -187,7 +231,7 @@
           
           <div class="adjust-controls">
             <div class="control-item">
-              <span>缩放</span>
+              <span>{{ t('settings.scale') }}</span>
               <van-slider 
                 v-model="scale" 
                 :min="0.5" 
@@ -198,7 +242,7 @@
             </div>
             
             <div class="control-item">
-              <span>旋转</span>
+              <span>{{ t('settings.rotate') }}</span>
               <van-slider 
                 v-model="rotate" 
                 :min="0" 
@@ -210,9 +254,13 @@
           </div>
         </div>
         
-        <div class="cropper-actions">
-          <van-button block round @click="cancelCropper">取消</van-button>
-          <van-button block round type="primary" @click="confirmAvatar">确认使用</van-button>
+        <div class="popup-footer">
+          <van-button plain round @click="cancelCropper">
+            {{ t('common.cancel') }}
+          </van-button>
+          <van-button type="primary" round @click="confirmAvatar">
+            {{ t('common.confirm') }}
+          </van-button>
         </div>
       </div>
     </van-popup>
@@ -262,7 +310,7 @@
                     :disabled="countdown > 0"
                     @click="sendVerificationCode"
                   >
-                    {{ countdown > 0 ? `${countdown}s` : '获取验证码' }}
+                    {{ countdown > 0 ? `${countdown}${t('settings.second')}` : t('settings.getCode') }}
                   </van-button>
                 </template>
               </van-field>
@@ -270,14 +318,14 @@
             
             <div class="submit-btn">
               <van-button round block type="primary" native-type="submit" :loading="phoneSubmitting">
-                {{ userInfo.phone ? '更换' : '绑定' }}
+                {{ userInfo.phone ? t('settings.change') : t('settings.bind') }}
               </van-button>
             </div>
           </van-form>
           
           <div class="tips">
             <van-icon name="info-o" size="14" />
-            <span>绑定后可用于账号找回和安全验证</span>
+            <span>{{ t('settings.bindPhoneTip') }}</span>
           </div>
         </div>
       </div>
@@ -293,7 +341,7 @@
     >
       <div class="change-password-popup">
         <div class="popup-header">
-          <h3>修改密码</h3>
+          <h3>{{ t('settings.passwordChangeTitle') }}</h3>
         </div>
         
         <div class="form-content">
@@ -302,48 +350,48 @@
               <van-field
                 v-model="passwordForm.oldPassword"
                 name="oldPassword"
-                label="原密码"
-                placeholder="请输入原密码"
+                :label="t('settings.oldPassword')"
+                :placeholder="t('settings.oldPasswordPlaceholder')"
                 type="password"
-                :rules="[{ required: true, message: '请输入原密码' }]"
+                :rules="[{ required: true, message: t('settings.oldPasswordRequired') }]"
               />
               
               <van-field
                 v-model="passwordForm.newPassword"
                 name="newPassword"
-                label="新密码"
-                placeholder="请输入新密码（6-20位）"
+                :label="t('settings.newPassword')"
+                :placeholder="t('settings.newPasswordPlaceholder')"
                 type="password"
                 maxlength="20"
                 :rules="[
-                  { required: true, message: '请输入新密码' },
-                  { pattern: /^.{6,20}$/, message: '密码长度为6-20位' }
+                  { required: true, message: t('settings.newPasswordRequired') },
+                  { pattern: /^.{6,20}$/, message: t('settings.passwordLengthRule') }
                 ]"
               />
               
               <van-field
                 v-model="passwordForm.confirmPassword"
                 name="confirmPassword"
-                label="确认密码"
-                placeholder="请再次输入新密码"
+                :label="t('settings.confirmPassword')"
+                :placeholder="t('settings.confirmPasswordPlaceholder')"
                 type="password"
                 :rules="[
-                  { required: true, message: '请确认新密码' },
-                  { validator: validateConfirmPassword, message: '两次密码输入不一致' }
+                  { required: true, message: t('settings.confirmPasswordRequired') },
+                  { validator: validateConfirmPassword, message: t('settings.passwordMismatch') }
                 ]"
               />
             </van-cell-group>
             
             <div class="submit-btn">
               <van-button round block type="primary" native-type="submit" :loading="passwordSubmitting">
-                确认修改
+                {{ t('settings.confirmChange') }}
               </van-button>
             </div>
           </van-form>
           
           <div class="tips">
             <van-icon name="shield-o" size="14" />
-            <span>建议定期更换密码，保障账号安全</span>
+            <span>{{ t('settings.passwordTip') }}</span>
           </div>
         </div>
       </div>
@@ -359,14 +407,14 @@
     >
       <div class="device-manage-popup">
         <div class="popup-header">
-          <h3>登录设备管理</h3>
-          <p class="subtitle">共 {{ deviceList.length }} 台设备</p>
+          <h3>{{ t('settings.deviceManageTitle') }}</h3>
+          <p class="subtitle">{{ t('settings.totalDevices', { count: deviceList.length }) }}</p>
         </div>
         
         <div class="device-list">
           <van-empty 
             v-if="deviceList.length === 0" 
-            description="暂无登录设备"
+            :description="t('settings.noDevices')"
             image="search"
           />
           
@@ -388,14 +436,14 @@
               <div class="device-details">
                 <div class="device-name">
                   {{ device.name }}
-                  <van-tag v-if="device.isCurrent" type="primary" size="mini" round>当前设备</van-tag>
-                  <van-tag v-if="device.isTrusted" type="success" size="mini" round>可信设备</van-tag>
+                  <van-tag v-if="device.isCurrent" type="primary" size="mini" round>{{ t('settings.currentDevice') }}</van-tag>
+                  <van-tag v-if="device.isTrusted" type="success" size="mini" round>{{ t('settings.trustedDevice') }}</van-tag>
                 </div>
                 
                 <div class="device-meta">
                   <span class="meta-item">
                     <van-icon name="location-o" size="12" />
-                    {{ device.location || '未知位置' }}
+                    {{ device.location || t('settings.unknownLocation') }}
                   </span>
                   <span class="meta-item">
                     <van-icon name="clock-o" size="12" />
@@ -416,7 +464,7 @@
                 type="primary"
                 @click="toggleTrustDevice(device)"
               >
-                {{ device.isTrusted ? '取消信任' : '设为可信' }}
+                {{ device.isTrusted ? t('settings.untrust') : t('settings.trust') }}
               </van-button>
               
               <van-button 
@@ -425,7 +473,7 @@
                 plain
                 @click="removeDevice(device)"
               >
-                移除设备
+                {{ t('settings.removeDevice') }}
               </van-button>
             </div>
           </div>
@@ -438,12 +486,12 @@
             type="danger"
             @click="removeAllDevices"
           >
-            移除所有其他设备
+            {{ t('settings.removeAllDevices') }}
           </van-button>
           
           <div class="footer-tips">
             <van-icon name="info-o" size="14" />
-            <span>移除设备后，该设备需要重新登录</span>
+            <span>{{ t('settings.removeDeviceTip') }}</span>
           </div>
         </div>
       </div>
@@ -452,9 +500,11 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, computed } from 'vue'
+import { ref, reactive, onMounted, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { showToast, showConfirmDialog } from 'vant'
+import { useThemeStore } from '@/stores/theme'
 import { 
   CellGroup as VanCellGroup,
   Cell as VanCell,
@@ -468,6 +518,17 @@ import {
   Button as VanButton,
   Slider as VanSlider
 } from 'vant'
+import { SUPPORTED_LOCALES, switchLanguage, getCurrentLocale } from '@/i18n'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
+
+// ========================================
+// 主题 Store
+// ========================================
+const themeStore = useThemeStore()
 
 // ========================================
 // 路由实例
@@ -483,6 +544,8 @@ const showCropper = ref(false)
 const showBindPhone = ref(false)
 const showChangePassword = ref(false)
 const showDeviceManage = ref(false)
+const showLanguagePicker = ref(false)
+const showThemePicker = ref(false)
 const tempNickname = ref('')
 const cacheSize = ref('12.5MB')
 const currentVersion = ref('v1.0.0')
@@ -551,6 +614,65 @@ const imageStyle = computed(() => {
   }
 })
 
+/**
+ * 语言选项列表
+ */
+const languageOptions = computed(() => 
+  SUPPORTED_LOCALES.map(locale => ({
+    name: `${locale.flag} ${t(`language.${locale.code.replace('-', '')}`)}`,
+    value: locale.code
+  }))
+)
+
+/**
+ * 当前语言名称
+ */
+const currentLanguageName = computed(() => {
+  const locale = getCurrentLocale()
+  const lang = SUPPORTED_LOCALES.find(l => l.code === locale)
+  return lang ? t(`language.${lang.code.replace('-', '')}`) : t('language.zhCN')
+})
+
+/**
+ * 当前语言国旗
+ */
+const currentLanguageFlag = computed(() => {
+  const locale = getCurrentLocale()
+  const lang = SUPPORTED_LOCALES.find(l => l.code === locale)
+  return lang ? lang.flag : '🇨'
+})
+
+/**
+ * 当前主题名称
+ */
+const currentThemeName = computed(() => {
+  const mode = themeStore.themeMode
+  return t(`theme.${mode}`)
+})
+
+/**
+ * 当前主题图标
+ */
+const currentThemeIcon = computed(() => {
+  const mode = themeStore.themeMode
+  const icons = {
+    light: '☀️',
+    dark: '🌙',
+    auto: '⚙️'
+  }
+  return icons[mode] || '☀️'
+})
+
+/**
+ * 主题选项列表
+ */
+const themeOptions = computed(() => [
+  { name: t('theme.light'), value: "light" },
+  { name: t('theme.dark'), value: "dark" },
+  { name: t('theme.auto'), value: "auto" },
+]);
+
+
 // ========================================
 // 工具函数
 // ========================================
@@ -590,12 +712,12 @@ const saveSettings = () => {
  */
 const handleNicknameConfirm = () => {
   if (!tempNickname.value.trim()) {
-    showToast('昵称不能为空')
+    showToast(t('settings.nicknameEmpty'))
     return
   }
   
   userInfo.nickname = tempNickname.value.trim()
-  showToast('昵称修改成功')
+  showToast(t('settings.nicknameSuccess'))
   
   // 保存到 localStorage
   const userInfoData = {
@@ -635,13 +757,13 @@ const handleFileChange = (event) => {
   
   // 验证文件类型
   if (!file.type.startsWith('image/')) {
-    showToast({ type: 'fail', message: '请选择图片文件' })
+    showToast({ type: 'fail', message: t('settings.invalidImageFile') })
     return
   }
   
   // 验证文件大小（限制5MB）
   if (file.size > 5 * 1024 * 1024) {
-    showToast({ type: 'fail', message: '图片大小不能超过5MB' })
+    showToast({ type: 'fail', message: t('settings.imageTooLarge') })
     return
   }
   
@@ -688,7 +810,7 @@ const cancelCropper = () => {
  */
 const confirmAvatar = () => {
   if (!tempImage.value) {
-    showToast('请先选择图片')
+    showToast(t('settings.selectImageFirst'))
     return
   }
   
@@ -748,7 +870,7 @@ const confirmAvatar = () => {
     scale.value = 1
     rotate.value = 0
     
-    showToast({ type: 'success', message: '头像更新成功' })
+    showToast({ type: 'success', message: t('settings.avatarSuccess') })
   }
   
   img.src = tempImage.value
@@ -787,12 +909,12 @@ const handleBindPhone = () => {
 const sendVerificationCode = async () => {
   // 验证手机号
   if (!/^1[3-9]\d{9}$/.test(phoneForm.phone)) {
-    showToast({ type: 'fail', message: '请输入正确的手机号' })
+    showToast({ type: 'fail', message: t('settings.invalidPhone') })
     return
   }
   
   // 模拟发送验证码
-  showToast({ type: 'success', message: '验证码已发送（测试：123456）' })
+  showToast({ type: 'success', message: t('settings.codeSent') })
   
   // 开始倒计时
   countdown.value = 60
@@ -810,13 +932,13 @@ const sendVerificationCode = async () => {
 const handleBindPhoneSubmit = async () => {
   // 验证手机号
   if (!/^1[3-9]\d{9}$/.test(phoneForm.phone)) {
-    showToast({ type: 'fail', message: '请输入正确的手机号' })
+    showToast({ type: 'fail', message: t('settings.invalidPhone') })
     return
   }
   
   // 验证验证码（测试用：123456）
   if (phoneForm.code !== '123456') {
-    showToast({ type: 'fail', message: '验证码错误（测试码：123456）' })
+    showToast({ type: 'fail', message: t('settings.codeError') })
     return
   }
   
@@ -840,7 +962,7 @@ const handleBindPhoneSubmit = async () => {
     
     showToast({ 
       type: 'success', 
-      message: userInfo.phone ? '手机号更换成功' : '手机号绑定成功' 
+      message: userInfo.phone ? t('settings.phoneChanged') : t('settings.phoneBound') 
     })
   }, 1500)
 }
@@ -869,25 +991,25 @@ const validateConfirmPassword = (value) => {
 const handleChangePasswordSubmit = async () => {
   // 验证原密码（测试用：123456）
   if (passwordForm.oldPassword !== '123456') {
-    showToast({ type: 'fail', message: '原密码错误（测试密码：123456）' })
+    showToast({ type: 'fail', message: t('settings.oldPasswordError') })
     return
   }
   
   // 验证新密码长度
   if (passwordForm.newPassword.length < 6 || passwordForm.newPassword.length > 20) {
-    showToast({ type: 'fail', message: '新密码长度为6-20位' })
+    showToast({ type: 'fail', message: t('settings.passwordLength') })
     return
   }
   
   // 验证两次密码是否一致
   if (passwordForm.newPassword !== passwordForm.confirmPassword) {
-    showToast({ type: 'fail', message: '两次密码输入不一致' })
+    showToast({ type: 'fail', message: t('settings.passwordMismatch') })
     return
   }
   
   // 验证新密码不能与原密码相同
   if (passwordForm.newPassword === passwordForm.oldPassword) {
-    showToast({ type: 'fail', message: '新密码不能与原密码相同' })
+    showToast({ type: 'fail', message: t('settings.samePassword') })
     return
   }
   
@@ -905,7 +1027,7 @@ const handleChangePasswordSubmit = async () => {
     
     showToast({ 
       type: 'success', 
-      message: '密码修改成功，请使用新密码登录' 
+      message: t('settings.passwordChanged') 
     })
   }, 1500)
 }
@@ -926,7 +1048,83 @@ const loadDeviceList = () => {
   const storedDevices = localStorage.getItem('loginDevices')
   
   if (storedDevices) {
-    deviceList.value = JSON.parse(storedDevices)
+    try {
+      const parsedDevices = JSON.parse(storedDevices)
+      // 如果解析后是空数组，初始化模拟数据
+      if (Array.isArray(parsedDevices) && parsedDevices.length > 0) {
+        deviceList.value = parsedDevices
+      } else {
+        // 初始化模拟数据
+        deviceList.value = [
+          {
+            id: 1,
+            name: 'iPhone 14 Pro',
+            type: 'mobile',
+            location: '北京',
+            ip: '192.168.1.100',
+            lastLogin: Date.now(),
+            isCurrent: true,
+            isTrusted: true
+          },
+          {
+            id: 2,
+            name: 'MacBook Pro',
+            type: 'desktop',
+            location: '上海',
+            ip: '192.168.1.101',
+            lastLogin: Date.now() - 86400000, // 1天前
+            isCurrent: false,
+            isTrusted: true
+          },
+          {
+            id: 3,
+            name: 'iPad Air',
+            type: 'tablet',
+            location: '广州',
+            ip: '192.168.1.102',
+            lastLogin: Date.now() - 259200000, // 3天前
+            isCurrent: false,
+            isTrusted: false
+          }
+        ]
+        saveDeviceList()
+      }
+    } catch (error) {
+      // 解析失败，初始化模拟数据
+      deviceList.value = [
+        {
+          id: 1,
+          name: 'iPhone 14 Pro',
+          type: 'mobile',
+          location: '北京',
+          ip: '192.168.1.100',
+          lastLogin: Date.now(),
+          isCurrent: true,
+          isTrusted: true
+        },
+        {
+          id: 2,
+          name: 'MacBook Pro',
+          type: 'desktop',
+          location: '上海',
+          ip: '192.168.1.101',
+          lastLogin: Date.now() - 86400000, // 1天前
+          isCurrent: false,
+          isTrusted: true
+        },
+        {
+          id: 3,
+          name: 'iPad Air',
+          type: 'tablet',
+          location: '广州',
+          ip: '192.168.1.102',
+          lastLogin: Date.now() - 259200000, // 3天前
+          isCurrent: false,
+          isTrusted: false
+        }
+      ]
+      saveDeviceList()
+    }
   } else {
     // 初始化模拟数据
     deviceList.value = [
@@ -961,7 +1159,6 @@ const loadDeviceList = () => {
         isTrusted: false
       }
     ]
-    
     saveDeviceList()
   }
 }
@@ -997,13 +1194,13 @@ const formatDeviceTime = (timestamp) => {
   const day = 24 * hour
   
   if (diff < minute) {
-    return '刚刚'
+    return t('settings.justNow')
   } else if (diff < hour) {
-    return `${Math.floor(diff / minute)}分钟前`
+    return `${Math.floor(diff / minute)}${t('settings.minutesAgo')}`
   } else if (diff < day) {
-    return `${Math.floor(diff / hour)}小时前`
+    return `${Math.floor(diff / hour)}${t('settings.hoursAgo')}`
   } else {
-    return `${Math.floor(diff / day)}天前`
+    return `${Math.floor(diff / day)}${t('settings.daysAgo')}`
   }
 }
 
@@ -1013,10 +1210,12 @@ const formatDeviceTime = (timestamp) => {
 const toggleTrustDevice = async (device) => {
   try {
     await showConfirmDialog({
-      title: device.isTrusted ? '取消信任' : '设为可信设备',
+      title: device.isTrusted ? t('settings.untrustDevice') : t('settings.trustDevice'),
       message: device.isTrusted 
-        ? `确定要取消对 "${device.name}" 的信任吗？`
-        : `确定要将 "${device.name}" 设为可信设备吗？可信设备登录时无需验证。`
+        ? t('settings.untrustConfirm').replace('{device}', device.name)
+        : t('settings.trustConfirm').replace('{device}', device.name),
+      confirmButtonText: t('common.confirm'),
+      cancelButtonText: t('common.cancel')
     })
     
     device.isTrusted = !device.isTrusted
@@ -1024,7 +1223,7 @@ const toggleTrustDevice = async (device) => {
     
     showToast({
       type: 'success',
-      message: device.isTrusted ? '已设为可信设备' : '已取消信任'
+      message: device.isTrusted ? t('settings.trusted') : t('settings.untrusted')
     })
   } catch (error) {
     // 用户取消
@@ -1037,10 +1236,10 @@ const toggleTrustDevice = async (device) => {
 const removeDevice = async (device) => {
   try {
     await showConfirmDialog({
-      title: '移除设备',
-      message: `确定要移除 "${device.name}" 吗？移除后该设备需要重新登录。`,
-      confirmButtonText: '确认移除',
-      cancelButtonText: '取消'
+      title: t('settings.removeDeviceTitle'),
+      message: t('settings.removeDeviceMessage').replace('{device}', device.name),
+      confirmButtonText: t('settings.confirmRemove'),
+      cancelButtonText: t('common.cancel')
     })
     
     deviceList.value = deviceList.value.filter(d => d.id !== device.id)
@@ -1048,7 +1247,7 @@ const removeDevice = async (device) => {
     
     showToast({
       type: 'success',
-      message: '设备已移除'
+      message: t('settings.deviceRemoved')
     })
   } catch (error) {
     // 用户取消
@@ -1062,16 +1261,16 @@ const removeAllDevices = async () => {
   const otherDevices = deviceList.value.filter(d => !d.isCurrent)
   
   if (otherDevices.length === 0) {
-    showToast('没有其他设备可移除')
+    showToast(t('settings.noOtherDevices'))
     return
   }
   
   try {
     await showConfirmDialog({
-      title: '移除所有其他设备',
-      message: `确定要移除所有其他设备吗？共 ${otherDevices.length} 台设备将被移除，它们需要重新登录。`,
-      confirmButtonText: '确认移除',
-      cancelButtonText: '取消',
+      title: t('settings.removeAllDevicesTitle'),
+      message: t('settings.removeAllDevicesMessage').replace('{count}', otherDevices.length),
+      confirmButtonText: t('settings.confirmRemove'),
+      cancelButtonText: t('common.cancel'),
       confirmButtonColor: '#ff4d4f'
     })
     
@@ -1080,7 +1279,7 @@ const removeAllDevices = async () => {
     
     showToast({
       type: 'success',
-      message: '已移除所有其他设备'
+      message: t('settings.allDevicesRemoved')
     })
   } catch (error) {
     // 用户取消
@@ -1093,8 +1292,8 @@ const removeAllDevices = async () => {
 const handleClearCache = async () => {
   try {
     await showConfirmDialog({
-      title: '清除缓存',
-      message: '确定要清除所有缓存数据吗？这将删除本地存储的游戏记录等数据。'
+      title: t('settings.cacheClearTitle'),
+      message: t('settings.cacheClearMessage')
     })
     
     // 清除部分缓存（保留用户基本信息）
@@ -1103,7 +1302,7 @@ const handleClearCache = async () => {
     localStorage.removeItem('checkinRecords')
     
     cacheSize.value = '0MB'
-    showToast('缓存清除成功')
+    showToast(t('settings.cacheCleared'))
   } catch (error) {
     // 用户取消操作
   }
@@ -1113,7 +1312,7 @@ const handleClearCache = async () => {
  * 处理检查更新
  */
 const handleCheckUpdate = () => {
-  showToast('当前已是最新版本')
+  showToast(t('settings.latestVersion'))
 }
 
 /**
@@ -1122,14 +1321,14 @@ const handleCheckUpdate = () => {
 const handleLogout = async () => {
   try {
     await showConfirmDialog({
-      title: '退出登录',
-      message: '确定要退出登录吗？'
+      title: t('settings.logout'),
+      message: t('settings.confirmLogout')
     })
     
     // 清除所有用户数据
     localStorage.clear()
     
-    showToast('已退出登录')
+    showToast(t('settings.logoutSuccess'))
     
     // 跳转到首页
     setTimeout(() => {
@@ -1140,10 +1339,26 @@ const handleLogout = async () => {
   }
 }
 
+/**
+ * 处理语言选择
+ */
+const handleLanguageSelect = (action) => {
+  showLanguagePicker.value = false
+  switchLanguage(action.value)
+}
+
+/**
+ * 处理主题选择
+ */
+const handleThemeSelect = (action) => {
+  showThemePicker.value = false
+  themeStore.setThemeMode(action.value)
+  showToast(t('common.success'))
+}
+
 // ========================================
 // 监听器
 // ========================================
-import { watch } from 'vue'
 
 watch(settings, () => {
   saveSettings()
@@ -1255,7 +1470,7 @@ onMounted(() => {
     }
   }
 
-  .cropper-actions {
+  .popup-footer {
     padding: var(--spacing-lg);
     border-top: 1px solid var(--color-border);
     display: flex;
@@ -1349,11 +1564,11 @@ onMounted(() => {
     padding: var(--spacing-md);
 
     .device-item {
-      background: white;
+      background: var(--color-bg-card);
       border-radius: var(--radius-md);
       padding: var(--spacing-md);
       margin-bottom: var(--spacing-md);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      box-shadow: var(--shadow-card);
       transition: all var(--transition-fast);
 
       &.current-device {
@@ -1435,6 +1650,9 @@ onMounted(() => {
 
         .van-button {
           flex: 1;
+          height: 32px;
+          font-size: 12px;
+          border-radius: 4px;
         }
       }
     }

@@ -4,32 +4,32 @@
     <section class="stats-card">
       <div class="stat-item">
         <div class="stat-value">{{ unlockedBadges.length }}</div>
-        <div class="stat-label">已获得</div>
+        <div class="stat-label">{{ t('badges.unlocked') }}</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
         <div class="stat-value">{{ allBadges.length }}</div>
-        <div class="stat-label">总成就</div>
+        <div class="stat-label">{{ t('badges.total') }}</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
         <div class="stat-value">{{ completionRate }}%</div>
-        <div class="stat-label">完成率</div>
+        <div class="stat-label">{{ t('badges.completionRate') }}</div>
       </div>
     </section>
 
     <!-- 筛选标签 -->
     <section class="filter-tabs">
       <van-tabs v-model:active="activeFilter" @change="handleFilterChange">
-        <van-tab title="全部" name="all" />
-        <van-tab title="已获得" name="unlocked" />
-        <van-tab title="未获得" name="locked" />
+        <van-tab :title="t('badges.filter.all')" name="all" />
+        <van-tab :title="t('badges.filter.unlocked')" name="unlocked" />
+        <van-tab :title="t('badges.filter.locked')" name="locked" />
       </van-tabs>
     </section>
 
     <!-- 成就列表 -->
     <section class="badges-list">
-      <van-empty v-if="filteredBadges.length === 0" description="暂无成就" />
+      <van-empty v-if="filteredBadges.length === 0" :description="t('badges.empty')" />
       
       <div v-else class="badges-grid">
         <div
@@ -80,7 +80,7 @@
     >
       <div class="detail-popup" v-if="currentBadge">
         <div class="popup-header">
-          <h3>成就详情</h3>
+          <h3>{{ t('badges.detail.title') }}</h3>
           <van-icon name="cross" @click="showDetailPopup = false" />
         </div>
         
@@ -97,7 +97,7 @@
                 :type="currentBadge.unlocked ? 'success' : 'default'" 
                 size="medium"
               >
-                {{ currentBadge.unlocked ? '已获得' : '未获得' }}
+                {{ currentBadge.unlocked ? t('badges.unlocked') : t('badges.locked') }}
               </van-tag>
             </div>
           </div>
@@ -107,21 +107,21 @@
             <p class="detail-desc">{{ currentBadge.description }}</p>
             
             <div class="detail-requirement">
-              <h4>解锁条件</h4>
+              <h4>{{ t('badges.detail.requirement') }}</h4>
               <p>{{ currentBadge.requirement }}</p>
             </div>
             
             <div class="detail-reward" v-if="currentBadge.reward">
-              <h4>成就奖励</h4>
+              <h4>{{ t('badges.detail.reward') }}</h4>
               <div class="reward-content">
                 <van-icon name="gold-coin-o" size="20" color="var(--color-warning)" />
-                <span>{{ currentBadge.reward }} 积分</span>
+                <span>{{ currentBadge.reward }} {{ t('common.points') }}</span>
               </div>
             </div>
             
             <div class="detail-tips">
-              <h4>小贴士</h4>
-              <p>{{ currentBadge.tips || '继续努力，你一定能获得这个成就！' }}</p>
+              <h4>{{ t('badges.detail.tips') }}</h4>
+              <p>{{ currentBadge.tips || t('badges.detail.defaultTips') }}</p>
             </div>
           </div>
         </div>
@@ -132,6 +132,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { 
   Tabs as VanTabs,
   Tab as VanTab,
@@ -141,6 +142,11 @@ import {
   Empty as VanEmpty,
   Popup as VanPopup
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据

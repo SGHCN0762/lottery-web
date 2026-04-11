@@ -6,21 +6,21 @@
         <div class="welcome-icon">🎯</div>
         
         <div class="welcome-info">
-          <h2 class="welcome-title">幸运大转盘</h2>
-          <p class="welcome-subtitle">转动转盘赢积分，每日签到领好礼！</p>
+           <h2 class="welcome-title">{{ t('home.title') }}</h2>
+          <p class="welcome-subtitle">{{ t('home.subtitle') }}</p>
         </div>
       </div>
 
       <!-- 用户积分显示 -->
       <div class="points-display">
         <van-icon name="gold-coin-o" size="20" />
-        <span>当前积分：{{ userPoints }}</span>
+        <span>{{ t('home.currentPoints') }}：{{ userPoints }}</span>
       </div>
     </section>
 
     <!-- 转盘区域 -->
     <section class="wheel-section">
-      <div class="section-title">点击转盘抽奖（消耗10积分）</div>
+      <div class="section-title">{{ t('home.wheelTitle') }}</div>
       
       <div class="wheel-container">
         <!-- 转盘 -->
@@ -53,7 +53,7 @@
           @click="handleSpinWheel"
           :disabled="isSpinning || userPoints < 10"
         >
-          {{ isSpinning ? '抽奖中...' : '开始' }}
+          {{ isSpinning ? t('common.spinning') : t('common.start') }}
         </button>
       </div>
       
@@ -65,7 +65,7 @@
 
     <!-- 奖品列表 -->
     <section class="prizes-section">
-      <div class="section-title">奖品说明</div>
+      <div class="section-title">{{ t('home.prizeDescription') }}</div>
       <van-cell-group inset>
         <van-cell 
           v-for="prize in prizes" 
@@ -84,12 +84,18 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { 
   CellGroup as VanCellGroup, 
   Cell as VanCell,
   Icon as VanIcon,
   showToast
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据
@@ -109,12 +115,12 @@ const drawResult = ref('')
 
 /** 奖品配置 */
 const prizes = ref([
-  { id: 1, name: '100积分', icon: '💎', description: '超级大奖', probability: '5%', points: 100 },
-  { id: 2, name: '50积分', icon: '🎁', description: '丰厚奖励', probability: '10%', points: 50 },
-  { id: 3, name: '30积分', icon: '🎊', description: '不错哦', probability: '15%', points: 30 },
-  { id: 4, name: '20积分', icon: '🌟', description: '小惊喜', probability: '20%', points: 20 },
-  { id: 5, name: '10积分', icon: '✨', description: '参与奖', probability: '25%', points: 10 },
-  { id: 6, name: '5积分', icon: '💫', description: '鼓励奖', probability: '25%', points: 5 }
+  { id: 1, name: t('home.prize100'), icon: '💎', description: t('home.prizeDesc1'), probability: '5%', points: 100 },
+  { id: 2, name: t('home.prize50'), icon: '🎁', description: t('home.prizeDesc2'), probability: '10%', points: 50 },
+  { id: 3, name: t('home.prize30'), icon: '🎊', description: t('home.prizeDesc3'), probability: '15%', points: 30 },
+  { id: 4, name: t('home.prize20'), icon: '🌟', description: t('home.prizeDesc4'), probability: '20%', points: 20 },
+  { id: 5, name: t('home.prize10'), icon: '✨', description: t('home.prizeDesc5'), probability: '25%', points: 10 },
+  { id: 6, name: t('home.prize5'), icon: '💫', description: t('home.prizeDesc6'), probability: '25%', points: 5 }
 ])
 
 // ========================================
@@ -176,7 +182,7 @@ const handleSpinWheel = () => {
   const cost = 10
   if (userPoints.value < cost) {
     showToast({ 
-      message: '积分不足，请明日签到后再来！', 
+      message: t('home.insufficientPoints'), 
       icon: 'fail',
       duration: 2000
     })
@@ -229,11 +235,11 @@ const handleSpinWheel = () => {
     
     // 同时显示底部结果消息
     if (wonPrize.points >= 50) {
-      drawResult.value = `🎉 恭喜！获得${wonPrize.name}！`
+      drawResult.value = `${t('home.congratulations')}！${t('home.won')} ${wonPrize.name}！`
     } else if (wonPrize.points >= 20) {
-      drawResult.value = `👍 不错！获得${wonPrize.name}！`
+      drawResult.value = `${t('home.notBad')}！${t('home.won')} ${wonPrize.name}！`
     } else {
-      drawResult.value = `😊 获得${wonPrize.name}，继续加油！`
+      drawResult.value = `😊 ${t('home.won')} ${wonPrize.name}，${t('home.keepGoing')}！`
     }
   }, 3000) // 3秒后显示结果
 }

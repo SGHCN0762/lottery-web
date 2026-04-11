@@ -3,23 +3,23 @@
     <!-- 游戏信息栏 -->
     <section class="game-info-bar">
       <div class="info-item">
-        <span class="info-label">我的积分</span>
+        <span class="info-label">{{ t('quizChallenge.myPoints') }}</span>
         <span class="info-value">{{ userPoints }}</span>
       </div>
       <div class="info-item">
-        <span class="info-label">当前题目</span>
+        <span class="info-label">{{ t('quizChallenge.currentQuestion') }}</span>
         <span class="info-value">{{ currentQuestionIndex + 1 }}/{{ totalQuestions }}</span>
       </div>
     </section>
 
     <!-- 游戏规则 -->
     <section class="game-rules">
-      <h3 class="rules-title">📋 游戏规则</h3>
+      <h3 class="rules-title">📋 {{ t('quizChallenge.rules.title') }}</h3>
       <ul class="rules-list">
-        <li>共有5道技术类选择题</li>
-        <li>每答对一题获得5积分</li>
-        <li>连续答对有额外奖励：连续2题+5分，连续3题+10分，连续4题+15分，连续5题+25分</li>
-        <li>答错不扣分，但会中断连续答对记录</li>
+        <li>{{ t('quizChallenge.rules.rule1') }}</li>
+        <li>{{ t('quizChallenge.rules.rule2') }}</li>
+        <li>{{ t('quizChallenge.rules.rule3') }}</li>
+        <li>{{ t('quizChallenge.rules.rule4') }}</li>
       </ul>
     </section>
 
@@ -28,10 +28,10 @@
       <!-- 游戏未开始 -->
       <div v-if="!gameStarted" class="game-start-screen">
         <div class="start-icon">📝</div>
-        <h2 class="start-title">答题挑战</h2>
-        <p class="start-desc">展示你的技术知识！</p>
+        <h2 class="start-title">{{ t('quizChallenge.title') }}</h2>
+        <p class="start-desc">{{ t('quizChallenge.startDesc') }}</p>
         <van-button type="primary" size="large" @click="startGame" class="start-btn">
-          开始挑战
+          {{ t('quizChallenge.start') }}
         </van-button>
       </div>
 
@@ -44,7 +44,7 @@
             stroke-width="8"
             color="linear-gradient(to right, #1989fa, #07c160)"
           />
-          <div class="progress-text">进度: {{ currentQuestionIndex + 1 }} / {{ totalQuestions }}</div>
+          <div class="progress-text">{{ t('quizChallenge.progress') }}: {{ currentQuestionIndex + 1 }} / {{ totalQuestions }}</div>
         </div>
 
         <!-- 题目卡片 -->
@@ -81,7 +81,7 @@
             :disabled="selectedAnswer === null"
             class="submit-btn"
           >
-            提交答案
+            {{ t('quizChallenge.submitAnswer') }}
           </van-button>
 
           <van-button
@@ -91,38 +91,38 @@
             @click="nextQuestion"
             class="next-btn"
           >
-            {{ isLastQuestion ? '查看结果' : '下一题' }}
+            {{ isLastQuestion ? t('quizChallenge.viewResult') : t('quizChallenge.nextQuestion') }}
           </van-button>
         </div>
 
         <!-- 连续答对提示 -->
         <div v-if="consecutiveCorrect > 0 && showResult" class="streak-badge">
-          🔥 连续答对 {{ consecutiveCorrect }} 题
+          🔥 {{ t('quizChallenge.streak', { count: consecutiveCorrect }) }}
         </div>
       </div>
 
       <!-- 游戏结束 -->
       <div v-else class="game-end-screen">
         <div class="end-icon">🏆</div>
-        <h2 class="end-title">挑战完成！</h2>
+        <h2 class="end-title">{{ t('quizChallenge.completed') }}</h2>
         
         <div class="result-stats">
           <div class="stat-item">
-            <span class="stat-label">答对题数</span>
+            <span class="stat-label">{{ t('quizChallenge.correctCount') }}</span>
             <span class="stat-value">{{ correctCount }}/{{ totalQuestions }}</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">获得积分</span>
+            <span class="stat-label">{{ t('quizChallenge.earnedPoints') }}</span>
             <span class="stat-value reward">{{ earnedPoints }}</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">最高连击</span>
+            <span class="stat-label">{{ t('quizChallenge.maxStreak') }}</span>
             <span class="stat-value streak">{{ maxStreak }}</span>
           </div>
         </div>
 
         <van-button type="primary" size="large" @click="resetGame" class="restart-btn">
-          再次挑战
+          {{ t('quizChallenge.tryAgain') }}
         </van-button>
       </div>
     </section>
@@ -131,7 +131,13 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { showToast } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 响应式数据定义
@@ -378,7 +384,7 @@ const handleCorrectAnswer = () => {
   if (bonus > 0) {
     points += bonus
     showToast({
-      message: `太棒了！连续${consecutiveCorrect.value}题，额外奖励${bonus}积分`,
+      message: t('quizChallenge.bonus', { count: consecutiveCorrect.value, bonus }),
       type: 'success',
       duration: 2000
     })
@@ -397,7 +403,7 @@ const handleWrongAnswer = () => {
   consecutiveCorrect.value = 0
   
   showToast({
-    message: '答错了，继续加油！',
+    message: t('quizChallenge.wrongAnswer'),
     type: 'fail',
     duration: 1500
   })
@@ -431,7 +437,7 @@ const endGame = () => {
   
   // 显示总结提示
   showToast({
-    message: `恭喜获得 ${earnedPoints.value} 积分！`,
+    message: t('quizChallenge.success', { points: earnedPoints.value }),
     type: 'success',
     duration: 2000
   })

@@ -6,34 +6,34 @@
         <div class="app-logo">🎮</div>
         
         <div class="app-info">
-          <h2 class="app-name">娱乐应用</h2>
-          <p class="app-version">版本 v1.0.0</p>
+          <h2 class="app-name">{{ t('app.name') }}</h2>
+          <p class="app-version">{{ t('about.version') }} v1.0.0</p>
         </div>
       </div>
 
       <!-- 应用简介 -->
       <div class="app-description">
-        <p>一款纯娱乐休闲游戏应用，提供多种趣味小游戏，帮助用户放松身心。所有积分均为虚拟道具，仅供娱乐使用。</p>
+        <p>{{ t('about.description') }}</p>
       </div>
     </section>
 
     <!-- 健康游戏倡议 -->
     <section class="info-section">
-      <div class="section-title">健康游戏倡议</div>
+      <div class="section-title">{{ t('about.health.title') }}</div>
       <van-cell-group inset class="highlight-group">
-        <van-cell title="合理安排时间" icon="clock-o">
+        <van-cell :title="t('about.health.timeManagement')" icon="clock-o">
           <template #label>
-            <p class="cell-tip">建议每日游戏不超过2小时</p>
+            <p class="cell-tip">{{ t('about.health.timeTip') }}</p>
           </template>
         </van-cell>
-        <van-cell title="未成年人保护" icon="shield-o">
+        <van-cell :title="t('about.health.minorProtection')" icon="shield-o">
           <template #label>
-            <p class="cell-tip">需在监护人指导下使用</p>
+            <p class="cell-tip">{{ t('about.health.minorTip') }}</p>
           </template>
         </van-cell>
-        <van-cell title="虚拟道具说明" icon="info-o">
+        <van-cell :title="t('about.health.virtualItems')" icon="info-o">
           <template #label>
-            <p class="cell-tip">不涉及任何真实货币交易</p>
+            <p class="cell-tip">{{ t('about.health.virtualTip') }}</p>
           </template>
         </van-cell>
       </van-cell-group>
@@ -41,20 +41,20 @@
 
     <!-- 法律条款 -->
     <section class="info-section">
-      <div class="section-title">法律条款</div>
+      <div class="section-title">{{ t('about.legal.title') }}</div>
       <van-cell-group inset>
-        <van-cell title="隐私政策" icon="lock" is-link @click="showPopup('privacy')" />
-        <van-cell title="用户协议" icon="description" is-link @click="showPopup('agreement')" />
-        <van-cell title="免责声明" icon="warning-o" is-link @click="showPopup('disclaimer')" />
+        <van-cell :title="t('about.legal.privacy')" icon="lock" is-link @click="showPopup('privacy')" />
+        <van-cell :title="t('about.legal.agreement')" icon="description" is-link @click="showPopup('agreement')" />
+        <van-cell :title="t('about.legal.disclaimer')" icon="warning-o" is-link @click="showPopup('disclaimer')" />
       </van-cell-group>
     </section>
 
     <!-- 联系我们 -->
     <section class="info-section">
-      <div class="section-title">联系我们</div>
+      <div class="section-title">{{ t('about.contact.title') }}</div>
       <van-cell-group inset>
         <van-cell 
-          title="客服邮箱" 
+          :title="t('about.contact.email')" 
           icon="envelop-o"
           @click="handleCopyEmail"
         >
@@ -63,7 +63,7 @@
           </template>
         </van-cell>
         <van-cell 
-          title="服务热线" 
+          :title="t('about.contact.phone')" 
           icon="phone-o"
           @click="handleCallPhone"
         >
@@ -72,7 +72,7 @@
           </template>
         </van-cell>
         <van-cell 
-          title="工作时间" 
+          :title="t('about.contact.workTime')" 
           icon="clock-o"
           :value="contactInfo.workTime"
         />
@@ -93,17 +93,13 @@
         </div>
         <div class="popup-body">
           <p v-if="currentPopup === 'privacy'">
-            我们非常重视您的隐私保护。本应用不会收集、存储或分享您的个人敏感信息。所有游戏数据仅保存在本地设备中。
+            {{ t('about.popup.privacy') }}
           </p>
           <p v-else-if="currentPopup === 'agreement'">
-            欢迎使用娱乐应用！通过使用本应用，即表示您同意遵守本用户协议的所有条款。本应用仅供娱乐用途，不得用于任何非法活动。
+            {{ t('about.popup.agreement') }}
           </p>
           <p v-else-if="currentPopup === 'disclaimer'">
-            1. 本应用所有内容均为虚拟场景模拟<br>
-            2. 积分道具不具备真实价值<br>
-            3. 严禁用于赌博或非法活动<br>
-            4. 用户需年满18周岁<br>
-            5. 请理性参与，切勿沉迷
+            {{ t('about.popup.disclaimer') }}
           </p>
         </div>
       </div>
@@ -113,6 +109,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { 
   CellGroup as VanCellGroup, 
   Cell as VanCell, 
@@ -120,6 +117,11 @@ import {
   Popup as VanPopup,
   showToast
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 联系信息
@@ -148,9 +150,9 @@ const popupTitle = ref('')
 const showPopup = (type) => {
   currentPopup.value = type
   const titles = {
-    privacy: '隐私政策',
-    agreement: '用户协议',
-    disclaimer: '免责声明'
+    privacy: t('about.legal.privacy'),
+    agreement: t('about.legal.agreement'),
+    disclaimer: t('about.legal.disclaimer')
   }
   popupTitle.value = titles[type] || ''
   popupVisible.value = true
@@ -159,7 +161,7 @@ const showPopup = (type) => {
 /** 复制邮箱 */
 const handleCopyEmail = () => {
   navigator.clipboard.writeText(contactInfo.value.email)
-  showToast({ message: '邮箱已复制', icon: 'success' })
+  showToast({ message: t('about.emailCopied'), icon: 'success' })
 }
 
 /** 拨打电话 */

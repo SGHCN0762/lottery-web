@@ -16,9 +16,9 @@
         <van-field
           v-model="formData.phone"
           name="phone"
-          label="手机号"
-          placeholder="请输入手机号"
-          :rules="[{ required: true, message: '请输入手机号' }]"
+          :label="t('auth.phone')"
+          :placeholder="t('auth.phonePlaceholder')"
+          :rules="[{ required: true, message: t('auth.phoneRequired') }]"
           type="tel"
           maxlength="11"
           clearable
@@ -30,9 +30,9 @@
           v-model="formData.password"
           type="password"
           name="password"
-          label="密码"
-          placeholder="请输入密码"
-          :rules="[{ required: true, message: '请输入密码' }]"
+          :label="t('auth.password')"
+          :placeholder="t('auth.passwordPlaceholder')"
+          :rules="[{ required: true, message: t('auth.passwordRequired') }]"
           clearable
           left-icon="lock"
         />
@@ -40,9 +40,9 @@
         <!-- 记住我 & 忘记密码 -->
         <div class="form-options">
           <van-checkbox v-model="formData.rememberMe" icon-size="16px">
-            记住我
+            {{ t('auth.rememberMe') }}
           </van-checkbox>
-          <span class="forgot-link" @click="handleForgotPassword">忘记密码？</span>
+          <span class="forgot-link" @click="handleForgotPassword">{{ t('auth.forgotPassword') }}</span>
         </div>
 
         <!-- 登录按钮 -->
@@ -53,25 +53,25 @@
             type="primary"
             native-type="submit"
             :loading="loading"
-            loading-text="登录中..."
+            :loading-text="t('auth.loggingIn')"
             class="login-btn"
           >
-            登 录
+            {{ t('auth.login') }}
           </van-button>
         </div>
       </van-form>
 
       <!-- 注册链接 -->
       <div class="register-link">
-        还没有账号？
-        <span class="link-text" @click="goToRegister">立即注册</span>
+        {{ t('auth.noAccount') }}
+        <span class="link-text" @click="goToRegister">{{ t('auth.registerNow') }}</span>
       </div>
     </section>
 
     <!-- 其他登录方式 -->
     <section class="other-login">
       <div class="divider">
-        <span>其他登录方式</span>
+        <span>{{ t('auth.otherLoginMethods') }}</span>
       </div>
       <div class="social-login">
         <div class="social-item" @click="handleSocialLogin('wechat')">
@@ -89,6 +89,7 @@
 <script setup>
 import { ref, reactive, computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { showToast, showLoadingToast, closeToast } from 'vant'
 import { useThemeStore } from '@/stores/theme'
 import { 
@@ -99,6 +100,11 @@ import {
   Icon as VanIcon,
   NoticeBar as VanNoticeBar
 } from 'vant'
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n()
 
 // ========================================
 // 路由实例
@@ -141,7 +147,7 @@ const handleLogin = async (values) => {
   if (!phoneRegex.test(formData.phone)) {
     showToast({
       type: 'fail',
-      message: '请输入正确的手机号'
+      message: t('auth.invalidPhone')
     })
     return
   }
@@ -150,7 +156,7 @@ const handleLogin = async (values) => {
   if (formData.password.length < 6) {
     showToast({
       type: 'fail',
-      message: '密码长度不能少于6位'
+      message: t('auth.passwordMinLength')
     })
     return
   }
@@ -158,7 +164,7 @@ const handleLogin = async (values) => {
   try {
     loading.value = true
     showLoadingToast({
-      message: '登录中...',
+      message: t('auth.loggingIn'),
       forbidClick: true,
       duration: 0
     })
@@ -173,7 +179,7 @@ const handleLogin = async (values) => {
     const mockToken = 'mock_token_' + Date.now()
     const mockUserInfo = {
       id: '10086',
-      name: '娱乐达人',
+      name: t('auth.userName'),
       phone: formData.phone,
       avatar: '',
       points: 1580,
@@ -194,7 +200,7 @@ const handleLogin = async (values) => {
     closeToast()
     showToast({
       type: 'success',
-      message: '登录成功'
+      message: t('auth.loginSuccess')
     })
 
     // 跳转到首页
@@ -207,7 +213,7 @@ const handleLogin = async (values) => {
     closeToast()
     showToast({
       type: 'fail',
-      message: '登录失败，请重试'
+      message: t('auth.loginFail')
     })
   } finally {
     loading.value = false
@@ -218,7 +224,7 @@ const handleLogin = async (values) => {
  * 处理忘记密码
  */
 const handleForgotPassword = () => {
-  showToast('请联系客服重置密码')
+  showToast(t('auth.contactSupport'))
 }
 
 /**
@@ -234,11 +240,11 @@ const goToRegister = () => {
  */
 const handleSocialLogin = (platform) => {
   const platformNames = {
-    wechat: '微信',
-    qq: 'QQ',
-    weibo: '微博'
+    wechat: t('auth.wechat'),
+    qq: t('auth.qq'),
+    weibo: t('auth.weibo')
   }
-  showToast(`${platformNames[platform]}登录功能开发中`)
+  showToast(`${platformNames[platform]}${t('auth.loginInDevelopment')}`)
 }
 
 // ========================================
