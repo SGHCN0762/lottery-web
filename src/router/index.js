@@ -7,7 +7,7 @@
  * - 路由元信息（标题、是否缓存、是否显示返回按钮）
  */
 
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/Home/index.vue'
 import i18n from '@/i18n'
 
@@ -236,7 +236,7 @@ const routes = [
 // 创建路由实例
 // ========================================
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL), // HTML5 History 模式
+  history: createWebHashHistory(import.meta.env.BASE_URL), // Hash 模式，兼容 GitHub Pages
   routes
 })
 
