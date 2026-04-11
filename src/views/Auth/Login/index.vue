@@ -359,6 +359,9 @@ if (rememberedPhone) {
     margin: 12px 0;
 
     :deep(.van-checkbox) {
+      .van-checkbox__icon {
+        height: 20px;
+      }
       .van-checkbox__label {
         font-size: 13px;
         color: var(--color-text-secondary, #86868b);

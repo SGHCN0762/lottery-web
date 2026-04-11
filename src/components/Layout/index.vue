@@ -142,7 +142,7 @@ const themeOptions = computed(() => [
 
 /** Vant 主题 */
 const vantTheme = computed(() => {
-  return themeStore.themeMode === "dark" ? "dark" : "light";
+  return themeStore.isDark ? "dark" : "light";
 });
 
 // ========================================
