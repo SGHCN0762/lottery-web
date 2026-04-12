@@ -50,11 +50,7 @@
           :title="question.text"
           is-link
           @click="sendQuickQuestion(question)"
-        >
-          <template #icon>
-            <van-icon name="label-o" color="var(--color-primary)" />
-          </template>
-        </van-cell>
+        />
       </van-cell-group>
     </section>
 

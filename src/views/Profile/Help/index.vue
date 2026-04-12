@@ -154,7 +154,6 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
-import { showToast } from 'vant'
 import { 
   Search as VanSearch,
   Collapse as VanCollapse,
@@ -169,7 +168,7 @@ import {
 // ========================================
 // i18n
 // ========================================
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
 // ========================================
 // 路由实例
@@ -248,18 +247,19 @@ const debugI18n = computed(() => {
 // 积分规则数据
 // ========================================
 const pointsRules = computed(() => {
+  // 使用 tm() 函数获取数组类型的翻译值
   return {
     earn: {
       title: t('help.pointsPopup.earn.title'),
-      items: t('help.pointsPopup.earn.items')
+      items: tm('help.pointsPopup.earn.items')
     },
     use: {
       title: t('help.pointsPopup.use.title'),
-      items: t('help.pointsPopup.use.items')
+      items: tm('help.pointsPopup.use.items')
     },
     expire: {
       title: t('help.pointsPopup.expire.title'),
-      items: t('help.pointsPopup.expire.items')
+      items: tm('help.pointsPopup.expire.items')
     }
   }
 })

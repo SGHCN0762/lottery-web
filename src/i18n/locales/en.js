@@ -511,7 +511,7 @@ export default {
         pointsExpire: 'Do points expire?',
         pointsExpireAnswer: 'Points are permanently valid and do not expire. Please keep your account secure.',
         howToContact: 'How to contact customer service?',
-        howToContactAnswer: 'You can contact us through online customer service, customer service phone 400-123-4567, or customer service email support{@@}lottery.com.'
+        howToContactAnswer: 'You can contact us through online customer service, customer service phone 400-123-4567, or customer service email at support (at) lottery.com.'
       },
       replies: {
         points: 'Regarding points, you can earn points through daily check-ins, participating in games, inviting friends, etc. For recharge, you can operate on the "Points Exchange" page.',
