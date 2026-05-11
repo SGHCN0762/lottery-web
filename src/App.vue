@@ -9,14 +9,14 @@
     </router-view>
 
     <!-- 其他页面使用 Layout 布局（Layout 内部已包含 ConfigProvider） -->
-    <AppLayout v-else :title="$route.meta.title || t('app.title')">
+    <custom-layout v-else :title="$route.meta.title || t('app.title')">
       <router-view v-slot="{ Component, route }">
         <keep-alive v-if="route.meta.keepAlive">
           <component :is="Component" />
         </keep-alive>
         <component :is="Component" v-else />
       </router-view>
-    </AppLayout>
+    </custom-layout>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useThemeStore } from './stores/theme'
-import AppLayout from './components/Layout/index.vue'
+import CustomLayout from '@/components/CustomLayout.vue'
 
 // ========================================
 // i18n
