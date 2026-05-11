@@ -55,30 +55,18 @@ export default {
 
   // 首頁
   home: {
-    title: '幸運大轉盤',
-    subtitle: '轉動轉盤贏積分，每日簽到領好禮！',
-    currentPoints: '當前積分',
-    wheelTitle: '點擊轉盤抽獎（消耗10積分）',
-    spinning: '抽獎中...',
-    start: '開始',
-    insufficientPoints: '積分不足，請明日簽到後再來！',
-    congratulations: '恭喜',
-    won: '獲得',
-    notBad: '不錯',
-    keepGoing: '繼續加油',
-    prize100: '100積分',
-    prize50: '50積分',
-    prize30: '30積分',
-    prize20: '20積分',
-    prize10: '10積分',
-    prize5: '5積分',
-    prizeDesc1: '超級大獎',
-    prizeDesc2: '豐厚獎勵',
-    prizeDesc3: '不錯哦',
-    prizeDesc4: '小驚喜',
-    prizeDesc5: '參與獎',
-    prizeDesc6: '鼓勵獎',
-    prizeDescription: '獎品說明'
+    // 日曆相關
+    calendarTitle: '日曆',
+    distanceTo: '距離',
+    distanceToWeekend: '距離週末',
+    days: '天',
+    hours: '時',
+    minutes: '分',
+    seconds: '秒',
+    upcomingFestivals: '即將到來的節日',
+    daysLater: '天後',
+    springFestivalCountdown: '春節倒計時',
+    newYearEveCountdown: '除夕倒計時'
   },
 
   // 認證
@@ -353,39 +341,6 @@ export default {
     ja: '日本語'
   },
 
-  // 表单验证
-  validation: {
-    required: '{field}不能為空',
-    minLength: '{field}長度不能少於{min}個字符',
-    maxLength: '{field}長度不能超過{max}個字符',
-    email: '請輸入有效的郵箱地址',
-    phone: '請輸入有效的手機號',
-    number: '請輸入有效的數字',
-    url: '請輸入有效的網址',
-    pattern: '{field}格式不正確'
-  },
-
-  // 日期时间
-  dateTime: {
-    today: '今天',
-    yesterday: '昨天',
-    week: '週',
-    month: '月',
-    year: '年',
-    hour: '小時',
-    minute: '分鐘',
-    second: '秒',
-    ago: '前',
-    later: '後',
-    monday: '週一',
-    tuesday: '週二',
-    wednesday: '週三',
-    thursday: '週四',
-    friday: '週五',
-    saturday: '週六',
-    sunday: '週日'
-  },
-
   // 玩家記錄
   records: {
     title: '遊戲記錄',
@@ -596,7 +551,7 @@ export default {
     rule4: '積分可用於兌換精美禮品'
   },
 
-  // 兑换
+  // 兌换
   exchange: {
     title: '積分兌換',
     availablePoints: '可用積分',

@@ -31,6 +31,7 @@ import {
   Button,
   Field,
   Toast,
+  Popup,
   Locale
 } from 'vant'
 
@@ -83,6 +84,7 @@ app.use(GridItem)
 app.use(Button)
 app.use(Field)
 app.use(Toast)
+app.use(Popup)
 
 // ========================================
 // 初始化主题系统

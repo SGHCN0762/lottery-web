@@ -55,30 +55,17 @@ export default {
 
   // Home
   home: {
-    title: 'Lucky Wheel',
-    subtitle: 'Spin the wheel to win points, daily check-in for gifts!',
-    currentPoints: 'Current Points',
-    wheelTitle: 'Click to spin (Costs 10 points)',
-    spinning: 'Spinning...',
-    start: 'Start',
-    insufficientPoints: 'Insufficient points, please check in tomorrow!',
-    congratulations: 'Congratulations',
-    won: 'Won',
-    notBad: 'Not bad',
-    keepGoing: 'Keep going',
-    prize100: '100 Points',
-    prize50: '50 Points',
-    prize30: '30 Points',
-    prize20: '20 Points',
-    prize10: '10 Points',
-    prize5: '5 Points',
-    prizeDesc1: 'Grand Prize',
-    prizeDesc2: 'Generous Reward',
-    prizeDesc3: 'Nice!',
-    prizeDesc4: 'Little Surprise',
-    prizeDesc5: 'Participation Prize',
-    prizeDesc6: 'Encouragement Prize',
-    prizeDescription: 'Prize Description'
+    // Calendar related
+    distanceTo: 'Days to ',
+    distanceToWeekend: 'Days to Weekend',
+    days: 'days',
+    hours: 'hours',
+    minutes: 'minutes',
+    seconds: 'seconds',
+    upcomingFestivals: 'Upcoming Festivals',
+    daysLater: 'days left',
+    springFestivalCountdown: 'Spring Festival Countdown',
+    newYearEveCountdown: 'New Year\'s Eve Countdown'
   },
 
   // Authentication
@@ -315,39 +302,6 @@ export default {
     zhTW: '繁體中文',
     en: 'English',
     ja: '日本語'
-  },
-
-  // Validation
-  validation: {
-    required: '{field} is required',
-    minLength: '{field} must be at least {min} characters',
-    maxLength: '{field} must be at most {max} characters',
-    email: 'Please enter a valid email address',
-    phone: 'Please enter a valid phone number',
-    number: 'Please enter a valid number',
-    url: 'Please enter a valid URL',
-    pattern: '{field} format is invalid'
-  },
-
-  // Date & Time
-  dateTime: {
-    today: 'Today',
-    yesterday: 'Yesterday',
-    week: 'Week',
-    month: 'Month',
-    year: 'Year',
-    hour: 'hour',
-    minute: 'minute',
-    second: 'second',
-    ago: 'ago',
-    later: 'later',
-    monday: 'Mon',
-    tuesday: 'Tue',
-    wednesday: 'Wed',
-    thursday: 'Thu',
-    friday: 'Fri',
-    saturday: 'Sat',
-    sunday: 'Sun'
   },
 
   // Points

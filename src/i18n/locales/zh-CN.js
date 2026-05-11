@@ -55,30 +55,18 @@ export default {
 
   // 首页
   home: {
-    title: '幸运大转盘',
-    subtitle: '转动转盘赢积分，每日签到领好礼！',
-    currentPoints: '当前积分',
-    wheelTitle: '点击转盘抽奖（消耗10积分）',
-    spinning: '抽奖中...',
-    start: '开始',
-    insufficientPoints: '积分不足，请明日签到后再来！',
-    congratulations: '恭喜',
-    won: '获得',
-    notBad: '不错',
-    keepGoing: '继续加油',
-    prize100: '100积分',
-    prize50: '50积分',
-    prize30: '30积分',
-    prize20: '20积分',
-    prize10: '10积分',
-    prize5: '5积分',
-    prizeDesc1: '超级大奖',
-    prizeDesc2: '丰厚奖励',
-    prizeDesc3: '不错哦',
-    prizeDesc4: '小惊喜',
-    prizeDesc5: '参与奖',
-    prizeDesc6: '鼓励奖',
-    prizeDescription: '奖品说明'
+    // 日历相关
+    calendarTitle: '日历',
+    distanceTo: '距离',
+    distanceToWeekend: '距离周末',
+    days: '天',
+    hours: '时',
+    minutes: '分',
+    seconds: '秒',
+    upcomingFestivals: '即将到来的节日',
+    daysLater: '天后',
+    springFestivalCountdown: '春节倒计时',
+    newYearEveCountdown: '除夕倒计时'
   },
 
   // 认证
@@ -351,39 +339,6 @@ export default {
     zhTW: '繁体中文',
     en: 'English',
     ja: '日本語'
-  },
-
-  // 表单验证
-  validation: {
-    required: '{field}不能为空',
-    minLength: '{field}长度不能少于{min}个字符',
-    maxLength: '{field}长度不能超过{max}个字符',
-    email: '请输入有效的邮箱地址',
-    phone: '请输入有效的手机号',
-    number: '请输入有效的数字',
-    url: '请输入有效的网址',
-    pattern: '{field}格式不正确'
-  },
-
-  // 日期时间
-  dateTime: {
-    today: '今天',
-    yesterday: '昨天',
-    week: '周',
-    month: '月',
-    year: '年',
-    hour: '小时',
-    minute: '分钟',
-    second: '秒',
-    ago: '前',
-    later: '后',
-    monday: '周一',
-    tuesday: '周二',
-    wednesday: '周三',
-    thursday: '周四',
-    friday: '周五',
-    saturday: '周六',
-    sunday: '周日'
   },
 
   // 玩家记录
