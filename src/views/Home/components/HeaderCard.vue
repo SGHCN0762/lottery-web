@@ -38,11 +38,9 @@
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import { Icon as VanIcon } from "vant";
-import { useLunar } from "@/hooks/useLunar";
-import { useFestivals } from "@/hooks/useFestivals";
+import { useFestivals } from "../hooks/useFestivals";
 
 const { t } = useI18n();
-const { weekDays, weekdayNames, getLunarDate } = useLunar();
 const { nextFestival } = useFestivals();
 
 const props = defineProps({
