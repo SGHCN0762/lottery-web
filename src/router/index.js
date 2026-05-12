@@ -56,16 +56,6 @@ const routes = [
       showTabbar: false
     }
   },
-  {
-    path: '/spring-festival',
-    name: 'SpringFestival',
-    component: () => import('../views/SpringFestival/index.vue'),
-    meta: {
-      title: '春节倒计时',
-      showBack: true,
-      showTabbar: false
-    }
-  },
   // ========================================
   // 游戏详情页面路由
   // ========================================
