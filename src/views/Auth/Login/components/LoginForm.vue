@@ -95,10 +95,12 @@ const loading = ref(false)
 // ========================================
 
 /**
- * 验证表单数据
- * @returns {Boolean} 是否验证通过
+ * 处理登录
+ * @param {Object} values - 表单值
  */
-const validateForm = () => {
+const handleLogin = async (values) => {
+  console.log('登录表单提交:', values)
+  
   // 验证手机号格式
   const phoneRegex = /^1[3-9]\d{9}$/
   if (!phoneRegex.test(formData.phone)) {
@@ -106,7 +108,7 @@ const validateForm = () => {
       type: 'fail',
       message: t('auth.invalidPhone')
     })
-    return false
+    return
   }
 
   // 验证密码长度
@@ -115,85 +117,6 @@ const validateForm = () => {
       type: 'fail',
       message: t('auth.passwordMinLength')
     })
-    return false
-  }
-  
-  return true
-}
-
-/**
- * 执行登录请求
- * @returns {Promise<Object>} 登录结果包含 token 和 userInfo
- */
-const performLoginRequest = async () => {
-  // TODO: 调用后端登录接口
-  // const response = await loginApi(formData.phone, formData.password)
-  
-  // 模拟登录延迟
-  await new Promise(resolve => setTimeout(resolve, 1500))
-
-  // 模拟登录成功数据
-  return {
-    token: 'mock_token_' + Date.now(),
-    userInfo: {
-      id: '10086',
-      name: t('auth.userName'),
-      phone: formData.phone,
-      avatar: '',
-      points: 1580,
-      gamesPlayed: 128,
-      badges: 12
-    }
-  }
-}
-
-/**
- * 处理登录成功后的逻辑
- * @param {Object} data - 包含 token 和 userInfo
- */
-const handleLoginSuccessLogic = ({ token, userInfo }) => {
-  // 保存登录信息到 localStorage
-  localStorage.setItem('token', token)
-  localStorage.setItem('userInfo', JSON.stringify(userInfo))
-  
-  if (formData.rememberMe) {
-    localStorage.setItem('rememberedPhone', formData.phone)
-  } else {
-    localStorage.removeItem('rememberedPhone')
-  }
-
-  closeToast()
-  showToast({
-    type: 'success',
-    message: t('auth.loginSuccess')
-  })
-
-  // 通知父组件登录成功
-  emit('login-success', { token, userInfo })
-}
-
-/**
- * 处理登录失败
- * @param {Error} error - 错误对象
- */
-const handleLoginError = (error) => {
-  console.error('登录失败:', error)
-  closeToast()
-  showToast({
-    type: 'fail',
-    message: t('auth.loginFail')
-  })
-}
-
-/**
- * 处理登录
- * @param {Object} values - 表单值
- */
-const handleLogin = async (values) => {
-  console.log('登录表单提交:', values)
-  
-  // 1. 验证表单
-  if (!validateForm()) {
     return
   }
 
@@ -205,15 +128,50 @@ const handleLogin = async (values) => {
       duration: 0
     })
 
-    // 2. 执行登录请求
-    const result = await performLoginRequest()
+    // TODO: 调用后端登录接口
+    // const response = await loginApi(formData.phone, formData.password)
+    
+    // 模拟登录延迟
+    await new Promise(resolve => setTimeout(resolve, 1500))
 
-    // 3. 处理成功逻辑
-    handleLoginSuccessLogic(result)
+    // 模拟登录成功
+    const mockToken = 'mock_token_' + Date.now()
+    const mockUserInfo = {
+      id: '10086',
+      name: t('auth.userName'),
+      phone: formData.phone,
+      avatar: '',
+      points: 1580,
+      gamesPlayed: 128,
+      badges: 12
+    }
+
+    // 保存登录信息到 localStorage
+    localStorage.setItem('token', mockToken)
+    localStorage.setItem('userInfo', JSON.stringify(mockUserInfo))
+    
+    if (formData.rememberMe) {
+      localStorage.setItem('rememberedPhone', formData.phone)
+    } else {
+      localStorage.removeItem('rememberedPhone')
+    }
+
+    closeToast()
+    showToast({
+      type: 'success',
+      message: t('auth.loginSuccess')
+    })
+
+    // 通知父组件登录成功
+    emit('login-success', { token: mockToken, userInfo: mockUserInfo })
 
   } catch (error) {
-    // 4. 处理失败逻辑
-    handleLoginError(error)
+    console.error('登录失败:', error)
+    closeToast()
+    showToast({
+      type: 'fail',
+      message: t('auth.loginFail')
+    })
   } finally {
     loading.value = false
   }
