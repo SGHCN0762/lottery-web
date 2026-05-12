@@ -44,7 +44,7 @@ import { useNewYearEve } from "./hooks/useNewYearEve";
 const router = useRouter();
 
 const goToNewYearEve = () => {
-  router.push("/new-year-eve");
+  // 跳转新年页面
 };
 
 const { weekDays } = useLunar();
