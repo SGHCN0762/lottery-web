@@ -104,7 +104,7 @@ export default {
     invalidPhone: 'Invalid phone number format'
   },
 
-  // Lottery (Game List)
+  // Games (Game List)
   lottery: {
     title: 'Game Center',
     subtitle: 'Various fun mini-games, earn points easily',

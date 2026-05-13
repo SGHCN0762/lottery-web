@@ -80,7 +80,7 @@ const props = defineProps({
     type: Array,
     default: () => [
       { name: "Home", label: "navigation.home", icon: "home-o" },
-      { name: "Lottery", label: "navigation.games", icon: "apps-o" },
+      { name: "Games", label: "navigation.games", icon: "apps-o" },
       { name: "Profile", label: "navigation.profile", icon: "user-o" },
     ],
   },

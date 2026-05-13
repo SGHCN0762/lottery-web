@@ -28,8 +28,8 @@ const routes = [
   },
   {
     path: '/games',
-    name: 'Lottery',
-    component: () => import('../views/Lottery/index.vue'),
+    name: 'Games',
+    component: () => import('../views/Games/index.vue'),
     meta: {
       title: 'navigation.games',
       showBack: false,
