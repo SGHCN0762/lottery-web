@@ -4,7 +4,15 @@
     <GameInfoBar :userPoints="userPoints" />
 
     <!-- 游戏规则 -->
-    <GameRules />
+    <GameRules 
+      title-key="luckyWheel.rules.title"
+      :rule-keys="[
+        'luckyWheel.rules.rule1',
+        'luckyWheel.rules.rule2',
+        'luckyWheel.rules.rule3',
+        'luckyWheel.rules.rule4'
+      ]"
+    />
 
     <!-- 转盘区域 -->
     <LuckyWheel
@@ -26,7 +34,7 @@ import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { showToast } from 'vant'
 import GameInfoBar from './components/GameInfoBar.vue'
-import GameRules from './components/GameRules.vue'
+import GameRules from '../components/GameRules.vue'
 import LuckyWheel from './components/LuckyWheel.vue'
 import SpinHistory from './components/SpinHistory.vue'
 import { useUserPoints } from './hooks/useUserPoints'
@@ -118,17 +126,9 @@ onMounted(() => {
 </script>
 
 <style lang="less" scoped>
+@import '@/styles/game-animations.less';
+
 /* ========================================
-   全局动画定义
+   全局动画定义（已通过 @import 引入）
    ======================================== */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 </style>

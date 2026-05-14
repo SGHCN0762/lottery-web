@@ -149,7 +149,16 @@ export default {
     viewRecords: '查看记录',
     gameDescription: '游戏说明',
     howToPlay: '怎么玩',
-    tips: '小贴士'
+    tips: '小贴士',
+    
+    // 通用规则组件配置
+    rules: {
+      defaultTitle: '游戏规则',
+      rule1: '',
+      rule2: '',
+      rule3: '',
+      rule4: ''
+    }
   },
 
   // 个人中心

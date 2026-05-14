@@ -1,0 +1,129 @@
+/**
+ * 游戏页面通用动画定义
+ * 包含所有游戏页面常用的动画效果
+ * 
+ * 使用方式：
+ * @import '@/styles/game-animations.less';
+ */
+
+/* ========================================
+   淡入动画
+   ======================================== */
+@keyframes gameFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   滑入动画（从下方）
+   ======================================== */
+@keyframes gameSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   弹跳进入动画
+   ======================================== */
+@keyframes gameBounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ========================================
+   庆祝动画（摇摆效果）
+   ======================================== */
+@keyframes gameCelebrate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2) rotate(-10deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(-10deg);
+  }
+}
+
+/* ========================================
+   脉冲动画（呼吸效果）
+   ======================================== */
+@keyframes gamePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+/* ========================================
+   实用类（可选）
+   ======================================== */
+
+/**
+ * 淡入动画类
+ * 使用示例：<div class="game-fade-in">内容</div>
+ */
+.game-fade-in {
+  animation: gameFadeIn 0.5s ease-in;
+}
+
+/**
+ * 滑入动画类
+ * 使用示例：<div class="game-slide-in">内容</div>
+ */
+.game-slide-in {
+  animation: gameSlideIn 0.4s ease-out;
+}
+
+/**
+ * 弹跳进入动画类
+ * 使用示例：<div class="game-bounce-in">内容</div>
+ */
+.game-bounce-in {
+  animation: gameBounceIn 0.6s ease-out;
+}
+
+/**
+ * 庆祝动画类
+ * 使用示例：<div class="game-celebrate">内容</div>
+ */
+.game-celebrate {
+  animation: gameCelebrate 0.8s ease-out;
+}
+
+/**
+ * 脉冲动画类（无限循环）
+ * 使用示例：<div class="game-pulse">内容</div>
+ */
+.game-pulse {
+  animation: gamePulse 2s ease-in-out infinite;
+}

@@ -7,7 +7,15 @@
     />
 
     <!-- 游戏规则 -->
-    <GameRules />
+    <GameRules 
+      title-key="numberGuess.rules.title"
+      :rule-keys="[
+        'numberGuess.rules.rule1',
+        'numberGuess.rules.rule2',
+        'numberGuess.rules.rule3',
+        'numberGuess.rules.rule4'
+      ]"
+    />
 
     <!-- 游戏主区域 -->
     <section class="game-main">
@@ -39,7 +47,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import GameInfoBar from './components/GameInfoBar.vue'
-import GameRules from './components/GameRules.vue'
+import GameRules from '../components/GameRules.vue'
 import GameStartScreen from './components/GameStartScreen.vue'
 import GamePlayingScreen from './components/GamePlayingScreen.vue'
 import GameEndScreen from './components/GameEndScreen.vue'
@@ -79,6 +87,8 @@ const {
 </script>
 
 <style lang="less" scoped>
+@import '@/styles/game-animations.less';
+
 .number-guess-game {
   /* ========================================
      游戏主区域
@@ -89,57 +99,6 @@ const {
 }
 
 /* ========================================
-   动画定义
+   动画定义（已通过 @import 引入）
    ======================================== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  70% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes celebrate {
-  0%, 100% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.2) rotate(-10deg);
-  }
-  50% {
-    transform: scale(1.2) rotate(10deg);
-  }
-  75% {
-    transform: scale(1.2) rotate(-10deg);
-  }
-}
 </style>

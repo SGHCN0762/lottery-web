@@ -4,7 +4,15 @@
     <GameInfoBar :userPoints="userPoints" :consecutiveDays="consecutiveDays" />
 
     <!-- 游戏规则 -->
-    <GameRules />
+    <GameRules 
+      title-key="dailyCheckIn.rules.title"
+      :rule-keys="[
+        'dailyCheckIn.rules.rule1',
+        'dailyCheckIn.rules.rule2',
+        'dailyCheckIn.rules.rule3',
+        'dailyCheckIn.rules.rule4'
+      ]"
+    />
 
     <!-- 签到日历 -->
     <CheckInCalendar :calendarDays="calendarDays" />
@@ -37,7 +45,7 @@
 import { onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import GameInfoBar from "./components/GameInfoBar.vue";
-import GameRules from "./components/GameRules.vue";
+import GameRules from "../components/GameRules.vue";
 import CheckInCalendar from "./components/CheckInCalendar.vue";
 import RewardsDisplay from "./components/RewardsDisplay.vue";
 import CheckInAction from "./components/CheckInAction.vue";
@@ -101,38 +109,9 @@ onMounted(() => {
 </script>
 
 <style lang="less" scoped>
+@import '@/styles/game-animations.less';
+
 .daily-checkin-game {
-  /* 全局动画 */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes pulse {
-    0%,
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.02);
-      opacity: 0.9;
-    }
-  }
+  // 全局动画已通过 @import 引入
 }
 </style>

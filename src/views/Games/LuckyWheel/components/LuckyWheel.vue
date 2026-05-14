@@ -126,15 +126,25 @@ const getSegmentStyle = (index) => {
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    contain: layout style paint;
 
     .wheel {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       border-radius: 50%;
       overflow: hidden;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       border: 8px solid #fff;
+      will-change: transform;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
 
       .wheel-background {
         position: absolute;

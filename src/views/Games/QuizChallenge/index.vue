@@ -8,7 +8,15 @@
     />
 
     <!-- 游戏规则 -->
-    <GameRules />
+    <GameRules 
+      title-key="quizChallenge.rules.title"
+      :rule-keys="[
+        'quizChallenge.rules.rule1',
+        'quizChallenge.rules.rule2',
+        'quizChallenge.rules.rule3',
+        'quizChallenge.rules.rule4'
+      ]"
+    />
 
     <!-- 游戏主区域 -->
     <section class="game-main">
@@ -66,7 +74,7 @@ import { computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { showToast } from 'vant'
 import GameInfoBar from './components/GameInfoBar.vue'
-import GameRules from './components/GameRules.vue'
+import GameRules from '../components/GameRules.vue'
 import StartScreen from './components/StartScreen.vue'
 import QuestionCard from './components/QuestionCard.vue'
 import GameEndScreen from './components/GameEndScreen.vue'
@@ -231,6 +239,8 @@ const submitAnswer = () => {
 </script>
 
 <style lang="less" scoped>
+@import '@/styles/game-animations.less';
+
 .quiz-challenge-game {
   /* ========================================
      游戏主区域
@@ -240,7 +250,7 @@ const submitAnswer = () => {
 
     /* 游戏进行中 */
     .game-playing-screen {
-      animation: slideIn 0.4s ease-out;
+      animation: gameSlideIn 0.4s ease-out;
 
       .progress-section {
         margin-bottom: var(--spacing-lg);
@@ -257,51 +267,6 @@ const submitAnswer = () => {
 }
 
 /* ========================================
-   动画定义
+   动画定义（已通过 @import 引入）
    ======================================== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  70% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
 </style>
