@@ -807,6 +807,50 @@ export default {
     loginInDevelopment: 'login is under development',
     userName: 'Entertainment Master',
     agreementContent: 'Here is the detailed content of the agreement...\n\n(In actual projects, the complete agreement content should be displayed)'
+  },
+
+  // New Year Eve Countdown Page
+  newYearEve: {
+    title: 'New Year Eve Countdown',
+    subtitle: 'Welcome the New Year, Enjoy Beautiful Moments',
+    countdownTitle: 'Time Until New Year Eve:',
+    days: 'Days',
+    hours: 'Hours',
+    minutes: 'Minutes',
+    seconds: 'Seconds',
+    customsTitle: 'New Year Eve Customs',
+    customs: {
+      doorGod: 'Door Gods',
+      doorGodDesc: 'Place Door God images on doors to ward off evil spirits and protect family safety',
+      firecrackers: 'Firecrackers',
+      firecrackersDesc: 'Setting off firecrackers to drive away the New Year monster and bring good luck',
+      dumplings: 'Dumplings',
+      dumplingsDesc: 'Dumplings look like gold ingots, symbolizing wealth and family reunion',
+      redEnvelopes: 'Red Envelopes',
+      redEnvelopesDesc: 'Elders give red envelopes to juniors as blessings and good wishes'
+    },
+    foodTitle: 'New Year Eve Foods',
+    foods: {
+      fish: 'New Year Fish',
+      fishDesc: 'Surplus year after year, symbolizing abundance and harvest',
+      dumplings: 'Dumplings',
+      dumplingsDesc: 'Shaped like gold ingots, symbolizing wealth and prosperity',
+      riceCake: 'Rice Cake',
+      riceCakeDesc: 'Higher year after year, symbolizing progress in work and life',
+      orange: 'Orange',
+      orangeDesc: 'Great luck and fortune, symbolizing good fortune and success'
+    },
+    blessingsTitle: 'New Year Wishes',
+    blessings: {
+      b1: 'Wishing you prosperity and may the red envelopes come!',
+      b2: 'Happy New Year, may all your wishes come true!',
+      b3: 'Good health and success in your career!',
+      b4: 'Happy family and a blissful life!',
+      b5: 'Great luck in the Year of the Dragon, may all your dreams come true!'
+    },
+    shareBlessing: 'Share Blessings',
+    shareSuccess: 'Shared Successfully',
+    back: 'Back'
   }
 }
 

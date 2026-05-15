@@ -31,7 +31,7 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 import { Icon as VanIcon } from "vant";
-import { useCountdown } from "../hooks/useCountdown";
+import { useCountdown } from "@/hooks/useCountdown";
 
 const { t } = useI18n();
 

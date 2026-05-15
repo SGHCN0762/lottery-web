@@ -39,12 +39,13 @@ import { useLunar } from "./hooks/useLunar";
 import { useFestivals } from "./hooks/useFestivals";
 import { useCalendar } from "./hooks/useCalendar";
 import { useCurrentDate } from "./hooks/useCurrentDate";
-import { useNewYearEve } from "./hooks/useNewYearEve";
+import { useNewYearEve } from "../../hooks/useNewYearEve";
 
 const router = useRouter();
 
 const goToNewYearEve = () => {
-  // 跳转新年页面
+  // 跳转到新年倒计时页面
+  router.push('/new-year-eve');
 };
 
 const { weekDays } = useLunar();

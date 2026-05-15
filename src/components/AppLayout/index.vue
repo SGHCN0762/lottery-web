@@ -2,10 +2,7 @@
   <van-config-provider :theme="vantTheme" :locale="vantLocale">
     <div class="app-layout">
       <!-- 自定义导航栏 -->
-      <AppNavbar 
-        :title="title" 
-        :show-back="showBack"
-      >
+      <AppNavbar :title="title" :show-back="showBack">
         <template #navbar-right>
           <slot name="navbar-right"></slot>
         </template>
@@ -18,7 +15,6 @@
 
       <!-- 自定义底部标签栏 -->
       <AppTabbar :tabs="tabs" />
-
     </div>
   </van-config-provider>
 </template>
@@ -26,22 +22,20 @@
 <script setup>
 import { computed } from "vue";
 import { useThemeStore } from "@/stores/theme";
-import { useI18n } from 'vue-i18n';
-import {
-  ConfigProvider as VanConfigProvider,
-} from "vant";
-import AppNavbar from './components/AppNavbar.vue';
-import AppTabbar from './components/AppTabbar.vue';
+import { useI18n } from "vue-i18n";
+import { ConfigProvider as VanConfigProvider } from "vant";
+import AppNavbar from "./components/AppNavbar.vue";
+import AppTabbar from "./components/AppTabbar.vue";
 
 // 导入 Vant 语言包
-import vantZhCN from 'vant/es/locale/lang/zh-CN';
-import vantEnUS from 'vant/es/locale/lang/en-US';
-import vantZhTW from 'vant/es/locale/lang/zh-TW';
+import vantZhCN from "vant/es/locale/lang/zh-CN";
+import vantEnUS from "vant/es/locale/lang/en-US";
+import vantZhTW from "vant/es/locale/lang/zh-TW";
 
 // ========================================
 // i18n
 // ========================================
-import i18n from '@/i18n';
+import i18n from "@/i18n";
 const { t } = useI18n();
 
 // ========================================
@@ -50,11 +44,11 @@ const { t } = useI18n();
 const vantLocale = computed(() => {
   const currentLocale = i18n.global.locale.value;
   switch (currentLocale) {
-    case 'zh-CN':
+    case "zh-CN":
       return vantZhCN;
-    case 'en':
+    case "en":
       return vantEnUS;
-    case 'zh-TW':
+    case "zh-TW":
       return vantZhTW;
     default:
       return vantZhCN;
@@ -104,6 +98,7 @@ const vantTheme = computed(() => {
 // 主布局样式
 // ========================================
 
+defineOptions({ name: "AppLayout" });
 </script>
 
 <style lang="less" scoped>

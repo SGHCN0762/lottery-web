@@ -814,6 +814,50 @@ export default {
     loginInDevelopment: '登入功能開發中',
     userName: '娛樂達人',
     agreementContent: '這裡是協議的詳細內容...\n\n（實際專案中應展示完整的協議內容）'
+  },
+
+  // 除夕倒计时页面
+  newYearEve: {
+    title: '除夕倒計時',
+    subtitle: '迎接新年，共度美好時光',
+    countdownTitle: '距離除夕還有',
+    days: '天',
+    hours: '時',
+    minutes: '分',
+    seconds: '秒',
+    customsTitle: '除夕習俗',
+    customs: {
+      doorGod: '貼門神',
+      doorGodDesc: '在門上貼上門神畫像，寓意驅邪避災，保佑家人平安',
+      firecrackers: '放鞭炮',
+      firecrackersDesc: '燃放鞭炮，辭舊迎新，驅趕年獸，帶來好運',
+      dumplings: '吃餃子',
+      dumplingsDesc: '餃子形似元寶，寓意招財進寶，團團圓圓',
+      redEnvelopes: '發紅包',
+      redEnvelopesDesc: '長輩給晚輩紅包，寓意祝福和好運'
+    },
+    foodTitle: '除夕美食',
+    foods: {
+      fish: '年夜魚',
+      fishDesc: '年年有餘，象徵豐足和豐收',
+      dumplings: '餃子',
+      dumplingsDesc: '形似元寶，寓意招財進寶',
+      riceCake: '年糕',
+      riceCakeDesc: '年年高升，工作和生活節節高',
+      orange: '橘子',
+      orangeDesc: '大吉大利，寓意吉祥如意'
+    },
+    blessingsTitle: '新年祝福',
+    blessings: {
+      b1: '恭喜發財，紅包拿來！',
+      b2: '新年快樂，萬事如意！',
+      b3: '身體健康，工作順利！',
+      b4: '阖家歡樂，幸福美滿！',
+      b5: '龍年大吉，心想事成！'
+    },
+    shareBlessing: '分享祝福',
+    shareSuccess: '分享成功',
+    back: '返回'
   }
 }
 
