@@ -1,8 +1,11 @@
 <template>
   <div class="countdown-container">
     <div class="countdown-header">
-      <div class="countdown-icon">🧧</div>
-      <h2 class="countdown-title">{{ title }}</h2>
+      <div class="countdown-title-container">
+        <div class="countdown-title-line"></div>
+        <h2 class="countdown-title">{{ title }}</h2>
+        <div class="countdown-title-line"></div>
+      </div>
     </div>
 
     <!-- 科技感倒计时显示 -->
@@ -111,20 +114,57 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: var(--spacing-md);
+    }
 
-      .countdown-icon {
-        font-size: 36px;
-        margin-bottom: var(--spacing-sm);
-        animation: bounce 2s ease-in-out infinite;
-        filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
-      }
+    .countdown-title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: var(--spacing-md);
+      width: 100%;
+    }
+
+    .countdown-title-line {
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 255, 255, 0),
+        rgba(0, 255, 255, 0.8),
+        rgba(0, 255, 255, 0)
+      );
+      position: relative;
+      overflow: hidden;
+    }
+
+    .countdown-title-line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+      animation: scan 3s linear infinite;
     }
 
     .countdown-title {
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-medium);
-      margin: 0 0 var(--spacing-md) 0;
-      color: rgba(255, 255, 255, 0.9);
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(0, 255, 255, 0.9);
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      position: relative;
+      z-index: 1;
+    }
+
+    .countdown-icon {
+      font-size: 24px;
+      margin-top: 5px;
+      filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.7));
+      animation: float 3s ease-in-out infinite;
     }
 
     .countdown-display {
@@ -230,6 +270,25 @@
     }
     50% {
       transform: translateY(-8px);
+    }
+  }
+
+  @keyframes scan {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-5px) rotate(5deg);
     }
   }
 </style>

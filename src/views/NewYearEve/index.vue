@@ -7,8 +7,6 @@
     <div class="page-content">
       <!-- Hero 区域: 标题 + 倒计时 -->
       <section class="hero-section">
-        <PageHeader :title="t('newYearEve.title')" :subtitle="t('newYearEve.subtitle')" />
-
         <div class="countdown-wrapper">
           <CountdownTimer
             :days="formattedDays"
@@ -52,7 +50,6 @@
   import { useCountdown } from '@/hooks/useCountdown';
   import { useNewYearEve } from '@/hooks/useNewYearEve';
   import PageBackground from './components/PageBackground.vue';
-  import PageHeader from './components/PageHeader.vue';
   import CountdownTimer from './components/CountdownTimer.vue';
   import BlessingsSection from './components/BlessingsSection.vue';
   import CustomsSection from './components/CustomsSection.vue';
@@ -156,17 +153,18 @@
     overflow-x: hidden;
     background: linear-gradient(135deg, #0a0e27 0%, #1a237e 50%, #4a148c 100%);
     color: #fff;
-    
+
     // 添加科技感光效
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at 30% 20%, rgba(66, 165, 245, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 70% 80%, rgba(156, 39, 176, 0.2) 0%, transparent 50%);
+      background:
+        radial-gradient(circle at 30% 20%, rgba(66, 165, 245, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(156, 39, 176, 0.2) 0%, transparent 50%);
       z-index: 0;
     }
 
@@ -178,16 +176,21 @@
         calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
       max-width: 800px;
       margin: 0 auto;
-      
+
       // 添加科技感装饰线
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         height: 1px;
-        background: linear-gradient(90deg, rgba(0, 255, 255, 0), rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0));
+        background: linear-gradient(
+          90deg,
+          rgba(0, 255, 255, 0),
+          rgba(0, 255, 255, 0.5),
+          rgba(0, 255, 255, 0)
+        );
         opacity: 0.5;
       }
     }
@@ -208,20 +211,25 @@
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 0.6s ease-out forwards;
-      
+
       // 添加科技感边框装饰
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -15px;
         left: 0;
         right: 0;
         height: 1px;
-        background: linear-gradient(90deg, rgba(0, 255, 255, 0), rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0));
+        background: linear-gradient(
+          90deg,
+          rgba(0, 255, 255, 0),
+          rgba(0, 255, 255, 0.5),
+          rgba(0, 255, 255, 0)
+        );
         opacity: 0;
         transition: opacity 0.3s ease;
       }
-      
+
       &:hover::after {
         opacity: 0.5;
       }

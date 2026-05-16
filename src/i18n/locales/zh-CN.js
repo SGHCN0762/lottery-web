@@ -3,7 +3,7 @@ export default {
   // 应用信息
   app: {
     name: '瑶光',
-    title: '娱乐应用'
+    title: '娱乐应用',
   },
 
   // 通用
@@ -41,7 +41,7 @@ export default {
     go: '前往',
     points: '积分',
     spinning: '抽奖中...',
-    start: '开始'
+    start: '开始',
   },
 
   // 导航
@@ -50,7 +50,7 @@ export default {
     games: '娱乐',
     profile: '我的',
     lottery: '娱乐中心',
-    about: '关于我们'
+    about: '关于我们',
   },
 
   // 首页
@@ -66,7 +66,7 @@ export default {
     upcomingFestivals: '即将到来的节日',
     daysLater: '天后',
     springFestivalCountdown: '春节倒计时',
-    newYearEveCountdown: '除夕倒计时'
+    newYearEveCountdown: '除夕倒计时',
   },
 
   // 认证
@@ -102,7 +102,7 @@ export default {
     pleaseEnterVerificationCode: '请输入验证码',
     passwordMismatch: '两次输入的密码不一致',
     invalidEmail: '邮箱格式不正确',
-    invalidPhone: '手机号格式不正确'
+    invalidPhone: '手机号格式不正确',
   },
 
   // 娱乐中心（游戏列表）
@@ -122,7 +122,7 @@ export default {
     numberGuessReward: '10-50积分',
     luckyWheelReward: '5-100积分',
     quizChallengeReward: '20-80积分',
-    dailyCheckInReward: '10积分'
+    dailyCheckInReward: '10积分',
   },
 
   // 游戏
@@ -150,15 +150,15 @@ export default {
     gameDescription: '游戏说明',
     howToPlay: '怎么玩',
     tips: '小贴士',
-    
+
     // 通用规则组件配置
     rules: {
       defaultTitle: '游戏规则',
       rule1: '',
       rule2: '',
       rule3: '',
-      rule4: ''
-    }
+      rule4: '',
+    },
   },
 
   // 个人中心
@@ -208,7 +208,7 @@ export default {
     gamesPlayed: '游戏次数',
     dailyCheckin: '每日签到',
     invite: '邀请好友',
-    tip: '温馨提示：积分仅供娱乐，不可兑换现金。请理性参与，切勿沉迷。'
+    tip: '温馨提示：积分仅供娱乐，不可兑换现金。请理性参与，切勿沉迷。',
   },
 
   // 设置页面
@@ -304,7 +304,8 @@ export default {
     deviceRemoved: '设备已移除',
     noOtherDevices: '没有其他设备可移除',
     removeAllDevicesTitle: '移除所有其他设备',
-    removeAllDevicesMessage: '确定要移除所有其他设备吗？共 {count} 台设备将被移除，它们需要重新登录。',
+    removeAllDevicesMessage:
+      '确定要移除所有其他设备吗？共 {count} 台设备将被移除，它们需要重新登录。',
     allDevicesRemoved: '已移除所有其他设备',
     totalDevices: '共 {count} 台设备',
     noDevices: '暂无登录设备',
@@ -328,7 +329,7 @@ export default {
     nicknamePlaceholder: '请输入昵称',
     adjustAvatar: '调整头像',
     scale: '缩放',
-    rotate: '旋转'
+    rotate: '旋转',
   },
 
   // 主题
@@ -337,7 +338,7 @@ export default {
     light: '☀️ 白天模式',
     dark: '🌙 黑夜模式',
     auto: '⚙️ 跟随系统',
-    selectTheme: '选择主题模式'
+    selectTheme: '选择主题模式',
   },
 
   // 语言
@@ -347,7 +348,7 @@ export default {
     zhCN: '简体中文',
     zhTW: '繁体中文',
     en: 'English',
-    ja: '日本語'
+    ja: '日本語',
   },
 
   // 玩家记录
@@ -366,8 +367,8 @@ export default {
       all: '全部',
       week: '最近一周',
       month: '最近一月',
-      threeMonths: '最近三月'
-    }
+      threeMonths: '最近三月',
+    },
   },
 
   // 积分明细
@@ -381,7 +382,7 @@ export default {
     tabs: {
       all: '全部',
       income: '收入',
-      expense: '支出'
+      expense: '支出',
     },
     types: {
       checkin: '每日签到',
@@ -390,8 +391,8 @@ export default {
       quizChallenge: '答题挑战',
       invite: '邀请好友',
       exchange: '积分兑换',
-      wheelCost: '转盘消耗'
-    }
+      wheelCost: '转盘消耗',
+    },
   },
 
   // 帮助中心
@@ -430,27 +431,32 @@ export default {
         cashExchange: '积分可以兑换现金吗？',
         forgotPassword: '忘记密码怎么办？',
         modifyProfile: '如何修改个人信息？',
-        viewGameRecords: '游戏记录在哪里查看？'
+        viewGameRecords: '游戏记录在哪里查看？',
       },
       faq: {
         howToEarnPoints: '如何获得积分？',
-        howToEarnPointsAnswer: '您可以通过每日签到、参与游戏、邀请好友等方式获得积分。具体规则请查看各游戏的说明。',
+        howToEarnPointsAnswer:
+          '您可以通过每日签到、参与游戏、邀请好友等方式获得积分。具体规则请查看各游戏的说明。',
         pointsExpire: '积分会过期吗？',
         pointsExpireAnswer: '积分永久有效，不会过期。请妥善保管您的账号。',
         howToContact: '如何联系客服？',
-        howToContactAnswer: '您可以通过在线客服、客服电话（400-123-4567）或客服邮箱（support@lottery.com）联系我们。'
+        howToContactAnswer:
+          '您可以通过在线客服、客服电话（400-123-4567）或客服邮箱（support@lottery.com）联系我们。',
       },
       replies: {
-        points: '关于积分问题，您可以通过每日签到、参与游戏、邀请好友等方式获得积分。如需充值，可在"积分兑换"页面进行操作。',
-        account: '如需修改密码或找回账号，请前往"账户设置"页面进行操作。如遇到问题，可提供您的用户ID，我们将协助您处理。',
-        games: '我们提供多种有趣的游戏，包括数字猜猜猜、幸运转盘、答题挑战等。您可以在"帮助中心"查看详细的游戏规则说明。',
+        points:
+          '关于积分问题，您可以通过每日签到、参与游戏、邀请好友等方式获得积分。如需充值，可在"积分兑换"页面进行操作。',
+        account:
+          '如需修改密码或找回账号，请前往"账户设置"页面进行操作。如遇到问题，可提供您的用户ID，我们将协助您处理。',
+        games:
+          '我们提供多种有趣的游戏，包括数字猜猜猜、幸运转盘、答题挑战等。您可以在"帮助中心"查看详细的游戏规则说明。',
         thanks: '不客气！如果您还有其他问题，随时欢迎咨询。祝您游戏愉快！😊',
         default1: '感谢您的咨询，我们正在处理您的问题。',
         default2: '收到您的问题，请稍等片刻，我会为您查询相关信息。',
         default3: '好的，我了解了，让我为您详细解答。',
         default4: '这个问题我需要确认一下，请您稍等。',
-        default5: '抱歉让您久等了，关于您的问题，建议您查看帮助中心的详细说明。'
-      }
+        default5: '抱歉让您久等了，关于您的问题，建议您查看帮助中心的详细说明。',
+      },
     },
     feedback: '意见反馈',
     report: '举报问题',
@@ -460,7 +466,7 @@ export default {
     guidePopup: {
       rules: '游戏规则',
       rewards: '奖励机制',
-      notes: '注意事项'
+      notes: '注意事项',
     },
     pointsPopup: {
       title: '积分规则',
@@ -471,8 +477,8 @@ export default {
           '数字猜猜猜：根据猜测准确度获得10-50积分',
           '幸运转盘：消耗10积分参与，有机会获得更高奖励',
           '答题挑战：答对一题得5分，连续答对有额外奖励',
-          '邀请好友：每邀请一位好友获得50积分'
-        ]
+          '邀请好友：每邀请一位好友获得50积分',
+        ],
       },
       use: {
         title: '如何使用积分',
@@ -480,46 +486,48 @@ export default {
           '参与幸运转盘游戏（每次消耗10积分）',
           '在积分兑换中心兑换礼品',
           '解锁特殊游戏功能',
-          '购买游戏道具'
-        ]
+          '购买游戏道具',
+        ],
       },
       expire: {
         title: '积分有效期',
         items: [
           '积分永久有效，不会过期',
           '请妥善保管您的账号，避免积分丢失',
-          '如发现积分异常，请及时联系客服'
-        ]
-      }
+          '如发现积分异常，请及时联系客服',
+        ],
+      },
     },
     faqList: [
       {
         question: '如何开始玩游戏？',
-        answer: '点击底部导航栏的"娱乐"按钮，进入游戏中心，选择您感兴趣的游戏即可开始。每个游戏都有详细的游戏规则说明。'
-      }
+        answer:
+          '点击底部导航栏的"娱乐"按钮，进入游戏中心，选择您感兴趣的游戏即可开始。每个游戏都有详细的游戏规则说明。',
+      },
     ],
     gameGuides: {
       numberGuess: {
         rules: '系统随机生成1-100的数字，您有7次机会猜测。每次猜测后会提示偏大或偏小。',
         rewards: '7次内猜中得50积分，5次内得30积分，3次内得10积分。',
-        notes: '每天可以无限次参与，但只有首次胜利能获得积分奖励。'
+        notes: '每天可以无限次参与，但只有首次胜利能获得积分奖励。',
       },
       luckyWheel: {
         rules: '消耗10积分转动转盘，转盘分为6个区域，对应不同等级的奖品。',
-        rewards: '一等奖500积分，二等奖200积分，三等奖100积分，四等奖50积分，五等奖20积分，谢谢参与。',
-        notes: '转盘采用精准定位算法，确保公平公正。'
+        rewards:
+          '一等奖500积分，二等奖200积分，三等奖100积分，四等奖50积分，五等奖20积分，谢谢参与。',
+        notes: '转盘采用精准定位算法，确保公平公正。',
       },
       quizChallenge: {
         rules: '共5道技术类选择题，每题20秒作答时间。',
         rewards: '答对一题得5分，全部答对额外奖励25分，连续答对有连击加成。',
-        notes: '题目涵盖前端、后端、数据库等多个技术领域。'
+        notes: '题目涵盖前端、后端、数据库等多个技术领域。',
       },
       dailyCheckIn: {
         rules: '每天登录即可签到，获得基础积分奖励。',
         rewards: '基础奖励10积分，连续签到3天额外+5分，7天额外+15分，30天额外+50分。',
-        notes: '签到时间为每天0点刷新，错过当天无法补签。'
-      }
-    }
+        notes: '签到时间为每天0点刷新，错过当天无法补签。',
+      },
+    },
   },
 
   // 数字猜猜猜
@@ -545,11 +553,11 @@ export default {
       rule1: '系统会生成一个1-100的随机数字',
       rule2: '你有7次机会猜测这个数字',
       rule3: '猜中奖励：第1-2次50积分，第3-4次30积分，第5-7次10积分',
-      rule4: '每次猜测后会提示"太大了"或"太小了"'
+      rule4: '每次猜测后会提示"太大了"或"太小了"',
     },
     history: {
-      title: '猜测记录'
-    }
+      title: '猜测记录',
+    },
   },
 
   // 幸运转盘
@@ -566,8 +574,8 @@ export default {
       rule1: '每次转动消耗10积分',
       rule2: '转盘有6个奖品等级，从5积分到100积分不等',
       rule3: '点击"开始抽奖"按钮转动转盘',
-      rule4: '转盘停止后指针指向的即为您获得的奖品'
-    }
+      rule4: '转盘停止后指针指向的即为您获得的奖品',
+    },
   },
 
   // 答题挑战
@@ -595,8 +603,8 @@ export default {
       rule1: '共有5道技术类选择题',
       rule2: '每答对一题获得5积分',
       rule3: '连续答对有额外奖励：连续2题+5分，连续3题+10分，连续4题+15分，连续5题+25分',
-      rule4: '答错不扣分，但会中断连续答对记录'
-    }
+      rule4: '答错不扣分，但会中断连续答对记录',
+    },
   },
 
   // 每日签到
@@ -609,18 +617,18 @@ export default {
       rule1: '每天可签到一次，获得基础10积分',
       rule2: '连续签到有额外奖励：3天+5分，7天+15分，15天+30分，30天+60分',
       rule3: '中断后重新签到，连续天数重置为1',
-      rule4: '坚持签到，累积更多积分！'
+      rule4: '坚持签到，累积更多积分！',
     },
     calendar: {
-      title: '本月签到记录'
+      title: '本月签到记录',
     },
     rewards: {
-      title: '连续签到奖励'
+      title: '连续签到奖励',
     },
     milestone: {
       achieved: '✓ 已获得',
       oneDayLeft: '🔥 差1天',
-      daysLeft: '还需{days}天'
+      daysLeft: '还需{days}天',
     },
     notCheckedIn: '今天还没有签到哦！',
     checkingIn: '签到中...',
@@ -631,18 +639,19 @@ export default {
       title: '最近签到记录',
       base: '基础',
       consecutive: '连续{days}天',
-      total: '共'
+      total: '共',
     },
     success: {
       base: '签到成功！获得 {points} 积分',
-      bonus: '，连续{days}天额外奖励 {points} 积分'
-    }
+      bonus: '，连续{days}天额外奖励 {points} 积分',
+    },
   },
 
   // 关于我们
   about: {
     version: '版本',
-    description: '一款纯娱乐休闲游戏应用，提供多种趣味小游戏，帮助用户放松身心。所有积分均为虚拟道具，仅供娱乐使用。',
+    description:
+      '一款纯娱乐休闲游戏应用，提供多种趣味小游戏，帮助用户放松身心。所有积分均为虚拟道具，仅供娱乐使用。',
     health: {
       title: '健康游戏倡议',
       timeManagement: '合理安排时间',
@@ -650,26 +659,29 @@ export default {
       minorProtection: '未成年人保护',
       minorTip: '需在监护人指导下使用',
       virtualItems: '虚拟道具说明',
-      virtualTip: '不涉及任何真实货币交易'
+      virtualTip: '不涉及任何真实货币交易',
     },
     legal: {
       title: '法律条款',
       privacy: '隐私政策',
       agreement: '用户协议',
-      disclaimer: '免责声明'
+      disclaimer: '免责声明',
     },
     contact: {
       title: '联系我们',
       email: '客服邮箱',
       phone: '服务热线',
-      workTime: '工作时间'
+      workTime: '工作时间',
     },
     popup: {
-      privacy: '我们非常重视您的隐私保护。本应用不会收集、存储或分享您的个人敏感信息。所有游戏数据仅保存在本地设备中。',
-      agreement: '欢迎使用娱乐应用！通过使用本应用，即表示您同意遵守本用户协议的所有条款。本应用仅供娱乐用途，不得用于任何非法活动。',
-      disclaimer: '1. 本应用所有内容均为虚拟场景模拟<br>2. 积分道具不具备真实价值<br>3. 严禁用于赌博或非法活动<br>4. 用户需年满18周岁<br>5. 请理性参与，切勿沉迷'
+      privacy:
+        '我们非常重视您的隐私保护。本应用不会收集、存储或分享您的个人敏感信息。所有游戏数据仅保存在本地设备中。',
+      agreement:
+        '欢迎使用娱乐应用！通过使用本应用，即表示您同意遵守本用户协议的所有条款。本应用仅供娱乐用途，不得用于任何非法活动。',
+      disclaimer:
+        '1. 本应用所有内容均为虚拟场景模拟<br>2. 积分道具不具备真实价值<br>3. 严禁用于赌博或非法活动<br>4. 用户需年满18周岁<br>5. 请理性参与，切勿沉迷',
     },
-    emailCopied: '邮箱已复制'
+    emailCopied: '邮箱已复制',
   },
 
   // 成就
@@ -680,7 +692,7 @@ export default {
     filter: {
       all: '全部',
       unlocked: '已获得',
-      locked: '未获得'
+      locked: '未获得',
     },
     empty: '暂无成就',
     detail: {
@@ -689,8 +701,8 @@ export default {
       reward: '成就奖励',
       tips: '小贴士',
       defaultTips: '继续努力，你一定能获得这个成就！',
-      locked: '未获得'
-    }
+      locked: '未获得',
+    },
   },
 
   // 认证
@@ -742,13 +754,12 @@ export default {
     weibo: '微博',
     loginInDevelopment: '登录功能开发中',
     userName: '娱乐达人',
-    agreementContent: '这里是协议的详细内容...\n\n（实际项目中应展示完整的协议内容）'
+    agreementContent: '这里是协议的详细内容...\n\n（实际项目中应展示完整的协议内容）',
   },
 
   // 除夕倒计时页面
   newYearEve: {
     title: '除夕倒计时',
-    subtitle: '迎接新年，共度美好时光',
     countdownTitle: '距离除夕还有',
     days: '天',
     hours: '时',
@@ -763,7 +774,7 @@ export default {
       dumplings: '吃饺子',
       dumplingsDesc: '饺子形似元宝，寓意招财进宝，团团圆圆',
       redEnvelopes: '发红包',
-      redEnvelopesDesc: '长辈给晚辈红包，寓意祝福和好运'
+      redEnvelopesDesc: '长辈给晚辈红包，寓意祝福和好运',
     },
     foodTitle: '除夕美食',
     foods: {
@@ -774,7 +785,7 @@ export default {
       riceCake: '年糕',
       riceCakeDesc: '年年高升，工作和生活节节高',
       orange: '橘子',
-      orangeDesc: '大吉大利，寓意吉祥如意'
+      orangeDesc: '大吉大利，寓意吉祥如意',
     },
     blessingsTitle: '新年祝福',
     blessings: {
@@ -782,10 +793,10 @@ export default {
       b2: '新年快乐，万事如意！',
       b3: '身体健康，工作顺利！',
       b4: '阖家欢乐，幸福美满！',
-      b5: '龙年大吉，心想事成！'
+      b5: '龙年大吉，心想事成！',
     },
     shareBlessing: '分享祝福',
     shareSuccess: '分享成功',
-    back: '返回'
-  }
-}
+    back: '返回',
+  },
+};

@@ -3,7 +3,7 @@ export default {
   // App Info
   app: {
     name: 'Yaoguang',
-    title: 'Entertainment App'
+    title: 'Entertainment App',
   },
 
   // Common
@@ -41,7 +41,7 @@ export default {
     go: 'Go',
     points: 'Points',
     spinning: 'Spinning...',
-    start: 'Start'
+    start: 'Start',
   },
 
   // Navigation
@@ -50,7 +50,7 @@ export default {
     games: 'Games',
     profile: 'Profile',
     lottery: 'Entertainment',
-    about: 'About Us'
+    about: 'About Us',
   },
 
   // Home
@@ -65,7 +65,7 @@ export default {
     upcomingFestivals: 'Upcoming Festivals',
     daysLater: 'days left',
     springFestivalCountdown: 'Spring Festival Countdown',
-    newYearEveCountdown: 'New Year\'s Eve Countdown'
+    newYearEveCountdown: "New Year's Eve Countdown",
   },
 
   // Authentication
@@ -90,7 +90,8 @@ export default {
     and: 'and',
     userAgreement: 'User Agreement',
     privacyPolicy: 'Privacy Policy',
-    agreementContent: 'Here is the detailed content of the agreement...\n\n(In actual projects, the complete agreement content should be displayed)',
+    agreementContent:
+      'Here is the detailed content of the agreement...\n\n(In actual projects, the complete agreement content should be displayed)',
     loginSuccess: 'Login successful',
     registerSuccess: 'Registration successful',
     logoutSuccess: 'Logged out successfully',
@@ -101,7 +102,7 @@ export default {
     pleaseEnterVerificationCode: 'Please enter verification code',
     passwordMismatch: 'Passwords do not match',
     invalidEmail: 'Invalid email format',
-    invalidPhone: 'Invalid phone number format'
+    invalidPhone: 'Invalid phone number format',
   },
 
   // Games (Game List)
@@ -121,7 +122,7 @@ export default {
     numberGuessReward: '10-50 points',
     luckyWheelReward: '5-100 points',
     quizChallengeReward: '20-80 points',
-    dailyCheckInReward: '10 points'
+    dailyCheckInReward: '10 points',
   },
 
   // Games
@@ -148,7 +149,7 @@ export default {
     viewRecords: 'View Records',
     gameDescription: 'Game Description',
     howToPlay: 'How to Play',
-    tips: 'Tips'
+    tips: 'Tips',
   },
 
   // Profile
@@ -199,7 +200,7 @@ export default {
     gamesPlayed: 'Games Played',
     dailyCheckin: 'Daily Check-in',
     invite: 'Invite Friends',
-    tip: 'Tip: Points are for entertainment only and cannot be exchanged for cash. Please participate rationally and do not become addicted.'
+    tip: 'Tip: Points are for entertainment only and cannot be exchanged for cash. Please participate rationally and do not become addicted.',
   },
 
   // Settings
@@ -232,7 +233,8 @@ export default {
     confirmLogout: 'Are you sure you want to sign out?',
     logoutSuccess: 'Signed out successfully',
     cacheClearTitle: 'Clear Cache',
-    cacheClearMessage: 'Are you sure you want to clear all cache data? This will delete locally stored game records and other data.',
+    cacheClearMessage:
+      'Are you sure you want to clear all cache data? This will delete locally stored game records and other data.',
     cacheCleared: 'Cache cleared successfully',
     latestVersion: 'You already have the latest version',
     passwordChangeTitle: 'Change Password',
@@ -266,7 +268,8 @@ export default {
     totalDevices: 'Total {count} devices',
     trustDevice: 'Set as Trusted Device',
     untrustDevice: 'Remove Trust',
-    trustConfirm: 'Are you sure to set "{device}" as a trusted device? Trusted devices do not require verification when logging in.',
+    trustConfirm:
+      'Are you sure to set "{device}" as a trusted device? Trusted devices do not require verification when logging in.',
     untrustConfirm: 'Are you sure to remove trust for "{device}"?',
     trusted: 'Set as trusted device',
     untrusted: 'Trust removed',
@@ -275,14 +278,16 @@ export default {
     trust: 'Set as Trusted',
     removeDevice: 'Remove Device',
     removeDeviceTitle: 'Remove Device',
-    removeDeviceMessage: 'Are you sure to remove "{device}"? The device will need to log in again after removal.',
+    removeDeviceMessage:
+      'Are you sure to remove "{device}"? The device will need to log in again after removal.',
     removeDeviceTip: 'Remove device',
     removeAllDevices: 'Remove All Other Devices',
     removeAllDevicesTitle: 'Remove All Other Devices',
-    removeAllDevicesMessage: 'Are you sure to remove all other devices? A total of {count} devices will be removed and they need to log in again.',
+    removeAllDevicesMessage:
+      'Are you sure to remove all other devices? A total of {count} devices will be removed and they need to log in again.',
     allDevicesRemoved: 'All other devices have been removed',
     confirmRemove: 'Confirm Remove',
-    deviceRemoved: 'Device removed'
+    deviceRemoved: 'Device removed',
   },
 
   // Theme
@@ -291,7 +296,7 @@ export default {
     light: '☀️ Light Mode',
     dark: '🌙 Dark Mode',
     auto: '⚙️ System Default',
-    selectTheme: 'Select Theme Mode'
+    selectTheme: 'Select Theme Mode',
   },
 
   // Language
@@ -301,7 +306,7 @@ export default {
     zhCN: '简体中文',
     zhTW: '繁體中文',
     en: 'English',
-    ja: '日本語'
+    ja: '日本語',
   },
 
   // Points
@@ -313,7 +318,7 @@ export default {
     tabs: {
       all: 'All',
       income: 'Income',
-      expense: 'Expense'
+      expense: 'Expense',
     },
     noRecords: 'No records yet',
     loadMore: 'Load More',
@@ -331,7 +336,7 @@ export default {
     gameReward: 'Game Reward',
     exchangeDeduction: 'Exchange Deduction',
     inviteBonus: 'Invite Bonus',
-    other: 'Other'
+    other: 'Other',
   },
 
   // Records
@@ -352,7 +357,7 @@ export default {
     totalGames: 'Total Games',
     winCount: 'Wins',
     loseCount: 'Losses',
-    winRate: 'Win Rate'
+    winRate: 'Win Rate',
   },
 
   // Badges
@@ -371,7 +376,7 @@ export default {
     master: 'Master',
     lucky: 'Lucky Star',
     diligent: 'Diligent',
-    social: 'Social Butterfly'
+    social: 'Social Butterfly',
   },
 
   // Invite
@@ -390,7 +395,7 @@ export default {
     rule1: 'Both you and your friend get {points} points when they register',
     rule2: 'Get extra {points} points when your friend completes their first game',
     rule3: 'No limit on invites, the more the better',
-    rule4: 'Points can be exchanged for wonderful gifts'
+    rule4: 'Points can be exchanged for wonderful gifts',
   },
 
   // Exchange
@@ -418,7 +423,7 @@ export default {
     allCategories: 'All Categories',
     virtual: 'Virtual Products',
     physical: 'Physical Products',
-    coupon: 'Coupons'
+    coupon: 'Coupons',
   },
 
   // Help
@@ -449,7 +454,8 @@ export default {
       offlineStatus: 'Offline Status',
       welcomeMessage: 'Hello! Welcome to online customer service, how can I help you today?',
       typingMessage: 'Customer service is typing...',
-      clearHistoryMessage: 'Are you sure you want to clear all chat history? This operation cannot be undone.',
+      clearHistoryMessage:
+        'Are you sure you want to clear all chat history? This operation cannot be undone.',
       clearHistorySuccess: 'Chat history has been cleared',
       pageLoaded: 'Online service page loaded',
       quickQuestions: {
@@ -457,27 +463,36 @@ export default {
         cashExchange: 'Can points be exchanged for cash?',
         forgotPassword: 'What if I forget my password?',
         modifyProfile: 'How to modify personal information?',
-        viewGameRecords: 'Where to view game records?'
+        viewGameRecords: 'Where to view game records?',
       },
       faq: {
         howToEarnPoints: 'How to earn points?',
-        howToEarnPointsAnswer: 'You can earn points through daily check-ins, participating in games, inviting friends, etc. Please check the instructions for each game for specific rules.',
+        howToEarnPointsAnswer:
+          'You can earn points through daily check-ins, participating in games, inviting friends, etc. Please check the instructions for each game for specific rules.',
         pointsExpire: 'Do points expire?',
-        pointsExpireAnswer: 'Points are permanently valid and do not expire. Please keep your account secure.',
+        pointsExpireAnswer:
+          'Points are permanently valid and do not expire. Please keep your account secure.',
         howToContact: 'How to contact customer service?',
-        howToContactAnswer: 'You can contact us through online customer service, customer service phone 400-123-4567, or customer service email at support (at) lottery.com.'
+        howToContactAnswer:
+          'You can contact us through online customer service, customer service phone 400-123-4567, or customer service email at support (at) lottery.com.',
       },
       replies: {
-        points: 'Regarding points, you can earn points through daily check-ins, participating in games, inviting friends, etc. For recharge, you can operate on the "Points Exchange" page.',
-        account: 'To modify your password or retrieve your account, please go to the "Account Settings" page. If you encounter any issues, please provide your user ID and we will assist you.',
-        games: 'We offer a variety of interesting games, including Number Guess, Lucky Wheel, Quiz Challenge, etc. You can check detailed game rules in the "Help Center".',
-        thanks: 'You\'re welcome! If you have any other questions, feel free to ask. Have a great time gaming! 😊',
+        points:
+          'Regarding points, you can earn points through daily check-ins, participating in games, inviting friends, etc. For recharge, you can operate on the "Points Exchange" page.',
+        account:
+          'To modify your password or retrieve your account, please go to the "Account Settings" page. If you encounter any issues, please provide your user ID and we will assist you.',
+        games:
+          'We offer a variety of interesting games, including Number Guess, Lucky Wheel, Quiz Challenge, etc. You can check detailed game rules in the "Help Center".',
+        thanks:
+          "You're welcome! If you have any other questions, feel free to ask. Have a great time gaming! 😊",
         default1: 'Thank you for your inquiry, we are processing your question.',
-        default2: 'Received your question, please wait a moment while I look up the information for you.',
+        default2:
+          'Received your question, please wait a moment while I look up the information for you.',
         default3: 'Okay, I understand, let me explain in detail for you.',
         default4: 'I need to confirm this question, please wait a moment.',
-        default5: 'Sorry to keep you waiting, regarding your question, we recommend checking the detailed instructions in the Help Center.'
-      }
+        default5:
+          'Sorry to keep you waiting, regarding your question, we recommend checking the detailed instructions in the Help Center.',
+      },
     },
     feedback: 'Feedback',
     report: 'Report',
@@ -487,7 +502,7 @@ export default {
     guidePopup: {
       rules: 'Game Rules',
       rewards: 'Reward Mechanism',
-      notes: 'Notes'
+      notes: 'Notes',
     },
     pointsPopup: {
       title: 'Points Rules',
@@ -498,8 +513,8 @@ export default {
           'Number Guess: 10-50 points based on accuracy',
           'Lucky Wheel: Cost 10 points to participate, chance to win higher rewards',
           'Quiz Challenge: 5 points per correct answer, additional rewards for consecutive correct answers',
-          'Invite friends: 50 points per invited friend'
-        ]
+          'Invite friends: 50 points per invited friend',
+        ],
       },
       use: {
         title: 'How to Use Points',
@@ -507,45 +522,55 @@ export default {
           'Participate in Lucky Wheel games (costs 10 points each time)',
           'Exchange for gifts in the points exchange center',
           'Unlock special game features',
-          'Purchase game props'
-        ]
+          'Purchase game props',
+        ],
       },
       expire: {
         title: 'Points Validity',
         items: [
           'Points are permanently valid and do not expire',
           'Please keep your account secure to avoid point loss',
-          'If you find any point abnormalities, please contact customer service promptly'
-        ]
-      }
+          'If you find any point abnormalities, please contact customer service promptly',
+        ],
+      },
     },
     faqList: [
       {
         question: 'How to start playing games?',
-        answer: 'Click the "Games" button in the bottom navigation bar to enter the game center, select the game you are interested in to start. Each game has detailed game rules.'
-      }
+        answer:
+          'Click the "Games" button in the bottom navigation bar to enter the game center, select the game you are interested in to start. Each game has detailed game rules.',
+      },
     ],
     gameGuides: {
       numberGuess: {
-        rules: 'The system randomly generates a number between 1-100, you have 7 attempts to guess. After each guess, you will be told if the number is "too big" or "too small".',
-        rewards: '50 points for guessing within 7 attempts, 30 points within 5 attempts, 10 points within 3 attempts.',
-        notes: 'You can participate unlimited times per day, but only the first victory can earn points.'
+        rules:
+          'The system randomly generates a number between 1-100, you have 7 attempts to guess. After each guess, you will be told if the number is "too big" or "too small".',
+        rewards:
+          '50 points for guessing within 7 attempts, 30 points within 5 attempts, 10 points within 3 attempts.',
+        notes:
+          'You can participate unlimited times per day, but only the first victory can earn points.',
       },
       luckyWheel: {
-        rules: 'Cost 10 points to spin the wheel, which has 6 regions corresponding to different prize levels.',
-        rewards: 'First prize 500 points, second prize 200 points, third prize 100 points, fourth prize 50 points, fifth prize 20 points, thank you for participating.',
-        notes: 'The wheel uses precise positioning algorithm to ensure fairness.'
+        rules:
+          'Cost 10 points to spin the wheel, which has 6 regions corresponding to different prize levels.',
+        rewards:
+          'First prize 500 points, second prize 200 points, third prize 100 points, fourth prize 50 points, fifth prize 20 points, thank you for participating.',
+        notes: 'The wheel uses precise positioning algorithm to ensure fairness.',
       },
       quizChallenge: {
-        rules: 'A total of 5 technical multiple-choice questions, 20 seconds to answer each question.',
-        rewards: '5 points for each correct answer, additional 25 points for all correct answers, with combo bonus for consecutive correct answers.',
-        notes: 'Questions cover multiple technical fields including frontend, backend, database, etc.'
+        rules:
+          'A total of 5 technical multiple-choice questions, 20 seconds to answer each question.',
+        rewards:
+          '5 points for each correct answer, additional 25 points for all correct answers, with combo bonus for consecutive correct answers.',
+        notes:
+          'Questions cover multiple technical fields including frontend, backend, database, etc.',
       },
       dailyCheckIn: {
         rules: 'Check in every day to get basic point rewards.',
-        rewards: 'Basic reward 10 points, additional +5 points for 3 consecutive days, +15 points for 7 days, +50 points for 30 days.',
-        notes: 'Check-in time refreshes at 0:00 every day, you cannot make up for missed days.'
-      }
+        rewards:
+          'Basic reward 10 points, additional +5 points for 3 consecutive days, +15 points for 7 days, +50 points for 30 days.',
+        notes: 'Check-in time refreshes at 0:00 every day, you cannot make up for missed days.',
+      },
     },
     userGuide: 'User Guide',
     gameRules: 'Game Rules',
@@ -571,7 +596,7 @@ export default {
     waitingForService: 'Waiting for service...',
     serviceConnected: 'Service connected',
     typeMessage: 'Type message...',
-    send: 'Send'
+    send: 'Send',
   },
 
   // Modals
@@ -583,7 +608,7 @@ export default {
     warningTitle: 'Reminder',
     close: 'Close',
     confirm: 'Confirm',
-    cancel: 'Cancel'
+    cancel: 'Cancel',
   },
 
   // Number Guess
@@ -608,12 +633,13 @@ export default {
       title: 'Game Rules',
       rule1: 'The system will generate a random number between 1-100',
       rule2: 'You have 7 attempts to guess the number',
-      rule3: 'Rewards: 50 points for 1-2 attempts, 30 points for 3-4 attempts, 10 points for 5-7 attempts',
-      rule4: 'After each guess, you will be told if the number is "too big" or "too small"'
+      rule3:
+        'Rewards: 50 points for 1-2 attempts, 30 points for 3-4 attempts, 10 points for 5-7 attempts',
+      rule4: 'After each guess, you will be told if the number is "too big" or "too small"',
     },
     history: {
-      title: 'Guess History'
-    }
+      title: 'Guess History',
+    },
   },
 
   // Lucky Wheel
@@ -630,8 +656,8 @@ export default {
       rule1: 'Each spin costs 10 points',
       rule2: 'The wheel has 6 prize levels, ranging from 5 to 100 points',
       rule3: 'Click the "Start Spinning" button to spin the wheel',
-      rule4: 'After the wheel stops, the pointer points to the prize you won'
-    }
+      rule4: 'After the wheel stops, the pointer points to the prize you won',
+    },
   },
 
   // Quiz Challenge
@@ -658,9 +684,10 @@ export default {
       title: 'Game Rules',
       rule1: 'There are 5 technical multiple-choice questions',
       rule2: 'Each correct answer earns 5 points',
-      rule3: 'Consecutive correct answers have bonus: 2 in a row +5 points, 3 in a row +10 points, 4 in a row +15 points, 5 in a row +25 points',
-      rule4: 'Wrong answers don\'t deduct points, but will break the consecutive correct streak'
-    }
+      rule3:
+        'Consecutive correct answers have bonus: 2 in a row +5 points, 3 in a row +10 points, 4 in a row +15 points, 5 in a row +25 points',
+      rule4: "Wrong answers don't deduct points, but will break the consecutive correct streak",
+    },
   },
 
   // Daily Check-in
@@ -671,22 +698,23 @@ export default {
     rules: {
       title: 'Game Rules',
       rule1: 'You can check in once a day, earning 10 base points',
-      rule2: 'Consecutive check-ins earn bonuses: 3 days +5 points, 7 days +15 points, 15 days +30 points, 30 days +60 points',
+      rule2:
+        'Consecutive check-ins earn bonuses: 3 days +5 points, 7 days +15 points, 15 days +30 points, 30 days +60 points',
       rule3: 'If you miss a day, your consecutive streak resets to 1',
-      rule4: 'Keep checking in to accumulate more points!'
+      rule4: 'Keep checking in to accumulate more points!',
     },
     calendar: {
-      title: 'This Month\'s Check-ins'
+      title: "This Month's Check-ins",
     },
     rewards: {
-      title: 'Consecutive Check-in Rewards'
+      title: 'Consecutive Check-in Rewards',
     },
     milestone: {
       achieved: '✓ Achieved',
       oneDayLeft: '🔥 1 day left',
-      daysLeft: '{days} days left'
+      daysLeft: '{days} days left',
     },
-    notCheckedIn: 'You haven\'t checked in today!',
+    notCheckedIn: "You haven't checked in today!",
     checkingIn: 'Checking in...',
     checkInNow: 'Check In Now',
     checkedInToday: 'Checked In Today',
@@ -695,18 +723,19 @@ export default {
       title: 'Recent Check-in Records',
       base: 'Base',
       consecutive: 'Consecutive {days} days',
-      total: 'Total'
+      total: 'Total',
     },
     success: {
       base: 'Check-in successful! Earned {points} points',
-      bonus: ', {days} consecutive days bonus {points} points'
-    }
+      bonus: ', {days} consecutive days bonus {points} points',
+    },
   },
 
   // About
   about: {
     version: 'Version',
-    description: 'A pure entertainment casual game app that offers a variety of fun mini-games to help users relax. All points are virtual items for entertainment purposes only.',
+    description:
+      'A pure entertainment casual game app that offers a variety of fun mini-games to help users relax. All points are virtual items for entertainment purposes only.',
     health: {
       title: 'Healthy Gaming Initiative',
       timeManagement: 'Manage Time Wisely',
@@ -714,26 +743,29 @@ export default {
       minorProtection: 'Minor Protection',
       minorTip: 'Use under guardian supervision',
       virtualItems: 'Virtual Items Explanation',
-      virtualTip: 'No real currency transactions involved'
+      virtualTip: 'No real currency transactions involved',
     },
     legal: {
       title: 'Legal Terms',
       privacy: 'Privacy Policy',
       agreement: 'User Agreement',
-      disclaimer: 'Disclaimer'
+      disclaimer: 'Disclaimer',
     },
     contact: {
       title: 'Contact Us',
       email: 'Customer Service Email',
       phone: 'Service Hotline',
-      workTime: 'Working Hours'
+      workTime: 'Working Hours',
     },
     popup: {
-      privacy: 'We take your privacy protection very seriously. This app does not collect, store, or share your personal sensitive information. All game data is only stored on your local device.',
-      agreement: 'Welcome to the Entertainment App! By using this app, you agree to comply with all terms of this user agreement. This app is for entertainment purposes only and must not be used for any illegal activities.',
-      disclaimer: '1. All content in this app is a virtual scenario simulation<br>2. Points and items have no real value<br>3. Strictly prohibited for gambling or illegal activities<br>4. Users must be at least 18 years old<br>5. Please participate rationally and do not become addicted'
+      privacy:
+        'We take your privacy protection very seriously. This app does not collect, store, or share your personal sensitive information. All game data is only stored on your local device.',
+      agreement:
+        'Welcome to the Entertainment App! By using this app, you agree to comply with all terms of this user agreement. This app is for entertainment purposes only and must not be used for any illegal activities.',
+      disclaimer:
+        '1. All content in this app is a virtual scenario simulation<br>2. Points and items have no real value<br>3. Strictly prohibited for gambling or illegal activities<br>4. Users must be at least 18 years old<br>5. Please participate rationally and do not become addicted',
     },
-    emailCopied: 'Email copied'
+    emailCopied: 'Email copied',
   },
 
   // Badges
@@ -744,7 +776,7 @@ export default {
     filter: {
       all: 'All',
       unlocked: 'Unlocked',
-      locked: 'Locked'
+      locked: 'Locked',
     },
     empty: 'No achievements yet',
     detail: {
@@ -753,8 +785,8 @@ export default {
       reward: 'Achievement Reward',
       tips: 'Tips',
       defaultTips: 'Keep working hard, you can definitely get this achievement!',
-      locked: 'Locked'
-    }
+      locked: 'Locked',
+    },
   },
 
   // Auth
@@ -784,7 +816,7 @@ export default {
     sendCodeFail: 'Failed to send, please try again',
     rememberMe: 'Remember me',
     forgotPassword: 'Forgot password?',
-    noAccount: 'Don\'t have an account?',
+    noAccount: "Don't have an account?",
     hasAccount: 'Already have an account?',
     registerNow: 'Register now',
     loginNow: 'Login now',
@@ -806,13 +838,13 @@ export default {
     weibo: 'Weibo',
     loginInDevelopment: 'login is under development',
     userName: 'Entertainment Master',
-    agreementContent: 'Here is the detailed content of the agreement...\n\n(In actual projects, the complete agreement content should be displayed)'
+    agreementContent:
+      'Here is the detailed content of the agreement...\n\n(In actual projects, the complete agreement content should be displayed)',
   },
 
   // New Year Eve Countdown Page
   newYearEve: {
     title: 'New Year Eve Countdown',
-    subtitle: 'Welcome the New Year, Enjoy Beautiful Moments',
     countdownTitle: 'Time Until New Year Eve:',
     days: 'Days',
     hours: 'Hours',
@@ -821,13 +853,15 @@ export default {
     customsTitle: 'New Year Eve Customs',
     customs: {
       doorGod: 'Door Gods',
-      doorGodDesc: 'Place Door God images on doors to ward off evil spirits and protect family safety',
+      doorGodDesc:
+        'Place Door God images on doors to ward off evil spirits and protect family safety',
       firecrackers: 'Firecrackers',
-      firecrackersDesc: 'Setting off firecrackers to drive away the New Year monster and bring good luck',
+      firecrackersDesc:
+        'Setting off firecrackers to drive away the New Year monster and bring good luck',
       dumplings: 'Dumplings',
       dumplingsDesc: 'Dumplings look like gold ingots, symbolizing wealth and family reunion',
       redEnvelopes: 'Red Envelopes',
-      redEnvelopesDesc: 'Elders give red envelopes to juniors as blessings and good wishes'
+      redEnvelopesDesc: 'Elders give red envelopes to juniors as blessings and good wishes',
     },
     foodTitle: 'New Year Eve Foods',
     foods: {
@@ -838,7 +872,7 @@ export default {
       riceCake: 'Rice Cake',
       riceCakeDesc: 'Higher year after year, symbolizing progress in work and life',
       orange: 'Orange',
-      orangeDesc: 'Great luck and fortune, symbolizing good fortune and success'
+      orangeDesc: 'Great luck and fortune, symbolizing good fortune and success',
     },
     blessingsTitle: 'New Year Wishes',
     blessings: {
@@ -846,28 +880,10 @@ export default {
       b2: 'Happy New Year, may all your wishes come true!',
       b3: 'Good health and success in your career!',
       b4: 'Happy family and a blissful life!',
-      b5: 'Great luck in the Year of the Dragon, may all your dreams come true!'
+      b5: 'Great luck in the Year of the Dragon, may all your dreams come true!',
     },
     shareBlessing: 'Share Blessings',
     shareSuccess: 'Shared Successfully',
-    back: 'Back'
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    back: 'Back',
+  },
+};

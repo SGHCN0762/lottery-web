@@ -3,7 +3,7 @@ export default {
   // 应用信息
   app: {
     name: '瑤光',
-    title: '娛樂應用'
+    title: '娛樂應用',
   },
 
   // 通用
@@ -41,7 +41,7 @@ export default {
     go: '前往',
     points: '積分',
     spinning: '抽獎中...',
-    start: '開始'
+    start: '開始',
   },
 
   // 导航
@@ -50,7 +50,7 @@ export default {
     games: '娛樂',
     profile: '我的',
     lottery: '娛樂中心',
-    about: '關於我們'
+    about: '關於我們',
   },
 
   // 首頁
@@ -66,7 +66,7 @@ export default {
     upcomingFestivals: '即將到來的節日',
     daysLater: '天後',
     springFestivalCountdown: '春節倒計時',
-    newYearEveCountdown: '除夕倒計時'
+    newYearEveCountdown: '除夕倒計時',
   },
 
   // 認證
@@ -102,7 +102,7 @@ export default {
     pleaseEnterVerificationCode: '請輸入驗證碼',
     passwordMismatch: '兩次輸入的密碼不一致',
     invalidEmail: '郵箱格式不正確',
-    invalidPhone: '手機號格式不正確'
+    invalidPhone: '手機號格式不正確',
   },
 
   // 娛樂中心（遊戲列表）
@@ -122,7 +122,7 @@ export default {
     numberGuessReward: '10-50積分',
     luckyWheelReward: '5-100積分',
     quizChallengeReward: '20-80積分',
-    dailyCheckInReward: '10積分'
+    dailyCheckInReward: '10積分',
   },
 
   // 遊戲
@@ -149,7 +149,7 @@ export default {
     viewRecords: '查看記錄',
     gameDescription: '遊戲說明',
     howToPlay: '怎麼玩',
-    tips: '小貼士'
+    tips: '小貼士',
   },
 
   // 个人中心
@@ -199,7 +199,7 @@ export default {
     gamesPlayed: '遊戲次數',
     dailyCheckin: '每日簽到',
     invite: '邀請好友',
-    tip: '溫馨提示：積分僅供娛樂，不可兌換現金。請理性參與，切勿沉迷。'
+    tip: '溫馨提示：積分僅供娛樂，不可兌換現金。請理性參與，切勿沉迷。',
   },
 
   // 設置頁面
@@ -295,7 +295,8 @@ export default {
     deviceRemoved: '設備已移除',
     noOtherDevices: '沒有其他設備可移除',
     removeAllDevicesTitle: '移除所有其他設備',
-    removeAllDevicesMessage: '確定要移除所有其他設備嗎？共 {count} 台設備將被移除，它們需要重新登錄。',
+    removeAllDevicesMessage:
+      '確定要移除所有其他設備嗎？共 {count} 台設備將被移除，它們需要重新登錄。',
     allDevicesRemoved: '已移除所有其他設備',
     totalDevices: '共 {count} 台設備',
     noDevices: '暫無登錄設備',
@@ -319,7 +320,7 @@ export default {
     nicknamePlaceholder: '請輸入暱稱',
     adjustAvatar: '調整頭像',
     scale: '縮放',
-    rotate: '旋轉'
+    rotate: '旋轉',
   },
 
   // 主题
@@ -328,7 +329,7 @@ export default {
     light: '☀️ 白天模式',
     dark: '🌙 黑夜模式',
     auto: '⚙️ 跟隨系統',
-    selectTheme: '選擇主題模式'
+    selectTheme: '選擇主題模式',
   },
 
   // 语言
@@ -338,7 +339,7 @@ export default {
     zhCN: '簡體中文',
     zhTW: '繁體中文',
     en: 'English',
-    ja: '日本語'
+    ja: '日本語',
   },
 
   // 玩家記錄
@@ -357,8 +358,8 @@ export default {
       all: '全部',
       week: '最近一週',
       month: '最近一月',
-      threeMonths: '最近三月'
-    }
+      threeMonths: '最近三月',
+    },
   },
 
   // 積分明細
@@ -372,7 +373,7 @@ export default {
     tabs: {
       all: '全部',
       income: '收入',
-      expense: '支出'
+      expense: '支出',
     },
     types: {
       checkin: '每日簽到',
@@ -381,8 +382,8 @@ export default {
       quizChallenge: '答題挑戰',
       invite: '邀請好友',
       exchange: '積分兌換',
-      wheelCost: '轉盤消耗'
-    }
+      wheelCost: '轉盤消耗',
+    },
   },
 
   // 幫助中心
@@ -421,27 +422,32 @@ export default {
         cashExchange: '積分可以兌換現金嗎？',
         forgotPassword: '忘記密碼怎麼辦？',
         modifyProfile: '如何修改個人信息？',
-        viewGameRecords: '遊戲記錄在哪裡查看？'
+        viewGameRecords: '遊戲記錄在哪裡查看？',
       },
       faq: {
         howToEarnPoints: '如何獲得積分？',
-        howToEarnPointsAnswer: '您可以通過每日簽到、參與遊戲、邀請好友等方式獲得積分。具體規則請查看各遊戲的說明。',
+        howToEarnPointsAnswer:
+          '您可以通過每日簽到、參與遊戲、邀請好友等方式獲得積分。具體規則請查看各遊戲的說明。',
         pointsExpire: '積分會過期嗎？',
         pointsExpireAnswer: '積分永久有效，不會過期。請妥善保管您的賬號。',
         howToContact: '如何聯繫客服？',
-        howToContactAnswer: '您可以通過在線客服、客服電話（400-123-4567）或客服郵箱（support@lottery.com）聯繫我們。'
+        howToContactAnswer:
+          '您可以通過在線客服、客服電話（400-123-4567）或客服郵箱（support@lottery.com）聯繫我們。',
       },
       replies: {
-        points: '關於積分問題，您可以通過每日簽到、參與遊戲、邀請好友等方式獲得積分。如需充值，可在「積分兌換」頁面進行操作。',
-        account: '如需修改密碼或找回賬號，請前往「賬戶設置」頁面進行操作。如遇到問題，可提供您的用戶ID，我們將協助您處理。',
-        games: '我們提供多種有趣的遊戲，包括數字猜猜猜、幸運轉盤、答題挑戰等。您可以在「幫助中心」查看詳細的遊戲規則說明。',
+        points:
+          '關於積分問題，您可以通過每日簽到、參與遊戲、邀請好友等方式獲得積分。如需充值，可在「積分兌換」頁面進行操作。',
+        account:
+          '如需修改密碼或找回賬號，請前往「賬戶設置」頁面進行操作。如遇到問題，可提供您的用戶ID，我們將協助您處理。',
+        games:
+          '我們提供多種有趣的遊戲，包括數字猜猜猜、幸運轉盤、答題挑戰等。您可以在「幫助中心」查看詳細的遊戲規則說明。',
         thanks: '不客氣！如果您還有其他問題，隨時歡迎諮詢。祝您遊戲愉快！😊',
         default1: '感謝您的諮詢，我們正在處理您的問題。',
         default2: '收到您的問題，請稍等片刻，我會為您查詢相關信息。',
         default3: '好的，我了解了，讓我為您詳細解答。',
         default4: '這個問題我需要確認一下，請您稍等。',
-        default5: '抱歉讓您久等了，關於您的問題，建議您查看幫助中心的詳細說明。'
-      }
+        default5: '抱歉讓您久等了，關於您的問題，建議您查看幫助中心的詳細說明。',
+      },
     },
     feedback: '意見反饋',
     report: '舉報問題',
@@ -451,7 +457,7 @@ export default {
     guidePopup: {
       rules: '遊戲規則',
       rewards: '獎勵機制',
-      notes: '注意事項'
+      notes: '注意事項',
     },
     pointsPopup: {
       title: '積分規則',
@@ -462,8 +468,8 @@ export default {
           '數字猜猜猜：根據猜測準確度獲得10-50積分',
           '幸運轉盤：消耗10積分參與，有機會獲得更高獎勵',
           '答題挑戰：答對一題得5分，連續答對有額外獎勵',
-          '邀請好友：每邀請一位好友獲得50積分'
-        ]
+          '邀請好友：每邀請一位好友獲得50積分',
+        ],
       },
       use: {
         title: '如何使用積分',
@@ -471,46 +477,48 @@ export default {
           '參與幸運轉盤遊戲（每次消耗10積分）',
           '在積分兌換中心兌換禮品',
           '解鎖特殊遊戲功能',
-          '購買遊戲道具'
-        ]
+          '購買遊戲道具',
+        ],
       },
       expire: {
         title: '積分有效期',
         items: [
           '積分永久有效，不會過期',
           '請妥善保管您的賬號，避免積分丟失',
-          '如發現積分異常，請及時聯繫客服'
-        ]
-      }
+          '如發現積分異常，請及時聯繫客服',
+        ],
+      },
     },
     faqList: [
       {
         question: '如何開始玩遊戲？',
-        answer: '點擊底部導航欄的“娛樂”按鈕，進入遊戲中心，選擇您感興趣的遊戲即可開始。每個遊戲都有詳細的遊戲規則說明。'
-      }
+        answer:
+          '點擊底部導航欄的“娛樂”按鈕，進入遊戲中心，選擇您感興趣的遊戲即可開始。每個遊戲都有詳細的遊戲規則說明。',
+      },
     ],
     gameGuides: {
       numberGuess: {
         rules: '系統隨機生成1-100的數字，您有7次機會猜測。每次猜測後會提示偏大或偏小。',
         rewards: '7次內猜中得50積分，5次內得30積分，3次內得10積分。',
-        notes: '每天可以無限次參與，但只有首次勝利能獲得益分獎勵。'
+        notes: '每天可以無限次參與，但只有首次勝利能獲得益分獎勵。',
       },
       luckyWheel: {
         rules: '消耗10積分轉動轉盤，轉盤分為6個區域，對應不同等級的獎品。',
-        rewards: '一等獎500積分，二等獎200積分，三等獎100積分，四等獎50積分，五等獎20積分，謝謝參與。',
-        notes: '轉盤採用精準定位算法，確保公平公正。'
+        rewards:
+          '一等獎500積分，二等獎200積分，三等獎100積分，四等獎50積分，五等獎20積分，謝謝參與。',
+        notes: '轉盤採用精準定位算法，確保公平公正。',
       },
       quizChallenge: {
         rules: '共5道技術類選擇題，每題20秒作答時間。',
         rewards: '答對一題得5分，全部答對額外獎勵25分，連續答對有連擊加成。',
-        notes: '題目涵蓋前端、後端、數據庫等多個技術領域。'
+        notes: '題目涵蓋前端、後端、數據庫等多個技術領域。',
       },
       dailyCheckIn: {
         rules: '每天登錄即可簽到，獲得基礎積分獎勵。',
         rewards: '基礎獎勵10積分，連續簽到3天額外+5分，7天額外+15分，30天額外+50分。',
-        notes: '簽到時間為每天0點刷新，錯過當天無法補簽。'
-      }
-    }
+        notes: '簽到時間為每天0點刷新，錯過當天無法補簽。',
+      },
+    },
   },
 
   // 成就
@@ -529,7 +537,7 @@ export default {
     master: '遊戲大師',
     lucky: '幸運之星',
     diligent: '勤奮簽到',
-    social: '社交達人'
+    social: '社交達人',
   },
 
   // 邀请
@@ -548,7 +556,7 @@ export default {
     rule1: '每邀請一位好友註冊，雙方各獲得{points}積分',
     rule2: '好友首次完成遊戲，額外獎勵{points}積分',
     rule3: '邀請人數無上限，多邀多得',
-    rule4: '積分可用於兌換精美禮品'
+    rule4: '積分可用於兌換精美禮品',
   },
 
   // 兌换
@@ -576,10 +584,8 @@ export default {
     allCategories: '全部分類',
     virtual: '虛擬商品',
     physical: '實物商品',
-    coupon: '優惠券'
+    coupon: '優惠券',
   },
-
-
 
   // 弹窗通用
   modals: {
@@ -590,7 +596,7 @@ export default {
     warningTitle: '溫馨提示',
     close: '關閉',
     confirm: '確定',
-    cancel: '取消'
+    cancel: '取消',
   },
 
   // 數字猜猜猜
@@ -616,11 +622,11 @@ export default {
       rule1: '系統會生成一個1-100的隨機數字',
       rule2: '你有7次機會猜測這個數字',
       rule3: '猜中獎勵：第1-2次50積分，第3-4次30積分，第5-7次10積分',
-      rule4: '每次猜測後會提示"太大了"或"太小了"'
+      rule4: '每次猜測後會提示"太大了"或"太小了"',
     },
     history: {
-      title: '猜測記錄'
-    }
+      title: '猜測記錄',
+    },
   },
 
   // 幸運轉盤
@@ -637,8 +643,8 @@ export default {
       rule1: '每次轉動消耗10積分',
       rule2: '轉盤有6個獎品等級，從5積分到100積分不等',
       rule3: '點擊"開始抽獎"按鈕轉動轉盤',
-      rule4: '轉盤停止後指針指向的即為您獲得的獎品'
-    }
+      rule4: '轉盤停止後指針指向的即為您獲得的獎品',
+    },
   },
 
   // 答題挑戰
@@ -666,8 +672,8 @@ export default {
       rule1: '共有5道技術類選擇題',
       rule2: '每答對一題獲得5積分',
       rule3: '連續答對有額外獎勵：連續2題+5分，連續3題+10分，連續4題+15分，連續5題+25分',
-      rule4: '答錯不扣分，但會中斷連續答對記錄'
-    }
+      rule4: '答錯不扣分，但會中斷連續答對記錄',
+    },
   },
 
   // 每日簽到
@@ -680,18 +686,18 @@ export default {
       rule1: '每天可簽到一次，獲得基礎10積分',
       rule2: '連續簽到有額外獎勵：3天+5分，7天+15分，15天+30分，30天+60分',
       rule3: '中斷後重新簽到，連續天數重置為1',
-      rule4: '堅持簽到，累積更多積分！'
+      rule4: '堅持簽到，累積更多積分！',
     },
     calendar: {
-      title: '本月簽到記錄'
+      title: '本月簽到記錄',
     },
     rewards: {
-      title: '連續簽到獎勵'
+      title: '連續簽到獎勵',
     },
     milestone: {
       achieved: '✓ 已獲得',
       oneDayLeft: '🔥 差1天',
-      daysLeft: '還需{days}天'
+      daysLeft: '還需{days}天',
     },
     notCheckedIn: '今天還沒有簽到哦！',
     checkingIn: '簽到中...',
@@ -702,18 +708,19 @@ export default {
       title: '最近簽到記錄',
       base: '基礎',
       consecutive: '連續{days}天',
-      total: '共'
+      total: '共',
     },
     success: {
       base: '簽到成功！獲得 {points} 積分',
-      bonus: '，連續{days}天額外獎勵 {points} 積分'
-    }
+      bonus: '，連續{days}天額外獎勵 {points} 積分',
+    },
   },
 
   // 關於我們
   about: {
     version: '版本',
-    description: '一款純娛樂休閒遊戲應用，提供多種趣味小遊戲，幫助使用者放鬆身心。所有積分均為虛擬道具，僅供娛樂使用。',
+    description:
+      '一款純娛樂休閒遊戲應用，提供多種趣味小遊戲，幫助使用者放鬆身心。所有積分均為虛擬道具，僅供娛樂使用。',
     health: {
       title: '健康遊戲倡議',
       timeManagement: '合理安排時間',
@@ -721,26 +728,29 @@ export default {
       minorProtection: '未成年人保護',
       minorTip: '需在監護人指導下使用',
       virtualItems: '虛擬道具說明',
-      virtualTip: '不涉及任何真實貨幣交易'
+      virtualTip: '不涉及任何真實貨幣交易',
     },
     legal: {
       title: '法律條款',
       privacy: '隱私政策',
       agreement: '使用者協議',
-      disclaimer: '免責聲明'
+      disclaimer: '免責聲明',
     },
     contact: {
       title: '聯繫我們',
       email: '客服郵箱',
       phone: '服務熱線',
-      workTime: '工作時間'
+      workTime: '工作時間',
     },
     popup: {
-      privacy: '我們非常重視您的隱私保護。本應用不會收集、儲存或分享您的個人敏感資訊。所有遊戲數據僅保存在本地設備中。',
-      agreement: '歡迎使用娛樂應用！通過使用本應用，即表示您同意遵守本使用者協議的所有條款。本應用僅供娛樂用途，不得用於任何非法活動。',
-      disclaimer: '1. 本應用所有內容均為虛擬場景模擬<br>2. 積分道具不具備真實價值<br>3. 嚴禁用於賭博或非法活動<br>4. 使用者需年滿18週歲<br>5. 請理性參與，切勿沉迷'
+      privacy:
+        '我們非常重視您的隱私保護。本應用不會收集、儲存或分享您的個人敏感資訊。所有遊戲數據僅保存在本地設備中。',
+      agreement:
+        '歡迎使用娛樂應用！通過使用本應用，即表示您同意遵守本使用者協議的所有條款。本應用僅供娛樂用途，不得用於任何非法活動。',
+      disclaimer:
+        '1. 本應用所有內容均為虛擬場景模擬<br>2. 積分道具不具備真實價值<br>3. 嚴禁用於賭博或非法活動<br>4. 使用者需年滿18週歲<br>5. 請理性參與，切勿沉迷',
     },
-    emailCopied: '郵箱已複製'
+    emailCopied: '郵箱已複製',
   },
 
   // 成就
@@ -751,7 +761,7 @@ export default {
     filter: {
       all: '全部',
       unlocked: '已獲得',
-      locked: '未獲得'
+      locked: '未獲得',
     },
     empty: '暫無成就',
     detail: {
@@ -760,8 +770,8 @@ export default {
       reward: '成就獎勵',
       tips: '小貼士',
       defaultTips: '繼續努力，你一定能獲得這個成就！',
-      locked: '未獲得'
-    }
+      locked: '未獲得',
+    },
   },
 
   // 認證
@@ -813,13 +823,12 @@ export default {
     weibo: '微博',
     loginInDevelopment: '登入功能開發中',
     userName: '娛樂達人',
-    agreementContent: '這裡是協議的詳細內容...\n\n（實際專案中應展示完整的協議內容）'
+    agreementContent: '這裡是協議的詳細內容...\n\n（實際專案中應展示完整的協議內容）',
   },
 
   // 除夕倒计时页面
   newYearEve: {
     title: '除夕倒計時',
-    subtitle: '迎接新年，共度美好時光',
     countdownTitle: '距離除夕還有',
     days: '天',
     hours: '時',
@@ -834,7 +843,7 @@ export default {
       dumplings: '吃餃子',
       dumplingsDesc: '餃子形似元寶，寓意招財進寶，團團圓圓',
       redEnvelopes: '發紅包',
-      redEnvelopesDesc: '長輩給晚輩紅包，寓意祝福和好運'
+      redEnvelopesDesc: '長輩給晚輩紅包，寓意祝福和好運',
     },
     foodTitle: '除夕美食',
     foods: {
@@ -845,7 +854,7 @@ export default {
       riceCake: '年糕',
       riceCakeDesc: '年年高升，工作和生活節節高',
       orange: '橘子',
-      orangeDesc: '大吉大利，寓意吉祥如意'
+      orangeDesc: '大吉大利，寓意吉祥如意',
     },
     blessingsTitle: '新年祝福',
     blessings: {
@@ -853,20 +862,10 @@ export default {
       b2: '新年快樂，萬事如意！',
       b3: '身體健康，工作順利！',
       b4: '阖家歡樂，幸福美滿！',
-      b5: '龍年大吉，心想事成！'
+      b5: '龍年大吉，心想事成！',
     },
     shareBlessing: '分享祝福',
     shareSuccess: '分享成功',
-    back: '返回'
-  }
-}
-
-
-
-
-
-
-
-
-
-
+    back: '返回',
+  },
+};
