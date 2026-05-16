@@ -21,22 +21,26 @@ defineProps({
 <style lang="less" scoped>
 .page-header {
   text-align: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
 
   .page-title {
-    font-size: var(--font-size-2xl);
+    font-size: clamp(28px, 6vw, 40px);
     font-weight: var(--font-weight-bold);
-    margin: 0 0 var(--spacing-sm) 0;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
+    margin: 0 0 var(--spacing-xs) 0;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #fff;
   }
 
   .page-subtitle {
-    font-size: var(--font-size-base);
-    opacity: 0.9;
-    margin: 0;
-    max-width: 600px;
+    font-size: clamp(13px, 2.5vw, 15px);
+    opacity: 0.75;
     margin: 0 auto;
+    max-width: 500px;
+    line-height: 1.6;
+    font-weight: var(--font-weight-regular);
+    color: rgba(255, 255, 255, 0.85);
   }
 }
 </style>

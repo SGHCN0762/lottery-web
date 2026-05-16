@@ -37,12 +37,17 @@ defineProps({
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--spacing-md) 0;
     text-align: center;
+    color: #fff;
   }
 
   .food-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-md);
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>

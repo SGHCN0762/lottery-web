@@ -5,34 +5,41 @@
 
     <!-- 页面内容 -->
     <div class="page-content">
-      <!-- 头部 -->
-      <PageHeader :title="t('newYearEve.title')" :subtitle="t('newYearEve.subtitle')" />
+      <!-- Hero 区域: 标题 + 倒计时 -->
+      <section class="hero-section">
+        <PageHeader :title="t('newYearEve.title')" :subtitle="t('newYearEve.subtitle')" />
 
-      <!-- 主倒计时区域 -->
-      <div class="main-countdown">
-        <CountdownTimer
-          :days="formattedDays"
-          :hours="formattedHours"
-          :minutes="formattedMinutes"
-          :seconds="formattedSeconds"
-          :target-date="formattedTargetDate"
-          :title="t('newYearEve.countdownTitle')"
-        />
-      </div>
+        <div class="countdown-wrapper">
+          <CountdownTimer
+            :days="formattedDays"
+            :hours="formattedHours"
+            :minutes="formattedMinutes"
+            :seconds="formattedSeconds"
+            :target-date="formattedTargetDate"
+            :title="t('newYearEve.countdownTitle')"
+          />
+        </div>
+      </section>
 
-      <!-- 除夕习俗卡片 -->
-      <CustomsSection :title="t('newYearEve.customsTitle')" :customs="customs" />
+      <!-- 除夕习俗 -->
+      <section class="content-section customs-section">
+        <CustomsSection :title="t('newYearEve.customsTitle')" :customs="customs" />
+      </section>
 
       <!-- 除夕美食 -->
-      <FoodSection :title="t('newYearEve.foodTitle')" :foods="foods" />
+      <section class="content-section food-section">
+        <FoodSection :title="t('newYearEve.foodTitle')" :foods="foods" />
+      </section>
 
       <!-- 新年祝福 -->
-      <BlessingsSection
-        :title="t('newYearEve.blessingsTitle')"
-        :blessings="blessings"
-        :share-text="t('newYearEve.shareBlessing')"
-        @share="shareBlessing"
-      />
+      <section class="content-section blessings-section">
+        <BlessingsSection
+          :title="t('newYearEve.blessingsTitle')"
+          :blessings="blessings"
+          :share-text="t('newYearEve.shareBlessing')"
+          @share="shareBlessing"
+        />
+      </section>
     </div>
   </div>
 </template>
@@ -44,14 +51,12 @@
   import dayjs from 'dayjs';
   import { useCountdown } from '@/hooks/useCountdown';
   import { useNewYearEve } from '@/hooks/useNewYearEve';
-  import {
-    PageBackground,
-    PageHeader,
-    CountdownTimer,
-    CustomsSection,
-    FoodSection,
-    BlessingsSection,
-  } from './components';
+  import PageBackground from './components/PageBackground.vue';
+  import PageHeader from './components/PageHeader.vue';
+  import CountdownTimer from './components/CountdownTimer.vue';
+  import BlessingsSection from './components/BlessingsSection.vue';
+  import CustomsSection from './components/CustomsSection.vue';
+  import FoodSection from './components/FoodSection.vue';
 
   const { t } = useI18n();
 
@@ -68,8 +73,8 @@
     return dayjs(newYearEveDate.value).format('YYYY年MM月DD日');
   });
 
-  // 除夕习俗数据
-  const customs = ref([
+  // 除夕习俗数据 - 使用 computed 确保语言切换时更新
+  const customs = computed(() => [
     {
       icon: '🏮',
       title: t('newYearEve.customs.doorGod'),
@@ -92,8 +97,8 @@
     },
   ]);
 
-  // 除夕美食数据
-  const foods = ref([
+  // 除夕美食数据 - 使用 computed 确保语言切换时更新
+  const foods = computed(() => [
     {
       icon: '🍖',
       name: t('newYearEve.foods.fish'),
@@ -116,8 +121,8 @@
     },
   ]);
 
-  // 新年祝福数据
-  const blessings = ref([
+  // 新年祝福数据 - 使用 computed 确保语言切换时更新
+  const blessings = computed(() => [
     t('newYearEve.blessings.b1'),
     t('newYearEve.blessings.b2'),
     t('newYearEve.blessings.b3'),
@@ -149,15 +154,128 @@
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
-    background: linear-gradient(135deg, #b71c1c 0%, #d50000 100%);
+    background: linear-gradient(135deg, #0a0e27 0%, #1a237e 50%, #4a148c 100%);
     color: #fff;
+    
+    // 添加科技感光效
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(66, 165, 245, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(156, 39, 176, 0.2) 0%, transparent 50%);
+      z-index: 0;
+    }
 
-    // 页面内容
+    // 页面内容 - 优化间距和最大宽度
     .page-content {
       position: relative;
       z-index: 1;
-      padding: calc(var(--spacing-xl) + env(safe-area-inset-top, 0px)) var(--spacing-md)
-        var(--spacing-xl);
+      padding: calc(var(--spacing-lg) + env(safe-area-inset-top, 0px)) var(--spacing-md)
+        calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+      max-width: 800px;
+      margin: 0 auto;
+      
+      // 添加科技感装饰线
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(0, 255, 255, 0), rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0));
+        opacity: 0.5;
+      }
+    }
+
+    // Hero 区域 - 优化间距
+    .hero-section {
+      margin-bottom: var(--spacing-2xl);
+      animation: fadeInUp 0.6s ease-out;
+
+      .countdown-wrapper {
+        margin-top: var(--spacing-lg);
+      }
+    }
+
+    // 内容区块通用样式 - 增加卡片效果
+    .content-section {
+      margin-bottom: var(--spacing-xl);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-out forwards;
+      
+      // 添加科技感边框装饰
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(0, 255, 255, 0), rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      &:hover::after {
+        opacity: 0.5;
+      }
+
+      &:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+
+      &:nth-child(4) {
+        animation-delay: 0.45s;
+      }
+    }
+  }
+
+  // 渐入动画 - 更流畅
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // 响应式优化
+  @media (max-width: 768px) {
+    .new-year-eve-page {
+      .page-content {
+        padding: calc(var(--spacing-md) + env(safe-area-inset-top, 0px)) var(--spacing-sm)
+          calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+      }
+
+      .hero-section {
+        margin-bottom: var(--spacing-xl);
+      }
+
+      .content-section {
+        margin-bottom: var(--spacing-lg);
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .new-year-eve-page {
+      .page-content {
+        padding: calc(var(--spacing-lg) + env(safe-area-inset-top, 0px)) var(--spacing-md)
+          calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+      }
     }
   }
 </style>
