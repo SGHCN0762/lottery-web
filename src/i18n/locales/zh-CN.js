@@ -787,16 +787,5 @@ export default {
       orange: '橘子',
       orangeDesc: '大吉大利，寓意吉祥如意',
     },
-    blessingsTitle: '新年祝福',
-    blessings: {
-      b1: '恭喜发财，红包拿来！',
-      b2: '新年快乐，万事如意！',
-      b3: '身体健康，工作顺利！',
-      b4: '阖家欢乐，幸福美满！',
-      b5: '龙年大吉，心想事成！',
-    },
-    shareBlessing: '分享祝福',
-    shareSuccess: '分享成功',
-    back: '返回',
   },
 };

@@ -28,16 +28,6 @@
       <section class="content-section food-section">
         <FoodSection :title="t('newYearEve.foodTitle')" :foods="foods" />
       </section>
-
-      <!-- 新年祝福 -->
-      <section class="content-section blessings-section">
-        <BlessingsSection
-          :title="t('newYearEve.blessingsTitle')"
-          :blessings="blessings"
-          :share-text="t('newYearEve.shareBlessing')"
-          @share="shareBlessing"
-        />
-      </section>
     </div>
   </div>
 </template>
@@ -45,13 +35,11 @@
 <script setup>
   import { ref, computed } from 'vue';
   import { useI18n } from 'vue-i18n';
-  import { Button as VanButton, showToast } from 'vant';
   import dayjs from 'dayjs';
   import { useCountdown } from '@/hooks/useCountdown';
   import { useNewYearEve } from '@/hooks/useNewYearEve';
   import PageBackground from './components/PageBackground.vue';
   import CountdownTimer from './components/CountdownTimer.vue';
-  import BlessingsSection from './components/BlessingsSection.vue';
   import CustomsSection from './components/CustomsSection.vue';
   import FoodSection from './components/FoodSection.vue';
 
@@ -138,12 +126,6 @@
     { icon: '🎇', delay: '6s' },
     { icon: '🧧', delay: '7s' },
   ]);
-
-  // 分享祝福
-  const shareBlessing = () => {
-    // 实现分享逻辑
-    showToast({ message: t('newYearEve.shareSuccess'), icon: 'success' });
-  };
 </script>
 
 <style lang="less" scoped>

@@ -874,16 +874,5 @@ export default {
       orange: 'Orange',
       orangeDesc: 'Great luck and fortune, symbolizing good fortune and success',
     },
-    blessingsTitle: 'New Year Wishes',
-    blessings: {
-      b1: 'Wishing you prosperity and may the red envelopes come!',
-      b2: 'Happy New Year, may all your wishes come true!',
-      b3: 'Good health and success in your career!',
-      b4: 'Happy family and a blissful life!',
-      b5: 'Great luck in the Year of the Dragon, may all your dreams come true!',
-    },
-    shareBlessing: 'Share Blessings',
-    shareSuccess: 'Shared Successfully',
-    back: 'Back',
   },
 };
