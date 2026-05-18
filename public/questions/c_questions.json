@@ -1,0 +1,11060 @@
+[
+  {
+    "id": "c-1",
+    "title": "C语言中，以下哪个不是合法的变量名？",
+    "options": [
+      "_var",
+      "var1",
+      "1var",
+      "var_1"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-2",
+    "title": "C语言中，用于声明常量的关键字是？",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "define"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-3",
+    "title": "C语言中，以下哪种基本类型是无符号整数？",
+    "options": [
+      "int",
+      "unsigned int",
+      "float",
+      "double"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-4",
+    "title": "C语言中，字符串的结束标志是？",
+    "options": [
+      "\\0",
+      "\\n",
+      "\\t",
+      "0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-5",
+    "title": "C语言中，sizeof(char)的值是？",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-6",
+    "title": "C语言中，int类型通常占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-7",
+    "title": "C语言中，哪个关键字用于定义自定义类型？",
+    "options": [
+      "typedef",
+      "define",
+      "struct",
+      "type"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-8",
+    "title": "C语言中，转义字符\\n表示？",
+    "options": [
+      "回车",
+      "换行",
+      "制表符",
+      "退格"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-9",
+    "title": "C语言中，全局变量默认初始化为？",
+    "options": [
+      "0",
+      "随机值",
+      "1",
+      "无初始值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-10",
+    "title": "C语言中，局部变量默认初始化为？",
+    "options": [
+      "0",
+      "随机值",
+      "1",
+      "无初始值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-11",
+    "title": "C语言中，以下哪个不是基本数据类型？",
+    "options": [
+      "int",
+      "float",
+      "char",
+      "string"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-12",
+    "title": "C语言中，double类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-13",
+    "title": "C语言中，short类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-14",
+    "title": "C语言中，char类型的数据范围是？",
+    "options": [
+      "-128到127",
+      "0到255",
+      "0到65535",
+      "-32768到32767"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-15",
+    "title": "C语言中，unsigned char的范围是？",
+    "options": [
+      "-128到127",
+      "0到255",
+      "0到65535",
+      "0到4294967295"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-16",
+    "title": "C语言中，八进制常量以什么开头？",
+    "options": [
+      "0x",
+      "0",
+      "0o",
+      "8#"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-17",
+    "title": "C语言中，十六进制常量以什么开头？",
+    "options": [
+      "0x",
+      "0",
+      "0o",
+      "16#"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-18",
+    "title": "C语言中，以下哪个是正确的浮点数常量？",
+    "options": [
+      "3.14",
+      "3",
+      "3.0f",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-19",
+    "title": "C语言中，#define的作用是？",
+    "options": [
+      "宏定义",
+      "变量声明",
+      "函数定义",
+      "类型定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-20",
+    "title": "C语言中，#include的作用是？",
+    "options": [
+      "包含头文件",
+      "定义宏",
+      "声明变量",
+      "编译指令"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-21",
+    "title": "C语言中，main函数的正确签名是？",
+    "options": [
+      "int main()",
+      "void main()",
+      "main()",
+      "int main(void)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-22",
+    "title": "C语言中，printf的作用是？",
+    "options": [
+      "格式化输出",
+      "格式化输入",
+      "字符串输出",
+      "字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-23",
+    "title": "C语言中，scanf的作用是？",
+    "options": [
+      "格式化输入",
+      "格式化输出",
+      "字符串输入",
+      "字符输入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-24",
+    "title": "C语言中，%d用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-25",
+    "title": "C语言中，%f用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-26",
+    "title": "C语言中，%c用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-27",
+    "title": "C语言中，%s用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-28",
+    "title": "C语言中，%x用于输出什么格式？",
+    "options": [
+      "八进制",
+      "十进制",
+      "十六进制",
+      "二进制"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-29",
+    "title": "C语言中，%o用于输出什么格式？",
+    "options": [
+      "八进制",
+      "十进制",
+      "十六进制",
+      "二进制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-30",
+    "title": "C语言中，如何输出指针地址？",
+    "options": [
+      "%p",
+      "%d",
+      "%x",
+      "%a"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-31",
+    "title": "C语言中，long int类型占几个字节？",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "取决于编译器"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-32",
+    "title": "C语言中，long long类型至少占几个字节？",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-33",
+    "title": "C语言中，布尔类型在哪个头文件中定义？",
+    "options": [
+      "stdbool.h",
+      "math.h",
+      "stdio.h",
+      "stdlib.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-34",
+    "title": "C语言中，true的值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "非0值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-35",
+    "title": "C语言中，false的值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "非0值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-36",
+    "title": "C语言中，auto关键字的作用是？",
+    "options": [
+      "声明自动变量",
+      "声明静态变量",
+      "声明外部变量",
+      "声明寄存器变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-37",
+    "title": "C语言中，register关键字的作用是？",
+    "options": [
+      "声明寄存器变量",
+      "声明自动变量",
+      "声明静态变量",
+      "声明外部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-38",
+    "title": "C语言中，register变量能取地址吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于编译器",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-39",
+    "title": "C语言中，static局部变量的特点？",
+    "options": [
+      "持久存储，只在作用域可见",
+      "持久存储，全局可见",
+      "临时存储，全局可见",
+      "临时存储，只在作用域可见"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-40",
+    "title": "C语言中，static全局变量的特点？",
+    "options": [
+      "持久存储，只在当前文件可见",
+      "持久存储，全局可见",
+      "临时存储，全局可见",
+      "临时存储，只在当前文件可见"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-41",
+    "title": "C语言中，extern关键字的作用是？",
+    "options": [
+      "声明外部变量",
+      "定义外部变量",
+      "声明静态变量",
+      "声明寄存器变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-42",
+    "title": "C语言中，volatile关键字的作用是？",
+    "options": [
+      "防止编译器优化",
+      "声明常量",
+      "声明外部变量",
+      "声明静态变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-43",
+    "title": "C语言中，以下哪个不是循环语句？",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "switch"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-44",
+    "title": "C语言中，break语句的作用是？",
+    "options": [
+      "跳出当前循环或switch",
+      "跳出所有循环",
+      "继续下一次循环",
+      "结束函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-45",
+    "title": "C语言中，continue语句的作用是？",
+    "options": [
+      "跳出当前循环",
+      "跳出所有循环",
+      "继续下一次循环",
+      "结束函数"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-46",
+    "title": "C语言中，switch语句中如果没有break会怎样？",
+    "options": [
+      "不会执行任何case",
+      "只会执行匹配的case",
+      "会从匹配的case向下穿透执行",
+      "编译错误"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-47",
+    "title": "C语言中，switch的条件可以是哪种类型？",
+    "options": [
+      "整型或字符型",
+      "浮点型",
+      "字符串",
+      "结构体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-48",
+    "title": "C语言中，goto语句的作用是？",
+    "options": [
+      "无条件跳转",
+      "条件跳转",
+      "循环控制",
+      "函数调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-49",
+    "title": "C语言中，逗号表达式的值是？",
+    "options": [
+      "第一个表达式的值",
+      "最后一个表达式的值",
+      "所有表达式的和",
+      "随机表达式的值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-50",
+    "title": "C语言中，三目运算符的语法是？",
+    "options": [
+      "a ? b : c",
+      "a : b ? c",
+      "a ?? b : c",
+      "a -> b : c"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-51",
+    "title": "C语言中，a += b等价于？",
+    "options": [
+      "a = a + b",
+      "a = b + a",
+      "a + b",
+      "a == b"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-52",
+    "title": "C语言中，a %= b等价于？",
+    "options": [
+      "a = a % b",
+      "a = b % a",
+      "a % b",
+      "a == b"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-53",
+    "title": "C语言中，逻辑与运算符是？",
+    "options": [
+      "&&",
+      "||",
+      "!",
+      "&"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-54",
+    "title": "C语言中，逻辑或运算符是？",
+    "options": [
+      "&&",
+      "||",
+      "!",
+      "|"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-55",
+    "title": "C语言中，逻辑非运算符是？",
+    "options": [
+      "&&",
+      "||",
+      "!",
+      "~"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-56",
+    "title": "C语言中，位与运算符是？",
+    "options": [
+      "&",
+      "|",
+      "^",
+      "~"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-57",
+    "title": "C语言中，位或运算符是？",
+    "options": [
+      "&",
+      "|",
+      "^",
+      "~"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-58",
+    "title": "C语言中，位异或运算符是？",
+    "options": [
+      "&",
+      "|",
+      "^",
+      "~"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-59",
+    "title": "C语言中，位取反运算符是？",
+    "options": [
+      "&",
+      "|",
+      "^",
+      "~"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-60",
+    "title": "C语言中，左移运算符是？",
+    "options": [
+      "<<",
+      ">>",
+      ">>>",
+      "<<<"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-61",
+    "title": "C语言中，右移运算符是？",
+    "options": [
+      "<<",
+      ">>",
+      ">>>",
+      "<<<"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-62",
+    "title": "C语言中，a << 1等价于？",
+    "options": [
+      "a * 2",
+      "a / 2",
+      "a + 2",
+      "a - 2"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-63",
+    "title": "C语言中，a >> 1等价于？",
+    "options": [
+      "a * 2",
+      "a / 2",
+      "a + 2",
+      "a - 2"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-64",
+    "title": "C语言中，自增运算符++a是？",
+    "options": [
+      "先自增后使用",
+      "先使用后自增",
+      "只自增不使用",
+      "只使用不自增"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-65",
+    "title": "C语言中，自增运算符a++是？",
+    "options": [
+      "先自增后使用",
+      "先使用后自增",
+      "只自增不使用",
+      "只使用不自增"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-66",
+    "title": "C语言中，sizeof是函数吗？",
+    "options": [
+      "不是，是运算符",
+      "是",
+      "取决于编译器",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-67",
+    "title": "C语言中，sizeof(\"hello\")的值是？",
+    "options": [
+      "5",
+      "6",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-68",
+    "title": "C语言中，strlen(\"hello\")的值是？",
+    "options": [
+      "5",
+      "6",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-69",
+    "title": "C语言中，NULL定义在哪个头文件？",
+    "options": [
+      "stdio.h, stdlib.h等",
+      "只有stdio.h",
+      "只有stdlib.h",
+      "string.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-70",
+    "title": "C语言中，NULL的值通常是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "空格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-71",
+    "title": "C语言中，void关键字的作用是？",
+    "options": [
+      "表示无类型",
+      [
+        "表示任意类型"
+      ],
+      "表示整型",
+      "表示字符型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-72",
+    "title": "C语言中，void指针可以转换为任何类型的指针吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能转换为char*",
+      "只能转换为int*"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-73",
+    "title": "C语言中，const int *p表示？",
+    "options": [
+      "p指向的值不可变",
+      "p本身不可变",
+      "p和指向的值都不可变",
+      "p和指向的值都可变"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-74",
+    "title": "C语言中，int * const p表示？",
+    "options": [
+      "p指向的值不可变",
+      "p本身不可变",
+      "p和指向的值都不可变",
+      "p和指向的值都可变"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-75",
+    "title": "C语言中，const int * const p表示？",
+    "options": [
+      "p指向的值不可变",
+      "p本身不可变",
+      "p和指向的值都不可变",
+      "p和指向的值都可变"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-76",
+    "title": "C语言中，typedef int INTEGER的作用是？",
+    "options": [
+      "给int起别名INTEGER",
+      "定义一个int变量",
+      "定义一个宏",
+      "声明一个外部类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-77",
+    "title": "C语言中，枚举类型使用哪个关键字？",
+    "options": [
+      "enum",
+      "struct",
+      "union",
+      "typedef"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-78",
+    "title": "C语言中，枚举值默认从几开始？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "随机值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-79",
+    "title": "C语言中，预处理指令在什么时候执行？",
+    "options": [
+      "编译前",
+      "编译时",
+      "运行时",
+      "链接时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-80",
+    "title": "C语言中，#pragma的作用是？",
+    "options": [
+      "设置编译器状态",
+      "定义宏",
+      "包含文件",
+      "条件编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-81",
+    "title": "C语言中，#error的作用是？",
+    "options": [
+      "生成编译错误信息",
+      "生成运行错误",
+      "忽略错误",
+      "调试错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-82",
+    "title": "C语言中，#line的作用是？",
+    "options": [
+      "重置行号和文件名",
+      "跳转到指定行",
+      "打印行号",
+      "注释行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-83",
+    "title": "C语言中，##运算符的作用是？",
+    "options": [
+      "宏中连接两个标记",
+      "字符串化",
+      "注释",
+      "逻辑与"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-84",
+    "title": "C语言中，#运算符的作用是？",
+    "options": [
+      "宏中字符串化参数",
+      "连接两个标记",
+      "注释",
+      "预处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-85",
+    "title": "C语言中，条件编译使用哪个指令？",
+    "options": [
+      "#if, #ifdef, #ifndef",
+      "#if, #else, #endif",
+      "#ifdef, #elif, #endif",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-86",
+    "title": "C语言中，#ifndef通常用于？",
+    "options": [
+      "防止头文件重复包含",
+      "定义宏",
+      "包含文件",
+      "条件执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-87",
+    "title": "C语言中，assert宏定义在哪个头文件？",
+    "options": [
+      "assert.h",
+      "stdio.h",
+      "stdlib.h",
+      "math.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-88",
+    "title": "C语言中，assert的作用是？",
+    "options": [
+      "断言表达式为真，否则终止程序",
+      "输出错误信息",
+      "忽略错误",
+      "抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-89",
+    "title": "C语言中，NDEBUG宏的作用是？",
+    "options": [
+      "禁用assert",
+      "启用assert",
+      "调试模式",
+      "发布模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-90",
+    "title": "C语言中，offsetof宏的作用是？",
+    "options": [
+      "获取结构体成员的偏移量",
+      "获取结构体大小",
+      "获取成员大小",
+      "获取成员地址"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-91",
+    "title": "C语言中，可变参数函数使用哪个头文件？",
+    "options": [
+      "stdarg.h",
+      "stdio.h",
+      "stdlib.h",
+      "vararg.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-92",
+    "title": "C语言中，va_start的作用是？",
+    "options": [
+      "获取可变参数列表的开始",
+      "获取下一个参数",
+      "结束可变参数获取",
+      "获取参数数量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-93",
+    "title": "C语言中，va_arg的作用是？",
+    "options": [
+      "获取可变参数列表的开始",
+      "获取下一个参数",
+      "结束可变参数获取",
+      "获取参数数量"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-94",
+    "title": "C语言中，va_end的作用是？",
+    "options": [
+      "获取可变参数列表的开始",
+      "获取下一个参数",
+      "结束可变参数获取",
+      "获取参数数量"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-95",
+    "title": "C语言中，printf函数是可变参数函数吗？",
+    "options": [
+      "是",
+      "不是",
+      "取决于参数",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-96",
+    "title": "C语言中，main函数的参数argc表示？",
+    "options": [
+      "参数个数",
+      "参数数组",
+      "环境变量",
+      "程序名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-97",
+    "title": "C语言中，main函数的参数argv表示？",
+    "options": [
+      "参数个数",
+      "参数数组",
+      "环境变量",
+      "程序名"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-98",
+    "title": "C语言中，argv[0]通常是什么？",
+    "options": [
+      "程序名",
+      "第一个参数",
+      "参数个数",
+      "环境变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-99",
+    "title": "C语言中，exit函数的作用是？",
+    "options": [
+      "终止程序",
+      "退出函数",
+      "跳过循环",
+      "返回主函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-100",
+    "title": "C语言中，exit(0)表示？",
+    "options": [
+      "程序正常终止",
+      "程序异常终止",
+      "程序暂停",
+      "程序重启"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-101",
+    "title": "C语言中，atexit函数的作用是？",
+    "options": [
+      "注册程序正常终止时调用的函数",
+      "终止程序",
+      "暂停程序",
+      "重启程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-102",
+    "title": "C语言中，qsort函数的作用是？",
+    "options": [
+      "快速排序",
+      "二分查找",
+      "内存分配",
+      "字符串比较"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-103",
+    "title": "C语言中，bsearch函数的作用是？",
+    "options": [
+      "快速排序",
+      "二分查找",
+      "内存分配",
+      "字符串比较"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-104",
+    "title": "C语言中，rand函数的作用是？",
+    "options": [
+      "生成伪随机数",
+      "生成真随机数",
+      "设置随机种子",
+      "排序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-105",
+    "title": "C语言中，srand函数的作用是？",
+    "options": [
+      "设置随机数种子",
+      "生成随机数",
+      "排序",
+      "查找"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-106",
+    "title": "C语言中，time函数的作用是？",
+    "options": [
+      "获取当前时间",
+      "设置时间",
+      "格式化时间",
+      "计算时间差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-107",
+    "title": "C语言中，clock函数的作用是？",
+    "options": [
+      "获取处理器时间",
+      "获取当前时间",
+      "设置时间",
+      "延迟"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-108",
+    "title": "C语言中，malloc函数的返回值是？",
+    "options": [
+      "void*",
+      "int*",
+      "char*",
+      "NULL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-109",
+    "title": "C语言中，calloc和malloc的区别是？",
+    "options": [
+      "calloc会初始化为0",
+      "malloc会初始化为0",
+      "没有区别",
+      "calloc更快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-110",
+    "title": "C语言中，realloc的作用是？",
+    "options": [
+      "重新分配内存",
+      "释放内存",
+      "分配内存",
+      "合并内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-111",
+    "title": "C语言中，free的作用是？",
+    "options": [
+      "释放内存",
+      "分配内存",
+      "重新分配内存",
+      "合并内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-112",
+    "title": "C语言中，内存泄漏的原因是？",
+    "options": [
+      "分配的内存未释放",
+      "释放了未分配的内存",
+      "释放了两次",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-113",
+    "title": "C语言中，悬垂指针是指？",
+    "options": [
+      "指向已释放内存的指针",
+      "未初始化的指针",
+      "空指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-114",
+    "title": "C语言中，野指针是指？",
+    "options": [
+      "未初始化的指针",
+      "指向已释放内存的指针",
+      "空指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-115",
+    "title": "C语言中，void指针能直接解引用吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-116",
+    "title": "C语言中，指针加减整数移动的字节数取决于？",
+    "options": [
+      "指针指向的类型大小",
+      "整数的大小",
+      "1字节",
+      "4字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-117",
+    "title": "C语言中，两个指针相减的结果是？",
+    "options": [
+      "元素个数",
+      "字节数",
+      "地址差",
+      "无意义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-118",
+    "title": "C语言中，两个指针能相加吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-119",
+    "title": "C语言中，数组名代表什么？",
+    "options": [
+      "数组首元素的地址",
+      "整个数组",
+      "数组的长度",
+      "数组的类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-120",
+    "title": "C语言中，sizeof(数组名)返回什么？",
+    "options": [
+      "整个数组的大小",
+      "首元素的大小",
+      "指针的大小",
+      "数组长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-121",
+    "title": "C语言中，函数的默认返回类型是？",
+    "options": [
+      "int",
+      "void",
+      "auto",
+      "无默认类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-122",
+    "title": "C语言中，函数声明的作用是？",
+    "options": [
+      "告诉编译器函数的名称和类型",
+      "定义函数体",
+      "分配内存",
+      "调用函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-123",
+    "title": "C语言中，函数定义包含什么？",
+    "options": [
+      "函数头和函数体",
+      "只有函数头",
+      "只有函数体",
+      "声明和调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-124",
+    "title": "C语言中，递归函数的特点是？",
+    "options": [
+      "函数调用自身",
+      "函数调用其他函数",
+      "函数返回自身",
+      "函数无返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-125",
+    "title": "C语言中，递归必须有什麽？",
+    "options": [
+      "基准条件",
+      "循环",
+      "指针",
+      "数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-126",
+    "title": "C语言中，值传递的特点是？",
+    "options": [
+      "实参的值复制给形参",
+      "实参的地址传给形参",
+      "形参修改影响实参",
+      "共享内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-127",
+    "title": "C语言中，地址传递的特点是？",
+    "options": [
+      "实参的地址传给形参",
+      "实参的值复制给形参",
+      "形参修改不影响实参",
+      "不共享内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-128",
+    "title": "C语言中，局部变量和全局变量同名时，哪个优先？",
+    "options": [
+      "局部变量",
+      "全局变量",
+      "编译错误",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-129",
+    "title": "C语言中，静态函数的作用域是？",
+    "options": [
+      "当前文件",
+      "整个程序",
+      "当前函数",
+      "当前块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-130",
+    "title": "C语言中，回调函数是指？",
+    "options": [
+      "通过函数指针调用的函数",
+      "递归函数",
+      "内联函数",
+      "静态函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-131",
+    "title": "C语言中，内联函数的关键字是？",
+    "options": [
+      "inline",
+      "inner",
+      "online",
+      "native"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-132",
+    "title": "C语言中，内联函数的作用是？",
+    "options": [
+      "减少函数调用开销",
+      "增加代码安全",
+      "延迟执行",
+      "动态绑定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-133",
+    "title": "C语言中，可变参数的典型例子是？",
+    "options": [
+      "printf",
+      "scanf",
+      "main",
+      "strlen"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-134",
+    "title": "C语言中，#define PI 3.14是？",
+    "options": [
+      "宏定义",
+      [
+        "变量定义"
+      ],
+      "函数定义",
+      "类型定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-135",
+    "title": "C语言中，带参数的宏定义是？",
+    "options": [
+      "宏函数",
+      "内联函数",
+      "模板",
+      "重载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-136",
+    "title": "C语言中，宏定义在什么时候展开？",
+    "options": [
+      "预处理时",
+      "编译时",
+      "运行时",
+      "链接时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-137",
+    "title": "C语言中，宏定义不检查类型，这叫？",
+    "options": [
+      "无类型检查",
+      "强类型",
+      "弱类型",
+      "动态类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-138",
+    "title": "C语言中，#include <file>搜索路径是？",
+    "options": [
+      "系统目录",
+      "当前目录",
+      "任意目录",
+      "用户目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-139",
+    "title": "C语言中，#include \"file\"搜索路径是？",
+    "options": [
+      "当前目录然后系统目录",
+      "系统目录然后当前目录",
+      "只搜索当前目录",
+      "只搜索系统目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-140",
+    "title": "C语言中，#ifdef的作用是？",
+    "options": [
+      "如果宏定义了则编译",
+      "如果宏没定义则编译",
+      "如果表达式为真则编译",
+      "总是编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-141",
+    "title": "C语言中，#ifndef的作用是？",
+    "options": [
+      "如果宏没定义则编译",
+      "如果宏定义了则编译",
+      "如果表达式为真则编译",
+      "总是编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-142",
+    "title": "C语言中，#endif的作用是？",
+    "options": [
+      "结束条件编译",
+      "开始条件编译",
+      "否则编译",
+      "忽略编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-143",
+    "title": "C语言中，#undef的作用是？",
+    "options": [
+      "取消宏定义",
+      "定义宏",
+      "修改宏",
+      "使用宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-144",
+    "title": "C语言中，预处理器的作用是？",
+    "options": [
+      "处理预处理指令",
+      "编译代码",
+      "链接库",
+      "执行程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-145",
+    "title": "C语言中，宏定义的结尾需要分号吗？",
+    "options": [
+      "不需要",
+      "需要",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-146",
+    "title": "C语言中，多行宏定义使用什么续行？",
+    "options": [
+      "\\",
+      "/",
+      "*",
+      "#"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-147",
+    "title": "C语言中，typedef和#define的区别是？",
+    "options": [
+      "typedef是类型别名，#define是文本替换",
+      "没有区别",
+      "#define是类型别名",
+      "typedef是文本替换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-148",
+    "title": "C语言中，函数指针的定义方式是？",
+    "options": [
+      "int (*p)(int)",
+      "int *p(int)",
+      "int (*p)()",
+      "(int*)p(int)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-149",
+    "title": "C语言中，函数指针数组是？",
+    "options": [
+      "存储函数指针的数组",
+      "指向数组的指针",
+      "返回指针的函数",
+      "数组的指针函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-150",
+    "title": "C语言中，返回指针的函数是？",
+    "options": [
+      "指针函数",
+      "函数指针",
+      "数组指针",
+      "指针数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-151",
+    "title": "C语言中，指针函数的作用是？",
+    "options": [
+      "返回动态分配的内存地址",
+      "返回函数地址",
+      "返回数组地址",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-152",
+    "title": "C语言中，main函数可以被递归调用吗？",
+    "options": [
+      "可以，但不推荐",
+      "不可以",
+      "只能调用一次",
+      "取决于操作系统"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-153",
+    "title": "C语言中，exit和return的区别是？",
+    "options": [
+      "exit终止程序，return返回函数",
+      "没有区别",
+      "return终止程序",
+      "exit返回函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-154",
+    "title": "C语言中，strlen函数的返回类型是？",
+    "options": [
+      "size_t",
+      "int",
+      "char*",
+      "void"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-155",
+    "title": "C语言中，strcpy函数的作用是？",
+    "options": [
+      "字符串拷贝",
+      "字符串比较",
+      "字符串连接",
+      "字符串查找"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-156",
+    "title": "C语言中，strcat函数的作用是？",
+    "options": [
+      "字符串连接",
+      "字符串拷贝",
+      "字符串比较",
+      "字符串查找"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-157",
+    "title": "C语言中，strcmp函数的作用是？",
+    "options": [
+      "字符串比较",
+      "字符串拷贝",
+      "字符串连接",
+      "字符串查找"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-158",
+    "title": "C语言中，strncpy相比strcpy多了什么？",
+    "options": [
+      "指定拷贝长度",
+      "自动分配内存",
+      "不拷贝\\0",
+      "更安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-159",
+    "title": "C语言中，strncat相比strcat多了什么？",
+    "options": [
+      "指定连接长度",
+      "自动分配内存",
+      "不添加\\0",
+      "更安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-160",
+    "title": "C语言中，strncmp相比strcmp多了什么？",
+    "options": [
+      "指定比较长度",
+      "忽略大小写",
+      "返回布尔值",
+      "更安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-161",
+    "title": "C语言中，strchr函数的作用是？",
+    "options": [
+      "查找字符首次出现的位置",
+      "查找字符串",
+      "比较字符",
+      "拷贝字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-162",
+    "title": "C语言中，strstr函数的作用是？",
+    "options": [
+      "查找子串首次出现的位置",
+      "查找字符",
+      "比较字符串",
+      "连接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-163",
+    "title": "C语言中，strtok函数的作用是？",
+    "options": [
+      "分割字符串",
+      "连接字符串",
+      "比较字符串",
+      "查找字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-164",
+    "title": "C语言中，memcpy函数的作用是？",
+    "options": [
+      "内存拷贝",
+      "字符串拷贝",
+      "内存比较",
+      "内存设置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-165",
+    "title": "C语言中，memmove函数的作用是？",
+    "options": [
+      "内存移动（处理重叠）",
+      "内存拷贝",
+      "内存比较",
+      "内存设置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-166",
+    "title": "C语言中，memset函数的作用是？",
+    "options": [
+      "内存设置",
+      "内存拷贝",
+      "内存比较",
+      "内存移动"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-167",
+    "title": "C语言中，memcmp函数的作用是？",
+    "options": [
+      "内存比较",
+      "内存拷贝",
+      "内存设置",
+      "内存移动"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-168",
+    "title": "C语言中，atoi函数的作用是？",
+    "options": [
+      "字符串转整数",
+      "整数转字符串",
+      "字符串转浮点数",
+      "浮点数转字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-169",
+    "title": "C语言中，atof函数的作用是？",
+    "options": [
+      "字符串转浮点数",
+      "浮点数转字符串",
+      "字符串转整数",
+      "整数转字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-170",
+    "title": "C语言中，itoa函数的作用是？",
+    "options": [
+      "整数转字符串",
+      "字符串转整数",
+      "浮点数转字符串",
+      "字符串转浮点数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-171",
+    "title": "C语言中，sprintf函数的作用是？",
+    "options": [
+      "格式化写入字符串",
+      "格式化输出到屏幕",
+      "格式化读取字符串",
+      "格式化写入文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-172",
+    "title": "C语言中，sscanf函数的作用是？",
+    "options": [
+      "从字符串格式化读取",
+      "从键盘格式化读取",
+      "格式化写入字符串",
+      "格式化写入文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-173",
+    "title": "C语言中，fprintf函数的作用是？",
+    "options": [
+      "格式化写入文件",
+      "格式化输出到屏幕",
+      "格式化读取文件",
+      "格式化写入字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-174",
+    "title": "C语言中，fscanf函数的作用是？",
+    "options": [
+      "从文件格式化读取",
+      "从键盘格式化读取",
+      "格式化写入文件",
+      "格式化写入字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-175",
+    "title": "C语言中，abs函数的作用是？",
+    "options": [
+      "求绝对值",
+      "求平方根",
+      "求幂",
+      "求对数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-176",
+    "title": "C语言中，fabs函数的作用是？",
+    "options": [
+      "求浮点数绝对值",
+      "求整数绝对值",
+      "求平方根",
+      "求幂"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-177",
+    "title": "C语言中，sqrt函数的作用是？",
+    "options": [
+      "求平方根",
+      "求绝对值",
+      "求幂",
+      "求对数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-178",
+    "title": "C语言中，pow函数的作用是？",
+    "options": [
+      "求幂",
+      "求平方根",
+      "求绝对值",
+      "求对数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-179",
+    "title": "C语言中，ceil函数的作用是？",
+    "options": [
+      "向上取整",
+      "向下取整",
+      "四舍五入",
+      "求绝对值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-180",
+    "title": "C语言中，floor函数的作用是？",
+    "options": [
+      "向下取整",
+      "向上取整",
+      "四舍五入",
+      "求绝对值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-181",
+    "title": "C语言中，round函数的作用是？",
+    "options": [
+      "四舍五入",
+      "向上取整",
+      "向下取整",
+      "求绝对值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-182",
+    "title": "C语言中，isalpha函数的作用是？",
+    "options": [
+      "判断是否为字母",
+      "判断是否为数字",
+      "判断是否为小写",
+      "判断是否为大写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-183",
+    "title": "C语言中，isdigit函数的作用是？",
+    "options": [
+      "判断是否为数字",
+      "判断是否为字母",
+      "判断是否为小写",
+      "判断是否为大写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-184",
+    "title": "C语言中，isupper函数的作用是？",
+    "options": [
+      "判断是否为大写字母",
+      "判断是否为小写字母",
+      "判断是否为字母",
+      "判断是否为数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-185",
+    "title": "C语言中，islower函数的作用是？",
+    "options": [
+      "判断是否为小写字母",
+      "判断是否为大写字母",
+      "判断是否为字母",
+      "判断是否为数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-186",
+    "title": "C语言中，toupper函数的作用是？",
+    "options": [
+      "转大写",
+      "转小写",
+      "判断大小写",
+      "比较大小写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-187",
+    "title": "C语言中，tolower函数的作用是？",
+    "options": [
+      "转小写",
+      "转大写",
+      "判断大小写",
+      "比较大小写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-188",
+    "title": "C语言中，setjmp/longjmp的作用是？",
+    "options": [
+      "非局部跳转",
+      "异常处理",
+      "函数调用",
+      "循环控制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-189",
+    "title": "C语言中，signal函数的作用是？",
+    "options": [
+      "处理信号",
+      "发送信号",
+      "忽略信号",
+      "阻塞信号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-190",
+    "title": "C语言中，raise函数的作用是？",
+    "options": [
+      "发送信号",
+      "处理信号",
+      "忽略信号",
+      "阻塞信号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-191",
+    "title": "C语言中，SIGINT信号通常由什么触发？",
+    "options": [
+      "Ctrl+C",
+      "Ctrl+Z",
+      "Ctrl+\\",
+      "Kill"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-192",
+    "title": "C语言中，SIGTERM信号的作用是？",
+    "options": [
+      "请求终止程序",
+      "挂起程序",
+      "中断程序",
+      "继续程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-193",
+    "title": "C语言中，size_t是什么类型？",
+    "options": [
+      "无符号整数",
+      "有符号整数",
+      "浮点数",
+      "字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-194",
+    "title": "C语言中，ptrdiff_t是什么类型？",
+    "options": [
+      "指针差值的有符号整数",
+      "无符号整数",
+      "浮点数",
+      "字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-195",
+    "title": "C语言中，NULL和0的区别是？",
+    "options": [
+      "NULL是指针，0是整数",
+      "没有区别",
+      "NULL是整数，0是指针",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-196",
+    "title": "C语言中，EOF表示什么？",
+    "options": [
+      "文件结束标志",
+      "空指针",
+      "错误标志",
+      "换行符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-197",
+    "title": "C语言中，stderr的作用是？",
+    "options": [
+      "标准错误流",
+      "标准输入流",
+      "标准输出流",
+      "文件流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-198",
+    "title": "C语言中，stdin的作用是？",
+    "options": [
+      "标准输入流",
+      "标准输出流",
+      "标准错误流",
+      "文件流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-199",
+    "title": "C语言中，stdout的作用是？",
+    "options": [
+      "标准输出流",
+      "标准输入流",
+      "标准错误流",
+      "文件流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-200",
+    "title": "C语言中，fopen的模式\"w\"表示？",
+    "options": [
+      "写，文件不存在则创建",
+      "读",
+      "追加",
+      "读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-201",
+    "title": "C语言中，fopen的模式\"r\"表示？",
+    "options": [
+      "读，文件必须存在",
+      "写",
+      "追加",
+      "读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-202",
+    "title": "C语言中，fopen的模式\"a\"表示？",
+    "options": [
+      "追加，文件不存在则创建",
+      "读",
+      "写",
+      "随机访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-203",
+    "title": "C语言中，fopen的模式\"r+\"表示？",
+    "options": [
+      "读写，文件必须存在",
+      "只读",
+      "只写",
+      "追加读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-204",
+    "title": "C语言中，fopen的模式\"w+\"表示？",
+    "options": [
+      "读写，文件不存在则创建",
+      "只读",
+      "只写",
+      "追加读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-205",
+    "title": "C语言中，fopen的模式\"a+\"表示？",
+    "options": [
+      "读写追加，文件不存在则创建",
+      "只读",
+      "只写",
+      "随机读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-206",
+    "title": "C语言中，二进制模式使用什么后缀？",
+    "options": [
+      "b",
+      "t",
+      "x",
+      "d"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-207",
+    "title": "C语言中，fclose的作用是？",
+    "options": [
+      "关闭文件",
+      "打开文件",
+      "读取文件",
+      "写入文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-208",
+    "title": "C语言中，fgetc的作用是？",
+    "options": [
+      "读取一个字符",
+      "写入一个字符",
+      "读取一行",
+      "写入一行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-209",
+    "title": "C语言中，fputc的作用是？",
+    "options": [
+      "写入一个字符",
+      "读取一个字符",
+      "读取一行",
+      "写入一行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-210",
+    "title": "C语言中，fgets的作用是？",
+    "options": [
+      "读取一行或指定长度",
+      "写入一行",
+      "读取一个字符",
+      "写入一个字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-211",
+    "title": "C语言中，fputs的作用是？",
+    "options": [
+      "写入一行",
+      "读取一行",
+      "读取一个字符",
+      "写入一个字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-212",
+    "title": "C语言中，fread的作用是？",
+    "options": [
+      "读取二进制数据",
+      "写入二进制数据",
+      "读取字符",
+      "写入字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-213",
+    "title": "C语言中，fwrite的作用是？",
+    "options": [
+      "写入二进制数据",
+      "读取二进制数据",
+      "读取字符",
+      "写入字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-214",
+    "title": "C语言中，fseek的作用是？",
+    "options": [
+      "移动文件指针",
+      "获取文件指针位置",
+      "重置文件指针",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-215",
+    "title": "C语言中，ftell的作用是？",
+    "options": [
+      "获取文件指针位置",
+      "移动文件指针",
+      "重置文件指针",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-216",
+    "title": "C语言中，rewind的作用是？",
+    "options": [
+      "将文件指针移到开头",
+      "移动文件指针",
+      "获取文件位置",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-217",
+    "title": "C语言中，feof的作用是？",
+    "options": [
+      "判断文件是否结束",
+      "判断文件是否出错",
+      "判断文件是否打开",
+      "判断文件是否关闭"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-218",
+    "title": "C语言中，ferror的作用是？",
+    "options": [
+      "判断文件是否出错",
+      "判断文件是否结束",
+      "判断文件是否打开",
+      "判断文件是否关闭"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-219",
+    "title": "C语言中，clearerr的作用是？",
+    "options": [
+      "清除文件错误标志",
+      "清除文件内容",
+      "关闭文件",
+      "打开文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-220",
+    "title": "C语言中，remove的作用是？",
+    "options": [
+      "删除文件",
+      "重命名文件",
+      "移动文件",
+      "复制文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-221",
+    "title": "C语言中，rename的作用是？",
+    "options": [
+      "重命名文件",
+      "删除文件",
+      "移动文件",
+      "复制文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-222",
+    "title": "C语言中，tmpfile的作用是？",
+    "options": [
+      "创建临时文件",
+      "删除临时文件",
+      "打开临时文件",
+      "关闭临时文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-223",
+    "title": "C语言中，tmpnam的作用是？",
+    "options": [
+      "生成临时文件名",
+      "创建临时文件",
+      "删除临时文件",
+      "打开临时文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-224",
+    "title": "C语言中，system函数的作用是？",
+    "options": [
+      "执行系统命令",
+      "退出系统",
+      "获取系统时间",
+      "获取系统名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-225",
+    "title": "C语言中，getenv函数的作用是？",
+    "options": [
+      "获取环境变量",
+      "设置环境变量",
+      "删除环境变量",
+      "列出环境变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-226",
+    "title": "C语言中，abort函数的作用是？",
+    "options": [
+      "异常终止程序",
+      "正常终止程序",
+      "暂停程序",
+      "继续程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-227",
+    "title": "C语言中，exit和abort的区别是？",
+    "options": [
+      "exit正常清理终止，abort异常终止",
+      "没有区别",
+      "abort正常终止",
+      "exit异常终止"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-228",
+    "title": "C语言中，atof定义在哪个头文件？",
+    "options": [
+      "stdlib.h",
+      "math.h",
+      "stdio.h",
+      "string.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-229",
+    "title": "C语言中，strerror函数的作用是？",
+    "options": [
+      "返回错误码对应的字符串",
+      "设置错误码",
+      "清除错误",
+      "打印错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-230",
+    "title": "C语言中，errno变量的作用是？",
+    "options": [
+      "存储最近发生的错误码",
+      "错误字符串",
+      "错误行号",
+      "错误文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-231",
+    "title": "C语言中，perror函数的作用是？",
+    "options": [
+      "输出错误信息到stderr",
+      "输出到stdout",
+      "输出到文件",
+      "忽略错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-232",
+    "title": "C语言中，函数的默认返回类型是？",
+    "options": [
+      "int",
+      "void",
+      "auto",
+      "无默认类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-233",
+    "title": "C语言中，函数声明的作用是？",
+    "options": [
+      "告诉编译器函数的名称和类型",
+      "定义函数体",
+      "分配内存",
+      "调用函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-234",
+    "title": "C语言中，函数定义包含什么？",
+    "options": [
+      "函数头和函数体",
+      "只有函数头",
+      "只有函数体",
+      "声明和调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-235",
+    "title": "C语言中，递归函数的特点是？",
+    "options": [
+      "函数调用自身",
+      "函数调用其他函数",
+      "函数返回自身",
+      "函数无返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-236",
+    "title": "C语言中，递归必须有什麽？",
+    "options": [
+      "基准条件",
+      "循环",
+      "指针",
+      "数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-237",
+    "title": "C语言中，值传递的特点是？",
+    "options": [
+      "实参的值复制给形参",
+      "实参的地址传给形参",
+      "形参修改影响实参",
+      "共享内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-238",
+    "title": "C语言中，地址传递的特点是？",
+    "options": [
+      "实参的地址传给形参",
+      "实参的值复制给形参",
+      "形参修改不影响实参",
+      "不共享内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-239",
+    "title": "C语言中，局部变量和全局变量同名时，哪个优先？",
+    "options": [
+      "局部变量",
+      "全局变量",
+      "编译错误",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-240",
+    "title": "C语言中，静态函数的作用域是？",
+    "options": [
+      "当前文件",
+      "整个程序",
+      "当前函数",
+      "当前块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-241",
+    "title": "C语言中，指针变量存储的是什么？",
+    "options": [
+      "地址",
+      "值",
+      "类型",
+      "名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-242",
+    "title": "C语言中，&运算符的作用是？",
+    "options": [
+      "取地址",
+      "解引用",
+      "位与",
+      "逻辑与"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-243",
+    "title": "C语言中，*运算符在指针前的作用是？",
+    "options": [
+      "解引用",
+      "取地址",
+      "乘法",
+      "注释"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-244",
+    "title": "C语言中，int *p; p = 0; 表示？",
+    "options": [
+      "p是空指针",
+      "p指向地址0的值",
+      "p的值为0",
+      "p未初始化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-245",
+    "title": "C语言中，指针未初始化称为什么？",
+    "options": [
+      "野指针",
+      "空指针",
+      "悬垂指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-246",
+    "title": "C语言中，指向指针的指针如何定义？",
+    "options": [
+      "int **p",
+      "int *p",
+      "int &p",
+      "int p**"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-247",
+    "title": "C语言中，数组名可以赋值给指针吗？",
+    "options": [
+      "可以，数组名是首元素地址",
+      "不可以",
+      "只能赋值给数组指针",
+      "只能赋值给void指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-248",
+    "title": "C语言中，a[i]等价于？",
+    "options": [
+      "*(a+i)",
+      "a+i",
+      "&a[i]",
+      "*a+i"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-249",
+    "title": "C语言中，&a[i]等价于？",
+    "options": [
+      "a+i",
+      "*(a+i)",
+      "a[i]",
+      "*a+i"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-250",
+    "title": "C语言中，指针数组如何定义？",
+    "options": [
+      "int *arr[10]",
+      "int (*arr)[10]",
+      "int arr[10]",
+      "int **arr"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-251",
+    "title": "C语言中，数组指针如何定义？",
+    "options": [
+      "int (*arr)[10]",
+      "int *arr[10]",
+      "int arr[10]",
+      "int **arr"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-252",
+    "title": "C语言中，指针数组存储的是什么？",
+    "options": [
+      "指针",
+      "数组",
+      "值",
+      "地址的地址"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-253",
+    "title": "C语言中，数组指针指向的是什么？",
+    "options": [
+      "整个数组",
+      "首元素",
+      "指针",
+      "地址"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-254",
+    "title": "C语言中，二维数组a[m][n]的a[i]是什么？",
+    "options": [
+      "一维数组的首地址",
+      "元素值",
+      "指针数组",
+      "二维数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-255",
+    "title": "C语言中，a[m][n]的a是什么类型？",
+    "options": [
+      "指向一维数组的指针",
+      "指向元素的指针",
+      "二级指针",
+      "指针数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-256",
+    "title": "C语言中，void指针可以自增吗？",
+    "options": [
+      "不可以，因为不知道大小",
+      "可以",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-257",
+    "title": "C语言中，const指针和指针const的区别？",
+    "options": [
+      "const在*前修饰数据，在*后修饰指针",
+      "没有区别",
+      "const在*前修饰指针",
+      "const在*后修饰数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-258",
+    "title": "C语言中，指针可以作为函数返回值吗？",
+    "options": [
+      "可以，但不能返回局部变量地址",
+      "不可以",
+      "可以，返回任何地址",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-259",
+    "title": "C语言中，函数指针如何调用？",
+    "options": [
+      "pf(args)或(*pf)(args)",
+      "pf.args",
+      "pf->args",
+      "call pf(args)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-260",
+    "title": "C语言中，回调函数如何实现？",
+    "options": [
+      "将函数指针作为参数传递",
+      "使用宏",
+      "使用内联",
+      "使用递归"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-261",
+    "title": "C语言中，右左法则用于？",
+    "options": [
+      "解析复杂的C语言声明",
+      "代码规范",
+      "命名规则",
+      "编译优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-262",
+    "title": "C语言中，int (*(*p)(int))[10]表示？",
+    "options": [
+      "函数指针，返回数组指针",
+      "数组指针，指向函数",
+      "指针数组，存函数",
+      "函数，返回指针数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-263",
+    "title": "C语言中，malloc返回的指针需要强制转换吗？",
+    "options": [
+      "C语言不需要，C++需要",
+      "都需要",
+      "都不需要",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-264",
+    "title": "C语言中，free之后指针应该？",
+    "options": [
+      "置为NULL",
+      "保留",
+      "重新分配",
+      "自增"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-265",
+    "title": "C语言中，内存分配失败malloc返回？",
+    "options": [
+      "NULL",
+      "0",
+      "-1",
+      "异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-266",
+    "title": "C语言中，calloc的参数是？",
+    "options": [
+      "元素数量和每个元素大小",
+      "总字节数",
+      "类型和数量",
+      "地址和大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-267",
+    "title": "C语言中，realloc可以缩小内存吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能扩大",
+      "取决于大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-268",
+    "title": "C语言中，realloc(NULL, size)等价于？",
+    "options": [
+      "malloc(size)",
+      "calloc(size)",
+      "free",
+      "new"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-269",
+    "title": "C语言中，alloca分配的内存在？",
+    "options": [
+      "栈上",
+      "堆上",
+      "数据段",
+      "代码段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-270",
+    "title": "C语言中，alloca分配的内存需要free吗？",
+    "options": [
+      "不需要，函数结束自动释放",
+      "需要",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-271",
+    "title": "C语言中，内存布局从低到高通常是？",
+    "options": [
+      "代码段、数据段、BSS段、堆、栈",
+      "栈、堆、数据段、代码段",
+      "堆、栈、代码段、数据段",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-272",
+    "title": "C语言中，栈区的特点？",
+    "options": [
+      "自动分配释放，后进先出",
+      "手动分配释放",
+      "全局存在",
+      "只读"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-273",
+    "title": "C语言中，堆区的特点？",
+    "options": [
+      "手动分配释放，空间大",
+      "自动分配释放",
+      "后进先出",
+      "只读"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-274",
+    "title": "C语言中，BSS段存储什么？",
+    "options": [
+      "未初始化的全局变量",
+      "已初始化的全局变量",
+      "局部变量",
+      "常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-275",
+    "title": "C语言中，数据段存储什么？",
+    "options": [
+      "已初始化的全局变量",
+      "未初始化的全局变量",
+      "局部变量",
+      "指令"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-276",
+    "title": "C语言中，代码段存储什么？",
+    "options": [
+      "执行指令",
+      "全局变量",
+      "局部变量",
+      "常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-277",
+    "title": "C语言中，字符串常量存储在？",
+    "options": [
+      "常量区/只读数据段",
+      "栈区",
+      "堆区",
+      "BSS段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-278",
+    "title": "C语言中，试图修改字符串常量会怎样？",
+    "options": [
+      "段错误或未定义行为",
+      "编译错误",
+      "正常修改",
+      "警告"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-279",
+    "title": "C语言中，char *s = \"hello\"; s[0] = 'H'; 合法吗？",
+    "options": [
+      "不合法，未定义行为",
+      "合法",
+      "取决于编译器",
+      "只在C++合法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-280",
+    "title": "C语言中，char s[] = \"hello\"; s[0] = 'H'; 合法吗？",
+    "options": [
+      "合法，数组在栈上可修改",
+      "不合法",
+      "取决于编译器",
+      "只在C++合法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-281",
+    "title": "C语言中，数组越界访问会怎样？",
+    "options": [
+      "未定义行为",
+      "编译错误",
+      "运行错误",
+      "返回0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-282",
+    "title": "C语言中，缓冲区溢出的原因是？",
+    "options": [
+      "写入数据超过缓冲区大小",
+      "内存不足",
+      "指针未初始化",
+      "类型不匹配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-283",
+    "title": "C语言中，如何防止缓冲区溢出？",
+    "options": [
+      "使用安全的函数如strncpy",
+      "使用指针",
+      "使用全局变量",
+      "使用寄存器变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-284",
+    "title": "C语言中，对齐(alignment)的目的是？",
+    "options": [
+      "提高CPU访问内存效率",
+      "节省内存",
+      "安全考虑",
+      "编译要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-285",
+    "title": "C语言中，结构体对齐的规则是？",
+    "options": [
+      "按最大成员大小对齐",
+      "按1字节对齐",
+      "按指针大小对齐",
+      "随机对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-286",
+    "title": "C语言中，#pragma pack(1)的作用是？",
+    "options": [
+      "取消结构体对齐（1字节对齐）",
+      "设置1字节对齐",
+      "设置1字节大小",
+      "设置1字节偏移"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-287",
+    "title": "C语言中，指针运算的单位是什么？",
+    "options": [
+      "所指向类型的大小",
+      "1字节",
+      "4字节",
+      "8字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-288",
+    "title": "C语言中，int a[5]; a+1跳过几个字节？",
+    "options": [
+      "4",
+      "1",
+      "2",
+      "8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-289",
+    "title": "C语言中，int (*a)[5]; a+1跳过几个字节？",
+    "options": [
+      "20",
+      "4",
+      "5",
+      "8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-290",
+    "title": "C语言中，二级指针用于？",
+    "options": [
+      "修改指针本身的值",
+      "修改指针指向的值",
+      "二维数组",
+      "函数参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-291",
+    "title": "C语言中，如何通过函数修改指针？",
+    "options": [
+      "传递指针的地址（二级指针）",
+      "传递指针",
+      "传递值",
+      "返回指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-292",
+    "title": "C语言中，数组作为函数参数退化为？",
+    "options": [
+      "指针",
+      "引用",
+      "值",
+      "结构体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-293",
+    "title": "C语言中，在函数内计算数组大小可行吗？",
+    "options": [
+      "不可行，因为退化为指针",
+      "可行",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-294",
+    "title": "C语言中，strlen和sizeof的区别？",
+    "options": [
+      "strlen是长度，sizeof是大小",
+      "没有区别",
+      "sizeof是长度",
+      "strlen是大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-295",
+    "title": "C语言中，动态分配二维数组的方法？",
+    "options": [
+      "先分配行指针，再分配每行",
+      "直接malloc",
+      "使用alloca",
+      "无法分配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-296",
+    "title": "C语言中，释放动态二维数组的方法？",
+    "options": [
+      "先释放每行，再释放行指针",
+      "直接free",
+      "不需要释放",
+      "使用delete"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-297",
+    "title": "C语言中，restrict关键字的作用是？",
+    "options": [
+      "表明指针是访问数据的唯一方式",
+      "限制指针类型",
+      "限制指针大小",
+      "限制指针作用域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-298",
+    "title": "C语言中，restrict定义在哪个标准？",
+    "options": [
+      "C99",
+      "C89",
+      "C11",
+      "C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-299",
+    "title": "C语言中，变长数组(VLA)是哪个标准引入的？",
+    "options": [
+      "C99",
+      "C89",
+      "C11",
+      "C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-300",
+    "title": "C语言中，变长数组的长度在什么时候确定？",
+    "options": [
+      "运行时",
+      "编译时",
+      "链接时",
+      "预处理时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-301",
+    "title": "C语言中，变长数组可以静态分配吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于编译器",
+      "取决于大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-302",
+    "title": "C语言中，复合字面量是哪个标准引入的？",
+    "options": [
+      "C99",
+      "C89",
+      "C11",
+      "C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-303",
+    "title": "C语言中，复合字面量的语法是？",
+    "options": [
+      "(类型名){初始化列表}",
+      "类型名(初始化列表)",
+      "{初始化列表}类型",
+      "[类型名]初始化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-304",
+    "title": "C语言中，柔性数组成员(Flexible Array Member)的特点？",
+    "options": [
+      "结构体最后一个成员大小为0或不指定",
+      "数组大小可变",
+      "数组在堆上",
+      "数组在栈上"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-305",
+    "title": "C语言中，柔性数组成员的作用是？",
+    "options": [
+      "实现变长结构体",
+      "节省内存",
+      "加快访问",
+      "对齐优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-306",
+    "title": "C语言中，指针和数组名的区别？",
+    "options": [
+      "指针是变量，数组名是常量地址",
+      "没有区别",
+      "数组名是变量",
+      "指针是常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-307",
+    "title": "C语言中，a和&a的区别？",
+    "options": [
+      "a是首元素地址，&a是整个数组地址",
+      "没有区别",
+      "a是数组地址",
+      "&a是首元素地址"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-308",
+    "title": "C语言中，&a+1跳过几个字节？",
+    "options": [
+      "跳过整个数组",
+      "跳过一个元素",
+      "跳过1字节",
+      "跳过指针大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-309",
+    "title": "C语言中，指针的减法运算前提是？",
+    "options": [
+      "指向同一个数组",
+      "指向同一类型",
+      "任意指针",
+      "整数指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-310",
+    "title": "C语言中，指针比较运算的前提是？",
+    "options": [
+      "指向同一个数组或对象",
+      "指向同一类型",
+      "任意指针",
+      "整数指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-311",
+    "title": "C语言中，NULL指针可以解引用吗？",
+    "options": [
+      "不可以，会段错误",
+      "可以",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-312",
+    "title": "C语言中，void指针的算术运算在哪个标准不允许？",
+    "options": [
+      "C标准不允许，GNU扩展允许",
+      "C89不允许",
+      "C99不允许",
+      "都允许"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-313",
+    "title": "C语言中，多级指针最多有几级？",
+    "options": [
+      "标准无限制，实际受编译器限制",
+      "2级",
+      "3级",
+      "4级"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-314",
+    "title": "C语言中，指针强转的意义？",
+    "options": [
+      "改变编译器对内存的解释方式",
+      "改变内存中的值",
+      "改变类型大小",
+      "改变对齐方式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-315",
+    "title": "C语言中，指针强转需要注意什么？",
+    "options": [
+      "对齐和大小端问题",
+      "变量名",
+      "作用域",
+      "生命周期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-316",
+    "title": "C语言中，函数指针可以放入结构体吗？",
+    "options": [
+      "可以，实现类似多态",
+      "不可以",
+      "只能放入数组",
+      "只能放入联合体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-317",
+    "title": "C语言中，函数指针数组用于？",
+    "options": [
+      "实现状态机或转移表",
+      "存储数据",
+      "内存管理",
+      "字符串处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-318",
+    "title": "C语言中，返回函数指针的函数如何声明？",
+    "options": [
+      "int (*fun(int))(int)",
+      "int *fun(int)(int)",
+      "int (*fun)(int)",
+      "int fun(int)(int)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-319",
+    "title": "C语言中，qsort的比较函数参数是什么类型？",
+    "options": [
+      "const void*",
+      "void*",
+      "int*",
+      "char*"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-320",
+    "title": "C语言中，qsort的比较函数返回值意义？",
+    "options": [
+      "小于0、等于0、大于0",
+      "true、false",
+      "1、0",
+      "-1、1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-321",
+    "title": "C语言中，bsearch的返回值是？",
+    "options": [
+      "找到的元素的指针",
+      "元素索引",
+      "0或1",
+      "元素值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-322",
+    "title": "C语言中，指针的安全问题主要有哪些？",
+    "options": [
+      "野指针、内存泄漏、越界",
+      "类型不匹配",
+      "命名不规范",
+      "效率低"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-323",
+    "title": "C语言中，智能指针在C中如何实现？",
+    "options": [
+      "通过结构体和函数模拟",
+      "原生支持",
+      "无法实现",
+      "使用宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-324",
+    "title": "C语言中，内存池的作用是？",
+    "options": [
+      "减少频繁分配释放的开销",
+      "增加内存",
+      "保护内存",
+      "共享内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-325",
+    "title": "C语言中，内存池通常如何实现？",
+    "options": [
+      "预分配大块内存，自行管理",
+      "使用malloc",
+      "使用栈",
+      "使用全局变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-326",
+    "title": "C语言中，引用计数在C中如何实现？",
+    "options": [
+      "结构体中加计数器变量",
+      "原生支持",
+      "无法实现",
+      "使用指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-327",
+    "title": "C语言中，垃圾回收在C中常见吗？",
+    "options": [
+      "不常见，通常手动管理",
+      "很常见",
+      "标准库支持",
+      "编译器自动"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-328",
+    "title": "C语言中， Boehm GC是什么？",
+    "options": [
+      "C/C++的保守式垃圾收集器",
+      "编译器",
+      "调试器",
+      "内存池"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-329",
+    "title": "C语言中，valgrind的作用是？",
+    "options": [
+      "内存错误检测",
+      "代码格式化",
+      "静态分析",
+      "编译优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-330",
+    "title": "C语言中，gdb的作用是？",
+    "options": [
+      "调试程序",
+      "编译程序",
+      "运行程序",
+      "分析程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-331",
+    "title": "C语言中，make工具的作用是？",
+    "options": [
+      "自动化构建",
+      "代码审查",
+      "版本控制",
+      "部署工具"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-332",
+    "title": "C语言中，CMake的作用是？",
+    "options": [
+      "跨平台构建系统生成器",
+      "编译器",
+      "调试器",
+      "编辑器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-333",
+    "title": "C语言中，gcc的作用是？",
+    "options": [
+      "编译C程序",
+      "调试C程序",
+      "运行C程序",
+      "分析C程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-334",
+    "title": "C语言中，-Wall选项的作用是？",
+    "options": [
+      "开启所有常见警告",
+      "关闭警告",
+      "开启优化",
+      "生成调试信息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-335",
+    "title": "C语言中，-Werror选项的作用是？",
+    "options": [
+      "将警告视为错误",
+      "忽略错误",
+      "生成错误报告",
+      "关闭错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-336",
+    "title": "C语言中，-g选项的作用是？",
+    "options": [
+      "生成调试信息",
+      "开启优化",
+      "关闭警告",
+      "链接库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-337",
+    "title": "C语言中，-O2选项的作用是？",
+    "options": [
+      "开启二级优化",
+      "关闭优化",
+      "开启调试",
+      "生成目标文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-338",
+    "title": "C语言中，-I选项的作用是？",
+    "options": [
+      "指定头文件搜索路径",
+      "指定库搜索路径",
+      "链接库",
+      "生成目标文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-339",
+    "title": "C语言中，-L选项的作用是？",
+    "options": [
+      "指定库搜索路径",
+      "指定头文件搜索路径",
+      "链接库",
+      "生成目标文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-340",
+    "title": "C语言中，-l选项的作用是？",
+    "options": [
+      "链接指定的库",
+      "指定库路径",
+      "指定头文件路径",
+      "生成目标文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-341",
+    "title": "C语言中，-D选项的作用是？",
+    "options": [
+      "定义宏",
+      "取消宏",
+      "链接库",
+      "指定路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-342",
+    "title": "C语言中，-shared选项的作用是？",
+    "options": [
+      "生成动态链接库",
+      "生成静态链接库",
+      "生成可执行文件",
+      "生成目标文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-343",
+    "title": "C语言中，-fPIC选项的作用是？",
+    "options": [
+      "生成位置无关代码",
+      "生成静态库",
+      "优化代码",
+      "调试代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-344",
+    "title": "C语言中，静态链接的特点是？",
+    "options": [
+      "将库代码复制到可执行文件",
+      "运行时加载库",
+      "文件小",
+      "共享库代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-345",
+    "title": "C语言中，动态链接的特点是？",
+    "options": [
+      "运行时加载共享库",
+      "将库代码复制到可执行文件",
+      "文件大",
+      "启动快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-346",
+    "title": "C语言中，.a文件是什么？",
+    "options": [
+      "静态库",
+      "动态库",
+      "目标文件",
+      "源文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-347",
+    "title": "C语言中，.so文件是什么？",
+    "options": [
+      "动态库",
+      "静态库",
+      "目标文件",
+      "源文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-348",
+    "title": "C语言中，.o文件是什么？",
+    "options": [
+      "目标文件",
+      "源文件",
+      "可执行文件",
+      "库文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-349",
+    "title": "C语言中，ar工具的作用是？",
+    "options": [
+      "创建和管理静态库",
+      "创建动态库",
+      "编译源码",
+      "链接目标文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-350",
+    "title": "C语言中，ldd工具的作用是？",
+    "options": [
+      "查看程序依赖的动态库",
+      "链接库",
+      "编译源码",
+      "调试程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-351",
+    "title": "C语言中，nm工具的作用是？",
+    "options": [
+      "列出目标文件中的符号",
+      "命名文件",
+      "编译源码",
+      "调试程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-352",
+    "title": "C语言中，strip工具的作用是？",
+    "options": [
+      "移除可执行文件中的符号信息",
+      "压缩文件",
+      "加密文件",
+      "编译源码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-353",
+    "title": "C语言中，objdump工具的作用是？",
+    "options": [
+      "反汇编目标文件",
+      "编译源码",
+      "链接库",
+      "调试程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-354",
+    "title": "C语言中，readelf工具的作用是？",
+    "options": [
+      "读取ELF文件信息",
+      "编译源码",
+      "链接库",
+      "调试程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-355",
+    "title": "C语言中，预处理后的文件扩展名通常是？",
+    "options": [
+      ".i",
+      ".o",
+      ".s",
+      ".a"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-356",
+    "title": "C语言中，汇编后的文件扩展名通常是？",
+    "options": [
+      ".s",
+      ".i",
+      ".o",
+      ".a"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-357",
+    "title": "C语言中，编译过程的四个阶段是？",
+    "options": [
+      "预处理、编译、汇编、链接",
+      "编辑、编译、运行、调试",
+      "词法、语法、语义、代码生成",
+      "分析、设计、编码、测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-358",
+    "title": "C语言中，指针变量存储的是什么？",
+    "options": [
+      "地址",
+      "值",
+      "类型",
+      "名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-359",
+    "title": "C语言中，&运算符的作用是？",
+    "options": [
+      "取地址",
+      "解引用",
+      "位与",
+      "逻辑与"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-360",
+    "title": "C语言中，*运算符在指针前的作用是？",
+    "options": [
+      "解引用",
+      "取地址",
+      "乘法",
+      "注释"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-361",
+    "title": "C语言中，栈溢出(Stack Overflow)的常见原因是？",
+    "options": [
+      "递归过深或局部变量过大",
+      "内存泄漏",
+      "使用malloc",
+      "使用全局变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-362",
+    "title": "C语言中，堆溢出的原因是？",
+    "options": [
+      "申请的内存超过系统限制",
+      "递归过深",
+      "局部变量过大",
+      "数组越界"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-363",
+    "title": "C语言中，内存泄漏检测工具是？",
+    "options": [
+      "valgrind",
+      "gdb",
+      "gcc",
+      "make"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-364",
+    "title": "C语言中，use after free是指？",
+    "options": [
+      "使用已释放的内存",
+      "释放两次",
+      "未释放内存",
+      "访问空指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-365",
+    "title": "C语言中，double free是指？",
+    "options": [
+      "释放同一内存两次",
+      "使用已释放内存",
+      "未释放内存",
+      "访问空指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-366",
+    "title": "C语言中，无效写是指？",
+    "options": [
+      "写入已释放的内存",
+      "释放两次",
+      "未释放内存",
+      "读取空指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-367",
+    "title": "C语言中，无效读是指？",
+    "options": [
+      "读取已释放的内存",
+      "释放两次",
+      "未释放内存",
+      "写入空指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-368",
+    "title": "C语言中，内存对齐的规则是？",
+    "options": [
+      "成员偏移量必须是自身大小的整数倍",
+      "必须4字节对齐",
+      "必须8字节对齐",
+      "随机对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-369",
+    "title": "C语言中，结构体大小如何计算？",
+    "options": [
+      "最大对齐数的整数倍",
+      "所有成员大小之和",
+      "第一个成员大小",
+      "最后一个成员大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-370",
+    "title": "C语言中，位域的作用是？",
+    "options": [
+      "节省内存空间",
+      "加快访问速度",
+      "保证线程安全",
+      "简化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-371",
+    "title": "C语言中，位域的声明使用什么？",
+    "options": [
+      "冒号和位数",
+      "点号和位数",
+      "井号和位数",
+      "星号和位数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-372",
+    "title": "C语言中，位域可以取地址吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于类型",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-373",
+    "title": "C语言中，位域的对齐规则？",
+    "options": [
+      "取决于位域的类型",
+      "总是1字节",
+      "总是4字节",
+      "无对齐要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-374",
+    "title": "C语言中，联合体的特点是？",
+    "options": [
+      "所有成员共享同一内存",
+      [
+        "成员顺序存储"
+      ],
+      [
+        "大小等于所有成员之和"
+      ],
+      [
+        "可以同时存储多个值"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-375",
+    "title": "C语言中，联合体的大小是？",
+    "options": [
+      "最大成员的大小",
+      "所有成员大小之和",
+      "第一个成员大小",
+      "最后一个成员大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-376",
+    "title": "C语言中，联合体常用于？",
+    "options": [
+      "类型转换、节省内存",
+      "字符串处理",
+      "数学计算",
+      "文件操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-377",
+    "title": "C语言中，枚举类型的大小通常是？",
+    "options": [
+      "int大小",
+      "1字节",
+      "2字节",
+      "取决于最大值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-378",
+    "title": "C语言中，typedef和#define的哪个区别最重要？",
+    "options": [
+      "typedef由编译器处理，#define由预处理器处理",
+      [
+        "typedef不能定义指针"
+      ],
+      [
+        "#define不能定义类型"
+      ],
+      [
+        "没有区别"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-379",
+    "title": "C语言中，volatile变量的读操作是？",
+    "options": [
+      "从内存读取",
+      "从寄存器读取",
+      "从缓存读取",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-380",
+    "title": "C语言中，volatile常用于？",
+    "options": [
+      "硬件寄存器、信号处理",
+      "数学计算",
+      "字符串处理",
+      "文件操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-381",
+    "title": "C语言中，const全局变量存储在？",
+    "options": [
+      "只读数据段",
+      "栈区",
+      "堆区",
+      "BSS段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-382",
+    "title": "C语言中，const局部变量存储在？",
+    "options": [
+      "栈区",
+      "只读数据段",
+      "堆区",
+      "BSS段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-383",
+    "title": "C语言中，static全局变量存储在？",
+    "options": [
+      "数据段或BSS段",
+      "栈区",
+      "堆区",
+      "代码段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-384",
+    "title": "C语言中，static局部变量存储在？",
+    "options": [
+      "数据段或BSS段",
+      "栈区",
+      "堆区",
+      "代码段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-385",
+    "title": "C语言中，寄存器变量存储在？",
+    "options": [
+      "寄存器",
+      "栈区",
+      "堆区",
+      "数据段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-386",
+    "title": "C语言中，代码段的特点是？",
+    "options": [
+      "只读、可执行",
+      "可读写",
+      "可读写执行",
+      "只读不执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-387",
+    "title": "C语言中，数据段的特点是？",
+    "options": [
+      "可读写",
+      "只读",
+      "可执行",
+      "只读可执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-388",
+    "title": "C语言中，BSS段的特点是？",
+    "options": [
+      "初始化为0",
+      "未初始化为随机值",
+      "只读",
+      "可执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-389",
+    "title": "C语言中，堆的增长方向是？",
+    "options": [
+      "向高地址增长",
+      "向低地址增长",
+      "不增长",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-390",
+    "title": "C语言中，栈的增长方向是？",
+    "options": [
+      "向低地址增长",
+      "向高地址增长",
+      "不增长",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-391",
+    "title": "C语言中，大端序是指？",
+    "options": [
+      "高位字节存放在低地址",
+      "低位字节存放在低地址",
+      "随机存放",
+      "压缩存放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-392",
+    "title": "C语言中，小端序是指？",
+    "options": [
+      "低位字节存放在低地址",
+      "高位字节存放在低地址",
+      "随机存放",
+      "压缩存放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-393",
+    "title": "C语言中，如何判断大小端？",
+    "options": [
+      "使用联合体或指针强转",
+      "使用sizeof",
+      "使用strlen",
+      "无法判断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-394",
+    "title": "C语言中，x86架构使用什么字节序？",
+    "options": [
+      "小端序",
+      "大端序",
+      "都有",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-395",
+    "title": "C语言中，网络字节序使用什么？",
+    "options": [
+      "大端序",
+      "小端序",
+      "都有",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-396",
+    "title": "C语言中，htonl函数的作用是？",
+    "options": [
+      "主机序转网络序(32位)",
+      "网络序转主机序",
+      "主机序转网络序(16位)",
+      "网络序转主机序(16位)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-397",
+    "title": "C语言中，ntohs函数的作用是？",
+    "options": [
+      "网络序转主机序(16位)",
+      "主机序转网络序",
+      "网络序转主机序(32位)",
+      "主机序转网络序(32位)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-398",
+    "title": "C语言中，字节对齐的默认值通常是？",
+    "options": [
+      "取决于编译器和平台",
+      "1字节",
+      "2字节",
+      "4字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-399",
+    "title": "C语言中，__attribute__((packed))的作用是？",
+    "options": [
+      "取消结构体对齐",
+      "设置1字节对齐",
+      "设置4字节对齐",
+      "设置8字节对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-400",
+    "title": "C语言中，__attribute__((aligned(n)))的作用是？",
+    "options": [
+      "设置n字节对齐",
+      "取消对齐",
+      "设置n字节大小",
+      "设置n字节偏移"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-401",
+    "title": "C语言中，offsetof宏的实现原理是？",
+    "options": [
+      "将0强转为结构体指针求偏移",
+      "使用sizeof",
+      "使用指针减法",
+      "使用位运算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-402",
+    "title": "C语言中，container_of宏的作用是？",
+    "options": [
+      "通过成员指针获取结构体指针",
+      "获取成员偏移",
+      "获取结构体大小",
+      "获取成员大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-403",
+    "title": "C语言中，container_of在哪个库常用？",
+    "options": [
+      "Linux内核",
+      "标准库",
+      "C++库",
+      "Boost库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-404",
+    "title": "C语言中，链表和数组的区别？",
+    "options": [
+      "链表插入快，数组访问快",
+      "链表访问快，数组插入快",
+      "没有区别",
+      "链表连续存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-405",
+    "title": "C语言中，单链表的特点是？",
+    "options": [
+      "每个节点指向下一个节点",
+      "每个节点指向上一个节点",
+      "首尾相连",
+      "随机访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-406",
+    "title": "C语言中，双链表的特点是？",
+    "options": [
+      "每个节点有前驱和后继指针",
+      "只有后继指针",
+      "只有前驱指针",
+      "无指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-407",
+    "title": "C语言中，循环链表的特点是？",
+    "options": [
+      "尾节点指向头节点",
+      "尾节点指向NULL",
+      "头节点指向尾节点",
+      "无指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-408",
+    "title": "C语言中，栈的数据结构特点是？",
+    "options": [
+      "后进先出(LIFO)",
+      "先进先出(FIFO)",
+      "随机访问",
+      "顺序访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-409",
+    "title": "C语言中，队列的数据结构特点是？",
+    "options": [
+      "先进先出(FIFO)",
+      "后进先出(LIFO)",
+      "随机访问",
+      "顺序访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-410",
+    "title": "C语言中，树的深度优先遍历使用什么数据结构？",
+    "options": [
+      "栈",
+      "队列",
+      "堆",
+      "链表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-411",
+    "title": "C语言中，树的广度优先遍历使用什么数据结构？",
+    "options": [
+      "队列",
+      "栈",
+      "堆",
+      "链表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-412",
+    "title": "C语言中，二叉排序树的特点是？",
+    "options": [
+      "左小右大",
+      "左大右小",
+      "随机排列",
+      "完全平衡"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-413",
+    "title": "C语言中，平衡二叉树的目的是？",
+    "options": [
+      "防止退化为链表",
+      "增加节点",
+      "减少节点",
+      "方便遍历"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-414",
+    "title": "C语言中，哈希表的特点是？",
+    "options": [
+      "查找快，空间换时间",
+      "查找慢",
+      "有序存储",
+      "链式存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-415",
+    "title": "C语言中，哈希冲突的解决方法有？",
+    "options": [
+      "开放定址法、链地址法",
+      "排序法",
+      "二分法",
+      "递归法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-416",
+    "title": "C语言中，堆排序使用的数据结构是？",
+    "options": [
+      "完全二叉树",
+      "链表",
+      "栈",
+      "队列"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-417",
+    "title": "C语言中，大顶堆的特点是？",
+    "options": [
+      "根节点最大",
+      "根节点最小",
+      "左大右小",
+      "左小右大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-418",
+    "title": "C语言中，小顶堆的特点是？",
+    "options": [
+      "根节点最小",
+      "根节点最大",
+      "左大右小",
+      "左小右大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-419",
+    "title": "C语言中，排序算法的稳定性是指？",
+    "options": [
+      "相同元素相对位置不变",
+      "排序速度快",
+      "占用内存少",
+      "代码简单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-420",
+    "title": "C语言中，快速排序的平均时间复杂度是？",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-421",
+    "title": "C语言中，快速排序的最坏时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-422",
+    "title": "C语言中，归并排序的时间复杂度是？",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-423",
+    "title": "C语言中，冒泡排序的时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-424",
+    "title": "C语言中，插入排序的时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-425",
+    "title": "C语言中，选择排序的时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-426",
+    "title": "C语言中，二分查找的前提是？",
+    "options": [
+      "数组有序",
+      "数组无序",
+      "链表",
+      "栈"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-427",
+    "title": "C语言中，二分查找的时间复杂度是？",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n^2)",
+      "O(1)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-428",
+    "title": "C语言中，strlen的时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-429",
+    "title": "C语言中，strcmp的时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-430",
+    "title": "C语言中，访问数组元素的时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-431",
+    "title": "C语言中，访问链表第n个元素的时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-432",
+    "title": "C语言中，递归的效率通常比循环低的原因是？",
+    "options": [
+      "函数调用开销大",
+      "循环开销大",
+      "递归代码长",
+      "循环代码长"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-433",
+    "title": "C语言中，尾递归优化的作用是？",
+    "options": [
+      "将递归转为循环，减少栈使用",
+      "增加递归深度",
+      "增加代码可读性",
+      "增加函数调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-434",
+    "title": "C语言中，gcc默认开启尾递归优化吗？",
+    "options": [
+      "开启(-O2)",
+      "不开启",
+      "取决于版本",
+      "取决于平台"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-435",
+    "title": "C语言中，如何实现泛型数据结构？",
+    "options": [
+      "使用void指针和函数指针",
+      "使用模板",
+      "使用继承",
+      "使用宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-436",
+    "title": "C语言中，泛型排序使用什么？",
+    "options": [
+      "qsort和回调函数",
+      "模板",
+      "重载",
+      "宏定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-437",
+    "title": "C语言中，泛型链表节点数据域通常用什么类型？",
+    "options": [
+      "void*",
+      "int",
+      "char*",
+      "struct"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-438",
+    "title": "C语言中，错误处理的传统方式是？",
+    "options": [
+      "返回错误码",
+      "抛出异常",
+      "断言",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-439",
+    "title": "C语言中，errno的作用是？",
+    "options": [
+      "存储错误码",
+      "存储错误信息",
+      "存储错误行号",
+      "存储错误类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-440",
+    "title": "C语言中，perror的输出格式是？",
+    "options": [
+      "参数字符串: 错误信息",
+      "错误信息",
+      "参数字符串",
+      "错误码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-441",
+    "title": "C语言中，strerror的参数是？",
+    "options": [
+      "错误码",
+      "字符串",
+      "指针",
+      "文件流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-442",
+    "title": "C语言中，assert失败会怎样？",
+    "options": [
+      "终止程序并输出信息",
+      "抛出异常",
+      "返回错误",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-443",
+    "title": "C语言中，setjmp的作用是？",
+    "options": [
+      "保存栈环境",
+      "恢复栈环境",
+      "分配内存",
+      "释放内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-444",
+    "title": "C语言中，longjmp的作用是？",
+    "options": [
+      "恢复栈环境",
+      "保存栈环境",
+      "分配内存",
+      "释放内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-445",
+    "title": "C语言中，setjmp/longjmp可以跨函数跳转吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能跨一层",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-446",
+    "title": "C语言中，setjmp/longjmp的缺点是？",
+    "options": [
+      "不调用析构函数，资源可能泄漏",
+      "速度慢",
+      "语法复杂",
+      "不支持跨函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-447",
+    "title": "C语言中，信号处理函数中应该使用哪种函数？",
+    "options": [
+      "异步安全函数",
+      "任意函数",
+      "标准I/O函数",
+      "内存分配函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-448",
+    "title": "C语言中，printf是异步安全函数吗？",
+    "options": [
+      "不是",
+      "是",
+      "取决于平台",
+      "取决于参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-449",
+    "title": "C语言中，_exit和exit的区别是？",
+    "options": [
+      "_exit不刷新缓冲区，exit刷新",
+      "没有区别",
+      [
+        "exit不刷新"
+      ],
+      [
+        "_exit刷新"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-450",
+    "title": "C语言中，atexit注册的函数执行顺序是？",
+    "options": [
+      "逆序执行",
+      "顺序执行",
+      "随机执行",
+      "只执行一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-451",
+    "title": "C语言中，main函数返回0表示？",
+    "options": [
+      "程序成功",
+      "程序失败",
+      "程序异常",
+      "程序警告"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-452",
+    "title": "C语言中，main函数返回非0表示？",
+    "options": [
+      "程序失败或异常",
+      "程序成功",
+      "程序警告",
+      "无意义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-453",
+    "title": "C语言中，命令行参数解析通常用什么？",
+    "options": [
+      "getopt",
+      "argv",
+      "scanf",
+      "getchar"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-454",
+    "title": "C语言中，getopt的作用是？",
+    "options": [
+      "解析命令行选项",
+      "获取字符",
+      "获取环境变量",
+      "获取时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-455",
+    "title": "C语言中，环境变量操作函数是？",
+    "options": [
+      "getenv/setenv",
+      "getenv/putenv",
+      "getenv/unsetenv",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-456",
+    "title": "C语言中，longjmp跳转后局部变量的值？",
+    "options": [
+      "volatile变量保持最新，其他不确定",
+      "保持不变",
+      "重置为0",
+      "随机值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-457",
+    "title": "C语言中，可变参数宏的语法是？",
+    "options": [
+      "__VA_ARGS__",
+      "args...",
+      "va_list",
+      "..."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-458",
+    "title": "C语言中，可变参数宏是哪个标准引入的？",
+    "options": [
+      "C99",
+      "C89",
+      "C11",
+      "C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-459",
+    "title": "C语言中，__func__的作用是？",
+    "options": [
+      "获取当前函数名",
+      "获取文件名",
+      "获取行号",
+      "获取日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-460",
+    "title": "C语言中，__FILE__的作用是？",
+    "options": [
+      "获取当前文件名",
+      "获取函数名",
+      "获取行号",
+      "获取日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-461",
+    "title": "C语言中，__LINE__的作用是？",
+    "options": [
+      "获取当前行号",
+      "获取文件名",
+      "获取函数名",
+      "获取日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-462",
+    "title": "C语言中，__DATE__的作用是？",
+    "options": [
+      "获取编译日期",
+      "获取当前日期",
+      "获取时间",
+      "获取行号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-463",
+    "title": "C语言中，__TIME__的作用是？",
+    "options": [
+      "获取编译时间",
+      "获取当前时间",
+      "获取日期",
+      "获取行号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-464",
+    "title": "C语言中，#pragma once的作用是？",
+    "options": [
+      "防止头文件重复包含",
+      "只编译一次",
+      "运行一次",
+      "定义宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-465",
+    "title": "C语言中，#pragma once和#ifndef的区别？",
+    "options": [
+      "#pragma once非标准但简单，#ifndef标准",
+      "没有区别",
+      "#pragma once标准",
+      "#ifndef非标准"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-466",
+    "title": "C语言中，静态分析工具是？",
+    "options": [
+      "splint, cppcheck",
+      "valgrind",
+      "gdb",
+      "gcc"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-467",
+    "title": "C语言中，动态分析工具是？",
+    "options": [
+      "valgrind, AddressSanitizer",
+      "splint",
+      "cppcheck",
+      "lint"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-468",
+    "title": "C语言中，AddressSanitizer(ASan)的作用是？",
+    "options": [
+      "检测内存错误",
+      "检测数据竞争",
+      "检测性能瓶颈",
+      "检测代码风格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-469",
+    "title": "C语言中，ThreadSanitizer(TSan)的作用是？",
+    "options": [
+      "检测数据竞争",
+      "检测内存错误",
+      "检测性能瓶颈",
+      "检测代码风格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-470",
+    "title": "C语言中，UndefinedBehaviorSanitizer(UBSan)的作用是？",
+    "options": [
+      "检测未定义行为",
+      "检测内存错误",
+      "检测数据竞争",
+      "检测性能瓶颈"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-471",
+    "title": "C语言中，MemorySanitizer(MSan)的作用是？",
+    "options": [
+      "检测未初始化内存读取",
+      "检测内存泄漏",
+      "检测越界",
+      "检测竞争"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-472",
+    "title": "C语言中，如何开启ASan？",
+    "options": [
+      "gcc -fsanitize=address",
+      "gcc -g",
+      "gcc -O2",
+      "gcc -Wall"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-473",
+    "title": "C语言中，性能分析工具是？",
+    "options": [
+      "gprof, perf",
+      "valgrind",
+      "gdb",
+      "cppcheck"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-474",
+    "title": "C语言中，gprof的使用步骤是？",
+    "options": [
+      "编译加-pg，运行，gprof分析",
+      "直接运行",
+      "编译加-g",
+      "编译加-O2"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-475",
+    "title": "C语言中，代码覆盖率工具是？",
+    "options": [
+      "gcov",
+      "gprof",
+      "valgrind",
+      "gdb"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-476",
+    "title": "C语言中，文档生成工具是？",
+    "options": [
+      "Doxygen",
+      "gprof",
+      "valgrind",
+      "gdb"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-477",
+    "title": "C语言中，Doxygen的注释风格是？",
+    "options": [
+      "/** ... */",
+      "// ...",
+      "/* ... */",
+      "# ..."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-478",
+    "title": "C语言中，单元测试框架是？",
+    "options": [
+      "Check, CMocka",
+      "JUnit",
+      "pytest",
+      "gtest"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-479",
+    "title": "C语言中，mock框架的作用是？",
+    "options": [
+      "模拟依赖模块",
+      "性能测试",
+      "代码覆盖率",
+      "静态分析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-480",
+    "title": "C语言中，栈溢出(Stack Overflow)的常见原因是？",
+    "options": [
+      "递归过深或局部变量过大",
+      "内存泄漏",
+      "使用malloc",
+      "使用全局变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-481",
+    "title": "C语言中，结构体使用什么关键字定义？",
+    "options": [
+      "struct",
+      "class",
+      "union",
+      "enum"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-482",
+    "title": "C语言中，结构体成员默认访问权限是？",
+    "options": [
+      "公开",
+      "私有",
+      "保护",
+      "无权限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-483",
+    "title": "C语言中，结构体可以包含函数吗？",
+    "options": [
+      "不可以，但可以有函数指针",
+      "可以",
+      "只能包含构造函数",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-484",
+    "title": "C语言中，结构体赋值是深拷贝还是浅拷贝？",
+    "options": [
+      "浅拷贝(值拷贝)",
+      "深拷贝",
+      "引用拷贝",
+      "不拷贝"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-485",
+    "title": "C语言中，结构体包含指针成员赋值时注意什么？",
+    "options": [
+      "指针指向同一内存，修改会相互影响",
+      "没有任何问题",
+      "会自动深拷贝",
+      "编译错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-486",
+    "title": "C语言中，如何实现结构体的深拷贝？",
+    "options": [
+      "手动分配内存并拷贝指针指向的内容",
+      "直接赋值",
+      "使用memcpy",
+      "使用strcpy"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-487",
+    "title": "C语言中，结构体可以作为函数参数吗？",
+    "options": [
+      "可以，但传指针更高效",
+      "不可以",
+      "只能传全局变量",
+      "只能传值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-488",
+    "title": "C语言中，结构体传指针的好处是？",
+    "options": [
+      "节省内存和时间",
+      "更安全",
+      "可以修改实参",
+      "A和C都对"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-489",
+    "title": "C语言中，结构体对齐的目的是？",
+    "options": [
+      "提高访问效率",
+      "节省内存",
+      "安全考虑",
+      "编译要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-490",
+    "title": "C语言中，如何修改结构体对齐方式？",
+    "options": [
+      "#pragma pack",
+      "#define",
+      "typedef",
+      "static"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-491",
+    "title": "C语言中，结构体的大小如何计算？",
+    "options": [
+      "最大成员对齐数的整数倍",
+      "所有成员大小之和",
+      "第一个成员大小",
+      "随机大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-492",
+    "title": "C语言中，空结构体的大小是？",
+    "options": [
+      "0或1(取决于编译器)",
+      "0",
+      "1",
+      "4"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-493",
+    "title": "C语言中，柔性数组成员的特点？",
+    "options": [
+      "必须是最后一个成员，不指定大小",
+      [
+        "可以是第一个成员"
+      ],
+      [
+        "大小为1"
+      ],
+      [
+        "可以指定大小"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-494",
+    "title": "C语言中，柔性数组成员的作用？",
+    "options": [
+      "实现变长结构体",
+      "节省内存",
+      "加快访问",
+      "对齐优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-495",
+    "title": "C语言中，struct和class在C++中的区别？",
+    "options": [
+      "默认访问权限不同",
+      "没有区别",
+      "struct不能有方法",
+      "class不能有方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-496",
+    "title": "C语言中，结构体初始化的方式有？",
+    "options": [
+      "顺序初始化、指定初始化(C99)",
+      "只能顺序初始化",
+      "只能指定初始化",
+      "不能初始化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-497",
+    "title": "C语言中，指定初始化器的语法是？",
+    "options": [
+      ".member = value",
+      "member = value",
+      "member: value",
+      "member <- value"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-498",
+    "title": "C语言中，结构体嵌套是指？",
+    "options": [
+      "结构体包含另一个结构体",
+      "结构体包含自身",
+      "结构体包含函数",
+      "结构体包含数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-499",
+    "title": "C语言中，结构体可以包含自身类型的指针吗？",
+    "options": [
+      "可以，实现链表等",
+      "不可以",
+      "只能包含自身类型的引用",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-500",
+    "title": "C语言中，结构体可以包含自身类型的变量吗？",
+    "options": [
+      "不可以，会导致无限大小",
+      "可以",
+      "只能包含指针",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-501",
+    "title": "C语言中，联合体使用什么关键字定义？",
+    "options": [
+      "union",
+      "struct",
+      "enum",
+      "typedef"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-502",
+    "title": "C语言中，联合体的特点？",
+    "options": [
+      "所有成员共享同一内存",
+      [
+        "成员顺序存储"
+      ],
+      [
+        "大小等于所有成员之和"
+      ],
+      [
+        "可以同时存储多个值"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-503",
+    "title": "C语言中，联合体的大小是？",
+    "options": [
+      "最大成员的大小(考虑对齐)",
+      "所有成员大小之和",
+      "第一个成员大小",
+      "最后一个成员大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-504",
+    "title": "C语言中，联合体的用途？",
+    "options": [
+      "类型转换、节省内存",
+      "字符串处理",
+      "数学计算",
+      "文件操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-505",
+    "title": "C语言中，枚举使用什么关键字定义？",
+    "options": [
+      "enum",
+      "struct",
+      "union",
+      "typedef"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-506",
+    "title": "C语言中，枚举的类型是？",
+    "options": [
+      "整数类型",
+      "字符串类型",
+      "浮点类型",
+      "指针类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-507",
+    "title": "C语言中，枚举值可以是负数吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能是0",
+      "只能是正数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-508",
+    "title": "C语言中，typedef的作用是？",
+    "options": [
+      "给类型起别名",
+      "定义宏",
+      "声明变量",
+      "定义函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-509",
+    "title": "C语言中，typedef和#define的区别？",
+    "options": [
+      "typedef是类型别名，#define是文本替换",
+      "没有区别",
+      "#define是类型别名",
+      "typedef是文本替换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-510",
+    "title": "C语言中，如何定义函数指针类型？",
+    "options": [
+      "typedef int (*PF)(int)",
+      "typedef int *PF(int)",
+      "typedef PF int(*)(int)",
+      "define PF int(*)(int)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-511",
+    "title": "C语言中，如何定义数组类型？",
+    "options": [
+      "typedef int ARR[10]",
+      "typedef ARR int[10]",
+      "typedef int[10] ARR",
+      "define ARR int[10]"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-512",
+    "title": "C语言中，链表节点的结构通常包含？",
+    "options": [
+      "数据和指针",
+      "只有数据",
+      "只有指针",
+      "数据和索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-513",
+    "title": "C语言中，单链表插入节点的步骤是？",
+    "options": [
+      "新节点指向后继，前驱指向新节点",
+      "前驱指向新节点，新节点指向后继",
+      "只修改前驱",
+      "只修改后继"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-514",
+    "title": "C语言中，单链表删除节点的步骤是？",
+    "options": [
+      "前驱指向后继，释放删除节点",
+      "直接释放删除节点",
+      "只修改前驱",
+      "只修改后继"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-515",
+    "title": "C语言中，双链表相比单链表多了什么？",
+    "options": [
+      "前驱指针",
+      "数据",
+      "头指针",
+      "尾指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-516",
+    "title": "C语言中，循环链表的特点是？",
+    "options": [
+      "尾节点指向头节点",
+      "头节点指向尾节点",
+      "没有头节点",
+      "没有尾节点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-517",
+    "title": "C语言中，栈的实现方式有？",
+    "options": [
+      "数组和链表",
+      "只有数组",
+      "只有链表",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-518",
+    "title": "C语言中，队列的实现方式有？",
+    "options": [
+      "数组和链表",
+      "只有数组",
+      "只有链表",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-519",
+    "title": "C语言中，循环队列的好处是？",
+    "options": [
+      "避免假溢出",
+      "节省内存",
+      "加快访问",
+      "简化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-520",
+    "title": "C语言中，循环队列如何判断满？",
+    "options": [
+      "(rear+1)%size == front",
+      "rear == front",
+      "rear - front == size",
+      "front == 0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-521",
+    "title": "C语言中，循环队列如何判断空？",
+    "options": [
+      "rear == front",
+      "(rear+1)%size == front",
+      "rear - front == size",
+      "front == 0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-522",
+    "title": "C语言中，哈希表的关键问题是？",
+    "options": [
+      "哈希函数和冲突解决",
+      "排序和查找",
+      "插入和删除",
+      "内存分配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-523",
+    "title": "C语言中，常见哈希函数有？",
+    "options": [
+      "直接定址法、除留余数法",
+      "冒泡排序",
+      "二分查找",
+      "递归法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-524",
+    "title": "C语言中，链地址法如何解决冲突？",
+    "options": [
+      "将冲突元素存入链表",
+      "寻找下一个空位",
+      "覆盖原值",
+      "抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-525",
+    "title": "C语言中，开放定址法如何解决冲突？",
+    "options": [
+      "寻找下一个空位",
+      "将冲突元素存入链表",
+      "覆盖原值",
+      "抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-526",
+    "title": "C语言中，二叉树的遍历方式有？",
+    "options": [
+      "前序、中序、后序、层序",
+      "前序、后序",
+      "中序、层序",
+      "随机遍历"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-527",
+    "title": "C语言中，前序遍历的顺序是？",
+    "options": [
+      "根左右",
+      "左根右",
+      "左右根",
+      "根右左"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-528",
+    "title": "C语言中，中序遍历的顺序是？",
+    "options": [
+      "左根右",
+      "根左右",
+      "左右根",
+      "根右左"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-529",
+    "title": "C语言中，后序遍历的顺序是？",
+    "options": [
+      "左右根",
+      "根左右",
+      "左根右",
+      "根右左"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-530",
+    "title": "C语言中，层序遍历使用什么数据结构？",
+    "options": [
+      "队列",
+      "栈",
+      "堆",
+      "链表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-531",
+    "title": "C语言中，图的存储方式有？",
+    "options": [
+      "邻接矩阵和邻接表",
+      "数组和链表",
+      "栈和队列",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-532",
+    "title": "C语言中，邻接矩阵适用于什么图？",
+    "options": [
+      "稠密图",
+      "稀疏图",
+      "有向图",
+      "无向图"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-533",
+    "title": "C语言中，邻接表适用于什么图？",
+    "options": [
+      "稀疏图",
+      "稠密图",
+      "有向图",
+      "无向图"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-534",
+    "title": "C语言中，图的遍历方式有？",
+    "options": [
+      "深度优先和广度优先",
+      "前序和后序",
+      "中序和层序",
+      "随机遍历"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-535",
+    "title": "C语言中，排序算法的稳定性是指？",
+    "options": [
+      "相同元素相对位置不变",
+      "排序速度快",
+      "占用内存少",
+      "代码简单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-536",
+    "title": "C语言中，哪些排序是稳定的？",
+    "options": [
+      "冒泡、插入、归并",
+      "选择、快速",
+      "堆排序",
+      "希尔排序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-537",
+    "title": "C语言中，哪些排序是不稳定的？",
+    "options": [
+      "选择、快速、希尔、堆",
+      "冒泡、插入",
+      "归并",
+      "基数排序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-538",
+    "title": "C语言中，快速排序的最坏情况是？",
+    "options": [
+      "数组有序",
+      "数组逆序",
+      "数组随机",
+      "数组很大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-539",
+    "title": "C语言中，快速排序的优化方法有？",
+    "options": [
+      "三数取中、随机选择基准",
+      "增加内存",
+      "使用链表",
+      "使用递归"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-540",
+    "title": "C语言中，归并排序的特点是？",
+    "options": [
+      "稳定、O(n log n)、需要额外空间",
+      "不稳定",
+      "原地排序",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-541",
+    "title": "C语言中，堆排序的特点是？",
+    "options": [
+      "不稳定、O(n log n)、原地排序",
+      "稳定",
+      "需要额外空间",
+      "O(n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-542",
+    "title": "C语言中，基数排序的特点是？",
+    "options": [
+      "稳定、O(d*n)、非比较排序",
+      "不稳定",
+      "比较排序",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-543",
+    "title": "C语言中，计数排序的特点是？",
+    "options": [
+      "稳定、O(n+k)、非比较排序",
+      "不稳定",
+      "比较排序",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-544",
+    "title": "C语言中，桶排序的特点是？",
+    "options": [
+      "稳定、O(n+k)、非比较排序",
+      "不稳定",
+      "比较排序",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-545",
+    "title": "C语言中，查找算法有？",
+    "options": [
+      "顺序查找、二分查找、哈希查找",
+      "冒泡查找",
+      "插入查找",
+      "选择查找"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-546",
+    "title": "C语言中，二分查找的适用条件？",
+    "options": [
+      "有序数组",
+      "无序数组",
+      "链表",
+      "栈"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-547",
+    "title": "C语言中，插值查找的特点？",
+    "options": [
+      "基于二分查找，适应分布均匀数据",
+      "适应分布不均匀",
+      "不需要有序",
+      "O(n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-548",
+    "title": "C语言中，斐波那契查找的特点？",
+    "options": [
+      "基于黄金分割",
+      "基于二分",
+      "基于插值",
+      "基于哈希"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-549",
+    "title": "C语言中，字符串匹配算法有？",
+    "options": [
+      "BF、KMP、BM",
+      "DFS、BFS",
+      "Dijkstra、Floyd",
+      "Prim、Kruskal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-550",
+    "title": "C语言中，KMP算法的特点是？",
+    "options": [
+      "利用next数组避免主串回溯",
+      "简单",
+      "暴力匹配",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-551",
+    "title": "C语言中，BF算法的时间复杂度是？",
+    "options": [
+      "O(m*n)",
+      "O(m+n)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-552",
+    "title": "C语言中，KMP算法的时间复杂度是？",
+    "options": [
+      "O(m+n)",
+      "O(m*n)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-553",
+    "title": "C语言中，贪心算法的特点是？",
+    "options": [
+      "局部最优推全局最优",
+      "全局最优",
+      "回溯求解",
+      "分治求解"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-554",
+    "title": "C语言中，动态规划的特点是？",
+    "options": [
+      "最优子结构、重叠子问题",
+      "贪心选择",
+      "回溯求解",
+      "分治求解"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-555",
+    "title": "C语言中，回溯算法的特点是？",
+    "options": [
+      "试探性搜索，失败则回退",
+      "贪心选择",
+      "最优子结构",
+      "分治求解"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-556",
+    "title": "C语言中，分治算法的特点是？",
+    "options": [
+      "分解、解决、合并",
+      "贪心选择",
+      "回溯求解",
+      "动态规划"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-557",
+    "title": "C语言中，递归和迭代的区别？",
+    "options": [
+      "递归调用自身，迭代使用循环",
+      "没有区别",
+      "迭代调用自身",
+      "递归使用循环"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-558",
+    "title": "C语言中，如何将递归转为迭代？",
+    "options": [
+      "使用栈模拟",
+      "使用队列",
+      "使用堆",
+      "使用链表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-559",
+    "title": "C语言中，算法的时间复杂度衡量什么？",
+    "options": [
+      "执行时间随规模的增长趋势",
+      "具体执行时间",
+      "内存占用",
+      "代码长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-560",
+    "title": "C语言中，算法的空间复杂度衡量什么？",
+    "options": [
+      "内存占用随规模的增长趋势",
+      "具体内存占用",
+      "执行时间",
+      "代码长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-561",
+    "title": "C语言中，O(1)表示什么？",
+    "options": [
+      "常数时间",
+      "线性时间",
+      "对数时间",
+      "指数时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-562",
+    "title": "C语言中，O(n)表示什么？",
+    "options": [
+      "线性时间",
+      "常数时间",
+      "对数时间",
+      "指数时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-563",
+    "title": "C语言中，O(n^2)表示什么？",
+    "options": [
+      "平方时间",
+      "线性时间",
+      "对数时间",
+      "指数时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-564",
+    "title": "C语言中，O(log n)表示什么？",
+    "options": [
+      "对数时间",
+      "线性时间",
+      "常数时间",
+      "指数时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-565",
+    "title": "C语言中，O(2^n)表示什么？",
+    "options": [
+      "指数时间",
+      "线性时间",
+      "对数时间",
+      "常数时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-566",
+    "title": "C语言中，P问题是指？",
+    "options": [
+      "多项式时间可解",
+      "不可解",
+      "验证困难",
+      "非确定性问题"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-567",
+    "title": "C语言中，NP问题是指？",
+    "options": [
+      "多项式时间可验证",
+      "多项式时间可解",
+      "不可解",
+      "确定性问题"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-568",
+    "title": "C语言中，NP完全问题是指？",
+    "options": [
+      "NP中最难的问题",
+      "NP中最简单的问题",
+      "P问题",
+      "不可解问题"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-569",
+    "title": "C语言中，算法设计的目标是？",
+    "options": [
+      "正确性、可读性、健壮性、效率",
+      "只求效率",
+      "只求正确",
+      "只求简短"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-570",
+    "title": "C语言中，代码重构的目的是？",
+    "options": [
+      "提高代码质量和可维护性",
+      "增加功能",
+      "减少代码",
+      "增加复杂度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-571",
+    "title": "C语言中，代码规范的重要性？",
+    "options": [
+      "提高可读性和团队协作",
+      "加快运行速度",
+      "减少内存占用",
+      "增加代码量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-572",
+    "title": "C语言中，常见代码规范有？",
+    "options": [
+      "命名规范、缩进规范、注释规范",
+      "运行规范",
+      "编译规范",
+      "链接规范"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-573",
+    "title": "C语言中，命名规范通常建议？",
+    "options": [
+      "见名知意、驼峰或下划线",
+      "使用单字母",
+      "使用拼音",
+      "使用缩写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-574",
+    "title": "C语言中，注释的作用是？",
+    "options": [
+      "解释代码意图",
+      "增加代码量",
+      "加快运行",
+      "减少内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-575",
+    "title": "C语言中，多行注释使用什么？",
+    "options": [
+      "/* */",
+      "//",
+      "#",
+      "--"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-576",
+    "title": "C语言中，单行注释使用什么？",
+    "options": [
+      "//",
+      "/* */",
+      "#",
+      "--"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-577",
+    "title": "C语言中，注释可以嵌套吗？",
+    "options": [
+      "多行注释不可以嵌套",
+      "可以",
+      "取决于编译器",
+      "单行注释不可以嵌套"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-578",
+    "title": "C语言中，代码审查的作用是？",
+    "options": [
+      "发现潜在问题、提高质量",
+      "增加代码量",
+      "减少代码",
+      "加快运行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-579",
+    "title": "C语言中，版本控制工具是？",
+    "options": [
+      "Git, SVN",
+      "gcc",
+      "make",
+      "gdb"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-580",
+    "title": "C语言中，Git的作用是？",
+    "options": [
+      "版本控制",
+      "编译代码",
+      "调试代码",
+      "分析代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-581",
+    "title": "C语言中，持续集成(CI)的作用是？",
+    "options": [
+      "自动构建和测试",
+      "自动部署",
+      "自动发版",
+      "自动写代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-582",
+    "title": "C语言中，持续部署(CD)的作用是？",
+    "options": [
+      "自动部署到生产环境",
+      "自动构建",
+      "自动测试",
+      "自动写代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-583",
+    "title": "C语言中，DevOps包含哪些方面？",
+    "options": [
+      "开发、运维、自动化",
+      "只有开发",
+      "只有运维",
+      "只有自动化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-584",
+    "title": "C语言中，敏捷开发的特点是？",
+    "options": [
+      "迭代、增量、拥抱变化",
+      "瀑布模型",
+      "严格计划",
+      "拒绝变化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-585",
+    "title": "C语言中，设计模式在C中常用吗？",
+    "options": [
+      "不常用，C是面向过程",
+      "很常用",
+      "和C++一样",
+      "只用于面向对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-586",
+    "title": "C语言中，面向对象的特征是？",
+    "options": [
+      "封装、继承、多态",
+      "过程、函数",
+      "指针、数组",
+      "宏、条件编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-587",
+    "title": "C语言中，如何用C实现封装？",
+    "options": [
+      "结构体+函数指针+static",
+      "使用class",
+      "使用extends",
+      "使用implements"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-588",
+    "title": "C语言中，如何用C实现多态？",
+    "options": [
+      "函数指针或回调",
+      "虚函数",
+      "重载",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-589",
+    "title": "C语言中，如何用C实现继承？",
+    "options": [
+      "结构体嵌套",
+      "使用extends",
+      "使用class",
+      "使用implements"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-590",
+    "title": "C语言中，GObject系统的作用是？",
+    "options": [
+      "用C实现面向对象",
+      "GUI开发",
+      "网络编程",
+      "数据库操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-591",
+    "title": "C语言中，回调函数的缺点是？",
+    "options": [
+      "代码可读性差，不易维护",
+      "效率低",
+      "不能传参",
+      "不能返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-592",
+    "title": "C语言中，观察者模式如何用C实现？",
+    "options": [
+      "回调函数链表",
+      "虚函数",
+      "继承",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-593",
+    "title": "C语言中，状态机模式如何用C实现？",
+    "options": [
+      "函数指针数组或switch-case",
+      "虚函数",
+      "继承",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-594",
+    "title": "C语言中，工厂模式如何用C实现？",
+    "options": [
+      "根据参数返回不同结构体指针",
+      "使用new",
+      "使用class",
+      "使用继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-595",
+    "title": "C语言中，单例模式如何用C实现？",
+    "options": [
+      "static全局变量",
+      "使用class",
+      "使用new",
+      "使用继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-596",
+    "title": "C语言中，策略模式如何用C实现？",
+    "options": [
+      "函数指针作为参数",
+      "虚函数",
+      "继承",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-597",
+    "title": "C语言中，适配器模式如何用C实现？",
+    "options": [
+      "包装函数转换接口",
+      "继承",
+      "多态",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-598",
+    "title": "C语言中，装饰器模式如何用C实现？",
+    "options": [
+      "函数包装器嵌套",
+      "继承",
+      "多态",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-599",
+    "title": "C语言中，结构体使用什么关键字定义？",
+    "options": [
+      "struct",
+      "class",
+      "union",
+      "enum"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-600",
+    "title": "C语言中，结构体成员默认访问权限是？",
+    "options": [
+      "公开",
+      "私有",
+      "保护",
+      "无权限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-601",
+    "title": "C语言中，文件分为哪两种？",
+    "options": [
+      "文本文件和二进制文件",
+      "源文件和目标文件",
+      "头文件和库文件",
+      "只读文件和读写文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-602",
+    "title": "C语言中，文本文件的特点是？",
+    "options": [
+      "人可读，存储字符",
+      "不可读",
+      "存储二进制",
+      "效率高"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-603",
+    "title": "C语言中，二进制文件的特点是？",
+    "options": [
+      "机器可读，存储内存映像",
+      "人可读",
+      "存储字符",
+      "效率低"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-604",
+    "title": "C语言中，文件操作的基本步骤是？",
+    "options": [
+      "打开、读写、关闭",
+      "只读写",
+      "只打开",
+      "只关闭"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-605",
+    "title": "C语言中，fopen失败返回什么？",
+    "options": [
+      "NULL",
+      "0",
+      "-1",
+      "EOF"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-606",
+    "title": "C语言中，fclose失败返回什么？",
+    "options": [
+      "EOF",
+      "0",
+      "NULL",
+      "-1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-607",
+    "title": "C语言中，fgetc返回什么类型？",
+    "options": [
+      "int",
+      "char",
+      "short",
+      "void"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-608",
+    "title": "C语言中，fgetc为什么返回int？",
+    "options": [
+      "为了能返回EOF(-1)",
+      "char不够",
+      "int更快",
+      "标准规定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-609",
+    "title": "C语言中，fgets比gets安全的原因是？",
+    "options": [
+      "可以指定最大读取长度",
+      "读取更快",
+      "读取更多",
+      "自动分配内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-610",
+    "title": "C语言中，gets不安全的原因是？",
+    "options": [
+      "没有长度限制，容易溢出",
+      "速度慢",
+      "不能读空格",
+      "返回值不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-611",
+    "title": "C语言中，fread的参数是？",
+    "options": [
+      "缓冲区指针、元素大小、元素数量、文件指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-612",
+    "title": "C语言中，fwrite的参数是？",
+    "options": [
+      "缓冲区指针、元素大小、元素数量、文件指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-613",
+    "title": "C语言中，fseek的SEEK_SET表示？",
+    "options": [
+      "文件开头",
+      "当前位置",
+      "文件末尾",
+      "随机位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-614",
+    "title": "C语言中，fseek的SEEK_CUR表示？",
+    "options": [
+      "当前位置",
+      "文件开头",
+      "文件末尾",
+      "随机位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-615",
+    "title": "C语言中，fseek的SEEK_END表示？",
+    "options": [
+      "文件末尾",
+      "文件开头",
+      "当前位置",
+      "随机位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-616",
+    "title": "C语言中，ftell返回什么？",
+    "options": [
+      "当前文件位置",
+      "文件大小",
+      "文件名",
+      "文件描述符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-617",
+    "title": "C语言中，rewind等价于？",
+    "options": [
+      "fseek(fp, 0, SEEK_SET)",
+      "fseek(fp, 0, SEEK_END)",
+      "fseek(fp, 1, SEEK_SET)",
+      "fclose(fp)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-618",
+    "title": "C语言中，feof在什么时候返回真？",
+    "options": [
+      "读到文件结束符后",
+      "读到文件最后一个字符时",
+      "文件打开时",
+      "文件关闭时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-619",
+    "title": "C语言中，ferror的作用是？",
+    "options": [
+      "判断文件是否出错",
+      "判断文件是否结束",
+      "判断文件是否打开",
+      "判断文件是否关闭"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-620",
+    "title": "C语言中，标准I/O和系统I/O的区别？",
+    "options": [
+      "标准I/O带缓冲，系统I/O不带",
+      "没有区别",
+      "系统I/O带缓冲",
+      "标准I/O更快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-621",
+    "title": "C语言中，行缓冲的特点是？",
+    "options": [
+      "遇到换行符刷新",
+      "满了刷新",
+      "不刷新",
+      "立即刷新"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-622",
+    "title": "C语言中，全缓冲的特点是？",
+    "options": [
+      "缓冲区满刷新",
+      "遇到换行刷新",
+      "不刷新",
+      "立即刷新"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-623",
+    "title": "C语言中，无缓冲的特点是？",
+    "options": [
+      "立即刷新",
+      "满了刷新",
+      "遇到换行刷新",
+      "不刷新"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-624",
+    "title": "C语言中，stderr通常是？",
+    "options": [
+      "无缓冲",
+      "行缓冲",
+      "全缓冲",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-625",
+    "title": "C语言中，stdout连终端时通常是？",
+    "options": [
+      "行缓冲",
+      "全缓冲",
+      "无缓冲",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-626",
+    "title": "C语言中，stdout重定向到文件时通常是？",
+    "options": [
+      "全缓冲",
+      "行缓冲",
+      "无缓冲",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-627",
+    "title": "C语言中，fflush的作用是？",
+    "options": [
+      "刷新缓冲区",
+      "关闭文件",
+      "打开文件",
+      "读取文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-628",
+    "title": "C语言中，setbuf的作用是？",
+    "options": [
+      "设置缓冲区",
+      "刷新缓冲区",
+      "关闭缓冲区",
+      "读取缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-629",
+    "title": "C语言中，setvbuf的作用是？",
+    "options": [
+      "设置缓冲区和模式",
+      "设置缓冲区",
+      "刷新缓冲区",
+      "关闭缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-630",
+    "title": "C语言中，tmpfile创建的文件在关闭时？",
+    "options": [
+      "自动删除",
+      "保留",
+      "移动",
+      "重命名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-631",
+    "title": "C语言中，文件描述符是什么？",
+    "options": [
+      "内核管理文件的整数索引",
+      "文件指针",
+      "文件名",
+      "文件大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-632",
+    "title": "C语言中，标准输入的文件描述符是？",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-633",
+    "title": "C语言中，标准输出的文件描述符是？",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-634",
+    "title": "C语言中，标准错误的文件描述符是？",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "3"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-635",
+    "title": "C语言中，fileno函数的作用是？",
+    "options": [
+      "获取文件指针对应的文件描述符",
+      "获取文件描述符对应的指针",
+      "打开文件",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-636",
+    "title": "C语言中，fdopen函数的作用是？",
+    "options": [
+      "将文件描述符转为文件指针",
+      "将文件指针转为文件描述符",
+      "打开文件",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-637",
+    "title": "C语言中，数学库函数定义在哪个头文件？",
+    "options": [
+      "math.h",
+      "stdio.h",
+      "stdlib.h",
+      "string.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-638",
+    "title": "C语言中，使用math.h需要链接什么库？",
+    "options": [
+      "-lm",
+      "-lmath",
+      "-lc",
+      "-lstd"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-639",
+    "title": "C语言中，sin函数的参数单位是？",
+    "options": [
+      "弧度",
+      "角度",
+      "梯度",
+      "无单位"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-640",
+    "title": "C语言中，cos函数的参数单位是？",
+    "options": [
+      "弧度",
+      "角度",
+      "梯度",
+      "无单位"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-641",
+    "title": "C语言中，tan函数的参数单位是？",
+    "options": [
+      "弧度",
+      "角度",
+      "梯度",
+      "无单位"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-642",
+    "title": "C语言中，log函数求的是什么？",
+    "options": [
+      "自然对数",
+      "常用对数",
+      "以2为底对数",
+      "绝对值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-643",
+    "title": "C语言中，log10函数求的是什么？",
+    "options": [
+      "常用对数",
+      "自然对数",
+      "以2为底对数",
+      "绝对值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-644",
+    "title": "C语言中，exp函数求的是什么？",
+    "options": [
+      "e的x次方",
+      "10的x次方",
+      "2的x次方",
+      "绝对值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-645",
+    "title": "C语言中，fmod函数的作用是？",
+    "options": [
+      "浮点数取模",
+      "整数取模",
+      "浮点数除法",
+      "整数除法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-646",
+    "title": "C语言中，modf函数的作用是？",
+    "options": [
+      "分解浮点数为整数和小数部分",
+      "取模",
+      "四舍五入",
+      "求绝对值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-647",
+    "title": "C语言中，ldexp函数的作用是？",
+    "options": [
+      "计算x * 2^exp",
+      "计算2^exp",
+      "计算x^exp",
+      "计算log2(x)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-648",
+    "title": "C语言中，frexp函数的作用是？",
+    "options": [
+      "分解浮点数为尾数和指数",
+      "计算指数",
+      "计算对数",
+      "计算幂"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-649",
+    "title": "C语言中，hypot函数的作用是？",
+    "options": [
+      "计算直角三角形斜边长",
+      "计算双曲线",
+      "计算抛物线",
+      "计算圆面积"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-650",
+    "title": "C语言中，时间库函数定义在哪个头文件？",
+    "options": [
+      "time.h",
+      "date.h",
+      "clock.h",
+      "stdio.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-651",
+    "title": "C语言中，time_t通常是什么类型？",
+    "options": [
+      "长整型",
+      "整型",
+      "浮点型",
+      "字符型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-652",
+    "title": "C语言中，time(NULL)的作用是？",
+    "options": [
+      "获取当前时间戳",
+      "获取当前时间字符串",
+      "设置时间",
+      "计算时间差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-653",
+    "title": "C语言中，clock_t通常是什么类型？",
+    "options": [
+      "长整型",
+      "整型",
+      "浮点型",
+      "字符型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-654",
+    "title": "C语言中，CLOCKS_PER_SEC表示？",
+    "options": [
+      "每秒时钟周期数",
+      "每秒秒数",
+      "每分钟时钟周期数",
+      "每毫秒时钟周期数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-655",
+    "title": "C语言中，localtime的作用是？",
+    "options": [
+      "将时间戳转为本地时间结构体",
+      "将时间戳转为UTC时间",
+      "获取时间戳",
+      "格式化时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-656",
+    "title": "C语言中，gmtime的作用是？",
+    "options": [
+      "将时间戳转为UTC时间结构体",
+      "将时间戳转为本地时间",
+      "获取时间戳",
+      "格式化时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-657",
+    "title": "C语言中，mktime的作用是？",
+    "options": [
+      "将时间结构体转为时间戳",
+      "获取时间戳",
+      "格式化时间",
+      "计算时间差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-658",
+    "title": "C语言中，asctime的作用是？",
+    "options": [
+      "将时间结构体转为字符串",
+      "获取时间戳",
+      "格式化时间",
+      "计算时间差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-659",
+    "title": "C语言中，ctime的作用是？",
+    "options": [
+      "将时间戳转为字符串",
+      "获取时间戳",
+      "格式化时间",
+      "计算时间差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-660",
+    "title": "C语言中，strftime的作用是？",
+    "options": [
+      "格式化时间字符串",
+      "获取时间戳",
+      "解析时间字符串",
+      "计算时间差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-661",
+    "title": "C语言中，difftime的作用是？",
+    "options": [
+      "计算两个时间的差值",
+      "获取时间戳",
+      "格式化时间",
+      "设置时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-662",
+    "title": "C语言中，断言库定义在哪个头文件？",
+    "options": [
+      "assert.h",
+      "stdio.h",
+      "stdlib.h",
+      "math.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-663",
+    "title": "C语言中，断言失败会？",
+    "options": [
+      "终止程序并输出错误信息",
+      "抛出异常",
+      "返回错误码",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-664",
+    "title": "C语言中，如何禁用断言？",
+    "options": [
+      "定义NDEBUG宏",
+      "定义DEBUG宏",
+      "删除assert语句",
+      "注释assert语句"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-665",
+    "title": "C语言中，局部变量存储在？",
+    "options": [
+      "栈区",
+      "堆区",
+      "数据段",
+      "BSS段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-666",
+    "title": "C语言中，全局变量存储在？",
+    "options": [
+      "数据段或BSS段",
+      "栈区",
+      "堆区",
+      "代码段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-667",
+    "title": "C语言中，动态分配的内存存储在？",
+    "options": [
+      "堆区",
+      "栈区",
+      "数据段",
+      "BSS段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-668",
+    "title": "C语言中，函数参数存储在？",
+    "options": [
+      "栈区",
+      "堆区",
+      "数据段",
+      "BSS段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-669",
+    "title": "C语言中，静态局部变量存储在？",
+    "options": [
+      "数据段或BSS段",
+      "栈区",
+      "堆区",
+      "代码段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-670",
+    "title": "C语言中，字符串常量存储在？",
+    "options": [
+      "常量区/只读数据段",
+      "栈区",
+      "堆区",
+      "BSS段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-671",
+    "title": "C语言中，未初始化的全局变量存储在？",
+    "options": [
+      "BSS段",
+      "数据段",
+      "栈区",
+      "堆区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-672",
+    "title": "C语言中，已初始化的全局变量存储在？",
+    "options": [
+      "数据段",
+      "BSS段",
+      "栈区",
+      "堆区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-673",
+    "title": "C语言中，代码存储在？",
+    "options": [
+      "代码段",
+      "数据段",
+      "栈区",
+      "堆区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-674",
+    "title": "C语言中，宏定义存储在？",
+    "options": [
+      "代码段(展开后)",
+      "数据段",
+      "栈区",
+      "堆区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-675",
+    "title": "C语言中，寄存器变量存储在？",
+    "options": [
+      "寄存器",
+      "栈区",
+      "堆区",
+      "数据段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-676",
+    "title": "C语言中，外部变量使用什么关键字声明？",
+    "options": [
+      "extern",
+      "static",
+      "auto",
+      "register"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-677",
+    "title": "C语言中，静态全局变量的作用域是？",
+    "options": [
+      "当前文件",
+      "整个程序",
+      "当前函数",
+      "当前块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-678",
+    "title": "C语言中，静态局部变量的生命周期是？",
+    "options": [
+      "整个程序运行期间",
+      "函数调用期间",
+      "块执行期间",
+      "循环执行期间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-679",
+    "title": "C语言中，自动变量的生命周期是？",
+    "options": [
+      "函数或块执行期间",
+      "整个程序运行期间",
+      "直到手动释放",
+      "直到断电"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-680",
+    "title": "C语言中，volatile的作用是？",
+    "options": [
+      "防止编译器优化",
+      "声明常量",
+      "声明静态变量",
+      "声明外部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-681",
+    "title": "C语言中，register的作用是？",
+    "options": [
+      "建议编译器放入寄存器",
+      "声明常量",
+      "声明静态变量",
+      "声明外部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-682",
+    "title": "C语言中，auto的作用是？",
+    "options": [
+      "声明自动变量",
+      "声明常量",
+      "声明静态变量",
+      "声明外部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-683",
+    "title": "C语言中，typedef的作用是？",
+    "options": [
+      "给类型起别名",
+      "声明变量",
+      "定义宏",
+      "条件编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-684",
+    "title": "C语言中，sizeof的作用是？",
+    "options": [
+      "计算类型或变量大小",
+      "计算字符串长度",
+      "计算数组长度",
+      "计算指针大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-685",
+    "title": "C语言中，return的作用是？",
+    "options": [
+      "返回函数值",
+      "结束循环",
+      "跳转",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-686",
+    "title": "C语言中，break的作用是？",
+    "options": [
+      "跳出循环或switch",
+      "跳出函数",
+      "继续循环",
+      "返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-687",
+    "title": "C语言中，continue的作用是？",
+    "options": [
+      "继续下一次循环",
+      "跳出循环",
+      "跳出函数",
+      "返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-688",
+    "title": "C语言中，switch的条件不能是？",
+    "options": [
+      "浮点型",
+      "整型",
+      "字符型",
+      "枚举型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-689",
+    "title": "C语言中，default在switch中的作用是？",
+    "options": [
+      "处理所有未匹配的情况",
+      "默认执行",
+      "第一个执行",
+      "最后一个执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-690",
+    "title": "C语言中，case的值必须是？",
+    "options": [
+      "常量表达式",
+      "变量",
+      "浮点数",
+      "字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-691",
+    "title": "C语言中，for循环的执行顺序是？",
+    "options": [
+      "初始化、条件、循环体、更新",
+      "条件、初始化、循环体、更新",
+      "初始化、循环体、条件、更新",
+      "循环体、条件、初始化、更新"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-692",
+    "title": "C语言中，while循环的特点是？",
+    "options": [
+      "先判断后执行",
+      "先执行后判断",
+      "只执行一次",
+      "不判断条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-693",
+    "title": "C语言中，do-while循环的特点是？",
+    "options": [
+      "先执行后判断",
+      "先判断后执行",
+      "只执行一次",
+      "不判断条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-694",
+    "title": "C语言中，死循环的写法有？",
+    "options": [
+      "while(1), for(;;)",
+      "while(0)",
+      "for(0)",
+      "do-while(0)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-695",
+    "title": "C语言中，逗号运算符的优先级是？",
+    "options": [
+      "最低",
+      "最高",
+      "中等",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-696",
+    "title": "C语言中，赋值运算符的优先级是？",
+    "options": [
+      "很低，仅高于逗号",
+      "最高",
+      "中等",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-697",
+    "title": "C语言中，逻辑与比逻辑或优先级？",
+    "options": [
+      "高",
+      "低",
+      "相同",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-698",
+    "title": "C语言中，算术运算符比关系运算符优先级？",
+    "options": [
+      "高",
+      "低",
+      "相同",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-699",
+    "title": "C语言中，单目运算符比双目运算符优先级？",
+    "options": [
+      "高",
+      "低",
+      "相同",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-700",
+    "title": "C语言中，条件运算符(?:)的结合性是？",
+    "options": [
+      "右结合",
+      "左结合",
+      "无结合性",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-701",
+    "title": "C语言中，赋值运算符的结合性是？",
+    "options": [
+      "右结合",
+      "左结合",
+      "无结合性",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-702",
+    "title": "C语言中，算术运算符的结合性是？",
+    "options": [
+      "左结合",
+      "右结合",
+      "无结合性",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-703",
+    "title": "C语言中，类型转换的顺序是？",
+    "options": [
+      "低精度向高精度转换",
+      "高精度向低精度转换",
+      "随机转换",
+      "不转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-704",
+    "title": "C语言中，强制类型转换的语法是？",
+    "options": [
+      "(类型)表达式",
+      "类型(表达式)",
+      "表达式 as 类型",
+      "cast(类型, 表达式)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-705",
+    "title": "C语言中，隐式类型转换发生在？",
+    "options": [
+      "赋值、运算、传参时",
+      "只在强制转换时",
+      "不发生",
+      "只在编译时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-706",
+    "title": "C语言中，整数溢出会怎样？",
+    "options": [
+      "未定义行为",
+      "抛出异常",
+      "自动扩大类型",
+      "编译错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-707",
+    "title": "C语言中，浮点数精度丢失的原因是？",
+    "options": [
+      "二进制无法精确表示某些十进制小数",
+      "内存不足",
+      "编译器优化",
+      "类型转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-708",
+    "title": "C语言中，如何避免浮点数精度问题？",
+    "options": [
+      "使用更高精度类型或整数运算",
+      "不用浮点数",
+      "强制转换",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-709",
+    "title": "C语言中，逗号表达式的求值顺序是？",
+    "options": [
+      "从左到右",
+      "从右到左",
+      "随机",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-710",
+    "title": "C语言中，逻辑短路是指？",
+    "options": [
+      "&&和||在能确定结果时停止计算",
+      "电路故障",
+      "代码错误",
+      "编译优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-711",
+    "title": "C语言中，a && b如果a为假，b还会计算吗？",
+    "options": [
+      "不会",
+      "会",
+      "取决于b",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-712",
+    "title": "C语言中，a || b如果a为真，b还会计算吗？",
+    "options": [
+      "不会",
+      "会",
+      "取决于b",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-713",
+    "title": "C语言中，++i + ++i是未定义行为吗？",
+    "options": [
+      "是，修改两次之间没有顺序点",
+      "不是",
+      "取决于编译器",
+      "结果是确定的"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-714",
+    "title": "C语言中，顺序点是什么？",
+    "options": [
+      "表达式求值和副作用完成的点",
+      "代码行号",
+      "分号",
+      "大括号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-715",
+    "title": "C语言中，函数调用是顺序点吗？",
+    "options": [
+      "是",
+      "不是",
+      "取决于参数",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-716",
+    "title": "C语言中，逻辑与&&是顺序点吗？",
+    "options": [
+      "是",
+      "不是",
+      "取决于操作数",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-717",
+    "title": "C语言中，逗号运算符是顺序点吗？",
+    "options": [
+      "是",
+      "不是",
+      "取决于操作数",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-718",
+    "title": "C语言中，i = i++是未定义行为吗？",
+    "options": [
+      "是，修改和读取没有顺序点",
+      "不是",
+      "取决于编译器",
+      "结果是确定的"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-719",
+    "title": "C语言中，未定义行为的特点是？",
+    "options": [
+      "结果不可预测，编译器不做假设",
+      "结果固定",
+      "编译器报错",
+      "运行时报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-720",
+    "title": "C语言中，未指定行为的特点是？",
+    "options": [
+      "编译器可以选择，但必须在几种确定方式中选",
+      "结果不可预测",
+      "编译器报错",
+      "运行时报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-721",
+    "title": "C语言中，C11标准引入的线程库头文件是？",
+    "options": [
+      "threads.h",
+      "pthread.h",
+      "thread",
+      "mutex"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-722",
+    "title": "C语言中，thrd_create的作用是？",
+    "options": [
+      "创建线程",
+      "销毁线程",
+      "等待线程",
+      "分离线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-723",
+    "title": "C语言中，thrd_join的作用是？",
+    "options": [
+      "等待线程结束",
+      "创建线程",
+      "销毁线程",
+      "分离线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-724",
+    "title": "C语言中，thrd_detach的作用是？",
+    "options": [
+      "分离线程，自动回收资源",
+      "创建线程",
+      "等待线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-725",
+    "title": "C语言中，thrd_exit的作用是？",
+    "options": [
+      "退出当前线程",
+      "创建线程",
+      "等待线程",
+      "分离线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-726",
+    "title": "C语言中，mtx_init的作用是？",
+    "options": [
+      "初始化互斥锁",
+      "销毁互斥锁",
+      "加锁",
+      "解锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-727",
+    "title": "C语言中，mtx_lock的作用是？",
+    "options": [
+      "加锁",
+      "解锁",
+      "尝试加锁",
+      "销毁锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-728",
+    "title": "C语言中，mtx_unlock的作用是？",
+    "options": [
+      "解锁",
+      "加锁",
+      "尝试加锁",
+      "销毁锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-729",
+    "title": "C语言中，mtx_destroy的作用是？",
+    "options": [
+      "销毁互斥锁",
+      "初始化互斥锁",
+      "加锁",
+      "解锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-730",
+    "title": "C语言中，cnd_init的作用是？",
+    "options": [
+      "初始化条件变量",
+      "销毁条件变量",
+      "等待条件",
+      "通知条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-731",
+    "title": "C语言中，cnd_wait的作用是？",
+    "options": [
+      "等待条件变量",
+      "通知条件变量",
+      "初始化条件变量",
+      "销毁条件变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-732",
+    "title": "C语言中，cnd_signal的作用是？",
+    "options": [
+      "通知一个等待线程",
+      "通知所有等待线程",
+      "等待条件",
+      "销毁条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-733",
+    "title": "C语言中，cnd_broadcast的作用是？",
+    "options": [
+      "通知所有等待线程",
+      "通知一个等待线程",
+      "等待条件",
+      "销毁条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-734",
+    "title": "C语言中，POSIX线程库的头文件是？",
+    "options": [
+      "pthread.h",
+      "threads.h",
+      "thread",
+      "mutex"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-735",
+    "title": "C语言中，pthread_create的作用是？",
+    "options": [
+      "创建线程",
+      "等待线程",
+      "退出线程",
+      "分离线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-736",
+    "title": "C语言中，pthread_join的作用是？",
+    "options": [
+      "等待线程结束",
+      "创建线程",
+      "退出线程",
+      "分离线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-737",
+    "title": "C语言中，pthread_exit的作用是？",
+    "options": [
+      "退出当前线程",
+      "创建线程",
+      "等待线程",
+      "分离线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-738",
+    "title": "C语言中，pthread_detach的作用是？",
+    "options": [
+      "分离线程",
+      "创建线程",
+      "等待线程",
+      "退出线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-739",
+    "title": "C语言中，pthread_mutex_init的作用是？",
+    "options": [
+      "初始化互斥锁",
+      "加锁",
+      "解锁",
+      "销毁锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-740",
+    "title": "C语言中，pthread_mutex_lock的作用是？",
+    "options": [
+      "加锁",
+      "解锁",
+      "初始化锁",
+      "销毁锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-741",
+    "title": "C语言中，pthread_mutex_unlock的作用是？",
+    "options": [
+      "解锁",
+      "加锁",
+      "初始化锁",
+      "销毁锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-742",
+    "title": "C语言中，pthread_mutex_destroy的作用是？",
+    "options": [
+      "销毁互斥锁",
+      "初始化互斥锁",
+      "加锁",
+      "解锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-743",
+    "title": "C语言中，pthread_cond_init的作用是？",
+    "options": [
+      "初始化条件变量",
+      "等待条件",
+      "通知条件",
+      "销毁条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-744",
+    "title": "C语言中，pthread_cond_wait的作用是？",
+    "options": [
+      "等待条件变量",
+      "通知条件变量",
+      "初始化条件",
+      "销毁条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-745",
+    "title": "C语言中，pthread_cond_signal的作用是？",
+    "options": [
+      "通知一个等待线程",
+      "通知所有等待线程",
+      "等待条件",
+      "销毁条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-746",
+    "title": "C语言中，pthread_cond_broadcast的作用是？",
+    "options": [
+      "通知所有等待线程",
+      "通知一个等待线程",
+      "等待条件",
+      "销毁条件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-747",
+    "title": "C语言中，互斥锁的作用是？",
+    "options": [
+      "保护共享资源，防止数据竞争",
+      "创建线程",
+      "销毁线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-748",
+    "title": "C语言中，条件变量的作用是？",
+    "options": [
+      "线程间通知等待",
+      "保护共享资源",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-749",
+    "title": "C语言中，死锁的条件是？",
+    "options": [
+      "互斥、持有并等待、不可抢占、循环等待",
+      "只互斥",
+      "只循环等待",
+      "只持有并等待"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-750",
+    "title": "C语言中，如何避免死锁？",
+    "options": [
+      "按顺序加锁、使用超时",
+      "不使用锁",
+      "使用多把锁",
+      "增加线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-751",
+    "title": "C语言中，读写锁的特点是？",
+    "options": [
+      "读共享，写独占",
+      "读写都独占",
+      "读写都共享",
+      "无锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-752",
+    "title": "C语言中，自旋锁的特点是？",
+    "options": [
+      "忙等待，不释放CPU",
+      "睡眠等待",
+      "读写共享",
+      "无锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-753",
+    "title": "C语言中，自旋锁适用于什么场景？",
+    "options": [
+      "临界区短，不希望上下文切换",
+      "临界区长",
+      "读多写少",
+      "写多读少"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-754",
+    "title": "C语言中，原子操作的作用是？",
+    "options": [
+      "不可中断的操作",
+      "可中断的操作",
+      "加锁操作",
+      "解锁操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-755",
+    "title": "C语言中，C11原子操作头文件是？",
+    "options": [
+      "stdatomic.h",
+      "atomic",
+      "threads.h",
+      "pthread.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-756",
+    "title": "C语言中，atomic_int的作用是？",
+    "options": [
+      "声明原子整型",
+      "声明普通整型",
+      "声明互斥锁",
+      "声明条件变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-757",
+    "title": "C语言中，atomic_store的作用是？",
+    "options": [
+      "原子存储",
+      "原子加载",
+      "原子交换",
+      "原子比较交换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-758",
+    "title": "C语言中，atomic_load的作用是？",
+    "options": [
+      "原子加载",
+      "原子存储",
+      "原子交换",
+      "原子比较交换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-759",
+    "title": "C语言中，atomic_exchange的作用是？",
+    "options": [
+      "原子交换",
+      "原子加载",
+      "原子存储",
+      "原子比较交换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-760",
+    "title": "C语言中，atomic_compare_exchange_strong的作用是？",
+    "options": [
+      "原子比较交换(强)",
+      "原子比较交换(弱)",
+      "原子加载",
+      "原子存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-761",
+    "title": "C语言中，memory_order_relaxed表示？",
+    "options": [
+      "无顺序约束",
+      "获取语义",
+      "释放语义",
+      "顺序一致"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-762",
+    "title": "C语言中，memory_order_acquire表示？",
+    "options": [
+      "获取语义，后续读不能重排到此之前",
+      "无顺序约束",
+      "释放语义",
+      "顺序一致"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-763",
+    "title": "C语言中，memory_order_release表示？",
+    "options": [
+      "释放语义，之前写不能重排到此之后",
+      "获取语义",
+      "无顺序约束",
+      "顺序一致"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-764",
+    "title": "C语言中，memory_order_seq_cst表示？",
+    "options": [
+      "顺序一致，最严格",
+      "获取语义",
+      "释放语义",
+      "无顺序约束"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-765",
+    "title": "C语言中，线程局部存储(TLS)的作用是？",
+    "options": [
+      "每个线程有自己的变量副本",
+      "共享变量",
+      "全局变量",
+      "局部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-766",
+    "title": "C语言中，__thread关键字的作用是？",
+    "options": [
+      "声明线程局部变量(GNU扩展)",
+      "创建线程",
+      "等待线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-767",
+    "title": "C语言中，_Thread_local是哪个标准引入的？",
+    "options": [
+      "C11",
+      "C99",
+      "C89",
+      "C++11"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-768",
+    "title": "C语言中，pthread_key_create的作用是？",
+    "options": [
+      "创建线程特定数据键",
+      "创建线程",
+      "创建互斥锁",
+      "创建条件变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-769",
+    "title": "C语言中，pthread_setspecific的作用是？",
+    "options": [
+      "设置线程特定数据",
+      "获取线程特定数据",
+      "创建键",
+      "删除键"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-770",
+    "title": "C语言中，pthread_getspecific的作用是？",
+    "options": [
+      "获取线程特定数据",
+      "设置线程特定数据",
+      "创建键",
+      "删除键"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-771",
+    "title": "C语言中，fork的作用是？",
+    "options": [
+      "创建子进程",
+      "创建线程",
+      "执行程序",
+      "等待进程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-772",
+    "title": "C语言中，exec族函数的作用是？",
+    "options": [
+      "执行新程序",
+      "创建进程",
+      "等待进程",
+      "终止进程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-773",
+    "title": "C语言中，waitpid的作用是？",
+    "options": [
+      "等待子进程状态改变",
+      "创建进程",
+      "执行程序",
+      "终止进程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-774",
+    "title": "C语言中，exit的作用是？",
+    "options": [
+      "终止进程",
+      "创建进程",
+      "等待进程",
+      "执行程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-775",
+    "title": "C语言中，getpid的作用是？",
+    "options": [
+      "获取进程ID",
+      "获取父进程ID",
+      "创建进程",
+      "终止进程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-776",
+    "title": "C语言中，getppid的作用是？",
+    "options": [
+      "获取父进程ID",
+      "获取进程ID",
+      "创建进程",
+      "终止进程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-777",
+    "title": "C语言中，管道(pipe)的作用是？",
+    "options": [
+      "进程间通信",
+      "文件操作",
+      "网络通信",
+      "内存管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-778",
+    "title": "C语言中，命名管道(FIFO)的特点是？",
+    "options": [
+      "可用于无亲缘关系进程间通信",
+      "只能用于亲缘进程",
+      "不能通信",
+      "只能单向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-779",
+    "title": "C语言中，共享内存的特点是？",
+    "options": [
+      "最快的IPC方式",
+      "最慢的IPC",
+      "不能通信",
+      "只能单向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-780",
+    "title": "C语言中，消息队列的特点是？",
+    "options": [
+      "消息格式化，有边界",
+      "无边界",
+      "最快",
+      "不能通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-781",
+    "title": "C语言中，信号量(semaphore)的作用是？",
+    "options": [
+      "同步和互斥",
+      "只能同步",
+      "只能互斥",
+      "只能通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-782",
+    "title": "C语言中，信号的作用是？",
+    "options": [
+      "通知进程发生了事件",
+      "传输数据",
+      "分配内存",
+      "创建线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-783",
+    "title": "C语言中，socket的作用是？",
+    "options": [
+      "网络通信",
+      "本地通信",
+      "内存共享",
+      "文件操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-784",
+    "title": "C语言中，TCP的特点是？",
+    "options": [
+      "面向连接、可靠",
+      "无连接、不可靠",
+      "面向连接、不可靠",
+      "无连接、可靠"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-785",
+    "title": "C语言中，UDP的特点是？",
+    "options": [
+      "无连接、不可靠、快",
+      "面向连接、可靠",
+      "无连接、可靠",
+      "面向连接、不可靠"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-786",
+    "title": "C语言中，select的作用是？",
+    "options": [
+      "I/O多路复用",
+      "创建套接字",
+      "连接服务器",
+      "发送数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-787",
+    "title": "C语言中，poll的作用是？",
+    "options": [
+      "I/O多路复用",
+      "创建套接字",
+      "连接服务器",
+      "发送数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-788",
+    "title": "C语言中，epoll的作用是？",
+    "options": [
+      "Linux特有的高效I/O多路复用",
+      "创建套接字",
+      "连接服务器",
+      "发送数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-789",
+    "title": "C语言中，epoll相比select的优势？",
+    "options": [
+      "无连接数限制，效率不随连接数下降",
+      "更简单",
+      "跨平台",
+      "占用内存少"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-790",
+    "title": "C语言中，epoll的LT模式是？",
+    "options": [
+      "水平触发，只要缓冲区有数据就通知",
+      "边缘触发",
+      "不触发",
+      "随机触发"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-791",
+    "title": "C语言中，epoll的ET模式是？",
+    "options": [
+      "边缘触发，状态变化时才通知",
+      "水平触发",
+      "不触发",
+      "随机触发"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-792",
+    "title": "C语言中，非阻塞I/O的特点是？",
+    "options": [
+      "操作不成功立即返回错误",
+      "一直等待",
+      "只读不写",
+      "只写不读"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-793",
+    "title": "C语言中，异步I/O的特点是？",
+    "options": [
+      "内核完成操作后通知应用",
+      "应用一直等待",
+      "非阻塞轮询",
+      "同步等待"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-794",
+    "title": "C语言中，Reactor模式的特点是？",
+    "options": [
+      "同步非阻塞，事件循环",
+      "异步阻塞",
+      "同步阻塞",
+      "异步非阻塞"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-795",
+    "title": "C语言中，Proactor模式的特点是？",
+    "options": [
+      "异步非阻塞，操作系统完成I/O",
+      "同步非阻塞",
+      "同步阻塞",
+      "异步阻塞"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-796",
+    "title": "C语言中，libevent是什么？",
+    "options": [
+      "事件通知库",
+      "网络库",
+      "数据库",
+      "图形库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-797",
+    "title": "C语言中，libev是什么？",
+    "options": [
+      "事件循环库",
+      "网络库",
+      "数据库",
+      "图形库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-798",
+    "title": "C语言中，nginx使用什么网络模型？",
+    "options": [
+      "epoll多进程/多线程",
+      "select",
+      "poll",
+      "阻塞I/O"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-799",
+    "title": "C语言中，Redis使用什么网络模型？",
+    "options": [
+      "epoll单线程事件循环",
+      "select",
+      "poll",
+      "多线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-800",
+    "title": "C语言中，线程池的作用是？",
+    "options": [
+      "减少线程创建销毁开销",
+      "增加线程数",
+      "减少内存",
+      "增加CPU"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-801",
+    "title": "C语言中，连接池的作用是？",
+    "options": [
+      "减少连接创建销毁开销",
+      "增加连接数",
+      "减少内存",
+      "增加CPU"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-802",
+    "title": "C语言中，内存池的作用是？",
+    "options": [
+      "减少内存分配释放开销",
+      "增加内存",
+      "减少CPU",
+      "增加连接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-803",
+    "title": "C语言中，对象池的作用是？",
+    "options": [
+      "复用对象，减少GC",
+      "增加对象",
+      "减少连接",
+      "增加内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-804",
+    "title": "C语言中，生产者消费者模型需要？",
+    "options": [
+      "缓冲区、互斥锁、条件变量",
+      "只需要锁",
+      "只需要条件变量",
+      "不需要同步"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-805",
+    "title": "C语言中，读者写者模型需要？",
+    "options": [
+      "读写锁",
+      "互斥锁",
+      "条件变量",
+      "信号量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-806",
+    "title": "C语言中，哲学家就餐问题需要？",
+    "options": [
+      "避免死锁的策略",
+      "互斥锁",
+      "条件变量",
+      "信号量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-807",
+    "title": "C语言中，竞态条件是指？",
+    "options": [
+      "结果依赖于执行顺序",
+      "内存不足",
+      "CPU过载",
+      "死锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-808",
+    "title": "C语言中，临界区是指？",
+    "options": [
+      "访问共享资源的代码段",
+      "整个程序",
+      "某个函数",
+      "某个文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-809",
+    "title": "C语言中，同步是指？",
+    "options": [
+      "控制执行顺序",
+      "控制内存大小",
+      "控制CPU使用",
+      "控制网络带宽"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-810",
+    "title": "C语言中，互斥是指？",
+    "options": [
+      "防止同时访问共享资源",
+      "控制执行顺序",
+      "控制内存大小",
+      "控制网络带宽"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-811",
+    "title": "C语言中，并发是指？",
+    "options": [
+      "多个任务在同一时间段执行",
+      "同一时刻执行",
+      "顺序执行",
+      "单任务"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-812",
+    "title": "C语言中，并行是指？",
+    "options": [
+      "多个任务在同一时刻执行",
+      "同一时间段执行",
+      "顺序执行",
+      "单任务"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-813",
+    "title": "C语言中，上下文切换的开销包括？",
+    "options": [
+      "保存恢复寄存器、栈、缓存失效",
+      "只有内存分配",
+      "只有CPU计算",
+      "只有网络延迟"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-814",
+    "title": "C语言中，线程比进程轻量的原因？",
+    "options": [
+      "共享地址空间，切换快",
+      "不共享内存",
+      "独立地址空间",
+      "切换慢"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-815",
+    "title": "C语言中，多线程的优点是？",
+    "options": [
+      "提高CPU利用率、响应快",
+      "编程简单",
+      "无同步问题",
+      "无死锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-816",
+    "title": "C语言中，多线程的缺点是？",
+    "options": [
+      "同步复杂、容易死锁",
+      "效率低",
+      "响应慢",
+      "内存占用大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-817",
+    "title": "C语言中，多进程的优点是？",
+    "options": [
+      "稳定性高、利用多核",
+      "编程简单",
+      "通信快",
+      "内存占用少"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-818",
+    "title": "C语言中，多进程的缺点是？",
+    "options": [
+      "创建开销大、通信复杂",
+      "不稳定",
+      "不能利用多核",
+      "同步复杂"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-819",
+    "title": "C语言中，协程的特点是？",
+    "options": [
+      "用户态调度，轻量",
+      "内核态调度",
+      "重量级",
+      "多线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-820",
+    "title": "C语言中，如何实现协程？",
+    "options": [
+      "使用ucontext或汇编切换栈",
+      "使用pthread",
+      "使用fork",
+      "使用signal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-821",
+    "title": "C语言中，ucontext库的作用是？",
+    "options": [
+      "用户级上下文切换",
+      "创建线程",
+      "创建进程",
+      "内存分配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-822",
+    "title": "C语言中，setcontext的作用是？",
+    "options": [
+      "切换到指定上下文",
+      "获取当前上下文",
+      "修改上下文",
+      "创建上下文"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-823",
+    "title": "C语言中，getcontext的作用是？",
+    "options": [
+      "获取当前上下文",
+      "切换上下文",
+      "修改上下文",
+      "创建上下文"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-824",
+    "title": "C语言中，makecontext的作用是？",
+    "options": [
+      "创建用户定义的上下文",
+      "获取上下文",
+      "切换上下文",
+      "修改上下文"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-825",
+    "title": "C语言中，swapcontext的作用是？",
+    "options": [
+      "保存当前上下文并切换到另一个",
+      "获取上下文",
+      "创建上下文",
+      "修改上下文"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-826",
+    "title": "C语言中，异步信号安全函数的作用是？",
+    "options": [
+      "在信号处理函数中安全调用",
+      "在多线程中安全调用",
+      "在多进程中安全调用",
+      "在网络中安全调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-827",
+    "title": "C语言中，可重入函数的特点是？",
+    "options": [
+      "可以被中断并安全再次调用",
+      "不能被中断",
+      "只能调用一次",
+      "只能在线程中调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-828",
+    "title": "C语言中，不可重入函数的特点是？",
+    "options": [
+      "使用了静态数据或修改了自身",
+      "不使用静态数据",
+      "不修改自身",
+      "线程安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-829",
+    "title": "C语言中，线程安全和可重入的关系？",
+    "options": [
+      "可重入一定线程安全，反之不一定",
+      "线程安全一定可重入",
+      "没有关系",
+      "两者等价"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-830",
+    "title": "C语言中，pthread_cancel的作用是？",
+    "options": [
+      "请求取消线程",
+      "创建线程",
+      "等待线程",
+      "分离线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-831",
+    "title": "C语言中，pthread_setcancelstate的作用是？",
+    "options": [
+      "设置取消状态",
+      "设置取消类型",
+      "创建线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-832",
+    "title": "C语言中，pthread_setcanceltype的作用是？",
+    "options": [
+      "设置取消类型(同步/异步)",
+      "设置取消状态",
+      "创建线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-833",
+    "title": "C语言中，取消点是什么？",
+    "options": [
+      "检查取消请求的位置",
+      "创建线程的位置",
+      "销毁线程的位置",
+      "等待线程的位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-834",
+    "title": "C语言中，pthread_cleanup_push的作用是？",
+    "options": [
+      "注册线程清理函数",
+      "取消线程",
+      "创建线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-835",
+    "title": "C语言中，pthread_cleanup_pop的作用是？",
+    "options": [
+      "执行或移除清理函数",
+      "注册清理函数",
+      "取消线程",
+      "创建线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-836",
+    "title": "C语言中，一次性初始化使用什么？",
+    "options": [
+      "pthread_once",
+      "pthread_init",
+      "pthread_create",
+      "pthread_mutex"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-837",
+    "title": "C语言中，pthread_once的作用是？",
+    "options": [
+      "保证初始化函数只执行一次",
+      "创建线程",
+      "加锁",
+      "解锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-838",
+    "title": "C语言中，屏障的作用是？",
+    "options": [
+      "让多个线程在某个点同步",
+      "互斥访问",
+      "条件等待",
+      "信号通知"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-839",
+    "title": "C语言中，pthread_barrier_init的作用是？",
+    "options": [
+      "初始化屏障",
+      "等待屏障",
+      "销毁屏障",
+      "创建线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-840",
+    "title": "C语言中，pthread_barrier_wait的作用是？",
+    "options": [
+      "等待屏障",
+      "初始化屏障",
+      "销毁屏障",
+      "创建线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-841",
+    "title": "C语言中，变参宏使用哪个标识符表示可变参数？",
+    "options": [
+      "__VA_ARGS__",
+      "va_list",
+      "args...",
+      "..."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-842",
+    "title": "C语言中，#和##在宏定义中的作用分别是？",
+    "options": [
+      "字符串化和连接",
+      "注释和连接",
+      "字符串化和分隔",
+      "取地址和解引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-843",
+    "title": "C语言中，do-while(0)在宏定义中的常见用途是？",
+    "options": [
+      "保证宏展开后语法完整，避免分号问题",
+      "强制循环一次",
+      "提高运行效率",
+      "定义局部作用域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-844",
+    "title": "C语言中，X Macro技巧的主要用途是？",
+    "options": [
+      "代码自动生成和列表维护",
+      "异常处理",
+      "内存管理",
+      "泛型编程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-845",
+    "title": "C语言中，container_of宏的作用是？",
+    "options": [
+      "通过结构体成员指针获取结构体本身指针",
+      "获取结构体大小",
+      "初始化结构体",
+      "拷贝结构体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-846",
+    "title": "C语言中，typeof关键字的作用是？",
+    "options": [
+      "获取变量的类型",
+      [
+        "定义新类型"
+      ],
+      "类型转换",
+      "声明变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-847",
+    "title": "C语言中，__builtin_expect的作用是？",
+    "options": [
+      "分支预测优化",
+      "异常处理",
+      "内存对齐",
+      "日志记录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-848",
+    "title": "C语言中，likely和unlikely宏通常基于什么实现？",
+    "options": [
+      "__builtin_expect",
+      "typeof",
+      "sizeof",
+      "offsetof"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-849",
+    "title": "C语言中，C99新增的指定初始化器有什么优势？",
+    "options": [
+      "可按任意顺序初始化成员，增加可读性",
+      "运行更快",
+      "节省内存",
+      "支持泛型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-850",
+    "title": "C语言中，复合字面量的生命周期取决于？",
+    "options": [
+      "作用域：在函数内则随块结束，在函数外则静态",
+      "总是静态",
+      "总是随块结束",
+      "由程序员手动管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-851",
+    "title": "C语言中，柔性数组成员(FAM)必须满足什么条件？",
+    "options": [
+      "必须是结构体的最后一个成员",
+      "必须是指针类型",
+      "必须是整型",
+      "大小必须为1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-852",
+    "title": "C语言中，C11引入的_Generic关键字的作用是？",
+    "options": [
+      "实现泛型编程选择",
+      "定义泛型宏",
+      "类型检查",
+      "异常捕获"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-853",
+    "title": "C语言中，_Static_assert的作用是？",
+    "options": [
+      "编译期断言",
+      "运行期断言",
+      "静态变量声明",
+      "静态函数声明"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-854",
+    "title": "C语言中，_Alignof运算符的作用是？",
+    "options": [
+      "获取类型的对齐要求",
+      "设置对齐方式",
+      "取消对齐",
+      "计算偏移量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-855",
+    "title": "C语言中，_Alignas关键字的作用是？",
+    "options": [
+      "设置变量或类型的对齐方式",
+      "获取对齐要求",
+      "取消对齐",
+      "计算偏移量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-856",
+    "title": "C语言中，Noreturn函数说明符的作用是？",
+    "options": [
+      "告诉编译器函数不会返回",
+      "禁止内联",
+      "禁止优化",
+      "声明静态函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-857",
+    "title": "C语言中，C11引入的边界检查函数接口在哪个头文件？",
+    "options": [
+      "stdckdint.h (C23)",
+      "stdio.h",
+      "stdlib.h",
+      "string.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-858",
+    "title": "C语言中，如何实现类似C++的RAII机制？",
+    "options": [
+      "利用cleanup属性或宏模拟",
+      "使用析构函数",
+      "使用垃圾回收",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-859",
+    "title": "C语言中，__attribute__((cleanup))的作用是？",
+    "options": [
+      "变量离开作用域时自动调用指定函数",
+      "清理内存",
+      "删除文件",
+      "关闭套接字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-860",
+    "title": "C语言中，如何防止头文件重复包含？",
+    "options": [
+      "使用#ifndef/#define/#endif或#pragma once",
+      "使用static",
+      "使用extern",
+      "使用inline"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-861",
+    "title": "C语言中，#pragma once的缺点是？",
+    "options": [
+      "非标准，某些编译器可能不支持",
+      "效率低",
+      "容易冲突",
+      "不能用于C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-862",
+    "title": "C语言中，include guard的命名建议是？",
+    "options": [
+      "基于项目名、路径和文件名的唯一名称",
+      "简单的_H",
+      "随机字符",
+      "与类名相同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-863",
+    "title": "C语言中，前置声明的作用是？",
+    "options": [
+      "减少头文件包含，降低编译依赖",
+      "加快运行速度",
+      "节省内存",
+      "简化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-864",
+    "title": "C语言中，PIMPL模式的优势是？",
+    "options": [
+      "隐藏实现细节，减少编译依赖",
+      "提高运行效率",
+      "简化内存管理",
+      "实现多态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-865",
+    "title": "C语言中，如何实现类似C++的命名空间？",
+    "options": [
+      "使用结构体/函数前缀命名约定",
+      "使用namespace关键字",
+      "使用static",
+      "使用宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-866",
+    "title": "C语言中，回调函数的典型应用场景是？",
+    "options": [
+      "事件处理、排序比较、异步通知",
+      "内存分配",
+      "变量声明",
+      "类型定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-867",
+    "title": "C语言中，使用回调函数需要注意什么？",
+    "options": [
+      "生命周期和上下文数据的传递",
+      "返回值类型",
+      "参数个数",
+      "函数名长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-868",
+    "title": "C语言中，状态机通常如何实现？",
+    "options": [
+      "switch-case或函数指针数组",
+      "if-else嵌套",
+      "递归调用",
+      "循环队列"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-869",
+    "title": "C语言中，函数指针数组实现状态机的优势是？",
+    "options": [
+      "代码清晰，易扩展，避免深度嵌套",
+      "运行更快",
+      "节省内存",
+      "编译更小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-870",
+    "title": "C语言中，面向对象编程的三大特征是？",
+    "options": [
+      "封装、继承、多态",
+      "抽象、封装、多态",
+      "封装、继承、重载",
+      "抽象、继承、多态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-871",
+    "title": "C语言中，如何实现封装？",
+    "options": [
+      "将数据和操作数据的函数指针放在结构体中",
+      "使用private关键字",
+      "使用class",
+      "使用namespace"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-872",
+    "title": "C语言中，如何实现继承？",
+    "options": [
+      "结构体嵌套包含基类结构体",
+      "使用extends关键字",
+      "使用虚函数",
+      "使用宏定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-873",
+    "title": "C语言中，如何实现多态？",
+    "options": [
+      "通过函数指针表和基类指针",
+      "使用virtual关键字",
+      "使用重载",
+      "使用模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-874",
+    "title": "C语言中，GObject库主要用于？",
+    "options": [
+      "用C语言实现面向对象编程",
+      "网络编程",
+      "数据库操作",
+      "文件处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-875",
+    "title": "C语言中，错误处理的常见方式有哪些？",
+    "options": [
+      "返回错误码、errno、跳转setjmp/longjmp",
+      "抛出异常",
+      "断言失败",
+      "忽略错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-876",
+    "title": "C语言中，setjmp/longjmp相比返回错误码的优势？",
+    "options": [
+      "可以直接跳转到错误处理点，避免层层返回",
+      "性能更高",
+      "更安全",
+      "支持异常类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-877",
+    "title": "C语言中，setjmp/longjmp的潜在风险是？",
+    "options": [
+      "可能跳过资源释放代码导致泄漏",
+      "性能差",
+      "语法复杂",
+      "不能跨函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-878",
+    "title": "C语言中，如何安全使用setjmp/longjmp？",
+    "options": [
+      "结合volatile和手动资源管理",
+      [
+        "避免使用"
+      ],
+      [
+        "在信号处理中使用"
+      ],
+      [
+        "在多线程中使用"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-879",
+    "title": "C语言中，防御性编程的核心思想是？",
+    "options": [
+      "假设外部输入和条件不可靠，进行充分检查",
+      "优化性能",
+      "减少代码量",
+      "增加功能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-880",
+    "title": "C语言中，常见的防御性编程技巧有？",
+    "options": [
+      "参数校验、断言、错误处理、资源保护",
+      "使用全局变量",
+      "递归调用",
+      "宏定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-881",
+    "title": "C语言中，什么是内存对齐？",
+    "options": [
+      "数据存放的地址必须是某个数的整数倍",
+      "内存分配对齐",
+      "内存释放对齐",
+      "缓存对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-882",
+    "title": "C语言中，内存对齐的主要原因是什么？",
+    "options": [
+      "硬件访问效率要求和某些平台必须对齐",
+      "节省内存",
+      "编译器要求",
+      "操作系统规定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-883",
+    "title": "C语言中，结构体对齐的规则是？",
+    "options": [
+      "成员偏移是自身对齐数的整数倍，总大小是最大对齐数的整数倍",
+      "所有成员紧挨着",
+      "按1字节对齐",
+      "随机对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-884",
+    "title": "C语言中，如何改变默认对齐方式？",
+    "options": [
+      "使用#pragma pack或__attribute__((packed))",
+      "使用static",
+      "使用const",
+      "使用volatile"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-885",
+    "title": "C语言中，使用#pragma pack(1)的后果是？",
+    "options": [
+      "取消对齐优化，可能降低访问效率",
+      "提高访问效率",
+      "增加内存占用",
+      "编译错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-886",
+    "title": "C语言中，位域的注意事项有哪些？",
+    "options": [
+      "位域的分配方向、对齐、是否可跨字节由实现定义",
+      "不能使用整型",
+      "不能取地址",
+      "大小固定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-887",
+    "title": "C语言中，为什么位域的可移植性差？",
+    "options": [
+      "分配顺序、对齐、符号等行为取决于编译器",
+      "语法复杂",
+      "不支持浮点型",
+      "占用内存大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-888",
+    "title": "C语言中，如何判断系统是大端还是小端？",
+    "options": [
+      "使用联合体或强制类型转换检查字节序",
+      "使用sizeof",
+      "使用strlen",
+      "无法判断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-889",
+    "title": "C语言中，网络字节序是什么？",
+    "options": [
+      "大端序",
+      "小端序",
+      "主机字节序",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-890",
+    "title": "C语言中，htonl/htons的作用是？",
+    "options": [
+      "将主机字节序转换为网络字节序",
+      "网络转主机",
+      "大小端转换",
+      "字节对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-891",
+    "title": "C语言中，字节序转换函数定义在哪个头文件？",
+    "options": [
+      "arpa/inet.h或winsock2.h",
+      "stdio.h",
+      "stdlib.h",
+      "string.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-892",
+    "title": "C语言中，VLA(变长数组)的缺点是？",
+    "options": [
+      "可能栈溢出，不支持C11后变为可选特性",
+      "内存泄漏",
+      "效率低",
+      "不能传参"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-893",
+    "title": "C语言中，为什么VLA在C11中被降级为可选特性？",
+    "options": [
+      "实现复杂且容易导致栈溢出安全问题",
+      "性能太差",
+      "语法不兼容",
+      "被其他特性替代"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-894",
+    "title": "C语言中，如何安全地实现类似VLA的功能？",
+    "options": [
+      "使用alloca或动态内存分配malloc",
+      "使用全局数组",
+      "使用静态数组",
+      "使用位域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-895",
+    "title": "C语言中，restrict关键字的含义是？",
+    "options": [
+      "告诉编译器该指针是访问数据的唯一方式",
+      "限制变量作用域",
+      "限制函数调用",
+      "限制类型转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-896",
+    "title": "C语言中，使用restrict的好处是？",
+    "options": [
+      "帮助编译器优化生成更高效的代码",
+      "保证线程安全",
+      "防止溢出",
+      "增强可读性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-897",
+    "title": "C语言中，restrict指针的别名规则是？",
+    "options": [
+      "在指针生命周期内，不允许通过其他指针访问同一对象",
+      "允许一个别名",
+      "允许两个别名",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-898",
+    "title": "C语言中，volatile的正确使用场景是？",
+    "options": [
+      "硬件寄存器映射、信号处理中的变量、多线程共享标志",
+      [
+        "所有全局变量"
+      ],
+      [
+        "循环变量"
+      ],
+      [
+        "函数参数"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-899",
+    "title": "C语言中，误用volatile的常见情况是？",
+    "options": [
+      "认为volatile能保证原子性或线程安全",
+      "用于局部变量",
+      "用于常量",
+      "用于指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-900",
+    "title": "C语言中，volatile和锁的区别？",
+    "options": [
+      "volatile仅防止编译器优化，锁保证原子性和可见性",
+      "volatile就是锁",
+      "锁比volatile快",
+      "没有区别"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-901",
+    "title": "C语言中，const变量的真正含义是？",
+    "options": [
+      "只读，不允许通过该变量名直接修改，但可能通过指针间接修改",
+      [
+        "绝对不可修改"
+      ],
+      [
+        "存在只读段"
+      ],
+      [
+        "编译期常量"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-902",
+    "title": "C语言中，const int *p和int * const p的区别？",
+    "options": [
+      "前者指向的值不可变，后者指针本身不可变",
+      "前者指针不可变，后者值不可变",
+      "两者相同",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-903",
+    "title": "C语言中，如何通过非const指针修改const变量？",
+    "options": [
+      "通过强制类型转换获取可修改的指针",
+      "直接修改",
+      "无法修改",
+      "使用volatile"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-904",
+    "title": "C语言中，修改const全局变量会导致什么？",
+    "options": [
+      "段错误或未定义行为，因为它可能存储在只读数据段",
+      "编译错误",
+      "正常修改",
+      "警告"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-905",
+    "title": "C语言中，static关键字的三个作用是？",
+    "options": [
+      "隐藏作用域(文件级)、持久存储(局部)、初始化为0",
+      [
+        "只读"
+      ],
+      [
+        "内联"
+      ],
+      [
+        "虚函数"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-906",
+    "title": "C语言中，static函数的好处是？",
+    "options": [
+      "隐藏函数防止命名冲突，可能被内联优化",
+      "运行更快",
+      "占用内存少",
+      "支持多态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-907",
+    "title": "C语言中，static全局变量和普通全局变量的区别？",
+    "options": [
+      "static全局变量作用域仅限当前文件(内部链接)",
+      "没有区别",
+      "static变量不能修改",
+      "普通变量不可见"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-908",
+    "title": "C语言中，extern关键字的作用是？",
+    "options": [
+      "声明在其他文件中定义的全局变量或函数",
+      "定义变量",
+      "隐藏变量",
+      "修改变量类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-909",
+    "title": "C语言中，extern \"C\"的作用是？",
+    "options": [
+      "告诉C++编译器按C的规则链接符号",
+      "在C中调用C++",
+      "定义外部函数",
+      "声明外部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-910",
+    "title": "C语言中，为什么需要extern \"C\"？",
+    "options": [
+      "C++有函数重载会修改符号名，C不修改，混合编程时需对齐",
+      "C不支持指针",
+      "C++更安全",
+      "编译器要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-911",
+    "title": "C语言中，常见的内存错误有哪些？",
+    "options": [
+      "泄漏、越界、野指针、悬垂指针、重复释放、未初始化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-912",
+    "title": "C语言中，如何避免野指针？",
+    "options": [
+      "指针定义时初始化，释放后置NULL",
+      "使用auto",
+      "使用register",
+      "使用volatile"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-913",
+    "title": "C语言中，如何避免悬垂指针？",
+    "options": [
+      "不要返回局部变量的指针，释放后置NULL",
+      "使用全局变量",
+      "使用静态变量",
+      "使用常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-914",
+    "title": "C语言中，如何检测内存泄漏？",
+    "options": [
+      "使用valgrind、AddressSanitizer等工具",
+      "代码审查",
+      "单元测试",
+      "静态分析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-915",
+    "title": "C语言中，AddressSanitizer(ASan)能检测哪些错误？",
+    "options": [
+      "越界、use-after-free、double-free、内存泄漏",
+      "数据竞争",
+      "死锁",
+      "编译错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-916",
+    "title": "C语言中，如何编译启用ASan？",
+    "options": [
+      "gcc -fsanitize=address -g",
+      "gcc -O2",
+      "gcc -Wall",
+      "gcc -pg"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-917",
+    "title": "C语言中，UndefinedBehaviorSanitizer(UBSan)能检测什么？",
+    "options": [
+      "未定义行为如整数溢出、空指针解引用",
+      "内存泄漏",
+      "性能瓶颈",
+      "代码风格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-918",
+    "title": "C语言中，ThreadSanitizer(TSan)用于检测什么？",
+    "options": [
+      "多线程数据竞争",
+      "内存越界",
+      "未定义行为",
+      "内存泄漏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-919",
+    "title": "C语言中，什么是未定义行为(UB)？",
+    "options": [
+      "标准未规定的行为，编译器可以做任何处理，结果不可预测",
+      "编译器报错",
+      "运行时报错",
+      "结果固定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-920",
+    "title": "C语言中，常见的未定义行为有哪些？",
+    "options": [
+      "越界、解引用空指针、重复修改、溢出、非法类型转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-921",
+    "title": "C语言中，有符号整数溢出是未定义行为吗？",
+    "options": [
+      "是",
+      "不是",
+      "取决于编译器",
+      "取决于操作系统"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-922",
+    "title": "C语言中，无符号整数溢出是未定义行为吗？",
+    "options": [
+      "不是，会回绕取模",
+      "是",
+      "取决于编译器",
+      "取决于平台"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-923",
+    "title": "C语言中，i++ + ++i是未定义行为吗？",
+    "options": [
+      "是，因为在一个序列点之间修改了变量两次",
+      "不是",
+      "结果是3",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-924",
+    "title": "C语言中，什么是序列点？",
+    "options": [
+      "程序执行中，所有副作用都已完成的点",
+      "代码行号",
+      "分号",
+      "函数调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-925",
+    "title": "C语言中，常见的序列点有哪些？",
+    "options": [
+      "分号、函数调用、逻辑与/或的求值点",
+      "逗号表达式",
+      "加法运算",
+      "赋值运算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-926",
+    "title": "C语言中，如何安全地进行类型转换？",
+    "options": [
+      "确保转换合理，注意截断、符号和精度丢失",
+      "使用强制转换即可",
+      "避免所有转换",
+      "使用auto"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-927",
+    "title": "C语言中，浮点数比较为什么不能直接用==？",
+    "options": [
+      "浮点数精度问题可能导致相等的值在二进制表示上有微小差异",
+      "浮点数不能用==",
+      "编译器不支持",
+      "性能太差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-928",
+    "title": "C语言中，如何正确比较浮点数？",
+    "options": [
+      "比较差值的绝对值是否小于一个很小的epsilon",
+      "使用===",
+      "转换为整数比较",
+      "使用strcmp"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-929",
+    "title": "C语言中，NaN的特点是什么？",
+    "options": [
+      "与任何值比较(包括自己)都返回假，不等于自己",
+      "等于0",
+      "等于无穷",
+      "等于NULL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-930",
+    "title": "C语言中，如何判断一个浮点数是否为NaN？",
+    "options": [
+      "使用isnan()宏或x != x",
+      "使用==",
+      "使用>",
+      "使用<"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-931",
+    "title": "C语言中，INT_MIN求绝对值为什么会溢出？",
+    "options": [
+      "补码表示中负数比正数多一个，-INT_MIN超出INT_MAX",
+      "不会溢出",
+      "INT_MIN是0",
+      "绝对值函数错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-932",
+    "title": "C语言中，如何安全求INT_MIN的绝对值？",
+    "options": [
+      "在求绝对值前转换为更大的类型如long long",
+      "直接abs",
+      "取反加一",
+      "使用unsigned"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-933",
+    "title": "C语言中，strcpy和strncpy的哪个更安全？",
+    "options": [
+      "strncpy可以限制长度，但需注意手动添加结束符",
+      "strcpy更安全",
+      "都一样安全",
+      "都不安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-934",
+    "title": "C语言中，strncpy为什么不总是安全的？",
+    "options": [
+      "如果源字符串过长，目标可能没有结束符\\0",
+      [
+        "会溢出"
+      ],
+      [
+        "性能差"
+      ],
+      [
+        "不支持中文"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-935",
+    "title": "C语言中，更安全的字符串函数有哪些？",
+    "options": [
+      "snprintf, strlcpy(非标准), strncpy_s(C11)",
+      "gets",
+      "scanf",
+      "strcat"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-936",
+    "title": "C语言中，snprintf相比sprintf的优势？",
+    "options": [
+      "可以指定缓冲区大小，防止溢出",
+      "性能更高",
+      "支持格式化更多",
+      "代码更短"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-937",
+    "title": "C语言中，gets函数为什么被废弃？",
+    "options": [
+      "无法限制输入长度，极易导致缓冲区溢出",
+      "性能差",
+      "不能读空格",
+      "不返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-938",
+    "title": "C语言中，替代gets的函数是？",
+    "options": [
+      "fgets",
+      "getchar",
+      "scanf",
+      "fread"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-939",
+    "title": "C语言中，scanf如何防止缓冲区溢出？",
+    "options": [
+      "使用%ns指定最大读取长度",
+      "使用gets",
+      "增加缓冲区大小",
+      "使用printf"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-940",
+    "title": "C语言中，如何安全地使用动态内存？",
+    "options": [
+      "检查返回值、成对使用malloc/free、释放后置NULL",
+      "使用realloc",
+      "使用全局变量",
+      "避免使用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-941",
+    "title": "C语言中，malloc失败返回什么？",
+    "options": [
+      "NULL",
+      "0",
+      "-1",
+      "异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-942",
+    "title": "C语言中，为什么malloc后需要检查返回值？",
+    "options": [
+      "内存不足时分配失败，解引用NULL会崩溃",
+      "编译器要求",
+      "代码规范",
+      "提高性能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-943",
+    "title": "C语言中，free(NULL)是安全的吗？",
+    "options": [
+      "安全，标准规定free(NULL)不做任何操作",
+      "不安全",
+      "未定义行为",
+      "会报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-944",
+    "title": "C语言中，重复free同一块内存会怎样？",
+    "options": [
+      "未定义行为，可能导致堆损坏或崩溃",
+      "正常释放",
+      "被忽略",
+      "返回错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-945",
+    "title": "C语言中，内存池的优点是？",
+    "options": [
+      "减少内存碎片，提高分配释放速度",
+      "节省内存",
+      "防止泄漏",
+      "自动管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-946",
+    "title": "C语言中，内存池的缺点是？",
+    "options": [
+      "可能造成内部碎片浪费，实现复杂",
+      "速度慢",
+      "不安全",
+      "不能复用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-947",
+    "title": "C语言中，垃圾回收在C中为什么难以实现？",
+    "options": [
+      "C语言允许指针运算，难以追踪所有引用",
+      "C语言不支持",
+      "性能太差",
+      "标准禁止"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-948",
+    "title": "C语言中，Boehm GC是如何工作的？",
+    "options": [
+      "保守式垃圾收集，将看起来像指针的值视为引用",
+      "引用计数",
+      "分代收集",
+      "编译器辅助"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-949",
+    "title": "C语言中，如何实现泛型容器？",
+    "options": [
+      "使用void*指针和函数指针回调",
+      "使用模板",
+      "使用宏",
+      "使用继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-950",
+    "title": "C语言中，使用void*实现泛型的缺点是？",
+    "options": [
+      "类型安全丧失，需要强制转换，容易出错",
+      "性能差",
+      "内存占用大",
+      "不能复用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-951",
+    "title": "C语言中，如何用宏实现泛型？",
+    "options": [
+      "使用类型参数化宏，如#define MAX(a,b) ((a)>(b)?(a):(b))",
+      "使用void*",
+      "使用模板",
+      "使用函数重载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-952",
+    "title": "C语言中，宏实现泛型的缺点是？",
+    "options": [
+      "无类型检查，可能产生副作用，难以调试",
+      "性能差",
+      "代码长",
+      "不支持复杂类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-953",
+    "title": "C语言中，C11的_Generic如何实现泛型？",
+    "options": [
+      "根据第一个参数的类型选择对应的表达式或函数",
+      "使用模板",
+      "使用虚函数",
+      "使用宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-954",
+    "title": "C语言中，构建系统Make的作用是？",
+    "options": [
+      "根据依赖关系只编译修改过的文件，自动化构建",
+      "代码审查",
+      "版本控制",
+      "调试程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-955",
+    "title": "C语言中，CMake的作用是？",
+    "options": [
+      "跨平台生成构建文件(如Makefile)",
+      "编译代码",
+      "调试代码",
+      "运行代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-956",
+    "title": "C语言中，静态库和动态库的区别？",
+    "options": [
+      "静态库链接时复制到可执行文件，动态库运行时加载",
+      "静态库运行时加载",
+      "动态库体积大",
+      "没有区别"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-957",
+    "title": "C语言中，静态库的优缺点？",
+    "options": [
+      "优点是独立运行，缺点是体积大更新难",
+      "优点是体积小",
+      "缺点是不能独立运行",
+      "没有优缺点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-958",
+    "title": "C语言中，动态库的优缺点？",
+    "options": [
+      "优点是体积小易更新共享，缺点是部署复杂版本冲突",
+      "优点是独立运行",
+      "缺点是体积大",
+      "没有优缺点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-959",
+    "title": "C语言中，如何创建静态库？",
+    "options": [
+      "gcc -c编译为目标文件，ar rcs打包为.a",
+      "gcc -shared",
+      "ld -shared",
+      "make lib"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-960",
+    "title": "C语言中，如何创建动态库？",
+    "options": [
+      "gcc -shared -fPIC -o lib.so",
+      "ar rcs",
+      "gcc -static",
+      "make shared"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-961",
+    "title": "C语言中，-fPIC选项的作用是？",
+    "options": [
+      "生成位置无关代码，动态库必需",
+      "优化代码",
+      "生成调试信息",
+      "静态链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-962",
+    "title": "C语言中，为什么动态库需要位置无关代码？",
+    "options": [
+      "动态库加载地址不固定，代码需能放在任意地址执行",
+      "提高性能",
+      "减少体积",
+      "编译器要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-963",
+    "title": "C语言中，RPATH的作用是？",
+    "options": [
+      "指定可执行文件运行时搜索动态库的路径",
+      "编译时搜索路径",
+      "链接时搜索路径",
+      "源码搜索路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-964",
+    "title": "C语言中，如何查看程序依赖的动态库？",
+    "options": [
+      "使用ldd命令",
+      "使用nm命令",
+      "使用objdump",
+      "使用readelf"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-965",
+    "title": "C语言中，nm工具的作用是？",
+    "options": [
+      "列出目标文件中的符号表",
+      "查看依赖库",
+      "反汇编",
+      "查看段信息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-966",
+    "title": "C语言中，strip工具的作用是？",
+    "options": [
+      "移除可执行文件中的符号信息和调试信息",
+      "压缩文件",
+      "加密文件",
+      "反汇编"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-967",
+    "title": "C语言中，strip后的程序还能调试吗？",
+    "options": [
+      "很难调试，符号信息丢失",
+      "完全可以",
+      "部分可以",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-968",
+    "title": "C语言中，objdump的作用是？",
+    "options": [
+      "反汇编和查看目标文件信息",
+      "查看符号",
+      "查看依赖",
+      "移除符号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-969",
+    "title": "C语言中，如何进行代码覆盖率测试？",
+    "options": [
+      "编译时加--coverage，运行后使用gcov",
+      "使用valgrind",
+      "使用gdb",
+      "使用lcov"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-970",
+    "title": "C语言中，lcov的作用是？",
+    "options": [
+      "将gcov的数据生成HTML可视化报告",
+      "生成覆盖率数据",
+      "执行测试",
+      "编译代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-971",
+    "title": "C语言中，gdb的核心功能是？",
+    "options": [
+      "断点、单步执行、查看变量、调用栈分析",
+      "代码格式化",
+      "内存泄漏检测",
+      "性能分析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-972",
+    "title": "C语言中，如何生成适合gdb调试的可执行文件？",
+    "options": [
+      "gcc -g",
+      "gcc -O2",
+      "gcc -Wall",
+      "gcc -shared"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-973",
+    "title": "C语言中，core dump文件的作用是？",
+    "options": [
+      "记录程序崩溃时的内存映像和寄存器状态",
+      "记录日志",
+      "记录覆盖率",
+      "记录性能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-974",
+    "title": "C语言中，如何启用core dump生成？",
+    "options": [
+      "ulimit -c unlimited",
+      "gcc -g",
+      "使用gdb",
+      "使用valgrind"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-975",
+    "title": "C语言中，perf工具的作用是？",
+    "options": [
+      "性能分析，找出CPU热点",
+      "内存泄漏检测",
+      "代码覆盖率",
+      "静态分析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-976",
+    "title": "C语言中，静态分析工具的作用是？",
+    "options": [
+      "在不运行代码的情况下查找潜在缺陷",
+      "运行时检测错误",
+      "性能优化",
+      "代码格式化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-977",
+    "title": "C语言中，常见的C静态分析工具有？",
+    "options": [
+      "splint, cppcheck, clang-tidy",
+      "valgrind, gdb",
+      "perf, gprof",
+      "make, cmake"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-978",
+    "title": "C语言中，单元测试框架Check的特点是？",
+    "options": [
+      "专为C设计，支持夹具和多种断言",
+      "仅支持C++",
+      "不支持断言",
+      "不支持夹具"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-979",
+    "title": "C语言中，TDD的开发流程是？",
+    "options": [
+      "先写测试，再写实现，然后重构",
+      "先写实现，再写测试",
+      "只写测试",
+      "只写实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-980",
+    "title": "C语言中，如何进行跨平台开发？",
+    "options": [
+      "使用条件编译、跨平台库、抽象层",
+      "只用Windows API",
+      "只用Linux API",
+      "只用标准库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-981",
+    "title": "C语言中，条件编译如何用于跨平台？",
+    "options": [
+      "使用#ifdef判断操作系统或编译器宏",
+      "使用if-else",
+      "使用虚函数",
+      "使用动态库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-982",
+    "title": "C语言中，常见的跨平台库有哪些？",
+    "options": [
+      "SDL, Qt, libuv, APR",
+      "MFC",
+      "Win32",
+      "GTK"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-983",
+    "title": "C语言中，如何处理跨平台的数据类型差异？",
+    "options": [
+      "使用stdint.h中的定宽类型如int32_t",
+      "使用int",
+      "使用long",
+      "使用指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-984",
+    "title": "C语言中，为什么应该使用size_t表示大小？",
+    "options": [
+      "它是无符号类型，足以表示对象大小，跨平台安全",
+      "它是32位",
+      "它是64位",
+      "性能更好"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-985",
+    "title": "C语言中，ptrdiff_t的作用是？",
+    "options": [
+      "表示两个指针相减的有符号结果",
+      "表示大小",
+      "表示偏移",
+      "表示地址"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-986",
+    "title": "C语言中，代码规范(如MISRA C)的重要性？",
+    "options": [
+      "提高安全性、可读性、可维护性，减少缺陷",
+      "提高性能",
+      "减少内存",
+      "加快编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-987",
+    "title": "C语言中，重构代码的原则是？",
+    "options": [
+      "小步修改、频繁测试、保持行为不变",
+      "大步修改",
+      "不写测试",
+      "改变行为"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-988",
+    "title": "C语言中，如何安全地重构遗留代码？",
+    "options": [
+      "先补充测试，再小步重构",
+      "直接重写",
+      "使用宏替换",
+      "忽略警告"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-989",
+    "title": "C语言中，Doxygen的常用注释标记是？",
+    "options": [
+      "@param, @return, @brief, @note",
+      "// TODO",
+      "/* BUG */",
+      "#define"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-990",
+    "title": "C语言中，如何设计一个好的C API？",
+    "options": [
+      "高内聚低耦合、明确的所有权、清晰的错误处理",
+      "尽量使用全局变量",
+      "暴露内部结构",
+      "避免文档"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-991",
+    "title": "C语言中，opaque pointer(不透明指针)模式的好处？",
+    "options": [
+      "隐藏实现细节，二进制兼容，减少编译依赖",
+      "提高运行速度",
+      "节省内存",
+      "简化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-992",
+    "title": "C语言中，如何实现opaque pointer？",
+    "options": [
+      "头文件只声明结构体指针，实现在.c文件中定义结构体",
+      "头文件定义结构体",
+      "使用void*",
+      "使用宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-993",
+    "title": "C语言中，回调函数中的user_data参数通常用于？",
+    "options": [
+      "传递上下文信息给回调函数",
+      "传递错误码",
+      "传递返回值",
+      "传递函数指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-994",
+    "title": "C语言中，如何避免头文件中的符号冲突？",
+    "options": [
+      "使用前缀命名、static修饰内部函数、避免导出不必要的符号",
+      "使用同名",
+      "使用全局变量",
+      "使用宏定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-995",
+    "title": "C语言中，C23标准引入了哪些新特性？",
+    "options": [
+      "bool成为内置类型、nullptr、auto类型推断、位域默认类型",
+      "类和对象",
+      "垃圾回收",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-996",
+    "title": "C语言中，C23的auto关键字与C++的区别？",
+    "options": [
+      "C23的auto只能从初始化器推断类型，不能用于函数参数",
+      "完全相同",
+      "C23更强大",
+      "C23不支持"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-997",
+    "title": "C语言中，C23引入nullptr的好处是？",
+    "options": [
+      "类型安全的空指针常量，解决NULL的宏定义问题",
+      "更好记",
+      "性能更高",
+      "占用内存少"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-998",
+    "title": "C语言中，C23的constexpr关键字的作用是？",
+    "options": [
+      "定义真正的编译期常量，可用于数组大小等",
+      "定义变量",
+      "定义函数",
+      "定义类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-999",
+    "title": "C语言中，C23对位域的改进是？",
+    "options": [
+      "允许使用bool、指定位域的底层类型",
+      [
+        "禁止位域"
+      ],
+      [
+        "取消位域"
+      ],
+      [
+        "不支持bool"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-1000",
+    "title": "C语言中，C23新增的#embed指令的作用是？",
+    "options": [
+      "在编译时将文件内容直接嵌入到源代码中",
+      "包含头文件",
+      "定义宏",
+      "条件编译"
+    ],
+    "correctAnswer": 0
+  }
+]

@@ -1,0 +1,11002 @@
+[
+  {
+    "id": "python-1",
+    "title": "Python中以下哪个不是合法的变量名？",
+    "options": [
+      "_var",
+      "var1",
+      "1var",
+      "var_1"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-2",
+    "title": "Python中哪种数据类型是不可变的？",
+    "options": [
+      "list",
+      "dict",
+      "set",
+      "tuple"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-3",
+    "title": "Python中用于单行注释的符号是？",
+    "options": [
+      "//",
+      "#",
+      "/*",
+      "--"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-4",
+    "title": "Python中用于多行注释的是？",
+    "options": [
+      "三个单引号或三个双引号",
+      "/* */",
+      "// //",
+      "# #"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-5",
+    "title": "Python中//运算符的作用是？",
+    "options": [
+      "除法",
+      "整除",
+      "取模",
+      "幂运算"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-6",
+    "title": "Python中**运算符的作用是？",
+    "options": [
+      "乘法",
+      "整除",
+      "取模",
+      "幂运算"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-7",
+    "title": "Python中==和is的区别是？",
+    "options": [
+      "==比较值，is比较内存地址",
+      "==比较内存地址，is比较值",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-8",
+    "title": "Python中以下哪个是可变数据类型？",
+    "options": [
+      "int",
+      "str",
+      "list",
+      "tuple"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-9",
+    "title": "Python中获取数据类型的函数是？",
+    "options": [
+      "type()",
+      "typeof()",
+      "dtype()",
+      "gettype()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-10",
+    "title": "Python中字符串的索引从几开始？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "取决于长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-11",
+    "title": "Python中切片操作string[1:3]获取的字符数是？",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-12",
+    "title": "Python中字符串格式化的最新推荐方式是？",
+    "options": [
+      "%格式化",
+      "format()",
+      "f-string",
+      "concat"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-13",
+    "title": "Python中列表的append()和extend()的区别是？",
+    "options": [
+      "append添加元素，extend合并列表",
+      "append合并列表，extend添加元素",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-14",
+    "title": "Python中列表的insert()方法作用是？",
+    "options": [
+      "在末尾插入",
+      "在指定位置插入",
+      "删除元素",
+      "查找元素"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-15",
+    "title": "Python中列表的pop()方法作用是？",
+    "options": [
+      "删除指定元素",
+      "删除并返回指定位置元素",
+      "添加元素",
+      "排序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-16",
+    "title": "Python中列表的remove()方法作用是？",
+    "options": [
+      "删除指定值的第一个元素",
+      "删除指定位置元素",
+      "清空列表",
+      "反转列表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-17",
+    "title": "Python中列表的sort()和sorted()的区别是？",
+    "options": [
+      "sort原地排序，sorted返回新列表",
+      "sort返回新列表，sorted原地排序",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-18",
+    "title": "Python中字典的键必须是？",
+    "options": [
+      "可变类型",
+      "不可变类型",
+      "任意类型",
+      "只能是字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-19",
+    "title": "Python中字典获取不存在的键会？",
+    "options": [
+      "返回None",
+      "抛出KeyError",
+      "返回默认值",
+      "创建键"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-20",
+    "title": "Python中字典的get()方法作用是？",
+    "options": [
+      "获取键的值，不存在返回默认值",
+      "获取键的值，不存在抛出异常",
+      "设置键的值",
+      "删除键"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-21",
+    "title": "Python中字典的setdefault()方法作用是？",
+    "options": [
+      "获取键的值，不存在则设置并返回",
+      "设置键的值",
+      "删除键",
+      "更新键"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-22",
+    "title": "Python中集合的特点是？",
+    "options": [
+      "有序，可重复",
+      "无序，不可重复",
+      "有序，不可重复",
+      "无序，可重复"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-23",
+    "title": "Python中集合的交集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-24",
+    "title": "Python中集合的并集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-25",
+    "title": "Python中集合的差集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-26",
+    "title": "Python中集合的对称差集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-27",
+    "title": "Python中元组与列表的区别是？",
+    "options": [
+      "元组可变，列表不可变",
+      "元组不可变，列表可变",
+      "没有区别",
+      "元组有序，列表无序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-28",
+    "title": "Python中如何创建单元素元组？",
+    "options": [
+      "(1)",
+      "(1,)",
+      "[1]",
+      "{1}"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-29",
+    "title": "Python中None的含义是？",
+    "options": [
+      "空字符串",
+      "0",
+      "空对象",
+      "False"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-30",
+    "title": "Python中布尔值True的整数值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-31",
+    "title": "Python中布尔值False的整数值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-32",
+    "title": "Python中以下哪个值在布尔上下文中为False？",
+    "options": [
+      "\"0\"",
+      "[]",
+      "0.0",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-33",
+    "title": "Python中input()函数的返回值类型是？",
+    "options": [
+      "int",
+      "str",
+      "float",
+      "取决于输入"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-34",
+    "title": "Python中print()函数的end参数默认是？",
+    "options": [
+      "\\n",
+      "\\t",
+      " ",
+      ""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-35",
+    "title": "Python中range(5)生成的序列是？",
+    "options": [
+      "0, 1, 2, 3, 4",
+      "1, 2, 3, 4, 5",
+      "0, 1, 2, 3, 4, 5",
+      "1, 2, 3, 4"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-36",
+    "title": "Python中range(1, 10, 2)生成的序列是？",
+    "options": [
+      "1, 3, 5, 7, 9",
+      "1, 2, 3, 4, 5",
+      "1, 4, 7",
+      "2, 4, 6, 8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-37",
+    "title": "Python中如何交换两个变量的值？",
+    "options": [
+      "a, b = b, a",
+      "a = b; b = a",
+      "temp = a; a = b; b = temp",
+      "swap(a, b)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-38",
+    "title": "Python中isinstance()函数的作用是？",
+    "options": [
+      "判断类型",
+      "创建实例",
+      "获取类型",
+      "转换类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-39",
+    "title": "Python中type()和isinstance()的区别是？",
+    "options": [
+      "type不考虑继承，isinstance考虑继承",
+      "type考虑继承，isinstance不考虑继承",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-40",
+    "title": "Python中深拷贝和浅拷贝的区别是？",
+    "options": [
+      "深拷贝递归复制，浅拷贝只复制一层",
+      "浅拷贝递归复制，深拷贝只复制一层",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-41",
+    "title": "Python中如何实现深拷贝？",
+    "options": [
+      "copy.copy()",
+      "copy.deepcopy()",
+      "list.copy()",
+      "dict.copy()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-42",
+    "title": "Python中如何实现浅拷贝？",
+    "options": [
+      "copy.copy()",
+      "copy.deepcopy()",
+      "list.deepcopy()",
+      "dict.deepcopy()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-43",
+    "title": "Python中列表推导式的语法是？",
+    "options": [
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "(x for x in iterable)",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-44",
+    "title": "Python中字典推导式的语法是？",
+    "options": [
+      "[k:v for k, v in iterable]",
+      "{k:v for k, v in iterable}",
+      "(k:v for k, v in iterable)",
+      "<k:v for k, v in iterable>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-45",
+    "title": "Python中集合推导式的语法是？",
+    "options": [
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "(x for x in iterable)",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-46",
+    "title": "Python中生成器表达式的语法是？",
+    "options": [
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "(x for x in iterable)",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-47",
+    "title": "Python中三元运算符的语法是？",
+    "options": [
+      "x if condition else y",
+      "condition ? x : y",
+      "condition ? x : y",
+      "if condition then x else y"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-48",
+    "title": "Python中pass语句的作用是？",
+    "options": [
+      "跳过循环",
+      "占位符",
+      "退出函数",
+      "抛出异常"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-49",
+    "title": "Python中break语句的作用是？",
+    "options": [
+      "跳过本次循环",
+      "跳出整个循环",
+      "跳出函数",
+      "跳出程序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-50",
+    "title": "Python中continue语句的作用是？",
+    "options": [
+      "跳过本次循环",
+      "跳出整个循环",
+      "跳出函数",
+      "跳出程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-51",
+    "title": "Python中else子句可以和哪个语句一起使用？",
+    "options": [
+      "if",
+      "for",
+      "try",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-52",
+    "title": "Python中for...else中else何时执行？",
+    "options": [
+      "循环正常结束时",
+      "循环break时",
+      "循环continue时",
+      "总是执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-53",
+    "title": "Python中try...else中else何时执行？",
+    "options": [
+      "try无异常时",
+      "try有异常时",
+      "finally执行后",
+      "总是执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-54",
+    "title": "Python中with语句的作用是？",
+    "options": [
+      "异常处理",
+      "上下文管理",
+      "循环控制",
+      "条件判断"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-55",
+    "title": "Python中字符串的join()方法作用是？",
+    "options": [
+      "连接字符串",
+      "分割字符串",
+      "查找字符串",
+      "替换字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-56",
+    "title": "Python中字符串的split()方法作用是？",
+    "options": [
+      "连接字符串",
+      "分割字符串",
+      "查找字符串",
+      "替换字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-57",
+    "title": "Python中字符串的strip()方法作用是？",
+    "options": [
+      "去除首尾指定字符",
+      "去除所有指定字符",
+      "居中对齐",
+      "左对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-58",
+    "title": "Python中字符串的replace()方法作用是？",
+    "options": [
+      "连接字符串",
+      "分割字符串",
+      "查找字符串",
+      "替换字符串"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-59",
+    "title": "Python中字符串的find()方法作用是？",
+    "options": [
+      "查找子串位置",
+      "替换子串",
+      "分割字符串",
+      "连接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-60",
+    "title": "Python中字符串的count()方法作用是？",
+    "options": [
+      "计算长度",
+      "计算子串出现次数",
+      "查找子串位置",
+      "替换子串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-61",
+    "title": "Python中字符串的startswith()方法作用是？",
+    "options": [
+      "判断是否以指定前缀开头",
+      "判断是否以指定后缀结尾",
+      "转换为大写",
+      "转换为小写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-62",
+    "title": "Python中字符串的endswith()方法作用是？",
+    "options": [
+      "判断是否以指定前缀开头",
+      "判断是否以指定后缀结尾",
+      "转换为大写",
+      "转换为小写"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-63",
+    "title": "Python中字符串的upper()方法作用是？",
+    "options": [
+      "转换为大写",
+      "转换为小写",
+      "首字母大写",
+      "反转字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-64",
+    "title": "Python中字符串的lower()方法作用是？",
+    "options": [
+      "转换为大写",
+      "转换为小写",
+      "首字母大写",
+      "反转字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-65",
+    "title": "Python中字符串的title()方法作用是？",
+    "options": [
+      "转换为大写",
+      "转换为小写",
+      "每个单词首字母大写",
+      "反转字符串"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-66",
+    "title": "Python中字符串的capitalize()方法作用是？",
+    "options": [
+      "转换为大写",
+      "转换为小写",
+      "首字母大写",
+      "反转字符串"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-67",
+    "title": "Python中字符串的isdigit()方法作用是？",
+    "options": [
+      "判断是否为数字",
+      "判断是否为字母",
+      "判断是否为空格",
+      "判断是否为标题"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-68",
+    "title": "Python中字符串的isalpha()方法作用是？",
+    "options": [
+      "判断是否为数字",
+      "判断是否为字母",
+      "判断是否为空格",
+      "判断是否为标题"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-69",
+    "title": "Python中字符串的isspace()方法作用是？",
+    "options": [
+      "判断是否为数字",
+      "判断是否为字母",
+      "判断是否为空格",
+      "判断是否为标题"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-70",
+    "title": "Python中字符串的format()方法中{}的用法是？",
+    "options": [
+      "位置或关键字参数",
+      "只能位置参数",
+      "只能关键字参数",
+      "变量名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-71",
+    "title": "Python中f-string中{}的用法是？",
+    "options": [
+      "表达式",
+      "只能变量",
+      "只能函数",
+      "字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-72",
+    "title": "Python中列表的copy()方法是深拷贝还是浅拷贝？",
+    "options": [
+      "深拷贝",
+      "浅拷贝",
+      "既不是",
+      "取决于元素"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-73",
+    "title": "Python中字典的copy()方法是深拷贝还是浅拷贝？",
+    "options": [
+      "深拷贝",
+      "浅拷贝",
+      "既不是",
+      "取决于元素"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-74",
+    "title": "Python中如何判断列表是否为空？",
+    "options": [
+      "if not list",
+      "if list == null",
+      "if list == undefined",
+      "if list == None"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-75",
+    "title": "Python中如何合并两个字典？",
+    "options": [
+      "dict1.update(dict2)",
+      "dict1.add(dict2)",
+      "dict1.append(dict2)",
+      "dict1.extend(dict2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-76",
+    "title": "Python中如何删除字典的键？",
+    "options": [
+      "del dict[key]",
+      "dict.delete(key)",
+      "dict.remove(key)",
+      "dict.pop(key)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-77",
+    "title": "Python中如何获取字典的所有键？",
+    "options": [
+      "dict.keys()",
+      "dict.values()",
+      "dict.items()",
+      "dict.all()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-78",
+    "title": "Python中如何获取字典的所有值？",
+    "options": [
+      "dict.keys()",
+      "dict.values()",
+      "dict.items()",
+      "dict.all()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-79",
+    "title": "Python中如何获取字典的所有键值对？",
+    "options": [
+      "dict.keys()",
+      "dict.values()",
+      "dict.items()",
+      "dict.all()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-80",
+    "title": "Python中集合的add()方法作用是？",
+    "options": [
+      "添加元素",
+      "删除元素",
+      "更新集合",
+      "清空集合"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-81",
+    "title": "Python中集合的discard()方法作用是？",
+    "options": [
+      "添加元素",
+      "删除元素，不存在不报错",
+      "删除元素，不存在报错",
+      "清空集合"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-82",
+    "title": "Python中集合的remove()方法作用是？",
+    "options": [
+      "添加元素",
+      "删除元素，不存在不报错",
+      "删除元素，不存在报错",
+      "清空集合"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-83",
+    "title": "Python中集合的clear()方法作用是？",
+    "options": [
+      "添加元素",
+      "删除元素",
+      "更新集合",
+      "清空集合"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-84",
+    "title": "Python中集合的update()方法作用是？",
+    "options": [
+      "添加元素",
+      "删除元素",
+      "更新集合",
+      "清空集合"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-85",
+    "title": "Python中解包操作符*的作用是？",
+    "options": [
+      "解包可迭代对象",
+      "解包字典",
+      "幂运算",
+      "乘法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-86",
+    "title": "Python中解包操作符**的作用是？",
+    "options": [
+      "解包可迭代对象",
+      "解包字典",
+      "幂运算",
+      "乘法"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-87",
+    "title": "Python中如何定义多行字符串？",
+    "options": [
+      "三个引号",
+      "三个双引号",
+      "反斜杠续行",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-88",
+    "title": "Python中原始字符串的前缀是？",
+    "options": [
+      "r",
+      "u",
+      "b",
+      "f"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-89",
+    "title": "Python中字节串的前缀是？",
+    "options": [
+      "r",
+      "u",
+      "b",
+      "f"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-90",
+    "title": "Python中格式化字符串的前缀是？",
+    "options": [
+      "r",
+      "u",
+      "b",
+      "f"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-91",
+    "title": "Python中枚举类型的定义使用？",
+    "options": [
+      "enum.Enum",
+      "Enum",
+      "enumerate",
+      "enum"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-92",
+    "title": "Python中全局变量声明使用？",
+    "options": [
+      "global",
+      "nonlocal",
+      "static",
+      "public"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-93",
+    "title": "Python中非局部变量声明使用？",
+    "options": [
+      "global",
+      "nonlocal",
+      "static",
+      "public"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-94",
+    "title": "Python中如何查看所有关键字？",
+    "options": [
+      "keyword.kwlist",
+      "keywords()",
+      "help()",
+      "dir()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-95",
+    "title": "Python中如何查看模块的所有函数？",
+    "options": [
+      "dir(module)",
+      "help(module)",
+      "module.__all__",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-96",
+    "title": "Python中如何获取变量占用的字节数？",
+    "options": [
+      "sys.getsizeof()",
+      "sizeof()",
+      "size()",
+      "len()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-97",
+    "title": "Python中如何获取对象的所有属性？",
+    "options": [
+      "dir(obj)",
+      "obj.__dict__",
+      "vars(obj)",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-98",
+    "title": "Python中如何判断对象是否有某个属性？",
+    "options": [
+      "hasattr()",
+      "getattr()",
+      "setattr()",
+      "delattr()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-99",
+    "title": "Python中如何获取对象的属性值？",
+    "options": [
+      "hasattr()",
+      "getattr()",
+      "setattr()",
+      "delattr()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-100",
+    "title": "Python中如何设置对象的属性值？",
+    "options": [
+      "hasattr()",
+      "getattr()",
+      "setattr()",
+      "delattr()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-101",
+    "title": "Python中如何删除对象的属性？",
+    "options": [
+      "hasattr()",
+      "getattr()",
+      "setattr()",
+      "delattr()"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-102",
+    "title": "Python中如何判断函数是否为可调用对象？",
+    "options": [
+      "callable()",
+      "is_callable()",
+      "can_call()",
+      "function()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-103",
+    "title": "Python中如何将字符串作为代码执行？",
+    "options": [
+      "eval()",
+      "exec()",
+      "compile()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-104",
+    "title": "Python中eval()和exec()的区别是？",
+    "options": [
+      "eval执行表达式并返回值，exec执行语句",
+      "eval执行语句，exec执行表达式",
+      "没有区别",
+      "取决于代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-105",
+    "title": "Python中如何获取当前工作目录？",
+    "options": [
+      "os.getcwd()",
+      "os.curdir",
+      "os.path.getcwd()",
+      "sys.getcwd()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-106",
+    "title": "Python中如何列出目录下的文件？",
+    "options": [
+      "os.listdir()",
+      "os.scandir()",
+      "os.walk()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-107",
+    "title": "Python中如何创建目录？",
+    "options": [
+      "os.mkdir()",
+      "os.makedirs()",
+      "os.create_dir()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-108",
+    "title": "Python中如何删除文件？",
+    "options": [
+      "os.remove()",
+      "os.unlink()",
+      "os.delete()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-109",
+    "title": "Python中如何重命名文件？",
+    "options": [
+      "os.rename()",
+      "os.renames()",
+      "os.move()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-110",
+    "title": "Python中如何获取文件大小？",
+    "options": [
+      "os.path.getsize()",
+      "os.filesize()",
+      "os.stat().st_size",
+      "A和C都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-111",
+    "title": "Python中如何获取环境变量？",
+    "options": [
+      "os.getenv()",
+      "os.environ",
+      "os.get_env()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-112",
+    "title": "Python中如何退出程序？",
+    "options": [
+      "sys.exit()",
+      "exit()",
+      "quit()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-113",
+    "title": "Python中如何获取命令行参数？",
+    "options": [
+      "sys.argv",
+      "os.argv",
+      "argparse",
+      "A和C都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-114",
+    "title": "Python中如何获取系统平台信息？",
+    "options": [
+      "sys.platform",
+      "os.name",
+      "platform.system()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-115",
+    "title": "Python中如何获取Python版本？",
+    "options": [
+      "sys.version",
+      "platform.python_version()",
+      "python --version",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-116",
+    "title": "Python中如何获取当前时间？",
+    "options": [
+      "datetime.now()",
+      "datetime.datetime.now()",
+      "time.time()",
+      "B和C都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-117",
+    "title": "Python中如何休眠？",
+    "options": [
+      "time.sleep()",
+      "sys.sleep()",
+      "os.sleep()",
+      "thread.sleep()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-118",
+    "title": "Python中如何生成随机数？",
+    "options": [
+      "random.random()",
+      "random.randint()",
+      "random.uniform()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-119",
+    "title": "Python中如何对列表随机排序？",
+    "options": [
+      "random.shuffle()",
+      "random.sample()",
+      "random.choice()",
+      "random.sort()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-120",
+    "title": "Python中如何从列表中随机选择？",
+    "options": [
+      "random.shuffle()",
+      "random.sample()",
+      "random.choice()",
+      "random.sort()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-121",
+    "title": "Python中函数的参数类型有？",
+    "options": [
+      "位置参数，关键字参数，默认参数，可变参数",
+      "值参数，引用参数",
+      "输入参数，输出参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-122",
+    "title": "Python中*args的作用是？",
+    "options": [
+      "接收多个位置参数",
+      "接收多个关键字参数",
+      "接收默认参数",
+      "接收可变参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-123",
+    "title": "Python中**kwargs的作用是？",
+    "options": [
+      "接收多个位置参数",
+      "接收多个关键字参数",
+      "接收默认参数",
+      "接收可变参数"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-124",
+    "title": "Python中函数的返回值可以有多个吗？",
+    "options": [
+      "可以，以元组形式返回",
+      "不可以",
+      "只能返回两个",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-125",
+    "title": "Python中lambda表达式的作用是？",
+    "options": [
+      "创建匿名函数",
+      "创建命名函数",
+      "创建类",
+      "创建模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-126",
+    "title": "Python中lambda表达式的限制是？",
+    "options": [
+      "只能包含一个表达式",
+      "不能有参数",
+      "不能有返回值",
+      "不能调用其他函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-127",
+    "title": "Python中map()函数的作用是？",
+    "options": [
+      "对可迭代对象应用函数",
+      "过滤可迭代对象",
+      "累积计算",
+      "排序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-128",
+    "title": "Python中filter()函数的作用是？",
+    "options": [
+      "对可迭代对象应用函数",
+      "过滤可迭代对象",
+      "累积计算",
+      "排序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-129",
+    "title": "Python中reduce()函数的作用是？",
+    "options": [
+      "对可迭代对象应用函数",
+      "过滤可迭代对象",
+      "累积计算",
+      "排序"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-130",
+    "title": "Python中reduce()函数在哪个模块？",
+    "options": [
+      "functools",
+      "reduce",
+      "itertools",
+      "builtin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-131",
+    "title": "Python中sorted()函数的key参数作用是？",
+    "options": [
+      "指定排序规则",
+      "指定排序方向",
+      "指定排序算法",
+      "指定排序范围"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-132",
+    "title": "Python中sorted()函数的reverse参数作用是？",
+    "options": [
+      "指定排序规则",
+      "指定排序方向",
+      "指定排序算法",
+      "指定排序范围"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-133",
+    "title": "Python中闭包的条件是？",
+    "options": [
+      "嵌套函数，内部函数引用外部变量，外部函数返回内部函数",
+      "函数内部定义函数",
+      "函数返回函数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-134",
+    "title": "Python中装饰器的作用是？",
+    "options": [
+      "增强函数功能",
+      "简化函数",
+      "删除函数",
+      "重命名函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-135",
+    "title": "Python中装饰器的语法是？",
+    "options": [
+      "@decorator",
+      "#decorator",
+      "//decorator",
+      "decorator()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-136",
+    "title": "Python中装饰器本质上是什么？",
+    "options": [
+      "函数或类",
+      "变量",
+      "模块",
+      "包"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-137",
+    "title": "Python中functools.wraps装饰器的作用是？",
+    "options": [
+      "保留原函数信息",
+      "增强原函数",
+      "删除原函数",
+      "重命名原函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-138",
+    "title": "Python中类定义使用的关键字是？",
+    "options": [
+      "class",
+      "def",
+      "struct",
+      "type"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-139",
+    "title": "Python中类的构造方法名是？",
+    "options": [
+      "__init__",
+      "__new__",
+      "__create__",
+      "__construct__"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-140",
+    "title": "Python中类的析构方法名是？",
+    "options": [
+      "__del__",
+      "__destroy__",
+      "__delete__",
+      "__remove__"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-141",
+    "title": "Python中类的方法第一个参数通常是？",
+    "options": [
+      "self",
+      "this",
+      "cls",
+      "me"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-142",
+    "title": "Python中类方法第一个参数通常是？",
+    "options": [
+      "self",
+      "this",
+      "cls",
+      "me"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-143",
+    "title": "Python中静态方法不需要哪个参数？",
+    "options": [
+      "self",
+      "cls",
+      "以上都不需要",
+      "取决于定义"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-144",
+    "title": "Python中类方法使用哪个装饰器？",
+    "options": [
+      "@classmethod",
+      "@staticmethod",
+      "@property",
+      "@method"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-145",
+    "title": "Python中静态方法使用哪个装饰器？",
+    "options": [
+      "@classmethod",
+      "@staticmethod",
+      "@property",
+      "@method"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-146",
+    "title": "Python中属性装饰器使用哪个？",
+    "options": [
+      "@classmethod",
+      "@staticmethod",
+      "@property",
+      "@method"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-147",
+    "title": "Python中@property的作用是？",
+    "options": [
+      "将方法变为属性",
+      "将属性变为方法",
+      "定义类方法",
+      "定义静态方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-148",
+    "title": "Python中继承的语法是？",
+    "options": [
+      "class Child(Parent)",
+      "class Child inherits Parent",
+      "class Child extends Parent",
+      "class Child implements Parent"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-149",
+    "title": "Python中是否支持多重继承？",
+    "options": [
+      "支持",
+      "不支持",
+      "只支持单继承",
+      "取决于父类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-150",
+    "title": "Python中MRO是指？",
+    "options": [
+      "方法解析顺序",
+      "内存回收对象",
+      "模块引用优化",
+      "多线程运行对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-151",
+    "title": "Python中MRO的算法是？",
+    "options": [
+      "C3线性化",
+      "深度优先",
+      "广度优先",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-152",
+    "title": "Python中多态的实现方式是？",
+    "options": [
+      "鸭子类型",
+      "方法重写",
+      "接口实现",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-153",
+    "title": "Python中鸭子类型是指？",
+    "options": [
+      "关注对象的行为而非类型",
+      "关注对象的类型而非行为",
+      "一种设计模式",
+      "一种数据类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-154",
+    "title": "Python中封装的实现方式是？",
+    "options": [
+      "使用下划线约定",
+      "使用private关键字",
+      "使用protected关键字",
+      "使用public关键字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-155",
+    "title": "Python中单下划线前缀表示？",
+    "options": [
+      "内部使用",
+      "私有",
+      "强私有",
+      "特殊方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-156",
+    "title": "Python中双下划线前缀表示？",
+    "options": [
+      "内部使用",
+      "私有，触发名称改写",
+      "强私有，不触发名称改写",
+      "特殊方法"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-157",
+    "title": "Python中双下划线前后缀表示？",
+    "options": [
+      "内部使用",
+      "私有",
+      "强私有",
+      "魔术方法"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-158",
+    "title": "Python中名称改写是指？",
+    "options": [
+      "将__attr改为_Class__attr",
+      "将__attr改为__attr",
+      "将attr改为__attr",
+      "将_Class__attr改为__attr"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-159",
+    "title": "Python中super()函数的作用是？",
+    "options": [
+      "调用父类方法",
+      "调用子类方法",
+      "调用类方法",
+      "调用静态方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-160",
+    "title": "Python中isinstance()和type()的区别是？",
+    "options": [
+      "isinstance考虑继承，type不考虑",
+      "isinstance不考虑继承，type考虑",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-161",
+    "title": "Python中__new__和__init__的区别是？",
+    "options": [
+      "__new__创建对象，__init__初始化对象",
+      "__new__初始化对象，__init__创建对象",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-162",
+    "title": "Python中__call__方法的作用是？",
+    "options": [
+      "使实例可调用",
+      "使类可调用",
+      "使方法可调用",
+      "使模块可调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-163",
+    "title": "Python中__str__方法的作用是？",
+    "options": [
+      "返回对象的字符串表示",
+      "返回对象的官方字符串表示",
+      "返回对象的长度",
+      "返回对象的类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-164",
+    "title": "Python中__repr__方法的作用是？",
+    "options": [
+      "返回对象的字符串表示",
+      "返回对象的官方字符串表示",
+      "返回对象的长度",
+      "返回对象的类型"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-165",
+    "title": "Python中__len__方法的作用是？",
+    "options": [
+      "返回对象的长度",
+      "返回对象的字符串表示",
+      "返回对象的布尔值",
+      "返回对象的类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-166",
+    "title": "Python中__getitem__方法的作用是？",
+    "options": [
+      "实现索引访问",
+      "实现迭代",
+      "实现切片",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-167",
+    "title": "Python中__setitem__方法的作用是？",
+    "options": [
+      "实现索引赋值",
+      "实现迭代",
+      "实现切片",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-168",
+    "title": "Python中__iter__方法的作用是？",
+    "options": [
+      "实现迭代",
+      "实现索引访问",
+      "实现切片",
+      "实现长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-169",
+    "title": "Python中__next__方法的作用是？",
+    "options": [
+      "返回下一个值",
+      "实现迭代",
+      "实现索引访问",
+      "实现切片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-170",
+    "title": "Python中__contains__方法的作用是？",
+    "options": [
+      "实现in操作符",
+      "实现索引访问",
+      "实现迭代",
+      "实现切片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-171",
+    "title": "Python中__add__方法的作用是？",
+    "options": [
+      "实现+操作符",
+      "实现-操作符",
+      "实现*操作符",
+      "实现/操作符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-172",
+    "title": "Python中__sub__方法的作用是？",
+    "options": [
+      "实现+操作符",
+      "实现-操作符",
+      "实现*操作符",
+      "实现/操作符"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-173",
+    "title": "Python中__mul__方法的作用是？",
+    "options": [
+      "实现+操作符",
+      "实现-操作符",
+      "实现*操作符",
+      "实现/操作符"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-174",
+    "title": "Python中__eq__方法的作用是？",
+    "options": [
+      "实现==操作符",
+      "实现!=操作符",
+      "实现<操作符",
+      "实现>操作符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-175",
+    "title": "Python中__lt__方法的作用是？",
+    "options": [
+      "实现==操作符",
+      "实现!=操作符",
+      "实现<操作符",
+      "实现>操作符"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-176",
+    "title": "Python中__gt__方法的作用是？",
+    "options": [
+      "实现==操作符",
+      "实现!=操作符",
+      "实现<操作符",
+      "实现>操作符"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-177",
+    "title": "Python中__enter__和__exit__方法的作用是？",
+    "options": [
+      "实现上下文管理器",
+      "实现迭代器",
+      "实现生成器",
+      "实现装饰器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-178",
+    "title": "Python中__slots__的作用是？",
+    "options": [
+      "限制类的属性",
+      "增加类的属性",
+      "删除类的属性",
+      "修改类的属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-179",
+    "title": "Python中__slots__的好处是？",
+    "options": [
+      "节省内存",
+      "提高访问速度",
+      "防止动态添加属性",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-180",
+    "title": "Python中描述符是指？",
+    "options": [
+      "实现了__get__, __set__, __delete__的类",
+      "实现了__init__的类",
+      "实现了__call__的类",
+      "实现了__new__的类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-181",
+    "title": "Python中元类是指？",
+    "options": [
+      "创建类的类",
+      "类的实例",
+      "类的父类",
+      "类的子类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-182",
+    "title": "Python中元类的默认类型是？",
+    "options": [
+      "type",
+      "object",
+      "class",
+      "metaclass"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-183",
+    "title": "Python中如何自定义元类？",
+    "options": [
+      "继承type",
+      "继承object",
+      "继承class",
+      "继承metaclass"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-184",
+    "title": "Python中__metaclass__的作用是？",
+    "options": [
+      "指定元类",
+      "指定父类",
+      "指定属性",
+      "指定方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-185",
+    "title": "Python中抽象基类的作用是？",
+    "options": [
+      "定义接口规范",
+      "实现多态",
+      "实现继承",
+      "实现封装"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-186",
+    "title": "Python中抽象基类在哪个模块？",
+    "options": [
+      "abc",
+      "abstract",
+      "interface",
+      "base"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-187",
+    "title": "Python中@abstractmethod的作用是？",
+    "options": [
+      "标记抽象方法",
+      "标记类方法",
+      "标记静态方法",
+      "标记属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-188",
+    "title": "Python中抽象基类可以实例化吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "部分可以",
+      "取决于定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-189",
+    "title": "Python中dataclass的作用是？",
+    "options": [
+      "自动生成特殊方法",
+      "定义抽象类",
+      "定义元类",
+      "定义描述符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-190",
+    "title": "Python中dataclass在哪个模块？",
+    "options": [
+      "dataclasses",
+      "dataclass",
+      "classes",
+      "typing"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-191",
+    "title": "Python中dataclass的默认属性是可变还是不可变？",
+    "options": [
+      "可变",
+      "不可变",
+      "取决于定义",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-192",
+    "title": "Python中如何定义不可变的dataclass？",
+    "options": [
+      "frozen=True",
+      "immutable=True",
+      "readonly=True",
+      "const=True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-193",
+    "title": "Python中枚举类的作用是？",
+    "options": [
+      "定义常量集合",
+      "定义变量集合",
+      "定义函数集合",
+      "定义类集合"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-194",
+    "title": "Python中枚举类在哪个模块？",
+    "options": [
+      "enum",
+      "enumerate",
+      "constants",
+      "types"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-195",
+    "title": "Python中枚举类的成员可以是？",
+    "options": [
+      "整数，字符串",
+      "元组",
+      "列表",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-196",
+    "title": "Python中@unique装饰器的作用是？",
+    "options": [
+      "确保枚举值唯一",
+      "确保枚举名唯一",
+      "确保枚举类型唯一",
+      "确保枚举成员唯一"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-197",
+    "title": "Python中函数注解的作用是？",
+    "options": [
+      "提供类型提示",
+      "强制类型检查",
+      "运行时类型验证",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-198",
+    "title": "Python中如何获取函数注解？",
+    "options": [
+      "__annotations__",
+      "__types__",
+      "__hints__",
+      "__notes__"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-199",
+    "title": "Python中typing模块的作用是？",
+    "options": [
+      "提供类型提示",
+      "强制类型检查",
+      "运行时类型验证",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-200",
+    "title": "Python中typing.List和list的区别是？",
+    "options": [
+      "typing.List用于注解，list用于运行时",
+      "typing.List用于运行时，list用于注解",
+      "没有区别",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-201",
+    "title": "Python中typing.Optional的作用是？",
+    "options": [
+      "表示可选类型",
+      "表示必选类型",
+      "表示默认类型",
+      "表示空类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-202",
+    "title": "Python中typing.Union的作用是？",
+    "options": [
+      "表示联合类型",
+      "表示可选类型",
+      "表示默认类型",
+      "表示空类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-203",
+    "title": "Python中typing.Any的作用是？",
+    "options": [
+      "表示任意类型",
+      "表示无类型",
+      "表示默认类型",
+      "表示空类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-204",
+    "title": "Python中typing.Callable的作用是？",
+    "options": [
+      "表示可调用类型",
+      "表示不可调用类型",
+      "表示函数类型",
+      "表示方法类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-205",
+    "title": "Python中typing.TypeVar的作用是？",
+    "options": [
+      "定义泛型类型变量",
+      "定义普通类型变量",
+      "定义常量",
+      "定义枚举"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-206",
+    "title": "Python中typing.Generic的作用是？",
+    "options": [
+      "定义泛型类",
+      "定义普通类",
+      "定义抽象类",
+      "定义元类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-207",
+    "title": "Python中__all__的作用是？",
+    "options": [
+      "定义模块的公共接口",
+      "定义模块的所有属性",
+      "定义模块的所有方法",
+      "定义模块的所有类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-208",
+    "title": "Python中__name__的作用是？",
+    "options": [
+      "判断模块是否为主模块",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-209",
+    "title": "Python中__file__的作用是？",
+    "options": [
+      "获取模块文件路径",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-210",
+    "title": "Python中__doc__的作用是？",
+    "options": [
+      "获取文档字符串",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-211",
+    "title": "Python中__package__的作用是？",
+    "options": [
+      "获取模块所在包",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-212",
+    "title": "Python中__dict__的作用是？",
+    "options": [
+      "获取对象的属性字典",
+      "获取对象的方法字典",
+      "获取对象的类字典",
+      "获取对象的模块字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-213",
+    "title": "Python中__class__的作用是？",
+    "options": [
+      "获取对象的类",
+      "获取对象的父类",
+      "获取对象的子类",
+      "获取对象的模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-214",
+    "title": "Python中__bases__的作用是？",
+    "options": [
+      "获取类的父类元组",
+      "获取类的子类元组",
+      "获取类的属性字典",
+      "获取类的方法字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-215",
+    "title": "Python中__mro__的作用是？",
+    "options": [
+      "获取类的方法解析顺序",
+      "获取类的父类元组",
+      "获取类的属性字典",
+      "获取类的方法字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-216",
+    "title": "Python中__subclasses__的作用是？",
+    "options": [
+      "获取类的子类列表",
+      "获取类的父类列表",
+      "获取类的属性字典",
+      "获取类的方法字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-217",
+    "title": "Python中如何动态创建类？",
+    "options": [
+      "type(name, bases, dict)",
+      "class(name, bases, dict)",
+      "create_class(name, bases, dict)",
+      "new_class(name, bases, dict)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-218",
+    "title": "Python中如何判断类是否是另一个类的子类？",
+    "options": [
+      "issubclass()",
+      "isinstance()",
+      "ischild()",
+      "inherits()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-219",
+    "title": "Python中如何获取对象的属性字典？",
+    "options": [
+      "vars()",
+      "dir()",
+      "locals()",
+      "globals()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-220",
+    "title": "Python中如何同时获取字典的键和值？",
+    "options": [
+      "dict.items()",
+      "dict.keys()",
+      "dict.values()",
+      "dict.all()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-221",
+    "title": "Python中如何反转字典的键值对？",
+    "options": [
+      "{v:k for k,v in d.items()}",
+      "d.reverse()",
+      "d.invert()",
+      "d.swap()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-222",
+    "title": "Python中如何统计列表中元素出现的次数？",
+    "options": [
+      "collections.Counter",
+      "list.count()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-223",
+    "title": "Python中如何命名元组？",
+    "options": [
+      "collections.namedtuple",
+      "typing.NamedTuple",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-224",
+    "title": "Python中如何创建有序字典？",
+    "options": [
+      "collections.OrderedDict",
+      "dict(sorted())",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-225",
+    "title": "Python中如何创建默认字典？",
+    "options": [
+      "collections.defaultdict",
+      "dict.setdefault()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-226",
+    "title": "Python中如何创建双向队列？",
+    "options": [
+      "collections.deque",
+      "queue.Queue",
+      "list",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-227",
+    "title": "Python中deque的popleft()时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-228",
+    "title": "Python中list的pop(0)时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-229",
+    "title": "Python中如何创建不可变集合？",
+    "options": [
+      "frozenset()",
+      "immutable_set()",
+      "const_set()",
+      "fixed_set()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-230",
+    "title": "Python中frozenset的特点是？",
+    "options": [
+      "不可变，可哈希",
+      "可变，可哈希",
+      "不可变，不可哈希",
+      "可变，不可哈希"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-231",
+    "title": "Python中如何创建堆？",
+    "options": [
+      "heapq",
+      "priority_queue",
+      "heap",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-232",
+    "title": "Python中heapq的时间复杂度是？",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-233",
+    "title": "Python中如何合并两个列表？",
+    "options": [
+      "list1 + list2",
+      "list1.extend(list2)",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-234",
+    "title": "Python中如何扁平化嵌套列表？",
+    "options": [
+      "递归或itertools.chain",
+      "list.flatten()",
+      "list.flat()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-235",
+    "title": "Python中如何对列表去重？",
+    "options": [
+      "list(set(list))",
+      "dict.fromkeys(list)",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-236",
+    "title": "Python中如何对列表去重并保持顺序？",
+    "options": [
+      "dict.fromkeys(list)",
+      "list(set(list))",
+      "list.unique()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-237",
+    "title": "Python中如何获取列表的最后一个元素？",
+    "options": [
+      "list[-1]",
+      "list[len(list)]",
+      "list.last()",
+      "list.end()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-238",
+    "title": "Python中如何获取列表的倒数第二个元素？",
+    "options": [
+      "list[-2]",
+      "list[len(list)-2]",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-239",
+    "title": "Python中如何创建全0列表？",
+    "options": [
+      "[0] * n",
+      "list.zeros(n)",
+      "array(n)",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-240",
+    "title": "Python中如何创建二维列表？",
+    "options": [
+      "[[0]*n for _ in range(m)]",
+      "[[0]*n]*m",
+      "matrix(m,n)",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-241",
+    "title": "Python中迭代器是指？",
+    "options": [
+      "实现了__iter__和__next__的对象",
+      "实现了__next__的对象",
+      "实现了__iter__的对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-242",
+    "title": "Python中迭代器的特点是？",
+    "options": [
+      "惰性计算，节省内存",
+      "可以随机访问",
+      "可以重复迭代",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-243",
+    "title": "Python中生成器是指？",
+    "options": [
+      "使用yield的函数",
+      "使用return的函数",
+      "使用await的函数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-244",
+    "title": "Python中生成器的特点是？",
+    "options": [
+      "惰性计算，节省内存",
+      "可以随机访问",
+      "可以重复迭代",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-245",
+    "title": "Python中yield的作用是？",
+    "options": [
+      "暂停函数并返回值",
+      "结束函数并返回值",
+      "抛出异常",
+      "继续执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-246",
+    "title": "Python中生成器表达式的语法是？",
+    "options": [
+      "(x for x in iterable)",
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-247",
+    "title": "Python中生成器表达式的返回值是？",
+    "options": [
+      "生成器对象",
+      "列表",
+      "元组",
+      "集合"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-248",
+    "title": "Python中send()方法的作用是？",
+    "options": [
+      "向生成器发送值",
+      "启动生成器",
+      "关闭生成器",
+      "抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-249",
+    "title": "Python中throw()方法的作用是？",
+    "options": [
+      "向生成器发送值",
+      "启动生成器",
+      "关闭生成器",
+      "在生成器中抛出异常"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-250",
+    "title": "Python中close()方法的作用是？",
+    "options": [
+      "向生成器发送值",
+      "启动生成器",
+      "关闭生成器",
+      "抛出异常"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-251",
+    "title": "Python中itertools模块的作用是？",
+    "options": [
+      "提供迭代器工具",
+      "提供时间工具",
+      "提供系统工具",
+      "提供网络工具"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-252",
+    "title": "Python中itertools.count()的作用是？",
+    "options": [
+      "创建无限计数器",
+      "创建有限计数器",
+      "创建循环计数器",
+      "创建累加器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-253",
+    "title": "Python中itertools.cycle()的作用是？",
+    "options": [
+      "创建无限计数器",
+      "创建有限计数器",
+      "创建无限循环迭代器",
+      "创建累加器"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-254",
+    "title": "Python中itertools.repeat()的作用是？",
+    "options": [
+      "创建无限计数器",
+      "创建重复元素的迭代器",
+      "创建无限循环迭代器",
+      "创建累加器"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-255",
+    "title": "Python中itertools.chain()的作用是？",
+    "options": [
+      "合并迭代器",
+      "过滤迭代器",
+      "排序迭代器",
+      "分组迭代器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-256",
+    "title": "Python中itertools.groupby()的作用是？",
+    "options": [
+      "合并迭代器",
+      "过滤迭代器",
+      "排序迭代器",
+      "分组迭代器"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-257",
+    "title": "Python中itertools.islice()的作用是？",
+    "options": [
+      "切片迭代器",
+      "过滤迭代器",
+      "排序迭代器",
+      "分组迭代器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-258",
+    "title": "Python中正则表达式模块是？",
+    "options": [
+      "re",
+      "regex",
+      "regexp",
+      "pattern"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-259",
+    "title": "Python中re.match()的作用是？",
+    "options": [
+      "从开头匹配",
+      "搜索任意位置",
+      "全文匹配",
+      "替换匹配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-260",
+    "title": "Python中re.search()的作用是？",
+    "options": [
+      "从开头匹配",
+      "搜索任意位置",
+      "全文匹配",
+      "替换匹配"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-261",
+    "title": "Python中re.findall()的作用是？",
+    "options": [
+      "从开头匹配",
+      "搜索任意位置",
+      "找到所有匹配",
+      "替换匹配"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-262",
+    "title": "Python中re.sub()的作用是？",
+    "options": [
+      "从开头匹配",
+      "搜索任意位置",
+      "找到所有匹配",
+      "替换匹配"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-263",
+    "title": "Python中re.split()的作用是？",
+    "options": [
+      "从开头匹配",
+      "搜索任意位置",
+      "分割字符串",
+      "替换匹配"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-264",
+    "title": "Python中正则表达式的.表示？",
+    "options": [
+      "任意字符",
+      "换行符",
+      "空白符",
+      "数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-265",
+    "title": "Python中正则表达式的*表示？",
+    "options": [
+      "0次或多次",
+      "1次或多次",
+      "0次或1次",
+      "恰好n次"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-266",
+    "title": "Python中正则表达式的+表示？",
+    "options": [
+      "0次或多次",
+      "1次或多次",
+      "0次或1次",
+      "恰好n次"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-267",
+    "title": "Python中正则表达式的?表示？",
+    "options": [
+      "0次或多次",
+      "1次或多次",
+      "0次或1次",
+      "恰好n次"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-268",
+    "title": "Python中正则表达式的^表示？",
+    "options": [
+      "行首",
+      "行尾",
+      "任意字符",
+      "数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-269",
+    "title": "Python中正则表达式的$表示？",
+    "options": [
+      "行首",
+      "行尾",
+      "任意字符",
+      "数字"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-270",
+    "title": "Python中正则表达式的\\d表示？",
+    "options": [
+      "数字",
+      "非数字",
+      "空白",
+      "非空白"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-271",
+    "title": "Python中正则表达式的\\w表示？",
+    "options": [
+      "单词字符",
+      "非单词字符",
+      "空白",
+      "非空白"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-272",
+    "title": "Python中正则表达式的\\s表示？",
+    "options": [
+      "单词字符",
+      "非单词字符",
+      "空白",
+      "非空白"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-273",
+    "title": "Python中正则表达式的\\b表示？",
+    "options": [
+      "单词边界",
+      "非单词边界",
+      "空白",
+      "非空白"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-274",
+    "title": "Python中正则表达式的[]表示？",
+    "options": [
+      "字符集",
+      "分组",
+      "或操作",
+      "非操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-275",
+    "title": "Python中正则表达式的()表示？",
+    "options": [
+      "字符集",
+      "分组",
+      "或操作",
+      "非操作"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-276",
+    "title": "Python中正则表达式的|表示？",
+    "options": [
+      "字符集",
+      "分组",
+      "或操作",
+      "非操作"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-277",
+    "title": "Python中正则表达式的(?P<name>...)表示？",
+    "options": [
+      "命名分组",
+      "非捕获分组",
+      "正向肯定预查",
+      "正向否定预查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-278",
+    "title": "Python中re.VERBOSE的作用是？",
+    "options": [
+      "允许注释和空白",
+      "忽略大小写",
+      "多行模式",
+      "点匹配换行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-279",
+    "title": "Python中re.IGNORECASE的作用是？",
+    "options": [
+      "允许注释和空白",
+      "忽略大小写",
+      "多行模式",
+      "点匹配换行"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-280",
+    "title": "Python中re.MULTILINE的作用是？",
+    "options": [
+      "允许注释和空白",
+      "忽略大小写",
+      "多行模式",
+      "点匹配换行"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-281",
+    "title": "Python中re.DOTALL的作用是？",
+    "options": [
+      "允许注释和空白",
+      "忽略大小写",
+      "多行模式",
+      "点匹配换行"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-282",
+    "title": "Python中json模块的作用是？",
+    "options": [
+      "JSON编解码",
+      "XML编解码",
+      "YAML编解码",
+      "CSV编解码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-283",
+    "title": "Python中json.dumps()的作用是？",
+    "options": [
+      "编码为JSON字符串",
+      "解码JSON字符串",
+      "编码为JSON文件",
+      "解码JSON文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-284",
+    "title": "Python中json.loads()的作用是？",
+    "options": [
+      "编码为JSON字符串",
+      "解码JSON字符串",
+      "编码为JSON文件",
+      "解码JSON文件"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-285",
+    "title": "Python中json.dump()的作用是？",
+    "options": [
+      "编码为JSON字符串",
+      "解码JSON字符串",
+      "编码为JSON文件",
+      "解码JSON文件"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-286",
+    "title": "Python中json.load()的作用是？",
+    "options": [
+      "编码为JSON字符串",
+      "解码JSON字符串",
+      "编码为JSON文件",
+      "解码JSON文件"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-287",
+    "title": "Python中pickle模块的作用是？",
+    "options": [
+      "对象序列化",
+      "JSON编解码",
+      "XML编解码",
+      "CSV编解码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-288",
+    "title": "Python中pickle和json的区别是？",
+    "options": [
+      "pickle支持更多类型，json更通用",
+      "json支持更多类型，pickle更通用",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-289",
+    "title": "Python中pickle的安全性如何？",
+    "options": [
+      "不安全，可能执行恶意代码",
+      "安全",
+      "部分安全",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-290",
+    "title": "Python中csv模块的作用是？",
+    "options": [
+      "CSV文件读写",
+      "JSON文件读写",
+      "XML文件读写",
+      "YAML文件读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-291",
+    "title": "Python中csv.reader()的作用是？",
+    "options": [
+      "读取CSV文件",
+      "写入CSV文件",
+      "解析CSV字符串",
+      "生成CSV字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-292",
+    "title": "Python中csv.writer()的作用是？",
+    "options": [
+      "读取CSV文件",
+      "写入CSV文件",
+      "解析CSV字符串",
+      "生成CSV字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-293",
+    "title": "Python中csv.DictReader()的作用是？",
+    "options": [
+      "按字典读取CSV",
+      "按字典写入CSV",
+      "按列表读取CSV",
+      "按列表写入CSV"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-294",
+    "title": "Python中csv.DictWriter()的作用是？",
+    "options": [
+      "按字典读取CSV",
+      "按字典写入CSV",
+      "按列表读取CSV",
+      "按列表写入CSV"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-295",
+    "title": "Python中hashlib模块的作用是？",
+    "options": [
+      "哈希算法",
+      "加密算法",
+      "解密算法",
+      "签名算法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-296",
+    "title": "Python中hashlib.md5()的作用是？",
+    "options": [
+      "计算MD5哈希",
+      "计算SHA1哈希",
+      "计算SHA256哈希",
+      "计算SHA512哈希"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-297",
+    "title": "Python中hashlib.sha256()的作用是？",
+    "options": [
+      "计算MD5哈希",
+      "计算SHA1哈希",
+      "计算SHA256哈希",
+      "计算SHA512哈希"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-298",
+    "title": "Python中hmac模块的作用是？",
+    "options": [
+      "消息认证码",
+      "哈希算法",
+      "加密算法",
+      "解密算法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-299",
+    "title": "Python中secrets模块的作用是？",
+    "options": [
+      "生成安全随机数",
+      "生成伪随机数",
+      "生成哈希",
+      "生成签名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-300",
+    "title": "Python中logging模块的作用是？",
+    "options": [
+      "日志记录",
+      "调试输出",
+      "异常处理",
+      "性能监控"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-301",
+    "title": "Python中logging的级别有？",
+    "options": [
+      "DEBUG, INFO, WARNING, ERROR, CRITICAL",
+      "LOG, WARN, FATAL",
+      "TRACE, DEBUG",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-302",
+    "title": "Python中logging的默认级别是？",
+    "options": [
+      "DEBUG",
+      "INFO",
+      "WARNING",
+      "ERROR"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-303",
+    "title": "Python中argparse模块的作用是？",
+    "options": [
+      "命令行参数解析",
+      "环境变量解析",
+      "配置文件解析",
+      "URL参数解析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-304",
+    "title": "Python中configparser模块的作用是？",
+    "options": [
+      "命令行参数解析",
+      "环境变量解析",
+      "INI配置文件解析",
+      "URL参数解析"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-305",
+    "title": "Python中os.path模块的作用是？",
+    "options": [
+      "路径操作",
+      "文件操作",
+      "目录操作",
+      "系统操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-306",
+    "title": "Python中os.path.join()的作用是？",
+    "options": [
+      "连接路径",
+      "分割路径",
+      "获取绝对路径",
+      "获取相对路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-307",
+    "title": "Python中os.path.exists()的作用是？",
+    "options": [
+      "判断路径是否存在",
+      "判断是否为文件",
+      "判断是否为目录",
+      "获取文件大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-308",
+    "title": "Python中os.path.isfile()的作用是？",
+    "options": [
+      "判断路径是否存在",
+      "判断是否为文件",
+      "判断是否为目录",
+      "获取文件大小"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-309",
+    "title": "Python中os.path.isdir()的作用是？",
+    "options": [
+      "判断路径是否存在",
+      "判断是否为文件",
+      "判断是否为目录",
+      "获取文件大小"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-310",
+    "title": "Python中os.path.basename()的作用是？",
+    "options": [
+      "获取目录名",
+      "获取文件名",
+      "获取扩展名",
+      "获取绝对路径"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-311",
+    "title": "Python中os.path.dirname()的作用是？",
+    "options": [
+      "获取目录名",
+      "获取文件名",
+      "获取扩展名",
+      "获取绝对路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-312",
+    "title": "Python中os.path.splitext()的作用是？",
+    "options": [
+      "获取目录名",
+      "获取文件名",
+      "分割扩展名",
+      "获取绝对路径"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-313",
+    "title": "Python中os.path.abspath()的作用是？",
+    "options": [
+      "获取绝对路径",
+      "获取相对路径",
+      "获取规范路径",
+      "获取符号链接路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-314",
+    "title": "Python中shutil模块的作用是？",
+    "options": [
+      "高级文件操作",
+      "低级文件操作",
+      "路径操作",
+      "系统操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-315",
+    "title": "Python中shutil.copy()的作用是？",
+    "options": [
+      "复制文件内容",
+      "复制文件内容和权限",
+      "复制目录",
+      "移动文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-316",
+    "title": "Python中shutil.copy2()的作用是？",
+    "options": [
+      "复制文件内容",
+      "复制文件内容和元数据",
+      "复制目录",
+      "移动文件"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-317",
+    "title": "Python中shutil.copytree()的作用是？",
+    "options": [
+      "复制文件内容",
+      "复制文件内容和权限",
+      "复制目录树",
+      "移动文件"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-318",
+    "title": "Python中shutil.rmtree()的作用是？",
+    "options": [
+      "删除文件",
+      "删除空目录",
+      "删除目录树",
+      "移动文件"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-319",
+    "title": "Python中shutil.move()的作用是？",
+    "options": [
+      "复制文件内容",
+      "复制文件内容和权限",
+      "复制目录",
+      "移动文件或目录"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-320",
+    "title": "Python中tempfile模块的作用是？",
+    "options": [
+      "临时文件操作",
+      "永久文件操作",
+      "路径操作",
+      "系统操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-321",
+    "title": "Python中glob模块的作用是？",
+    "options": [
+      "文件模式匹配",
+      "正则匹配",
+      "字符串匹配",
+      "路径匹配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-322",
+    "title": "Python中glob.glob()的返回值是？",
+    "options": [
+      "列表",
+      "迭代器",
+      "生成器",
+      "元组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-323",
+    "title": "Python中fnmatch模块的作用是？",
+    "options": [
+      "文件名匹配",
+      "正则匹配",
+      "字符串匹配",
+      "路径匹配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-324",
+    "title": "Python中stat模块的作用是？",
+    "options": [
+      "文件状态",
+      "文件操作",
+      "目录操作",
+      "系统操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-325",
+    "title": "Python中pathlib模块的作用是？",
+    "options": [
+      "面向对象的路径操作",
+      "函数式路径操作",
+      "低级路径操作",
+      "系统操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-326",
+    "title": "Python中Path对象的/操作符作用是？",
+    "options": [
+      "连接路径",
+      "分割路径",
+      "获取绝对路径",
+      "获取相对路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-327",
+    "title": "Python中Path.read_text()的作用是？",
+    "options": [
+      "读取文本文件",
+      "读取二进制文件",
+      "写入文本文件",
+      "写入二进制文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-328",
+    "title": "Python中Path.write_text()的作用是？",
+    "options": [
+      "读取文本文件",
+      "读取二进制文件",
+      "写入文本文件",
+      "写入二进制文件"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-329",
+    "title": "Python中io模块的作用是？",
+    "options": [
+      "输入输出流",
+      "文件操作",
+      "目录操作",
+      "系统操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-330",
+    "title": "Python中io.StringIO的作用是？",
+    "options": [
+      "内存字符串缓冲",
+      "内存字节缓冲",
+      "文件缓冲",
+      "网络缓冲"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-331",
+    "title": "Python中io.BytesIO的作用是？",
+    "options": [
+      "内存字符串缓冲",
+      "内存字节缓冲",
+      "文件缓冲",
+      "网络缓冲"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-332",
+    "title": "Python中sys.stdin的作用是？",
+    "options": [
+      "标准输入",
+      "标准输出",
+      "标准错误",
+      "标准日志"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-333",
+    "title": "Python中sys.stdout的作用是？",
+    "options": [
+      "标准输入",
+      "标准输出",
+      "标准错误",
+      "标准日志"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-334",
+    "title": "Python中sys.stderr的作用是？",
+    "options": [
+      "标准输入",
+      "标准输出",
+      "标准错误",
+      "标准日志"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-335",
+    "title": "Python中time模块的作用是？",
+    "options": [
+      "时间操作",
+      "日期操作",
+      "日历操作",
+      "时区操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-336",
+    "title": "Python中time.time()的返回值是？",
+    "options": [
+      "时间戳",
+      "时间元组",
+      "时间字符串",
+      "时间对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-337",
+    "title": "Python中time.strftime()的作用是？",
+    "options": [
+      "格式化时间",
+      "解析时间",
+      "获取时间戳",
+      "获取时间元组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-338",
+    "title": "Python中time.strptime()的作用是？",
+    "options": [
+      "格式化时间",
+      "解析时间",
+      "获取时间戳",
+      "获取时间元组"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-339",
+    "title": "Python中datetime模块的作用是？",
+    "options": [
+      "时间操作",
+      "日期时间操作",
+      "日历操作",
+      "时区操作"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-340",
+    "title": "Python中datetime.date的作用是？",
+    "options": [
+      "表示日期",
+      "表示时间",
+      "表示日期时间",
+      "表示时间差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-341",
+    "title": "Python中datetime.time的作用是？",
+    "options": [
+      "表示日期",
+      "表示时间",
+      "表示日期时间",
+      "表示时间差"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-342",
+    "title": "Python中datetime.datetime的作用是？",
+    "options": [
+      "表示日期",
+      "表示时间",
+      "表示日期时间",
+      "表示时间差"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-343",
+    "title": "Python中datetime.timedelta的作用是？",
+    "options": [
+      "表示日期",
+      "表示时间",
+      "表示日期时间",
+      "表示时间差"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-344",
+    "title": "Python中calendar模块的作用是？",
+    "options": [
+      "时间操作",
+      "日期操作",
+      "日历操作",
+      "时区操作"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-345",
+    "title": "Python中random.seed()的作用是？",
+    "options": [
+      "设置随机种子",
+      "获取随机数",
+      "生成随机数",
+      "排序随机数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-346",
+    "title": "Python中math模块的作用是？",
+    "options": [
+      "数学运算",
+      "随机数",
+      "时间操作",
+      "系统操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-347",
+    "title": "Python中math.ceil()的作用是？",
+    "options": [
+      "向上取整",
+      "向下取整",
+      "四舍五入",
+      "绝对值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-348",
+    "title": "Python中math.floor()的作用是？",
+    "options": [
+      "向上取整",
+      "向下取整",
+      "四舍五入",
+      "绝对值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-349",
+    "title": "Python中math.sqrt()的作用是？",
+    "options": [
+      "平方",
+      "开方",
+      "幂运算",
+      "对数"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-350",
+    "title": "Python中cmath模块的作用是？",
+    "options": [
+      "实数数学运算",
+      "复数数学运算",
+      "随机数",
+      "时间操作"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-351",
+    "title": "Python中decimal模块的作用是？",
+    "options": [
+      "浮点数运算",
+      "定点数运算",
+      "分数运算",
+      "复数运算"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-352",
+    "title": "Python中fractions模块的作用是？",
+    "options": [
+      "浮点数运算",
+      "定点数运算",
+      "分数运算",
+      "复数运算"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-353",
+    "title": "Python中statistics模块的作用是？",
+    "options": [
+      "统计计算",
+      "数学计算",
+      "随机计算",
+      "时间计算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-354",
+    "title": "Python中operator模块的作用是？",
+    "options": [
+      "提供运算符函数",
+      "提供操作符重载",
+      "提供类型检查",
+      "提供迭代工具"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-355",
+    "title": "Python中functools模块的作用是？",
+    "options": [
+      "提供函数工具",
+      "提供迭代工具",
+      "提供类型检查",
+      "提供运算符函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-356",
+    "title": "Python中functools.partial()的作用是？",
+    "options": [
+      "偏函数",
+      "全函数",
+      "匿名函数",
+      "递归函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-357",
+    "title": "Python中functools.lru_cache()的作用是？",
+    "options": [
+      "缓存函数结果",
+      "删除函数结果",
+      "排序函数结果",
+      "过滤函数结果"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-358",
+    "title": "Python中functools.singledispatch()的作用是？",
+    "options": [
+      "单分派泛型函数",
+      "多分派泛型函数",
+      "递归函数",
+      "偏函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-359",
+    "title": "Python中itertools.product()的作用是？",
+    "options": [
+      "笛卡尔积",
+      "排列",
+      "组合",
+      "压缩"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-360",
+    "title": "Python中itertools.permutations()的作用是？",
+    "options": [
+      "笛卡尔积",
+      "排列",
+      "组合",
+      "压缩"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-361",
+    "title": "Python中打开文件的函数是？",
+    "options": [
+      "open()",
+      "file()",
+      "read()",
+      "write()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-362",
+    "title": "Python中open()的mode参数r表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-363",
+    "title": "Python中open()的mode参数w表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-364",
+    "title": "Python中open()的mode参数a表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-365",
+    "title": "Python中open()的mode参数b表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-366",
+    "title": "Python中open()的mode参数+表示？",
+    "options": [
+      "读写模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-367",
+    "title": "Python中读取整个文件的方法是？",
+    "options": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "readall()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-368",
+    "title": "Python中读取一行的方法是？",
+    "options": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "readall()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-369",
+    "title": "Python中读取所有行的方法是？",
+    "options": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "readall()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-370",
+    "title": "Python中写入字符串的方法是？",
+    "options": [
+      "write()",
+      "writelines()",
+      "writeall()",
+      "writeline()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-371",
+    "title": "Python中写入多行的方法是？",
+    "options": [
+      "write()",
+      "writelines()",
+      "writeall()",
+      "writeline()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-372",
+    "title": "Python中文件指针定位的方法是？",
+    "options": [
+      "seek()",
+      "tell()",
+      "move()",
+      "position()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-373",
+    "title": "Python中获取文件指针位置的方法是？",
+    "options": [
+      "seek()",
+      "tell()",
+      "move()",
+      "position()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-374",
+    "title": "Python中关闭文件的方法是？",
+    "options": [
+      "close()",
+      "shutdown()",
+      "exit()",
+      "dispose()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-375",
+    "title": "Python中with语句的好处是？",
+    "options": [
+      "自动关闭文件",
+      "手动关闭文件",
+      "提高性能",
+      "简化语法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-376",
+    "title": "Python中with语句的原理是？",
+    "options": [
+      "上下文管理器",
+      "异常处理",
+      "循环控制",
+      "条件判断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-377",
+    "title": "Python中上下文管理器需要实现哪些方法？",
+    "options": [
+      "__enter__和__exit__",
+      "__init__和__del__",
+      "__open__和__close__",
+      "__start__和__stop__"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-378",
+    "title": "Python中__enter__方法的返回值赋给谁？",
+    "options": [
+      "as后的变量",
+      "with前的变量",
+      "self",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-379",
+    "title": "Python中__exit__方法的参数有？",
+    "options": [
+      "exc_type, exc_val, exc_tb",
+      "exception, value, traceback",
+      "type, value, tb",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-380",
+    "title": "Python中__exit__方法返回True表示？",
+    "options": [
+      "抑制异常",
+      "传播异常",
+      "忽略异常",
+      "重新抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-381",
+    "title": "Python中contextlib模块的作用是？",
+    "options": [
+      "提供上下文管理器工具",
+      "提供迭代器工具",
+      "提供函数工具",
+      "提供类型检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-382",
+    "title": "Python中contextlib.contextmanager的作用是？",
+    "options": [
+      "将生成器转为上下文管理器",
+      "将函数转为上下文管理器",
+      "将类转为上下文管理器",
+      "将迭代器转为上下文管理器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-383",
+    "title": "Python中异常的基类是？",
+    "options": [
+      "BaseException",
+      "Exception",
+      "Error",
+      "Throwable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-384",
+    "title": "Python中普通异常的基类是？",
+    "options": [
+      "BaseException",
+      "Exception",
+      "Error",
+      "Throwable"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-385",
+    "title": "Python中捕获异常的语句是？",
+    "options": [
+      "try...except",
+      "try...catch",
+      "try...handle",
+      "try...throw"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-386",
+    "title": "Python中finally子句何时执行？",
+    "options": [
+      "总是执行",
+      "无异常时执行",
+      "有异常时执行",
+      "break时执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-387",
+    "title": "Python中else子句何时执行？",
+    "options": [
+      "无异常时执行",
+      "有异常时执行",
+      "总是执行",
+      "break时执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-388",
+    "title": "Python中抛出异常的语句是？",
+    "options": [
+      "raise",
+      "throw",
+      "throws",
+      "emit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-389",
+    "title": "Python中自定义异常应该继承？",
+    "options": [
+      "Exception或其子类",
+      "BaseException",
+      "Error",
+      "object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-390",
+    "title": "Python中异常的参数是？",
+    "options": [
+      "异常实例",
+      "异常类",
+      "异常消息",
+      "异常类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-391",
+    "title": "Python中如何获取异常信息？",
+    "options": [
+      "str(e)",
+      "e.message",
+      "e.args",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-392",
+    "title": "Python中如何获取异常追踪信息？",
+    "options": [
+      "traceback.format_exc()",
+      "e.traceback",
+      "e.stack",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-393",
+    "title": "Python中traceback模块的作用是？",
+    "options": [
+      "异常追踪",
+      "日志记录",
+      "调试输出",
+      "性能监控"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-394",
+    "title": "Python中常见异常有？",
+    "options": [
+      "TypeError, ValueError, NameError",
+      "NullPointerException, ClassCastException",
+      "IOException, SQLException",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-395",
+    "title": "Python中TypeError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-396",
+    "title": "Python中ValueError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-397",
+    "title": "Python中NameError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称未定义",
+      "索引错误"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-398",
+    "title": "Python中IndexError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称错误",
+      "索引越界"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-399",
+    "title": "Python中KeyError发生的原因是？",
+    "options": [
+      "键不存在",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-400",
+    "title": "Python中AttributeError发生的原因是？",
+    "options": [
+      "属性不存在",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-401",
+    "title": "Python中FileNotFoundError发生的原因是？",
+    "options": [
+      "文件不存在",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-402",
+    "title": "Python中ImportError发生的原因是？",
+    "options": [
+      "导入失败",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-403",
+    "title": "Python中ModuleNotFoundError发生的原因是？",
+    "options": [
+      "模块未找到",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-404",
+    "title": "Python中ZeroDivisionError发生的原因是？",
+    "options": [
+      "除零错误",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-405",
+    "title": "Python中StopIteration发生的原因是？",
+    "options": [
+      "迭代结束",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-406",
+    "title": "Python中KeyboardInterrupt发生的原因是？",
+    "options": [
+      "用户中断",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-407",
+    "title": "Python中MemoryError发生的原因是？",
+    "options": [
+      "内存不足",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-408",
+    "title": "Python中OverflowError发生的原因是？",
+    "options": [
+      "溢出",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-409",
+    "title": "Python中RecursionError发生的原因是？",
+    "options": [
+      "递归过深",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-410",
+    "title": "Python中SyntaxError发生的原因是？",
+    "options": [
+      "语法错误",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-411",
+    "title": "Python中IndentationError发生的原因是？",
+    "options": [
+      "缩进错误",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-412",
+    "title": "Python中TabError发生的原因是？",
+    "options": [
+      "Tab和空格混用",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-413",
+    "title": "Python中SystemExit发生的原因是？",
+    "options": [
+      "sys.exit()",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-414",
+    "title": "Python中GeneratorExit发生的原因是？",
+    "options": [
+      "生成器关闭",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-415",
+    "title": "Python中如何捕获多个异常？",
+    "options": [
+      "except (A, B)",
+      "except A, B",
+      "except A except B",
+      "except A or B"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-416",
+    "title": "Python中如何捕获所有异常？",
+    "options": [
+      "except Exception",
+      "except BaseException",
+      "except",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-417",
+    "title": "Python中except Exception和except的区别是？",
+    "options": [
+      "except也捕获SystemExit等",
+      "except Exception也捕获SystemExit等",
+      "没有区别",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-418",
+    "title": "Python中raise的作用是？",
+    "options": [
+      "抛出异常",
+      "捕获异常",
+      "处理异常",
+      "忽略异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-419",
+    "title": "Python中raise...from的作用是？",
+    "options": [
+      "异常链",
+      "异常转换",
+      "异常抑制",
+      "异常传播"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-420",
+    "title": "Python中如何重新抛出异常？",
+    "options": [
+      "raise",
+      "raise e",
+      "throw",
+      "throw e"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-421",
+    "title": "Python中assert的作用是？",
+    "options": [
+      "断言",
+      "异常处理",
+      "日志记录",
+      "调试输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-422",
+    "title": "Python中assert的条件为假时抛出？",
+    "options": [
+      "AssertionError",
+      "AssertionError",
+      "AssertError",
+      "AssertionException"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-423",
+    "title": "Python中如何禁用assert？",
+    "options": [
+      "-O参数",
+      "-d参数",
+      "-e参数",
+      "-a参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-424",
+    "title": "Python中warnings模块的作用是？",
+    "options": [
+      "警告控制",
+      "异常处理",
+      "日志记录",
+      "调试输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-425",
+    "title": "Python中如何忽略警告？",
+    "options": [
+      "warnings.filterwarnings(\"ignore\")",
+      "warnings.ignore()",
+      "warnings.disable()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-426",
+    "title": "Python中文件编码如何指定？",
+    "options": [
+      "encoding参数",
+      "charset参数",
+      "codec参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-427",
+    "title": "Python中默认文件编码是？",
+    "options": [
+      "UTF-8",
+      "GBK",
+      "ASCII",
+      "ISO-8859-1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-428",
+    "title": "Python中如何处理编码错误？",
+    "options": [
+      "errors参数",
+      "error参数",
+      "handler参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-429",
+    "title": "Python中errors参数的值有？",
+    "options": [
+      "strict, ignore, replace",
+      "skip, stop, continue",
+      "raise, drop, fix",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-430",
+    "title": "Python中errors参数的默认值是？",
+    "options": [
+      "strict",
+      "ignore",
+      "replace",
+      "skip"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-431",
+    "title": "Python中如何判断文件是否已关闭？",
+    "options": [
+      "file.closed",
+      "file.isclosed()",
+      "file.status",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-432",
+    "title": "Python中如何刷新文件缓冲区？",
+    "options": [
+      "file.flush()",
+      "file.sync()",
+      "file.clear()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-433",
+    "title": "Python中如何判断文件是否可读？",
+    "options": [
+      "file.readable()",
+      "file.can_read()",
+      "file.isreadable()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-434",
+    "title": "Python中如何判断文件是否可写？",
+    "options": [
+      "file.writable()",
+      "file.can_write()",
+      "file.iswritable()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-435",
+    "title": "Python中如何判断文件指针是否可定位？",
+    "options": [
+      "file.seekable()",
+      "file.can_seek()",
+      "file.isseekable()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-436",
+    "title": "Python中如何获取文件描述符？",
+    "options": [
+      "file.fileno()",
+      "file.fd()",
+      "file.descriptor()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-437",
+    "title": "Python中如何截断文件？",
+    "options": [
+      "file.truncate()",
+      "file.cut()",
+      "file.trim()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-438",
+    "title": "Python中如何迭代文件行？",
+    "options": [
+      "for line in file",
+      "file.foreach()",
+      "file.iter()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-439",
+    "title": "Python中大文件读取推荐方式是？",
+    "options": [
+      "按行读取",
+      "read全部",
+      "readline全部",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-440",
+    "title": "Python中csv模块的默认分隔符是？",
+    "options": [
+      "逗号",
+      "制表符",
+      "空格",
+      "分号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-441",
+    "title": "Python中csv模块的默认引用符是？",
+    "options": [
+      "双引号",
+      "单引号",
+      "反引号",
+      "无"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-442",
+    "title": "Python中如何处理CSV中的中文？",
+    "options": [
+      "指定encoding",
+      "指定dialect",
+      "指定quotechar",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-443",
+    "title": "Python中ini文件的节使用什么符号？",
+    "options": [
+      "[]",
+      "()",
+      "{}",
+      "<>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-444",
+    "title": "Python中ini文件的注释使用什么符号？",
+    "options": [
+      "#",
+      ";",
+      "//",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-445",
+    "title": "Python中yaml模块的作用是？",
+    "options": [
+      "YAML编解码",
+      "JSON编解码",
+      "XML编解码",
+      "CSV编解码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-446",
+    "title": "Python中xml.etree.ElementTree的作用是？",
+    "options": [
+      "XML解析",
+      "HTML解析",
+      "JSON解析",
+      "CSV解析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-447",
+    "title": "Python中xml.dom的作用是？",
+    "options": [
+      "DOM解析XML",
+      "SAX解析XML",
+      "流式解析XML",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-448",
+    "title": "Python中xml.sax的作用是？",
+    "options": [
+      "DOM解析XML",
+      "SAX解析XML",
+      "流式解析XML",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-449",
+    "title": "Python中html.parser的作用是？",
+    "options": [
+      "HTML解析",
+      "XML解析",
+      "JSON解析",
+      "CSV解析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-450",
+    "title": "Python中base64模块的作用是？",
+    "options": [
+      "Base64编解码",
+      "加密解密",
+      "压缩解压",
+      "哈希计算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-451",
+    "title": "Python中zlib模块的作用是？",
+    "options": [
+      "压缩解压",
+      "加密解密",
+      "Base64编解码",
+      "哈希计算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-452",
+    "title": "Python中gzip模块的作用是？",
+    "options": [
+      "Gzip压缩解压",
+      "Zip压缩解压",
+      "Bzip2压缩解压",
+      "Lzma压缩解压"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-453",
+    "title": "Python中zipfile模块的作用是？",
+    "options": [
+      "Gzip压缩解压",
+      "Zip压缩解压",
+      "Bzip2压缩解压",
+      "Lzma压缩解压"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-454",
+    "title": "Python中tarfile模块的作用是？",
+    "options": [
+      "Tar归档",
+      "Zip压缩解压",
+      "Gzip压缩解压",
+      "Bzip2压缩解压"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-455",
+    "title": "Python中struct模块的作用是？",
+    "options": [
+      "字节和Python类型转换",
+      "字符串处理",
+      "数值计算",
+      "日期处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-456",
+    "title": "Python中codecs模块的作用是？",
+    "options": [
+      "编解码器",
+      "代码执行",
+      "代码检查",
+      "代码优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-457",
+    "title": "Python中如何检测文件编码？",
+    "options": [
+      "chardet库",
+      "codecs库",
+      "encoding库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-458",
+    "title": "Python中如何监控文件变化？",
+    "options": [
+      "watchdog库",
+      "os.walk()",
+      "inotify",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-459",
+    "title": "Python中如何读写Excel文件？",
+    "options": [
+      "openpyxl, xlrd, xlwt",
+      "excel库",
+      "csv库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-460",
+    "title": "Python中如何读写Word文件？",
+    "options": [
+      "python-docx",
+      "word库",
+      "doc库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-461",
+    "title": "Python中如何读写PDF文件？",
+    "options": [
+      "PyPDF2, pdfplumber",
+      "pdf库",
+      "adobe库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-462",
+    "title": "Python中如何处理图片？",
+    "options": [
+      "Pillow, OpenCV",
+      "image库",
+      "graphic库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-463",
+    "title": "Python中如何发送邮件？",
+    "options": [
+      "smtplib, email",
+      "mail库",
+      "post库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-464",
+    "title": "Python中如何操作SSH？",
+    "options": [
+      "paramiko",
+      "ssh库",
+      "shell库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-465",
+    "title": "Python中如何执行系统命令？",
+    "options": [
+      "subprocess",
+      "os.system",
+      "os.popen",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-466",
+    "title": "Python中subprocess.run()的作用是？",
+    "options": [
+      "运行命令并等待",
+      "运行命令不等待",
+      "运行命令获取输出",
+      "运行命令获取状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-467",
+    "title": "Python中subprocess.Popen()的作用是？",
+    "options": [
+      "运行命令并等待",
+      "运行命令不等待",
+      "创建子进程",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-468",
+    "title": "Python中如何获取命令输出？",
+    "options": [
+      "subprocess.check_output()",
+      "subprocess.get_output()",
+      "subprocess.read()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-469",
+    "title": "Python中如何设置环境变量？",
+    "options": [
+      "os.environ[key] = value",
+      "os.setenv()",
+      "env.set()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-470",
+    "title": "Python中如何获取进程ID？",
+    "options": [
+      "os.getpid()",
+      "os.pid()",
+      "sys.pid()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-471",
+    "title": "Python中如何获取父进程ID？",
+    "options": [
+      "os.getppid()",
+      "os.ppid()",
+      "sys.ppid()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-472",
+    "title": "Python中如何杀死进程？",
+    "options": [
+      "os.kill()",
+      "os.terminate()",
+      "os.destroy()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-473",
+    "title": "Python中signal模块的作用是？",
+    "options": [
+      "信号处理",
+      "进程间通信",
+      "线程同步",
+      "网络通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-474",
+    "title": "Python中resource模块的作用是？",
+    "options": [
+      "资源限制",
+      "内存管理",
+      "进程管理",
+      "线程管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-475",
+    "title": "Python中ulimit如何设置？",
+    "options": [
+      "resource.setrlimit()",
+      "os.setlimit()",
+      "sys.setlimit()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-476",
+    "title": "Python中如何处理大文件？",
+    "options": [
+      "分块读取",
+      "内存映射",
+      "生成器",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-477",
+    "title": "Python中mmap模块的作用是？",
+    "options": [
+      "内存映射文件",
+      "内存管理",
+      "文件缓存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-478",
+    "title": "Python中日志模块的Handler有？",
+    "options": [
+      "StreamHandler, FileHandler",
+      "ConsoleHandler, DiskHandler",
+      "OutputHandler, InputHandler",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-479",
+    "title": "Python中日志模块的Formatter作用是？",
+    "options": [
+      "格式化日志",
+      "过滤日志",
+      "输出日志",
+      "记录日志"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-480",
+    "title": "Python中日志模块的Filter作用是？",
+    "options": [
+      "格式化日志",
+      "过滤日志",
+      "输出日志",
+      "记录日志"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-481",
+    "title": "Python中GIL是指？",
+    "options": [
+      "全局解释器锁",
+      "全局内存锁",
+      "通用接口层",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-482",
+    "title": "Python中GIL的作用是？",
+    "options": [
+      "保证线程安全",
+      "提高性能",
+      "支持多核",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-483",
+    "title": "Python中GIL的影响是？",
+    "options": [
+      "多线程不能利用多核",
+      "多进程不能利用多核",
+      "单线程性能下降",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-484",
+    "title": "Python中GIL在什么情况下释放？",
+    "options": [
+      "I/O操作时",
+      "执行C扩展时",
+      "每执行一定字节码时",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-485",
+    "title": "Python中threading模块的作用是？",
+    "options": [
+      "多线程",
+      "多进程",
+      "协程",
+      "异步"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-486",
+    "title": "Python中multiprocessing模块的作用是？",
+    "options": [
+      "多线程",
+      "多进程",
+      "协程",
+      "异步"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-487",
+    "title": "Python中asyncio模块的作用是？",
+    "options": [
+      "多线程",
+      "多进程",
+      "协程",
+      "同步"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-488",
+    "title": "Python中创建线程的方式是？",
+    "options": [
+      "threading.Thread",
+      "thread.Thread",
+      "Thread.new",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-489",
+    "title": "Python中启动线程的方法是？",
+    "options": [
+      "start()",
+      "run()",
+      "execute()",
+      "begin()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-490",
+    "title": "Python中等待线程结束的方法是？",
+    "options": [
+      "join()",
+      "wait()",
+      "await()",
+      "sleep()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-491",
+    "title": "Python中守护线程的设置方法是？",
+    "options": [
+      "daemon=True",
+      "daemon=False",
+      "guard=True",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-492",
+    "title": "Python中守护线程的特点是？",
+    "options": [
+      "主线程退出时自动退出",
+      "主线程退出时不退出",
+      "优先级最高",
+      "优先级最低"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-493",
+    "title": "Python中线程同步的方式有？",
+    "options": [
+      "Lock, RLock, Semaphore, Event",
+      "Mutex, Condition",
+      "以上都是",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-494",
+    "title": "Python中Lock的作用是？",
+    "options": [
+      "互斥锁",
+      "递归锁",
+      "信号量",
+      "事件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-495",
+    "title": "Python中RLock的作用是？",
+    "options": [
+      "互斥锁",
+      "递归锁",
+      "信号量",
+      "事件"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-496",
+    "title": "Python中Lock和RLock的区别是？",
+    "options": [
+      "RLock可被同一线程多次获取",
+      "Lock可被同一线程多次获取",
+      "没有区别",
+      "取决于场景"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-497",
+    "title": "Python中Semaphore的作用是？",
+    "options": [
+      "互斥锁",
+      "递归锁",
+      "信号量，控制并发数",
+      "事件"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-498",
+    "title": "Python中Event的作用是？",
+    "options": [
+      "互斥锁",
+      "递归锁",
+      "信号量",
+      "事件通知"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-499",
+    "title": "Python中Condition的作用是？",
+    "options": [
+      "互斥锁",
+      "条件变量",
+      "信号量",
+      "事件"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-500",
+    "title": "Python中Barrier的作用是？",
+    "options": [
+      "互斥锁",
+      "条件变量",
+      "栅栏，等待所有线程",
+      "事件"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-501",
+    "title": "Python中Queue的作用是？",
+    "options": [
+      "线程安全队列",
+      "进程安全队列",
+      "异步队列",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-502",
+    "title": "Python中queue.Queue的特点是？",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "优先级",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-503",
+    "title": "Python中queue.LifoQueue的特点是？",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "优先级",
+      "以上都可以"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-504",
+    "title": "Python中queue.PriorityQueue的特点是？",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "优先级",
+      "以上都可以"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-505",
+    "title": "Python中Queue的put()方法作用是？",
+    "options": [
+      "放入元素",
+      "取出元素",
+      "查看元素",
+      "删除元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-506",
+    "title": "Python中Queue的get()方法作用是？",
+    "options": [
+      "放入元素",
+      "取出元素",
+      "查看元素",
+      "删除元素"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-507",
+    "title": "Python中Queue的task_done()方法作用是？",
+    "options": [
+      "标记任务完成",
+      "放入元素",
+      "取出元素",
+      "查看元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-508",
+    "title": "Python中Queue的join()方法作用是？",
+    "options": [
+      "等待所有任务完成",
+      "放入元素",
+      "取出元素",
+      "查看元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-509",
+    "title": "Python中创建进程的方式是？",
+    "options": [
+      "multiprocessing.Process",
+      "process.Process",
+      "Process.new",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-510",
+    "title": "Python中进程间通信的方式有？",
+    "options": [
+      "Queue, Pipe",
+      "Lock, Semaphore",
+      "Event, Condition",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-511",
+    "title": "Python中Pipe的作用是？",
+    "options": [
+      "双向通信管道",
+      "单向通信管道",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-512",
+    "title": "Python中进程池的作用是？",
+    "options": [
+      "重用进程，控制并发",
+      "创建进程",
+      "销毁进程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-513",
+    "title": "Python中进程池的类是？",
+    "options": [
+      "multiprocessing.Pool",
+      "process.Pool",
+      "Pool.new",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-514",
+    "title": "Python中Pool的apply()方法作用是？",
+    "options": [
+      "同步执行",
+      "异步执行",
+      "批量执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-515",
+    "title": "Python中Pool的apply_async()方法作用是？",
+    "options": [
+      "同步执行",
+      "异步执行",
+      "批量执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-516",
+    "title": "Python中Pool的map()方法作用是？",
+    "options": [
+      "同步批量执行",
+      "异步批量执行",
+      "单个执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-517",
+    "title": "Python中Pool的map_async()方法作用是？",
+    "options": [
+      "同步批量执行",
+      "异步批量执行",
+      "单个执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-518",
+    "title": "Python中Pool的close()方法作用是？",
+    "options": [
+      "关闭进程池",
+      "终止进程池",
+      "重启进程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-519",
+    "title": "Python中Pool的join()方法作用是？",
+    "options": [
+      "等待所有进程完成",
+      "关闭进程池",
+      "终止进程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-520",
+    "title": "Python中Pool的terminate()方法作用是？",
+    "options": [
+      "关闭进程池",
+      "立即终止进程池",
+      "等待进程完成",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-521",
+    "title": "Python中共享内存的方式有？",
+    "options": [
+      "Value, Array",
+      "Manager",
+      "以上都是",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-522",
+    "title": "Python中Manager的作用是？",
+    "options": [
+      "管理共享对象",
+      "管理进程",
+      "管理线程",
+      "管理协程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-523",
+    "title": "Python中concurrent.futures模块的作用是？",
+    "options": [
+      "高级并发接口",
+      "低级并发接口",
+      "异步接口",
+      "同步接口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-524",
+    "title": "Python中ThreadPoolExecutor的作用是？",
+    "options": [
+      "线程池",
+      "进程池",
+      "协程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-525",
+    "title": "Python中ProcessPoolExecutor的作用是？",
+    "options": [
+      "线程池",
+      "进程池",
+      "协程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-526",
+    "title": "Python中Future的作用是？",
+    "options": [
+      "表示异步结果",
+      "表示同步结果",
+      "表示进程",
+      "表示线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-527",
+    "title": "Python中Future的result()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-528",
+    "title": "Python中Future的cancel()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-529",
+    "title": "Python中Future的done()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-530",
+    "title": "Python中Future的add_done_callback()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-531",
+    "title": "Python中协程的定义方式是？",
+    "options": [
+      "async def",
+      "def async",
+      "coroutine def",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-532",
+    "title": "Python中await的作用是？",
+    "options": [
+      "等待协程执行",
+      "启动协程",
+      "取消协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-533",
+    "title": "Python中asyncio.run()的作用是？",
+    "options": [
+      "运行协程",
+      "创建协程",
+      "取消协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-534",
+    "title": "Python中asyncio.create_task()的作用是？",
+    "options": [
+      "创建任务",
+      "运行协程",
+      "取消协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-535",
+    "title": "Python中asyncio.gather()的作用是？",
+    "options": [
+      "并发运行多个协程",
+      "顺序运行多个协程",
+      "创建任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-536",
+    "title": "Python中asyncio.wait()的作用是？",
+    "options": [
+      "等待多个协程",
+      "并发运行多个协程",
+      "创建任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-537",
+    "title": "Python中asyncio.sleep()的作用是？",
+    "options": [
+      "异步休眠",
+      "同步休眠",
+      "唤醒协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-538",
+    "title": "Python中异步上下文管理器的定义是？",
+    "options": [
+      "__aenter__和__aexit__",
+      "__enter__和__exit__",
+      "__async_enter__和__async_exit__",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-539",
+    "title": "Python中异步迭代器的定义是？",
+    "options": [
+      "__aiter__和__anext__",
+      "__iter__和__next__",
+      "__async_iter__和__async_next__",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-540",
+    "title": "Python中async for的作用是？",
+    "options": [
+      "异步迭代",
+      "同步迭代",
+      "异步上下文",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-541",
+    "title": "Python中async with的作用是？",
+    "options": [
+      "异步迭代",
+      "同步迭代",
+      "异步上下文",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-542",
+    "title": "Python中异步生成器的定义是？",
+    "options": [
+      "async def + yield",
+      "def async + yield",
+      "async yield",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-543",
+    "title": "Python中异步列表推导式的语法是？",
+    "options": [
+      "[i async for i in aiter]",
+      "[i for i in aiter]",
+      "async [i for i in aiter]",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-544",
+    "title": "Python中aiohttp的作用是？",
+    "options": [
+      "异步HTTP",
+      "同步HTTP",
+      "异步TCP",
+      "同步TCP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-545",
+    "title": "Python中aiomysql的作用是？",
+    "options": [
+      "异步MySQL",
+      "同步MySQL",
+      "异步PostgreSQL",
+      "同步PostgreSQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-546",
+    "title": "Python中aioredis的作用是？",
+    "options": [
+      "异步Redis",
+      "同步Redis",
+      "异步MongoDB",
+      "同步MongoDB"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-547",
+    "title": "Python中subprocess的异步版本是？",
+    "options": [
+      "asyncio.create_subprocess_exec",
+      "asyncio.subprocess",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-548",
+    "title": "Python中如何避免GIL的影响？",
+    "options": [
+      "使用多进程",
+      "使用C扩展",
+      "使用协程",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-549",
+    "title": "Python中CPU密集型任务推荐使用？",
+    "options": [
+      "多进程",
+      "多线程",
+      "协程",
+      "单线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-550",
+    "title": "Python中I/O密集型任务推荐使用？",
+    "options": [
+      "多进程",
+      "多线程或协程",
+      "单线程",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-551",
+    "title": "Python中线程和进程的区别是？",
+    "options": [
+      "线程共享内存，进程独立内存",
+      "线程独立内存，进程共享内存",
+      "没有区别",
+      "取决于系统"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-552",
+    "title": "Python中协程和线程的区别是？",
+    "options": [
+      "协程用户态调度，线程内核态调度",
+      "协程内核态调度，线程用户态调度",
+      "没有区别",
+      "取决于系统"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-553",
+    "title": "Python中协程的优点是？",
+    "options": [
+      "轻量级，无切换开销",
+      "可以利用多核",
+      "不需要同步",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-554",
+    "title": "Python中协程的缺点是？",
+    "options": [
+      "不能利用多核",
+      "需要异步生态",
+      "调试困难",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-555",
+    "title": "Python中greenlet的作用是？",
+    "options": [
+      "协程库",
+      "线程库",
+      "进程库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-556",
+    "title": "Python中gevent的作用是？",
+    "options": [
+      "协程库，基于greenlet",
+      "线程库",
+      "进程库",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-557",
+    "title": "Python中gevent的monkey patch作用是？",
+    "options": [
+      "将阻塞函数替换为异步",
+      "修复bug",
+      "增加功能",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-558",
+    "title": "Python中如何实现定时任务？",
+    "options": [
+      "sched, threading.Timer, APScheduler",
+      "time.sleep",
+      "cron",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-559",
+    "title": "Python中APScheduler的作用是？",
+    "options": [
+      "高级定时任务",
+      "简单定时任务",
+      "进程调度",
+      "线程调度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-560",
+    "title": "Python中APScheduler的触发器有？",
+    "options": [
+      "date, interval, cron",
+      "time, period, schedule",
+      "once, repeat, loop",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-561",
+    "title": "Python中如何实现守护进程？",
+    "options": [
+      "python-daemon",
+      "os.fork",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-562",
+    "title": "Python中os.fork()的作用是？",
+    "options": [
+      "创建子进程",
+      "创建子线程",
+      "创建协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-563",
+    "title": "Python中os.fork()在Windows上可用吗？",
+    "options": [
+      "不可用",
+      "可用",
+      "部分可用",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-564",
+    "title": "Python中multiprocessing在Windows上需要注意什么？",
+    "options": [
+      "必须if __name__ == \"__main__\"",
+      "不需要注意",
+      "必须使用fork",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-565",
+    "title": "Python中如何获取当前线程名？",
+    "options": [
+      "threading.current_thread().name",
+      "threading.get_name()",
+      "current_thread.name",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-566",
+    "title": "Python中如何获取当前进程名？",
+    "options": [
+      "multiprocessing.current_process().name",
+      "multiprocessing.get_name()",
+      "current_process.name",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-567",
+    "title": "Python中如何设置线程名？",
+    "options": [
+      "thread.name = \"xxx\"",
+      "thread.set_name(\"xxx\")",
+      "thread.rename(\"xxx\")",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-568",
+    "title": "Python中如何获取活跃线程数？",
+    "options": [
+      "threading.active_count()",
+      "threading.count()",
+      "threading.num()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-569",
+    "title": "Python中如何获取所有线程？",
+    "options": [
+      "threading.enumerate()",
+      "threading.all()",
+      "threading.list()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-570",
+    "title": "Python中threading.local的作用是？",
+    "options": [
+      "线程本地存储",
+      "进程本地存储",
+      "全局存储",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-571",
+    "title": "Python中如何实现线程安全的单例？",
+    "options": [
+      "使用Lock或模块导入",
+      "使用GIL",
+      "使用协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-572",
+    "title": "Python中如何实现生产者消费者模式？",
+    "options": [
+      "Queue",
+      "Lock",
+      "Semaphore",
+      "Event"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-573",
+    "title": "Python中如何实现读写锁？",
+    "options": [
+      "使用两个Lock或RLock",
+      "使用一个Lock",
+      "使用Semaphore",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-574",
+    "title": "Python中如何限制并发数？",
+    "options": [
+      "Semaphore",
+      "Lock",
+      "RLock",
+      "Event"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-575",
+    "title": "Python中如何实现线程间通知？",
+    "options": [
+      "Event或Condition",
+      "Lock",
+      "Semaphore",
+      "Queue"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-576",
+    "title": "Python中如何实现进程间共享状态？",
+    "options": [
+      "Value, Array, Manager",
+      "Queue, Pipe",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-577",
+    "title": "Python中如何处理并发异常？",
+    "options": [
+      "try...except",
+      "Future.exception()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-578",
+    "title": "Python中如何取消协程任务？",
+    "options": [
+      "task.cancel()",
+      "task.stop()",
+      "task.abort()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-579",
+    "title": "Python中如何设置协程超时？",
+    "options": [
+      "asyncio.wait_for()",
+      "asyncio.timeout()",
+      "task.timeout()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-580",
+    "title": "Python中如何调试协程？",
+    "options": [
+      "aiomonitor",
+      "pdb",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-581",
+    "title": "Python中如何测试协程？",
+    "options": [
+      "pytest-asyncio",
+      "unittest",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-582",
+    "title": "Python中异步生成器的aiter()和anext()作用是？",
+    "options": [
+      "异步迭代",
+      "同步迭代",
+      "异步上下文",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-583",
+    "title": "Python中asyncio.Queue的作用是？",
+    "options": [
+      "异步队列",
+      "同步队列",
+      "进程队列",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-584",
+    "title": "Python中asyncio.Lock的作用是？",
+    "options": [
+      "异步锁",
+      "同步锁",
+      "进程锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-585",
+    "title": "Python中asyncio.Event的作用是？",
+    "options": [
+      "异步事件",
+      "同步事件",
+      "进程事件",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-586",
+    "title": "Python中asyncio.Semaphore的作用是？",
+    "options": [
+      "异步信号量",
+      "同步信号量",
+      "进程信号量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-587",
+    "title": "Python中asyncio.Condition的作用是？",
+    "options": [
+      "异步条件变量",
+      "同步条件变量",
+      "进程条件变量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-588",
+    "title": "Python中如何将同步函数转为异步？",
+    "options": [
+      "asyncio.to_thread()或run_in_executor()",
+      "async()",
+      "to_async()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-589",
+    "title": "Python中run_in_executor()的作用是？",
+    "options": [
+      "在线程池中执行同步函数",
+      "在进程池中执行同步函数",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-590",
+    "title": "Python中如何将异步函数转为同步？",
+    "options": [
+      "asyncio.run()",
+      "sync()",
+      "to_sync()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-591",
+    "title": "Python中协程的调度器是？",
+    "options": [
+      "事件循环",
+      "线程池",
+      "进程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-592",
+    "title": "Python中如何获取事件循环？",
+    "options": [
+      "asyncio.get_event_loop()",
+      "asyncio.get_loop()",
+      "asyncio.loop()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-593",
+    "title": "Python中如何创建新事件循环？",
+    "options": [
+      "asyncio.new_event_loop()",
+      "asyncio.create_loop()",
+      "asyncio.loop_new()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-594",
+    "title": "Python中如何设置事件循环？",
+    "options": [
+      "asyncio.set_event_loop()",
+      "asyncio.set_loop()",
+      "asyncio.loop_set()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-595",
+    "title": "Python中uvloop的作用是？",
+    "options": [
+      "快速事件循环",
+      "普通事件循环",
+      "同步循环",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-596",
+    "title": "Python中如何选择并发模型？",
+    "options": [
+      "根据任务类型",
+      "总是多线程",
+      "总是多进程",
+      "总是协程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-597",
+    "title": "Python中GIL是指？",
+    "options": [
+      "全局解释器锁",
+      "全局内存锁",
+      "通用接口层",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-598",
+    "title": "Python中GIL的作用是？",
+    "options": [
+      "保证线程安全",
+      "提高性能",
+      "支持多核",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-599",
+    "title": "Python中GIL的影响是？",
+    "options": [
+      "多线程不能利用多核",
+      "多进程不能利用多核",
+      "单线程性能下降",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-600",
+    "title": "Python中GIL在什么情况下释放？",
+    "options": [
+      "I/O操作时",
+      "执行C扩展时",
+      "每执行一定字节码时",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-601",
+    "title": "Python中socket模块的作用是？",
+    "options": [
+      "网络通信",
+      "文件操作",
+      "进程通信",
+      "线程通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-602",
+    "title": "Python中socket.AF_INET表示？",
+    "options": [
+      "IPv4",
+      "IPv6",
+      "Unix域",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-603",
+    "title": "Python中socket.AF_INET6表示？",
+    "options": [
+      "IPv4",
+      "IPv6",
+      "Unix域",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-604",
+    "title": "Python中socket.SOCK_STREAM表示？",
+    "options": [
+      "TCP",
+      "UDP",
+      "RAW",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-605",
+    "title": "Python中socket.SOCK_DGRAM表示？",
+    "options": [
+      "TCP",
+      "UDP",
+      "RAW",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-606",
+    "title": "Python中TCP服务端的流程是？",
+    "options": [
+      "socket, bind, listen, accept",
+      "socket, connect, send",
+      "socket, bind, send",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-607",
+    "title": "Python中TCP客户端的流程是？",
+    "options": [
+      "socket, bind, listen, accept",
+      "socket, connect, send",
+      "socket, bind, send",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-608",
+    "title": "Python中bind()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-609",
+    "title": "Python中listen()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-610",
+    "title": "Python中accept()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-611",
+    "title": "Python中connect()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-612",
+    "title": "Python中send()的作用是？",
+    "options": [
+      "发送数据",
+      "接收数据",
+      "关闭连接",
+      "绑定地址"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-613",
+    "title": "Python中recv()的作用是？",
+    "options": [
+      "发送数据",
+      "接收数据",
+      "关闭连接",
+      "绑定地址"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-614",
+    "title": "Python中sendall()和send()的区别是？",
+    "options": [
+      "sendall发送所有数据",
+      "send发送所有数据",
+      "没有区别",
+      "取决于数据量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-615",
+    "title": "Python中recv()的参数表示？",
+    "options": [
+      "最大接收字节数",
+      "最小接收字节数",
+      "精确接收字节数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-616",
+    "title": "Python中close()的作用是？",
+    "options": [
+      "发送数据",
+      "接收数据",
+      "关闭连接",
+      "绑定地址"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-617",
+    "title": "Python中如何设置socket超时？",
+    "options": [
+      "settimeout()",
+      "timeout()",
+      "set_timeout()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-618",
+    "title": "Python中如何获取socket状态？",
+    "options": [
+      "getsockopt()",
+      "getstatus()",
+      "getstate()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-619",
+    "title": "Python中如何设置socket选项？",
+    "options": [
+      "setsockopt()",
+      "setoption()",
+      "setstate()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-620",
+    "title": "Python中select模块的作用是？",
+    "options": [
+      "I/O多路复用",
+      "网络通信",
+      "进程通信",
+      "线程通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-621",
+    "title": "Python中selectors模块的作用是？",
+    "options": [
+      "高级I/O多路复用",
+      "低级I/O多路复用",
+      "网络通信",
+      "进程通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-622",
+    "title": "Python中select.select()的参数是？",
+    "options": [
+      "read_list, write_list, error_list",
+      "input_list, output_list",
+      "rlist, wlist, xlist",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-623",
+    "title": "Python中urllib模块的作用是？",
+    "options": [
+      "URL处理",
+      "HTTP客户端",
+      "FTP客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-624",
+    "title": "Python中urllib.request的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理错误",
+      "处理Robot"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-625",
+    "title": "Python中urllib.parse的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理错误",
+      "处理Robot"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-626",
+    "title": "Python中urllib.error的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理异常",
+      "处理Robot"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-627",
+    "title": "Python中urllib.robotparser的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理错误",
+      "处理Robot"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-628",
+    "title": "Python中requests库的作用是？",
+    "options": [
+      "HTTP客户端",
+      "HTTP服务端",
+      "FTP客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-629",
+    "title": "Python中requests.get()的作用是？",
+    "options": [
+      "发送GET请求",
+      "发送POST请求",
+      "发送PUT请求",
+      "发送DELETE请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-630",
+    "title": "Python中requests.post()的作用是？",
+    "options": [
+      "发送GET请求",
+      "发送POST请求",
+      "发送PUT请求",
+      "发送DELETE请求"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-631",
+    "title": "Python中requests的Response对象包含？",
+    "options": [
+      "status_code, text, json()",
+      "code, body, data",
+      "status, content, json",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-632",
+    "title": "Python中如何传递URL参数？",
+    "options": [
+      "params参数",
+      "data参数",
+      "json参数",
+      "headers参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-633",
+    "title": "Python中如何传递请求体？",
+    "options": [
+      "data或json参数",
+      "params参数",
+      "headers参数",
+      "cookies参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-634",
+    "title": "Python中如何设置请求头？",
+    "options": [
+      "headers参数",
+      "params参数",
+      "data参数",
+      "cookies参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-635",
+    "title": "Python中如何设置Cookie？",
+    "options": [
+      "cookies参数",
+      "headers参数",
+      "params参数",
+      "data参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-636",
+    "title": "Python中如何处理Session？",
+    "options": [
+      "requests.Session()",
+      "requests.session()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-637",
+    "title": "Python中Session的作用是？",
+    "options": [
+      "保持会话状态",
+      "创建新连接",
+      "关闭连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-638",
+    "title": "Python中如何处理SSL证书验证？",
+    "options": [
+      "verify参数",
+      "ssl参数",
+      "cert参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-639",
+    "title": "Python中如何设置代理？",
+    "options": [
+      "proxies参数",
+      "proxy参数",
+      "agent参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-640",
+    "title": "Python中如何设置超时？",
+    "options": [
+      "timeout参数",
+      "time参数",
+      "duration参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-641",
+    "title": "Python中如何上传文件？",
+    "options": [
+      "files参数",
+      "file参数",
+      "upload参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-642",
+    "title": "Python中如何处理重定向？",
+    "options": [
+      "allow_redirects参数",
+      "redirect参数",
+      "follow参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-643",
+    "title": "Python中http.server模块的作用是？",
+    "options": [
+      "HTTP服务端",
+      "HTTP客户端",
+      "FTP服务端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-644",
+    "title": "Python中如何创建简单HTTP服务？",
+    "options": [
+      "python -m http.server",
+      "python -m server",
+      "python -m http",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-645",
+    "title": "Python中xmlrpc模块的作用是？",
+    "options": [
+      "XML-RPC",
+      "JSON-RPC",
+      "SOAP",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-646",
+    "title": "Python中json-rpc库的作用是？",
+    "options": [
+      "XML-RPC",
+      "JSON-RPC",
+      "SOAP",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-647",
+    "title": "Python中grpc库的作用是？",
+    "options": [
+      "gRPC框架",
+      "REST框架",
+      "SOAP框架",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-648",
+    "title": "Python中protobuf的作用是？",
+    "options": [
+      "序列化",
+      "网络通信",
+      "加密解密",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-649",
+    "title": "Python中websocket库的作用是？",
+    "options": [
+      "WebSocket通信",
+      "HTTP通信",
+      "TCP通信",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-650",
+    "title": "Python中如何发送邮件？",
+    "options": [
+      "smtplib",
+      "poplib",
+      "imaplib",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-651",
+    "title": "Python中smtplib的作用是？",
+    "options": [
+      "发送邮件",
+      "接收邮件",
+      "解析邮件",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-652",
+    "title": "Python中poplib的作用是？",
+    "options": [
+      "发送邮件",
+      "接收邮件",
+      "解析邮件",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-653",
+    "title": "Python中imaplib的作用是？",
+    "options": [
+      "发送邮件",
+      "接收邮件",
+      "解析邮件",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-654",
+    "title": "Python中email模块的作用是？",
+    "options": [
+      "发送邮件",
+      "接收邮件",
+      "构建解析邮件",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-655",
+    "title": "Python中如何操作FTP？",
+    "options": [
+      "ftplib",
+      "ftplib",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-656",
+    "title": "Python中如何操作SSH？",
+    "options": [
+      "paramiko",
+      "sshlib",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-657",
+    "title": "Python中如何进行DNS查询？",
+    "options": [
+      "dnspython",
+      "dnslib",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-658",
+    "title": "Python中如何抓取网络包？",
+    "options": [
+      "scapy",
+      "pyshark",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-659",
+    "title": "Python中如何进行网络爬虫？",
+    "options": [
+      "scrapy, requests+bs4",
+      "spider",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-660",
+    "title": "Python中BeautifulSoup的作用是？",
+    "options": [
+      "解析HTML",
+      "发送请求",
+      "存储数据",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-661",
+    "title": "Python中lxml的作用是？",
+    "options": [
+      "解析HTML/XML",
+      "发送请求",
+      "存储数据",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-662",
+    "title": "Python中scrapy的作用是？",
+    "options": [
+      "爬虫框架",
+      "Web框架",
+      "数据处理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-663",
+    "title": "Python中selenium的作用是？",
+    "options": [
+      "浏览器自动化",
+      "爬虫框架",
+      "Web框架",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-664",
+    "title": "Python中pymysql的作用是？",
+    "options": [
+      "MySQL客户端",
+      "PostgreSQL客户端",
+      "SQLite客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-665",
+    "title": "Python中psycopg2的作用是？",
+    "options": [
+      "MySQL客户端",
+      "PostgreSQL客户端",
+      "SQLite客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-666",
+    "title": "Python中sqlite3的作用是？",
+    "options": [
+      "MySQL客户端",
+      "PostgreSQL客户端",
+      "SQLite客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-667",
+    "title": "Python中SQLAlchemy的作用是？",
+    "options": [
+      "ORM框架",
+      "数据库驱动",
+      "SQL解析器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-668",
+    "title": "Python中Django ORM的作用是？",
+    "options": [
+      "ORM框架",
+      "数据库驱动",
+      "SQL解析器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-669",
+    "title": "Python中MongoDB的客户端是？",
+    "options": [
+      "pymongo",
+      "mongodb",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-670",
+    "title": "Python中Redis的客户端是？",
+    "options": [
+      "redis-py",
+      "pyredis",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-671",
+    "title": "Python中如何连接数据库？",
+    "options": [
+      "创建连接对象",
+      "直接操作",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-672",
+    "title": "Python中如何执行SQL？",
+    "options": [
+      "cursor.execute()",
+      "db.execute()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-673",
+    "title": "Python中如何获取查询结果？",
+    "options": [
+      "cursor.fetchall()",
+      "cursor.get_all()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-674",
+    "title": "Python中如何获取一条结果？",
+    "options": [
+      "cursor.fetchone()",
+      "cursor.get_one()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-675",
+    "title": "Python中如何防止SQL注入？",
+    "options": [
+      "参数化查询",
+      "字符串拼接",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-676",
+    "title": "Python中如何使用事务？",
+    "options": [
+      "commit()和rollback()",
+      "save()和undo()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-677",
+    "title": "Python中如何使用连接池？",
+    "options": [
+      "DBUtils, SQLAlchemy",
+      "直接创建",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-678",
+    "title": "Python中numpy的作用是？",
+    "options": [
+      "数值计算",
+      "数据分析",
+      "机器学习",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-679",
+    "title": "Python中numpy的ndarray特点是？",
+    "options": [
+      "多维数组，同类型",
+      "多维数组，不同类型",
+      "一维数组，同类型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-680",
+    "title": "Python中numpy的广播机制是指？",
+    "options": [
+      "不同形状数组运算",
+      "广播消息",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-681",
+    "title": "Python中pandas的作用是？",
+    "options": [
+      "数据分析",
+      "数值计算",
+      "机器学习",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-682",
+    "title": "Python中pandas的Series是？",
+    "options": [
+      "一维数据结构",
+      "二维数据结构",
+      "三维数据结构",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-683",
+    "title": "Python中pandas的DataFrame是？",
+    "options": [
+      "一维数据结构",
+      "二维数据结构",
+      "三维数据结构",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-684",
+    "title": "Python中pandas如何读取CSV？",
+    "options": [
+      "read_csv()",
+      "load_csv()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-685",
+    "title": "Python中pandas如何处理缺失值？",
+    "options": [
+      "fillna(), dropna()",
+      "fill(), drop()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-686",
+    "title": "Python中pandas如何分组？",
+    "options": [
+      "groupby()",
+      "group()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-687",
+    "title": "Python中pandas如何合并？",
+    "options": [
+      "merge(), concat()",
+      "join(), combine()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-688",
+    "title": "Python中matplotlib的作用是？",
+    "options": [
+      "数据可视化",
+      "数据分析",
+      "数值计算",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-689",
+    "title": "Python中如何绘制折线图？",
+    "options": [
+      "plot()",
+      "line()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-690",
+    "title": "Python中如何绘制柱状图？",
+    "options": [
+      "bar()",
+      "hist()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-691",
+    "title": "Python中如何绘制散点图？",
+    "options": [
+      "scatter()",
+      "point()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-692",
+    "title": "Python中如何绘制饼图？",
+    "options": [
+      "pie()",
+      "circle()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-693",
+    "title": "Python中seaborn的作用是？",
+    "options": [
+      "统计可视化",
+      "基础绘图",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-694",
+    "title": "Python中plotly的作用是？",
+    "options": [
+      "交互式可视化",
+      "静态可视化",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-695",
+    "title": "Python中bokeh的作用是？",
+    "options": [
+      "交互式可视化",
+      "静态可视化",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-696",
+    "title": "Python中如何处理日期时间数据？",
+    "options": [
+      "datetime, pandas.to_datetime",
+      "time, date",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-697",
+    "title": "Python中如何处理分类数据？",
+    "options": [
+      "pandas.Categorical",
+      "category类型",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-698",
+    "title": "Python中如何处理时间序列？",
+    "options": [
+      "pandas时间序列功能",
+      "time模块",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-699",
+    "title": "Python中如何进行数据透视？",
+    "options": [
+      "pivot_table()",
+      "pivot()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-700",
+    "title": "Python中如何进行数据重塑？",
+    "options": [
+      "stack(), unstack()",
+      "reshape()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-701",
+    "title": "Python中如何进行数据采样？",
+    "options": [
+      "sample()",
+      "sampling()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-702",
+    "title": "Python中如何进行数据排序？",
+    "options": [
+      "sort_values(), sort_index()",
+      "order()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-703",
+    "title": "Python中如何进行数据去重？",
+    "options": [
+      "drop_duplicates()",
+      "unique()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-704",
+    "title": "Python中如何进行数据替换？",
+    "options": [
+      "replace()",
+      "substitute()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-705",
+    "title": "Python中如何进行数据映射？",
+    "options": [
+      "map(), apply()",
+      "transform()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-706",
+    "title": "Python中如何进行数据聚合？",
+    "options": [
+      "agg(), aggregate()",
+      "reduce()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-707",
+    "title": "Python中如何进行数据过滤？",
+    "options": [
+      "布尔索引, query()",
+      "filter()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-708",
+    "title": "Python中如何进行数据连接？",
+    "options": [
+      "merge(), join()",
+      "concat()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-709",
+    "title": "Python中如何进行数据拼接？",
+    "options": [
+      "concat(), append()",
+      "merge()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-710",
+    "title": "Python中如何处理大数据？",
+    "options": [
+      "分块处理, Dask",
+      "全量加载",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-711",
+    "title": "Python中Dask的作用是？",
+    "options": [
+      "并行计算",
+      "数据可视化",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-712",
+    "title": "Python中PySpark的作用是？",
+    "options": [
+      "分布式计算",
+      "单机计算",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-713",
+    "title": "Python中如何进行数据序列化？",
+    "options": [
+      "pickle, json",
+      "serialize",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-714",
+    "title": "Python中如何进行数据压缩？",
+    "options": [
+      "zlib, gzip",
+      "compress",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-715",
+    "title": "Python中如何进行数据加密？",
+    "options": [
+      "cryptography, pycryptodome",
+      "encrypt",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-716",
+    "title": "Python中如何进行数据校验？",
+    "options": [
+      "hashlib, hmac",
+      "checksum",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-717",
+    "title": "Python中如何进行数据编码？",
+    "options": [
+      "base64, codecs",
+      "encode",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-718",
+    "title": "Python中如何进行数据清洗？",
+    "options": [
+      "pandas, regex",
+      "clean",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-719",
+    "title": "Python中如何进行数据提取？",
+    "options": [
+      "正则, xpath, css选择器",
+      "extract",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-720",
+    "title": "Python中如何进行数据转换？",
+    "options": [
+      "map, apply, ETL工具",
+      "transform",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-721",
+    "title": "Python中一切皆？",
+    "options": [
+      "对象",
+      "引用",
+      "指针",
+      "值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-722",
+    "title": "Python中对象的三个要素是？",
+    "options": [
+      "id, type, value",
+      "name, type, value",
+      "id, class, value",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-723",
+    "title": "Python中id()函数的作用是？",
+    "options": [
+      "获取对象内存地址",
+      "获取对象类型",
+      "获取对象值",
+      "获取对象名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-724",
+    "title": "Python中type()函数的作用是？",
+    "options": [
+      "获取对象内存地址",
+      "获取对象类型",
+      "获取对象值",
+      "获取对象名称"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-725",
+    "title": "Python中is和==的区别是？",
+    "options": [
+      "is比较id，==比较value",
+      "is比较value，==比较id",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-726",
+    "title": "Python中小整数池的范围是？",
+    "options": [
+      "-5到256",
+      "0到255",
+      "-128到127",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-727",
+    "title": "Python中字符串驻留是指？",
+    "options": [
+      "相同字符串共享内存",
+      "字符串常量池",
+      "以上都是",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-728",
+    "title": "Python中垃圾回收的主要方式是？",
+    "options": [
+      "引用计数",
+      "标记-清除",
+      "分代收集",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-729",
+    "title": "Python中引用计数的优点是？",
+    "options": [
+      "实时性",
+      "简单",
+      "高效",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-730",
+    "title": "Python中引用计数的缺点是？",
+    "options": [
+      "不能处理循环引用",
+      "开销大",
+      "复杂",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-731",
+    "title": "Python中如何处理循环引用？",
+    "options": [
+      "标记-清除",
+      "引用计数",
+      "分代收集",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-732",
+    "title": "Python中分代收集的代数是？",
+    "options": [
+      "3代",
+      "2代",
+      "4代",
+      "5代"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-733",
+    "title": "Python中分代收集的假设是？",
+    "options": [
+      "新对象更易死",
+      "老对象更易死",
+      "没有假设",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-734",
+    "title": "Python中如何查看引用计数？",
+    "options": [
+      "sys.getrefcount()",
+      "sys.refcount()",
+      "gc.refcount()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-735",
+    "title": "Python中gc模块的作用是？",
+    "options": [
+      "垃圾回收控制",
+      "内存分配",
+      "对象创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-736",
+    "title": "Python中gc.enable()的作用是？",
+    "options": [
+      "启用自动GC",
+      "禁用自动GC",
+      "执行GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-737",
+    "title": "Python中gc.disable()的作用是？",
+    "options": [
+      "启用自动GC",
+      "禁用自动GC",
+      "执行GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-738",
+    "title": "Python中gc.collect()的作用是？",
+    "options": [
+      "启用自动GC",
+      "禁用自动GC",
+      "立即执行GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-739",
+    "title": "Python中gc.get_threshold()的作用是？",
+    "options": [
+      "获取GC阈值",
+      "设置GC阈值",
+      "获取GC频率",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-740",
+    "title": "Python中gc.set_threshold()的作用是？",
+    "options": [
+      "获取GC阈值",
+      "设置GC阈值",
+      "获取GC频率",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-741",
+    "title": "Python中gc.get_objects()的作用是？",
+    "options": [
+      "获取所有对象",
+      "获取垃圾对象",
+      "获取引用对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-742",
+    "title": "Python中gc.get_referrers()的作用是？",
+    "options": [
+      "获取引用对象的对象",
+      "获取对象引用的对象",
+      "获取垃圾对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-743",
+    "title": "Python中gc.get_referents()的作用是？",
+    "options": [
+      "获取引用对象的对象",
+      "获取对象引用的对象",
+      "获取垃圾对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-744",
+    "title": "Python中弱引用的作用是？",
+    "options": [
+      "不增加引用计数",
+      "增加引用计数",
+      "删除引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-745",
+    "title": "Python中weakref模块的作用是？",
+    "options": [
+      "创建弱引用",
+      "创建强引用",
+      "删除引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-746",
+    "title": "Python中弱引用的回调何时执行？",
+    "options": [
+      "对象被回收时",
+      "对象创建时",
+      "对象修改时",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-747",
+    "title": "Python中__del__方法的作用是？",
+    "options": [
+      "析构方法",
+      "构造方法",
+      "初始化方法",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-748",
+    "title": "Python中__del__何时调用？",
+    "options": [
+      "对象被回收前",
+      "对象创建时",
+      "对象使用时",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-749",
+    "title": "Python中__del__的问题有？",
+    "options": [
+      "调用时间不确定，可能引发异常",
+      "没有问题",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-750",
+    "title": "Python中如何手动触发垃圾回收？",
+    "options": [
+      "gc.collect()",
+      "del",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-751",
+    "title": "Python中del语句的作用是？",
+    "options": [
+      "删除引用",
+      "删除对象",
+      "删除变量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-752",
+    "title": "Python中del是否立即释放内存？",
+    "options": [
+      "不一定，引用计数为0时才释放",
+      "一定",
+      "从不释放",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-753",
+    "title": "Python中内存池的作用是？",
+    "options": [
+      "减少内存分配开销",
+      "增加内存使用",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-754",
+    "title": "Python中pymalloc的作用是？",
+    "options": [
+      "小块内存分配器",
+      "大块内存分配器",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-755",
+    "title": "Python中pymalloc的阈值是？",
+    "options": [
+      "512字节",
+      "256字节",
+      "1024字节",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-756",
+    "title": "Python中小于512字节的内存由谁分配？",
+    "options": [
+      "pymalloc",
+      "系统malloc",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-757",
+    "title": "Python中大于512字节的内存由谁分配？",
+    "options": [
+      "pymalloc",
+      "系统malloc",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-758",
+    "title": "Python中如何查看内存使用？",
+    "options": [
+      "sys.getsizeof(), tracemalloc",
+      "memory_usage()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-759",
+    "title": "Python中tracemalloc的作用是？",
+    "options": [
+      "内存追踪",
+      "内存分配",
+      "内存释放",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-760",
+    "title": "Python中如何检测内存泄漏？",
+    "options": [
+      "objgraph, tracemalloc",
+      "gc.collect()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-761",
+    "title": "Python中objgraph的作用是？",
+    "options": [
+      "对象引用图",
+      "内存分配",
+      "垃圾回收",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-762",
+    "title": "Python中内存泄漏的常见原因？",
+    "options": [
+      "全局变量，缓存，循环引用",
+      "局部变量",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-763",
+    "title": "Python中如何避免内存泄漏？",
+    "options": [
+      "及时释放引用，使用弱引用",
+      "多创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-764",
+    "title": "Python中深拷贝和浅拷贝的区别？",
+    "options": [
+      "深拷贝递归复制，浅拷贝只复制一层",
+      "浅拷贝递归复制，深拷贝只复制一层",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-765",
+    "title": "Python中如何实现深拷贝？",
+    "options": [
+      "copy.deepcopy()",
+      "copy.copy()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-766",
+    "title": "Python中如何实现浅拷贝？",
+    "options": [
+      "copy.copy(), 切片, list()",
+      "copy.deepcopy()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-767",
+    "title": "Python中可变对象作为默认参数的问题？",
+    "options": [
+      "参数在函数定义时创建，共享状态",
+      "没有问题",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-768",
+    "title": "Python中如何解决可变默认参数问题？",
+    "options": [
+      "使用None作为默认值",
+      "使用不可变对象",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-769",
+    "title": "Python中*args和**kwargs的内存分配？",
+    "options": [
+      "创建元组和字典",
+      "创建列表和字典",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-770",
+    "title": "Python中列表的内存增长策略是？",
+    "options": [
+      "超额分配",
+      "精确分配",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-771",
+    "title": "Python中字典的内存增长策略是？",
+    "options": [
+      "按需分配",
+      "超额分配",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-772",
+    "title": "Python中字典的实现方式是？",
+    "options": [
+      "哈希表",
+      "红黑树",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-773",
+    "title": "Python3.7+字典的特点是？",
+    "options": [
+      "有序",
+      "无序",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-774",
+    "title": "Python中字典的键为什么必须是可哈希的？",
+    "options": [
+      "哈希表查找需要",
+      "排序需要",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-775",
+    "title": "Python中什么是可哈希的？",
+    "options": [
+      "不可变对象",
+      "可变对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-776",
+    "title": "Python中__hash__方法的作用是？",
+    "options": [
+      "计算哈希值",
+      "比较对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-777",
+    "title": "Python中__eq__方法的作用是？",
+    "options": [
+      "计算哈希值",
+      "比较对象相等",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-778",
+    "title": "Python中如果重写__eq__，应该怎么做？",
+    "options": [
+      "同时重写__hash__",
+      "不需要重写__hash__",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-779",
+    "title": "Python中如果__eq__相等，__hash__必须？",
+    "options": [
+      "相等",
+      "不相等",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-780",
+    "title": "Python中如果__hash__相等，__eq__必须？",
+    "options": [
+      "不一定相等",
+      "必须相等",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-781",
+    "title": "Python中set的实现原理是？",
+    "options": [
+      "哈希表",
+      "红黑树",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-782",
+    "title": "Python中set查找的时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-783",
+    "title": "Python中list查找的时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-784",
+    "title": "Python中dict查找的时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-785",
+    "title": "Python中如何优化内存使用？",
+    "options": [
+      "使用生成器，__slots__，合理数据类型",
+      "多创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-786",
+    "title": "Python中__slots__如何节省内存？",
+    "options": [
+      "禁止__dict__创建",
+      "压缩内存",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-787",
+    "title": "Python中如何优化性能？",
+    "options": [
+      "使用内置函数，避免全局变量，缓存",
+      "多使用循环",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-788",
+    "title": "Python中性能分析工具是？",
+    "options": [
+      "cProfile, timeit",
+      "profiler",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-789",
+    "title": "Python中cProfile的作用是？",
+    "options": [
+      "性能分析",
+      "内存分析",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-790",
+    "title": "Python中timeit的作用是？",
+    "options": [
+      "测量执行时间",
+      "性能分析",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-791",
+    "title": "Python中dis模块的作用是？",
+    "options": [
+      "反汇编字节码",
+      "编译代码",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-792",
+    "title": "Python中inspect模块的作用是？",
+    "options": [
+      "检查对象",
+      "创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-793",
+    "title": "Python中如何查看字节码？",
+    "options": [
+      "dis.dis()",
+      "compile()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-794",
+    "title": "Python中如何动态执行代码？",
+    "options": [
+      "exec(), eval()",
+      "run()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-795",
+    "title": "Python中exec()和eval()的区别是？",
+    "options": [
+      "exec执行语句，eval执行表达式",
+      "eval执行语句，exec执行表达式",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-796",
+    "title": "Python中compile()的作用是？",
+    "options": [
+      "编译代码为代码对象",
+      "执行代码",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-797",
+    "title": "Python中代码对象的属性有？",
+    "options": [
+      "co_code, co_consts",
+      "code, data",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-798",
+    "title": "Python中如何进行代码优化？",
+    "options": [
+      "算法优化，内置函数，C扩展",
+      "多写循环",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-799",
+    "title": "Python中Cython的作用是？",
+    "options": [
+      "Python转C扩展",
+      "Python转Java",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-800",
+    "title": "Python中ctypes的作用是？",
+    "options": [
+      "调用C函数",
+      "调用Java函数",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-801",
+    "title": "Python中cffi的作用是？",
+    "options": [
+      "调用C函数",
+      "调用Java函数",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-802",
+    "title": "Python中如何进行内存映射？",
+    "options": [
+      "mmap模块",
+      "map函数",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-803",
+    "title": "Python中mmap的优点是？",
+    "options": [
+      "随机访问大文件",
+      "顺序访问小文件",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-804",
+    "title": "Python中如何处理大文件？",
+    "options": [
+      "分块读取，mmap",
+      "全量读取",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-805",
+    "title": "Python中如何进行对象池化？",
+    "options": [
+      "使用池化库",
+      "多创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-806",
+    "title": "Python中如何进行缓存？",
+    "options": [
+      "functools.lru_cache",
+      "redis",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-807",
+    "title": "Python中lru_cache的参数有？",
+    "options": [
+      "maxsize, typed",
+      "size, type",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-808",
+    "title": "Python中lru_cache的maxsize=None表示？",
+    "options": [
+      "无限制",
+      "不缓存",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-809",
+    "title": "Python中如何进行延迟加载？",
+    "options": [
+      "property, 描述符",
+      "lazy",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-810",
+    "title": "Python中如何进行预加载？",
+    "options": [
+      "初始化时加载",
+      "使用时加载",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-811",
+    "title": "Python中如何进行对象序列化？",
+    "options": [
+      "pickle, json",
+      "serialize",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-812",
+    "title": "Python中pickle的安全性如何？",
+    "options": [
+      "不安全，可能执行恶意代码",
+      "安全",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-813",
+    "title": "Python中如何安全地序列化？",
+    "options": [
+      "json, msgpack",
+      "pickle",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-814",
+    "title": "Python中如何进行深比较？",
+    "options": [
+      "==",
+      "is",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-815",
+    "title": "Python中如何进行浅比较？",
+    "options": [
+      "is",
+      "==",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-816",
+    "title": "Python中如何获取对象大小？",
+    "options": [
+      "sys.getsizeof()",
+      "sizeof()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-817",
+    "title": "Python中sys.getsizeof()是否包含引用对象？",
+    "options": [
+      "不包含",
+      "包含",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-818",
+    "title": "Python中如何获取对象总大小？",
+    "options": [
+      "递归计算",
+      "getsizeof()",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-819",
+    "title": "Python中如何进行内存分析？",
+    "options": [
+      "memory_profiler, tracemalloc",
+      "profiler",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-820",
+    "title": "Python中memory_profiler的作用是？",
+    "options": [
+      "内存分析",
+      "性能分析",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-821",
+    "title": "Python中如何进行性能调优？",
+    "options": [
+      "算法优化，缓存，并发",
+      "增加内存",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-822",
+    "title": "Python中如何选择数据结构？",
+    "options": [
+      "根据操作类型",
+      "总是用list",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-823",
+    "title": "Python中如何进行字符串拼接优化？",
+    "options": [
+      "join()",
+      "+",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-824",
+    "title": "Python中如何进行循环优化？",
+    "options": [
+      "减少属性查找，列表推导",
+      "多嵌套循环",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-825",
+    "title": "Python中如何进行条件优化？",
+    "options": [
+      "将常见条件放前面",
+      "将罕见条件放前面",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-826",
+    "title": "Python中如何进行函数调用优化？",
+    "options": [
+      "内联，缓存",
+      "多调用",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-827",
+    "title": "Python中如何进行I/O优化？",
+    "options": [
+      "批量操作，异步",
+      "单次操作",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-828",
+    "title": "Python中如何进行网络优化？",
+    "options": [
+      "连接池，异步",
+      "短连接",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-829",
+    "title": "Python中如何进行数据库优化？",
+    "options": [
+      "索引，批量操作",
+      "全表扫描",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-830",
+    "title": "Python中如何进行算法优化？",
+    "options": [
+      "选择合适算法，空间换时间",
+      "暴力破解",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-831",
+    "title": "Python中如何进行并发优化？",
+    "options": [
+      "多线程，多进程，协程",
+      "单线程",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-832",
+    "title": "Python中如何进行缓存优化？",
+    "options": [
+      "LRU，TTL",
+      "不缓存",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-833",
+    "title": "Python中如何进行代码重构？",
+    "options": [
+      "提取方法，简化条件",
+      "增加代码量",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-834",
+    "title": "Python中如何进行代码审查？",
+    "options": [
+      "人工审查，工具审查",
+      "不审查",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-835",
+    "title": "Python中如何进行持续集成？",
+    "options": [
+      "CI工具，自动测试",
+      "手动测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-836",
+    "title": "Python中如何进行持续部署？",
+    "options": [
+      "CD工具，自动部署",
+      "手动部署",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-837",
+    "title": "Python中如何进行监控告警？",
+    "options": [
+      "监控工具，告警规则",
+      "人工监控",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-838",
+    "title": "Python中如何进行日志分析？",
+    "options": [
+      "ELK，日志工具",
+      "人工查看",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-839",
+    "title": "Python中如何进行故障排查？",
+    "options": [
+      "日志，监控，调试",
+      "重启",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-840",
+    "title": "Python中如何进行容量规划？",
+    "options": [
+      "压测，监控",
+      "估算",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-841",
+    "title": "Python中PEP 8是什么？",
+    "options": [
+      "代码风格指南",
+      "语法规范",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-842",
+    "title": "Python中PEP 8推荐的缩进是？",
+    "options": [
+      "4个空格",
+      "2个空格",
+      "Tab",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-843",
+    "title": "Python中PEP 8推荐的行长是？",
+    "options": [
+      "79",
+      "80",
+      "120",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-844",
+    "title": "Python中PEP 8推荐的命名规范是？",
+    "options": [
+      "函数小写+下划线，类驼峰",
+      "全部驼峰",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-845",
+    "title": "Python中PEP 484是什么？",
+    "options": [
+      "类型提示",
+      "协程",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-846",
+    "title": "Python中PEP 572是什么？",
+    "options": [
+      "海象运算符",
+      "f-string",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-847",
+    "title": "Python中海象运算符是？",
+    "options": [
+      ":=",
+      "=?",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-848",
+    "title": "Python中海象运算符的作用是？",
+    "options": [
+      "赋值并返回值",
+      "比较相等",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-849",
+    "title": "Python中PEP 3107是什么？",
+    "options": [
+      "函数注解",
+      "类型提示",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-850",
+    "title": "Python中PEP 498是什么？",
+    "options": [
+      "f-string",
+      "类型提示",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-851",
+    "title": "Python中PEP 557是什么？",
+    "options": [
+      "dataclasses",
+      "枚举",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-852",
+    "title": "Python中PEP 563是什么？",
+    "options": [
+      "延迟注解求值",
+      "类型提示",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-853",
+    "title": "Python中PEP 613是什么？",
+    "options": [
+      "TypeAlias",
+      "类型提示",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-854",
+    "title": "Python中TypeAlias的作用是？",
+    "options": [
+      "类型别名",
+      "变量别名",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-855",
+    "title": "Python中Literal的作用是？",
+    "options": [
+      "字面量类型",
+      "字符串类型",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-856",
+    "title": "Python中Final的作用是？",
+    "options": [
+      "不可变类型",
+      "常量类型",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-857",
+    "title": "Python中Protocol的作用是？",
+    "options": [
+      "结构化子类型",
+      "接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-858",
+    "title": "Python中TypedDict的作用是？",
+    "options": [
+      "类型化字典",
+      "普通字典",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-859",
+    "title": "Python中设计模式有哪些？",
+    "options": [
+      "创建型，结构型，行为型",
+      "只有单例",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-860",
+    "title": "Python中单例模式的实现方式有？",
+    "options": [
+      "模块，装饰器，元类",
+      "只能类",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-861",
+    "title": "Python中最简单的单例是？",
+    "options": [
+      "模块",
+      "类",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-862",
+    "title": "Python中工厂模式的作用是？",
+    "options": [
+      "创建对象",
+      "结构对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-863",
+    "title": "Python中观察者模式的作用是？",
+    "options": [
+      "一对多依赖",
+      "一对一依赖",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-864",
+    "title": "Python中策略模式的作用是？",
+    "options": [
+      "封装算法",
+      "创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-865",
+    "title": "Python中装饰器模式的作用是？",
+    "options": [
+      "动态添加功能",
+      "创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-866",
+    "title": "Python中Pythonic的代码特点是？",
+    "options": [
+      "简洁，可读，优雅",
+      "复杂，晦涩",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-867",
+    "title": "Python中EAFP是指？",
+    "options": [
+      "请求宽恕比许可容易",
+      "先检查再执行",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-868",
+    "title": "Python中LBYL是指？",
+    "options": [
+      "先看再跳",
+      "请求宽恕比许可容易",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-869",
+    "title": "Python中推荐EAFP还是LBYL？",
+    "options": [
+      "EAFP",
+      "LBYL",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-870",
+    "title": "Python中鸭子类型是指？",
+    "options": [
+      "关注行为而非类型",
+      "关注类型而非行为",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-871",
+    "title": "Python中如何编写文档字符串？",
+    "options": [
+      "使用三引号",
+      "使用#",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-872",
+    "title": "Python中docstring的格式有？",
+    "options": [
+      "Sphinx, Google, NumPy",
+      "Markdown",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-873",
+    "title": "Python中如何生成文档？",
+    "options": [
+      "Sphinx",
+      "pydoc",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-874",
+    "title": "Python中Sphinx的作用是？",
+    "options": [
+      "文档生成",
+      "代码检查",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-875",
+    "title": "Python中pydoc的作用是？",
+    "options": [
+      "文档生成",
+      "代码检查",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-876",
+    "title": "Python中如何进行单元测试？",
+    "options": [
+      "unittest, pytest",
+      "junit",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-877",
+    "title": "Python中unittest的作用是？",
+    "options": [
+      "单元测试",
+      "集成测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-878",
+    "title": "Python中pytest的作用是？",
+    "options": [
+      "单元测试",
+      "集成测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-879",
+    "title": "Python中pytest和unittest的区别是？",
+    "options": [
+      "pytest更简洁强大",
+      "unittest更简洁",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-880",
+    "title": "Python中如何进行参数化测试？",
+    "options": [
+      "@pytest.mark.parametrize",
+      "ddt",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-881",
+    "title": "Python中如何进行固件管理？",
+    "options": [
+      "pytest fixtures",
+      "unittest setUp",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-882",
+    "title": "Python中如何进行测试标记？",
+    "options": [
+      "@pytest.mark",
+      "@tag",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-883",
+    "title": "Python中如何跳过测试？",
+    "options": [
+      "@pytest.mark.skip",
+      "@skip",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-884",
+    "title": "Python中如何预期失败？",
+    "options": [
+      "@pytest.mark.xfail",
+      "@expect_fail",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-885",
+    "title": "Python中如何进行测试发现？",
+    "options": [
+      "pytest自动发现",
+      "手动指定",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-886",
+    "title": "Python中如何进行测试配置？",
+    "options": [
+      "pytest.ini, pyproject.toml",
+      "config.py",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-887",
+    "title": "Python中如何进行日志测试？",
+    "options": [
+      "caplog fixture",
+      "日志断言",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-888",
+    "title": "Python中如何进行临时文件测试？",
+    "options": [
+      "tmp_path fixture",
+      "tempfile",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-889",
+    "title": "Python中如何进行HTTP测试？",
+    "options": [
+      "requests-mock, responses",
+      "mock server",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-890",
+    "title": "Python中如何进行数据库测试？",
+    "options": [
+      "事务回滚, fixture",
+      "真实数据库",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-891",
+    "title": "Python中如何进行API测试？",
+    "options": [
+      "pytest + requests",
+      "postman",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-892",
+    "title": "Python中如何进行Web测试？",
+    "options": [
+      "Selenium, Playwright",
+      "手动测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-893",
+    "title": "Python中如何进行性能测试？",
+    "options": [
+      "locust, JMeter",
+      "手动测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-894",
+    "title": "Python中如何进行安全测试？",
+    "options": [
+      "OWASP工具",
+      "手动测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-895",
+    "title": "Python中如何进行代码质量保证？",
+    "options": [
+      "测试，审查，分析",
+      "不测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-896",
+    "title": "Python中如何进行持续集成？",
+    "options": [
+      "GitHub Actions, Jenkins",
+      "手动部署",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-897",
+    "title": "Python中GitHub Actions的作用是？",
+    "options": [
+      "CI/CD",
+      "代码检查",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-898",
+    "title": "Python中pre-commit的作用是？",
+    "options": [
+      "Git钩子管理",
+      "代码提交",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-899",
+    "title": "Python中如何进行版本管理？",
+    "options": [
+      "Git",
+      "SVN",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-900",
+    "title": "Python中语义化版本格式是？",
+    "options": [
+      "MAJOR.MINOR.PATCH",
+      "1.0",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-901",
+    "title": "Python中如何进行变更日志？",
+    "options": [
+      "CHANGELOG.md",
+      "commit log",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-902",
+    "title": "Python中如何进行代码审查？",
+    "options": [
+      "Pull Request",
+      "邮件",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-903",
+    "title": "Python中如何进行知识分享？",
+    "options": [
+      "文档，培训，代码",
+      "不分享",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-904",
+    "title": "Python中如何进行项目管理？",
+    "options": [
+      "敏捷，看板",
+      "瀑布",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-905",
+    "title": "Python中如何进行需求管理？",
+    "options": [
+      "用户故事，任务",
+      "不管理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-906",
+    "title": "Python中如何进行缺陷管理？",
+    "options": [
+      "Issue，Bug追踪",
+      "不管理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-907",
+    "title": "Python中如何进行技术债务管理？",
+    "options": [
+      "识别，计划，偿还",
+      "忽略",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-908",
+    "title": "Python中如何进行架构演进？",
+    "options": [
+      "渐进式重构",
+      "推翻重来",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-909",
+    "title": "Python中如何进行团队协作？",
+    "options": [
+      "规范，工具，沟通",
+      "各自开发",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-910",
+    "title": "Python中如何进行代码规范？",
+    "options": [
+      "PEP 8，lint",
+      "不规范",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-911",
+    "title": "Python中如何进行错误处理？",
+    "options": [
+      "异常，错误码",
+      "忽略",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-912",
+    "title": "Python中如何进行日志记录？",
+    "options": [
+      "logging模块",
+      "print",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-913",
+    "title": "Python中如何进行配置管理？",
+    "options": [
+      "配置文件，环境变量",
+      "硬编码",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-914",
+    "title": "Python中如何进行密钥管理？",
+    "options": [
+      "环境变量，密钥管理服务",
+      "代码中",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-915",
+    "title": "Python中如何进行国际化？",
+    "options": [
+      "gettext",
+      "i18n",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-916",
+    "title": "Python中gettext的作用是？",
+    "options": [
+      "国际化",
+      "本地化",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-917",
+    "title": "Python中如何进行本地化？",
+    "options": [
+      "gettext",
+      "l10n",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-918",
+    "title": "Python中如何进行字符编码处理？",
+    "options": [
+      "encode, decode",
+      "不处理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-919",
+    "title": "Python3默认编码是？",
+    "options": [
+      "UTF-8",
+      "GBK",
+      "ASCII",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-920",
+    "title": "Python中如何处理Unicode错误？",
+    "options": [
+      "errors参数",
+      "忽略",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-921",
+    "title": "Python中如何进行数据验证？",
+    "options": [
+      "pydantic, jsonschema",
+      "不验证",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-922",
+    "title": "Python中pydantic的作用是？",
+    "options": [
+      "数据验证",
+      "ORM",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-923",
+    "title": "Python中jsonschema的作用是？",
+    "options": [
+      "JSON验证",
+      "数据验证",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-924",
+    "title": "Python中如何进行API设计？",
+    "options": [
+      "REST, GraphQL",
+      "RPC",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-925",
+    "title": "Python中RESTful API的特点是？",
+    "options": [
+      "资源导向，HTTP动词",
+      "动作导向",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-926",
+    "title": "Python中GraphQL的特点是？",
+    "options": [
+      "按需查询",
+      "固定返回",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-927",
+    "title": "Python中如何进行API文档？",
+    "options": [
+      "OpenAPI, Swagger",
+      "Word",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-928",
+    "title": "Python中如何进行API版本管理？",
+    "options": [
+      "URL路径，Header",
+      "不管理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-929",
+    "title": "Python中如何进行API限流？",
+    "options": [
+      "令牌桶，漏桶",
+      "不限流",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-930",
+    "title": "Python中如何进行API认证？",
+    "options": [
+      "JWT, OAuth",
+      "无认证",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-931",
+    "title": "Python中JWT的作用是？",
+    "options": [
+      "令牌认证",
+      "加密",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-932",
+    "title": "Python中OAuth的作用是？",
+    "options": [
+      "授权框架",
+      "认证",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-933",
+    "title": "Python中如何进行API缓存？",
+    "options": [
+      "Redis, ETag",
+      "不缓存",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-934",
+    "title": "Python中如何进行API监控？",
+    "options": [
+      "日志，指标",
+      "不监控",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-935",
+    "title": "Python中如何进行API测试？",
+    "options": [
+      "pytest, postman",
+      "不测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-936",
+    "title": "Python中如何进行微服务？",
+    "options": [
+      "FastAPI, Nameko",
+      "单体",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-937",
+    "title": "Python中如何进行服务发现？",
+    "options": [
+      "Consul, Eureka",
+      "硬编码",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-938",
+    "title": "Python中如何进行配置中心？",
+    "options": [
+      "etcd, Apollo",
+      "配置文件",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-939",
+    "title": "Python中如何进行消息队列？",
+    "options": [
+      "RabbitMQ, Kafka",
+      "直接调用",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-940",
+    "title": "Python中Celery的作用是？",
+    "options": [
+      "任务队列",
+      "消息队列",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-941",
+    "title": "Python中RabbitMQ的作用是？",
+    "options": [
+      "消息队列",
+      "任务队列",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-942",
+    "title": "Python中Kafka的作用是？",
+    "options": [
+      "消息队列",
+      "任务队列",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-943",
+    "title": "Python中Django的作用是？",
+    "options": [
+      "全栈Web框架",
+      "微框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-944",
+    "title": "Python中Flask的作用是？",
+    "options": [
+      "全栈Web框架",
+      "微框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-945",
+    "title": "Python中FastAPI的作用是？",
+    "options": [
+      "异步Web框架",
+      "同步Web框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-946",
+    "title": "Python中Tornado的作用是？",
+    "options": [
+      "异步Web框架",
+      "同步Web框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-947",
+    "title": "Python中WSGI的作用是？",
+    "options": [
+      "Web服务器接口",
+      "异步服务器接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-948",
+    "title": "Python中ASGI的作用是？",
+    "options": [
+      "Web服务器接口",
+      "异步服务器接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-949",
+    "title": "Python中uwsgi的作用是？",
+    "options": [
+      "Web服务器",
+      "应用服务器",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-950",
+    "title": "Python中Gunicorn的作用是？",
+    "options": [
+      "Web服务器",
+      "应用服务器",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-951",
+    "title": "Python中Nginx的作用是？",
+    "options": [
+      "反向代理",
+      "Web服务器",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-952",
+    "title": "Python中Django的MTV模式是？",
+    "options": [
+      "Model, Template, View",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-953",
+    "title": "Python中Django的ORM特点是？",
+    "options": [
+      "Active Record",
+      "Data Mapper",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-954",
+    "title": "Python中Flask的扩展方式是？",
+    "options": [
+      "第三方扩展",
+      "内置扩展",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-955",
+    "title": "Python中FastAPI的文档生成是？",
+    "options": [
+      "Swagger/OpenAPI",
+      "自定义",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-956",
+    "title": "Python中Scrapy的组件有？",
+    "options": [
+      "Spider, Pipeline, Middleware",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-957",
+    "title": "Python中Pandas的索引类型有？",
+    "options": [
+      "RangeIndex, DatetimeIndex",
+      "IntIndex, StrIndex",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-958",
+    "title": "Python中NumPy的ufunc是？",
+    "options": [
+      "通用函数",
+      "特殊函数",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-959",
+    "title": "Python中Matplotlib的面向对象API是？",
+    "options": [
+      "Figure, Axes",
+      "Plot, Chart",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-960",
+    "title": "Python中Seaborn的特点是？",
+    "options": [
+      "高级统计图表",
+      "基础绘图",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-961",
+    "title": "Python中Scikit-learn的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-962",
+    "title": "Python中TensorFlow的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-963",
+    "title": "Python中PyTorch的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-964",
+    "title": "Python中Keras的作用是？",
+    "options": [
+      "高级神经网络API",
+      "低级神经网络API",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-965",
+    "title": "Python中OpenCV的作用是？",
+    "options": [
+      "计算机视觉",
+      "自然语言处理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-966",
+    "title": "Python中NLTK的作用是？",
+    "options": [
+      "自然语言处理",
+      "计算机视觉",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-967",
+    "title": "Python中spaCy的作用是？",
+    "options": [
+      "自然语言处理",
+      "计算机视觉",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-968",
+    "title": "Python中Gensim的作用是？",
+    "options": [
+      "主题建模",
+      "图像识别",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-969",
+    "title": "Python中Statsmodels的作用是？",
+    "options": [
+      "统计建模",
+      "机器学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-970",
+    "title": "Python中SymPy的作用是？",
+    "options": [
+      "符号计算",
+      "数值计算",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-971",
+    "title": "Python中NetworkX的作用是？",
+    "options": [
+      "图论与网络分析",
+      "网络爬虫",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-972",
+    "title": "Python中Pillow的作用是？",
+    "options": [
+      "图像处理",
+      "图像识别",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-973",
+    "title": "Python中MoviePy的作用是？",
+    "options": [
+      "视频编辑",
+      "视频播放",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-974",
+    "title": "Python中PyAudio的作用是？",
+    "options": [
+      "音频处理",
+      "视频处理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-975",
+    "title": "Python中Pygame的作用是？",
+    "options": [
+      "游戏开发",
+      "图形界面",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-976",
+    "title": "Python中Tkinter的作用是？",
+    "options": [
+      "GUI开发",
+      "游戏开发",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-977",
+    "title": "Python中PyQt的作用是？",
+    "options": [
+      "GUI开发",
+      "游戏开发",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-978",
+    "title": "Python中Kivy的作用是？",
+    "options": [
+      "移动应用开发",
+      "桌面应用开发",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-979",
+    "title": "Python中BeeWare的作用是？",
+    "options": [
+      "跨平台原生应用",
+      "Web应用",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-980",
+    "title": "Python中RabbitMQ的作用是？",
+    "options": [
+      "消息队列",
+      "任务队列",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-981",
+    "title": "Python中Kafka的作用是？",
+    "options": [
+      "消息队列",
+      "任务队列",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-982",
+    "title": "Python中Django的作用是？",
+    "options": [
+      "全栈Web框架",
+      "微框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-983",
+    "title": "Python中Flask的作用是？",
+    "options": [
+      "全栈Web框架",
+      "微框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-984",
+    "title": "Python中FastAPI的作用是？",
+    "options": [
+      "异步Web框架",
+      "同步Web框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-985",
+    "title": "Python中Tornado的作用是？",
+    "options": [
+      "异步Web框架",
+      "同步Web框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-986",
+    "title": "Python中WSGI的作用是？",
+    "options": [
+      "Web服务器接口",
+      "异步服务器接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-987",
+    "title": "Python中ASGI的作用是？",
+    "options": [
+      "Web服务器接口",
+      "异步服务器接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-988",
+    "title": "Python中uwsgi的作用是？",
+    "options": [
+      "Web服务器",
+      "应用服务器",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-989",
+    "title": "Python中Gunicorn的作用是？",
+    "options": [
+      "Web服务器",
+      "应用服务器",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-990",
+    "title": "Python中Nginx的作用是？",
+    "options": [
+      "反向代理",
+      "Web服务器",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-991",
+    "title": "Python中Django的MTV模式是？",
+    "options": [
+      "Model, Template, View",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-992",
+    "title": "Python中Django的ORM特点是？",
+    "options": [
+      "Active Record",
+      "Data Mapper",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-993",
+    "title": "Python中Flask的扩展方式是？",
+    "options": [
+      "第三方扩展",
+      "内置扩展",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-994",
+    "title": "Python中FastAPI的文档生成是？",
+    "options": [
+      "Swagger/OpenAPI",
+      "自定义",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-995",
+    "title": "Python中Scrapy的组件有？",
+    "options": [
+      "Spider, Pipeline, Middleware",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-996",
+    "title": "Python中Pandas的索引类型有？",
+    "options": [
+      "RangeIndex, DatetimeIndex",
+      "IntIndex, StrIndex",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-997",
+    "title": "Python中NumPy的ufunc是？",
+    "options": [
+      "通用函数",
+      "特殊函数",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-998",
+    "title": "Python中Matplotlib的面向对象API是？",
+    "options": [
+      "Figure, Axes",
+      "Plot, Chart",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-999",
+    "title": "Python中Seaborn的特点是？",
+    "options": [
+      "高级统计图表",
+      "基础绘图",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-1000",
+    "title": "Python中Scikit-learn的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

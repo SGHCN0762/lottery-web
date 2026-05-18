@@ -1,0 +1,11002 @@
+[
+  {
+    "id": "html-1",
+    "title": "HTML的全称是什么？",
+    "options": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "HyperLink Text Markup Language",
+      "HomeTool Markup Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-2",
+    "title": "HTML文档的根标签是？",
+    "options": [
+      "<html>",
+      "<body>",
+      "<head>",
+      "<root>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-3",
+    "title": "用于定义HTML文档标题的标签是？",
+    "options": [
+      "<title>",
+      "<header>",
+      "<h1>",
+      "<head>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-4",
+    "title": "HTML5文档类型声明是？",
+    "options": [
+      "<!DOCTYPE html>",
+      "<!DOCTYPE HTML5>",
+      "<!HTML>",
+      "<!DOCTYPE>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-5",
+    "title": "<meta charset=\"UTF-8\">的作用是？",
+    "options": [
+      "定义文档字符编码",
+      "定义视口",
+      "定义作者",
+      "定义关键词"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-6",
+    "title": "<head>标签中通常不包含？",
+    "options": [
+      "<body>",
+      "<title>",
+      "<meta>",
+      "<link>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-7",
+    "title": "HTML标签的语法正确的是？",
+    "options": [
+      "<tag></tag>",
+      "<tag><tag>",
+      "</tag><tag>",
+      "<tag>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-8",
+    "title": "自闭合标签的正确写法是？",
+    "options": [
+      "<br>",
+      "<br/>",
+      "</br>",
+      "<br />"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-9",
+    "title": "HTML属性的正确语法是？",
+    "options": [
+      "name=\"value\"",
+      "name=value",
+      "\"name\"=\"value\"",
+      "name: value"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-10",
+    "title": "HTML注释的写法是？",
+    "options": [
+      "<!-- 注释 -->",
+      "// 注释",
+      "/* 注释 */",
+      "<!-- 注释 -!>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-11",
+    "title": "<body>标签的作用是？",
+    "options": [
+      "定义文档的可见内容",
+      "定义文档元数据",
+      "定义文档标题",
+      "定义文档样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-12",
+    "title": "<link>标签的rel属性作用是？",
+    "options": [
+      "定义当前文档与链接文档的关系",
+      "定义链接地址",
+      "定义链接类型",
+      "定义加载时机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-13",
+    "title": "引入外部CSS样式表的标签是？",
+    "options": [
+      "<link>",
+      "<style>",
+      "<css>",
+      "<script>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-14",
+    "title": "引入外部JavaScript脚本的标签是？",
+    "options": [
+      "<script>",
+      "<js>",
+      "<link>",
+      "<style>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-15",
+    "title": "<script>标签的defer属性作用是？",
+    "options": [
+      "脚本延迟到文档解析完后执行",
+      "异步加载脚本",
+      "禁止执行脚本",
+      "立即执行脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-16",
+    "title": "<script>标签的async属性作用是？",
+    "options": [
+      "脚本异步加载且立即执行",
+      "延迟执行",
+      "按顺序执行",
+      "阻塞加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-17",
+    "title": "HTML标签不区分大小写，但推荐使用？",
+    "options": [
+      "小写",
+      "大写",
+      "首字母大写",
+      "驼峰命名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-18",
+    "title": "HTML文档的默认文件名通常是？",
+    "options": [
+      "index.html",
+      "main.html",
+      "home.html",
+      "default.html"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-19",
+    "title": "<html>标签的lang属性作用是？",
+    "options": [
+      "声明文档的语言",
+      "声明编码",
+      "声明地区",
+      "声明框架"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-20",
+    "title": "查看网页源代码的快捷键通常是？",
+    "options": [
+      "Ctrl+U",
+      "Ctrl+C",
+      "Ctrl+S",
+      "Ctrl+P"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-21",
+    "title": "HTML的最新主流版本是？",
+    "options": [
+      "HTML5",
+      "HTML4",
+      "HTML6",
+      "XHTML2"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-22",
+    "title": "XHTML与HTML的主要区别是？",
+    "options": [
+      "XHTML语法更严格",
+      "XHTML不支持标签",
+      "HTML不支持属性",
+      "没有区别"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-23",
+    "title": "<base>标签的作用是？",
+    "options": [
+      "为页面所有链接规定默认地址或目标",
+      "定义基础字体",
+      "定义基础样式",
+      "定义基础脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-24",
+    "title": "<meta>标签的name=\"viewport\"用于？",
+    "options": [
+      "控制移动端视口缩放",
+      "定义作者",
+      "定义编码",
+      "定义描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-25",
+    "title": "HTML属于哪种语言类型？",
+    "options": [
+      "标记语言",
+      "编程语言",
+      "脚本语言",
+      "数据库语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-26",
+    "title": "HTML中哪个标签用于定义段落？",
+    "options": [
+      "<p>",
+      "<div>",
+      "<span>",
+      "<br>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-27",
+    "title": "HTML中哪个标签用于插入换行？",
+    "options": [
+      "<br>",
+      "<p>",
+      "<hr>",
+      "<enter>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-28",
+    "title": "HTML中哪个标签用于插入水平线？",
+    "options": [
+      "<hr>",
+      "<br>",
+      "<line>",
+      "<sep>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-29",
+    "title": "HTML标题标签的正确顺序是？",
+    "options": [
+      "h1到h6逐渐减小",
+      "h6到h1逐渐减小",
+      "大小固定不变",
+      "随机大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-30",
+    "title": "一个页面中最好只有几个<h1>标签？",
+    "options": [
+      "1个",
+      "多个",
+      "不需要",
+      "3个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-31",
+    "title": "<div>标签属于什么元素？",
+    "options": [
+      "块级元素",
+      "内联元素",
+      "内联块元素",
+      "行内元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-32",
+    "title": "<span>标签属于什么元素？",
+    "options": [
+      "内联元素",
+      "块级元素",
+      "行内块元素",
+      "弹性元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-33",
+    "title": "块级元素的特点不包括？",
+    "options": [
+      "可以在一行显示多个",
+      "独占一行",
+      "可设置宽高",
+      "宽度默认100%"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-34",
+    "title": "内联元素的特点不包括？",
+    "options": [
+      "可以设置宽高",
+      "不独占一行",
+      "宽度由内容撑开",
+      "只能包含文本和其他内联元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-35",
+    "title": "哪个标签用于强调文本（语义为重要）？",
+    "options": [
+      "<strong>",
+      "<b>",
+      "<em>",
+      "<i>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-36",
+    "title": "哪个标签用于强调文本（语义为重音）？",
+    "options": [
+      "<em>",
+      "<i>",
+      "<strong>",
+      "<b>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-37",
+    "title": "<b>标签的作用是？",
+    "options": [
+      "加粗文本（无语义）",
+      "强调文本",
+      "斜体文本",
+      "删除文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-38",
+    "title": "<i>标签的作用是？",
+    "options": [
+      "斜体文本（无语义）",
+      "强调文本",
+      "加粗文本",
+      "插入文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-39",
+    "title": "<u>标签的作用是？",
+    "options": [
+      "下划线文本",
+      "删除线文本",
+      "上标文本",
+      "下标文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-40",
+    "title": "<del>标签的作用是？",
+    "options": [
+      "删除线文本",
+      "下划线文本",
+      "插入文本",
+      "强调文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-41",
+    "title": "<ins>标签的作用是？",
+    "options": [
+      "插入文本",
+      "删除文本",
+      "下划线文本",
+      "替换文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-42",
+    "title": "<sub>标签的作用是？",
+    "options": [
+      "下标文本",
+      "上标文本",
+      "下划线文本",
+      "删除文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-43",
+    "title": "<sup>标签的作用是？",
+    "options": [
+      "上标文本",
+      "下标文本",
+      "上划线文本",
+      "插入文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-44",
+    "title": "<mark>标签的作用是？",
+    "options": [
+      "标记/高亮文本",
+      "删除文本",
+      "插入文本",
+      "强调文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-45",
+    "title": "<small>标签的作用是？",
+    "options": [
+      "小号字体文本",
+      "缩小元素",
+      "隐藏文本",
+      "注释文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-46",
+    "title": "<blockquote>标签的作用是？",
+    "options": [
+      "块级引用",
+      "内联引用",
+      "代码引用",
+      "术语定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-47",
+    "title": "<q>标签的作用是？",
+    "options": [
+      "短的内联引用",
+      "块级引用",
+      "长引用",
+      "代码引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-48",
+    "title": "<abbr>标签的作用是？",
+    "options": [
+      "定义缩写",
+      "定义首字母缩略词",
+      "定义术语",
+      "定义引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-49",
+    "title": "<address>标签的作用是？",
+    "options": [
+      "定义联系信息",
+      "定义地址栏",
+      "定义锚点",
+      "定义文章"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-50",
+    "title": "<cite>标签的作用是？",
+    "options": [
+      "定义作品标题",
+      "定义引用块",
+      "定义缩写",
+      "定义术语"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-51",
+    "title": "<code>标签的作用是？",
+    "options": [
+      "定义代码片段",
+      "定义变量",
+      "定义预格式文本",
+      "定义键盘输入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-52",
+    "title": "<pre>标签的作用是？",
+    "options": [
+      "定义预格式文本",
+      "定义代码",
+      "定义段落",
+      "定义引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-53",
+    "title": "<kbd>标签的作用是？",
+    "options": [
+      "定义键盘输入",
+      "定义代码",
+      "定义变量",
+      "定义输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-54",
+    "title": "<samp>标签的作用是？",
+    "options": [
+      "定义程序输出",
+      "定义输入",
+      "定义变量",
+      "定义代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-55",
+    "title": "<var>标签的作用是？",
+    "options": [
+      "定义变量",
+      "定义代码",
+      "定义输入",
+      "定义输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-56",
+    "title": "<dfn>标签的作用是？",
+    "options": [
+      "定义术语",
+      "定义缩写",
+      "定义引用",
+      "定义方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-57",
+    "title": "<bdo>标签的作用是？",
+    "options": [
+      "覆盖默认文本方向",
+      "定义双下划线",
+      "定义加粗",
+      "定义强调"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-58",
+    "title": "<ruby>标签的作用是？",
+    "options": [
+      "定义拼音/注释",
+      "定义红宝石",
+      "定义变量",
+      "定义引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-59",
+    "title": "<rt>标签的作用是？",
+    "options": [
+      "定义字符的解释/发音",
+      "定义粗体",
+      "定义替换文本",
+      "定义行文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-60",
+    "title": "<rp>标签的作用是？",
+    "options": [
+      "定义不支持ruby元素的浏览器显示的内容",
+      "定义引用",
+      "定义段落",
+      "定义预格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-61",
+    "title": "<time>标签的作用是？",
+    "options": [
+      "定义日期/时间",
+      "定义计时器",
+      "定义标题",
+      "定义表格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-62",
+    "title": "<data>标签的作用是？",
+    "options": [
+      "将内容与机器可读的值链接",
+      "定义数据源",
+      "定义数据库",
+      "定义日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-63",
+    "title": "<wbr>标签的作用是？",
+    "options": [
+      "规定文本中的换行时机",
+      "强制换行",
+      "禁止换行",
+      "删除换行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-64",
+    "title": "HTML中的特殊字符 < 用什么表示？",
+    "options": [
+      "<",
+      ">",
+      "&",
+      "&nbsp;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-65",
+    "title": "HTML中的特殊字符 > 用什么表示？",
+    "options": [
+      ">",
+      "<",
+      "&",
+      "\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-66",
+    "title": "HTML中的特殊字符 & 用什么表示？",
+    "options": [
+      "&",
+      "<",
+      ">",
+      "&copy;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-67",
+    "title": "HTML中的非断行空格用什么表示？",
+    "options": [
+      "&nbsp;",
+      "&space;",
+      "&blank;",
+      "&tab;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-68",
+    "title": "HTML中的版权符号用什么表示？",
+    "options": [
+      "&copy;",
+      "&c;",
+      "&copyright;",
+      "&commat;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-69",
+    "title": "HTML中的注册商标符号用什么表示？",
+    "options": [
+      "&reg;",
+      "&r;",
+      "&trade;",
+      "&tm;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-70",
+    "title": "HTML中的商标符号用什么表示？",
+    "options": [
+      "&trade;",
+      "&tm;",
+      "&reg;",
+      "&copy;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-71",
+    "title": "如何创建超链接？",
+    "options": [
+      "<a href=\"url\">",
+      "<link href=\"url\">",
+      "<href=\"url\">",
+      "<url>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-72",
+    "title": "<a>标签的target=\"_blank\"的作用是？",
+    "options": [
+      "在新窗口打开链接",
+      "在当前窗口打开",
+      "在父窗口打开",
+      "在顶层窗口打开"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-73",
+    "title": "<a>标签的href=\"#\"的作用是？",
+    "options": [
+      "链接到页面顶部",
+      "不跳转",
+      "刷新页面",
+      "链接到首页"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-74",
+    "title": "如何创建邮件链接？",
+    "options": [
+      "<a href=\"mailto:email\">",
+      "<a href=\"email\">",
+      "<mail>email</mail>",
+      "<a src=\"email\">"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-75",
+    "title": "如何创建电话链接？",
+    "options": [
+      "<a href=\"tel:number\">",
+      "<a href=\"call:number\">",
+      "<phone>number</phone>",
+      "<a src=\"tel\">"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-76",
+    "title": "<a>标签的download属性作用是？",
+    "options": [
+      "指示浏览器下载URL而不是导航",
+      "删除链接",
+      "上传文件",
+      "预览文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-77",
+    "title": "如何创建锚点链接？",
+    "options": [
+      "使用id属性和href=\"#id\"",
+      "使用name和src",
+      "使用class和href",
+      "使用link和target"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-78",
+    "title": "相对路径 ../ 表示？",
+    "options": [
+      "上一级目录",
+      "当前目录",
+      "根目录",
+      "下一级目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-79",
+    "title": "绝对路径的特点是？",
+    "options": [
+      "包含完整的协议和域名",
+      "只包含文件名",
+      "以./开头",
+      "以../开头"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-80",
+    "title": "无序列表的标签是？",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<dl>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-81",
+    "title": "有序列表的标签是？",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<li>",
+      "<dl>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-82",
+    "title": "列表项的标签是？",
+    "options": [
+      "<li>",
+      "<ul>",
+      "<ol>",
+      "<dd>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-83",
+    "title": "定义列表的标签是？",
+    "options": [
+      "<dl>",
+      "<ul>",
+      "<ol>",
+      "<dt>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-84",
+    "title": "定义列表中术语的标签是？",
+    "options": [
+      "<dt>",
+      "<dd>",
+      "<dl>",
+      "<dn>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-85",
+    "title": "定义列表中描述的标签是？",
+    "options": [
+      "<dd>",
+      "<dt>",
+      "<dl>",
+      "<desc>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-86",
+    "title": "表格的根标签是？",
+    "options": [
+      "<table>",
+      "<grid>",
+      "<tbody>",
+      "<tr>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-87",
+    "title": "表格行的标签是？",
+    "options": [
+      "<tr>",
+      "<td>",
+      "<th>",
+      "<row>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-88",
+    "title": "表格单元格的标签是？",
+    "options": [
+      "<td>",
+      "<th>",
+      "<tr>",
+      "<cell>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-89",
+    "title": "表格表头单元格的标签是？",
+    "options": [
+      "<th>",
+      "<td>",
+      "<tr>",
+      "<head>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-90",
+    "title": "<th>标签默认的文本样式是？",
+    "options": [
+      "加粗居中",
+      "正常左对齐",
+      "斜体右对齐",
+      "加粗左对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-91",
+    "title": "合并列的属性是？",
+    "options": [
+      "colspan",
+      "rowspan",
+      "merge",
+      "colmerge"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-92",
+    "title": "合并行的属性是？",
+    "options": [
+      "rowspan",
+      "colspan",
+      "rowmerge",
+      "merge"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-93",
+    "title": "表格标题的标签是？",
+    "options": [
+      "<caption>",
+      "<title>",
+      "<th>",
+      "<header>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-94",
+    "title": "表头部分的标签是？",
+    "options": [
+      "<thead>",
+      "<tbody>",
+      "<tfoot>",
+      "<head>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-95",
+    "title": "表格主体部分的标签是？",
+    "options": [
+      "<tbody>",
+      "<thead>",
+      "<tfoot>",
+      "<body>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-96",
+    "title": "表格页脚部分的标签是？",
+    "options": [
+      "<tfoot>",
+      "<thead>",
+      "<tbody>",
+      "<foot>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-97",
+    "title": "HTML的全称是什么？",
+    "options": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "HyperLink Text Markup Language",
+      "HomeTool Markup Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-98",
+    "title": "HTML文档的根标签是？",
+    "options": [
+      "<html>",
+      "<body>",
+      "<head>",
+      "<root>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-99",
+    "title": "用于定义HTML文档标题的标签是？",
+    "options": [
+      "<title>",
+      "<header>",
+      "<h1>",
+      "<head>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-100",
+    "title": "HTML5文档类型声明是？",
+    "options": [
+      "<!DOCTYPE html>",
+      "<!DOCTYPE HTML5>",
+      "<!HTML>",
+      "<!DOCTYPE>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-101",
+    "title": "表单的根标签是？",
+    "options": [
+      "<form>",
+      "<input>",
+      "<fieldset>",
+      "<label>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-102",
+    "title": "<input>标签的type属性默认值是？",
+    "options": [
+      "text",
+      "password",
+      "submit",
+      "radio"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-103",
+    "title": "用于创建密码输入框的type属性是？",
+    "options": [
+      "password",
+      "text",
+      "hidden",
+      "passwd"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-104",
+    "title": "用于创建单选按钮的type属性是？",
+    "options": [
+      "radio",
+      "checkbox",
+      "select",
+      "option"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-105",
+    "title": "用于创建复选框的type属性是？",
+    "options": [
+      "checkbox",
+      "radio",
+      "check",
+      "select"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-106",
+    "title": "用于提交表单的按钮type是？",
+    "options": [
+      "submit",
+      "button",
+      "reset",
+      "action"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-107",
+    "title": "用于重置表单的按钮type是？",
+    "options": [
+      "reset",
+      "submit",
+      "clear",
+      "button"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-108",
+    "title": "<textarea>标签的作用是？",
+    "options": [
+      "多行文本输入",
+      "单行文本输入",
+      "密码输入",
+      "下拉列表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-109",
+    "title": "<select>标签的作用是？",
+    "options": [
+      "创建下拉列表",
+      "创建文本域",
+      "创建单选框",
+      "创建表格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-110",
+    "title": "<option>标签的作用是？",
+    "options": [
+      "定义下拉列表的选项",
+      "定义下拉列表",
+      "定义表单",
+      "定义输入框"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-111",
+    "title": "<label>标签的作用是？",
+    "options": [
+      "为表单控件定义标注",
+      "定义输入框",
+      "定义字段集",
+      "定义表单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-112",
+    "title": "<label>标签的for属性用于？",
+    "options": [
+      "绑定对应的表单控件id",
+      "定义样式",
+      "定义行为",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-113",
+    "title": "<fieldset>标签的作用是？",
+    "options": [
+      "将表单内的相关元素分组",
+      "定义表单",
+      "定义输入框",
+      "定义标签"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-114",
+    "title": "<legend>标签的作用是？",
+    "options": [
+      "为fieldset定义标题",
+      "定义图例",
+      "定义标签",
+      "定义说明"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-115",
+    "title": "<form>标签的action属性用于？",
+    "options": [
+      "规定提交表单时向何处发送数据",
+      "定义表单方法",
+      "定义编码",
+      "定义验证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-116",
+    "title": "<form>标签的method属性用于？",
+    "options": [
+      "规定发送表单数据的HTTP方法",
+      "定义动作",
+      "定义目标",
+      "定义加密"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-117",
+    "title": "表单提交的两种常用方法是？",
+    "options": [
+      "GET和POST",
+      "PUT和DELETE",
+      "SEND和RECEIVE",
+      "PATCH和HEAD"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-118",
+    "title": "GET方法提交数据的特点是？",
+    "options": [
+      "数据在URL中可见",
+      "数据更安全",
+      "数据量无限制",
+      "无法被缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-119",
+    "title": "POST方法提交数据的特点是？",
+    "options": [
+      "数据在请求体中",
+      "数据在URL中",
+      "只能提交文本",
+      "无法加密"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-120",
+    "title": "<input>的placeholder属性用于？",
+    "options": [
+      "提供输入字段的预期提示",
+      "设置默认值",
+      "验证输入",
+      "限制长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-121",
+    "title": "<input>的required属性用于？",
+    "options": [
+      "指示输入字段必填",
+      "设置只读",
+      "禁用输入",
+      "隐藏输入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-122",
+    "title": "<input>的disabled属性用于？",
+    "options": [
+      "禁用输入字段",
+      "设置必填",
+      "设置只读",
+      "隐藏字段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-123",
+    "title": "<input>的readonly属性用于？",
+    "options": [
+      "设置输入字段为只读",
+      "禁用字段",
+      "设置必填",
+      "隐藏字段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-124",
+    "title": "<input>的value属性用于？",
+    "options": [
+      "规定输入字段的初始值",
+      "设置提示",
+      "设置类型",
+      "设置名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-125",
+    "title": "<input>的name属性用于？",
+    "options": [
+      "标识表单数据提交时的键名",
+      "设置显示名称",
+      "设置ID",
+      "设置样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-126",
+    "title": "<input>的maxlength属性用于？",
+    "options": [
+      "规定输入字段的最大字符长度",
+      "设置最小长度",
+      "设置宽度",
+      "设置高度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-127",
+    "title": "<input>的size属性用于？",
+    "options": [
+      "规定输入字段的可见宽度",
+      "设置最大长度",
+      "设置高度",
+      "设置文件大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-128",
+    "title": "用于上传文件的type属性是？",
+    "options": [
+      "file",
+      "upload",
+      "document",
+      "attachment"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-129",
+    "title": "文件上传表单必须设置的enctype是？",
+    "options": [
+      "multipart/form-data",
+      "application/x-www-form-urlencoded",
+      "text/plain",
+      "multipart/file"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-130",
+    "title": "用于隐藏输入字段的type属性是？",
+    "options": [
+      "hidden",
+      "invisible",
+      "display:none",
+      "secret"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-131",
+    "title": "用于创建数字输入框的type属性是？",
+    "options": [
+      "number",
+      "int",
+      "digit",
+      "float"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-132",
+    "title": "<input type=\"number\">的step属性用于？",
+    "options": [
+      "规定数字步长",
+      "设置最大值",
+      "设置最小值",
+      "设置精度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-133",
+    "title": "用于创建范围滑块的type属性是？",
+    "options": [
+      "range",
+      "slider",
+      "progress",
+      "bar"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-134",
+    "title": "用于创建颜色选择器的type属性是？",
+    "options": [
+      "color",
+      "rgb",
+      "palette",
+      "hue"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-135",
+    "title": "用于创建日期选择器的type属性是？",
+    "options": [
+      "date",
+      "calendar",
+      "datetime",
+      "day"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-136",
+    "title": "用于创建月份选择器的type属性是？",
+    "options": [
+      "month",
+      "year",
+      "week",
+      "time"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-137",
+    "title": "用于创建周选择器的type属性是？",
+    "options": [
+      "week",
+      "month",
+      "date",
+      "year"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-138",
+    "title": "用于创建时间选择器的type属性是？",
+    "options": [
+      "time",
+      "hour",
+      "minute",
+      "clock"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-139",
+    "title": "用于创建邮箱输入框的type属性是？",
+    "options": [
+      "email",
+      "mail",
+      "address",
+      "url"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-140",
+    "title": "<input type=\"email\">可以自动验证？",
+    "options": [
+      "邮箱格式",
+      "电话格式",
+      "网址格式",
+      "日期格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-141",
+    "title": "用于创建电话号码输入框的type属性是？",
+    "options": [
+      "tel",
+      "phone",
+      "mobile",
+      "call"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-142",
+    "title": "用于创建URL输入框的type属性是？",
+    "options": [
+      "url",
+      "link",
+      "href",
+      "web"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-143",
+    "title": "用于创建搜索框的type属性是？",
+    "options": [
+      "search",
+      "find",
+      "query",
+      "text"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-144",
+    "title": "<input type=\"image\">的作用是？",
+    "options": [
+      "定义图像作为提交按钮",
+      "显示图片",
+      "上传图片",
+      "图片预览"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-145",
+    "title": "<datalist>标签的作用是？",
+    "options": [
+      "定义输入域的选项列表",
+      "定义下拉列表",
+      "定义数据集",
+      "定义列表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-146",
+    "title": "如何将input与datalist绑定？",
+    "options": [
+      "使用list属性",
+      "使用for属性",
+      "使用src属性",
+      "使用data属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-147",
+    "title": "<output>标签的作用是？",
+    "options": [
+      "表示计算结果",
+      "输出文本",
+      "打印内容",
+      "显示错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-148",
+    "title": "<keygen>标签在HTML5中的状态是？",
+    "options": [
+      "已废弃",
+      "推荐使用",
+      "新增",
+      "不变"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-149",
+    "title": "<form>的novalidate属性用于？",
+    "options": [
+      "提交时不对表单进行验证",
+      "禁止提交",
+      "隐藏表单",
+      "禁用表单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-150",
+    "title": "<form>的autocomplete属性用于？",
+    "options": [
+      "控制表单自动完成功能",
+      "自动验证",
+      "自动提交",
+      "自动填充样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-151",
+    "title": "<input>的pattern属性用于？",
+    "options": [
+      "定义正则表达式验证输入",
+      "设置样式",
+      "设置格式",
+      "设置类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-152",
+    "title": "<input>的autofocus属性用于？",
+    "options": [
+      "页面加载时自动获取焦点",
+      "自动对焦",
+      "自动完成",
+      "自动验证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-153",
+    "title": "<input>的form属性用于？",
+    "options": [
+      "将输入框与指定id的表单关联",
+      "设置表单名称",
+      "提交表单",
+      "重置表单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-154",
+    "title": "<input>的multiple属性用于？",
+    "options": [
+      "允许输入多个值（如多文件上传）",
+      "多选框",
+      "多次提交",
+      "多行输入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-155",
+    "title": "<optgroup>标签的作用是？",
+    "options": [
+      "定义选项组",
+      "定义选项",
+      "定义下拉列表",
+      "定义表单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-156",
+    "title": "<optgroup>的label属性用于？",
+    "options": [
+      "为选项组定义描述",
+      "定义选项值",
+      "定义绑定",
+      "定义样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-157",
+    "title": "<button>标签与<input type=\"button\">的区别？",
+    "options": [
+      "<button>可以包含HTML内容",
+      "没有区别",
+      "<input>更灵活",
+      "<button>不能提交"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-158",
+    "title": "如何创建一个不含任何验证的提交按钮？",
+    "options": [
+      "使用formnovalidate属性",
+      "取消action",
+      "使用GET方法",
+      "删除name"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-159",
+    "title": "<input type=\"reset\">的作用是？",
+    "options": [
+      "重置表单为初始值",
+      "清空表单为空白",
+      "提交表单",
+      "删除表单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-160",
+    "title": "<input>的min和max属性用于？",
+    "options": [
+      "限制数值或日期范围",
+      "限制字符长度",
+      "限制显示大小",
+      "限制文件大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-161",
+    "title": "表单验证中，:valid伪类的作用是？",
+    "options": [
+      "选择验证通过的输入框",
+      "选择未验证的",
+      "选择验证失败的",
+      "选择必填的"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-162",
+    "title": "表单验证中，:invalid伪类的作用是？",
+    "options": [
+      "选择验证失败的输入框",
+      "选择验证通过的",
+      "选择禁用的",
+      "选择只读的"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-163",
+    "title": "<input>的step=\"any\"的含义是？",
+    "options": [
+      "允许输入任意小数",
+      "步长为1",
+      "步长为0",
+      "无步长限制(整数)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-164",
+    "title": "如何实现表单的异步提交？",
+    "options": [
+      "使用FormData和XMLHttpRequest/Fetch",
+      "使用action",
+      "使用method",
+      "使用target"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-165",
+    "title": "<form>的target属性用于？",
+    "options": [
+      "规定提交结果在哪里显示",
+      "规定提交地址",
+      "规定提交方法",
+      "规定编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-166",
+    "title": "<input type=\"password\">的安全性体现在？",
+    "options": [
+      "输入内容显示为掩码",
+      "数据加密传输",
+      "自动拦截",
+      "隐藏输入框"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-167",
+    "title": "如何为表单控件设置提示信息？",
+    "options": [
+      "使用title属性",
+      "使用placeholder",
+      "使用alt",
+      "使用name"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-168",
+    "title": "<input>的checked属性用于？",
+    "options": [
+      "预选checkbox或radio",
+      "验证输入",
+      "禁用输入",
+      "设置只读"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-169",
+    "title": "<input>的selected属性用于？",
+    "options": [
+      "预选下拉列表的option",
+      "预选checkbox",
+      "预选radio",
+      "禁用option"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-170",
+    "title": "<textarea>的rows属性用于？",
+    "options": [
+      "规定可见行数",
+      "规定字符数",
+      "规定宽度",
+      "规定最大行数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-171",
+    "title": "<textarea>的cols属性用于？",
+    "options": [
+      "规定可见列数",
+      "规定行数",
+      "规定高度",
+      "规定最大列数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-172",
+    "title": "<textarea>默认的resize行为是？",
+    "options": [
+      "浏览器默认可拉伸",
+      "不可拉伸",
+      "只能水平拉伸",
+      "只能垂直拉伸"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-173",
+    "title": "如何禁止textarea拉伸？",
+    "options": [
+      "resize: none",
+      "overflow: hidden",
+      "display: block",
+      "max-width: 100%"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-174",
+    "title": "<input type=\"checkbox\">的value在未选中时会提交吗？",
+    "options": [
+      "不会",
+      "会提交空值",
+      "会提交0",
+      "会提交false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-175",
+    "title": "如何将多个checkbox归为一组？",
+    "options": [
+      "使用相同的name属性",
+      "使用相同的id",
+      "使用相同的class",
+      "使用相同的value"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-176",
+    "title": "如何将多个radio归为一组实现互斥？",
+    "options": [
+      "使用相同的name属性",
+      "使用相同的id",
+      "使用相同的class",
+      "使用相同的value"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-177",
+    "title": "<form>的enctype默认值是？",
+    "options": [
+      "application/x-www-form-urlencoded",
+      "multipart/form-data",
+      "text/plain",
+      "application/json"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-178",
+    "title": "<input>的accept属性用于？",
+    "options": [
+      "规定文件上传的类型",
+      "规定字符集",
+      "规定提交方式",
+      "规定验证规则"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-179",
+    "title": "<input type=\"file\">的capture属性用于？",
+    "options": [
+      "指定调用摄像头或相册",
+      "捕获屏幕",
+      "录制音频",
+      "截取图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-180",
+    "title": "<input>的formaction属性用于？",
+    "options": [
+      "覆盖form的action属性",
+      "定义表单方法",
+      "定义表单目标",
+      "定义表单编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-181",
+    "title": "<input>的formmethod属性用于？",
+    "options": [
+      "覆盖form的method属性",
+      "定义提交地址",
+      "定义目标",
+      "定义验证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-182",
+    "title": "<input>的formenctype属性用于？",
+    "options": [
+      "覆盖form的enctype属性",
+      "定义提交方法",
+      "定义字符集",
+      "定义验证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-183",
+    "title": "<input>的formtarget属性用于？",
+    "options": [
+      "覆盖form的target属性",
+      "定义提交方法",
+      "定义地址",
+      "定义编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-184",
+    "title": "如何实现自定义表单验证逻辑？",
+    "options": [
+      "使用JavaScript和Constraint Validation API",
+      "仅用HTML属性",
+      "仅用CSS",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-185",
+    "title": "HTML5表单验证的setCustomValidity()方法用于？",
+    "options": [
+      "设置自定义验证消息",
+      "设置输入类型",
+      "设置样式",
+      "重置表单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-186",
+    "title": "如何阻止HTML5默认的表单验证？",
+    "options": [
+      "在form添加novalidate",
+      "删除action",
+      "删除method",
+      "添加validate=\"false\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-187",
+    "title": "<progress>标签的作用是？",
+    "options": [
+      "显示任务进度条",
+      "显示度量",
+      "显示范围",
+      "显示加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-188",
+    "title": "<meter>标签的作用是？",
+    "options": [
+      "显示标量度量（如磁盘使用率）",
+      "显示进度",
+      "显示滑块",
+      "显示刻度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-189",
+    "title": "<progress>的max属性用于？",
+    "options": [
+      "规定进度条的最大值",
+      "规定最小值",
+      "规定步长",
+      "规定当前值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-190",
+    "title": "<meter>的high属性用于？",
+    "options": [
+      "规定被视为高的阈值",
+      "规定最大值",
+      "规定最小值",
+      "规定最优值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-191",
+    "title": "<meter>的low属性用于？",
+    "options": [
+      "规定被视为低的阈值",
+      "规定最大值",
+      "规定高度",
+      "规定长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-192",
+    "title": "<meter>的optimum属性用于？",
+    "options": [
+      "规定最优度量值",
+      "规定最大值",
+      "规定最小值",
+      "规定平均值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-193",
+    "title": "<input type=\"hidden\">的主要用途是？",
+    "options": [
+      "存储不需要显示的表单数据",
+      "隐藏表单",
+      "安全提交",
+      "加密数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-194",
+    "title": "<form>的accept-charset属性用于？",
+    "options": [
+      "规定服务器可处理的字符集",
+      "规定文件类型",
+      "规定编码方式",
+      "规定语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-195",
+    "title": "<input>的dirname属性用于？",
+    "options": [
+      "提交文本方向",
+      "提交目录名",
+      "提交文件名",
+      "提交路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-196",
+    "title": "表单的根标签是？",
+    "options": [
+      "<form>",
+      "<input>",
+      "<fieldset>",
+      "<label>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-197",
+    "title": "<input>标签的type属性默认值是？",
+    "options": [
+      "text",
+      "password",
+      "submit",
+      "radio"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-198",
+    "title": "用于创建密码输入框的type属性是？",
+    "options": [
+      "password",
+      "text",
+      "hidden",
+      "passwd"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-199",
+    "title": "用于创建单选按钮的type属性是？",
+    "options": [
+      "radio",
+      "checkbox",
+      "select",
+      "option"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-200",
+    "title": "用于创建复选框的type属性是？",
+    "options": [
+      "checkbox",
+      "radio",
+      "check",
+      "select"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-201",
+    "title": "<img>标签的必需属性是？",
+    "options": [
+      "src和alt",
+      "href和title",
+      "src和title",
+      "href和alt"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-202",
+    "title": "<img>的alt属性作用是？",
+    "options": [
+      "图片无法显示时的替代文本",
+      "图片标题",
+      "图片链接",
+      "图片描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-203",
+    "title": "<img>的title属性作用是？",
+    "options": [
+      "鼠标悬停时显示的提示文本",
+      "替代文本",
+      "图片链接",
+      "图片大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-204",
+    "title": "<img>的loading=\"lazy\"属性用于？",
+    "options": [
+      "延迟加载图片",
+      "预加载图片",
+      "异步加载图片",
+      "禁止加载图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-205",
+    "title": "<img>的width和height属性用于？",
+    "options": [
+      "设置图片的固有尺寸",
+      "设置最大尺寸",
+      "设置最小尺寸",
+      "设置背景尺寸"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-206",
+    "title": "<img>的srcset属性用于？",
+    "options": [
+      "提供不同分辨率的图片源",
+      "设置图片路径",
+      "设置图片大小",
+      "设置图片格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-207",
+    "title": "<img>的sizes属性用于？",
+    "options": [
+      "告诉浏览器图片在页面中的预期尺寸",
+      "设置实际大小",
+      "设置格式",
+      "设置路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-208",
+    "title": "<picture>标签的作用是？",
+    "options": [
+      "根据条件加载不同图片",
+      "显示多张图片",
+      "裁剪图片",
+      "缩放图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-209",
+    "title": "<picture>内部必须包含的标签是？",
+    "options": [
+      "<img>",
+      "<source>",
+      "<media>",
+      "<image>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-210",
+    "title": "<source>标签的media属性用于？",
+    "options": [
+      "指定媒体查询条件",
+      "指定媒体类型",
+      "指定媒体路径",
+      "指定媒体格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-211",
+    "title": "<audio>标签的作用是？",
+    "options": [
+      "播放音频",
+      "播放视频",
+      "播放动画",
+      "播放声音"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-212",
+    "title": "<audio>的controls属性用于？",
+    "options": [
+      "显示播放控件",
+      "自动播放",
+      "循环播放",
+      "静音播放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-213",
+    "title": "<audio>的autoplay属性用于？",
+    "options": [
+      "音频就绪后自动播放",
+      "显示控件",
+      "循环播放",
+      "预加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-214",
+    "title": "<audio>的loop属性用于？",
+    "options": [
+      "循环播放音频",
+      "自动播放",
+      "显示控件",
+      "预加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-215",
+    "title": "<audio>的preload属性用于？",
+    "options": [
+      "规定是否预加载音频",
+      "自动播放",
+      "循环播放",
+      "静音"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-216",
+    "title": "<audio>的muted属性用于？",
+    "options": [
+      "静音播放",
+      "预加载",
+      "自动播放",
+      "循环播放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-217",
+    "title": "<video>标签的作用是？",
+    "options": [
+      "播放视频",
+      "播放音频",
+      "播放动画",
+      "录制视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-218",
+    "title": "<video>的poster属性用于？",
+    "options": [
+      "设置视频播放前的预览图像",
+      "设置视频封面",
+      "设置视频路径",
+      "设置视频大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-219",
+    "title": "<video>的width和height属性用于？",
+    "options": [
+      "设置视频播放器的尺寸",
+      "设置视频分辨率",
+      "设置视频比例",
+      "设置视频帧率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-220",
+    "title": "<track>标签的作用是？",
+    "options": [
+      "为媒体元素添加字幕等文本轨道",
+      "添加音频",
+      "添加视频",
+      "添加特效"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-221",
+    "title": "<track>的kind=\"subtitles\"表示？",
+    "options": [
+      "字幕",
+      "标题",
+      "描述",
+      "章节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-222",
+    "title": "<track>的kind=\"captions\"表示？",
+    "options": [
+      " captions（如翻译对话和声音效果）",
+      "字幕",
+      "章节",
+      "元数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-223",
+    "title": "<track>的srclang属性用于？",
+    "options": [
+      "指定轨道文本的语言",
+      "指定视频语言",
+      "指定音频语言",
+      "指定编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-224",
+    "title": "<iframe>标签的作用是？",
+    "options": [
+      "嵌入另一个HTML页面",
+      "创建框架集",
+      "嵌入图片",
+      "嵌入脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-225",
+    "title": "<iframe>的src属性用于？",
+    "options": [
+      "规定嵌入页面的URL",
+      "规定页面名称",
+      "规定页面大小",
+      "规定页面样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-226",
+    "title": "<iframe>的sandbox属性用于？",
+    "options": [
+      "对iframe内容实施额外限制",
+      "允许所有操作",
+      "设置沙盒样式",
+      "设置沙盒大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-227",
+    "title": "<iframe>的allow属性用于？",
+    "options": [
+      "为iframe指定功能策略",
+      "允许所有功能",
+      "允许脚本",
+      "允许样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-228",
+    "title": "<iframe>的loading=\"lazy\"用于？",
+    "options": [
+      "延迟加载iframe",
+      "预加载iframe",
+      "异步加载",
+      "立即加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-229",
+    "title": "<embed>标签的作用是？",
+    "options": [
+      "嵌入外部应用或交互内容",
+      "嵌入网页",
+      "嵌入图片",
+      "嵌入视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-230",
+    "title": "<object>标签的作用是？",
+    "options": [
+      "定义嵌入对象",
+      "定义网页",
+      "定义图片",
+      "定义视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-231",
+    "title": "<object>的data属性用于？",
+    "options": [
+      "指定对象资源的URL",
+      "指定对象数据",
+      "指定对象类型",
+      "指定对象大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-232",
+    "title": "<object>的type属性用于？",
+    "options": [
+      "指定对象内容的MIME类型",
+      "指定URL",
+      "指定大小",
+      "指定样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-233",
+    "title": "<param>标签的作用是？",
+    "options": [
+      "定义object元素的参数",
+      "定义对象",
+      "定义参数",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-234",
+    "title": "<map>标签的作用是？",
+    "options": [
+      "定义图像映射",
+      "定义地图",
+      "定义图片",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-235",
+    "title": "<area>标签的作用是？",
+    "options": [
+      "定义图像映射中的区域",
+      "定义区域",
+      "定义地图",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-236",
+    "title": "<area>的shape属性不包括？",
+    "options": [
+      "triangle",
+      "rect",
+      "circle",
+      "poly"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-237",
+    "title": "<area>的coords属性用于？",
+    "options": [
+      "定义可点击区域的坐标",
+      "定义大小",
+      "定义形状",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-238",
+    "title": "<figure>标签的作用是？",
+    "options": [
+      "规定独立的流内容（如图片、图表）",
+      "定义数字",
+      "定义图形",
+      "定义画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-239",
+    "title": "<figcaption>标签的作用是？",
+    "options": [
+      "为figure定义标题",
+      "定义图片",
+      "定义图表",
+      "定义说明"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-240",
+    "title": "<svg>标签的作用是？",
+    "options": [
+      "定义SVG矢量图形",
+      "定义位图",
+      "定义画布",
+      "定义图表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-241",
+    "title": "<canvas>标签的作用是？",
+    "options": [
+      "定义画布用于脚本绘图",
+      "定义矢量图",
+      "定义图片",
+      "定义动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-242",
+    "title": "SVG表示什么？",
+    "options": [
+      "Scalable Vector Graphics",
+      "Simple Vector Graphics",
+      "Scalable Video Graphics",
+      "Standard Vector Graphics"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-243",
+    "title": "SVG的优势是？",
+    "options": [
+      "不失真、体积小、可CSS操作",
+      "色彩丰富",
+      "适合照片",
+      "无需插件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-244",
+    "title": "Canvas的优势是？",
+    "options": [
+      "适合像素操作和复杂游戏渲染",
+      "不失真",
+      "可缩放",
+      "DOM友好"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-245",
+    "title": "<svg>中的<rect>用于？",
+    "options": [
+      "绘制矩形",
+      "绘制圆形",
+      "绘制线条",
+      "绘制路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-246",
+    "title": "<svg>中的<circle>用于？",
+    "options": [
+      "绘制圆形",
+      "绘制矩形",
+      "绘制椭圆",
+      "绘制多边形"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-247",
+    "title": "<svg>中的<line>用于？",
+    "options": [
+      "绘制线条",
+      "绘制矩形",
+      "绘制圆形",
+      "绘制文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-248",
+    "title": "<svg>中的<path>用于？",
+    "options": [
+      "绘制任意形状的路径",
+      "绘制直线",
+      "绘制矩形",
+      "绘制圆弧"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-249",
+    "title": "<svg>中的<text>用于？",
+    "options": [
+      "绘制文本",
+      "绘制路径",
+      "绘制矩形",
+      "绘制圆形"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-250",
+    "title": "Canvas获取绘图上下文的方法是？",
+    "options": [
+      "getContext()",
+      "getCanvas()",
+      "getDraw()",
+      "getGraphic()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-251",
+    "title": "Canvas 2D绘图上下文的参数是？",
+    "options": [
+      "\"2d\"",
+      "\"webgl\"",
+      "\"3d\"",
+      "\"svg\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-252",
+    "title": "Canvas 3D绘图上下文的参数是？",
+    "options": [
+      "\"webgl\"",
+      "\"3d\"",
+      "\"2d\"",
+      "\"opengl\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-253",
+    "title": "<img>的ismap属性用于？",
+    "options": [
+      "创建服务器端图像映射",
+      "客户端映射",
+      "懒加载",
+      "响应式图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-254",
+    "title": "<img>的usemap属性用于？",
+    "options": [
+      "关联客户端图像映射",
+      "服务器映射",
+      "预加载",
+      "缩放图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-255",
+    "title": "<iframe>的srcdoc属性用于？",
+    "options": [
+      "直接指定iframe中的HTML内容",
+      "指定URL",
+      "指定样式",
+      "指定脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-256",
+    "title": "<iframe>的name属性用于？",
+    "options": [
+      "作为链接的target目标",
+      "设置ID",
+      "设置样式",
+      "设置大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-257",
+    "title": "<iframe>的allowfullscreen属性用于？",
+    "options": [
+      "允许iframe全屏显示",
+      "允许滚动",
+      "允许缩放",
+      "允许脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-258",
+    "title": "<iframe>的referrerpolicy属性用于？",
+    "options": [
+      "设置请求iframe时的Referer策略",
+      "设置引用",
+      "设置策略",
+      "设置安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-259",
+    "title": "<audio>和<video>的crossorigin属性用于？",
+    "options": [
+      "处理跨域资源",
+      "处理格式",
+      "处理大小",
+      "处理控件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-260",
+    "title": "如何让视频在页面中自适应大小？",
+    "options": [
+      "设置width=\"100%\"",
+      "设置max-width",
+      "使用object-fit",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-261",
+    "title": "<source>标签的type属性用于？",
+    "options": [
+      "指定媒体资源的MIME类型",
+      "指定大小",
+      "指定路径",
+      "指定编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-262",
+    "title": "<source>标签的src属性用于？",
+    "options": [
+      "指定媒体资源的URL",
+      "指定类型",
+      "指定大小",
+      "指定格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-263",
+    "title": "HTML5中废弃的框架标签是？",
+    "options": [
+      "<frame>和<frameset>",
+      "<iframe>",
+      "<div>",
+      "<section>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-264",
+    "title": "<embed>的src属性用于？",
+    "options": [
+      "指定嵌入内容的URL",
+      "指定类型",
+      "指定大小",
+      "指定样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-265",
+    "title": "<embed>的type属性用于？",
+    "options": [
+      "指定嵌入内容的MIME类型",
+      "指定URL",
+      "指定大小",
+      "指定样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-266",
+    "title": "如何实现视频的画中画功能？",
+    "options": [
+      "使用JavaScript的requestPictureInPicture()",
+      "使用HTML属性",
+      "使用CSS",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-267",
+    "title": "<video>的playsinline属性用于？",
+    "options": [
+      "在iOS上内联播放而非全屏",
+      "循环播放",
+      "自动播放",
+      "静音播放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-268",
+    "title": "<audio>不支持的视频属性是？",
+    "options": [
+      "poster",
+      "width",
+      "height",
+      "playsinline"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-269",
+    "title": "<object>的classid属性用于？",
+    "options": [
+      "指定对象实现的URL(旧属性)",
+      "指定类名",
+      "指定ID",
+      "指定样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-270",
+    "title": "<object>的codetype属性用于？",
+    "options": [
+      "指定对象数据的MIME类型(旧属性)",
+      "指定代码类型",
+      "指定脚本",
+      "指定语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-271",
+    "title": "<object>的archive属性用于？",
+    "options": [
+      "指定资源存档URL(旧属性)",
+      "指定存档",
+      "指定压缩",
+      "指定历史"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-272",
+    "title": "<map>的name属性用于？",
+    "options": [
+      "为图像映射命名以被引用",
+      "设置ID",
+      "设置样式",
+      "设置大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-273",
+    "title": "<area>的href属性用于？",
+    "options": [
+      "定义区域超链接目标",
+      "定义形状",
+      "定义坐标",
+      "定义大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-274",
+    "title": "<area>的target属性用于？",
+    "options": [
+      "规定在何处打开链接",
+      "定义链接",
+      "定义形状",
+      "定义坐标"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-275",
+    "title": "<area>的alt属性用于？",
+    "options": [
+      "定义区域的替代文本",
+      "定义链接",
+      "定义形状",
+      "定义坐标"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-276",
+    "title": "<figure>属于哪种元素？",
+    "options": [
+      "块级元素",
+      "内联元素",
+      "行内块元素",
+      "内联块元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-277",
+    "title": "<figcaption>可以放在<figure>的什么位置？",
+    "options": [
+      "第一个或最后一个子元素",
+      "中间",
+      "外部",
+      "任意位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-278",
+    "title": "<svg>的viewBox属性用于？",
+    "options": [
+      "定义SVG视口的位置和大小",
+      "定义背景",
+      "定义边框",
+      "定义颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-279",
+    "title": "<svg>的xmlns属性用于？",
+    "options": [
+      "指定SVG命名空间",
+      "指定名称",
+      "指定样式",
+      "指定链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-280",
+    "title": "<canvas>的width和height属性用于？",
+    "options": [
+      "规定画布的绘图表面大小",
+      "规定CSS大小",
+      "规定最大大小",
+      "规定最小大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-281",
+    "title": "Canvas如何调整画布的CSS显示大小？",
+    "options": [
+      "通过CSS的width和height",
+      "通过HTML属性",
+      "通过viewBox",
+      "无法调整"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-282",
+    "title": "Canvas绘图时，如何清除画布内容？",
+    "options": [
+      "clearRect()",
+      "removeRect()",
+      "deleteRect()",
+      "eraseRect()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-283",
+    "title": "Canvas如何绘制填充矩形？",
+    "options": [
+      "fillRect()",
+      "strokeRect()",
+      "drawRect()",
+      "paintRect()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-284",
+    "title": "Canvas如何绘制描边矩形？",
+    "options": [
+      "strokeRect()",
+      "fillRect()",
+      "drawRect()",
+      "outlineRect()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-285",
+    "title": "Canvas如何设置填充颜色？",
+    "options": [
+      "fillStyle",
+      "strokeStyle",
+      "color",
+      "background"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-286",
+    "title": "Canvas如何设置描边颜色？",
+    "options": [
+      "strokeStyle",
+      "fillStyle",
+      "borderColor",
+      "outlineColor"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-287",
+    "title": "Canvas如何绘制路径？",
+    "options": [
+      "beginPath()和closePath()",
+      "startPath()",
+      "initPath()",
+      "createPath()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-288",
+    "title": "Canvas如何绘制直线？",
+    "options": [
+      "lineTo()",
+      "drawLine()",
+      "moveTo()",
+      "addLine()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-289",
+    "title": "Canvas如何绘制圆弧？",
+    "options": [
+      "arc()",
+      "circle()",
+      "curve()",
+      "round()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-290",
+    "title": "Canvas如何绘制文本？",
+    "options": [
+      "fillText()和strokeText()",
+      "drawText()",
+      "writeText()",
+      "addText()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-291",
+    "title": "Canvas如何保存绘图状态？",
+    "options": [
+      "save()",
+      "store()",
+      "keep()",
+      "preserve()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-292",
+    "title": "Canvas如何恢复绘图状态？",
+    "options": [
+      "restore()",
+      "load()",
+      "retrieve()",
+      "revert()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-293",
+    "title": "Canvas如何实现动画？",
+    "options": [
+      "使用requestAnimationFrame",
+      "使用setInterval",
+      "使用setTimeout",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-294",
+    "title": "<img>标签的必需属性是？",
+    "options": [
+      "src和alt",
+      "href和title",
+      "src和title",
+      "href和alt"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-295",
+    "title": "<img>的alt属性作用是？",
+    "options": [
+      "图片无法显示时的替代文本",
+      "图片标题",
+      "图片链接",
+      "图片描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-296",
+    "title": "<img>的title属性作用是？",
+    "options": [
+      "鼠标悬停时显示的提示文本",
+      "替代文本",
+      "图片链接",
+      "图片大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-297",
+    "title": "<img>的loading=\"lazy\"属性用于？",
+    "options": [
+      "延迟加载图片",
+      "预加载图片",
+      "异步加载图片",
+      "禁止加载图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-298",
+    "title": "<img>的width和height属性用于？",
+    "options": [
+      "设置图片的固有尺寸",
+      "设置最大尺寸",
+      "设置最小尺寸",
+      "设置背景尺寸"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-299",
+    "title": "<img>的srcset属性用于？",
+    "options": [
+      "提供不同分辨率的图片源",
+      "设置图片路径",
+      "设置图片大小",
+      "设置图片格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-300",
+    "title": "<img>的sizes属性用于？",
+    "options": [
+      "告诉浏览器图片在页面中的预期尺寸",
+      "设置实际大小",
+      "设置格式",
+      "设置路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-301",
+    "title": "HTML5语义化的主要目的是？",
+    "options": [
+      "让代码更易读、对机器更友好",
+      "减少代码量",
+      "提高性能",
+      "增加功能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-302",
+    "title": "<header>标签的作用是？",
+    "options": [
+      "定义文档或节的页眉",
+      "定义标题",
+      "定义头部区域",
+      "定义导航"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-303",
+    "title": "<nav>标签的作用是？",
+    "options": [
+      "定义导航链接",
+      "定义导航栏",
+      "定义菜单",
+      "定义侧边栏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-304",
+    "title": "<main>标签的作用是？",
+    "options": [
+      "规定文档的主内容",
+      "定义主要内容区",
+      "定义主体",
+      "定义容器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-305",
+    "title": "一个页面中可以有几个<main>标签？",
+    "options": [
+      "1个",
+      "多个",
+      "0个",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-306",
+    "title": "<article>标签的作用是？",
+    "options": [
+      "定义独立的自包含内容",
+      "定义文章",
+      "定义段落",
+      "定义区块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-307",
+    "title": "<section>标签的作用是？",
+    "options": [
+      "定义文档中的节",
+      "定义部分",
+      "定义区域",
+      "定义块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-308",
+    "title": "<aside>标签的作用是？",
+    "options": [
+      "定义页面内容之外的内容",
+      "定义侧边栏",
+      "定义附加信息",
+      "定义注释"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-309",
+    "title": "<footer>标签的作用是？",
+    "options": [
+      "定义文档或节的页脚",
+      "定义底部",
+      "定义结尾",
+      "定义版权"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-310",
+    "title": "<details>标签的作用是？",
+    "options": [
+      "创建可折叠的附加细节",
+      "定义详情",
+      "定义摘要",
+      "定义描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-311",
+    "title": "<summary>标签的作用是？",
+    "options": [
+      "为details定义可见的标题",
+      "定义摘要",
+      "定义总结",
+      "定义概览"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-312",
+    "title": "<dialog>标签的作用是？",
+    "options": [
+      "定义对话框或窗口",
+      "定义对话",
+      "定义弹窗",
+      "定义提示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-313",
+    "title": "<dialog>的open属性用于？",
+    "options": [
+      "指示对话框可见",
+      "打开对话框",
+      "关闭对话框",
+      "启用对话框"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-314",
+    "title": "<data>标签的value属性用于？",
+    "options": [
+      "提供机器可读的值",
+      "提供显示值",
+      "提供ID",
+      "提供名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-315",
+    "title": "<time>的datetime属性用于？",
+    "options": [
+      "提供机器可读的日期时间",
+      "提供显示时间",
+      "提供格式",
+      "提供时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-316",
+    "title": "<hgroup>标签的作用是？",
+    "options": [
+      "将标题和副标题组合",
+      "定义标题组",
+      "定义层级",
+      "定义样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-317",
+    "title": "<search>标签的作用是？",
+    "options": [
+      "定义搜索相关的内容区域",
+      "定义搜索框",
+      "定义搜索按钮",
+      "定义搜索结果"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-318",
+    "title": "语义化标签对SEO的影响是？",
+    "options": [
+      "提高搜索排名和抓取效率",
+      "降低排名",
+      "无影响",
+      "增加加载时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-319",
+    "title": "<div>和<span>被称为什么元素？",
+    "options": [
+      "无语义容器",
+      "语义容器",
+      "块级容器",
+      "内联容器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-320",
+    "title": "<header>可以包含哪些内容？",
+    "options": [
+      "标题、导航、搜索框等",
+      "仅标题",
+      "仅导航",
+      "仅图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-321",
+    "title": "<footer>通常包含哪些内容？",
+    "options": [
+      "版权、联系信息、链接等",
+      "仅版权",
+      "仅链接",
+      "仅图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-322",
+    "title": "<article>的典型使用场景是？",
+    "options": [
+      "博客文章、新闻报道、评论",
+      "侧边栏",
+      "导航栏",
+      "页脚"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-323",
+    "title": "<section>的典型使用场景是？",
+    "options": [
+      "章节、选项卡式内容、分组",
+      "独立文章",
+      "导航",
+      "页眉"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-324",
+    "title": "<aside>的典型使用场景是？",
+    "options": [
+      "侧边栏、广告、引用块",
+      "主内容",
+      "导航",
+      "页脚"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-325",
+    "title": "<address>的典型使用场景是？",
+    "options": [
+      "联系信息",
+      "地址栏",
+      "页脚",
+      "侧边栏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-326",
+    "title": "<figure>和<figcaption>的关系是？",
+    "options": [
+      "figcaption是figure的标题",
+      "figure是figcaption的标题",
+      "并列关系",
+      "无关系"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-327",
+    "title": "<details>默认的状态是？",
+    "options": [
+      "折叠隐藏",
+      "展开显示",
+      "禁用",
+      "只读"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-328",
+    "title": "如何让<details>默认展开？",
+    "options": [
+      "添加open属性",
+      "添加visible属性",
+      "添加show属性",
+      "添加expand属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-329",
+    "title": "<dialog>如何显示为模态框？",
+    "options": [
+      "使用showModal()方法",
+      "使用show()方法",
+      "使用open属性",
+      "使用modal属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-330",
+    "title": "<dialog>如何显示为非模态框？",
+    "options": [
+      "使用show()方法",
+      "使用showModal()方法",
+      "使用visible属性",
+      "使用display属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-331",
+    "title": "<dialog>如何关闭？",
+    "options": [
+      "使用close()方法",
+      "使用hide()方法",
+      "删除open属性",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-332",
+    "title": "<dialog>的::backdrop伪元素用于？",
+    "options": [
+      "设置模态对话框背景的样式",
+      "设置对话框样式",
+      "设置内容样式",
+      "设置边框样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-333",
+    "title": "<main>标签应该放在哪个标签内部？",
+    "options": [
+      "body",
+      "header",
+      "footer",
+      "article"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-334",
+    "title": "<main>标签不应该包含哪些内容？",
+    "options": [
+      "导航、侧边栏、页脚、logo",
+      "文章",
+      "段落",
+      "图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-335",
+    "title": "<section>与<div>的区别是？",
+    "options": [
+      "section有语义，div无语义",
+      "没有区别",
+      "section是内联，div是块级",
+      "div有语义，section无语义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-336",
+    "title": "<article>与<section>的区别是？",
+    "options": [
+      "article是独立的，section是文档的节",
+      "没有区别",
+      "section是独立的",
+      "article是节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-337",
+    "title": "<nav>标签可以出现多次吗？",
+    "options": [
+      "可以，页脚和页眉都可以有",
+      "不可以",
+      "只能一次",
+      "最多两次"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-338",
+    "title": "<h1>到<h6>标签的语义是？",
+    "options": [
+      "表示标题层级",
+      "表示字体大小",
+      "表示颜色",
+      "表示粗细"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-339",
+    "title": "<strong>和<b>的语义区别是？",
+    "options": [
+      "strong表示重要，b仅加粗",
+      "没有区别",
+      "b表示重要",
+      "strong仅加粗"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-340",
+    "title": "<em>和<i>的语义区别是？",
+    "options": [
+      "em表示强调，i仅斜体",
+      "没有区别",
+      "i表示强调",
+      "em仅斜体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-341",
+    "title": "<s>和<del>的语义区别是？",
+    "options": [
+      "del表示删除，s表示不再准确",
+      "没有区别",
+      "s表示删除",
+      "del表示不再准确"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-342",
+    "title": "<blockquote>和<q>的语义区别是？",
+    "options": [
+      "blockquote是块级引用，q是内联引用",
+      "没有区别",
+      "q是块级",
+      "blockquote是内联"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-343",
+    "title": "<cite>标签的语义是？",
+    "options": [
+      "表示作品标题",
+      "表示引用块",
+      "表示缩写",
+      "表示定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-344",
+    "title": "<dfn>标签的语义是？",
+    "options": [
+      "表示术语的定义实例",
+      "表示缩写",
+      "表示引用",
+      "表示强调"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-345",
+    "title": "<abbr>标签的title属性用于？",
+    "options": [
+      "提供缩写的完整描述",
+      "提供样式",
+      "提供链接",
+      "提供ID"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-346",
+    "title": "<ins>标签的语义是？",
+    "options": [
+      "表示插入的文本",
+      "表示下划线",
+      "表示强调",
+      "表示删除"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-347",
+    "title": "<code>标签的语义是？",
+    "options": [
+      "表示代码片段",
+      "表示预格式",
+      "表示变量",
+      "表示键盘"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-348",
+    "title": "<kbd>标签的语义是？",
+    "options": [
+      "表示键盘输入",
+      "表示代码",
+      "表示变量",
+      "表示输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-349",
+    "title": "<samp>标签的语义是？",
+    "options": [
+      "表示程序输出",
+      "表示输入",
+      "表示变量",
+      "表示代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-350",
+    "title": "<var>标签的语义是？",
+    "options": [
+      "表示变量",
+      "表示代码",
+      "表示输入",
+      "表示输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-351",
+    "title": "<mark>标签的语义是？",
+    "options": [
+      "表示标记/高亮文本",
+      "表示删除",
+      "表示插入",
+      "表示强调"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-352",
+    "title": "<ruby>、<rt>、<rp>的语义是？",
+    "options": [
+      "表示拼音和注释",
+      "表示红宝石",
+      "表示变量",
+      "表示引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-353",
+    "title": "<bdi>标签的语义是？",
+    "options": [
+      "隔离文本方向",
+      "定义方向",
+      "覆盖方向",
+      "定义加粗"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-354",
+    "title": "<wbr>标签的语义是？",
+    "options": [
+      "规定换行时机",
+      "强制换行",
+      "禁止换行",
+      "删除换行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-355",
+    "title": "<data>标签的语义是？",
+    "options": [
+      "将内容与机器可读值关联",
+      "定义数据",
+      "定义变量",
+      "定义日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-356",
+    "title": "<time>标签的语义是？",
+    "options": [
+      "表示日期和时间",
+      "表示计时器",
+      "表示时刻",
+      "表示时钟"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-357",
+    "title": "语义化标签如何提高可访问性？",
+    "options": [
+      "屏幕阅读器能更好地解析结构",
+      "增加对比度",
+      "增大字体",
+      "添加声音"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-358",
+    "title": "ARIA角色的作用是？",
+    "options": [
+      "增强语义和可访问性",
+      "增加动画",
+      "增加样式",
+      "增加交互"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-359",
+    "title": "role=\"navigation\"对应哪个HTML5标签？",
+    "options": [
+      "<nav>",
+      "<header>",
+      "<footer>",
+      "<aside>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-360",
+    "title": "role=\"banner\"对应哪个HTML5标签？",
+    "options": [
+      "<header>",
+      "<nav>",
+      "<main>",
+      "<footer>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-361",
+    "title": "role=\"main\"对应哪个HTML5标签？",
+    "options": [
+      "<main>",
+      "<body>",
+      "<div>",
+      "<section>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-362",
+    "title": "role=\"contentinfo\"对应哪个HTML5标签？",
+    "options": [
+      "<footer>",
+      "<header>",
+      "<aside>",
+      "<article>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-363",
+    "title": "role=\"complementary\"对应哪个HTML5标签？",
+    "options": [
+      "<aside>",
+      "<main>",
+      "<nav>",
+      "<section>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-364",
+    "title": "role=\"form\"对应哪个HTML5标签？",
+    "options": [
+      "<form>",
+      "<input>",
+      "<div>",
+      "<section>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-365",
+    "title": "role=\"search\"对应哪个HTML5标签？",
+    "options": [
+      "<search>",
+      "<form>",
+      "<input>",
+      "<nav>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-366",
+    "title": "<article>可以嵌套吗？",
+    "options": [
+      "可以，内层article必须与外层相关",
+      "不可以",
+      "可以，无需相关",
+      "只能嵌套section"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-367",
+    "title": "<section>可以嵌套吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能嵌套article",
+      "只能嵌套div"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-368",
+    "title": "<header>可以嵌套吗？",
+    "options": [
+      "可以，在section或article内",
+      "不可以",
+      "只能在body内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-369",
+    "title": "<footer>可以嵌套吗？",
+    "options": [
+      "可以，在section或article内",
+      "不可以",
+      "只能在body内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-370",
+    "title": "<address>通常放在哪个标签内？",
+    "options": [
+      "<footer>或<article>",
+      "<header>",
+      "<nav>",
+      "<aside>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-371",
+    "title": "<hgroup>内可以包含哪些标签？",
+    "options": [
+      "<h1>-<h6>",
+      "<p>",
+      "<span>",
+      "<div>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-372",
+    "title": "<details>内的默认显示文本由谁提供？",
+    "options": [
+      "<summary>",
+      "<details>",
+      "<p>",
+      "<legend>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-373",
+    "title": "如果没有<summary>，<details>会怎样？",
+    "options": [
+      "浏览器提供默认标题(如\"Details\")",
+      "无法折叠",
+      "报错",
+      "不显示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-374",
+    "title": "<dialog>如何监听关闭事件？",
+    "options": [
+      "监听close事件",
+      "监听hide事件",
+      "监听cancel事件",
+      "监听exit事件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-375",
+    "title": "<dialog>的returnValue属性用于？",
+    "options": [
+      "获取关闭对话框时传递的值",
+      "获取输入值",
+      "获取状态",
+      "获取方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-376",
+    "title": "<dialog>如何监听取消事件(按Esc)？",
+    "options": [
+      "监听cancel事件",
+      "监听close事件",
+      "监听esc事件",
+      "监听keydown"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-377",
+    "title": "<search>标签是HTML几的新增？",
+    "options": [
+      "HTML5",
+      "HTML4",
+      "HTML3",
+      "XHTML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-378",
+    "title": "<hgroup>在HTML5中的状态是？",
+    "options": [
+      "曾废弃后重新启用",
+      "一直推荐",
+      "已废弃",
+      "新增"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-379",
+    "title": "<section>必须包含什么？",
+    "options": [
+      "一个标题(<h1>-<h6>)",
+      "内容",
+      "div",
+      "无强制要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-380",
+    "title": "<article>必须包含什么？",
+    "options": [
+      "独立完整的内容",
+      "标题",
+      "段落",
+      "图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-381",
+    "title": "<nav>内的链接必须是所有链接吗？",
+    "options": [
+      "不是，仅主要导航链接",
+      "是",
+      "必须包含所有",
+      "不能包含外部链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-382",
+    "title": "<aside>的内容与主内容的关系是？",
+    "options": [
+      "间接相关",
+      "直接相关",
+      "无关系",
+      "包含关系"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-383",
+    "title": "<figure>的内容与主内容的关系是？",
+    "options": [
+      "被引用的自包含内容",
+      "间接相关",
+      "无关系",
+      "包含关系"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-384",
+    "title": "<figcaption>必须放在<figure>的什么位置？",
+    "options": [
+      "第一个或最后一个子元素",
+      "中间",
+      "外部",
+      "任意位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-385",
+    "title": "<figcaption>在一个<figure>中可以有多个吗？",
+    "options": [
+      "不可以，只能有一个",
+      "可以",
+      "最多两个",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-386",
+    "title": "<main>标签对SEO的作用是？",
+    "options": [
+      "告诉搜索引擎页面的核心内容",
+      "增加关键词",
+      "增加链接",
+      "增加描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-387",
+    "title": "<header>内可以包含<nav>吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能在body内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-388",
+    "title": "<footer>内可以包含<nav>吗？",
+    "options": [
+      "可以，如版权链接",
+      "不可以",
+      "只能在header内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-389",
+    "title": "<article>内可以包含<header>和<footer>吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能包含header",
+      "只能包含footer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-390",
+    "title": "<section>内可以包含<header>和<footer>吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能包含header",
+      "只能包含footer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-391",
+    "title": "<blockquote>的cite属性用于？",
+    "options": [
+      "指明引用的来源URL",
+      "引用内容",
+      "引用标题",
+      "引用作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-392",
+    "title": "<q>的cite属性用于？",
+    "options": [
+      "指明引用的来源URL",
+      "引用内容",
+      "引用标题",
+      "引用作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-393",
+    "title": "<ins>的cite属性用于？",
+    "options": [
+      "解释插入原因的URL",
+      "插入内容",
+      "插入标题",
+      "插入作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-394",
+    "title": "<del>的cite属性用于？",
+    "options": [
+      "解释删除原因的URL",
+      "删除内容",
+      "删除标题",
+      "删除作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-395",
+    "title": "<ins>的datetime属性用于？",
+    "options": [
+      "定义插入的日期时间",
+      "定义时间",
+      "定义格式",
+      "定义时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-396",
+    "title": "<del>的datetime属性用于？",
+    "options": [
+      "定义删除的日期时间",
+      "定义时间",
+      "定义格式",
+      "定义时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-397",
+    "title": "<table>的语义标签有哪些？",
+    "options": [
+      "<thead>, <tbody>, <tfoot>",
+      "<header>, <body>, <footer>",
+      "<div>, <span>",
+      "<row>, <cell>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-398",
+    "title": "<caption>标签的语义是？",
+    "options": [
+      "定义表格标题",
+      "定义表格头",
+      "定义表格尾",
+      "定义表格描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-399",
+    "title": "<th>的scope属性用于？",
+    "options": [
+      "定义表头单元格的作用范围",
+      "定义样式",
+      "定义大小",
+      "定义对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-400",
+    "title": "<th>的headers属性用于？",
+    "options": [
+      "关联表头单元格",
+      "定义标题",
+      "定义样式",
+      "定义ID"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-401",
+    "title": "Web Storage API包括哪两个对象？",
+    "options": [
+      "localStorage和sessionStorage",
+      "cookie和session",
+      "cacheStorage和indexedDB",
+      "windowStorage和tabStorage"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-402",
+    "title": "localStorage的特点是？",
+    "options": [
+      "数据持久存储，关闭浏览器不丢失",
+      "数据在会话结束丢失",
+      "数据只在标签页内有效",
+      "数据大小无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-403",
+    "title": "sessionStorage的特点是？",
+    "options": [
+      "数据在页面会话结束(标签页关闭)时丢失",
+      "数据持久存储",
+      "数据跨标签页共享",
+      "数据大小无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-404",
+    "title": "Web Storage的存储大小限制约为？",
+    "options": [
+      "5MB",
+      "1GB",
+      "100KB",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-405",
+    "title": "如何向localStorage存储数据？",
+    "options": [
+      "localStorage.setItem(key, value)",
+      "localStorage.add(key, value)",
+      "localStorage.save(key, value)",
+      "localStorage.push(key, value)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-406",
+    "title": "如何从localStorage读取数据？",
+    "options": [
+      "localStorage.getItem(key)",
+      "localStorage.get(key)",
+      "localStorage.read(key)",
+      "localStorage.fetch(key)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-407",
+    "title": "如何删除localStorage中的指定数据？",
+    "options": [
+      "localStorage.removeItem(key)",
+      "localStorage.delete(key)",
+      "localStorage.remove(key)",
+      "localStorage.clear(key)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-408",
+    "title": "如何清空localStorage的所有数据？",
+    "options": [
+      "localStorage.clear()",
+      "localStorage.removeAll()",
+      "localStorage.deleteAll()",
+      "localStorage.reset()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-409",
+    "title": "Web Storage只能存储什么类型的数据？",
+    "options": [
+      "字符串",
+      "对象",
+      "数组",
+      "数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-410",
+    "title": "如何将对象存储到localStorage？",
+    "options": [
+      "使用JSON.stringify()转换后存储",
+      "直接存储",
+      "使用toString()",
+      "使用serialize()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-411",
+    "title": "如何从localStorage读取并还原对象？",
+    "options": [
+      "使用JSON.parse()解析",
+      "直接读取",
+      "使用eval()",
+      "使用deserialize()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-412",
+    "title": "Geolocation API的作用是？",
+    "options": [
+      "获取用户的地理位置",
+      "获取IP地址",
+      "获取时区",
+      "获取语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-413",
+    "title": "获取当前位置的方法是？",
+    "options": [
+      "navigator.geolocation.getCurrentPosition()",
+      "navigator.getLocation()",
+      "window.getGeolocation()",
+      "device.getLocation()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-414",
+    "title": "Geolocation API需要用户授权吗？",
+    "options": [
+      "需要",
+      "不需要",
+      "取决于浏览器",
+      "只在HTTPS下需要"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-415",
+    "title": "Drag and Drop API的核心事件是？",
+    "options": [
+      "dragstart, drag, dragend",
+      "mousedown, mousemove, mouseup",
+      "touchstart, touchmove, touchend",
+      "pointerdown, pointermove, pointerup"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-416",
+    "title": "拖拽目标元素的事件不包括？",
+    "options": [
+      "dragover",
+      "dragenter",
+      "dragleave",
+      "drop"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-417",
+    "title": "如何让元素可拖拽？",
+    "options": [
+      "设置draggable=\"true\"属性",
+      "设置drag=\"yes\"",
+      "设置movable=\"true\"",
+      "设置drop=\"true\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-418",
+    "title": "拖拽放置目标必须阻止什么事件的默认行为？",
+    "options": [
+      "dragover",
+      "dragenter",
+      "dragleave",
+      "drop"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-419",
+    "title": "如何传递拖拽数据？",
+    "options": [
+      "使用dataTransfer.setData()",
+      "使用dataTransfer.getData()",
+      "使用event.data",
+      "使用localStorage"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-420",
+    "title": "如何获取拖拽数据？",
+    "options": [
+      "使用dataTransfer.getData()",
+      "使用dataTransfer.setData()",
+      "使用event.data",
+      "使用sessionStorage"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-421",
+    "title": "Web Workers的作用是？",
+    "options": [
+      "在后台线程中运行脚本",
+      "在主线程运行脚本",
+      "渲染页面",
+      "处理DOM"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-422",
+    "title": "Web Workers能直接操作DOM吗？",
+    "options": [
+      "不能",
+      "能",
+      "部分能",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-423",
+    "title": "如何创建一个Web Worker？",
+    "options": [
+      "new Worker(\"script.js\")",
+      "new WebWorker(\"script.js\")",
+      "Worker.create(\"script.js\")",
+      "window.createWorker(\"script.js\")"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-424",
+    "title": "主线程和Worker如何通信？",
+    "options": [
+      "postMessage()和onmessage",
+      "send()和receive()",
+      "emit()和on()",
+      "dispatch()和listen()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-425",
+    "title": "如何终止Web Worker？",
+    "options": [
+      "worker.terminate()",
+      "worker.stop()",
+      "worker.abort()",
+      "worker.kill()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-426",
+    "title": "SharedWorker的特点是？",
+    "options": [
+      "可以被多个浏览上下文共享",
+      "只能被一个页面使用",
+      "不能通信",
+      "能操作DOM"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-427",
+    "title": "Service Worker的作用是？",
+    "options": [
+      "拦截网络请求、缓存资源、离线工作",
+      "后台计算",
+      "操作DOM",
+      "UI渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-428",
+    "title": "Service Worker的生命周期包括？",
+    "options": [
+      "install, activate, fetch",
+      "create, start, stop",
+      "load, run, unload",
+      "init, process, destroy"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-429",
+    "title": "Service Worker能操作DOM吗？",
+    "options": [
+      "不能",
+      "能",
+      "部分能",
+      "取决于状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-430",
+    "title": "Service Worker只能在什么协议下运行？",
+    "options": [
+      "HTTPS",
+      "HTTP",
+      "FTP",
+      "任何协议"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-431",
+    "title": "WebSocket的作用是？",
+    "options": [
+      "在客户端和服务器之间建立全双工通信",
+      "发送HTTP请求",
+      "存储数据",
+      "获取位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-432",
+    "title": "WebSocket与HTTP的区别是？",
+    "options": [
+      "WebSocket是持久连接，HTTP是短连接",
+      "没有区别",
+      "HTTP更快",
+      "WebSocket更安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-433",
+    "title": "如何创建WebSocket连接？",
+    "options": [
+      "new WebSocket(url)",
+      "new Socket(url)",
+      "WebSocket.connect(url)",
+      "openSocket(url)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-434",
+    "title": "WebSocket的readyState为1表示？",
+    "options": [
+      "OPEN (连接已建立)",
+      "CONNECTING",
+      "CLOSING",
+      "CLOSED"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-435",
+    "title": "History API的作用是？",
+    "options": [
+      "操作浏览器历史记录",
+      "获取浏览记录",
+      "清除缓存",
+      "管理书签"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-436",
+    "title": "history.pushState()的作用是？",
+    "options": [
+      "向历史记录栈添加状态",
+      "替换当前状态",
+      "后退一步",
+      "前进一步"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-437",
+    "title": "history.replaceState()的作用是？",
+    "options": [
+      "替换当前历史记录条目",
+      "添加新条目",
+      "删除条目",
+      "清空历史"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-438",
+    "title": "popstate事件在什么时候触发？",
+    "options": [
+      "活动历史条目更改时",
+      "pushState时",
+      "replaceState时",
+      "页面加载时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-439",
+    "title": "Clipboard API的作用是？",
+    "options": [
+      "读写系统剪贴板",
+      "复制文件",
+      "粘贴图片",
+      "剪切文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-440",
+    "title": "如何使用Clipboard API复制文本？",
+    "options": [
+      "navigator.clipboard.writeText()",
+      "document.execCommand(\"copy\")",
+      "window.copy()",
+      "clipboard.copy()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-441",
+    "title": "如何使用Clipboard API读取文本？",
+    "options": [
+      "navigator.clipboard.readText()",
+      "document.execCommand(\"paste\")",
+      "window.paste()",
+      "clipboard.paste()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-442",
+    "title": "Clipboard API需要用户授权吗？",
+    "options": [
+      "需要",
+      "不需要",
+      "取决于浏览器",
+      "只在HTTPS下需要"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-443",
+    "title": "Fullscreen API的作用是？",
+    "options": [
+      "全屏显示元素",
+      "退出全屏",
+      "调整大小",
+      "最大化窗口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-444",
+    "title": "如何请求元素全屏？",
+    "options": [
+      "element.requestFullscreen()",
+      "element.fullscreen()",
+      "window.fullscreen()",
+      "screen.request()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-445",
+    "title": "如何退出全屏？",
+    "options": [
+      "document.exitFullscreen()",
+      "element.exitFullscreen()",
+      "window.exitFullscreen()",
+      "screen.exit()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-446",
+    "title": "Page Visibility API的作用是？",
+    "options": [
+      "检测页面是否可见",
+      "隐藏页面",
+      "显示页面",
+      "调整透明度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-447",
+    "title": "document.visibilityState的值不包括？",
+    "options": [
+      "hidden",
+      "visible",
+      "prerender",
+      "minimized"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-448",
+    "title": "visibilitychange事件在什么时候触发？",
+    "options": [
+      "页面可见性改变时",
+      "页面加载时",
+      "页面关闭时",
+      "页面刷新时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-449",
+    "title": "requestAnimationFrame的作用是？",
+    "options": [
+      "在下次重绘前调用函数",
+      "定时执行函数",
+      "延迟执行函数",
+      "异步执行函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-450",
+    "title": "requestAnimationFrame的回调执行频率通常是？",
+    "options": [
+      "60fps",
+      "30fps",
+      "120fps",
+      "不固定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-451",
+    "title": "cancelAnimationFrame的作用是？",
+    "options": [
+      "取消之前的requestAnimationFrame调用",
+      "停止动画",
+      "暂停动画",
+      "重置动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-452",
+    "title": "MutationObserver的作用是？",
+    "options": [
+      "监视DOM变动",
+      "监视样式变动",
+      "监视属性变动",
+      "监视数据变动"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-453",
+    "title": "Intersection Observer的作用是？",
+    "options": [
+      "监视元素是否进入视口",
+      "监视元素大小",
+      "监视元素位置",
+      "监视元素属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-454",
+    "title": "Intersection Observer常用于？",
+    "options": [
+      "懒加载、无限滚动",
+      "拖拽",
+      "动画",
+      "表单验证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-455",
+    "title": "Resize Observer的作用是？",
+    "options": [
+      "监视元素尺寸变化",
+      "监视视口变化",
+      "监视窗口大小",
+      "监视分辨率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-456",
+    "title": "Performance API的作用是？",
+    "options": [
+      "测量页面加载和性能指标",
+      "测试网速",
+      "监控CPU",
+      "监控内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-457",
+    "title": "Web Speech API包括哪两部分？",
+    "options": [
+      "语音识别和语音合成",
+      "语音输入和语音输出",
+      "语音翻译和语音播放",
+      "语音录制和语音编辑"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-458",
+    "title": "speechSynthesis.speak()的作用是？",
+    "options": [
+      "朗读文本",
+      "识别语音",
+      "录制语音",
+      "翻译语音"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-459",
+    "title": "Notification API的作用是？",
+    "options": [
+      "显示桌面通知",
+      "发送消息",
+      "弹出对话框",
+      "显示提示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-460",
+    "title": "如何请求通知权限？",
+    "options": [
+      "Notification.requestPermission()",
+      "Notification.askPermission()",
+      "Notification.getPermission()",
+      "Notification.allow()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-461",
+    "title": "Cache API的作用是？",
+    "options": [
+      "管理请求/响应缓存",
+      "缓存图片",
+      "缓存数据",
+      "缓存脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-462",
+    "title": "Cache API通常与谁配合使用？",
+    "options": [
+      "Service Worker",
+      "Web Worker",
+      "WebSocket",
+      "localStorage"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-463",
+    "title": "IndexedDB的特点是？",
+    "options": [
+      "客户端事务型数据库",
+      "关系型数据库",
+      "键值对存储",
+      "文件系统"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-464",
+    "title": "IndexedDB的存储大小限制约为？",
+    "options": [
+      "可用磁盘空间的很大比例",
+      "5MB",
+      "100MB",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-465",
+    "title": "IndexedDB是同步还是异步API？",
+    "options": [
+      "异步",
+      "同步",
+      "半同步",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-466",
+    "title": "Canvas的toDataURL()方法用于？",
+    "options": [
+      "将画布导出为Base64编码的图片",
+      "保存为文件",
+      "上传到服务器",
+      "转换为SVG"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-467",
+    "title": "Canvas的toBlob()方法用于？",
+    "options": [
+      "将画布导出为Blob对象",
+      "导出为Base64",
+      "导出为二进制",
+      "导出为文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-468",
+    "title": "Canvas的getImageData()方法用于？",
+    "options": [
+      "获取画布像素数据",
+      "获取图片数据",
+      "获取画布大小",
+      "获取画布状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-469",
+    "title": "Canvas的putImageData()方法用于？",
+    "options": [
+      "将像素数据绘制到画布",
+      "放置图片",
+      "保存数据",
+      "更新状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-470",
+    "title": "WebGL的全称是？",
+    "options": [
+      "Web Graphics Library",
+      "Web Graphic Language",
+      "Window Graphics Library",
+      "Web General Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-471",
+    "title": "WebGL基于什么标准？",
+    "options": [
+      "OpenGL ES",
+      "DirectX",
+      "Vulkan",
+      "Metal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-472",
+    "title": "WebGL 1.0基于OpenGL ES几？",
+    "options": [
+      "2.0",
+      "1.0",
+      "3.0",
+      "4.0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-473",
+    "title": "WebGL 2.0基于OpenGL ES几？",
+    "options": [
+      "3.0",
+      "2.0",
+      "1.0",
+      "4.0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-474",
+    "title": "WebGL的渲染上下文通过什么方法获取？",
+    "options": [
+      "canvas.getContext(\"webgl\")",
+      "canvas.getContext(\"3d\")",
+      "canvas.getContext(\"opengl\")",
+      "canvas.getWebGL()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-475",
+    "title": "Web Animations API的作用是？",
+    "options": [
+      "用JavaScript创建和控制动画",
+      "用CSS创建动画",
+      "用SVG创建动画",
+      "用Canvas创建动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-476",
+    "title": "element.animate()的作用是？",
+    "options": [
+      "在元素上应用动画",
+      "获取动画状态",
+      "暂停动画",
+      "取消动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-477",
+    "title": "Fetch API的作用是？",
+    "options": [
+      "发起网络请求",
+      "获取资源",
+      "上传文件",
+      "下载文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-478",
+    "title": "Fetch API基于什么设计？",
+    "options": [
+      "Promise",
+      "回调函数",
+      "事件监听",
+      "观察者模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-479",
+    "title": "fetch()返回的对象是？",
+    "options": [
+      "Promise",
+      "Response",
+      "Request",
+      "Stream"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-480",
+    "title": "如何处理fetch的响应？",
+    "options": [
+      "使用.then()和.catch()",
+      "使用回调",
+      "使用async/await",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-481",
+    "title": "fetch默认不会在HTTP错误状态(如404)reject吗？",
+    "options": [
+      "不会，只在网络故障时reject",
+      "会",
+      "取决于状态码",
+      "取决于浏览器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-482",
+    "title": "如何设置fetch的请求方法？",
+    "options": [
+      "method选项",
+      "type选项",
+      "action选项",
+      "http选项"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-483",
+    "title": "如何设置fetch的请求头？",
+    "options": [
+      "headers选项",
+      "head选项",
+      "contentType选项",
+      "meta选项"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-484",
+    "title": "如何发送JSON数据的fetch请求？",
+    "options": [
+      "将body设为JSON.stringify(data)并设置Content-Type",
+      "直接传递对象",
+      "使用FormData",
+      "使用URL编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-485",
+    "title": "如何上传文件的fetch请求？",
+    "options": [
+      "将body设为FormData",
+      "设为File对象",
+      "设为Blob",
+      "设为Base64"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-486",
+    "title": "AbortController的作用是？",
+    "options": [
+      "中止fetch请求",
+      "中止动画",
+      "中止Worker",
+      "中止事件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-487",
+    "title": "如何取消fetch请求？",
+    "options": [
+      "调用AbortController的abort()",
+      "调用fetch的cancel()",
+      "调用Promise的reject()",
+      "关闭页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-488",
+    "title": "Broadcast Channel API的作用是？",
+    "options": [
+      "在同源的不同浏览上下文间通信",
+      "跨域通信",
+      "服务器通信",
+      "Worker通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-489",
+    "title": "Beacon API的作用是？",
+    "options": [
+      "异步发送数据到服务器(常用于卸载页面时)",
+      "发送请求",
+      "接收数据",
+      "广播消息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-490",
+    "title": "navigator.sendBeacon()的特点是？",
+    "options": [
+      "保证数据发送且不阻塞页面卸载",
+      "同步发送",
+      "需要等待响应",
+      "只能发送文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-491",
+    "title": "Content Security Policy (CSP) 的作用是？",
+    "options": [
+      "防止XSS和数据注入攻击",
+      "加密数据",
+      "压缩资源",
+      "加速加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-492",
+    "title": "如何启用CSP？",
+    "options": [
+      "HTTP头或<meta>标签",
+      "JavaScript",
+      "CSS",
+      "HTML属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-493",
+    "title": "<meta http-equiv=\"Content-Security-Policy\">属于？",
+    "options": [
+      "CSP的声明方式之一",
+      "CSS规则",
+      "JS指令",
+      "HTTP方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-494",
+    "title": "CSP中script-src指令用于？",
+    "options": [
+      "限制JavaScript的来源",
+      "限制CSS来源",
+      "限制图片来源",
+      "限制字体来源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-495",
+    "title": "CSP中style-src指令用于？",
+    "options": [
+      "限制CSS的来源",
+      "限制JS来源",
+      "限制图片来源",
+      "限制媒体来源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-496",
+    "title": "CSP中img-src指令用于？",
+    "options": [
+      "限制图片的来源",
+      "限制JS来源",
+      "限制CSS来源",
+      "限制框架来源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-497",
+    "title": "CSP的nonce机制用于？",
+    "options": [
+      "为内联脚本/样式提供一次性令牌",
+      "加密数据",
+      "生成随机数",
+      "验证身份"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-498",
+    "title": "CSP的hash机制用于？",
+    "options": [
+      "为内联脚本/样式提供哈希校验",
+      "加密数据",
+      "校验文件",
+      "验证完整性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-499",
+    "title": "Subresource Integrity (SRI) 的作用是？",
+    "options": [
+      "验证外部资源的完整性防止篡改",
+      "压缩资源",
+      "缓存资源",
+      "加载资源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-500",
+    "title": "SRI使用哪个属性？",
+    "options": [
+      "integrity",
+      "secure",
+      "hash",
+      "validate"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-501",
+    "title": "WCAG的全称是？",
+    "options": [
+      "Web Content Accessibility Guidelines",
+      "Web Content Accessibility Guide",
+      "Web Context Accessibility Guidelines",
+      "Web Content Application Guidelines"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-502",
+    "title": "WCAG的四大原则是？",
+    "options": [
+      "可感知、可操作、可理解、健壮",
+      "可见、可用、易懂、快速",
+      "清晰、简洁、一致、反馈",
+      "安全、可靠、高效、美观"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-503",
+    "title": "ARIA的全称是？",
+    "options": [
+      "Accessible Rich Internet Applications",
+      "Accessible Rich Internet Architecture",
+      "Advanced Rich Internet Applications",
+      "Accessible Responsive Internet Applications"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-504",
+    "title": "ARIA的作用是？",
+    "options": [
+      "增强动态内容和UI控件的可访问性",
+      "增强样式",
+      "增强交互",
+      "增强性能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-505",
+    "title": "ARIA的三大主要特性是？",
+    "options": [
+      "角色、状态、属性",
+      "样式、行为、结构",
+      "类、ID、标签",
+      "事件、方法、属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-506",
+    "title": "aria-label属性的作用是？",
+    "options": [
+      "为元素提供不可见的辅助文本",
+      "设置可见标签",
+      "设置标题",
+      "设置描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-507",
+    "title": "aria-labelledby属性的作用是？",
+    "options": [
+      "引用可见元素作为标签",
+      "设置隐藏标签",
+      "设置ID",
+      "设置样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-508",
+    "title": "aria-describedby属性的作用是？",
+    "options": [
+      "引用元素提供更详细的描述",
+      "简短描述",
+      "设置标题",
+      "设置链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-509",
+    "title": "aria-hidden属性的作用是？",
+    "options": [
+      "对辅助技术隐藏元素",
+      "视觉隐藏",
+      "显示元素",
+      "禁用元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-510",
+    "title": "aria-expanded属性的作用是？",
+    "options": [
+      "指示控件是否展开",
+      "指示大小",
+      "指示位置",
+      "指示状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-511",
+    "title": "aria-checked属性的作用是？",
+    "options": [
+      "指示复选框或单选框是否选中",
+      "指示验证",
+      "指示状态",
+      "指示可见"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-512",
+    "title": "aria-disabled属性的作用是？",
+    "options": [
+      "指示控件是否禁用",
+      "隐藏控件",
+      "删除控件",
+      "启用控件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-513",
+    "title": "aria-live属性的作用是？",
+    "options": [
+      "指示区域是否实时更新",
+      "指示存活",
+      "指示活动",
+      "指示位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-514",
+    "title": "aria-live=\"polite\"的含义是？",
+    "options": [
+      "用户空闲时播报更新",
+      "立即播报",
+      "不播报",
+      "强制播报"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-515",
+    "title": "aria-live=\"assertive\"的含义是？",
+    "options": [
+      "立即播报更新(高优先级)",
+      "空闲时播报",
+      "不播报",
+      "低优先级播报"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-516",
+    "title": "role=\"button\"的作用是？",
+    "options": [
+      "将元素标识为按钮",
+      "设置按钮样式",
+      "添加点击事件",
+      "禁用按钮"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-517",
+    "title": "role=\"alert\"的作用是？",
+    "options": [
+      "标识重要且紧急的信息",
+      "设置警告样式",
+      "弹出对话框",
+      "显示通知"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-518",
+    "title": "role=\"dialog\"的作用是？",
+    "options": [
+      "标识对话框",
+      "设置对话样式",
+      "创建对话框",
+      "显示对话"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-519",
+    "title": "role=\"tablist\"的作用是？",
+    "options": [
+      "标识选项卡列表",
+      "标识标签",
+      "标识列表",
+      "标识菜单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-520",
+    "title": "role=\"tab\"的作用是？",
+    "options": [
+      "标识选项卡",
+      "标识标签页",
+      "标识按钮",
+      "标识链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-521",
+    "title": "role=\"tabpanel\"的作用是？",
+    "options": [
+      "标识选项卡面板",
+      "标识面板",
+      "标识容器",
+      "标识区域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-522",
+    "title": "role=\"slider\"的作用是？",
+    "options": [
+      "标识滑块控件",
+      "标识滚动条",
+      "标识进度条",
+      "标识范围"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-523",
+    "title": "role=\"progressbar\"的作用是？",
+    "options": [
+      "标识进度条",
+      "标识滑块",
+      "标识加载条",
+      "标识状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-524",
+    "title": "role=\"tooltip\"的作用是？",
+    "options": [
+      "标识提示框",
+      "标识标题",
+      "标识标签",
+      "标识描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-525",
+    "title": "alt属性对SEO的作用是？",
+    "options": [
+      "帮助搜索引擎理解图片内容",
+      "增加关键词密度",
+      "提高排名",
+      "增加链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-526",
+    "title": "<title>标签对SEO的重要性是？",
+    "options": [
+      "影响搜索排名和用户点击",
+      "无影响",
+      "仅影响显示",
+      "仅影响加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-527",
+    "title": "<meta name=\"description\">的作用是？",
+    "options": [
+      "提供页面摘要影响点击率",
+      "提高排名",
+      "增加关键词",
+      "定义编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-528",
+    "title": "<meta name=\"keywords\">现在的状态是？",
+    "options": [
+      "大多数搜索引擎不再使用",
+      "非常重要",
+      "仍然有效",
+      "必须设置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-529",
+    "title": "<h1>标签对SEO的作用是？",
+    "options": [
+      "强调页面核心主题",
+      "无影响",
+      "增加链接",
+      "美化页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-530",
+    "title": "语义化HTML对SEO的影响是？",
+    "options": [
+      "帮助搜索引擎理解页面结构",
+      "无影响",
+      "降低排名",
+      "增加代码量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-531",
+    "title": "<a>标签的title属性对SEO的作用？",
+    "options": [
+      "微弱，主要改善用户体验",
+      "非常重要",
+      "无影响",
+      "提高排名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-532",
+    "title": "<link rel=\"canonical\">的作用是？",
+    "options": [
+      "指定规范URL避免重复内容",
+      "定义编码",
+      "引入样式",
+      "定义图标"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-533",
+    "title": "Open Graph (OG) 标签的作用是？",
+    "options": [
+      "控制社交媒体分享时的显示内容",
+      "优化搜索",
+      "加速加载",
+      "定义语义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-534",
+    "title": "OG标签的前缀是？",
+    "options": [
+      "og:",
+      "meta:",
+      "social:",
+      "share:"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-535",
+    "title": "og:title的作用是？",
+    "options": [
+      "定义分享标题",
+      "定义类型",
+      "定义图片",
+      "定义描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-536",
+    "title": "og:image的作用是？",
+    "options": [
+      "定义分享图片",
+      "定义标题",
+      "定义描述",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-537",
+    "title": "Twitter Card标签的作用是？",
+    "options": [
+      "控制Twitter分享时的显示",
+      "控制Facebook分享",
+      "控制微信分享",
+      "控制微博分享"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-538",
+    "title": "Twitter Card标签的name前缀是？",
+    "options": [
+      "twitter:",
+      "og:",
+      "fb:",
+      "card:"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-539",
+    "title": "结构化数据的作用是？",
+    "options": [
+      "生成搜索结果的富媒体片段",
+      "美化页面",
+      "加速加载",
+      "增加安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-540",
+    "title": "结构化数据常用的格式是？",
+    "options": [
+      "JSON-LD",
+      "Microdata",
+      "RDFa",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-541",
+    "title": "JSON-LD通常放在哪个标签中？",
+    "options": [
+      "<script type=\"application/ld+json\">",
+      "<meta>",
+      "<link>",
+      "<style>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-542",
+    "title": "robots meta标签的作用是？",
+    "options": [
+      "控制搜索引擎抓取和索引行为",
+      "控制爬虫速度",
+      "控制抓取时间",
+      "控制抓取频率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-543",
+    "title": "<meta name=\"robots\" content=\"noindex\">的含义是？",
+    "options": [
+      "禁止索引此页面",
+      "禁止抓取",
+      "允许索引",
+      "允许抓取"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-544",
+    "title": "<meta name=\"robots\" content=\"nofollow\">的含义是？",
+    "options": [
+      "不追踪此页面的链接",
+      "禁止索引",
+      "允许追踪",
+      "禁止抓取"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-545",
+    "title": "<a rel=\"nofollow\">的作用是？",
+    "options": [
+      "告诉搜索引擎不要追踪此链接",
+      "禁止点击",
+      "禁止跳转",
+      "打开新窗口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-546",
+    "title": "Sitemap的作用是？",
+    "options": [
+      "告诉搜索引擎网站的可抓取URL",
+      "加速加载",
+      "优化结构",
+      "定义路由"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-547",
+    "title": "Sitemap通常使用什么格式？",
+    "options": [
+      "XML",
+      "HTML",
+      "JSON",
+      "TXT"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-548",
+    "title": "面包屑导航对SEO的作用是？",
+    "options": [
+      "帮助理解页面层级结构",
+      "增加关键词",
+      "提高速度",
+      "美化界面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-549",
+    "title": "如何优化图片的SEO？",
+    "options": [
+      "使用描述性文件名和alt文本",
+      "增加尺寸",
+      "增加数量",
+      "使用大图"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-550",
+    "title": "页面加载速度对SEO的影响是？",
+    "options": [
+      "是排名因素之一",
+      "无影响",
+      "影响很小",
+      "只影响体验"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-551",
+    "title": "移动端友好性对SEO的影响是？",
+    "options": [
+      "是排名因素(移动优先索引)",
+      "无影响",
+      "影响很小",
+      "只影响体验"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-552",
+    "title": "HTTPS对SEO的影响是？",
+    "options": [
+      "是轻微排名因素",
+      "无影响",
+      "影响很大",
+      "降低排名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-553",
+    "title": "<strong>和<b>对SEO的区别？",
+    "options": [
+      "strong有语义权重，b无",
+      "没有区别",
+      "b权重更高",
+      "strong无权重"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-554",
+    "title": "<em>和<i>对SEO的区别？",
+    "options": [
+      "em有语义权重，i无",
+      "没有区别",
+      "i权重更高",
+      "em无权重"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-555",
+    "title": "<caption>对SEO的作用是？",
+    "options": [
+      "帮助理解表格内容",
+      "无影响",
+      "增加关键词",
+      "美化表格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-556",
+    "title": "<figcaption>对SEO的作用是？",
+    "options": [
+      "帮助理解图片/图表内容",
+      "无影响",
+      "增加链接",
+      "美化图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-557",
+    "title": "<abbr>的title属性对SEO的作用？",
+    "options": [
+      "提供缩写全称辅助理解",
+      "无影响",
+      "增加关键词",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-558",
+    "title": "ARIA过度使用会导致？",
+    "options": [
+      "屏幕阅读器输出混乱",
+      "提高可访问性",
+      "增强SEO",
+      "提高性能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-559",
+    "title": "ARIA的第一条规则是？",
+    "options": [
+      "如果原生HTML元素能实现，就不要用ARIA",
+      "总是使用ARIA",
+      "只用ARIA",
+      "避免使用ARIA"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-560",
+    "title": "tabindex属性的作用是？",
+    "options": [
+      "控制元素是否可通过Tab键获取焦点",
+      "设置Tab顺序",
+      "设置索引",
+      "设置标签"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-561",
+    "title": "tabindex=\"0\"的作用是？",
+    "options": [
+      "按文档顺序将元素加入Tab序列",
+      "移出序列",
+      "设为首个",
+      "设为末尾"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-562",
+    "title": "tabindex=\"-1\"的作用是？",
+    "options": [
+      "允许通过脚本获取焦点但不在Tab序列中",
+      "移除焦点",
+      "设为首个",
+      "禁止焦点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-563",
+    "title": "tabindex大于0的做法推荐吗？",
+    "options": [
+      "不推荐，打乱自然Tab顺序",
+      "推荐",
+      "无所谓",
+      "必须设置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-564",
+    "title": "accesskey属性的作用是？",
+    "options": [
+      "为元素设置快捷键",
+      "设置访问权限",
+      "设置密钥",
+      "设置密码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-565",
+    "title": "accesskey的问题不包括？",
+    "options": [
+      "增加代码量",
+      "与浏览器快捷键冲突",
+      "难以发现",
+      "不同浏览器按键不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-566",
+    "title": "对比度至少应达到多少？",
+    "options": [
+      "4.5:1 (普通文本)",
+      "1:1",
+      "2:1",
+      "10:1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-567",
+    "title": "大文本(18pt或14pt粗体)的对比度至少？",
+    "options": [
+      "3:1",
+      "4.5:1",
+      "2:1",
+      "1:1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-568",
+    "title": "焦点可见性的要求是？",
+    "options": [
+      "焦点状态必须有可见指示",
+      "不需要指示",
+      "颜色区分即可",
+      "下划线即可"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-569",
+    "title": ":focus-visible伪类的作用是？",
+    "options": [
+      "仅在键盘导航时显示焦点",
+      "总是显示焦点",
+      "隐藏焦点",
+      "鼠标焦点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-570",
+    "title": "跳过导航链接的作用是？",
+    "options": [
+      "让键盘用户跳过重复的导航",
+      "加快加载",
+      "提高SEO",
+      "美化页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-571",
+    "title": "跳过导航通常放在页面的什么位置？",
+    "options": [
+      "页面最顶部",
+      "导航内",
+      "页脚",
+      "侧边栏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-572",
+    "title": "表单错误提示应如何关联？",
+    "options": [
+      "使用aria-describedby关联到输入框",
+      "放在旁边",
+      "放在底部",
+      "用alert"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-573",
+    "title": "必填字段的指示器应如何标记？",
+    "options": [
+      "使用aria-required=\"true\"",
+      "只用星号",
+      "只用颜色",
+      "只用placeholder"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-574",
+    "title": "装饰性图片的alt应如何设置？",
+    "options": [
+      "alt=\"\" (空值)",
+      "alt=\"装饰\"",
+      "不设置alt",
+      "alt=\"图片\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-575",
+    "title": "复杂图表的alt应如何设置？",
+    "options": [
+      "提供详细描述或链接到长描述",
+      "alt=\"图表\"",
+      "alt=\"\"",
+      "不设置alt"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-576",
+    "title": "auto-playing音频的可访问性问题？",
+    "options": [
+      "不应自动播放，或提供暂停按钮",
+      "声音越大越好",
+      "无需控制",
+      "自动播放好"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-577",
+    "title": "闪烁内容的风险是？",
+    "options": [
+      "可能引发光敏性癫痫",
+      "吸引注意力",
+      "提高可见性",
+      "增加美观"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-578",
+    "title": "每秒闪烁次数不应超过？",
+    "options": [
+      "3次",
+      "5次",
+      "10次",
+      "1次"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-579",
+    "title": "<iframe>的可访问性要求是？",
+    "options": [
+      "提供title属性描述内容",
+      "无需处理",
+      "设置alt",
+      "设置name"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-580",
+    "title": "色彩依赖的问题是指？",
+    "options": [
+      "仅用颜色传达信息，色盲用户无法识别",
+      "颜色太鲜艳",
+      "颜色太少",
+      "颜色不搭配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-581",
+    "title": "如何解决色彩依赖？",
+    "options": [
+      "同时使用文本或图标标识",
+      "增加颜色",
+      "改变颜色",
+      "删除颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-582",
+    "title": "文本缩放的要求是？",
+    "options": [
+      "页面应支持放大到200%而不丢失内容",
+      "不能缩放",
+      "支持100%",
+      "支持50%"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-583",
+    "title": "屏幕阅读器如何处理<details>？",
+    "options": [
+      "作为可展开/折叠的区域播报",
+      "忽略",
+      "总是展开",
+      "总是折叠"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-584",
+    "title": "<dialog>的可访问性优势是？",
+    "options": [
+      "自动管理焦点陷阱和Esc关闭",
+      "没有优势",
+      "样式更好",
+      "动画更顺"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-585",
+    "title": "焦点陷阱是指？",
+    "options": [
+      "将焦点限制在模态对话框内",
+      "焦点消失",
+      "焦点乱跳",
+      "焦点在外部"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-586",
+    "title": "如何测试网页可访问性？",
+    "options": [
+      "使用屏幕阅读器、键盘导航、审计工具",
+      "只看页面",
+      "只用鼠标",
+      "不需要测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-587",
+    "title": "常见的可访问性审计工具有？",
+    "options": [
+      "Lighthouse, axe, WAVE",
+      "ESLint, Prettier",
+      "Chrome DevTools",
+      "Webpack"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-588",
+    "title": "Lighthouse的可访问性审计基于？",
+    "options": [
+      "WCAG标准",
+      "个人经验",
+      "浏览器规则",
+      "CSS规范"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-589",
+    "title": "<html lang=\"zh-CN\">对可访问性的影响是？",
+    "options": [
+      "屏幕阅读器会选择正确的语音引擎",
+      "无影响",
+      "影响翻译",
+      "影响编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-590",
+    "title": "链接文本的最佳实践是？",
+    "options": [
+      "描述链接目标而非\"点击这里\"",
+      "越短越好",
+      "越长越好",
+      "使用URL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-591",
+    "title": "响应式设计对可访问性的影响是？",
+    "options": [
+      "适应不同设备改善体验",
+      "无影响",
+      "降低体验",
+      "增加代码量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-592",
+    "title": "触摸目标的最小尺寸建议是？",
+    "options": [
+      "44x44 CSS像素",
+      "10x10",
+      "20x20",
+      "100x100"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-593",
+    "title": "手势操作的可访问性问题？",
+    "options": [
+      "必须提供非手势的替代操作",
+      "手势最方便",
+      "不需要替代",
+      "禁止手势"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-594",
+    "title": "<video>的可访问性要求是？",
+    "options": [
+      "提供字幕和音频描述",
+      "无需处理",
+      "设置alt",
+      "提供下载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-595",
+    "title": "<audio>的可访问性要求是？",
+    "options": [
+      "提供文本转录",
+      "无需处理",
+      "设置alt",
+      "提供下载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-596",
+    "title": "占位符的可访问性问题？",
+    "options": [
+      "不能替代label，对比度常不足",
+      "很好用",
+      "替代label",
+      "必须使用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-597",
+    "title": "自动填充的可访问性？",
+    "options": [
+      "帮助残障用户快速填写表单",
+      "降低体验",
+      "增加错误",
+      "无需支持"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-598",
+    "title": "autocomplete属性对可访问性的帮助？",
+    "options": [
+      "帮助浏览器和辅助技术理解字段用途",
+      "无帮助",
+      "增加安全",
+      "加速加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-599",
+    "title": "验证码(CAPTCHA)的可访问性问题？",
+    "options": [
+      "对残障用户极不友好，需提供替代方案",
+      "非常友好",
+      "无需替代",
+      "必须使用图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-600",
+    "title": "音频验证码的作用是？",
+    "options": [
+      "为视觉障碍用户提供验证替代",
+      "增加难度",
+      "播放音乐",
+      "干扰用户"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-601",
+    "title": "关键渲染路径的步骤是？",
+    "options": [
+      "DOM -> CSSOM -> Render Tree -> Layout -> Paint",
+      "HTML -> CSS -> JS",
+      "请求 -> 响应 -> 渲染",
+      "解析 -> 执行 -> 显示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-602",
+    "title": "阻塞渲染的资源是？",
+    "options": [
+      "CSS和默认的JS",
+      "图片",
+      "字体",
+      "视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-603",
+    "title": "如何避免CSS阻塞渲染？",
+    "options": [
+      "减少关键CSS，非关键CSS异步加载",
+      "不用CSS",
+      "内联所有CSS",
+      "放在body底部"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-604",
+    "title": "如何避免JS阻塞解析？",
+    "options": [
+      "使用defer或async",
+      "不用JS",
+      "内联JS",
+      "放在head中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-605",
+    "title": "defer和async的共同点是？",
+    "options": [
+      "都不阻塞HTML解析",
+      "都按顺序执行",
+      "都在DOMContentLoaded后执行",
+      "都阻塞渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-606",
+    "title": "defer和async的区别是？",
+    "options": [
+      "defer按顺序执行，async谁先加载完谁执行",
+      "没有区别",
+      "defer异步，async延迟",
+      "defer不阻塞，async阻塞"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-607",
+    "title": "预加载资源使用哪个标签？",
+    "options": [
+      "<link rel=\"preload\">",
+      "<link rel=\"prefetch\">",
+      "<link rel=\"preconnect\">",
+      "<link rel=\"dns-prefetch\">"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-608",
+    "title": "preload的作用是？",
+    "options": [
+      "提前加载当前页面必需的资源",
+      "加载下个页面资源",
+      "建立连接",
+      "解析DNS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-609",
+    "title": "prefetch的作用是？",
+    "options": [
+      "提前加载未来可能需要的资源",
+      "加载当前资源",
+      "建立连接",
+      "解析DNS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-610",
+    "title": "preconnect的作用是？",
+    "options": [
+      "提前建立服务器连接",
+      "加载资源",
+      "解析DNS",
+      "缓存资源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-611",
+    "title": "dns-prefetch的作用是？",
+    "options": [
+      "提前解析域名",
+      "建立连接",
+      "加载资源",
+      "缓存资源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-612",
+    "title": "预渲染页面使用哪个标签？",
+    "options": [
+      "<link rel=\"prerender\">",
+      "<link rel=\"preload\">",
+      "<link rel=\"prefetch\">",
+      "<link rel=\"preconnect\">"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-613",
+    "title": "图片懒加载的HTML属性是？",
+    "options": [
+      "loading=\"lazy\"",
+      "lazy=\"true\"",
+      "load=\"lazy\"",
+      "src=\"lazy\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-614",
+    "title": "iframe懒加载的HTML属性是？",
+    "options": [
+      "loading=\"lazy\"",
+      "lazy=\"true\"",
+      "load=\"lazy\"",
+      "src=\"lazy\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-615",
+    "title": "减少DOM节点数的好处是？",
+    "options": [
+      "加快解析和渲染速度",
+      "增加内存",
+      "减慢加载",
+      "增加功能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-616",
+    "title": "深层次嵌套DOM的问题？",
+    "options": [
+      "增加重排重绘成本",
+      "提高性能",
+      "代码更清晰",
+      "易于维护"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-617",
+    "title": "innerHTML和document.createElement的性能差异？",
+    "options": [
+      "createElement更安全且在大量修改时可能更快",
+      "innerHTML总是更快",
+      "没有差异",
+      "createElement更慢"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-618",
+    "title": "重排和重绘的区别是？",
+    "options": [
+      "重排改变几何属性，重绘改变外观",
+      "重排更快",
+      "重绘更慢",
+      "没有区别"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-619",
+    "title": "触发重排的属性不包括？",
+    "options": [
+      "color",
+      "width",
+      "height",
+      "margin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-620",
+    "title": "触发重绘的属性包括？",
+    "options": [
+      "color, visibility, box-shadow",
+      "width, height",
+      "top, left",
+      "display"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-621",
+    "title": "如何减少重排重绘？",
+    "options": [
+      "批量修改DOM，使用文档片段，避免逐条修改样式",
+      "频繁修改",
+      "使用table布局",
+      "增加DOM深度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-622",
+    "title": "document.createDocumentFragment()的作用是？",
+    "options": [
+      "创建轻量级文档片段批量插入DOM",
+      "创建新文档",
+      "创建节点",
+      "创建元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-623",
+    "title": "虚拟DOM的作用是？",
+    "options": [
+      "在内存中比较差异最小化DOM操作",
+      "替代真实DOM",
+      "加速网络",
+      "减少代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-624",
+    "title": "CSS Sprite的作用是？",
+    "options": [
+      "减少图片请求数",
+      "增加图片大小",
+      "提高分辨率",
+      "实现动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-625",
+    "title": "Base64图片的优缺点是？",
+    "options": [
+      "减少请求但增加体积和解码时间",
+      "总是好的",
+      "减少体积",
+      "加速加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-626",
+    "title": "何时使用Base64图片？",
+    "options": [
+      "极小且不常更新的图片",
+      "大图片",
+      "所有图片",
+      "背景图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-627",
+    "title": "字体闪烁(FOIT)的原因是？",
+    "options": [
+      "自定义字体未加载完成时文本不可见",
+      "字体太大",
+      "网络太慢",
+      "浏览器不支持"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-628",
+    "title": "如何解决字体闪烁？",
+    "options": [
+      "使用font-display: swap",
+      "不使用自定义字体",
+      "增大字体",
+      "缩小字体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-629",
+    "title": "font-display: optional的行为是？",
+    "options": [
+      "浏览器决定是否使用自定义字体，极短阻塞",
+      "总是等待",
+      "总是替换",
+      "总是阻塞"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-630",
+    "title": "资源提示Resource Hints包括？",
+    "options": [
+      "preload, prefetch, preconnect, dns-prefetch",
+      "link, script, img",
+      "meta, title, style",
+      "header, footer, main"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-631",
+    "title": "HTTP缓存头Cache-Control的作用是？",
+    "options": [
+      "控制资源的缓存策略",
+      "控制编码",
+      "控制压缩",
+      "控制路由"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-632",
+    "title": "Cache-Control: max-age=3600表示？",
+    "options": [
+      "缓存有效期为3600秒",
+      "缓存大小3600KB",
+      "请求时间3600ms",
+      "连接数3600"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-633",
+    "title": "Cache-Control: no-cache表示？",
+    "options": [
+      "使用前必须向服务器验证",
+      "不缓存",
+      "永久缓存",
+      "只在内存缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-634",
+    "title": "Cache-Control: no-store表示？",
+    "options": [
+      "完全不缓存任何内容",
+      "使用前验证",
+      "永久缓存",
+      "只在磁盘缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-635",
+    "title": "ETag的作用是？",
+    "options": [
+      "标识资源版本用于协商缓存",
+      "加密数据",
+      "压缩数据",
+      "路由请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-636",
+    "title": "Last-Modified的作用是？",
+    "options": [
+      "记录资源最后修改时间",
+      "设置过期时间",
+      "设置缓存大小",
+      "设置编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-637",
+    "title": "强缓存和协商缓存的区别是？",
+    "options": [
+      "强缓存不请求服务器，协商缓存要验证",
+      "没有区别",
+      "强缓存更快但旧",
+      "协商缓存更快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-638",
+    "title": "CDN的作用是？",
+    "options": [
+      "从距离用户最近的服务器获取资源",
+      "加密数据",
+      "压缩数据",
+      "存储数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-639",
+    "title": "Gzip/Brotli压缩的作用是？",
+    "options": [
+      "减小传输文件体积",
+      "加密文件",
+      "合并文件",
+      "缓存文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-640",
+    "title": "HTML压缩的好处是？",
+    "options": [
+      "移除空格注释减小体积",
+      "增加可读性",
+      "加速解析",
+      "增加功能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-641",
+    "title": "代码分割的作用是？",
+    "options": [
+      "按需加载代码减少初始负载",
+      "拆分文件",
+      "合并文件",
+      "压缩代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-642",
+    "title": "Tree Shaking的作用是？",
+    "options": [
+      "移除未使用的代码",
+      "摇动树",
+      "压缩代码",
+      "合并代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-643",
+    "title": "Service Worker缓存的优势是？",
+    "options": [
+      "离线可用，细粒度控制缓存策略",
+      "自动缓存",
+      "无需代码",
+      "只在在线时有效"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-644",
+    "title": "Cache API的add()方法用于？",
+    "options": [
+      "获取URL并将其响应加入缓存",
+      "添加自定义响应",
+      "添加键值对",
+      "删除缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-645",
+    "title": "Cache API的addAll()方法用于？",
+    "options": [
+      "批量获取URL并缓存响应",
+      "添加单个URL",
+      "删除多个",
+      "更新缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-646",
+    "title": "Cache API的match()方法用于？",
+    "options": [
+      "在缓存中查找匹配的响应",
+      "匹配URL",
+      "匹配请求",
+      "匹配头信息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-647",
+    "title": "图片格式WebP的优势是？",
+    "options": [
+      "同等质量下体积更小",
+      "兼容性最好",
+      "无需解码",
+      "支持动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-648",
+    "title": "图片格式AVIF的优势是？",
+    "options": [
+      "比WebP压缩率更高",
+      "兼容性最好",
+      "最老格式",
+      "无需解码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-649",
+    "title": "SVG优化的方法不包括？",
+    "options": [
+      "增加冗余属性",
+      "移除编辑器元数据",
+      "简化路径",
+      "移除注释"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-650",
+    "title": "<script>的integrity属性用于？",
+    "options": [
+      "验证资源完整性防止篡改",
+      "加密脚本",
+      "压缩脚本",
+      "延迟加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-651",
+    "title": "<script>的crossorigin属性用于？",
+    "options": [
+      "配置跨域资源请求",
+      "加密请求",
+      "缓存脚本",
+      "压缩请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-652",
+    "title": "async脚本可能的问题？",
+    "options": [
+      "执行顺序不可控，可能依赖缺失",
+      "阻塞解析",
+      "加载太慢",
+      "不支持ES6"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-653",
+    "title": "defer脚本的执行时机是？",
+    "options": [
+      "DOMContentLoaded事件之前",
+      "页面加载完成后",
+      "立即执行",
+      "DOMContentLoaded之后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-654",
+    "title": "模块脚本(<script type=\"module\">)默认是？",
+    "options": [
+      "defer的",
+      "async的",
+      "阻塞的",
+      "同步的"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-655",
+    "title": "预加载字体为什么重要？",
+    "options": [
+      "避免文字闪烁和布局偏移",
+      "字体很大",
+      "字体很小",
+      "加速网络"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-656",
+    "title": "如何预加载字体？",
+    "options": [
+      "<link rel=\"preload\" as=\"font\" crossorigin>",
+      "<link rel=\"prefetch\">",
+      "<link rel=\"preconnect\">",
+      "font-display"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-657",
+    "title": "crossorigin属性在预加载字体时为什么需要？",
+    "options": [
+      "字体请求需要CORS模式",
+      "加密字体",
+      "缓存字体",
+      "压缩字体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-658",
+    "title": "减少Cookie大小的原因？",
+    "options": [
+      "Cookie随每次请求发送增加流量",
+      "影响安全",
+      "占用硬盘",
+      "影响渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-659",
+    "title": "避免空的src或href的原因？",
+    "options": [
+      "部分浏览器仍会发起请求",
+      "代码不美观",
+      "影响语义",
+      "验证报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-660",
+    "title": "避免@import引入CSS的原因？",
+    "options": [
+      "@import是串行加载，link是并行",
+      "@import更快",
+      "没有区别",
+      "@import不支持"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-661",
+    "title": "将CSS放在head中的原因？",
+    "options": [
+      "尽早构建CSSOM避免闪烁",
+      "放在哪里都行",
+      "放在body底部更快",
+      "减少请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-662",
+    "title": "将JS放在body底部的原因？",
+    "options": [
+      "避免阻塞DOM解析",
+      "放在哪里都行",
+      "放在head更快",
+      "减少请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-663",
+    "title": "使用外部JS/CSS的优势？",
+    "options": [
+      "便于缓存和复用",
+      "每次都请求",
+      "内联更快",
+      "减少代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-664",
+    "title": "使用内部JS/CSS的优势？",
+    "options": [
+      "减少HTTP请求",
+      "便于缓存",
+      "便于维护",
+      "代码分离"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-665",
+    "title": "关键CSS内联的优势？",
+    "options": [
+      "首屏渲染不受CSS阻塞",
+      "所有CSS内联",
+      "减少请求",
+      "增加缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-666",
+    "title": "非关键CSS异步加载的方法？",
+    "options": [
+      "使用media=\"print\"然后切换",
+      "使用defer",
+      "使用async",
+      "放在body底部"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-667",
+    "title": "图片尺寸设置的重要性？",
+    "options": [
+      "避免布局偏移(CLS)",
+      "增加美观",
+      "提高清晰度",
+      "减小体积"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-668",
+    "title": "width和height属性对性能的帮助？",
+    "options": [
+      "在图片加载前预留空间",
+      "设置大小",
+      "增加体积",
+      "延迟加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-669",
+    "title": "aspect-ratio属性的作用？",
+    "options": [
+      "在未知高度时保持宽高比防偏移",
+      "裁剪图片",
+      "缩放图片",
+      "压缩图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-670",
+    "title": "content-visibility: auto的作用？",
+    "options": [
+      "跳过屏幕外元素的渲染",
+      "隐藏元素",
+      "显示元素",
+      "删除元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-671",
+    "title": "contain-intrinsic-size的作用？",
+    "options": [
+      "为受contain影响的元素提供预估尺寸",
+      "设置固有尺寸",
+      "设置最大尺寸",
+      "设置最小尺寸"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-672",
+    "title": "will-change属性的作用？",
+    "options": [
+      "提示浏览器元素将要变化以优化",
+      "改变元素",
+      "隐藏元素",
+      "移动元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-673",
+    "title": "过度使用will-change的后果？",
+    "options": [
+      "占用大量内存和资源",
+      "提高性能",
+      "没有影响",
+      "代码错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-674",
+    "title": "requestIdleCallback的作用？",
+    "options": [
+      "在浏览器空闲时执行低优先级任务",
+      "立即执行",
+      "定时执行",
+      "延迟执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-675",
+    "title": "长任务(Long Task)的定义？",
+    "options": [
+      "超过50ms的任务",
+      "超过1秒",
+      "超过10ms",
+      "超过100ms"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-676",
+    "title": "长任务的问题？",
+    "options": [
+      "阻塞主线程导致卡顿",
+      "提高性能",
+      "增加并发",
+      "减少内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-677",
+    "title": "时间切片的作用？",
+    "options": [
+      "将长任务拆分为小段执行",
+      "延长时间",
+      "增加时间",
+      "缩短时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-678",
+    "title": "Web Worker对性能的帮助？",
+    "options": [
+      "将计算密集任务移出主线程",
+      "操作DOM",
+      "渲染页面",
+      "增加内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-679",
+    "title": "OffscreenCanvas的作用？",
+    "options": [
+      "在Worker中执行Canvas渲染",
+      "离屏显示",
+      "截屏",
+      "隐藏画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-680",
+    "title": "图片的解码时机？",
+    "options": [
+      "decode()方法可异步解码避免卡顿",
+      "总是同步",
+      "不需要解码",
+      "自动解码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-681",
+    "title": "<img>的decoding=\"async\"作用？",
+    "options": [
+      "异步解码图片减少渲染延迟",
+      "同步解码",
+      "不解码",
+      "延迟加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-682",
+    "title": "<img>的fetchpriority=\"high\"作用？",
+    "options": [
+      "提高图片加载优先级",
+      "降低优先级",
+      "延迟加载",
+      "预加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-683",
+    "title": "<link>的fetchpriority属性作用？",
+    "options": [
+      "指示资源的相对优先级",
+      "设置权重",
+      "设置顺序",
+      "设置时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-684",
+    "title": "fetchpriority的值包括？",
+    "options": [
+      "high, low, auto",
+      "1, 2, 3",
+      "true, false",
+      "urgent, normal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-685",
+    "title": "HTTP/2 Server Push的作用？",
+    "options": [
+      "服务器主动推送资源",
+      "客户端请求",
+      "缓存资源",
+      "压缩资源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-686",
+    "title": "103 Early Hints的作用？",
+    "options": [
+      "在最终响应前预加载资源",
+      "提前返回数据",
+      "错误提示",
+      "重定向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-687",
+    "title": "性能指标FCP表示？",
+    "options": [
+      "First Contentful Paint (首次内容绘制)",
+      "First CPU Process",
+      "Fast Content Paint",
+      "First Code Parse"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-688",
+    "title": "性能指标LCP表示？",
+    "options": [
+      "Largest Contentful Paint (最大内容绘制)",
+      "Last Content Paint",
+      "Largest CPU Process",
+      "Layout Content Paint"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-689",
+    "title": "性能指标FID表示？",
+    "options": [
+      "First Input Delay (首次输入延迟)",
+      "First Interactive Delay",
+      "Fast Input Display",
+      "First Image Draw"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-690",
+    "title": "性能指标CLS表示？",
+    "options": [
+      "Cumulative Layout Shift (累积布局偏移)",
+      "Content Layout Size",
+      "CSS Loading Speed",
+      "Cumulative Load Shift"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-691",
+    "title": "性能指标TTFB表示？",
+    "options": [
+      "Time to First Byte (首字节时间)",
+      "Time to First Byte Paint",
+      "Total Time For Bytes",
+      "Time To Full Buffer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-692",
+    "title": "性能指标TTI表示？",
+    "options": [
+      "Time to Interactive (可交互时间)",
+      "Time to Idle",
+      "Total Time Interactive",
+      "Time To Install"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-693",
+    "title": "性能指标TBT表示？",
+    "options": [
+      "Total Blocking Time (总阻塞时间)",
+      "Total Byte Time",
+      "Time Between Tasks",
+      "Total Buffer Time"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-694",
+    "title": "Core Web Vitals包括？",
+    "options": [
+      "LCP, FID, CLS",
+      "FCP, TTI, TBT",
+      "TTFB, FCP, LCP",
+      "CLS, FID, TTFB"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-695",
+    "title": "如何测量Core Web Vitals？",
+    "options": [
+      "Lighthouse, Chrome User Experience Report",
+      "console.log",
+      "alert",
+      "document.title"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-696",
+    "title": "PerformanceObserver的作用？",
+    "options": [
+      "观察性能条目并回调",
+      "观察DOM",
+      "观察网络",
+      "观察样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-697",
+    "title": "Navigation Timing API的作用？",
+    "options": [
+      "测量页面加载性能",
+      "测量网络速度",
+      "测量CPU",
+      "测量内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-698",
+    "title": "Resource Timing API的作用？",
+    "options": [
+      "测量资源加载性能",
+      "测量页面加载",
+      "测量渲染",
+      "测量交互"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-699",
+    "title": "User Timing API的作用？",
+    "options": [
+      "自定义标记和测量性能",
+      "测量用户行为",
+      "测量网络",
+      "测量内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-700",
+    "title": "Long Animation Frames API的作用？",
+    "options": [
+      "检测长动画帧",
+      "创建动画",
+      "优化动画",
+      "取消动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-701",
+    "title": "XSS的全称是？",
+    "options": [
+      "Cross-Site Scripting",
+      "Cross-Server Scripting",
+      "Cross-Site Security",
+      "Cross-Server Security"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-702",
+    "title": "XSS攻击的类型不包括？",
+    "options": [
+      "Cross-Site Request (CSRF)",
+      "Stored XSS",
+      "Reflected XSS",
+      "DOM-based XSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-703",
+    "title": "Stored XSS的特点是？",
+    "options": [
+      "恶意脚本存储在服务器数据库中",
+      "在URL中",
+      "在DOM中",
+      "在Cookie中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-704",
+    "title": "Reflected XSS的特点是？",
+    "options": [
+      "恶意脚本在URL参数中反射回页面",
+      "存储在服务器",
+      "在DOM中",
+      "在本地存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-705",
+    "title": "DOM-based XSS的特点是？",
+    "options": [
+      "恶意脚本在客户端DOM操作中注入",
+      "在服务器端",
+      "在数据库",
+      "在URL中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-706",
+    "title": "如何防御XSS？",
+    "options": [
+      "转义HTML特殊字符, 使用CSP",
+      "使用HTTPS",
+      "使用POST",
+      "使用Cookie"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-707",
+    "title": "HTML转义<字符应替换为？",
+    "options": [
+      "<",
+      ">",
+      "&",
+      "&nbsp;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-708",
+    "title": "HTML转义>字符应替换为？",
+    "options": [
+      ">",
+      "<",
+      "&",
+      "&nbsp;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-709",
+    "title": "HTML转义&字符应替换为？",
+    "options": [
+      "&",
+      "<",
+      ">",
+      "&copy;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-710",
+    "title": "HTML转义\"字符应替换为？",
+    "options": [
+      "\"",
+      "&apos;",
+      "&",
+      "<"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-711",
+    "title": "HTML转义'字符应替换为？",
+    "options": [
+      "&apos;",
+      "\"",
+      "&",
+      "<"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-712",
+    "title": "CSP如何防御XSS？",
+    "options": [
+      "限制脚本来源禁止内联执行",
+      "加密数据",
+      "压缩代码",
+      "加速加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-713",
+    "title": "CSP中default-src的作用是？",
+    "options": [
+      "作为其他指令的后备",
+      "默认脚本源",
+      "默认样式源",
+      "默认图片源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-714",
+    "title": "CSP中'unsafe-inline'的作用是？",
+    "options": [
+      "允许内联脚本/样式(不安全)",
+      "禁止内联",
+      "加密内联",
+      "压缩内联"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-715",
+    "title": "CSP中'unsafe-eval'的作用是？",
+    "options": [
+      "允许eval等动态代码执行(不安全)",
+      "禁止eval",
+      "加密eval",
+      "优化eval"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-716",
+    "title": "CSP中'self'的作用是？",
+    "options": [
+      "允许同源资源",
+      "允许所有资源",
+      "禁止所有资源",
+      "允许跨域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-717",
+    "title": "CSP中'none'的作用是？",
+    "options": [
+      "禁止加载任何资源",
+      "允许所有",
+      "允许同源",
+      "允许跨域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-718",
+    "title": "CSP的report-uri指令用于？",
+    "options": [
+      "指定违规报告发送地址",
+      "报告错误",
+      "报告性能",
+      "报告加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-719",
+    "title": "CSRF的全称是？",
+    "options": [
+      "Cross-Site Request Forgery",
+      "Cross-Site Scripting Forgery",
+      "Cross-Server Request Forgery",
+      "Cross-Site Resource Forgery"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-720",
+    "title": "CSRF攻击的原理是？",
+    "options": [
+      "利用用户已登录的身份发起恶意请求",
+      "注入脚本",
+      "窃取密码",
+      "篡改页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-721",
+    "title": "如何防御CSRF？",
+    "options": [
+      "使用CSRF Token, 验证Referer",
+      "使用CSP",
+      "转义HTML",
+      "使用HTTPS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-722",
+    "title": "CSRF Token应放在哪里？",
+    "options": [
+      "表单隐藏字段或请求头",
+      "URL参数",
+      "Cookie",
+      "LocalStorage"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-723",
+    "title": "SameSite Cookie属性的作用？",
+    "options": [
+      "控制Cookie跨站发送行为",
+      "加密Cookie",
+      "压缩Cookie",
+      "缓存Cookie"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-724",
+    "title": "SameSite=Strict的作用？",
+    "options": [
+      "完全禁止跨站发送Cookie",
+      "允许所有跨站",
+      "仅GET允许",
+      "仅POST允许"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-725",
+    "title": "SameSite=Lax的作用？",
+    "options": [
+      "允许安全的顶级导航跨站发送",
+      "完全禁止",
+      "允许所有",
+      "仅POST允许"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-726",
+    "title": "SameSite=None的要求？",
+    "options": [
+      "必须配合Secure属性(仅HTTPS)",
+      "无需Secure",
+      "允许HTTP",
+      "只允许HTTP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-727",
+    "title": "点击劫持的原理是？",
+    "options": [
+      "透明iframe覆盖诱骗用户点击",
+      "注入脚本",
+      "窃取密码",
+      "篡改请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-728",
+    "title": "如何防御点击劫持？",
+    "options": [
+      "使用X-Frame-Options或CSP frame-ancestors",
+      "使用HTTPS",
+      "使用Token",
+      "加密页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-729",
+    "title": "X-Frame-Options的值不包括？",
+    "options": [
+      "ALLOW-FROM",
+      "DENY",
+      "SAMEORIGIN",
+      "ALLOW-ALL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-730",
+    "title": "X-Frame-Options: DENY的作用？",
+    "options": [
+      "页面不允许在frame中显示",
+      "允许同源",
+      "允许跨域",
+      "允许特定域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-731",
+    "title": "X-Frame-Options: SAMEORIGIN的作用？",
+    "options": [
+      "只允许同源页面在frame中嵌套",
+      "完全禁止",
+      "允许所有",
+      "允许特定域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-732",
+    "title": "CSP的frame-ancestors指令优于X-Frame-Options的原因？",
+    "options": [
+      "支持多域名和通配符",
+      "性能更好",
+      "更安全",
+      "更简单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-733",
+    "title": "中间人攻击(MITM)的原理？",
+    "options": [
+      "攻击者截获并可能修改通信",
+      "注入脚本",
+      "窃取Cookie",
+      "篡改页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-734",
+    "title": "如何防御MITM？",
+    "options": [
+      "使用HTTPS, HSTS",
+      "使用CSP",
+      "使用Token",
+      "加密HTML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-735",
+    "title": "HTTPS的作用是？",
+    "options": [
+      "加密通信防止窃听和篡改",
+      "加速传输",
+      "压缩数据",
+      "缓存资源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-736",
+    "title": "HSTS的作用是？",
+    "options": [
+      "强制浏览器只通过HTTPS访问",
+      "加密HTTP",
+      "加速HTTPS",
+      "缓存HTTPS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-737",
+    "title": "HSTS的Strict-Transport-Security头包含？",
+    "options": [
+      "max-age, includeSubDomains, preload",
+      "timeout, secure, cache",
+      "expires, domain, secure",
+      "max-size, public, immutable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-738",
+    "title": "includeSubDomains的作用？",
+    "options": [
+      "将HSTS规则应用于所有子域",
+      "排除子域",
+      "仅主域",
+      "指定子域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-739",
+    "title": "HSTS Preload List的作用？",
+    "options": [
+      "浏览器内置列表首次访问即强制HTTPS",
+      "预加载页面",
+      "预加载脚本",
+      "预加载样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-740",
+    "title": "SQL注入的原理？",
+    "options": [
+      "将恶意SQL插入输入字段",
+      "注入脚本",
+      "篡改请求",
+      "窃取Cookie"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-741",
+    "title": "如何防御SQL注入？",
+    "options": [
+      "使用参数化查询(预编译语句)",
+      "使用CSP",
+      "使用HTTPS",
+      "转义HTML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-742",
+    "title": "不依赖HTML防御SQL注入的原因？",
+    "options": [
+      "SQL注入在服务器端发生",
+      "HTML能防御",
+      "SQL在客户端",
+      "无关"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-743",
+    "title": "<a target=\"_blank\">的安全漏洞？",
+    "options": [
+      "新页面可通过window.opener访问原页面",
+      "无漏洞",
+      "XSS攻击",
+      "CSRF攻击"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-744",
+    "title": "如何修复target=\"_blank\"漏洞？",
+    "options": [
+      "添加rel=\"noopener\"",
+      "添加rel=\"noreferrer\"",
+      "添加rel=\"nofollow\"",
+      "添加rel=\"external\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-745",
+    "title": "rel=\"noopener\"的作用？",
+    "options": [
+      "阻止新页面访问window.opener",
+      "不发送引用",
+      "不追踪",
+      "不缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-746",
+    "title": "rel=\"noreferrer\"的作用？",
+    "options": [
+      "不发送Referer头",
+      "阻止opener",
+      "不追踪",
+      "不缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-747",
+    "title": "rel=\"noopener noreferrer\"组合的作用？",
+    "options": [
+      "同时阻止opener和不发送Referer",
+      "仅阻止opener",
+      "仅不发送Referer",
+      "无意义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-748",
+    "title": "本地存储的安全风险？",
+    "options": [
+      "XSS可轻易读取数据",
+      "无法读取",
+      "加密存储",
+      "自动安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-749",
+    "title": "敏感数据不应存储在？",
+    "options": [
+      "localStorage和sessionStorage",
+      "服务器",
+      "数据库",
+      "内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-750",
+    "title": "Cookie的HttpOnly属性作用？",
+    "options": [
+      "防止JavaScript访问Cookie",
+      "只允许HTTP",
+      "加密Cookie",
+      "压缩Cookie"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-751",
+    "title": "HttpOnly能防御什么攻击？",
+    "options": [
+      "XSS窃取Cookie",
+      "CSRF",
+      "SQL注入",
+      "点击劫持"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-752",
+    "title": "Cookie的Secure属性作用？",
+    "options": [
+      "仅通过HTTPS发送Cookie",
+      "加密Cookie",
+      "防止JS访问",
+      "防止跨站"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-753",
+    "title": "Cookie的Path属性作用？",
+    "options": [
+      "限制Cookie在指定路径下发送",
+      "设置大小",
+      "设置时间",
+      "设置域名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-754",
+    "title": "Cookie的Domain属性作用？",
+    "options": [
+      "指定Cookie有效的域名",
+      "设置路径",
+      "设置大小",
+      "设置安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-755",
+    "title": "第三方Cookie的问题？",
+    "options": [
+      "用于跨站追踪用户隐私",
+      "提高安全",
+      "加速加载",
+      "方便开发"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-756",
+    "title": "如何阻止第三方Cookie？",
+    "options": [
+      "浏览器设置或SameSite属性",
+      "HttpOnly",
+      "Secure",
+      "Path"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-757",
+    "title": "<iframe>的安全风险？",
+    "options": [
+      "嵌入恶意内容, 点击劫持, 跨域通信",
+      "无风险",
+      "加速加载",
+      "提高性能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-758",
+    "title": "sandbox属性的限制不包括？",
+    "options": [
+      "允许所有脚本执行",
+      "禁止表单提交",
+      "禁止弹窗",
+      "禁止同源访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-759",
+    "title": "sandbox=\"allow-scripts\"的作用？",
+    "options": [
+      "允许iframe执行脚本",
+      "禁止脚本",
+      "允许表单",
+      "允许弹窗"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-760",
+    "title": "sandbox=\"allow-same-origin\"的风险？",
+    "options": [
+      "可能让iframe绕过同源策略",
+      "无风险",
+      "更安全",
+      "加速加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-761",
+    "title": "postMessage的安全要求？",
+    "options": [
+      "始终验证origin和source",
+      "不验证",
+      "只验证数据",
+      "只验证来源页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-762",
+    "title": "接收message时如何验证来源？",
+    "options": [
+      "检查event.origin",
+      "检查event.data",
+      "检查event.source",
+      "检查event.type"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-763",
+    "title": "发送message时如何指定目标？",
+    "options": [
+      "使用targetOrigin参数",
+      "使用targetDomain",
+      "使用targetUrl",
+      "使用targetWindow"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-764",
+    "title": "targetOrigin设置为\"*\"的风险？",
+    "options": [
+      "任何窗口都可接收消息",
+      "无风险",
+      "更安全",
+      "加速传输"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-765",
+    "title": "Subresource Integrity (SRI) 防御什么？",
+    "options": [
+      "CDN被攻陷导致的恶意代码注入",
+      "XSS",
+      "CSRF",
+      "MITM"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-766",
+    "title": "SRI如何工作？",
+    "options": [
+      "比对资源哈希值与integrity属性",
+      "加密资源",
+      "压缩资源",
+      "缓存资源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-767",
+    "title": "SRI支持哪些哈希算法？",
+    "options": [
+      "sha256, sha384, sha512",
+      "md5, sha1",
+      "aes, rsa",
+      "base64"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-768",
+    "title": "integrity属性格式是？",
+    "options": [
+      "算法-Base64哈希值",
+      "Base64-算法",
+      "哈希值-算法",
+      "算法-md5"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-769",
+    "title": "CORS如何防御安全风险？",
+    "options": [
+      "限制跨域资源访问需服务器授权",
+      "允许所有跨域",
+      "加密跨域",
+      "禁止跨域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-770",
+    "title": "Access-Control-Allow-Origin的作用？",
+    "options": [
+      "指定允许访问的源",
+      "允许所有源",
+      "禁止所有源",
+      "加密源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-771",
+    "title": "Access-Control-Allow-Credentials的作用？",
+    "options": [
+      "允许跨域请求携带凭证",
+      "禁止凭证",
+      "加密凭证",
+      "验证凭证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-772",
+    "title": "预检请求的作用？",
+    "options": [
+      "对复杂请求先发送OPTIONS检查权限",
+      "加速请求",
+      "缓存请求",
+      "压缩请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-773",
+    "title": "哪些情况触发预检？",
+    "options": [
+      "自定义头, 非简单方法, 非简单Content-Type",
+      "所有请求",
+      "GET请求",
+      "同源请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-774",
+    "title": "DNS重绑定攻击的原理？",
+    "options": [
+      "DNS解析IP频繁变化绕过同源策略",
+      "修改DNS",
+      "劫持DNS",
+      "加密DNS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-775",
+    "title": "如何防御DNS重绑定？",
+    "options": [
+      "验证Host头, DNS锁定",
+      "使用HTTPS",
+      "使用CSP",
+      "使用SRI"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-776",
+    "title": "Prototype Pollution的原理？",
+    "options": [
+      "修改JavaScript对象原型链",
+      "注入HTML",
+      "篡改CSS",
+      "伪造请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-777",
+    "title": "如何防御Prototype Pollution？",
+    "options": [
+      "深度合并对象时过滤__proto__等键",
+      "使用CSP",
+      "使用HTTPS",
+      "转义HTML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-778",
+    "title": "Supply Chain Attack(供应链攻击)原理？",
+    "options": [
+      "第三方依赖被植入恶意代码",
+      "网络攻击",
+      "物理攻击",
+      "社会工程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-779",
+    "title": "如何防御供应链攻击？",
+    "options": [
+      "使用SRI, 锁定依赖版本, 审计代码",
+      "使用HTTPS",
+      "使用CSP",
+      "使用Cookie"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-780",
+    "title": "内容嗅探攻击原理？",
+    "options": [
+      "浏览器忽略Content-Type执行恶意内容",
+      "嗅探网络",
+      "嗅探密码",
+      "嗅探Cookie"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-781",
+    "title": "如何防御内容嗅探？",
+    "options": [
+      "设置X-Content-Type-Options: nosniff",
+      "使用HTTPS",
+      "使用CSP",
+      "使用SRI"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-782",
+    "title": "X-Content-Type-Options: nosniff的作用？",
+    "options": [
+      "强制浏览器遵守Content-Type",
+      "禁止嗅探网络",
+      "禁止缓存",
+      "禁止跨域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-783",
+    "title": "Referrer Policy的作用？",
+    "options": [
+      "控制请求时携带的Referer头信息量",
+      "引用策略",
+      "刷新策略",
+      "重定向策略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-784",
+    "title": "Referrer-Policy: no-referrer的作用？",
+    "options": [
+      "不发送任何Referer",
+      "发送完整URL",
+      "发送仅域名",
+      "发送路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-785",
+    "title": "Referrer-Policy: same-origin的作用？",
+    "options": [
+      "仅同源请求发送Referer",
+      "不发送",
+      "总是发送",
+      "跨域发送"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-786",
+    "title": "Referrer-Policy: strict-origin的作用？",
+    "options": [
+      "同源发完整，跨域HTTPS到HTTPS仅发域名",
+      "不发送",
+      "总是发送",
+      "发送完整"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-787",
+    "title": "Feature Policy / Permissions Policy的作用？",
+    "options": [
+      "控制浏览器功能(如摄像头, 地理位置)的使用",
+      "控制样式",
+      "控制脚本",
+      "控制缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-788",
+    "title": "Permissions-Policy: camera=()的作用？",
+    "options": [
+      "禁止所有来源使用摄像头",
+      "允许所有",
+      "允许同源",
+      "允许特定域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-789",
+    "title": "Permissions-Policy: geolocation=(self)的作用？",
+    "options": [
+      "仅允许同源使用地理位置",
+      "允许所有",
+      "禁止所有",
+      "允许特定域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-790",
+    "title": "Trusted Types API的作用？",
+    "options": [
+      "防止DOM XSS攻击",
+      "类型检查",
+      "加密数据",
+      "压缩代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-791",
+    "title": "Trusted Types如何工作？",
+    "options": [
+      "要求DOM sink只接受可信类型而非字符串",
+      "编译检查",
+      "运行时检查",
+      "静态分析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-792",
+    "title": "如何创建Trusted Types策略？",
+    "options": [
+      "trustedTypes.createPolicy()",
+      "new TrustedType()",
+      "TrustedType.create()",
+      "policy.create()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-793",
+    "title": "自动化安全测试工具不包括？",
+    "options": [
+      "Photoshop",
+      "OWASP ZAP",
+      "Burp Suite",
+      "Netsparker"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-794",
+    "title": "浏览器安全策略总结不包括？",
+    "options": [
+      "CSS Grid布局",
+      "CSP",
+      "HSTS",
+      "X-Frame-Options"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-795",
+    "title": "XSS的全称是？",
+    "options": [
+      "Cross-Site Scripting",
+      "Cross-Server Scripting",
+      "Cross-Site Security",
+      "Cross-Server Security"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-796",
+    "title": "XSS攻击的类型不包括？",
+    "options": [
+      "Cross-Site Request (CSRF)",
+      "Stored XSS",
+      "Reflected XSS",
+      "DOM-based XSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-797",
+    "title": "Stored XSS的特点是？",
+    "options": [
+      "恶意脚本存储在服务器数据库中",
+      "在URL中",
+      "在DOM中",
+      "在Cookie中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-798",
+    "title": "Reflected XSS的特点是？",
+    "options": [
+      "恶意脚本在URL参数中反射回页面",
+      "存储在服务器",
+      "在DOM中",
+      "在本地存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-799",
+    "title": "DOM-based XSS的特点是？",
+    "options": [
+      "恶意脚本在客户端DOM操作中注入",
+      "在服务器端",
+      "在数据库",
+      "在URL中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-800",
+    "title": "如何防御XSS？",
+    "options": [
+      "转义HTML特殊字符, 使用CSP",
+      "使用HTTPS",
+      "使用POST",
+      "使用Cookie"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-801",
+    "title": "字符编码的作用是？",
+    "options": [
+      "将字节序列映射为字符",
+      "加密数据",
+      "压缩数据",
+      "翻译语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-802",
+    "title": "UTF-8的全称是？",
+    "options": [
+      "Unicode Transformation Format - 8-bit",
+      "Universal Text Format - 8",
+      "Unified Text Encoding - 8",
+      "Universal Transformation Encoding - 8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-803",
+    "title": "UTF-8的优势是？",
+    "options": [
+      "兼容ASCII, 可变长, 支持全球字符",
+      "固定长度",
+      "仅英文",
+      "最短编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-804",
+    "title": "HTML5推荐使用哪种编码？",
+    "options": [
+      "UTF-8",
+      "GBK",
+      "ISO-8859-1",
+      "ASCII"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-805",
+    "title": "如何声明HTML文档编码？",
+    "options": [
+      "<meta charset=\"UTF-8\">",
+      "<meta encoding=\"UTF-8\">",
+      "<meta http-equiv=\"Content-Type\">",
+      "<?xml encoding=\"UTF-8\"?>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-806",
+    "title": "<meta charset>应放在什么位置？",
+    "options": [
+      "<head>的最前面",
+      "<body>前",
+      "任意位置",
+      "<html>前"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-807",
+    "title": "为什么charset要放在最前面？",
+    "options": [
+      "避免浏览器猜测编码导致乱码",
+      "性能更好",
+      "语法要求",
+      "美观"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-808",
+    "title": "BOM(Byte Order Mark)的作用？",
+    "options": [
+      "标识字节序(UTF-8中不推荐使用)",
+      "标记开始",
+      "标记结束",
+      "标记编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-809",
+    "title": "HTML实体的作用是？",
+    "options": [
+      "在HTML中表示保留字符或特殊符号",
+      "加密字符",
+      "压缩字符",
+      "翻译字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-810",
+    "title": "HTML实体的格式是？",
+    "options": [
+      "&name; 或 &#number; 或 &#xhex;",
+      "%name",
+      "\\name",
+      "@name"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-811",
+    "title": "空格的HTML实体名称是？",
+    "options": [
+      "&nbsp;",
+      "&space;",
+      "&blank;",
+      "&tab;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-812",
+    "title": "<的HTML实体名称是？",
+    "options": [
+      "<",
+      "&less;",
+      "&open;",
+      "&bracket;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-813",
+    "title": ">的HTML实体名称是？",
+    "options": [
+      ">",
+      "&greater;",
+      "&close;",
+      "&bracket;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-814",
+    "title": "&的HTML实体名称是？",
+    "options": [
+      "&",
+      "&and;",
+      "&ref;",
+      "&symbol;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-815",
+    "title": "\"的HTML实体名称是？",
+    "options": [
+      "\"",
+      "&double;",
+      "&dquote;",
+      "&string;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-816",
+    "title": "'的HTML实体名称是？",
+    "options": [
+      "&apos;",
+      "&single;",
+      "&squote;",
+      "&char;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-817",
+    "title": "©的HTML实体名称是？",
+    "options": [
+      "&copy;",
+      "&copyright;",
+      "&c;",
+      "&cc;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-818",
+    "title": "®的HTML实体名称是？",
+    "options": [
+      "&reg;",
+      "&registered;",
+      "&r;",
+      "&trademark;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-819",
+    "title": "™的HTML实体名称是？",
+    "options": [
+      "&trade;",
+      "&trademark;",
+      "&tm;",
+      "&t;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-820",
+    "title": "€的HTML实体名称是？",
+    "options": [
+      "&euro;",
+      "&european;",
+      "&eur;",
+      "&money;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-821",
+    "title": "¥的HTML实体名称是？",
+    "options": [
+      "&yen;",
+      "&yuan;",
+      "&rmb;",
+      "&cny;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-822",
+    "title": "§的HTML实体名称是？",
+    "options": [
+      "&sect;",
+      "&section;",
+      "&s;",
+      "&par;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-823",
+    "title": "±的HTML实体名称是？",
+    "options": [
+      "&plusmn;",
+      "&plusminus;",
+      "&pm;",
+      "&diff;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-824",
+    "title": "×的HTML实体名称是？",
+    "options": [
+      "&times;",
+      "&multiply;",
+      "&x;",
+      "&cross;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-825",
+    "title": "÷的HTML实体名称是？",
+    "options": [
+      "&divide;",
+      "&division;",
+      "&div;",
+      "&slash;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-826",
+    "title": "•的HTML实体名称是？",
+    "options": [
+      "&bull;",
+      "&bullet;",
+      "&dot;",
+      "&point;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-827",
+    "title": "…的HTML实体名称是？",
+    "options": [
+      "&hellip;",
+      "&ellipsis;",
+      "&dots;",
+      "&etc;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-828",
+    "title": "°的HTML实体名称是？",
+    "options": [
+      "&deg;",
+      "&degree;",
+      "&o;",
+      "&temp;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-829",
+    "title": "¶的HTML实体名称是？",
+    "options": [
+      "&para;",
+      "&paragraph;",
+      "&p;",
+      "&text;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-830",
+    "title": "µ的HTML实体名称是？",
+    "options": [
+      "&micro;",
+      "&mu;",
+      "&micro;",
+      "&u;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-831",
+    "title": "中间点的HTML实体是？",
+    "options": [
+      "&middot;",
+      "&centerdot;",
+      "&dot;",
+      "&point;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-832",
+    "title": "2的HTML实体是？",
+    "options": [
+      "&sup2;",
+      "&square;",
+      "&two;",
+      "&2;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-833",
+    "title": "3的HTML实体是？",
+    "options": [
+      "&sup3;",
+      "&cube;",
+      "&three;",
+      "&3;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-834",
+    "title": "1/4的HTML实体是？",
+    "options": [
+      "&frac14;",
+      "&quarter;",
+      "&1/4;",
+      "&f14;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-835",
+    "title": "1/2的HTML实体是？",
+    "options": [
+      "&frac12;",
+      "&half;",
+      "&1/2;",
+      "&f12;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-836",
+    "title": "3/4的HTML实体是？",
+    "options": [
+      "&frac34;",
+      "&threequarter;",
+      "&3/4;",
+      "&f34;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-837",
+    "title": "国际化的简称是？",
+    "options": [
+      "i18n",
+      "l10n",
+      "g11n",
+      "a11y"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-838",
+    "title": "本地化的简称是？",
+    "options": [
+      "l10n",
+      "i18n",
+      "g11n",
+      "a11y"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-839",
+    "title": "全球化的简称是？",
+    "options": [
+      "g11n",
+      "i18n",
+      "l10n",
+      "a11y"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-840",
+    "title": "可访问性的简称是？",
+    "options": [
+      "a11y",
+      "i18n",
+      "l10n",
+      "g11n"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-841",
+    "title": "i18n中的18代表什么？",
+    "options": [
+      "internationalization中间的18个字母",
+      "18种语言",
+      "18个标准",
+      "18个国家"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-842",
+    "title": "<html lang=\"en\">的作用？",
+    "options": [
+      "声明页面语言为英语",
+      "设置编码",
+      "设置方向",
+      "设置地区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-843",
+    "title": "<html lang=\"zh-CN\">的作用？",
+    "options": [
+      "声明页面语言为简体中文",
+      "繁体中文",
+      "英语",
+      "日语"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-844",
+    "title": "<html lang=\"zh-TW\">的作用？",
+    "options": [
+      "声明页面语言为繁体中文",
+      "简体中文",
+      "英语",
+      "韩语"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-845",
+    "title": "lang属性对搜索引擎的作用？",
+    "options": [
+      "帮助确定页面语言服务正确地区结果",
+      "提高排名",
+      "增加关键词",
+      "加速索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-846",
+    "title": "lang属性对屏幕阅读器的作用？",
+    "options": [
+      "选择正确的语音引擎和发音",
+      "调整音量",
+      "加快语速",
+      "翻译内容"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-847",
+    "title": "dir属性的作用？",
+    "options": [
+      "设置文本方向",
+      "设置语言",
+      "设置编码",
+      "设置地区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-848",
+    "title": "dir=\"ltr\"表示？",
+    "options": [
+      "从左到右",
+      "从右到左",
+      "自动",
+      "垂直"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-849",
+    "title": "dir=\"rtl\"表示？",
+    "options": [
+      "从右到左",
+      "从左到右",
+      "自动",
+      "垂直"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-850",
+    "title": "dir=\"auto\"表示？",
+    "options": [
+      "根据内容自动判断方向",
+      "从左到右",
+      "从右到左",
+      "垂直"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-851",
+    "title": "RTL语言包括？",
+    "options": [
+      "阿拉伯语, 希伯来语",
+      "英语, 法语",
+      "中文, 日语",
+      "俄语, 德语"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-852",
+    "title": "<bdo>标签的作用？",
+    "options": [
+      "覆盖当前文本方向",
+      "设置默认方向",
+      "自动检测方向",
+      "翻译方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-853",
+    "title": "<bdi>标签的作用？",
+    "options": [
+      "隔离文本方向防止影响周围",
+      "设置方向",
+      "覆盖方向",
+      "翻译方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-854",
+    "title": "<bdi>常用于什么场景？",
+    "options": [
+      "用户生成的动态内容方向未知",
+      "静态文本",
+      "图片",
+      "表格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-855",
+    "title": "CSS逻辑属性对国际化的帮助？",
+    "options": [
+      "自动适配不同方向的布局",
+      "增加动画",
+      "提高性能",
+      "减少代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-856",
+    "title": "margin-inline-start对应LTR的？",
+    "options": [
+      "margin-left",
+      "margin-right",
+      "margin-top",
+      "margin-bottom"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-857",
+    "title": "margin-inline-start对应RTL的？",
+    "options": [
+      "margin-right",
+      "margin-left",
+      "margin-top",
+      "margin-bottom"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-858",
+    "title": "padding-block-end对应物理属性是？",
+    "options": [
+      "padding-bottom",
+      "padding-top",
+      "padding-left",
+      "padding-right"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-859",
+    "title": "border-inline对应物理属性是？",
+    "options": [
+      "左右边框",
+      "上下边框",
+      "四个边框",
+      "对角边框"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-860",
+    "title": "text-align: start的含义？",
+    "options": [
+      "LTR时左对齐，RTL时右对齐",
+      "总是左对齐",
+      "总是右对齐",
+      "居中对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-861",
+    "title": "text-align: end的含义？",
+    "options": [
+      "LTR时右对齐，RTL时左对齐",
+      "总是右对齐",
+      "总是左对齐",
+      "居中对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-862",
+    "title": "float: inline-start的含义？",
+    "options": [
+      "LTR时左浮动，RTL时右浮动",
+      "总是左浮动",
+      "总是右浮动",
+      "不浮动"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-863",
+    "title": "Unicode双向算法的作用？",
+    "options": [
+      "自动确定相邻字符的方向",
+      "加密字符",
+      "压缩字符",
+      "翻译字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-864",
+    "title": "何时需要手动指定方向？",
+    "options": [
+      "双向算法无法正确判断时",
+      "总是需要",
+      "从不需要",
+      "只在英文中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-865",
+    "title": "<meta http-equiv=\"Content-Language\">的作用？",
+    "options": [
+      "声明内容语言(不如lang属性推荐)",
+      "设置编码",
+      "设置方向",
+      "设置地区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-866",
+    "title": "Content-Language头可包含多个语言吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能一个",
+      "最多两个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-867",
+    "title": "hreflang属性的作用？",
+    "options": [
+      "指定链接目标的语言",
+      "设置当前语言",
+      "设置编码",
+      "设置方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-868",
+    "title": "hreflang常用于哪个标签？",
+    "options": [
+      "<link>",
+      "<a>",
+      "<meta>",
+      "<html>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-869",
+    "title": "<link rel=\"alternate\" hreflang=\"en\">的作用？",
+    "options": [
+      "指向英文版本的页面",
+      "翻译页面",
+      "设置语言",
+      "设置编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-870",
+    "title": "多语言网站的URL策略不包括？",
+    "options": [
+      "单域名无区分",
+      "子域名",
+      "子目录",
+      "参数区分"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-871",
+    "title": "子域名多语言策略如？",
+    "options": [
+      "en.example.com",
+      "example.com/en",
+      "example.com?lang=en",
+      "example.com"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-872",
+    "title": "子目录多语言策略如？",
+    "options": [
+      "example.com/en",
+      "en.example.com",
+      "example.com?lang=en",
+      "example.com"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-873",
+    "title": "参数多语言策略如？",
+    "options": [
+      "example.com?lang=en",
+      "example.com/en",
+      "en.example.com",
+      "example.com"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-874",
+    "title": "最推荐的多语言URL策略是？",
+    "options": [
+      "子目录或子域名",
+      "参数",
+      "单域名",
+      "不同域名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-875",
+    "title": "Accept-Language请求头的作用？",
+    "options": [
+      "告诉服务器用户偏好的语言",
+      "设置编码",
+      "设置方向",
+      "设置内容"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-876",
+    "title": "服务器如何根据Accept-Language响应？",
+    "options": [
+      "内容协商返回对应语言页面",
+      "忽略",
+      "返回所有语言",
+      "返回默认语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-877",
+    "title": "日期格式国际化的问题？",
+    "options": [
+      "不同地区格式不同(如MM/DD vs DD/MM)",
+      "数字不同",
+      "文字不同",
+      "方向不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-878",
+    "title": "数字格式国际化的问题？",
+    "options": [
+      "小数点和千分位符号不同",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-879",
+    "title": "货币格式国际化的问题？",
+    "options": [
+      "符号位置和格式不同",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-880",
+    "title": "Intl对象的作用？",
+    "options": [
+      "提供国际化API(如日期, 数字, 排序)",
+      "国际网络",
+      "国际编码",
+      "国际标准"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-881",
+    "title": "Intl.DateTimeFormat的作用？",
+    "options": [
+      "根据语言格式化日期和时间",
+      "解析日期",
+      "验证日期",
+      "计算日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-882",
+    "title": "Intl.NumberFormat的作用？",
+    "options": [
+      "根据语言格式化数字和货币",
+      "解析数字",
+      "验证数字",
+      "计算数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-883",
+    "title": "Intl.Collator的作用？",
+    "options": [
+      "根据语言进行字符串比较和排序",
+      "拼接字符串",
+      "截取字符串",
+      "替换字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-884",
+    "title": "Intl.PluralRules的作用？",
+    "options": [
+      "根据语言确定复数规则",
+      "单数规则",
+      "语法规则",
+      "发音规则"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-885",
+    "title": "Intl.RelativeTimeFormat的作用？",
+    "options": [
+      "格式化相对时间(如\"3天前\")",
+      "绝对时间",
+      "时间戳",
+      "倒计时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-886",
+    "title": "Intl.ListFormat的作用？",
+    "options": [
+      "根据语言格式化列表(如\"A, B, and C\")",
+      "拼接数组",
+      "排序数组",
+      "过滤数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-887",
+    "title": "复数规则国际化的问题？",
+    "options": [
+      "不同语言复数形式数量不同(如阿拉伯语有6种)",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-888",
+    "title": "中文的复数规则是？",
+    "options": [
+      "只有一种形式(无复数变化)",
+      "两种",
+      "三种",
+      "六种"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-889",
+    "title": "英语的复数规则是？",
+    "options": [
+      "两种(单数和复数)",
+      "一种",
+      "三种",
+      "六种"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-890",
+    "title": "相对时间翻译的问题？",
+    "options": [
+      "不同语言表达方式不同(如\"昨天\" vs \"1天前\")",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-891",
+    "title": "消息格式化的挑战？",
+    "options": [
+      "不同语言语序不同，变量位置不同",
+      "编码不同",
+      "方向不同",
+      "长度不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-892",
+    "title": "ICU消息格式的作用？",
+    "options": [
+      "处理包含变量和复数的翻译字符串",
+      "加密消息",
+      "压缩消息",
+      "传输消息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-893",
+    "title": "Unicode CLDR的作用？",
+    "options": [
+      "提供本地化数据的公共仓库",
+      "编码标准",
+      "传输协议",
+      "安全规范"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-894",
+    "title": "CLDR包含哪些数据？",
+    "options": [
+      "日期, 数字, 货币, 排序规则等",
+      "网页内容",
+      "图片资源",
+      "脚本代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-895",
+    "title": "翻译字符串中的变量如何处理？",
+    "options": [
+      "使用占位符(如{name})",
+      "硬编码",
+      "拼接字符串",
+      "不翻译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-896",
+    "title": "字符编码的作用是？",
+    "options": [
+      "将字节序列映射为字符",
+      "加密数据",
+      "压缩数据",
+      "翻译语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-897",
+    "title": "UTF-8的全称是？",
+    "options": [
+      "Unicode Transformation Format - 8-bit",
+      "Universal Text Format - 8",
+      "Unified Text Encoding - 8",
+      "Universal Transformation Encoding - 8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-898",
+    "title": "UTF-8的优势是？",
+    "options": [
+      "兼容ASCII, 可变长, 支持全球字符",
+      "固定长度",
+      "仅英文",
+      "最短编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-899",
+    "title": "HTML5推荐使用哪种编码？",
+    "options": [
+      "UTF-8",
+      "GBK",
+      "ISO-8859-1",
+      "ASCII"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-900",
+    "title": "如何声明HTML文档编码？",
+    "options": [
+      "<meta charset=\"UTF-8\">",
+      "<meta encoding=\"UTF-8\">",
+      "<meta http-equiv=\"Content-Type\">",
+      "<?xml encoding=\"UTF-8\"?>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-901",
+    "title": "Canvas的globalAlpha属性用于？",
+    "options": [
+      "设置全局透明度",
+      "设置背景色",
+      "设置边框",
+      "设置阴影"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-902",
+    "title": "Canvas的globalCompositeOperation用于？",
+    "options": [
+      "设置图形叠加混合模式",
+      "设置透明度",
+      "设置抗锯齿",
+      "设置分辨率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-903",
+    "title": "Canvas的shadowBlur属性用于？",
+    "options": [
+      "设置阴影模糊级别",
+      "设置阴影颜色",
+      "设置阴影偏移",
+      "设置阴影大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-904",
+    "title": "Canvas如何绘制贝塞尔曲线？",
+    "options": [
+      "bezierCurveTo()",
+      "curveTo()",
+      "arcTo()",
+      "splineTo()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-905",
+    "title": "Canvas如何绘制二次曲线？",
+    "options": [
+      "quadraticCurveTo()",
+      "bezierCurveTo()",
+      "conicCurveTo()",
+      "arcTo()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-906",
+    "title": "Canvas的createLinearGradient()用于？",
+    "options": [
+      "创建线性渐变",
+      "创建径向渐变",
+      "创建锥形渐变",
+      "创建图案"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-907",
+    "title": "Canvas的createRadialGradient()用于？",
+    "options": [
+      "创建径向渐变",
+      "创建线性渐变",
+      "创建锥形渐变",
+      "创建图案"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-908",
+    "title": "Canvas的createPattern()用于？",
+    "options": [
+      "基于图像创建图案",
+      "创建渐变",
+      "创建阴影",
+      "创建路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-909",
+    "title": "Canvas的clip()方法用于？",
+    "options": [
+      "从画布裁剪任意形状区域",
+      "剪切图像",
+      "复制区域",
+      "删除像素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-910",
+    "title": "Canvas的drawImage()方法有几个重载？",
+    "options": [
+      "3个",
+      "1个",
+      "2个",
+      "4个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-911",
+    "title": "Canvas如何将画布内容导出为Blob？",
+    "options": [
+      "toBlob()",
+      "toDataURL()",
+      "exportBlob()",
+      "getImageData()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-912",
+    "title": "Canvas的getImageData()返回的对象包含？",
+    "options": [
+      "Uint8ClampedArray",
+      "Array",
+      "Float32Array",
+      "String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-913",
+    "title": "Canvas的lineJoin属性用于？",
+    "options": [
+      "设置线条相交时的拐角样式",
+      "设置线条末端",
+      "设置线条宽度",
+      "设置虚线"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-914",
+    "title": "Canvas的lineCap属性用于？",
+    "options": [
+      "设置线条末端的样式",
+      "设置拐角样式",
+      "设置线条宽度",
+      "设置线条颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-915",
+    "title": "Canvas的setLineDash()方法用于？",
+    "options": [
+      "设置虚线样式",
+      "设置线条宽度",
+      "设置线条颜色",
+      "设置连接样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-916",
+    "title": "Canvas的measureText()方法用于？",
+    "options": [
+      "测量文本宽度等信息",
+      "设置字体大小",
+      "绘制文本",
+      "对齐文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-917",
+    "title": "Canvas的translate()方法用于？",
+    "options": [
+      "移动画布坐标系原点",
+      "缩放画布",
+      "旋转画布",
+      "倾斜画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-918",
+    "title": "Canvas的rotate()方法用于？",
+    "options": [
+      "旋转画布坐标系",
+      "移动原点",
+      "缩放画布",
+      "倾斜画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-919",
+    "title": "Canvas的scale()方法用于？",
+    "options": [
+      "缩放画布坐标系",
+      "移动原点",
+      "旋转画布",
+      "倾斜画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-920",
+    "title": "Canvas的transform()方法用于？",
+    "options": [
+      "应用矩阵变换",
+      "重置变换",
+      "移动原点",
+      "旋转画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-921",
+    "title": "SVG的<filter>标签用于？",
+    "options": [
+      "定义SVG滤镜效果",
+      "定义渐变",
+      "定义路径",
+      "定义动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-922",
+    "title": "SVG的feGaussianBlur用于？",
+    "options": [
+      "创建高斯模糊效果",
+      "创建阴影",
+      "创建渐变",
+      "创建变色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-923",
+    "title": "SVG的<linearGradient>用于？",
+    "options": [
+      "定义线性渐变",
+      "定义径向渐变",
+      "定义图案",
+      "定义路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-924",
+    "title": "SVG的<radialGradient>用于？",
+    "options": [
+      "定义径向渐变",
+      "定义线性渐变",
+      "定义图案",
+      "定义路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-925",
+    "title": "SVG的<animate>标签用于？",
+    "options": [
+      "随时间改变SVG属性",
+      "定义形状",
+      "定义滤镜",
+      "定义裁剪"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-926",
+    "title": "SVG的<animateTransform>用于？",
+    "options": [
+      "对SVG进行变换动画(如旋转)",
+      "改变颜色",
+      "改变大小",
+      "改变位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-927",
+    "title": "SVG的<animateMotion>用于？",
+    "options": [
+      "让元素沿路径运动",
+      "改变属性",
+      "改变变换",
+      "改变样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-928",
+    "title": "SVG的<clipPath>用于？",
+    "options": [
+      "定义裁剪路径",
+      "定义遮罩",
+      "定义滤镜",
+      "定义动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-929",
+    "title": "SVG的<mask>用于？",
+    "options": [
+      "定义遮罩效果",
+      "定义裁剪",
+      "定义滤镜",
+      "定义渐变"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-930",
+    "title": "SVG的<pattern>用于？",
+    "options": [
+      "定义可重复的图案",
+      "定义渐变",
+      "定义滤镜",
+      "定义路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-931",
+    "title": "SVG的<use>标签用于？",
+    "options": [
+      "复用SVG元素",
+      "定义新元素",
+      "删除元素",
+      "克隆并独立修改"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-932",
+    "title": "SVG的<symbol>标签用于？",
+    "options": [
+      "定义可复用的图形模板",
+      "绘制符号",
+      "插入特殊字符",
+      "定义文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-933",
+    "title": "SVG的<defs>标签用于？",
+    "options": [
+      "存储不会直接渲染的定义元素",
+      "定义可见元素",
+      "定义布局",
+      "定义样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-934",
+    "title": "SVG的fill属性用于？",
+    "options": [
+      "设置填充颜色",
+      "设置边框颜色",
+      "设置透明度",
+      "设置渐变"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-935",
+    "title": "SVG的stroke属性用于？",
+    "options": [
+      "设置描边颜色",
+      "设置填充颜色",
+      "设置透明度",
+      "设置阴影"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-936",
+    "title": "WebGL中着色器的语言是？",
+    "options": [
+      "GLSL",
+      "JavaScript",
+      "HLSL",
+      "C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-937",
+    "title": "WebGL的顶点着色器作用是？",
+    "options": [
+      "处理顶点位置和变换",
+      "处理像素颜色",
+      "处理纹理",
+      "处理光照"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-938",
+    "title": "WebGL的片元着色器作用是？",
+    "options": [
+      "计算像素颜色",
+      "处理顶点位置",
+      "处理几何变换",
+      "处理裁剪"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-939",
+    "title": "WebGL的gl.drawArrays()用于？",
+    "options": [
+      "渲染图元",
+      "创建缓冲",
+      "编译着色器",
+      "链接程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-940",
+    "title": "WebGL的VBO(顶点缓冲对象)用于？",
+    "options": [
+      "存储顶点数据",
+      "存储纹理",
+      "存储着色器",
+      "存储状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-941",
+    "title": "WebGL的纹理(Texture)用于？",
+    "options": [
+      "将图像映射到几何体表面",
+      "添加光照",
+      "计算阴影",
+      "设置透明度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-942",
+    "title": "Canvas的isPointInPath()用于？",
+    "options": [
+      "判断点是否在路径内",
+      "判断点是否在画布内",
+      "获取路径点",
+      "创建路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-943",
+    "title": "SVG的preserveAspectRatio用于？",
+    "options": [
+      "控制SVG在视口中的对齐和缩放方式",
+      "控制透明度",
+      "控制动画速度",
+      "控制填充方式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-944",
+    "title": "Canvas的imageSmoothingEnabled用于？",
+    "options": [
+      "控制图像缩放时是否平滑",
+      "控制抗锯齿",
+      "控制阴影",
+      "控制透明度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-945",
+    "title": "SVG的foreignObject标签用于？",
+    "options": [
+      "在SVG中嵌入HTML/XML外部内容",
+      "嵌入图片",
+      "嵌入视频",
+      "嵌入字体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-946",
+    "title": "Canvas的save()和restore()能保存什么？",
+    "options": [
+      "绘图状态(变换、裁剪、样式)",
+      "像素数据",
+      "图像文件",
+      "DOM状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-947",
+    "title": "WebGL的FBO(帧缓冲对象)用于？",
+    "options": [
+      "离屏渲染",
+      "显示渲染",
+      "顶点存储",
+      "纹理加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-948",
+    "title": "SVG的<textPath>用于？",
+    "options": [
+      "让文本沿着路径排列",
+      "绘制文本路径",
+      "修改文本形状",
+      "裁剪文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-949",
+    "title": "Canvas的OffscreenCanvas优势？",
+    "options": [
+      "在Worker线程中进行渲染",
+      "增大画布尺寸",
+      "提高分辨率",
+      "自动抗锯齿"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-950",
+    "title": "Canvas的globalAlpha属性用于？",
+    "options": [
+      "设置全局透明度",
+      "设置背景色",
+      "设置边框",
+      "设置阴影"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-951",
+    "title": "W3C的全称是？",
+    "options": [
+      "World Wide Web Consortium",
+      "Web World Wide Center",
+      "Western Web Consortium",
+      "World Web Wide Center"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-952",
+    "title": "WHATWG的全称是？",
+    "options": [
+      "Web Hypertext Application Technology Working Group",
+      "Web HTML Application Technology Group",
+      "World Hypertext Application Working Group",
+      "Web HTML And Technology Working Group"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-953",
+    "title": "HTML5标准主要由谁维护？",
+    "options": [
+      "WHATWG",
+      "W3C",
+      "ECMA",
+      "ISO"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-954",
+    "title": "HTML的活标准概念是指？",
+    "options": [
+      "HTML标准持续更新不再有版本号",
+      "标准已固定",
+      "只有HTML5",
+      "每年发布新版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-955",
+    "title": "HTML5废弃的纯表现标签不包括？",
+    "options": [
+      "<div>",
+      "<font>",
+      "<center>",
+      "<big>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-956",
+    "title": "HTML5废弃的框架标签是？",
+    "options": [
+      "<frame>",
+      "<iframe>",
+      "<frameset>",
+      "<frame>和<frameset>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-957",
+    "title": "HTML5废弃的属性不包括？",
+    "options": [
+      "href",
+      "align",
+      "bgcolor",
+      "border"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-958",
+    "title": "响应式设计的核心原则是？",
+    "options": [
+      "适应不同屏幕尺寸",
+      "使用大图",
+      "使用Flash",
+      "固定宽度布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-959",
+    "title": "响应式设计通常使用什么实现？",
+    "options": [
+      "媒体查询和弹性布局",
+      "固定像素",
+      "表格布局",
+      "浮动布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-960",
+    "title": "<meta name=\"viewport\">中user-scalable=no的作用？",
+    "options": [
+      "禁止用户缩放",
+      "允许缩放",
+      "自动缩放",
+      "强制缩放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-961",
+    "title": "PWA的全称是？",
+    "options": [
+      "Progressive Web App",
+      "Portable Web Application",
+      "Performance Web App",
+      "Platform Web App"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-962",
+    "title": "PWA的核心技术不包括？",
+    "options": [
+      "WebAssembly",
+      "Service Worker",
+      "Manifest",
+      "HTTPS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-963",
+    "title": "Web App Manifest的作用是？",
+    "options": [
+      "配置PWA的名称、图标和显示方式",
+      "配置缓存",
+      "配置网络",
+      "配置数据库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-964",
+    "title": "Manifest的display: standalone表示？",
+    "options": [
+      "像原生应用一样显示(无浏览器UI)",
+      "全屏显示",
+      "浏览器标准显示",
+      "最小化显示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-965",
+    "title": "Web Components包括哪些技术？",
+    "options": [
+      "Custom Elements, Shadow DOM, HTML Templates",
+      "React, Vue, Angular",
+      "CSS Grid, Flexbox, Float",
+      "Service Worker, Cache API, Fetch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-966",
+    "title": "Custom Elements的作用是？",
+    "options": [
+      "创建自定义HTML标签",
+      "创建自定义CSS",
+      "创建自定义事件",
+      "创建自定义属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-967",
+    "title": "Shadow DOM的作用是？",
+    "options": [
+      "封装样式和结构避免冲突",
+      "创建暗黑模式",
+      "隐藏真实DOM",
+      "加密DOM节点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-968",
+    "title": "HTML <template>标签的特点？",
+    "options": [
+      "内容不直接渲染但可被JS克隆使用",
+      "直接显示",
+      "只能包含文本",
+      "只能包含样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-969",
+    "title": "<slot>标签的作用？",
+    "options": [
+      "在Shadow DOM中定义插入点",
+      "定义插槽动画",
+      "定义布局",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-970",
+    "title": "ES Modules的script标签type是？",
+    "options": [
+      "module",
+      "modulejs",
+      "esm",
+      "import"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-971",
+    "title": "Nomodule属性的作用？",
+    "options": [
+      "在不支持ES Modules的浏览器中执行脚本",
+      "禁止模块执行",
+      "定义非模块脚本",
+      "异步加载模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-972",
+    "title": "WebAssembly的作用？",
+    "options": [
+      "在浏览器运行接近原生性能的低级代码",
+      "替代JavaScript",
+      "编写HTML",
+      "编写CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-973",
+    "title": "WebAssembly的文件后缀是？",
+    "options": [
+      ".wasm",
+      ".was",
+      ".assembly",
+      ".wa"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-974",
+    "title": "WebAssembly通常与什么配合使用？",
+    "options": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "SQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-975",
+    "title": "HTML中的微数据属性不包括？",
+    "options": [
+      "data-*",
+      "itemscope",
+      "itemtype",
+      "itemprop"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-976",
+    "title": "微格式的作用是？",
+    "options": [
+      "为现有HTML添加机器可读语义",
+      "优化性能",
+      "增强安全",
+      "美化页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-977",
+    "title": "HTML规范中，块级元素不能放在内联元素中体现了？",
+    "options": [
+      "嵌套规则",
+      "显示规则",
+      "样式规则",
+      "脚本规则"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-978",
+    "title": "W3C的全称是？",
+    "options": [
+      "World Wide Web Consortium",
+      "Web World Wide Center",
+      "Western Web Consortium",
+      "World Web Wide Center"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-979",
+    "title": "WHATWG的全称是？",
+    "options": [
+      "Web Hypertext Application Technology Working Group",
+      "Web HTML Application Technology Group",
+      "World Hypertext Application Working Group",
+      "Web HTML And Technology Working Group"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-980",
+    "title": "HTML5标准主要由谁维护？",
+    "options": [
+      "WHATWG",
+      "W3C",
+      "ECMA",
+      "ISO"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-981",
+    "title": "HTML的活标准概念是指？",
+    "options": [
+      "HTML标准持续更新不再有版本号",
+      "标准已固定",
+      "只有HTML5",
+      "每年发布新版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-982",
+    "title": "HTML5废弃的纯表现标签不包括？",
+    "options": [
+      "<div>",
+      "<font>",
+      "<center>",
+      "<big>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-983",
+    "title": "HTML5废弃的框架标签是？",
+    "options": [
+      "<frame>",
+      "<iframe>",
+      "<frameset>",
+      "<frame>和<frameset>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-984",
+    "title": "HTML5废弃的属性不包括？",
+    "options": [
+      "href",
+      "align",
+      "bgcolor",
+      "border"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-985",
+    "title": "响应式设计的核心原则是？",
+    "options": [
+      "适应不同屏幕尺寸",
+      "使用大图",
+      "使用Flash",
+      "固定宽度布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-986",
+    "title": "响应式设计通常使用什么实现？",
+    "options": [
+      "媒体查询和弹性布局",
+      "固定像素",
+      "表格布局",
+      "浮动布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-987",
+    "title": "<meta name=\"viewport\">中user-scalable=no的作用？",
+    "options": [
+      "禁止用户缩放",
+      "允许缩放",
+      "自动缩放",
+      "强制缩放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-988",
+    "title": "PWA的全称是？",
+    "options": [
+      "Progressive Web App",
+      "Portable Web Application",
+      "Performance Web App",
+      "Platform Web App"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-989",
+    "title": "PWA的核心技术不包括？",
+    "options": [
+      "WebAssembly",
+      "Service Worker",
+      "Manifest",
+      "HTTPS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-990",
+    "title": "Web App Manifest的作用是？",
+    "options": [
+      "配置PWA的名称、图标和显示方式",
+      "配置缓存",
+      "配置网络",
+      "配置数据库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-991",
+    "title": "Manifest的display: standalone表示？",
+    "options": [
+      "像原生应用一样显示(无浏览器UI)",
+      "全屏显示",
+      "浏览器标准显示",
+      "最小化显示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-992",
+    "title": "Web Components包括哪些技术？",
+    "options": [
+      "Custom Elements, Shadow DOM, HTML Templates",
+      "React, Vue, Angular",
+      "CSS Grid, Flexbox, Float",
+      "Service Worker, Cache API, Fetch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-993",
+    "title": "Custom Elements的作用是？",
+    "options": [
+      "创建自定义HTML标签",
+      "创建自定义CSS",
+      "创建自定义事件",
+      "创建自定义属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-994",
+    "title": "Shadow DOM的作用是？",
+    "options": [
+      "封装样式和结构避免冲突",
+      "创建暗黑模式",
+      "隐藏真实DOM",
+      "加密DOM节点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-995",
+    "title": "HTML <template>标签的特点？",
+    "options": [
+      "内容不直接渲染但可被JS克隆使用",
+      "直接显示",
+      "只能包含文本",
+      "只能包含样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-996",
+    "title": "<slot>标签的作用？",
+    "options": [
+      "在Shadow DOM中定义插入点",
+      "定义插槽动画",
+      "定义布局",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-997",
+    "title": "ES Modules的script标签type是？",
+    "options": [
+      "module",
+      "modulejs",
+      "esm",
+      "import"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-998",
+    "title": "Nomodule属性的作用？",
+    "options": [
+      "在不支持ES Modules的浏览器中执行脚本",
+      "禁止模块执行",
+      "定义非模块脚本",
+      "异步加载模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-999",
+    "title": "WebAssembly的作用？",
+    "options": [
+      "在浏览器运行接近原生性能的低级代码",
+      "替代JavaScript",
+      "编写HTML",
+      "编写CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-1000",
+    "title": "WebAssembly的文件后缀是？",
+    "options": [
+      ".wasm",
+      ".was",
+      ".assembly",
+      ".wa"
+    ],
+    "correctAnswer": 0
+  }
+]

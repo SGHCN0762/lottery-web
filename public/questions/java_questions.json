@@ -1,0 +1,11001 @@
+[
+  {
+    "id": "java-1",
+    "title": "Java语言的特点不包括？",
+    "options": [
+      "面向对象",
+      "跨平台",
+      "多继承",
+      "自动垃圾回收"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-2",
+    "title": "Java中基本数据类型有几种？",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-3",
+    "title": "以下哪个不是Java的基本数据类型？",
+    "options": [
+      "int",
+      "boolean",
+      "String",
+      "char"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-4",
+    "title": "Java中哪个关键字用于定义类？",
+    "options": [
+      "interface",
+      "class",
+      "struct",
+      "define"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-5",
+    "title": "Java中main方法的签名是？",
+    "options": [
+      "public void main(String[] args)",
+      "public static void main(String[] args)",
+      "static void main(String args)",
+      "public static main(String[] args)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-6",
+    "title": "Java中哪个关键字用于实现接口？",
+    "options": [
+      "extends",
+      "implements",
+      "interface",
+      "abstract"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-7",
+    "title": "Java中char类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-8",
+    "title": "Java中int类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-9",
+    "title": "Java中long类型占几个字节？",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-10",
+    "title": "Java中double类型占几个字节？",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-11",
+    "title": "Java中哪个关键字用于包声明？",
+    "options": [
+      "package",
+      "import",
+      "include",
+      "namespace"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-12",
+    "title": "Java中哪个关键字用于导入包？",
+    "options": [
+      "package",
+      "import",
+      "include",
+      "using"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-13",
+    "title": "Java中哪个访问修饰符的访问范围最小？",
+    "options": [
+      "public",
+      "protected",
+      "default",
+      "private"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-14",
+    "title": "Java中哪个访问修饰符的访问范围最大？",
+    "options": [
+      "public",
+      "protected",
+      "default",
+      "private"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-15",
+    "title": "Java中==和equals的区别是？",
+    "options": [
+      "==比较引用，equals比较值",
+      "==比较值，equals比较引用",
+      "没有区别",
+      "取决于类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-16",
+    "title": "Java中String是不可变的，原因是什么？",
+    "options": [
+      "被final修饰",
+      "内部value数组被final修饰且无私有方法修改",
+      "被static修饰",
+      "被private修饰"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-17",
+    "title": "Java中StringBuilder和StringBuffer的区别是？",
+    "options": [
+      "StringBuffer线程安全",
+      "StringBuilder线程安全",
+      "没有区别",
+      "性能一样"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-18",
+    "title": "Java中哪个关键字用于异常捕获？",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "throw"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-19",
+    "title": "Java中哪个关键字用于抛出异常？",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "throw"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-20",
+    "title": "Java中哪个关键字用于方法重写？",
+    "options": [
+      "overload",
+      "override",
+      "overwrite",
+      "hide"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-21",
+    "title": "Java中哪个关键字用于方法重载？",
+    "options": [
+      "overload",
+      "override",
+      "overwrite",
+      "hide"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-22",
+    "title": "Java中this关键字的作用是？",
+    "options": [
+      "指向当前对象",
+      "指向父类对象",
+      "指向子类对象",
+      "指向类本身"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-23",
+    "title": "Java中super关键字的作用是？",
+    "options": [
+      "指向当前对象",
+      "指向父类对象",
+      "指向子类对象",
+      "指向类本身"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-24",
+    "title": "Java中static关键字的作用是？",
+    "options": [
+      "属于实例",
+      "属于类",
+      "属于方法",
+      "属于包"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-25",
+    "title": "Java中final关键字修饰类时表示？",
+    "options": [
+      "不能被继承",
+      "不能被修改",
+      "不能被访问",
+      "不能被实例化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-26",
+    "title": "Java中final关键字修饰方法时表示？",
+    "options": [
+      "不能被重写",
+      "不能被重载",
+      "不能被调用",
+      "不能被继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-27",
+    "title": "Java中final关键字修饰变量时表示？",
+    "options": [
+      "不能被修改",
+      "不能被访问",
+      "不能被继承",
+      "不能被传递"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-28",
+    "title": "Java中哪个类是所有类的根类？",
+    "options": [
+      "Object",
+      "Class",
+      "System",
+      "String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-29",
+    "title": "Java中哪个方法用于获取对象的哈希码？",
+    "options": [
+      "equals",
+      "hashCode",
+      "toString",
+      "getClass"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-30",
+    "title": "Java中哪个方法用于获取对象的类信息？",
+    "options": [
+      "equals",
+      "hashCode",
+      "toString",
+      "getClass"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-31",
+    "title": "Java中哪个关键字用于判断对象类型？",
+    "options": [
+      "instanceof",
+      "typeof",
+      "isInstance",
+      "class"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-32",
+    "title": "Java中数组的默认初始化值是？",
+    "options": [
+      "0",
+      "null",
+      "undefined",
+      "取决于类型"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-33",
+    "title": "Java中局部变量必须初始化吗？",
+    "options": [
+      "必须",
+      "不必",
+      "取决于类型",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-34",
+    "title": "Java中成员变量必须初始化吗？",
+    "options": [
+      "必须",
+      "不必，有默认值",
+      "取决于类型",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-35",
+    "title": "Java中哪个关键字用于定义常量？",
+    "options": [
+      "const",
+      "final",
+      "static",
+      "define"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-36",
+    "title": "Java中哪个运算符用于位与？",
+    "options": [
+      "&",
+      "&&",
+      "|",
+      "||"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-37",
+    "title": "Java中哪个运算符用于逻辑与？",
+    "options": [
+      "&",
+      "&&",
+      "|",
+      "||"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-38",
+    "title": "Java中哪个运算符用于三元条件？",
+    "options": [
+      "?:",
+      "??",
+      "&&",
+      "||"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-39",
+    "title": "Java中switch支持哪些数据类型？",
+    "options": [
+      "int, String, enum",
+      "double, float",
+      "boolean",
+      "long"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-40",
+    "title": "Java中哪个类用于数学运算？",
+    "options": [
+      "Math",
+      "Calculate",
+      "Number",
+      "Arithmetic"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-41",
+    "title": "Java中哪个类用于系统操作？",
+    "options": [
+      "System",
+      "Runtime",
+      "Process",
+      "Execute"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-42",
+    "title": "Java中哪个类用于数组操作？",
+    "options": [
+      "Arrays",
+      "Array",
+      "Collections",
+      "List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-43",
+    "title": "Java中哪个关键字用于跳出循环？",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-44",
+    "title": "Java中哪个关键字用于跳过本次循环？",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-45",
+    "title": "Java中哪个关键字用于返回值？",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-46",
+    "title": "Java中哪个修饰符不能修饰类？",
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "static"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-47",
+    "title": "Java中哪个修饰符不能修饰局部变量？",
+    "options": [
+      "final",
+      "static",
+      "abstract",
+      "native"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-48",
+    "title": "Java中哪个修饰符不能修饰方法？",
+    "options": [
+      "final",
+      "static",
+      "abstract",
+      "native"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-49",
+    "title": "Java中哪个修饰符不能修饰成员变量？",
+    "options": [
+      "final",
+      "static",
+      "abstract",
+      "native"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-50",
+    "title": "Java中哪个类用于输入输出？",
+    "options": [
+      "System",
+      "Runtime",
+      "Process",
+      "IO"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-51",
+    "title": "Java中哪个类用于字符串操作？",
+    "options": [
+      "String",
+      "StringBuilder",
+      "StringBuffer",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-52",
+    "title": "Java中哪个类用于日期操作？",
+    "options": [
+      "Date",
+      "Calendar",
+      "LocalDate",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-53",
+    "title": "Java中哪个类用于随机数生成？",
+    "options": [
+      "Random",
+      "Math",
+      "UUID",
+      "SecureRandom"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-54",
+    "title": "Java中哪个类用于大整数操作？",
+    "options": [
+      "BigInteger",
+      "BigDecimal",
+      "Math",
+      "Number"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-55",
+    "title": "Java中哪个类用于高精度浮点数操作？",
+    "options": [
+      "BigInteger",
+      "BigDecimal",
+      "Math",
+      "Number"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-56",
+    "title": "Java中哪个类用于正则表达式？",
+    "options": [
+      "Pattern",
+      "Matcher",
+      "Regex",
+      "String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-57",
+    "title": "Java中哪个类用于枚举？",
+    "options": [
+      "Enum",
+      "Enumeration",
+      "Iterator",
+      "Iterable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-58",
+    "title": "Java中哪个类用于包装基本类型？",
+    "options": [
+      "Wrapper",
+      "Boxing",
+      "Integer",
+      "Object"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-59",
+    "title": "Java中哪个关键字用于定义接口？",
+    "options": [
+      "interface",
+      "class",
+      "abstract",
+      "enum"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-60",
+    "title": "Java中哪个关键字用于定义枚举？",
+    "options": [
+      "interface",
+      "class",
+      "abstract",
+      "enum"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-61",
+    "title": "Java中哪个关键字用于定义抽象类？",
+    "options": [
+      "interface",
+      "class",
+      "abstract",
+      "enum"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-62",
+    "title": "Java中哪个关键字用于定义同步方法？",
+    "options": [
+      "synchronized",
+      "volatile",
+      "lock",
+      "atomic"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-63",
+    "title": "Java中哪个关键字用于定义易变变量？",
+    "options": [
+      "synchronized",
+      "volatile",
+      "lock",
+      "atomic"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-64",
+    "title": "Java中哪个关键字用于定义本地方法？",
+    "options": [
+      "native",
+      "extern",
+      "jni",
+      "c++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-65",
+    "title": "Java中哪个关键字用于定义瞬态变量？",
+    "options": [
+      "transient",
+      "volatile",
+      "static",
+      "final"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-66",
+    "title": "Java中哪个关键字用于定义序列化标识？",
+    "options": [
+      "serialVersionUID",
+      "transient",
+      "volatile",
+      "static"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-67",
+    "title": "Java中哪个类用于对象序列化？",
+    "options": [
+      "ObjectOutputStream",
+      "ObjectInputStream",
+      "Serializable",
+      "Externalizable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-68",
+    "title": "Java中哪个类用于对象反序列化？",
+    "options": [
+      "ObjectOutputStream",
+      "ObjectInputStream",
+      "Serializable",
+      "Externalizable"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-69",
+    "title": "Java中哪个接口用于标记可序列化？",
+    "options": [
+      "Serializable",
+      "Cloneable",
+      "Comparable",
+      "Runnable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-70",
+    "title": "Java中哪个接口用于标记可克隆？",
+    "options": [
+      "Serializable",
+      "Cloneable",
+      "Comparable",
+      "Runnable"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-71",
+    "title": "Java中哪个接口用于比较大小？",
+    "options": [
+      "Serializable",
+      "Cloneable",
+      "Comparable",
+      "Runnable"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-72",
+    "title": "Java中哪个接口用于执行线程？",
+    "options": [
+      "Serializable",
+      "Cloneable",
+      "Comparable",
+      "Runnable"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-73",
+    "title": "Java中哪个类用于线程操作？",
+    "options": [
+      "Thread",
+      "Runnable",
+      "Callable",
+      "Future"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-74",
+    "title": "Java中哪个类用于线程同步？",
+    "options": [
+      "Lock",
+      "Synchronizer",
+      "Condition",
+      "Semaphore"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-75",
+    "title": "Java中哪个类用于线程池？",
+    "options": [
+      "ExecutorService",
+      "ThreadPoolExecutor",
+      "Executors",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-76",
+    "title": "Java中哪个类用于原子操作？",
+    "options": [
+      "AtomicInteger",
+      "AtomicLong",
+      "AtomicBoolean",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-77",
+    "title": "Java中哪个类用于并发集合？",
+    "options": [
+      "ConcurrentHashMap",
+      "CopyOnWriteArrayList",
+      "BlockingQueue",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-78",
+    "title": "Java中哪个类用于并发控制？",
+    "options": [
+      "CountDownLatch",
+      "CyclicBarrier",
+      "Semaphore",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-79",
+    "title": "Java中哪个类用于并发同步？",
+    "options": [
+      "ReentrantLock",
+      "ReadWriteLock",
+      "StampedLock",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-80",
+    "title": "Java中哪个类用于并发交换？",
+    "options": [
+      "Exchanger",
+      "TransferQueue",
+      "SynchronousQueue",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-81",
+    "title": "Java中哪个类用于并发分叉合并？",
+    "options": [
+      "ForkJoinPool",
+      "ForkJoinTask",
+      "RecursiveTask",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-82",
+    "title": "Java中哪个类用于并发流？",
+    "options": [
+      "ParallelStream",
+      "Stream",
+      "ForkJoinPool",
+      "CompletableFuture"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-83",
+    "title": "Java中哪个类用于异步计算？",
+    "options": [
+      "Future",
+      "CompletableFuture",
+      "Optional",
+      "Promise"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-84",
+    "title": "Java中哪个类用于避免空指针？",
+    "options": [
+      "Optional",
+      "Nullable",
+      "NonNull",
+      "Objects"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-85",
+    "title": "Java中哪个类用于函数式接口？",
+    "options": [
+      "Function",
+      "Consumer",
+      "Supplier",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-86",
+    "title": "Java中哪个类用于流式操作？",
+    "options": [
+      "Stream",
+      "IntStream",
+      "LongStream",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-87",
+    "title": "Java中哪个类用于日期时间？",
+    "options": [
+      "LocalDate",
+      "LocalTime",
+      "LocalDateTime",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-88",
+    "title": "Java中哪个类用于时区？",
+    "options": [
+      "ZoneId",
+      "ZoneOffset",
+      "ZonedDateTime",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-89",
+    "title": "Java中哪个类用于格式化？",
+    "options": [
+      "DateTimeFormatter",
+      "SimpleDateFormat",
+      "DecimalFormat",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-90",
+    "title": "Java中哪个类用于资源加载？",
+    "options": [
+      "ClassLoader",
+      "Class",
+      "Resource",
+      "URL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-91",
+    "title": "Java中哪个类用于反射？",
+    "options": [
+      "Class",
+      "Field",
+      "Method",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-92",
+    "title": "Java中哪个类用于代理？",
+    "options": [
+      "Proxy",
+      "InvocationHandler",
+      "Enhancer",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-93",
+    "title": "Java中哪个类用于注解？",
+    "options": [
+      "Annotation",
+      "Retention",
+      "Target",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-94",
+    "title": "Java中哪个类用于泛型？",
+    "options": [
+      "Type",
+      "ParameterizedType",
+      "TypeVariable",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-95",
+    "title": "Java中哪个类用于网络？",
+    "options": [
+      "Socket",
+      "ServerSocket",
+      "URL",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-96",
+    "title": "Java中哪个类用于HTTP？",
+    "options": [
+      "HttpURLConnection",
+      "HttpClient",
+      "HttpRequest",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-97",
+    "title": "Java中哪个类用于UDP？",
+    "options": [
+      "DatagramSocket",
+      "DatagramPacket",
+      "MulticastSocket",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-98",
+    "title": "Java中哪个类用于文件？",
+    "options": [
+      "File",
+      "Path",
+      "Files",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-99",
+    "title": "Java中哪个类用于NIO？",
+    "options": [
+      "Buffer",
+      "Channel",
+      "Selector",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-100",
+    "title": "Java中哪个类用于字符集？",
+    "options": [
+      "Charset",
+      "Encoder",
+      "Decoder",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-101",
+    "title": "Java中哪个类用于压缩？",
+    "options": [
+      "ZipOutputStream",
+      "GZIPOutputStream",
+      "Deflater",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-102",
+    "title": "Java中哪个类用于加密？",
+    "options": [
+      "MessageDigest",
+      "Cipher",
+      "Signature",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-103",
+    "title": "Java中哪个类用于证书？",
+    "options": [
+      "Certificate",
+      "KeyStore",
+      "KeyPair",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-104",
+    "title": "Java中哪个类用于JMX？",
+    "options": [
+      "MBeanServer",
+      "ObjectName",
+      "MBeanInfo",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-105",
+    "title": "Java中哪个类用于JNDI？",
+    "options": [
+      "Context",
+      "InitialContext",
+      "NamingException",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-106",
+    "title": "Java中哪个类用于RMI？",
+    "options": [
+      "Remote",
+      "UnicastRemoteObject",
+      "Registry",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-107",
+    "title": "Java中哪个类用于JNI？",
+    "options": [
+      "JNIEnv",
+      "jobject",
+      "jclass",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-108",
+    "title": "Java中哪个类用于JVM？",
+    "options": [
+      "Runtime",
+      "System",
+      "ClassLoader",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-109",
+    "title": "Java中哪个类用于GC？",
+    "options": [
+      "GarbageCollector",
+      "Reference",
+      "PhantomReference",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-110",
+    "title": "Java中哪个类用于内存管理？",
+    "options": [
+      "MemoryMXBean",
+      "MemoryPoolMXBean",
+      "BufferPoolMXBean",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-111",
+    "title": "Java中哪个类用于线程管理？",
+    "options": [
+      "ThreadMXBean",
+      "ThreadInfo",
+      "LockInfo",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-112",
+    "title": "Java中哪个类用于日志？",
+    "options": [
+      "Logger",
+      "LogManager",
+      "Handler",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-113",
+    "title": "Java中哪个类用于配置？",
+    "options": [
+      "Properties",
+      "Preferences",
+      "ResourceBundle",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-114",
+    "title": "Java中哪个类用于国际化？",
+    "options": [
+      "Locale",
+      "ResourceBundle",
+      "MessageFormat",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-115",
+    "title": "Java中哪个类用于观察者模式？",
+    "options": [
+      "Observable",
+      "Observer",
+      "PropertyChangeListener",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-116",
+    "title": "Java中哪个类用于单例模式？",
+    "options": [
+      "Collections.EMPTY_LIST",
+      "Runtime.getRuntime()",
+      "Optional.empty()",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-117",
+    "title": "Java中哪个类用于工厂模式？",
+    "options": [
+      "Executors",
+      "Collections",
+      "Calendars",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-118",
+    "title": "Java中哪个类用于装饰器模式？",
+    "options": [
+      "BufferedInputStream",
+      "DataInputStream",
+      "ObjectInputStream",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-119",
+    "title": "Java中哪个类用于适配器模式？",
+    "options": [
+      "InputStreamReader",
+      "OutputStreamWriter",
+      "以上都是",
+      "无"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-120",
+    "title": "Java中哪个类用于代理模式？",
+    "options": [
+      "Proxy",
+      "InvocationHandler",
+      "以上都是",
+      "无"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-121",
+    "title": "Java中封装的好处不包括？",
+    "options": [
+      "隐藏实现细节",
+      "提高安全性",
+      "提高性能",
+      "便于修改"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-122",
+    "title": "Java中继承的好处不包括？",
+    "options": [
+      "代码复用",
+      "多态性",
+      "提高性能",
+      "扩展性"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-123",
+    "title": "Java中多态的好处不包括？",
+    "options": [
+      "提高灵活性",
+      "降低耦合",
+      "提高性能",
+      "可扩展性"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-124",
+    "title": "Java中抽象的好处不包括？",
+    "options": [
+      "规范设计",
+      "隐藏细节",
+      "提高性能",
+      "便于分工"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-125",
+    "title": "Java中接口的好处不包括？",
+    "options": [
+      "规范行为",
+      "多重继承",
+      "提高性能",
+      "降低耦合"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-126",
+    "title": "Java中重写与重载的区别是？",
+    "options": [
+      "重写是子类方法，重载是同类方法",
+      "重写是同类方法，重载是子类方法",
+      "无区别",
+      "取决于参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-127",
+    "title": "Java中抽象类和接口的区别是？",
+    "options": [
+      "抽象类可有构造方法",
+      "接口可有构造方法",
+      "无区别",
+      "取决于设计"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-128",
+    "title": "Java中接口可以继承接口吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能继承一个",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-129",
+    "title": "Java中类可以继承多个类吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "只能继承两个",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-130",
+    "title": "Java中类可以实现多个接口吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能实现一个",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-131",
+    "title": "Java中抽象类可以实现接口吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能实现一个",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-132",
+    "title": "Java中抽象类可以继承具体类吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能继承抽象类",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-133",
+    "title": "Java中抽象类可以有静态方法吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能有抽象方法",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-134",
+    "title": "Java中接口可以有静态方法吗？",
+    "options": [
+      "Java 8+可以",
+      "不可以",
+      "一直可以",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-135",
+    "title": "Java中接口可以有默认方法吗？",
+    "options": [
+      "Java 8+可以",
+      "不可以",
+      "一直可以",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-136",
+    "title": "Java中接口可以有私有方法吗？",
+    "options": [
+      "Java 9+可以",
+      "不可以",
+      "一直可以",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-137",
+    "title": "Java中接口的变量默认是？",
+    "options": [
+      "public static final",
+      "private",
+      "protected",
+      "default"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-138",
+    "title": "Java中接口的方法默认是？",
+    "options": [
+      "public abstract",
+      "private",
+      "protected",
+      "default"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-139",
+    "title": "Java中构造方法可以被重写吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "可以重载",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-140",
+    "title": "Java中构造方法可以被重载吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能有一个",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-141",
+    "title": "Java中构造方法可以有返回值吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "可以有void",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-142",
+    "title": "Java中构造方法可以抛出异常吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能抛出RuntimeException",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-143",
+    "title": "Java中this()和super()可以同时出现吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-144",
+    "title": "Java中this()和super()必须放在构造方法第几行？",
+    "options": [
+      "第一行",
+      "最后一行",
+      "任意位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-145",
+    "title": "Java中静态方法可以使用this吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-146",
+    "title": "Java中静态方法可以使用super吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-147",
+    "title": "Java中静态代码块什么时候执行？",
+    "options": [
+      "类加载时",
+      "对象创建时",
+      "方法调用时",
+      "程序启动时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-148",
+    "title": "Java中构造代码块什么时候执行？",
+    "options": [
+      "类加载时",
+      "对象创建时",
+      "方法调用时",
+      "程序启动时"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-149",
+    "title": "Java中局部代码块什么时候执行？",
+    "options": [
+      "类加载时",
+      "对象创建时",
+      "方法调用时",
+      "程序启动时"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-150",
+    "title": "Java中静态代码块可以有this吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-151",
+    "title": "Java中静态代码块可以抛出异常吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "只能抛出RuntimeException",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-152",
+    "title": "Java中静态内部类可以访问外部类的非静态成员吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-153",
+    "title": "Java中非静态内部类可以访问外部类的静态成员吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-154",
+    "title": "Java中非静态内部类可以有静态成员吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-155",
+    "title": "Java中局部内部类可以访问外部类的成员吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-156",
+    "title": "Java中局部内部类可以访问局部变量吗？",
+    "options": [
+      "可以，但变量必须是final或effectively final",
+      "不可以",
+      "可以任意访问",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-157",
+    "title": "Java中匿名内部类可以继承类吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能实现接口",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-158",
+    "title": "Java中匿名内部类可以实现接口吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能继承类",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-159",
+    "title": "Java中匿名内部类可以有构造方法吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-160",
+    "title": "Java中匿名内部类可以访问外部类的成员吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-161",
+    "title": "Java中匿名内部类可以访问局部变量吗？",
+    "options": [
+      "可以，但变量必须是final或effectively final",
+      "不可以",
+      "可以任意访问",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-162",
+    "title": "Java中枚举可以有构造方法吗？",
+    "options": [
+      "可以，但必须是private",
+      "不可以",
+      "可以是public",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-163",
+    "title": "Java中枚举可以实现接口吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能继承类",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-164",
+    "title": "Java中枚举可以继承类吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-165",
+    "title": "Java中枚举可以有抽象方法吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "取决于位置",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-166",
+    "title": "Java中枚举的values()方法返回？",
+    "options": [
+      "所有枚举实例",
+      "枚举名称",
+      "枚举索引",
+      "枚举值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-167",
+    "title": "Java中枚举的valueOf()方法返回？",
+    "options": [
+      "指定名称的枚举实例",
+      "所有枚举实例",
+      "枚举索引",
+      "枚举值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-168",
+    "title": "Java中枚举的ordinal()方法返回？",
+    "options": [
+      "枚举索引",
+      "枚举名称",
+      "枚举值",
+      "枚举实例"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-169",
+    "title": "Java中枚举的name()方法返回？",
+    "options": [
+      "枚举名称",
+      "枚举索引",
+      "枚举值",
+      "枚举实例"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-170",
+    "title": "Java中枚举的compareTo()方法比较？",
+    "options": [
+      "索引",
+      "名称",
+      "值",
+      "实例"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-171",
+    "title": "Java中枚举的equals()方法比较？",
+    "options": [
+      "引用",
+      "值",
+      "名称",
+      "索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-172",
+    "title": "Java中枚举的hashCode()方法基于？",
+    "options": [
+      "引用",
+      "值",
+      "名称",
+      "索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-173",
+    "title": "Java中枚举的toString()方法返回？",
+    "options": [
+      "枚举名称",
+      "枚举索引",
+      "枚举值",
+      "枚举实例"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-174",
+    "title": "Java中枚举的clone()方法？",
+    "options": [
+      "不可克隆",
+      "可克隆",
+      "浅克隆",
+      "深克隆"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-175",
+    "title": "Java中枚举的finalize()方法？",
+    "options": [
+      "不可被垃圾回收",
+      "可被垃圾回收",
+      "手动调用",
+      "自动调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-176",
+    "title": "Java中单例模式的枚举实现优势是？",
+    "options": [
+      "防止反射攻击",
+      "防止序列化破坏",
+      "线程安全",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-177",
+    "title": "Java中包装类的缓存是？",
+    "options": [
+      "IntegerCache",
+      "LongCache",
+      "ShortCache",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-178",
+    "title": "Java中Integer的缓存范围是？",
+    "options": [
+      "-128到127",
+      "0到255",
+      "-32768到32767",
+      "无缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-179",
+    "title": "Java中自动装箱是？",
+    "options": [
+      "基本类型转包装类",
+      "包装类转基本类型",
+      "无转换",
+      "手动转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-180",
+    "title": "Java中自动拆箱是？",
+    "options": [
+      "基本类型转包装类",
+      "包装类转基本类型",
+      "无转换",
+      "手动转换"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-181",
+    "title": "Java中自动装箱可能引发？",
+    "options": [
+      "NullPointerException",
+      "ClassCastException",
+      "内存溢出",
+      "性能问题"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-182",
+    "title": "Java中自动拆箱可能引发？",
+    "options": [
+      "NullPointerException",
+      "ClassCastException",
+      "内存溢出",
+      "性能问题"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-183",
+    "title": "Java中包装类比较推荐使用？",
+    "options": [
+      "equals",
+      "==",
+      "compareTo",
+      "compare"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-184",
+    "title": "Java中String比较推荐使用？",
+    "options": [
+      "equals",
+      "==",
+      "compareTo",
+      "compare"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-185",
+    "title": "Java中String的intern()方法作用是？",
+    "options": [
+      "将字符串加入常量池",
+      "比较字符串",
+      "截取字符串",
+      "转换大小写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-186",
+    "title": "Java中String的substring()方法作用是？",
+    "options": [
+      "截取字符串",
+      "替换字符串",
+      "分割字符串",
+      "拼接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-187",
+    "title": "Java中String的replace()方法作用是？",
+    "options": [
+      "替换字符串",
+      "截取字符串",
+      "分割字符串",
+      "拼接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-188",
+    "title": "Java中String的split()方法作用是？",
+    "options": [
+      "分割字符串",
+      "截取字符串",
+      "替换字符串",
+      "拼接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-189",
+    "title": "Java中String的trim()方法作用是？",
+    "options": [
+      "去除首尾空格",
+      "去除所有空格",
+      "转换大小写",
+      "判断空"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-190",
+    "title": "Java中String的isEmpty()方法作用是？",
+    "options": [
+      "判断长度是否为0",
+      "判断是否为null",
+      "判断是否为空格",
+      "判断是否为空串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-191",
+    "title": "Java中String的length()方法作用是？",
+    "options": [
+      "获取长度",
+      "获取容量",
+      "获取大小",
+      "获取字节数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-192",
+    "title": "Java中String的charAt()方法作用是？",
+    "options": [
+      "获取指定位置字符",
+      "获取指定字符位置",
+      "获取子串",
+      "获取长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-193",
+    "title": "Java中String的indexOf()方法作用是？",
+    "options": [
+      "获取指定字符位置",
+      "获取指定位置字符",
+      "获取子串",
+      "获取长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-194",
+    "title": "Java中String的lastIndexOf()方法作用是？",
+    "options": [
+      "获取指定字符最后位置",
+      "获取指定位置字符",
+      "获取子串",
+      "获取长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-195",
+    "title": "Java中String的startsWith()方法作用是？",
+    "options": [
+      "判断前缀",
+      "判断后缀",
+      "判断包含",
+      "判断相等"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-196",
+    "title": "Java中String的endsWith()方法作用是？",
+    "options": [
+      "判断后缀",
+      "判断前缀",
+      "判断包含",
+      "判断相等"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-197",
+    "title": "Java中String的contains()方法作用是？",
+    "options": [
+      "判断包含",
+      "判断前缀",
+      "判断后缀",
+      "判断相等"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-198",
+    "title": "Java中String的toUpperCase()方法作用是？",
+    "options": [
+      "转大写",
+      "转小写",
+      "比较大小",
+      "判断大小写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-199",
+    "title": "Java中String的toLowerCase()方法作用是？",
+    "options": [
+      "转小写",
+      "转大写",
+      "比较大小",
+      "判断大小写"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-200",
+    "title": "Java中String的toCharArray()方法作用是？",
+    "options": [
+      "转为字符数组",
+      "转为字节数组",
+      "转为整型数组",
+      "转为字符串数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-201",
+    "title": "Java中String的getBytes()方法作用是？",
+    "options": [
+      "转为字节数组",
+      "转为字符数组",
+      "转为整型数组",
+      "转为字符串数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-202",
+    "title": "Java中String的valueOf()方法作用是？",
+    "options": [
+      "将其他类型转为字符串",
+      "将字符串转为其他类型",
+      "比较字符串",
+      "拼接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-203",
+    "title": "Java中String的format()方法作用是？",
+    "options": [
+      "格式化字符串",
+      "拼接字符串",
+      "替换字符串",
+      "分割字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-204",
+    "title": "Java中String的join()方法作用是？",
+    "options": [
+      "拼接字符串",
+      "格式化字符串",
+      "替换字符串",
+      "分割字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-205",
+    "title": "Java中String的concat()方法作用是？",
+    "options": [
+      "拼接字符串",
+      "格式化字符串",
+      "替换字符串",
+      "分割字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-206",
+    "title": "Java中String的matches()方法作用是？",
+    "options": [
+      "正则匹配",
+      "替换字符串",
+      "分割字符串",
+      "拼接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-207",
+    "title": "Java中Object的clone()方法是？",
+    "options": [
+      "浅克隆",
+      "深克隆",
+      "不可克隆",
+      "取决于实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-208",
+    "title": "Java中Object的toString()方法返回？",
+    "options": [
+      "类名@哈希码",
+      "对象内容",
+      "对象名称",
+      "对象引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-209",
+    "title": "Java中Object的equals()方法默认比较？",
+    "options": [
+      "引用",
+      "值",
+      "类型",
+      "哈希码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-210",
+    "title": "Java中Object的hashCode()方法默认返回？",
+    "options": [
+      "对象内存地址相关值",
+      "对象内容哈希",
+      "对象名称哈希",
+      "对象引用哈希"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-211",
+    "title": "Java中Object的finalize()方法何时调用？",
+    "options": [
+      "垃圾回收前",
+      "对象创建时",
+      "对象使用时",
+      "手动调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-212",
+    "title": "Java中Object的getClass()方法返回？",
+    "options": [
+      "对象的运行时类",
+      "对象的编译时类",
+      "对象的父类",
+      "对象的接口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-213",
+    "title": "Java中Object的wait()方法作用是？",
+    "options": [
+      "释放锁并等待",
+      "获取锁",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-214",
+    "title": "Java中Object的notify()方法作用是？",
+    "options": [
+      "唤醒一个等待线程",
+      "唤醒所有等待线程",
+      "释放锁",
+      "获取锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-215",
+    "title": "Java中Object的notifyAll()方法作用是？",
+    "options": [
+      "唤醒所有等待线程",
+      "唤醒一个等待线程",
+      "释放锁",
+      "获取锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-216",
+    "title": "Java中深克隆和浅克隆的区别是？",
+    "options": [
+      "深克隆复制引用对象，浅克隆不复制",
+      "浅克隆复制引用对象，深克隆不复制",
+      "无区别",
+      "取决于实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-217",
+    "title": "Java中如何实现深克隆？",
+    "options": [
+      "序列化和反序列化",
+      "重写clone方法",
+      "使用拷贝构造",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-218",
+    "title": "Java中组合和继承的区别是？",
+    "options": [
+      "组合是has-a关系，继承是is-a关系",
+      "组合是is-a关系，继承是has-a关系",
+      "无区别",
+      "取决于设计"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-219",
+    "title": "Java中组合相比继承的优势是？",
+    "options": [
+      "封装性好",
+      "灵活性高",
+      "依赖性低",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-220",
+    "title": "Java中继承相比组合的优势是？",
+    "options": [
+      "代码复用直接",
+      "多态性",
+      "扩展性",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-221",
+    "title": "Java中向上转型的特点是？",
+    "options": [
+      "安全，自动",
+      "不安全，强制",
+      "无变化",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-222",
+    "title": "Java中向下转型的特点是？",
+    "options": [
+      "不安全，需要强制",
+      "安全，自动",
+      "无变化",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-223",
+    "title": "Java中instanceof运算符的作用是？",
+    "options": [
+      "判断对象是否属于某类型",
+      "判断类型是否兼容",
+      "判断对象是否为null",
+      "判断类型是否为基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-224",
+    "title": "Java中多态的实现条件是？",
+    "options": [
+      "继承，重写，向上转型",
+      "继承，重载，向下转型",
+      "实现，重写，向上转型",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-225",
+    "title": "Java中动态绑定是指？",
+    "options": [
+      "运行时确定调用方法",
+      "编译时确定调用方法",
+      "链接时确定调用方法",
+      "加载时确定调用方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-226",
+    "title": "Java中静态绑定是指？",
+    "options": [
+      "编译时确定调用方法",
+      "运行时确定调用方法",
+      "链接时确定调用方法",
+      "加载时确定调用方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-227",
+    "title": "Java中方法隐藏是指？",
+    "options": [
+      "静态方法的重写",
+      "实例方法的重写",
+      "实例方法的重载",
+      "静态方法的重载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-228",
+    "title": "Java中变量隐藏是指？",
+    "options": [
+      "子类定义与父类同名的变量",
+      "子类定义与父类同名的常量",
+      "子类定义与父类同名的方法",
+      "子类定义与父类同名的类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-229",
+    "title": "Java中内部类的分类有？",
+    "options": [
+      "成员内部类，局部内部类，匿名内部类，静态内部类",
+      "成员内部类，局部内部类，匿名内部类",
+      "成员内部类，局部内部类",
+      "成员内部类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-230",
+    "title": "Java中内部类的优势是？",
+    "options": [
+      "隐藏实现",
+      "访问外部类私有成员",
+      "实现多重继承",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-231",
+    "title": "Java中Lambda表达式的作用是？",
+    "options": [
+      "简化匿名内部类",
+      "提高性能",
+      "替代方法引用",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-232",
+    "title": "Java中Lambda表达式的语法是？",
+    "options": [
+      "(参数) -> {表达式}",
+      "(参数) <- {表达式}",
+      "(参数) => {表达式}",
+      "(参数) -> 表达式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-233",
+    "title": "Java中Lambda表达式的类型是？",
+    "options": [
+      "函数式接口",
+      "抽象类",
+      "具体类",
+      "匿名类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-234",
+    "title": "Java中函数式接口是指？",
+    "options": [
+      "只有一个抽象方法的接口",
+      "没有抽象方法的接口",
+      "有多个抽象方法的接口",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-235",
+    "title": "Java中@FunctionalInterface注解的作用是？",
+    "options": [
+      "标记函数式接口",
+      "定义函数式接口",
+      "实现函数式接口",
+      "编译函数式接口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-236",
+    "title": "Java中方法引用的作用是？",
+    "options": [
+      "简化Lambda表达式",
+      "提高性能",
+      "替代Lambda表达式",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-237",
+    "title": "Java中方法引用的语法是？",
+    "options": [
+      "类名::方法名",
+      "对象名::方法名",
+      "类名::new",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-238",
+    "title": "Java中构造方法引用的语法是？",
+    "options": [
+      "类名::new",
+      "类名::方法名",
+      "对象名::方法名",
+      "new 类名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-239",
+    "title": "Java中数组引用的语法是？",
+    "options": [
+      "类型[]::new",
+      "类型[]::方法",
+      "new 类型[]",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-240",
+    "title": "Java中封装的好处不包括？",
+    "options": [
+      "隐藏实现细节",
+      "提高安全性",
+      "提高性能",
+      "便于修改"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-241",
+    "title": "Java中异常的基类是？",
+    "options": [
+      "Throwable",
+      "Exception",
+      "Error",
+      "RuntimeException"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-242",
+    "title": "Java中Error的特点是？",
+    "options": [
+      "严重错误，程序无法处理",
+      "轻微错误，程序可以处理",
+      "编译错误",
+      "运行错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-243",
+    "title": "Java中Exception的特点是？",
+    "options": [
+      "程序可以处理的错误",
+      "程序无法处理的错误",
+      "编译错误",
+      "系统错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-244",
+    "title": "Java中RuntimeException的特点是？",
+    "options": [
+      "非受检异常",
+      "受检异常",
+      "编译异常",
+      "系统异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-245",
+    "title": "Java中受检异常的特点是？",
+    "options": [
+      "必须处理或声明",
+      "可以不处理",
+      "编译器不检查",
+      "运行时才检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-246",
+    "title": "Java中非受检异常的特点是？",
+    "options": [
+      "可以不处理",
+      "必须处理或声明",
+      "编译器检查",
+      "运行时才检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-247",
+    "title": "Java中try-catch-finally的执行顺序是？",
+    "options": [
+      "try-catch-finally",
+      "try-finally-catch",
+      "catch-try-finally",
+      "finally-try-catch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-248",
+    "title": "Java中finally块一定会执行吗？",
+    "options": [
+      "不一定，如System.exit()",
+      "一定",
+      "取决于异常",
+      "取决于try"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-249",
+    "title": "Java中throw和throws的区别是？",
+    "options": [
+      "throw抛出异常，throws声明异常",
+      "throw声明异常，throws抛出异常",
+      "无区别",
+      "取决于位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-250",
+    "title": "Java中自定义异常应该继承？",
+    "options": [
+      "Exception或其子类",
+      "Error",
+      "Throwable",
+      "Object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-251",
+    "title": "Java中try-with-resources的作用是？",
+    "options": [
+      "自动关闭资源",
+      "手动关闭资源",
+      "声明资源",
+      "创建资源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-252",
+    "title": "Java中try-with-resources要求资源实现？",
+    "options": [
+      "AutoCloseable",
+      "Closeable",
+      "Serializable",
+      "Cloneable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-253",
+    "title": "Java中multi-catch的语法是？",
+    "options": [
+      "catch(Exception1 | Exception2 e)",
+      "catch(Exception1, Exception2 e)",
+      "catch(Exception1 && Exception2 e)",
+      "catch(Exception1 Exception2 e)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-254",
+    "title": "Java中异常链的作用是？",
+    "options": [
+      "保留原始异常信息",
+      "隐藏异常原因",
+      "提高性能",
+      "简化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-255",
+    "title": "Java中异常链使用哪个构造方法？",
+    "options": [
+      "带cause参数的构造方法",
+      "无参构造方法",
+      "带message参数的构造方法",
+      "带stack参数的构造方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-256",
+    "title": "Java中异常链使用哪个方法设置原因？",
+    "options": [
+      "initCause",
+      "setCause",
+      "addCause",
+      "putCause"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-257",
+    "title": "Java中异常链使用哪个方法获取原因？",
+    "options": [
+      "getCause",
+      "getRootCause",
+      "findCause",
+      "searchCause"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-258",
+    "title": "Java中printStackTrace()方法的作用是？",
+    "options": [
+      "打印异常堆栈",
+      "打印异常消息",
+      "打印异常原因",
+      "打印异常类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-259",
+    "title": "Java中getMessage()方法的作用是？",
+    "options": [
+      "获取异常消息",
+      "获取异常堆栈",
+      "获取异常原因",
+      "获取异常类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-260",
+    "title": "Java中getStackTrace()方法的作用是？",
+    "options": [
+      "获取异常堆栈数组",
+      "获取异常消息",
+      "获取异常原因",
+      "获取异常类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-261",
+    "title": "Java中常见受检异常有？",
+    "options": [
+      "IOException, SQLException",
+      "NullPointerException, ArrayIndexOutOfBoundsException",
+      "OutOfMemoryError, StackOverflowError",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-262",
+    "title": "Java中常见非受检异常有？",
+    "options": [
+      "NullPointerException, ClassCastException",
+      "IOException, SQLException",
+      "OutOfMemoryError, StackOverflowError",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-263",
+    "title": "Java中常见错误有？",
+    "options": [
+      "OutOfMemoryError, StackOverflowError",
+      "IOException, SQLException",
+      "NullPointerException, ClassCastException",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-264",
+    "title": "Java中NullPointerException发生的原因是？",
+    "options": [
+      "调用null对象的方法",
+      "数组越界",
+      "类型转换错误",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-265",
+    "title": "Java中ArrayIndexOutOfBoundsException发生的原因是？",
+    "options": [
+      "数组越界",
+      "调用null对象的方法",
+      "类型转换错误",
+      "内存不足"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-266",
+    "title": "Java中ClassCastException发生的原因是？",
+    "options": [
+      "类型转换错误",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-267",
+    "title": "Java中NumberFormatException发生的原因是？",
+    "options": [
+      "数字格式错误",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-268",
+    "title": "Java中StackOverflowError发生的原因是？",
+    "options": [
+      "递归调用过深",
+      "内存不足",
+      "数组越界",
+      "类型转换错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-269",
+    "title": "Java中OutOfMemoryError发生的原因是？",
+    "options": [
+      "内存不足",
+      "递归调用过深",
+      "数组越界",
+      "类型转换错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-270",
+    "title": "Java中ArithmeticException发生的原因是？",
+    "options": [
+      "数学运算错误",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-271",
+    "title": "Java中IllegalArgumentException发生的原因是？",
+    "options": [
+      "非法参数",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-272",
+    "title": "Java中IllegalStateException发生的原因是？",
+    "options": [
+      "非法状态",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-273",
+    "title": "Java中ConcurrentModificationException发生的原因是？",
+    "options": [
+      "并发修改集合",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-274",
+    "title": "Java中UnsupportedOperationException发生的原因是？",
+    "options": [
+      "不支持的操作",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-275",
+    "title": "Java中IOException发生的原因是？",
+    "options": [
+      "输入输出错误",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-276",
+    "title": "Java中FileNotFoundException发生的原因是？",
+    "options": [
+      "文件不存在",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-277",
+    "title": "Java中SQLException发生的原因是？",
+    "options": [
+      "数据库错误",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-278",
+    "title": "Java中ClassNotFoundException发生的原因是？",
+    "options": [
+      "类找不到",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-279",
+    "title": "Java中CloneNotSupportedException发生的原因是？",
+    "options": [
+      "不支持克隆",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-280",
+    "title": "Java中InterruptedException发生的原因是？",
+    "options": [
+      "线程中断",
+      "调用null对象的方法",
+      "数组越界",
+      "内存不足"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-281",
+    "title": "Java中反射获取类的方式有？",
+    "options": [
+      "Class.forName(), 对象.getClass(), 类.class",
+      "Class.load(), 对象.loadClass()",
+      "Class.find(), 对象.findClass()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-282",
+    "title": "Java中反射创建对象的方式有？",
+    "options": [
+      "newInstance(), 构造器.newInstance()",
+      "new(), create()",
+      "build(), make()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-283",
+    "title": "Java中反射获取方法的方式有？",
+    "options": [
+      "getMethod(), getMethods()",
+      "findMethod(), findMethods()",
+      "searchMethod(), searchMethods()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-284",
+    "title": "Java中反射获取字段的方式有？",
+    "options": [
+      "getField(), getFields()",
+      "findField(), findFields()",
+      "searchField(), searchFields()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-285",
+    "title": "Java中反射调用方法使用？",
+    "options": [
+      "invoke()",
+      "call()",
+      "execute()",
+      "run()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-286",
+    "title": "Java中反射设置字段使用？",
+    "options": [
+      "set()",
+      "put()",
+      "assign()",
+      "value()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-287",
+    "title": "Java中反射获取字段使用？",
+    "options": [
+      "get()",
+      "read()",
+      "fetch()",
+      "obtain()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-288",
+    "title": "Java中反射可以访问私有成员吗？",
+    "options": [
+      "可以，设置setAccessible(true)",
+      "不可以",
+      "只能访问公有",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-289",
+    "title": "Java中反射的性能如何？",
+    "options": [
+      "比直接调用慢",
+      "比直接调用快",
+      "一样快",
+      "取决于JVM"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-290",
+    "title": "Java中反射破坏了什么特性？",
+    "options": [
+      "封装性",
+      "继承性",
+      "多态性",
+      "抽象性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-291",
+    "title": "Java中注解的生命周期有？",
+    "options": [
+      "SOURCE, CLASS, RUNTIME",
+      "COMPILE, RUNTIME, DEPLOY",
+      "SOURCE, BINARY, EXECUTE",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-292",
+    "title": "Java中注解的目标有？",
+    "options": [
+      "TYPE, FIELD, METHOD",
+      "CLASS, VARIABLE, FUNCTION",
+      "PACKAGE, MODULE, INTERFACE",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-293",
+    "title": "Java中@Override注解的作用是？",
+    "options": [
+      "标记重写方法",
+      "标记重载方法",
+      "标记过时方法",
+      "标记废弃方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-294",
+    "title": "Java中@Deprecated注解的作用是？",
+    "options": [
+      "标记过时方法",
+      "标记重写方法",
+      "标记重载方法",
+      "标记废弃方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-295",
+    "title": "Java中@SuppressWarnings注解的作用是？",
+    "options": [
+      "抑制警告",
+      "产生警告",
+      "标记警告",
+      "处理警告"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-296",
+    "title": "Java中@FunctionalInterface注解的作用是？",
+    "options": [
+      "标记函数式接口",
+      "标记过时接口",
+      "标记废弃接口",
+      "标记新接口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-297",
+    "title": "Java中自定义注解使用什么关键字？",
+    "options": [
+      "@interface",
+      "interface",
+      "annotation",
+      "define"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-298",
+    "title": "Java中注解可以有属性吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能有值",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-299",
+    "title": "Java中注解的属性类型有限制吗？",
+    "options": [
+      "有，只能是基本类型、String、Class、枚举、注解及数组",
+      "没有限制",
+      "只能是基本类型",
+      "只能是String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-300",
+    "title": "Java中注解的属性默认值如何设置？",
+    "options": [
+      "default 关键字",
+      "default 方法",
+      "constructor",
+      "setter"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-301",
+    "title": "Java中元注解是指？",
+    "options": [
+      "注解的注解",
+      "基本注解",
+      "自定义注解",
+      "标准注解"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-302",
+    "title": "Java中@Retention元注解的作用是？",
+    "options": [
+      "指定注解保留策略",
+      "指定注解目标",
+      "指定注解继承",
+      "指定注解文档"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-303",
+    "title": "Java中@Target元注解的作用是？",
+    "options": [
+      "指定注解目标",
+      "指定注解保留策略",
+      "指定注解继承",
+      "指定注解文档"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-304",
+    "title": "Java中@Documented元注解的作用是？",
+    "options": [
+      "指定注解包含在文档中",
+      "指定注解保留策略",
+      "指定注解目标",
+      "指定注解继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-305",
+    "title": "Java中@Inherited元注解的作用是？",
+    "options": [
+      "指定注解可以继承",
+      "指定注解包含在文档中",
+      "指定注解保留策略",
+      "指定注解目标"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-306",
+    "title": "Java中@Repeatable元注解的作用是？",
+    "options": [
+      "指定注解可以重复",
+      "指定注解可以继承",
+      "指定注解包含在文档中",
+      "指定注解保留策略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-307",
+    "title": "Java中泛型的作用是？",
+    "options": [
+      "类型安全，避免类型转换",
+      "提高性能",
+      "简化代码",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-308",
+    "title": "Java中泛型擦除是指？",
+    "options": [
+      "编译后泛型信息被擦除",
+      "运行时泛型信息被擦除",
+      "编译前泛型信息被擦除",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-309",
+    "title": "Java中泛型擦除后变成什么类型？",
+    "options": [
+      "Object或上界类型",
+      "原类型",
+      "下界类型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-310",
+    "title": "Java中泛型上界使用什么关键字？",
+    "options": [
+      "extends",
+      "super",
+      "implements",
+      "instanceof"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-311",
+    "title": "Java中泛型下界使用什么关键字？",
+    "options": [
+      "super",
+      "extends",
+      "implements",
+      "instanceof"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-312",
+    "title": "Java中泛型通配符是？",
+    "options": [
+      "?",
+      "*",
+      "+",
+      "-"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-313",
+    "title": "Java中泛型通配符上界是？",
+    "options": [
+      "? extends T",
+      "? super T",
+      "? implements T",
+      "? instanceof T"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-314",
+    "title": "Java中泛型通配符下界是？",
+    "options": [
+      "? super T",
+      "? extends T",
+      "? implements T",
+      "? instanceof T"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-315",
+    "title": "Java中PECS原则是？",
+    "options": [
+      "Producer Extends, Consumer Super",
+      "Producer Super, Consumer Extends",
+      "Both Extends",
+      "Both Super"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-316",
+    "title": "Java中泛型方法如何定义？",
+    "options": [
+      "修饰符 <T> 返回类型 方法名",
+      "修饰符 返回类型 <T> 方法名",
+      "<T> 修饰符 返回类型 方法名",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-317",
+    "title": "Java中泛型类如何定义？",
+    "options": [
+      "class 类名<T>",
+      "class <T> 类名",
+      "<T> class 类名",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-318",
+    "title": "Java中泛型接口如何定义？",
+    "options": [
+      "interface 接口名<T>",
+      "interface <T> 接口名",
+      "<T> interface 接口名",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-319",
+    "title": "Java中泛型不能使用哪些类型？",
+    "options": [
+      "基本类型",
+      "引用类型",
+      "数组类型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-320",
+    "title": "Java中泛型不能实例化吗？",
+    "options": [
+      "不能，因为类型擦除",
+      "能",
+      "部分能",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-321",
+    "title": "Java中泛型不能创建数组吗？",
+    "options": [
+      "不能，因为类型擦除和数组协变",
+      "能",
+      "部分能",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-322",
+    "title": "Java中泛型不能用于instanceof吗？",
+    "options": [
+      "不能，因为类型擦除",
+      "能",
+      "部分能",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-323",
+    "title": "Java中泛型不能用于静态上下文吗？",
+    "options": [
+      "不能，因为泛型是实例级别的",
+      "能",
+      "部分能",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-324",
+    "title": "Java中泛型不能抛出或捕获吗？",
+    "options": [
+      "不能，因为类型擦除",
+      "能",
+      "部分能",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-325",
+    "title": "Java中泛型可以重载吗？",
+    "options": [
+      "不能，因为类型擦除后签名相同",
+      "能",
+      "部分能",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-326",
+    "title": "Java中如何获取泛型的具体类型？",
+    "options": [
+      "通过反射获取ParameterizedType",
+      "无法获取",
+      "通过instanceof",
+      "通过getClass"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-327",
+    "title": "Java中集合的根接口是？",
+    "options": [
+      "Collection",
+      "Collections",
+      "List",
+      "Set"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-328",
+    "title": "Java中List接口的特点是？",
+    "options": [
+      "有序，可重复",
+      "无序，不可重复",
+      "有序，不可重复",
+      "无序，可重复"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-329",
+    "title": "Java中Set接口的特点是？",
+    "options": [
+      "无序，不可重复",
+      "有序，可重复",
+      "有序，不可重复",
+      "无序，可重复"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-330",
+    "title": "Java中Map接口的特点是？",
+    "options": [
+      "键值对，键不可重复",
+      "键值对，键可重复",
+      "单值，不可重复",
+      "单值，可重复"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-331",
+    "title": "Java中ArrayList的特点是？",
+    "options": [
+      "数组实现，查询快",
+      "链表实现，增删快",
+      "哈希实现，查找快",
+      "树实现，排序快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-332",
+    "title": "Java中LinkedList的特点是？",
+    "options": [
+      "链表实现，增删快",
+      "数组实现，查询快",
+      "哈希实现，查找快",
+      "树实现，排序快"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-333",
+    "title": "Java中HashSet的特点是？",
+    "options": [
+      "哈希实现，查找快",
+      "链表实现，增删快",
+      "数组实现，查询快",
+      "树实现，排序快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-334",
+    "title": "Java中TreeSet的特点是？",
+    "options": [
+      "树实现，排序快",
+      "链表实现，增删快",
+      "数组实现，查询快",
+      "哈希实现，查找快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-335",
+    "title": "Java中HashMap的特点是？",
+    "options": [
+      "哈希实现，查找快",
+      "链表实现，增删快",
+      "数组实现，查询快",
+      "树实现，排序快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-336",
+    "title": "Java中TreeMap的特点是？",
+    "options": [
+      "树实现，排序快",
+      "链表实现，增删快",
+      "数组实现，查询快",
+      "哈希实现，查找快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-337",
+    "title": "Java中LinkedHashMap的特点是？",
+    "options": [
+      "哈希+链表实现，保持插入顺序",
+      "纯链表实现",
+      "纯哈希实现",
+      "树实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-338",
+    "title": "Java中LinkedHashSet的特点是？",
+    "options": [
+      "哈希+链表实现，保持插入顺序",
+      "纯链表实现",
+      "纯哈希实现",
+      "树实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-339",
+    "title": "Java中Vector的特点是？",
+    "options": [
+      "线程安全的ArrayList",
+      "线程不安全的ArrayList",
+      "线程安全的LinkedList",
+      "线程不安全的LinkedList"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-340",
+    "title": "Java中Hashtable的特点是？",
+    "options": [
+      "线程安全的HashMap",
+      "线程不安全的HashMap",
+      "线程安全的TreeMap",
+      "线程不安全的TreeMap"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-341",
+    "title": "Java中Properties的特点是？",
+    "options": [
+      "键值都是String的Hashtable",
+      "键值都是Object的HashMap",
+      "键值都是Integer的TreeMap",
+      "键值都是String的LinkedHashMap"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-342",
+    "title": "Java中Stack的特点是？",
+    "options": [
+      "后进先出",
+      "先进先出",
+      "随机访问",
+      "双端访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-343",
+    "title": "Java中Queue的特点是？",
+    "options": [
+      "先进先出",
+      "后进先出",
+      "随机访问",
+      "双端访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-344",
+    "title": "Java中Deque的特点是？",
+    "options": [
+      "双端队列",
+      "单端队列",
+      "阻塞队列",
+      "非阻塞队列"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-345",
+    "title": "Java中PriorityQueue的特点是？",
+    "options": [
+      "优先级队列",
+      "普通队列",
+      "阻塞队列",
+      "双端队列"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-346",
+    "title": "Java中ArrayDeque的特点是？",
+    "options": [
+      "数组实现的双端队列",
+      "链表实现的双端队列",
+      "哈希实现的双端队列",
+      "树实现的双端队列"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-347",
+    "title": "Java中Collections类的作用是？",
+    "options": [
+      "集合工具类",
+      "集合接口",
+      "集合实现",
+      "集合抽象类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-348",
+    "title": "Java中Arrays类的作用是？",
+    "options": [
+      "数组工具类",
+      "集合工具类",
+      "列表工具类",
+      "映射工具类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-349",
+    "title": "Java中Comparable接口的作用是？",
+    "options": [
+      "定义自然排序",
+      "定义比较器排序",
+      "定义相等比较",
+      "定义哈希比较"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-350",
+    "title": "Java中Comparator接口的作用是？",
+    "options": [
+      "定义比较器排序",
+      "定义自然排序",
+      "定义相等比较",
+      "定义哈希比较"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-351",
+    "title": "Java中Iterable接口的作用是？",
+    "options": [
+      "定义迭代能力",
+      "定义比较能力",
+      "定义克隆能力",
+      "定义序列化能力"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-352",
+    "title": "Java中Iterator接口的作用是？",
+    "options": [
+      "定义迭代器",
+      "定义比较器",
+      "定义克隆器",
+      "定义序列化器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-353",
+    "title": "Java中ListIterator接口的作用是？",
+    "options": [
+      "定义列表迭代器",
+      "定义集合迭代器",
+      "定义映射迭代器",
+      "定义数组迭代器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-354",
+    "title": "Java中fail-fast机制是指？",
+    "options": [
+      "并发修改时快速失败",
+      "内存不足时快速失败",
+      "类型错误时快速失败",
+      "空指针时快速失败"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-355",
+    "title": "Java中fail-safe机制是指？",
+    "options": [
+      "并发修改时安全失败",
+      "内存不足时安全失败",
+      "类型错误时安全失败",
+      "空指针时安全失败"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-356",
+    "title": "Java中异常的基类是？",
+    "options": [
+      "Throwable",
+      "Exception",
+      "Error",
+      "RuntimeException"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-357",
+    "title": "Java中Error的特点是？",
+    "options": [
+      "严重错误，程序无法处理",
+      "轻微错误，程序可以处理",
+      "编译错误",
+      "运行错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-358",
+    "title": "Java中Exception的特点是？",
+    "options": [
+      "程序可以处理的错误",
+      "程序无法处理的错误",
+      "编译错误",
+      "系统错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-359",
+    "title": "Java中RuntimeException的特点是？",
+    "options": [
+      "非受检异常",
+      "受检异常",
+      "编译异常",
+      "系统异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-360",
+    "title": "Java中受检异常的特点是？",
+    "options": [
+      "必须处理或声明",
+      "可以不处理",
+      "编译器不检查",
+      "运行时才检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-361",
+    "title": "Java中ArrayList的初始容量是？",
+    "options": [
+      "10",
+      "0",
+      "16",
+      "20"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-362",
+    "title": "Java中ArrayList的扩容机制是？",
+    "options": [
+      "1.5倍",
+      "2倍",
+      "1倍",
+      "0.5倍"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-363",
+    "title": "Java中ArrayList的随机访问时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-364",
+    "title": "Java中ArrayList的插入时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-365",
+    "title": "Java中LinkedList的随机访问时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-366",
+    "title": "Java中LinkedList的插入时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-367",
+    "title": "Java中HashMap的默认初始容量是？",
+    "options": [
+      "16",
+      "10",
+      "32",
+      "64"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-368",
+    "title": "Java中HashMap的默认负载因子是？",
+    "options": [
+      "0.75",
+      "0.5",
+      "0.8",
+      "1.0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-369",
+    "title": "Java中HashMap的扩容机制是？",
+    "options": [
+      "2倍",
+      "1.5倍",
+      "1倍",
+      "0.5倍"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-370",
+    "title": "Java中HashMap的链表转红黑树阈值是？",
+    "options": [
+      "8",
+      "6",
+      "4",
+      "10"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-371",
+    "title": "Java中HashMap的红黑树转链表阈值是？",
+    "options": [
+      "6",
+      "8",
+      "4",
+      "10"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-372",
+    "title": "Java中HashMap的树化最小容量是？",
+    "options": [
+      "64",
+      "32",
+      "16",
+      "128"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-373",
+    "title": "Java中HashMap的hash方法作用是？",
+    "options": [
+      "扰动函数，减少碰撞",
+      "加密哈希",
+      "生成随机数",
+      "计算索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-374",
+    "title": "Java中HashMap的put过程是？",
+    "options": [
+      "hash -> 定位桶 -> 链表/树 -> 插入/更新",
+      "定位桶 -> hash -> 插入/更新",
+      "插入 -> hash -> 定位桶",
+      "更新 -> 定位桶 -> hash"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-375",
+    "title": "Java中HashMap的get过程是？",
+    "options": [
+      "hash -> 定位桶 -> 遍历链表/树",
+      "定位桶 -> hash -> 遍历",
+      "遍历 -> hash -> 定位桶",
+      "定位桶 -> 遍历 -> hash"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-376",
+    "title": "Java中HashMap的resize过程是？",
+    "options": [
+      "创建新数组 -> 重新hash分配",
+      "在原数组上扩容",
+      "复制原数组",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-377",
+    "title": "Java中HashMap为什么不是线程安全的？",
+    "options": [
+      "并发put可能导致数据丢失或死循环",
+      "没有加锁",
+      "没有volatile",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-378",
+    "title": "Java中ConcurrentHashMap的实现原理是？",
+    "options": [
+      "分段锁或CAS+synchronized",
+      "全表锁",
+      "读写锁",
+      "乐观锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-379",
+    "title": "Java中ConcurrentHashMap的并发度是？",
+    "options": [
+      "取决于并发级别或桶数量",
+      "固定16",
+      "固定32",
+      "无限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-380",
+    "title": "Java中ConcurrentHashMap的null键和null值？",
+    "options": [
+      "都不允许",
+      "允许null键",
+      "允许null值",
+      "都允许"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-381",
+    "title": "Java中HashMap允许null键和null值吗？",
+    "options": [
+      "都允许",
+      "都不允许",
+      "允许null键",
+      "允许null值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-382",
+    "title": "Java中Hashtable允许null键和null值吗？",
+    "options": [
+      "都不允许",
+      "都允许",
+      "允许null键",
+      "允许null值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-383",
+    "title": "Java中HashSet的底层实现是？",
+    "options": [
+      "HashMap",
+      "TreeMap",
+      "LinkedHashMap",
+      "Hashtable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-384",
+    "title": "Java中TreeSet的底层实现是？",
+    "options": [
+      "TreeMap",
+      "HashMap",
+      "LinkedHashMap",
+      "Hashtable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-385",
+    "title": "Java中LinkedHashSet的底层实现是？",
+    "options": [
+      "LinkedHashMap",
+      "HashMap",
+      "TreeMap",
+      "Hashtable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-386",
+    "title": "Java中ArrayList的底层实现是？",
+    "options": [
+      "Object数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-387",
+    "title": "Java中LinkedList的底层实现是？",
+    "options": [
+      "双向链表",
+      "单向链表",
+      "数组",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-388",
+    "title": "Java中Vector的底层实现是？",
+    "options": [
+      "Object数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-389",
+    "title": "Java中Stack的底层实现是？",
+    "options": [
+      "Object数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-390",
+    "title": "Java中PriorityQueue的底层实现是？",
+    "options": [
+      "小顶堆",
+      "大顶堆",
+      "链表",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-391",
+    "title": "Java中ArrayDeque的底层实现是？",
+    "options": [
+      "循环数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-392",
+    "title": "Java中Collections.sort()的底层算法是？",
+    "options": [
+      "TimSort",
+      "QuickSort",
+      "MergeSort",
+      "HeapSort"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-393",
+    "title": "Java中Arrays.sort()的底层算法是？",
+    "options": [
+      "DualPivotQuicksort",
+      "QuickSort",
+      "MergeSort",
+      "HeapSort"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-394",
+    "title": "Java中Collections.synchronizedList()的作用是？",
+    "options": [
+      "创建线程安全的List",
+      "创建不可变List",
+      "创建同步List",
+      "创建排序List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-395",
+    "title": "Java中Collections.unmodifiableList()的作用是？",
+    "options": [
+      "创建不可变List",
+      "创建线程安全List",
+      "创建同步List",
+      "创建排序List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-396",
+    "title": "Java中Collections.emptyList()的作用是？",
+    "options": [
+      "创建空List",
+      "创建不可变List",
+      "创建线程安全List",
+      "创建同步List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-397",
+    "title": "Java中Collections.singletonList()的作用是？",
+    "options": [
+      "创建单元素List",
+      "创建空List",
+      "创建不可变List",
+      "创建同步List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-398",
+    "title": "Java中List的subList()方法的特点是？",
+    "options": [
+      "返回原List的视图",
+      "返回新List",
+      "返回不可变List",
+      "返回同步List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-399",
+    "title": "Java中Map的entrySet()方法返回？",
+    "options": [
+      "键值对Set",
+      "键Set",
+      "值Collection",
+      "键值对List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-400",
+    "title": "Java中Map的keySet()方法返回？",
+    "options": [
+      "键Set",
+      "键值对Set",
+      "值Collection",
+      "键值对List"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-401",
+    "title": "Java中Map的values()方法返回？",
+    "options": [
+      "值Collection",
+      "键Set",
+      "键值对Set",
+      "键值对List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-402",
+    "title": "Java中Map的getOrDefault()方法作用是？",
+    "options": [
+      "获取值或默认值",
+      "获取值",
+      "设置默认值",
+      "判断是否包含"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-403",
+    "title": "Java中Map的forEach()方法作用是？",
+    "options": [
+      "遍历Map",
+      "过滤Map",
+      "转换Map",
+      "排序Map"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-404",
+    "title": "Java中Map的putIfAbsent()方法作用是？",
+    "options": [
+      "不存在时插入",
+      "存在时插入",
+      "总是插入",
+      "删除后插入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-405",
+    "title": "Java中Map的computeIfAbsent()方法作用是？",
+    "options": [
+      "不存在时计算并插入",
+      "存在时计算",
+      "总是计算",
+      "删除后计算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-406",
+    "title": "Java中Map的computeIfPresent()方法作用是？",
+    "options": [
+      "存在时计算并更新",
+      "不存在时计算",
+      "总是计算",
+      "删除后计算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-407",
+    "title": "Java中Map的merge()方法作用是？",
+    "options": [
+      "合并值",
+      "合并键",
+      "合并Map",
+      "替换值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-408",
+    "title": "Java中Map的replace()方法作用是？",
+    "options": [
+      "替换值",
+      "替换键",
+      "替换Map",
+      "合并值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-409",
+    "title": "Java中Map的replaceAll()方法作用是？",
+    "options": [
+      "替换所有值",
+      "替换所有键",
+      "替换所有Map",
+      "合并所有值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-410",
+    "title": "Java中Map的remove()方法重载版本作用是？",
+    "options": [
+      "条件删除",
+      "无条件删除",
+      "批量删除",
+      "延迟删除"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-411",
+    "title": "Java中Comparable和Comparator的区别是？",
+    "options": [
+      "Comparable在类内实现，Comparator在类外实现",
+      "Comparable在类外实现，Comparator在类内实现",
+      "无区别",
+      "取决于场景"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-412",
+    "title": "Java中Comparable的compareTo()方法返回？",
+    "options": [
+      "负数、零、正数",
+      "true、false",
+      "0、1",
+      "-1、0、1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-413",
+    "title": "Java中Comparator的compare()方法返回？",
+    "options": [
+      "负数、零、正数",
+      "true、false",
+      "0、1",
+      "-1、0、1"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-414",
+    "title": "Java中Iterator的remove()方法作用是？",
+    "options": [
+      "删除当前元素",
+      "删除下一个元素",
+      "删除上一个元素",
+      "删除所有元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-415",
+    "title": "Java中Iterator的hasNext()方法作用是？",
+    "options": [
+      "判断是否有下一个元素",
+      "获取下一个元素",
+      "删除下一个元素",
+      "跳过下一个元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-416",
+    "title": "Java中Iterator的next()方法作用是？",
+    "options": [
+      "获取下一个元素",
+      "判断是否有下一个元素",
+      "删除下一个元素",
+      "跳过下一个元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-417",
+    "title": "Java中ListIterator的previous()方法作用是？",
+    "options": [
+      "获取上一个元素",
+      "获取下一个元素",
+      "删除上一个元素",
+      "跳过上一个元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-418",
+    "title": "Java中ListIterator的hasPrevious()方法作用是？",
+    "options": [
+      "判断是否有上一个元素",
+      "判断是否有下一个元素",
+      "删除上一个元素",
+      "跳过上一个元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-419",
+    "title": "Java中ListIterator的add()方法作用是？",
+    "options": [
+      "添加元素",
+      "删除元素",
+      "修改元素",
+      "替换元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-420",
+    "title": "Java中ListIterator的set()方法作用是？",
+    "options": [
+      "修改元素",
+      "添加元素",
+      "删除元素",
+      "替换元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-421",
+    "title": "Java中ListIterator的nextIndex()方法作用是？",
+    "options": [
+      "获取下一个索引",
+      "获取上一个索引",
+      "获取当前索引",
+      "获取最后索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-422",
+    "title": "Java中ListIterator的previousIndex()方法作用是？",
+    "options": [
+      "获取上一个索引",
+      "获取下一个索引",
+      "获取当前索引",
+      "获取最后索引"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-423",
+    "title": "Java中集合的遍历方式有？",
+    "options": [
+      "for, foreach, Iterator, Stream",
+      "while, do-while",
+      "递归",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-424",
+    "title": "Java中集合转数组的方法是？",
+    "options": [
+      "toArray()",
+      "asList()",
+      "toList()",
+      "toArray(T[])"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-425",
+    "title": "Java中数组转集合的方法是？",
+    "options": [
+      "Arrays.asList()",
+      "toList()",
+      "fromArray()",
+      "Collections.addAll()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-426",
+    "title": "Java中Arrays.asList()的特点是？",
+    "options": [
+      "返回固定大小的List",
+      "返回可变List",
+      "返回不可变List",
+      "返回同步List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-427",
+    "title": "Java中如何创建不可变集合？",
+    "options": [
+      "Collections.unmodifiableXxx, List.of(), Map.of()",
+      "new ArrayList()",
+      "new HashMap()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-428",
+    "title": "Java中List.of()的特点是？",
+    "options": [
+      "不可变，不允许null",
+      "可变，允许null",
+      "不可变，允许null",
+      "可变，不允许null"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-429",
+    "title": "Java中Map.of()的特点是？",
+    "options": [
+      "不可变，不允许null",
+      "可变，允许null",
+      "不可变，允许null",
+      "可变，不允许null"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-430",
+    "title": "Java中Set.of()的特点是？",
+    "options": [
+      "不可变，不允许null",
+      "可变，允许null",
+      "不可变，允许null",
+      "可变，不允许null"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-431",
+    "title": "Java中Stream的特点是？",
+    "options": [
+      "函数式操作，惰性求值",
+      "命令式操作，立即求值",
+      "面向对象操作",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-432",
+    "title": "Java中Stream的创建方式有？",
+    "options": [
+      "Collection.stream(), Stream.of(), Arrays.stream()",
+      "new Stream()",
+      "Stream.create()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-433",
+    "title": "Java中Stream的中间操作有？",
+    "options": [
+      "filter, map, flatMap, sorted",
+      "forEach, collect, count",
+      "reduce, findFirst",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-434",
+    "title": "Java中Stream的终端操作有？",
+    "options": [
+      "forEach, collect, count, reduce",
+      "filter, map, flatMap",
+      "sorted, distinct",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-435",
+    "title": "Java中Stream的filter()方法作用是？",
+    "options": [
+      "过滤元素",
+      "转换元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-436",
+    "title": "Java中Stream的map()方法作用是？",
+    "options": [
+      "转换元素",
+      "过滤元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-437",
+    "title": "Java中Stream的flatMap()方法作用是？",
+    "options": [
+      "扁平化转换元素",
+      "过滤元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-438",
+    "title": "Java中Stream的sorted()方法作用是？",
+    "options": [
+      "排序元素",
+      "过滤元素",
+      "转换元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-439",
+    "title": "Java中Stream的distinct()方法作用是？",
+    "options": [
+      "去重元素",
+      "过滤元素",
+      "转换元素",
+      "排序元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-440",
+    "title": "Java中Stream的limit()方法作用是？",
+    "options": [
+      "限制元素数量",
+      "跳过元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-441",
+    "title": "Java中Stream的skip()方法作用是？",
+    "options": [
+      "跳过元素",
+      "限制元素数量",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-442",
+    "title": "Java中Stream的peek()方法作用是？",
+    "options": [
+      "查看元素但不消费",
+      "消费元素",
+      "过滤元素",
+      "转换元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-443",
+    "title": "Java中Stream的forEach()方法作用是？",
+    "options": [
+      "消费元素",
+      "查看元素但不消费",
+      "过滤元素",
+      "转换元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-444",
+    "title": "Java中Stream的collect()方法作用是？",
+    "options": [
+      "收集元素到集合",
+      "消费元素",
+      "过滤元素",
+      "转换元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-445",
+    "title": "Java中Stream的reduce()方法作用是？",
+    "options": [
+      "聚合元素",
+      "收集元素",
+      "过滤元素",
+      "转换元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-446",
+    "title": "Java中Stream的count()方法作用是？",
+    "options": [
+      "计算元素数量",
+      "收集元素",
+      "过滤元素",
+      "转换元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-447",
+    "title": "Java中Stream的findFirst()方法作用是？",
+    "options": [
+      "找到第一个元素",
+      "找到任意元素",
+      "找到最后元素",
+      "找到所有元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-448",
+    "title": "Java中Stream的findAny()方法作用是？",
+    "options": [
+      "找到任意元素",
+      "找到第一个元素",
+      "找到最后元素",
+      "找到所有元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-449",
+    "title": "Java中Stream的anyMatch()方法作用是？",
+    "options": [
+      "判断是否有元素匹配",
+      "判断是否所有元素匹配",
+      "判断是否没有元素匹配",
+      "找到匹配元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-450",
+    "title": "Java中Stream的allMatch()方法作用是？",
+    "options": [
+      "判断是否所有元素匹配",
+      "判断是否有元素匹配",
+      "判断是否没有元素匹配",
+      "找到匹配元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-451",
+    "title": "Java中Stream的noneMatch()方法作用是？",
+    "options": [
+      "判断是否没有元素匹配",
+      "判断是否有元素匹配",
+      "判断是否所有元素匹配",
+      "找到匹配元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-452",
+    "title": "Java中Stream的toArray()方法作用是？",
+    "options": [
+      "转为数组",
+      "转为集合",
+      "转为列表",
+      "转为映射"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-453",
+    "title": "Java中Stream的min()方法作用是？",
+    "options": [
+      "找到最小元素",
+      "找到最大元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-454",
+    "title": "Java中Stream的max()方法作用是？",
+    "options": [
+      "找到最大元素",
+      "找到最小元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-455",
+    "title": "Java中Collectors.toList()的作用是？",
+    "options": [
+      "收集到List",
+      "收集到Set",
+      "收集到Map",
+      "收集到String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-456",
+    "title": "Java中Collectors.toSet()的作用是？",
+    "options": [
+      "收集到Set",
+      "收集到List",
+      "收集到Map",
+      "收集到String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-457",
+    "title": "Java中Collectors.toMap()的作用是？",
+    "options": [
+      "收集到Map",
+      "收集到List",
+      "收集到Set",
+      "收集到String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-458",
+    "title": "Java中Collectors.groupingBy()的作用是？",
+    "options": [
+      "分组",
+      "分区",
+      "拼接",
+      "计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-459",
+    "title": "Java中Collectors.partitioningBy()的作用是？",
+    "options": [
+      "分区",
+      "分组",
+      "拼接",
+      "计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-460",
+    "title": "Java中Collectors.joining()的作用是？",
+    "options": [
+      "拼接字符串",
+      "分组",
+      "分区",
+      "计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-461",
+    "title": "Java中Collectors.counting()的作用是？",
+    "options": [
+      "计数",
+      "分组",
+      "分区",
+      "拼接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-462",
+    "title": "Java中Collectors.summarizingInt()的作用是？",
+    "options": [
+      "统计信息",
+      "求和",
+      "平均",
+      "最大值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-463",
+    "title": "Java中Collectors.averagingInt()的作用是？",
+    "options": [
+      "求平均",
+      "求和",
+      "统计信息",
+      "最大值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-464",
+    "title": "Java中Collectors.summingInt()的作用是？",
+    "options": [
+      "求和",
+      "求平均",
+      "统计信息",
+      "最大值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-465",
+    "title": "Java中Collectors.maxBy()的作用是？",
+    "options": [
+      "求最大值",
+      "求最小值",
+      "求和",
+      "求平均"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-466",
+    "title": "Java中Collectors.minBy()的作用是？",
+    "options": [
+      "求最小值",
+      "求最大值",
+      "求和",
+      "求平均"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-467",
+    "title": "Java中Collectors.reducing()的作用是？",
+    "options": [
+      "归约",
+      "分组",
+      "分区",
+      "拼接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-468",
+    "title": "Java中Collectors.collectingAndThen()的作用是？",
+    "options": [
+      "收集后转换",
+      "收集前转换",
+      "收集中转换",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-469",
+    "title": "Java中Collectors.mapping()的作用是？",
+    "options": [
+      "收集时映射",
+      "收集后映射",
+      "收集前映射",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-470",
+    "title": "Java中Collectors.flatMapping()的作用是？",
+    "options": [
+      "收集时扁平映射",
+      "收集时映射",
+      "收集后映射",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-471",
+    "title": "Java中Collectors.filtering()的作用是？",
+    "options": [
+      "收集时过滤",
+      "收集后过滤",
+      "收集前过滤",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-472",
+    "title": "Java中Collectors.toUnmodifiableList()的作用是？",
+    "options": [
+      "收集到不可变List",
+      "收集到List",
+      "收集到Set",
+      "收集到Map"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-473",
+    "title": "Java中Collectors.toUnmodifiableSet()的作用是？",
+    "options": [
+      "收集到不可变Set",
+      "收集到Set",
+      "收集到List",
+      "收集到Map"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-474",
+    "title": "Java中Collectors.toUnmodifiableMap()的作用是？",
+    "options": [
+      "收集到不可变Map",
+      "收集到Map",
+      "收集到List",
+      "收集到Set"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-475",
+    "title": "Java中Stream是惰性求值吗？",
+    "options": [
+      "是",
+      "否",
+      "部分是",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-476",
+    "title": "Java中Stream可以复用吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "部分可以",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-477",
+    "title": "Java中ParallelStream是并行流吗？",
+    "options": [
+      "是",
+      "否",
+      "部分是",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-478",
+    "title": "Java中ParallelStream的底层是？",
+    "options": [
+      "ForkJoinPool",
+      "ThreadPoolExecutor",
+      "Stream",
+      "CompletableFuture"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-479",
+    "title": "Java中ParallelStream适合什么场景？",
+    "options": [
+      "CPU密集型",
+      "IO密集型",
+      "混合型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-480",
+    "title": "Java中Stream的短路操作有？",
+    "options": [
+      "findFirst, anyMatch",
+      "filter, map",
+      "sorted, distinct",
+      "collect, count"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-481",
+    "title": "Java中创建线程的方式有？",
+    "options": [
+      "继承Thread, 实现Runnable, 实现Callable",
+      "继承Runnable, 实现Thread",
+      "new Thread()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-482",
+    "title": "Java中Thread类的start()方法作用是？",
+    "options": [
+      "启动线程",
+      "运行线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-483",
+    "title": "Java中Thread类的run()方法作用是？",
+    "options": [
+      "线程执行体",
+      "启动线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-484",
+    "title": "Java中Thread类的sleep()方法作用是？",
+    "options": [
+      "休眠线程",
+      "等待线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-485",
+    "title": "Java中Thread类的join()方法作用是？",
+    "options": [
+      "等待线程结束",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-486",
+    "title": "Java中Thread类的interrupt()方法作用是？",
+    "options": [
+      "中断线程",
+      "休眠线程",
+      "唤醒线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-487",
+    "title": "Java中Thread类的yield()方法作用是？",
+    "options": [
+      "让出CPU时间",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-488",
+    "title": "Java中Thread类的setDaemon()方法作用是？",
+    "options": [
+      "设置守护线程",
+      "设置优先级",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-489",
+    "title": "Java中Thread类的setPriority()方法作用是？",
+    "options": [
+      "设置优先级",
+      "设置守护线程",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-490",
+    "title": "Java中Thread类的getState()方法作用是？",
+    "options": [
+      "获取线程状态",
+      "设置线程状态",
+      "判断线程存活",
+      "判断线程中断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-491",
+    "title": "Java中线程的状态有？",
+    "options": [
+      "NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED",
+      "NEW, RUNNING, BLOCKED, DEAD",
+      "READY, RUNNING, BLOCKED, WAITING",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-492",
+    "title": "Java中synchronized关键字的作用是？",
+    "options": [
+      "同步方法或代码块",
+      "异步方法或代码块",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-493",
+    "title": "Java中synchronized锁的对象是？",
+    "options": [
+      "对象实例或Class对象",
+      "基本类型",
+      "局部变量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-494",
+    "title": "Java中synchronized修饰实例方法锁的是？",
+    "options": [
+      "当前实例对象",
+      "Class对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-495",
+    "title": "Java中synchronized修饰静态方法锁的是？",
+    "options": [
+      "Class对象",
+      "当前实例对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-496",
+    "title": "Java中synchronized修饰代码块锁的是？",
+    "options": [
+      "指定对象",
+      "当前实例对象",
+      "Class对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-497",
+    "title": "Java中synchronized的特性是？",
+    "options": [
+      "原子性，可见性，有序性",
+      "仅原子性",
+      "仅可见性",
+      "仅有序性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-498",
+    "title": "Java中synchronized的实现原理是？",
+    "options": [
+      "Monitor指令",
+      "CAS操作",
+      "LockSupport",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-499",
+    "title": "Java中synchronized的锁升级过程是？",
+    "options": [
+      "无锁 -> 偏向锁 -> 轻量级锁 -> 重量级锁",
+      "无锁 -> 轻量级锁 -> 偏向锁 -> 重量级锁",
+      "偏向锁 -> 无锁 -> 轻量级锁 -> 重量级锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-500",
+    "title": "Java中偏向锁的作用是？",
+    "options": [
+      "优化只有一个线程访问的锁",
+      "优化多个线程交替访问的锁",
+      "优化多个线程同时访问的锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-501",
+    "title": "Java中轻量级锁的作用是？",
+    "options": [
+      "优化多个线程交替访问的锁",
+      "优化只有一个线程访问的锁",
+      "优化多个线程同时访问的锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-502",
+    "title": "Java中重量级锁的作用是？",
+    "options": [
+      "优化多个线程同时访问的锁",
+      "优化只有一个线程访问的锁",
+      "优化多个线程交替访问的锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-503",
+    "title": "Java中volatile关键字的作用是？",
+    "options": [
+      "可见性，有序性",
+      "原子性",
+      "同步",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-504",
+    "title": "Java中volatile的可见性是指？",
+    "options": [
+      "线程读取volatile变量时从主内存读",
+      "线程读取volatile变量时从缓存读",
+      "线程写入volatile变量时写缓存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-505",
+    "title": "Java中volatile的有序性是指？",
+    "options": [
+      "禁止指令重排序",
+      "保证原子性",
+      "保证可见性",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-506",
+    "title": "Java中volatile能保证原子性吗？",
+    "options": [
+      "不能",
+      "能",
+      "部分能",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-507",
+    "title": "Java中volatile的实现原理是？",
+    "options": [
+      "内存屏障",
+      "Monitor指令",
+      "CAS操作",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-508",
+    "title": "Java中内存屏障的作用是？",
+    "options": [
+      "禁止指令重排序和强制缓存刷新",
+      "保证原子性",
+      "保证同步",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-509",
+    "title": "Java中CAS操作是指？",
+    "options": [
+      "Compare And Swap",
+      "Check And Set",
+      "Compare And Set",
+      "Check And Swap"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-510",
+    "title": "Java中CAS的问题有？",
+    "options": [
+      "ABA问题，自旋开销，只能单变量",
+      "死锁问题",
+      "内存泄漏",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-511",
+    "title": "Java中ABA问题的解决方法是？",
+    "options": [
+      "版本号或AtomicStampedReference",
+      "加锁",
+      "volatile",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-512",
+    "title": "Java中Atomic类的原理是？",
+    "options": [
+      "CAS操作",
+      "synchronized",
+      "volatile",
+      "Lock"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-513",
+    "title": "Java中AtomicInteger的作用是？",
+    "options": [
+      "原子整数操作",
+      "原子引用操作",
+      "原子数组操作",
+      "原子字段操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-514",
+    "title": "Java中AtomicReference的作用是？",
+    "options": [
+      "原子引用操作",
+      "原子整数操作",
+      "原子数组操作",
+      "原子字段操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-515",
+    "title": "Java中AtomicStampedReference的作用是？",
+    "options": [
+      "解决ABA问题的原子引用",
+      "原子整数操作",
+      "原子数组操作",
+      "原子字段操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-516",
+    "title": "Java中AtomicIntegerArray的作用是？",
+    "options": [
+      "原子数组操作",
+      "原子整数操作",
+      "原子引用操作",
+      "原子字段操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-517",
+    "title": "Java中AtomicIntegerFieldUpdater的作用是？",
+    "options": [
+      "原子字段更新",
+      "原子整数操作",
+      "原子引用操作",
+      "原子数组操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-518",
+    "title": "Java中LongAdder的作用是？",
+    "options": [
+      "高并发累加",
+      "原子整数操作",
+      "原子引用操作",
+      "原子数组操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-519",
+    "title": "Java中LongAccumulator的作用是？",
+    "options": [
+      "高并发累积",
+      "高并发累加",
+      "原子整数操作",
+      "原子引用操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-520",
+    "title": "Java中Lock接口的作用是？",
+    "options": [
+      "显式锁",
+      "隐式锁",
+      "无锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-521",
+    "title": "Java中ReentrantLock的作用是？",
+    "options": [
+      "可重入锁",
+      "不可重入锁",
+      "读写锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-522",
+    "title": "Java中ReentrantReadWriteLock的作用是？",
+    "options": [
+      "读写锁",
+      "可重入锁",
+      "不可重入锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-523",
+    "title": "Java中StampedLock的作用是？",
+    "options": [
+      "乐观读锁",
+      "读写锁",
+      "可重入锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-524",
+    "title": "Java中Lock与synchronized的区别是？",
+    "options": [
+      "Lock需手动释放，synchronized自动释放",
+      "Lock自动释放，synchronized手动释放",
+      "无区别",
+      "取决于场景"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-525",
+    "title": "Java中ReentrantLock的tryLock()方法作用是？",
+    "options": [
+      "尝试获取锁",
+      "阻塞获取锁",
+      "释放锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-526",
+    "title": "Java中ReentrantLock的lockInterruptibly()方法作用是？",
+    "options": [
+      "可中断获取锁",
+      "不可中断获取锁",
+      "尝试获取锁",
+      "释放锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-527",
+    "title": "Java中ReentrantLock的newCondition()方法作用是？",
+    "options": [
+      "创建条件变量",
+      "获取锁",
+      "释放锁",
+      "尝试获取锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-528",
+    "title": "Java中Condition的作用是？",
+    "options": [
+      "条件等待/通知",
+      "获取锁",
+      "释放锁",
+      "尝试获取锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-529",
+    "title": "Java中Condition的await()方法作用是？",
+    "options": [
+      "等待",
+      "通知",
+      "获取锁",
+      "释放锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-530",
+    "title": "Java中Condition的signal()方法作用是？",
+    "options": [
+      "通知",
+      "等待",
+      "获取锁",
+      "释放锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-531",
+    "title": "Java中Condition的signalAll()方法作用是？",
+    "options": [
+      "通知所有",
+      "通知",
+      "等待",
+      "获取锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-532",
+    "title": "Java中公平锁和非公平锁的区别是？",
+    "options": [
+      "公平锁按顺序获取，非公平锁可插队",
+      "公平锁可插队，非公平锁按顺序",
+      "无区别",
+      "取决于场景"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-533",
+    "title": "Java中ReentrantLock默认是？",
+    "options": [
+      "非公平锁",
+      "公平锁",
+      "读写锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-534",
+    "title": "Java中死锁的条件有？",
+    "options": [
+      "互斥，持有并等待，不可抢占，循环等待",
+      "互斥，持有并等待",
+      "不可抢占，循环等待",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-535",
+    "title": "Java中如何避免死锁？",
+    "options": [
+      "破坏死锁条件",
+      "加锁",
+      "解锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-536",
+    "title": "Java中如何检测死锁？",
+    "options": [
+      "JConsole, JStack, ThreadMXBean",
+      "JMap",
+      "JStat",
+      "JInfo"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-537",
+    "title": "Java中线程池的作用是？",
+    "options": [
+      "重用线程，控制并发",
+      "创建线程",
+      "销毁线程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-538",
+    "title": "Java中线程池的参数有？",
+    "options": [
+      "核心线程数，最大线程数，存活时间，工作队列，线程工厂，拒绝策略",
+      "核心线程数，最大线程数",
+      "存活时间，工作队列",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-539",
+    "title": "Java中线程池的工作队列有？",
+    "options": [
+      "ArrayBlockingQueue, LinkedBlockingQueue, SynchronousQueue",
+      "ArrayList, LinkedList",
+      "HashMap, TreeMap",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-540",
+    "title": "Java中线程池的拒绝策略有？",
+    "options": [
+      "AbortPolicy, CallerRunsPolicy, DiscardPolicy, DiscardOldestPolicy",
+      "ThrowExceptionPolicy",
+      "IgnorePolicy",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-541",
+    "title": "Java中Executors.newFixedThreadPool()的特点是？",
+    "options": [
+      "固定线程数，无界队列",
+      "可变线程数",
+      "单线程",
+      "定时线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-542",
+    "title": "Java中Executors.newCachedThreadPool()的特点是？",
+    "options": [
+      "可变线程数，同步队列",
+      "固定线程数",
+      "单线程",
+      "定时线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-543",
+    "title": "Java中Executors.newSingleThreadExecutor()的特点是？",
+    "options": [
+      "单线程，无界队列",
+      "固定线程数",
+      "可变线程数",
+      "定时线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-544",
+    "title": "Java中Executors.newScheduledThreadPool()的特点是？",
+    "options": [
+      "定时线程",
+      "固定线程数",
+      "可变线程数",
+      "单线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-545",
+    "title": "Java中为什么不推荐使用Executors创建线程池？",
+    "options": [
+      "队列可能OOM",
+      "线程可能OOM",
+      "性能差",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-546",
+    "title": "Java中推荐如何创建线程池？",
+    "options": [
+      "ThreadPoolExecutor构造方法",
+      "Executors工厂方法",
+      "new Thread()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-547",
+    "title": "Java中ThreadPoolExecutor的执行流程是？",
+    "options": [
+      "核心线程 -> 队列 -> 非核心线程 -> 拒绝策略",
+      "队列 -> 核心线程 -> 非核心线程",
+      "非核心线程 -> 核心线程 -> 队列",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-548",
+    "title": "Java中ThreadPoolExecutor的shutdown()方法作用是？",
+    "options": [
+      "平滑关闭",
+      "立即关闭",
+      "暂停",
+      "重启"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-549",
+    "title": "Java中ThreadPoolExecutor的shutdownNow()方法作用是？",
+    "options": [
+      "立即关闭",
+      "平滑关闭",
+      "暂停",
+      "重启"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-550",
+    "title": "Java中Future的作用是？",
+    "options": [
+      "获取异步结果",
+      "提交任务",
+      "取消任务",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-551",
+    "title": "Java中FutureTask的作用是？",
+    "options": [
+      "可取消的异步计算",
+      "获取异步结果",
+      "提交任务",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-552",
+    "title": "Java中CompletableFuture的作用是？",
+    "options": [
+      "异步编程",
+      "同步编程",
+      "阻塞编程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-553",
+    "title": "Java中CompletableFuture的supplyAsync()方法作用是？",
+    "options": [
+      "有返回值的异步任务",
+      "无返回值的异步任务",
+      "同步任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-554",
+    "title": "Java中CompletableFuture的runAsync()方法作用是？",
+    "options": [
+      "无返回值的异步任务",
+      "有返回值的异步任务",
+      "同步任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-555",
+    "title": "Java中CompletableFuture的thenApply()方法作用是？",
+    "options": [
+      "转换结果",
+      "消费结果",
+      "组合结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-556",
+    "title": "Java中CompletableFuture的thenAccept()方法作用是？",
+    "options": [
+      "消费结果",
+      "转换结果",
+      "组合结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-557",
+    "title": "Java中CompletableFuture的thenCompose()方法作用是？",
+    "options": [
+      "组合结果",
+      "转换结果",
+      "消费结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-558",
+    "title": "Java中CompletableFuture的thenCombine()方法作用是？",
+    "options": [
+      "合并结果",
+      "转换结果",
+      "消费结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-559",
+    "title": "Java中CompletableFuture的allOf()方法作用是？",
+    "options": [
+      "等待所有完成",
+      "等待任一完成",
+      "应用所有",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-560",
+    "title": "Java中CompletableFuture的anyOf()方法作用是？",
+    "options": [
+      "等待任一完成",
+      "等待所有完成",
+      "应用任一",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-561",
+    "title": "Java中CompletableFuture的exceptionally()方法作用是？",
+    "options": [
+      "处理异常",
+      "处理结果",
+      "处理取消",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-562",
+    "title": "Java中CompletableFuture的handle()方法作用是？",
+    "options": [
+      "处理结果和异常",
+      "处理结果",
+      "处理异常",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-563",
+    "title": "Java中CompletableFuture的whenComplete()方法作用是？",
+    "options": [
+      "处理完成",
+      "处理结果",
+      "处理异常",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-564",
+    "title": "Java中ForkJoinPool的作用是？",
+    "options": [
+      "分治任务线程池",
+      "普通线程池",
+      "定时线程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-565",
+    "title": "Java中ForkJoinTask的作用是？",
+    "options": [
+      "分治任务",
+      "普通任务",
+      "定时任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-566",
+    "title": "Java中RecursiveTask的作用是？",
+    "options": [
+      "有返回值的分治任务",
+      "无返回值的分治任务",
+      "普通任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-567",
+    "title": "Java中RecursiveAction的作用是？",
+    "options": [
+      "无返回值的分治任务",
+      "有返回值的分治任务",
+      "普通任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-568",
+    "title": "Java中CountDownLatch的作用是？",
+    "options": [
+      "等待多个线程完成",
+      "循环屏障",
+      "信号量",
+      "交换器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-569",
+    "title": "Java中CyclicBarrier的作用是？",
+    "options": [
+      "循环屏障",
+      "等待多个线程完成",
+      "信号量",
+      "交换器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-570",
+    "title": "Java中Semaphore的作用是？",
+    "options": [
+      "信号量",
+      "等待多个线程完成",
+      "循环屏障",
+      "交换器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-571",
+    "title": "Java中Exchanger的作用是？",
+    "options": [
+      "交换器",
+      "等待多个线程完成",
+      "循环屏障",
+      "信号量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-572",
+    "title": "Java中Phaser的作用是？",
+    "options": [
+      "阶段器",
+      "等待多个线程完成",
+      "循环屏障",
+      "信号量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-573",
+    "title": "Java中CountDownLatch和CyclicBarrier的区别是？",
+    "options": [
+      "CountDownLatch不可重用，CyclicBarrier可重用",
+      "CountDownLatch可重用，CyclicBarrier不可重用",
+      "无区别",
+      "取决于场景"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-574",
+    "title": "Java中ThreadLocal的作用是？",
+    "options": [
+      "线程本地变量",
+      "线程同步",
+      "线程通信",
+      "线程池"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-575",
+    "title": "Java中ThreadLocal的原理是？",
+    "options": [
+      "每个线程维护一个ThreadLocalMap",
+      "全局Map",
+      "锁机制",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-576",
+    "title": "Java中ThreadLocal的内存泄漏问题是指？",
+    "options": [
+      "Entry的value无法回收",
+      "Entry的key无法回收",
+      "ThreadLocal无法回收",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-577",
+    "title": "Java中ThreadLocal如何避免内存泄漏？",
+    "options": [
+      "使用后调用remove()",
+      "使用弱引用",
+      "使用强引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-578",
+    "title": "Java中InheritableThreadLocal的作用是？",
+    "options": [
+      "子线程继承父线程的变量",
+      "线程同步",
+      "线程通信",
+      "线程池"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-579",
+    "title": "Java中JMM是指？",
+    "options": [
+      "Java内存模型",
+      "Java虚拟机",
+      "Java运行环境",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-580",
+    "title": "Java中JMM的三大特性是？",
+    "options": [
+      "原子性，可见性，有序性",
+      "封装，继承，多态",
+      "安全，稳定，高效",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-581",
+    "title": "Java中JMM的主内存和工作内存是指？",
+    "options": [
+      "主内存是堆，工作内存是栈",
+      "主内存是栈，工作内存是堆",
+      "主内存是方法区，工作内存是堆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-582",
+    "title": "Java中happens-before原则是？",
+    "options": [
+      "保证内存可见性的规则",
+      "保证原子性的规则",
+      "保证同步的规则",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-583",
+    "title": "Java中happens-before规则包括？",
+    "options": [
+      "程序顺序，volatile，锁，线程启动等",
+      "程序顺序",
+      "volatile",
+      "锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-584",
+    "title": "Java中指令重排序是指？",
+    "options": [
+      "编译器或处理器优化指令顺序",
+      "指令错误",
+      "指令丢失",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-585",
+    "title": "Java中as-if-serial语义是指？",
+    "options": [
+      "不管怎么重排序，单线程结果不变",
+      "指令顺序执行",
+      "指令并行执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-586",
+    "title": "Java中创建线程的方式有？",
+    "options": [
+      "继承Thread, 实现Runnable, 实现Callable",
+      "继承Runnable, 实现Thread",
+      "new Thread()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-587",
+    "title": "Java中Thread类的start()方法作用是？",
+    "options": [
+      "启动线程",
+      "运行线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-588",
+    "title": "Java中Thread类的run()方法作用是？",
+    "options": [
+      "线程执行体",
+      "启动线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-589",
+    "title": "Java中Thread类的sleep()方法作用是？",
+    "options": [
+      "休眠线程",
+      "等待线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-590",
+    "title": "Java中Thread类的join()方法作用是？",
+    "options": [
+      "等待线程结束",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-591",
+    "title": "Java中Thread类的interrupt()方法作用是？",
+    "options": [
+      "中断线程",
+      "休眠线程",
+      "唤醒线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-592",
+    "title": "Java中Thread类的yield()方法作用是？",
+    "options": [
+      "让出CPU时间",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-593",
+    "title": "Java中Thread类的setDaemon()方法作用是？",
+    "options": [
+      "设置守护线程",
+      "设置优先级",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-594",
+    "title": "Java中Thread类的setPriority()方法作用是？",
+    "options": [
+      "设置优先级",
+      "设置守护线程",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-595",
+    "title": "Java中Thread类的getState()方法作用是？",
+    "options": [
+      "获取线程状态",
+      "设置线程状态",
+      "判断线程存活",
+      "判断线程中断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-596",
+    "title": "Java中线程的状态有？",
+    "options": [
+      "NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED",
+      "NEW, RUNNING, BLOCKED, DEAD",
+      "READY, RUNNING, BLOCKED, WAITING",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-597",
+    "title": "Java中synchronized关键字的作用是？",
+    "options": [
+      "同步方法或代码块",
+      "异步方法或代码块",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-598",
+    "title": "Java中synchronized锁的对象是？",
+    "options": [
+      "对象实例或Class对象",
+      "基本类型",
+      "局部变量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-599",
+    "title": "Java中synchronized修饰实例方法锁的是？",
+    "options": [
+      "当前实例对象",
+      "Class对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-600",
+    "title": "Java中synchronized修饰静态方法锁的是？",
+    "options": [
+      "Class对象",
+      "当前实例对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-601",
+    "title": "Java中IO流的分类有？",
+    "options": [
+      "字节流和字符流",
+      "输入流和输出流",
+      "节点流和处理流",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-602",
+    "title": "Java中字节流的基类是？",
+    "options": [
+      "InputStream和OutputStream",
+      "Reader和Writer",
+      "File和Path",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-603",
+    "title": "Java中字符流的基类是？",
+    "options": [
+      "Reader和Writer",
+      "InputStream和OutputStream",
+      "File和Path",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-604",
+    "title": "Java中FileInputStream的作用是？",
+    "options": [
+      "读取文件字节",
+      "写入文件字节",
+      "读取文件字符",
+      "写入文件字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-605",
+    "title": "Java中FileOutputStream的作用是？",
+    "options": [
+      "写入文件字节",
+      "读取文件字节",
+      "读取文件字符",
+      "写入文件字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-606",
+    "title": "Java中FileReader的作用是？",
+    "options": [
+      "读取文件字符",
+      "写入文件字符",
+      "读取文件字节",
+      "写入文件字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-607",
+    "title": "Java中FileWriter的作用是？",
+    "options": [
+      "写入文件字符",
+      "读取文件字符",
+      "读取文件字节",
+      "写入文件字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-608",
+    "title": "Java中BufferedInputStream的作用是？",
+    "options": [
+      "缓冲字节输入",
+      "缓冲字节输出",
+      "缓冲字符输入",
+      "缓冲字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-609",
+    "title": "Java中BufferedOutputStream的作用是？",
+    "options": [
+      "缓冲字节输出",
+      "缓冲字节输入",
+      "缓冲字符输入",
+      "缓冲字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-610",
+    "title": "Java中BufferedReader的作用是？",
+    "options": [
+      "缓冲字符输入",
+      "缓冲字符输出",
+      "缓冲字节输入",
+      "缓冲字节输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-611",
+    "title": "Java中BufferedWriter的作用是？",
+    "options": [
+      "缓冲字符输出",
+      "缓冲字符输入",
+      "缓冲字节输入",
+      "缓冲字节输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-612",
+    "title": "Java中DataInputStream的作用是？",
+    "options": [
+      "读取基本类型",
+      "写入基本类型",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-613",
+    "title": "Java中DataOutputStream的作用是？",
+    "options": [
+      "写入基本类型",
+      "读取基本类型",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-614",
+    "title": "Java中ObjectInputStream的作用是？",
+    "options": [
+      "读取对象",
+      "写入对象",
+      "读取基本类型",
+      "写入基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-615",
+    "title": "Java中ObjectOutputStream的作用是？",
+    "options": [
+      "写入对象",
+      "读取对象",
+      "读取基本类型",
+      "写入基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-616",
+    "title": "Java中PrintStream的作用是？",
+    "options": [
+      "打印字节流",
+      "打印字符流",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-617",
+    "title": "Java中PrintWriter的作用是？",
+    "options": [
+      "打印字符流",
+      "打印字节流",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-618",
+    "title": "Java中InputStreamReader的作用是？",
+    "options": [
+      "字节流转字符流",
+      "字符流转字节流",
+      "缓冲流",
+      "数据流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-619",
+    "title": "Java中OutputStreamWriter的作用是？",
+    "options": [
+      "字符流转字节流",
+      "字节流转字符流",
+      "缓冲流",
+      "数据流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-620",
+    "title": "Java中SequenceInputStream的作用是？",
+    "options": [
+      "合并输入流",
+      "合并输出流",
+      "管道流",
+      "过滤流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-621",
+    "title": "Java中PipedInputStream的作用是？",
+    "options": [
+      "管道输入",
+      "管道输出",
+      "文件输入",
+      "文件输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-622",
+    "title": "Java中PipedOutputStream的作用是？",
+    "options": [
+      "管道输出",
+      "管道输入",
+      "文件输入",
+      "文件输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-623",
+    "title": "Java中ByteArrayInputStream的作用是？",
+    "options": [
+      "字节数组输入",
+      "字节数组输出",
+      "字符数组输入",
+      "字符数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-624",
+    "title": "Java中ByteArrayOutputStream的作用是？",
+    "options": [
+      "字节数组输出",
+      "字节数组输入",
+      "字符数组输入",
+      "字符数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-625",
+    "title": "Java中CharArrayReader的作用是？",
+    "options": [
+      "字符数组输入",
+      "字符数组输出",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-626",
+    "title": "Java中CharArrayWriter的作用是？",
+    "options": [
+      "字符数组输出",
+      "字符数组输入",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-627",
+    "title": "Java中StringReader的作用是？",
+    "options": [
+      "字符串输入",
+      "字符串输出",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-628",
+    "title": "Java中StringWriter的作用是？",
+    "options": [
+      "字符串输出",
+      "字符串输入",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-629",
+    "title": "Java中File类的作用是？",
+    "options": [
+      "文件和目录操作",
+      "文件内容读写",
+      "文件压缩",
+      "文件加密"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-630",
+    "title": "Java中File类可以创建文件吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能创建目录",
+      "只能删除文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-631",
+    "title": "Java中File类可以创建目录吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能创建文件",
+      "只能删除目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-632",
+    "title": "Java中File类可以删除文件吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能创建文件",
+      "只能创建目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-633",
+    "title": "Java中File类可以判断文件存在吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能判断目录",
+      "只能判断路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-634",
+    "title": "Java中File类可以获取文件大小吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取名称",
+      "只能获取路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-635",
+    "title": "Java中File类可以获取文件路径吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取名称",
+      "只能获取大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-636",
+    "title": "Java中File类可以获取文件名吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取路径",
+      "只能获取大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-637",
+    "title": "Java中File类可以判断是文件还是目录吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能判断文件",
+      "只能判断目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-638",
+    "title": "Java中File类可以列出目录内容吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能列出文件",
+      "只能列出目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-639",
+    "title": "Java中File类可以重命名文件吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能删除",
+      "只能创建"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-640",
+    "title": "Java中File类可以设置文件权限吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取权限",
+      "只能判断权限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-641",
+    "title": "Java中File类可以设置文件只读吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能设置可写",
+      "只能设置隐藏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-642",
+    "title": "Java中NIO是指？",
+    "options": [
+      "New IO",
+      "Non-blocking IO",
+      "Native IO",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-643",
+    "title": "Java中NIO的核心组件是？",
+    "options": [
+      "Buffer, Channel, Selector",
+      "Stream, File, Path",
+      "InputStream, OutputStream",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-644",
+    "title": "Java中Buffer的作用是？",
+    "options": [
+      "缓冲区",
+      "通道",
+      "选择器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-645",
+    "title": "Java中Channel的作用是？",
+    "options": [
+      "通道",
+      "缓冲区",
+      "选择器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-646",
+    "title": "Java中Selector的作用是？",
+    "options": [
+      "选择器",
+      "缓冲区",
+      "通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-647",
+    "title": "Java中Buffer的属性有？",
+    "options": [
+      "capacity, position, limit, mark",
+      "size, index, length",
+      "start, end, current",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-648",
+    "title": "Java中Buffer的flip()方法作用是？",
+    "options": [
+      "切换为读模式",
+      "切换为写模式",
+      "清空缓冲区",
+      "重绕缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-649",
+    "title": "Java中Buffer的clear()方法作用是？",
+    "options": [
+      "清空缓冲区",
+      "切换为读模式",
+      "切换为写模式",
+      "重绕缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-650",
+    "title": "Java中Buffer的compact()方法作用是？",
+    "options": [
+      "压缩缓冲区",
+      "清空缓冲区",
+      "切换为读模式",
+      "切换为写模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-651",
+    "title": "Java中Buffer的rewind()方法作用是？",
+    "options": [
+      "重绕缓冲区",
+      "清空缓冲区",
+      "切换为读模式",
+      "切换为写模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-652",
+    "title": "Java中Buffer的mark()方法作用是？",
+    "options": [
+      "标记位置",
+      "重置位置",
+      "清空缓冲区",
+      "压缩缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-653",
+    "title": "Java中Buffer的reset()方法作用是？",
+    "options": [
+      "重置位置",
+      "标记位置",
+      "清空缓冲区",
+      "压缩缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-654",
+    "title": "Java中ByteBuffer的allocate()方法作用是？",
+    "options": [
+      "分配堆缓冲区",
+      "分配直接缓冲区",
+      "分配映射缓冲区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-655",
+    "title": "Java中ByteBuffer的allocateDirect()方法作用是？",
+    "options": [
+      "分配直接缓冲区",
+      "分配堆缓冲区",
+      "分配映射缓冲区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-656",
+    "title": "Java中FileChannel的作用是？",
+    "options": [
+      "文件通道",
+      "网络通道",
+      "管道通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-657",
+    "title": "Java中SocketChannel的作用是？",
+    "options": [
+      "网络客户端通道",
+      "网络服务端通道",
+      "文件通道",
+      "管道通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-658",
+    "title": "Java中ServerSocketChannel的作用是？",
+    "options": [
+      "网络服务端通道",
+      "网络客户端通道",
+      "文件通道",
+      "管道通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-659",
+    "title": "Java中DatagramChannel的作用是？",
+    "options": [
+      "UDP通道",
+      "TCP客户端通道",
+      "TCP服务端通道",
+      "文件通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-660",
+    "title": "Java中Pipe.SinkChannel的作用是？",
+    "options": [
+      "管道写入通道",
+      "管道读取通道",
+      "文件通道",
+      "网络通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-661",
+    "title": "Java中Pipe.SourceChannel的作用是？",
+    "options": [
+      "管道读取通道",
+      "管道写入通道",
+      "文件通道",
+      "网络通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-662",
+    "title": "Java中Selector的select()方法作用是？",
+    "options": [
+      "阻塞等待通道就绪",
+      "非阻塞等待通道就绪",
+      "立即返回就绪通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-663",
+    "title": "Java中Selector的selectNow()方法作用是？",
+    "options": [
+      "非阻塞等待通道就绪",
+      "阻塞等待通道就绪",
+      "立即返回就绪通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-664",
+    "title": "Java中Selector的select(long timeout)方法作用是？",
+    "options": [
+      "超时等待通道就绪",
+      "阻塞等待通道就绪",
+      "非阻塞等待通道就绪",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-665",
+    "title": "Java中Selector的selectedKeys()方法作用是？",
+    "options": [
+      "获取就绪通道集合",
+      "获取所有通道集合",
+      "获取取消通道集合",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-666",
+    "title": "Java中SelectionKey的作用是？",
+    "options": [
+      "表示通道和选择器的注册关系",
+      "表示通道",
+      "表示选择器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-667",
+    "title": "Java中SelectionKey的兴趣事件有？",
+    "options": [
+      "OP_CONNECT, OP_ACCEPT, OP_READ, OP_WRITE",
+      "OP_CREATE, OP_DELETE",
+      "OP_OPEN, OP_CLOSE",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-668",
+    "title": "Java中Path的作用是？",
+    "options": [
+      "表示文件路径",
+      "表示文件",
+      "表示目录",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-669",
+    "title": "Java中Paths的作用是？",
+    "options": [
+      "创建Path",
+      "创建File",
+      "创建Directory",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-670",
+    "title": "Java中Files的作用是？",
+    "options": [
+      "文件操作工具类",
+      "路径操作工具类",
+      "目录操作工具类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-671",
+    "title": "Java中Files.readAllLines()方法作用是？",
+    "options": [
+      "读取所有行",
+      "读取所有字节",
+      "写入所有行",
+      "写入所有字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-672",
+    "title": "Java中Files.write()方法作用是？",
+    "options": [
+      "写入文件",
+      "读取文件",
+      "复制文件",
+      "移动文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-673",
+    "title": "Java中Files.copy()方法作用是？",
+    "options": [
+      "复制文件",
+      "移动文件",
+      "删除文件",
+      "创建文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-674",
+    "title": "Java中Files.move()方法作用是？",
+    "options": [
+      "移动文件",
+      "复制文件",
+      "删除文件",
+      "创建文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-675",
+    "title": "Java中Files.delete()方法作用是？",
+    "options": [
+      "删除文件",
+      "移动文件",
+      "复制文件",
+      "创建文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-676",
+    "title": "Java中Files.createFile()方法作用是？",
+    "options": [
+      "创建文件",
+      "删除文件",
+      "移动文件",
+      "复制文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-677",
+    "title": "Java中Files.createDirectory()方法作用是？",
+    "options": [
+      "创建目录",
+      "创建文件",
+      "删除目录",
+      "移动目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-678",
+    "title": "Java中FileVisitor的作用是？",
+    "options": [
+      "遍历文件树",
+      "遍历目录",
+      "遍历文件",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-679",
+    "title": "Java中WatchService的作用是？",
+    "options": [
+      "监听文件变化",
+      "监听目录变化",
+      "监听网络变化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-680",
+    "title": "Java中FileChannel的transferFrom()方法作用是？",
+    "options": [
+      "从其他通道传输数据",
+      "向其他通道传输数据",
+      "从文件读取数据",
+      "向文件写入数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-681",
+    "title": "Java中FileChannel的transferTo()方法作用是？",
+    "options": [
+      "向其他通道传输数据",
+      "从其他通道传输数据",
+      "从文件读取数据",
+      "向文件写入数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-682",
+    "title": "Java中FileChannel的map()方法作用是？",
+    "options": [
+      "内存映射文件",
+      "文件传输",
+      "文件锁定",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-683",
+    "title": "Java中MappedByteBuffer的作用是？",
+    "options": [
+      "内存映射缓冲区",
+      "直接缓冲区",
+      "堆缓冲区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-684",
+    "title": "Java中FileLock的作用是？",
+    "options": [
+      "文件锁",
+      "文件映射",
+      "文件传输",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-685",
+    "title": "Java中Socket的作用是？",
+    "options": [
+      "TCP客户端",
+      "TCP服务端",
+      "UDP客户端",
+      "UDP服务端"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-686",
+    "title": "Java中ServerSocket的作用是？",
+    "options": [
+      "TCP服务端",
+      "TCP客户端",
+      "UDP服务端",
+      "UDP客户端"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-687",
+    "title": "Java中DatagramSocket的作用是？",
+    "options": [
+      "UDP通信",
+      "TCP通信",
+      "HTTP通信",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-688",
+    "title": "Java中InetAddress的作用是？",
+    "options": [
+      "IP地址",
+      "URL",
+      "Socket",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-689",
+    "title": "Java中URL的作用是？",
+    "options": [
+      "统一资源定位符",
+      "IP地址",
+      "Socket",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-690",
+    "title": "Java中URLConnection的作用是？",
+    "options": [
+      "URL连接",
+      "Socket连接",
+      "HTTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-691",
+    "title": "Java中HttpURLConnection的作用是？",
+    "options": [
+      "HTTP连接",
+      "HTTPS连接",
+      "FTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-692",
+    "title": "Java中HttpClient的作用是？",
+    "options": [
+      "HTTP客户端",
+      "TCP客户端",
+      "UDP客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-693",
+    "title": "Java中HttpRequest的作用是？",
+    "options": [
+      "HTTP请求",
+      "HTTP响应",
+      "HTTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-694",
+    "title": "Java中HttpResponse的作用是？",
+    "options": [
+      "HTTP响应",
+      "HTTP请求",
+      "HTTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-695",
+    "title": "Java中序列化的作用是？",
+    "options": [
+      "将对象转为字节流",
+      "将字节流转为对象",
+      "加密对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-696",
+    "title": "Java中反序列化的作用是？",
+    "options": [
+      "将字节流转为对象",
+      "将对象转为字节流",
+      "解密对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-697",
+    "title": "Java中Serializable接口的作用是？",
+    "options": [
+      "标记可序列化",
+      "实现序列化",
+      "管理序列化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-698",
+    "title": "Java中Externalizable接口的作用是？",
+    "options": [
+      "自定义序列化",
+      "标记可序列化",
+      "管理序列化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-699",
+    "title": "Java中serialVersionUID的作用是？",
+    "options": [
+      "版本控制",
+      "加密",
+      "压缩",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-700",
+    "title": "Java中transient关键字的作用是？",
+    "options": [
+      "不序列化字段",
+      "序列化字段",
+      "压缩字段",
+      "加密字段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-701",
+    "title": "Java中序列化单例的解决方法是？",
+    "options": [
+      "readResolve()",
+      "writeReplace()",
+      "readObject()",
+      "writeObject()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-702",
+    "title": "Java中序列化的注意事项有？",
+    "options": [
+      "引用类型必须可序列化",
+      "基本类型自动序列化",
+      "静态变量不序列化",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-703",
+    "title": "Java中IO流的分类有？",
+    "options": [
+      "字节流和字符流",
+      "输入流和输出流",
+      "节点流和处理流",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-704",
+    "title": "Java中字节流的基类是？",
+    "options": [
+      "InputStream和OutputStream",
+      "Reader和Writer",
+      "File和Path",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-705",
+    "title": "Java中字符流的基类是？",
+    "options": [
+      "Reader和Writer",
+      "InputStream和OutputStream",
+      "File和Path",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-706",
+    "title": "Java中FileInputStream的作用是？",
+    "options": [
+      "读取文件字节",
+      "写入文件字节",
+      "读取文件字符",
+      "写入文件字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-707",
+    "title": "Java中FileOutputStream的作用是？",
+    "options": [
+      "写入文件字节",
+      "读取文件字节",
+      "读取文件字符",
+      "写入文件字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-708",
+    "title": "Java中FileReader的作用是？",
+    "options": [
+      "读取文件字符",
+      "写入文件字符",
+      "读取文件字节",
+      "写入文件字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-709",
+    "title": "Java中FileWriter的作用是？",
+    "options": [
+      "写入文件字符",
+      "读取文件字符",
+      "读取文件字节",
+      "写入文件字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-710",
+    "title": "Java中BufferedInputStream的作用是？",
+    "options": [
+      "缓冲字节输入",
+      "缓冲字节输出",
+      "缓冲字符输入",
+      "缓冲字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-711",
+    "title": "Java中BufferedOutputStream的作用是？",
+    "options": [
+      "缓冲字节输出",
+      "缓冲字节输入",
+      "缓冲字符输入",
+      "缓冲字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-712",
+    "title": "Java中BufferedReader的作用是？",
+    "options": [
+      "缓冲字符输入",
+      "缓冲字符输出",
+      "缓冲字节输入",
+      "缓冲字节输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-713",
+    "title": "Java中BufferedWriter的作用是？",
+    "options": [
+      "缓冲字符输出",
+      "缓冲字符输入",
+      "缓冲字节输入",
+      "缓冲字节输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-714",
+    "title": "Java中DataInputStream的作用是？",
+    "options": [
+      "读取基本类型",
+      "写入基本类型",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-715",
+    "title": "Java中DataOutputStream的作用是？",
+    "options": [
+      "写入基本类型",
+      "读取基本类型",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-716",
+    "title": "Java中ObjectInputStream的作用是？",
+    "options": [
+      "读取对象",
+      "写入对象",
+      "读取基本类型",
+      "写入基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-717",
+    "title": "Java中ObjectOutputStream的作用是？",
+    "options": [
+      "写入对象",
+      "读取对象",
+      "读取基本类型",
+      "写入基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-718",
+    "title": "Java中PrintStream的作用是？",
+    "options": [
+      "打印字节流",
+      "打印字符流",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-719",
+    "title": "Java中PrintWriter的作用是？",
+    "options": [
+      "打印字符流",
+      "打印字节流",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-720",
+    "title": "Java中InputStreamReader的作用是？",
+    "options": [
+      "字节流转字符流",
+      "字符流转字节流",
+      "缓冲流",
+      "数据流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-721",
+    "title": "Java中JVM的组成部分有？",
+    "options": [
+      "类加载器，运行时数据区，执行引擎",
+      "编译器，解释器",
+      "垃圾回收器，内存管理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-722",
+    "title": "Java中运行时数据区包括？",
+    "options": [
+      "堆，栈，方法区，程序计数器，本地方法栈",
+      "堆，栈，方法区",
+      "堆，栈",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-723",
+    "title": "Java中堆的特点是？",
+    "options": [
+      "线程共享，存储对象",
+      "线程私有，存储局部变量",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-724",
+    "title": "Java中栈的特点是？",
+    "options": [
+      "线程私有，存储局部变量",
+      "线程共享，存储对象",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-725",
+    "title": "Java中方法区的特点是？",
+    "options": [
+      "线程共享，存储类信息",
+      "线程私有，存储局部变量",
+      "存储对象",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-726",
+    "title": "Java中程序计数器的特点是？",
+    "options": [
+      "线程私有，记录执行位置",
+      "线程共享，存储对象",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-727",
+    "title": "Java中本地方法栈的特点是？",
+    "options": [
+      "线程私有，服务Native方法",
+      "线程共享，存储对象",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-728",
+    "title": "Java中堆的分区有？",
+    "options": [
+      "新生代，老年代",
+      "Eden，Survivor",
+      "Young，Old，Perm",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-729",
+    "title": "Java中新生代的分区有？",
+    "options": [
+      "Eden，Survivor0，Survivor1",
+      "Eden，Old",
+      "Young，Old",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-730",
+    "title": "Java中对象分配在哪个区域？",
+    "options": [
+      "堆",
+      "栈",
+      "方法区",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-731",
+    "title": "Java中局部变量分配在哪个区域？",
+    "options": [
+      "栈",
+      "堆",
+      "方法区",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-732",
+    "title": "Java中类信息分配在哪个区域？",
+    "options": [
+      "方法区",
+      "堆",
+      "栈",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-733",
+    "title": "Java中常量池分配在哪个区域？",
+    "options": [
+      "方法区",
+      "堆",
+      "栈",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-734",
+    "title": "Java中静态变量分配在哪个区域？",
+    "options": [
+      "方法区",
+      "堆",
+      "栈",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-735",
+    "title": "Java中JIT编译器的作用是？",
+    "options": [
+      "将热点代码编译为本地代码",
+      "解释执行字节码",
+      "加载类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-736",
+    "title": "Java中AOT编译器的作用是？",
+    "options": [
+      "提前编译为本地代码",
+      "运行时编译",
+      "解释执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-737",
+    "title": "Java中类加载的过程是？",
+    "options": [
+      "加载，验证，准备，解析，初始化",
+      "编译，解释，执行",
+      "创建，使用，销毁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-738",
+    "title": "Java中类加载器的类型有？",
+    "options": [
+      "Bootstrap, Extension, Application",
+      "System, Custom",
+      "Parent, Child",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-739",
+    "title": "Java中双亲委派模型是指？",
+    "options": [
+      "先委托父类加载器加载",
+      "先自己加载",
+      "子类加载器优先",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-740",
+    "title": "Java中双亲委派模型的好处是？",
+    "options": [
+      "保证核心类安全",
+      "提高加载速度",
+      "减少内存占用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-741",
+    "title": "Java中如何打破双亲委派模型？",
+    "options": [
+      "自定义类加载器重写loadClass",
+      "使用反射",
+      "使用代理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-742",
+    "title": "Java中Tomcat的类加载器结构是？",
+    "options": [
+      "每个应用独立类加载器",
+      "使用双亲委派",
+      "使用系统类加载器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-743",
+    "title": "Java中GC的作用是？",
+    "options": [
+      "回收不再使用的对象",
+      "创建对象",
+      "加载类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-744",
+    "title": "Java中GC的算法有？",
+    "options": [
+      "标记-清除，复制，标记-整理",
+      "引用计数",
+      "分代收集",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-745",
+    "title": "Java中标记-清除算法的缺点是？",
+    "options": [
+      "内存碎片",
+      "效率低",
+      "移动对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-746",
+    "title": "Java中复制算法的缺点是？",
+    "options": [
+      "内存利用率低",
+      "内存碎片",
+      "效率低",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-747",
+    "title": "Java中标记-整理算法的优点是？",
+    "options": [
+      "无内存碎片",
+      "内存利用率高",
+      "效率高",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-748",
+    "title": "Java中新生代使用什么算法？",
+    "options": [
+      "复制算法",
+      "标记-清除",
+      "标记-整理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-749",
+    "title": "Java中老年代使用什么算法？",
+    "options": [
+      "标记-整理",
+      "复制算法",
+      "标记-清除",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-750",
+    "title": "Java中Minor GC是指？",
+    "options": [
+      "新生代GC",
+      "老年代GC",
+      "全GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-751",
+    "title": "Java中Major GC是指？",
+    "options": [
+      "老年代GC",
+      "新生代GC",
+      "全GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-752",
+    "title": "Java中Full GC是指？",
+    "options": [
+      "全GC",
+      "新生代GC",
+      "老年代GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-753",
+    "title": "Java中对象何时进入老年代？",
+    "options": [
+      "年龄达到阈值，大对象，Survivor空间不足",
+      "刚创建",
+      "Minor GC后",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-754",
+    "title": "Java中对象年龄如何增加？",
+    "options": [
+      "每经历一次Minor GC",
+      "每经历一次Major GC",
+      "每经历一次Full GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-755",
+    "title": "Java中什么情况触发Full GC？",
+    "options": [
+      "老年代不足，方法区不足，System.gc()",
+      "Minor GC",
+      "对象分配",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-756",
+    "title": "Java中垃圾收集器的类型有？",
+    "options": [
+      "Serial, Parallel, CMS, G1, ZGC",
+      "Young, Old",
+      "Minor, Major",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-757",
+    "title": "Java中Serial收集器的特点是？",
+    "options": [
+      "单线程，STW",
+      "多线程",
+      "并发",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-758",
+    "title": "Java中Parallel收集器的特点是？",
+    "options": [
+      "多线程，吞吐量优先",
+      "单线程",
+      "低延迟",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-759",
+    "title": "Java中CMS收集器的特点是？",
+    "options": [
+      "低延迟",
+      "吞吐量优先",
+      "单线程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-760",
+    "title": "Java中G1收集器的特点是？",
+    "options": [
+      "分区收集，可预测停顿",
+      "单线程",
+      "吞吐量优先",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-761",
+    "title": "Java中ZGC收集器的特点是？",
+    "options": [
+      "超低延迟",
+      "吞吐量优先",
+      "单线程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-762",
+    "title": "Java中STW是指？",
+    "options": [
+      "Stop The World",
+      "Start The World",
+      "Save The World",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-763",
+    "title": "Java中如何判断对象可回收？",
+    "options": [
+      "可达性分析",
+      "引用计数",
+      "标记-清除",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-764",
+    "title": "Java中GC Roots包括？",
+    "options": [
+      "栈帧引用，静态变量引用，常量引用，锁持有对象",
+      "所有对象",
+      "所有引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-765",
+    "title": "Java中引用的类型有？",
+    "options": [
+      "强引用，软引用，弱引用，虚引用",
+      "强引用，弱引用",
+      "软引用，虚引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-766",
+    "title": "Java中强引用的特点是？",
+    "options": [
+      "不会被GC",
+      "内存不足时被GC",
+      "下次GC时被GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-767",
+    "title": "Java中软引用的特点是？",
+    "options": [
+      "内存不足时被GC",
+      "不会被GC",
+      "下次GC时被GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-768",
+    "title": "Java中弱引用的特点是？",
+    "options": [
+      "下次GC时被GC",
+      "不会被GC",
+      "内存不足时被GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-769",
+    "title": "Java中虚引用的特点是？",
+    "options": [
+      "随时被GC，用于跟踪GC",
+      "不会被GC",
+      "内存不足时被GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-770",
+    "title": "Java中ReferenceQueue的作用是？",
+    "options": [
+      "保存被回收的引用对象",
+      "保存强引用",
+      "保存软引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-771",
+    "title": "Java中内存泄漏是指？",
+    "options": [
+      "对象无法被回收",
+      "内存不足",
+      "内存溢出",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-772",
+    "title": "Java中内存溢出是指？",
+    "options": [
+      "没有足够内存分配",
+      "对象无法被回收",
+      "内存泄漏",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-773",
+    "title": "Java中如何排查内存泄漏？",
+    "options": [
+      "JMap, JStack, MAT",
+      "JConsole",
+      "JStat",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-774",
+    "title": "Java中如何排查CPU过高？",
+    "options": [
+      "top, JStack",
+      "JMap",
+      "JStat",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-775",
+    "title": "Java中JMap的作用是？",
+    "options": [
+      "查看堆信息",
+      "查看线程信息",
+      "查看类信息",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-776",
+    "title": "Java中JStack的作用是？",
+    "options": [
+      "查看线程信息",
+      "查看堆信息",
+      "查看类信息",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-777",
+    "title": "Java中JStat的作用是？",
+    "options": [
+      "查看GC统计",
+      "查看堆信息",
+      "查看线程信息",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-778",
+    "title": "Java中JInfo的作用是？",
+    "options": [
+      "查看JVM参数",
+      "查看堆信息",
+      "查看线程信息",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-779",
+    "title": "Java中JConsole的作用是？",
+    "options": [
+      "可视化监控",
+      "命令行监控",
+      "日志分析",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-780",
+    "title": "Java中VisualVM的作用是？",
+    "options": [
+      "可视化监控",
+      "命令行监控",
+      "日志分析",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-781",
+    "title": "Java中JVM参数-Xms的作用是？",
+    "options": [
+      "初始堆大小",
+      "最大堆大小",
+      "栈大小",
+      "方法区大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-782",
+    "title": "Java中JVM参数-Xmx的作用是？",
+    "options": [
+      "最大堆大小",
+      "初始堆大小",
+      "栈大小",
+      "方法区大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-783",
+    "title": "Java中JVM参数-Xss的作用是？",
+    "options": [
+      "栈大小",
+      "初始堆大小",
+      "最大堆大小",
+      "方法区大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-784",
+    "title": "Java中JVM参数-XX:MetaspaceSize的作用是？",
+    "options": [
+      "元空间大小",
+      "堆大小",
+      "栈大小",
+      "方法区大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-785",
+    "title": "Java中JVM参数-XX:NewRatio的作用是？",
+    "options": [
+      "新生代与老年代比例",
+      "Eden与Survivor比例",
+      "堆与方法区比例",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-786",
+    "title": "Java中JVM参数-XX:SurvivorRatio的作用是？",
+    "options": [
+      "Eden与Survivor比例",
+      "新生代与老年代比例",
+      "堆与方法区比例",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-787",
+    "title": "Java中JVM参数-XX:MaxTenuringThreshold的作用是？",
+    "options": [
+      "对象晋升老年代年龄",
+      "新生代大小",
+      "Survivor大小",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-788",
+    "title": "Java中JVM参数-XX:+UseG1GC的作用是？",
+    "options": [
+      "使用G1收集器",
+      "使用CMS收集器",
+      "使用Parallel收集器",
+      "使用Serial收集器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-789",
+    "title": "Java中JVM参数-XX:+PrintGCDetails的作用是？",
+    "options": [
+      "打印GC详情",
+      "打印GC统计",
+      "打印GC日志",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-790",
+    "title": "Java中JVM参数-XX:+HeapDumpOnOutOfMemoryError的作用是？",
+    "options": [
+      "OOM时导出堆",
+      "OOM时重启",
+      "OOM时打印日志",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-791",
+    "title": "Java中方法区的实现是？",
+    "options": [
+      "永久代或元空间",
+      "堆",
+      "栈",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-792",
+    "title": "Java中永久代和元空间的区别是？",
+    "options": [
+      "元空间使用本地内存，永久代使用堆内存",
+      "元空间使用堆内存，永久代使用本地内存",
+      "无区别",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-793",
+    "title": "Java中字符串常量池的位置是？",
+    "options": [
+      "堆",
+      "方法区",
+      "栈",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-794",
+    "title": "Java中Integer缓存池的范围是？",
+    "options": [
+      "-128到127",
+      "0到255",
+      "-32768到32767",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-795",
+    "title": "Java中JVM调优的目标是？",
+    "options": [
+      "降低GC停顿，提高吞吐量",
+      "增加内存使用",
+      "增加GC频率",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-796",
+    "title": "Java中如何选择垃圾收集器？",
+    "options": [
+      "根据应用场景",
+      "总是选G1",
+      "总是选CMS",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-797",
+    "title": "Java中如何避免频繁Full GC？",
+    "options": [
+      "增大老年代，避免内存泄漏",
+      "增大新生代",
+      "减少对象创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-798",
+    "title": "Java中如何处理OOM？",
+    "options": [
+      "增加内存，排查泄漏，优化代码",
+      "重启应用",
+      "忽略",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-799",
+    "title": "Java中JIT的优化技术有？",
+    "options": [
+      "逃逸分析，内联，循环优化",
+      "解释执行",
+      "字节码验证",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-800",
+    "title": "Java中逃逸分析的作用是？",
+    "options": [
+      "对象分配优化",
+      "内存泄漏检测",
+      "GC优化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-801",
+    "title": "Java中栈上分配是指？",
+    "options": [
+      "对象分配在栈上",
+      "对象分配在堆上",
+      "对象分配在方法区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-802",
+    "title": "Java中标量替换是指？",
+    "options": [
+      "将对象拆解为基本类型",
+      "替换对象引用",
+      "替换方法调用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-803",
+    "title": "Java中锁优化技术有？",
+    "options": [
+      "偏向锁，轻量级锁，自旋锁，锁消除",
+      "重量级锁",
+      "乐观锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-804",
+    "title": "Java中锁消除是指？",
+    "options": [
+      "JIT消除不可能共享的锁",
+      "手动消除锁",
+      "锁降级",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-805",
+    "title": "Java中锁粗化是指？",
+    "options": [
+      "将多次锁操作合并为一次",
+      "将一次锁操作拆分为多次",
+      "锁升级",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-806",
+    "title": "Java中自适应自旋锁是指？",
+    "options": [
+      "根据情况调整自旋次数",
+      "固定自旋次数",
+      "不自旋",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-807",
+    "title": "Java中JVM的错误有？",
+    "options": [
+      "StackOverflowError, OutOfMemoryError",
+      "NullPointerException",
+      "ClassCastException",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-808",
+    "title": "Java中StackOverflowError的原因是？",
+    "options": [
+      "递归过深或栈太小",
+      "堆内存不足",
+      "方法区不足",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-809",
+    "title": "Java中OOM的类型有？",
+    "options": [
+      "Java heap space, Metaspace, GC overhead limit",
+      "StackOverflow",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-810",
+    "title": "Java中GC overhead limit exceeded是指？",
+    "options": [
+      "GC花费时间过多",
+      "内存不足",
+      "GC次数过多",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-811",
+    "title": "Java中Direct buffer memory是指？",
+    "options": [
+      "直接内存不足",
+      "堆内存不足",
+      "方法区不足",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-812",
+    "title": "Java中unable to create new native thread是指？",
+    "options": [
+      "线程数过多",
+      "内存不足",
+      "CPU不足",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-813",
+    "title": "Java中如何监控JVM？",
+    "options": [
+      "JMX, JConsole, VisualVM, Prometheus",
+      "JMap",
+      "JStack",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-814",
+    "title": "Java中如何排查死锁？",
+    "options": [
+      "JStack, JConsole",
+      "JMap",
+      "JStat",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-815",
+    "title": "Java中如何排查内存泄漏？",
+    "options": [
+      "MAT, JMap, JConsole",
+      "JStack",
+      "JStat",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-816",
+    "title": "Java中如何排查CPU过高？",
+    "options": [
+      "top, JStack, JConsole",
+      "JMap",
+      "JStat",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-817",
+    "title": "Java中如何排查类加载问题？",
+    "options": [
+      "-verbose:class, JConsole",
+      "JMap",
+      "JStack",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-818",
+    "title": "Java中如何排查线程问题？",
+    "options": [
+      "JStack, JConsole, VisualVM",
+      "JMap",
+      "JStat",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-819",
+    "title": "Java中如何排查GC问题？",
+    "options": [
+      "GC日志, JStat, JConsole",
+      "JMap",
+      "JStack",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-820",
+    "title": "Java中如何排查性能问题？",
+    "options": [
+      "JFR, JMC, Arthas",
+      "JMap",
+      "JStack",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-821",
+    "title": "Java中JVM的组成部分有？",
+    "options": [
+      "类加载器，运行时数据区，执行引擎",
+      "编译器，解释器",
+      "垃圾回收器，内存管理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-822",
+    "title": "Java中运行时数据区包括？",
+    "options": [
+      "堆，栈，方法区，程序计数器，本地方法栈",
+      "堆，栈，方法区",
+      "堆，栈",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-823",
+    "title": "Java中堆的特点是？",
+    "options": [
+      "线程共享，存储对象",
+      "线程私有，存储局部变量",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-824",
+    "title": "Java中栈的特点是？",
+    "options": [
+      "线程私有，存储局部变量",
+      "线程共享，存储对象",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-825",
+    "title": "Java中方法区的特点是？",
+    "options": [
+      "线程共享，存储类信息",
+      "线程私有，存储局部变量",
+      "存储对象",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-826",
+    "title": "Java中程序计数器的特点是？",
+    "options": [
+      "线程私有，记录执行位置",
+      "线程共享，存储对象",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-827",
+    "title": "Java中本地方法栈的特点是？",
+    "options": [
+      "线程私有，服务Native方法",
+      "线程共享，存储对象",
+      "存储类信息",
+      "存储常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-828",
+    "title": "Java中堆的分区有？",
+    "options": [
+      "新生代，老年代",
+      "Eden，Survivor",
+      "Young，Old，Perm",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-829",
+    "title": "Java中新生代的分区有？",
+    "options": [
+      "Eden，Survivor0，Survivor1",
+      "Eden，Old",
+      "Young，Old",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-830",
+    "title": "Java中对象分配在哪个区域？",
+    "options": [
+      "堆",
+      "栈",
+      "方法区",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-831",
+    "title": "Java中局部变量分配在哪个区域？",
+    "options": [
+      "栈",
+      "堆",
+      "方法区",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-832",
+    "title": "Java中类信息分配在哪个区域？",
+    "options": [
+      "方法区",
+      "堆",
+      "栈",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-833",
+    "title": "Java中常量池分配在哪个区域？",
+    "options": [
+      "方法区",
+      "堆",
+      "栈",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-834",
+    "title": "Java中静态变量分配在哪个区域？",
+    "options": [
+      "方法区",
+      "堆",
+      "栈",
+      "程序计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-835",
+    "title": "Java中JIT编译器的作用是？",
+    "options": [
+      "将热点代码编译为本地代码",
+      "解释执行字节码",
+      "加载类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-836",
+    "title": "Java中AOT编译器的作用是？",
+    "options": [
+      "提前编译为本地代码",
+      "运行时编译",
+      "解释执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-837",
+    "title": "Java中类加载的过程是？",
+    "options": [
+      "加载，验证，准备，解析，初始化",
+      "编译，解释，执行",
+      "创建，使用，销毁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-838",
+    "title": "Java中类加载器的类型有？",
+    "options": [
+      "Bootstrap, Extension, Application",
+      "System, Custom",
+      "Parent, Child",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-839",
+    "title": "Java中双亲委派模型是指？",
+    "options": [
+      "先委托父类加载器加载",
+      "先自己加载",
+      "子类加载器优先",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-840",
+    "title": "Java中双亲委派模型的好处是？",
+    "options": [
+      "保证核心类安全",
+      "提高加载速度",
+      "减少内存占用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-841",
+    "title": "Java 8的新特性有？",
+    "options": [
+      "Lambda, Stream, Optional, 新日期API",
+      "泛型, 注解",
+      "枚举, 静态导入",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-842",
+    "title": "Java 8的Lambda表达式作用是？",
+    "options": [
+      "简化函数式接口实现",
+      "提高性能",
+      "替代匿名类",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-843",
+    "title": "Java 8的函数式接口有？",
+    "options": [
+      "Predicate, Function, Consumer, Supplier",
+      "Runnable, Callable",
+      "Comparable, Comparator",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-844",
+    "title": "Java 8的Predicate接口的作用是？",
+    "options": [
+      "判断",
+      "转换",
+      "消费",
+      "提供"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-845",
+    "title": "Java 8的Function接口的作用是？",
+    "options": [
+      "转换",
+      "判断",
+      "消费",
+      "提供"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-846",
+    "title": "Java 8的Consumer接口的作用是？",
+    "options": [
+      "消费",
+      "判断",
+      "转换",
+      "提供"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-847",
+    "title": "Java 8的Supplier接口的作用是？",
+    "options": [
+      "提供",
+      "判断",
+      "转换",
+      "消费"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-848",
+    "title": "Java 8的Optional类的作用是？",
+    "options": [
+      "避免NullPointerException",
+      "替代null",
+      "包装对象",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-849",
+    "title": "Java 8的Optional.of()方法作用是？",
+    "options": [
+      "创建Optional，不允许null",
+      "创建Optional，允许null",
+      "创建空Optional",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-850",
+    "title": "Java 8的Optional.ofNullable()方法作用是？",
+    "options": [
+      "创建Optional，允许null",
+      "创建Optional，不允许null",
+      "创建空Optional",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-851",
+    "title": "Java 8的Optional.empty()方法作用是？",
+    "options": [
+      "创建空Optional",
+      "创建Optional，允许null",
+      "创建Optional，不允许null",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-852",
+    "title": "Java 8的Optional.isPresent()方法作用是？",
+    "options": [
+      "判断是否有值",
+      "获取值",
+      "设置值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-853",
+    "title": "Java 8的Optional.get()方法作用是？",
+    "options": [
+      "获取值",
+      "判断是否有值",
+      "设置值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-854",
+    "title": "Java 8的Optional.orElse()方法作用是？",
+    "options": [
+      "有值返回值，无值返回默认值",
+      "获取值",
+      "判断是否有值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-855",
+    "title": "Java 8的Optional.orElseGet()方法作用是？",
+    "options": [
+      "有值返回值，无值返回Supplier",
+      "获取值",
+      "判断是否有值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-856",
+    "title": "Java 8的Optional.orElseThrow()方法作用是？",
+    "options": [
+      "有值返回值，无值抛异常",
+      "获取值",
+      "判断是否有值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-857",
+    "title": "Java 8的Optional.ifPresent()方法作用是？",
+    "options": [
+      "有值时执行Consumer",
+      "获取值",
+      "判断是否有值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-858",
+    "title": "Java 8的Optional.filter()方法作用是？",
+    "options": [
+      "过滤值",
+      "转换值",
+      "消费值",
+      "提供值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-859",
+    "title": "Java 8的Optional.map()方法作用是？",
+    "options": [
+      "转换值",
+      "过滤值",
+      "消费值",
+      "提供值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-860",
+    "title": "Java 8的Optional.flatMap()方法作用是？",
+    "options": [
+      "扁平转换值",
+      "过滤值",
+      "消费值",
+      "提供值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-861",
+    "title": "Java 8的新日期API的类有？",
+    "options": [
+      "LocalDate, LocalTime, LocalDateTime",
+      "Date, Calendar",
+      "SimpleDateFormat",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-862",
+    "title": "Java 8的LocalDate类的作用是？",
+    "options": [
+      "表示日期",
+      "表示时间",
+      "表示日期时间",
+      "表示时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-863",
+    "title": "Java 8的LocalTime类的作用是？",
+    "options": [
+      "表示时间",
+      "表示日期",
+      "表示日期时间",
+      "表示时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-864",
+    "title": "Java 8的LocalDateTime类的作用是？",
+    "options": [
+      "表示日期时间",
+      "表示日期",
+      "表示时间",
+      "表示时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-865",
+    "title": "Java 8的Instant类的作用是？",
+    "options": [
+      "表示时间戳",
+      "表示日期",
+      "表示时间",
+      "表示时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-866",
+    "title": "Java 8的Duration类的作用是？",
+    "options": [
+      "表示时间间隔",
+      "表示日期间隔",
+      "表示时区",
+      "表示格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-867",
+    "title": "Java 8的Period类的作用是？",
+    "options": [
+      "表示日期间隔",
+      "表示时间间隔",
+      "表示时区",
+      "表示格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-868",
+    "title": "Java 8的ZoneId类的作用是？",
+    "options": [
+      "表示时区",
+      "表示日期",
+      "表示时间",
+      "表示格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-869",
+    "title": "Java 8的ZonedDateTime类的作用是？",
+    "options": [
+      "表示带时区的日期时间",
+      "表示日期",
+      "表示时间",
+      "表示时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-870",
+    "title": "Java 8的DateTimeFormatter类的作用是？",
+    "options": [
+      "格式化日期",
+      "表示日期",
+      "表示时间",
+      "表示时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-871",
+    "title": "Java 8的接口默认方法作用是？",
+    "options": [
+      "向后兼容",
+      "多重继承",
+      "简化代码",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-872",
+    "title": "Java 8的接口静态方法作用是？",
+    "options": [
+      "提供工具方法",
+      "多重继承",
+      "向后兼容",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-873",
+    "title": "Java 8的重复注解作用是？",
+    "options": [
+      "允许重复使用注解",
+      "简化注解",
+      "类型注解",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-874",
+    "title": "Java 8的类型注解作用是？",
+    "options": [
+      "在类型上使用注解",
+      "重复注解",
+      "简化注解",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-875",
+    "title": "Java 8的CompletableFuture作用是？",
+    "options": [
+      "异步编程",
+      "同步编程",
+      "阻塞编程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-876",
+    "title": "Java 8的StampedLock作用是？",
+    "options": [
+      "乐观读锁",
+      "读写锁",
+      "可重入锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-877",
+    "title": "Java 8的LongAdder作用是？",
+    "options": [
+      "高并发累加",
+      "原子操作",
+      "线程同步",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-878",
+    "title": "Java 8的Parallel Stream作用是？",
+    "options": [
+      "并行流处理",
+      "串行流处理",
+      "异步处理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-879",
+    "title": "Java 8的StringJoiner作用是？",
+    "options": [
+      "拼接字符串",
+      "分割字符串",
+      "替换字符串",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-880",
+    "title": "Java 8的Base64作用是？",
+    "options": [
+      "Base64编解码",
+      "加密解密",
+      "压缩解压",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-881",
+    "title": "Java 9的新特性有？",
+    "options": [
+      "模块化, JShell, 多版本JAR",
+      "Lambda, Stream",
+      "泛型, 注解",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-882",
+    "title": "Java 9的模块化作用是？",
+    "options": [
+      "封装和依赖管理",
+      "提高性能",
+      "简化代码",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-883",
+    "title": "Java 9的JShell作用是？",
+    "options": [
+      "交互式编程",
+      "编译代码",
+      "运行程序",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-884",
+    "title": "Java 9的多版本JAR作用是？",
+    "options": [
+      "支持多版本类",
+      "压缩JAR",
+      "加密JAR",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-885",
+    "title": "Java 9的接口私有方法作用是？",
+    "options": [
+      "复用接口内部代码",
+      "多重继承",
+      "向后兼容",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-886",
+    "title": "Java 9的ProcessHandle作用是？",
+    "options": [
+      "管理进程",
+      "管理线程",
+      "管理内存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-887",
+    "title": "Java 9的VarHandle作用是？",
+    "options": [
+      "原子操作",
+      "反射操作",
+      "序列化操作",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-888",
+    "title": "Java 9的Collection工厂方法作用是？",
+    "options": [
+      "创建不可变集合",
+      "创建可变集合",
+      "创建同步集合",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-889",
+    "title": "Java 9的Optional改进有？",
+    "options": [
+      "ifPresentOrElse, or, stream",
+      "of, ofNullable",
+      "get, isPresent",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-890",
+    "title": "Java 9的Stream改进有？",
+    "options": [
+      "takeWhile, dropWhile, ofNullable",
+      "filter, map",
+      "collect, reduce",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-891",
+    "title": "Java 10的新特性有？",
+    "options": [
+      "局部变量类型推断, G1默认",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-892",
+    "title": "Java 10的局部变量类型推断关键字是？",
+    "options": [
+      "var",
+      "let",
+      "def",
+      "auto"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-893",
+    "title": "Java 10的var可以用在哪些地方？",
+    "options": [
+      "局部变量，for循环",
+      "成员变量",
+      "方法参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-894",
+    "title": "Java 10的var不能用在哪些地方？",
+    "options": [
+      "成员变量，方法参数，返回类型",
+      "局部变量",
+      "for循环",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-895",
+    "title": "Java 10的G1成为默认垃圾收集器吗？",
+    "options": [
+      "是",
+      "否",
+      "取决于配置",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-896",
+    "title": "Java 10的Application CDS作用是？",
+    "options": [
+      "类数据共享",
+      "内存共享",
+      "线程共享",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-897",
+    "title": "Java 10的ThreadLocalHandshakes作用是？",
+    "options": [
+      "线程局部握手",
+      "线程同步",
+      "线程通信",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-898",
+    "title": "Java 11的新特性有？",
+    "options": [
+      "HTTP Client, String新方法, Flight Recorder",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-899",
+    "title": "Java 11的HTTP Client是？",
+    "options": [
+      "标准化HttpClient",
+      "HttpURLConnection",
+      "Apache HttpClient",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-900",
+    "title": "Java 11的String新方法有？",
+    "options": [
+      "isBlank, lines, strip, repeat",
+      "trim, substring",
+      "split, replace",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-901",
+    "title": "Java 11的Flight Recorder作用是？",
+    "options": [
+      "性能分析",
+      "日志记录",
+      "网络监控",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-902",
+    "title": "Java 11的Lambda参数var作用是？",
+    "options": [
+      "允许注解修饰Lambda参数",
+      "类型推断",
+      "性能优化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-903",
+    "title": "Java 11的嵌套访问控制作用是？",
+    "options": [
+      "允许嵌套类访问私有成员",
+      "封装性",
+      "多态性",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-904",
+    "title": "Java 11的Epsilon GC作用是？",
+    "options": [
+      "无操作垃圾收集器",
+      "低延迟",
+      "高吞吐",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-905",
+    "title": "Java 11的ZGC实验性引入吗？",
+    "options": [
+      "是",
+      "否",
+      "已正式",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-906",
+    "title": "Java 12的新特性有？",
+    "options": [
+      "Switch表达式, Compact Number",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-907",
+    "title": "Java 12的Switch表达式特点？",
+    "options": [
+      "使用箭头语法，可返回值",
+      "传统语法",
+      "无变化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-908",
+    "title": "Java 12的Compact Number作用是？",
+    "options": [
+      "格式化紧凑数字",
+      "格式化日期",
+      "格式化货币",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-909",
+    "title": "Java 12的JVM改进有？",
+    "options": [
+      "微基准套件, 默认CDS",
+      "G1改进",
+      "ZGC改进",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-910",
+    "title": "Java 13的新特性有？",
+    "options": [
+      "文本块, Switch表达式改进",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-911",
+    "title": "Java 13的文本块特点？",
+    "options": [
+      "多行字符串",
+      "单行字符串",
+      "格式化字符串",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-912",
+    "title": "Java 13的文本块使用什么符号？",
+    "options": [
+      "\"\"\"",
+      "'''",
+      "```",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-913",
+    "title": "Java 13的Switch表达式改进？",
+    "options": [
+      "yield返回值",
+      "return返回值",
+      "break返回值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-914",
+    "title": "Java 13的ZGC改进？",
+    "options": [
+      "归还未使用内存",
+      "分代收集",
+      "并发整理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-915",
+    "title": "Java 14的新特性有？",
+    "options": [
+      "Switch表达式正式, Records预览, NPE改进",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-916",
+    "title": "Java 14的Switch表达式正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-917",
+    "title": "Java 14的Records预览作用？",
+    "options": [
+      "简化数据类",
+      "简化枚举",
+      "简化接口",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-918",
+    "title": "Java 14的NPE改进？",
+    "options": [
+      "详细异常信息",
+      "忽略异常",
+      "静默异常",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-919",
+    "title": "Java 14的instanceof模式匹配预览？",
+    "options": [
+      "类型判断和绑定",
+      "类型转换",
+      "类型检查",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-920",
+    "title": "Java 15的新特性有？",
+    "options": [
+      "Text Blocks正式, ZGC正式, Sealed Classes预览",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-921",
+    "title": "Java 15的Text Blocks正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-922",
+    "title": "Java 15的ZGC正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-923",
+    "title": "Java 15的Sealed Classes预览作用？",
+    "options": [
+      "限制继承",
+      "限制实例化",
+      "限制访问",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-924",
+    "title": "Java 15的Hidden Classes作用？",
+    "options": [
+      "框架内部使用",
+      "公共API",
+      "简化代码",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-925",
+    "title": "Java 16的新特性有？",
+    "options": [
+      "Records正式, instanceof模式匹配正式, Vector API孵化",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-926",
+    "title": "Java 16的Records正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-927",
+    "title": "Java 16的instanceof模式匹配正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-928",
+    "title": "Java 16的Vector API孵化作用？",
+    "options": [
+      "SIMD计算",
+      "网络计算",
+      "并发计算",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-929",
+    "title": "Java 16的Unix-Domain Socket作用？",
+    "options": [
+      "本地进程通信",
+      "网络通信",
+      "远程通信",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-930",
+    "title": "Java 17的新特性有？",
+    "options": [
+      "Sealed Classes正式, Pattern Matching for switch预览",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-931",
+    "title": "Java 17的Sealed Classes正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-932",
+    "title": "Java 17是LTS版本吗？",
+    "options": [
+      "是",
+      "否",
+      "不确定",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-933",
+    "title": "Java 17的Pattern Matching for switch预览作用？",
+    "options": [
+      "switch模式匹配",
+      "if模式匹配",
+      "for模式匹配",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-934",
+    "title": "Java 17的Foreign Function & Memory API孵化作用？",
+    "options": [
+      "调用本地代码",
+      "调用Java代码",
+      "调用网络代码",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-935",
+    "title": "Java 17的Context-Specific Deserialization作用？",
+    "options": [
+      "反序列化过滤",
+      "序列化加密",
+      "反序列化压缩",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-936",
+    "title": "Java 8的新特性有？",
+    "options": [
+      "Lambda, Stream, Optional, 新日期API",
+      "泛型, 注解",
+      "枚举, 静态导入",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-937",
+    "title": "Java 8的Lambda表达式作用是？",
+    "options": [
+      "简化函数式接口实现",
+      "提高性能",
+      "替代匿名类",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-938",
+    "title": "Java 8的函数式接口有？",
+    "options": [
+      "Predicate, Function, Consumer, Supplier",
+      "Runnable, Callable",
+      "Comparable, Comparator",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-939",
+    "title": "Java 8的Predicate接口的作用是？",
+    "options": [
+      "判断",
+      "转换",
+      "消费",
+      "提供"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-940",
+    "title": "Java 8的Function接口的作用是？",
+    "options": [
+      "转换",
+      "判断",
+      "消费",
+      "提供"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-941",
+    "title": "Java中单例模式的实现方式有？",
+    "options": [
+      "饿汉, 懒汉, 双重检查, 枚举",
+      "工厂, 抽象工厂",
+      "建造者, 原型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-942",
+    "title": "Java中饿汉单例的特点是？",
+    "options": [
+      "线程安全，类加载时创建",
+      "延迟加载",
+      "非线程安全",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-943",
+    "title": "Java中懒汉单例的特点是？",
+    "options": [
+      "延迟加载，非线程安全",
+      "线程安全",
+      "类加载时创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-944",
+    "title": "Java中双重检查单例的特点是？",
+    "options": [
+      "延迟加载，线程安全",
+      "非线程安全",
+      "类加载时创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-945",
+    "title": "Java中双重检查单例需要volatile吗？",
+    "options": [
+      "需要，防止指令重排序",
+      "不需要",
+      "可选",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-946",
+    "title": "Java中静态内部类单例的特点是？",
+    "options": [
+      "延迟加载，线程安全",
+      "非线程安全",
+      "类加载时创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-947",
+    "title": "Java中枚举单例的特点是？",
+    "options": [
+      "最佳实现，防止反射和序列化破坏",
+      "非线程安全",
+      "延迟加载",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-948",
+    "title": "Java中工厂模式的作用是？",
+    "options": [
+      "创建对象",
+      "结构对象",
+      "行为对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-949",
+    "title": "Java中简单工厂的特点是？",
+    "options": [
+      "一个工厂创建所有产品",
+      "一个工厂创建一种产品",
+      "多个工厂创建多种产品",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-950",
+    "title": "Java中工厂方法的特点是？",
+    "options": [
+      "一个工厂创建一种产品",
+      "一个工厂创建所有产品",
+      "多个工厂创建多种产品",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-951",
+    "title": "Java中抽象工厂的特点是？",
+    "options": [
+      "创建产品族",
+      "创建单一产品",
+      "创建所有产品",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-952",
+    "title": "Java中建造者模式的作用是？",
+    "options": [
+      "构建复杂对象",
+      "创建简单对象",
+      "克隆对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-953",
+    "title": "Java中建造者模式的特点是？",
+    "options": [
+      "分离构建和表示",
+      "统一构建和表示",
+      "简化构建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-954",
+    "title": "Java中原型模式的作用是？",
+    "options": [
+      "克隆对象",
+      "创建对象",
+      "构建对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-955",
+    "title": "Java中原型模式的实现是？",
+    "options": [
+      "实现Cloneable接口",
+      "实现Serializable接口",
+      "实现Comparable接口",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-956",
+    "title": "Java中深克隆和浅克隆的区别？",
+    "options": [
+      "深克隆复制引用对象，浅克隆不复制",
+      "浅克隆复制引用对象，深克隆不复制",
+      "无区别",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-957",
+    "title": "Java中适配器模式的作用是？",
+    "options": [
+      "接口转换",
+      "接口创建",
+      "接口隔离",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-958",
+    "title": "Java中类适配器的实现是？",
+    "options": [
+      "继承被适配类，实现目标接口",
+      "组合被适配类，实现目标接口",
+      "实现被适配接口，继承目标类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-959",
+    "title": "Java中对象适配器的实现是？",
+    "options": [
+      "组合被适配类，实现目标接口",
+      "继承被适配类，实现目标接口",
+      "实现被适配接口，继承目标类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-960",
+    "title": "Java中桥接模式的作用是？",
+    "options": [
+      "分离抽象和实现",
+      "接口转换",
+      "接口创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-961",
+    "title": "Java中组合模式的作用是？",
+    "options": [
+      "树形结构",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-962",
+    "title": "Java中装饰器模式的作用是？",
+    "options": [
+      "动态添加功能",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-963",
+    "title": "Java中装饰器和继承的区别？",
+    "options": [
+      "装饰器更灵活",
+      "继承更灵活",
+      "无区别",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-964",
+    "title": "Java中外观模式的作用是？",
+    "options": [
+      "简化接口",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-965",
+    "title": "Java中享元模式的作用是？",
+    "options": [
+      "共享对象",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-966",
+    "title": "Java中代理模式的作用是？",
+    "options": [
+      "控制访问",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-967",
+    "title": "Java中静态代理的特点是？",
+    "options": [
+      "代理类在编译时确定",
+      "代理类在运行时生成",
+      "无代理类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-968",
+    "title": "Java中动态代理的特点是？",
+    "options": [
+      "代理类在运行时生成",
+      "代理类在编译时确定",
+      "无代理类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-969",
+    "title": "Java中JDK动态代理的特点是？",
+    "options": [
+      "基于接口",
+      "基于类",
+      "基于继承",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-970",
+    "title": "Java中CGLIB动态代理的特点是？",
+    "options": [
+      "基于类",
+      "基于接口",
+      "基于继承",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-971",
+    "title": "Java中责任链模式的作用是？",
+    "options": [
+      "处理链式请求",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-972",
+    "title": "Java中命令模式的作用是？",
+    "options": [
+      "封装请求为对象",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-973",
+    "title": "Java中解释器模式的作用是？",
+    "options": [
+      "定义语言文法",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-974",
+    "title": "Java中迭代器模式的作用是？",
+    "options": [
+      "顺序访问集合",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-975",
+    "title": "Java中介者模式的作用是？",
+    "options": [
+      "封装交互",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-976",
+    "title": "Java中备忘录模式的作用是？",
+    "options": [
+      "保存和恢复状态",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-977",
+    "title": "Java中观察者模式的作用是？",
+    "options": [
+      "定义一对多依赖",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-978",
+    "title": "Java中状态模式的作用是？",
+    "options": [
+      "允许对象改变行为",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-979",
+    "title": "Java中策略模式的作用是？",
+    "options": [
+      "封装算法族",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-980",
+    "title": "Java中模板方法模式的作用是？",
+    "options": [
+      "定义算法骨架",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-981",
+    "title": "Java中访问者模式的作用是？",
+    "options": [
+      "分离数据结构与操作",
+      "接口转换",
+      "对象克隆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-982",
+    "title": "Java中开闭原则是指？",
+    "options": [
+      "对扩展开放，对修改关闭",
+      "对修改开放，对扩展关闭",
+      "都不开放",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-983",
+    "title": "Java中单一职责原则是指？",
+    "options": [
+      "一个类只有一个引起变化的原因",
+      "一个类只写一个方法",
+      "一个方法只写一行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-984",
+    "title": "Java中里氏替换原则是指？",
+    "options": [
+      "子类可以替换父类",
+      "父类可以替换子类",
+      "不能替换",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-985",
+    "title": "Java中依赖倒置原则是指？",
+    "options": [
+      "依赖抽象，不依赖具体",
+      "依赖具体，不依赖抽象",
+      "都不依赖",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-986",
+    "title": "Java中接口隔离原则是指？",
+    "options": [
+      "客户端不应依赖不需要的接口",
+      "接口越少越好",
+      "接口越多越好",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-987",
+    "title": "Java中迪米特法则是指？",
+    "options": [
+      "最少知道原则",
+      "最多知道原则",
+      "不需要知道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-988",
+    "title": "Java中合成复用原则是指？",
+    "options": [
+      "优先使用组合而非继承",
+      "优先使用继承而非组合",
+      "都不使用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-989",
+    "title": "Java中SOLID原则包含？",
+    "options": [
+      "SRP, OCP, LSP, ISP, DIP",
+      "SOP, OOP",
+      "AOP, OOP",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-990",
+    "title": "Java中不可变对象的好处是？",
+    "options": [
+      "线程安全，易于缓存",
+      "修改方便",
+      "性能差",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-991",
+    "title": "Java中如何创建不可变对象？",
+    "options": [
+      "final类，final字段，无setter，深拷贝引用",
+      "使用static",
+      "使用volatile",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-992",
+    "title": "Java中String为什么设计为不可变？",
+    "options": [
+      "字符串常量池，线程安全，安全",
+      "性能差",
+      "内存占用大",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-993",
+    "title": "Java中防御性拷贝的作用是？",
+    "options": [
+      "保护内部对象不被外部修改",
+      "提高性能",
+      "减少内存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-994",
+    "title": "Java中fail-fast机制的实现是？",
+    "options": [
+      "modCount计数器",
+      "加锁",
+      "volatile",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-995",
+    "title": "Java中线程安全的单例最佳实践是？",
+    "options": [
+      "枚举单例",
+      "饿汉式",
+      "懒汉式",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-996",
+    "title": "Java中避免内存泄漏的最佳实践是？",
+    "options": [
+      "及时释放引用，使用WeakReference",
+      "多创建对象",
+      "少创建对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-997",
+    "title": "Java中对象池模式的作用是？",
+    "options": [
+      "重用对象减少开销",
+      "创建更多对象",
+      "销毁对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-998",
+    "title": "Java中享元模式与对象池的区别是？",
+    "options": [
+      "享元解决共享细粒度对象，池解决重用对象",
+      "没有区别",
+      "享元更复杂",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-999",
+    "title": "Java中代理模式与装饰器模式的区别是？",
+    "options": [
+      "代理控制访问，装饰器增强功能",
+      "没有区别",
+      "代理更简单",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-1000",
+    "title": "Java中单例模式的实现方式有？",
+    "options": [
+      "饿汉, 懒汉, 双重检查, 枚举",
+      "工厂, 抽象工厂",
+      "建造者, 原型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]
