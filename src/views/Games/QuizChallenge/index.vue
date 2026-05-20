@@ -122,6 +122,7 @@
     isLastQuestion,
     answeredQuestions,
     isReviewMode,
+    previousQuestionIndex,
     nextQuestion,
     endGame,
     resetGame,
