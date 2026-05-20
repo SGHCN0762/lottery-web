@@ -557,19 +557,11 @@ export default {
           'First prize 500 points, second prize 200 points, third prize 100 points, fourth prize 50 points, fifth prize 20 points, thank you for participating.',
         notes: 'The wheel uses precise positioning algorithm to ensure fairness.',
       },
-      quizChallenge: {
-        rules:
-          'A total of 5 technical multiple-choice questions, 20 seconds to answer each question.',
-        rewards:
-          '5 points for each correct answer, additional 25 points for all correct answers, with combo bonus for consecutive correct answers.',
-        notes:
-          'Questions cover multiple technical fields including frontend, backend, database, etc.',
-      },
       dailyCheckIn: {
         rules: 'Check in every day to get basic point rewards.',
         rewards:
           'Basic reward 10 points, additional +5 points for 3 consecutive days, +15 points for 7 days, +50 points for 30 days.',
-        notes: 'Check-in time refreshes at 0:00 every day, you cannot make up for missed days.',
+
       },
     },
     userGuide: 'User Guide',
@@ -673,6 +665,7 @@ export default {
     submitAnswer: 'Submit Answer',
     nextQuestion: 'Next Question',
     viewResult: 'View Result',
+    backToAnswer: 'Back to Answering',
     streak: '{count} Streak',
     correctCount: 'Correct Answers',
     earnedPoints: 'Earned Points',
@@ -683,6 +676,10 @@ export default {
     loadError: 'Failed to load questions, please try again',
     bonus: 'Awesome! {count} consecutive correct answers, bonus {bonus} points',
     wrongAnswer: 'Wrong answer, keep going!',
+    correct: 'Correct',
+    wrong: 'Wrong',
+    questionNavigation: 'Question Navigation',
+    unanswered: 'Unanswered',
     rules: {
       title: 'Game Rules',
       rule1: 'Choose your preferred technical category',

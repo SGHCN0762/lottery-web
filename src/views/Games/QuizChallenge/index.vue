@@ -26,6 +26,16 @@
           :total-questions="totalQuestions"
         />
 
+        <!-- 答题统计组件 -->
+        <AnswerStats
+          :correct-count="correctCount"
+          :total-questions="totalQuestions"
+          :current-index="currentQuestionIndex"
+          :answered-questions="answeredQuestions"
+          :questions="questions"
+          @jump-to-question="handleJumpToQuestion"
+        />
+
         <!-- 进度条 -->
         <div class="progress-section">
           <van-progress
@@ -34,7 +44,7 @@
             color="linear-gradient(to right, #1989fa, #07c160)"
           />
           <div class="progress-text">
-            {{ t('quizChallenge.progress') }}: {{ currentQuestionIndex + 1 }} / {{ totalQuestions }}
+            {{ t('quizChallenge.progress') }}: {{ displayQuestionIndex + 1 }} / {{ totalQuestions }}
           </div>
         </div>
 
@@ -44,14 +54,16 @@
           :selected-answer="selectedAnswer"
           :show-result="showResult"
           :is-last-question="isLastQuestion"
+          :is-review-mode="isReviewMode"
           @select-answer="selectAnswer"
           @submit="submitAnswer"
           @next="nextQuestion"
+          @back="handleBackToAnswer"
         />
 
         <!-- 连续答对提示 -->
         <StreakBadge
-          v-if="consecutiveCorrect > 0 && showResult"
+          v-if="consecutiveCorrect > 0 && showResult && !isReviewMode"
           :streak-count="consecutiveCorrect"
         />
       </div>
@@ -79,6 +91,7 @@
   import QuestionCard from './components/QuestionCard.vue';
   import GameEndScreen from './components/GameEndScreen.vue';
   import StreakBadge from './components/StreakBadge.vue';
+  import AnswerStats from './components/AnswerStats.vue';
   import { useGameState } from './hooks/useGameState';
   import { useScoring } from './hooks/useScoring';
   import { useQuestions } from './hooks/useQuestions';
@@ -107,11 +120,16 @@
     totalQuestions,
     progressPercentage,
     isLastQuestion,
+    answeredQuestions,
+    isReviewMode,
     nextQuestion,
     endGame,
     resetGame,
     selectAnswer,
     setTotalQuestions,
+    recordAnswer,
+    jumpToQuestion: jumpToQuestionAction,
+    backToAnswer: backToAnswerAction,
   } = useGameState();
 
   // 积分管理
@@ -146,6 +164,13 @@
    */
   const currentQuestion = computed(() => {
     return getCurrentQuestion(currentQuestionIndex.value);
+  });
+
+  /**
+   * 显示的题目索引（回顾模式下显示之前的题目索引）
+   */
+  const displayQuestionIndex = computed(() => {
+    return isReviewMode.value ? previousQuestionIndex.value : currentQuestionIndex.value;
   });
 
   // ========================================
@@ -234,6 +259,20 @@
   };
 
   /**
+   * 跳转到指定题目
+   */
+  const handleJumpToQuestion = index => {
+    jumpToQuestionAction(index);
+  };
+
+  /**
+   * 从回顾模式返回到之前的题目
+   */
+  const handleBackToAnswer = () => {
+    backToAnswerAction();
+  };
+
+  /**
    * 提交当前答案
    * 验证答案、计算积分、更新状态
    */
@@ -246,6 +285,9 @@
 
     // 判断答案是否正确
     const isCorrect = selectedAnswer.value === currentQuestion.value.correctAnswer;
+
+    // 记录答题结果
+    recordAnswer(currentQuestionIndex.value, isCorrect);
 
     if (isCorrect) {
       // 答对了
