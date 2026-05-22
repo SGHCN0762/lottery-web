@@ -397,18 +397,17 @@ onMounted(() => {
 .exchange-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
 }
 
 /* ========================================
    积分余额卡片
    ======================================== */
 .balance-card {
-  margin: var(--spacing-md);
-  padding: var(--spacing-lg);
+  margin: var(--spacing-sm);
+  padding: var(--spacing-md);
   background: var(--gradient-primary);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -416,13 +415,13 @@ onMounted(() => {
 
   .balance-info {
     .label {
-      font-size: var(--font-size-sm);
+      font-size: 12px;
       opacity: 0.85;
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: 2px;
     }
 
     .value {
-      font-size: var(--font-size-xxl);
+      font-size: var(--font-size-xl);
       font-weight: var(--font-weight-bold);
     }
   }
@@ -432,26 +431,25 @@ onMounted(() => {
    分类标签
    ======================================== */
 .category-tabs {
-  margin: 0 var(--spacing-md) var(--spacing-md);
+  margin: 0 var(--spacing-sm) var(--spacing-sm);
 }
 
 /* ========================================
    商品列表
    ======================================== */
 .products-list {
-  margin: 0 var(--spacing-md);
+  margin: 0 var(--spacing-sm);
 
   .products-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
 
     .product-card {
       background: var(--color-bg-secondary);
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-md);
       overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      transition: transform var(--transition-fast);
       cursor: pointer;
 
       &:active {
@@ -469,22 +467,22 @@ onMounted(() => {
       }
 
       .product-info {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
 
         .product-name {
-          font-size: var(--font-size-md);
+          font-size: var(--font-size-sm);
           font-weight: var(--font-weight-semibold);
           color: var(--color-text-primary);
-          margin: 0 0 var(--spacing-xs) 0;
+          margin: 0 0 3px 0;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
 
         .product-desc {
-          font-size: var(--font-size-xs);
+          font-size: 11px;
           color: var(--color-text-secondary);
-          margin: 0 0 var(--spacing-sm) 0;
+          margin: 0 0 var(--spacing-xs) 0;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -503,7 +501,7 @@ onMounted(() => {
             font-weight: var(--font-weight-semibold);
 
             span {
-              font-size: var(--font-size-lg);
+              font-size: var(--font-size-md);
             }
           }
         }
@@ -524,17 +522,17 @@ onMounted(() => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
 
     h3 {
       margin: 0;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-md);
       color: var(--color-text-primary);
     }
 
     .van-icon {
-      font-size: 20px;
+      font-size: 18px;
       cursor: pointer;
       color: var(--color-text-secondary);
     }
@@ -543,46 +541,46 @@ onMounted(() => {
   .popup-content {
     flex: 1;
     overflow-y: auto;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
 
     .detail-info {
-      margin-top: var(--spacing-lg);
+      margin-top: var(--spacing-md);
 
       .detail-name {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-lg);
         color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-sm) 0;
+        margin: 0 0 var(--spacing-xs) 0;
       }
 
       .detail-desc {
-        font-size: var(--font-size-sm);
+        font-size: 13px;
         color: var(--color-text-secondary);
         line-height: 1.6;
-        margin: 0 0 var(--spacing-lg) 0;
+        margin: 0 0 var(--spacing-md) 0;
       }
 
       h4 {
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-sm);
         color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-sm) 0;
+        margin: 0 0 var(--spacing-xs) 0;
         font-weight: var(--font-weight-semibold);
       }
 
       p {
-        font-size: var(--font-size-sm);
+        font-size: 13px;
         color: var(--color-text-secondary);
         line-height: 1.6;
-        margin: 0 0 var(--spacing-lg) 0;
+        margin: 0 0 var(--spacing-md) 0;
       }
 
       ul {
-        padding-left: var(--spacing-lg);
+        padding-left: var(--spacing-md);
         margin: 0;
 
         li {
-          font-size: var(--font-size-sm);
+          font-size: 13px;
           color: var(--color-text-secondary);
-          line-height: 2;
+          line-height: 1.8;
         }
       }
     }
@@ -592,7 +590,7 @@ onMounted(() => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-top: 1px solid var(--color-border);
     background: var(--color-bg-secondary);
 
@@ -601,7 +599,7 @@ onMounted(() => {
       align-items: center;
       gap: var(--spacing-xs);
       color: var(--color-warning);
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-lg);
       font-weight: var(--font-weight-bold);
     }
   }
@@ -611,26 +609,26 @@ onMounted(() => {
    确认兑换内容
    ======================================== */
 .confirm-content {
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   text-align: center;
 
   p {
-    font-size: var(--font-size-sm);
+    font-size: 13px;
     color: var(--color-text-secondary);
-    margin: 0 0 var(--spacing-md) 0;
+    margin: 0 0 var(--spacing-sm) 0;
   }
 
   .confirm-product {
     background: var(--color-bg-tertiary);
-    padding: var(--spacing-md);
-    border-radius: var(--radius-md);
-    margin: var(--spacing-md) 0;
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-sm) 0;
 
     strong {
       display: block;
-      font-size: var(--font-size-md);
+      font-size: var(--font-size-sm);
       color: var(--color-text-primary);
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: 3px;
     }
 
     .confirm-price {
@@ -639,13 +637,13 @@ onMounted(() => {
       justify-content: center;
       gap: var(--spacing-xs);
       color: var(--color-warning);
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-md);
       font-weight: var(--font-weight-semibold);
     }
   }
 
   .confirm-tip {
-    font-size: var(--font-size-xs);
+    font-size: 11px;
     color: var(--color-danger);
   }
 }
@@ -654,13 +652,13 @@ onMounted(() => {
    充值内容
    ======================================== */
 .recharge-content {
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
 
   p {
-    font-size: var(--font-size-sm);
+    font-size: 13px;
     color: var(--color-text-secondary);
-    line-height: 1.8;
-    margin: 0 0 var(--spacing-sm) 0;
+    line-height: 1.6;
+    margin: 0 0 var(--spacing-xs) 0;
   }
 }
 </style>

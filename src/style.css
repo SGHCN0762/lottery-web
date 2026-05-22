@@ -53,14 +53,14 @@
   --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
   --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08);
   
-  /* ---- 间距系统（基于8px网格）---- */
+  /* ---- 间距系统（基于8px网格，调整为更紧凑的微信风格）---- */
   --spacing-xs: 4px;                     /* 超小间距 */
   --spacing-sm: 8px;                     /* 小间距 */
   --spacing-md: 12px;                    /* 中等间距 */
   --spacing-lg: 16px;                    /* 大间距 */
   --spacing-xl: 20px;                    /* 超大间距 */
   --spacing-2xl: 24px;                   /* 特大间距 */
-  --spacing-3xl: 32px;                   /* 巨大间距 */
+  --spacing-3xl: 28px;                   /* 巨大间距（从32px减小到28px）*/
   
   /* ---- 圆角系统 ---- */
   --radius-sm: 8px;                      /* 小圆角 */
@@ -217,3 +217,39 @@ body {
   平板：768px - 1024px
   桌面：> 1024px
 */
+
+/* ========================================
+   6. Vant 组件样式覆盖（扁平化设计）
+   ======================================== */
+
+/* 移除 van-cell-group inset 模式的卡片效果 */
+.van-cell-group--inset {
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+/* 移除 van-cell 的底部边框 */
+.van-cell::after {
+  border-bottom: none !important;
+}
+
+/* 调整 van-cell 的内边距，使其更紧凑 */
+.van-cell {
+  padding: 10px 16px !important;
+}
+
+/* 移除 van-grid-item 的边框 */
+.van-hairline--top-bottom::after,
+.van-hairline-unset--top-bottom::after {
+  border-bottom: none !important;
+}
+
+/* 调整 van-tabs 的样式 */
+.van-tabs__wrap {
+  margin: 0 12px 12px 12px;
+}
+
+/* 移除 van-dropdown-menu 的下拉框阴影 */
+.van-dropdown-menu__bar {
+  box-shadow: none !important;
+}

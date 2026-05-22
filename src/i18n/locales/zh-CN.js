@@ -208,7 +208,6 @@ export default {
     gamesPlayed: '游戏次数',
     dailyCheckin: '每日签到',
     invite: '邀请好友',
-    tip: '温馨提示：积分仅供娱乐，不可兑换现金。请理性参与，切勿沉迷。',
   },
 
   // 设置页面
@@ -403,7 +402,6 @@ export default {
     gameGuide: '游戏说明',
     pointsRules: '积分规则',
     contactUs: '联系我们',
-    tip: '温馨提示：本平台仅供娱乐，请理性参与，切勿沉迷。如有任何问题，请联系客服。',
     onlineService: {
       title: '在线客服',
       serviceHours: '服务时间：9:00 - 22:00',
@@ -413,7 +411,6 @@ export default {
       customerServiceEmail: '客服邮箱',
       workingHours: '工作时间',
       workingHoursValue: '周一至周日 9:00-22:00',
-      tip: '温馨提示：如遇紧急情况，建议直接拨打客服电话。我们会在工作时间内尽快回复您。',
       averageResponseTime: '平均响应时间：2分钟',
       clearHistory: '清空记录',
       startChatHint: '开始与客服对话吧',

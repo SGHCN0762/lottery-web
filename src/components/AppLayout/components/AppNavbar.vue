@@ -83,9 +83,20 @@ const handleGoBack = () => {
   padding-top: env(safe-area-inset-top, 0px);
 
   .van-nav-bar__content {
-    /* 确保内容在安全区域内 */
+    /* 确保内容在安全区域内，减小高度使其更紧凑 */
     height: auto;
-    min-height: 46px;
+    min-height: 42px; /* 从 46px 减小到 42px */
+  }
+
+  /* 调整标题字体大小 */
+  .van-nav-bar__title {
+    font-size: 15px; /* 微信风格的标题字号 */
+    font-weight: var(--font-weight-semibold);
+  }
+
+  /* 调整返回箭头图标大小 */
+  .van-icon {
+    font-size: 18px;
   }
 }
 </style>

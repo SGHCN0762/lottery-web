@@ -352,18 +352,18 @@ onMounted(() => {
 .badges-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
 }
 
 /* ========================================
    成就统计卡片
    ======================================== */
 .stats-card {
-  margin: var(--spacing-md);
-  padding: var(--spacing-lg);
+  margin: var(--spacing-sm);
+  padding: var(--spacing-md);
   background: var(--gradient-primary);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -374,20 +374,20 @@ onMounted(() => {
     flex: 1;
 
     .stat-value {
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-lg);
       font-weight: var(--font-weight-bold);
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: 2px;
     }
 
     .stat-label {
-      font-size: var(--font-size-xs);
+      font-size: 11px;
       opacity: 0.85;
     }
   }
 
   .stat-divider {
     width: 1px;
-    height: 32px;
+    height: 28px;
     background: rgba(255, 255, 255, 0.2);
   }
 }
@@ -396,24 +396,24 @@ onMounted(() => {
    筛选标签
    ======================================== */
 .filter-tabs {
-  margin: 0 var(--spacing-md) var(--spacing-md);
+  margin: 0 var(--spacing-sm) var(--spacing-sm);
 }
 
 /* ========================================
    成就列表
    ======================================== */
 .badges-list {
-  margin: 0 var(--spacing-md);
+  margin: 0 var(--spacing-sm);
 
   .badges-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
 
     .badge-card {
       background: var(--color-bg-secondary);
-      border-radius: var(--radius-lg);
-      padding: var(--spacing-md);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-sm);
       box-shadow: var(--shadow-sm);
       transition: all var(--transition-fast);
       cursor: pointer;
@@ -431,16 +431,16 @@ onMounted(() => {
 
       .badge-icon-wrapper {
         position: relative;
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
 
         .badge-icon {
-          width: 56px;
-          height: 56px;
+          width: 48px;
+          height: 48px;
           border-radius: var(--radius-full);
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .lock-overlay {
@@ -460,19 +460,19 @@ onMounted(() => {
 
       .badge-info {
         .badge-name {
-          font-size: var(--font-size-md);
+          font-size: var(--font-size-sm);
           font-weight: var(--font-weight-semibold);
           color: var(--color-text-primary);
-          margin: 0 0 var(--spacing-xs) 0;
+          margin: 0 0 3px 0;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
 
         .badge-desc {
-          font-size: var(--font-size-xs);
+          font-size: 11px;
           color: var(--color-text-secondary);
-          margin: 0 0 var(--spacing-sm) 0;
+          margin: 0 0 var(--spacing-xs) 0;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -481,9 +481,9 @@ onMounted(() => {
         .badge-progress {
           .progress-text {
             display: block;
-            font-size: var(--font-size-xs);
+            font-size: 11px;
             color: var(--color-text-secondary);
-            margin-top: var(--spacing-xs);
+            margin-top: 3px;
             text-align: right;
           }
         }
@@ -492,7 +492,7 @@ onMounted(() => {
           display: flex;
           align-items: center;
           gap: var(--spacing-xs);
-          font-size: var(--font-size-xs);
+          font-size: 11px;
           color: var(--color-text-secondary);
         }
       }
@@ -512,17 +512,17 @@ onMounted(() => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
 
     h3 {
       margin: 0;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-md);
       color: var(--color-text-primary);
     }
 
     .van-icon {
-      font-size: 20px;
+      font-size: 18px;
       cursor: pointer;
       color: var(--color-text-secondary);
     }
@@ -531,58 +531,58 @@ onMounted(() => {
   .popup-content {
     flex: 1;
     overflow-y: auto;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
 
     .badge-detail-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
 
       .badge-large-icon {
-        width: 80px;
-        height: 80px;
+        width: 64px;
+        height: 64px;
         border-radius: var(--radius-full);
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
     }
 
     .badge-detail-info {
       .detail-name {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-lg);
         color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-sm) 0;
+        margin: 0 0 var(--spacing-xs) 0;
       }
 
       .detail-desc {
-        font-size: var(--font-size-sm);
+        font-size: 13px;
         color: var(--color-text-secondary);
-        line-height: 1.6;
-        margin: 0 0 var(--spacing-lg) 0;
+        line-height: 1.5;
+        margin: 0 0 var(--spacing-md) 0;
       }
 
       h4 {
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-sm);
         color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-sm) 0;
+        margin: 0 0 var(--spacing-xs) 0;
         font-weight: var(--font-weight-semibold);
       }
 
       p {
-        font-size: var(--font-size-sm);
+        font-size: 13px;
         color: var(--color-text-secondary);
-        line-height: 1.6;
-        margin: 0 0 var(--spacing-lg) 0;
+        line-height: 1.5;
+        margin: 0 0 var(--spacing-md) 0;
       }
 
       .reward-content {
         display: flex;
         align-items: center;
         gap: var(--spacing-xs);
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-md);
         color: var(--color-warning);
         font-weight: var(--font-weight-semibold);
       }

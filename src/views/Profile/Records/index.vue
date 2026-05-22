@@ -246,25 +246,24 @@ onMounted(() => {
 .records-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
 }
 
 /* ========================================
    筛选器区域
    ======================================== */
 .filter-section {
-  margin: 0 var(--spacing-md) var(--spacing-md);
+  margin: 0 var(--spacing-sm) var(--spacing-sm);
 }
 
 /* ========================================
    统计卡片
    ======================================== */
 .stats-card {
-  margin: 0 var(--spacing-md) var(--spacing-lg);
-  padding: var(--spacing-lg);
+  margin: 0 var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-md);
   background: var(--gradient-primary);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -275,20 +274,20 @@ onMounted(() => {
     flex: 1;
 
     .stat-value {
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-lg);
       font-weight: var(--font-weight-bold);
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: 2px;
     }
 
     .stat-label {
-      font-size: var(--font-size-xs);
+      font-size: 11px;
       opacity: 0.85;
     }
   }
 
   .stat-divider {
     width: 1px;
-    height: 32px;
+    height: 28px;
     background: rgba(255, 255, 255, 0.2);
   }
 }
@@ -297,21 +296,32 @@ onMounted(() => {
    记录列表
    ======================================== */
 .records-list {
-  margin: 0 var(--spacing-md);
+  margin: 0 var(--spacing-sm);
+
+  :deep(.van-cell-group) {
+    margin: 0;
+  }
+
+  :deep(.van-cell) {
+    &::after {
+      border-bottom: none;
+    }
+    
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
 
   .record-item {
-    margin-bottom: var(--spacing-sm);
-    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-xs);
     
     .record-header {
       display: flex;
       align-items: center;
       gap: var(--spacing-xs);
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: 4px;
 
       .game-name {
         flex: 1;
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-sm);
         font-weight: var(--font-weight-medium);
         color: var(--color-text-primary);
       }
@@ -321,12 +331,12 @@ onMounted(() => {
       .detail-row {
         display: flex;
         align-items: center;
-        margin-top: var(--spacing-xs);
-        font-size: var(--font-size-sm);
+        margin-top: 3px;
+        font-size: 12px;
 
         .detail-label {
           color: var(--color-text-secondary);
-          min-width: 70px;
+          min-width: 60px;
         }
 
         .detail-value {
@@ -353,6 +363,6 @@ onMounted(() => {
    加载更多
    ======================================== */
 .load-more {
-  margin: var(--spacing-lg) var(--spacing-md);
+  margin: var(--spacing-md) var(--spacing-sm);
 }
 </style>

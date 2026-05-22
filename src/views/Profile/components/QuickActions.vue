@@ -2,8 +2,8 @@
   <section class="quick-actions">
     <div class="section-title">{{ t('profile.quickActions') }}</div>
     <van-grid :column-num="4" :border="false">
-      <van-grid-item 
-        v-for="action in actions" 
+      <van-grid-item
+        v-for="action in actions"
         :key="action.id"
         @click="$emit('action-click', action)"
       >
@@ -21,59 +21,58 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-import { Grid as VanGrid, GridItem as VanGridItem, Icon as VanIcon } from 'vant'
+  import { useI18n } from 'vue-i18n';
+  import { Grid as VanGrid, GridItem as VanGridItem, Icon as VanIcon } from 'vant';
 
-const { t } = useI18n()
+  const { t } = useI18n();
 
-defineProps({
-  actions: {
-    type: Array,
-    required: true,
-    default: () => []
-  }
-})
+  defineProps({
+    actions: {
+      type: Array,
+      required: true,
+      default: () => [],
+    },
+  });
 
-defineEmits(['action-click'])
+  defineEmits(['action-click']);
 </script>
 
 <style lang="less" scoped>
-.section-title {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  margin: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
-  font-weight: var(--font-weight-medium);
-}
+  .section-title {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
+    font-weight: var(--font-weight-medium);
+  }
 
-.quick-actions {
-  margin: 0 var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
+  .quick-actions {
+    margin: 0 var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
 
-  :deep(.van-grid-item__content) {
-    padding: var(--spacing-md) var(--spacing-xs);
-    background: transparent;
-    transition: all var(--transition-fast);
+    :deep(.van-grid-item__content) {
+      padding: var(--spacing-sm) var(--spacing-xs);
+      background: transparent;
+      transition: all var(--transition-fast);
 
-    &:active {
-      background-color: var(--color-bg-tertiary);
-      transform: scale(0.95);
+      &:active {
+        background-color: var(--color-bg-tertiary);
+        transform: scale(0.95);
+      }
+    }
+
+    .action-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4px;
+    }
+
+    .action-text {
+      font-size: 11px;
+      color: var(--color-text-secondary);
     }
   }
-
-  .action-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: var(--spacing-xs);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .action-text {
-    font-size: var(--font-size-xs);
-    color: var(--color-text-secondary);
-  }
-}
 </style>

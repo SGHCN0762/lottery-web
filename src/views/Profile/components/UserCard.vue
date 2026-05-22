@@ -57,31 +57,29 @@ const statsLabels = computed(() => ({
 
 <style lang="less" scoped>
 .user-card {
-  margin: var(--spacing-md);
-  padding: var(--spacing-xl);
+  margin: var(--spacing-sm);
+  padding: var(--spacing-md);
   background: var(--gradient-primary);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
   color: white;
 
   .card-header {
     display: flex;
     align-items: center;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 
     .avatar-wrapper {
-      margin-right: var(--spacing-md);
+      margin-right: var(--spacing-sm);
 
       .avatar {
-        width: 64px;
-        height: 64px;
+        width: 50px;
+        height: 50px;
         border-radius: var(--radius-full);
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 3px solid rgba(255, 255, 255, 0.3);
       }
     }
 
@@ -89,13 +87,13 @@ const statsLabels = computed(() => ({
       flex: 1;
 
       .username {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-lg);
         font-weight: var(--font-weight-semibold);
-        margin: 0 0 var(--spacing-xs) 0;
+        margin: 0 0 2px 0;
       }
 
       .userid {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-xs);
         opacity: 0.85;
         margin: 0;
       }
@@ -107,28 +105,27 @@ const statsLabels = computed(() => ({
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: var(--spacing-sm);
 
     .stat-item {
       text-align: center;
       flex: 1;
 
       .stat-value {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-lg);
         font-weight: var(--font-weight-bold);
-        margin-bottom: var(--spacing-xs);
+        margin-bottom: 2px;
       }
 
       .stat-label {
-        font-size: var(--font-size-xs);
+        font-size: 11px;
         opacity: 0.85;
       }
     }
 
     .stat-divider {
       width: 1px;
-      height: 32px;
+      height: 28px;
       background: rgba(255, 255, 255, 0.2);
     }
   }

@@ -200,7 +200,7 @@ const routes = [
     component: () => import("@/views/Profile/Help/OnlineService/index.vue"),
     meta: {
       layout: 'AppLayout',
-      title: "help.onlineService",
+      title: "help.onlineService.title",
       showBack: true,
       showTabbar: false,
     },

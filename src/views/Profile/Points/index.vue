@@ -239,32 +239,31 @@ onMounted(() => {
 .points-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
 }
 
 /* ========================================
    积分概览卡片
    ======================================== */
 .overview-card {
-  margin: var(--spacing-md);
-  padding: var(--spacing-xl);
+  margin: var(--spacing-sm);
+  padding: var(--spacing-md);
   background: var(--gradient-primary);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
   color: white;
 
   .current-points {
     text-align: center;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 
     .label {
-      font-size: var(--font-size-sm);
+      font-size: 12px;
       opacity: 0.85;
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: 2px;
     }
 
     .value {
-      font-size: var(--font-size-xxxl);
+      font-size: var(--font-size-xxl);
       font-weight: var(--font-weight-bold);
     }
   }
@@ -272,14 +271,14 @@ onMounted(() => {
   .points-trend {
     display: flex;
     justify-content: space-around;
-    padding-top: var(--spacing-md);
+    padding-top: var(--spacing-sm);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
     .trend-item {
       display: flex;
       align-items: center;
       gap: var(--spacing-xs);
-      font-size: var(--font-size-sm);
+      font-size: 12px;
       opacity: 0.9;
     }
   }
@@ -289,26 +288,37 @@ onMounted(() => {
    筛选器区域
    ======================================== */
 .filter-section {
-  margin: 0 var(--spacing-md) var(--spacing-md);
+  margin: 0 var(--spacing-sm) var(--spacing-sm);
 }
 
 /* ========================================
    积分明细列表
    ======================================== */
 .points-list {
-  margin: 0 var(--spacing-md);
+  margin: 0 var(--spacing-sm);
+
+  :deep(.van-cell-group) {
+    margin: 0;
+  }
+
+  :deep(.van-cell) {
+    &::after {
+      border-bottom: none;
+    }
+    
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
 
   .point-item {
-    margin-bottom: var(--spacing-sm);
-    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-xs);
     
     :deep(.van-cell__left-icon) {
-      margin-right: var(--spacing-sm);
+      margin-right: var(--spacing-xs);
     }
 
     .point-icon {
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
       border-radius: var(--radius-full);
       display: flex;
       align-items: center;
@@ -326,19 +336,19 @@ onMounted(() => {
     }
 
     .point-title {
-      font-size: var(--font-size-md);
+      font-size: var(--font-size-sm);
       color: var(--color-text-primary);
       font-weight: var(--font-weight-medium);
     }
 
     .point-time {
-      font-size: var(--font-size-xs);
+      font-size: 11px;
       color: var(--color-text-secondary);
-      margin-top: var(--spacing-xs);
+      margin-top: 2px;
     }
 
     .point-amount {
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-md);
       font-weight: var(--font-weight-semibold);
       
       &.positive {
@@ -356,6 +366,6 @@ onMounted(() => {
    加载更多
    ======================================== */
 .load-more {
-  margin: var(--spacing-lg) var(--spacing-md);
+  margin: var(--spacing-md) var(--spacing-sm);
 }
 </style>

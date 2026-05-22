@@ -1,5 +1,5 @@
-// 应用信息
-export default {
+// 繁體中文語言包
+const zhTW = {
   // 应用信息
   app: {
     name: '瑤光',
@@ -198,7 +198,6 @@ export default {
     gamesPlayed: '遊戲次數',
     dailyCheckin: '每日簽到',
     invite: '邀請好友',
-    tip: '溫馨提示：積分僅供娛樂，不可兌換現金。請理性參與，切勿沉迷。',
   },
 
   // 設置頁面
@@ -393,7 +392,6 @@ export default {
     gameGuide: '遊戲說明',
     pointsRules: '積分規則',
     contactUs: '聯繫我們',
-    tip: '溫馨提示：本平臺僅供娛樂，請理性參與，切勿沉迷。如有任何問題，請聯繫客服。',
     onlineService: {
       title: '在線客服',
       serviceHours: '服務時間：9:00 - 22:00',
@@ -403,7 +401,6 @@ export default {
       customerServiceEmail: '客服郵箱',
       workingHours: '工作時間',
       workingHoursValue: '週一至週日 9:00-22:00',
-      tip: '溫馨提示：如遇緊急情況，建議直接撥打客服電話。我們會在工作時間內儘快回復您。',
       averageResponseTime: '平均響應時間：2分鐘',
       clearHistory: '清空記錄',
       startChatHint: '開始與客服對話吧',
@@ -896,4 +893,6 @@ export default {
       rule4: '答錯不會扣分，但會中斷連擊',
     },
   },
-};
+}
+
+export default zhTW

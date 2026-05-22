@@ -33,14 +33,28 @@ defineEmits(['menu-click'])
 
 <style lang="less" scoped>
 .section-title {
-  font-size: var(--font-size-sm);
+  font-size: 13px;
   color: var(--color-text-secondary);
-  margin: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+  margin: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
   font-weight: var(--font-weight-medium);
 }
 
 .menu-section {
-  margin: 0 var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
+  margin: 0 var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+
+  :deep(.van-cell-group) {
+    /* 移除 inset 模式的外边距，使其与页面齐平 */
+    margin: 0;
+  }
+
+  :deep(.van-cell) {
+    /* 移除边框 */
+    &::after {
+      border-bottom: none;
+    }
+    
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
 }
 </style>

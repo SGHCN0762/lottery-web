@@ -1376,19 +1376,19 @@ onMounted(() => {
 .settings-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
 }
 
 /* ========================================
    设置区块
    ======================================== */
 .settings-section {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 
   .section-title {
-    font-size: var(--font-size-sm);
+    font-size: 13px;
     color: var(--color-text-secondary);
-    margin: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    margin: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
     font-weight: var(--font-weight-medium);
   }
 }
@@ -1412,12 +1412,12 @@ onMounted(() => {
   flex-direction: column;
 
   .popup-header {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
 
     h3 {
       margin: 0;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-md);
       color: var(--color-text-primary);
       text-align: center;
     }
@@ -1426,21 +1426,21 @@ onMounted(() => {
   .cropper-container {
     flex: 1;
     overflow-y: auto;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
 
     .preview-area {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: var(--spacing-xl);
+      margin-bottom: var(--spacing-lg);
 
       .preview-circle {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
         border-radius: var(--radius-full);
         overflow: hidden;
-        border: 3px solid var(--color-primary);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border: 2px solid var(--color-primary);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         background: var(--color-bg-tertiary);
 
         img {
@@ -1454,27 +1454,27 @@ onMounted(() => {
 
     .adjust-controls {
       .control-item {
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: var(--spacing-md);
 
         span {
           display: block;
-          font-size: var(--font-size-sm);
+          font-size: 13px;
           color: var(--color-text-secondary);
-          margin-bottom: var(--spacing-sm);
+          margin-bottom: var(--spacing-xs);
         }
 
         :deep(.van-slider) {
-          margin: 0 var(--spacing-md);
+          margin: 0 var(--spacing-sm);
         }
       }
     }
   }
 
   .popup-footer {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-top: 1px solid var(--color-border);
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
 
     .van-button {
       flex: 1;
@@ -1492,12 +1492,12 @@ onMounted(() => {
   flex-direction: column;
 
   .popup-header {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
 
     h3 {
       margin: 0;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-md);
       color: var(--color-text-primary);
       text-align: center;
     }
@@ -1506,21 +1506,21 @@ onMounted(() => {
   .form-content {
     flex: 1;
     overflow-y: auto;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
 
     .submit-btn {
-      margin-top: var(--spacing-xl);
-      padding: 0 var(--spacing-md);
+      margin-top: var(--spacing-lg);
+      padding: 0 var(--spacing-sm);
     }
 
     .tips {
       display: flex;
       align-items: center;
       gap: var(--spacing-xs);
-      font-size: var(--font-size-xs);
+      font-size: 11px;
       color: var(--color-text-secondary);
-      margin-top: var(--spacing-lg);
-      padding: var(--spacing-md);
+      margin-top: var(--spacing-md);
+      padding: var(--spacing-sm);
       background: rgba(0, 122, 255, 0.05);
       border-radius: var(--radius-sm);
       justify-content: center;
@@ -1541,19 +1541,19 @@ onMounted(() => {
   flex-direction: column;
 
   .popup-header {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
     text-align: center;
 
     h3 {
-      margin: 0 0 var(--spacing-xs) 0;
-      font-size: var(--font-size-lg);
+      margin: 0 0 3px 0;
+      font-size: var(--font-size-md);
       color: var(--color-text-primary);
     }
 
     .subtitle {
       margin: 0;
-      font-size: var(--font-size-xs);
+      font-size: 11px;
       color: var(--color-text-secondary);
     }
   }
@@ -1561,18 +1561,18 @@ onMounted(() => {
   .device-list {
     flex: 1;
     overflow-y: auto;
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
 
     .device-item {
       background: var(--color-bg-card);
-      border-radius: var(--radius-md);
-      padding: var(--spacing-md);
-      margin-bottom: var(--spacing-md);
+      border-radius: var(--radius-sm);
+      padding: var(--spacing-sm);
+      margin-bottom: var(--spacing-sm);
       box-shadow: var(--shadow-card);
       transition: all var(--transition-fast);
 
       &.current-device {
-        border: 2px solid var(--color-primary);
+        border: 1px solid var(--color-primary);
         background: linear-gradient(135deg, rgba(0, 122, 255, 0.05), rgba(0, 122, 255, 0.02));
       }
 
@@ -1582,18 +1582,18 @@ onMounted(() => {
 
       .device-info {
         display: flex;
-        gap: var(--spacing-md);
-        margin-bottom: var(--spacing-md);
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
 
         .device-icon {
           flex-shrink: 0;
-          width: 48px;
-          height: 48px;
+          width: 40px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
           background: var(--color-bg-tertiary);
-          border-radius: var(--radius-md);
+          border-radius: var(--radius-sm);
         }
 
         .device-details {
@@ -1604,10 +1604,10 @@ onMounted(() => {
             display: flex;
             align-items: center;
             gap: var(--spacing-xs);
-            font-size: var(--font-size-base);
+            font-size: 13px;
             font-weight: var(--font-weight-semibold);
             color: var(--color-text-primary);
-            margin-bottom: var(--spacing-xs);
+            margin-bottom: 3px;
             flex-wrap: wrap;
 
             .van-tag {
@@ -1617,15 +1617,15 @@ onMounted(() => {
 
           .device-meta {
             display: flex;
-            gap: var(--spacing-md);
-            margin-bottom: var(--spacing-xs);
+            gap: var(--spacing-sm);
+            margin-bottom: 3px;
             flex-wrap: wrap;
 
             .meta-item {
               display: flex;
               align-items: center;
               gap: var(--spacing-xs);
-              font-size: var(--font-size-xs);
+              font-size: 11px;
               color: var(--color-text-secondary);
 
               .van-icon {
@@ -1635,7 +1635,7 @@ onMounted(() => {
           }
 
           .device-ip {
-            font-size: var(--font-size-xs);
+            font-size: 11px;
             color: var(--color-text-tertiary);
             font-family: 'Courier New', monospace;
           }
@@ -1644,14 +1644,14 @@ onMounted(() => {
 
       .device-actions {
         display: flex;
-        gap: var(--spacing-sm);
-        padding-top: var(--spacing-md);
+        gap: var(--spacing-xs);
+        padding-top: var(--spacing-sm);
         border-top: 1px dashed var(--color-border);
 
         .van-button {
           flex: 1;
-          height: 32px;
-          font-size: 12px;
+          height: 28px;
+          font-size: 11px;
           border-radius: 4px;
         }
       }
@@ -1659,7 +1659,7 @@ onMounted(() => {
   }
 
   .device-footer {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-top: 1px solid var(--color-border);
 
     .footer-tips {
@@ -1667,9 +1667,9 @@ onMounted(() => {
       align-items: center;
       justify-content: center;
       gap: var(--spacing-xs);
-      font-size: var(--font-size-xs);
+      font-size: 11px;
       color: var(--color-text-secondary);
-      margin-top: var(--spacing-md);
+      margin-top: var(--spacing-sm);
 
       .van-icon {
         color: var(--color-warning);

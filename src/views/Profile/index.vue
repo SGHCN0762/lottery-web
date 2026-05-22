@@ -14,15 +14,6 @@
       :items="menuItems" 
       @menu-click="handleMenuClick" 
     />
-
-    <!-- 温馨提示 -->
-    <section class="tip-section">
-      <van-notice-bar
-        left-icon="info-o"
-        :text="t('profile.tip')"
-        scrollable
-      />
-    </section>
   </div>
 </template>
 
@@ -30,7 +21,6 @@
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { NoticeBar as VanNoticeBar } from 'vant'
 
 // 引入子组件
 import UserCard from './components/UserCard.vue'
@@ -182,13 +172,7 @@ const handleMenuClick = (item) => {
 .profile-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
 }
 
-/* ========================================
-   温馨提示区域
-   ======================================== */
-.tip-section {
-  margin: 0 var(--spacing-md);
-}
 </style>

@@ -54,43 +54,19 @@
     <section class="contact-section">
       <div class="section-title">{{ t('help.contactUs') }}</div>
       <van-cell-group inset>
-        <van-cell 
-          :title="t('help.onlineService.title')" 
+        <van-cell
+          :title="t('help.onlineService.title')"
           icon="service-o"
-          is-link 
+          is-link
           @click="handleOnlineService"
         />
-        <van-cell 
-          :title="t('help.feedback')" 
-          icon="edit"
-          is-link 
-          @click="handleFeedback"
-        />
-        <van-cell 
-          :title="t('help.report')" 
-          icon="warning-o"
-          is-link 
-          @click="handleReport"
-        />
+        <van-cell :title="t('help.feedback')" icon="edit" is-link @click="handleFeedback" />
+        <van-cell :title="t('help.report')" icon="warning-o" is-link @click="handleReport" />
       </van-cell-group>
     </section>
 
-    <!-- 温馨提示 -->
-    <section class="tip-section">
-      <van-notice-bar
-        left-icon="info-o"
-        :text="t('help.tip')"
-        scrollable
-      />
-    </section>
-
     <!-- 游戏说明弹窗 -->
-    <van-popup
-      v-model:show="showGuidePopup"
-      round
-      position="bottom"
-      :style="{ height: '60%' }"
-    >
+    <van-popup v-model:show="showGuidePopup" round position="bottom" :style="{ height: '60%' }">
       <div class="guide-popup" v-if="currentGame">
         <div class="popup-header">
           <h3>{{ currentGame.name }}</h3>
@@ -114,12 +90,7 @@
     </van-popup>
 
     <!-- 积分规则弹窗 -->
-    <van-popup
-      v-model:show="showPointsPopup"
-      round
-      position="bottom"
-      :style="{ height: '50%' }"
-    >
+    <van-popup v-model:show="showPointsPopup" round position="bottom" :style="{ height: '50%' }">
       <div class="points-popup">
         <div class="popup-header">
           <h3>{{ t('help.pointsPopup.title') }}</h3>
@@ -151,319 +122,310 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { useRouter } from 'vue-router'
-import { 
-  Search as VanSearch,
-  Collapse as VanCollapse,
-  CollapseItem as VanCollapseItem,
-  CellGroup as VanCellGroup,
-  Cell as VanCell,
-  Icon as VanIcon,
-  NoticeBar as VanNoticeBar,
-  Popup as VanPopup
-} from 'vant'
+  import { ref, computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
+  import { useRouter } from 'vue-router';
+  import {
+    Search as VanSearch,
+    Collapse as VanCollapse,
+    CollapseItem as VanCollapseItem,
+    CellGroup as VanCellGroup,
+    Cell as VanCell,
+    Icon as VanIcon,
+    Popup as VanPopup,
+  } from 'vant';
 
-// ========================================
-// i18n
-// ========================================
-const { t, tm } = useI18n()
+  // ========================================
+  // i18n
+  // ========================================
+  const { t, tm } = useI18n();
 
-// ========================================
-// 路由实例
-// ========================================
-const router = useRouter()
+  // ========================================
+  // 路由实例
+  // ========================================
+  const router = useRouter();
 
-// ========================================
-// 响应式数据
-// ========================================
-const searchKeyword = ref('')
-const activeNames = ref([])
-const showGuidePopup = ref(false)
-const showPointsPopup = ref(false)
-const currentGame = ref(null)
-const currentPointsRule = ref('')
+  // ========================================
+  // 响应式数据
+  // ========================================
+  const searchKeyword = ref('');
+  const activeNames = ref(null); // 手风琴模式下使用 null 而非数组
+  const showGuidePopup = ref(false);
+  const showPointsPopup = ref(false);
+  const currentGame = ref(null);
+  const currentPointsRule = ref('');
 
-// ========================================
-// FAQ 数据
-// ========================================
-const faqList = computed(() => [
-  {
-    id: 1,
-    question: t('help.faqList[0].question'),
-    answer: t('help.faqList[0].answer')
-  }
-])
-
-// ========================================
-// 游戏说明数据
-// ========================================
-const gameGuides = computed(() => [
-  {
-    id: 1,
-    name: t('lottery.numberGuess'),
-    icon: 'question-o',
-    rules: t('help.gameGuides.numberGuess.rules'),
-    rewards: t('help.gameGuides.numberGuess.rewards'),
-    notes: t('help.gameGuides.numberGuess.notes')
-  },
-  {
-    id: 2,
-    name: t('lottery.luckyWheel'),
-    icon: 'gift-o',
-    rules: t('help.gameGuides.luckyWheel.rules'),
-    rewards: t('help.gameGuides.luckyWheel.rewards'),
-    notes: t('help.gameGuides.luckyWheel.notes')
-  },
-  {
-    id: 3,
-    name: t('lottery.quizChallenge'),
-    icon: 'star-o',
-    rules: t('help.gameGuides.quizChallenge.rules'),
-    rewards: t('help.gameGuides.quizChallenge.rewards'),
-    notes: t('help.gameGuides.quizChallenge.notes')
-  },
-  {
-    id: 4,
-    name: t('lottery.dailyCheckIn'),
-    icon: 'clock-o',
-    rules: t('help.gameGuides.dailyCheckIn.rules'),
-    rewards: t('help.gameGuides.dailyCheckIn.rewards'),
-    notes: t('help.gameGuides.dailyCheckIn.notes')
-  }
-])
-
-// 调试用：检查国际化数据
-const debugI18n = computed(() => {
-  const result = t('help.pointsPopup.use.items')
-  console.log('t(help.pointsPopup.use.items):', result)
-  console.log('Type:', typeof result)
-  console.log('Is array:', Array.isArray(result))
-  return result
-})
-
-// ========================================
-// 积分规则数据
-// ========================================
-const pointsRules = computed(() => {
-  // 使用 tm() 函数获取数组类型的翻译值
-  return {
-    earn: {
-      title: t('help.pointsPopup.earn.title'),
-      items: tm('help.pointsPopup.earn.items')
+  // ========================================
+  // FAQ 数据
+  // ========================================
+  const faqList = computed(() => [
+    {
+      id: 1,
+      question: t('help.faqList[0].question'),
+      answer: t('help.faqList[0].answer'),
     },
-    use: {
-      title: t('help.pointsPopup.use.title'),
-      items: tm('help.pointsPopup.use.items')
+  ]);
+
+  // ========================================
+  // 游戏说明数据
+  // ========================================
+  const gameGuides = computed(() => [
+    {
+      id: 1,
+      name: t('lottery.numberGuess'),
+      icon: 'question-o',
+      rules: t('help.gameGuides.numberGuess.rules'),
+      rewards: t('help.gameGuides.numberGuess.rewards'),
+      notes: t('help.gameGuides.numberGuess.notes'),
     },
-    expire: {
-      title: t('help.pointsPopup.expire.title'),
-      items: tm('help.pointsPopup.expire.items')
-    }
-  }
-})
+    {
+      id: 2,
+      name: t('lottery.luckyWheel'),
+      icon: 'gift-o',
+      rules: t('help.gameGuides.luckyWheel.rules'),
+      rewards: t('help.gameGuides.luckyWheel.rewards'),
+      notes: t('help.gameGuides.luckyWheel.notes'),
+    },
+    {
+      id: 3,
+      name: t('lottery.quizChallenge'),
+      icon: 'star-o',
+      rules: t('help.gameGuides.quizChallenge.rules'),
+      rewards: t('help.gameGuides.quizChallenge.rewards'),
+      notes: t('help.gameGuides.quizChallenge.notes'),
+    },
+    {
+      id: 4,
+      name: t('lottery.dailyCheckIn'),
+      icon: 'clock-o',
+      rules: t('help.gameGuides.dailyCheckIn.rules'),
+      rewards: t('help.gameGuides.dailyCheckIn.rewards'),
+      notes: t('help.gameGuides.dailyCheckIn.notes'),
+    },
+  ]);
 
-// ========================================
-// 工具函数
-// ========================================
+  // 调试用：检查国际化数据
+  const debugI18n = computed(() => {
+    const result = t('help.pointsPopup.use.items');
+    console.log('t(help.pointsPopup.use.items):', result);
+    console.log('Type:', typeof result);
+    console.log('Is array:', Array.isArray(result));
+    return result;
+  });
 
-/**
- * 显示游戏说明
- */
-const showGameGuide = (game) => {
-  currentGame.value = game
-  showGuidePopup.value = true
-}
+  // ========================================
+  // 积分规则数据
+  // ========================================
+  const pointsRules = computed(() => {
+    // 使用 tm() 函数获取数组类型的翻译值
+    return {
+      earn: {
+        title: t('help.pointsPopup.earn.title'),
+        items: tm('help.pointsPopup.earn.items'),
+      },
+      use: {
+        title: t('help.pointsPopup.use.title'),
+        items: tm('help.pointsPopup.use.items'),
+      },
+      expire: {
+        title: t('help.pointsPopup.expire.title'),
+        items: tm('help.pointsPopup.expire.items'),
+      },
+    };
+  });
 
-/**
- * 显示积分规则
- */
-const showPointsRule = (type) => {
-  currentPointsRule.value = type
-  showPointsPopup.value = true
-}
+  // ========================================
+  // 工具函数
+  // ========================================
 
-/**
- * 处理在线客服
- */
-const handleOnlineService = () => {
-  router.push({ name: 'HelpOnlineService' })
-}
+  /**
+   * 显示游戏说明
+   */
+  const showGameGuide = game => {
+    currentGame.value = game;
+    showGuidePopup.value = true;
+  };
 
-/**
- * 处理意见反馈
- */
-const handleFeedback = () => {
-  router.push({ name: 'HelpFeedback' })
-}
+  /**
+   * 显示积分规则
+   */
+  const showPointsRule = type => {
+    currentPointsRule.value = type;
+    showPointsPopup.value = true;
+  };
 
-/**
- * 处理举报
- */
-const handleReport = () => {
-  router.push({ name: 'HelpReport' })
-}
+  /**
+   * 处理在线客服
+   */
+  const handleOnlineService = () => {
+    router.push({ name: 'HelpOnlineService' });
+  };
+
+  /**
+   * 处理意见反馈
+   */
+  const handleFeedback = () => {
+    router.push({ name: 'HelpFeedback' });
+  };
+
+  /**
+   * 处理举报
+   */
+  const handleReport = () => {
+    router.push({ name: 'HelpReport' });
+  };
 </script>
 
 <style lang="less" scoped>
-.help-page {
-  min-height: 100%;
-  background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-xl);
-}
+  .help-page {
+    min-height: 100%;
+    background: var(--color-bg-primary);
+    padding-bottom: var(--spacing-lg);
+  }
 
-/* ========================================
+  /* ========================================
    搜索区域
    ======================================== */
-.search-section {
-  margin: 0 var(--spacing-md) var(--spacing-md);
-}
+  .search-section {
+    margin: 0 var(--spacing-sm) var(--spacing-sm);
+  }
 
-/* ========================================
+  /* ========================================
    区块标题
    ======================================== */
-.section-title {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  margin: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
-  font-weight: var(--font-weight-medium);
-}
+  .section-title {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
+    font-weight: var(--font-weight-medium);
+  }
 
-/* ========================================
+  /* ========================================
    FAQ 区域
    ======================================== */
-.faq-section {
-  margin: 0 var(--spacing-md);
+  .faq-section {
+    margin: 0 var(--spacing-sm);
 
-  .answer-content {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
-    line-height: 1.8;
-    padding: var(--spacing-sm) 0;
+    .answer-content {
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      padding: var(--spacing-xs) 0;
+    }
   }
-}
 
-/* ========================================
+  /* ========================================
    游戏说明区域
    ======================================== */
-.guide-section {
-  margin: 0 var(--spacing-md);
+  .guide-section {
+    margin: 0 var(--spacing-sm);
 
-  :deep(.van-cell) {
-    .van-cell__title {
-      flex: 1;
-      min-width: 0;
-      word-wrap: break-word;
-      word-break: break-word;
-      line-height: 1.4;
+    :deep(.van-cell) {
+      .van-cell__title {
+        flex: 1;
+        min-width: 0;
+        word-wrap: break-word;
+        word-break: break-word;
+        line-height: 1.4;
+      }
     }
   }
-}
 
-/* ========================================
+  /* ========================================
    积分规则区域
    ======================================== */
-.rules-section {
-  margin: 0 var(--spacing-md);
+  .rules-section {
+    margin: 0 var(--spacing-sm);
 
-  :deep(.van-cell) {
-    .van-cell__title {
-      flex: 1;
-      min-width: 0;
-      word-wrap: break-word;
-      word-break: break-word;
-      line-height: 1.4;
+    :deep(.van-cell) {
+      .van-cell__title {
+        flex: 1;
+        min-width: 0;
+        word-wrap: break-word;
+        word-break: break-word;
+        line-height: 1.4;
+      }
     }
   }
-}
 
-/* ========================================
+  /* ========================================
    联系我们区域
    ======================================== */
-.contact-section {
-  margin: 0 var(--spacing-md);
+  .contact-section {
+    margin: 0 var(--spacing-sm);
 
-  :deep(.van-cell) {
-    .van-cell__title {
-      flex: 1;
-      min-width: 0;
-      word-wrap: break-word;
-      word-break: break-word;
-      line-height: 1.4;
+    :deep(.van-cell) {
+      .van-cell__title {
+        flex: 1;
+        min-width: 0;
+        word-wrap: break-word;
+        word-break: break-word;
+        line-height: 1.4;
+      }
     }
   }
-}
 
-/* ========================================
-   温馨提示区域
-   ======================================== */
-.tip-section {
-  margin: var(--spacing-lg) var(--spacing-md);
-}
-
-/* ========================================
+  /* ========================================
    弹窗样式
    ======================================== */
-.guide-popup,
-.points-popup {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-
-  .popup-header {
+  .guide-popup,
+  .points-popup {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-lg);
-    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
 
-    h3 {
-      margin: 0;
-      font-size: var(--font-size-lg);
-      color: var(--color-text-primary);
-    }
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--spacing-md);
+      border-bottom: 1px solid var(--color-border);
 
-    .van-icon {
-      font-size: 20px;
-      cursor: pointer;
-      color: var(--color-text-secondary);
-    }
-  }
-
-  .popup-content {
-    flex: 1;
-    overflow-y: auto;
-    padding: var(--spacing-lg);
-
-    .guide-item {
-      margin-bottom: var(--spacing-lg);
-
-      h4 {
+      h3 {
+        margin: 0;
         font-size: var(--font-size-md);
         color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-sm) 0;
-        font-weight: var(--font-weight-semibold);
       }
 
-      p {
-        font-size: var(--font-size-sm);
+      .van-icon {
+        font-size: 18px;
+        cursor: pointer;
         color: var(--color-text-secondary);
-        line-height: 1.8;
-        margin: 0;
       }
     }
 
-    ul {
-      padding-left: var(--spacing-lg);
-      margin: 0;
+    .popup-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: var(--spacing-md);
 
-      li {
-        font-size: var(--font-size-sm);
-        color: var(--color-text-secondary);
-        line-height: 2;
+      .guide-item {
+        margin-bottom: var(--spacing-md);
+
+        h4 {
+          font-size: var(--font-size-sm);
+          color: var(--color-text-primary);
+          margin: 0 0 var(--spacing-xs) 0;
+          font-weight: var(--font-weight-semibold);
+        }
+
+        p {
+          font-size: 13px;
+          color: var(--color-text-secondary);
+          line-height: 1.6;
+          margin: 0;
+        }
+      }
+
+      ul {
+        margin: 0;
+
+        li {
+          font-size: 13px;
+          color: var(--color-text-secondary);
+          line-height: 1.8;
+        }
       }
     }
   }
-}
 </style>
