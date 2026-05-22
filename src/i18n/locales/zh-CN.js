@@ -793,4 +793,9 @@ export default {
       orangeDesc: '大吉大利，寓意吉祥如意',
     },
   },
+
+  // 黄历详情页面
+  almanac: {
+    detail: '黄历详情',
+  },
 };

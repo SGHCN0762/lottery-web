@@ -29,9 +29,6 @@
 
     <!-- 节日/节气详情弹窗 -->
     <FestivalDetailModal v-model:show="showFestivalDetail" :name="selectedFestivalName" />
-
-    <!-- 黄历详情弹窗 -->
-    <AlmanacDetailModal v-model:show="showAlmanacDetail" :date="almanacDate" />
   </div>
 </template>
 
@@ -45,7 +42,6 @@
   import UpcomingFestivals from './components/UpcomingFestivals.vue';
   import DateDetailModal from './components/DateDetailModal.vue';
   import FestivalDetailModal from './components/FestivalDetailModal.vue';
-  import AlmanacDetailModal from './components/AlmanacDetailModal.vue';
   import { useLunar } from './hooks/useLunar';
   import { useFestivals } from './hooks/useFestivals';
   import { useCalendar } from './hooks/useCalendar';
@@ -79,10 +75,6 @@
   const showFestivalDetail = ref(false);
   const selectedFestivalName = ref('');
 
-  // 黄历详情弹窗状态
-  const showAlmanacDetail = ref(false);
-  const almanacDate = ref(null);
-
   // 处理节日点击（来自列表）
   const handleFestivalClick = festival => {
     if (!getFestivalOrSolarTermInfo(festival.name)) {
@@ -97,7 +89,7 @@
   // 处理日期点击（来自日历）
   const handleDateClick = date => {
     // 如果有节日或节气，显示详情弹窗
-    if (date.festival || date.solarTerm) {
+    if ((date.festival && getFestivalOrSolarTermInfo(date.festival)) || date.solarTerm) {
       selectedFestivalName.value = date.festival || date.solarTerm;
       showFestivalDetail.value = true;
     } else {
@@ -107,10 +99,15 @@
     }
   };
 
-  // 查看黄历
+  // 查看黄历 - 跳转到新页面
   const handleViewAlmanac = date => {
-    // 构建 Date 对象
-    almanacDate.value = new Date(date.year, date.month - 1, date.day);
-    showAlmanacDetail.value = true;
+    router.push({
+      path: '/home/almanac-detail',
+      query: {
+        year: date.year,
+        month: date.month,
+        day: date.day,
+      },
+    });
   };
 </script>

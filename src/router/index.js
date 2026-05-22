@@ -241,6 +241,20 @@ const routes = [
     },
   },
   // ========================================
+  // 黄历详情页面路由
+  // ========================================
+  {
+    path: '/home/almanac-detail',
+    name: 'AlmanacDetail',
+    component: () => import('@/views/Home/AlmanacDetail/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'almanac.detail',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  // ========================================
   // 认证相关页面路由
   // ========================================
   {
