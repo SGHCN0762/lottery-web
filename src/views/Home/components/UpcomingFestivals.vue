@@ -9,6 +9,7 @@
         v-for="festival in festivals"
         :key="festival.name"
         class="festival-item"
+        @click="handleFestivalClick(festival)"
       >
         <div class="festival-icon">{{ festival.icon }}</div>
         <div class="festival-info">
@@ -36,6 +37,12 @@ const props = defineProps({
     required: true
   }
 });
+
+const emit = defineEmits(['festival-click']);
+
+const handleFestivalClick = (festival) => {
+  emit('festival-click', festival);
+};
 </script>
 
 <style lang="less" scoped>

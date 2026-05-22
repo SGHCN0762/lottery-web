@@ -9,12 +9,12 @@
  * - 挂载应用到 DOM
  */
 
-import { createApp } from "vue";
-import { createPinia } from "pinia";
-import router from "./router";
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import router from './router';
 
 // 国际化
-import i18n from "./i18n";
+import i18n from './i18n';
 
 // Vant 组件按需导入
 import {
@@ -34,27 +34,24 @@ import {
   Popup,
   Locale,
   Progress,
-} from "vant";
+} from 'vant';
 
 // 导入 Vant 语言包
-import vantZhCN from "vant/es/locale/lang/zh-CN";
-import vantEnUS from "vant/es/locale/lang/en-US";
-import vantZhTW from "vant/es/locale/lang/zh-TW";
+import vantZhCN from 'vant/es/locale/lang/zh-CN';
+import vantEnUS from 'vant/es/locale/lang/en-US';
+import vantZhTW from 'vant/es/locale/lang/zh-TW';
 
 // 主题管理
-import { useThemeStore } from "./stores/theme";
+import { useThemeStore } from './stores/theme';
 
 // 根组件
-import App from "./App.vue";
+import App from './App.vue';
 
 // Vant 样式（必须在自定义样式之前引入）
-import "vant/lib/index.css";
-
-// Font Awesome 图标库
-import "@fortawesome/fontawesome-free/css/all.css";
+import 'vant/lib/index.css';
 
 // 全局样式
-import "./style.css";
+import './style.css';
 
 // ========================================
 // 创建应用实例
@@ -100,17 +97,17 @@ themeStore.initTheme();
 const initVantLocale = () => {
   const currentLocale = i18n.global.locale.value;
   switch (currentLocale) {
-    case "zh-CN":
-      Locale.use("zh-CN", vantZhCN);
+    case 'zh-CN':
+      Locale.use('zh-CN', vantZhCN);
       break;
-    case "en":
-      Locale.use("en-US", vantEnUS);
+    case 'en':
+      Locale.use('en-US', vantEnUS);
       break;
-    case "zh-TW":
-      Locale.use("zh-TW", vantZhTW);
+    case 'zh-TW':
+      Locale.use('zh-TW', vantZhTW);
       break;
     default:
-      Locale.use("zh-CN", vantZhCN);
+      Locale.use('zh-CN', vantZhCN);
   }
 };
 
@@ -118,15 +115,15 @@ const initVantLocale = () => {
 initVantLocale();
 
 // 监听语言变化，更新 Vant 语言
-import { watch } from "vue";
+import { watch } from 'vue';
 watch(
   () => i18n.global.locale.value,
   () => {
     initVantLocale();
-  },
+  }
 );
 
 // ========================================
 // 挂载应用
 // ========================================
-app.mount("#app");
+app.mount('#app');

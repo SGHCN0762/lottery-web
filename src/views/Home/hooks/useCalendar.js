@@ -8,7 +8,7 @@ export const useCalendar = () => {
   const selectedDate = ref(null);
   const showDateDetail = ref(false);
 
-  const { getFestivalOnDate } = useFestivals();
+  const { getFestivalOnDate, getSolarTermOnDate } = useFestivals();
 
   const prevMonth = () => {
     if (displayMonth.value === 1) {
@@ -26,11 +26,6 @@ export const useCalendar = () => {
     } else {
       displayMonth.value++;
     }
-  };
-
-  const handleDateClick = (date) => {
-    selectedDate.value = date;
-    showDateDetail.value = true;
   };
 
   const calendarDates = computed(() => {
@@ -72,6 +67,7 @@ export const useCalendar = () => {
       const date = new Date(displayYear.value, displayMonth.value - 1, day);
       const lunar = getLunarDate(date);
       const festival = getFestivalOnDate(date);
+      const solarTerm = getSolarTermOnDate(date); // 获取节气
       const isToday = displayYear.value === todayYear && displayMonth.value === todayMonth && day === todayDay;
 
       dates.push({
@@ -83,6 +79,7 @@ export const useCalendar = () => {
         lunar: lunar.lunarText.slice(-2),
         lunarFull: lunar.lunarText,
         festival: festival,
+        solarTerm: solarTerm, // 添加节气信息
         weekdayIndex: date.getDay(),
       });
     }
@@ -118,7 +115,6 @@ export const useCalendar = () => {
     showDateDetail,
     prevMonth,
     nextMonth,
-    handleDateClick,
     calendarDates,
   };
 };

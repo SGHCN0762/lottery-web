@@ -13,6 +13,18 @@
         <div v-if="weekdayText" class="detail-weekday">
           <span>星期{{ weekdayText }}</span>
         </div>
+        
+        <!-- 查看黄历按钮 -->
+        <div class="almanac-button">
+          <van-button 
+            type="primary" 
+            size="small" 
+            block
+            @click="handleViewAlmanac"
+          >
+            查看黄历宜忌
+          </van-button>
+        </div>
       </div>
     </div>
   </van-popup>
@@ -20,7 +32,7 @@
 
 <script setup>
 import { computed } from "vue";
-import { Icon as VanIcon, Popup as VanPopup } from "vant";
+import { Icon as VanIcon, Popup as VanPopup, Button as VanButton } from "vant";
 
 const props = defineProps({
   show: {
@@ -33,7 +45,7 @@ const props = defineProps({
   }
 });
 
-defineEmits(['update:show']);
+const emit = defineEmits(['update:show', 'view-almanac']);
 
 const year = computed(() => props.date?.year || "");
 const month = computed(() => props.date?.month || "");
@@ -44,6 +56,10 @@ const weekdayText = computed(() => {
   if (!props.date?.weekdayIndex && props.date?.weekdayIndex !== 0) return "";
   return ["日", "一", "二", "三", "四", "五", "六"][props.date.weekdayIndex];
 });
+
+const handleViewAlmanac = () => {
+  emit('view-almanac', props.date);
+};
 </script>
 
 <style lang="less" scoped>
@@ -96,6 +112,10 @@ const weekdayText = computed(() => {
       text-align: center;
       font-size: var(--font-size-base);
       color: var(--color-text-secondary);
+    }
+
+    .almanac-button {
+      margin-top: var(--spacing-sm);
     }
   }
 }

@@ -1,5 +1,6 @@
 import { computed } from "vue";
 import { getLunarDate } from "./useLunar";
+import { Solar } from "lunar-javascript";
 
 const fixedFestivals = [
   { month: 1, day: 1, name: "元旦", icon: "🎆" },
@@ -26,6 +27,34 @@ const lunarFestivals = [
   { lunarMonth: 9, lunarDay: 9, name: "重阳节", icon: "👴" },
 ];
 
+// 二十四节气映射表
+const solarTermsMap = {
+  "立春": "🌱",
+  "雨水": "🌧️",
+  "惊蛰": "⚡",
+  "春分": "🌸",
+  "清明": "🌿",
+  "谷雨": "🌾",
+  "立夏": "☀️",
+  "小满": "🌾",
+  "芒种": "🌾",
+  "夏至": "☀️",
+  "小暑": "🔥",
+  "大暑": "🔥",
+  "立秋": "🍂",
+  "处暑": "🍂",
+  "白露": "💧",
+  "秋分": "🍁",
+  "寒露": "❄️",
+  "霜降": "❄️",
+  "立冬": "❄️",
+  "小雪": "❄️",
+  "大雪": "❄️",
+  "冬至": "❄️",
+  "小寒": "❄️",
+  "大寒": "❄️",
+};
+
 export const useFestivals = () => {
   const getFestivalOnDate = (date) => {
     const year = date.getFullYear();
@@ -44,10 +73,23 @@ export const useFestivals = () => {
     return null;
   };
 
+  // 获取当天的节气名称
+  const getSolarTermOnDate = (date) => {
+    try {
+      const solar = Solar.fromDate(date);
+      const lunar = solar.getLunar();
+      const jieQi = lunar.getJieQi();
+      return jieQi || null;
+    } catch (e) {
+      return null;
+    }
+  };
+
   const getAllUpcomingFestivals = () => {
     const today = new Date();
     const festivals = [];
 
+    // 处理阳历节日
     fixedFestivals.forEach((festival) => {
       const festivalDate = new Date(today.getFullYear(), festival.month - 1, festival.day);
       if (festivalDate < today) {
@@ -61,6 +103,82 @@ export const useFestivals = () => {
         days: days,
       });
     });
+
+    // 处理农历节日
+    lunarFestivals.forEach((festival) => {
+      let festivalDate = null;
+      
+      // 查找今年和明年的对应农历日期
+      for (let year = today.getFullYear(); year <= today.getFullYear() + 1; year++) {
+        // 遍历可能的公历日期范围（农历月份对应的公历月份可能有偏差）
+        for (let month = 1; month <= 12; month++) {
+          const startDay = 1;
+          const endDay = new Date(year, month, 0).getDate(); // 获取该月最后一天
+          
+          for (let day = startDay; day <= endDay; day++) {
+            try {
+              const date = new Date(year, month - 1, day);
+              const lunar = getLunarDate(date);
+              
+              // 匹配农历月和日
+              if (lunar.month === festival.lunarMonth && lunar.day === festival.lunarDay) {
+                if (date >= today) {
+                  festivalDate = date;
+                  break;
+                }
+              }
+            } catch (e) {
+              continue;
+            }
+          }
+          if (festivalDate) break;
+        }
+        if (festivalDate) break;
+      }
+      
+      if (festivalDate) {
+        const days = Math.ceil((festivalDate - today) / (1000 * 60 * 60 * 24));
+        festivals.push({
+          name: festival.name,
+          icon: festival.icon,
+          date: `${festivalDate.getFullYear()}年${festivalDate.getMonth() + 1}月${festivalDate.getDate()}日`,
+          days: days,
+        });
+      }
+    });
+
+    // 处理二十四节气
+    for (let year = today.getFullYear(); year <= today.getFullYear() + 1; year++) {
+      for (let month = 1; month <= 12; month++) {
+        const startDay = 1;
+        const endDay = new Date(year, month, 0).getDate();
+        
+        for (let day = startDay; day <= endDay; day++) {
+          try {
+            const date = new Date(year, month - 1, day);
+            
+            // 跳过过去的日期
+            if (date < today) continue;
+            
+            const solar = Solar.fromDate(date);
+            const lunar = solar.getLunar();
+            const jieQi = lunar.getJieQi(); // 获取节气
+            
+            if (jieQi && solarTermsMap[jieQi]) {
+              const days = Math.ceil((date - today) / (1000 * 60 * 60 * 24));
+              festivals.push({
+                name: jieQi,
+                icon: solarTermsMap[jieQi],
+                date: `${year}年${month}月${day}日`,
+                days: days,
+              });
+            }
+          } catch (e) {
+            continue;
+          }
+        }
+      }
+    }
 
     festivals.sort((a, b) => a.days - b.days);
     return festivals;
@@ -113,6 +231,7 @@ export const useFestivals = () => {
 
   return {
     getFestivalOnDate,
+    getSolarTermOnDate,
     nextFestival,
     upcomingFestivals,
     springFestivalCountdown,

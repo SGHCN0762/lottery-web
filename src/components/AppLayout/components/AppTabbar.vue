@@ -11,7 +11,7 @@
       :key="tab.name"
       :name="tab.name"
       :to="{ name: tab.name }"
-      :icon="convertToVantIcon(tab.icon)"
+      :icon="tab.icon"
     >
       {{ tab.label }}
     </van-tabbar-item>
@@ -24,10 +24,6 @@
   import { useI18n } from 'vue-i18n';
   import { Tabbar as VanTabbar, TabbarItem as VanTabbarItem } from 'vant';
 
-  // ========================================
-  // i18n
-  // ========================================
-  import i18n from '@/i18n';
   const { t } = useI18n();
 
   // ========================================
@@ -37,11 +33,7 @@
     /** 底部导航标签配置 */
     tabs: {
       type: Array,
-      default: () => [
-        { name: 'Home', label: 'navigation.home', icon: 'home-o' },
-        { name: 'Games', label: 'navigation.games', icon: 'apps-o' },
-        { name: 'Profile', label: 'navigation.profile', icon: 'user-o' },
-      ],
+      default: () => [],
     },
   });
 
@@ -83,41 +75,6 @@
       }
     }
   );
-
-  // ========================================
-  // 工具函数
-  // ========================================
-
-  /**
-   * 将 Font Awesome 图标转换为 Vant 图标
-   * @param {string} icon - 图标名称
-   * @returns {string} Vant 图标名称
-   */
-  const convertToVantIcon = icon => {
-    console.log('icon', icon);
-    // 如果已经是 Vant 图标（不包含 fa-），直接返回
-    if (!icon.includes('fa-')) {
-      return icon;
-    }
-
-    // Font Awesome 到 Vant 图标映射表
-    const iconMapping = {
-      'fas fa-home': 'home-o',
-      'fas fa-dice': 'fire-o',
-      'fas fa-user': 'user-o',
-      'fas fa-info-circle': 'info-o',
-      'fa-solid fa-home': 'home-o',
-      'fa-solid fa-dice': 'fire-o',
-      'fa-solid fa-user': 'user-o',
-      'fa-solid fa-info-circle': 'info-o',
-    };
-
-    return iconMapping[icon] || 'circle-o';
-  };
-
-  // ========================================
-  // 事件处理函数
-  // ========================================
 
   /** 标签页切换 */
   const handleTabChange = name => {
