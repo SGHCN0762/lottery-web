@@ -32,7 +32,6 @@
   import AlmanacChongSha from './components/AlmanacChongSha.vue';
   import AlmanacDetail from './components/AlmanacDetail.vue';
   import AlmanacPengZu from './components/AlmanacPengZu.vue';
-  import AlmanacTimeLuck from './components/AlmanacTimeLuck.vue';
 
   const { almanac, lunarInfo, dateStr, scrollToTimeLuck } = useAlmanacDetail();
 </script>
