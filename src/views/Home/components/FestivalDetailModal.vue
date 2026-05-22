@@ -39,6 +39,9 @@
             </span>
           </div>
         </div>
+
+        <!-- 黄历按钮 -->
+        <almanc-card v-if="date" @click="handleViewAlmanac" />
       </div>
     </div>
   </van-popup>
@@ -48,6 +51,7 @@
   import { computed } from 'vue';
   import { Popup as VanPopup } from 'vant';
   import { getFestivalOrSolarTermInfo } from '../data/festivalInfo';
+  import AlmancCard from './AlmancCard.vue';
 
   const props = defineProps({
     show: {
@@ -58,15 +62,23 @@
       type: String,
       default: '',
     },
+    date: {
+      type: Object,
+      default: () => ({}),
+    },
   });
 
-  defineEmits(['update:show']);
+  const emit = defineEmits(['update:show', 'view-almanac']);
 
   // 根据名称获取详情
   const info = computed(() => {
     if (!props.name) return null;
     return getFestivalOrSolarTermInfo(props.name);
   });
+
+  const handleViewAlmanac = () => {
+    emit('view-almanac', props.date);
+  };
 </script>
 
 <style lang="less" scoped>
@@ -141,7 +153,7 @@
             border: 1px solid rgba(255, 149, 0, 0.2);
             border-radius: 6px;
             font-size: 13px;
-            color: #FF9500;
+            color: #ff9500;
             transition: all 0.15s ease;
 
             &:active {
@@ -156,7 +168,7 @@
             border: 1px solid rgba(7, 193, 96, 0.2);
             border-radius: 6px;
             font-size: 13px;
-            color: #07C160;
+            color: #07c160;
             transition: all 0.15s ease;
 
             &:active {

@@ -23,12 +23,17 @@
     <!-- 日期详情弹窗 -->
     <DateDetailModal
       v-model:show="showDateDetail"
-      :date="showDateDetail ? selectedDate : {}"
+      :date="selectedDate"
       @view-almanac="handleViewAlmanac"
     />
 
     <!-- 节日/节气详情弹窗 -->
-    <FestivalDetailModal v-model:show="showFestivalDetail" :name="selectedFestivalName" />
+    <FestivalDetailModal
+      v-model:show="showFestivalDetail"
+      :date="selectedDate"
+      :name="selectedFestivalName"
+      @view-almanac="handleViewAlmanac"
+    />
   </div>
 </template>
 
@@ -82,19 +87,20 @@
       showToast('暂无相关信息');
       return;
     }
+    selectedDate.value = null;
     selectedFestivalName.value = festival.name;
     showFestivalDetail.value = true;
   };
 
   // 处理日期点击（来自日历）
   const handleDateClick = date => {
+    selectedDate.value = date;
     // 如果有节日或节气，显示详情弹窗
     if ((date.festival && getFestivalOrSolarTermInfo(date.festival)) || date.solarTerm) {
       selectedFestivalName.value = date.festival || date.solarTerm;
       showFestivalDetail.value = true;
     } else {
       // 否则显示日期详情弹窗
-      selectedDate.value = date;
       showDateDetail.value = true;
     }
   };
