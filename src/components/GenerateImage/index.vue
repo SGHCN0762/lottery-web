@@ -1,5 +1,5 @@
 <template>
-  <van-icon name="photo-o" @click="handleSaveImage" v-bind="iconProps" />
+  <slot></slot>
 </template>
 
 <script setup>
@@ -11,10 +11,6 @@
     pageRef: {
       type: Object,
       required: true,
-    },
-    iconProps: {
-      type: Object,
-      default: () => ({}),
     },
   });
 

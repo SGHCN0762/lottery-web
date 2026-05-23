@@ -21,17 +21,11 @@
 
       <!-- 彭祖百忌 -->
       <AlmanacPengZu :almanac="almanac" />
-
-      <div class="save-image-btn">
-        <generate-image :page-ref="pageRef" :icon-props="{ color: '#d4a017', size: 24 }" />
-      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-  import { ref } from 'vue';
-  import GenerateImage from '@/components/GenerateImage/index.vue';
   import { useAlmanacDetail } from './hooks/useAlmanacDetail';
   import AlmanacHeader from './components/AlmanacHeader.vue';
   import AlmanacYiJi from './components/AlmanacYiJi.vue';
@@ -40,8 +34,6 @@
   import AlmanacPengZu from './components/AlmanacPengZu.vue';
 
   const { almanac, lunarInfo, dateStr, scrollToTimeLuck } = useAlmanacDetail();
-
-  const pageRef = ref(null);
 </script>
 
 <style lang="less" scoped>
@@ -55,12 +47,6 @@
       display: flex;
       flex-direction: column;
       gap: var(--spacing-xl);
-      position: relative;
-      .save-image-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
     }
   }
 </style>

@@ -6,7 +6,7 @@
     round
     class="festival-detail-popup"
   >
-    <div v-if="info" class="festival-detail-modal" ref="pageRef">
+    <div v-if="info" class="festival-detail-modal">
       <!-- 头部 -->
       <div class="modal-header">
         <div class="header-icon">{{ info.icon }}</div>
@@ -17,10 +17,7 @@
       <div class="modal-content">
         <!-- 简介 -->
         <div class="intro-section">
-          <p>
-            <span>{{ info.intro }}</span>
-            <generate-image :page-ref="pageRef" :icon-props="{ color: '#FF9500', size: 24 }" />
-          </p>
+          <p>{{ info.intro }}</p>
         </div>
 
         <!-- 习俗 -->
@@ -51,12 +48,11 @@
 </template>
 
 <script setup>
-  import { computed, ref } from 'vue';
+  import { computed } from 'vue';
   import { Popup as VanPopup } from 'vant';
   import { getFestivalOrSolarTermInfo } from '../data/festivalInfo';
   import AlmancCard from './AlmancCard.vue';
   import { isEmpty } from 'lodash-es';
-  import GenerateImage from '@/components/GenerateImage/index.vue';
 
   const props = defineProps({
     show: {
@@ -84,8 +80,6 @@
   const handleViewAlmanac = () => {
     emit('view-almanac', props.date);
   };
-
-  const pageRef = ref(null);
 </script>
 
 <style lang="less" scoped>
