@@ -1,0 +1,552 @@
+[
+  {
+    "id": "c-1",
+    "title": "C语言中，以下哪个不是合法的变量名？",
+    "options": [
+      "_var",
+      "var1",
+      "1var",
+      "var_1"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-2",
+    "title": "C语言中，用于声明常量的关键字是？",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "define"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-3",
+    "title": "C语言中，以下哪种基本类型是无符号整数？",
+    "options": [
+      "int",
+      "unsigned int",
+      "float",
+      "double"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-4",
+    "title": "C语言中，字符串的结束标志是？",
+    "options": [
+      "\\0",
+      "\\n",
+      "\\t",
+      "0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-5",
+    "title": "C语言中，sizeof(char)的值是？",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-6",
+    "title": "C语言中，int类型通常占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-7",
+    "title": "C语言中，哪个关键字用于定义自定义类型？",
+    "options": [
+      "typedef",
+      "define",
+      "struct",
+      "type"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-8",
+    "title": "C语言中，转义字符\\n表示？",
+    "options": [
+      "回车",
+      "换行",
+      "制表符",
+      "退格"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-9",
+    "title": "C语言中，全局变量默认初始化为？",
+    "options": [
+      "0",
+      "随机值",
+      "1",
+      "无初始值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-10",
+    "title": "C语言中，局部变量默认初始化为？",
+    "options": [
+      "0",
+      "随机值",
+      "1",
+      "无初始值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-11",
+    "title": "C语言中，以下哪个不是基本数据类型？",
+    "options": [
+      "int",
+      "float",
+      "char",
+      "string"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-12",
+    "title": "C语言中，double类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-13",
+    "title": "C语言中，short类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-14",
+    "title": "C语言中，char类型的数据范围是？",
+    "options": [
+      "-128到127",
+      "0到255",
+      "0到65535",
+      "-32768到32767"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-15",
+    "title": "C语言中，unsigned char的范围是？",
+    "options": [
+      "-128到127",
+      "0到255",
+      "0到65535",
+      "0到4294967295"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-16",
+    "title": "C语言中，八进制常量以什么开头？",
+    "options": [
+      "0x",
+      "0",
+      "0o",
+      "8#"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-17",
+    "title": "C语言中，十六进制常量以什么开头？",
+    "options": [
+      "0x",
+      "0",
+      "0o",
+      "16#"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-18",
+    "title": "C语言中，以下哪个是正确的浮点数常量？",
+    "options": [
+      "3.14",
+      "3",
+      "3.0f",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-19",
+    "title": "C语言中，#define的作用是？",
+    "options": [
+      "宏定义",
+      "变量声明",
+      "函数定义",
+      "类型定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-20",
+    "title": "C语言中，#include的作用是？",
+    "options": [
+      "包含头文件",
+      "定义宏",
+      "声明变量",
+      "编译指令"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-21",
+    "title": "C语言中，main函数的正确签名是？",
+    "options": [
+      "int main()",
+      "void main()",
+      "main()",
+      "int main(void)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-22",
+    "title": "C语言中，printf的作用是？",
+    "options": [
+      "格式化输出",
+      "格式化输入",
+      "字符串输出",
+      "字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-23",
+    "title": "C语言中，scanf的作用是？",
+    "options": [
+      "格式化输入",
+      "格式化输出",
+      "字符串输入",
+      "字符输入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-24",
+    "title": "C语言中，%d用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-25",
+    "title": "C语言中，%f用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-26",
+    "title": "C语言中，%c用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-27",
+    "title": "C语言中，%s用于输出什么类型？",
+    "options": [
+      "整数",
+      "浮点数",
+      "字符",
+      "字符串"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-28",
+    "title": "C语言中，%x用于输出什么格式？",
+    "options": [
+      "八进制",
+      "十进制",
+      "十六进制",
+      "二进制"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-29",
+    "title": "C语言中，%o用于输出什么格式？",
+    "options": [
+      "八进制",
+      "十进制",
+      "十六进制",
+      "二进制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-30",
+    "title": "C语言中，如何输出指针地址？",
+    "options": [
+      "%p",
+      "%d",
+      "%x",
+      "%a"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-31",
+    "title": "C语言中，long int类型占几个字节？",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "取决于编译器"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-32",
+    "title": "C语言中，long long类型至少占几个字节？",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-33",
+    "title": "C语言中，布尔类型在哪个头文件中定义？",
+    "options": [
+      "stdbool.h",
+      "math.h",
+      "stdio.h",
+      "stdlib.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-34",
+    "title": "C语言中，true的值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "非0值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-35",
+    "title": "C语言中，false的值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "非0值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-36",
+    "title": "C语言中，auto关键字的作用是？",
+    "options": [
+      "声明自动变量",
+      "声明静态变量",
+      "声明外部变量",
+      "声明寄存器变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-37",
+    "title": "C语言中，register关键字的作用是？",
+    "options": [
+      "声明寄存器变量",
+      "声明自动变量",
+      "声明静态变量",
+      "声明外部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-38",
+    "title": "C语言中，register变量能取地址吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于编译器",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-39",
+    "title": "C语言中，static局部变量的特点？",
+    "options": [
+      "持久存储，只在作用域可见",
+      "持久存储，全局可见",
+      "临时存储，全局可见",
+      "临时存储，只在作用域可见"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-40",
+    "title": "C语言中，static全局变量的特点？",
+    "options": [
+      "持久存储，只在当前文件可见",
+      "持久存储，全局可见",
+      "临时存储，全局可见",
+      "临时存储，只在当前文件可见"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-41",
+    "title": "C语言中，extern关键字的作用是？",
+    "options": [
+      "声明外部变量",
+      "定义外部变量",
+      "声明静态变量",
+      "声明寄存器变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-42",
+    "title": "C语言中，volatile关键字的作用是？",
+    "options": [
+      "防止编译器优化",
+      "声明常量",
+      "声明外部变量",
+      "声明静态变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-43",
+    "title": "C语言中，以下哪个不是循环语句？",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "switch"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-44",
+    "title": "C语言中，break语句的作用是？",
+    "options": [
+      "跳出当前循环或switch",
+      "跳出所有循环",
+      "继续下一次循环",
+      "结束函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-45",
+    "title": "C语言中，continue语句的作用是？",
+    "options": [
+      "跳出当前循环",
+      "跳出所有循环",
+      "继续下一次循环",
+      "结束函数"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-46",
+    "title": "C语言中，switch语句中如果没有break会怎样？",
+    "options": [
+      "不会执行任何case",
+      "只会执行匹配的case",
+      "会从匹配的case向下穿透执行",
+      "编译错误"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "c-47",
+    "title": "C语言中，switch的条件可以是哪种类型？",
+    "options": [
+      "整型或字符型",
+      "浮点型",
+      "字符串",
+      "结构体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-48",
+    "title": "C语言中，goto语句的作用是？",
+    "options": [
+      "无条件跳转",
+      "条件跳转",
+      "循环控制",
+      "函数调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-49",
+    "title": "C语言中，逗号表达式的值是？",
+    "options": [
+      "第一个表达式的值",
+      "最后一个表达式的值",
+      "所有表达式的和",
+      "随机表达式的值"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "c-50",
+    "title": "C语言中，三目运算符的语法是？",
+    "options": [
+      "a ? b : c",
+      "a : b ? c",
+      "a ?? b : c",
+      "a -> b : c"
+    ],
+    "correctAnswer": 0
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "js-51",
+    "title": "JavaScript中1n + 1的结果是？",
+    "options": [
+      "2",
+      "2n",
+      "TypeError",
+      "NaN"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "js-52",
+    "title": "JavaScript中Symbol的作用是？",
+    "options": [
+      "创建唯一标识符",
+      "创建私有属性",
+      "创建常量",
+      "创建对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-53",
+    "title": "JavaScript中Symbol可以new吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "取决于场景",
+      "ES6可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-54",
+    "title": "JavaScript中Symbol.for()的作用是？",
+    "options": [
+      "创建或获取全局Symbol",
+      "创建局部Symbol",
+      "删除Symbol",
+      "遍历Symbol"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-55",
+    "title": "JavaScript中Symbol.keyFor()的作用是？",
+    "options": [
+      "获取全局Symbol的key",
+      "获取Symbol的值",
+      "删除Symbol",
+      "遍历Symbol"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-56",
+    "title": "JavaScript中获取对象所有键的方法是？",
+    "options": [
+      "Object.keys()",
+      "Object.values()",
+      "Object.entries()",
+      "Object.getOwnPropertyNames()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-57",
+    "title": "JavaScript中Object.getOwnPropertyNames()和Object.keys()的区别是？",
+    "options": [
+      "前者包含不可枚举属性",
+      "后者包含不可枚举属性",
+      "没有区别",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-58",
+    "title": "JavaScript中获取对象所有Symbol属性的方法是？",
+    "options": [
+      "Object.getOwnPropertySymbols()",
+      "Object.keys()",
+      "Object.getOwnPropertyNames()",
+      "Reflect.ownKeys()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-59",
+    "title": "JavaScript中Reflect.ownKeys()返回？",
+    "options": [
+      "所有属性和Symbol",
+      "仅Symbol",
+      "仅可枚举属性",
+      "仅不可枚举属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-60",
+    "title": "JavaScript中in操作符的作用是？",
+    "options": [
+      "检查对象是否包含属性",
+      "遍历对象",
+      "创建对象",
+      "删除属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-61",
+    "title": "JavaScript中in操作符检查原型链吗？",
+    "options": [
+      "是",
+      "否",
+      "取决于属性",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-62",
+    "title": "JavaScript中Object.hasOwn()的作用是？",
+    "options": [
+      "检查对象自身是否包含属性",
+      "检查原型链",
+      "获取属性值",
+      "设置属性值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-63",
+    "title": "JavaScript中hasOwnProperty()的作用是？",
+    "options": [
+      "检查对象自身是否包含属性",
+      "检查原型链",
+      "获取属性值",
+      "设置属性值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-64",
+    "title": "JavaScript中assign的作用是？",
+    "options": [
+      "合并对象",
+      "克隆对象",
+      "更新对象",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "js-65",
+    "title": "JavaScript中Object.assign()是深拷贝还是浅拷贝？",
+    "options": [
+      "浅拷贝",
+      "深拷贝",
+      "取决于属性",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-66",
+    "title": "JavaScript中Object.freeze()的作用是？",
+    "options": [
+      "冻结对象，不能增删改",
+      "仅不能增删",
+      "仅不能改",
+      "仅不能删"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-67",
+    "title": "JavaScript中Object.seal()的作用是？",
+    "options": [
+      "密封对象，不能增删，但能改",
+      "冻结对象",
+      "仅不能增",
+      "仅不能删"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-68",
+    "title": "JavaScript中Object.preventExtensions()的作用是？",
+    "options": [
+      "不能添加新属性",
+      "不能修改属性",
+      "不能删除属性",
+      "冻结对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-69",
+    "title": "JavaScript中Object.isFrozen()的作用是？",
+    "options": [
+      "判断对象是否冻结",
+      "冻结对象",
+      "解冻对象",
+      "密封对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-70",
+    "title": "JavaScript中Object.isSealed()的作用是？",
+    "options": [
+      "判断对象是否密封",
+      "密封对象",
+      "解封对象",
+      "冻结对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-71",
+    "title": "JavaScript中判断对象是否可扩展的方法是？",
+    "options": [
+      "Object.isExtensible()",
+      "Object.isFrozen()",
+      "Object.isSealed()",
+      "Object.isPrevented()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-72",
+    "title": "JavaScript中JSON.stringify()的作用是？",
+    "options": [
+      "将对象转为JSON字符串",
+      "将JSON字符串转为对象",
+      "解析JSON",
+      "格式化JSON"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-73",
+    "title": "JavaScript中JSON.parse()的作用是？",
+    "options": [
+      "将JSON字符串转为对象",
+      "将对象转为JSON字符串",
+      "验证JSON",
+      "格式化JSON"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-74",
+    "title": "JavaScript中JSON.stringify()会转换哪些值？",
+    "options": [
+      "可枚举的自有属性",
+      "所有属性",
+      "仅Symbol属性",
+      "仅不可枚举属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-75",
+    "title": "JavaScript中JSON.stringify()如何处理函数？",
+    "options": [
+      "忽略",
+      "转为字符串",
+      "抛出错误",
+      "转为null"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-76",
+    "title": "JavaScript中JSON.stringify()如何处理undefined？",
+    "options": [
+      "忽略",
+      "转为字符串",
+      "抛出错误",
+      "转为null"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-77",
+    "title": "JavaScript中JSON.stringify()如何处理循环引用？",
+    "options": [
+      "抛出TypeError",
+      "忽略",
+      "转为null",
+      "无限循环"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-78",
+    "title": "JavaScript中JSON.stringify()的replacer参数作用是？",
+    "options": [
+      "过滤或转换属性",
+      "格式化输出",
+      "解析JSON",
+      "验证JSON"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-79",
+    "title": "JavaScript中JSON.stringify()的space参数作用是？",
+    "options": [
+      "格式化输出缩进",
+      "过滤属性",
+      "解析JSON",
+      "验证JSON"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-80",
+    "title": "JavaScript中toJSON()方法的作用是？",
+    "options": [
+      "自定义JSON序列化",
+      "自定义JSON解析",
+      "验证JSON",
+      "格式化JSON"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-81",
+    "title": "JavaScript中如何深拷贝对象？",
+    "options": [
+      "JSON.parse(JSON.stringify())",
+      "Object.assign()",
+      "展开运算符",
+      "Array.from()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-82",
+    "title": "JavaScript中JSON.parse(JSON.stringify())的缺点是？",
+    "options": [
+      "不支持函数、undefined、循环引用",
+      "性能差",
+      "语法错误",
+      "不兼容ES6"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-83",
+    "title": "JavaScript中structuredClone()的作用是？",
+    "options": [
+      "深拷贝对象",
+      "浅拷贝对象",
+      "合并对象",
+      "冻结对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-84",
+    "title": "JavaScript中structuredClone()支持循环引用吗？",
+    "options": [
+      "支持",
+      "不支持",
+      "取决于环境",
+      "抛出错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-85",
+    "title": "JavaScript中console.log的作用是？",
+    "options": [
+      "输出日志",
+      "输出警告",
+      "输出错误",
+      "输出信息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-86",
+    "title": "JavaScript中console.warn的作用是？",
+    "options": [
+      "输出警告",
+      "输出日志",
+      "输出错误",
+      "输出信息"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "js-87",
+    "title": "JavaScript中console.error的作用是？",
+    "options": [
+      "输出错误",
+      "输出日志",
+      "输出警告",
+      "输出信息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-88",
+    "title": "JavaScript中console.table的作用是？",
+    "options": [
+      "以表格形式输出",
+      "输出日志",
+      "输出警告",
+      "输出错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-89",
+    "title": "JavaScript中console.time的作用是？",
+    "options": [
+      "计时开始",
+      "计时结束",
+      "输出时间",
+      "输出日志"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-90",
+    "title": "JavaScript中console.timeEnd的作用是？",
+    "options": [
+      "计时结束",
+      "计时开始",
+      "输出时间",
+      "输出日志"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-91",
+    "title": "JavaScript中console.trace的作用是？",
+    "options": [
+      "输出调用栈",
+      "输出日志",
+      "输出警告",
+      "输出错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-92",
+    "title": "JavaScript中console.group的作用是？",
+    "options": [
+      "创建日志分组",
+      "输出日志",
+      "输出警告",
+      "输出错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-93",
+    "title": "JavaScript中debugger语句的作用是？",
+    "options": [
+      "设置断点",
+      "输出日志",
+      "抛出异常",
+      "终止程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-94",
+    "title": "JavaScript中setTimeout的作用是？",
+    "options": [
+      "延时执行",
+      "定时执行",
+      "立即执行",
+      "循环执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-95",
+    "title": "JavaScript中setInterval的作用是？",
+    "options": [
+      "循环执行",
+      "延时执行",
+      "立即执行",
+      "定时执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-96",
+    "title": "JavaScript中clearTimeout的作用是？",
+    "options": [
+      "取消延时",
+      "取消循环",
+      "取消定时",
+      "取消立即"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-97",
+    "title": "JavaScript中clearInterval的作用是？",
+    "options": [
+      "取消循环",
+      "取消延时",
+      "取消定时",
+      "取消立即"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-98",
+    "title": "JavaScript中requestAnimationFrame的作用是？",
+    "options": [
+      "在下一次重绘前执行",
+      "延时执行",
+      "循环执行",
+      "定时执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-99",
+    "title": "JavaScript中requestAnimationFrame的执行频率通常是？",
+    "options": [
+      "60fps",
+      "30fps",
+      "120fps",
+      "取决于代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-100",
+    "title": "JavaScript中cancelAnimationFrame的作用是？",
+    "options": [
+      "取消重绘回调",
+      "取消延时",
+      "取消循环",
+      "取消定时"
+    ],
+    "correctAnswer": 0
+  }
+]

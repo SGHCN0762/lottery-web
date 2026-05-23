@@ -1,0 +1,552 @@
+[
+  {
+    "id": "vue-701",
+    "title": "Vue 中 transition 组件的作用是？",
+    "options": [
+      "处理单个元素过渡",
+      "处理列表过渡",
+      "处理组件过渡",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-702",
+    "title": "Vue 中 transition-group 组件的作用是？",
+    "options": [
+      "处理列表过渡",
+      "处理单个元素过渡",
+      "处理组件过渡",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-703",
+    "title": "Vue 中过渡的类名有？",
+    "options": [
+      "v-enter-from, v-enter-active, v-enter-to",
+      "v-appear, v-appear-active, v-appear-to",
+      "v-leave-from, v-leave-active, v-leave-to",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-704",
+    "title": "Vue 中过渡的 JavaScript 钩子有？",
+    "options": [
+      "before-enter, enter, after-enter",
+      "before-leave, leave, after-leave",
+      "before-appear, appear, after-appear",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-705",
+    "title": "Vue 中过渡的 mode 属性有？",
+    "options": [
+      "in-out, out-in",
+      "in, out",
+      "before, after",
+      "sync, async"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-706",
+    "title": "Vue 中过渡的 appear 属性作用是？",
+    "options": [
+      "初始渲染时过渡",
+      "进入时过渡",
+      "离开时过渡",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-707",
+    "title": "Vue 中过渡的 CSS 过渡和动画区别是？",
+    "options": [
+      "transition 需要触发条件",
+      "animation 自动执行",
+      "两者相同",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-708",
+    "title": "Vue 中过渡的 duration 属性作用是？",
+    "options": [
+      "指定过渡时间",
+      "指定延迟时间",
+      "指定动画时间",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-709",
+    "title": "Vue 中列表过渡的 FLIP 技术是指？",
+    "options": [
+      "First, Last, Invert, Play",
+      "动画优化技术",
+      "布局动画",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-710",
+    "title": "Vue 中状态过渡的实现方式是？",
+    "options": [
+      "watch + gsap",
+      "computed",
+      "transition",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-711",
+    "title": "Vue 中 transition 的 name 属性作用是？",
+    "options": [
+      "自定义类名前缀",
+      "标识过渡",
+      "动画名称",
+      "组件名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-712",
+    "title": "Vue 中 transition 的 css 属性设为 false 的作用是？",
+    "options": [
+      "跳过 CSS 检测",
+      "禁用过渡",
+      "启用过渡",
+      "使用 JavaScript"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-713",
+    "title": "Vue 中 transition 的 type 属性作用是？",
+    "options": [
+      "指定检测 transition 或 animation",
+      "指定过渡类型",
+      "指定动画类型",
+      "指定组件类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-714",
+    "title": "Vue 中 transition-group 的 tag 属性作用是？",
+    "options": [
+      "指定渲染的标签",
+      "指定过渡类型",
+      "指定动画类型",
+      "指定组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-715",
+    "title": "Vue 中 transition-group 的 move-class 属性作用是？",
+    "options": [
+      "自定义移动过渡类名",
+      "自定义进入类名",
+      "自定义离开类名",
+      "自定义动画类名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-716",
+    "title": "Vue 中 transition-group 的子元素必须有什么？",
+    "options": [
+      "key 属性",
+      "id 属性",
+      "class 属性",
+      "style 属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-717",
+    "title": "Vue 中过渡的 enter-from 类名何时添加？",
+    "options": [
+      "元素插入前",
+      "元素插入后",
+      "元素更新前",
+      "元素更新后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-718",
+    "title": "Vue 中过渡的 enter-active 类名何时存在？",
+    "options": [
+      "进入过渡整个阶段",
+      "进入过渡开始",
+      "进入过渡结束",
+      "离开过渡阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-719",
+    "title": "Vue 中过渡的 enter-to 类名何时添加？",
+    "options": [
+      "进入过渡结束后",
+      "进入过渡开始前",
+      "进入过渡进行中",
+      "离开过渡阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-720",
+    "title": "Vue 中过渡的 leave-from 类名何时添加？",
+    "options": [
+      "离开过渡开始时",
+      "离开过渡结束时",
+      "进入过渡开始时",
+      "进入过渡结束时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-721",
+    "title": "Vue 中过渡的 leave-active 类名何时存在？",
+    "options": [
+      "离开过渡整个阶段",
+      "离开过渡开始",
+      "离开过渡结束",
+      "进入过渡阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-722",
+    "title": "Vue 中过渡的 leave-to 类名何时添加？",
+    "options": [
+      "离开过渡结束后",
+      "离开过渡开始前",
+      "离开过渡进行中",
+      "进入过渡阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-723",
+    "title": "Vue 中过渡的类名前缀如何自定义？",
+    "options": [
+      "name 属性",
+      "class 属性",
+      "type 属性",
+      "tag 属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-724",
+    "title": "Vue 中过渡的 enter 钩子何时调用？",
+    "options": [
+      "元素插入后",
+      "元素插入前",
+      "元素更新后",
+      "元素更新前"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-725",
+    "title": "Vue 中过渡的 leave 钩子何时调用？",
+    "options": [
+      "离开过渡触发时",
+      "离开过渡结束后",
+      "进入过渡触发时",
+      "进入过渡结束后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-726",
+    "title": "Vue 中过渡的 after-enter 钩子何时调用？",
+    "options": [
+      "进入过渡结束后",
+      "进入过渡触发时",
+      "离开过渡结束后",
+      "离开过渡触发时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-727",
+    "title": "Vue 中过渡的 after-leave 钩子何时调用？",
+    "options": [
+      "离开过渡结束后",
+      "离开过渡触发时",
+      "进入过渡结束后",
+      "进入过渡触发时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-728",
+    "title": "Vue 中过渡的 enter-cancelled 钩子何时调用？",
+    "options": [
+      "进入过渡被取消时",
+      "进入过渡结束后",
+      "离开过渡被取消时",
+      "离开过渡结束后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-729",
+    "title": "Vue 中过渡的 leave-cancelled 钩子何时调用？",
+    "options": [
+      "离开过渡被取消时",
+      "离开过渡结束后",
+      "进入过渡被取消时",
+      "进入过渡结束后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-730",
+    "title": "Vue 中过渡的 appear 钩子何时调用？",
+    "options": [
+      "初始渲染时",
+      "进入时",
+      "离开时",
+      "更新时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-731",
+    "title": "Vue 中过渡的 appear-from 类名何时添加？",
+    "options": [
+      "初始渲染前",
+      "初始渲染后",
+      "进入前",
+      "离开前"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-732",
+    "title": "Vue 中过渡的 appear-active 类名何时存在？",
+    "options": [
+      "初始渲染过渡整个阶段",
+      "初始渲染前",
+      "初始渲染后",
+      "进入过渡阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-733",
+    "title": "Vue 中过渡的 appear-to 类名何时添加？",
+    "options": [
+      "初始渲染过渡结束后",
+      "初始渲染前",
+      "初始渲染后",
+      "进入过渡阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-734",
+    "title": "Vue 中过渡的 mode 设为 out-in 的效果是？",
+    "options": [
+      "当前过渡先离开，新过渡后进入",
+      "新过渡先进入，当前过渡后离开",
+      "同时进行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-735",
+    "title": "Vue 中过渡的 mode 设为 in-out 的效果是？",
+    "options": [
+      "新过渡先进入，当前过渡后离开",
+      "当前过渡先离开，新过渡后进入",
+      "同时进行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-736",
+    "title": "Vue 中过渡的 mode 默认值是？",
+    "options": [
+      "同时进行",
+      "out-in",
+      "in-out",
+      "none"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-737",
+    "title": "Vue 中过渡的 duration 设为对象的作用是？",
+    "options": [
+      "分别指定进入和离开时间",
+      "指定总时间",
+      "指定延迟时间",
+      "指定动画时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-738",
+    "title": "Vue 中过渡的 duration: { enter: 500, leave: 300 } 表示？",
+    "options": [
+      "进入 500ms，离开 300ms",
+      "进入 300ms，离开 500ms",
+      "总时间 500ms",
+      "延迟 300ms"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-739",
+    "title": "Vue 中过渡的 CSS 动画和 CSS 过渡的区别是？",
+    "options": [
+      "动画自动播放，过渡需要触发",
+      "过渡自动播放，动画需要触发",
+      "两者相同",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-740",
+    "title": "Vue 中过渡的 type 设为 animation 的作用是？",
+    "options": [
+      "只检测 animationend 事件",
+      "只检测 transitionend 事件",
+      "检测两者",
+      "不检测"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-741",
+    "title": "Vue 中过渡的 type 设为 transition 的作用是？",
+    "options": [
+      "只检测 transitionend 事件",
+      "只检测 animationend 事件",
+      "检测两者",
+      "不检测"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-742",
+    "title": "Vue 中过渡的 @before-enter 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-743",
+    "title": "Vue 中过渡的 @enter 钩子参数是？",
+    "options": [
+      "el, done",
+      "el",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-744",
+    "title": "Vue 中过渡的 @leave 钩子参数是？",
+    "options": [
+      "el, done",
+      "el",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-745",
+    "title": "Vue 中过渡的 done 回调何时调用？",
+    "options": [
+      "JavaScript 动画完成时",
+      "CSS 动画完成时",
+      "过渡开始时",
+      "过渡取消时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-746",
+    "title": "Vue 中过渡的 @after-enter 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-747",
+    "title": "Vue 中过渡的 @after-leave 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-748",
+    "title": "Vue 中过渡的 @enter-cancelled 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-749",
+    "title": "Vue 中过渡的 @leave-cancelled 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-750",
+    "title": "Vue 中过渡的 @before-leave 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  }
+]

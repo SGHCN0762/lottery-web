@@ -1,0 +1,552 @@
+[
+  {
+    "id": "go-51",
+    "title": "Go语言中，以下哪种类型不能作为映射的键？",
+    "options": [
+      "切片",
+      "整数",
+      "字符串",
+      "结构体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-52",
+    "title": "Go语言中，如何判断映射中的键是否存在？",
+    "options": [
+      "val, ok := m[key]",
+      "m.exists(key)",
+      "m[key] != nil",
+      "m.contains(key)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-53",
+    "title": "Go语言中，delete函数的作用是？",
+    "options": [
+      "删除映射中的键值对",
+      "删除切片中的元素",
+      "删除变量",
+      "删除包"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-54",
+    "title": "Go语言中，struct标签的作用是？",
+    "options": [
+      "为字段提供元信息",
+      "注释",
+      "定义方法",
+      "控制访问权限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-55",
+    "title": "Go语言中，如何比较两个struct是否相等？",
+    "options": [
+      "如果字段都可比较，可以使用==",
+      "必须实现Equals方法",
+      "必须使用reflect.DeepEqual",
+      "不能比较"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-56",
+    "title": "Go语言中，if语句可以包含初始化语句吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能包含条件",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-57",
+    "title": "Go语言中，for循环有几种形式？",
+    "options": [
+      "3种",
+      "1种",
+      "2种",
+      "4种"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-58",
+    "title": "Go语言中，有while关键字吗？",
+    "options": [
+      "没有",
+      "有",
+      "在特定包中",
+      "取决于版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-59",
+    "title": "Go语言中，switch语句默认穿透吗？",
+    "options": [
+      "不穿透",
+      "穿透",
+      "取决于case",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-60",
+    "title": "Go语言中，如何实现switch穿透？",
+    "options": [
+      "使用fallthrough关键字",
+      "使用break关键字",
+      "使用continue关键字",
+      "使用pass关键字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-61",
+    "title": "Go语言中，switch可以没有条件吗？",
+    "options": [
+      "可以，相当于switch true",
+      "不可以",
+      "只能是常量",
+      "只能是整数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-62",
+    "title": "Go语言中，break语句可以跳出外层循环吗？",
+    "options": [
+      "可以配合标签使用",
+      "不可以",
+      "只能跳出当前循环",
+      "只能跳出switch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-63",
+    "title": "Go语言中，continue语句的作用是？",
+    "options": [
+      "跳过当前循环迭代",
+      "跳出循环",
+      "跳出switch",
+      "结束函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-64",
+    "title": "Go语言中，goto语句可以使用吗？",
+    "options": [
+      "可以，但不推荐",
+      "不可以",
+      "只能在函数内",
+      "只能在循环内"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-65",
+    "title": "Go语言中，函数可以返回多个值吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "最多两个",
+      "取决于返回类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-66",
+    "title": "Go语言中，函数参数传递方式是？",
+    "options": [
+      "值传递",
+      "引用传递",
+      "指针传递",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-67",
+    "title": "Go语言中，如何实现引用传递的效果？",
+    "options": [
+      "传递指针",
+      "传递引用",
+      "使用ref关键字",
+      "使用out关键字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-68",
+    "title": "Go语言中，函数是一等公民吗？",
+    "options": [
+      "是",
+      "不是",
+      "部分是",
+      "取决于定义位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-69",
+    "title": "Go语言中，匿名函数的作用是？",
+    "options": [
+      "闭包，延迟调用",
+      "多态",
+      "继承",
+      "封装"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-70",
+    "title": "Go语言中，闭包捕获的变量是？",
+    "options": [
+      "变量的引用",
+      "变量的值",
+      "变量的副本",
+      "变量的指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-71",
+    "title": "Go语言中，defer可以修改命名返回值吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能修改指针",
+      "取决于返回类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-72",
+    "title": "Go语言中，panic的作用是？",
+    "options": [
+      "抛出异常",
+      "捕获异常",
+      "记录日志",
+      "退出程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-73",
+    "title": "Go语言中，recover的作用是？",
+    "options": [
+      "捕获panic",
+      "抛出panic",
+      "记录错误",
+      "重试操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-74",
+    "title": "Go语言中，recover在哪里调用有效？",
+    "options": [
+      "defer函数中",
+      "普通函数中",
+      "main函数中",
+      "任何地方"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-75",
+    "title": "Go语言中，error接口包含什么方法？",
+    "options": [
+      "Error() string",
+      "Error() error",
+      "String() string",
+      "Msg() string"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-76",
+    "title": "Go语言中，如何创建一个错误？",
+    "options": [
+      "errors.New()",
+      "error.New()",
+      "panic()",
+      "throw()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-77",
+    "title": "Go语言中，fmt.Errorf的作用是？",
+    "options": [
+      "格式化创建错误",
+      "打印错误",
+      "忽略错误",
+      "恢复错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-78",
+    "title": "Go语言中，errors.Is的作用是？",
+    "options": [
+      "判断错误链中是否包含特定错误",
+      "判断两个错误是否相等",
+      "创建新错误",
+      "包装错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-79",
+    "title": "Go语言中，errors.As的作用是？",
+    "options": [
+      "将错误链中的错误转换为特定类型",
+      "判断错误类型",
+      "断言错误",
+      "抛出错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-80",
+    "title": "Go语言中，%w在fmt.Errorf中的作用是？",
+    "options": [
+      "包装错误",
+      "忽略错误",
+      "格式化字符串",
+      "解包错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-81",
+    "title": "Go语言中，方法可以定义在哪些类型上？",
+    "options": [
+      "自定义类型或结构体",
+      "基本类型",
+      "任何类型",
+      "只能结构体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-82",
+    "title": "Go语言中，值接收者和指针接收者的区别是？",
+    "options": [
+      "值接收者操作副本，指针接收者操作原值",
+      "没有区别",
+      "值接收者更快",
+      "指针接收者用于只读"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-83",
+    "title": "Go语言中，什么情况下应该使用指针接收者？",
+    "options": [
+      "需要修改接收者、结构体较大、一致性",
+      "总是应该使用",
+      "结构体较小时",
+      "方法只读时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-84",
+    "title": "Go语言中，方法可以定义在内置类型上吗？",
+    "options": [
+      "不可以，需要先定义类型别名",
+      "可以",
+      "只能定义在int上",
+      "只能定义在string上"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-85",
+    "title": "Go语言中，方法值和方法表达式的区别是？",
+    "options": [
+      "方法值绑定接收者，方法表达式需显式传参",
+      "没有区别",
+      "方法值更快",
+      "方法表达式更安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-86",
+    "title": "Go语言中，组合优于继承的体现是？",
+    "options": [
+      "结构体嵌套实现代码复用",
+      "使用extends关键字",
+      "使用implements关键字",
+      "使用mixin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-87",
+    "title": "Go语言中，结构体嵌套后可以访问内嵌类型的方法吗？",
+    "options": [
+      "可以，类似继承",
+      "不可以",
+      "只能访问字段",
+      "需要显式调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-88",
+    "title": "Go语言中，接口的零值是nil，如果接口包含空指针会怎样？",
+    "options": [
+      "接口不为nil",
+      "接口为nil",
+      "编译错误",
+      "运行时错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-89",
+    "title": "Go语言中，接口的底层实现包含哪两部分？",
+    "options": [
+      "类型和值",
+      "键和值",
+      "名称和值",
+      "指针和长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-90",
+    "title": "Go语言中，空接口是指？",
+    "options": [
+      "没有任何方法的接口",
+      "没有字段的接口",
+      "未导出的接口",
+      "抽象接口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-91",
+    "title": "Go语言中，类型断言的语法是？",
+    "options": [
+      "value, ok := x.(Type)",
+      "value = x as Type",
+      "value = cast(Type, x)",
+      "value = Type(x)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-92",
+    "title": "Go语言中，类型switch的作用是？",
+    "options": [
+      "根据接口的具体类型执行不同逻辑",
+      "比较类型大小",
+      "转换类型",
+      "判断是否为nil"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-93",
+    "title": "Go语言中，接口隐式实现是指？",
+    "options": [
+      "不需要implements关键字",
+      "不需要定义方法",
+      "不需要导入",
+      "不需要声明"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-94",
+    "title": "Go语言中，如何判断接口变量是否为nil？",
+    "options": [
+      "接口的type和value都为nil",
+      "接口的value为nil",
+      "接口的type为nil",
+      "使用==nil即可"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-95",
+    "title": "Go语言中，goroutine的创建使用哪个关键字？",
+    "options": [
+      "go",
+      "async",
+      "spawn",
+      "thread"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-96",
+    "title": "Go语言中，goroutine由谁调度？",
+    "options": [
+      "Go运行时",
+      "操作系统",
+      "程序员",
+      "编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-97",
+    "title": "Go语言中，goroutine的初始栈大小是？",
+    "options": [
+      "2KB左右",
+      "1MB",
+      "8KB",
+      "4KB"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-98",
+    "title": "Go语言中，goroutine的栈可以动态增长吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "取决于系统",
+      "取决于大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-99",
+    "title": "Go语言中，channel的作用是？",
+    "options": [
+      "goroutine间通信",
+      "并发控制",
+      "同步",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "go-100",
+    "title": "Go语言中，无缓冲通道的特点是？",
+    "options": [
+      "发送和接收必须同时就绪",
+      "发送不需要等待接收",
+      "接收不需要等待发送",
+      "可以存储多个值"
+    ],
+    "correctAnswer": 0
+  }
+]

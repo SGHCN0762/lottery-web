@@ -1,0 +1,552 @@
+[
+  {
+    "id": "java-901",
+    "title": "Java 11的Flight Recorder作用是？",
+    "options": [
+      "性能分析",
+      "日志记录",
+      "网络监控",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-902",
+    "title": "Java 11的Lambda参数var作用是？",
+    "options": [
+      "允许注解修饰Lambda参数",
+      "类型推断",
+      "性能优化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-903",
+    "title": "Java 11的嵌套访问控制作用是？",
+    "options": [
+      "允许嵌套类访问私有成员",
+      "封装性",
+      "多态性",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-904",
+    "title": "Java 11的Epsilon GC作用是？",
+    "options": [
+      "无操作垃圾收集器",
+      "低延迟",
+      "高吞吐",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-905",
+    "title": "Java 11的ZGC实验性引入吗？",
+    "options": [
+      "是",
+      "否",
+      "已正式",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-906",
+    "title": "Java 12的新特性有？",
+    "options": [
+      "Switch表达式, Compact Number",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-907",
+    "title": "Java 12的Switch表达式特点？",
+    "options": [
+      "使用箭头语法，可返回值",
+      "传统语法",
+      "无变化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-908",
+    "title": "Java 12的Compact Number作用是？",
+    "options": [
+      "格式化紧凑数字",
+      "格式化日期",
+      "格式化货币",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-909",
+    "title": "Java 12的JVM改进有？",
+    "options": [
+      "微基准套件, 默认CDS",
+      "G1改进",
+      "ZGC改进",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-910",
+    "title": "Java 13的新特性有？",
+    "options": [
+      "文本块, Switch表达式改进",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-911",
+    "title": "Java 13的文本块特点？",
+    "options": [
+      "多行字符串",
+      "单行字符串",
+      "格式化字符串",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-912",
+    "title": "Java 13的文本块使用什么符号？",
+    "options": [
+      "\"\"\"",
+      "'''",
+      "```",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-913",
+    "title": "Java 13的Switch表达式改进？",
+    "options": [
+      "yield返回值",
+      "return返回值",
+      "break返回值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-914",
+    "title": "Java 13的ZGC改进？",
+    "options": [
+      "归还未使用内存",
+      "分代收集",
+      "并发整理",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-915",
+    "title": "Java 14的新特性有？",
+    "options": [
+      "Switch表达式正式, Records预览, NPE改进",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-916",
+    "title": "Java 14的Switch表达式正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-917",
+    "title": "Java 14的Records预览作用？",
+    "options": [
+      "简化数据类",
+      "简化枚举",
+      "简化接口",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-918",
+    "title": "Java 14的NPE改进？",
+    "options": [
+      "详细异常信息",
+      "忽略异常",
+      "静默异常",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-919",
+    "title": "Java 14的instanceof模式匹配预览？",
+    "options": [
+      "类型判断和绑定",
+      "类型转换",
+      "类型检查",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-920",
+    "title": "Java 15的新特性有？",
+    "options": [
+      "Text Blocks正式, ZGC正式, Sealed Classes预览",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-921",
+    "title": "Java 15的Text Blocks正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-922",
+    "title": "Java 15的ZGC正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-923",
+    "title": "Java 15的Sealed Classes预览作用？",
+    "options": [
+      "限制继承",
+      "限制实例化",
+      "限制访问",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-924",
+    "title": "Java 15的Hidden Classes作用？",
+    "options": [
+      "框架内部使用",
+      "公共API",
+      "简化代码",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-925",
+    "title": "Java 16的新特性有？",
+    "options": [
+      "Records正式, instanceof模式匹配正式, Vector API孵化",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-926",
+    "title": "Java 16的Records正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-927",
+    "title": "Java 16的instanceof模式匹配正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-928",
+    "title": "Java 16的Vector API孵化作用？",
+    "options": [
+      "SIMD计算",
+      "网络计算",
+      "并发计算",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-929",
+    "title": "Java 16的Unix-Domain Socket作用？",
+    "options": [
+      "本地进程通信",
+      "网络通信",
+      "远程通信",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-930",
+    "title": "Java 17的新特性有？",
+    "options": [
+      "Sealed Classes正式, Pattern Matching for switch预览",
+      "Lambda, Stream",
+      "模块化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-931",
+    "title": "Java 17的Sealed Classes正式吗？",
+    "options": [
+      "是",
+      "否",
+      "预览",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-932",
+    "title": "Java 17是LTS版本吗？",
+    "options": [
+      "是",
+      "否",
+      "不确定",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-933",
+    "title": "Java 17的Pattern Matching for switch预览作用？",
+    "options": [
+      "switch模式匹配",
+      "if模式匹配",
+      "for模式匹配",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-934",
+    "title": "Java 17的Foreign Function & Memory API孵化作用？",
+    "options": [
+      "调用本地代码",
+      "调用Java代码",
+      "调用网络代码",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-935",
+    "title": "Java 17的Context-Specific Deserialization作用？",
+    "options": [
+      "反序列化过滤",
+      "序列化加密",
+      "反序列化压缩",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-936",
+    "title": "Java 8的新特性有？",
+    "options": [
+      "Lambda, Stream, Optional, 新日期API",
+      "泛型, 注解",
+      "枚举, 静态导入",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-937",
+    "title": "Java 8的Lambda表达式作用是？",
+    "options": [
+      "简化函数式接口实现",
+      "提高性能",
+      "替代匿名类",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-938",
+    "title": "Java 8的函数式接口有？",
+    "options": [
+      "Predicate, Function, Consumer, Supplier",
+      "Runnable, Callable",
+      "Comparable, Comparator",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-939",
+    "title": "Java 8的Predicate接口的作用是？",
+    "options": [
+      "判断",
+      "转换",
+      "消费",
+      "提供"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-940",
+    "title": "Java 8的Function接口的作用是？",
+    "options": [
+      "转换",
+      "判断",
+      "消费",
+      "提供"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-941",
+    "title": "Java中单例模式的实现方式有？",
+    "options": [
+      "饿汉, 懒汉, 双重检查, 枚举",
+      "工厂, 抽象工厂",
+      "建造者, 原型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-942",
+    "title": "Java中饿汉单例的特点是？",
+    "options": [
+      "线程安全，类加载时创建",
+      "延迟加载",
+      "非线程安全",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-943",
+    "title": "Java中懒汉单例的特点是？",
+    "options": [
+      "延迟加载，非线程安全",
+      "线程安全",
+      "类加载时创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-944",
+    "title": "Java中双重检查单例的特点是？",
+    "options": [
+      "延迟加载，线程安全",
+      "非线程安全",
+      "类加载时创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-945",
+    "title": "Java中双重检查单例需要volatile吗？",
+    "options": [
+      "需要，防止指令重排序",
+      "不需要",
+      "可选",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-946",
+    "title": "Java中静态内部类单例的特点是？",
+    "options": [
+      "延迟加载，线程安全",
+      "非线程安全",
+      "类加载时创建",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-947",
+    "title": "Java中枚举单例的特点是？",
+    "options": [
+      "最佳实现，防止反射和序列化破坏",
+      "非线程安全",
+      "延迟加载",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-948",
+    "title": "Java中工厂模式的作用是？",
+    "options": [
+      "创建对象",
+      "结构对象",
+      "行为对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-949",
+    "title": "Java中简单工厂的特点是？",
+    "options": [
+      "一个工厂创建所有产品",
+      "一个工厂创建一种产品",
+      "多个工厂创建多种产品",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-950",
+    "title": "Java中工厂方法的特点是？",
+    "options": [
+      "一个工厂创建一种产品",
+      "一个工厂创建所有产品",
+      "多个工厂创建多种产品",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

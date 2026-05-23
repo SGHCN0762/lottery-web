@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-851",
+    "title": "Python中PEP 557是什么？",
+    "options": [
+      "dataclasses",
+      "枚举",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-852",
+    "title": "Python中PEP 563是什么？",
+    "options": [
+      "延迟注解求值",
+      "类型提示",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-853",
+    "title": "Python中PEP 613是什么？",
+    "options": [
+      "TypeAlias",
+      "类型提示",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-854",
+    "title": "Python中TypeAlias的作用是？",
+    "options": [
+      "类型别名",
+      "变量别名",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-855",
+    "title": "Python中Literal的作用是？",
+    "options": [
+      "字面量类型",
+      "字符串类型",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-856",
+    "title": "Python中Final的作用是？",
+    "options": [
+      "不可变类型",
+      "常量类型",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-857",
+    "title": "Python中Protocol的作用是？",
+    "options": [
+      "结构化子类型",
+      "接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-858",
+    "title": "Python中TypedDict的作用是？",
+    "options": [
+      "类型化字典",
+      "普通字典",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-859",
+    "title": "Python中设计模式有哪些？",
+    "options": [
+      "创建型，结构型，行为型",
+      "只有单例",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-860",
+    "title": "Python中单例模式的实现方式有？",
+    "options": [
+      "模块，装饰器，元类",
+      "只能类",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-861",
+    "title": "Python中最简单的单例是？",
+    "options": [
+      "模块",
+      "类",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-862",
+    "title": "Python中工厂模式的作用是？",
+    "options": [
+      "创建对象",
+      "结构对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-863",
+    "title": "Python中观察者模式的作用是？",
+    "options": [
+      "一对多依赖",
+      "一对一依赖",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-864",
+    "title": "Python中策略模式的作用是？",
+    "options": [
+      "封装算法",
+      "创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-865",
+    "title": "Python中装饰器模式的作用是？",
+    "options": [
+      "动态添加功能",
+      "创建对象",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-866",
+    "title": "Python中Pythonic的代码特点是？",
+    "options": [
+      "简洁，可读，优雅",
+      "复杂，晦涩",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-867",
+    "title": "Python中EAFP是指？",
+    "options": [
+      "请求宽恕比许可容易",
+      "先检查再执行",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-868",
+    "title": "Python中LBYL是指？",
+    "options": [
+      "先看再跳",
+      "请求宽恕比许可容易",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-869",
+    "title": "Python中推荐EAFP还是LBYL？",
+    "options": [
+      "EAFP",
+      "LBYL",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-870",
+    "title": "Python中鸭子类型是指？",
+    "options": [
+      "关注行为而非类型",
+      "关注类型而非行为",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-871",
+    "title": "Python中如何编写文档字符串？",
+    "options": [
+      "使用三引号",
+      "使用#",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-872",
+    "title": "Python中docstring的格式有？",
+    "options": [
+      "Sphinx, Google, NumPy",
+      "Markdown",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-873",
+    "title": "Python中如何生成文档？",
+    "options": [
+      "Sphinx",
+      "pydoc",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-874",
+    "title": "Python中Sphinx的作用是？",
+    "options": [
+      "文档生成",
+      "代码检查",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-875",
+    "title": "Python中pydoc的作用是？",
+    "options": [
+      "文档生成",
+      "代码检查",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-876",
+    "title": "Python中如何进行单元测试？",
+    "options": [
+      "unittest, pytest",
+      "junit",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-877",
+    "title": "Python中unittest的作用是？",
+    "options": [
+      "单元测试",
+      "集成测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-878",
+    "title": "Python中pytest的作用是？",
+    "options": [
+      "单元测试",
+      "集成测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-879",
+    "title": "Python中pytest和unittest的区别是？",
+    "options": [
+      "pytest更简洁强大",
+      "unittest更简洁",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-880",
+    "title": "Python中如何进行参数化测试？",
+    "options": [
+      "@pytest.mark.parametrize",
+      "ddt",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-881",
+    "title": "Python中如何进行固件管理？",
+    "options": [
+      "pytest fixtures",
+      "unittest setUp",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-882",
+    "title": "Python中如何进行测试标记？",
+    "options": [
+      "@pytest.mark",
+      "@tag",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-883",
+    "title": "Python中如何跳过测试？",
+    "options": [
+      "@pytest.mark.skip",
+      "@skip",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-884",
+    "title": "Python中如何预期失败？",
+    "options": [
+      "@pytest.mark.xfail",
+      "@expect_fail",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-885",
+    "title": "Python中如何进行测试发现？",
+    "options": [
+      "pytest自动发现",
+      "手动指定",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-886",
+    "title": "Python中如何进行测试配置？",
+    "options": [
+      "pytest.ini, pyproject.toml",
+      "config.py",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-887",
+    "title": "Python中如何进行日志测试？",
+    "options": [
+      "caplog fixture",
+      "日志断言",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-888",
+    "title": "Python中如何进行临时文件测试？",
+    "options": [
+      "tmp_path fixture",
+      "tempfile",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-889",
+    "title": "Python中如何进行HTTP测试？",
+    "options": [
+      "requests-mock, responses",
+      "mock server",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-890",
+    "title": "Python中如何进行数据库测试？",
+    "options": [
+      "事务回滚, fixture",
+      "真实数据库",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-891",
+    "title": "Python中如何进行API测试？",
+    "options": [
+      "pytest + requests",
+      "postman",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-892",
+    "title": "Python中如何进行Web测试？",
+    "options": [
+      "Selenium, Playwright",
+      "手动测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-893",
+    "title": "Python中如何进行性能测试？",
+    "options": [
+      "locust, JMeter",
+      "手动测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-894",
+    "title": "Python中如何进行安全测试？",
+    "options": [
+      "OWASP工具",
+      "手动测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-895",
+    "title": "Python中如何进行代码质量保证？",
+    "options": [
+      "测试，审查，分析",
+      "不测试",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-896",
+    "title": "Python中如何进行持续集成？",
+    "options": [
+      "GitHub Actions, Jenkins",
+      "手动部署",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-897",
+    "title": "Python中GitHub Actions的作用是？",
+    "options": [
+      "CI/CD",
+      "代码检查",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-898",
+    "title": "Python中pre-commit的作用是？",
+    "options": [
+      "Git钩子管理",
+      "代码提交",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-899",
+    "title": "Python中如何进行版本管理？",
+    "options": [
+      "Git",
+      "SVN",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-900",
+    "title": "Python中语义化版本格式是？",
+    "options": [
+      "MAJOR.MINOR.PATCH",
+      "1.0",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

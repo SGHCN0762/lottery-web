@@ -1,0 +1,552 @@
+[
+  {
+    "id": "html-901",
+    "title": "Canvas的globalAlpha属性用于？",
+    "options": [
+      "设置全局透明度",
+      "设置背景色",
+      "设置边框",
+      "设置阴影"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-902",
+    "title": "Canvas的globalCompositeOperation用于？",
+    "options": [
+      "设置图形叠加混合模式",
+      "设置透明度",
+      "设置抗锯齿",
+      "设置分辨率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-903",
+    "title": "Canvas的shadowBlur属性用于？",
+    "options": [
+      "设置阴影模糊级别",
+      "设置阴影颜色",
+      "设置阴影偏移",
+      "设置阴影大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-904",
+    "title": "Canvas如何绘制贝塞尔曲线？",
+    "options": [
+      "bezierCurveTo()",
+      "curveTo()",
+      "arcTo()",
+      "splineTo()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-905",
+    "title": "Canvas如何绘制二次曲线？",
+    "options": [
+      "quadraticCurveTo()",
+      "bezierCurveTo()",
+      "conicCurveTo()",
+      "arcTo()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-906",
+    "title": "Canvas的createLinearGradient()用于？",
+    "options": [
+      "创建线性渐变",
+      "创建径向渐变",
+      "创建锥形渐变",
+      "创建图案"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-907",
+    "title": "Canvas的createRadialGradient()用于？",
+    "options": [
+      "创建径向渐变",
+      "创建线性渐变",
+      "创建锥形渐变",
+      "创建图案"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-908",
+    "title": "Canvas的createPattern()用于？",
+    "options": [
+      "基于图像创建图案",
+      "创建渐变",
+      "创建阴影",
+      "创建路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-909",
+    "title": "Canvas的clip()方法用于？",
+    "options": [
+      "从画布裁剪任意形状区域",
+      "剪切图像",
+      "复制区域",
+      "删除像素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-910",
+    "title": "Canvas的drawImage()方法有几个重载？",
+    "options": [
+      "3个",
+      "1个",
+      "2个",
+      "4个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-911",
+    "title": "Canvas如何将画布内容导出为Blob？",
+    "options": [
+      "toBlob()",
+      "toDataURL()",
+      "exportBlob()",
+      "getImageData()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-912",
+    "title": "Canvas的getImageData()返回的对象包含？",
+    "options": [
+      "Uint8ClampedArray",
+      "Array",
+      "Float32Array",
+      "String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-913",
+    "title": "Canvas的lineJoin属性用于？",
+    "options": [
+      "设置线条相交时的拐角样式",
+      "设置线条末端",
+      "设置线条宽度",
+      "设置虚线"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-914",
+    "title": "Canvas的lineCap属性用于？",
+    "options": [
+      "设置线条末端的样式",
+      "设置拐角样式",
+      "设置线条宽度",
+      "设置线条颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-915",
+    "title": "Canvas的setLineDash()方法用于？",
+    "options": [
+      "设置虚线样式",
+      "设置线条宽度",
+      "设置线条颜色",
+      "设置连接样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-916",
+    "title": "Canvas的measureText()方法用于？",
+    "options": [
+      "测量文本宽度等信息",
+      "设置字体大小",
+      "绘制文本",
+      "对齐文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-917",
+    "title": "Canvas的translate()方法用于？",
+    "options": [
+      "移动画布坐标系原点",
+      "缩放画布",
+      "旋转画布",
+      "倾斜画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-918",
+    "title": "Canvas的rotate()方法用于？",
+    "options": [
+      "旋转画布坐标系",
+      "移动原点",
+      "缩放画布",
+      "倾斜画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-919",
+    "title": "Canvas的scale()方法用于？",
+    "options": [
+      "缩放画布坐标系",
+      "移动原点",
+      "旋转画布",
+      "倾斜画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-920",
+    "title": "Canvas的transform()方法用于？",
+    "options": [
+      "应用矩阵变换",
+      "重置变换",
+      "移动原点",
+      "旋转画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-921",
+    "title": "SVG的<filter>标签用于？",
+    "options": [
+      "定义SVG滤镜效果",
+      "定义渐变",
+      "定义路径",
+      "定义动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-922",
+    "title": "SVG的feGaussianBlur用于？",
+    "options": [
+      "创建高斯模糊效果",
+      "创建阴影",
+      "创建渐变",
+      "创建变色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-923",
+    "title": "SVG的<linearGradient>用于？",
+    "options": [
+      "定义线性渐变",
+      "定义径向渐变",
+      "定义图案",
+      "定义路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-924",
+    "title": "SVG的<radialGradient>用于？",
+    "options": [
+      "定义径向渐变",
+      "定义线性渐变",
+      "定义图案",
+      "定义路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-925",
+    "title": "SVG的<animate>标签用于？",
+    "options": [
+      "随时间改变SVG属性",
+      "定义形状",
+      "定义滤镜",
+      "定义裁剪"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-926",
+    "title": "SVG的<animateTransform>用于？",
+    "options": [
+      "对SVG进行变换动画(如旋转)",
+      "改变颜色",
+      "改变大小",
+      "改变位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-927",
+    "title": "SVG的<animateMotion>用于？",
+    "options": [
+      "让元素沿路径运动",
+      "改变属性",
+      "改变变换",
+      "改变样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-928",
+    "title": "SVG的<clipPath>用于？",
+    "options": [
+      "定义裁剪路径",
+      "定义遮罩",
+      "定义滤镜",
+      "定义动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-929",
+    "title": "SVG的<mask>用于？",
+    "options": [
+      "定义遮罩效果",
+      "定义裁剪",
+      "定义滤镜",
+      "定义渐变"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-930",
+    "title": "SVG的<pattern>用于？",
+    "options": [
+      "定义可重复的图案",
+      "定义渐变",
+      "定义滤镜",
+      "定义路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-931",
+    "title": "SVG的<use>标签用于？",
+    "options": [
+      "复用SVG元素",
+      "定义新元素",
+      "删除元素",
+      "克隆并独立修改"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-932",
+    "title": "SVG的<symbol>标签用于？",
+    "options": [
+      "定义可复用的图形模板",
+      "绘制符号",
+      "插入特殊字符",
+      "定义文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-933",
+    "title": "SVG的<defs>标签用于？",
+    "options": [
+      "存储不会直接渲染的定义元素",
+      "定义可见元素",
+      "定义布局",
+      "定义样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-934",
+    "title": "SVG的fill属性用于？",
+    "options": [
+      "设置填充颜色",
+      "设置边框颜色",
+      "设置透明度",
+      "设置渐变"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-935",
+    "title": "SVG的stroke属性用于？",
+    "options": [
+      "设置描边颜色",
+      "设置填充颜色",
+      "设置透明度",
+      "设置阴影"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-936",
+    "title": "WebGL中着色器的语言是？",
+    "options": [
+      "GLSL",
+      "JavaScript",
+      "HLSL",
+      "C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-937",
+    "title": "WebGL的顶点着色器作用是？",
+    "options": [
+      "处理顶点位置和变换",
+      "处理像素颜色",
+      "处理纹理",
+      "处理光照"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-938",
+    "title": "WebGL的片元着色器作用是？",
+    "options": [
+      "计算像素颜色",
+      "处理顶点位置",
+      "处理几何变换",
+      "处理裁剪"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-939",
+    "title": "WebGL的gl.drawArrays()用于？",
+    "options": [
+      "渲染图元",
+      "创建缓冲",
+      "编译着色器",
+      "链接程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-940",
+    "title": "WebGL的VBO(顶点缓冲对象)用于？",
+    "options": [
+      "存储顶点数据",
+      "存储纹理",
+      "存储着色器",
+      "存储状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-941",
+    "title": "WebGL的纹理(Texture)用于？",
+    "options": [
+      "将图像映射到几何体表面",
+      "添加光照",
+      "计算阴影",
+      "设置透明度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-942",
+    "title": "Canvas的isPointInPath()用于？",
+    "options": [
+      "判断点是否在路径内",
+      "判断点是否在画布内",
+      "获取路径点",
+      "创建路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-943",
+    "title": "SVG的preserveAspectRatio用于？",
+    "options": [
+      "控制SVG在视口中的对齐和缩放方式",
+      "控制透明度",
+      "控制动画速度",
+      "控制填充方式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-944",
+    "title": "Canvas的imageSmoothingEnabled用于？",
+    "options": [
+      "控制图像缩放时是否平滑",
+      "控制抗锯齿",
+      "控制阴影",
+      "控制透明度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-945",
+    "title": "SVG的foreignObject标签用于？",
+    "options": [
+      "在SVG中嵌入HTML/XML外部内容",
+      "嵌入图片",
+      "嵌入视频",
+      "嵌入字体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-946",
+    "title": "Canvas的save()和restore()能保存什么？",
+    "options": [
+      "绘图状态(变换、裁剪、样式)",
+      "像素数据",
+      "图像文件",
+      "DOM状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-947",
+    "title": "WebGL的FBO(帧缓冲对象)用于？",
+    "options": [
+      "离屏渲染",
+      "显示渲染",
+      "顶点存储",
+      "纹理加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-948",
+    "title": "SVG的<textPath>用于？",
+    "options": [
+      "让文本沿着路径排列",
+      "绘制文本路径",
+      "修改文本形状",
+      "裁剪文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-949",
+    "title": "Canvas的OffscreenCanvas优势？",
+    "options": [
+      "在Worker线程中进行渲染",
+      "增大画布尺寸",
+      "提高分辨率",
+      "自动抗锯齿"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-950",
+    "title": "Canvas的globalAlpha属性用于？",
+    "options": [
+      "设置全局透明度",
+      "设置背景色",
+      "设置边框",
+      "设置阴影"
+    ],
+    "correctAnswer": 0
+  }
+]

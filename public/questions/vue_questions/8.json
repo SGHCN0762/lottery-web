@@ -1,0 +1,552 @@
+[
+  {
+    "id": "vue-351",
+    "title": "Vue 中 v-model 的修饰符 .trim 的作用是？",
+    "options": [
+      "自动过滤首尾空格",
+      "限制输入",
+      "格式化",
+      "验证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-352",
+    "title": "Vue 中 v-model 在原生 input 上的实现原理是？",
+    "options": [
+      ":value + @input",
+      ":model + @change",
+      ":value + @change",
+      ":model + @input"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-353",
+    "title": "Vue 中 v-model 在复选框上的绑定值是？",
+    "options": [
+      "boolean 或数组",
+      "string",
+      "number",
+      "object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-354",
+    "title": "Vue 中 v-model 在单选框上的绑定值是？",
+    "options": [
+      "string",
+      "boolean",
+      "array",
+      "object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-355",
+    "title": "Vue 中 v-model 在选择框上的绑定值是？",
+    "options": [
+      "string 或 array",
+      "boolean",
+      "number",
+      "object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-356",
+    "title": "Vue 中 v-model 的自定义修饰符如何获取？",
+    "options": [
+      "modelModifiers prop",
+      "modifiers 选项",
+      "this.$modifiers",
+      "useModifiers()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-357",
+    "title": "Vue 中 v-model 的参数化使用是？",
+    "options": [
+      "v-model:title",
+      "v-model.title",
+      "v-model=\"title\"",
+      "v-model:[title]"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-358",
+    "title": "Vue 中 v-model 的多个绑定如何实现？",
+    "options": [
+      "v-model:title + v-model:content",
+      "v-model=[title, content]",
+      "v-model=\"{title, content}\"",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-359",
+    "title": "Vue 中插槽的作用是？",
+    "options": [
+      "内容分发",
+      "组件通信",
+      "状态管理",
+      "路由管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-360",
+    "title": "Vue 中默认插槽的缩写是？",
+    "options": [
+      "v-slot",
+      "v-slot:default",
+      "#default",
+      "slot"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "vue-361",
+    "title": "Vue 中具名插槽如何使用？",
+    "options": [
+      "v-slot:name",
+      "v-slot=\"name\"",
+      "slot=name",
+      "#name"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-362",
+    "title": "Vue 中作用域插槽的作用是？",
+    "options": [
+      "将子组件数据传递给插槽内容",
+      "父组件向子组件传数据",
+      "兄弟组件通信",
+      "全局状态管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-363",
+    "title": "Vue 中作用域插槽的 v-slot 如何接收数据？",
+    "options": [
+      "v-slot=\"slotProps\"",
+      "v-slot:slotProps",
+      "v-slot=\"slotProps\"",
+      "#default=\"slotProps\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-364",
+    "title": "Vue 中插槽的解构赋值如何使用？",
+    "options": [
+      "v-slot=\"{ user }\"",
+      "v-slot:user",
+      "v-slot=\"user\"",
+      "#user"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-365",
+    "title": "Vue 中动态指令参数的格式是？",
+    "options": [
+      ":[argument]",
+      "(argument)",
+      "${argument}",
+      "@argument"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-366",
+    "title": "Vue 中动态指令参数的限制是？",
+    "options": [
+      "不能包含空格和引号",
+      "只能是字符串",
+      "不能是表达式",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-367",
+    "title": "Vue 中指令的钩子函数 bind 在 Vue 3 中被什么替代？",
+    "options": [
+      "beforeMount",
+      "mounted",
+      "created",
+      "beforeCreate"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-368",
+    "title": "Vue 中指令的钩子函数 inserted 在 Vue 3 中被什么替代？",
+    "options": [
+      "mounted",
+      "beforeMount",
+      "created",
+      "updated"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-369",
+    "title": "Vue 中指令的钩子函数 update 在 Vue 3 中被什么替代？",
+    "options": [
+      "updated",
+      "beforeUpdate",
+      "mounted",
+      "beforeMount"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-370",
+    "title": "Vue 中指令的钩子函数 componentUpdated 在 Vue 3 中被什么替代？",
+    "options": [
+      "updated",
+      "beforeUpdate",
+      "mounted",
+      "beforeMount"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-371",
+    "title": "Vue 中指令的钩子函数 unbind 在 Vue 3 中被什么替代？",
+    "options": [
+      "unmounted",
+      "beforeUnmount",
+      "destroyed",
+      "beforeDestroy"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-372",
+    "title": "Vue 中自定义指令的钩子函数参数包括？",
+    "options": [
+      "el, binding, vnode, prevVnode",
+      "el, binding, oldVnode",
+      "el, value, oldValue",
+      "el, modifiers"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-373",
+    "title": "Vue 中自定义指令的 binding 对象包含什么？",
+    "options": [
+      "value, oldValue, arg, modifiers",
+      "value, key, arg, modifiers",
+      "value, name, arg, modifiers",
+      "value, expression, arg, modifiers"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-374",
+    "title": "Vue 中自定义指令如何注册？",
+    "options": [
+      "app.directive()",
+      "app.directive.register()",
+      "Vue.directive()",
+      "directive.use()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-375",
+    "title": "Vue 中自定义指令的简写形式是？",
+    "options": [
+      "函数形式",
+      "对象形式",
+      "类形式",
+      "字符串形式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-376",
+    "title": "Vue 中自定义指令的简写形式在什么时候调用？",
+    "options": [
+      "mounted 和 updated",
+      "bind 和 update",
+      "inserted 和 componentUpdated",
+      "created 和 mounted"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-377",
+    "title": "Vue 中自定义指令如何传递多个值？",
+    "options": [
+      "使用对象字面量",
+      "使用数组",
+      "使用字符串",
+      "无法传递"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-378",
+    "title": "Vue 中模板表达式的限制是？",
+    "options": [
+      "只能包含单个表达式",
+      "可以包含语句",
+      "可以包含循环",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-379",
+    "title": "Vue 中模板表达式的访问限制是？",
+    "options": [
+      "不能访问全局变量",
+      "只能访问白名单全局变量",
+      "可以访问所有全局变量",
+      "不能访问 window"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "vue-380",
+    "title": "Vue 中模板表达式的白名单全局变量包括？",
+    "options": [
+      "Math, Date",
+      "console, window",
+      "document, location",
+      "process, require"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-381",
+    "title": "Vue 中计算属性和方法的区别是？",
+    "options": [
+      "计算属性基于响应式依赖缓存",
+      "方法每次都执行",
+      "计算属性不能传参",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-382",
+    "title": "Vue 中计算属性为什么默认是只读的？",
+    "options": [
+      "避免副作用",
+      "性能优化",
+      "代码规范",
+      "历史原因"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-383",
+    "title": "Vue 中计算属性的 setter 如何定义？",
+    "options": [
+      "set 函数",
+      "getter 返回值",
+      "computed.set",
+      "this.set()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-384",
+    "title": "Vue 中计算属性和侦听器的区别是？",
+    "options": [
+      "计算属性侧重计算，侦听器侧重副作用",
+      "计算属性支持异步，侦听器不支持",
+      "两者相同",
+      "侦听器有缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-385",
+    "title": "Vue 中 Class 与 Style 绑定的特殊之处是？",
+    "options": [
+      "支持对象和数组语法",
+      "只能是字符串",
+      "只能是对象",
+      "只能是数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-386",
+    "title": "Vue 中条件渲染的 key 管理状态是指？",
+    "options": [
+      "Vue 会复用元素，key 强制替换",
+      "key 只能用于 v-for",
+      "key 不影响条件渲染",
+      "无影响"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-387",
+    "title": "Vue 中 template 标签的作用是？",
+    "options": [
+      "不可见的包装元素",
+      "真实 DOM 元素",
+      "组件容器",
+      "路由容器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-388",
+    "title": "Vue 中列表渲染的维护状态是指？",
+    "options": [
+      "使用 key 追踪节点身份",
+      "使用 index 追踪",
+      "使用 ref 追踪",
+      "不需要追踪"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-389",
+    "title": "Vue 中数组变更方法有哪些？",
+    "options": [
+      "push, pop, shift, unshift, splice, sort, reverse",
+      "filter, concat, slice",
+      "map, reduce, forEach",
+      "find, findIndex, includes"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-390",
+    "title": "Vue 中数组替换方法有哪些？",
+    "options": [
+      "filter, concat, slice",
+      "push, pop, shift",
+      "splice, sort, reverse",
+      "map, reduce, forEach"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-391",
+    "title": "Vue 中直接通过索引设置数组项会响应式更新吗？",
+    "options": [
+      "不会，需要用 splice 或 reactive",
+      "会",
+      "取决于数组长度",
+      "报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-392",
+    "title": "Vue 中直接修改数组长度会响应式更新吗？",
+    "options": [
+      "不会，需要用 splice",
+      "会",
+      "取决于数组长度",
+      "报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-393",
+    "title": "Vue 中 v-if 和 v-show 的主要区别是什么？",
+    "options": [
+      "v-if 支持动画",
+      "v-show 只是切换 display",
+      "v-if 性能更好",
+      "没有区别"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "vue-394",
+    "title": "Vue 中 v-bind 绑定 style 支持哪些值？",
+    "options": [
+      "对象",
+      "数组",
+      "字符串",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-395",
+    "title": "Vue 中 v-bind 绑定 class 时，数组语法支持哪些元素？",
+    "options": [
+      "字符串",
+      "对象",
+      "三元表达式",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-396",
+    "title": "Vue 中 v-bind 可以绑定哪些属性？",
+    "options": [
+      "HTML 属性",
+      "DOM 属性",
+      "组件 props",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-397",
+    "title": "Vue 中 v-bind 绑定内联样式时，值可以是？",
+    "options": [
+      "字符串",
+      "对象",
+      "数组",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-398",
+    "title": "Vue 中 v-bind.prop 修饰符的作用是？",
+    "options": [
+      "绑定为 DOM property",
+      "绑定为 attribute",
+      "特殊处理",
+      "禁用绑定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-399",
+    "title": "Vue 中 v-bind.attr 修饰符的作用是？",
+    "options": [
+      "显式绑定为 attribute",
+      "绑定为 property",
+      "特殊处理",
+      "禁用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-400",
+    "title": "Vue 中 v-bind.camel 修饰符的作用是？",
+    "options": [
+      "转换为驼峰命名",
+      "转换为短横线",
+      "保持原样",
+      "大写转换"
+    ],
+    "correctAnswer": 0
+  }
+]

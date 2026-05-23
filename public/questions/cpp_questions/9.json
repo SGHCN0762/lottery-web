@@ -1,0 +1,552 @@
+[
+  {
+    "id": "cpp-401",
+    "title": "C++中std::decay的作用是？",
+    "options": [
+      "类型退化（去引用去const等）",
+      "类型提升",
+      "类型转换",
+      "类型判断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-402",
+    "title": "C++中完美转发使用什么？",
+    "options": [
+      "std::forward",
+      "std::move",
+      "std::decay",
+      "std::swap"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-403",
+    "title": "C++中完美转发的目的是？",
+    "options": [
+      "保持参数的值类别（左值/右值）",
+      "改变参数类型",
+      "去除const",
+      "增加引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-404",
+    "title": "C++中模板别名使用什么关键字？",
+    "options": [
+      "using",
+      "typedef",
+      "alias",
+      "define"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-405",
+    "title": "C++中变参模板包展开的位置有？",
+    "options": [
+      "递归，逗号表达式，初始化列表",
+      "只能递归",
+      "只能逗号表达式",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-406",
+    "title": "C++中概念的作用是？",
+    "options": [
+      "约束模板参数",
+      "实例化模板",
+      "声明模板",
+      "特化模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-407",
+    "title": "C++中requires关键字的作用是？",
+    "options": [
+      "定义约束",
+      "定义模板",
+      "定义函数",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-408",
+    "title": "C++中模板方法模式与C++模板的关系是？",
+    "options": [
+      "无关，前者是设计模式",
+      "相同",
+      "模板方法就是模板",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-409",
+    "title": "C++中模板的作用是？",
+    "options": [
+      "泛型编程",
+      "面向对象",
+      "过程式编程",
+      "函数式编程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-410",
+    "title": "C++中函数模板和类模板的区别是？",
+    "options": [
+      "函数模板可隐式推导，类模板通常需指定",
+      "没有区别",
+      "类模板可隐式推导",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-411",
+    "title": "C++中模板特化是指？",
+    "options": [
+      "为特定类型提供专门实现",
+      "模板实例化",
+      "模板推导",
+      "模板重载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-412",
+    "title": "C++中模板偏特化是指？",
+    "options": [
+      "为部分模板参数提供专门实现",
+      "完全特化",
+      "模板实例化",
+      "模板推导"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-413",
+    "title": "C++中SFINAE是指？",
+    "options": [
+      "替换失败不是错误",
+      "编译错误",
+      "运行时错误",
+      "链接错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-414",
+    "title": "C++中typename的作用是？",
+    "options": [
+      "指明依赖类型名",
+      "定义模板",
+      "声明变量",
+      "声明函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-415",
+    "title": "C++中template<typename T>的含义是？",
+    "options": [
+      "声明模板参数T",
+      "声明变量T",
+      "声明函数T",
+      "声明类T"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-416",
+    "title": "C++中非类型模板参数可以是？",
+    "options": [
+      "整型，枚举，指针等",
+      "任意类型",
+      "只能是int",
+      "只能是double"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-417",
+    "title": "C++中可变参数模板使用什么符号？",
+    "options": [
+      "...",
+      "&&",
+      "*",
+      "&"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-418",
+    "title": "C++中sizeof...(Args)的作用是？",
+    "options": [
+      "获取参数包大小",
+      "获取类型大小",
+      "获取对象大小",
+      "获取函数大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-419",
+    "title": "C++中模板的实例化时机是？",
+    "options": [
+      "编译时",
+      "运行时",
+      "链接时",
+      "加载时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-420",
+    "title": "C++中模板的代码膨胀是指？",
+    "options": [
+      "生成多份类型特定代码",
+      "代码体积减小",
+      "运行变慢",
+      "内存泄漏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-421",
+    "title": "C++中CRTP是指？",
+    "options": [
+      "奇异递归模板模式",
+      "普通继承",
+      "多态模式",
+      "工厂模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-422",
+    "title": "C++中类型萃取的作用是？",
+    "options": [
+      "在编译期获取类型信息",
+      "运行时获取类型信息",
+      "类型转换",
+      "类型删除"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-423",
+    "title": "C++中std::enable_if的作用是？",
+    "options": [
+      "条件启用模板重载",
+      "类型转换",
+      "类型推导",
+      "异常处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-424",
+    "title": "C++中std::is_integral的作用是？",
+    "options": [
+      "判断是否为整型",
+      "转换为整型",
+      "声明整型",
+      "获取整型大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-425",
+    "title": "C++中std::decay的作用是？",
+    "options": [
+      "类型退化（去引用去const等）",
+      "类型提升",
+      "类型转换",
+      "类型判断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-426",
+    "title": "C++中完美转发使用什么？",
+    "options": [
+      "std::forward",
+      "std::move",
+      "std::decay",
+      "std::swap"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-427",
+    "title": "C++中完美转发的目的是？",
+    "options": [
+      "保持参数的值类别（左值/右值）",
+      "改变参数类型",
+      "去除const",
+      "增加引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-428",
+    "title": "C++中模板别名使用什么关键字？",
+    "options": [
+      "using",
+      "typedef",
+      "alias",
+      "define"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-429",
+    "title": "C++中变参模板包展开的位置有？",
+    "options": [
+      "递归，逗号表达式，初始化列表",
+      "只能递归",
+      "只能逗号表达式",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-430",
+    "title": "C++中概念的作用是？",
+    "options": [
+      "约束模板参数",
+      "实例化模板",
+      "声明模板",
+      "特化模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-431",
+    "title": "C++中requires关键字的作用是？",
+    "options": [
+      "定义约束",
+      "定义模板",
+      "定义函数",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-432",
+    "title": "C++中模板方法模式与C++模板的关系是？",
+    "options": [
+      "无关，前者是设计模式",
+      "相同",
+      "模板方法就是模板",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-433",
+    "title": "C++中模板的作用是？",
+    "options": [
+      "泛型编程",
+      "面向对象",
+      "过程式编程",
+      "函数式编程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-434",
+    "title": "C++中函数模板和类模板的区别是？",
+    "options": [
+      "函数模板可隐式推导，类模板通常需指定",
+      "没有区别",
+      "类模板可隐式推导",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-435",
+    "title": "C++中模板特化是指？",
+    "options": [
+      "为特定类型提供专门实现",
+      "模板实例化",
+      "模板推导",
+      "模板重载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-436",
+    "title": "C++中模板偏特化是指？",
+    "options": [
+      "为部分模板参数提供专门实现",
+      "完全特化",
+      "模板实例化",
+      "模板推导"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-437",
+    "title": "C++中SFINAE是指？",
+    "options": [
+      "替换失败不是错误",
+      "编译错误",
+      "运行时错误",
+      "链接错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-438",
+    "title": "C++中typename的作用是？",
+    "options": [
+      "指明依赖类型名",
+      "定义模板",
+      "声明变量",
+      "声明函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-439",
+    "title": "C++中template<typename T>的含义是？",
+    "options": [
+      "声明模板参数T",
+      "声明变量T",
+      "声明函数T",
+      "声明类T"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-440",
+    "title": "C++中非类型模板参数可以是？",
+    "options": [
+      "整型，枚举，指针等",
+      "任意类型",
+      "只能是int",
+      "只能是double"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-441",
+    "title": "C++中可变参数模板使用什么符号？",
+    "options": [
+      "...",
+      "&&",
+      "*",
+      "&"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-442",
+    "title": "C++中sizeof...(Args)的作用是？",
+    "options": [
+      "获取参数包大小",
+      "获取类型大小",
+      "获取对象大小",
+      "获取函数大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-443",
+    "title": "C++中模板的实例化时机是？",
+    "options": [
+      "编译时",
+      "运行时",
+      "链接时",
+      "加载时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-444",
+    "title": "C++中模板的代码膨胀是指？",
+    "options": [
+      "生成多份类型特定代码",
+      "代码体积减小",
+      "运行变慢",
+      "内存泄漏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-445",
+    "title": "C++中CRTP是指？",
+    "options": [
+      "奇异递归模板模式",
+      "普通继承",
+      "多态模式",
+      "工厂模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-446",
+    "title": "C++中类型萃取的作用是？",
+    "options": [
+      "在编译期获取类型信息",
+      "运行时获取类型信息",
+      "类型转换",
+      "类型删除"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-447",
+    "title": "C++中std::enable_if的作用是？",
+    "options": [
+      "条件启用模板重载",
+      "类型转换",
+      "类型推导",
+      "异常处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-448",
+    "title": "C++中std::is_integral的作用是？",
+    "options": [
+      "判断是否为整型",
+      "转换为整型",
+      "声明整型",
+      "获取整型大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-449",
+    "title": "C++中std::decay的作用是？",
+    "options": [
+      "类型退化（去引用去const等）",
+      "类型提升",
+      "类型转换",
+      "类型判断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-450",
+    "title": "C++中完美转发使用什么？",
+    "options": [
+      "std::forward",
+      "std::move",
+      "std::decay",
+      "std::swap"
+    ],
+    "correctAnswer": 0
+  }
+]

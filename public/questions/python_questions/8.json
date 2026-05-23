@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-351",
+    "title": "Python中decimal模块的作用是？",
+    "options": [
+      "浮点数运算",
+      "定点数运算",
+      "分数运算",
+      "复数运算"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-352",
+    "title": "Python中fractions模块的作用是？",
+    "options": [
+      "浮点数运算",
+      "定点数运算",
+      "分数运算",
+      "复数运算"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-353",
+    "title": "Python中statistics模块的作用是？",
+    "options": [
+      "统计计算",
+      "数学计算",
+      "随机计算",
+      "时间计算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-354",
+    "title": "Python中operator模块的作用是？",
+    "options": [
+      "提供运算符函数",
+      "提供操作符重载",
+      "提供类型检查",
+      "提供迭代工具"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-355",
+    "title": "Python中functools模块的作用是？",
+    "options": [
+      "提供函数工具",
+      "提供迭代工具",
+      "提供类型检查",
+      "提供运算符函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-356",
+    "title": "Python中functools.partial()的作用是？",
+    "options": [
+      "偏函数",
+      "全函数",
+      "匿名函数",
+      "递归函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-357",
+    "title": "Python中functools.lru_cache()的作用是？",
+    "options": [
+      "缓存函数结果",
+      "删除函数结果",
+      "排序函数结果",
+      "过滤函数结果"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-358",
+    "title": "Python中functools.singledispatch()的作用是？",
+    "options": [
+      "单分派泛型函数",
+      "多分派泛型函数",
+      "递归函数",
+      "偏函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-359",
+    "title": "Python中itertools.product()的作用是？",
+    "options": [
+      "笛卡尔积",
+      "排列",
+      "组合",
+      "压缩"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-360",
+    "title": "Python中itertools.permutations()的作用是？",
+    "options": [
+      "笛卡尔积",
+      "排列",
+      "组合",
+      "压缩"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-361",
+    "title": "Python中打开文件的函数是？",
+    "options": [
+      "open()",
+      "file()",
+      "read()",
+      "write()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-362",
+    "title": "Python中open()的mode参数r表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-363",
+    "title": "Python中open()的mode参数w表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-364",
+    "title": "Python中open()的mode参数a表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-365",
+    "title": "Python中open()的mode参数b表示？",
+    "options": [
+      "读模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-366",
+    "title": "Python中open()的mode参数+表示？",
+    "options": [
+      "读写模式",
+      "写模式",
+      "追加模式",
+      "二进制模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-367",
+    "title": "Python中读取整个文件的方法是？",
+    "options": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "readall()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-368",
+    "title": "Python中读取一行的方法是？",
+    "options": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "readall()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-369",
+    "title": "Python中读取所有行的方法是？",
+    "options": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "readall()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-370",
+    "title": "Python中写入字符串的方法是？",
+    "options": [
+      "write()",
+      "writelines()",
+      "writeall()",
+      "writeline()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-371",
+    "title": "Python中写入多行的方法是？",
+    "options": [
+      "write()",
+      "writelines()",
+      "writeall()",
+      "writeline()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-372",
+    "title": "Python中文件指针定位的方法是？",
+    "options": [
+      "seek()",
+      "tell()",
+      "move()",
+      "position()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-373",
+    "title": "Python中获取文件指针位置的方法是？",
+    "options": [
+      "seek()",
+      "tell()",
+      "move()",
+      "position()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-374",
+    "title": "Python中关闭文件的方法是？",
+    "options": [
+      "close()",
+      "shutdown()",
+      "exit()",
+      "dispose()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-375",
+    "title": "Python中with语句的好处是？",
+    "options": [
+      "自动关闭文件",
+      "手动关闭文件",
+      "提高性能",
+      "简化语法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-376",
+    "title": "Python中with语句的原理是？",
+    "options": [
+      "上下文管理器",
+      "异常处理",
+      "循环控制",
+      "条件判断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-377",
+    "title": "Python中上下文管理器需要实现哪些方法？",
+    "options": [
+      "__enter__和__exit__",
+      "__init__和__del__",
+      "__open__和__close__",
+      "__start__和__stop__"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-378",
+    "title": "Python中__enter__方法的返回值赋给谁？",
+    "options": [
+      "as后的变量",
+      "with前的变量",
+      "self",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-379",
+    "title": "Python中__exit__方法的参数有？",
+    "options": [
+      "exc_type, exc_val, exc_tb",
+      "exception, value, traceback",
+      "type, value, tb",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-380",
+    "title": "Python中__exit__方法返回True表示？",
+    "options": [
+      "抑制异常",
+      "传播异常",
+      "忽略异常",
+      "重新抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-381",
+    "title": "Python中contextlib模块的作用是？",
+    "options": [
+      "提供上下文管理器工具",
+      "提供迭代器工具",
+      "提供函数工具",
+      "提供类型检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-382",
+    "title": "Python中contextlib.contextmanager的作用是？",
+    "options": [
+      "将生成器转为上下文管理器",
+      "将函数转为上下文管理器",
+      "将类转为上下文管理器",
+      "将迭代器转为上下文管理器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-383",
+    "title": "Python中异常的基类是？",
+    "options": [
+      "BaseException",
+      "Exception",
+      "Error",
+      "Throwable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-384",
+    "title": "Python中普通异常的基类是？",
+    "options": [
+      "BaseException",
+      "Exception",
+      "Error",
+      "Throwable"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-385",
+    "title": "Python中捕获异常的语句是？",
+    "options": [
+      "try...except",
+      "try...catch",
+      "try...handle",
+      "try...throw"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-386",
+    "title": "Python中finally子句何时执行？",
+    "options": [
+      "总是执行",
+      "无异常时执行",
+      "有异常时执行",
+      "break时执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-387",
+    "title": "Python中else子句何时执行？",
+    "options": [
+      "无异常时执行",
+      "有异常时执行",
+      "总是执行",
+      "break时执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-388",
+    "title": "Python中抛出异常的语句是？",
+    "options": [
+      "raise",
+      "throw",
+      "throws",
+      "emit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-389",
+    "title": "Python中自定义异常应该继承？",
+    "options": [
+      "Exception或其子类",
+      "BaseException",
+      "Error",
+      "object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-390",
+    "title": "Python中异常的参数是？",
+    "options": [
+      "异常实例",
+      "异常类",
+      "异常消息",
+      "异常类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-391",
+    "title": "Python中如何获取异常信息？",
+    "options": [
+      "str(e)",
+      "e.message",
+      "e.args",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-392",
+    "title": "Python中如何获取异常追踪信息？",
+    "options": [
+      "traceback.format_exc()",
+      "e.traceback",
+      "e.stack",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-393",
+    "title": "Python中traceback模块的作用是？",
+    "options": [
+      "异常追踪",
+      "日志记录",
+      "调试输出",
+      "性能监控"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-394",
+    "title": "Python中常见异常有？",
+    "options": [
+      "TypeError, ValueError, NameError",
+      "NullPointerException, ClassCastException",
+      "IOException, SQLException",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-395",
+    "title": "Python中TypeError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-396",
+    "title": "Python中ValueError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-397",
+    "title": "Python中NameError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称未定义",
+      "索引错误"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-398",
+    "title": "Python中IndexError发生的原因是？",
+    "options": [
+      "类型错误",
+      "值错误",
+      "名称错误",
+      "索引越界"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-399",
+    "title": "Python中KeyError发生的原因是？",
+    "options": [
+      "键不存在",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-400",
+    "title": "Python中AttributeError发生的原因是？",
+    "options": [
+      "属性不存在",
+      "值错误",
+      "名称错误",
+      "索引错误"
+    ],
+    "correctAnswer": 0
+  }
+]

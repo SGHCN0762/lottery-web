@@ -1,0 +1,552 @@
+[
+  {
+    "id": "java-651",
+    "title": "Java中Buffer的rewind()方法作用是？",
+    "options": [
+      "重绕缓冲区",
+      "清空缓冲区",
+      "切换为读模式",
+      "切换为写模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-652",
+    "title": "Java中Buffer的mark()方法作用是？",
+    "options": [
+      "标记位置",
+      "重置位置",
+      "清空缓冲区",
+      "压缩缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-653",
+    "title": "Java中Buffer的reset()方法作用是？",
+    "options": [
+      "重置位置",
+      "标记位置",
+      "清空缓冲区",
+      "压缩缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-654",
+    "title": "Java中ByteBuffer的allocate()方法作用是？",
+    "options": [
+      "分配堆缓冲区",
+      "分配直接缓冲区",
+      "分配映射缓冲区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-655",
+    "title": "Java中ByteBuffer的allocateDirect()方法作用是？",
+    "options": [
+      "分配直接缓冲区",
+      "分配堆缓冲区",
+      "分配映射缓冲区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-656",
+    "title": "Java中FileChannel的作用是？",
+    "options": [
+      "文件通道",
+      "网络通道",
+      "管道通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-657",
+    "title": "Java中SocketChannel的作用是？",
+    "options": [
+      "网络客户端通道",
+      "网络服务端通道",
+      "文件通道",
+      "管道通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-658",
+    "title": "Java中ServerSocketChannel的作用是？",
+    "options": [
+      "网络服务端通道",
+      "网络客户端通道",
+      "文件通道",
+      "管道通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-659",
+    "title": "Java中DatagramChannel的作用是？",
+    "options": [
+      "UDP通道",
+      "TCP客户端通道",
+      "TCP服务端通道",
+      "文件通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-660",
+    "title": "Java中Pipe.SinkChannel的作用是？",
+    "options": [
+      "管道写入通道",
+      "管道读取通道",
+      "文件通道",
+      "网络通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-661",
+    "title": "Java中Pipe.SourceChannel的作用是？",
+    "options": [
+      "管道读取通道",
+      "管道写入通道",
+      "文件通道",
+      "网络通道"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-662",
+    "title": "Java中Selector的select()方法作用是？",
+    "options": [
+      "阻塞等待通道就绪",
+      "非阻塞等待通道就绪",
+      "立即返回就绪通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-663",
+    "title": "Java中Selector的selectNow()方法作用是？",
+    "options": [
+      "非阻塞等待通道就绪",
+      "阻塞等待通道就绪",
+      "立即返回就绪通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-664",
+    "title": "Java中Selector的select(long timeout)方法作用是？",
+    "options": [
+      "超时等待通道就绪",
+      "阻塞等待通道就绪",
+      "非阻塞等待通道就绪",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-665",
+    "title": "Java中Selector的selectedKeys()方法作用是？",
+    "options": [
+      "获取就绪通道集合",
+      "获取所有通道集合",
+      "获取取消通道集合",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-666",
+    "title": "Java中SelectionKey的作用是？",
+    "options": [
+      "表示通道和选择器的注册关系",
+      "表示通道",
+      "表示选择器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-667",
+    "title": "Java中SelectionKey的兴趣事件有？",
+    "options": [
+      "OP_CONNECT, OP_ACCEPT, OP_READ, OP_WRITE",
+      "OP_CREATE, OP_DELETE",
+      "OP_OPEN, OP_CLOSE",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-668",
+    "title": "Java中Path的作用是？",
+    "options": [
+      "表示文件路径",
+      "表示文件",
+      "表示目录",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-669",
+    "title": "Java中Paths的作用是？",
+    "options": [
+      "创建Path",
+      "创建File",
+      "创建Directory",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-670",
+    "title": "Java中Files的作用是？",
+    "options": [
+      "文件操作工具类",
+      "路径操作工具类",
+      "目录操作工具类",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-671",
+    "title": "Java中Files.readAllLines()方法作用是？",
+    "options": [
+      "读取所有行",
+      "读取所有字节",
+      "写入所有行",
+      "写入所有字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-672",
+    "title": "Java中Files.write()方法作用是？",
+    "options": [
+      "写入文件",
+      "读取文件",
+      "复制文件",
+      "移动文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-673",
+    "title": "Java中Files.copy()方法作用是？",
+    "options": [
+      "复制文件",
+      "移动文件",
+      "删除文件",
+      "创建文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-674",
+    "title": "Java中Files.move()方法作用是？",
+    "options": [
+      "移动文件",
+      "复制文件",
+      "删除文件",
+      "创建文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-675",
+    "title": "Java中Files.delete()方法作用是？",
+    "options": [
+      "删除文件",
+      "移动文件",
+      "复制文件",
+      "创建文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-676",
+    "title": "Java中Files.createFile()方法作用是？",
+    "options": [
+      "创建文件",
+      "删除文件",
+      "移动文件",
+      "复制文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-677",
+    "title": "Java中Files.createDirectory()方法作用是？",
+    "options": [
+      "创建目录",
+      "创建文件",
+      "删除目录",
+      "移动目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-678",
+    "title": "Java中FileVisitor的作用是？",
+    "options": [
+      "遍历文件树",
+      "遍历目录",
+      "遍历文件",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-679",
+    "title": "Java中WatchService的作用是？",
+    "options": [
+      "监听文件变化",
+      "监听目录变化",
+      "监听网络变化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-680",
+    "title": "Java中FileChannel的transferFrom()方法作用是？",
+    "options": [
+      "从其他通道传输数据",
+      "向其他通道传输数据",
+      "从文件读取数据",
+      "向文件写入数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-681",
+    "title": "Java中FileChannel的transferTo()方法作用是？",
+    "options": [
+      "向其他通道传输数据",
+      "从其他通道传输数据",
+      "从文件读取数据",
+      "向文件写入数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-682",
+    "title": "Java中FileChannel的map()方法作用是？",
+    "options": [
+      "内存映射文件",
+      "文件传输",
+      "文件锁定",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-683",
+    "title": "Java中MappedByteBuffer的作用是？",
+    "options": [
+      "内存映射缓冲区",
+      "直接缓冲区",
+      "堆缓冲区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-684",
+    "title": "Java中FileLock的作用是？",
+    "options": [
+      "文件锁",
+      "文件映射",
+      "文件传输",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-685",
+    "title": "Java中Socket的作用是？",
+    "options": [
+      "TCP客户端",
+      "TCP服务端",
+      "UDP客户端",
+      "UDP服务端"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-686",
+    "title": "Java中ServerSocket的作用是？",
+    "options": [
+      "TCP服务端",
+      "TCP客户端",
+      "UDP服务端",
+      "UDP客户端"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-687",
+    "title": "Java中DatagramSocket的作用是？",
+    "options": [
+      "UDP通信",
+      "TCP通信",
+      "HTTP通信",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-688",
+    "title": "Java中InetAddress的作用是？",
+    "options": [
+      "IP地址",
+      "URL",
+      "Socket",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-689",
+    "title": "Java中URL的作用是？",
+    "options": [
+      "统一资源定位符",
+      "IP地址",
+      "Socket",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-690",
+    "title": "Java中URLConnection的作用是？",
+    "options": [
+      "URL连接",
+      "Socket连接",
+      "HTTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-691",
+    "title": "Java中HttpURLConnection的作用是？",
+    "options": [
+      "HTTP连接",
+      "HTTPS连接",
+      "FTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-692",
+    "title": "Java中HttpClient的作用是？",
+    "options": [
+      "HTTP客户端",
+      "TCP客户端",
+      "UDP客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-693",
+    "title": "Java中HttpRequest的作用是？",
+    "options": [
+      "HTTP请求",
+      "HTTP响应",
+      "HTTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-694",
+    "title": "Java中HttpResponse的作用是？",
+    "options": [
+      "HTTP响应",
+      "HTTP请求",
+      "HTTP连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-695",
+    "title": "Java中序列化的作用是？",
+    "options": [
+      "将对象转为字节流",
+      "将字节流转为对象",
+      "加密对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-696",
+    "title": "Java中反序列化的作用是？",
+    "options": [
+      "将字节流转为对象",
+      "将对象转为字节流",
+      "解密对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-697",
+    "title": "Java中Serializable接口的作用是？",
+    "options": [
+      "标记可序列化",
+      "实现序列化",
+      "管理序列化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-698",
+    "title": "Java中Externalizable接口的作用是？",
+    "options": [
+      "自定义序列化",
+      "标记可序列化",
+      "管理序列化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-699",
+    "title": "Java中serialVersionUID的作用是？",
+    "options": [
+      "版本控制",
+      "加密",
+      "压缩",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-700",
+    "title": "Java中transient关键字的作用是？",
+    "options": [
+      "不序列化字段",
+      "序列化字段",
+      "压缩字段",
+      "加密字段"
+    ],
+    "correctAnswer": 0
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "java-601",
+    "title": "Java中IO流的分类有？",
+    "options": [
+      "字节流和字符流",
+      "输入流和输出流",
+      "节点流和处理流",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-602",
+    "title": "Java中字节流的基类是？",
+    "options": [
+      "InputStream和OutputStream",
+      "Reader和Writer",
+      "File和Path",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-603",
+    "title": "Java中字符流的基类是？",
+    "options": [
+      "Reader和Writer",
+      "InputStream和OutputStream",
+      "File和Path",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-604",
+    "title": "Java中FileInputStream的作用是？",
+    "options": [
+      "读取文件字节",
+      "写入文件字节",
+      "读取文件字符",
+      "写入文件字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-605",
+    "title": "Java中FileOutputStream的作用是？",
+    "options": [
+      "写入文件字节",
+      "读取文件字节",
+      "读取文件字符",
+      "写入文件字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-606",
+    "title": "Java中FileReader的作用是？",
+    "options": [
+      "读取文件字符",
+      "写入文件字符",
+      "读取文件字节",
+      "写入文件字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-607",
+    "title": "Java中FileWriter的作用是？",
+    "options": [
+      "写入文件字符",
+      "读取文件字符",
+      "读取文件字节",
+      "写入文件字节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-608",
+    "title": "Java中BufferedInputStream的作用是？",
+    "options": [
+      "缓冲字节输入",
+      "缓冲字节输出",
+      "缓冲字符输入",
+      "缓冲字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-609",
+    "title": "Java中BufferedOutputStream的作用是？",
+    "options": [
+      "缓冲字节输出",
+      "缓冲字节输入",
+      "缓冲字符输入",
+      "缓冲字符输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-610",
+    "title": "Java中BufferedReader的作用是？",
+    "options": [
+      "缓冲字符输入",
+      "缓冲字符输出",
+      "缓冲字节输入",
+      "缓冲字节输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-611",
+    "title": "Java中BufferedWriter的作用是？",
+    "options": [
+      "缓冲字符输出",
+      "缓冲字符输入",
+      "缓冲字节输入",
+      "缓冲字节输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-612",
+    "title": "Java中DataInputStream的作用是？",
+    "options": [
+      "读取基本类型",
+      "写入基本类型",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-613",
+    "title": "Java中DataOutputStream的作用是？",
+    "options": [
+      "写入基本类型",
+      "读取基本类型",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-614",
+    "title": "Java中ObjectInputStream的作用是？",
+    "options": [
+      "读取对象",
+      "写入对象",
+      "读取基本类型",
+      "写入基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-615",
+    "title": "Java中ObjectOutputStream的作用是？",
+    "options": [
+      "写入对象",
+      "读取对象",
+      "读取基本类型",
+      "写入基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-616",
+    "title": "Java中PrintStream的作用是？",
+    "options": [
+      "打印字节流",
+      "打印字符流",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-617",
+    "title": "Java中PrintWriter的作用是？",
+    "options": [
+      "打印字符流",
+      "打印字节流",
+      "读取对象",
+      "写入对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-618",
+    "title": "Java中InputStreamReader的作用是？",
+    "options": [
+      "字节流转字符流",
+      "字符流转字节流",
+      "缓冲流",
+      "数据流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-619",
+    "title": "Java中OutputStreamWriter的作用是？",
+    "options": [
+      "字符流转字节流",
+      "字节流转字符流",
+      "缓冲流",
+      "数据流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-620",
+    "title": "Java中SequenceInputStream的作用是？",
+    "options": [
+      "合并输入流",
+      "合并输出流",
+      "管道流",
+      "过滤流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-621",
+    "title": "Java中PipedInputStream的作用是？",
+    "options": [
+      "管道输入",
+      "管道输出",
+      "文件输入",
+      "文件输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-622",
+    "title": "Java中PipedOutputStream的作用是？",
+    "options": [
+      "管道输出",
+      "管道输入",
+      "文件输入",
+      "文件输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-623",
+    "title": "Java中ByteArrayInputStream的作用是？",
+    "options": [
+      "字节数组输入",
+      "字节数组输出",
+      "字符数组输入",
+      "字符数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-624",
+    "title": "Java中ByteArrayOutputStream的作用是？",
+    "options": [
+      "字节数组输出",
+      "字节数组输入",
+      "字符数组输入",
+      "字符数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-625",
+    "title": "Java中CharArrayReader的作用是？",
+    "options": [
+      "字符数组输入",
+      "字符数组输出",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-626",
+    "title": "Java中CharArrayWriter的作用是？",
+    "options": [
+      "字符数组输出",
+      "字符数组输入",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-627",
+    "title": "Java中StringReader的作用是？",
+    "options": [
+      "字符串输入",
+      "字符串输出",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-628",
+    "title": "Java中StringWriter的作用是？",
+    "options": [
+      "字符串输出",
+      "字符串输入",
+      "字节数组输入",
+      "字节数组输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-629",
+    "title": "Java中File类的作用是？",
+    "options": [
+      "文件和目录操作",
+      "文件内容读写",
+      "文件压缩",
+      "文件加密"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-630",
+    "title": "Java中File类可以创建文件吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能创建目录",
+      "只能删除文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-631",
+    "title": "Java中File类可以创建目录吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能创建文件",
+      "只能删除目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-632",
+    "title": "Java中File类可以删除文件吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能创建文件",
+      "只能创建目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-633",
+    "title": "Java中File类可以判断文件存在吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能判断目录",
+      "只能判断路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-634",
+    "title": "Java中File类可以获取文件大小吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取名称",
+      "只能获取路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-635",
+    "title": "Java中File类可以获取文件路径吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取名称",
+      "只能获取大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-636",
+    "title": "Java中File类可以获取文件名吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取路径",
+      "只能获取大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-637",
+    "title": "Java中File类可以判断是文件还是目录吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能判断文件",
+      "只能判断目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-638",
+    "title": "Java中File类可以列出目录内容吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能列出文件",
+      "只能列出目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-639",
+    "title": "Java中File类可以重命名文件吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能删除",
+      "只能创建"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-640",
+    "title": "Java中File类可以设置文件权限吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能获取权限",
+      "只能判断权限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-641",
+    "title": "Java中File类可以设置文件只读吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能设置可写",
+      "只能设置隐藏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-642",
+    "title": "Java中NIO是指？",
+    "options": [
+      "New IO",
+      "Non-blocking IO",
+      "Native IO",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-643",
+    "title": "Java中NIO的核心组件是？",
+    "options": [
+      "Buffer, Channel, Selector",
+      "Stream, File, Path",
+      "InputStream, OutputStream",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-644",
+    "title": "Java中Buffer的作用是？",
+    "options": [
+      "缓冲区",
+      "通道",
+      "选择器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-645",
+    "title": "Java中Channel的作用是？",
+    "options": [
+      "通道",
+      "缓冲区",
+      "选择器",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-646",
+    "title": "Java中Selector的作用是？",
+    "options": [
+      "选择器",
+      "缓冲区",
+      "通道",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-647",
+    "title": "Java中Buffer的属性有？",
+    "options": [
+      "capacity, position, limit, mark",
+      "size, index, length",
+      "start, end, current",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-648",
+    "title": "Java中Buffer的flip()方法作用是？",
+    "options": [
+      "切换为读模式",
+      "切换为写模式",
+      "清空缓冲区",
+      "重绕缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-649",
+    "title": "Java中Buffer的clear()方法作用是？",
+    "options": [
+      "清空缓冲区",
+      "切换为读模式",
+      "切换为写模式",
+      "重绕缓冲区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-650",
+    "title": "Java中Buffer的compact()方法作用是？",
+    "options": [
+      "压缩缓冲区",
+      "清空缓冲区",
+      "切换为读模式",
+      "切换为写模式"
+    ],
+    "correctAnswer": 0
+  }
+]

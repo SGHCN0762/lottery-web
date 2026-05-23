@@ -1,0 +1,552 @@
+[
+  {
+    "id": "cpp-751",
+    "title": "C++中内存泄漏的原因是？",
+    "options": [
+      "new后未delete",
+      "栈溢出",
+      "编译错误",
+      "链接错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-752",
+    "title": "C++中如何检测内存泄漏？",
+    "options": [
+      "Valgrind, AddressSanitizer",
+      "GDB",
+      "LLDB",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-753",
+    "title": "C++中野指针是指？",
+    "options": [
+      "指向已释放内存的指针",
+      "未初始化的指针",
+      "空指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-754",
+    "title": "C++中悬空指针是指？",
+    "options": [
+      "指向已释放内存的指针",
+      "未初始化的指针",
+      "空指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-755",
+    "title": "C++中智能指针的作用是？",
+    "options": [
+      "自动管理内存生命周期",
+      "提高访问速度",
+      "减少内存占用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-756",
+    "title": "C++中RAII机制的核心是？",
+    "options": [
+      "利用对象生命周期管理资源",
+      "智能指针",
+      "异常处理",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-757",
+    "title": "C++中placement new的作用是？",
+    "options": [
+      "在指定内存上构造对象",
+      "分配内存",
+      "释放内存",
+      "拷贝对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-758",
+    "title": "C++中栈溢出的原因是？",
+    "options": [
+      "递归过深或局部变量过大",
+      "内存泄漏",
+      "野指针",
+      "空指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-759",
+    "title": "C++中深拷贝与浅拷贝的问题是？",
+    "options": [
+      "浅拷贝会导致双重释放",
+      "深拷贝会导致双重释放",
+      "没有问题",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-760",
+    "title": "C++中对象的内存布局包括？",
+    "options": [
+      "虚函数表指针，成员变量",
+      "只有成员变量",
+      "只有虚函数表",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-761",
+    "title": "C++中虚继承的内存布局是？",
+    "options": [
+      "增加虚基类表指针",
+      "减少指针",
+      "无变化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-762",
+    "title": "C++中全局构造和析构的时机是？",
+    "options": [
+      "main之前和之后",
+      "main之中",
+      "编译时",
+      "链接时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-763",
+    "title": "C++中malloc的底层实现是？",
+    "options": [
+      "brk/mmap系统调用",
+      "new",
+      "构造函数",
+      "析构函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-764",
+    "title": "C++中内存池的作用是？",
+    "options": [
+      "减少内存分配开销和碎片",
+      "增加内存",
+      "减少内存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-765",
+    "title": "C++中C++11的垃圾回收支持是？",
+    "options": [
+      "C++不内置GC，推荐RAII",
+      "内置GC",
+      "可选GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-766",
+    "title": "C++中指针和引用在底层是？",
+    "options": [
+      "都是地址",
+      "引用是指针常量",
+      "引用是值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-767",
+    "title": "C++中this指针是？",
+    "options": [
+      "隐式传入的常量指针",
+      "成员变量",
+      "全局变量",
+      "局部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-768",
+    "title": "C++中虚函数调用的开销是？",
+    "options": [
+      "查虚函数表，间接调用",
+      "直接调用",
+      "无开销",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-769",
+    "title": "C++中内存分为哪些区域？",
+    "options": [
+      "堆，栈，全局/静态，常量，代码区",
+      "堆，栈",
+      "堆，栈，方法区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-770",
+    "title": "C++中栈的特点是？",
+    "options": [
+      "自动管理，后进先出",
+      "手动管理",
+      "随机访问",
+      "容量大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-771",
+    "title": "C++中堆的特点是？",
+    "options": [
+      "手动管理，容量大",
+      "自动管理",
+      "后进先出",
+      "速度快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-772",
+    "title": "C++中new和malloc的区别是？",
+    "options": [
+      "new会调用构造函数，malloc只分配内存",
+      "没有区别",
+      "malloc会调用构造函数",
+      "new更快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-773",
+    "title": "C++中delete和free的区别是？",
+    "options": [
+      "delete会调用析构函数，free只释放内存",
+      "没有区别",
+      "free会调用析构函数",
+      "delete更快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-774",
+    "title": "C++中内存对齐的原因是？",
+    "options": [
+      "提高CPU访问效率",
+      "节省内存",
+      "美观",
+      "编译器要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-775",
+    "title": "C++中内存泄漏的原因是？",
+    "options": [
+      "new后未delete",
+      "栈溢出",
+      "编译错误",
+      "链接错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-776",
+    "title": "C++中如何检测内存泄漏？",
+    "options": [
+      "Valgrind, AddressSanitizer",
+      "GDB",
+      "LLDB",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-777",
+    "title": "C++中野指针是指？",
+    "options": [
+      "指向已释放内存的指针",
+      "未初始化的指针",
+      "空指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-778",
+    "title": "C++中悬空指针是指？",
+    "options": [
+      "指向已释放内存的指针",
+      "未初始化的指针",
+      "空指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-779",
+    "title": "C++中智能指针的作用是？",
+    "options": [
+      "自动管理内存生命周期",
+      "提高访问速度",
+      "减少内存占用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-780",
+    "title": "C++中RAII机制的核心是？",
+    "options": [
+      "利用对象生命周期管理资源",
+      "智能指针",
+      "异常处理",
+      "模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-781",
+    "title": "C++中placement new的作用是？",
+    "options": [
+      "在指定内存上构造对象",
+      "分配内存",
+      "释放内存",
+      "拷贝对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-782",
+    "title": "C++中栈溢出的原因是？",
+    "options": [
+      "递归过深或局部变量过大",
+      "内存泄漏",
+      "野指针",
+      "空指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-783",
+    "title": "C++中深拷贝与浅拷贝的问题是？",
+    "options": [
+      "浅拷贝会导致双重释放",
+      "深拷贝会导致双重释放",
+      "没有问题",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-784",
+    "title": "C++中对象的内存布局包括？",
+    "options": [
+      "虚函数表指针，成员变量",
+      "只有成员变量",
+      "只有虚函数表",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-785",
+    "title": "C++中虚继承的内存布局是？",
+    "options": [
+      "增加虚基类表指针",
+      "减少指针",
+      "无变化",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-786",
+    "title": "C++中全局构造和析构的时机是？",
+    "options": [
+      "main之前和之后",
+      "main之中",
+      "编译时",
+      "链接时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-787",
+    "title": "C++中malloc的底层实现是？",
+    "options": [
+      "brk/mmap系统调用",
+      "new",
+      "构造函数",
+      "析构函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-788",
+    "title": "C++中内存池的作用是？",
+    "options": [
+      "减少内存分配开销和碎片",
+      "增加内存",
+      "减少内存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-789",
+    "title": "C++中C++11的垃圾回收支持是？",
+    "options": [
+      "C++不内置GC，推荐RAII",
+      "内置GC",
+      "可选GC",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-790",
+    "title": "C++中指针和引用在底层是？",
+    "options": [
+      "都是地址",
+      "引用是指针常量",
+      "引用是值",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-791",
+    "title": "C++中this指针是？",
+    "options": [
+      "隐式传入的常量指针",
+      "成员变量",
+      "全局变量",
+      "局部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-792",
+    "title": "C++中虚函数调用的开销是？",
+    "options": [
+      "查虚函数表，间接调用",
+      "直接调用",
+      "无开销",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-793",
+    "title": "C++中内存分为哪些区域？",
+    "options": [
+      "堆，栈，全局/静态，常量，代码区",
+      "堆，栈",
+      "堆，栈，方法区",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-794",
+    "title": "C++中栈的特点是？",
+    "options": [
+      "自动管理，后进先出",
+      "手动管理",
+      "随机访问",
+      "容量大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-795",
+    "title": "C++中堆的特点是？",
+    "options": [
+      "手动管理，容量大",
+      "自动管理",
+      "后进先出",
+      "速度快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-796",
+    "title": "C++中new和malloc的区别是？",
+    "options": [
+      "new会调用构造函数，malloc只分配内存",
+      "没有区别",
+      "malloc会调用构造函数",
+      "new更快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-797",
+    "title": "C++中delete和free的区别是？",
+    "options": [
+      "delete会调用析构函数，free只释放内存",
+      "没有区别",
+      "free会调用析构函数",
+      "delete更快"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-798",
+    "title": "C++中内存对齐的原因是？",
+    "options": [
+      "提高CPU访问效率",
+      "节省内存",
+      "美观",
+      "编译器要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-799",
+    "title": "C++中内存泄漏的原因是？",
+    "options": [
+      "new后未delete",
+      "栈溢出",
+      "编译错误",
+      "链接错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-800",
+    "title": "C++中如何检测内存泄漏？",
+    "options": [
+      "Valgrind, AddressSanitizer",
+      "GDB",
+      "LLDB",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-501",
+    "title": "Python中Queue的作用是？",
+    "options": [
+      "线程安全队列",
+      "进程安全队列",
+      "异步队列",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-502",
+    "title": "Python中queue.Queue的特点是？",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "优先级",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-503",
+    "title": "Python中queue.LifoQueue的特点是？",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "优先级",
+      "以上都可以"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-504",
+    "title": "Python中queue.PriorityQueue的特点是？",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "优先级",
+      "以上都可以"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-505",
+    "title": "Python中Queue的put()方法作用是？",
+    "options": [
+      "放入元素",
+      "取出元素",
+      "查看元素",
+      "删除元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-506",
+    "title": "Python中Queue的get()方法作用是？",
+    "options": [
+      "放入元素",
+      "取出元素",
+      "查看元素",
+      "删除元素"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-507",
+    "title": "Python中Queue的task_done()方法作用是？",
+    "options": [
+      "标记任务完成",
+      "放入元素",
+      "取出元素",
+      "查看元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-508",
+    "title": "Python中Queue的join()方法作用是？",
+    "options": [
+      "等待所有任务完成",
+      "放入元素",
+      "取出元素",
+      "查看元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-509",
+    "title": "Python中创建进程的方式是？",
+    "options": [
+      "multiprocessing.Process",
+      "process.Process",
+      "Process.new",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-510",
+    "title": "Python中进程间通信的方式有？",
+    "options": [
+      "Queue, Pipe",
+      "Lock, Semaphore",
+      "Event, Condition",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-511",
+    "title": "Python中Pipe的作用是？",
+    "options": [
+      "双向通信管道",
+      "单向通信管道",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-512",
+    "title": "Python中进程池的作用是？",
+    "options": [
+      "重用进程，控制并发",
+      "创建进程",
+      "销毁进程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-513",
+    "title": "Python中进程池的类是？",
+    "options": [
+      "multiprocessing.Pool",
+      "process.Pool",
+      "Pool.new",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-514",
+    "title": "Python中Pool的apply()方法作用是？",
+    "options": [
+      "同步执行",
+      "异步执行",
+      "批量执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-515",
+    "title": "Python中Pool的apply_async()方法作用是？",
+    "options": [
+      "同步执行",
+      "异步执行",
+      "批量执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-516",
+    "title": "Python中Pool的map()方法作用是？",
+    "options": [
+      "同步批量执行",
+      "异步批量执行",
+      "单个执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-517",
+    "title": "Python中Pool的map_async()方法作用是？",
+    "options": [
+      "同步批量执行",
+      "异步批量执行",
+      "单个执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-518",
+    "title": "Python中Pool的close()方法作用是？",
+    "options": [
+      "关闭进程池",
+      "终止进程池",
+      "重启进程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-519",
+    "title": "Python中Pool的join()方法作用是？",
+    "options": [
+      "等待所有进程完成",
+      "关闭进程池",
+      "终止进程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-520",
+    "title": "Python中Pool的terminate()方法作用是？",
+    "options": [
+      "关闭进程池",
+      "立即终止进程池",
+      "等待进程完成",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-521",
+    "title": "Python中共享内存的方式有？",
+    "options": [
+      "Value, Array",
+      "Manager",
+      "以上都是",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-522",
+    "title": "Python中Manager的作用是？",
+    "options": [
+      "管理共享对象",
+      "管理进程",
+      "管理线程",
+      "管理协程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-523",
+    "title": "Python中concurrent.futures模块的作用是？",
+    "options": [
+      "高级并发接口",
+      "低级并发接口",
+      "异步接口",
+      "同步接口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-524",
+    "title": "Python中ThreadPoolExecutor的作用是？",
+    "options": [
+      "线程池",
+      "进程池",
+      "协程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-525",
+    "title": "Python中ProcessPoolExecutor的作用是？",
+    "options": [
+      "线程池",
+      "进程池",
+      "协程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-526",
+    "title": "Python中Future的作用是？",
+    "options": [
+      "表示异步结果",
+      "表示同步结果",
+      "表示进程",
+      "表示线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-527",
+    "title": "Python中Future的result()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-528",
+    "title": "Python中Future的cancel()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-529",
+    "title": "Python中Future的done()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-530",
+    "title": "Python中Future的add_done_callback()方法作用是？",
+    "options": [
+      "获取结果",
+      "取消任务",
+      "判断完成",
+      "添加回调"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-531",
+    "title": "Python中协程的定义方式是？",
+    "options": [
+      "async def",
+      "def async",
+      "coroutine def",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-532",
+    "title": "Python中await的作用是？",
+    "options": [
+      "等待协程执行",
+      "启动协程",
+      "取消协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-533",
+    "title": "Python中asyncio.run()的作用是？",
+    "options": [
+      "运行协程",
+      "创建协程",
+      "取消协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-534",
+    "title": "Python中asyncio.create_task()的作用是？",
+    "options": [
+      "创建任务",
+      "运行协程",
+      "取消协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-535",
+    "title": "Python中asyncio.gather()的作用是？",
+    "options": [
+      "并发运行多个协程",
+      "顺序运行多个协程",
+      "创建任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-536",
+    "title": "Python中asyncio.wait()的作用是？",
+    "options": [
+      "等待多个协程",
+      "并发运行多个协程",
+      "创建任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-537",
+    "title": "Python中asyncio.sleep()的作用是？",
+    "options": [
+      "异步休眠",
+      "同步休眠",
+      "唤醒协程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-538",
+    "title": "Python中异步上下文管理器的定义是？",
+    "options": [
+      "__aenter__和__aexit__",
+      "__enter__和__exit__",
+      "__async_enter__和__async_exit__",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-539",
+    "title": "Python中异步迭代器的定义是？",
+    "options": [
+      "__aiter__和__anext__",
+      "__iter__和__next__",
+      "__async_iter__和__async_next__",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-540",
+    "title": "Python中async for的作用是？",
+    "options": [
+      "异步迭代",
+      "同步迭代",
+      "异步上下文",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-541",
+    "title": "Python中async with的作用是？",
+    "options": [
+      "异步迭代",
+      "同步迭代",
+      "异步上下文",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-542",
+    "title": "Python中异步生成器的定义是？",
+    "options": [
+      "async def + yield",
+      "def async + yield",
+      "async yield",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-543",
+    "title": "Python中异步列表推导式的语法是？",
+    "options": [
+      "[i async for i in aiter]",
+      "[i for i in aiter]",
+      "async [i for i in aiter]",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-544",
+    "title": "Python中aiohttp的作用是？",
+    "options": [
+      "异步HTTP",
+      "同步HTTP",
+      "异步TCP",
+      "同步TCP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-545",
+    "title": "Python中aiomysql的作用是？",
+    "options": [
+      "异步MySQL",
+      "同步MySQL",
+      "异步PostgreSQL",
+      "同步PostgreSQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-546",
+    "title": "Python中aioredis的作用是？",
+    "options": [
+      "异步Redis",
+      "同步Redis",
+      "异步MongoDB",
+      "同步MongoDB"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-547",
+    "title": "Python中subprocess的异步版本是？",
+    "options": [
+      "asyncio.create_subprocess_exec",
+      "asyncio.subprocess",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-548",
+    "title": "Python中如何避免GIL的影响？",
+    "options": [
+      "使用多进程",
+      "使用C扩展",
+      "使用协程",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-549",
+    "title": "Python中CPU密集型任务推荐使用？",
+    "options": [
+      "多进程",
+      "多线程",
+      "协程",
+      "单线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-550",
+    "title": "Python中I/O密集型任务推荐使用？",
+    "options": [
+      "多进程",
+      "多线程或协程",
+      "单线程",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  }
+]

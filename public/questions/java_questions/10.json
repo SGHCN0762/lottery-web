@@ -1,0 +1,552 @@
+[
+  {
+    "id": "java-451",
+    "title": "Java中Stream的noneMatch()方法作用是？",
+    "options": [
+      "判断是否没有元素匹配",
+      "判断是否有元素匹配",
+      "判断是否所有元素匹配",
+      "找到匹配元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-452",
+    "title": "Java中Stream的toArray()方法作用是？",
+    "options": [
+      "转为数组",
+      "转为集合",
+      "转为列表",
+      "转为映射"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-453",
+    "title": "Java中Stream的min()方法作用是？",
+    "options": [
+      "找到最小元素",
+      "找到最大元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-454",
+    "title": "Java中Stream的max()方法作用是？",
+    "options": [
+      "找到最大元素",
+      "找到最小元素",
+      "排序元素",
+      "去重元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-455",
+    "title": "Java中Collectors.toList()的作用是？",
+    "options": [
+      "收集到List",
+      "收集到Set",
+      "收集到Map",
+      "收集到String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-456",
+    "title": "Java中Collectors.toSet()的作用是？",
+    "options": [
+      "收集到Set",
+      "收集到List",
+      "收集到Map",
+      "收集到String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-457",
+    "title": "Java中Collectors.toMap()的作用是？",
+    "options": [
+      "收集到Map",
+      "收集到List",
+      "收集到Set",
+      "收集到String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-458",
+    "title": "Java中Collectors.groupingBy()的作用是？",
+    "options": [
+      "分组",
+      "分区",
+      "拼接",
+      "计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-459",
+    "title": "Java中Collectors.partitioningBy()的作用是？",
+    "options": [
+      "分区",
+      "分组",
+      "拼接",
+      "计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-460",
+    "title": "Java中Collectors.joining()的作用是？",
+    "options": [
+      "拼接字符串",
+      "分组",
+      "分区",
+      "计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-461",
+    "title": "Java中Collectors.counting()的作用是？",
+    "options": [
+      "计数",
+      "分组",
+      "分区",
+      "拼接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-462",
+    "title": "Java中Collectors.summarizingInt()的作用是？",
+    "options": [
+      "统计信息",
+      "求和",
+      "平均",
+      "最大值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-463",
+    "title": "Java中Collectors.averagingInt()的作用是？",
+    "options": [
+      "求平均",
+      "求和",
+      "统计信息",
+      "最大值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-464",
+    "title": "Java中Collectors.summingInt()的作用是？",
+    "options": [
+      "求和",
+      "求平均",
+      "统计信息",
+      "最大值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-465",
+    "title": "Java中Collectors.maxBy()的作用是？",
+    "options": [
+      "求最大值",
+      "求最小值",
+      "求和",
+      "求平均"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-466",
+    "title": "Java中Collectors.minBy()的作用是？",
+    "options": [
+      "求最小值",
+      "求最大值",
+      "求和",
+      "求平均"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-467",
+    "title": "Java中Collectors.reducing()的作用是？",
+    "options": [
+      "归约",
+      "分组",
+      "分区",
+      "拼接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-468",
+    "title": "Java中Collectors.collectingAndThen()的作用是？",
+    "options": [
+      "收集后转换",
+      "收集前转换",
+      "收集中转换",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-469",
+    "title": "Java中Collectors.mapping()的作用是？",
+    "options": [
+      "收集时映射",
+      "收集后映射",
+      "收集前映射",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-470",
+    "title": "Java中Collectors.flatMapping()的作用是？",
+    "options": [
+      "收集时扁平映射",
+      "收集时映射",
+      "收集后映射",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-471",
+    "title": "Java中Collectors.filtering()的作用是？",
+    "options": [
+      "收集时过滤",
+      "收集后过滤",
+      "收集前过滤",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-472",
+    "title": "Java中Collectors.toUnmodifiableList()的作用是？",
+    "options": [
+      "收集到不可变List",
+      "收集到List",
+      "收集到Set",
+      "收集到Map"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-473",
+    "title": "Java中Collectors.toUnmodifiableSet()的作用是？",
+    "options": [
+      "收集到不可变Set",
+      "收集到Set",
+      "收集到List",
+      "收集到Map"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-474",
+    "title": "Java中Collectors.toUnmodifiableMap()的作用是？",
+    "options": [
+      "收集到不可变Map",
+      "收集到Map",
+      "收集到List",
+      "收集到Set"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-475",
+    "title": "Java中Stream是惰性求值吗？",
+    "options": [
+      "是",
+      "否",
+      "部分是",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-476",
+    "title": "Java中Stream可以复用吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "部分可以",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-477",
+    "title": "Java中ParallelStream是并行流吗？",
+    "options": [
+      "是",
+      "否",
+      "部分是",
+      "取决于操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-478",
+    "title": "Java中ParallelStream的底层是？",
+    "options": [
+      "ForkJoinPool",
+      "ThreadPoolExecutor",
+      "Stream",
+      "CompletableFuture"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-479",
+    "title": "Java中ParallelStream适合什么场景？",
+    "options": [
+      "CPU密集型",
+      "IO密集型",
+      "混合型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-480",
+    "title": "Java中Stream的短路操作有？",
+    "options": [
+      "findFirst, anyMatch",
+      "filter, map",
+      "sorted, distinct",
+      "collect, count"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-481",
+    "title": "Java中创建线程的方式有？",
+    "options": [
+      "继承Thread, 实现Runnable, 实现Callable",
+      "继承Runnable, 实现Thread",
+      "new Thread()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-482",
+    "title": "Java中Thread类的start()方法作用是？",
+    "options": [
+      "启动线程",
+      "运行线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-483",
+    "title": "Java中Thread类的run()方法作用是？",
+    "options": [
+      "线程执行体",
+      "启动线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-484",
+    "title": "Java中Thread类的sleep()方法作用是？",
+    "options": [
+      "休眠线程",
+      "等待线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-485",
+    "title": "Java中Thread类的join()方法作用是？",
+    "options": [
+      "等待线程结束",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-486",
+    "title": "Java中Thread类的interrupt()方法作用是？",
+    "options": [
+      "中断线程",
+      "休眠线程",
+      "唤醒线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-487",
+    "title": "Java中Thread类的yield()方法作用是？",
+    "options": [
+      "让出CPU时间",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-488",
+    "title": "Java中Thread类的setDaemon()方法作用是？",
+    "options": [
+      "设置守护线程",
+      "设置优先级",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-489",
+    "title": "Java中Thread类的setPriority()方法作用是？",
+    "options": [
+      "设置优先级",
+      "设置守护线程",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-490",
+    "title": "Java中Thread类的getState()方法作用是？",
+    "options": [
+      "获取线程状态",
+      "设置线程状态",
+      "判断线程存活",
+      "判断线程中断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-491",
+    "title": "Java中线程的状态有？",
+    "options": [
+      "NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED",
+      "NEW, RUNNING, BLOCKED, DEAD",
+      "READY, RUNNING, BLOCKED, WAITING",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-492",
+    "title": "Java中synchronized关键字的作用是？",
+    "options": [
+      "同步方法或代码块",
+      "异步方法或代码块",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-493",
+    "title": "Java中synchronized锁的对象是？",
+    "options": [
+      "对象实例或Class对象",
+      "基本类型",
+      "局部变量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-494",
+    "title": "Java中synchronized修饰实例方法锁的是？",
+    "options": [
+      "当前实例对象",
+      "Class对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-495",
+    "title": "Java中synchronized修饰静态方法锁的是？",
+    "options": [
+      "Class对象",
+      "当前实例对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-496",
+    "title": "Java中synchronized修饰代码块锁的是？",
+    "options": [
+      "指定对象",
+      "当前实例对象",
+      "Class对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-497",
+    "title": "Java中synchronized的特性是？",
+    "options": [
+      "原子性，可见性，有序性",
+      "仅原子性",
+      "仅可见性",
+      "仅有序性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-498",
+    "title": "Java中synchronized的实现原理是？",
+    "options": [
+      "Monitor指令",
+      "CAS操作",
+      "LockSupport",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-499",
+    "title": "Java中synchronized的锁升级过程是？",
+    "options": [
+      "无锁 -> 偏向锁 -> 轻量级锁 -> 重量级锁",
+      "无锁 -> 轻量级锁 -> 偏向锁 -> 重量级锁",
+      "偏向锁 -> 无锁 -> 轻量级锁 -> 重量级锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-500",
+    "title": "Java中偏向锁的作用是？",
+    "options": [
+      "优化只有一个线程访问的锁",
+      "优化多个线程交替访问的锁",
+      "优化多个线程同时访问的锁",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

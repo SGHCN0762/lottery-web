@@ -1,0 +1,552 @@
+[
+  {
+    "id": "html-351",
+    "title": "<mark>标签的语义是？",
+    "options": [
+      "表示标记/高亮文本",
+      "表示删除",
+      "表示插入",
+      "表示强调"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-352",
+    "title": "<ruby>、<rt>、<rp>的语义是？",
+    "options": [
+      "表示拼音和注释",
+      "表示红宝石",
+      "表示变量",
+      "表示引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-353",
+    "title": "<bdi>标签的语义是？",
+    "options": [
+      "隔离文本方向",
+      "定义方向",
+      "覆盖方向",
+      "定义加粗"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-354",
+    "title": "<wbr>标签的语义是？",
+    "options": [
+      "规定换行时机",
+      "强制换行",
+      "禁止换行",
+      "删除换行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-355",
+    "title": "<data>标签的语义是？",
+    "options": [
+      "将内容与机器可读值关联",
+      "定义数据",
+      "定义变量",
+      "定义日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-356",
+    "title": "<time>标签的语义是？",
+    "options": [
+      "表示日期和时间",
+      "表示计时器",
+      "表示时刻",
+      "表示时钟"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-357",
+    "title": "语义化标签如何提高可访问性？",
+    "options": [
+      "屏幕阅读器能更好地解析结构",
+      "增加对比度",
+      "增大字体",
+      "添加声音"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-358",
+    "title": "ARIA角色的作用是？",
+    "options": [
+      "增强语义和可访问性",
+      "增加动画",
+      "增加样式",
+      "增加交互"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-359",
+    "title": "role=\"navigation\"对应哪个HTML5标签？",
+    "options": [
+      "<nav>",
+      "<header>",
+      "<footer>",
+      "<aside>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-360",
+    "title": "role=\"banner\"对应哪个HTML5标签？",
+    "options": [
+      "<header>",
+      "<nav>",
+      "<main>",
+      "<footer>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-361",
+    "title": "role=\"main\"对应哪个HTML5标签？",
+    "options": [
+      "<main>",
+      "<body>",
+      "<div>",
+      "<section>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-362",
+    "title": "role=\"contentinfo\"对应哪个HTML5标签？",
+    "options": [
+      "<footer>",
+      "<header>",
+      "<aside>",
+      "<article>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-363",
+    "title": "role=\"complementary\"对应哪个HTML5标签？",
+    "options": [
+      "<aside>",
+      "<main>",
+      "<nav>",
+      "<section>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-364",
+    "title": "role=\"form\"对应哪个HTML5标签？",
+    "options": [
+      "<form>",
+      "<input>",
+      "<div>",
+      "<section>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-365",
+    "title": "role=\"search\"对应哪个HTML5标签？",
+    "options": [
+      "<search>",
+      "<form>",
+      "<input>",
+      "<nav>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-366",
+    "title": "<article>可以嵌套吗？",
+    "options": [
+      "可以，内层article必须与外层相关",
+      "不可以",
+      "可以，无需相关",
+      "只能嵌套section"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-367",
+    "title": "<section>可以嵌套吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能嵌套article",
+      "只能嵌套div"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-368",
+    "title": "<header>可以嵌套吗？",
+    "options": [
+      "可以，在section或article内",
+      "不可以",
+      "只能在body内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-369",
+    "title": "<footer>可以嵌套吗？",
+    "options": [
+      "可以，在section或article内",
+      "不可以",
+      "只能在body内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-370",
+    "title": "<address>通常放在哪个标签内？",
+    "options": [
+      "<footer>或<article>",
+      "<header>",
+      "<nav>",
+      "<aside>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-371",
+    "title": "<hgroup>内可以包含哪些标签？",
+    "options": [
+      "<h1>-<h6>",
+      "<p>",
+      "<span>",
+      "<div>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-372",
+    "title": "<details>内的默认显示文本由谁提供？",
+    "options": [
+      "<summary>",
+      "<details>",
+      "<p>",
+      "<legend>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-373",
+    "title": "如果没有<summary>，<details>会怎样？",
+    "options": [
+      "浏览器提供默认标题(如\"Details\")",
+      "无法折叠",
+      "报错",
+      "不显示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-374",
+    "title": "<dialog>如何监听关闭事件？",
+    "options": [
+      "监听close事件",
+      "监听hide事件",
+      "监听cancel事件",
+      "监听exit事件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-375",
+    "title": "<dialog>的returnValue属性用于？",
+    "options": [
+      "获取关闭对话框时传递的值",
+      "获取输入值",
+      "获取状态",
+      "获取方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-376",
+    "title": "<dialog>如何监听取消事件(按Esc)？",
+    "options": [
+      "监听cancel事件",
+      "监听close事件",
+      "监听esc事件",
+      "监听keydown"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-377",
+    "title": "<search>标签是HTML几的新增？",
+    "options": [
+      "HTML5",
+      "HTML4",
+      "HTML3",
+      "XHTML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-378",
+    "title": "<hgroup>在HTML5中的状态是？",
+    "options": [
+      "曾废弃后重新启用",
+      "一直推荐",
+      "已废弃",
+      "新增"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-379",
+    "title": "<section>必须包含什么？",
+    "options": [
+      "一个标题(<h1>-<h6>)",
+      "内容",
+      "div",
+      "无强制要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-380",
+    "title": "<article>必须包含什么？",
+    "options": [
+      "独立完整的内容",
+      "标题",
+      "段落",
+      "图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-381",
+    "title": "<nav>内的链接必须是所有链接吗？",
+    "options": [
+      "不是，仅主要导航链接",
+      "是",
+      "必须包含所有",
+      "不能包含外部链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-382",
+    "title": "<aside>的内容与主内容的关系是？",
+    "options": [
+      "间接相关",
+      "直接相关",
+      "无关系",
+      "包含关系"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-383",
+    "title": "<figure>的内容与主内容的关系是？",
+    "options": [
+      "被引用的自包含内容",
+      "间接相关",
+      "无关系",
+      "包含关系"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-384",
+    "title": "<figcaption>必须放在<figure>的什么位置？",
+    "options": [
+      "第一个或最后一个子元素",
+      "中间",
+      "外部",
+      "任意位置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-385",
+    "title": "<figcaption>在一个<figure>中可以有多个吗？",
+    "options": [
+      "不可以，只能有一个",
+      "可以",
+      "最多两个",
+      "无限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-386",
+    "title": "<main>标签对SEO的作用是？",
+    "options": [
+      "告诉搜索引擎页面的核心内容",
+      "增加关键词",
+      "增加链接",
+      "增加描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-387",
+    "title": "<header>内可以包含<nav>吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能在body内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-388",
+    "title": "<footer>内可以包含<nav>吗？",
+    "options": [
+      "可以，如版权链接",
+      "不可以",
+      "只能在header内",
+      "只能有一个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-389",
+    "title": "<article>内可以包含<header>和<footer>吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能包含header",
+      "只能包含footer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-390",
+    "title": "<section>内可以包含<header>和<footer>吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能包含header",
+      "只能包含footer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-391",
+    "title": "<blockquote>的cite属性用于？",
+    "options": [
+      "指明引用的来源URL",
+      "引用内容",
+      "引用标题",
+      "引用作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-392",
+    "title": "<q>的cite属性用于？",
+    "options": [
+      "指明引用的来源URL",
+      "引用内容",
+      "引用标题",
+      "引用作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-393",
+    "title": "<ins>的cite属性用于？",
+    "options": [
+      "解释插入原因的URL",
+      "插入内容",
+      "插入标题",
+      "插入作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-394",
+    "title": "<del>的cite属性用于？",
+    "options": [
+      "解释删除原因的URL",
+      "删除内容",
+      "删除标题",
+      "删除作者"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-395",
+    "title": "<ins>的datetime属性用于？",
+    "options": [
+      "定义插入的日期时间",
+      "定义时间",
+      "定义格式",
+      "定义时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-396",
+    "title": "<del>的datetime属性用于？",
+    "options": [
+      "定义删除的日期时间",
+      "定义时间",
+      "定义格式",
+      "定义时区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-397",
+    "title": "<table>的语义标签有哪些？",
+    "options": [
+      "<thead>, <tbody>, <tfoot>",
+      "<header>, <body>, <footer>",
+      "<div>, <span>",
+      "<row>, <cell>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-398",
+    "title": "<caption>标签的语义是？",
+    "options": [
+      "定义表格标题",
+      "定义表格头",
+      "定义表格尾",
+      "定义表格描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-399",
+    "title": "<th>的scope属性用于？",
+    "options": [
+      "定义表头单元格的作用范围",
+      "定义样式",
+      "定义大小",
+      "定义对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-400",
+    "title": "<th>的headers属性用于？",
+    "options": [
+      "关联表头单元格",
+      "定义标题",
+      "定义样式",
+      "定义ID"
+    ],
+    "correctAnswer": 0
+  }
+]

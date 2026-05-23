@@ -1,0 +1,552 @@
+[
+  {
+    "id": "css-801",
+    "title": "CSS预处理器的优势是？",
+    "options": [
+      "变量、嵌套、混入、函数",
+      "执行更快",
+      "不需要编译",
+      "浏览器原生支持"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-802",
+    "title": "常见的CSS预处理器有？",
+    "options": [
+      "Sass, Less, Stylus",
+      "TypeScript, Babel, Webpack",
+      "React, Vue, Angular",
+      "Node, Express, Koa"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-803",
+    "title": "Sass的文件扩展名是？",
+    "options": [
+      ".scss或.sass",
+      ".css",
+      ".less",
+      ".styl"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-804",
+    "title": ".scss与.sass的区别是？",
+    "options": [
+      ".scss使用大括号和分号，.sass使用缩进",
+      "没有区别",
+      ".sass使用大括号",
+      ".scss使用缩进"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-805",
+    "title": "Sass中变量的前缀是？",
+    "options": [
+      "$",
+      "@",
+      "--",
+      "!"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-806",
+    "title": "Less中变量的前缀是？",
+    "options": [
+      "@",
+      "$",
+      "--",
+      "!"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-807",
+    "title": "Stylus中变量的前缀是？",
+    "options": [
+      "无强制前缀，可用$或@",
+      "必须$",
+      "必须@",
+      "必须--"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-808",
+    "title": "Sass中嵌套规则的作用是？",
+    "options": [
+      "反映HTML层级结构，减少重复选择器",
+      "增加性能",
+      "减少文件大小",
+      "浏览器识别"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-809",
+    "title": "Sass中&符号的作用是？",
+    "options": [
+      "引用父选择器",
+      "子选择器",
+      "兄弟选择器",
+      "全局选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-810",
+    "title": "Sass中&:hover的含义是？",
+    "options": [
+      "给父选择器添加hover伪类",
+      "后代元素的hover",
+      "兄弟元素的hover",
+      "全局hover"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-811",
+    "title": "Sass中&.active的含义是？",
+    "options": [
+      "给父选择器添加active类",
+      "后代元素的active",
+      "兄弟元素的active",
+      "全局active"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-812",
+    "title": "Sass中@mixin的作用是？",
+    "options": [
+      "定义可重用的样式块",
+      "导入文件",
+      "定义变量",
+      "定义函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-813",
+    "title": "Sass中@include的作用是？",
+    "options": [
+      "包含（调用）mixin",
+      "导入文件",
+      "定义变量",
+      "定义函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-814",
+    "title": "如何给mixin传递参数？",
+    "options": [
+      "@mixin name($param)",
+      "@mixin name(param)",
+      "@mixin name{param}",
+      "@mixin name<param>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-815",
+    "title": "mixin的默认参数如何设置？",
+    "options": [
+      "@mixin name($param: default)",
+      "@mixin name($param = default)",
+      "@mixin name($param default)",
+      "@mixin name[default]"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-816",
+    "title": "Sass中@extend的作用是？",
+    "options": [
+      "继承另一个选择器的样式",
+      "扩展文件",
+      "扩展变量",
+      "扩展函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-817",
+    "title": "@extend与@mixin的区别是？",
+    "options": [
+      "@extend合并选择器，@mixin复制样式",
+      "没有区别",
+      "@extend复制样式，@mixin合并",
+      "性能不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-818",
+    "title": "Sass中占位符选择器%的作用是？",
+    "options": [
+      "定义只用于继承而不单独输出的样式",
+      "占位空间",
+      "隐藏元素",
+      "注释"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-819",
+    "title": "Sass中@import的作用是？",
+    "options": [
+      "导入其他Scss文件",
+      "导入CSS文件",
+      "导入JS文件",
+      "导入图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-820",
+    "title": "Sass中@use的作用是？",
+    "options": [
+      "模块化导入，避免全局污染",
+      "替代@extend",
+      "使用插件",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-821",
+    "title": "@use与@import的区别是？",
+    "options": [
+      "@use是模块化作用域，@import是全局",
+      "没有区别",
+      "@use是全局，@import是模块",
+      "性能不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-822",
+    "title": "Sass中@forward的作用是？",
+    "options": [
+      "转发模块的成员供其他文件使用",
+      "向前兼容",
+      "提交代码",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-823",
+    "title": "Sass中@function的作用是？",
+    "options": [
+      "定义返回值的计算函数",
+      "定义mixin",
+      "导入文件",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-824",
+    "title": "Sass中@return的作用是？",
+    "options": [
+      "在函数中返回值",
+      "返回文件",
+      "返回选择器",
+      "返回mixin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-825",
+    "title": "Sass中#if的条件语句是？",
+    "options": [
+      "@if condition",
+      "if (condition)",
+      "#if condition",
+      "condition ? true : false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-826",
+    "title": "Sass中@for循环的语法是？",
+    "options": [
+      "@for $i from 1 through 10",
+      "for ($i=1; $i<=10; $i++)",
+      "@for i in 1..10",
+      "loop 10 times"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-827",
+    "title": "Sass中through与to的区别是？",
+    "options": [
+      "through包含结束值，to不包含",
+      "没有区别",
+      "to包含结束值",
+      "through不包含"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-828",
+    "title": "Sass中@each循环的语法是？",
+    "options": [
+      "@each $item in $list",
+      "for each item in list",
+      "@each $list in $item",
+      "loop each item"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-829",
+    "title": "Sass中@while循环的语法是？",
+    "options": [
+      "@while condition",
+      "while (condition)",
+      "@while $i < 10",
+      "loop while true"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-830",
+    "title": "Sass中map数据结构的定义是？",
+    "options": [
+      "$map: (key: value, key2: value2)",
+      "$map: [key: value]",
+      "$map: {key: value}",
+      "$map: key=value"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-831",
+    "title": "Sass中list数据结构的定义是？",
+    "options": [
+      "$list: item1 item2 item3",
+      "$list: [item1, item2]",
+      "$list: {item1, item2}",
+      "$list: (item1, item2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-832",
+    "title": "Sass中map-get()的作用是？",
+    "options": [
+      "获取map中指定key的值",
+      "设置map值",
+      "删除map值",
+      "遍历map"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-833",
+    "title": "Sass中内置的颜色函数有？",
+    "options": [
+      "lighten, darken, mix等",
+      "add, subtract, multiply",
+      "red, green, blue",
+      "hue, sat, light"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-834",
+    "title": "Sass中lighten()函数的作用是？",
+    "options": [
+      "使颜色变亮",
+      "使颜色变暗",
+      "混合颜色",
+      "反转颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-835",
+    "title": "Sass中darken()函数的作用是？",
+    "options": [
+      "使颜色变暗",
+      "使颜色变亮",
+      "混合颜色",
+      "反转颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-836",
+    "title": "Sass中mix()函数的作用是？",
+    "options": [
+      "混合两种颜色",
+      "使颜色变亮",
+      "使颜色变暗",
+      "反转颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-837",
+    "title": "Sass中数学函数random()的作用是？",
+    "options": [
+      "生成随机数",
+      "四舍五入",
+      "向下取整",
+      "向上取整"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-838",
+    "title": "Sass中字符串函数to-upper-case()的作用是？",
+    "options": [
+      "将字符串转为大写",
+      "转为小写",
+      "计算长度",
+      "拼接字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-839",
+    "title": "PostCSS的作用是？",
+    "options": [
+      "用JS插件转换CSS",
+      "预处理器",
+      "CSS框架",
+      "CSS压缩工具"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-840",
+    "title": "PostCSS与Sass的区别是？",
+    "options": [
+      "PostCSS是插件化工具，Sass是预处理器",
+      "没有区别",
+      "PostCSS是预处理器，Sass是插件",
+      "性能不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-841",
+    "title": "Autoprefixer的作用是？",
+    "options": [
+      "自动添加浏览器前缀",
+      "压缩CSS",
+      "合并CSS",
+      "检查CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-842",
+    "title": "Autoprefixer的数据来源是？",
+    "options": [
+      "caniuse.com",
+      "MDN",
+      "W3C",
+      "浏览器官网"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-843",
+    "title": "CSS Modules的作用是？",
+    "options": [
+      "创建局部作用域的CSS类名",
+      "导入CSS文件",
+      "压缩CSS",
+      "添加前缀"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-844",
+    "title": "CSS Modules如何实现作用域隔离？",
+    "options": [
+      "生成唯一的类名哈希值",
+      "使用iframe",
+      "使用shadow DOM",
+      "使用命名空间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-845",
+    "title": "CSS-in-JS的优势是？",
+    "options": [
+      "样式与组件绑定，避免冲突，动态样式",
+      "性能最好",
+      "浏览器原生支持",
+      "不需要编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-846",
+    "title": "常见的CSS-in-JS库有？",
+    "options": [
+      "styled-components, Emotion, JSS",
+      "Sass, Less, Stylus",
+      "React, Vue, Angular",
+      "Webpack, Rollup, Vite"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-847",
+    "title": "styled-components的标签模板语法是？",
+    "options": [
+      "styled.div`color: red;`",
+      "styled.div({color: \"red\"})",
+      "styled.div(\"color: red\")",
+      "styled.div.color = \"red\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-848",
+    "title": "Tailwind CSS属于哪种类型的工具？",
+    "options": [
+      "实用优先的CSS框架",
+      "预处理器",
+      "CSS-in-JS库",
+      "PostCSS插件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-849",
+    "title": "Tailwind CSS的优势是？",
+    "options": [
+      "快速开发、一致设计、体积可控",
+      "性能最好",
+      "浏览器原生支持",
+      "不需要编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-850",
+    "title": "Tailwind CSS的@apply指令作用是？",
+    "options": [
+      "提取工具类到自定义CSS中",
+      "应用变量",
+      "应用mixin",
+      "应用继承"
+    ],
+    "correctAnswer": 0
+  }
+]

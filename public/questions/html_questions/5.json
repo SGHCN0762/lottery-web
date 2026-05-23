@@ -1,0 +1,552 @@
+[
+  {
+    "id": "html-201",
+    "title": "<img>标签的必需属性是？",
+    "options": [
+      "src和alt",
+      "href和title",
+      "src和title",
+      "href和alt"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-202",
+    "title": "<img>的alt属性作用是？",
+    "options": [
+      "图片无法显示时的替代文本",
+      "图片标题",
+      "图片链接",
+      "图片描述"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-203",
+    "title": "<img>的title属性作用是？",
+    "options": [
+      "鼠标悬停时显示的提示文本",
+      "替代文本",
+      "图片链接",
+      "图片大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-204",
+    "title": "<img>的loading=\"lazy\"属性用于？",
+    "options": [
+      "延迟加载图片",
+      "预加载图片",
+      "异步加载图片",
+      "禁止加载图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-205",
+    "title": "<img>的width和height属性用于？",
+    "options": [
+      "设置图片的固有尺寸",
+      "设置最大尺寸",
+      "设置最小尺寸",
+      "设置背景尺寸"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-206",
+    "title": "<img>的srcset属性用于？",
+    "options": [
+      "提供不同分辨率的图片源",
+      "设置图片路径",
+      "设置图片大小",
+      "设置图片格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-207",
+    "title": "<img>的sizes属性用于？",
+    "options": [
+      "告诉浏览器图片在页面中的预期尺寸",
+      "设置实际大小",
+      "设置格式",
+      "设置路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-208",
+    "title": "<picture>标签的作用是？",
+    "options": [
+      "根据条件加载不同图片",
+      "显示多张图片",
+      "裁剪图片",
+      "缩放图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-209",
+    "title": "<picture>内部必须包含的标签是？",
+    "options": [
+      "<img>",
+      "<source>",
+      "<media>",
+      "<image>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-210",
+    "title": "<source>标签的media属性用于？",
+    "options": [
+      "指定媒体查询条件",
+      "指定媒体类型",
+      "指定媒体路径",
+      "指定媒体格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-211",
+    "title": "<audio>标签的作用是？",
+    "options": [
+      "播放音频",
+      "播放视频",
+      "播放动画",
+      "播放声音"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-212",
+    "title": "<audio>的controls属性用于？",
+    "options": [
+      "显示播放控件",
+      "自动播放",
+      "循环播放",
+      "静音播放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-213",
+    "title": "<audio>的autoplay属性用于？",
+    "options": [
+      "音频就绪后自动播放",
+      "显示控件",
+      "循环播放",
+      "预加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-214",
+    "title": "<audio>的loop属性用于？",
+    "options": [
+      "循环播放音频",
+      "自动播放",
+      "显示控件",
+      "预加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-215",
+    "title": "<audio>的preload属性用于？",
+    "options": [
+      "规定是否预加载音频",
+      "自动播放",
+      "循环播放",
+      "静音"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-216",
+    "title": "<audio>的muted属性用于？",
+    "options": [
+      "静音播放",
+      "预加载",
+      "自动播放",
+      "循环播放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-217",
+    "title": "<video>标签的作用是？",
+    "options": [
+      "播放视频",
+      "播放音频",
+      "播放动画",
+      "录制视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-218",
+    "title": "<video>的poster属性用于？",
+    "options": [
+      "设置视频播放前的预览图像",
+      "设置视频封面",
+      "设置视频路径",
+      "设置视频大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-219",
+    "title": "<video>的width和height属性用于？",
+    "options": [
+      "设置视频播放器的尺寸",
+      "设置视频分辨率",
+      "设置视频比例",
+      "设置视频帧率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-220",
+    "title": "<track>标签的作用是？",
+    "options": [
+      "为媒体元素添加字幕等文本轨道",
+      "添加音频",
+      "添加视频",
+      "添加特效"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-221",
+    "title": "<track>的kind=\"subtitles\"表示？",
+    "options": [
+      "字幕",
+      "标题",
+      "描述",
+      "章节"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-222",
+    "title": "<track>的kind=\"captions\"表示？",
+    "options": [
+      " captions（如翻译对话和声音效果）",
+      "字幕",
+      "章节",
+      "元数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-223",
+    "title": "<track>的srclang属性用于？",
+    "options": [
+      "指定轨道文本的语言",
+      "指定视频语言",
+      "指定音频语言",
+      "指定编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-224",
+    "title": "<iframe>标签的作用是？",
+    "options": [
+      "嵌入另一个HTML页面",
+      "创建框架集",
+      "嵌入图片",
+      "嵌入脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-225",
+    "title": "<iframe>的src属性用于？",
+    "options": [
+      "规定嵌入页面的URL",
+      "规定页面名称",
+      "规定页面大小",
+      "规定页面样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-226",
+    "title": "<iframe>的sandbox属性用于？",
+    "options": [
+      "对iframe内容实施额外限制",
+      "允许所有操作",
+      "设置沙盒样式",
+      "设置沙盒大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-227",
+    "title": "<iframe>的allow属性用于？",
+    "options": [
+      "为iframe指定功能策略",
+      "允许所有功能",
+      "允许脚本",
+      "允许样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-228",
+    "title": "<iframe>的loading=\"lazy\"用于？",
+    "options": [
+      "延迟加载iframe",
+      "预加载iframe",
+      "异步加载",
+      "立即加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-229",
+    "title": "<embed>标签的作用是？",
+    "options": [
+      "嵌入外部应用或交互内容",
+      "嵌入网页",
+      "嵌入图片",
+      "嵌入视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-230",
+    "title": "<object>标签的作用是？",
+    "options": [
+      "定义嵌入对象",
+      "定义网页",
+      "定义图片",
+      "定义视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-231",
+    "title": "<object>的data属性用于？",
+    "options": [
+      "指定对象资源的URL",
+      "指定对象数据",
+      "指定对象类型",
+      "指定对象大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-232",
+    "title": "<object>的type属性用于？",
+    "options": [
+      "指定对象内容的MIME类型",
+      "指定URL",
+      "指定大小",
+      "指定样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-233",
+    "title": "<param>标签的作用是？",
+    "options": [
+      "定义object元素的参数",
+      "定义对象",
+      "定义参数",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-234",
+    "title": "<map>标签的作用是？",
+    "options": [
+      "定义图像映射",
+      "定义地图",
+      "定义图片",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-235",
+    "title": "<area>标签的作用是？",
+    "options": [
+      "定义图像映射中的区域",
+      "定义区域",
+      "定义地图",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-236",
+    "title": "<area>的shape属性不包括？",
+    "options": [
+      "triangle",
+      "rect",
+      "circle",
+      "poly"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-237",
+    "title": "<area>的coords属性用于？",
+    "options": [
+      "定义可点击区域的坐标",
+      "定义大小",
+      "定义形状",
+      "定义链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-238",
+    "title": "<figure>标签的作用是？",
+    "options": [
+      "规定独立的流内容（如图片、图表）",
+      "定义数字",
+      "定义图形",
+      "定义画布"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-239",
+    "title": "<figcaption>标签的作用是？",
+    "options": [
+      "为figure定义标题",
+      "定义图片",
+      "定义图表",
+      "定义说明"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-240",
+    "title": "<svg>标签的作用是？",
+    "options": [
+      "定义SVG矢量图形",
+      "定义位图",
+      "定义画布",
+      "定义图表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-241",
+    "title": "<canvas>标签的作用是？",
+    "options": [
+      "定义画布用于脚本绘图",
+      "定义矢量图",
+      "定义图片",
+      "定义动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-242",
+    "title": "SVG表示什么？",
+    "options": [
+      "Scalable Vector Graphics",
+      "Simple Vector Graphics",
+      "Scalable Video Graphics",
+      "Standard Vector Graphics"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-243",
+    "title": "SVG的优势是？",
+    "options": [
+      "不失真、体积小、可CSS操作",
+      "色彩丰富",
+      "适合照片",
+      "无需插件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-244",
+    "title": "Canvas的优势是？",
+    "options": [
+      "适合像素操作和复杂游戏渲染",
+      "不失真",
+      "可缩放",
+      "DOM友好"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-245",
+    "title": "<svg>中的<rect>用于？",
+    "options": [
+      "绘制矩形",
+      "绘制圆形",
+      "绘制线条",
+      "绘制路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-246",
+    "title": "<svg>中的<circle>用于？",
+    "options": [
+      "绘制圆形",
+      "绘制矩形",
+      "绘制椭圆",
+      "绘制多边形"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-247",
+    "title": "<svg>中的<line>用于？",
+    "options": [
+      "绘制线条",
+      "绘制矩形",
+      "绘制圆形",
+      "绘制文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-248",
+    "title": "<svg>中的<path>用于？",
+    "options": [
+      "绘制任意形状的路径",
+      "绘制直线",
+      "绘制矩形",
+      "绘制圆弧"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-249",
+    "title": "<svg>中的<text>用于？",
+    "options": [
+      "绘制文本",
+      "绘制路径",
+      "绘制矩形",
+      "绘制圆形"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-250",
+    "title": "Canvas获取绘图上下文的方法是？",
+    "options": [
+      "getContext()",
+      "getCanvas()",
+      "getDraw()",
+      "getGraphic()"
+    ],
+    "correctAnswer": 0
+  }
+]

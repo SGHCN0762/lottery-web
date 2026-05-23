@@ -1,0 +1,556 @@
+[
+  {
+    "id": "c-401",
+    "title": "C语言中，offsetof宏的实现原理是？",
+    "options": [
+      "将0强转为结构体指针求偏移",
+      "使用sizeof",
+      "使用指针减法",
+      "使用位运算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-402",
+    "title": "C语言中，container_of宏的作用是？",
+    "options": [
+      "通过成员指针获取结构体指针",
+      "获取成员偏移",
+      "获取结构体大小",
+      "获取成员大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-403",
+    "title": "C语言中，container_of在哪个库常用？",
+    "options": [
+      "Linux内核",
+      "标准库",
+      "C++库",
+      "Boost库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-404",
+    "title": "C语言中，链表和数组的区别？",
+    "options": [
+      "链表插入快，数组访问快",
+      "链表访问快，数组插入快",
+      "没有区别",
+      "链表连续存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-405",
+    "title": "C语言中，单链表的特点是？",
+    "options": [
+      "每个节点指向下一个节点",
+      "每个节点指向上一个节点",
+      "首尾相连",
+      "随机访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-406",
+    "title": "C语言中，双链表的特点是？",
+    "options": [
+      "每个节点有前驱和后继指针",
+      "只有后继指针",
+      "只有前驱指针",
+      "无指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-407",
+    "title": "C语言中，循环链表的特点是？",
+    "options": [
+      "尾节点指向头节点",
+      "尾节点指向NULL",
+      "头节点指向尾节点",
+      "无指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-408",
+    "title": "C语言中，栈的数据结构特点是？",
+    "options": [
+      "后进先出(LIFO)",
+      "先进先出(FIFO)",
+      "随机访问",
+      "顺序访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-409",
+    "title": "C语言中，队列的数据结构特点是？",
+    "options": [
+      "先进先出(FIFO)",
+      "后进先出(LIFO)",
+      "随机访问",
+      "顺序访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-410",
+    "title": "C语言中，树的深度优先遍历使用什么数据结构？",
+    "options": [
+      "栈",
+      "队列",
+      "堆",
+      "链表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-411",
+    "title": "C语言中，树的广度优先遍历使用什么数据结构？",
+    "options": [
+      "队列",
+      "栈",
+      "堆",
+      "链表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-412",
+    "title": "C语言中，二叉排序树的特点是？",
+    "options": [
+      "左小右大",
+      "左大右小",
+      "随机排列",
+      "完全平衡"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-413",
+    "title": "C语言中，平衡二叉树的目的是？",
+    "options": [
+      "防止退化为链表",
+      "增加节点",
+      "减少节点",
+      "方便遍历"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-414",
+    "title": "C语言中，哈希表的特点是？",
+    "options": [
+      "查找快，空间换时间",
+      "查找慢",
+      "有序存储",
+      "链式存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-415",
+    "title": "C语言中，哈希冲突的解决方法有？",
+    "options": [
+      "开放定址法、链地址法",
+      "排序法",
+      "二分法",
+      "递归法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-416",
+    "title": "C语言中，堆排序使用的数据结构是？",
+    "options": [
+      "完全二叉树",
+      "链表",
+      "栈",
+      "队列"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-417",
+    "title": "C语言中，大顶堆的特点是？",
+    "options": [
+      "根节点最大",
+      "根节点最小",
+      "左大右小",
+      "左小右大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-418",
+    "title": "C语言中，小顶堆的特点是？",
+    "options": [
+      "根节点最小",
+      "根节点最大",
+      "左大右小",
+      "左小右大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-419",
+    "title": "C语言中，排序算法的稳定性是指？",
+    "options": [
+      "相同元素相对位置不变",
+      "排序速度快",
+      "占用内存少",
+      "代码简单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-420",
+    "title": "C语言中，快速排序的平均时间复杂度是？",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-421",
+    "title": "C语言中，快速排序的最坏时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-422",
+    "title": "C语言中，归并排序的时间复杂度是？",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-423",
+    "title": "C语言中，冒泡排序的时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-424",
+    "title": "C语言中，插入排序的时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-425",
+    "title": "C语言中，选择排序的时间复杂度是？",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-426",
+    "title": "C语言中，二分查找的前提是？",
+    "options": [
+      "数组有序",
+      "数组无序",
+      "链表",
+      "栈"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-427",
+    "title": "C语言中，二分查找的时间复杂度是？",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n^2)",
+      "O(1)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-428",
+    "title": "C语言中，strlen的时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-429",
+    "title": "C语言中，strcmp的时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-430",
+    "title": "C语言中，访问数组元素的时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-431",
+    "title": "C语言中，访问链表第n个元素的时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-432",
+    "title": "C语言中，递归的效率通常比循环低的原因是？",
+    "options": [
+      "函数调用开销大",
+      "循环开销大",
+      "递归代码长",
+      "循环代码长"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-433",
+    "title": "C语言中，尾递归优化的作用是？",
+    "options": [
+      "将递归转为循环，减少栈使用",
+      "增加递归深度",
+      "增加代码可读性",
+      "增加函数调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-434",
+    "title": "C语言中，gcc默认开启尾递归优化吗？",
+    "options": [
+      "开启(-O2)",
+      "不开启",
+      "取决于版本",
+      "取决于平台"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-435",
+    "title": "C语言中，如何实现泛型数据结构？",
+    "options": [
+      "使用void指针和函数指针",
+      "使用模板",
+      "使用继承",
+      "使用宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-436",
+    "title": "C语言中，泛型排序使用什么？",
+    "options": [
+      "qsort和回调函数",
+      "模板",
+      "重载",
+      "宏定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-437",
+    "title": "C语言中，泛型链表节点数据域通常用什么类型？",
+    "options": [
+      "void*",
+      "int",
+      "char*",
+      "struct"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-438",
+    "title": "C语言中，错误处理的传统方式是？",
+    "options": [
+      "返回错误码",
+      "抛出异常",
+      "断言",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-439",
+    "title": "C语言中，errno的作用是？",
+    "options": [
+      "存储错误码",
+      "存储错误信息",
+      "存储错误行号",
+      "存储错误类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-440",
+    "title": "C语言中，perror的输出格式是？",
+    "options": [
+      "参数字符串: 错误信息",
+      "错误信息",
+      "参数字符串",
+      "错误码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-441",
+    "title": "C语言中，strerror的参数是？",
+    "options": [
+      "错误码",
+      "字符串",
+      "指针",
+      "文件流"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-442",
+    "title": "C语言中，assert失败会怎样？",
+    "options": [
+      "终止程序并输出信息",
+      "抛出异常",
+      "返回错误",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-443",
+    "title": "C语言中，setjmp的作用是？",
+    "options": [
+      "保存栈环境",
+      "恢复栈环境",
+      "分配内存",
+      "释放内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-444",
+    "title": "C语言中，longjmp的作用是？",
+    "options": [
+      "恢复栈环境",
+      "保存栈环境",
+      "分配内存",
+      "释放内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-445",
+    "title": "C语言中，setjmp/longjmp可以跨函数跳转吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能跨一层",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-446",
+    "title": "C语言中，setjmp/longjmp的缺点是？",
+    "options": [
+      "不调用析构函数，资源可能泄漏",
+      "速度慢",
+      "语法复杂",
+      "不支持跨函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-447",
+    "title": "C语言中，信号处理函数中应该使用哪种函数？",
+    "options": [
+      "异步安全函数",
+      "任意函数",
+      "标准I/O函数",
+      "内存分配函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-448",
+    "title": "C语言中，printf是异步安全函数吗？",
+    "options": [
+      "不是",
+      "是",
+      "取决于平台",
+      "取决于参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-449",
+    "title": "C语言中，_exit和exit的区别是？",
+    "options": [
+      "_exit不刷新缓冲区，exit刷新",
+      "没有区别",
+      [
+        "exit不刷新"
+      ],
+      [
+        "_exit刷新"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-450",
+    "title": "C语言中，atexit注册的函数执行顺序是？",
+    "options": [
+      "逆序执行",
+      "顺序执行",
+      "随机执行",
+      "只执行一个"
+    ],
+    "correctAnswer": 0
+  }
+]

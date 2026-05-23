@@ -1,0 +1,552 @@
+[
+  {
+    "id": "js-451",
+    "title": "JavaScript中DataView的作用是？",
+    "options": [
+      "读写ArrayBuffer的视图",
+      "查看数据",
+      "验证数据",
+      "转换数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-452",
+    "title": "JavaScript中DataView可以指定字节序吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "取决于环境",
+      "取决于数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-453",
+    "title": "JavaScript中大端字节序是指？",
+    "options": [
+      "高位字节在前",
+      "低位字节在前",
+      "中间字节在前",
+      "随机顺序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-454",
+    "title": "JavaScript中小端字节序是指？",
+    "options": [
+      "低位字节在前",
+      "高位字节在前",
+      "中间字节在前",
+      "随机顺序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-455",
+    "title": "JavaScript中如何判断当前字节序？",
+    "options": [
+      "new Uint8Array(new Uint16Array([1]).buffer)[0] === 1",
+      "os.endianness()",
+      "process.byteOrder",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-456",
+    "title": "JavaScript中SharedArrayBuffer的作用是？",
+    "options": [
+      "共享内存",
+      "传输数据",
+      "存储字符串",
+      "存储对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-457",
+    "title": "JavaScript中Atomics的作用是？",
+    "options": [
+      "原子操作SharedArrayBuffer",
+      "同步线程",
+      "锁定内存",
+      "释放内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-458",
+    "title": "JavaScript中Atomics.add的作用是？",
+    "options": [
+      "原子加法",
+      "普通加法",
+      "异步加法",
+      "同步加法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-459",
+    "title": "JavaScript中Atomics.load的作用是？",
+    "options": [
+      "原子读取",
+      "普通读取",
+      "异步读取",
+      "同步读取"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-460",
+    "title": "JavaScript中Atomics.store的作用是？",
+    "options": [
+      "原子存储",
+      "普通存储",
+      "异步存储",
+      "同步存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-461",
+    "title": "JavaScript中Atomics.wait的作用是？",
+    "options": [
+      "等待通知",
+      "发送通知",
+      "锁定线程",
+      "唤醒线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-462",
+    "title": "JavaScript中Atomics.notify的作用是？",
+    "options": [
+      "唤醒等待的线程",
+      "等待通知",
+      "锁定线程",
+      "解锁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-463",
+    "title": "JavaScript中ArrayBuffer.isView的作用是？",
+    "options": [
+      "判断是否是视图",
+      "判断是否是ArrayBuffer",
+      "创建视图",
+      "转换视图"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-464",
+    "title": "JavaScript中Blob的作用是？",
+    "options": [
+      "表示二进制大对象",
+      "表示文本",
+      "表示数组",
+      "表示对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-465",
+    "title": "JavaScript中File的作用是？",
+    "options": [
+      "表示文件对象",
+      "表示路径",
+      "表示目录",
+      "表示链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-466",
+    "title": "JavaScript中File继承自？",
+    "options": [
+      "Blob",
+      "Object",
+      "Array",
+      "String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-467",
+    "title": "JavaScript中FileReader的作用是？",
+    "options": [
+      "异步读取文件",
+      "同步读取文件",
+      "写入文件",
+      "删除文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-468",
+    "title": "JavaScript中FileReaderSync的作用是？",
+    "options": [
+      "同步读取文件",
+      "异步读取文件",
+      "写入文件",
+      "删除文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-469",
+    "title": "JavaScript中URL.createObjectURL的作用是？",
+    "options": [
+      "创建Blob URL",
+      "创建HTTP URL",
+      "解析URL",
+      "编码URL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-470",
+    "title": "JavaScript中URL.revokeObjectURL的作用是？",
+    "options": [
+      "释放Blob URL",
+      "创建Blob URL",
+      "解析URL",
+      "编码URL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-471",
+    "title": "JavaScript中FormData的作用是？",
+    "options": [
+      "构建表单数据",
+      "解析表单",
+      "验证表单",
+      "提交表单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-472",
+    "title": "JavaScript中Headers的作用是？",
+    "options": [
+      "构建HTTP头",
+      "解析HTTP",
+      "验证HTTP",
+      "发送HTTP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-473",
+    "title": "JavaScript中Request的作用是？",
+    "options": [
+      "表示HTTP请求",
+      "表示HTTP响应",
+      "表示URL",
+      "表示Header"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-474",
+    "title": "JavaScript中Response的作用是？",
+    "options": [
+      "表示HTTP响应",
+      "表示HTTP请求",
+      "表示URL",
+      "表示Header"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-475",
+    "title": "JavaScript中Iterator的作用是？",
+    "options": [
+      "提供统一的遍历接口",
+      "创建对象",
+      "冻结对象",
+      "合并对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-476",
+    "title": "JavaScript中Iterator接口的名称是？",
+    "options": [
+      "Symbol.iterator",
+      "iterator",
+      "iterate",
+      "Symbol.asyncIterator"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-477",
+    "title": "JavaScript中Iterator的next方法返回？",
+    "options": [
+      "{value, done}",
+      "{key, value}",
+      "{item, end}",
+      "{result, status}"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-478",
+    "title": "JavaScript中Iterator的done为true表示？",
+    "options": [
+      "遍历结束",
+      "遍历继续",
+      "遍历错误",
+      "遍历暂停"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-479",
+    "title": "JavaScript中for...of循环使用什么接口？",
+    "options": [
+      "Iterator",
+      "Enumerator",
+      "Generator",
+      "AsyncIterator"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-480",
+    "title": "JavaScript中for...of和for...in的区别是？",
+    "options": [
+      "for...of遍历值，for...in遍历键",
+      "for...of遍历键，for...in遍历值",
+      "没有区别",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-481",
+    "title": "JavaScript中事件循环的作用是？",
+    "options": [
+      "协调事件、用户交互、脚本、渲染等",
+      "执行同步代码",
+      "执行异步代码",
+      "管理内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-482",
+    "title": "JavaScript中宏任务有？",
+    "options": [
+      "setTimeout, setInterval, I/O, UI渲染",
+      "Promise, MutationObserver",
+      "process.nextTick",
+      "await"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-483",
+    "title": "JavaScript中微任务有？",
+    "options": [
+      "Promise, MutationObserver, process.nextTick",
+      "setTimeout, setInterval",
+      "I/O",
+      "UI渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-484",
+    "title": "JavaScript中微任务的执行时机是？",
+    "options": [
+      "宏任务结束后，渲染前",
+      "宏任务开始前",
+      "渲染后",
+      "下一轮事件循环"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-485",
+    "title": "JavaScript中process.nextTick和Promise的区别是？",
+    "options": [
+      "nextTick优先级更高",
+      "Promise优先级更高",
+      "没有区别",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-486",
+    "title": "JavaScript中事件循环的顺序是？",
+    "options": [
+      "同步代码 -> 微任务 -> 宏任务",
+      "同步代码 -> 宏任务 -> 微任务",
+      "宏任务 -> 同步代码 -> 微任务",
+      "微任务 -> 同步代码 -> 宏任务"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-487",
+    "title": "JavaScript中Promise的状态有？",
+    "options": [
+      "pending, fulfilled, rejected",
+      "pending, resolved, rejected",
+      "waiting, resolved, rejected",
+      "pending, success, failure"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-488",
+    "title": "JavaScript中Promise的状态一旦改变会怎样？",
+    "options": [
+      "不可再变",
+      "可以再变",
+      "取决于状态",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-489",
+    "title": "JavaScript中Promise的resolve作用是？",
+    "options": [
+      "将状态改为fulfilled",
+      "将状态改为rejected",
+      "将状态改为pending",
+      "取消Promise"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-490",
+    "title": "JavaScript中Promise的reject作用是？",
+    "options": [
+      "将状态改为rejected",
+      "将状态改为fulfilled",
+      "将状态改为pending",
+      "取消Promise"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-491",
+    "title": "JavaScript中Promise.prototype.then的作用是？",
+    "options": [
+      "添加回调",
+      "创建Promise",
+      "取消Promise",
+      "捕获异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-492",
+    "title": "JavaScript中Promise.prototype.catch的作用是？",
+    "options": [
+      "捕获异常",
+      "添加回调",
+      "创建Promise",
+      "取消Promise"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-493",
+    "title": "JavaScript中Promise.prototype.finally的作用是？",
+    "options": [
+      "无论结果都执行",
+      "仅成功执行",
+      "仅失败执行",
+      "取消Promise"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-494",
+    "title": "JavaScript中Promise.resolve的作用是？",
+    "options": [
+      "创建已解决的Promise",
+      "创建已拒绝的Promise",
+      "创建待定的Promise",
+      "取消Promise"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-495",
+    "title": "JavaScript中Promise.reject的作用是？",
+    "options": [
+      "创建已拒绝的Promise",
+      "创建已解决的Promise",
+      "创建待定的Promise",
+      "取消Promise"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-496",
+    "title": "JavaScript中Promise.all的作用是？",
+    "options": [
+      "等待所有Promise成功",
+      "等待任一Promise成功",
+      "等待所有Promise完成",
+      "等待任一Promise完成"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-497",
+    "title": "JavaScript中Promise.allSettled的作用是？",
+    "options": [
+      "等待所有Promise完成",
+      "等待所有Promise成功",
+      "等待任一Promise成功",
+      "等待任一Promise完成"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-498",
+    "title": "JavaScript中Promise.any的作用是？",
+    "options": [
+      "等待任一Promise成功",
+      "等待所有Promise成功",
+      "等待所有Promise完成",
+      "等待任一Promise完成"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-499",
+    "title": "JavaScript中Promise.race的作用是？",
+    "options": [
+      "等待任一Promise完成",
+      "等待所有Promise成功",
+      "等待所有Promise完成",
+      "等待任一Promise成功"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-500",
+    "title": "JavaScript中Promise.all有一个失败会怎样？",
+    "options": [
+      "整体失败",
+      "忽略失败",
+      "等待其他完成",
+      "抛出警告"
+    ],
+    "correctAnswer": 0
+  }
+]

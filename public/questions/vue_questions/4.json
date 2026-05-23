@@ -1,0 +1,552 @@
+[
+  {
+    "id": "vue-151",
+    "title": "Vue 3 中 setup 函数的两个参数是？",
+    "options": [
+      "props, context",
+      "props, state",
+      "state, context",
+      "attrs, slots"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-152",
+    "title": "Vue 3 中 setup 的 context 包含什么？",
+    "options": [
+      "attrs, slots, emit, expose",
+      "props, data, methods",
+      "refs, state",
+      "router, route"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-153",
+    "title": "Vue 3 中 setup 中可以使用 this 吗？",
+    "options": [
+      "不可以",
+      "可以",
+      "有时可以",
+      "取决于配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-154",
+    "title": "Vue 3 中 setup 的返回值可以是？",
+    "options": [
+      "对象或渲染函数",
+      "只能是对象",
+      "只能是函数",
+      "任意值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-155",
+    "title": "Vue 3 中 onBeforeMount 的执行时机是？",
+    "options": [
+      "挂载前",
+      "挂载后",
+      "创建前",
+      "创建后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-156",
+    "title": "Vue 3 中 onMounted 的执行时机是？",
+    "options": [
+      "挂载后",
+      "挂载前",
+      "创建前",
+      "创建后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-157",
+    "title": "Vue 3 中 onBeforeUpdate 的执行时机是？",
+    "options": [
+      "更新前",
+      "更新后",
+      "卸载前",
+      "卸载后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-158",
+    "title": "Vue 3 中 onUpdated 的执行时机是？",
+    "options": [
+      "更新后",
+      "更新前",
+      "卸载前",
+      "卸载后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-159",
+    "title": "Vue 3 中 onBeforeUnmount 的执行时机是？",
+    "options": [
+      "卸载前",
+      "卸载后",
+      "更新前",
+      "更新后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-160",
+    "title": "Vue 3 中 onUnmounted 的执行时机是？",
+    "options": [
+      "卸载后",
+      "卸载前",
+      "更新前",
+      "更新后"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-161",
+    "title": "Vue 3 中 onActivated 钩子的作用是？",
+    "options": [
+      "被 keep-alive 缓存的组件激活时调用",
+      "组件创建时",
+      "组件挂载时",
+      "组件更新时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-162",
+    "title": "Vue 3 中 onDeactivated 钩子的作用是？",
+    "options": [
+      "被 keep-alive 缓存的组件停用时调用",
+      "组件卸载时",
+      "组件销毁时",
+      "组件更新时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-163",
+    "title": "Vue 3 中 onErrorCaptured 钩子的作用是？",
+    "options": [
+      "捕获后代组件错误",
+      "捕获路由错误",
+      "捕获网络错误",
+      "捕获语法错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-164",
+    "title": "Vue 3 中 onRenderTracked 钩子的作用是？",
+    "options": [
+      "追踪响应式依赖",
+      "追踪渲染时间",
+      "追踪组件更新",
+      "追踪事件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-165",
+    "title": "Vue 3 中 onRenderTriggered 钩子的作用是？",
+    "options": [
+      "触发组件更新时调用",
+      "触发渲染时调用",
+      "触发事件时调用",
+      "触发路由时调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-166",
+    "title": "Vue 3 中组合式函数的命名规范是？",
+    "options": [
+      "useXxx",
+      "getXxx",
+      "setXxx",
+      "onXxx"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-167",
+    "title": "Vue 3 中组合式函数返回什么？",
+    "options": [
+      "响应式引用和方法",
+      "普通对象",
+      "类实例",
+      "函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-168",
+    "title": "Vue 3 中 provide 的默认值如何设置？",
+    "options": [
+      "第二个参数",
+      "default 选项",
+      "required 选项",
+      "无法设置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-169",
+    "title": "Vue 3 中 inject 的默认值如何设置？",
+    "options": [
+      "第二个参数",
+      "default 工厂函数",
+      "两者都可以",
+      "无法设置"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "vue-170",
+    "title": "Vue 3 中 provide/inject 的响应性如何实现？",
+    "options": [
+      "提供 ref/reactive",
+      "自动响应",
+      "无法实现",
+      "需要 Vuex"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-171",
+    "title": "Vue 3 中 provide/inject 的缺点是？",
+    "options": [
+      "组件重构困难",
+      "类型推导复杂",
+      "调试困难",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-172",
+    "title": "Vue 3 中 provide 可以在 setup 之外使用吗？",
+    "options": [
+      "可以，通过选项式 API",
+      "不可以",
+      "只能在 setup",
+      "需要插件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-173",
+    "title": "Vue 3 中 inject 可以在 setup 之外使用吗？",
+    "options": [
+      "可以，通过选项式 API",
+      "不可以",
+      "只能在 setup",
+      "需要插件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-174",
+    "title": "Vue 3 中 provide 的 key 可以是 Symbol 吗？",
+    "options": [
+      "推荐使用 Symbol",
+      "不可以",
+      "只能用字符串",
+      "只能用数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-175",
+    "title": "Vue 3 中异步组件使用什么定义？",
+    "options": [
+      "defineAsyncComponent",
+      "async component",
+      "import()",
+      "Suspense"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-176",
+    "title": "Vue 3 中 defineAsyncComponent 的 loadingComponent 选项作用是？",
+    "options": [
+      "显示加载状态",
+      "显示错误状态",
+      "显示超时状态",
+      "显示延迟状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-177",
+    "title": "Vue 3 中 defineAsyncComponent 的 errorComponent 选项作用是？",
+    "options": [
+      "显示错误状态",
+      "显示加载状态",
+      "显示超时状态",
+      "显示延迟状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-178",
+    "title": "Vue 3 中 defineAsyncComponent 的 delay 选项作用是？",
+    "options": [
+      "延迟显示加载组件",
+      "延迟加载组件",
+      "延迟错误显示",
+      "延迟超时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-179",
+    "title": "Vue 3 中 defineAsyncComponent 的 timeout 选项作用是？",
+    "options": [
+      "超时时间",
+      "延迟时间",
+      "加载时间",
+      "重试时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-180",
+    "title": "Vue 3 中 defineAsyncComponent 的 suspensible 选项作用是？",
+    "options": [
+      "与 Suspense 集成",
+      "挂起组件",
+      "异步加载",
+      "错误处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-181",
+    "title": "Vue 3 中 Suspense 组件的作用是？",
+    "options": [
+      "协调异步依赖",
+      "处理错误",
+      "处理加载",
+      "处理过渡"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-182",
+    "title": "Vue 3 中 Suspense 的 default 插槽作用是？",
+    "options": [
+      "显示异步内容",
+      "显示加载状态",
+      "显示错误",
+      "显示备用内容"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-183",
+    "title": "Vue 3 中 Suspense 的 fallback 插槽作用是？",
+    "options": [
+      "显示加载状态",
+      "显示异步内容",
+      "显示错误",
+      "显示备用内容"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-184",
+    "title": "Vue 3 中 Teleport 组件的作用是？",
+    "options": [
+      "传送组件内容到其他位置",
+      "异步加载",
+      "缓存组件",
+      "过渡动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-185",
+    "title": "Vue 3 中 Teleport 的 to 属性作用是？",
+    "options": [
+      "指定目标位置",
+      "指定传送条件",
+      "指定传送内容",
+      "指定传送方式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-186",
+    "title": "Vue 3 中 Teleport 的 disabled 属性作用是？",
+    "options": [
+      "禁用传送",
+      "启用传送",
+      "条件传送",
+      "强制传送"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-187",
+    "title": "Vue 3 中 KeepAlive 组件的作用是？",
+    "options": [
+      "缓存组件实例",
+      "保持连接",
+      "保持状态",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-188",
+    "title": "Vue 3 中 KeepAlive 的 include 属性作用是？",
+    "options": [
+      "指定缓存组件",
+      "排除缓存组件",
+      "最大缓存数",
+      "缓存策略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-189",
+    "title": "Vue 3 中 KeepAlive 的 exclude 属性作用是？",
+    "options": [
+      "排除缓存组件",
+      "指定缓存组件",
+      "最大缓存数",
+      "缓存策略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-190",
+    "title": "Vue 3 中 KeepAlive 的 max 属性作用是？",
+    "options": [
+      "最大缓存实例数",
+      "最大内存",
+      "最大组件数",
+      "最大更新数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-191",
+    "title": "Vue 3 中 Transition 组件的作用是？",
+    "options": [
+      "处理单个元素过渡",
+      "处理列表过渡",
+      "处理组件过渡",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-192",
+    "title": "Vue 3 中 TransitionGroup 组件的作用是？",
+    "options": [
+      "处理列表过渡",
+      "处理单个元素过渡",
+      "处理组件过渡",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-193",
+    "title": "Vue 3 中 Transition 的 name 属性作用是？",
+    "options": [
+      "自动生成 CSS 类名",
+      "标识过渡",
+      "动画名称",
+      "组件名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-194",
+    "title": "Vue 3 中 Transition 的 CSS 类名 v-enter-from 表示？",
+    "options": [
+      "进入过渡的起始状态",
+      "进入过渡的结束状态",
+      "离开过渡的起始状态",
+      "离开过渡的结束状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-195",
+    "title": "Vue 3 中 Transition 的 CSS 类名 v-enter-active 表示？",
+    "options": [
+      "进入过渡生效时的状态",
+      "进入过渡的起始状态",
+      "进入过渡的结束状态",
+      "离开过渡的状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-196",
+    "title": "Vue 3 中 Transition 的 CSS 类名 v-leave-from 表示？",
+    "options": [
+      "离开过渡的起始状态",
+      "离开过渡的结束状态",
+      "进入过渡的起始状态",
+      "进入过渡的结束状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-197",
+    "title": "Vue 3 中 Transition 的 mode 属性可选值是？",
+    "options": [
+      "in-out, out-in",
+      "in, out",
+      "before, after",
+      "sync, async"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-198",
+    "title": "Vue 3 中 Transition 的 appear 属性作用是？",
+    "options": [
+      "初始渲染时也应用过渡",
+      "只应用进入过渡",
+      "只应用离开过渡",
+      "禁用过渡"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-199",
+    "title": "Vue 3 中 TransitionGroup 的 tag 属性作用是？",
+    "options": [
+      "指定渲染的标签",
+      "指定过渡类型",
+      "指定动画类型",
+      "指定组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-200",
+    "title": "Vue 3 中 TransitionGroup 的 move-class 属性作用是？",
+    "options": [
+      "自定义移动过渡类名",
+      "自定义进入类名",
+      "自定义离开类名",
+      "自定义动画类名"
+    ],
+    "correctAnswer": 0
+  }
+]

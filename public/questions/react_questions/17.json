@@ -1,0 +1,552 @@
+[
+  {
+    "id": "react-801",
+    "title": "React 中 TypeScript 的作用是？",
+    "options": [
+      "提供静态类型检查提高代码健壮性",
+      "运行更快",
+      "代码压缩",
+      "样式管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-802",
+    "title": "React 中 FC 类型的全称是？",
+    "options": [
+      "FunctionComponent",
+      "FuncComp",
+      "FunctionClass",
+      "FirstComponent"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-803",
+    "title": "React 中 React.FC 的缺点是？",
+    "options": [
+      "默认包含 children 类型且泛型支持不佳",
+      "没有缺点",
+      "不支持 Hooks",
+      "不能传 Props"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-804",
+    "title": "React 中如何定义组件 Props 类型？",
+    "options": [
+      "使用 interface 或 type 定义",
+      "使用 PropTypes",
+      "使用 defaultProps",
+      "使用注释"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-805",
+    "title": "React 中 ReactNode 类型包括？",
+    "options": [
+      "ReactElement, string, number, null, undefined 等",
+      "只有 Element",
+      "只有 string",
+      "只有 number"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-806",
+    "title": "React 中 ReactElement 和 ReactNode 的区别？",
+    "options": [
+      "ReactElement 是对象，ReactNode 包括所有可渲染内容",
+      "没有区别",
+      "ReactNode 是对象",
+      "ReactElement 更大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-807",
+    "title": "React 中如何类型化 useRef？",
+    "options": [
+      "useRef<HTMLInputElement>(null)",
+      "useRef<HTMLInputElement>",
+      "useRef(null)",
+      "useRef(HTMLInputElement)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-808",
+    "title": "React 中如何类型化 useState？",
+    "options": [
+      "useState<string>()",
+      "useState(string)",
+      "useState:<string>",
+      "useState->string"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-809",
+    "title": "React 中如何类型化 useReducer？",
+    "options": [
+      "定义 Action 联合类型和 State 接口",
+      "不需要类型",
+      "使用 any",
+      "使用 PropTypes"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-810",
+    "title": "React 中如何类型化 forwardRef？",
+    "options": [
+      "React.forwardRef<RefType, PropsType>",
+      "React.forwardRef<PropsType>",
+      "forwardRef<RefType>",
+      "forwardRef(PropsType)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-811",
+    "title": "React 中如何类型化 useContext？",
+    "options": [
+      "创建 Context 时指定类型 React.createContext<Type>",
+      "使用时指定",
+      "不需要类型",
+      "使用泛型函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-812",
+    "title": "React 中事件处理函数的类型？",
+    "options": [
+      "React.MouseEvent, React.ChangeEvent 等",
+      "Event",
+      "MouseEvent",
+      "Object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-813",
+    "title": "React 中如何类型化 CSS 属性？",
+    "options": [
+      "React.CSSProperties",
+      "CSSProperties",
+      "StyleObject",
+      "CSSStyle"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-814",
+    "title": "React 中 Webpack 的作用是？",
+    "options": [
+      "模块打包工具",
+      "状态管理",
+      "路由管理",
+      "UI 组件库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-815",
+    "title": "React 中 Vite 的作用是？",
+    "options": [
+      "下一代前端构建工具，开发启动快",
+      "代码格式化",
+      "类型检查",
+      "单元测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-816",
+    "title": "React 中 Babel 的作用是？",
+    "options": [
+      "将 ES6+ 和 JSX 转换为兼容的 JS",
+      "代码压缩",
+      "类型检查",
+      "模块打包"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-817",
+    "title": "React 中 ESLint 的作用是？",
+    "options": [
+      "检查代码质量和风格",
+      "编译代码",
+      "打包代码",
+      "优化性能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-818",
+    "title": "React 中 Prettier 的作用是？",
+    "options": [
+      "统一代码格式风格",
+      "检查逻辑错误",
+      "编译代码",
+      "类型检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-819",
+    "title": "React 中 Husky 的作用是？",
+    "options": [
+      "管理 Git Hooks 执行脚本",
+      "代码格式化",
+      "类型检查",
+      "模块打包"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-820",
+    "title": "React 中 lint-staged 的作用是？",
+    "options": [
+      "只对暂存区文件执行 lint 提高速度",
+      "全量检查",
+      "代码压缩",
+      "类型检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-821",
+    "title": "React 中 Commitlint 的作用是？",
+    "options": [
+      "规范 Git 提交信息格式",
+      "代码检查",
+      "版本管理",
+      "分支管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-822",
+    "title": "React 中 Storybook 的作用是？",
+    "options": [
+      "隔离开发和测试 UI 组件",
+      "状态管理",
+      "路由管理",
+      "数据 Mock"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-823",
+    "title": "React 中 Cypress 的作用是？",
+    "options": [
+      "端到端测试框架",
+      "单元测试",
+      "类型检查",
+      "代码压缩"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-824",
+    "title": "React 中 Playwright 的作用是？",
+    "options": [
+      "跨浏览器端到端测试",
+      "组件测试",
+      "性能测试",
+      "安全测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-825",
+    "title": "React 中 Jest 的快照测试原理？",
+    "options": [
+      "比较组件渲染输出的序列化文本",
+      "截图比较",
+      "DOM 比较",
+      "视频录制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-826",
+    "title": "React 中 Webpack 的 HMR 原理？",
+    "options": [
+      "替换模块而不刷新页面保持状态",
+      "刷新页面",
+      "重启服务",
+      "重新编译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-827",
+    "title": "React 中 Vite 为什么比 Webpack 快？",
+    "options": [
+      "利用浏览器原生 ESM 无需打包开发时",
+      "使用多线程",
+      "代码更少",
+      "缓存更好"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-828",
+    "title": "React 中微前端的作用是？",
+    "options": [
+      "将巨石应用拆分为独立子应用",
+      "状态管理",
+      "UI 组件化",
+      "路由管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-829",
+    "title": "React 中 qiankun 的作用是？",
+    "options": [
+      "基于 single-spa 的微前端框架",
+      "状态管理",
+      "UI 组件库",
+      "构建工具"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-830",
+    "title": "React 中 Module Federation 的作用是？",
+    "options": [
+      "Webpack 5 的模块联邦实现应用间共享代码",
+      "代码分割",
+      "代码压缩",
+      "代码检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-831",
+    "title": "React 中 Monorepo 的作用是？",
+    "options": [
+      "在一个仓库管理多个相关包",
+      "代码分割",
+      "模块联邦",
+      "微前端"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-832",
+    "title": "React 中 Turborepo 的作用是？",
+    "options": [
+      "高性能的 Monorepo 构建系统",
+      "状态管理",
+      "UI 组件库",
+      "路由管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-833",
+    "title": "React 中 Lerna 的作用是？",
+    "options": [
+      "管理 Monorepo 中的包发布和依赖",
+      "代码格式化",
+      "类型检查",
+      "单元测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-834",
+    "title": "React 中 pnpm 的作用是？",
+    "options": [
+      "高效的包管理器使用硬链接节省空间",
+      "代码格式化",
+      "模块打包",
+      "类型检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-835",
+    "title": "React 中 Docker 的作用是？",
+    "options": [
+      "容器化部署保证环境一致性",
+      "代码压缩",
+      "状态管理",
+      "路由管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-836",
+    "title": "React 中 CI/CD 的作用是？",
+    "options": [
+      "持续集成和持续交付自动化流程",
+      "代码检查",
+      "类型检查",
+      "性能监控"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-837",
+    "title": "React 中 GitHub Actions 的作用是？",
+    "options": [
+      "自动化工作流如测试和部署",
+      "代码托管",
+      "包管理",
+      "UI 组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-838",
+    "title": "React 中 Nginx 的作用是？",
+    "options": [
+      "反向代理、负载均衡、静态资源服务",
+      "代码压缩",
+      "模块打包",
+      "类型检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-839",
+    "title": "React 中 CDN 的作用是？",
+    "options": [
+      "加速静态资源访问减轻服务器压力",
+      "代码检查",
+      "状态管理",
+      "路由管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-840",
+    "title": "React 中 XSS 攻击的防御方式？",
+    "options": [
+      "转义输出、CSP 策略、HttpOnly Cookie",
+      "使用 HTTPS",
+      "使用 VPN",
+      "关闭端口"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-841",
+    "title": "React 中 CSRF 攻击的防御方式？",
+    "options": [
+      "Token 验证、SameSite Cookie",
+      "XSS 防护",
+      "SQL 注入",
+      "密码加密"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-842",
+    "title": "React 中点击劫持的防御方式？",
+    "options": [
+      "设置 X-Frame-Options 响应头",
+      "HTTPS",
+      "CSP",
+      "验证码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-843",
+    "title": "React 中中间人攻击的防御方式？",
+    "options": [
+      "使用 HTTPS 和证书校验",
+      "XSS 防护",
+      "CSRF Token",
+      "密码复杂度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-844",
+    "title": "React 中如何实现代码规范自动化？",
+    "options": [
+      "Husky + lint-staged + ESLint + Prettier",
+      "手动检查",
+      "Code Review",
+      "测试覆盖"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-845",
+    "title": "React 中 Babel 预设的作用是？",
+    "options": [
+      "集成一组常用插件简化配置",
+      "单个插件",
+      "语法检查",
+      "代码压缩"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-846",
+    "title": "React 中 @babel/preset-env 的作用是？",
+    "options": [
+      "根据目标环境自动确定 Babel 插件",
+      "支持 JSX",
+      "支持 TypeScript",
+      "代码压缩"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-847",
+    "title": "React 中 @babel/preset-react 的作用是？",
+    "options": [
+      "支持 JSX 和 React 语法转换",
+      "支持 ES6",
+      "支持 TypeScript",
+      "代码压缩"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-848",
+    "title": "React 中 @babel/preset-typescript 的作用是？",
+    "options": [
+      "支持 TypeScript 语法转换",
+      "支持 JSX",
+      "支持 ES6",
+      "代码压缩"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-849",
+    "title": "React 中 Webpack Loader 的作用是？",
+    "options": [
+      "处理非 JS 文件转换为 JS 模块",
+      "打包代码",
+      "压缩代码",
+      "优化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-850",
+    "title": "React 中 Webpack Plugin 的作用是？",
+    "options": [
+      "扩展 Webpack 功能如打包优化和资源管理",
+      "转换文件",
+      "解析模块",
+      "开发服务器"
+    ],
+    "correctAnswer": 0
+  }
+]

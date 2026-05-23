@@ -1,0 +1,552 @@
+[
+  {
+    "id": "react-101",
+    "title": "React 中组件的 state 为什么不能直接修改？",
+    "options": [
+      "无法触发重新渲染，破坏不可变性",
+      "性能问题",
+      "语法限制",
+      "安全原因"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-102",
+    "title": "React 中不可变数据的好处是？",
+    "options": [
+      "易于追踪变化、优化渲染、时间旅行调试",
+      "减少内存",
+      "提高速度",
+      "代码简洁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-103",
+    "title": "React 中如何处理不可变数据？",
+    "options": [
+      "扩展运算符、Object.assign、Immer",
+      "直接修改",
+      "深拷贝",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-104",
+    "title": "React 中 Immer 的作用是？",
+    "options": [
+      "以可变方式编写代码产生不可变更新",
+      "数据冻结",
+      "深比较",
+      "状态管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-105",
+    "title": "React 中 setState 传递函数的好处是？",
+    "options": [
+      "获取最新的 state 并批量更新",
+      "异步执行",
+      "支持 Promise",
+      "返回新状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-106",
+    "title": "React 中对象展开运算符是浅拷贝还是深拷贝？",
+    "options": [
+      "浅拷贝",
+      "深拷贝",
+      "都不是",
+      "取决于数据类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-107",
+    "title": "React 中数组的哪些方法不会改变原数组？",
+    "options": [
+      "map, filter, concat, slice",
+      "push, pop, splice",
+      "sort, reverse",
+      "shift, unshift"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-108",
+    "title": "React 中 key 改变会导致什么？",
+    "options": [
+      "组件重新挂载",
+      "组件更新",
+      "组件卸载",
+      "没有影响"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-109",
+    "title": "React 中 index 作为 key 的潜在问题是？",
+    "options": [
+      "列表重新排序或增删时可能导致状态错乱",
+      "性能下降",
+      "报错",
+      "无法渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-110",
+    "title": "React 中 Fragment 的简写是？",
+    "options": [
+      "<></>",
+      "<fragment></fragment>",
+      "<></>",
+      "[]"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-111",
+    "title": "React 中 Fragment 的简写不支持什么？",
+    "options": [
+      "key 属性或任何属性",
+      "子元素",
+      "条件渲染",
+      "列表渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-112",
+    "title": "React 中如何强制重新渲染类组件？",
+    "options": [
+      "this.forceUpdate()",
+      "this.setState()",
+      "this.render()",
+      "this.update()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-113",
+    "title": "React 中函数组件如何强制更新？",
+    "options": [
+      "使用 useState 切换状态触发渲染",
+      "forceUpdate()",
+      "reRender()",
+      "update()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-114",
+    "title": "React 中组件返回的 JSX 必须有几个根节点？",
+    "options": [
+      "一个",
+      "零个",
+      "两个",
+      "不限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-115",
+    "title": "React 中组件的 render 方法为什么必须是纯函数？",
+    "options": [
+      "不修改 state，不与浏览器交互，相同输入相同输出",
+      "性能要求",
+      "语法规范",
+      "安全限制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-116",
+    "title": "React 中 shouldComponentUpdate 返回 false 会怎样？",
+    "options": [
+      "阻止组件及其子组件重新渲染",
+      "只阻止子组件渲染",
+      "组件卸载",
+      "报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-117",
+    "title": "React 中 getSnapshotBeforeUpdate 的作用是？",
+    "options": [
+      "在 DOM 更新前捕获信息",
+      "获取 DOM 快照",
+      "更新前修改 state",
+      "获取 prevProps"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-118",
+    "title": "React 中 getSnapshotBeforeUpdate 的返回值会传递给谁？",
+    "options": [
+      "componentDidUpdate",
+      "shouldComponentUpdate",
+      "render",
+      "componentWillUpdate"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-119",
+    "title": "React 中 static contextType 的作用是？",
+    "options": [
+      "在类组件中订阅 Context",
+      "定义静态属性",
+      "类型检查",
+      "组件通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-120",
+    "title": "React 中 static contextType 只能订阅几个 Context？",
+    "options": [
+      "一个",
+      "两个",
+      "三个",
+      "不限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-121",
+    "title": "React 中类组件如何订阅多个 Context？",
+    "options": [
+      "使用 Consumer 嵌套",
+      "多个 contextType",
+      "useContext",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-122",
+    "title": "React 中 Context 的 value 改变会如何影响消费者？",
+    "options": [
+      "所有消费者都会重新渲染",
+      "只有部分消费者渲染",
+      "不会渲染",
+      "报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-123",
+    "title": "React 中如何优化 Context 的性能？",
+    "options": [
+      "拆分 Context、使用 memo、传递对象引用",
+      "减少 Provider",
+      "不使用 Context",
+      "使用 Redux"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-124",
+    "title": "React 中 Refs 转发的作用是？",
+    "options": [
+      "将 ref 自动通过组件传递给子组件",
+      "传递 props",
+      "传递 state",
+      "传递 context"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-125",
+    "title": "React 中 React.forwardRef 的使用场景是？",
+    "options": [
+      "高阶组件、UI 组件库获取 DOM 节点",
+      "状态管理",
+      "路由跳转",
+      "事件处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-126",
+    "title": "React 中回调 Refs 和 createRef 的区别是？",
+    "options": [
+      "回调 Refs 更灵活，可以传递参数",
+      "没有区别",
+      "createRef 更灵活",
+      "回调 Refs 性能差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-127",
+    "title": "React 中字符串 Refs 为什么被弃用？",
+    "options": [
+      "性能问题、类型不明、作用域问题",
+      "语法错误",
+      "功能受限",
+      "不支持函数组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-128",
+    "title": "React 中 this.setState 是异步的主要原因是什么？",
+    "options": [
+      "批量更新提升性能",
+      "JavaScript 限制",
+      "浏览器限制",
+      "React 版本问题"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-129",
+    "title": "React 中如何在 setState 后立即获取更新后的状态？",
+    "options": [
+      "在 setState 的第二个回调参数中获取",
+      "同步获取 this.state",
+      "使用 forceUpdate",
+      "使用 setTimeout"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-130",
+    "title": "React 中组件卸载后调用 setState 会怎样？",
+    "options": [
+      "警告内存泄漏",
+      "报错",
+      "正常执行",
+      "静默失败"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-131",
+    "title": "React 中 useEffect 的清理函数在卸载时执行几次？",
+    "options": [
+      "1次",
+      "2次",
+      "0次",
+      "取决于依赖"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-132",
+    "title": "React 中严格模式下 useEffect 的清理函数执行几次？",
+    "options": [
+      "2次",
+      "1次",
+      "0次",
+      "3次"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-133",
+    "title": "React 中为什么会出现 Hooks？",
+    "options": [
+      "解决逻辑复用和组件复杂度问题",
+      "替代类组件",
+      "提升性能",
+      "支持 TypeScript"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-134",
+    "title": "React 中 Hooks 的设计动机不包括？",
+    "options": [
+      "支持面向对象编程",
+      "逻辑复用",
+      "简化代码",
+      "优化体积"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-135",
+    "title": "React 中自定义 Hook 的命名规范是？",
+    "options": [
+      "useXxx",
+      "hookXxx",
+      "createXxx",
+      "withXxx"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-136",
+    "title": "React 中自定义 Hook 的作用是？",
+    "options": [
+      "提取组件逻辑实现复用",
+      "创建组件",
+      "管理路由",
+      "处理样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-137",
+    "title": "React 中自定义 Hook 内部可以使用其他 Hooks 吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能使用 useState",
+      "只能使用 useEffect"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-138",
+    "title": "React 中 Hooks 的规则有哪些？",
+    "options": [
+      "只在最顶层使用、只在函数组件或自定义 Hook 中调用",
+      "可以在条件语句中使用",
+      "可以在循环中使用",
+      "可以在普通函数中使用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-139",
+    "title": "React 中 eslint-plugin-react-hooks 的作用是？",
+    "options": [
+      "检查 Hooks 规则执行情况",
+      "代码格式化",
+      "类型检查",
+      "单元测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-140",
+    "title": "React 中 useState 的初始值可以是函数吗？",
+    "options": [
+      "可以，用于惰性初始化",
+      "不可以",
+      "只能是对象",
+      "只能是基本类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-141",
+    "title": "React 中 useState 惰性初始化的好处是？",
+    "options": [
+      "避免每次渲染都执行昂贵的计算",
+      "异步初始化",
+      "提升编译速度",
+      "减少代码量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-142",
+    "title": "React 中 useEffect 的依赖项是空数组意味着什么？",
+    "options": [
+      "只在挂载和卸载时执行",
+      "每次渲染都执行",
+      "不执行",
+      "只执行一次且不清理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-143",
+    "title": "React 中 useEffect 的依赖项缺失会导致什么？",
+    "options": [
+      "闭包陷阱，读取到旧的 state/props",
+      "编译报错",
+      "性能提升",
+      "内存泄漏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-144",
+    "title": "React 中 useEffect 的依赖项应该包含什么？",
+    "options": [
+      "effect 中使用的响应式值",
+      "所有变量",
+      "只包含 state",
+      "只包含 props"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-145",
+    "title": "React 中 useEffect 与 useLayoutEffect 的区别是？",
+    "options": [
+      "useLayoutEffect 在 DOM 更新后同步执行，useEffect 异步执行",
+      "没有区别",
+      "useEffect 同步执行",
+      "执行顺序相同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-146",
+    "title": "React 中 useLayoutEffect 的执行时机是？",
+    "options": [
+      "DOM 更新后，浏览器绘制前",
+      "DOM 更新前",
+      "浏览器绘制后",
+      "组件挂载前"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-147",
+    "title": "React 中为什么推荐使用 useEffect 而不是 useLayoutEffect？",
+    "options": [
+      "useEffect 不会阻塞浏览器绘制，性能更好",
+      "useLayoutEffect 有 Bug",
+      "useEffect 支持服务端渲染",
+      "useLayoutEffect 已弃用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-148",
+    "title": "React 中服务端渲染时 useLayoutEffect 会怎样？",
+    "options": [
+      "触发警告，建议使用 useEffect",
+      "正常执行",
+      "报错",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-149",
+    "title": "React 中 useRef 返回的对象在组件生命周期内是怎样的？",
+    "options": [
+      "保持同一个引用",
+      "每次渲染都改变",
+      "只在挂载时创建",
+      "卸载时销毁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-150",
+    "title": "React 中 useRef 修改 current 属性会触发重新渲染吗？",
+    "options": [
+      "不会",
+      "会",
+      "取决于值类型",
+      "有时会"
+    ],
+    "correctAnswer": 0
+  }
+]

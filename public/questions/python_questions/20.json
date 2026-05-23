@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-951",
+    "title": "Python中Nginx的作用是？",
+    "options": [
+      "反向代理",
+      "Web服务器",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-952",
+    "title": "Python中Django的MTV模式是？",
+    "options": [
+      "Model, Template, View",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-953",
+    "title": "Python中Django的ORM特点是？",
+    "options": [
+      "Active Record",
+      "Data Mapper",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-954",
+    "title": "Python中Flask的扩展方式是？",
+    "options": [
+      "第三方扩展",
+      "内置扩展",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-955",
+    "title": "Python中FastAPI的文档生成是？",
+    "options": [
+      "Swagger/OpenAPI",
+      "自定义",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-956",
+    "title": "Python中Scrapy的组件有？",
+    "options": [
+      "Spider, Pipeline, Middleware",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-957",
+    "title": "Python中Pandas的索引类型有？",
+    "options": [
+      "RangeIndex, DatetimeIndex",
+      "IntIndex, StrIndex",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-958",
+    "title": "Python中NumPy的ufunc是？",
+    "options": [
+      "通用函数",
+      "特殊函数",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-959",
+    "title": "Python中Matplotlib的面向对象API是？",
+    "options": [
+      "Figure, Axes",
+      "Plot, Chart",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-960",
+    "title": "Python中Seaborn的特点是？",
+    "options": [
+      "高级统计图表",
+      "基础绘图",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-961",
+    "title": "Python中Scikit-learn的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-962",
+    "title": "Python中TensorFlow的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-963",
+    "title": "Python中PyTorch的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-964",
+    "title": "Python中Keras的作用是？",
+    "options": [
+      "高级神经网络API",
+      "低级神经网络API",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-965",
+    "title": "Python中OpenCV的作用是？",
+    "options": [
+      "计算机视觉",
+      "自然语言处理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-966",
+    "title": "Python中NLTK的作用是？",
+    "options": [
+      "自然语言处理",
+      "计算机视觉",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-967",
+    "title": "Python中spaCy的作用是？",
+    "options": [
+      "自然语言处理",
+      "计算机视觉",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-968",
+    "title": "Python中Gensim的作用是？",
+    "options": [
+      "主题建模",
+      "图像识别",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-969",
+    "title": "Python中Statsmodels的作用是？",
+    "options": [
+      "统计建模",
+      "机器学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-970",
+    "title": "Python中SymPy的作用是？",
+    "options": [
+      "符号计算",
+      "数值计算",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-971",
+    "title": "Python中NetworkX的作用是？",
+    "options": [
+      "图论与网络分析",
+      "网络爬虫",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-972",
+    "title": "Python中Pillow的作用是？",
+    "options": [
+      "图像处理",
+      "图像识别",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-973",
+    "title": "Python中MoviePy的作用是？",
+    "options": [
+      "视频编辑",
+      "视频播放",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-974",
+    "title": "Python中PyAudio的作用是？",
+    "options": [
+      "音频处理",
+      "视频处理",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-975",
+    "title": "Python中Pygame的作用是？",
+    "options": [
+      "游戏开发",
+      "图形界面",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-976",
+    "title": "Python中Tkinter的作用是？",
+    "options": [
+      "GUI开发",
+      "游戏开发",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-977",
+    "title": "Python中PyQt的作用是？",
+    "options": [
+      "GUI开发",
+      "游戏开发",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-978",
+    "title": "Python中Kivy的作用是？",
+    "options": [
+      "移动应用开发",
+      "桌面应用开发",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-979",
+    "title": "Python中BeeWare的作用是？",
+    "options": [
+      "跨平台原生应用",
+      "Web应用",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-980",
+    "title": "Python中RabbitMQ的作用是？",
+    "options": [
+      "消息队列",
+      "任务队列",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-981",
+    "title": "Python中Kafka的作用是？",
+    "options": [
+      "消息队列",
+      "任务队列",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-982",
+    "title": "Python中Django的作用是？",
+    "options": [
+      "全栈Web框架",
+      "微框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-983",
+    "title": "Python中Flask的作用是？",
+    "options": [
+      "全栈Web框架",
+      "微框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-984",
+    "title": "Python中FastAPI的作用是？",
+    "options": [
+      "异步Web框架",
+      "同步Web框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-985",
+    "title": "Python中Tornado的作用是？",
+    "options": [
+      "异步Web框架",
+      "同步Web框架",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-986",
+    "title": "Python中WSGI的作用是？",
+    "options": [
+      "Web服务器接口",
+      "异步服务器接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-987",
+    "title": "Python中ASGI的作用是？",
+    "options": [
+      "Web服务器接口",
+      "异步服务器接口",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-988",
+    "title": "Python中uwsgi的作用是？",
+    "options": [
+      "Web服务器",
+      "应用服务器",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-989",
+    "title": "Python中Gunicorn的作用是？",
+    "options": [
+      "Web服务器",
+      "应用服务器",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-990",
+    "title": "Python中Nginx的作用是？",
+    "options": [
+      "反向代理",
+      "Web服务器",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-991",
+    "title": "Python中Django的MTV模式是？",
+    "options": [
+      "Model, Template, View",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-992",
+    "title": "Python中Django的ORM特点是？",
+    "options": [
+      "Active Record",
+      "Data Mapper",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-993",
+    "title": "Python中Flask的扩展方式是？",
+    "options": [
+      "第三方扩展",
+      "内置扩展",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-994",
+    "title": "Python中FastAPI的文档生成是？",
+    "options": [
+      "Swagger/OpenAPI",
+      "自定义",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-995",
+    "title": "Python中Scrapy的组件有？",
+    "options": [
+      "Spider, Pipeline, Middleware",
+      "Model, View, Controller",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-996",
+    "title": "Python中Pandas的索引类型有？",
+    "options": [
+      "RangeIndex, DatetimeIndex",
+      "IntIndex, StrIndex",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-997",
+    "title": "Python中NumPy的ufunc是？",
+    "options": [
+      "通用函数",
+      "特殊函数",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-998",
+    "title": "Python中Matplotlib的面向对象API是？",
+    "options": [
+      "Figure, Axes",
+      "Plot, Chart",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-999",
+    "title": "Python中Seaborn的特点是？",
+    "options": [
+      "高级统计图表",
+      "基础绘图",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-1000",
+    "title": "Python中Scikit-learn的作用是？",
+    "options": [
+      "机器学习",
+      "深度学习",
+      "以上都不对",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

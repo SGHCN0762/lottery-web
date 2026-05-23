@@ -1,0 +1,552 @@
+[
+  {
+    "id": "react-901",
+    "title": "React 中 Fiber 节点的结构是？",
+    "options": [
+      "链表结构包含 child, sibling, return",
+      "树结构",
+      "图结构",
+      "数组结构"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-902",
+    "title": "React 中 Fiber 的作用是？",
+    "options": [
+      "实现增量渲染和任务优先级调度",
+      "提升首次加载",
+      "减少内存",
+      "简化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-903",
+    "title": "React 中 Fiber 树有几棵？",
+    "options": [
+      "两棵：current 树和 workInProgress 树",
+      "一棵",
+      "三棵",
+      "无数棵"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-904",
+    "title": "React 中 current 树和 workInProgress 树的关系？",
+    "options": [
+      "通过 alternate 指针双缓存切换",
+      "完全独立",
+      "互相包含",
+      "没有关系"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-905",
+    "title": "React 中 Reconciliation 的阶段是？",
+    "options": [
+      "Render 阶段（可中断）",
+      "Commit 阶段（不可中断）",
+      "Layout 阶段",
+      "Paint 阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-906",
+    "title": "React 中 Commit 阶段的特点？",
+    "options": [
+      "同步执行不可中断操作真实 DOM",
+      "可中断",
+      "异步执行",
+      "批量执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-907",
+    "title": "React 中 Diff 算法的时间复杂度？",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(n^3)",
+      "O(1)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-908",
+    "title": "React 中 Diff 算法的策略不包括？",
+    "options": [
+      "深度优先遍历所有节点",
+      "跨层级移动极少忽略",
+      "不同类型生成不同树",
+      "Key 标识移动"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-909",
+    "title": "React 中 Key 的 Diff 作用？",
+    "options": [
+      "识别节点是否可复用减少不必要的创建",
+      "加速渲染",
+      "标识样式",
+      "绑定事件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-910",
+    "title": "React 中 Lane 模型的作用是？",
+    "options": [
+      "表示更新的优先级和过期时间",
+      "计算大小",
+      "管理内存",
+      "调度网络"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-911",
+    "title": "React 中 Scheduler 的作用是？",
+    "options": [
+      "调度任务在浏览器空闲时执行",
+      "编译代码",
+      "打包模块",
+      "压缩代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-912",
+    "title": "React 中 MessageChannel 的作用？",
+    "options": [
+      "实现宏任务在宏任务中执行调度",
+      "网络通信",
+      "Web Worker",
+      "事件监听"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-913",
+    "title": "React 中 useEffect 的底层实现？",
+    "options": [
+      "在 Commit 阶段异步调度",
+      "在 Render 阶段同步执行",
+      "在 DOM 更新前执行",
+      "在组件挂载时执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-914",
+    "title": "React 中 useLayoutEffect 的底层实现？",
+    "options": [
+      "在 Commit 阶段同步执行",
+      "异步调度",
+      "在 Render 阶段执行",
+      "在浏览器空闲执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-915",
+    "title": "React 中 useState 的底层实现？",
+    "options": [
+      "使用链表在 Fiber 节点保存状态",
+      "使用数组",
+      "使用对象",
+      "使用闭包"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-916",
+    "title": "React 中 Hooks 为什么不能在条件语句中使用？",
+    "options": [
+      "链表顺序错乱导致状态取值错误",
+      "性能问题",
+      "语法限制",
+      "类型错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-917",
+    "title": "React 中合成事件的底层机制？",
+    "options": [
+      "事件委托到根节点统一分发",
+      "每个元素直接绑定",
+      "事件冒泡捕获",
+      "自定义事件总线"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-918",
+    "title": "React 17 事件委托的变更？",
+    "options": [
+      "从 document 改为根 DOM 容器",
+      "从 window 改为 document",
+      "从根容器改为 document",
+      "没有变更"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-919",
+    "title": "React 中 Batch Update 的机制？",
+    "options": [
+      "将多次 setState 合并为一次更新",
+      "每次 setState 都更新",
+      "定时更新",
+      "手动更新"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-920",
+    "title": "React 中 Batch Update 的实现？",
+    "options": [
+      "通过 isBatchingUpdates 标志位控制",
+      "Promise.then",
+      "setTimeout",
+      "requestIdleCallback"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-921",
+    "title": "React 中 Concurrent Mode 的核心？",
+    "options": [
+      "可中断渲染和时间切片",
+      "多线程渲染",
+      "并行计算",
+      "同步渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-922",
+    "title": "React 中 Time Slicing 的原理？",
+    "options": [
+      "将长任务拆分为小帧在空闲时执行",
+      "延长执行时间",
+      "并行执行",
+      "一次性执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-923",
+    "title": "React 中 Suspense 的底层原理？",
+    "options": [
+      "捕获子组件抛出的 Promise 暂停渲染",
+      "延迟加载",
+      "代码分割",
+      "错误捕获"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-924",
+    "title": "React 中 Suspense 如何捕获 Promise？",
+    "options": [
+      "通过 try/catch 捕获 throw 的 Promise",
+      "then 方法",
+      "async/await",
+      "回调函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-925",
+    "title": "React 中 Context 的更新机制？",
+    "options": [
+      "穿透子组件直接更新消费者",
+      "逐层传递",
+      "广播更新",
+      "观察者模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-926",
+    "title": "React 中 Context 更新是否穿透？",
+    "options": [
+      "是，即使中间组件 shouldComponentUpdate 返回 false",
+      "否，会被阻断",
+      "取决于层级",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-927",
+    "title": "React 中 Ref 的底层实现？",
+    "options": [
+      "作为 Fiber 的属性在 Commit 阶段赋值",
+      "在 Render 阶段赋值",
+      "事件监听",
+      "状态管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-928",
+    "title": "React 中 forwardRef 的底层实现？",
+    "options": [
+      "将 ref 作为 props 传递给子组件",
+      "直接访问 DOM",
+      "克隆元素",
+      "高阶组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-929",
+    "title": "React 中 Memo 的底层实现？",
+    "options": [
+      "浅比较 Props 避免重新渲染",
+      "深比较",
+      "缓存结果",
+      "代码分割"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-930",
+    "title": "React 中 PureComponent 的底层实现？",
+    "options": [
+      "内置 shouldComponentUpdate 浅比较",
+      "深比较",
+      "代理组件",
+      "高阶组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-931",
+    "title": "React 中 createElement 的作用？",
+    "options": [
+      "创建 ReactElement 对象",
+      "创建 DOM",
+      "创建组件",
+      "创建 Fiber"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-932",
+    "title": "React 中 ReactElement 的结构？",
+    "options": [
+      "包含 type, props, key, ref 的对象",
+      "DOM 节点",
+      "Fiber 节点",
+      "组件实例"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-933",
+    "title": "React 中 Component 的结构？",
+    "options": [
+      "包含 state, props, setState 的类",
+      "函数组件",
+      "Fiber 节点",
+      "ReactElement"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-934",
+    "title": "React 中 FunctionComponent 的特点？",
+    "options": [
+      "无实例、无 this、无生命周期",
+      "有实例",
+      "有 this",
+      "有生命周期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-935",
+    "title": "React 中 ClassComponent 的特点？",
+    "options": [
+      "有实例、有 this、有生命周期",
+      "无实例",
+      "无 this",
+      "无生命周期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-936",
+    "title": "React 中 HostComponent 指的是？",
+    "options": [
+      "原生 DOM 元素如 div, span",
+      "函数组件",
+      "类组件",
+      "高阶组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-937",
+    "title": "React 中 HostText 指的是？",
+    "options": [
+      "文本节点",
+      "DOM 元素",
+      "组件",
+      "Fiber 节点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-938",
+    "title": "React 中 Fragment 的底层实现？",
+    "options": [
+      "type 为 Symbol 的空壳元素",
+      "真实 DOM",
+      "数组",
+      "字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-939",
+    "title": "React 中 Portal 的底层实现？",
+    "options": [
+      "脱离父 Fiber 树挂载到其他 DOM 容器",
+      "虚拟 DOM",
+      "高阶组件",
+      "事件委托"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-940",
+    "title": "React 中 StrictMode 的底层行为？",
+    "options": [
+      "重复调用渲染和副作用检测副作用",
+      "压缩代码",
+      "优化性能",
+      "错误捕获"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-941",
+    "title": "React 中 Profiler 的底层实现？",
+    "options": [
+      "记录组件渲染时间并回调",
+      "性能优化",
+      "错误捕获",
+      "状态管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-942",
+    "title": "React 中 ErrorBoundary 的底层实现？",
+    "options": [
+      "捕获子组件渲染阶段错误并降级",
+      "捕获事件错误",
+      "捕获网络错误",
+      "捕获异步错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-943",
+    "title": "React 中 getDerivedStateFromError 的调用时机？",
+    "options": [
+      "子组件渲染阶段抛出错误后",
+      "事件错误",
+      "网络错误",
+      "异步错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-944",
+    "title": "React 中 componentDidCatch 的调用时机？",
+    "options": [
+      "子组件提交阶段错误后用于记录日志",
+      "渲染阶段",
+      "DOM 更新前",
+      "组件挂载时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-945",
+    "title": "React 中 Update 对象的结构？",
+    "options": [
+      "包含 lane, payload, callback 等",
+      "只有 payload",
+      "只有 callback",
+      "只有 lane"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-946",
+    "title": "React 中 UpdateQueue 的结构？",
+    "options": [
+      "环形链表保存多个 Update",
+      "数组",
+      "栈",
+      "对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-947",
+    "title": "React 中如何处理高优先级插队？",
+    "options": [
+      "中断当前低优先级重新从高优先级开始",
+      "等待当前完成",
+      "并行执行",
+      "丢弃低优先级"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-948",
+    "title": "React 中饥饿问题如何解决？",
+    "options": [
+      "高优先级一直插队导致低优先级无法执行，通过过期时间提升",
+      "无法解决",
+      "丢弃低优先级",
+      "无限重试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-949",
+    "title": "React 中 useEffect 的清理函数何时执行？",
+    "options": [
+      "新的 effect 执行前和组件卸载时",
+      "DOM 更新前",
+      "Render 阶段",
+      "Commit 阶段"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-950",
+    "title": "React 中 useMemo 的底层实现？",
+    "options": [
+      "在 Fiber 节点保存上一次值和依赖比较",
+      "每次重新计算",
+      "全局缓存",
+      "闭包缓存"
+    ],
+    "correctAnswer": 0
+  }
+]

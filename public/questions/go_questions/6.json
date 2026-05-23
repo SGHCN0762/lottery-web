@@ -1,0 +1,576 @@
+[
+  {
+    "id": "go-251",
+    "title": "Go语言中，向nil通道发送数据会怎样？",
+    "options": [
+      "永久阻塞",
+      "panic",
+      "返回false",
+      "丢弃数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-252",
+    "title": "Go语言中，从nil通道接收数据会怎样？",
+    "options": [
+      "永久阻塞",
+      "panic",
+      "返回零值",
+      "返回false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-253",
+    "title": "Go语言中，select语句的default作用是？",
+    "options": [
+      "非阻塞通信",
+      "异常处理",
+      "默认执行",
+      "超时控制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-254",
+    "title": "Go语言中，如何实现超时控制？",
+    "options": [
+      "select + time.After",
+      "sleep",
+      "timer",
+      "deadline"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-255",
+    "title": "Go语言中，sync.Mutex的Lock方法如果重复锁定会？",
+    "options": [
+      "死锁",
+      "报错",
+      "覆盖",
+      "忽略"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-256",
+    "title": "Go语言中，sync.Mutex的Unlock方法如果未锁定就解锁会？",
+    "options": [
+      "panic",
+      "报错",
+      "忽略",
+      "返回false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-257",
+    "title": "Go语言中，sync.RWMutex的RLock作用是？",
+    "options": [
+      "加读锁",
+      "加写锁",
+      "解锁",
+      "尝试加锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-258",
+    "title": "Go语言中，sync.RWMutex适用于什么场景？",
+    "options": [
+      "读多写少",
+      "写多读少",
+      "读写相当",
+      "无并发"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-259",
+    "title": "Go语言中，sync.WaitGroup的Add方法作用是？",
+    "options": [
+      "增加计数器",
+      "减少计数器",
+      "等待计数器",
+      "重置计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-260",
+    "title": "Go语言中，sync.WaitGroup的Done方法作用是？",
+    "options": [
+      "减少计数器",
+      "增加计数器",
+      "等待计数器",
+      "重置计数器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-261",
+    "title": "Go语言中，sync.WaitGroup的Wait方法作用是？",
+    "options": [
+      "阻塞直到计数器为0",
+      "增加计数器",
+      "减少计数器",
+      "超时等待"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-262",
+    "title": "Go语言中，sync.Once的Do方法保证函数执行几次？",
+    "options": [
+      "1次",
+      "0次",
+      "多次",
+      "取决于调用次数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-263",
+    "title": "Go语言中，sync.Cond的作用是？",
+    "options": [
+      "条件变量，等待或通知",
+      "互斥锁",
+      "读写锁",
+      "等待组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-264",
+    "title": "Go语言中，sync.Pool的作用是？",
+    "options": [
+      "对象复用，减少GC压力",
+      "连接池",
+      "内存池",
+      "协程池"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-265",
+    "title": "Go语言中，atomic包的作用是？",
+    "options": [
+      "原子操作",
+      "数值计算",
+      "并发控制",
+      "内存分配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-266",
+    "title": "Go语言中，原子操作比锁的优势是？",
+    "options": [
+      "无锁，性能更高",
+      "更安全",
+      "更简单",
+      "支持更多操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-267",
+    "title": "Go语言中，竞态条件如何检测？",
+    "options": [
+      "go run -race",
+      "go test -v",
+      "go build",
+      "go vet"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-268",
+    "title": "Go语言中，死锁的四个必要条件是？",
+    "options": [
+      "互斥、持有并等待、不可抢占、循环等待",
+      "并发、阻塞、超时、重试",
+      "读、写、锁、解锁",
+      "创建、运行、阻塞、销毁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-269",
+    "title": "Go语言中，如何避免死锁？",
+    "options": [
+      "按顺序加锁、使用超时、避免嵌套锁",
+      "增加锁的数量",
+      "使用更大的锁",
+      "减少goroutine"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-270",
+    "title": "Go语言中，context包的最佳实践是？",
+    "options": [
+      "作为函数第一个参数传递",
+      "作为结构体字段",
+      "作为全局变量",
+      "作为返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-271",
+    "title": "Go语言中，context.WithValue应该传递什么？",
+    "options": [
+      "请求范围的元数据",
+      "业务数据",
+      "数据库连接",
+      "大对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-272",
+    "title": "Go语言中，context.WithTimeout的超时时间从何时开始计算？",
+    "options": [
+      "创建时",
+      "使用时",
+      "取消时",
+      "不确定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-273",
+    "title": "Go语言中，channel的底层结构hchan包含什么？",
+    "options": [
+      "缓冲区、锁、等待队列",
+      "只包含缓冲区",
+      "只包含锁",
+      "只包含数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-274",
+    "title": "Go语言中，发送到channel的数据是如何拷贝的？",
+    "options": [
+      "值拷贝",
+      [
+        "引用拷贝"
+      ],
+      "指针拷贝",
+      "零拷贝"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-275",
+    "title": "Go语言中，如何实现生产者消费者模式？",
+    "options": [
+      "使用缓冲通道",
+      "使用互斥锁",
+      "使用条件变量",
+      "使用全局变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-276",
+    "title": "Go语言中，如何实现扇出扇入模式？",
+    "options": [
+      "多个goroutine消费同一通道，结果汇入一通道",
+      "使用锁",
+      "使用WaitGroup",
+      "使用context"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-277",
+    "title": "Go语言中，如何实现流水线模式？",
+    "options": [
+      "多个goroutine串联，前一个输出是后一个输入",
+      "使用循环",
+      "使用递归",
+      "使用select"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-278",
+    "title": "Go语言中，errgroup的作用是？",
+    "options": [
+      "管理一组goroutine的错误",
+      "管理一组goroutine的生命周期",
+      "管理一组goroutine的并发数",
+      "管理一组goroutine的优先级"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-279",
+    "title": "Go语言中，semaphore权重信号量的作用是？",
+    "options": [
+      "控制并发数量",
+      "控制内存大小",
+      "控制CPU使用率",
+      "控制网络带宽"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-280",
+    "title": "Go语言中，singleflight的作用是？",
+    "options": [
+      "合并重复请求",
+      [
+        "单次执行"
+      ],
+      "限流",
+      "熔断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-281",
+    "title": "Go语言中，sync包中Lock/Unlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-282",
+    "title": "Go语言中，sync包中RLock/RUnlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-283",
+    "title": "Go语言中，sync包中Wait/Done方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "go-284",
+    "title": "Go语言中，sync包中Do方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "go-285",
+    "title": "Go语言中，sync包中Add/Done/Wait方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "id": "go-286",
+    "title": "Go语言中，sync包中Lock/Unlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-287",
+    "title": "Go语言中，sync包中RLock/RUnlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-288",
+    "title": "Go语言中，sync包中Wait/Done方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "go-289",
+    "title": "Go语言中，sync包中Do方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "go-290",
+    "title": "Go语言中，sync包中Add/Done/Wait方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "id": "go-291",
+    "title": "Go语言中，sync包中Lock/Unlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-292",
+    "title": "Go语言中，sync包中RLock/RUnlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-293",
+    "title": "Go语言中，sync包中Wait/Done方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "go-294",
+    "title": "Go语言中，sync包中Do方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "go-295",
+    "title": "Go语言中，sync包中Add/Done/Wait方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "id": "go-296",
+    "title": "Go语言中，sync包中Lock/Unlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-297",
+    "title": "Go语言中，sync包中RLock/RUnlock方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-298",
+    "title": "Go语言中，sync包中Wait/Done方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "go-299",
+    "title": "Go语言中，sync包中Do方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "go-300",
+    "title": "Go语言中，sync包中Add/Done/Wait方法属于哪个类型？",
+    "options": [
+      "Mutex",
+      "RWMutex",
+      "WaitGroup",
+      "Once",
+      "Pool"
+    ],
+    "correctAnswer": 4
+  }
+]

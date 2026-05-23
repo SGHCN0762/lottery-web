@@ -1,0 +1,552 @@
+[
+  {
+    "id": "js-101",
+    "title": "JavaScript中setImmediate的作用是？",
+    "options": [
+      "在事件循环的check阶段执行",
+      "立即执行",
+      "延时执行",
+      "循环执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-102",
+    "title": "JavaScript中queueMicrotask的作用是？",
+    "options": [
+      "将任务加入微任务队列",
+      "将任务加入宏任务队列",
+      "立即执行任务",
+      "延时执行任务"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-103",
+    "title": "JavaScript中parseInt的作用是？",
+    "options": [
+      "解析整数",
+      "解析浮点数",
+      "转换字符串",
+      "格式化数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-104",
+    "title": "JavaScript中parseFloat的作用是？",
+    "options": [
+      "解析浮点数",
+      "解析整数",
+      "转换字符串",
+      "格式化数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-105",
+    "title": "JavaScript中parseInt(\"0x10\")的结果是？",
+    "options": [
+      "16",
+      "0",
+      "10",
+      "NaN"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-106",
+    "title": "JavaScript中parseInt(\"10\", 2)的结果是？",
+    "options": [
+      "2",
+      "10",
+      "0",
+      "NaN"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-107",
+    "title": "JavaScript中parseInt(\"010\")的结果是？",
+    "options": [
+      "10",
+      "8",
+      "0",
+      "NaN"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-108",
+    "title": "JavaScript中Number.parseInt === parseInt的结果是？",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "TypeError"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-109",
+    "title": "JavaScript中isNaN和Number.isNaN的区别是？",
+    "options": [
+      "Number.isNaN不会隐式转换",
+      "没有区别",
+      "isNaN更严格",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-110",
+    "title": "JavaScript中isFinite的作用是？",
+    "options": [
+      "判断是否是有限数",
+      "判断是否是无限数",
+      "判断是否是NaN",
+      "判断是否是整数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-111",
+    "title": "JavaScript中Number.isFinite和isFinite的区别是？",
+    "options": [
+      "Number.isFinite不会隐式转换",
+      "没有区别",
+      "isFinite更严格",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-112",
+    "title": "JavaScript中escape和encodeURI的区别是？",
+    "options": [
+      "escape不编码URI安全字符",
+      "没有区别",
+      "encodeURI更旧",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-113",
+    "title": "JavaScript中encodeURI和encodeURIComponent的区别是？",
+    "options": [
+      "encodeURIComponent编码更多字符",
+      "没有区别",
+      "encodeURI编码更多字符",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-114",
+    "title": "JavaScript中decodeURI的作用是？",
+    "options": [
+      "解码URI",
+      "编码URI",
+      "编码URI组件",
+      "解码URI组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-115",
+    "title": "JavaScript中decodeURIComponent的作用是？",
+    "options": [
+      "解码URI组件",
+      "解码URI",
+      "编码URI",
+      "编码URI组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-116",
+    "title": "JavaScript中atob的作用是？",
+    "options": [
+      "解码Base64",
+      "编码Base64",
+      "解码URI",
+      "编码URI"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-117",
+    "title": "JavaScript中btoa的作用是？",
+    "options": [
+      "编码Base64",
+      "解码Base64",
+      "编码URI",
+      "解码URI"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-118",
+    "title": "JavaScript中typeof null的结果是？",
+    "options": [
+      "\"null\"",
+      "\"object\"",
+      "\"undefined\"",
+      "\"boolean\""
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "js-119",
+    "title": "JavaScript中以下哪个不是基本数据类型？",
+    "options": [
+      "Symbol",
+      "BigInt",
+      "Object",
+      "undefined"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "js-120",
+    "title": "JavaScript中NaN === NaN的结果是？",
+    "options": [
+      "true",
+      "false",
+      "TypeError",
+      "undefined"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "js-121",
+    "title": "JavaScript中创建对象的方式有？",
+    "options": [
+      "字面量, new Object(), Object.create(), 构造函数",
+      "只有字面量",
+      "只有new Object()",
+      "只有构造函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-122",
+    "title": "JavaScript中Object.create(null)的作用是？",
+    "options": [
+      "创建无原型的对象",
+      "创建空对象",
+      "创建null对象",
+      "语法错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-123",
+    "title": "JavaScript中原型链的终点是？",
+    "options": [
+      "null",
+      "Object.prototype",
+      "undefined",
+      "Function.prototype"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-124",
+    "title": "JavaScript中__proto__和prototype的区别是？",
+    "options": [
+      "__proto__是实例属性，prototype是构造函数属性",
+      "没有区别",
+      "__proto__是构造函数属性，prototype是实例属性",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-125",
+    "title": "JavaScript中constructor属性的作用是？",
+    "options": [
+      "指向构造函数",
+      "创建对象",
+      "删除对象",
+      "复制对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-126",
+    "title": "JavaScript中instanceof的作用是？",
+    "options": [
+      "判断对象是否是某个构造函数的实例",
+      "判断类型",
+      "创建实例",
+      "克隆实例"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-127",
+    "title": "JavaScript中instanceof能判断基本类型吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于类型",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-128",
+    "title": "JavaScript中new操作符做了什么？",
+    "options": [
+      "创建对象，绑定原型，执行构造函数，返回对象",
+      "仅创建对象",
+      "仅执行构造函数",
+      "仅绑定原型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-129",
+    "title": "JavaScript中构造函数返回对象会怎样？",
+    "options": [
+      "返回该对象",
+      "返回this",
+      "语法错误",
+      "忽略返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-130",
+    "title": "JavaScript中构造函数返回基本类型会怎样？",
+    "options": [
+      "返回this",
+      "返回该基本类型",
+      "语法错误",
+      "忽略返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-131",
+    "title": "JavaScript中如何实现继承？",
+    "options": [
+      "原型链继承，借用构造函数，组合继承，寄生组合继承",
+      "只有原型链继承",
+      "只有借用构造函数",
+      "只有class继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-132",
+    "title": "JavaScript中原型链继承的缺点是？",
+    "options": [
+      "共享引用属性，无法传参",
+      "无法共享方法",
+      "无法继承原型",
+      "语法错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-133",
+    "title": "JavaScript中借用构造函数继承的缺点是？",
+    "options": [
+      "无法共享方法",
+      "共享引用属性",
+      "无法传参",
+      "语法错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-134",
+    "title": "JavaScript中组合继承的缺点是？",
+    "options": [
+      "调用了两次父构造函数",
+      "无法共享方法",
+      "共享引用属性",
+      "语法错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-135",
+    "title": "JavaScript中寄生组合继承的优点是？",
+    "options": [
+      "只调用一次父构造函数，原型链保持不变",
+      "调用两次父构造函数",
+      "共享引用属性",
+      "语法错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-136",
+    "title": "JavaScript中class的本质是？",
+    "options": [
+      "语法糖",
+      "新类型",
+      "函数",
+      "对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-137",
+    "title": "JavaScript中class有变量提升吗？",
+    "options": [
+      "有，但存在TDZ",
+      "没有",
+      "有，且可以提前使用",
+      "取决于严格模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-138",
+    "title": "JavaScript中class的方法默认是？",
+    "options": [
+      "挂载在原型上",
+      "挂载在实例上",
+      "静态方法",
+      "私有方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-139",
+    "title": "JavaScript中static方法的作用是？",
+    "options": [
+      "定义静态方法",
+      "定义实例方法",
+      "定义私有方法",
+      "定义公共方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-140",
+    "title": "JavaScript中class的extends作用是？",
+    "options": [
+      "继承父类",
+      "实现接口",
+      "定义静态方法",
+      "定义私有方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-141",
+    "title": "JavaScript中super的作用是？",
+    "options": [
+      "调用父类构造函数或方法",
+      "调用子类方法",
+      "定义静态方法",
+      "定义私有方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-142",
+    "title": "JavaScript中子类构造函数必须调用super吗？",
+    "options": [
+      "必须，否则this不可用",
+      "不必",
+      "取决于父类",
+      "取决于严格模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-143",
+    "title": "JavaScript中Object.getPrototypeOf的作用是？",
+    "options": [
+      "获取对象的原型",
+      "设置对象的原型",
+      "创建对象",
+      "删除原型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-144",
+    "title": "JavaScript中Object.setPrototypeOf的作用是？",
+    "options": [
+      "设置对象的原型",
+      "获取对象的原型",
+      "创建对象",
+      "删除原型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-145",
+    "title": "JavaScript中__proto__是标准属性吗？",
+    "options": [
+      "不是，是历史遗留",
+      "是",
+      "ES6才成为标准",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-146",
+    "title": "JavaScript中for...in能遍历Symbol属性吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于属性",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-147",
+    "title": "JavaScript中for...in能遍历不可枚举属性吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于属性",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-148",
+    "title": "JavaScript中Object.keys()能遍历Symbol属性吗？",
+    "options": [
+      "不能",
+      "能",
+      "取决于属性",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-149",
+    "title": "JavaScript中Object.defineProperty的作用是？",
+    "options": [
+      "定义或修改对象属性",
+      "获取对象属性",
+      "删除对象属性",
+      "遍历对象属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-150",
+    "title": "JavaScript中属性描述符有？",
+    "options": [
+      "数据描述符和存取描述符",
+      "只有数据描述符",
+      "只有存取描述符",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-601",
+    "title": "Python中socket模块的作用是？",
+    "options": [
+      "网络通信",
+      "文件操作",
+      "进程通信",
+      "线程通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-602",
+    "title": "Python中socket.AF_INET表示？",
+    "options": [
+      "IPv4",
+      "IPv6",
+      "Unix域",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-603",
+    "title": "Python中socket.AF_INET6表示？",
+    "options": [
+      "IPv4",
+      "IPv6",
+      "Unix域",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-604",
+    "title": "Python中socket.SOCK_STREAM表示？",
+    "options": [
+      "TCP",
+      "UDP",
+      "RAW",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-605",
+    "title": "Python中socket.SOCK_DGRAM表示？",
+    "options": [
+      "TCP",
+      "UDP",
+      "RAW",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-606",
+    "title": "Python中TCP服务端的流程是？",
+    "options": [
+      "socket, bind, listen, accept",
+      "socket, connect, send",
+      "socket, bind, send",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-607",
+    "title": "Python中TCP客户端的流程是？",
+    "options": [
+      "socket, bind, listen, accept",
+      "socket, connect, send",
+      "socket, bind, send",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-608",
+    "title": "Python中bind()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-609",
+    "title": "Python中listen()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-610",
+    "title": "Python中accept()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-611",
+    "title": "Python中connect()的作用是？",
+    "options": [
+      "绑定地址和端口",
+      "连接服务器",
+      "监听连接",
+      "接受连接"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-612",
+    "title": "Python中send()的作用是？",
+    "options": [
+      "发送数据",
+      "接收数据",
+      "关闭连接",
+      "绑定地址"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-613",
+    "title": "Python中recv()的作用是？",
+    "options": [
+      "发送数据",
+      "接收数据",
+      "关闭连接",
+      "绑定地址"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-614",
+    "title": "Python中sendall()和send()的区别是？",
+    "options": [
+      "sendall发送所有数据",
+      "send发送所有数据",
+      "没有区别",
+      "取决于数据量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-615",
+    "title": "Python中recv()的参数表示？",
+    "options": [
+      "最大接收字节数",
+      "最小接收字节数",
+      "精确接收字节数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-616",
+    "title": "Python中close()的作用是？",
+    "options": [
+      "发送数据",
+      "接收数据",
+      "关闭连接",
+      "绑定地址"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-617",
+    "title": "Python中如何设置socket超时？",
+    "options": [
+      "settimeout()",
+      "timeout()",
+      "set_timeout()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-618",
+    "title": "Python中如何获取socket状态？",
+    "options": [
+      "getsockopt()",
+      "getstatus()",
+      "getstate()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-619",
+    "title": "Python中如何设置socket选项？",
+    "options": [
+      "setsockopt()",
+      "setoption()",
+      "setstate()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-620",
+    "title": "Python中select模块的作用是？",
+    "options": [
+      "I/O多路复用",
+      "网络通信",
+      "进程通信",
+      "线程通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-621",
+    "title": "Python中selectors模块的作用是？",
+    "options": [
+      "高级I/O多路复用",
+      "低级I/O多路复用",
+      "网络通信",
+      "进程通信"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-622",
+    "title": "Python中select.select()的参数是？",
+    "options": [
+      "read_list, write_list, error_list",
+      "input_list, output_list",
+      "rlist, wlist, xlist",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-623",
+    "title": "Python中urllib模块的作用是？",
+    "options": [
+      "URL处理",
+      "HTTP客户端",
+      "FTP客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-624",
+    "title": "Python中urllib.request的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理错误",
+      "处理Robot"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-625",
+    "title": "Python中urllib.parse的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理错误",
+      "处理Robot"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-626",
+    "title": "Python中urllib.error的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理异常",
+      "处理Robot"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-627",
+    "title": "Python中urllib.robotparser的作用是？",
+    "options": [
+      "发送请求",
+      "解析URL",
+      "处理错误",
+      "处理Robot"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-628",
+    "title": "Python中requests库的作用是？",
+    "options": [
+      "HTTP客户端",
+      "HTTP服务端",
+      "FTP客户端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-629",
+    "title": "Python中requests.get()的作用是？",
+    "options": [
+      "发送GET请求",
+      "发送POST请求",
+      "发送PUT请求",
+      "发送DELETE请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-630",
+    "title": "Python中requests.post()的作用是？",
+    "options": [
+      "发送GET请求",
+      "发送POST请求",
+      "发送PUT请求",
+      "发送DELETE请求"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-631",
+    "title": "Python中requests的Response对象包含？",
+    "options": [
+      "status_code, text, json()",
+      "code, body, data",
+      "status, content, json",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-632",
+    "title": "Python中如何传递URL参数？",
+    "options": [
+      "params参数",
+      "data参数",
+      "json参数",
+      "headers参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-633",
+    "title": "Python中如何传递请求体？",
+    "options": [
+      "data或json参数",
+      "params参数",
+      "headers参数",
+      "cookies参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-634",
+    "title": "Python中如何设置请求头？",
+    "options": [
+      "headers参数",
+      "params参数",
+      "data参数",
+      "cookies参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-635",
+    "title": "Python中如何设置Cookie？",
+    "options": [
+      "cookies参数",
+      "headers参数",
+      "params参数",
+      "data参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-636",
+    "title": "Python中如何处理Session？",
+    "options": [
+      "requests.Session()",
+      "requests.session()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-637",
+    "title": "Python中Session的作用是？",
+    "options": [
+      "保持会话状态",
+      "创建新连接",
+      "关闭连接",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-638",
+    "title": "Python中如何处理SSL证书验证？",
+    "options": [
+      "verify参数",
+      "ssl参数",
+      "cert参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-639",
+    "title": "Python中如何设置代理？",
+    "options": [
+      "proxies参数",
+      "proxy参数",
+      "agent参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-640",
+    "title": "Python中如何设置超时？",
+    "options": [
+      "timeout参数",
+      "time参数",
+      "duration参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-641",
+    "title": "Python中如何上传文件？",
+    "options": [
+      "files参数",
+      "file参数",
+      "upload参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-642",
+    "title": "Python中如何处理重定向？",
+    "options": [
+      "allow_redirects参数",
+      "redirect参数",
+      "follow参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-643",
+    "title": "Python中http.server模块的作用是？",
+    "options": [
+      "HTTP服务端",
+      "HTTP客户端",
+      "FTP服务端",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-644",
+    "title": "Python中如何创建简单HTTP服务？",
+    "options": [
+      "python -m http.server",
+      "python -m server",
+      "python -m http",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-645",
+    "title": "Python中xmlrpc模块的作用是？",
+    "options": [
+      "XML-RPC",
+      "JSON-RPC",
+      "SOAP",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-646",
+    "title": "Python中json-rpc库的作用是？",
+    "options": [
+      "XML-RPC",
+      "JSON-RPC",
+      "SOAP",
+      "以上都不对"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-647",
+    "title": "Python中grpc库的作用是？",
+    "options": [
+      "gRPC框架",
+      "REST框架",
+      "SOAP框架",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-648",
+    "title": "Python中protobuf的作用是？",
+    "options": [
+      "序列化",
+      "网络通信",
+      "加密解密",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-649",
+    "title": "Python中websocket库的作用是？",
+    "options": [
+      "WebSocket通信",
+      "HTTP通信",
+      "TCP通信",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-650",
+    "title": "Python中如何发送邮件？",
+    "options": [
+      "smtplib",
+      "poplib",
+      "imaplib",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  }
+]

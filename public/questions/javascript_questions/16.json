@@ -1,0 +1,552 @@
+[
+  {
+    "id": "js-751",
+    "title": "JavaScript中bind和call/apply的区别？",
+    "options": [
+      "bind返回函数，call/apply立即执行",
+      "没有区别",
+      "call/apply返回函数",
+      "取决于参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-752",
+    "title": "JavaScript中垃圾回收的算法有？",
+    "options": [
+      "引用计数，标记清除",
+      "仅引用计数",
+      "仅标记清除",
+      "手动回收"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-753",
+    "title": "JavaScript中引用计数的缺点是？",
+    "options": [
+      "无法处理循环引用",
+      "性能差",
+      "内存泄漏",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-754",
+    "title": "JavaScript中标记清除的优点是？",
+    "options": [
+      "解决循环引用",
+      "性能好",
+      "实时回收",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-755",
+    "title": "JavaScript中V8的垃圾回收策略是？",
+    "options": [
+      "分代回收",
+      "引用计数",
+      "标记压缩",
+      "复制算法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-756",
+    "title": "JavaScript中V8的新生代回收算法是？",
+    "options": [
+      "Scavenge",
+      "标记清除",
+      "标记压缩",
+      "引用计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-757",
+    "title": "JavaScript中V8的老生代回收算法是？",
+    "options": [
+      "标记清除和标记压缩",
+      "Scavenge",
+      "引用计数",
+      "复制算法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-758",
+    "title": "JavaScript中V8的新生代空间分为？",
+    "options": [
+      "From和To",
+      "Eden和Survivor",
+      "Young和Old",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-759",
+    "title": "JavaScript中V8的Scavenge算法的过程是？",
+    "options": [
+      "复制存活对象到To，交换From和To",
+      "标记存活对象",
+      "压缩内存",
+      "引用计数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-760",
+    "title": "JavaScript中V8的增量标记的作用是？",
+    "options": [
+      "减少停顿时间",
+      "提高吞吐量",
+      "减少内存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-761",
+    "title": "JavaScript中V8的并发回收的作用是？",
+    "options": [
+      "提高回收效率",
+      "减少停顿时间",
+      "减少内存",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-762",
+    "title": "JavaScript中内存泄漏的常见原因？",
+    "options": [
+      "意外全局变量，闭包，未清除定时器，DOM引用",
+      "仅闭包",
+      "仅全局变量",
+      "仅定时器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-763",
+    "title": "JavaScript中如何检测内存泄漏？",
+    "options": [
+      "Chrome DevTools Memory面板",
+      "Performance面板",
+      "Console面板",
+      "Network面板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-764",
+    "title": "JavaScript中如何避免内存泄漏？",
+    "options": [
+      "减少全局变量，清除定时器，解除引用",
+      "使用var",
+      "不使用闭包",
+      "手动GC"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-765",
+    "title": "JavaScript中WeakMap/WeakSet如何帮助GC？",
+    "options": [
+      "弱引用不阻止回收",
+      "强引用",
+      "标记引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-766",
+    "title": "JavaScript中如何触发垃圾回收？",
+    "options": [
+      "无法直接触发",
+      "System.gc()",
+      "collectGarbage()",
+      "GC.collect()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-767",
+    "title": "JavaScript中堆内存和栈内存的区别？",
+    "options": [
+      "栈存基本类型和引用，堆存对象",
+      "栈存对象，堆存基本类型",
+      "没有区别",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-768",
+    "title": "JavaScript中栈溢出是指？",
+    "options": [
+      "调用栈超出最大深度",
+      "内存不足",
+      "堆溢出",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-769",
+    "title": "JavaScript中如何避免栈溢出？",
+    "options": [
+      "使用尾递归优化，改为循环",
+      "增加内存",
+      "减少变量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-770",
+    "title": "JavaScript中尾递归优化是指？",
+    "options": [
+      "编译器将尾递归转为循环",
+      "增加栈空间",
+      "减少调用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-771",
+    "title": "JavaScript中严格模式支持尾递归优化吗？",
+    "options": [
+      "仅在严格模式下支持",
+      "支持",
+      "不支持",
+      "取决于环境"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-772",
+    "title": "JavaScript中V8引擎的编译流程是？",
+    "options": [
+      "解析 -> 生成AST -> 生成字节码 -> JIT编译",
+      "解析 -> 执行",
+      "编译 -> 运行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-773",
+    "title": "JavaScript中AST的作用是？",
+    "options": [
+      "表示代码的抽象语法结构",
+      "执行代码",
+      "编译代码",
+      "优化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-774",
+    "title": "JavaScript中Ignition的作用是？",
+    "options": [
+      "解释执行字节码",
+      "编译代码",
+      "优化代码",
+      "垃圾回收"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-775",
+    "title": "JavaScript中TurboFan的作用是？",
+    "options": [
+      "JIT编译优化热点代码",
+      "解释执行",
+      "垃圾回收",
+      "解析代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-776",
+    "title": "JavaScript中内联缓存的作用是？",
+    "options": [
+      "加速属性访问",
+      "缓存函数",
+      "缓存对象",
+      "缓存代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-777",
+    "title": "JavaScript中隐藏类的作用是？",
+    "options": [
+      "优化对象属性访问",
+      "隐藏实现",
+      "封装属性",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-778",
+    "title": "JavaScript中如何优化对象属性访问？",
+    "options": [
+      "保持对象形状一致",
+      "使用delete",
+      "使用不同类型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-779",
+    "title": "JavaScript中delete操作对性能的影响？",
+    "options": [
+      "改变隐藏类，降低性能",
+      "没有影响",
+      "提高性能",
+      "取决于对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-780",
+    "title": "JavaScript中如何优化数组操作？",
+    "options": [
+      "避免空洞，保持类型一致",
+      "使用delete",
+      "使用不同类型",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-781",
+    "title": "JavaScript中事件循环与V8的关系？",
+    "options": [
+      "V8负责执行代码，事件循环负责调度",
+      "没有关系",
+      "V8包含事件循环",
+      "事件循环包含V8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-782",
+    "title": "JavaScript中libuv的作用是？",
+    "options": [
+      "提供事件循环和异步I/O",
+      "执行JavaScript",
+      "编译代码",
+      "垃圾回收"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-783",
+    "title": "JavaScript中如何分析性能？",
+    "options": [
+      "Chrome DevTools Performance",
+      "Console",
+      "Memory",
+      "Network"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-784",
+    "title": "JavaScript中如何分析CPU使用？",
+    "options": [
+      "CPU Profiler",
+      "Memory Profiler",
+      "Network Profiler",
+      "Console"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-785",
+    "title": "JavaScript中如何分析堆内存？",
+    "options": [
+      "Heap Snapshot",
+      "CPU Profile",
+      "Network Profile",
+      "Console"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-786",
+    "title": "JavaScript中如何分析内存分配？",
+    "options": [
+      "Allocation Timeline",
+      "CPU Profile",
+      "Network Profile",
+      "Console"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-787",
+    "title": "JavaScript中如何分析垃圾回收？",
+    "options": [
+      "GC日志",
+      "Heap Snapshot",
+      "CPU Profile",
+      "Network Profile"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-788",
+    "title": "JavaScript中Lighthouse的作用是？",
+    "options": [
+      "性能审计",
+      "代码审查",
+      "单元测试",
+      "集成测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-789",
+    "title": "JavaScript中性能指标FP是指？",
+    "options": [
+      "首次绘制",
+      "首次内容绘制",
+      "首次有意义绘制",
+      "交互时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-790",
+    "title": "JavaScript中性能指标FCP是指？",
+    "options": [
+      "首次内容绘制",
+      "首次绘制",
+      "首次有意义绘制",
+      "交互时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-791",
+    "title": "JavaScript中性能指标FMP是指？",
+    "options": [
+      "首次有意义绘制",
+      "首次绘制",
+      "首次内容绘制",
+      "交互时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-792",
+    "title": "JavaScript中性能指标TTI是指？",
+    "options": [
+      "可交互时间",
+      "首次绘制",
+      "首次内容绘制",
+      "首次有意义绘制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-793",
+    "title": "JavaScript中性能指标LCP是指？",
+    "options": [
+      "最大内容绘制",
+      "首次绘制",
+      "首次内容绘制",
+      "交互时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-794",
+    "title": "JavaScript中性能指标FID是指？",
+    "options": [
+      "首次输入延迟",
+      "首次绘制",
+      "首次内容绘制",
+      "交互时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-795",
+    "title": "JavaScript中性能指标CLS是指？",
+    "options": [
+      "累积布局偏移",
+      "首次绘制",
+      "首次内容绘制",
+      "交互时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-796",
+    "title": "JavaScript中如何减少重排重绘？",
+    "options": [
+      "批量修改DOM，使用CSS动画",
+      "频繁修改样式",
+      "使用table布局",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-797",
+    "title": "JavaScript中如何优化长列表？",
+    "options": [
+      "虚拟列表",
+      "分页",
+      "懒加载",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "js-798",
+    "title": "JavaScript中虚拟列表的原理是？",
+    "options": [
+      "仅渲染可见区域",
+      "渲染所有项",
+      "分页加载",
+      "延迟加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-799",
+    "title": "JavaScript中如何优化动画性能？",
+    "options": [
+      "使用transform和opacity",
+      "使用top和left",
+      "使用width和height",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "js-800",
+    "title": "JavaScript中requestAnimationFrame的优势？",
+    "options": [
+      "与屏幕刷新同步，避免掉帧",
+      "性能更好",
+      "语法简单",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

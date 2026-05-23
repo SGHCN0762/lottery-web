@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-101",
+    "title": "Python中如何删除对象的属性？",
+    "options": [
+      "hasattr()",
+      "getattr()",
+      "setattr()",
+      "delattr()"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-102",
+    "title": "Python中如何判断函数是否为可调用对象？",
+    "options": [
+      "callable()",
+      "is_callable()",
+      "can_call()",
+      "function()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-103",
+    "title": "Python中如何将字符串作为代码执行？",
+    "options": [
+      "eval()",
+      "exec()",
+      "compile()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-104",
+    "title": "Python中eval()和exec()的区别是？",
+    "options": [
+      "eval执行表达式并返回值，exec执行语句",
+      "eval执行语句，exec执行表达式",
+      "没有区别",
+      "取决于代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-105",
+    "title": "Python中如何获取当前工作目录？",
+    "options": [
+      "os.getcwd()",
+      "os.curdir",
+      "os.path.getcwd()",
+      "sys.getcwd()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-106",
+    "title": "Python中如何列出目录下的文件？",
+    "options": [
+      "os.listdir()",
+      "os.scandir()",
+      "os.walk()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-107",
+    "title": "Python中如何创建目录？",
+    "options": [
+      "os.mkdir()",
+      "os.makedirs()",
+      "os.create_dir()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-108",
+    "title": "Python中如何删除文件？",
+    "options": [
+      "os.remove()",
+      "os.unlink()",
+      "os.delete()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-109",
+    "title": "Python中如何重命名文件？",
+    "options": [
+      "os.rename()",
+      "os.renames()",
+      "os.move()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-110",
+    "title": "Python中如何获取文件大小？",
+    "options": [
+      "os.path.getsize()",
+      "os.filesize()",
+      "os.stat().st_size",
+      "A和C都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-111",
+    "title": "Python中如何获取环境变量？",
+    "options": [
+      "os.getenv()",
+      "os.environ",
+      "os.get_env()",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-112",
+    "title": "Python中如何退出程序？",
+    "options": [
+      "sys.exit()",
+      "exit()",
+      "quit()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-113",
+    "title": "Python中如何获取命令行参数？",
+    "options": [
+      "sys.argv",
+      "os.argv",
+      "argparse",
+      "A和C都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-114",
+    "title": "Python中如何获取系统平台信息？",
+    "options": [
+      "sys.platform",
+      "os.name",
+      "platform.system()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-115",
+    "title": "Python中如何获取Python版本？",
+    "options": [
+      "sys.version",
+      "platform.python_version()",
+      "python --version",
+      "A和B都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-116",
+    "title": "Python中如何获取当前时间？",
+    "options": [
+      "datetime.now()",
+      "datetime.datetime.now()",
+      "time.time()",
+      "B和C都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-117",
+    "title": "Python中如何休眠？",
+    "options": [
+      "time.sleep()",
+      "sys.sleep()",
+      "os.sleep()",
+      "thread.sleep()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-118",
+    "title": "Python中如何生成随机数？",
+    "options": [
+      "random.random()",
+      "random.randint()",
+      "random.uniform()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-119",
+    "title": "Python中如何对列表随机排序？",
+    "options": [
+      "random.shuffle()",
+      "random.sample()",
+      "random.choice()",
+      "random.sort()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-120",
+    "title": "Python中如何从列表中随机选择？",
+    "options": [
+      "random.shuffle()",
+      "random.sample()",
+      "random.choice()",
+      "random.sort()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-121",
+    "title": "Python中函数的参数类型有？",
+    "options": [
+      "位置参数，关键字参数，默认参数，可变参数",
+      "值参数，引用参数",
+      "输入参数，输出参数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-122",
+    "title": "Python中*args的作用是？",
+    "options": [
+      "接收多个位置参数",
+      "接收多个关键字参数",
+      "接收默认参数",
+      "接收可变参数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-123",
+    "title": "Python中**kwargs的作用是？",
+    "options": [
+      "接收多个位置参数",
+      "接收多个关键字参数",
+      "接收默认参数",
+      "接收可变参数"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-124",
+    "title": "Python中函数的返回值可以有多个吗？",
+    "options": [
+      "可以，以元组形式返回",
+      "不可以",
+      "只能返回两个",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-125",
+    "title": "Python中lambda表达式的作用是？",
+    "options": [
+      "创建匿名函数",
+      "创建命名函数",
+      "创建类",
+      "创建模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-126",
+    "title": "Python中lambda表达式的限制是？",
+    "options": [
+      "只能包含一个表达式",
+      "不能有参数",
+      "不能有返回值",
+      "不能调用其他函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-127",
+    "title": "Python中map()函数的作用是？",
+    "options": [
+      "对可迭代对象应用函数",
+      "过滤可迭代对象",
+      "累积计算",
+      "排序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-128",
+    "title": "Python中filter()函数的作用是？",
+    "options": [
+      "对可迭代对象应用函数",
+      "过滤可迭代对象",
+      "累积计算",
+      "排序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-129",
+    "title": "Python中reduce()函数的作用是？",
+    "options": [
+      "对可迭代对象应用函数",
+      "过滤可迭代对象",
+      "累积计算",
+      "排序"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-130",
+    "title": "Python中reduce()函数在哪个模块？",
+    "options": [
+      "functools",
+      "reduce",
+      "itertools",
+      "builtin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-131",
+    "title": "Python中sorted()函数的key参数作用是？",
+    "options": [
+      "指定排序规则",
+      "指定排序方向",
+      "指定排序算法",
+      "指定排序范围"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-132",
+    "title": "Python中sorted()函数的reverse参数作用是？",
+    "options": [
+      "指定排序规则",
+      "指定排序方向",
+      "指定排序算法",
+      "指定排序范围"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-133",
+    "title": "Python中闭包的条件是？",
+    "options": [
+      "嵌套函数，内部函数引用外部变量，外部函数返回内部函数",
+      "函数内部定义函数",
+      "函数返回函数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-134",
+    "title": "Python中装饰器的作用是？",
+    "options": [
+      "增强函数功能",
+      "简化函数",
+      "删除函数",
+      "重命名函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-135",
+    "title": "Python中装饰器的语法是？",
+    "options": [
+      "@decorator",
+      "#decorator",
+      "//decorator",
+      "decorator()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-136",
+    "title": "Python中装饰器本质上是什么？",
+    "options": [
+      "函数或类",
+      "变量",
+      "模块",
+      "包"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-137",
+    "title": "Python中functools.wraps装饰器的作用是？",
+    "options": [
+      "保留原函数信息",
+      "增强原函数",
+      "删除原函数",
+      "重命名原函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-138",
+    "title": "Python中类定义使用的关键字是？",
+    "options": [
+      "class",
+      "def",
+      "struct",
+      "type"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-139",
+    "title": "Python中类的构造方法名是？",
+    "options": [
+      "__init__",
+      "__new__",
+      "__create__",
+      "__construct__"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-140",
+    "title": "Python中类的析构方法名是？",
+    "options": [
+      "__del__",
+      "__destroy__",
+      "__delete__",
+      "__remove__"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-141",
+    "title": "Python中类的方法第一个参数通常是？",
+    "options": [
+      "self",
+      "this",
+      "cls",
+      "me"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-142",
+    "title": "Python中类方法第一个参数通常是？",
+    "options": [
+      "self",
+      "this",
+      "cls",
+      "me"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-143",
+    "title": "Python中静态方法不需要哪个参数？",
+    "options": [
+      "self",
+      "cls",
+      "以上都不需要",
+      "取决于定义"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-144",
+    "title": "Python中类方法使用哪个装饰器？",
+    "options": [
+      "@classmethod",
+      "@staticmethod",
+      "@property",
+      "@method"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-145",
+    "title": "Python中静态方法使用哪个装饰器？",
+    "options": [
+      "@classmethod",
+      "@staticmethod",
+      "@property",
+      "@method"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-146",
+    "title": "Python中属性装饰器使用哪个？",
+    "options": [
+      "@classmethod",
+      "@staticmethod",
+      "@property",
+      "@method"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-147",
+    "title": "Python中@property的作用是？",
+    "options": [
+      "将方法变为属性",
+      "将属性变为方法",
+      "定义类方法",
+      "定义静态方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-148",
+    "title": "Python中继承的语法是？",
+    "options": [
+      "class Child(Parent)",
+      "class Child inherits Parent",
+      "class Child extends Parent",
+      "class Child implements Parent"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-149",
+    "title": "Python中是否支持多重继承？",
+    "options": [
+      "支持",
+      "不支持",
+      "只支持单继承",
+      "取决于父类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-150",
+    "title": "Python中MRO是指？",
+    "options": [
+      "方法解析顺序",
+      "内存回收对象",
+      "模块引用优化",
+      "多线程运行对象"
+    ],
+    "correctAnswer": 0
+  }
+]

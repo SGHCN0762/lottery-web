@@ -1,0 +1,552 @@
+[
+  {
+    "id": "vue-201",
+    "title": "Vue 3 中 defineComponent 的泛型参数作用是？",
+    "options": [
+      "定义 props 类型",
+      "定义 emits 类型",
+      "定义返回类型",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-202",
+    "title": "Vue 3 中 defineComponent 的 setup 函数返回值类型是？",
+    "options": [
+      "RenderFunction | void",
+      "any",
+      "object",
+      "Component"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-203",
+    "title": "Vue 3 中 defineAsyncComponent 的类型是？",
+    "options": [
+      "defineAsyncComponent<T>",
+      "AsyncComponent<T>",
+      "Promise<Component>",
+      "() => Component"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-204",
+    "title": "Vue 3 中 PropType 的作用是？",
+    "options": [
+      "定义复杂 prop 类型",
+      "验证 prop",
+      "转换 prop",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-205",
+    "title": "Vue 3 中 ComponentPublicInstance 的作用是？",
+    "options": [
+      "组件实例类型",
+      "组件定义",
+      "组件注册",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-206",
+    "title": "Vue 3 中 ExtractPropTypes 的作用是？",
+    "options": [
+      "从 props 定义中提取类型",
+      "提取组件类型",
+      "提取实例类型",
+      "提取插槽类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-207",
+    "title": "Vue 3 中 ExtractDefaultPropTypes 的作用是？",
+    "options": [
+      "提取 props 默认值类型",
+      "提取默认组件",
+      "提取默认实例",
+      "提取默认插槽"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-208",
+    "title": "Vue 3 中 setup 语法糖如何定义组件名称？",
+    "options": [
+      "defineOptions({ name: \"X\" })",
+      "export default { name: \"X\" }",
+      "<script name=\"X\">",
+      "无法定义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-209",
+    "title": "Vue 3 中 setup 语法糖如何使用 provide？",
+    "options": [
+      "provide(key, value)",
+      "this.provide",
+      "useProvide",
+      "app.provide"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-210",
+    "title": "Vue 3 中 setup 语法糖如何使用 inject？",
+    "options": [
+      "inject(key, defaultValue)",
+      "this.inject",
+      "useInject",
+      "app.inject"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-211",
+    "title": "Vue 3 中 setup 语法糖如何使用 router？",
+    "options": [
+      "useRouter()",
+      "this.$router",
+      "router.use()",
+      "getRouter()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-212",
+    "title": "Vue 3 中 setup 语法糖如何使用 route？",
+    "options": [
+      "useRoute()",
+      "this.$route",
+      "route.use()",
+      "getRoute()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-213",
+    "title": "Vue 3 中 setup 语法糖如何使用 store？",
+    "options": [
+      "useStore()",
+      "this.$store",
+      "store.use()",
+      "getStore()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-214",
+    "title": "Vue 3 中 setup 语法糖如何使用 i18n？",
+    "options": [
+      "useI18n()",
+      "this.$i18n",
+      "i18n.use()",
+      "getI18n()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-215",
+    "title": "Vue 3 中 setup 语法糖如何访问元素？",
+    "options": [
+      "ref + 绑定",
+      "document.getElementById",
+      "this.$refs",
+      "querySelector"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-216",
+    "title": "Vue 3 中 setup 语法糖如何使用 nextTick？",
+    "options": [
+      "nextTick()",
+      "this.$nextTick",
+      "await tick",
+      "useNextTick()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-217",
+    "title": "Vue 3 中 setup 语法糖如何定义自定义指令？",
+    "options": [
+      "vName 指令",
+      "directives 选项",
+      "this.$directives",
+      "useDirective()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-218",
+    "title": "Vue 3 中 setup 语法糖如何使用 computed？",
+    "options": [
+      "computed(() => x)",
+      "this.$computed",
+      "compute(() => x)",
+      "useComputed()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-219",
+    "title": "Vue 3 中 setup 语法糖如何使用 watch？",
+    "options": [
+      "watch(source, callback)",
+      "this.$watch",
+      "observe(source, callback)",
+      "useWatch()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-220",
+    "title": "Vue 3 中 setup 语法糖如何使用 watchEffect？",
+    "options": [
+      "watchEffect(() => x)",
+      "this.$watchEffect",
+      "effect(() => x)",
+      "useEffect()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-221",
+    "title": "Vue 3 中 setup 语法糖如何使用生命周期？",
+    "options": [
+      "onMounted(() => {})",
+      "mounted()",
+      "this.onMounted",
+      "useMounted()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-222",
+    "title": "Vue 3 中 setup 语法糖如何使用模板引用？",
+    "options": [
+      "ref() + 绑定",
+      "this.$refs",
+      "useRef()",
+      "templateRef()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-223",
+    "title": "Vue 3 中 setup 语法糖如何使用插槽？",
+    "options": [
+      "useSlots()",
+      "this.$slots",
+      "slots()",
+      "getSlots()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-224",
+    "title": "Vue 3 中 setup 语法糖如何使用 attrs？",
+    "options": [
+      "useAttrs()",
+      "this.$attrs",
+      "attrs()",
+      "getAttrs()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-225",
+    "title": "Vue 3 中 setup 语法糖如何暴露方法？",
+    "options": [
+      "defineExpose()",
+      "export default",
+      "return",
+      "this.expose()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-226",
+    "title": "Vue 3 中 setup 语法糖如何使用 v-model？",
+    "options": [
+      "defineModel()",
+      "this.model",
+      "useModel()",
+      "vModel()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-227",
+    "title": "Vue 3 中 setup 语法糖如何定义 emits？",
+    "options": [
+      "defineEmits()",
+      "emits 选项",
+      "this.$emit",
+      "useEmits()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-228",
+    "title": "Vue 3 中 setup 语法糖如何定义 props？",
+    "options": [
+      "defineProps()",
+      "props 选项",
+      "this.$props",
+      "useProps()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-229",
+    "title": "Vue 3 中 setup 语法糖如何设置 props 默认值？",
+    "options": [
+      "withDefaults()",
+      "default 选项",
+      "defineDefaults()",
+      "this.defaults"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-230",
+    "title": "Vue 3 中 setup 语法糖如何使用 CSS Modules？",
+    "options": [
+      "useCssModule()",
+      "this.$style",
+      "style.module",
+      "cssModule()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-231",
+    "title": "Vue 3 中 setup 语法糖如何使用 CSS v-bind？",
+    "options": [
+      "v-bind(cssVar)",
+      "this.cssVar",
+      "css.bind",
+      "useCssVar()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-232",
+    "title": "Vue 3 中 setup 语法糖如何使用全局属性？",
+    "options": [
+      "getCurrentInstance().appContext",
+      "this.$global",
+      "useGlobal()",
+      "globalThis"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-233",
+    "title": "Vue 3 中 setup 语法糖如何注册全局组件？",
+    "options": [
+      "无法直接注册，需在入口文件",
+      "app.component()",
+      "defineComponent()",
+      "useComponent()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-234",
+    "title": "Vue 3 中 setup 语法糖如何使用 mixin？",
+    "options": [
+      "不支持，推荐组合式函数",
+      "mixins 选项",
+      "this.$mixin",
+      "useMixin()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-235",
+    "title": "Vue 3 中 setup 语法糖如何使用 extends？",
+    "options": [
+      "不支持，推荐组合式函数",
+      "extends 选项",
+      "this.$extends",
+      "useExtends()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-236",
+    "title": "Vue 3 中 setup 语法糖如何使用插件？",
+    "options": [
+      "app.use()",
+      "this.$plugin",
+      "usePlugin()",
+      "plugin.install()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-237",
+    "title": "Vue 3 中 setup 语法糖如何使用 filter？",
+    "options": [
+      "已移除，推荐 computed",
+      "this.$filter",
+      "useFilter()",
+      "filter()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-238",
+    "title": "Vue 3 中 setup 语法糖如何使用事件总线？",
+    "options": [
+      "mitt 等第三方库",
+      "this.$emit",
+      "useBus()",
+      "EventBus"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-239",
+    "title": "Vue 3 中 setup 语法糖如何使用 SSR？",
+    "options": [
+      "onServerPrefetch",
+      "this.$ssr",
+      "useSSR()",
+      "serverPrefetch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-240",
+    "title": "Vue 3 中 setup 语法糖如何使用错误捕获？",
+    "options": [
+      "onErrorCaptured",
+      "this.$error",
+      "useError()",
+      "errorCaptured"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-241",
+    "title": "Vue 3 中组合式函数的最佳实践是？",
+    "options": [
+      "返回 ref 和方法",
+      "返回 reactive",
+      "返回 class",
+      "返回函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-242",
+    "title": "Vue 3 中组合式函数如何处理副作用清理？",
+    "options": [
+      "onScopeDispose",
+      "beforeUnmount",
+      "手动清理",
+      "无需清理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-243",
+    "title": "Vue 3 中组合式函数如何处理异步操作？",
+    "options": [
+      "async/await",
+      "Promise",
+      "回调函数",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-244",
+    "title": "Vue 3 中组合式函数如何处理参数变化？",
+    "options": [
+      "watch 参数",
+      "computed 参数",
+      "手动更新",
+      "无需处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-245",
+    "title": "Vue 3 中组合式函数如何实现懒加载？",
+    "options": [
+      "条件调用",
+      "动态 import",
+      "异步组件",
+      "Suspense"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-246",
+    "title": "Vue 3 中组合式函数如何实现单例模式？",
+    "options": [
+      "模块级变量",
+      "provide/inject",
+      "全局属性",
+      "Pinia"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-247",
+    "title": "Vue 3 中组合式函数如何处理路由参数？",
+    "options": [
+      "useRoute().params",
+      "this.$route.params",
+      "router.params",
+      "route.params"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-248",
+    "title": "Vue 3 中组合式函数如何处理表单验证？",
+    "options": [
+      "自定义逻辑或 VeeValidate",
+      "this.$validate",
+      "useValidate()",
+      "validate()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-249",
+    "title": "Vue 3 中组合式函数如何处理分页？",
+    "options": [
+      "封装分页逻辑",
+      "this.$paginate",
+      "usePaginate()",
+      "paginate()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-250",
+    "title": "Vue 3 中组合式函数如何处理防抖节流？",
+    "options": [
+      "customRef 或 lodash",
+      "this.$debounce",
+      "useDebounce()",
+      "debounce()"
+    ],
+    "correctAnswer": 0
+  }
+]

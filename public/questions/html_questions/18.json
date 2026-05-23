@@ -1,0 +1,552 @@
+[
+  {
+    "id": "html-851",
+    "title": "RTL语言包括？",
+    "options": [
+      "阿拉伯语, 希伯来语",
+      "英语, 法语",
+      "中文, 日语",
+      "俄语, 德语"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-852",
+    "title": "<bdo>标签的作用？",
+    "options": [
+      "覆盖当前文本方向",
+      "设置默认方向",
+      "自动检测方向",
+      "翻译方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-853",
+    "title": "<bdi>标签的作用？",
+    "options": [
+      "隔离文本方向防止影响周围",
+      "设置方向",
+      "覆盖方向",
+      "翻译方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-854",
+    "title": "<bdi>常用于什么场景？",
+    "options": [
+      "用户生成的动态内容方向未知",
+      "静态文本",
+      "图片",
+      "表格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-855",
+    "title": "CSS逻辑属性对国际化的帮助？",
+    "options": [
+      "自动适配不同方向的布局",
+      "增加动画",
+      "提高性能",
+      "减少代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-856",
+    "title": "margin-inline-start对应LTR的？",
+    "options": [
+      "margin-left",
+      "margin-right",
+      "margin-top",
+      "margin-bottom"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-857",
+    "title": "margin-inline-start对应RTL的？",
+    "options": [
+      "margin-right",
+      "margin-left",
+      "margin-top",
+      "margin-bottom"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-858",
+    "title": "padding-block-end对应物理属性是？",
+    "options": [
+      "padding-bottom",
+      "padding-top",
+      "padding-left",
+      "padding-right"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-859",
+    "title": "border-inline对应物理属性是？",
+    "options": [
+      "左右边框",
+      "上下边框",
+      "四个边框",
+      "对角边框"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-860",
+    "title": "text-align: start的含义？",
+    "options": [
+      "LTR时左对齐，RTL时右对齐",
+      "总是左对齐",
+      "总是右对齐",
+      "居中对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-861",
+    "title": "text-align: end的含义？",
+    "options": [
+      "LTR时右对齐，RTL时左对齐",
+      "总是右对齐",
+      "总是左对齐",
+      "居中对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-862",
+    "title": "float: inline-start的含义？",
+    "options": [
+      "LTR时左浮动，RTL时右浮动",
+      "总是左浮动",
+      "总是右浮动",
+      "不浮动"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-863",
+    "title": "Unicode双向算法的作用？",
+    "options": [
+      "自动确定相邻字符的方向",
+      "加密字符",
+      "压缩字符",
+      "翻译字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-864",
+    "title": "何时需要手动指定方向？",
+    "options": [
+      "双向算法无法正确判断时",
+      "总是需要",
+      "从不需要",
+      "只在英文中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-865",
+    "title": "<meta http-equiv=\"Content-Language\">的作用？",
+    "options": [
+      "声明内容语言(不如lang属性推荐)",
+      "设置编码",
+      "设置方向",
+      "设置地区"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-866",
+    "title": "Content-Language头可包含多个语言吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能一个",
+      "最多两个"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-867",
+    "title": "hreflang属性的作用？",
+    "options": [
+      "指定链接目标的语言",
+      "设置当前语言",
+      "设置编码",
+      "设置方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-868",
+    "title": "hreflang常用于哪个标签？",
+    "options": [
+      "<link>",
+      "<a>",
+      "<meta>",
+      "<html>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-869",
+    "title": "<link rel=\"alternate\" hreflang=\"en\">的作用？",
+    "options": [
+      "指向英文版本的页面",
+      "翻译页面",
+      "设置语言",
+      "设置编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-870",
+    "title": "多语言网站的URL策略不包括？",
+    "options": [
+      "单域名无区分",
+      "子域名",
+      "子目录",
+      "参数区分"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-871",
+    "title": "子域名多语言策略如？",
+    "options": [
+      "en.example.com",
+      "example.com/en",
+      "example.com?lang=en",
+      "example.com"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-872",
+    "title": "子目录多语言策略如？",
+    "options": [
+      "example.com/en",
+      "en.example.com",
+      "example.com?lang=en",
+      "example.com"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-873",
+    "title": "参数多语言策略如？",
+    "options": [
+      "example.com?lang=en",
+      "example.com/en",
+      "en.example.com",
+      "example.com"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-874",
+    "title": "最推荐的多语言URL策略是？",
+    "options": [
+      "子目录或子域名",
+      "参数",
+      "单域名",
+      "不同域名"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-875",
+    "title": "Accept-Language请求头的作用？",
+    "options": [
+      "告诉服务器用户偏好的语言",
+      "设置编码",
+      "设置方向",
+      "设置内容"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-876",
+    "title": "服务器如何根据Accept-Language响应？",
+    "options": [
+      "内容协商返回对应语言页面",
+      "忽略",
+      "返回所有语言",
+      "返回默认语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-877",
+    "title": "日期格式国际化的问题？",
+    "options": [
+      "不同地区格式不同(如MM/DD vs DD/MM)",
+      "数字不同",
+      "文字不同",
+      "方向不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-878",
+    "title": "数字格式国际化的问题？",
+    "options": [
+      "小数点和千分位符号不同",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-879",
+    "title": "货币格式国际化的问题？",
+    "options": [
+      "符号位置和格式不同",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-880",
+    "title": "Intl对象的作用？",
+    "options": [
+      "提供国际化API(如日期, 数字, 排序)",
+      "国际网络",
+      "国际编码",
+      "国际标准"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-881",
+    "title": "Intl.DateTimeFormat的作用？",
+    "options": [
+      "根据语言格式化日期和时间",
+      "解析日期",
+      "验证日期",
+      "计算日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-882",
+    "title": "Intl.NumberFormat的作用？",
+    "options": [
+      "根据语言格式化数字和货币",
+      "解析数字",
+      "验证数字",
+      "计算数字"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-883",
+    "title": "Intl.Collator的作用？",
+    "options": [
+      "根据语言进行字符串比较和排序",
+      "拼接字符串",
+      "截取字符串",
+      "替换字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-884",
+    "title": "Intl.PluralRules的作用？",
+    "options": [
+      "根据语言确定复数规则",
+      "单数规则",
+      "语法规则",
+      "发音规则"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-885",
+    "title": "Intl.RelativeTimeFormat的作用？",
+    "options": [
+      "格式化相对时间(如\"3天前\")",
+      "绝对时间",
+      "时间戳",
+      "倒计时"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-886",
+    "title": "Intl.ListFormat的作用？",
+    "options": [
+      "根据语言格式化列表(如\"A, B, and C\")",
+      "拼接数组",
+      "排序数组",
+      "过滤数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-887",
+    "title": "复数规则国际化的问题？",
+    "options": [
+      "不同语言复数形式数量不同(如阿拉伯语有6种)",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-888",
+    "title": "中文的复数规则是？",
+    "options": [
+      "只有一种形式(无复数变化)",
+      "两种",
+      "三种",
+      "六种"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-889",
+    "title": "英语的复数规则是？",
+    "options": [
+      "两种(单数和复数)",
+      "一种",
+      "三种",
+      "六种"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-890",
+    "title": "相对时间翻译的问题？",
+    "options": [
+      "不同语言表达方式不同(如\"昨天\" vs \"1天前\")",
+      "数字不同",
+      "方向不同",
+      "编码不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-891",
+    "title": "消息格式化的挑战？",
+    "options": [
+      "不同语言语序不同，变量位置不同",
+      "编码不同",
+      "方向不同",
+      "长度不同"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-892",
+    "title": "ICU消息格式的作用？",
+    "options": [
+      "处理包含变量和复数的翻译字符串",
+      "加密消息",
+      "压缩消息",
+      "传输消息"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-893",
+    "title": "Unicode CLDR的作用？",
+    "options": [
+      "提供本地化数据的公共仓库",
+      "编码标准",
+      "传输协议",
+      "安全规范"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-894",
+    "title": "CLDR包含哪些数据？",
+    "options": [
+      "日期, 数字, 货币, 排序规则等",
+      "网页内容",
+      "图片资源",
+      "脚本代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-895",
+    "title": "翻译字符串中的变量如何处理？",
+    "options": [
+      "使用占位符(如{name})",
+      "硬编码",
+      "拼接字符串",
+      "不翻译"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-896",
+    "title": "字符编码的作用是？",
+    "options": [
+      "将字节序列映射为字符",
+      "加密数据",
+      "压缩数据",
+      "翻译语言"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-897",
+    "title": "UTF-8的全称是？",
+    "options": [
+      "Unicode Transformation Format - 8-bit",
+      "Universal Text Format - 8",
+      "Unified Text Encoding - 8",
+      "Universal Transformation Encoding - 8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-898",
+    "title": "UTF-8的优势是？",
+    "options": [
+      "兼容ASCII, 可变长, 支持全球字符",
+      "固定长度",
+      "仅英文",
+      "最短编码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-899",
+    "title": "HTML5推荐使用哪种编码？",
+    "options": [
+      "UTF-8",
+      "GBK",
+      "ISO-8859-1",
+      "ASCII"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-900",
+    "title": "如何声明HTML文档编码？",
+    "options": [
+      "<meta charset=\"UTF-8\">",
+      "<meta encoding=\"UTF-8\">",
+      "<meta http-equiv=\"Content-Type\">",
+      "<?xml encoding=\"UTF-8\"?>"
+    ],
+    "correctAnswer": 0
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "go-951",
+    "title": "Go语言中，如何进行架构演进？",
+    "options": [
+      "渐进式重构",
+      "推翻重来",
+      "增加模块",
+      "增加层次"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-952",
+    "title": "Go语言中，如何选择Web框架？",
+    "options": [
+      "根据项目规模和团队熟悉度",
+      "总是选最新的",
+      "总是选最火的",
+      "总是自己写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-953",
+    "title": "Go语言中，如何选择数据库？",
+    "options": [
+      "根据数据特点和性能要求",
+      "总是选MySQL",
+      "总是选MongoDB",
+      "总是选PostgreSQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-954",
+    "title": "Go语言中，如何选择消息队列？",
+    "options": [
+      "根据吞吐量和可靠性要求",
+      "总是选Kafka",
+      "总是选RabbitMQ",
+      "总是选Redis"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-955",
+    "title": "Go语言中，如何选择缓存？",
+    "options": [
+      "根据数据量和访问频率",
+      "总是选Redis",
+      "总是选Memcached",
+      "总是选本地缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-956",
+    "title": "Go语言中，如何设计高可用系统？",
+    "options": [
+      "冗余、故障转移、限流降级",
+      "增加服务器",
+      "增加带宽",
+      "增加存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-957",
+    "title": "Go语言中，如何设计高性能系统？",
+    "options": [
+      "缓存、异步、并发",
+      "增加CPU",
+      "增加内存",
+      "增加服务器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-958",
+    "title": "Go语言中，如何设计安全系统？",
+    "options": [
+      "认证、授权、加密、审计",
+      "防火墙",
+      "VPN",
+      "隔离"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-959",
+    "title": "Go语言中，如何设计可扩展系统？",
+    "options": [
+      "微服务、消息队列、分片",
+      "单体应用",
+      "垂直扩展",
+      "增加服务器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-960",
+    "title": "Go语言中，如何设计可维护系统？",
+    "options": [
+      "模块化、文档、测试",
+      "增加注释",
+      "增加人手",
+      "增加预算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-961",
+    "title": "Go语言中，如何处理大文件上传？",
+    "options": [
+      "分片上传、断点续传",
+      "直接上传",
+      "压缩上传",
+      "多线程上传"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-962",
+    "title": "Go语言中，如何处理大文件下载？",
+    "options": [
+      "分块下载、断点续传",
+      "直接下载",
+      "压缩下载",
+      "多线程下载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-963",
+    "title": "Go语言中，如何实现实时通信？",
+    "options": [
+      "WebSocket, SSE",
+      "轮询",
+      "长轮询",
+      "短连接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-964",
+    "title": "Go语言中，如何实现定时任务？",
+    "options": [
+      "cron库, time.Ticker",
+      "sleep循环",
+      "系统crontab",
+      "消息队列"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-965",
+    "title": "Go语言中，如何实现延迟任务？",
+    "options": [
+      "时间轮、延迟队列",
+      "sleep",
+      "定时任务",
+      "数据库轮询"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-966",
+    "title": "Go语言中，如何实现分布式锁？",
+    "options": [
+      "Redis SETNX, Etcd, Zookeeper",
+      "sync.Mutex",
+      "数据库锁",
+      "文件锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-967",
+    "title": "Go语言中，如何实现分布式事务？",
+    "options": [
+      "2PC, TCC, Saga",
+      "本地事务",
+      "不使用事务",
+      "手动补偿"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-968",
+    "title": "Go语言中，如何实现幂等性？",
+    "options": [
+      "唯一ID、去重表、状态机",
+      "不实现",
+      "加锁",
+      "串行化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-969",
+    "title": "Go语言中，如何实现接口版本控制？",
+    "options": [
+      "URL路径、Header、参数",
+      "不控制",
+      "直接修改",
+      "增加方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-970",
+    "title": "Go语言中，如何实现国际化？",
+    "options": [
+      "i18n库、资源文件",
+      "硬编码",
+      "翻译接口",
+      "多版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-971",
+    "title": "Go语言中，如何实现本地化？",
+    "options": [
+      "i18n库、资源文件",
+      "硬编码",
+      "翻译接口",
+      "多版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-972",
+    "title": "Go语言中，如何实现数据验证？",
+    "options": [
+      "validator库、正则",
+      "手动验证",
+      "前端验证",
+      "数据库验证"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-973",
+    "title": "Go语言中，如何实现数据转换？",
+    "options": [
+      "类型断言、反射、扫描",
+      "强制转换",
+      "隐式转换",
+      "不转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-974",
+    "title": "Go语言中，如何实现数据映射？",
+    "options": [
+      "反射、代码生成",
+      "手动映射",
+      "序列化",
+      "接口转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-975",
+    "title": "Go语言中，如何实现数据加密？",
+    "options": [
+      "crypto库、TLS",
+      "Base64",
+      "自定义算法",
+      "不加密"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-976",
+    "title": "Go语言中，如何实现数据压缩？",
+    "options": [
+      "compress库、gzip",
+      "不压缩",
+      "自定义算法",
+      "只存路径"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-977",
+    "title": "Go语言中，如何实现数据备份？",
+    "options": [
+      "文件复制、数据库备份",
+      "不备份",
+      "快照",
+      "归档"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-978",
+    "title": "Go语言中，如何实现数据恢复？",
+    "options": [
+      "备份还原、日志回放",
+      "不恢复",
+      "手动修复",
+      "重新录入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-979",
+    "title": "Go语言中，如何实现数据迁移？",
+    "options": [
+      "脚本、ETL工具",
+      "手动迁移",
+      "不迁移",
+      "直接复制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-980",
+    "title": "Go语言中，如何实现数据同步？",
+    "options": [
+      "消息队列、定时任务、CDC",
+      "手动同步",
+      "直接复制",
+      "不同步"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-981",
+    "title": "Go语言中，如何实现日志收集？",
+    "options": [
+      "Logstash, Fluentd",
+      "直接写文件",
+      "输出到控制台",
+      "发送邮件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-982",
+    "title": "Go语言中，如何实现持续集成？",
+    "options": [
+      "Jenkins, GitHub Actions",
+      "手动部署",
+      "脚本部署",
+      "Docker部署"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-983",
+    "title": "Go语言中，如何实现持续部署？",
+    "options": [
+      "Spinnaker, ArgoCD",
+      "手动部署",
+      "脚本部署",
+      "Docker部署"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-984",
+    "title": "Go语言中，如何进行性能调优？",
+    "options": [
+      "pprof, trace, benchmark",
+      "增加CPU",
+      "增加内存",
+      "增加服务器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-985",
+    "title": "Go语言中，如何进行代码重构？",
+    "options": [
+      "单元测试保证、逐步修改",
+      "重写代码",
+      "修改接口",
+      "修改依赖"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-986",
+    "title": "Go语言中，如何进行代码审查？",
+    "options": [
+      "Pull Request, Gerrit",
+      "邮件审查",
+      "口头审查",
+      "不需要审查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-987",
+    "title": "Go语言中，如何进行项目管理？",
+    "options": [
+      "敏捷开发、看板",
+      "瀑布模型",
+      "螺旋模型",
+      "不需要管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-988",
+    "title": "Go语言中，如何进行技术债务管理？",
+    "options": [
+      "识别、计划、偿还",
+      "忽略",
+      "重写",
+      "增加人手"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-989",
+    "title": "Go语言中，如何进行团队协作？",
+    "options": [
+      "规范、工具、沟通",
+      "各自开发",
+      "外包",
+      "开源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-990",
+    "title": "Go语言中，如何进行知识分享？",
+    "options": [
+      "文档、培训、代码",
+      "不分享",
+      "只口头",
+      "只文档"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-991",
+    "title": "Go语言中，如何进行架构演进？",
+    "options": [
+      "渐进式重构",
+      "推翻重来",
+      "增加模块",
+      "增加层次"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-992",
+    "title": "Go语言中，如何选择Web框架？",
+    "options": [
+      "根据项目规模和团队熟悉度",
+      "总是选最新的",
+      "总是选最火的",
+      "总是自己写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-993",
+    "title": "Go语言中，如何选择数据库？",
+    "options": [
+      "根据数据特点和性能要求",
+      "总是选MySQL",
+      "总是选MongoDB",
+      "总是选PostgreSQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-994",
+    "title": "Go语言中，如何选择消息队列？",
+    "options": [
+      "根据吞吐量和可靠性要求",
+      "总是选Kafka",
+      "总是选RabbitMQ",
+      "总是选Redis"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-995",
+    "title": "Go语言中，如何选择缓存？",
+    "options": [
+      "根据数据量和访问频率",
+      "总是选Redis",
+      "总是选Memcached",
+      "总是选本地缓存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-996",
+    "title": "Go语言中，如何设计高可用系统？",
+    "options": [
+      "冗余、故障转移、限流降级",
+      "增加服务器",
+      "增加带宽",
+      "增加存储"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-997",
+    "title": "Go语言中，如何设计高性能系统？",
+    "options": [
+      "缓存、异步、并发",
+      "增加CPU",
+      "增加内存",
+      "增加服务器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-998",
+    "title": "Go语言中，如何设计安全系统？",
+    "options": [
+      "认证、授权、加密、审计",
+      "防火墙",
+      "VPN",
+      "隔离"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-999",
+    "title": "Go语言中，如何设计可扩展系统？",
+    "options": [
+      "微服务、消息队列、分片",
+      "单体应用",
+      "垂直扩展",
+      "增加服务器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-1000",
+    "title": "Go语言中，如何设计可维护系统？",
+    "options": [
+      "模块化、文档、测试",
+      "增加注释",
+      "增加人手",
+      "增加预算"
+    ],
+    "correctAnswer": 0
+  }
+]

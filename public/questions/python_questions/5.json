@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-201",
+    "title": "Python中typing.Optional的作用是？",
+    "options": [
+      "表示可选类型",
+      "表示必选类型",
+      "表示默认类型",
+      "表示空类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-202",
+    "title": "Python中typing.Union的作用是？",
+    "options": [
+      "表示联合类型",
+      "表示可选类型",
+      "表示默认类型",
+      "表示空类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-203",
+    "title": "Python中typing.Any的作用是？",
+    "options": [
+      "表示任意类型",
+      "表示无类型",
+      "表示默认类型",
+      "表示空类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-204",
+    "title": "Python中typing.Callable的作用是？",
+    "options": [
+      "表示可调用类型",
+      "表示不可调用类型",
+      "表示函数类型",
+      "表示方法类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-205",
+    "title": "Python中typing.TypeVar的作用是？",
+    "options": [
+      "定义泛型类型变量",
+      "定义普通类型变量",
+      "定义常量",
+      "定义枚举"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-206",
+    "title": "Python中typing.Generic的作用是？",
+    "options": [
+      "定义泛型类",
+      "定义普通类",
+      "定义抽象类",
+      "定义元类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-207",
+    "title": "Python中__all__的作用是？",
+    "options": [
+      "定义模块的公共接口",
+      "定义模块的所有属性",
+      "定义模块的所有方法",
+      "定义模块的所有类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-208",
+    "title": "Python中__name__的作用是？",
+    "options": [
+      "判断模块是否为主模块",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-209",
+    "title": "Python中__file__的作用是？",
+    "options": [
+      "获取模块文件路径",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-210",
+    "title": "Python中__doc__的作用是？",
+    "options": [
+      "获取文档字符串",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-211",
+    "title": "Python中__package__的作用是？",
+    "options": [
+      "获取模块所在包",
+      "获取模块名称",
+      "获取类名称",
+      "获取函数名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-212",
+    "title": "Python中__dict__的作用是？",
+    "options": [
+      "获取对象的属性字典",
+      "获取对象的方法字典",
+      "获取对象的类字典",
+      "获取对象的模块字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-213",
+    "title": "Python中__class__的作用是？",
+    "options": [
+      "获取对象的类",
+      "获取对象的父类",
+      "获取对象的子类",
+      "获取对象的模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-214",
+    "title": "Python中__bases__的作用是？",
+    "options": [
+      "获取类的父类元组",
+      "获取类的子类元组",
+      "获取类的属性字典",
+      "获取类的方法字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-215",
+    "title": "Python中__mro__的作用是？",
+    "options": [
+      "获取类的方法解析顺序",
+      "获取类的父类元组",
+      "获取类的属性字典",
+      "获取类的方法字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-216",
+    "title": "Python中__subclasses__的作用是？",
+    "options": [
+      "获取类的子类列表",
+      "获取类的父类列表",
+      "获取类的属性字典",
+      "获取类的方法字典"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-217",
+    "title": "Python中如何动态创建类？",
+    "options": [
+      "type(name, bases, dict)",
+      "class(name, bases, dict)",
+      "create_class(name, bases, dict)",
+      "new_class(name, bases, dict)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-218",
+    "title": "Python中如何判断类是否是另一个类的子类？",
+    "options": [
+      "issubclass()",
+      "isinstance()",
+      "ischild()",
+      "inherits()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-219",
+    "title": "Python中如何获取对象的属性字典？",
+    "options": [
+      "vars()",
+      "dir()",
+      "locals()",
+      "globals()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-220",
+    "title": "Python中如何同时获取字典的键和值？",
+    "options": [
+      "dict.items()",
+      "dict.keys()",
+      "dict.values()",
+      "dict.all()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-221",
+    "title": "Python中如何反转字典的键值对？",
+    "options": [
+      "{v:k for k,v in d.items()}",
+      "d.reverse()",
+      "d.invert()",
+      "d.swap()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-222",
+    "title": "Python中如何统计列表中元素出现的次数？",
+    "options": [
+      "collections.Counter",
+      "list.count()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-223",
+    "title": "Python中如何命名元组？",
+    "options": [
+      "collections.namedtuple",
+      "typing.NamedTuple",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-224",
+    "title": "Python中如何创建有序字典？",
+    "options": [
+      "collections.OrderedDict",
+      "dict(sorted())",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-225",
+    "title": "Python中如何创建默认字典？",
+    "options": [
+      "collections.defaultdict",
+      "dict.setdefault()",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-226",
+    "title": "Python中如何创建双向队列？",
+    "options": [
+      "collections.deque",
+      "queue.Queue",
+      "list",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-227",
+    "title": "Python中deque的popleft()时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-228",
+    "title": "Python中list的pop(0)时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-229",
+    "title": "Python中如何创建不可变集合？",
+    "options": [
+      "frozenset()",
+      "immutable_set()",
+      "const_set()",
+      "fixed_set()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-230",
+    "title": "Python中frozenset的特点是？",
+    "options": [
+      "不可变，可哈希",
+      "可变，可哈希",
+      "不可变，不可哈希",
+      "可变，不可哈希"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-231",
+    "title": "Python中如何创建堆？",
+    "options": [
+      "heapq",
+      "priority_queue",
+      "heap",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-232",
+    "title": "Python中heapq的时间复杂度是？",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-233",
+    "title": "Python中如何合并两个列表？",
+    "options": [
+      "list1 + list2",
+      "list1.extend(list2)",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-234",
+    "title": "Python中如何扁平化嵌套列表？",
+    "options": [
+      "递归或itertools.chain",
+      "list.flatten()",
+      "list.flat()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-235",
+    "title": "Python中如何对列表去重？",
+    "options": [
+      "list(set(list))",
+      "dict.fromkeys(list)",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-236",
+    "title": "Python中如何对列表去重并保持顺序？",
+    "options": [
+      "dict.fromkeys(list)",
+      "list(set(list))",
+      "list.unique()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-237",
+    "title": "Python中如何获取列表的最后一个元素？",
+    "options": [
+      "list[-1]",
+      "list[len(list)]",
+      "list.last()",
+      "list.end()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-238",
+    "title": "Python中如何获取列表的倒数第二个元素？",
+    "options": [
+      "list[-2]",
+      "list[len(list)-2]",
+      "以上都可以",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-239",
+    "title": "Python中如何创建全0列表？",
+    "options": [
+      "[0] * n",
+      "list.zeros(n)",
+      "array(n)",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-240",
+    "title": "Python中如何创建二维列表？",
+    "options": [
+      "[[0]*n for _ in range(m)]",
+      "[[0]*n]*m",
+      "matrix(m,n)",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-241",
+    "title": "Python中迭代器是指？",
+    "options": [
+      "实现了__iter__和__next__的对象",
+      "实现了__next__的对象",
+      "实现了__iter__的对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-242",
+    "title": "Python中迭代器的特点是？",
+    "options": [
+      "惰性计算，节省内存",
+      "可以随机访问",
+      "可以重复迭代",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-243",
+    "title": "Python中生成器是指？",
+    "options": [
+      "使用yield的函数",
+      "使用return的函数",
+      "使用await的函数",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-244",
+    "title": "Python中生成器的特点是？",
+    "options": [
+      "惰性计算，节省内存",
+      "可以随机访问",
+      "可以重复迭代",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-245",
+    "title": "Python中yield的作用是？",
+    "options": [
+      "暂停函数并返回值",
+      "结束函数并返回值",
+      "抛出异常",
+      "继续执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-246",
+    "title": "Python中生成器表达式的语法是？",
+    "options": [
+      "(x for x in iterable)",
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-247",
+    "title": "Python中生成器表达式的返回值是？",
+    "options": [
+      "生成器对象",
+      "列表",
+      "元组",
+      "集合"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-248",
+    "title": "Python中send()方法的作用是？",
+    "options": [
+      "向生成器发送值",
+      "启动生成器",
+      "关闭生成器",
+      "抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-249",
+    "title": "Python中throw()方法的作用是？",
+    "options": [
+      "向生成器发送值",
+      "启动生成器",
+      "关闭生成器",
+      "在生成器中抛出异常"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-250",
+    "title": "Python中close()方法的作用是？",
+    "options": [
+      "向生成器发送值",
+      "启动生成器",
+      "关闭生成器",
+      "抛出异常"
+    ],
+    "correctAnswer": 2
+  }
+]

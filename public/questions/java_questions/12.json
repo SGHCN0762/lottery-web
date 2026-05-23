@@ -1,0 +1,552 @@
+[
+  {
+    "id": "java-551",
+    "title": "Java中FutureTask的作用是？",
+    "options": [
+      "可取消的异步计算",
+      "获取异步结果",
+      "提交任务",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-552",
+    "title": "Java中CompletableFuture的作用是？",
+    "options": [
+      "异步编程",
+      "同步编程",
+      "阻塞编程",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-553",
+    "title": "Java中CompletableFuture的supplyAsync()方法作用是？",
+    "options": [
+      "有返回值的异步任务",
+      "无返回值的异步任务",
+      "同步任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-554",
+    "title": "Java中CompletableFuture的runAsync()方法作用是？",
+    "options": [
+      "无返回值的异步任务",
+      "有返回值的异步任务",
+      "同步任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-555",
+    "title": "Java中CompletableFuture的thenApply()方法作用是？",
+    "options": [
+      "转换结果",
+      "消费结果",
+      "组合结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-556",
+    "title": "Java中CompletableFuture的thenAccept()方法作用是？",
+    "options": [
+      "消费结果",
+      "转换结果",
+      "组合结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-557",
+    "title": "Java中CompletableFuture的thenCompose()方法作用是？",
+    "options": [
+      "组合结果",
+      "转换结果",
+      "消费结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-558",
+    "title": "Java中CompletableFuture的thenCombine()方法作用是？",
+    "options": [
+      "合并结果",
+      "转换结果",
+      "消费结果",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-559",
+    "title": "Java中CompletableFuture的allOf()方法作用是？",
+    "options": [
+      "等待所有完成",
+      "等待任一完成",
+      "应用所有",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-560",
+    "title": "Java中CompletableFuture的anyOf()方法作用是？",
+    "options": [
+      "等待任一完成",
+      "等待所有完成",
+      "应用任一",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-561",
+    "title": "Java中CompletableFuture的exceptionally()方法作用是？",
+    "options": [
+      "处理异常",
+      "处理结果",
+      "处理取消",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-562",
+    "title": "Java中CompletableFuture的handle()方法作用是？",
+    "options": [
+      "处理结果和异常",
+      "处理结果",
+      "处理异常",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-563",
+    "title": "Java中CompletableFuture的whenComplete()方法作用是？",
+    "options": [
+      "处理完成",
+      "处理结果",
+      "处理异常",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-564",
+    "title": "Java中ForkJoinPool的作用是？",
+    "options": [
+      "分治任务线程池",
+      "普通线程池",
+      "定时线程池",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-565",
+    "title": "Java中ForkJoinTask的作用是？",
+    "options": [
+      "分治任务",
+      "普通任务",
+      "定时任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-566",
+    "title": "Java中RecursiveTask的作用是？",
+    "options": [
+      "有返回值的分治任务",
+      "无返回值的分治任务",
+      "普通任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-567",
+    "title": "Java中RecursiveAction的作用是？",
+    "options": [
+      "无返回值的分治任务",
+      "有返回值的分治任务",
+      "普通任务",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-568",
+    "title": "Java中CountDownLatch的作用是？",
+    "options": [
+      "等待多个线程完成",
+      "循环屏障",
+      "信号量",
+      "交换器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-569",
+    "title": "Java中CyclicBarrier的作用是？",
+    "options": [
+      "循环屏障",
+      "等待多个线程完成",
+      "信号量",
+      "交换器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-570",
+    "title": "Java中Semaphore的作用是？",
+    "options": [
+      "信号量",
+      "等待多个线程完成",
+      "循环屏障",
+      "交换器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-571",
+    "title": "Java中Exchanger的作用是？",
+    "options": [
+      "交换器",
+      "等待多个线程完成",
+      "循环屏障",
+      "信号量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-572",
+    "title": "Java中Phaser的作用是？",
+    "options": [
+      "阶段器",
+      "等待多个线程完成",
+      "循环屏障",
+      "信号量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-573",
+    "title": "Java中CountDownLatch和CyclicBarrier的区别是？",
+    "options": [
+      "CountDownLatch不可重用，CyclicBarrier可重用",
+      "CountDownLatch可重用，CyclicBarrier不可重用",
+      "无区别",
+      "取决于场景"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-574",
+    "title": "Java中ThreadLocal的作用是？",
+    "options": [
+      "线程本地变量",
+      "线程同步",
+      "线程通信",
+      "线程池"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-575",
+    "title": "Java中ThreadLocal的原理是？",
+    "options": [
+      "每个线程维护一个ThreadLocalMap",
+      "全局Map",
+      "锁机制",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-576",
+    "title": "Java中ThreadLocal的内存泄漏问题是指？",
+    "options": [
+      "Entry的value无法回收",
+      "Entry的key无法回收",
+      "ThreadLocal无法回收",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-577",
+    "title": "Java中ThreadLocal如何避免内存泄漏？",
+    "options": [
+      "使用后调用remove()",
+      "使用弱引用",
+      "使用强引用",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-578",
+    "title": "Java中InheritableThreadLocal的作用是？",
+    "options": [
+      "子线程继承父线程的变量",
+      "线程同步",
+      "线程通信",
+      "线程池"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-579",
+    "title": "Java中JMM是指？",
+    "options": [
+      "Java内存模型",
+      "Java虚拟机",
+      "Java运行环境",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-580",
+    "title": "Java中JMM的三大特性是？",
+    "options": [
+      "原子性，可见性，有序性",
+      "封装，继承，多态",
+      "安全，稳定，高效",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-581",
+    "title": "Java中JMM的主内存和工作内存是指？",
+    "options": [
+      "主内存是堆，工作内存是栈",
+      "主内存是栈，工作内存是堆",
+      "主内存是方法区，工作内存是堆",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-582",
+    "title": "Java中happens-before原则是？",
+    "options": [
+      "保证内存可见性的规则",
+      "保证原子性的规则",
+      "保证同步的规则",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-583",
+    "title": "Java中happens-before规则包括？",
+    "options": [
+      "程序顺序，volatile，锁，线程启动等",
+      "程序顺序",
+      "volatile",
+      "锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-584",
+    "title": "Java中指令重排序是指？",
+    "options": [
+      "编译器或处理器优化指令顺序",
+      "指令错误",
+      "指令丢失",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-585",
+    "title": "Java中as-if-serial语义是指？",
+    "options": [
+      "不管怎么重排序，单线程结果不变",
+      "指令顺序执行",
+      "指令并行执行",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-586",
+    "title": "Java中创建线程的方式有？",
+    "options": [
+      "继承Thread, 实现Runnable, 实现Callable",
+      "继承Runnable, 实现Thread",
+      "new Thread()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-587",
+    "title": "Java中Thread类的start()方法作用是？",
+    "options": [
+      "启动线程",
+      "运行线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-588",
+    "title": "Java中Thread类的run()方法作用是？",
+    "options": [
+      "线程执行体",
+      "启动线程",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-589",
+    "title": "Java中Thread类的sleep()方法作用是？",
+    "options": [
+      "休眠线程",
+      "等待线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-590",
+    "title": "Java中Thread类的join()方法作用是？",
+    "options": [
+      "等待线程结束",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-591",
+    "title": "Java中Thread类的interrupt()方法作用是？",
+    "options": [
+      "中断线程",
+      "休眠线程",
+      "唤醒线程",
+      "等待线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-592",
+    "title": "Java中Thread类的yield()方法作用是？",
+    "options": [
+      "让出CPU时间",
+      "休眠线程",
+      "唤醒线程",
+      "中断线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-593",
+    "title": "Java中Thread类的setDaemon()方法作用是？",
+    "options": [
+      "设置守护线程",
+      "设置优先级",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-594",
+    "title": "Java中Thread类的setPriority()方法作用是？",
+    "options": [
+      "设置优先级",
+      "设置守护线程",
+      "设置线程名",
+      "设置线程组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-595",
+    "title": "Java中Thread类的getState()方法作用是？",
+    "options": [
+      "获取线程状态",
+      "设置线程状态",
+      "判断线程存活",
+      "判断线程中断"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-596",
+    "title": "Java中线程的状态有？",
+    "options": [
+      "NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED",
+      "NEW, RUNNING, BLOCKED, DEAD",
+      "READY, RUNNING, BLOCKED, WAITING",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-597",
+    "title": "Java中synchronized关键字的作用是？",
+    "options": [
+      "同步方法或代码块",
+      "异步方法或代码块",
+      "创建线程",
+      "销毁线程"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-598",
+    "title": "Java中synchronized锁的对象是？",
+    "options": [
+      "对象实例或Class对象",
+      "基本类型",
+      "局部变量",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-599",
+    "title": "Java中synchronized修饰实例方法锁的是？",
+    "options": [
+      "当前实例对象",
+      "Class对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-600",
+    "title": "Java中synchronized修饰静态方法锁的是？",
+    "options": [
+      "Class对象",
+      "当前实例对象",
+      "任意对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  }
+]

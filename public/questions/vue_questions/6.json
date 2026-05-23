@@ -1,0 +1,552 @@
+[
+  {
+    "id": "vue-251",
+    "title": "Vue 3 中组合式函数如何处理鼠标位置？",
+    "options": [
+      "监听 mousemove",
+      "this.$mouse",
+      "useMouse()",
+      "mouse()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-252",
+    "title": "Vue 3 中组合式函数如何处理窗口大小？",
+    "options": [
+      "监听 resize",
+      "this.$window",
+      "useWindowSize()",
+      "window()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-253",
+    "title": "Vue 3 中组合式函数如何处理网络请求？",
+    "options": [
+      "封装 fetch/axios",
+      "this.$http",
+      "useFetch()",
+      "http()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-254",
+    "title": "Vue 3 中组合式函数如何处理本地存储？",
+    "options": [
+      "封装 localStorage",
+      "this.$storage",
+      "useStorage()",
+      "storage()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-255",
+    "title": "Vue 3 中组合式函数如何处理计时器？",
+    "options": [
+      "封装 setInterval",
+      "this.$timer",
+      "useTimer()",
+      "timer()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-256",
+    "title": "Vue 3 中组合式函数如何处理全屏？",
+    "options": [
+      "封装 Fullscreen API",
+      "this.$fullscreen",
+      "useFullscreen()",
+      "fullscreen()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-257",
+    "title": "Vue 3 中组合式函数如何处理剪贴板？",
+    "options": [
+      "封装 Clipboard API",
+      "this.$clipboard",
+      "useClipboard()",
+      "clipboard()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-258",
+    "title": "Vue 3 中组合式函数如何处理权限？",
+    "options": [
+      "封装权限逻辑",
+      "this.$auth",
+      "useAuth()",
+      "auth()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-259",
+    "title": "Vue 3 中组合式函数如何处理国际化？",
+    "options": [
+      "封装 i18n 逻辑",
+      "this.$i18n",
+      "useI18n()",
+      "i18n()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-260",
+    "title": "Vue 3 中组合式函数如何处理主题切换？",
+    "options": [
+      "封装 CSS 变量逻辑",
+      "this.$theme",
+      "useTheme()",
+      "theme()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-261",
+    "title": "Vue 3 中 getCurrentInstance 的返回值类型是？",
+    "options": [
+      "ComponentInternalInstance | null",
+      "any",
+      "object",
+      "Component"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-262",
+    "title": "Vue 3 中 getCurrentInstance 可以在什么地方使用？",
+    "options": [
+      "setup 和生命周期钩子",
+      "任何地方",
+      "只在 setup",
+      "只在生命周期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-263",
+    "title": "Vue 3 中 getCurrentInstance 的 proxy 属性作用是？",
+    "options": [
+      "获取组件公共实例",
+      "获取组件内部实例",
+      "获取父组件",
+      "获取根组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-264",
+    "title": "Vue 3 中 getCurrentInstance 的 appContext 属性作用是？",
+    "options": [
+      "获取应用上下文",
+      "获取组件上下文",
+      "获取路由上下文",
+      "获取全局状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-265",
+    "title": "Vue 3 中 getCurrentInstance 的 uid 属性作用是？",
+    "options": [
+      "唯一标识组件",
+      "标识应用",
+      "标识路由",
+      "标识状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-266",
+    "title": "Vue 3 中 getCurrentInstance 的 type 属性作用是？",
+    "options": [
+      "获取组件选项对象",
+      "获取组件实例",
+      "获取组件类型",
+      "获取组件名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-267",
+    "title": "Vue 3 中 getCurrentInstance 的 parent 属性作用是？",
+    "options": [
+      "获取父组件实例",
+      "获取子组件实例",
+      "获取根组件实例",
+      "获取兄弟组件实例"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-268",
+    "title": "Vue 3 中 getCurrentInstance 的 vnode 属性作用是？",
+    "options": [
+      "获取组件 VNode",
+      "获取真实 DOM",
+      "获取模板",
+      "获取插槽"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-269",
+    "title": "Vue 3 中 getCurrentInstance 的 emit 方法作用是？",
+    "options": [
+      "触发事件",
+      "注册事件",
+      "监听事件",
+      "销毁事件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-270",
+    "title": "Vue 3 中 getCurrentInstance 的 attrs 属性作用是？",
+    "options": [
+      "获取非 prop 属性",
+      "获取 prop 属性",
+      "获取事件",
+      "获取插槽"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-271",
+    "title": "Vue 3 中 getCurrentInstance 的 slots 属性作用是？",
+    "options": [
+      "获取插槽",
+      "获取属性",
+      "获取事件",
+      "获取方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-272",
+    "title": "Vue 3 中 getCurrentInstance 的 refs 属性作用是？",
+    "options": [
+      "获取模板引用",
+      "获取组件引用",
+      "获取 DOM 引用",
+      "获取属性引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-273",
+    "title": "Vue 3 中 getCurrentInstance 的 isMounted 属性作用是？",
+    "options": [
+      "判断是否已挂载",
+      "判断是否已创建",
+      "判断是否已更新",
+      "判断是否已卸载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-274",
+    "title": "Vue 3 中 getCurrentInstance 的 isUnmounted 属性作用是？",
+    "options": [
+      "判断是否已卸载",
+      "判断是否已挂载",
+      "判断是否已创建",
+      "判断是否已更新"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-275",
+    "title": "Vue 3 中 getCurrentInstance 的 isDeactivated 属性作用是？",
+    "options": [
+      "判断是否已停用",
+      "判断是否已激活",
+      "判断是否已挂载",
+      "判断是否已卸载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-276",
+    "title": "Vue 3 中 getCurrentInstance 的 subTree 属性作用是？",
+    "options": [
+      "获取子组件 VNode",
+      "获取父组件 VNode",
+      "获取根组件 VNode",
+      "获取兄弟组件 VNode"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-277",
+    "title": "Vue 3 中 getCurrentInstance 的 ctx 属性作用是？",
+    "options": [
+      "获取渲染上下文",
+      "获取应用上下文",
+      "获取路由上下文",
+      "获取全局上下文"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-278",
+    "title": "Vue 3 中 getCurrentInstance 的 expose 属性作用是？",
+    "options": [
+      "暴露组件公共属性",
+      "获取组件属性",
+      "设置组件属性",
+      "删除组件属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-279",
+    "title": "Vue 3 中 getCurrentInstance 的 scope 属性作用是？",
+    "options": [
+      "获取效应作用域",
+      "获取全局作用域",
+      "获取函数作用域",
+      "获取块级作用域"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-280",
+    "title": "Vue 3 中 getCurrentInstance 的 update 方法作用是？",
+    "options": [
+      "强制组件更新",
+      "创建组件",
+      "销毁组件",
+      "挂载组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-281",
+    "title": "Vue 3 中 useCssModule 的作用是？",
+    "options": [
+      "获取 CSS Modules",
+      "创建样式",
+      "应用主题",
+      "管理样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-282",
+    "title": "Vue 3 中 useCssVars 的作用是？",
+    "options": [
+      "注入 CSS 变量",
+      "创建样式",
+      "应用主题",
+      "管理样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-283",
+    "title": "Vue 3 中 useId 的作用是？",
+    "options": [
+      "生成唯一 ID",
+      "获取实例 ID",
+      "组件标识",
+      "路由 ID"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-284",
+    "title": "Vue 3 中 useTemplateRef 的作用是？",
+    "options": [
+      "获取模板引用",
+      "创建模板",
+      "编译模板",
+      "渲染模板"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-285",
+    "title": "Vue 3 中 useModel 的作用是？",
+    "options": [
+      "创建双向绑定模型",
+      "定义数据模型",
+      "管理状态",
+      "验证数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-286",
+    "title": "Vue 3 中 defineModel 的作用是？",
+    "options": [
+      "简化 v-model 实现",
+      "定义模型",
+      "创建响应式",
+      "双向绑定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-287",
+    "title": "Vue 3 中 defineOptions 的作用是？",
+    "options": [
+      "定义组件选项",
+      "创建配置",
+      "设置属性",
+      "注册组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-288",
+    "title": "Vue 3 中 defineSlots 的作用是？",
+    "options": [
+      "类型化插槽定义",
+      "创建插槽",
+      "注册插槽",
+      "删除插槽"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-289",
+    "title": "Vue 3 中 withDefaults 的作用是？",
+    "options": [
+      "为 props 设置默认值",
+      "创建默认对象",
+      "合并配置",
+      "初始化数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-290",
+    "title": "Vue 3 中 defineEmits 的泛型用法是？",
+    "options": [
+      "defineEmits<{...}>()",
+      "defineEmits<Type>()",
+      "defineEmits<T>()",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-291",
+    "title": "Vue 3 中 defineProps 的泛型用法是？",
+    "options": [
+      "defineProps<Type>()",
+      "defineProps<T>()",
+      "defineProps<{...}>()",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-292",
+    "title": "Vue 3 中 defineExpose 的作用是？",
+    "options": [
+      "暴露组件属性给父组件",
+      "导出数据",
+      "公开方法",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-293",
+    "title": "Vue 3 中 defineComponent 的作用是？",
+    "options": [
+      "提供 TypeScript 类型推导",
+      "创建组件",
+      "注册组件",
+      "导出组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-294",
+    "title": "Vue 3 中 h 函数的参数顺序是？",
+    "options": [
+      "type, props, children",
+      "props, type, children",
+      "children, props, type",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-295",
+    "title": "Vue 3 中 h 函数的作用是？",
+    "options": [
+      "创建 VNode",
+      "创建组件",
+      "创建元素",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-296",
+    "title": "Vue 3 中 mergeProps 的作用是？",
+    "options": [
+      "合并 props",
+      "创建 props",
+      "验证 props",
+      "转换 props"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-297",
+    "title": "Vue 3 中 cloneVNode 的作用是？",
+    "options": [
+      "克隆 VNode",
+      "创建 VNode",
+      "合并 VNode",
+      "销毁 VNode"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-298",
+    "title": "Vue 3 中 isVNode 的作用是？",
+    "options": [
+      "判断是否为 VNode",
+      "创建 VNode",
+      "合并 VNode",
+      "销毁 VNode"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-299",
+    "title": "Vue 3 中 resolveComponent 的作用是？",
+    "options": [
+      "解析已注册的组件",
+      "注册组件",
+      "创建组件",
+      "销毁组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-300",
+    "title": "Vue 3 中 resolveDynamicComponent 的作用是？",
+    "options": [
+      "解析动态组件",
+      "解析静态组件",
+      "解析异步组件",
+      "解析原生组件"
+    ],
+    "correctAnswer": 0
+  }
+]

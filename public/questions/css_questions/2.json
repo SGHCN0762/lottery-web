@@ -1,0 +1,552 @@
+[
+  {
+    "id": "css-51",
+    "title": "calc()中可以混合使用不同单位吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能使用相同单位",
+      "只能使用百分比"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-52",
+    "title": "CSS选择器性能优化建议是？",
+    "options": [
+      "避免使用通配符和过深嵌套",
+      "尽量使用通配符",
+      "尽量嵌套深层选择器",
+      "使用复杂选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-53",
+    "title": ":is()伪类的作用是？",
+    "options": [
+      "简化复杂选择器并取匹配的任意一个",
+      "排除选择器",
+      "选择子元素",
+      "选择兄弟元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-54",
+    "title": ":where()伪类与:is()的区别是？",
+    "options": [
+      ":where()的优先级始终为0",
+      "没有区别",
+      ":where()优先级更高",
+      ":is()优先级为0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-55",
+    "title": ":has()伪类的作用是？",
+    "options": [
+      "选择包含指定子元素的父元素",
+      "选择子元素",
+      "选择兄弟元素",
+      "选择后代元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-56",
+    "title": "all属性的作用是？",
+    "options": [
+      "重置所有CSS属性",
+      "应用所有样式",
+      "继承所有属性",
+      "删除所有属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-57",
+    "title": "CSS值类型<length>表示？",
+    "options": [
+      "长度值",
+      "角度值",
+      "时间值",
+      "频率值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-58",
+    "title": "CSS值类型<angle>表示？",
+    "options": [
+      "角度值",
+      "长度值",
+      "时间值",
+      "分辨率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-59",
+    "title": "CSS值类型<time>表示？",
+    "options": [
+      "时间值",
+      "角度值",
+      "长度值",
+      "频率值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-60",
+    "title": "CSS值类型<url>表示？",
+    "options": [
+      "URL地址",
+      "字符串",
+      "数字",
+      "颜色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-61",
+    "title": "CSS值类型<color>表示？",
+    "options": [
+      "颜色值",
+      "长度值",
+      "角度值",
+      "字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-62",
+    "title": "CSS值类型<image>表示？",
+    "options": [
+      "图像值",
+      "URL值",
+      "颜色值",
+      "字符串"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-63",
+    "title": "CSS值类型<percentage>表示？",
+    "options": [
+      "百分比值",
+      "长度值",
+      "数字值",
+      "比例值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-64",
+    "title": "CSS值类型<number>表示？",
+    "options": [
+      "数字值",
+      "百分比值",
+      "长度值",
+      "整数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-65",
+    "title": "CSS值类型<integer>表示？",
+    "options": [
+      "整数值",
+      "数字值",
+      "百分比值",
+      "长度值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-66",
+    "title": "CSS中的全局关键字不包括？",
+    "options": [
+      "default",
+      "inherit",
+      "initial",
+      "unset"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-67",
+    "title": "CSS中的长度单位em是相对于？",
+    "options": [
+      "当前元素的字体大小",
+      "视口宽度",
+      "根元素字体大小",
+      "像素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-68",
+    "title": "CSS中的长度单位rem是相对于？",
+    "options": [
+      "根元素(html)的字体大小",
+      "当前元素的字体大小",
+      "父元素的字体大小",
+      "视口宽度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-69",
+    "title": "CSS中的长度单位vh是相对于？",
+    "options": [
+      "视口高度的1%",
+      "视口宽度的1%",
+      "根元素字体大小",
+      "像素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-70",
+    "title": "CSS中的长度单位vw是相对于？",
+    "options": [
+      "视口宽度的1%",
+      "视口高度的1%",
+      "当前元素宽度",
+      "像素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-71",
+    "title": "CSS中的长度单位vmin是相对于？",
+    "options": [
+      "视口较小尺寸的1%",
+      "视口较大尺寸的1%",
+      "视口宽度",
+      "视口高度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-72",
+    "title": "CSS中的长度单位vmax是相对于？",
+    "options": [
+      "视口较大尺寸的1%",
+      "视口较小尺寸的1%",
+      "视口宽度",
+      "视口高度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-73",
+    "title": "CSS中的长度单位ch是相对于？",
+    "options": [
+      "当前字体中\"0\"字符的宽度",
+      "当前字体的高度",
+      "根元素字体大小",
+      "视口宽度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-74",
+    "title": "CSS中的长度单位ex是相对于？",
+    "options": [
+      "当前字体中\"x\"字符的高度",
+      "当前字体的宽度",
+      "根元素字体大小",
+      "视口高度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-75",
+    "title": "CSS中的长度单位cm是？",
+    "options": [
+      "厘米",
+      "毫米",
+      "英寸",
+      "点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-76",
+    "title": "CSS中的长度单位mm是？",
+    "options": [
+      "毫米",
+      "厘米",
+      "英寸",
+      "派卡"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-77",
+    "title": "CSS中的长度单位in是？",
+    "options": [
+      "英寸",
+      "厘米",
+      "毫米",
+      "点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-78",
+    "title": "CSS中的长度单位pt是？",
+    "options": [
+      "点(1/72英寸)",
+      "派卡(12点)",
+      "像素",
+      "毫米"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-79",
+    "title": "CSS中的长度单位pc是？",
+    "options": [
+      "派卡(12点)",
+      "点(1/72英寸)",
+      "像素",
+      "厘米"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-80",
+    "title": "0长度需要单位吗？",
+    "options": [
+      "不需要",
+      "必须带单位",
+      "只能用px",
+      "只能用em"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-81",
+    "title": "CSS中的分辨率单位dpi表示？",
+    "options": [
+      "每英寸点数",
+      "每厘米点数",
+      "每英寸像素数",
+      "每厘米像素数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-82",
+    "title": "CSS中的分辨率单位dpcm表示？",
+    "options": [
+      "每厘米点数",
+      "每英寸点数",
+      "每英寸像素数",
+      "每厘米像素数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-83",
+    "title": "CSS中的分辨率单位dppx表示？",
+    "options": [
+      "每像素单位的点数",
+      "每英寸点数",
+      "每厘米点数",
+      "每英寸像素数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-84",
+    "title": "CSS中如何表示绝对颜色？",
+    "options": [
+      "使用rgb()或十六进制",
+      "使用currentcolor",
+      "使用inherit",
+      "使用transparent"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-85",
+    "title": "CSS中如何表示半透明颜色？",
+    "options": [
+      "使用rgba()或hsla()",
+      "使用rgb()",
+      "使用十六进制",
+      "使用颜色名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-86",
+    "title": "CSS中transparent关键字的含义是？",
+    "options": [
+      "完全透明",
+      "半透明",
+      "不透明",
+      "白色"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-87",
+    "title": "CSS中如何计算选择器优先级？",
+    "options": [
+      "统计ID、类、标签的数量并加权",
+      "根据选择器长度",
+      "根据字母顺序",
+      "根据出现顺序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-88",
+    "title": "CSS层叠的规则是？",
+    "options": [
+      "重要性 > 优先级 > 来源 > 顺序",
+      "来源 > 优先级 > 重要性",
+      "顺序 > 优先级 > 重要性",
+      "优先级 > 重要性 > 来源"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-89",
+    "title": "CSS来源的优先级从高到低是？",
+    "options": [
+      "用户!important > 作者!important > 作者 > 用户 > 代理",
+      "作者 > 用户 > 代理",
+      "代理 > 用户 > 作者",
+      "用户 > 作者 > 代理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-90",
+    "title": "CSS中如何引入打印样式表？",
+    "options": [
+      "<link media=\"print\">",
+      "<link media=\"screen\">",
+      "<link media=\"all\">",
+      "<style media=\"print\">"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-91",
+    "title": "CSS中@charset规则的作用是？",
+    "options": [
+      "指定样式表的字符编码",
+      "引入外部样式",
+      "定义媒体查询",
+      "定义字体"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-92",
+    "title": "CSS中@import规则的作用是？",
+    "options": [
+      "导入其他样式表",
+      "导入字体",
+      "导入图片",
+      "导入脚本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-93",
+    "title": "@import应该放在样式表的什么位置？",
+    "options": [
+      "最前面",
+      "最后面",
+      "任意位置",
+      "注释中"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-94",
+    "title": "CSS中!important声明的作用是？",
+    "options": [
+      "提高样式优先级到最高",
+      "注释样式",
+      "删除样式",
+      "延迟应用样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-95",
+    "title": "过度使用!important会导致什么问题？",
+    "options": [
+      "样式难以覆盖和维护",
+      "提高性能",
+      "减少代码量",
+      "增强可读性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-96",
+    "title": "CSS中如何为特定语言设置样式？",
+    "options": [
+      ":lang()伪类",
+      "[lang]属性选择器",
+      "::lang伪元素",
+      "$lang选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-97",
+    "title": "CSS中:root伪类的作用是？",
+    "options": [
+      "选择文档的根元素",
+      "选择根目录",
+      "选择第一个元素",
+      "选择html元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-98",
+    "title": ":empty伪类的作用是？",
+    "options": [
+      "选择没有子元素的元素",
+      "选择空文本",
+      "选择隐藏元素",
+      "选择透明元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-99",
+    "title": ":target伪类的作用是？",
+    "options": [
+      "选择URL锚点指向的元素",
+      "选择目标容器",
+      "选择链接元素",
+      "选择焦点元素"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "css-100",
+    "title": ":checked伪类的作用是？",
+    "options": [
+      "选择被选中的radio或checkbox",
+      "选择选中状态的文本",
+      "选择激活元素",
+      "选择焦点元素"
+    ],
+    "correctAnswer": 0
+  }
+]

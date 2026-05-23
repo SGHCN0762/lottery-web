@@ -1,0 +1,550 @@
+[
+  {
+    "id": "vue-951",
+    "title": "Vue 中 nextTick 的作用是？",
+    "options": [
+      "等待 DOM 更新后执行",
+      "延迟执行",
+      "异步执行",
+      "立即执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-952",
+    "title": "Vue 中 nextTick 的实现原理是？",
+    "options": [
+      "Promise.then",
+      "setTimeout",
+      "MutationObserver",
+      "requestAnimationFrame"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-953",
+    "title": "Vue 中 nextTick 可以在什么地方使用？",
+    "options": [
+      "任何地方",
+      "只在组件内",
+      "只在 setup 内",
+      "只在生命周期内"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-954",
+    "title": "Vue 中 nextTick 的返回值是？",
+    "options": [
+      "Promise",
+      "undefined",
+      "Promise 对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-955",
+    "title": "Vue 中插件的作用是？",
+    "options": [
+      "添加全局功能",
+      "扩展 Vue",
+      "添加全局资源",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-956",
+    "title": "Vue 中插件的安装方式是？",
+    "options": [
+      "app.use()",
+      "app.install()",
+      "app.plugin()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-957",
+    "title": "Vue 中插件的 install 函数接收？",
+    "options": [
+      "app, options",
+      "app",
+      "options",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-958",
+    "title": "Vue 中插件可以添加？",
+    "options": [
+      "全局组件",
+      "全局指令",
+      "全局方法",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-959",
+    "title": "Vue 中 TypeScript 的类型定义文件是？",
+    "options": [
+      ".d.ts",
+      ".ts",
+      ".tsx",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-960",
+    "title": "Vue 中 defineComponent 的作用是？",
+    "options": [
+      "类型推导",
+      "创建组件",
+      "注册组件",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-961",
+    "title": "Vue 中 PropType 的作用是？",
+    "options": [
+      "定义复杂 prop 类型",
+      "验证 prop",
+      "转换 prop",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-962",
+    "title": "Vue 中 ComponentPublicInstance 的作用是？",
+    "options": [
+      "组件实例类型",
+      "组件定义",
+      "组件注册",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-963",
+    "title": "Vue 中性能优化的方式有？",
+    "options": [
+      "v-once",
+      "v-memo",
+      "计算属性",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-964",
+    "title": "Vue 中调试工具是？",
+    "options": [
+      "Vue DevTools",
+      "Chrome DevTools",
+      "VS Code Debugger",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-965",
+    "title": "Vue 中 app.config.globalProperties 的作用是？",
+    "options": [
+      "添加全局属性",
+      "添加局部属性",
+      "添加组件属性",
+      "添加指令属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-966",
+    "title": "Vue 中 app.component 的作用是？",
+    "options": [
+      "注册全局组件",
+      "注册局部组件",
+      "注册指令",
+      "注册过滤器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-967",
+    "title": "Vue 中 app.directive 的作用是？",
+    "options": [
+      "注册全局指令",
+      "注册局部指令",
+      "注册组件",
+      "注册过滤器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-968",
+    "title": "Vue 中 app.use 的作用是？",
+    "options": [
+      "安装插件",
+      "注册组件",
+      "注册指令",
+      "注册过滤器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-969",
+    "title": "Vue 中 app.mixin 的作用是？",
+    "options": [
+      "全局混入",
+      "局部混入",
+      "注册组件",
+      "注册指令"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-970",
+    "title": "Vue 中 app.provide 的作用是？",
+    "options": [
+      "全局提供数据",
+      "局部提供数据",
+      "注入数据",
+      "销毁数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-971",
+    "title": "Vue 中 app.config.errorHandler 的作用是？",
+    "options": [
+      "全局错误处理",
+      "局部错误处理",
+      "组件错误处理",
+      "指令错误处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-972",
+    "title": "Vue 中 app.config.warnHandler 的作用是？",
+    "options": [
+      "全局警告处理",
+      "局部警告处理",
+      "组件警告处理",
+      "指令警告处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-973",
+    "title": "Vue 中 app.config.performance 的作用是？",
+    "options": [
+      "开启性能追踪",
+      "关闭性能追踪",
+      "开启调试",
+      "关闭调试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-974",
+    "title": "Vue 中 app.config.compilerOptions 的作用是？",
+    "options": [
+      "配置编译器",
+      "配置运行时",
+      "配置路由",
+      "配置状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-975",
+    "title": "Vue 中 app.config.compilerOptions.isCustomElement 的作用是？",
+    "options": [
+      "指定自定义元素标签",
+      "注册组件",
+      "注册指令",
+      "注册过滤器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-976",
+    "title": "Vue 中 app.config.compilerOptions.whitespace 的作用是？",
+    "options": [
+      "配置空格处理",
+      "配置换行处理",
+      "配置缩进处理",
+      "配置编码处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-977",
+    "title": "Vue 中 app.config.compilerOptions.delimiters 的作用是？",
+    "options": [
+      "配置模板分隔符",
+      "配置脚本分隔符",
+      "配置样式分隔符",
+      "配置注释分隔符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-978",
+    "title": "Vue 中 nextTick 的作用是？",
+    "options": [
+      "等待 DOM 更新后执行",
+      "延迟执行",
+      "异步执行",
+      "立即执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-979",
+    "title": "Vue 中 nextTick 的实现原理是？",
+    "options": [
+      "Promise.then",
+      "setTimeout",
+      "MutationObserver",
+      "requestAnimationFrame"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-980",
+    "title": "Vue 中 nextTick 可以在什么地方使用？",
+    "options": [
+      "任何地方",
+      "只在组件内",
+      "只在 setup 内",
+      "只在生命周期内"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-981",
+    "title": "Vue 中 nextTick 的返回值是？",
+    "options": [
+      "Promise",
+      "undefined",
+      "Promise 对象"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-982",
+    "title": "Vue 中插件的作用是？",
+    "options": [
+      "添加全局功能",
+      "扩展 Vue",
+      "添加全局资源",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-983",
+    "title": "Vue 中插件的安装方式是？",
+    "options": [
+      "app.use()",
+      "app.install()",
+      "app.plugin()",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-984",
+    "title": "Vue 中插件的 install 函数接收？",
+    "options": [
+      "app, options",
+      "app",
+      "options",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-985",
+    "title": "Vue 中插件可以添加？",
+    "options": [
+      "全局组件",
+      "全局指令",
+      "全局方法",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-986",
+    "title": "Vue 中 TypeScript 的类型定义文件是？",
+    "options": [
+      ".d.ts",
+      ".ts",
+      ".tsx",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-987",
+    "title": "Vue 中 defineComponent 的作用是？",
+    "options": [
+      "类型推导",
+      "创建组件",
+      "注册组件",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-988",
+    "title": "Vue 中 PropType 的作用是？",
+    "options": [
+      "定义复杂 prop 类型",
+      "验证 prop",
+      "转换 prop",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-989",
+    "title": "Vue 中 ComponentPublicInstance 的作用是？",
+    "options": [
+      "组件实例类型",
+      "组件定义",
+      "组件注册",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-990",
+    "title": "Vue 中性能优化的方式有？",
+    "options": [
+      "v-once",
+      "v-memo",
+      "计算属性",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-991",
+    "title": "Vue 中调试工具是？",
+    "options": [
+      "Vue DevTools",
+      "Chrome DevTools",
+      "VS Code Debugger",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-992",
+    "title": "Vue 中 app.config.globalProperties 的作用是？",
+    "options": [
+      "添加全局属性",
+      "添加局部属性",
+      "添加组件属性",
+      "添加指令属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-993",
+    "title": "Vue 中 app.component 的作用是？",
+    "options": [
+      "注册全局组件",
+      "注册局部组件",
+      "注册指令",
+      "注册过滤器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-994",
+    "title": "Vue 中 app.directive 的作用是？",
+    "options": [
+      "注册全局指令",
+      "注册局部指令",
+      "注册组件",
+      "注册过滤器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-995",
+    "title": "Vue 中 app.use 的作用是？",
+    "options": [
+      "安装插件",
+      "注册组件",
+      "注册指令",
+      "注册过滤器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-996",
+    "title": "Vue 中 app.mixin 的作用是？",
+    "options": [
+      "全局混入",
+      "局部混入",
+      "注册组件",
+      "注册指令"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-997",
+    "title": "Vue 中 app.provide 的作用是？",
+    "options": [
+      "全局提供数据",
+      "局部提供数据",
+      "注入数据",
+      "销毁数据"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-998",
+    "title": "Vue 中 app.config.errorHandler 的作用是？",
+    "options": [
+      "全局错误处理",
+      "局部错误处理",
+      "组件错误处理",
+      "指令错误处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-999",
+    "title": "Vue 中 app.config.warnHandler 的作用是？",
+    "options": [
+      "全局警告处理",
+      "局部警告处理",
+      "组件警告处理",
+      "指令警告处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-1000",
+    "title": "Vue 中 app.config.performance 的作用是？",
+    "options": [
+      "开启性能追踪",
+      "关闭性能追踪",
+      "开启调试",
+      "关闭调试"
+    ],
+    "correctAnswer": 0
+  }
+]

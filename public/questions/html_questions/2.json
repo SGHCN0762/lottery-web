@@ -1,0 +1,552 @@
+[
+  {
+    "id": "html-51",
+    "title": "<code>标签的作用是？",
+    "options": [
+      "定义代码片段",
+      "定义变量",
+      "定义预格式文本",
+      "定义键盘输入"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-52",
+    "title": "<pre>标签的作用是？",
+    "options": [
+      "定义预格式文本",
+      "定义代码",
+      "定义段落",
+      "定义引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-53",
+    "title": "<kbd>标签的作用是？",
+    "options": [
+      "定义键盘输入",
+      "定义代码",
+      "定义变量",
+      "定义输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-54",
+    "title": "<samp>标签的作用是？",
+    "options": [
+      "定义程序输出",
+      "定义输入",
+      "定义变量",
+      "定义代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-55",
+    "title": "<var>标签的作用是？",
+    "options": [
+      "定义变量",
+      "定义代码",
+      "定义输入",
+      "定义输出"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-56",
+    "title": "<dfn>标签的作用是？",
+    "options": [
+      "定义术语",
+      "定义缩写",
+      "定义引用",
+      "定义方向"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-57",
+    "title": "<bdo>标签的作用是？",
+    "options": [
+      "覆盖默认文本方向",
+      "定义双下划线",
+      "定义加粗",
+      "定义强调"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-58",
+    "title": "<ruby>标签的作用是？",
+    "options": [
+      "定义拼音/注释",
+      "定义红宝石",
+      "定义变量",
+      "定义引用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-59",
+    "title": "<rt>标签的作用是？",
+    "options": [
+      "定义字符的解释/发音",
+      "定义粗体",
+      "定义替换文本",
+      "定义行文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-60",
+    "title": "<rp>标签的作用是？",
+    "options": [
+      "定义不支持ruby元素的浏览器显示的内容",
+      "定义引用",
+      "定义段落",
+      "定义预格式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-61",
+    "title": "<time>标签的作用是？",
+    "options": [
+      "定义日期/时间",
+      "定义计时器",
+      "定义标题",
+      "定义表格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-62",
+    "title": "<data>标签的作用是？",
+    "options": [
+      "将内容与机器可读的值链接",
+      "定义数据源",
+      "定义数据库",
+      "定义日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-63",
+    "title": "<wbr>标签的作用是？",
+    "options": [
+      "规定文本中的换行时机",
+      "强制换行",
+      "禁止换行",
+      "删除换行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-64",
+    "title": "HTML中的特殊字符 < 用什么表示？",
+    "options": [
+      "<",
+      ">",
+      "&",
+      "&nbsp;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-65",
+    "title": "HTML中的特殊字符 > 用什么表示？",
+    "options": [
+      ">",
+      "<",
+      "&",
+      "\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-66",
+    "title": "HTML中的特殊字符 & 用什么表示？",
+    "options": [
+      "&",
+      "<",
+      ">",
+      "&copy;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-67",
+    "title": "HTML中的非断行空格用什么表示？",
+    "options": [
+      "&nbsp;",
+      "&space;",
+      "&blank;",
+      "&tab;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-68",
+    "title": "HTML中的版权符号用什么表示？",
+    "options": [
+      "&copy;",
+      "&c;",
+      "&copyright;",
+      "&commat;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-69",
+    "title": "HTML中的注册商标符号用什么表示？",
+    "options": [
+      "&reg;",
+      "&r;",
+      "&trade;",
+      "&tm;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-70",
+    "title": "HTML中的商标符号用什么表示？",
+    "options": [
+      "&trade;",
+      "&tm;",
+      "&reg;",
+      "&copy;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-71",
+    "title": "如何创建超链接？",
+    "options": [
+      "<a href=\"url\">",
+      "<link href=\"url\">",
+      "<href=\"url\">",
+      "<url>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-72",
+    "title": "<a>标签的target=\"_blank\"的作用是？",
+    "options": [
+      "在新窗口打开链接",
+      "在当前窗口打开",
+      "在父窗口打开",
+      "在顶层窗口打开"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-73",
+    "title": "<a>标签的href=\"#\"的作用是？",
+    "options": [
+      "链接到页面顶部",
+      "不跳转",
+      "刷新页面",
+      "链接到首页"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-74",
+    "title": "如何创建邮件链接？",
+    "options": [
+      "<a href=\"mailto:email\">",
+      "<a href=\"email\">",
+      "<mail>email</mail>",
+      "<a src=\"email\">"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-75",
+    "title": "如何创建电话链接？",
+    "options": [
+      "<a href=\"tel:number\">",
+      "<a href=\"call:number\">",
+      "<phone>number</phone>",
+      "<a src=\"tel\">"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-76",
+    "title": "<a>标签的download属性作用是？",
+    "options": [
+      "指示浏览器下载URL而不是导航",
+      "删除链接",
+      "上传文件",
+      "预览文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-77",
+    "title": "如何创建锚点链接？",
+    "options": [
+      "使用id属性和href=\"#id\"",
+      "使用name和src",
+      "使用class和href",
+      "使用link和target"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-78",
+    "title": "相对路径 ../ 表示？",
+    "options": [
+      "上一级目录",
+      "当前目录",
+      "根目录",
+      "下一级目录"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-79",
+    "title": "绝对路径的特点是？",
+    "options": [
+      "包含完整的协议和域名",
+      "只包含文件名",
+      "以./开头",
+      "以../开头"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-80",
+    "title": "无序列表的标签是？",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<dl>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-81",
+    "title": "有序列表的标签是？",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<li>",
+      "<dl>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-82",
+    "title": "列表项的标签是？",
+    "options": [
+      "<li>",
+      "<ul>",
+      "<ol>",
+      "<dd>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-83",
+    "title": "定义列表的标签是？",
+    "options": [
+      "<dl>",
+      "<ul>",
+      "<ol>",
+      "<dt>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-84",
+    "title": "定义列表中术语的标签是？",
+    "options": [
+      "<dt>",
+      "<dd>",
+      "<dl>",
+      "<dn>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-85",
+    "title": "定义列表中描述的标签是？",
+    "options": [
+      "<dd>",
+      "<dt>",
+      "<dl>",
+      "<desc>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-86",
+    "title": "表格的根标签是？",
+    "options": [
+      "<table>",
+      "<grid>",
+      "<tbody>",
+      "<tr>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-87",
+    "title": "表格行的标签是？",
+    "options": [
+      "<tr>",
+      "<td>",
+      "<th>",
+      "<row>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-88",
+    "title": "表格单元格的标签是？",
+    "options": [
+      "<td>",
+      "<th>",
+      "<tr>",
+      "<cell>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-89",
+    "title": "表格表头单元格的标签是？",
+    "options": [
+      "<th>",
+      "<td>",
+      "<tr>",
+      "<head>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-90",
+    "title": "<th>标签默认的文本样式是？",
+    "options": [
+      "加粗居中",
+      "正常左对齐",
+      "斜体右对齐",
+      "加粗左对齐"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-91",
+    "title": "合并列的属性是？",
+    "options": [
+      "colspan",
+      "rowspan",
+      "merge",
+      "colmerge"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-92",
+    "title": "合并行的属性是？",
+    "options": [
+      "rowspan",
+      "colspan",
+      "rowmerge",
+      "merge"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-93",
+    "title": "表格标题的标签是？",
+    "options": [
+      "<caption>",
+      "<title>",
+      "<th>",
+      "<header>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-94",
+    "title": "表头部分的标签是？",
+    "options": [
+      "<thead>",
+      "<tbody>",
+      "<tfoot>",
+      "<head>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-95",
+    "title": "表格主体部分的标签是？",
+    "options": [
+      "<tbody>",
+      "<thead>",
+      "<tfoot>",
+      "<body>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-96",
+    "title": "表格页脚部分的标签是？",
+    "options": [
+      "<tfoot>",
+      "<thead>",
+      "<tbody>",
+      "<foot>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-97",
+    "title": "HTML的全称是什么？",
+    "options": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "HyperLink Text Markup Language",
+      "HomeTool Markup Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-98",
+    "title": "HTML文档的根标签是？",
+    "options": [
+      "<html>",
+      "<body>",
+      "<head>",
+      "<root>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-99",
+    "title": "用于定义HTML文档标题的标签是？",
+    "options": [
+      "<title>",
+      "<header>",
+      "<h1>",
+      "<head>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-100",
+    "title": "HTML5文档类型声明是？",
+    "options": [
+      "<!DOCTYPE html>",
+      "<!DOCTYPE HTML5>",
+      "<!HTML>",
+      "<!DOCTYPE>"
+    ],
+    "correctAnswer": 0
+  }
+]

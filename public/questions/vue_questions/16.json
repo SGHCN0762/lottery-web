@@ -1,0 +1,552 @@
+[
+  {
+    "id": "vue-751",
+    "title": "Vue 中过渡的 @before-appear 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-752",
+    "title": "Vue 中过渡的 @appear 钩子参数是？",
+    "options": [
+      "el, done",
+      "el",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-753",
+    "title": "Vue 中过渡的 @after-appear 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-754",
+    "title": "Vue 中过渡的 @appear-cancelled 钩子参数是？",
+    "options": [
+      "el",
+      "el, done",
+      "el, css",
+      "el, duration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-755",
+    "title": "Vue 中 transition-group 的 CSS 移动类名默认是？",
+    "options": [
+      "v-move",
+      "v-enter",
+      "v-leave",
+      "v-active"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-756",
+    "title": "Vue 中 transition-group 的移动过渡如何禁用？",
+    "options": [
+      "move-class=\"none\"",
+      "css=\"false\"",
+      "tag=\"none\"",
+      "disabled"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-757",
+    "title": "Vue 中 transition-group 的子元素位置变化如何动画？",
+    "options": [
+      "自动应用 FLIP 动画",
+      "需要手动实现",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-758",
+    "title": "Vue 中 transition-group 的子元素删除动画如何实现？",
+    "options": [
+      "leave 过渡 + 绝对定位",
+      "需要手动实现",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-759",
+    "title": "Vue 中 transition-group 的子元素添加动画如何实现？",
+    "options": [
+      "enter 过渡",
+      "需要手动实现",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-760",
+    "title": "Vue 中 transition-group 的子元素排序动画如何实现？",
+    "options": [
+      "FLIP 动画",
+      "需要手动实现",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-761",
+    "title": "Vue 中状态过渡可以使用什么库？",
+    "options": [
+      "gsap",
+      "animejs",
+      "mojs",
+      "以上都可以"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-762",
+    "title": "Vue 中状态过渡如何实现数字动画？",
+    "options": [
+      "watch + gsap",
+      "computed",
+      "transition",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-763",
+    "title": "Vue 中状态过渡如何实现颜色动画？",
+    "options": [
+      "watch + gsap",
+      "computed",
+      "transition",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-764",
+    "title": "Vue 中状态过渡如何实现 SVG 动画？",
+    "options": [
+      "watch + gsap",
+      "computed",
+      "transition",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-765",
+    "title": "Vue 中状态过渡如何实现尺寸动画？",
+    "options": [
+      "watch + gsap",
+      "computed",
+      "transition",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-766",
+    "title": "Vue 中过渡如何复用？",
+    "options": [
+      "封装组件",
+      "mixin",
+      "composition",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-767",
+    "title": "Vue 中过渡如何动态切换？",
+    "options": [
+      "动态 name 属性",
+      "动态 component",
+      "动态 transition",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-768",
+    "title": "Vue 中过渡如何嵌套？",
+    "options": [
+      "嵌套 transition 组件",
+      "不支持",
+      "需要特殊语法",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-769",
+    "title": "Vue 中过渡嵌套时如何控制顺序？",
+    "options": [
+      "嵌套组件的 mode 属性",
+      "CSS 优先级",
+      "JavaScript 控制",
+      "无法控制"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-770",
+    "title": "Vue 中过渡如何与路由结合？",
+    "options": [
+      "<transition> 包裹 <router-view>",
+      "router.transition",
+      "route.meta.transition",
+      "以上都可以"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-771",
+    "title": "Vue 中过渡如何与动态组件结合？",
+    "options": [
+      "<transition> 包裹 <component>",
+      "component.transition",
+      "动态组件不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-772",
+    "title": "Vue 中过渡如何与条件渲染结合？",
+    "options": [
+      "<transition> 包裹 v-if/v-show",
+      "v-if.transition",
+      "条件渲染不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-773",
+    "title": "Vue 中过渡如何与列表渲染结合？",
+    "options": [
+      "<transition-group> 包裹 v-for",
+      "v-for.transition",
+      "列表渲染不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-774",
+    "title": "Vue 中过渡如何自定义类名？",
+    "options": [
+      "enter-from-class, enter-active-class 等",
+      "name 属性",
+      "class 属性",
+      "type 属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-775",
+    "title": "Vue 中过渡如何与 Animate.css 结合？",
+    "options": [
+      "自定义类名引入 Animate.css",
+      "直接使用",
+      "不支持",
+      "需要插件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-776",
+    "title": "Vue 中过渡如何与 Tailwind CSS 结合？",
+    "options": [
+      "自定义类名引入 Tailwind",
+      "直接使用",
+      "不支持",
+      "需要插件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-777",
+    "title": "Vue 中过渡的性能优化方式是？",
+    "options": [
+      "使用 transform 和 opacity",
+      "减少 DOM 操作",
+      "使用 will-change",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-778",
+    "title": "Vue 中过渡的 will-change 属性作用是？",
+    "options": [
+      "提示浏览器提前优化",
+      "改变属性",
+      "禁用过渡",
+      "启用过渡"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-779",
+    "title": "Vue 中过渡的 transform 属性为何性能好？",
+    "options": [
+      "不触发重排",
+      "使用 GPU",
+      "不触发重绘",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-780",
+    "title": "Vue 中过渡的 opacity 属性为何性能好？",
+    "options": [
+      "不触发重排",
+      "使用 GPU",
+      "不触发重绘",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-781",
+    "title": "Vue 中过渡的 FLIP 动画原理是？",
+    "options": [
+      "记录前后位置，反转，播放",
+      "直接移动",
+      "CSS 过渡",
+      "JavaScript 动画"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-782",
+    "title": "Vue 中过渡的 FLIP 动画优点是？",
+    "options": [
+      "性能好",
+      "流畅",
+      "无卡顿",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "vue-783",
+    "title": "Vue 中过渡的 FLIP 动画缺点是？",
+    "options": [
+      "计算复杂",
+      "兼容性问题",
+      "不支持 SVG",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-784",
+    "title": "Vue 中过渡的 requestAnimationFrame 作用是？",
+    "options": [
+      "优化动画帧率",
+      "延迟执行",
+      "异步执行",
+      "同步执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-785",
+    "title": "Vue 中过渡的 CSS 变量如何动画？",
+    "options": [
+      "使用 @property 注册",
+      "直接动画",
+      "不支持",
+      "需要 JavaScript"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-786",
+    "title": "Vue 中过渡的 SVG 路径如何动画？",
+    "options": [
+      "stroke-dasharray 和 stroke-dashoffset",
+      "直接动画",
+      "不支持",
+      "需要 JavaScript"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-787",
+    "title": "Vue 中过渡的滚动动画如何实现？",
+    "options": [
+      "Intersection Observer + transition",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-788",
+    "title": "Vue 中过渡的视差动画如何实现？",
+    "options": [
+      "监听滚动 + transform",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-789",
+    "title": "Vue 中过渡的弹性动画如何实现？",
+    "options": [
+      "CSS spring 或 gsap",
+      "直接动画",
+      "不支持",
+      "需要 JavaScript"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-790",
+    "title": "Vue 中过渡的粒子动画如何实现？",
+    "options": [
+      "Canvas 或第三方库",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-791",
+    "title": "Vue 中过渡的 3D 动画如何实现？",
+    "options": [
+      "CSS 3D transform 或 three.js",
+      "直接动画",
+      "不支持",
+      "需要 JavaScript"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-792",
+    "title": "Vue 中过渡的骨架屏动画如何实现？",
+    "options": [
+      "CSS 渐变动画",
+      "直接动画",
+      "不支持",
+      "需要 JavaScript"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-793",
+    "title": "Vue 中过渡的打字机效果如何实现？",
+    "options": [
+      "JavaScript 定时器 + CSS",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-794",
+    "title": "Vue 中过渡的数字滚动动画如何实现？",
+    "options": [
+      "gsap 或 countUp.js",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-795",
+    "title": "Vue 中过渡的页面切换动画如何实现？",
+    "options": [
+      "transition 包裹 router-view",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-796",
+    "title": "Vue 中过渡的元素拖拽动画如何实现？",
+    "options": [
+      "draggable 库 + transition-group",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-797",
+    "title": "Vue 中过渡的模态框动画如何实现？",
+    "options": [
+      "transition 包裹模态框",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-798",
+    "title": "Vue 中过渡的通知动画如何实现？",
+    "options": [
+      "transition-group 包裹通知列表",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-799",
+    "title": "Vue 中过渡的折叠展开动画如何实现？",
+    "options": [
+      "max-height 过渡",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "vue-800",
+    "title": "Vue 中过渡的淡入淡出动画如何实现？",
+    "options": [
+      "opacity 过渡",
+      "直接动画",
+      "不支持",
+      "需要 CSS"
+    ],
+    "correctAnswer": 0
+  }
+]

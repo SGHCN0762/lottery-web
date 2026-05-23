@@ -1,0 +1,552 @@
+[
+  {
+    "id": "html-951",
+    "title": "W3C的全称是？",
+    "options": [
+      "World Wide Web Consortium",
+      "Web World Wide Center",
+      "Western Web Consortium",
+      "World Web Wide Center"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-952",
+    "title": "WHATWG的全称是？",
+    "options": [
+      "Web Hypertext Application Technology Working Group",
+      "Web HTML Application Technology Group",
+      "World Hypertext Application Working Group",
+      "Web HTML And Technology Working Group"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-953",
+    "title": "HTML5标准主要由谁维护？",
+    "options": [
+      "WHATWG",
+      "W3C",
+      "ECMA",
+      "ISO"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-954",
+    "title": "HTML的活标准概念是指？",
+    "options": [
+      "HTML标准持续更新不再有版本号",
+      "标准已固定",
+      "只有HTML5",
+      "每年发布新版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-955",
+    "title": "HTML5废弃的纯表现标签不包括？",
+    "options": [
+      "<div>",
+      "<font>",
+      "<center>",
+      "<big>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-956",
+    "title": "HTML5废弃的框架标签是？",
+    "options": [
+      "<frame>",
+      "<iframe>",
+      "<frameset>",
+      "<frame>和<frameset>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-957",
+    "title": "HTML5废弃的属性不包括？",
+    "options": [
+      "href",
+      "align",
+      "bgcolor",
+      "border"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-958",
+    "title": "响应式设计的核心原则是？",
+    "options": [
+      "适应不同屏幕尺寸",
+      "使用大图",
+      "使用Flash",
+      "固定宽度布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-959",
+    "title": "响应式设计通常使用什么实现？",
+    "options": [
+      "媒体查询和弹性布局",
+      "固定像素",
+      "表格布局",
+      "浮动布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-960",
+    "title": "<meta name=\"viewport\">中user-scalable=no的作用？",
+    "options": [
+      "禁止用户缩放",
+      "允许缩放",
+      "自动缩放",
+      "强制缩放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-961",
+    "title": "PWA的全称是？",
+    "options": [
+      "Progressive Web App",
+      "Portable Web Application",
+      "Performance Web App",
+      "Platform Web App"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-962",
+    "title": "PWA的核心技术不包括？",
+    "options": [
+      "WebAssembly",
+      "Service Worker",
+      "Manifest",
+      "HTTPS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-963",
+    "title": "Web App Manifest的作用是？",
+    "options": [
+      "配置PWA的名称、图标和显示方式",
+      "配置缓存",
+      "配置网络",
+      "配置数据库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-964",
+    "title": "Manifest的display: standalone表示？",
+    "options": [
+      "像原生应用一样显示(无浏览器UI)",
+      "全屏显示",
+      "浏览器标准显示",
+      "最小化显示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-965",
+    "title": "Web Components包括哪些技术？",
+    "options": [
+      "Custom Elements, Shadow DOM, HTML Templates",
+      "React, Vue, Angular",
+      "CSS Grid, Flexbox, Float",
+      "Service Worker, Cache API, Fetch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-966",
+    "title": "Custom Elements的作用是？",
+    "options": [
+      "创建自定义HTML标签",
+      "创建自定义CSS",
+      "创建自定义事件",
+      "创建自定义属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-967",
+    "title": "Shadow DOM的作用是？",
+    "options": [
+      "封装样式和结构避免冲突",
+      "创建暗黑模式",
+      "隐藏真实DOM",
+      "加密DOM节点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-968",
+    "title": "HTML <template>标签的特点？",
+    "options": [
+      "内容不直接渲染但可被JS克隆使用",
+      "直接显示",
+      "只能包含文本",
+      "只能包含样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-969",
+    "title": "<slot>标签的作用？",
+    "options": [
+      "在Shadow DOM中定义插入点",
+      "定义插槽动画",
+      "定义布局",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-970",
+    "title": "ES Modules的script标签type是？",
+    "options": [
+      "module",
+      "modulejs",
+      "esm",
+      "import"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-971",
+    "title": "Nomodule属性的作用？",
+    "options": [
+      "在不支持ES Modules的浏览器中执行脚本",
+      "禁止模块执行",
+      "定义非模块脚本",
+      "异步加载模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-972",
+    "title": "WebAssembly的作用？",
+    "options": [
+      "在浏览器运行接近原生性能的低级代码",
+      "替代JavaScript",
+      "编写HTML",
+      "编写CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-973",
+    "title": "WebAssembly的文件后缀是？",
+    "options": [
+      ".wasm",
+      ".was",
+      ".assembly",
+      ".wa"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-974",
+    "title": "WebAssembly通常与什么配合使用？",
+    "options": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "SQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-975",
+    "title": "HTML中的微数据属性不包括？",
+    "options": [
+      "data-*",
+      "itemscope",
+      "itemtype",
+      "itemprop"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-976",
+    "title": "微格式的作用是？",
+    "options": [
+      "为现有HTML添加机器可读语义",
+      "优化性能",
+      "增强安全",
+      "美化页面"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-977",
+    "title": "HTML规范中，块级元素不能放在内联元素中体现了？",
+    "options": [
+      "嵌套规则",
+      "显示规则",
+      "样式规则",
+      "脚本规则"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-978",
+    "title": "W3C的全称是？",
+    "options": [
+      "World Wide Web Consortium",
+      "Web World Wide Center",
+      "Western Web Consortium",
+      "World Web Wide Center"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-979",
+    "title": "WHATWG的全称是？",
+    "options": [
+      "Web Hypertext Application Technology Working Group",
+      "Web HTML Application Technology Group",
+      "World Hypertext Application Working Group",
+      "Web HTML And Technology Working Group"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-980",
+    "title": "HTML5标准主要由谁维护？",
+    "options": [
+      "WHATWG",
+      "W3C",
+      "ECMA",
+      "ISO"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-981",
+    "title": "HTML的活标准概念是指？",
+    "options": [
+      "HTML标准持续更新不再有版本号",
+      "标准已固定",
+      "只有HTML5",
+      "每年发布新版本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-982",
+    "title": "HTML5废弃的纯表现标签不包括？",
+    "options": [
+      "<div>",
+      "<font>",
+      "<center>",
+      "<big>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-983",
+    "title": "HTML5废弃的框架标签是？",
+    "options": [
+      "<frame>",
+      "<iframe>",
+      "<frameset>",
+      "<frame>和<frameset>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-984",
+    "title": "HTML5废弃的属性不包括？",
+    "options": [
+      "href",
+      "align",
+      "bgcolor",
+      "border"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-985",
+    "title": "响应式设计的核心原则是？",
+    "options": [
+      "适应不同屏幕尺寸",
+      "使用大图",
+      "使用Flash",
+      "固定宽度布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-986",
+    "title": "响应式设计通常使用什么实现？",
+    "options": [
+      "媒体查询和弹性布局",
+      "固定像素",
+      "表格布局",
+      "浮动布局"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-987",
+    "title": "<meta name=\"viewport\">中user-scalable=no的作用？",
+    "options": [
+      "禁止用户缩放",
+      "允许缩放",
+      "自动缩放",
+      "强制缩放"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-988",
+    "title": "PWA的全称是？",
+    "options": [
+      "Progressive Web App",
+      "Portable Web Application",
+      "Performance Web App",
+      "Platform Web App"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-989",
+    "title": "PWA的核心技术不包括？",
+    "options": [
+      "WebAssembly",
+      "Service Worker",
+      "Manifest",
+      "HTTPS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-990",
+    "title": "Web App Manifest的作用是？",
+    "options": [
+      "配置PWA的名称、图标和显示方式",
+      "配置缓存",
+      "配置网络",
+      "配置数据库"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-991",
+    "title": "Manifest的display: standalone表示？",
+    "options": [
+      "像原生应用一样显示(无浏览器UI)",
+      "全屏显示",
+      "浏览器标准显示",
+      "最小化显示"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-992",
+    "title": "Web Components包括哪些技术？",
+    "options": [
+      "Custom Elements, Shadow DOM, HTML Templates",
+      "React, Vue, Angular",
+      "CSS Grid, Flexbox, Float",
+      "Service Worker, Cache API, Fetch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-993",
+    "title": "Custom Elements的作用是？",
+    "options": [
+      "创建自定义HTML标签",
+      "创建自定义CSS",
+      "创建自定义事件",
+      "创建自定义属性"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-994",
+    "title": "Shadow DOM的作用是？",
+    "options": [
+      "封装样式和结构避免冲突",
+      "创建暗黑模式",
+      "隐藏真实DOM",
+      "加密DOM节点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-995",
+    "title": "HTML <template>标签的特点？",
+    "options": [
+      "内容不直接渲染但可被JS克隆使用",
+      "直接显示",
+      "只能包含文本",
+      "只能包含样式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-996",
+    "title": "<slot>标签的作用？",
+    "options": [
+      "在Shadow DOM中定义插入点",
+      "定义插槽动画",
+      "定义布局",
+      "定义变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-997",
+    "title": "ES Modules的script标签type是？",
+    "options": [
+      "module",
+      "modulejs",
+      "esm",
+      "import"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-998",
+    "title": "Nomodule属性的作用？",
+    "options": [
+      "在不支持ES Modules的浏览器中执行脚本",
+      "禁止模块执行",
+      "定义非模块脚本",
+      "异步加载模块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-999",
+    "title": "WebAssembly的作用？",
+    "options": [
+      "在浏览器运行接近原生性能的低级代码",
+      "替代JavaScript",
+      "编写HTML",
+      "编写CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "html-1000",
+    "title": "WebAssembly的文件后缀是？",
+    "options": [
+      ".wasm",
+      ".was",
+      ".assembly",
+      ".wa"
+    ],
+    "correctAnswer": 0
+  }
+]

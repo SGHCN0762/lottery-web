@@ -1,0 +1,558 @@
+[
+  {
+    "id": "c-451",
+    "title": "C语言中，main函数返回0表示？",
+    "options": [
+      "程序成功",
+      "程序失败",
+      "程序异常",
+      "程序警告"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-452",
+    "title": "C语言中，main函数返回非0表示？",
+    "options": [
+      "程序失败或异常",
+      "程序成功",
+      "程序警告",
+      "无意义"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-453",
+    "title": "C语言中，命令行参数解析通常用什么？",
+    "options": [
+      "getopt",
+      "argv",
+      "scanf",
+      "getchar"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-454",
+    "title": "C语言中，getopt的作用是？",
+    "options": [
+      "解析命令行选项",
+      "获取字符",
+      "获取环境变量",
+      "获取时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-455",
+    "title": "C语言中，环境变量操作函数是？",
+    "options": [
+      "getenv/setenv",
+      "getenv/putenv",
+      "getenv/unsetenv",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-456",
+    "title": "C语言中，longjmp跳转后局部变量的值？",
+    "options": [
+      "volatile变量保持最新，其他不确定",
+      "保持不变",
+      "重置为0",
+      "随机值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-457",
+    "title": "C语言中，可变参数宏的语法是？",
+    "options": [
+      "__VA_ARGS__",
+      "args...",
+      "va_list",
+      "..."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-458",
+    "title": "C语言中，可变参数宏是哪个标准引入的？",
+    "options": [
+      "C99",
+      "C89",
+      "C11",
+      "C++"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-459",
+    "title": "C语言中，__func__的作用是？",
+    "options": [
+      "获取当前函数名",
+      "获取文件名",
+      "获取行号",
+      "获取日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-460",
+    "title": "C语言中，__FILE__的作用是？",
+    "options": [
+      "获取当前文件名",
+      "获取函数名",
+      "获取行号",
+      "获取日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-461",
+    "title": "C语言中，__LINE__的作用是？",
+    "options": [
+      "获取当前行号",
+      "获取文件名",
+      "获取函数名",
+      "获取日期"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-462",
+    "title": "C语言中，__DATE__的作用是？",
+    "options": [
+      "获取编译日期",
+      "获取当前日期",
+      "获取时间",
+      "获取行号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-463",
+    "title": "C语言中，__TIME__的作用是？",
+    "options": [
+      "获取编译时间",
+      "获取当前时间",
+      "获取日期",
+      "获取行号"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-464",
+    "title": "C语言中，#pragma once的作用是？",
+    "options": [
+      "防止头文件重复包含",
+      "只编译一次",
+      "运行一次",
+      "定义宏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-465",
+    "title": "C语言中，#pragma once和#ifndef的区别？",
+    "options": [
+      "#pragma once非标准但简单，#ifndef标准",
+      "没有区别",
+      "#pragma once标准",
+      "#ifndef非标准"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-466",
+    "title": "C语言中，静态分析工具是？",
+    "options": [
+      "splint, cppcheck",
+      "valgrind",
+      "gdb",
+      "gcc"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-467",
+    "title": "C语言中，动态分析工具是？",
+    "options": [
+      "valgrind, AddressSanitizer",
+      "splint",
+      "cppcheck",
+      "lint"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-468",
+    "title": "C语言中，AddressSanitizer(ASan)的作用是？",
+    "options": [
+      "检测内存错误",
+      "检测数据竞争",
+      "检测性能瓶颈",
+      "检测代码风格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-469",
+    "title": "C语言中，ThreadSanitizer(TSan)的作用是？",
+    "options": [
+      "检测数据竞争",
+      "检测内存错误",
+      "检测性能瓶颈",
+      "检测代码风格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-470",
+    "title": "C语言中，UndefinedBehaviorSanitizer(UBSan)的作用是？",
+    "options": [
+      "检测未定义行为",
+      "检测内存错误",
+      "检测数据竞争",
+      "检测性能瓶颈"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-471",
+    "title": "C语言中，MemorySanitizer(MSan)的作用是？",
+    "options": [
+      "检测未初始化内存读取",
+      "检测内存泄漏",
+      "检测越界",
+      "检测竞争"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-472",
+    "title": "C语言中，如何开启ASan？",
+    "options": [
+      "gcc -fsanitize=address",
+      "gcc -g",
+      "gcc -O2",
+      "gcc -Wall"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-473",
+    "title": "C语言中，性能分析工具是？",
+    "options": [
+      "gprof, perf",
+      "valgrind",
+      "gdb",
+      "cppcheck"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-474",
+    "title": "C语言中，gprof的使用步骤是？",
+    "options": [
+      "编译加-pg，运行，gprof分析",
+      "直接运行",
+      "编译加-g",
+      "编译加-O2"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-475",
+    "title": "C语言中，代码覆盖率工具是？",
+    "options": [
+      "gcov",
+      "gprof",
+      "valgrind",
+      "gdb"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-476",
+    "title": "C语言中，文档生成工具是？",
+    "options": [
+      "Doxygen",
+      "gprof",
+      "valgrind",
+      "gdb"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-477",
+    "title": "C语言中，Doxygen的注释风格是？",
+    "options": [
+      "/** ... */",
+      "// ...",
+      "/* ... */",
+      "# ..."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-478",
+    "title": "C语言中，单元测试框架是？",
+    "options": [
+      "Check, CMocka",
+      "JUnit",
+      "pytest",
+      "gtest"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-479",
+    "title": "C语言中，mock框架的作用是？",
+    "options": [
+      "模拟依赖模块",
+      "性能测试",
+      "代码覆盖率",
+      "静态分析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-480",
+    "title": "C语言中，栈溢出(Stack Overflow)的常见原因是？",
+    "options": [
+      "递归过深或局部变量过大",
+      "内存泄漏",
+      "使用malloc",
+      "使用全局变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-481",
+    "title": "C语言中，结构体使用什么关键字定义？",
+    "options": [
+      "struct",
+      "class",
+      "union",
+      "enum"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-482",
+    "title": "C语言中，结构体成员默认访问权限是？",
+    "options": [
+      "公开",
+      "私有",
+      "保护",
+      "无权限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-483",
+    "title": "C语言中，结构体可以包含函数吗？",
+    "options": [
+      "不可以，但可以有函数指针",
+      "可以",
+      "只能包含构造函数",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-484",
+    "title": "C语言中，结构体赋值是深拷贝还是浅拷贝？",
+    "options": [
+      "浅拷贝(值拷贝)",
+      "深拷贝",
+      "引用拷贝",
+      "不拷贝"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-485",
+    "title": "C语言中，结构体包含指针成员赋值时注意什么？",
+    "options": [
+      "指针指向同一内存，修改会相互影响",
+      "没有任何问题",
+      "会自动深拷贝",
+      "编译错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-486",
+    "title": "C语言中，如何实现结构体的深拷贝？",
+    "options": [
+      "手动分配内存并拷贝指针指向的内容",
+      "直接赋值",
+      "使用memcpy",
+      "使用strcpy"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-487",
+    "title": "C语言中，结构体可以作为函数参数吗？",
+    "options": [
+      "可以，但传指针更高效",
+      "不可以",
+      "只能传全局变量",
+      "只能传值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-488",
+    "title": "C语言中，结构体传指针的好处是？",
+    "options": [
+      "节省内存和时间",
+      "更安全",
+      "可以修改实参",
+      "A和C都对"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "c-489",
+    "title": "C语言中，结构体对齐的目的是？",
+    "options": [
+      "提高访问效率",
+      "节省内存",
+      "安全考虑",
+      "编译要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-490",
+    "title": "C语言中，如何修改结构体对齐方式？",
+    "options": [
+      "#pragma pack",
+      "#define",
+      "typedef",
+      "static"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-491",
+    "title": "C语言中，结构体的大小如何计算？",
+    "options": [
+      "最大成员对齐数的整数倍",
+      "所有成员大小之和",
+      "第一个成员大小",
+      "随机大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-492",
+    "title": "C语言中，空结构体的大小是？",
+    "options": [
+      "0或1(取决于编译器)",
+      "0",
+      "1",
+      "4"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-493",
+    "title": "C语言中，柔性数组成员的特点？",
+    "options": [
+      "必须是最后一个成员，不指定大小",
+      [
+        "可以是第一个成员"
+      ],
+      [
+        "大小为1"
+      ],
+      [
+        "可以指定大小"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-494",
+    "title": "C语言中，柔性数组成员的作用？",
+    "options": [
+      "实现变长结构体",
+      "节省内存",
+      "加快访问",
+      "对齐优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-495",
+    "title": "C语言中，struct和class在C++中的区别？",
+    "options": [
+      "默认访问权限不同",
+      "没有区别",
+      "struct不能有方法",
+      "class不能有方法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-496",
+    "title": "C语言中，结构体初始化的方式有？",
+    "options": [
+      "顺序初始化、指定初始化(C99)",
+      "只能顺序初始化",
+      "只能指定初始化",
+      "不能初始化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-497",
+    "title": "C语言中，指定初始化器的语法是？",
+    "options": [
+      ".member = value",
+      "member = value",
+      "member: value",
+      "member <- value"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-498",
+    "title": "C语言中，结构体嵌套是指？",
+    "options": [
+      "结构体包含另一个结构体",
+      "结构体包含自身",
+      "结构体包含函数",
+      "结构体包含数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-499",
+    "title": "C语言中，结构体可以包含自身类型的指针吗？",
+    "options": [
+      "可以，实现链表等",
+      "不可以",
+      "只能包含自身类型的引用",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-500",
+    "title": "C语言中，结构体可以包含自身类型的变量吗？",
+    "options": [
+      "不可以，会导致无限大小",
+      "可以",
+      "只能包含指针",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  }
+]

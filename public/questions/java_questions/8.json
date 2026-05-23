@@ -1,0 +1,552 @@
+[
+  {
+    "id": "java-351",
+    "title": "Java中Iterable接口的作用是？",
+    "options": [
+      "定义迭代能力",
+      "定义比较能力",
+      "定义克隆能力",
+      "定义序列化能力"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-352",
+    "title": "Java中Iterator接口的作用是？",
+    "options": [
+      "定义迭代器",
+      "定义比较器",
+      "定义克隆器",
+      "定义序列化器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-353",
+    "title": "Java中ListIterator接口的作用是？",
+    "options": [
+      "定义列表迭代器",
+      "定义集合迭代器",
+      "定义映射迭代器",
+      "定义数组迭代器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-354",
+    "title": "Java中fail-fast机制是指？",
+    "options": [
+      "并发修改时快速失败",
+      "内存不足时快速失败",
+      "类型错误时快速失败",
+      "空指针时快速失败"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-355",
+    "title": "Java中fail-safe机制是指？",
+    "options": [
+      "并发修改时安全失败",
+      "内存不足时安全失败",
+      "类型错误时安全失败",
+      "空指针时安全失败"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-356",
+    "title": "Java中异常的基类是？",
+    "options": [
+      "Throwable",
+      "Exception",
+      "Error",
+      "RuntimeException"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-357",
+    "title": "Java中Error的特点是？",
+    "options": [
+      "严重错误，程序无法处理",
+      "轻微错误，程序可以处理",
+      "编译错误",
+      "运行错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-358",
+    "title": "Java中Exception的特点是？",
+    "options": [
+      "程序可以处理的错误",
+      "程序无法处理的错误",
+      "编译错误",
+      "系统错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-359",
+    "title": "Java中RuntimeException的特点是？",
+    "options": [
+      "非受检异常",
+      "受检异常",
+      "编译异常",
+      "系统异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-360",
+    "title": "Java中受检异常的特点是？",
+    "options": [
+      "必须处理或声明",
+      "可以不处理",
+      "编译器不检查",
+      "运行时才检查"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-361",
+    "title": "Java中ArrayList的初始容量是？",
+    "options": [
+      "10",
+      "0",
+      "16",
+      "20"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-362",
+    "title": "Java中ArrayList的扩容机制是？",
+    "options": [
+      "1.5倍",
+      "2倍",
+      "1倍",
+      "0.5倍"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-363",
+    "title": "Java中ArrayList的随机访问时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-364",
+    "title": "Java中ArrayList的插入时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-365",
+    "title": "Java中LinkedList的随机访问时间复杂度是？",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-366",
+    "title": "Java中LinkedList的插入时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-367",
+    "title": "Java中HashMap的默认初始容量是？",
+    "options": [
+      "16",
+      "10",
+      "32",
+      "64"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-368",
+    "title": "Java中HashMap的默认负载因子是？",
+    "options": [
+      "0.75",
+      "0.5",
+      "0.8",
+      "1.0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-369",
+    "title": "Java中HashMap的扩容机制是？",
+    "options": [
+      "2倍",
+      "1.5倍",
+      "1倍",
+      "0.5倍"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-370",
+    "title": "Java中HashMap的链表转红黑树阈值是？",
+    "options": [
+      "8",
+      "6",
+      "4",
+      "10"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-371",
+    "title": "Java中HashMap的红黑树转链表阈值是？",
+    "options": [
+      "6",
+      "8",
+      "4",
+      "10"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-372",
+    "title": "Java中HashMap的树化最小容量是？",
+    "options": [
+      "64",
+      "32",
+      "16",
+      "128"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-373",
+    "title": "Java中HashMap的hash方法作用是？",
+    "options": [
+      "扰动函数，减少碰撞",
+      "加密哈希",
+      "生成随机数",
+      "计算索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-374",
+    "title": "Java中HashMap的put过程是？",
+    "options": [
+      "hash -> 定位桶 -> 链表/树 -> 插入/更新",
+      "定位桶 -> hash -> 插入/更新",
+      "插入 -> hash -> 定位桶",
+      "更新 -> 定位桶 -> hash"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-375",
+    "title": "Java中HashMap的get过程是？",
+    "options": [
+      "hash -> 定位桶 -> 遍历链表/树",
+      "定位桶 -> hash -> 遍历",
+      "遍历 -> hash -> 定位桶",
+      "定位桶 -> 遍历 -> hash"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-376",
+    "title": "Java中HashMap的resize过程是？",
+    "options": [
+      "创建新数组 -> 重新hash分配",
+      "在原数组上扩容",
+      "复制原数组",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-377",
+    "title": "Java中HashMap为什么不是线程安全的？",
+    "options": [
+      "并发put可能导致数据丢失或死循环",
+      "没有加锁",
+      "没有volatile",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-378",
+    "title": "Java中ConcurrentHashMap的实现原理是？",
+    "options": [
+      "分段锁或CAS+synchronized",
+      "全表锁",
+      "读写锁",
+      "乐观锁"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-379",
+    "title": "Java中ConcurrentHashMap的并发度是？",
+    "options": [
+      "取决于并发级别或桶数量",
+      "固定16",
+      "固定32",
+      "无限"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-380",
+    "title": "Java中ConcurrentHashMap的null键和null值？",
+    "options": [
+      "都不允许",
+      "允许null键",
+      "允许null值",
+      "都允许"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-381",
+    "title": "Java中HashMap允许null键和null值吗？",
+    "options": [
+      "都允许",
+      "都不允许",
+      "允许null键",
+      "允许null值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-382",
+    "title": "Java中Hashtable允许null键和null值吗？",
+    "options": [
+      "都不允许",
+      "都允许",
+      "允许null键",
+      "允许null值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-383",
+    "title": "Java中HashSet的底层实现是？",
+    "options": [
+      "HashMap",
+      "TreeMap",
+      "LinkedHashMap",
+      "Hashtable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-384",
+    "title": "Java中TreeSet的底层实现是？",
+    "options": [
+      "TreeMap",
+      "HashMap",
+      "LinkedHashMap",
+      "Hashtable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-385",
+    "title": "Java中LinkedHashSet的底层实现是？",
+    "options": [
+      "LinkedHashMap",
+      "HashMap",
+      "TreeMap",
+      "Hashtable"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-386",
+    "title": "Java中ArrayList的底层实现是？",
+    "options": [
+      "Object数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-387",
+    "title": "Java中LinkedList的底层实现是？",
+    "options": [
+      "双向链表",
+      "单向链表",
+      "数组",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-388",
+    "title": "Java中Vector的底层实现是？",
+    "options": [
+      "Object数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-389",
+    "title": "Java中Stack的底层实现是？",
+    "options": [
+      "Object数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-390",
+    "title": "Java中PriorityQueue的底层实现是？",
+    "options": [
+      "小顶堆",
+      "大顶堆",
+      "链表",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-391",
+    "title": "Java中ArrayDeque的底层实现是？",
+    "options": [
+      "循环数组",
+      "链表",
+      "哈希表",
+      "红黑树"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-392",
+    "title": "Java中Collections.sort()的底层算法是？",
+    "options": [
+      "TimSort",
+      "QuickSort",
+      "MergeSort",
+      "HeapSort"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-393",
+    "title": "Java中Arrays.sort()的底层算法是？",
+    "options": [
+      "DualPivotQuicksort",
+      "QuickSort",
+      "MergeSort",
+      "HeapSort"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-394",
+    "title": "Java中Collections.synchronizedList()的作用是？",
+    "options": [
+      "创建线程安全的List",
+      "创建不可变List",
+      "创建同步List",
+      "创建排序List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-395",
+    "title": "Java中Collections.unmodifiableList()的作用是？",
+    "options": [
+      "创建不可变List",
+      "创建线程安全List",
+      "创建同步List",
+      "创建排序List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-396",
+    "title": "Java中Collections.emptyList()的作用是？",
+    "options": [
+      "创建空List",
+      "创建不可变List",
+      "创建线程安全List",
+      "创建同步List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-397",
+    "title": "Java中Collections.singletonList()的作用是？",
+    "options": [
+      "创建单元素List",
+      "创建空List",
+      "创建不可变List",
+      "创建同步List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-398",
+    "title": "Java中List的subList()方法的特点是？",
+    "options": [
+      "返回原List的视图",
+      "返回新List",
+      "返回不可变List",
+      "返回同步List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-399",
+    "title": "Java中Map的entrySet()方法返回？",
+    "options": [
+      "键值对Set",
+      "键Set",
+      "值Collection",
+      "键值对List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-400",
+    "title": "Java中Map的keySet()方法返回？",
+    "options": [
+      "键Set",
+      "键值对Set",
+      "值Collection",
+      "键值对List"
+    ],
+    "correctAnswer": 1
+  }
+]

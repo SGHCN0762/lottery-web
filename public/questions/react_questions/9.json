@@ -1,0 +1,552 @@
+[
+  {
+    "id": "react-401",
+    "title": "Redux 的核心原则是？",
+    "options": [
+      "单一数据源、State 只读、纯函数修改",
+      "多数据源、直接修改、异步修改",
+      "双向绑定、响应式、观察者",
+      "组件化、声明式、虚拟 DOM"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-402",
+    "title": "Redux 中 Action 的作用是？",
+    "options": [
+      "描述发生了什么的普通对象",
+      "修改 State 的函数",
+      "创建 Store 的函数",
+      "监听变化的函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-403",
+    "title": "Redux 中 Action 必须包含哪个属性？",
+    "options": [
+      "type",
+      "payload",
+      "meta",
+      "error"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-404",
+    "title": "Redux 中 Reducer 的作用是？",
+    "options": [
+      "接收旧 State 和 Action 返回新 State 的纯函数",
+      "发起网络请求",
+      "创建 Action",
+      "订阅 Store"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-405",
+    "title": "Redux 中 Store 的作用是？",
+    "options": [
+      "保存 State、提供 getState/dispatch/subscribe 方法",
+      "定义 Action 类型",
+      "处理副作用",
+      "渲染组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-406",
+    "title": "Redux 中 createStore 的参数是？",
+    "options": [
+      "reducer, preloadedState, enhancer",
+      "action, state, reducer",
+      "middleware, reducer, store",
+      "以上都不对"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-407",
+    "title": "Redux 中如何获取当前 State？",
+    "options": [
+      "store.getState()",
+      "store.state",
+      "store.getState",
+      "store.get()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-408",
+    "title": "Redux 中如何派发 Action？",
+    "options": [
+      "store.dispatch(action)",
+      "store.emit(action)",
+      "store.send(action)",
+      "store.push(action)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-409",
+    "title": "Redux 中如何监听 State 变化？",
+    "options": [
+      "store.subscribe(listener)",
+      "store.watch(listener)",
+      "store.on(listener)",
+      "store.listen(listener)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-410",
+    "title": "Redux 中 Reducer 为什么必须是纯函数？",
+    "options": [
+      "保证状态可预测、可追溯、方便测试",
+      "性能要求",
+      "语法限制",
+      "安全原因"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-411",
+    "title": "Redux 中 combineReducers 的作用是？",
+    "options": [
+      "将多个 Reducer 合并为一个根 Reducer",
+      "合并多个 Store",
+      "合并多个 Action",
+      "合并多个中间件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-412",
+    "title": "Redux 中 Middleware 的作用是？",
+    "options": [
+      "在 dispatch 和 reducer 之间扩展功能",
+      "创建 Store",
+      "修改 State",
+      "渲染组件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-413",
+    "title": "Redux 中 applyMiddleware 的作用是？",
+    "options": [
+      "应用中间件到 Store",
+      "创建 Reducer",
+      "创建 Action",
+      "创建 Store"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-414",
+    "title": "Redux 中 redux-thunk 的作用是？",
+    "options": [
+      "处理异步 Action",
+      "记录日志",
+      "持久化状态",
+      "路由管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-415",
+    "title": "Redux 中 redux-saga 的作用是？",
+    "options": [
+      "使用 Generator 管理复杂异步流",
+      "处理简单异步",
+      "记录日志",
+      "持久化状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-416",
+    "title": "Redux 中 redux-observable 的作用是？",
+    "options": [
+      "使用 RxJS 管理异步流",
+      "处理简单异步",
+      "记录日志",
+      "持久化状态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-417",
+    "title": "Redux Toolkit 的作用是？",
+    "options": [
+      "简化 Redux 开发的官方工具集",
+      "替代 Redux",
+      "UI 组件库",
+      "路由管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-418",
+    "title": "Redux Toolkit 中 createSlice 的作用是？",
+    "options": [
+      "自动生成 Action 和 Reducer",
+      "创建 Store",
+      "创建中间件",
+      "创建选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-419",
+    "title": "Redux Toolkit 中 configureStore 的作用是？",
+    "options": [
+      "简化 Store 创建并自动集成中间件",
+      "创建 Reducer",
+      "创建 Action",
+      "创建选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-420",
+    "title": "Redux Toolkit 中 createAsyncThunk 的作用是？",
+    "options": [
+      "处理异步逻辑并生成 Action",
+      "创建同步 Action",
+      "创建 Reducer",
+      "创建选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-421",
+    "title": "Redux Toolkit 中 createEntityAdapter 的作用是？",
+    "options": [
+      "管理规范化数据集",
+      "创建实体",
+      "创建异步逻辑",
+      "创建选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-422",
+    "title": "Redux Toolkit 中 createSelector 的作用是？",
+    "options": [
+      "创建记忆化选择器优化性能",
+      "创建 Action",
+      "创建 Reducer",
+      "创建中间件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-423",
+    "title": "Redux 中 Selector 的作用是？",
+    "options": [
+      "从 Store 中提取特定数据",
+      "选择 Action",
+      "选择 Reducer",
+      "选择中间件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-424",
+    "title": "Redux 中记忆化 Selector 的好处是？",
+    "options": [
+      "避免不必要的重新计算",
+      "增加计算",
+      "简化代码",
+      "异步处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-425",
+    "title": "Redux 中如何组织代码结构？",
+    "options": [
+      "按功能模块组织或按类型组织",
+      "全部放在一个文件",
+      "按字母排序",
+      "随机组织"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-426",
+    "title": "Redux 中 Ducks 模式是？",
+    "options": [
+      "将 Action 和 Reducer 放在同一个文件的模式",
+      "鸭子类型",
+      "设计模式",
+      "架构模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-427",
+    "title": "Redux 中如何处理表单状态？",
+    "options": [
+      "使用 Redux Form 或 React Hook Form",
+      "直接存在 State",
+      "使用 localStorage",
+      "无法处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-428",
+    "title": "Redux 中如何实现撤销重做？",
+    "options": [
+      "保存历史 State 数组或使用 redux-undo",
+      "无法实现",
+      "直接修改 State",
+      "使用 Reducer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-429",
+    "title": "Redux 中如何实现持久化？",
+    "options": [
+      "使用 redux-persist 库",
+      "直接保存文件",
+      "使用 Cookie",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-430",
+    "title": "Redux 中如何测试 Reducer？",
+    "options": [
+      "传入旧 State 和 Action 断言新 State",
+      "测试 UI",
+      "测试网络",
+      "无法测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-431",
+    "title": "Redux 中如何测试 Action Creator？",
+    "options": [
+      "调用并断言返回的 Action 对象",
+      "测试 UI",
+      "测试网络",
+      "无法测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-432",
+    "title": "Redux 中如何测试异步 Action？",
+    "options": [
+      "使用 mock 或 redux-mock-store",
+      "直接测试",
+      "测试 UI",
+      "无法测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-433",
+    "title": "Redux 中如何测试 Selector？",
+    "options": [
+      "传入 State 断言返回值",
+      "测试 UI",
+      "测试网络",
+      "无法测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-434",
+    "title": "Redux 中如何测试 Middleware？",
+    "options": [
+      "模拟 store 和 next 调用中间件",
+      "测试 UI",
+      "测试网络",
+      "无法测试"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-435",
+    "title": "Redux 中如何处理错误？",
+    "options": [
+      "在 Reducer 或 Middleware 中捕获并更新 State",
+      "直接抛出",
+      "忽略",
+      "使用 try/catch"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-436",
+    "title": "Redux 中如何处理加载状态？",
+    "options": [
+      "在 State 中添加 loading 字段",
+      "使用 setTimeout",
+      "使用 Promise",
+      "无法处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-437",
+    "title": "Redux 中如何处理分页？",
+    "options": [
+      "在 State 中保存分页信息和数据",
+      "使用 API",
+      "使用路由",
+      "无法处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-438",
+    "title": "Redux 中如何处理缓存？",
+    "options": [
+      "在 State 中缓存数据避免重复请求",
+      "使用 localStorage",
+      "使用 sessionStorage",
+      "无法处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-439",
+    "title": "Redux 中如何实现乐观更新？",
+    "options": [
+      "先更新 State 失败再回滚",
+      "等待后端响应",
+      "无法实现",
+      "使用 Reducer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-440",
+    "title": "Redux 中如何实现权限控制？",
+    "options": [
+      "在 State 中保存权限信息并在组件中判断",
+      "使用路由",
+      "使用中间件",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-441",
+    "title": "Redux 中如何实现国际化？",
+    "options": [
+      "在 State 中保存语言包和当前语言",
+      "使用 JSON",
+      "使用 Context",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-442",
+    "title": "Redux 中如何实现主题切换？",
+    "options": [
+      "在 State 中保存主题配置",
+      "使用 CSS 变量",
+      "使用 Context",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-443",
+    "title": "Redux 中如何实现实时数据？",
+    "options": [
+      "使用 WebSocket 更新 State",
+      "使用轮询",
+      "使用 SSE",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-444",
+    "title": "Redux 中如何实现定时器？",
+    "options": [
+      "在 Middleware 或组件中管理",
+      "使用 setTimeout",
+      "使用 setInterval",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-445",
+    "title": "Redux 中如何实现文件上传？",
+    "options": [
+      "在异步 Action 中处理并更新进度 State",
+      "直接上传",
+      "使用 FormData",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-446",
+    "title": "Redux 中如何实现数据加密？",
+    "options": [
+      "在 Middleware 中加密解密",
+      "使用 HTTPS",
+      "使用 CryptoJS",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-447",
+    "title": "Redux 中如何实现数据序列化？",
+    "options": [
+      "在 Middleware 中序列化反序列化",
+      "使用 JSON",
+      "使用 protobuf",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-448",
+    "title": "Redux 中如何实现数据验证？",
+    "options": [
+      "在 Reducer 或 Middleware 中验证",
+      "使用 PropTypes",
+      "使用 TypeScript",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-449",
+    "title": "Redux 中如何实现数据格式化？",
+    "options": [
+      "在 Selector 中格式化数据",
+      "在 Reducer 中格式化",
+      "在组件中格式化",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-450",
+    "title": "Redux 中如何实现数据脱敏？",
+    "options": [
+      "在 Selector 中脱敏数据",
+      "在 Reducer 中脱敏",
+      "在组件中脱敏",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  }
+]

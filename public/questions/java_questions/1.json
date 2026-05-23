@@ -1,0 +1,552 @@
+[
+  {
+    "id": "java-1",
+    "title": "Java语言的特点不包括？",
+    "options": [
+      "面向对象",
+      "跨平台",
+      "多继承",
+      "自动垃圾回收"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-2",
+    "title": "Java中基本数据类型有几种？",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-3",
+    "title": "以下哪个不是Java的基本数据类型？",
+    "options": [
+      "int",
+      "boolean",
+      "String",
+      "char"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-4",
+    "title": "Java中哪个关键字用于定义类？",
+    "options": [
+      "interface",
+      "class",
+      "struct",
+      "define"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-5",
+    "title": "Java中main方法的签名是？",
+    "options": [
+      "public void main(String[] args)",
+      "public static void main(String[] args)",
+      "static void main(String args)",
+      "public static main(String[] args)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-6",
+    "title": "Java中哪个关键字用于实现接口？",
+    "options": [
+      "extends",
+      "implements",
+      "interface",
+      "abstract"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-7",
+    "title": "Java中char类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-8",
+    "title": "Java中int类型占几个字节？",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-9",
+    "title": "Java中long类型占几个字节？",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-10",
+    "title": "Java中double类型占几个字节？",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-11",
+    "title": "Java中哪个关键字用于包声明？",
+    "options": [
+      "package",
+      "import",
+      "include",
+      "namespace"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-12",
+    "title": "Java中哪个关键字用于导入包？",
+    "options": [
+      "package",
+      "import",
+      "include",
+      "using"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-13",
+    "title": "Java中哪个访问修饰符的访问范围最小？",
+    "options": [
+      "public",
+      "protected",
+      "default",
+      "private"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-14",
+    "title": "Java中哪个访问修饰符的访问范围最大？",
+    "options": [
+      "public",
+      "protected",
+      "default",
+      "private"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-15",
+    "title": "Java中==和equals的区别是？",
+    "options": [
+      "==比较引用，equals比较值",
+      "==比较值，equals比较引用",
+      "没有区别",
+      "取决于类"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-16",
+    "title": "Java中String是不可变的，原因是什么？",
+    "options": [
+      "被final修饰",
+      "内部value数组被final修饰且无私有方法修改",
+      "被static修饰",
+      "被private修饰"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-17",
+    "title": "Java中StringBuilder和StringBuffer的区别是？",
+    "options": [
+      "StringBuffer线程安全",
+      "StringBuilder线程安全",
+      "没有区别",
+      "性能一样"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-18",
+    "title": "Java中哪个关键字用于异常捕获？",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "throw"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-19",
+    "title": "Java中哪个关键字用于抛出异常？",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "throw"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-20",
+    "title": "Java中哪个关键字用于方法重写？",
+    "options": [
+      "overload",
+      "override",
+      "overwrite",
+      "hide"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-21",
+    "title": "Java中哪个关键字用于方法重载？",
+    "options": [
+      "overload",
+      "override",
+      "overwrite",
+      "hide"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-22",
+    "title": "Java中this关键字的作用是？",
+    "options": [
+      "指向当前对象",
+      "指向父类对象",
+      "指向子类对象",
+      "指向类本身"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-23",
+    "title": "Java中super关键字的作用是？",
+    "options": [
+      "指向当前对象",
+      "指向父类对象",
+      "指向子类对象",
+      "指向类本身"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-24",
+    "title": "Java中static关键字的作用是？",
+    "options": [
+      "属于实例",
+      "属于类",
+      "属于方法",
+      "属于包"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-25",
+    "title": "Java中final关键字修饰类时表示？",
+    "options": [
+      "不能被继承",
+      "不能被修改",
+      "不能被访问",
+      "不能被实例化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-26",
+    "title": "Java中final关键字修饰方法时表示？",
+    "options": [
+      "不能被重写",
+      "不能被重载",
+      "不能被调用",
+      "不能被继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-27",
+    "title": "Java中final关键字修饰变量时表示？",
+    "options": [
+      "不能被修改",
+      "不能被访问",
+      "不能被继承",
+      "不能被传递"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-28",
+    "title": "Java中哪个类是所有类的根类？",
+    "options": [
+      "Object",
+      "Class",
+      "System",
+      "String"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-29",
+    "title": "Java中哪个方法用于获取对象的哈希码？",
+    "options": [
+      "equals",
+      "hashCode",
+      "toString",
+      "getClass"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-30",
+    "title": "Java中哪个方法用于获取对象的类信息？",
+    "options": [
+      "equals",
+      "hashCode",
+      "toString",
+      "getClass"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-31",
+    "title": "Java中哪个关键字用于判断对象类型？",
+    "options": [
+      "instanceof",
+      "typeof",
+      "isInstance",
+      "class"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-32",
+    "title": "Java中数组的默认初始化值是？",
+    "options": [
+      "0",
+      "null",
+      "undefined",
+      "取决于类型"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "java-33",
+    "title": "Java中局部变量必须初始化吗？",
+    "options": [
+      "必须",
+      "不必",
+      "取决于类型",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-34",
+    "title": "Java中成员变量必须初始化吗？",
+    "options": [
+      "必须",
+      "不必，有默认值",
+      "取决于类型",
+      "取决于修饰符"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-35",
+    "title": "Java中哪个关键字用于定义常量？",
+    "options": [
+      "const",
+      "final",
+      "static",
+      "define"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-36",
+    "title": "Java中哪个运算符用于位与？",
+    "options": [
+      "&",
+      "&&",
+      "|",
+      "||"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-37",
+    "title": "Java中哪个运算符用于逻辑与？",
+    "options": [
+      "&",
+      "&&",
+      "|",
+      "||"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-38",
+    "title": "Java中哪个运算符用于三元条件？",
+    "options": [
+      "?:",
+      "??",
+      "&&",
+      "||"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-39",
+    "title": "Java中switch支持哪些数据类型？",
+    "options": [
+      "int, String, enum",
+      "double, float",
+      "boolean",
+      "long"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-40",
+    "title": "Java中哪个类用于数学运算？",
+    "options": [
+      "Math",
+      "Calculate",
+      "Number",
+      "Arithmetic"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-41",
+    "title": "Java中哪个类用于系统操作？",
+    "options": [
+      "System",
+      "Runtime",
+      "Process",
+      "Execute"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-42",
+    "title": "Java中哪个类用于数组操作？",
+    "options": [
+      "Arrays",
+      "Array",
+      "Collections",
+      "List"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-43",
+    "title": "Java中哪个关键字用于跳出循环？",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "java-44",
+    "title": "Java中哪个关键字用于跳过本次循环？",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-45",
+    "title": "Java中哪个关键字用于返回值？",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-46",
+    "title": "Java中哪个修饰符不能修饰类？",
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "static"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-47",
+    "title": "Java中哪个修饰符不能修饰局部变量？",
+    "options": [
+      "final",
+      "static",
+      "abstract",
+      "native"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "java-48",
+    "title": "Java中哪个修饰符不能修饰方法？",
+    "options": [
+      "final",
+      "static",
+      "abstract",
+      "native"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-49",
+    "title": "Java中哪个修饰符不能修饰成员变量？",
+    "options": [
+      "final",
+      "static",
+      "abstract",
+      "native"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "java-50",
+    "title": "Java中哪个类用于输入输出？",
+    "options": [
+      "System",
+      "Runtime",
+      "Process",
+      "IO"
+    ],
+    "correctAnswer": 0
+  }
+]

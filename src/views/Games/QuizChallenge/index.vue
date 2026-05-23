@@ -13,6 +13,16 @@
             'quizChallenge.rules.rule4',
           ]"
         />
+
+        <!-- 缓存管理（可选） -->
+        <CacheManager
+          v-if="showCacheManager"
+          :categories="availableCategories"
+          :clear-category="clearCategoryCache"
+          :clear-all="clearAllCache"
+          :get-stats="getCacheStats"
+        />
+
         <!-- 游戏未开始 -->
         <StartScreen :categories="availableCategories" @start="handleStartGame" />
       </div>
@@ -82,7 +92,7 @@
 </template>
 
 <script setup>
-  import { computed, onMounted, watch } from 'vue';
+  import { computed, onMounted, watch, ref } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast, closeToast } from 'vant';
   import GameInfoBar from './components/GameInfoBar.vue';
@@ -92,6 +102,7 @@
   import GameEndScreen from './components/GameEndScreen.vue';
   import StreakBadge from './components/StreakBadge.vue';
   import AnswerStats from './components/AnswerStats.vue';
+  import CacheManager from './components/CacheManager.vue';
   import { useGameState } from './hooks/useGameState';
   import { useScoring } from './hooks/useScoring';
   import { useQuestions } from './hooks/useQuestions';
@@ -143,8 +154,15 @@
     shuffleQuestions: shuffleQuestionList,
     getAvailableCategories,
     prepareQuestions,
-    initializeCategories,
+    initializeAllCategories,
+    isLoading,
+    clearCategoryCache,
+    clearAllCache,
+    getCacheStats,
   } = useQuestions();
+
+  // 是否显示缓存管理器
+  const showCacheManager = ref(false);
 
   // 用户积分管理
   const { userPoints, loadUserPoints, addPoints } = useUserPoints();
@@ -179,12 +197,12 @@
   // ========================================
 
   /**
-   * 组件挂载时加载用户积分和题目分类数据
+   * 组件挂载时加载用户积分并初始化所有分类题目
    */
-  onMounted(async () => {
+  onMounted(() => {
     loadUserPoints();
-    // 预加载所有分类的题目数据
-    await initializeCategories();
+    // 页面进入时立即开始并发加载所有分类的题目
+    initializeAllCategories();
   });
 
   // ========================================

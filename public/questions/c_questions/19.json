@@ -1,0 +1,564 @@
+[
+  {
+    "id": "c-901",
+    "title": "C语言中，const变量的真正含义是？",
+    "options": [
+      "只读，不允许通过该变量名直接修改，但可能通过指针间接修改",
+      [
+        "绝对不可修改"
+      ],
+      [
+        "存在只读段"
+      ],
+      [
+        "编译期常量"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-902",
+    "title": "C语言中，const int *p和int * const p的区别？",
+    "options": [
+      "前者指向的值不可变，后者指针本身不可变",
+      "前者指针不可变，后者值不可变",
+      "两者相同",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-903",
+    "title": "C语言中，如何通过非const指针修改const变量？",
+    "options": [
+      "通过强制类型转换获取可修改的指针",
+      "直接修改",
+      "无法修改",
+      "使用volatile"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-904",
+    "title": "C语言中，修改const全局变量会导致什么？",
+    "options": [
+      "段错误或未定义行为，因为它可能存储在只读数据段",
+      "编译错误",
+      "正常修改",
+      "警告"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-905",
+    "title": "C语言中，static关键字的三个作用是？",
+    "options": [
+      "隐藏作用域(文件级)、持久存储(局部)、初始化为0",
+      [
+        "只读"
+      ],
+      [
+        "内联"
+      ],
+      [
+        "虚函数"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-906",
+    "title": "C语言中，static函数的好处是？",
+    "options": [
+      "隐藏函数防止命名冲突，可能被内联优化",
+      "运行更快",
+      "占用内存少",
+      "支持多态"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-907",
+    "title": "C语言中，static全局变量和普通全局变量的区别？",
+    "options": [
+      "static全局变量作用域仅限当前文件(内部链接)",
+      "没有区别",
+      "static变量不能修改",
+      "普通变量不可见"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-908",
+    "title": "C语言中，extern关键字的作用是？",
+    "options": [
+      "声明在其他文件中定义的全局变量或函数",
+      "定义变量",
+      "隐藏变量",
+      "修改变量类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-909",
+    "title": "C语言中，extern \"C\"的作用是？",
+    "options": [
+      "告诉C++编译器按C的规则链接符号",
+      "在C中调用C++",
+      "定义外部函数",
+      "声明外部变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-910",
+    "title": "C语言中，为什么需要extern \"C\"？",
+    "options": [
+      "C++有函数重载会修改符号名，C不修改，混合编程时需对齐",
+      "C不支持指针",
+      "C++更安全",
+      "编译器要求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-911",
+    "title": "C语言中，常见的内存错误有哪些？",
+    "options": [
+      "泄漏、越界、野指针、悬垂指针、重复释放、未初始化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-912",
+    "title": "C语言中，如何避免野指针？",
+    "options": [
+      "指针定义时初始化，释放后置NULL",
+      "使用auto",
+      "使用register",
+      "使用volatile"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-913",
+    "title": "C语言中，如何避免悬垂指针？",
+    "options": [
+      "不要返回局部变量的指针，释放后置NULL",
+      "使用全局变量",
+      "使用静态变量",
+      "使用常量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-914",
+    "title": "C语言中，如何检测内存泄漏？",
+    "options": [
+      "使用valgrind、AddressSanitizer等工具",
+      "代码审查",
+      "单元测试",
+      "静态分析"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-915",
+    "title": "C语言中，AddressSanitizer(ASan)能检测哪些错误？",
+    "options": [
+      "越界、use-after-free、double-free、内存泄漏",
+      "数据竞争",
+      "死锁",
+      "编译错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-916",
+    "title": "C语言中，如何编译启用ASan？",
+    "options": [
+      "gcc -fsanitize=address -g",
+      "gcc -O2",
+      "gcc -Wall",
+      "gcc -pg"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-917",
+    "title": "C语言中，UndefinedBehaviorSanitizer(UBSan)能检测什么？",
+    "options": [
+      "未定义行为如整数溢出、空指针解引用",
+      "内存泄漏",
+      "性能瓶颈",
+      "代码风格"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-918",
+    "title": "C语言中，ThreadSanitizer(TSan)用于检测什么？",
+    "options": [
+      "多线程数据竞争",
+      "内存越界",
+      "未定义行为",
+      "内存泄漏"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-919",
+    "title": "C语言中，什么是未定义行为(UB)？",
+    "options": [
+      "标准未规定的行为，编译器可以做任何处理，结果不可预测",
+      "编译器报错",
+      "运行时报错",
+      "结果固定"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-920",
+    "title": "C语言中，常见的未定义行为有哪些？",
+    "options": [
+      "越界、解引用空指针、重复修改、溢出、非法类型转换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-921",
+    "title": "C语言中，有符号整数溢出是未定义行为吗？",
+    "options": [
+      "是",
+      "不是",
+      "取决于编译器",
+      "取决于操作系统"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-922",
+    "title": "C语言中，无符号整数溢出是未定义行为吗？",
+    "options": [
+      "不是，会回绕取模",
+      "是",
+      "取决于编译器",
+      "取决于平台"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-923",
+    "title": "C语言中，i++ + ++i是未定义行为吗？",
+    "options": [
+      "是，因为在一个序列点之间修改了变量两次",
+      "不是",
+      "结果是3",
+      "取决于编译器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-924",
+    "title": "C语言中，什么是序列点？",
+    "options": [
+      "程序执行中，所有副作用都已完成的点",
+      "代码行号",
+      "分号",
+      "函数调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-925",
+    "title": "C语言中，常见的序列点有哪些？",
+    "options": [
+      "分号、函数调用、逻辑与/或的求值点",
+      "逗号表达式",
+      "加法运算",
+      "赋值运算"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-926",
+    "title": "C语言中，如何安全地进行类型转换？",
+    "options": [
+      "确保转换合理，注意截断、符号和精度丢失",
+      "使用强制转换即可",
+      "避免所有转换",
+      "使用auto"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-927",
+    "title": "C语言中，浮点数比较为什么不能直接用==？",
+    "options": [
+      "浮点数精度问题可能导致相等的值在二进制表示上有微小差异",
+      "浮点数不能用==",
+      "编译器不支持",
+      "性能太差"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-928",
+    "title": "C语言中，如何正确比较浮点数？",
+    "options": [
+      "比较差值的绝对值是否小于一个很小的epsilon",
+      "使用===",
+      "转换为整数比较",
+      "使用strcmp"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-929",
+    "title": "C语言中，NaN的特点是什么？",
+    "options": [
+      "与任何值比较(包括自己)都返回假，不等于自己",
+      "等于0",
+      "等于无穷",
+      "等于NULL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-930",
+    "title": "C语言中，如何判断一个浮点数是否为NaN？",
+    "options": [
+      "使用isnan()宏或x != x",
+      "使用==",
+      "使用>",
+      "使用<"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-931",
+    "title": "C语言中，INT_MIN求绝对值为什么会溢出？",
+    "options": [
+      "补码表示中负数比正数多一个，-INT_MIN超出INT_MAX",
+      "不会溢出",
+      "INT_MIN是0",
+      "绝对值函数错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-932",
+    "title": "C语言中，如何安全求INT_MIN的绝对值？",
+    "options": [
+      "在求绝对值前转换为更大的类型如long long",
+      "直接abs",
+      "取反加一",
+      "使用unsigned"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-933",
+    "title": "C语言中，strcpy和strncpy的哪个更安全？",
+    "options": [
+      "strncpy可以限制长度，但需注意手动添加结束符",
+      "strcpy更安全",
+      "都一样安全",
+      "都不安全"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-934",
+    "title": "C语言中，strncpy为什么不总是安全的？",
+    "options": [
+      "如果源字符串过长，目标可能没有结束符\\0",
+      [
+        "会溢出"
+      ],
+      [
+        "性能差"
+      ],
+      [
+        "不支持中文"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-935",
+    "title": "C语言中，更安全的字符串函数有哪些？",
+    "options": [
+      "snprintf, strlcpy(非标准), strncpy_s(C11)",
+      "gets",
+      "scanf",
+      "strcat"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-936",
+    "title": "C语言中，snprintf相比sprintf的优势？",
+    "options": [
+      "可以指定缓冲区大小，防止溢出",
+      "性能更高",
+      "支持格式化更多",
+      "代码更短"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-937",
+    "title": "C语言中，gets函数为什么被废弃？",
+    "options": [
+      "无法限制输入长度，极易导致缓冲区溢出",
+      "性能差",
+      "不能读空格",
+      "不返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-938",
+    "title": "C语言中，替代gets的函数是？",
+    "options": [
+      "fgets",
+      "getchar",
+      "scanf",
+      "fread"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-939",
+    "title": "C语言中，scanf如何防止缓冲区溢出？",
+    "options": [
+      "使用%ns指定最大读取长度",
+      "使用gets",
+      "增加缓冲区大小",
+      "使用printf"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-940",
+    "title": "C语言中，如何安全地使用动态内存？",
+    "options": [
+      "检查返回值、成对使用malloc/free、释放后置NULL",
+      "使用realloc",
+      "使用全局变量",
+      "避免使用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-941",
+    "title": "C语言中，malloc失败返回什么？",
+    "options": [
+      "NULL",
+      "0",
+      "-1",
+      "异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-942",
+    "title": "C语言中，为什么malloc后需要检查返回值？",
+    "options": [
+      "内存不足时分配失败，解引用NULL会崩溃",
+      "编译器要求",
+      "代码规范",
+      "提高性能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-943",
+    "title": "C语言中，free(NULL)是安全的吗？",
+    "options": [
+      "安全，标准规定free(NULL)不做任何操作",
+      "不安全",
+      "未定义行为",
+      "会报错"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-944",
+    "title": "C语言中，重复free同一块内存会怎样？",
+    "options": [
+      "未定义行为，可能导致堆损坏或崩溃",
+      "正常释放",
+      "被忽略",
+      "返回错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-945",
+    "title": "C语言中，内存池的优点是？",
+    "options": [
+      "减少内存碎片，提高分配释放速度",
+      "节省内存",
+      "防止泄漏",
+      "自动管理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-946",
+    "title": "C语言中，内存池的缺点是？",
+    "options": [
+      "可能造成内部碎片浪费，实现复杂",
+      "速度慢",
+      "不安全",
+      "不能复用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-947",
+    "title": "C语言中，垃圾回收在C中为什么难以实现？",
+    "options": [
+      "C语言允许指针运算，难以追踪所有引用",
+      "C语言不支持",
+      "性能太差",
+      "标准禁止"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-948",
+    "title": "C语言中，Boehm GC是如何工作的？",
+    "options": [
+      "保守式垃圾收集，将看起来像指针的值视为引用",
+      "引用计数",
+      "分代收集",
+      "编译器辅助"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-949",
+    "title": "C语言中，如何实现泛型容器？",
+    "options": [
+      "使用void*指针和函数指针回调",
+      "使用模板",
+      "使用宏",
+      "使用继承"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-950",
+    "title": "C语言中，使用void*实现泛型的缺点是？",
+    "options": [
+      "类型安全丧失，需要强制转换，容易出错",
+      "性能差",
+      "内存占用大",
+      "不能复用"
+    ],
+    "correctAnswer": 0
+  }
+]

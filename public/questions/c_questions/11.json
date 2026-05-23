@@ -1,0 +1,558 @@
+[
+  {
+    "id": "c-501",
+    "title": "C语言中，联合体使用什么关键字定义？",
+    "options": [
+      "union",
+      "struct",
+      "enum",
+      "typedef"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-502",
+    "title": "C语言中，联合体的特点？",
+    "options": [
+      "所有成员共享同一内存",
+      [
+        "成员顺序存储"
+      ],
+      [
+        "大小等于所有成员之和"
+      ],
+      [
+        "可以同时存储多个值"
+      ]
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-503",
+    "title": "C语言中，联合体的大小是？",
+    "options": [
+      "最大成员的大小(考虑对齐)",
+      "所有成员大小之和",
+      "第一个成员大小",
+      "最后一个成员大小"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-504",
+    "title": "C语言中，联合体的用途？",
+    "options": [
+      "类型转换、节省内存",
+      "字符串处理",
+      "数学计算",
+      "文件操作"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-505",
+    "title": "C语言中，枚举使用什么关键字定义？",
+    "options": [
+      "enum",
+      "struct",
+      "union",
+      "typedef"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-506",
+    "title": "C语言中，枚举的类型是？",
+    "options": [
+      "整数类型",
+      "字符串类型",
+      "浮点类型",
+      "指针类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-507",
+    "title": "C语言中，枚举值可以是负数吗？",
+    "options": [
+      "可以",
+      "不可以",
+      "只能是0",
+      "只能是正数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-508",
+    "title": "C语言中，typedef的作用是？",
+    "options": [
+      "给类型起别名",
+      "定义宏",
+      "声明变量",
+      "定义函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-509",
+    "title": "C语言中，typedef和#define的区别？",
+    "options": [
+      "typedef是类型别名，#define是文本替换",
+      "没有区别",
+      "#define是类型别名",
+      "typedef是文本替换"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-510",
+    "title": "C语言中，如何定义函数指针类型？",
+    "options": [
+      "typedef int (*PF)(int)",
+      "typedef int *PF(int)",
+      "typedef PF int(*)(int)",
+      "define PF int(*)(int)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-511",
+    "title": "C语言中，如何定义数组类型？",
+    "options": [
+      "typedef int ARR[10]",
+      "typedef ARR int[10]",
+      "typedef int[10] ARR",
+      "define ARR int[10]"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-512",
+    "title": "C语言中，链表节点的结构通常包含？",
+    "options": [
+      "数据和指针",
+      "只有数据",
+      "只有指针",
+      "数据和索引"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-513",
+    "title": "C语言中，单链表插入节点的步骤是？",
+    "options": [
+      "新节点指向后继，前驱指向新节点",
+      "前驱指向新节点，新节点指向后继",
+      "只修改前驱",
+      "只修改后继"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-514",
+    "title": "C语言中，单链表删除节点的步骤是？",
+    "options": [
+      "前驱指向后继，释放删除节点",
+      "直接释放删除节点",
+      "只修改前驱",
+      "只修改后继"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-515",
+    "title": "C语言中，双链表相比单链表多了什么？",
+    "options": [
+      "前驱指针",
+      "数据",
+      "头指针",
+      "尾指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-516",
+    "title": "C语言中，循环链表的特点是？",
+    "options": [
+      "尾节点指向头节点",
+      "头节点指向尾节点",
+      "没有头节点",
+      "没有尾节点"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-517",
+    "title": "C语言中，栈的实现方式有？",
+    "options": [
+      "数组和链表",
+      "只有数组",
+      "只有链表",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-518",
+    "title": "C语言中，队列的实现方式有？",
+    "options": [
+      "数组和链表",
+      "只有数组",
+      "只有链表",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-519",
+    "title": "C语言中，循环队列的好处是？",
+    "options": [
+      "避免假溢出",
+      "节省内存",
+      "加快访问",
+      "简化代码"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-520",
+    "title": "C语言中，循环队列如何判断满？",
+    "options": [
+      "(rear+1)%size == front",
+      "rear == front",
+      "rear - front == size",
+      "front == 0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-521",
+    "title": "C语言中，循环队列如何判断空？",
+    "options": [
+      "rear == front",
+      "(rear+1)%size == front",
+      "rear - front == size",
+      "front == 0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-522",
+    "title": "C语言中，哈希表的关键问题是？",
+    "options": [
+      "哈希函数和冲突解决",
+      "排序和查找",
+      "插入和删除",
+      "内存分配"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-523",
+    "title": "C语言中，常见哈希函数有？",
+    "options": [
+      "直接定址法、除留余数法",
+      "冒泡排序",
+      "二分查找",
+      "递归法"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-524",
+    "title": "C语言中，链地址法如何解决冲突？",
+    "options": [
+      "将冲突元素存入链表",
+      "寻找下一个空位",
+      "覆盖原值",
+      "抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-525",
+    "title": "C语言中，开放定址法如何解决冲突？",
+    "options": [
+      "寻找下一个空位",
+      "将冲突元素存入链表",
+      "覆盖原值",
+      "抛出异常"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-526",
+    "title": "C语言中，二叉树的遍历方式有？",
+    "options": [
+      "前序、中序、后序、层序",
+      "前序、后序",
+      "中序、层序",
+      "随机遍历"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-527",
+    "title": "C语言中，前序遍历的顺序是？",
+    "options": [
+      "根左右",
+      "左根右",
+      "左右根",
+      "根右左"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-528",
+    "title": "C语言中，中序遍历的顺序是？",
+    "options": [
+      "左根右",
+      "根左右",
+      "左右根",
+      "根右左"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-529",
+    "title": "C语言中，后序遍历的顺序是？",
+    "options": [
+      "左右根",
+      "根左右",
+      "左根右",
+      "根右左"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-530",
+    "title": "C语言中，层序遍历使用什么数据结构？",
+    "options": [
+      "队列",
+      "栈",
+      "堆",
+      "链表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-531",
+    "title": "C语言中，图的存储方式有？",
+    "options": [
+      "邻接矩阵和邻接表",
+      "数组和链表",
+      "栈和队列",
+      "哈希表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-532",
+    "title": "C语言中，邻接矩阵适用于什么图？",
+    "options": [
+      "稠密图",
+      "稀疏图",
+      "有向图",
+      "无向图"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-533",
+    "title": "C语言中，邻接表适用于什么图？",
+    "options": [
+      "稀疏图",
+      "稠密图",
+      "有向图",
+      "无向图"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-534",
+    "title": "C语言中，图的遍历方式有？",
+    "options": [
+      "深度优先和广度优先",
+      "前序和后序",
+      "中序和层序",
+      "随机遍历"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-535",
+    "title": "C语言中，排序算法的稳定性是指？",
+    "options": [
+      "相同元素相对位置不变",
+      "排序速度快",
+      "占用内存少",
+      "代码简单"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-536",
+    "title": "C语言中，哪些排序是稳定的？",
+    "options": [
+      "冒泡、插入、归并",
+      "选择、快速",
+      "堆排序",
+      "希尔排序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-537",
+    "title": "C语言中，哪些排序是不稳定的？",
+    "options": [
+      "选择、快速、希尔、堆",
+      "冒泡、插入",
+      "归并",
+      "基数排序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-538",
+    "title": "C语言中，快速排序的最坏情况是？",
+    "options": [
+      "数组有序",
+      "数组逆序",
+      "数组随机",
+      "数组很大"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-539",
+    "title": "C语言中，快速排序的优化方法有？",
+    "options": [
+      "三数取中、随机选择基准",
+      "增加内存",
+      "使用链表",
+      "使用递归"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-540",
+    "title": "C语言中，归并排序的特点是？",
+    "options": [
+      "稳定、O(n log n)、需要额外空间",
+      "不稳定",
+      "原地排序",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-541",
+    "title": "C语言中，堆排序的特点是？",
+    "options": [
+      "不稳定、O(n log n)、原地排序",
+      "稳定",
+      "需要额外空间",
+      "O(n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-542",
+    "title": "C语言中，基数排序的特点是？",
+    "options": [
+      "稳定、O(d*n)、非比较排序",
+      "不稳定",
+      "比较排序",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-543",
+    "title": "C语言中，计数排序的特点是？",
+    "options": [
+      "稳定、O(n+k)、非比较排序",
+      "不稳定",
+      "比较排序",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-544",
+    "title": "C语言中，桶排序的特点是？",
+    "options": [
+      "稳定、O(n+k)、非比较排序",
+      "不稳定",
+      "比较排序",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-545",
+    "title": "C语言中，查找算法有？",
+    "options": [
+      "顺序查找、二分查找、哈希查找",
+      "冒泡查找",
+      "插入查找",
+      "选择查找"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-546",
+    "title": "C语言中，二分查找的适用条件？",
+    "options": [
+      "有序数组",
+      "无序数组",
+      "链表",
+      "栈"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-547",
+    "title": "C语言中，插值查找的特点？",
+    "options": [
+      "基于二分查找，适应分布均匀数据",
+      "适应分布不均匀",
+      "不需要有序",
+      "O(n)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-548",
+    "title": "C语言中，斐波那契查找的特点？",
+    "options": [
+      "基于黄金分割",
+      "基于二分",
+      "基于插值",
+      "基于哈希"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-549",
+    "title": "C语言中，字符串匹配算法有？",
+    "options": [
+      "BF、KMP、BM",
+      "DFS、BFS",
+      "Dijkstra、Floyd",
+      "Prim、Kruskal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-550",
+    "title": "C语言中，KMP算法的特点是？",
+    "options": [
+      "利用next数组避免主串回溯",
+      "简单",
+      "暴力匹配",
+      "O(n^2)"
+    ],
+    "correctAnswer": 0
+  }
+]

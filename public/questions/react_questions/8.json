@@ -1,0 +1,552 @@
+[
+  {
+    "id": "react-351",
+    "title": "React Router 中如何实现路由切换缓存？",
+    "options": [
+      "使用 react-activation 等库模拟 KeepAlive",
+      "使用 keepAlive 属性",
+      "使用 CacheRoute",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-352",
+    "title": "React Router 中如何实现路由切换确认？",
+    "options": [
+      "使用 useBlocker 或自定义 Prompt",
+      "使用 onBeforeLeave",
+      "使用 confirm",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-353",
+    "title": "React Router 中如何实现路由切换拦截？",
+    "options": [
+      "使用 useBlocker",
+      "使用 onBeforeLeave",
+      "使用 beforeEach",
+      "使用中间件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-354",
+    "title": "React Router 中如何实现路由切换监听？",
+    "options": [
+      "使用 useLocation 配合 useEffect",
+      "使用 onRouteChange",
+      "使用 watch",
+      "使用 subscribe"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-355",
+    "title": "React Router 中如何实现路由切换动画库？",
+    "options": [
+      "Framer Motion, React Transition Group",
+      "Animate.css",
+      "GSAP",
+      "Mo.js"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-356",
+    "title": "React Router 中如何实现路由切换性能优化？",
+    "options": [
+      "路由懒加载、预加载、缓存",
+      "减少路由",
+      "使用 HashRouter",
+      "使用 MemoryRouter"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-357",
+    "title": "React Router 中如何实现路由切换错误处理？",
+    "options": [
+      "ErrorBoundary 结合路由",
+      "使用 try/catch",
+      "使用 onError",
+      "无法处理"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-358",
+    "title": "React Router 中如何实现路由切换重试？",
+    "options": [
+      "在错误边界中提供重试按钮",
+      "使用 retry 属性",
+      "使用 onError",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-359",
+    "title": "React Router 中如何实现路由切换超时？",
+    "options": [
+      "在 Loader 中设置超时逻辑",
+      "使用 timeout 属性",
+      "使用 setTimeout",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-360",
+    "title": "React Router 中如何实现路由切换取消？",
+    "options": [
+      "使用 AbortController",
+      "使用 cancelToken",
+      "使用 cancel",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-361",
+    "title": "React Router 中如何实现路由切换并发？",
+    "options": [
+      "使用 Suspense 和 Transition",
+      "使用 Promise.all",
+      "使用 Web Worker",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-362",
+    "title": "React Router 中如何实现路由切换中断？",
+    "options": [
+      "使用 AbortController",
+      "使用 cancelToken",
+      "使用 cancel",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-363",
+    "title": "React Router 中如何实现路由切换恢复？",
+    "options": [
+      "使用状态管理保存滚动位置",
+      "使用 scrollRestoration",
+      "使用浏览器默认",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-364",
+    "title": "React Router 中如何实现路由切换缓存组件？",
+    "options": [
+      "使用 react-activation 等库",
+      "使用 keepAlive 属性",
+      "使用 CacheRoute",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-365",
+    "title": "React Router 中如何实现路由切换动画效果？",
+    "options": [
+      "使用 Framer Motion",
+      "使用 Animate.css",
+      "使用 GSAP",
+      "使用 CSS Transition"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-366",
+    "title": "React Router 中如何实现路由切换过渡效果？",
+    "options": [
+      "使用 React Transition Group",
+      "使用 Animate.css",
+      "使用 GSAP",
+      "使用 CSS Transition"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-367",
+    "title": "React Router 中如何实现路由切换加载效果？",
+    "options": [
+      "使用 Suspense fallback",
+      "使用 NProgress",
+      "使用 Spinner",
+      "使用 Skeleton"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-368",
+    "title": "React Router 中如何实现路由切换错误效果？",
+    "options": [
+      "使用 ErrorBoundary",
+      "使用 404 页面",
+      "使用 Redirect",
+      "使用 Alert"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-369",
+    "title": "React Router 中如何实现路由切换重试效果？",
+    "options": [
+      "在 ErrorBoundary 中提供重试",
+      "使用 retry 按钮",
+      "使用 reload",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-370",
+    "title": "React Router 中如何实现路由切换超时效果？",
+    "options": [
+      "在 Loader 中超时显示提示",
+      "使用 timeout 属性",
+      "使用 setTimeout",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-371",
+    "title": "React Router 中如何实现路由切换取消效果？",
+    "options": [
+      "在清理函数中取消请求",
+      "使用 cancelToken",
+      "使用 cancel",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-372",
+    "title": "React Router 中如何实现路由切换并发效果？",
+    "options": [
+      "使用 Suspense 和 Transition",
+      "使用 Promise.all",
+      "使用 Web Worker",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-373",
+    "title": "React Router 中如何实现路由切换中断效果？",
+    "options": [
+      "使用 AbortController",
+      "使用 cancelToken",
+      "使用 cancel",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-374",
+    "title": "React Router 中如何实现路由切换恢复效果？",
+    "options": [
+      "使用状态管理恢复滚动",
+      "使用 scrollRestoration",
+      "使用浏览器默认",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-375",
+    "title": "React Router 中如何实现路由切换缓存效果？",
+    "options": [
+      "使用 react-activation",
+      "使用 keepAlive",
+      "使用 CacheRoute",
+      "无法实现"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-376",
+    "title": "React Router 中如何实现路由切换动画配置？",
+    "options": [
+      "在 Framer Motion 中设置 variants",
+      "使用 animate 属性",
+      "使用 CSS",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-377",
+    "title": "React Router 中如何实现路由切换过渡配置？",
+    "options": [
+      "在 Transition Group 中设置 timeout",
+      "使用 transition 属性",
+      "使用 CSS",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-378",
+    "title": "React Router 中如何实现路由切换加载配置？",
+    "options": [
+      "在 Suspense 中设置 fallback",
+      "使用 loading 属性",
+      "使用 CSS",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-379",
+    "title": "React Router 中如何实现路由切换错误配置？",
+    "options": [
+      "在 ErrorBoundary 中设置 fallback",
+      "使用 error 属性",
+      "使用 CSS",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-380",
+    "title": "React Router 中如何实现路由切换重试配置？",
+    "options": [
+      "在 ErrorBoundary 中设置重试逻辑",
+      "使用 retry 属性",
+      "使用 CSS",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-381",
+    "title": "React Router 中如何实现路由切换超时配置？",
+    "options": [
+      "在 Loader 中设置超时时间",
+      "使用 timeout 属性",
+      "使用 CSS",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-382",
+    "title": "React Router 中如何实现路由切换取消配置？",
+    "options": [
+      "使用 AbortController 设置超时取消",
+      "使用 cancelToken",
+      "使用 cancel",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-383",
+    "title": "React Router 中如何实现路由切换并发配置？",
+    "options": [
+      "使用 Suspense 和 Transition 配置",
+      "使用 Promise.all",
+      "使用 Web Worker",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-384",
+    "title": "React Router 中如何实现路由切换中断配置？",
+    "options": [
+      "使用 AbortController 设置中断逻辑",
+      "使用 cancelToken",
+      "使用 cancel",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-385",
+    "title": "React Router 中如何实现路由切换恢复配置？",
+    "options": [
+      "在状态管理中配置恢复逻辑",
+      "使用 scrollRestoration",
+      "使用浏览器默认",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-386",
+    "title": "React Router 中如何实现路由切换缓存配置？",
+    "options": [
+      "在 react-activation 中配置缓存策略",
+      "使用 keepAlive 属性",
+      "使用 CacheRoute",
+      "无法配置"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-387",
+    "title": "React Router 中如何实现路由切换动画优化？",
+    "options": [
+      "使用 will-change 和 transform",
+      "减少 DOM 操作",
+      "使用 GPU 加速",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-388",
+    "title": "React Router 中如何实现路由切换过渡优化？",
+    "options": [
+      "减少不必要的动画",
+      "使用 CSS 硬件加速",
+      "使用 requestAnimationFrame",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-389",
+    "title": "React Router 中如何实现路由切换加载优化？",
+    "options": [
+      "使用骨架屏和懒加载",
+      "使用预加载",
+      "使用缓存",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-390",
+    "title": "React Router 中如何实现路由切换错误优化？",
+    "options": [
+      "提供友好的错误提示和重试",
+      "使用 ErrorBoundary",
+      "使用日志记录",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-391",
+    "title": "React Router 中如何实现路由切换重试优化？",
+    "options": [
+      "限制重试次数和退避策略",
+      "使用指数退避",
+      "使用随机退避",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-392",
+    "title": "React Router 中如何实现路由切换超时优化？",
+    "options": [
+      "设置合理的超时时间",
+      "使用断路器",
+      "使用降级",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-393",
+    "title": "React Router 中如何实现路由切换取消优化？",
+    "options": [
+      "及时取消无用请求",
+      "使用 AbortController",
+      "使用清理函数",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-394",
+    "title": "React Router 中如何实现路由切换并发优化？",
+    "options": [
+      "使用 Suspense 和 Transition",
+      "使用并发特性",
+      "使用 Web Worker",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-395",
+    "title": "React Router 中如何实现路由切换中断优化？",
+    "options": [
+      "使用 AbortController",
+      "使用清理函数",
+      "使用标志位",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-396",
+    "title": "React Router 中如何实现路由切换恢复优化？",
+    "options": [
+      "恢复滚动位置和表单数据",
+      "使用状态管理",
+      "使用 localStorage",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-397",
+    "title": "React Router 中如何实现路由切换缓存优化？",
+    "options": [
+      "使用 LRU 缓存策略",
+      "限制缓存大小",
+      "手动清理缓存",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-398",
+    "title": "React Router 中如何实现路由切换动画性能监控？",
+    "options": [
+      "使用 Performance API 监控",
+      "使用 React Profiler",
+      "使用 Chrome DevTools",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-399",
+    "title": "React Router 中如何实现路由切换过渡性能监控？",
+    "options": [
+      "使用 Performance API 监控",
+      "使用 React Profiler",
+      "使用 Chrome DevTools",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-400",
+    "title": "React Router 中如何实现路由切换加载性能监控？",
+    "options": [
+      "使用 Performance API 监控",
+      "使用 React Profiler",
+      "使用 Chrome DevTools",
+      "以上都是"
+    ],
+    "correctAnswer": 0
+  }
+]

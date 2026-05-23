@@ -1,0 +1,552 @@
+[
+  {
+    "id": "c-201",
+    "title": "C语言中，fopen的模式\"r\"表示？",
+    "options": [
+      "读，文件必须存在",
+      "写",
+      "追加",
+      "读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-202",
+    "title": "C语言中，fopen的模式\"a\"表示？",
+    "options": [
+      "追加，文件不存在则创建",
+      "读",
+      "写",
+      "随机访问"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-203",
+    "title": "C语言中，fopen的模式\"r+\"表示？",
+    "options": [
+      "读写，文件必须存在",
+      "只读",
+      "只写",
+      "追加读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-204",
+    "title": "C语言中，fopen的模式\"w+\"表示？",
+    "options": [
+      "读写，文件不存在则创建",
+      "只读",
+      "只写",
+      "追加读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-205",
+    "title": "C语言中，fopen的模式\"a+\"表示？",
+    "options": [
+      "读写追加，文件不存在则创建",
+      "只读",
+      "只写",
+      "随机读写"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-206",
+    "title": "C语言中，二进制模式使用什么后缀？",
+    "options": [
+      "b",
+      "t",
+      "x",
+      "d"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-207",
+    "title": "C语言中，fclose的作用是？",
+    "options": [
+      "关闭文件",
+      "打开文件",
+      "读取文件",
+      "写入文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-208",
+    "title": "C语言中，fgetc的作用是？",
+    "options": [
+      "读取一个字符",
+      "写入一个字符",
+      "读取一行",
+      "写入一行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-209",
+    "title": "C语言中，fputc的作用是？",
+    "options": [
+      "写入一个字符",
+      "读取一个字符",
+      "读取一行",
+      "写入一行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-210",
+    "title": "C语言中，fgets的作用是？",
+    "options": [
+      "读取一行或指定长度",
+      "写入一行",
+      "读取一个字符",
+      "写入一个字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-211",
+    "title": "C语言中，fputs的作用是？",
+    "options": [
+      "写入一行",
+      "读取一行",
+      "读取一个字符",
+      "写入一个字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-212",
+    "title": "C语言中，fread的作用是？",
+    "options": [
+      "读取二进制数据",
+      "写入二进制数据",
+      "读取字符",
+      "写入字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-213",
+    "title": "C语言中，fwrite的作用是？",
+    "options": [
+      "写入二进制数据",
+      "读取二进制数据",
+      "读取字符",
+      "写入字符"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-214",
+    "title": "C语言中，fseek的作用是？",
+    "options": [
+      "移动文件指针",
+      "获取文件指针位置",
+      "重置文件指针",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-215",
+    "title": "C语言中，ftell的作用是？",
+    "options": [
+      "获取文件指针位置",
+      "移动文件指针",
+      "重置文件指针",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-216",
+    "title": "C语言中，rewind的作用是？",
+    "options": [
+      "将文件指针移到开头",
+      "移动文件指针",
+      "获取文件位置",
+      "关闭文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-217",
+    "title": "C语言中，feof的作用是？",
+    "options": [
+      "判断文件是否结束",
+      "判断文件是否出错",
+      "判断文件是否打开",
+      "判断文件是否关闭"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-218",
+    "title": "C语言中，ferror的作用是？",
+    "options": [
+      "判断文件是否出错",
+      "判断文件是否结束",
+      "判断文件是否打开",
+      "判断文件是否关闭"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-219",
+    "title": "C语言中，clearerr的作用是？",
+    "options": [
+      "清除文件错误标志",
+      "清除文件内容",
+      "关闭文件",
+      "打开文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-220",
+    "title": "C语言中，remove的作用是？",
+    "options": [
+      "删除文件",
+      "重命名文件",
+      "移动文件",
+      "复制文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-221",
+    "title": "C语言中，rename的作用是？",
+    "options": [
+      "重命名文件",
+      "删除文件",
+      "移动文件",
+      "复制文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-222",
+    "title": "C语言中，tmpfile的作用是？",
+    "options": [
+      "创建临时文件",
+      "删除临时文件",
+      "打开临时文件",
+      "关闭临时文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-223",
+    "title": "C语言中，tmpnam的作用是？",
+    "options": [
+      "生成临时文件名",
+      "创建临时文件",
+      "删除临时文件",
+      "打开临时文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-224",
+    "title": "C语言中，system函数的作用是？",
+    "options": [
+      "执行系统命令",
+      "退出系统",
+      "获取系统时间",
+      "获取系统名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-225",
+    "title": "C语言中，getenv函数的作用是？",
+    "options": [
+      "获取环境变量",
+      "设置环境变量",
+      "删除环境变量",
+      "列出环境变量"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-226",
+    "title": "C语言中，abort函数的作用是？",
+    "options": [
+      "异常终止程序",
+      "正常终止程序",
+      "暂停程序",
+      "继续程序"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-227",
+    "title": "C语言中，exit和abort的区别是？",
+    "options": [
+      "exit正常清理终止，abort异常终止",
+      "没有区别",
+      "abort正常终止",
+      "exit异常终止"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-228",
+    "title": "C语言中，atof定义在哪个头文件？",
+    "options": [
+      "stdlib.h",
+      "math.h",
+      "stdio.h",
+      "string.h"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-229",
+    "title": "C语言中，strerror函数的作用是？",
+    "options": [
+      "返回错误码对应的字符串",
+      "设置错误码",
+      "清除错误",
+      "打印错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-230",
+    "title": "C语言中，errno变量的作用是？",
+    "options": [
+      "存储最近发生的错误码",
+      "错误字符串",
+      "错误行号",
+      "错误文件"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-231",
+    "title": "C语言中，perror函数的作用是？",
+    "options": [
+      "输出错误信息到stderr",
+      "输出到stdout",
+      "输出到文件",
+      "忽略错误"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-232",
+    "title": "C语言中，函数的默认返回类型是？",
+    "options": [
+      "int",
+      "void",
+      "auto",
+      "无默认类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-233",
+    "title": "C语言中，函数声明的作用是？",
+    "options": [
+      "告诉编译器函数的名称和类型",
+      "定义函数体",
+      "分配内存",
+      "调用函数"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-234",
+    "title": "C语言中，函数定义包含什么？",
+    "options": [
+      "函数头和函数体",
+      "只有函数头",
+      "只有函数体",
+      "声明和调用"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-235",
+    "title": "C语言中，递归函数的特点是？",
+    "options": [
+      "函数调用自身",
+      "函数调用其他函数",
+      "函数返回自身",
+      "函数无返回值"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-236",
+    "title": "C语言中，递归必须有什麽？",
+    "options": [
+      "基准条件",
+      "循环",
+      "指针",
+      "数组"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-237",
+    "title": "C语言中，值传递的特点是？",
+    "options": [
+      "实参的值复制给形参",
+      "实参的地址传给形参",
+      "形参修改影响实参",
+      "共享内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-238",
+    "title": "C语言中，地址传递的特点是？",
+    "options": [
+      "实参的地址传给形参",
+      "实参的值复制给形参",
+      "形参修改不影响实参",
+      "不共享内存"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-239",
+    "title": "C语言中，局部变量和全局变量同名时，哪个优先？",
+    "options": [
+      "局部变量",
+      "全局变量",
+      "编译错误",
+      "随机"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-240",
+    "title": "C语言中，静态函数的作用域是？",
+    "options": [
+      "当前文件",
+      "整个程序",
+      "当前函数",
+      "当前块"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-241",
+    "title": "C语言中，指针变量存储的是什么？",
+    "options": [
+      "地址",
+      "值",
+      "类型",
+      "名称"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-242",
+    "title": "C语言中，&运算符的作用是？",
+    "options": [
+      "取地址",
+      "解引用",
+      "位与",
+      "逻辑与"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-243",
+    "title": "C语言中，*运算符在指针前的作用是？",
+    "options": [
+      "解引用",
+      "取地址",
+      "乘法",
+      "注释"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-244",
+    "title": "C语言中，int *p; p = 0; 表示？",
+    "options": [
+      "p是空指针",
+      "p指向地址0的值",
+      "p的值为0",
+      "p未初始化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-245",
+    "title": "C语言中，指针未初始化称为什么？",
+    "options": [
+      "野指针",
+      "空指针",
+      "悬垂指针",
+      "常量指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-246",
+    "title": "C语言中，指向指针的指针如何定义？",
+    "options": [
+      "int **p",
+      "int *p",
+      "int &p",
+      "int p**"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-247",
+    "title": "C语言中，数组名可以赋值给指针吗？",
+    "options": [
+      "可以，数组名是首元素地址",
+      "不可以",
+      "只能赋值给数组指针",
+      "只能赋值给void指针"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-248",
+    "title": "C语言中，a[i]等价于？",
+    "options": [
+      "*(a+i)",
+      "a+i",
+      "&a[i]",
+      "*a+i"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-249",
+    "title": "C语言中，&a[i]等价于？",
+    "options": [
+      "a+i",
+      "*(a+i)",
+      "a[i]",
+      "*a+i"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "c-250",
+    "title": "C语言中，指针数组如何定义？",
+    "options": [
+      "int *arr[10]",
+      "int (*arr)[10]",
+      "int arr[10]",
+      "int **arr"
+    ],
+    "correctAnswer": 0
+  }
+]

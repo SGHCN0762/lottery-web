@@ -1,0 +1,552 @@
+[
+  {
+    "id": "python-1",
+    "title": "Python中以下哪个不是合法的变量名？",
+    "options": [
+      "_var",
+      "var1",
+      "1var",
+      "var_1"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-2",
+    "title": "Python中哪种数据类型是不可变的？",
+    "options": [
+      "list",
+      "dict",
+      "set",
+      "tuple"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-3",
+    "title": "Python中用于单行注释的符号是？",
+    "options": [
+      "//",
+      "#",
+      "/*",
+      "--"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-4",
+    "title": "Python中用于多行注释的是？",
+    "options": [
+      "三个单引号或三个双引号",
+      "/* */",
+      "// //",
+      "# #"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-5",
+    "title": "Python中//运算符的作用是？",
+    "options": [
+      "除法",
+      "整除",
+      "取模",
+      "幂运算"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-6",
+    "title": "Python中**运算符的作用是？",
+    "options": [
+      "乘法",
+      "整除",
+      "取模",
+      "幂运算"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-7",
+    "title": "Python中==和is的区别是？",
+    "options": [
+      "==比较值，is比较内存地址",
+      "==比较内存地址，is比较值",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-8",
+    "title": "Python中以下哪个是可变数据类型？",
+    "options": [
+      "int",
+      "str",
+      "list",
+      "tuple"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-9",
+    "title": "Python中获取数据类型的函数是？",
+    "options": [
+      "type()",
+      "typeof()",
+      "dtype()",
+      "gettype()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-10",
+    "title": "Python中字符串的索引从几开始？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "取决于长度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-11",
+    "title": "Python中切片操作string[1:3]获取的字符数是？",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-12",
+    "title": "Python中字符串格式化的最新推荐方式是？",
+    "options": [
+      "%格式化",
+      "format()",
+      "f-string",
+      "concat"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-13",
+    "title": "Python中列表的append()和extend()的区别是？",
+    "options": [
+      "append添加元素，extend合并列表",
+      "append合并列表，extend添加元素",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-14",
+    "title": "Python中列表的insert()方法作用是？",
+    "options": [
+      "在末尾插入",
+      "在指定位置插入",
+      "删除元素",
+      "查找元素"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-15",
+    "title": "Python中列表的pop()方法作用是？",
+    "options": [
+      "删除指定元素",
+      "删除并返回指定位置元素",
+      "添加元素",
+      "排序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-16",
+    "title": "Python中列表的remove()方法作用是？",
+    "options": [
+      "删除指定值的第一个元素",
+      "删除指定位置元素",
+      "清空列表",
+      "反转列表"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-17",
+    "title": "Python中列表的sort()和sorted()的区别是？",
+    "options": [
+      "sort原地排序，sorted返回新列表",
+      "sort返回新列表，sorted原地排序",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-18",
+    "title": "Python中字典的键必须是？",
+    "options": [
+      "可变类型",
+      "不可变类型",
+      "任意类型",
+      "只能是字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-19",
+    "title": "Python中字典获取不存在的键会？",
+    "options": [
+      "返回None",
+      "抛出KeyError",
+      "返回默认值",
+      "创建键"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-20",
+    "title": "Python中字典的get()方法作用是？",
+    "options": [
+      "获取键的值，不存在返回默认值",
+      "获取键的值，不存在抛出异常",
+      "设置键的值",
+      "删除键"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-21",
+    "title": "Python中字典的setdefault()方法作用是？",
+    "options": [
+      "获取键的值，不存在则设置并返回",
+      "设置键的值",
+      "删除键",
+      "更新键"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-22",
+    "title": "Python中集合的特点是？",
+    "options": [
+      "有序，可重复",
+      "无序，不可重复",
+      "有序，不可重复",
+      "无序，可重复"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-23",
+    "title": "Python中集合的交集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-24",
+    "title": "Python中集合的并集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-25",
+    "title": "Python中集合的差集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-26",
+    "title": "Python中集合的对称差集操作是？",
+    "options": [
+      "|",
+      "&",
+      "-",
+      "^"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-27",
+    "title": "Python中元组与列表的区别是？",
+    "options": [
+      "元组可变，列表不可变",
+      "元组不可变，列表可变",
+      "没有区别",
+      "元组有序，列表无序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-28",
+    "title": "Python中如何创建单元素元组？",
+    "options": [
+      "(1)",
+      "(1,)",
+      "[1]",
+      "{1}"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-29",
+    "title": "Python中None的含义是？",
+    "options": [
+      "空字符串",
+      "0",
+      "空对象",
+      "False"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-30",
+    "title": "Python中布尔值True的整数值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-31",
+    "title": "Python中布尔值False的整数值是？",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-32",
+    "title": "Python中以下哪个值在布尔上下文中为False？",
+    "options": [
+      "\"0\"",
+      "[]",
+      "0.0",
+      "以上都是"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "python-33",
+    "title": "Python中input()函数的返回值类型是？",
+    "options": [
+      "int",
+      "str",
+      "float",
+      "取决于输入"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-34",
+    "title": "Python中print()函数的end参数默认是？",
+    "options": [
+      "\\n",
+      "\\t",
+      " ",
+      ""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-35",
+    "title": "Python中range(5)生成的序列是？",
+    "options": [
+      "0, 1, 2, 3, 4",
+      "1, 2, 3, 4, 5",
+      "0, 1, 2, 3, 4, 5",
+      "1, 2, 3, 4"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-36",
+    "title": "Python中range(1, 10, 2)生成的序列是？",
+    "options": [
+      "1, 3, 5, 7, 9",
+      "1, 2, 3, 4, 5",
+      "1, 4, 7",
+      "2, 4, 6, 8"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-37",
+    "title": "Python中如何交换两个变量的值？",
+    "options": [
+      "a, b = b, a",
+      "a = b; b = a",
+      "temp = a; a = b; b = temp",
+      "swap(a, b)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-38",
+    "title": "Python中isinstance()函数的作用是？",
+    "options": [
+      "判断类型",
+      "创建实例",
+      "获取类型",
+      "转换类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-39",
+    "title": "Python中type()和isinstance()的区别是？",
+    "options": [
+      "type不考虑继承，isinstance考虑继承",
+      "type考虑继承，isinstance不考虑继承",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-40",
+    "title": "Python中深拷贝和浅拷贝的区别是？",
+    "options": [
+      "深拷贝递归复制，浅拷贝只复制一层",
+      "浅拷贝递归复制，深拷贝只复制一层",
+      "没有区别",
+      "取决于类型"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-41",
+    "title": "Python中如何实现深拷贝？",
+    "options": [
+      "copy.copy()",
+      "copy.deepcopy()",
+      "list.copy()",
+      "dict.copy()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-42",
+    "title": "Python中如何实现浅拷贝？",
+    "options": [
+      "copy.copy()",
+      "copy.deepcopy()",
+      "list.deepcopy()",
+      "dict.deepcopy()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-43",
+    "title": "Python中列表推导式的语法是？",
+    "options": [
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "(x for x in iterable)",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-44",
+    "title": "Python中字典推导式的语法是？",
+    "options": [
+      "[k:v for k, v in iterable]",
+      "{k:v for k, v in iterable}",
+      "(k:v for k, v in iterable)",
+      "<k:v for k, v in iterable>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-45",
+    "title": "Python中集合推导式的语法是？",
+    "options": [
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "(x for x in iterable)",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-46",
+    "title": "Python中生成器表达式的语法是？",
+    "options": [
+      "[x for x in iterable]",
+      "{x for x in iterable}",
+      "(x for x in iterable)",
+      "<x for x in iterable>"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-47",
+    "title": "Python中三元运算符的语法是？",
+    "options": [
+      "x if condition else y",
+      "condition ? x : y",
+      "condition ? x : y",
+      "if condition then x else y"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-48",
+    "title": "Python中pass语句的作用是？",
+    "options": [
+      "跳过循环",
+      "占位符",
+      "退出函数",
+      "抛出异常"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-49",
+    "title": "Python中break语句的作用是？",
+    "options": [
+      "跳过本次循环",
+      "跳出整个循环",
+      "跳出函数",
+      "跳出程序"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-50",
+    "title": "Python中continue语句的作用是？",
+    "options": [
+      "跳过本次循环",
+      "跳出整个循环",
+      "跳出函数",
+      "跳出程序"
+    ],
+    "correctAnswer": 0
+  }
+]

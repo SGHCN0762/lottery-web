@@ -1,0 +1,552 @@
+[
+  {
+    "id": "react-551",
+    "title": "React 中如何优化 SSR 流式渲染？",
+    "options": [
+      "使用 renderToPipeableStream 分块发送",
+      "等待全部渲染",
+      "不使用 SSR",
+      "客户端渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-552",
+    "title": "React 中如何优化 SSG 增量更新？",
+    "options": [
+      "ISR 增量静态再生、按需重新生成页面",
+      "每次全量构建",
+      "不使用 SSG",
+      "纯动态渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-553",
+    "title": "React 中如何优化 CSR 交互？",
+    "options": [
+      "预加载 JS、骨架屏、并发特性",
+      "白屏等待",
+      "不优化",
+      "减少交互"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-554",
+    "title": "React 中如何优化混合渲染？",
+    "options": [
+      "根据页面特性选择 SSR/SSG/CSR",
+      "全部 SSR",
+      "全部 SSG",
+      "全部 CSR"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-555",
+    "title": "React 中如何优化边缘渲染？",
+    "options": [
+      "使用 Edge Runtime 减少延迟",
+      "中心服务器",
+      "客户端渲染",
+      "不渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-556",
+    "title": "React 中如何优化微前端性能？",
+    "options": [
+      "共享依赖、预加载、沙箱优化",
+      "独立加载",
+      "不使用微前端",
+      "iframe 隔离"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-557",
+    "title": "React 中如何优化跨端性能？",
+    "options": [
+      "React Native 新架构、渲染优化",
+      "只使用 Web",
+      "不优化",
+      "原生开发"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-558",
+    "title": "React 中如何优化低端设备？",
+    "options": [
+      "减少动画、降级功能、轻量组件",
+      "不兼容",
+      "强制高配",
+      "不支持"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-559",
+    "title": "React 中如何优化高分辨率屏幕？",
+    "options": [
+      "响应式图片、矢量图标、CSS 像素比",
+      "使用低分辨率",
+      "不处理",
+      "放大图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-560",
+    "title": "React 中如何优化暗黑模式？",
+    "options": [
+      "CSS 变量、prefers-color-scheme、过渡动画",
+      "强制亮色",
+      "不支持",
+      "重新加载"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-561",
+    "title": "React 中如何优化打印样式？",
+    "options": [
+      "使用 @media print、隐藏无关元素",
+      "不优化",
+      "截图打印",
+      "导出 PDF"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-562",
+    "title": "React 中如何优化邮件渲染？",
+    "options": [
+      "内联样式、表格布局、兼容性处理",
+      "使用 CSS 文件",
+      "Flex 布局",
+      "发送链接"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-563",
+    "title": "React 中如何优化 PDF 生成？",
+    "options": [
+      "服务端生成、虚拟 DOM 渲染、分页处理",
+      "前端截图",
+      "不生成",
+      "纯文本"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-564",
+    "title": "React 中如何优化图表渲染？",
+    "options": [
+      "Canvas 渲染、数据抽样、懒加载",
+      "SVG 渲染全部数据",
+      "不使用图表",
+      "静态图片"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-565",
+    "title": "React 中如何优化视频播放？",
+    "options": [
+      "自适应码率、懒加载、预加载",
+      "最高码率",
+      "自动播放",
+      "不优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-566",
+    "title": "React 中如何优化音频播放？",
+    "options": [
+      "预加载、缓存、Web Audio API",
+      "每次请求",
+      "不优化",
+      "使用 HTML5 Audio"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-567",
+    "title": "React 中如何优化地图渲染？",
+    "options": [
+      "聚合点、懒加载、离线缓存",
+      "渲染全部标记",
+      "静态图片",
+      "不使用地图"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-568",
+    "title": "React 中如何优化 3D 渲染？",
+    "options": [
+      "React Three Fiber、LOD、实例化",
+      "CPU 渲染",
+      "不使用 3D",
+      "低多边形"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-569",
+    "title": "React 中如何优化游戏渲染？",
+    "options": [
+      "RequestAnimationFrame、Canvas、WebGL",
+      "DOM 渲染",
+      "不优化",
+      "降低帧率"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-570",
+    "title": "React 中如何优化实时协作？",
+    "options": [
+      "CRDT 算法、WebSocket、冲突解决",
+      "HTTP 轮询",
+      "不协作",
+      "锁定编辑"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-571",
+    "title": "React 中如何优化离线体验？",
+    "options": [
+      "Service Worker、本地存储、同步",
+      "不支持离线",
+      "提示无网络",
+      "只读模式"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-572",
+    "title": "React 中如何优化 PWA？",
+    "options": [
+      "Manifest、Service Worker、推送通知",
+      "不使用 PWA",
+      "只加缓存",
+      "不安装"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-573",
+    "title": "React 中如何优化 Web Vitals？",
+    "options": [
+      "优化 LCP/FID/CLS 指标",
+      "不关注指标",
+      "只优化加载",
+      "只优化交互"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-574",
+    "title": "React 中 LCP 优化方式是？",
+    "options": [
+      "预加载关键资源、SSR、优化图片",
+      "延迟加载",
+      "减少内容",
+      "使用 CDN"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-575",
+    "title": "React 中 FID 优化方式是？",
+    "options": [
+      "减少主线程阻塞、代码分割、Web Worker",
+      "增加 JS",
+      "同步执行",
+      "减少交互"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-576",
+    "title": "React 中 CLS 优化方式是？",
+    "options": [
+      "预留空间、避免动态插入、字体优化",
+      "随意布局",
+      "不使用图片",
+      "固定宽度"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-577",
+    "title": "React 中 TTFB 优化方式是？",
+    "options": [
+      "CDN、边缘计算、缓存、优化服务器",
+      "增加服务器处理",
+      "不优化",
+      "减少请求"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-578",
+    "title": "React 中 FCP 优化方式是？",
+    "options": [
+      "内联关键 CSS、预加载、SSR",
+      "延迟渲染",
+      "白屏",
+      "减少 HTML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-579",
+    "title": "React 中 TTI 优化方式是？",
+    "options": [
+      "延迟非关键 JS、代码分割",
+      "加载全部 JS",
+      "同步执行",
+      "减少功能"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-580",
+    "title": "React 中 TBT 优化方式是？",
+    "options": [
+      "减少长任务、代码分割、Web Worker",
+      "增加长任务",
+      "不优化",
+      "减少交互"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-581",
+    "title": "React 中 SI 优化方式是？",
+    "options": [
+      "骨架屏、渐进式加载、SSR",
+      "白屏等待",
+      "不优化",
+      "减少内容"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-582",
+    "title": "React 中如何优化 Core Web Vitals？",
+    "options": [
+      "综合优化 LCP/FID/CLS",
+      "只优化一项",
+      "不关注",
+      "随机优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-583",
+    "title": "React 中如何监控 Web Vitals？",
+    "options": [
+      "web-vitals 库、Google Analytics",
+      "不监控",
+      "手动计时",
+      "只看加载时间"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-584",
+    "title": "React 中如何报告 Web Vitals？",
+    "options": [
+      "发送到分析服务、记录日志",
+      "不报告",
+      "只打印控制台",
+      "存储在本地"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-585",
+    "title": "React 中如何优化长任务？",
+    "options": [
+      "使用 Scheduler、时间切片、Web Worker",
+      "同步执行",
+      "不优化",
+      "增加任务"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-586",
+    "title": "React 中时间切片的原理是？",
+    "options": [
+      "将长任务拆分为小任务在空闲时执行",
+      "一次性执行",
+      "延迟执行",
+      "并行执行"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-587",
+    "title": "React 中 Scheduler 的作用是？",
+    "options": [
+      "调度任务优先级和执行时间",
+      "创建任务",
+      "取消任务",
+      "记录任务"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-588",
+    "title": "React 中如何优化事件委托？",
+    "options": [
+      "在最近父节点监听而非全局",
+      "全局监听",
+      "每个元素监听",
+      "不使用委托"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-589",
+    "title": "React 中如何优化被动事件监听？",
+    "options": [
+      "使用 passive: true 提升滚动性能",
+      "不使用 passive",
+      "阻止默认行为",
+      "移除监听"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-590",
+    "title": "React 中如何优化重排重绘？",
+    "options": [
+      "批量 DOM 修改、使用 transform、避免频繁读取布局",
+      "频繁修改 DOM",
+      "使用 left/top",
+      "不优化"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-591",
+    "title": "React 中如何优化合成层？",
+    "options": [
+      "will-change、transform、opacity",
+      "不使用合成层",
+      "增加 CSS 属性",
+      "使用 fixed"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-592",
+    "title": "React 中如何避免强制同步布局？",
+    "options": [
+      "避免在修改 DOM 后立即读取布局属性",
+      "先读后写",
+      "不读取布局",
+      "使用定时器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-593",
+    "title": "React 中如何优化 CSS 选择器？",
+    "options": [
+      "减少嵌套层级、使用类选择器",
+      "使用标签选择器",
+      "使用通配符",
+      "使用 ID 选择器"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-594",
+    "title": "React 中如何优化字体加载？",
+    "options": [
+      "font-display: swap、预加载、WOFF2",
+      "不优化",
+      "使用 TTF",
+      "阻塞渲染"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-595",
+    "title": "React 中如何优化脚本加载？",
+    "options": [
+      "async/defer、预加载、代码分割",
+      "阻塞加载",
+      "放在头部",
+      "内联全部"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-596",
+    "title": "React 中如何优化样式加载？",
+    "options": [
+      "提取关键 CSS、异步加载非关键 CSS",
+      "全部内联",
+      "阻塞加载",
+      "不使用 CSS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-597",
+    "title": "React 中如何优化图片加载？",
+    "options": [
+      "懒加载、响应式、WebP、预加载",
+      "加载原图",
+      "不使用图片",
+      "CSS 背景"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-598",
+    "title": "React 中如何优化视频加载？",
+    "options": [
+      "预加载元数据、懒加载、自适应码率",
+      "自动播放",
+      "加载最高清",
+      "不使用视频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-599",
+    "title": "React 中如何优化音频加载？",
+    "options": [
+      "预加载、懒加载、压缩格式",
+      "自动播放",
+      "加载全部",
+      "不使用音频"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "react-600",
+    "title": "React 中如何优化 SVG 渲染？",
+    "options": [
+      "内联关键 SVG、懒加载、压缩",
+      "全部内联",
+      "使用 img 标签",
+      "不使用 SVG"
+    ],
+    "correctAnswer": 0
+  }
+]
