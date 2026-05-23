@@ -44,16 +44,11 @@ export function useGameState() {
 
   /**
    * 开始新游戏
-   * 重置所有状态并打乱题目顺序
+   * 重置所有状态
    */
   const startGame = () => {
     // 重置游戏状态
     resetGame();
-
-    // 打乱题目顺序
-    if (typeof shuffleQuestions === 'function') {
-      shuffleQuestions();
-    }
 
     // 开始游戏
     gameStarted.value = true;
@@ -232,13 +227,6 @@ export function useGameState() {
     }
   };
 
-  /**
-   * 打乱题目顺序
-   */
-  const shuffleQuestions = () => {
-    // 这个函数会在父组件中实现，这里只提供接口
-  };
-
   return {
     // 状态
     gameStarted,
@@ -264,7 +252,6 @@ export function useGameState() {
     endGame,
     resetGame,
     selectAnswer,
-    shuffleQuestions,
     setTotalQuestions,
     recordAnswer,
     jumpToQuestion,

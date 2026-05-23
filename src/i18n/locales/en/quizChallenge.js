@@ -1,6 +1,5 @@
 // Module
 export default {
-
   title: 'Quiz Challenge',
   startDesc: 'Choose your technical field and start the challenge!',
   selectCategory: 'Select Category',
@@ -27,6 +26,7 @@ export default {
   wrong: 'Wrong',
   questionNavigation: 'Question Navigation',
   unanswered: 'Unanswered',
+
   rules: {
     title: 'Game Rules',
     rule1: 'Choose your preferred technical category',
@@ -34,5 +34,4 @@ export default {
     rule3: 'Get bonus points for consecutive correct answers',
     rule4: 'Wrong answers do not deduct points but break the streak',
   },
-
-}
+};

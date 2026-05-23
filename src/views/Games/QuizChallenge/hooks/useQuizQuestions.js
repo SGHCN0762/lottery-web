@@ -15,14 +15,11 @@ const categoryConfig = {
 };
 
 export function useQuizQuestions() {
-  const {
-    readFromCache,
-    writeToCache,
-    checkFileVersion,
-    clearCategoryCache: clearDBCategoryCache,
-    clearAllCache: clearDBAllCache,
-    getCacheStats,
-  } = useIndexedDBCache('QuizQuestionsDB', 1, 'questions');
+  const { readFromCache, writeToCache, checkFileVersion } = useIndexedDBCache(
+    'QuizQuestionsDB',
+    1,
+    'questions'
+  );
 
   const allQuestions = ref({});
   const loadedCategories = ref(new Set());
@@ -36,10 +33,6 @@ export function useQuizQuestions() {
       loaded: loadedCategories.value.has(key),
       progress: loadProgress.value[key] || { loaded: 0, total: categoryConfig[key].totalFiles },
     }));
-  };
-
-  const getCategoryName = key => {
-    return categoryConfig[key]?.name || key;
   };
 
   const loadCategoryQuestions = async category => {
@@ -172,31 +165,10 @@ export function useQuizQuestions() {
     return questions;
   };
 
-  const clearCategoryCache = async category => {
-    await clearDBCategoryCache(category);
-    delete allQuestions.value[category];
-    loadedCategories.value.delete(category);
-    delete loadProgress.value[category];
-  };
-
-  const clearAllCache = async () => {
-    await clearDBAllCache();
-    allQuestions.value = {};
-    loadedCategories.value.clear();
-    loadProgress.value = {};
-  };
-
   return {
-    allQuestions,
-    loadProgress,
     getAvailableCategories,
-    getCategoryName,
-    loadCategoryQuestions,
     loadCategories,
     initializeAllCategories,
     prepareQuestions,
-    clearCategoryCache,
-    clearAllCache,
-    getCacheStats,
   };
 }

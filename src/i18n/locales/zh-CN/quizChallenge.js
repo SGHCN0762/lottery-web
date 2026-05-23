@@ -1,6 +1,5 @@
 // 答题挑战
 export default {
-
   title: '答题挑战',
   startDesc: '展示你的技术知识！',
   myPoints: '我的积分',
@@ -27,6 +26,7 @@ export default {
   questionNavigation: '题目导航',
   unanswered: '未作答',
   loadError: '加载题目失败',
+
   rules: {
     title: '游戏规则',
     rule1: '可选择多个技术分类进行挑战',
@@ -34,5 +34,4 @@ export default {
     rule3: '每答对一题获得5积分，连续答对有额外奖励',
     rule4: '连续答对奖励：2题+5分，3题+10分，4题+15分，5题及以上+25分',
   },
-
-}
+};
