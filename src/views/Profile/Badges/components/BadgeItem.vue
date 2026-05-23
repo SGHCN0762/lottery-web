@@ -93,7 +93,7 @@
 <style lang="less" scoped>
   .badge-item {
     border-radius: 12px;
-    padding: 8px 16px;
+    padding: 8px;
     display: flex;
     align-items: center;
     gap: 12px;
