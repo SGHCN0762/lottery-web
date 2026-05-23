@@ -3,27 +3,27 @@
     <!-- 积分余额卡片 -->
     <section class="balance-card">
       <div class="balance-info">
-        <div class="label">可用积分</div>
+        <div class="label">{{ t('exchange.availablePoints') }}</div>
         <div class="value">{{ availablePoints }}</div>
       </div>
       <van-button type="primary" size="small" round @click="showRechargeDialog = true">
-        充值积分
+        {{ t('exchange.rechargePoints') }}
       </van-button>
     </section>
 
     <!-- 分类标签 -->
     <section class="category-tabs">
       <van-tabs v-model:active="activeCategory" @change="handleCategoryChange">
-        <van-tab title="全部" name="all" />
-        <van-tab title="实物礼品" name="physical" />
-        <van-tab title="虚拟道具" name="virtual" />
-        <van-tab title="游戏特权" name="privilege" />
+        <van-tab :title="t('exchange.categories.all')" name="all" />
+        <van-tab :title="t('exchange.categories.physical')" name="physical" />
+        <van-tab :title="t('exchange.categories.virtual')" name="virtual" />
+        <van-tab :title="t('exchange.categories.privilege')" name="privilege" />
       </van-tabs>
     </section>
 
     <!-- 兑换商品列表 -->
     <section class="products-list">
-      <van-empty v-if="filteredProducts.length === 0" description="暂无可兑换商品" />
+      <van-empty v-if="filteredProducts.length === 0" :description="t('exchange.noExchangeableProducts')" />
 
       <div v-else class="products-grid">
         <div
@@ -40,9 +40,9 @@
               fit="cover"
               radius="var(--radius-md)"
             >
-              <template v-slot:error>加载失败</template>
+              <template v-slot:error>{{ t('exchange.loadFailed') }}</template>
             </van-image>
-            <van-tag v-if="product.hot" type="danger" class="hot-tag"> 热门 </van-tag>
+            <van-tag v-if="product.hot" type="danger" class="hot-tag"> {{ t('exchange.hot') }} </van-tag>
           </div>
 
           <div class="product-info">
@@ -60,7 +60,7 @@
                 :disabled="availablePoints < product.price"
                 @click.stop="handleExchange(product)"
               >
-                立即兑换
+                {{ t('exchange.exchangeNow') }}
               </van-button>
             </div>
           </div>
@@ -72,7 +72,7 @@
     <van-popup v-model:show="showDetailPopup" round position="bottom" :style="{ height: '70%' }">
       <div class="detail-popup" v-if="currentProduct">
         <div class="popup-header">
-          <h3>商品详情</h3>
+          <h3>{{ t('exchange.productDetails') }}</h3>
           <van-icon name="cross" @click="showDetailPopup = false" />
         </div>
 
@@ -90,17 +90,17 @@
             <p class="detail-desc">{{ currentProduct.description }}</p>
 
             <div class="detail-specs">
-              <h4>商品规格</h4>
-              <p>{{ currentProduct.specs || '标准版' }}</p>
+              <h4>{{ t('exchange.specifications') }}</h4>
+              <p>{{ currentProduct.specs || t('exchange.standardEdition') }}</p>
             </div>
 
             <div class="detail-rules">
-              <h4>兑换规则</h4>
+              <h4>{{ t('exchange.rules') }}</h4>
               <ul>
-                <li>兑换后不可退换，请谨慎选择</li>
-                <li>实物礼品将在3-7个工作日内发货</li>
-                <li>虚拟道具将直接发放到您的账户</li>
-                <li>如有疑问请联系客服</li>
+                <li>{{ t('exchange.exchangeRulesList.noRefund') }}</li>
+                <li>{{ t('exchange.exchangeRulesList.physicalShipping') }}</li>
+                <li>{{ t('exchange.exchangeRulesList.virtualDelivery') }}</li>
+                <li>{{ t('exchange.exchangeRulesList.contactSupport') }}</li>
               </ul>
             </div>
           </div>
@@ -109,7 +109,7 @@
         <div class="popup-footer">
           <div class="footer-price">
             <van-icon name="gold-coin-o" />
-            <span>{{ currentProduct.price }} 积分</span>
+            <span>{{ currentProduct.price }} {{ t('exchange.pointsUnit') }}</span>
           </div>
           <van-button
             type="primary"
@@ -117,7 +117,7 @@
             :disabled="availablePoints < currentProduct.price"
             @click="handleExchange(currentProduct)"
           >
-            立即兑换
+            {{ t('exchange.exchangeNow') }}
           </van-button>
         </div>
       </div>
@@ -126,33 +126,33 @@
     <!-- 确认兑换弹窗 -->
     <van-dialog
       v-model:show="showConfirmDialog"
-      title="确认兑换"
+      :title="t('exchange.confirmExchangeTitle')"
       show-cancel-button
       @confirm="confirmExchange"
     >
       <div class="confirm-content" v-if="currentProduct">
-        <p>您确定要兑换以下商品吗？</p>
+        <p>{{ t('exchange.confirmExchangeMessage') }}</p>
         <div class="confirm-product">
           <strong>{{ currentProduct.name }}</strong>
           <div class="confirm-price">
             <van-icon name="gold-coin-o" />
-            <span>{{ currentProduct.price }} 积分</span>
+            <span>{{ currentProduct.price }} {{ t('exchange.pointsUnit') }}</span>
           </div>
         </div>
-        <p class="confirm-tip">兑换后将扣除相应积分，且不可撤销</p>
+        <p class="confirm-tip">{{ t('exchange.confirmExchangeTip') }}</p>
       </div>
     </van-dialog>
 
     <!-- 充值对话框 -->
     <van-dialog
       v-model:show="showRechargeDialog"
-      title="充值积分"
+      :title="t('exchange.rechargeDialogTitle')"
       show-cancel-button
       @confirm="handleRecharge"
     >
       <div class="recharge-content">
-        <p>温馨提示：本平台仅供娱乐，积分不可兑换现金。</p>
-        <p>测试期间，您可以点击确认免费获得100积分。</p>
+        <p>{{ t('exchange.rechargeDialogMessage1') }}</p>
+        <p>{{ t('exchange.rechargeDialogMessage2') }}</p>
       </div>
     </van-dialog>
   </div>
@@ -160,6 +160,7 @@
 
 <script setup>
   import { ref, computed, onMounted } from 'vue';
+  import { useI18n } from 'vue-i18n';
   import { showToast, showSuccessToast } from 'vant';
   import {
     Tabs as VanTabs,
@@ -172,6 +173,11 @@
     Popup as VanPopup,
     Dialog as VanDialog,
   } from 'vant';
+
+  // ========================================
+  // 国际化
+  // ========================================
+  const { t } = useI18n();
 
   // ========================================
   // 响应式数据
@@ -201,63 +207,63 @@
     return [
       {
         id: 1,
-        name: '精美马克杯',
-        description: '高品质陶瓷马克杯，容量350ml',
+        name: t('exchange.products.mug.name'),
+        description: t('exchange.products.mug.description'),
         price: 200,
         category: 'physical',
         image: 'https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg',
         hot: true,
-        specs: '白色/黑色可选，容量350ml',
+        specs: t('exchange.products.mug.specs'),
       },
       {
         id: 2,
-        name: '定制T恤',
-        description: '纯棉舒适T恤，多尺码可选',
+        name: t('exchange.products.tshirt.name'),
+        description: t('exchange.products.tshirt.description'),
         price: 500,
         category: 'physical',
         image: 'https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg',
         hot: false,
-        specs: 'S/M/L/XL码，多色可选',
+        specs: t('exchange.products.tshirt.specs'),
       },
       {
         id: 3,
-        name: '幸运转盘券',
-        description: '免费转动幸运转盘3次',
+        name: t('exchange.products.wheelTicket.name'),
+        description: t('exchange.products.wheelTicket.description'),
         price: 50,
         category: 'virtual',
         image: 'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg',
         hot: true,
-        specs: '有效期7天',
+        specs: t('exchange.products.wheelTicket.specs'),
       },
       {
         id: 4,
-        name: '答题复活卡',
-        description: '答题挑战答错时可复活一次',
+        name: t('exchange.products.reviveCard.name'),
+        description: t('exchange.products.reviveCard.description'),
         price: 80,
         category: 'virtual',
         image: 'https://fastly.jsdelivr.net/npm/@vant/assets/dog.jpeg',
         hot: false,
-        specs: '每局限用1次',
+        specs: t('exchange.products.reviveCard.specs'),
       },
       {
         id: 5,
-        name: 'VIP会员（月）',
-        description: '享受专属特权和额外奖励',
+        name: t('exchange.products.vipMonthly.name'),
+        description: t('exchange.products.vipMonthly.description'),
         price: 1000,
         category: 'privilege',
         image: 'https://fastly.jsdelivr.net/npm/@vant/assets/leaf.jpeg',
         hot: true,
-        specs: '每日签到双倍积分，专属客服',
+        specs: t('exchange.products.vipMonthly.specs'),
       },
       {
         id: 6,
-        name: '游戏提示卡',
-        description: '数字猜猜猜可获得一次提示',
+        name: t('exchange.products.hintCard.name'),
+        description: t('exchange.products.hintCard.description'),
         price: 30,
         category: 'virtual',
         image: 'https://fastly.jsdelivr.net/npm/@vant/assets/orange.jpeg',
         hot: false,
-        specs: '提示偏大或偏小',
+        specs: t('exchange.products.hintCard.specs'),
       },
     ];
   };
@@ -301,7 +307,7 @@
    */
   const handleExchange = product => {
     if (availablePoints.value < product.price) {
-      showToast('积分不足');
+      showToast(t('exchange.insufficientPoints'));
       return;
     }
 
@@ -327,7 +333,7 @@
       localStorage.setItem('userInfo', JSON.stringify(user));
     }
 
-    showSuccessToast('兑换成功！');
+    showSuccessToast(t('exchange.exchangeSuccess'));
     showConfirmDialog.value = false;
 
     // TODO: 添加兑换记录
@@ -364,7 +370,7 @@
       localStorage.setItem('userInfo', JSON.stringify(user));
     }
 
-    showSuccessToast('充值成功！获得100积分');
+    showSuccessToast(t('exchange.rechargeSuccess'));
   };
 
   // ========================================

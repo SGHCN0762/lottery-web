@@ -18,5 +18,8 @@ export default {
   rewardDistributionDesc: '好友完成首次游戏后，奖励将自动发放到您的账户',
   inviteLimitTitle: '有邀请上限吗？',
   inviteLimitDesc: '没有上限，邀请越多，奖励越多',
+  inviteRules: '邀请规则',
+  howToEarnPoints: '如何获得积分？',
+  howToEarnPointsDesc: '通过每日签到、参与游戏、邀请好友等方式获得积分',
 
 }

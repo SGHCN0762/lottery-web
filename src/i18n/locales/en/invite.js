@@ -20,5 +20,8 @@ export default {
   rewardDistributionDesc: 'Rewards will be automatically credited to your account after your friend completes their first game',
   inviteLimitTitle: 'Is there an invitation limit?',
   inviteLimitDesc: 'No limit, the more you invite, the more rewards you earn',
+  inviteRules: 'Invitation Rules',
+  howToEarnPoints: 'How to earn points?',
+  howToEarnPointsDesc: 'Earn points through daily check-in, playing games, inviting friends, and more',
 
 }

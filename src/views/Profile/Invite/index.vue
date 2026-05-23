@@ -74,11 +74,11 @@
 
     <!-- 邀请规则 -->
     <section class="rules-section">
-      <div class="section-title">{{ t('points.types.invite') }}</div>
+      <div class="section-title">{{ t('invite.inviteRules') }}</div>
       <van-cell-group inset>
-        <van-cell :title="t('help.faq.howToEarnPoints')">
+        <van-cell :title="t('invite.howToEarnPoints')">
           <template #label>
-            <span class="rule-desc">{{ t('help.onlineService.replies.points') }}</span>
+            <span class="rule-desc">{{ t('invite.howToEarnPointsDesc') }}</span>
           </template>
         </van-cell>
         <van-cell :title="t('invite.rewardDistributionTitle')">
