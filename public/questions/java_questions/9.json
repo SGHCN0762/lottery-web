@@ -3,32 +3,32 @@
     "id": "java-401",
     "title": "Java中Map的values()方法返回？",
     "options": [
-      "值Collection",
       "键Set",
       "键值对Set",
+      "值Collection",
       "键值对List"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-402",
     "title": "Java中Map的getOrDefault()方法作用是？",
     "options": [
-      "获取值或默认值",
       "获取值",
+      "判断是否包含",
       "设置默认值",
-      "判断是否包含"
+      "获取值或默认值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-403",
     "title": "Java中Map的forEach()方法作用是？",
     "options": [
       "遍历Map",
+      "排序Map",
       "过滤Map",
-      "转换Map",
-      "排序Map"
+      "转换Map"
     ],
     "correctAnswer": 0
   },
@@ -36,12 +36,12 @@
     "id": "java-404",
     "title": "Java中Map的putIfAbsent()方法作用是？",
     "options": [
-      "不存在时插入",
       "存在时插入",
       "总是插入",
+      "不存在时插入",
       "删除后插入"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-405",
@@ -58,133 +58,133 @@
     "id": "java-406",
     "title": "Java中Map的computeIfPresent()方法作用是？",
     "options": [
-      "存在时计算并更新",
       "不存在时计算",
-      "总是计算",
-      "删除后计算"
+      "删除后计算",
+      "存在时计算并更新",
+      "总是计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-407",
     "title": "Java中Map的merge()方法作用是？",
     "options": [
-      "合并值",
       "合并键",
+      "合并值",
       "合并Map",
       "替换值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-408",
     "title": "Java中Map的replace()方法作用是？",
     "options": [
+      "合并值",
       "替换值",
-      "替换键",
       "替换Map",
-      "合并值"
+      "替换键"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-409",
     "title": "Java中Map的replaceAll()方法作用是？",
     "options": [
-      "替换所有值",
-      "替换所有键",
       "替换所有Map",
-      "合并所有值"
+      "替换所有值",
+      "合并所有值",
+      "替换所有键"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-410",
     "title": "Java中Map的remove()方法重载版本作用是？",
     "options": [
-      "条件删除",
-      "无条件删除",
       "批量删除",
-      "延迟删除"
+      "条件删除",
+      "延迟删除",
+      "无条件删除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-411",
     "title": "Java中Comparable和Comparator的区别是？",
     "options": [
-      "Comparable在类内实现，Comparator在类外实现",
       "Comparable在类外实现，Comparator在类内实现",
       "无区别",
-      "取决于场景"
+      "取决于场景",
+      "Comparable在类内实现，Comparator在类外实现"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-412",
     "title": "Java中Comparable的compareTo()方法返回？",
     "options": [
-      "负数、零、正数",
+      "-1、0、1",
       "true、false",
       "0、1",
-      "-1、0、1"
+      "负数、零、正数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-413",
     "title": "Java中Comparator的compare()方法返回？",
     "options": [
+      "-1、0、1",
       "负数、零、正数",
-      "true、false",
       "0、1",
-      "-1、0、1"
+      "true、false"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-414",
     "title": "Java中Iterator的remove()方法作用是？",
     "options": [
-      "删除当前元素",
       "删除下一个元素",
+      "删除当前元素",
       "删除上一个元素",
       "删除所有元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-415",
     "title": "Java中Iterator的hasNext()方法作用是？",
     "options": [
-      "判断是否有下一个元素",
       "获取下一个元素",
-      "删除下一个元素",
-      "跳过下一个元素"
+      "跳过下一个元素",
+      "判断是否有下一个元素",
+      "删除下一个元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-416",
     "title": "Java中Iterator的next()方法作用是？",
     "options": [
-      "获取下一个元素",
-      "判断是否有下一个元素",
+      "跳过下一个元素",
       "删除下一个元素",
-      "跳过下一个元素"
+      "判断是否有下一个元素",
+      "获取下一个元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-417",
     "title": "Java中ListIterator的previous()方法作用是？",
     "options": [
-      "获取上一个元素",
       "获取下一个元素",
       "删除上一个元素",
-      "跳过上一个元素"
+      "跳过上一个元素",
+      "获取上一个元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-418",
@@ -192,8 +192,8 @@
     "options": [
       "判断是否有上一个元素",
       "判断是否有下一个元素",
-      "删除上一个元素",
-      "跳过上一个元素"
+      "跳过上一个元素",
+      "删除上一个元素"
     ],
     "correctAnswer": 0
   },
@@ -201,43 +201,43 @@
     "id": "java-419",
     "title": "Java中ListIterator的add()方法作用是？",
     "options": [
-      "添加元素",
       "删除元素",
       "修改元素",
-      "替换元素"
+      "替换元素",
+      "添加元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-420",
     "title": "Java中ListIterator的set()方法作用是？",
     "options": [
-      "修改元素",
+      "替换元素",
       "添加元素",
       "删除元素",
-      "替换元素"
+      "修改元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-421",
     "title": "Java中ListIterator的nextIndex()方法作用是？",
     "options": [
-      "获取下一个索引",
       "获取上一个索引",
       "获取当前索引",
+      "获取下一个索引",
       "获取最后索引"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-422",
     "title": "Java中ListIterator的previousIndex()方法作用是？",
     "options": [
-      "获取上一个索引",
-      "获取下一个索引",
       "获取当前索引",
-      "获取最后索引"
+      "获取下一个索引",
+      "获取最后索引",
+      "获取上一个索引"
     ],
     "correctAnswer": 1
   },
@@ -245,42 +245,42 @@
     "id": "java-423",
     "title": "Java中集合的遍历方式有？",
     "options": [
-      "for, foreach, Iterator, Stream",
       "while, do-while",
+      "以上都不对",
       "递归",
-      "以上都不对"
+      "for, foreach, Iterator, Stream"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-424",
     "title": "Java中集合转数组的方法是？",
     "options": [
-      "toArray()",
+      "toArray(T[])",
       "asList()",
-      "toList()",
-      "toArray(T[])"
+      "toArray()",
+      "toList()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-425",
     "title": "Java中数组转集合的方法是？",
     "options": [
-      "Arrays.asList()",
       "toList()",
-      "fromArray()",
-      "Collections.addAll()"
+      "Collections.addAll()",
+      "Arrays.asList()",
+      "fromArray()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-426",
     "title": "Java中Arrays.asList()的特点是？",
     "options": [
       "返回固定大小的List",
-      "返回可变List",
       "返回不可变List",
+      "返回可变List",
       "返回同步List"
     ],
     "correctAnswer": 0
@@ -289,54 +289,54 @@
     "id": "java-427",
     "title": "Java中如何创建不可变集合？",
     "options": [
-      "Collections.unmodifiableXxx, List.of(), Map.of()",
-      "new ArrayList()",
       "new HashMap()",
-      "以上都不对"
+      "new ArrayList()",
+      "以上都不对",
+      "Collections.unmodifiableXxx, List.of(), Map.of()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-428",
     "title": "Java中List.of()的特点是？",
     "options": [
-      "不可变，不允许null",
-      "可变，允许null",
       "不可变，允许null",
-      "可变，不允许null"
+      "可变，不允许null",
+      "不可变，不允许null",
+      "可变，允许null"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-429",
     "title": "Java中Map.of()的特点是？",
     "options": [
-      "不可变，不允许null",
       "可变，允许null",
+      "不可变，不允许null",
       "不可变，允许null",
       "可变，不允许null"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-430",
     "title": "Java中Set.of()的特点是？",
     "options": [
-      "不可变，不允许null",
+      "可变，不允许null",
       "可变，允许null",
       "不可变，允许null",
-      "可变，不允许null"
+      "不可变，不允许null"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-431",
     "title": "Java中Stream的特点是？",
     "options": [
       "函数式操作，惰性求值",
-      "命令式操作，立即求值",
       "面向对象操作",
-      "以上都不对"
+      "以上都不对",
+      "命令式操作，立即求值"
     ],
     "correctAnswer": 0
   },
@@ -344,100 +344,100 @@
     "id": "java-432",
     "title": "Java中Stream的创建方式有？",
     "options": [
-      "Collection.stream(), Stream.of(), Arrays.stream()",
       "new Stream()",
-      "Stream.create()",
-      "以上都不对"
+      "Collection.stream(), Stream.of(), Arrays.stream()",
+      "以上都不对",
+      "Stream.create()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-433",
     "title": "Java中Stream的中间操作有？",
     "options": [
-      "filter, map, flatMap, sorted",
+      "以上都不对",
       "forEach, collect, count",
       "reduce, findFirst",
-      "以上都不对"
+      "filter, map, flatMap, sorted"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-434",
     "title": "Java中Stream的终端操作有？",
     "options": [
-      "forEach, collect, count, reduce",
+      "以上都不对",
       "filter, map, flatMap",
       "sorted, distinct",
-      "以上都不对"
+      "forEach, collect, count, reduce"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-435",
     "title": "Java中Stream的filter()方法作用是？",
     "options": [
-      "过滤元素",
       "转换元素",
+      "过滤元素",
       "排序元素",
       "去重元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-436",
     "title": "Java中Stream的map()方法作用是？",
     "options": [
-      "转换元素",
       "过滤元素",
-      "排序元素",
-      "去重元素"
+      "去重元素",
+      "转换元素",
+      "排序元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-437",
     "title": "Java中Stream的flatMap()方法作用是？",
     "options": [
-      "扁平化转换元素",
-      "过滤元素",
       "排序元素",
-      "去重元素"
+      "去重元素",
+      "过滤元素",
+      "扁平化转换元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-438",
     "title": "Java中Stream的sorted()方法作用是？",
     "options": [
-      "排序元素",
       "过滤元素",
       "转换元素",
-      "去重元素"
+      "去重元素",
+      "排序元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-439",
     "title": "Java中Stream的distinct()方法作用是？",
     "options": [
-      "去重元素",
       "过滤元素",
       "转换元素",
+      "去重元素",
       "排序元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-440",
     "title": "Java中Stream的limit()方法作用是？",
     "options": [
-      "限制元素数量",
-      "跳过元素",
+      "去重元素",
       "排序元素",
-      "去重元素"
+      "跳过元素",
+      "限制元素数量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-441",
@@ -454,42 +454,42 @@
     "id": "java-442",
     "title": "Java中Stream的peek()方法作用是？",
     "options": [
-      "查看元素但不消费",
-      "消费元素",
       "过滤元素",
+      "消费元素",
+      "查看元素但不消费",
       "转换元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-443",
     "title": "Java中Stream的forEach()方法作用是？",
     "options": [
+      "转换元素",
       "消费元素",
       "查看元素但不消费",
-      "过滤元素",
-      "转换元素"
+      "过滤元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-444",
     "title": "Java中Stream的collect()方法作用是？",
     "options": [
-      "收集元素到集合",
       "消费元素",
-      "过滤元素",
-      "转换元素"
+      "转换元素",
+      "收集元素到集合",
+      "过滤元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-445",
     "title": "Java中Stream的reduce()方法作用是？",
     "options": [
       "聚合元素",
-      "收集元素",
       "过滤元素",
+      "收集元素",
       "转换元素"
     ],
     "correctAnswer": 0
@@ -498,54 +498,54 @@
     "id": "java-446",
     "title": "Java中Stream的count()方法作用是？",
     "options": [
-      "计算元素数量",
+      "转换元素",
       "收集元素",
-      "过滤元素",
-      "转换元素"
+      "计算元素数量",
+      "过滤元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-447",
     "title": "Java中Stream的findFirst()方法作用是？",
     "options": [
-      "找到第一个元素",
-      "找到任意元素",
       "找到最后元素",
-      "找到所有元素"
+      "找到所有元素",
+      "找到任意元素",
+      "找到第一个元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-448",
     "title": "Java中Stream的findAny()方法作用是？",
     "options": [
-      "找到任意元素",
       "找到第一个元素",
       "找到最后元素",
-      "找到所有元素"
+      "找到所有元素",
+      "找到任意元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-449",
     "title": "Java中Stream的anyMatch()方法作用是？",
     "options": [
-      "判断是否有元素匹配",
       "判断是否所有元素匹配",
       "判断是否没有元素匹配",
+      "判断是否有元素匹配",
       "找到匹配元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-450",
     "title": "Java中Stream的allMatch()方法作用是？",
     "options": [
       "判断是否所有元素匹配",
+      "找到匹配元素",
       "判断是否有元素匹配",
-      "判断是否没有元素匹配",
-      "找到匹配元素"
+      "判断是否没有元素匹配"
     ],
     "correctAnswer": 0
   }

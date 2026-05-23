@@ -4,9 +4,9 @@
     "title": "Java中序列化单例的解决方法是？",
     "options": [
       "readResolve()",
-      "writeReplace()",
       "readObject()",
-      "writeObject()"
+      "writeObject()",
+      "writeReplace()"
     ],
     "correctAnswer": 0
   },
@@ -14,9 +14,9 @@
     "id": "java-702",
     "title": "Java中序列化的注意事项有？",
     "options": [
-      "引用类型必须可序列化",
       "基本类型自动序列化",
       "静态变量不序列化",
+      "引用类型必须可序列化",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -25,9 +25,9 @@
     "id": "java-703",
     "title": "Java中IO流的分类有？",
     "options": [
+      "节点流和处理流",
       "字节流和字符流",
       "输入流和输出流",
-      "节点流和处理流",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -47,65 +47,65 @@
     "id": "java-705",
     "title": "Java中字符流的基类是？",
     "options": [
-      "Reader和Writer",
-      "InputStream和OutputStream",
+      "以上都不对",
       "File和Path",
-      "以上都不对"
+      "InputStream和OutputStream",
+      "Reader和Writer"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-706",
     "title": "Java中FileInputStream的作用是？",
     "options": [
-      "读取文件字节",
-      "写入文件字节",
       "读取文件字符",
-      "写入文件字符"
+      "写入文件字节",
+      "写入文件字符",
+      "读取文件字节"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-707",
     "title": "Java中FileOutputStream的作用是？",
     "options": [
-      "写入文件字节",
       "读取文件字节",
+      "写入文件字节",
       "读取文件字符",
       "写入文件字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-708",
     "title": "Java中FileReader的作用是？",
     "options": [
-      "读取文件字符",
-      "写入文件字符",
       "读取文件字节",
-      "写入文件字节"
+      "写入文件字符",
+      "写入文件字节",
+      "读取文件字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-709",
     "title": "Java中FileWriter的作用是？",
     "options": [
-      "写入文件字符",
       "读取文件字符",
-      "读取文件字节",
-      "写入文件字节"
+      "写入文件字符",
+      "写入文件字节",
+      "读取文件字节"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-710",
     "title": "Java中BufferedInputStream的作用是？",
     "options": [
       "缓冲字节输入",
-      "缓冲字节输出",
+      "缓冲字符输出",
       "缓冲字符输入",
-      "缓冲字符输出"
+      "缓冲字节输出"
     ],
     "correctAnswer": 0
   },
@@ -113,20 +113,20 @@
     "id": "java-711",
     "title": "Java中BufferedOutputStream的作用是？",
     "options": [
+      "缓冲字符输出",
       "缓冲字节输出",
-      "缓冲字节输入",
       "缓冲字符输入",
-      "缓冲字符输出"
+      "缓冲字节输入"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-712",
     "title": "Java中BufferedReader的作用是？",
     "options": [
       "缓冲字符输入",
-      "缓冲字符输出",
       "缓冲字节输入",
+      "缓冲字符输出",
       "缓冲字节输出"
     ],
     "correctAnswer": 0
@@ -135,65 +135,65 @@
     "id": "java-713",
     "title": "Java中BufferedWriter的作用是？",
     "options": [
+      "缓冲字节输入",
       "缓冲字符输出",
       "缓冲字符输入",
-      "缓冲字节输入",
       "缓冲字节输出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-714",
     "title": "Java中DataInputStream的作用是？",
     "options": [
+      "写入对象",
       "读取基本类型",
-      "写入基本类型",
       "读取对象",
-      "写入对象"
+      "写入基本类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-715",
     "title": "Java中DataOutputStream的作用是？",
     "options": [
-      "写入基本类型",
       "读取基本类型",
-      "读取对象",
-      "写入对象"
+      "写入基本类型",
+      "写入对象",
+      "读取对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-716",
     "title": "Java中ObjectInputStream的作用是？",
     "options": [
-      "读取对象",
-      "写入对象",
       "读取基本类型",
-      "写入基本类型"
+      "写入对象",
+      "写入基本类型",
+      "读取对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-717",
     "title": "Java中ObjectOutputStream的作用是？",
     "options": [
-      "写入对象",
-      "读取对象",
       "读取基本类型",
-      "写入基本类型"
+      "写入基本类型",
+      "读取对象",
+      "写入对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-718",
     "title": "Java中PrintStream的作用是？",
     "options": [
       "打印字节流",
-      "打印字符流",
+      "写入对象",
       "读取对象",
-      "写入对象"
+      "打印字符流"
     ],
     "correctAnswer": 0
   },
@@ -201,120 +201,120 @@
     "id": "java-719",
     "title": "Java中PrintWriter的作用是？",
     "options": [
-      "打印字符流",
-      "打印字节流",
+      "写入对象",
       "读取对象",
-      "写入对象"
+      "打印字符流",
+      "打印字节流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-720",
     "title": "Java中InputStreamReader的作用是？",
     "options": [
-      "字节流转字符流",
-      "字符流转字节流",
+      "数据流",
       "缓冲流",
-      "数据流"
+      "字符流转字节流",
+      "字节流转字符流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-721",
     "title": "Java中JVM的组成部分有？",
     "options": [
-      "类加载器，运行时数据区，执行引擎",
+      "以上都不对",
       "编译器，解释器",
-      "垃圾回收器，内存管理",
-      "以上都不对"
+      "类加载器，运行时数据区，执行引擎",
+      "垃圾回收器，内存管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-722",
     "title": "Java中运行时数据区包括？",
     "options": [
-      "堆，栈，方法区，程序计数器，本地方法栈",
-      "堆，栈，方法区",
       "堆，栈",
-      "以上都不对"
+      "以上都不对",
+      "堆，栈，方法区，程序计数器，本地方法栈",
+      "堆，栈，方法区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-723",
     "title": "Java中堆的特点是？",
     "options": [
-      "线程共享，存储对象",
       "线程私有，存储局部变量",
+      "存储常量",
       "存储类信息",
-      "存储常量"
+      "线程共享，存储对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-724",
     "title": "Java中栈的特点是？",
     "options": [
-      "线程私有，存储局部变量",
-      "线程共享，存储对象",
       "存储类信息",
-      "存储常量"
+      "线程共享，存储对象",
+      "存储常量",
+      "线程私有，存储局部变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-725",
     "title": "Java中方法区的特点是？",
     "options": [
-      "线程共享，存储类信息",
-      "线程私有，存储局部变量",
+      "存储常量",
       "存储对象",
-      "存储常量"
+      "线程私有，存储局部变量",
+      "线程共享，存储类信息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-726",
     "title": "Java中程序计数器的特点是？",
     "options": [
+      "存储常量",
       "线程私有，记录执行位置",
       "线程共享，存储对象",
-      "存储类信息",
-      "存储常量"
+      "存储类信息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-727",
     "title": "Java中本地方法栈的特点是？",
     "options": [
-      "线程私有，服务Native方法",
       "线程共享，存储对象",
       "存储类信息",
-      "存储常量"
+      "存储常量",
+      "线程私有，服务Native方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-728",
     "title": "Java中堆的分区有？",
     "options": [
-      "新生代，老年代",
-      "Eden，Survivor",
       "Young，Old，Perm",
-      "以上都不对"
+      "新生代，老年代",
+      "以上都不对",
+      "Eden，Survivor"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-729",
     "title": "Java中新生代的分区有？",
     "options": [
       "Eden，Survivor0，Survivor1",
+      "以上都不对",
       "Eden，Old",
-      "Young，Old",
-      "以上都不对"
+      "Young，Old"
     ],
     "correctAnswer": 0
   },
@@ -323,9 +323,9 @@
     "title": "Java中对象分配在哪个区域？",
     "options": [
       "堆",
-      "栈",
       "方法区",
-      "程序计数器"
+      "程序计数器",
+      "栈"
     ],
     "correctAnswer": 0
   },
@@ -333,12 +333,12 @@
     "id": "java-731",
     "title": "Java中局部变量分配在哪个区域？",
     "options": [
-      "栈",
-      "堆",
       "方法区",
-      "程序计数器"
+      "程序计数器",
+      "栈",
+      "堆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-732",
@@ -355,43 +355,43 @@
     "id": "java-733",
     "title": "Java中常量池分配在哪个区域？",
     "options": [
+      "栈",
       "方法区",
       "堆",
-      "栈",
       "程序计数器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-734",
     "title": "Java中静态变量分配在哪个区域？",
     "options": [
-      "方法区",
+      "程序计数器",
       "堆",
       "栈",
-      "程序计数器"
+      "方法区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-735",
     "title": "Java中JIT编译器的作用是？",
     "options": [
-      "将热点代码编译为本地代码",
       "解释执行字节码",
+      "以上都不对",
       "加载类",
-      "以上都不对"
+      "将热点代码编译为本地代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-736",
     "title": "Java中AOT编译器的作用是？",
     "options": [
       "提前编译为本地代码",
-      "运行时编译",
+      "以上都不对",
       "解释执行",
-      "以上都不对"
+      "运行时编译"
     ],
     "correctAnswer": 0
   },
@@ -399,43 +399,43 @@
     "id": "java-737",
     "title": "Java中类加载的过程是？",
     "options": [
-      "加载，验证，准备，解析，初始化",
       "编译，解释，执行",
       "创建，使用，销毁",
+      "加载，验证，准备，解析，初始化",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-738",
     "title": "Java中类加载器的类型有？",
     "options": [
-      "Bootstrap, Extension, Application",
       "System, Custom",
+      "Bootstrap, Extension, Application",
       "Parent, Child",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-739",
     "title": "Java中双亲委派模型是指？",
     "options": [
-      "先委托父类加载器加载",
-      "先自己加载",
       "子类加载器优先",
+      "先自己加载",
+      "先委托父类加载器加载",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-740",
     "title": "Java中双亲委派模型的好处是？",
     "options": [
       "保证核心类安全",
-      "提高加载速度",
       "减少内存占用",
-      "以上都不对"
+      "以上都不对",
+      "提高加载速度"
     ],
     "correctAnswer": 0
   },
@@ -443,54 +443,54 @@
     "id": "java-741",
     "title": "Java中如何打破双亲委派模型？",
     "options": [
-      "自定义类加载器重写loadClass",
       "使用反射",
       "使用代理",
+      "自定义类加载器重写loadClass",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-742",
     "title": "Java中Tomcat的类加载器结构是？",
     "options": [
-      "每个应用独立类加载器",
+      "以上都不对",
       "使用双亲委派",
-      "使用系统类加载器",
-      "以上都不对"
+      "每个应用独立类加载器",
+      "使用系统类加载器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-743",
     "title": "Java中GC的作用是？",
     "options": [
-      "回收不再使用的对象",
       "创建对象",
+      "回收不再使用的对象",
       "加载类",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-744",
     "title": "Java中GC的算法有？",
     "options": [
-      "标记-清除，复制，标记-整理",
       "引用计数",
+      "标记-清除，复制，标记-整理",
       "分代收集",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-745",
     "title": "Java中标记-清除算法的缺点是？",
     "options": [
       "内存碎片",
-      "效率低",
+      "以上都不对",
       "移动对象",
-      "以上都不对"
+      "效率低"
     ],
     "correctAnswer": 0
   },
@@ -498,55 +498,55 @@
     "id": "java-746",
     "title": "Java中复制算法的缺点是？",
     "options": [
-      "内存利用率低",
       "内存碎片",
+      "以上都不对",
       "效率低",
-      "以上都不对"
+      "内存利用率低"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-747",
     "title": "Java中标记-整理算法的优点是？",
     "options": [
-      "无内存碎片",
       "内存利用率高",
+      "以上都不对",
       "效率高",
-      "以上都不对"
+      "无内存碎片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-748",
     "title": "Java中新生代使用什么算法？",
     "options": [
-      "复制算法",
       "标记-清除",
+      "复制算法",
       "标记-整理",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-749",
     "title": "Java中老年代使用什么算法？",
     "options": [
+      "以上都不对",
       "标记-整理",
       "复制算法",
-      "标记-清除",
-      "以上都不对"
+      "标记-清除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-750",
     "title": "Java中Minor GC是指？",
     "options": [
+      "以上都不对",
       "新生代GC",
-      "老年代GC",
       "全GC",
-      "以上都不对"
+      "老年代GC"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

@@ -14,12 +14,12 @@
     "id": "html-2",
     "title": "HTML文档的根标签是？",
     "options": [
+      "<root>",
       "<html>",
-      "<body>",
       "<head>",
-      "<root>"
+      "<body>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-3",
@@ -27,8 +27,8 @@
     "options": [
       "<title>",
       "<header>",
-      "<h1>",
-      "<head>"
+      "<head>",
+      "<h1>"
     ],
     "correctAnswer": 0
   },
@@ -36,42 +36,42 @@
     "id": "html-4",
     "title": "HTML5文档类型声明是？",
     "options": [
-      "<!DOCTYPE html>",
-      "<!DOCTYPE HTML5>",
       "<!HTML>",
+      "<!DOCTYPE HTML5>",
+      "<!DOCTYPE html>",
       "<!DOCTYPE>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-5",
     "title": "<meta charset=\"UTF-8\">的作用是？",
     "options": [
-      "定义文档字符编码",
       "定义视口",
+      "定义文档字符编码",
       "定义作者",
       "定义关键词"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-6",
     "title": "<head>标签中通常不包含？",
     "options": [
-      "<body>",
-      "<title>",
+      "<link>",
       "<meta>",
-      "<link>"
+      "<body>",
+      "<title>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-7",
     "title": "HTML标签的语法正确的是？",
     "options": [
       "<tag></tag>",
-      "<tag><tag>",
       "</tag><tag>",
+      "<tag><tag>",
       "<tag>"
     ],
     "correctAnswer": 0
@@ -92,8 +92,8 @@
     "title": "HTML属性的正确语法是？",
     "options": [
       "name=\"value\"",
-      "name=value",
       "\"name\"=\"value\"",
+      "name=value",
       "name: value"
     ],
     "correctAnswer": 0
@@ -104,8 +104,8 @@
     "options": [
       "<!-- 注释 -->",
       "// 注释",
-      "/* 注释 */",
-      "<!-- 注释 -!>"
+      "<!-- 注释 -!>",
+      "/* 注释 */"
     ],
     "correctAnswer": 0
   },
@@ -114,9 +114,9 @@
     "title": "<body>标签的作用是？",
     "options": [
       "定义文档的可见内容",
-      "定义文档元数据",
+      "定义文档样式",
       "定义文档标题",
-      "定义文档样式"
+      "定义文档元数据"
     ],
     "correctAnswer": 0
   },
@@ -135,23 +135,23 @@
     "id": "html-13",
     "title": "引入外部CSS样式表的标签是？",
     "options": [
-      "<link>",
       "<style>",
-      "<css>",
-      "<script>"
+      "<link>",
+      "<script>",
+      "<css>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-14",
     "title": "引入外部JavaScript脚本的标签是？",
     "options": [
-      "<script>",
       "<js>",
-      "<link>",
-      "<style>"
+      "<script>",
+      "<style>",
+      "<link>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-15",
@@ -159,8 +159,8 @@
     "options": [
       "脚本延迟到文档解析完后执行",
       "异步加载脚本",
-      "禁止执行脚本",
-      "立即执行脚本"
+      "立即执行脚本",
+      "禁止执行脚本"
     ],
     "correctAnswer": 0
   },
@@ -170,8 +170,8 @@
     "options": [
       "脚本异步加载且立即执行",
       "延迟执行",
-      "按顺序执行",
-      "阻塞加载"
+      "阻塞加载",
+      "按顺序执行"
     ],
     "correctAnswer": 0
   },
@@ -179,45 +179,45 @@
     "id": "html-17",
     "title": "HTML标签不区分大小写，但推荐使用？",
     "options": [
+      "驼峰命名",
       "小写",
       "大写",
-      "首字母大写",
-      "驼峰命名"
+      "首字母大写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-18",
     "title": "HTML文档的默认文件名通常是？",
     "options": [
+      "home.html",
       "index.html",
       "main.html",
-      "home.html",
       "default.html"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-19",
     "title": "<html>标签的lang属性作用是？",
     "options": [
-      "声明文档的语言",
       "声明编码",
+      "声明文档的语言",
       "声明地区",
       "声明框架"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-20",
     "title": "查看网页源代码的快捷键通常是？",
     "options": [
-      "Ctrl+U",
       "Ctrl+C",
+      "Ctrl+U",
       "Ctrl+S",
       "Ctrl+P"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-21",
@@ -225,8 +225,8 @@
     "options": [
       "HTML5",
       "HTML4",
-      "HTML6",
-      "XHTML2"
+      "XHTML2",
+      "HTML6"
     ],
     "correctAnswer": 0
   },
@@ -236,8 +236,8 @@
     "options": [
       "XHTML语法更严格",
       "XHTML不支持标签",
-      "HTML不支持属性",
-      "没有区别"
+      "没有区别",
+      "HTML不支持属性"
     ],
     "correctAnswer": 0
   },
@@ -245,65 +245,65 @@
     "id": "html-23",
     "title": "<base>标签的作用是？",
     "options": [
-      "为页面所有链接规定默认地址或目标",
       "定义基础字体",
-      "定义基础样式",
-      "定义基础脚本"
+      "定义基础脚本",
+      "为页面所有链接规定默认地址或目标",
+      "定义基础样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-24",
     "title": "<meta>标签的name=\"viewport\"用于？",
     "options": [
+      "定义编码",
       "控制移动端视口缩放",
       "定义作者",
-      "定义编码",
       "定义描述"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-25",
     "title": "HTML属于哪种语言类型？",
     "options": [
-      "标记语言",
       "编程语言",
+      "标记语言",
       "脚本语言",
       "数据库语言"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-26",
     "title": "HTML中哪个标签用于定义段落？",
     "options": [
-      "<p>",
       "<div>",
-      "<span>",
-      "<br>"
+      "<br>",
+      "<p>",
+      "<span>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-27",
     "title": "HTML中哪个标签用于插入换行？",
     "options": [
-      "<br>",
-      "<p>",
+      "<enter>",
       "<hr>",
-      "<enter>"
+      "<p>",
+      "<br>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-28",
     "title": "HTML中哪个标签用于插入水平线？",
     "options": [
       "<hr>",
-      "<br>",
       "<line>",
-      "<sep>"
+      "<sep>",
+      "<br>"
     ],
     "correctAnswer": 0
   },
@@ -311,20 +311,20 @@
     "id": "html-29",
     "title": "HTML标题标签的正确顺序是？",
     "options": [
-      "h1到h6逐渐减小",
+      "随机大小",
       "h6到h1逐渐减小",
       "大小固定不变",
-      "随机大小"
+      "h1到h6逐渐减小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-30",
     "title": "一个页面中最好只有几个<h1>标签？",
     "options": [
       "1个",
-      "多个",
       "不需要",
+      "多个",
       "3个"
     ],
     "correctAnswer": 0
@@ -334,9 +334,9 @@
     "title": "<div>标签属于什么元素？",
     "options": [
       "块级元素",
-      "内联元素",
       "内联块元素",
-      "行内元素"
+      "行内元素",
+      "内联元素"
     ],
     "correctAnswer": 0
   },
@@ -345,9 +345,9 @@
     "title": "<span>标签属于什么元素？",
     "options": [
       "内联元素",
-      "块级元素",
+      "弹性元素",
       "行内块元素",
-      "弹性元素"
+      "块级元素"
     ],
     "correctAnswer": 0
   },
@@ -356,9 +356,9 @@
     "title": "块级元素的特点不包括？",
     "options": [
       "可以在一行显示多个",
+      "宽度默认100%",
       "独占一行",
-      "可设置宽高",
-      "宽度默认100%"
+      "可设置宽高"
     ],
     "correctAnswer": 0
   },
@@ -366,21 +366,21 @@
     "id": "html-34",
     "title": "内联元素的特点不包括？",
     "options": [
+      "只能包含文本和其他内联元素",
       "可以设置宽高",
       "不独占一行",
-      "宽度由内容撑开",
-      "只能包含文本和其他内联元素"
+      "宽度由内容撑开"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-35",
     "title": "哪个标签用于强调文本（语义为重要）？",
     "options": [
       "<strong>",
-      "<b>",
+      "<i>",
       "<em>",
-      "<i>"
+      "<b>"
     ],
     "correctAnswer": 0
   },
@@ -389,8 +389,8 @@
     "title": "哪个标签用于强调文本（语义为重音）？",
     "options": [
       "<em>",
-      "<i>",
       "<strong>",
+      "<i>",
       "<b>"
     ],
     "correctAnswer": 0
@@ -400,8 +400,8 @@
     "title": "<b>标签的作用是？",
     "options": [
       "加粗文本（无语义）",
-      "强调文本",
       "斜体文本",
+      "强调文本",
       "删除文本"
     ],
     "correctAnswer": 0
@@ -410,12 +410,12 @@
     "id": "html-38",
     "title": "<i>标签的作用是？",
     "options": [
-      "斜体文本（无语义）",
       "强调文本",
-      "加粗文本",
-      "插入文本"
+      "插入文本",
+      "斜体文本（无语义）",
+      "加粗文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-39",
@@ -423,8 +423,8 @@
     "options": [
       "下划线文本",
       "删除线文本",
-      "上标文本",
-      "下标文本"
+      "下标文本",
+      "上标文本"
     ],
     "correctAnswer": 0
   },
@@ -432,21 +432,21 @@
     "id": "html-40",
     "title": "<del>标签的作用是？",
     "options": [
+      "强调文本",
       "删除线文本",
       "下划线文本",
-      "插入文本",
-      "强调文本"
+      "插入文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-41",
     "title": "<ins>标签的作用是？",
     "options": [
       "插入文本",
+      "替换文本",
       "删除文本",
-      "下划线文本",
-      "替换文本"
+      "下划线文本"
     ],
     "correctAnswer": 0
   },
@@ -454,54 +454,54 @@
     "id": "html-42",
     "title": "<sub>标签的作用是？",
     "options": [
-      "下标文本",
+      "删除文本",
       "上标文本",
-      "下划线文本",
-      "删除文本"
+      "下标文本",
+      "下划线文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-43",
     "title": "<sup>标签的作用是？",
     "options": [
-      "上标文本",
       "下标文本",
-      "上划线文本",
-      "插入文本"
+      "插入文本",
+      "上标文本",
+      "上划线文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-44",
     "title": "<mark>标签的作用是？",
     "options": [
-      "标记/高亮文本",
-      "删除文本",
+      "强调文本",
       "插入文本",
-      "强调文本"
+      "标记/高亮文本",
+      "删除文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-45",
     "title": "<small>标签的作用是？",
     "options": [
-      "小号字体文本",
       "缩小元素",
-      "隐藏文本",
-      "注释文本"
+      "注释文本",
+      "小号字体文本",
+      "隐藏文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-46",
     "title": "<blockquote>标签的作用是？",
     "options": [
       "块级引用",
-      "内联引用",
+      "术语定义",
       "代码引用",
-      "术语定义"
+      "内联引用"
     ],
     "correctAnswer": 0
   },
@@ -510,9 +510,9 @@
     "title": "<q>标签的作用是？",
     "options": [
       "短的内联引用",
-      "块级引用",
+      "代码引用",
       "长引用",
-      "代码引用"
+      "块级引用"
     ],
     "correctAnswer": 0
   },
@@ -521,8 +521,8 @@
     "title": "<abbr>标签的作用是？",
     "options": [
       "定义缩写",
-      "定义首字母缩略词",
       "定义术语",
+      "定义首字母缩略词",
       "定义引用"
     ],
     "correctAnswer": 0
@@ -531,22 +531,22 @@
     "id": "html-49",
     "title": "<address>标签的作用是？",
     "options": [
-      "定义联系信息",
       "定义地址栏",
       "定义锚点",
-      "定义文章"
+      "定义文章",
+      "定义联系信息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-50",
     "title": "<cite>标签的作用是？",
     "options": [
-      "定义作品标题",
+      "定义术语",
       "定义引用块",
-      "定义缩写",
-      "定义术语"
+      "定义作品标题",
+      "定义缩写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

@@ -3,21 +3,21 @@
     "id": "java-851",
     "title": "Java 8的Optional.empty()方法作用是？",
     "options": [
+      "以上都不对",
       "创建空Optional",
-      "创建Optional，允许null",
       "创建Optional，不允许null",
-      "以上都不对"
+      "创建Optional，允许null"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-852",
     "title": "Java 8的Optional.isPresent()方法作用是？",
     "options": [
       "判断是否有值",
-      "获取值",
       "设置值",
-      "以上都不对"
+      "以上都不对",
+      "获取值"
     ],
     "correctAnswer": 0
   },
@@ -25,45 +25,45 @@
     "id": "java-853",
     "title": "Java 8的Optional.get()方法作用是？",
     "options": [
-      "获取值",
-      "判断是否有值",
       "设置值",
+      "判断是否有值",
+      "获取值",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-854",
     "title": "Java 8的Optional.orElse()方法作用是？",
     "options": [
-      "有值返回值，无值返回默认值",
       "获取值",
       "判断是否有值",
+      "有值返回值，无值返回默认值",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-855",
     "title": "Java 8的Optional.orElseGet()方法作用是？",
     "options": [
+      "判断是否有值",
       "有值返回值，无值返回Supplier",
       "获取值",
-      "判断是否有值",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-856",
     "title": "Java 8的Optional.orElseThrow()方法作用是？",
     "options": [
-      "有值返回值，无值抛异常",
-      "获取值",
       "判断是否有值",
+      "获取值",
+      "有值返回值，无值抛异常",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-857",
@@ -71,8 +71,8 @@
     "options": [
       "有值时执行Consumer",
       "获取值",
-      "判断是否有值",
-      "以上都不对"
+      "以上都不对",
+      "判断是否有值"
     ],
     "correctAnswer": 0
   },
@@ -80,120 +80,120 @@
     "id": "java-858",
     "title": "Java 8的Optional.filter()方法作用是？",
     "options": [
-      "过滤值",
       "转换值",
+      "提供值",
       "消费值",
-      "提供值"
+      "过滤值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-859",
     "title": "Java 8的Optional.map()方法作用是？",
     "options": [
-      "转换值",
       "过滤值",
-      "消费值",
-      "提供值"
+      "提供值",
+      "转换值",
+      "消费值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-860",
     "title": "Java 8的Optional.flatMap()方法作用是？",
     "options": [
-      "扁平转换值",
-      "过滤值",
       "消费值",
-      "提供值"
+      "提供值",
+      "扁平转换值",
+      "过滤值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-861",
     "title": "Java 8的新日期API的类有？",
     "options": [
-      "LocalDate, LocalTime, LocalDateTime",
       "Date, Calendar",
-      "SimpleDateFormat",
-      "以上都不对"
+      "LocalDate, LocalTime, LocalDateTime",
+      "以上都不对",
+      "SimpleDateFormat"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-862",
     "title": "Java 8的LocalDate类的作用是？",
     "options": [
-      "表示日期",
-      "表示时间",
       "表示日期时间",
-      "表示时区"
+      "表示时间",
+      "表示时区",
+      "表示日期"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-863",
     "title": "Java 8的LocalTime类的作用是？",
     "options": [
-      "表示时间",
-      "表示日期",
       "表示日期时间",
-      "表示时区"
+      "表示日期",
+      "表示时区",
+      "表示时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-864",
     "title": "Java 8的LocalDateTime类的作用是？",
     "options": [
+      "表示时区",
       "表示日期时间",
-      "表示日期",
       "表示时间",
-      "表示时区"
+      "表示日期"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-865",
     "title": "Java 8的Instant类的作用是？",
     "options": [
-      "表示时间戳",
-      "表示日期",
       "表示时间",
+      "表示日期",
+      "表示时间戳",
       "表示时区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-866",
     "title": "Java 8的Duration类的作用是？",
     "options": [
-      "表示时间间隔",
       "表示日期间隔",
+      "表示格式",
       "表示时区",
-      "表示格式"
+      "表示时间间隔"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-867",
     "title": "Java 8的Period类的作用是？",
     "options": [
-      "表示日期间隔",
       "表示时间间隔",
       "表示时区",
+      "表示日期间隔",
       "表示格式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-868",
     "title": "Java 8的ZoneId类的作用是？",
     "options": [
       "表示时区",
-      "表示日期",
       "表示时间",
-      "表示格式"
+      "表示格式",
+      "表示日期"
     ],
     "correctAnswer": 0
   },
@@ -201,21 +201,21 @@
     "id": "java-869",
     "title": "Java 8的ZonedDateTime类的作用是？",
     "options": [
-      "表示带时区的日期时间",
+      "表示时区",
       "表示日期",
-      "表示时间",
-      "表示时区"
+      "表示带时区的日期时间",
+      "表示时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-870",
     "title": "Java 8的DateTimeFormatter类的作用是？",
     "options": [
       "格式化日期",
+      "表示时区",
       "表示日期",
-      "表示时间",
-      "表示时区"
+      "表示时间"
     ],
     "correctAnswer": 0
   },
@@ -223,78 +223,78 @@
     "id": "java-871",
     "title": "Java 8的接口默认方法作用是？",
     "options": [
-      "向后兼容",
-      "多重继承",
+      "以上都是",
       "简化代码",
-      "以上都是"
+      "多重继承",
+      "向后兼容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-872",
     "title": "Java 8的接口静态方法作用是？",
     "options": [
-      "提供工具方法",
-      "多重继承",
       "向后兼容",
-      "以上都是"
+      "以上都是",
+      "多重继承",
+      "提供工具方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-873",
     "title": "Java 8的重复注解作用是？",
     "options": [
-      "允许重复使用注解",
+      "以上都不对",
       "简化注解",
-      "类型注解",
-      "以上都不对"
+      "允许重复使用注解",
+      "类型注解"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-874",
     "title": "Java 8的类型注解作用是？",
     "options": [
-      "在类型上使用注解",
       "重复注解",
+      "在类型上使用注解",
       "简化注解",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-875",
     "title": "Java 8的CompletableFuture作用是？",
     "options": [
-      "异步编程",
-      "同步编程",
       "阻塞编程",
-      "以上都不对"
+      "同步编程",
+      "以上都不对",
+      "异步编程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-876",
     "title": "Java 8的StampedLock作用是？",
     "options": [
-      "乐观读锁",
-      "读写锁",
       "可重入锁",
-      "以上都不对"
+      "以上都不对",
+      "读写锁",
+      "乐观读锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-877",
     "title": "Java 8的LongAdder作用是？",
     "options": [
-      "高并发累加",
       "原子操作",
       "线程同步",
-      "以上都不对"
+      "以上都不对",
+      "高并发累加"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-878",
@@ -311,65 +311,65 @@
     "id": "java-879",
     "title": "Java 8的StringJoiner作用是？",
     "options": [
-      "拼接字符串",
       "分割字符串",
+      "拼接字符串",
       "替换字符串",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-880",
     "title": "Java 8的Base64作用是？",
     "options": [
-      "Base64编解码",
-      "加密解密",
       "压缩解压",
-      "以上都不对"
+      "Base64编解码",
+      "以上都不对",
+      "加密解密"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-881",
     "title": "Java 9的新特性有？",
     "options": [
+      "以上都不对",
       "模块化, JShell, 多版本JAR",
       "Lambda, Stream",
-      "泛型, 注解",
-      "以上都不对"
+      "泛型, 注解"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-882",
     "title": "Java 9的模块化作用是？",
     "options": [
-      "封装和依赖管理",
-      "提高性能",
       "简化代码",
-      "以上都不对"
+      "以上都不对",
+      "封装和依赖管理",
+      "提高性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-883",
     "title": "Java 9的JShell作用是？",
     "options": [
-      "交互式编程",
-      "编译代码",
       "运行程序",
-      "以上都不对"
+      "编译代码",
+      "以上都不对",
+      "交互式编程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-884",
     "title": "Java 9的多版本JAR作用是？",
     "options": [
       "支持多版本类",
+      "以上都不对",
       "压缩JAR",
-      "加密JAR",
-      "以上都不对"
+      "加密JAR"
     ],
     "correctAnswer": 0
   },
@@ -377,21 +377,21 @@
     "id": "java-885",
     "title": "Java 9的接口私有方法作用是？",
     "options": [
-      "复用接口内部代码",
+      "以上都不对",
       "多重继承",
-      "向后兼容",
-      "以上都不对"
+      "复用接口内部代码",
+      "向后兼容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-886",
     "title": "Java 9的ProcessHandle作用是？",
     "options": [
       "管理进程",
-      "管理线程",
+      "以上都不对",
       "管理内存",
-      "以上都不对"
+      "管理线程"
     ],
     "correctAnswer": 0
   },
@@ -399,45 +399,45 @@
     "id": "java-887",
     "title": "Java 9的VarHandle作用是？",
     "options": [
-      "原子操作",
+      "以上都不对",
       "反射操作",
       "序列化操作",
-      "以上都不对"
+      "原子操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-888",
     "title": "Java 9的Collection工厂方法作用是？",
     "options": [
-      "创建不可变集合",
       "创建可变集合",
-      "创建同步集合",
-      "以上都不对"
+      "创建不可变集合",
+      "以上都不对",
+      "创建同步集合"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-889",
     "title": "Java 9的Optional改进有？",
     "options": [
-      "ifPresentOrElse, or, stream",
+      "以上都不对",
       "of, ofNullable",
       "get, isPresent",
-      "以上都不对"
+      "ifPresentOrElse, or, stream"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-890",
     "title": "Java 9的Stream改进有？",
     "options": [
-      "takeWhile, dropWhile, ofNullable",
-      "filter, map",
       "collect, reduce",
-      "以上都不对"
+      "filter, map",
+      "以上都不对",
+      "takeWhile, dropWhile, ofNullable"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-891",
@@ -445,8 +445,8 @@
     "options": [
       "局部变量类型推断, G1默认",
       "Lambda, Stream",
-      "模块化",
-      "以上都不对"
+      "以上都不对",
+      "模块化"
     ],
     "correctAnswer": 0
   },
@@ -454,56 +454,56 @@
     "id": "java-892",
     "title": "Java 10的局部变量类型推断关键字是？",
     "options": [
+      "auto",
       "var",
       "let",
-      "def",
-      "auto"
+      "def"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-893",
     "title": "Java 10的var可以用在哪些地方？",
     "options": [
-      "局部变量，for循环",
       "成员变量",
       "方法参数",
+      "局部变量，for循环",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-894",
     "title": "Java 10的var不能用在哪些地方？",
     "options": [
-      "成员变量，方法参数，返回类型",
       "局部变量",
+      "以上都不对",
       "for循环",
-      "以上都不对"
+      "成员变量，方法参数，返回类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-895",
     "title": "Java 10的G1成为默认垃圾收集器吗？",
     "options": [
-      "是",
-      "否",
+      "以上都不对",
       "取决于配置",
-      "以上都不对"
+      "是",
+      "否"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-896",
     "title": "Java 10的Application CDS作用是？",
     "options": [
+      "以上都不对",
       "类数据共享",
-      "内存共享",
       "线程共享",
-      "以上都不对"
+      "内存共享"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-897",
@@ -511,8 +511,8 @@
     "options": [
       "线程局部握手",
       "线程同步",
-      "线程通信",
-      "以上都不对"
+      "以上都不对",
+      "线程通信"
     ],
     "correctAnswer": 0
   },
@@ -520,20 +520,20 @@
     "id": "java-898",
     "title": "Java 11的新特性有？",
     "options": [
+      "模块化",
       "HTTP Client, String新方法, Flight Recorder",
       "Lambda, Stream",
-      "模块化",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-899",
     "title": "Java 11的HTTP Client是？",
     "options": [
       "标准化HttpClient",
-      "HttpURLConnection",
       "Apache HttpClient",
+      "HttpURLConnection",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -542,11 +542,11 @@
     "id": "java-900",
     "title": "Java 11的String新方法有？",
     "options": [
+      "split, replace",
       "isBlank, lines, strip, repeat",
       "trim, substring",
-      "split, replace",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

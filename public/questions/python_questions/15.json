@@ -3,89 +3,89 @@
     "id": "python-701",
     "title": "Python中如何进行数据采样？",
     "options": [
-      "sample()",
-      "sampling()",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "sampling()",
+      "sample()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-702",
     "title": "Python中如何进行数据排序？",
     "options": [
-      "sort_values(), sort_index()",
+      "以上都不对",
       "order()",
       "以上都不对",
-      "以上都不对"
+      "sort_values(), sort_index()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-703",
     "title": "Python中如何进行数据去重？",
     "options": [
       "drop_duplicates()",
+      "以上都不对",
       "unique()",
-      "以上都可以",
-      "以上都不对"
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-704",
     "title": "Python中如何进行数据替换？",
     "options": [
+      "以上都不对",
       "replace()",
       "substitute()",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-705",
     "title": "Python中如何进行数据映射？",
     "options": [
-      "map(), apply()",
-      "transform()",
       "以上都可以",
+      "transform()",
+      "map(), apply()",
       "以上都不对"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-706",
     "title": "Python中如何进行数据聚合？",
     "options": [
       "agg(), aggregate()",
-      "reduce()",
       "以上都可以",
+      "reduce()",
       "以上都不对"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-707",
     "title": "Python中如何进行数据过滤？",
     "options": [
       "布尔索引, query()",
-      "filter()",
       "以上都可以",
-      "以上都不对"
+      "以上都不对",
+      "filter()"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-708",
     "title": "Python中如何进行数据连接？",
     "options": [
       "merge(), join()",
-      "concat()",
       "以上都可以",
+      "concat()",
       "以上都不对"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-709",
@@ -102,21 +102,21 @@
     "id": "python-710",
     "title": "Python中如何处理大数据？",
     "options": [
-      "分块处理, Dask",
-      "全量加载",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "全量加载",
+      "分块处理, Dask"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-711",
     "title": "Python中Dask的作用是？",
     "options": [
       "并行计算",
-      "数据可视化",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "数据可视化"
     ],
     "correctAnswer": 0
   },
@@ -124,130 +124,130 @@
     "id": "python-712",
     "title": "Python中PySpark的作用是？",
     "options": [
-      "分布式计算",
       "单机计算",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "分布式计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-713",
     "title": "Python中如何进行数据序列化？",
     "options": [
-      "pickle, json",
+      "以上都不对",
       "serialize",
       "以上都不对",
-      "以上都不对"
+      "pickle, json"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-714",
     "title": "Python中如何进行数据压缩？",
     "options": [
-      "zlib, gzip",
-      "compress",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "zlib, gzip",
+      "compress"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-715",
     "title": "Python中如何进行数据加密？",
     "options": [
-      "cryptography, pycryptodome",
-      "encrypt",
       "以上都不对",
-      "以上都不对"
+      "cryptography, pycryptodome",
+      "以上都不对",
+      "encrypt"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-716",
     "title": "Python中如何进行数据校验？",
     "options": [
-      "hashlib, hmac",
-      "checksum",
       "以上都不对",
+      "checksum",
+      "hashlib, hmac",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-717",
     "title": "Python中如何进行数据编码？",
     "options": [
-      "base64, codecs",
       "encode",
       "以上都不对",
+      "base64, codecs",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-718",
     "title": "Python中如何进行数据清洗？",
     "options": [
-      "pandas, regex",
       "clean",
       "以上都不对",
+      "pandas, regex",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-719",
     "title": "Python中如何进行数据提取？",
     "options": [
-      "正则, xpath, css选择器",
-      "extract",
       "以上都不对",
-      "以上都不对"
+      "正则, xpath, css选择器",
+      "以上都不对",
+      "extract"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-720",
     "title": "Python中如何进行数据转换？",
     "options": [
-      "map, apply, ETL工具",
-      "transform",
       "以上都不对",
+      "transform",
+      "map, apply, ETL工具",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-721",
     "title": "Python中一切皆？",
     "options": [
-      "对象",
-      "引用",
+      "值",
       "指针",
-      "值"
+      "对象",
+      "引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-722",
     "title": "Python中对象的三个要素是？",
     "options": [
-      "id, type, value",
-      "name, type, value",
       "id, class, value",
-      "以上都不对"
+      "id, type, value",
+      "以上都不对",
+      "name, type, value"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-723",
     "title": "Python中id()函数的作用是？",
     "options": [
       "获取对象内存地址",
-      "获取对象类型",
       "获取对象值",
+      "获取对象类型",
       "获取对象名称"
     ],
     "correctAnswer": 0
@@ -256,10 +256,10 @@
     "id": "python-724",
     "title": "Python中type()函数的作用是？",
     "options": [
-      "获取对象内存地址",
-      "获取对象类型",
       "获取对象值",
-      "获取对象名称"
+      "获取对象类型",
+      "获取对象名称",
+      "获取对象内存地址"
     ],
     "correctAnswer": 1
   },
@@ -269,8 +269,8 @@
     "options": [
       "is比较id，==比较value",
       "is比较value，==比较id",
-      "没有区别",
-      "取决于类型"
+      "取决于类型",
+      "没有区别"
     ],
     "correctAnswer": 0
   },
@@ -278,54 +278,54 @@
     "id": "python-726",
     "title": "Python中小整数池的范围是？",
     "options": [
-      "-5到256",
+      "以上都不对",
       "0到255",
-      "-128到127",
-      "以上都不对"
+      "-5到256",
+      "-128到127"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-727",
     "title": "Python中字符串驻留是指？",
     "options": [
       "相同字符串共享内存",
-      "字符串常量池",
       "以上都是",
-      "以上都不对"
+      "以上都不对",
+      "字符串常量池"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-728",
     "title": "Python中垃圾回收的主要方式是？",
     "options": [
-      "引用计数",
+      "以上都是",
       "标记-清除",
-      "分代收集",
-      "以上都是"
+      "引用计数",
+      "分代收集"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-729",
     "title": "Python中引用计数的优点是？",
     "options": [
-      "实时性",
-      "简单",
       "高效",
-      "以上都是"
+      "以上都是",
+      "实时性",
+      "简单"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "python-730",
     "title": "Python中引用计数的缺点是？",
     "options": [
       "不能处理循环引用",
-      "开销大",
       "复杂",
-      "以上都不对"
+      "以上都不对",
+      "开销大"
     ],
     "correctAnswer": 0
   },
@@ -344,89 +344,89 @@
     "id": "python-732",
     "title": "Python中分代收集的代数是？",
     "options": [
-      "3代",
       "2代",
-      "4代",
-      "5代"
+      "5代",
+      "3代",
+      "4代"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-733",
     "title": "Python中分代收集的假设是？",
     "options": [
+      "以上都不对",
       "新对象更易死",
       "老对象更易死",
-      "没有假设",
-      "以上都不对"
+      "没有假设"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-734",
     "title": "Python中如何查看引用计数？",
     "options": [
-      "sys.getrefcount()",
       "sys.refcount()",
       "gc.refcount()",
-      "以上都不对"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "python-735",
-    "title": "Python中gc模块的作用是？",
-    "options": [
-      "垃圾回收控制",
-      "内存分配",
-      "对象创建",
-      "以上都不对"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "python-736",
-    "title": "Python中gc.enable()的作用是？",
-    "options": [
-      "启用自动GC",
-      "禁用自动GC",
-      "执行GC",
-      "以上都不对"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "python-737",
-    "title": "Python中gc.disable()的作用是？",
-    "options": [
-      "启用自动GC",
-      "禁用自动GC",
-      "执行GC",
-      "以上都不对"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": "python-738",
-    "title": "Python中gc.collect()的作用是？",
-    "options": [
-      "启用自动GC",
-      "禁用自动GC",
-      "立即执行GC",
+      "sys.getrefcount()",
       "以上都不对"
     ],
     "correctAnswer": 2
   },
   {
+    "id": "python-735",
+    "title": "Python中gc模块的作用是？",
+    "options": [
+      "以上都不对",
+      "内存分配",
+      "垃圾回收控制",
+      "对象创建"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "python-736",
+    "title": "Python中gc.enable()的作用是？",
+    "options": [
+      "禁用自动GC",
+      "启用自动GC",
+      "以上都不对",
+      "执行GC"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-737",
+    "title": "Python中gc.disable()的作用是？",
+    "options": [
+      "禁用自动GC",
+      "执行GC",
+      "以上都不对",
+      "启用自动GC"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "python-738",
+    "title": "Python中gc.collect()的作用是？",
+    "options": [
+      "以上都不对",
+      "立即执行GC",
+      "启用自动GC",
+      "禁用自动GC"
+    ],
+    "correctAnswer": 1
+  },
+  {
     "id": "python-739",
     "title": "Python中gc.get_threshold()的作用是？",
     "options": [
-      "获取GC阈值",
       "设置GC阈值",
-      "获取GC频率",
-      "以上都不对"
+      "以上都不对",
+      "获取GC阈值",
+      "获取GC频率"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-740",
@@ -434,8 +434,8 @@
     "options": [
       "获取GC阈值",
       "设置GC阈值",
-      "获取GC频率",
-      "以上都不对"
+      "以上都不对",
+      "获取GC频率"
     ],
     "correctAnswer": 1
   },
@@ -443,54 +443,54 @@
     "id": "python-741",
     "title": "Python中gc.get_objects()的作用是？",
     "options": [
+      "获取垃圾对象",
       "获取所有对象",
-      "获取垃圾对象",
       "获取引用对象",
-      "以上都不对"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "python-742",
-    "title": "Python中gc.get_referrers()的作用是？",
-    "options": [
-      "获取引用对象的对象",
-      "获取对象引用的对象",
-      "获取垃圾对象",
-      "以上都不对"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "python-743",
-    "title": "Python中gc.get_referents()的作用是？",
-    "options": [
-      "获取引用对象的对象",
-      "获取对象引用的对象",
-      "获取垃圾对象",
       "以上都不对"
     ],
     "correctAnswer": 1
   },
   {
+    "id": "python-742",
+    "title": "Python中gc.get_referrers()的作用是？",
+    "options": [
+      "获取垃圾对象",
+      "获取引用对象的对象",
+      "以上都不对",
+      "获取对象引用的对象"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-743",
+    "title": "Python中gc.get_referents()的作用是？",
+    "options": [
+      "获取垃圾对象",
+      "获取引用对象的对象",
+      "获取对象引用的对象",
+      "以上都不对"
+    ],
+    "correctAnswer": 2
+  },
+  {
     "id": "python-744",
     "title": "Python中弱引用的作用是？",
     "options": [
+      "删除引用",
       "不增加引用计数",
       "增加引用计数",
-      "删除引用",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-745",
     "title": "Python中weakref模块的作用是？",
     "options": [
       "创建弱引用",
-      "创建强引用",
       "删除引用",
-      "以上都不对"
+      "以上都不对",
+      "创建强引用"
     ],
     "correctAnswer": 0
   },
@@ -498,53 +498,53 @@
     "id": "python-746",
     "title": "Python中弱引用的回调何时执行？",
     "options": [
-      "对象被回收时",
       "对象创建时",
+      "对象被回收时",
       "对象修改时",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-747",
     "title": "Python中__del__方法的作用是？",
     "options": [
-      "析构方法",
-      "构造方法",
       "初始化方法",
-      "以上都不对"
+      "析构方法",
+      "以上都不对",
+      "构造方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-748",
     "title": "Python中__del__何时调用？",
     "options": [
-      "对象被回收前",
-      "对象创建时",
       "对象使用时",
+      "对象创建时",
+      "对象被回收前",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-749",
     "title": "Python中__del__的问题有？",
     "options": [
-      "调用时间不确定，可能引发异常",
-      "没有问题",
       "以上都不对",
+      "没有问题",
+      "调用时间不确定，可能引发异常",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-750",
     "title": "Python中如何手动触发垃圾回收？",
     "options": [
       "gc.collect()",
-      "del",
       "以上都不对",
+      "del",
       "以上都不对"
     ],
     "correctAnswer": 0

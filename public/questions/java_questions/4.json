@@ -4,9 +4,9 @@
     "title": "Java中静态代码块可以抛出异常吗？",
     "options": [
       "不可以",
-      "可以",
+      "取决于修饰符",
       "只能抛出RuntimeException",
-      "取决于修饰符"
+      "可以"
     ],
     "correctAnswer": 0
   },
@@ -14,32 +14,32 @@
     "id": "java-152",
     "title": "Java中静态内部类可以访问外部类的非静态成员吗？",
     "options": [
-      "不可以",
       "可以",
+      "不可以",
       "取决于位置",
       "取决于修饰符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-153",
     "title": "Java中非静态内部类可以访问外部类的静态成员吗？",
     "options": [
-      "可以",
-      "不可以",
       "取决于位置",
-      "取决于修饰符"
+      "取决于修饰符",
+      "可以",
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-154",
     "title": "Java中非静态内部类可以有静态成员吗？",
     "options": [
       "不可以",
+      "取决于修饰符",
       "可以",
-      "取决于位置",
-      "取决于修饰符"
+      "取决于位置"
     ],
     "correctAnswer": 0
   },
@@ -47,32 +47,32 @@
     "id": "java-155",
     "title": "Java中局部内部类可以访问外部类的成员吗？",
     "options": [
-      "可以",
       "不可以",
       "取决于位置",
+      "可以",
       "取决于修饰符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-156",
     "title": "Java中局部内部类可以访问局部变量吗？",
     "options": [
-      "可以，但变量必须是final或effectively final",
-      "不可以",
+      "取决于修饰符",
       "可以任意访问",
-      "取决于修饰符"
+      "不可以",
+      "可以，但变量必须是final或effectively final"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-157",
     "title": "Java中匿名内部类可以继承类吗？",
     "options": [
       "可以",
-      "不可以",
+      "取决于修饰符",
       "只能实现接口",
-      "取决于修饰符"
+      "不可以"
     ],
     "correctAnswer": 0
   },
@@ -81,9 +81,9 @@
     "title": "Java中匿名内部类可以实现接口吗？",
     "options": [
       "可以",
+      "取决于修饰符",
       "不可以",
-      "只能继承类",
-      "取决于修饰符"
+      "只能继承类"
     ],
     "correctAnswer": 0
   },
@@ -91,20 +91,20 @@
     "id": "java-159",
     "title": "Java中匿名内部类可以有构造方法吗？",
     "options": [
-      "不可以",
       "可以",
-      "取决于位置",
-      "取决于修饰符"
+      "不可以",
+      "取决于修饰符",
+      "取决于位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-160",
     "title": "Java中匿名内部类可以访问外部类的成员吗？",
     "options": [
       "可以",
-      "不可以",
       "取决于位置",
+      "不可以",
       "取决于修饰符"
     ],
     "correctAnswer": 0
@@ -113,12 +113,12 @@
     "id": "java-161",
     "title": "Java中匿名内部类可以访问局部变量吗？",
     "options": [
-      "可以，但变量必须是final或effectively final",
       "不可以",
-      "可以任意访问",
-      "取决于修饰符"
+      "取决于修饰符",
+      "可以，但变量必须是final或effectively final",
+      "可以任意访问"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-162",
@@ -126,8 +126,8 @@
     "options": [
       "可以，但必须是private",
       "不可以",
-      "可以是public",
-      "取决于修饰符"
+      "取决于修饰符",
+      "可以是public"
     ],
     "correctAnswer": 0
   },
@@ -135,97 +135,97 @@
     "id": "java-163",
     "title": "Java中枚举可以实现接口吗？",
     "options": [
-      "可以",
       "不可以",
       "只能继承类",
-      "取决于修饰符"
+      "取决于修饰符",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-164",
     "title": "Java中枚举可以继承类吗？",
     "options": [
-      "不可以",
+      "取决于修饰符",
       "可以",
-      "取决于位置",
-      "取决于修饰符"
+      "不可以",
+      "取决于位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-165",
     "title": "Java中枚举可以有抽象方法吗？",
     "options": [
-      "可以",
+      "取决于修饰符",
       "不可以",
-      "取决于位置",
-      "取决于修饰符"
+      "可以",
+      "取决于位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-166",
     "title": "Java中枚举的values()方法返回？",
     "options": [
-      "所有枚举实例",
       "枚举名称",
       "枚举索引",
-      "枚举值"
+      "枚举值",
+      "所有枚举实例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-167",
     "title": "Java中枚举的valueOf()方法返回？",
     "options": [
-      "指定名称的枚举实例",
-      "所有枚举实例",
       "枚举索引",
-      "枚举值"
+      "枚举值",
+      "所有枚举实例",
+      "指定名称的枚举实例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-168",
     "title": "Java中枚举的ordinal()方法返回？",
     "options": [
-      "枚举索引",
+      "枚举实例",
       "枚举名称",
       "枚举值",
-      "枚举实例"
+      "枚举索引"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-169",
     "title": "Java中枚举的name()方法返回？",
     "options": [
-      "枚举名称",
-      "枚举索引",
       "枚举值",
-      "枚举实例"
+      "枚举实例",
+      "枚举索引",
+      "枚举名称"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-170",
     "title": "Java中枚举的compareTo()方法比较？",
     "options": [
-      "索引",
       "名称",
-      "值",
-      "实例"
+      "索引",
+      "实例",
+      "值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-171",
     "title": "Java中枚举的equals()方法比较？",
     "options": [
       "引用",
-      "值",
       "名称",
+      "值",
       "索引"
     ],
     "correctAnswer": 0
@@ -234,32 +234,32 @@
     "id": "java-172",
     "title": "Java中枚举的hashCode()方法基于？",
     "options": [
-      "引用",
+      "索引",
       "值",
       "名称",
-      "索引"
+      "引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-173",
     "title": "Java中枚举的toString()方法返回？",
     "options": [
+      "枚举实例",
       "枚举名称",
-      "枚举索引",
       "枚举值",
-      "枚举实例"
+      "枚举索引"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-174",
     "title": "Java中枚举的clone()方法？",
     "options": [
       "不可克隆",
+      "深克隆",
       "可克隆",
-      "浅克隆",
-      "深克隆"
+      "浅克隆"
     ],
     "correctAnswer": 0
   },
@@ -268,9 +268,9 @@
     "title": "Java中枚举的finalize()方法？",
     "options": [
       "不可被垃圾回收",
+      "自动调用",
       "可被垃圾回收",
-      "手动调用",
-      "自动调用"
+      "手动调用"
     ],
     "correctAnswer": 0
   },
@@ -278,8 +278,8 @@
     "id": "java-176",
     "title": "Java中单例模式的枚举实现优势是？",
     "options": [
-      "防止反射攻击",
       "防止序列化破坏",
+      "防止反射攻击",
       "线程安全",
       "以上都是"
     ],
@@ -290,8 +290,8 @@
     "title": "Java中包装类的缓存是？",
     "options": [
       "IntegerCache",
-      "LongCache",
       "ShortCache",
+      "LongCache",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -300,34 +300,34 @@
     "id": "java-178",
     "title": "Java中Integer的缓存范围是？",
     "options": [
-      "-128到127",
-      "0到255",
       "-32768到32767",
-      "无缓存"
+      "无缓存",
+      "0到255",
+      "-128到127"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-179",
     "title": "Java中自动装箱是？",
     "options": [
-      "基本类型转包装类",
-      "包装类转基本类型",
       "无转换",
+      "包装类转基本类型",
+      "基本类型转包装类",
       "手动转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-180",
     "title": "Java中自动拆箱是？",
     "options": [
-      "基本类型转包装类",
       "包装类转基本类型",
+      "手动转换",
       "无转换",
-      "手动转换"
+      "基本类型转包装类"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "java-181",
@@ -344,67 +344,67 @@
     "id": "java-182",
     "title": "Java中自动拆箱可能引发？",
     "options": [
-      "NullPointerException",
       "ClassCastException",
+      "NullPointerException",
       "内存溢出",
       "性能问题"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-183",
     "title": "Java中包装类比较推荐使用？",
     "options": [
-      "equals",
-      "==",
       "compareTo",
-      "compare"
+      "equals",
+      "compare",
+      "=="
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-184",
     "title": "Java中String比较推荐使用？",
     "options": [
+      "compare",
       "equals",
       "==",
-      "compareTo",
-      "compare"
+      "compareTo"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-185",
     "title": "Java中String的intern()方法作用是？",
     "options": [
-      "将字符串加入常量池",
       "比较字符串",
       "截取字符串",
+      "将字符串加入常量池",
       "转换大小写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-186",
     "title": "Java中String的substring()方法作用是？",
     "options": [
-      "截取字符串",
-      "替换字符串",
+      "拼接字符串",
       "分割字符串",
-      "拼接字符串"
+      "替换字符串",
+      "截取字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-187",
     "title": "Java中String的replace()方法作用是？",
     "options": [
-      "替换字符串",
       "截取字符串",
       "分割字符串",
-      "拼接字符串"
+      "拼接字符串",
+      "替换字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-188",
@@ -412,8 +412,8 @@
     "options": [
       "分割字符串",
       "截取字符串",
-      "替换字符串",
-      "拼接字符串"
+      "拼接字符串",
+      "替换字符串"
     ],
     "correctAnswer": 0
   },
@@ -421,32 +421,32 @@
     "id": "java-189",
     "title": "Java中String的trim()方法作用是？",
     "options": [
-      "去除首尾空格",
-      "去除所有空格",
       "转换大小写",
+      "去除所有空格",
+      "去除首尾空格",
       "判断空"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-190",
     "title": "Java中String的isEmpty()方法作用是？",
     "options": [
-      "判断长度是否为0",
       "判断是否为null",
+      "判断是否为空串",
       "判断是否为空格",
-      "判断是否为空串"
+      "判断长度是否为0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-191",
     "title": "Java中String的length()方法作用是？",
     "options": [
       "获取长度",
-      "获取容量",
+      "获取字节数",
       "获取大小",
-      "获取字节数"
+      "获取容量"
     ],
     "correctAnswer": 0
   },
@@ -454,21 +454,21 @@
     "id": "java-192",
     "title": "Java中String的charAt()方法作用是？",
     "options": [
+      "获取长度",
       "获取指定位置字符",
       "获取指定字符位置",
-      "获取子串",
-      "获取长度"
+      "获取子串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-193",
     "title": "Java中String的indexOf()方法作用是？",
     "options": [
       "获取指定字符位置",
-      "获取指定位置字符",
+      "获取长度",
       "获取子串",
-      "获取长度"
+      "获取指定位置字符"
     ],
     "correctAnswer": 0
   },
@@ -476,23 +476,23 @@
     "id": "java-194",
     "title": "Java中String的lastIndexOf()方法作用是？",
     "options": [
-      "获取指定字符最后位置",
+      "获取长度",
       "获取指定位置字符",
       "获取子串",
-      "获取长度"
+      "获取指定字符最后位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-195",
     "title": "Java中String的startsWith()方法作用是？",
     "options": [
-      "判断前缀",
       "判断后缀",
-      "判断包含",
-      "判断相等"
+      "判断前缀",
+      "判断相等",
+      "判断包含"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-196",
@@ -500,8 +500,8 @@
     "options": [
       "判断后缀",
       "判断前缀",
-      "判断包含",
-      "判断相等"
+      "判断相等",
+      "判断包含"
     ],
     "correctAnswer": 0
   },
@@ -511,25 +511,14 @@
     "options": [
       "判断包含",
       "判断前缀",
-      "判断后缀",
-      "判断相等"
+      "判断相等",
+      "判断后缀"
     ],
     "correctAnswer": 0
   },
   {
     "id": "java-198",
     "title": "Java中String的toUpperCase()方法作用是？",
-    "options": [
-      "转大写",
-      "转小写",
-      "比较大小",
-      "判断大小写"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "java-199",
-    "title": "Java中String的toLowerCase()方法作用是？",
     "options": [
       "转小写",
       "转大写",
@@ -539,14 +528,25 @@
     "correctAnswer": 1
   },
   {
+    "id": "java-199",
+    "title": "Java中String的toLowerCase()方法作用是？",
+    "options": [
+      "判断大小写",
+      "转大写",
+      "转小写",
+      "比较大小"
+    ],
+    "correctAnswer": 1
+  },
+  {
     "id": "java-200",
     "title": "Java中String的toCharArray()方法作用是？",
     "options": [
-      "转为字符数组",
       "转为字节数组",
       "转为整型数组",
-      "转为字符串数组"
+      "转为字符串数组",
+      "转为字符数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

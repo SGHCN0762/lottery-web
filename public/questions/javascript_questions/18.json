@@ -4,8 +4,8 @@
     "title": "JavaScript中解构赋值如何用于函数参数？",
     "options": [
       "function fn({a, b}) {}",
-      "function fn(a, b) {}",
       "function fn([a, b]) {}",
+      "function fn(a, b) {}",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -14,23 +14,23 @@
     "id": "js-852",
     "title": "JavaScript中展开运算符和Object.assign的区别？",
     "options": [
-      "展开创建新对象，assign修改目标对象",
       "没有区别",
+      "取决于参数",
       "assign创建新对象",
-      "取决于参数"
+      "展开创建新对象，assign修改目标对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-853",
     "title": "JavaScript中Symbol作为属性的特点？",
     "options": [
-      "不可枚举，不会出现在for...in",
-      "可枚举",
       "公开属性",
+      "可枚举",
+      "不可枚举，不会出现在for...in",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-854",
@@ -47,32 +47,32 @@
     "id": "js-855",
     "title": "JavaScript中Generator的yield表达式返回值？",
     "options": [
-      "undefined",
-      "yield后的值",
       "next参数",
+      "yield后的值",
+      "undefined",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-856",
     "title": "JavaScript中Generator的next参数替换谁？",
     "options": [
-      "上一个yield的返回值",
-      "当前yield的值",
       "下一个yield的值",
-      "以上都不对"
+      "以上都不对",
+      "当前yield的值",
+      "上一个yield的返回值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-857",
     "title": "JavaScript中Promise的all方法返回顺序？",
     "options": [
       "按传入顺序",
-      "按完成顺序",
+      "以上都不对",
       "随机顺序",
-      "以上都不对"
+      "按完成顺序"
     ],
     "correctAnswer": 0
   },
@@ -80,98 +80,98 @@
     "id": "js-858",
     "title": "JavaScript中Promise的race方法返回？",
     "options": [
-      "第一个完成的Promise结果",
+      "以上都不对",
       "最后一个完成的结果",
-      "所有结果的数组",
-      "以上都不对"
+      "第一个完成的Promise结果",
+      "所有结果的数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-859",
     "title": "JavaScript中async函数的返回值？",
     "options": [
-      "Promise",
-      "普通值",
       "undefined",
-      "以上都不对"
+      "Promise",
+      "以上都不对",
+      "普通值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-860",
     "title": "JavaScript中await的错误处理方式？",
     "options": [
-      "try...catch",
+      "以上都不对",
       ".catch()",
-      "error事件",
-      "以上都不对"
+      "try...catch",
+      "error事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-861",
     "title": "JavaScript中class的静态方法如何调用？",
     "options": [
+      "prototype.方法名()",
       "类名.方法名()",
       "实例.方法名()",
-      "prototype.方法名()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-862",
     "title": "JavaScript中class的私有方法如何定义？",
     "options": [
-      "#方法名",
+      "@方法名",
       "_方法名",
-      "private方法名",
-      "@方法名"
+      "#方法名",
+      "private方法名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-863",
     "title": "JavaScript中Proxy的get拦截器何时触发？",
     "options": [
-      "读取属性时",
       "设置属性时",
-      "删除属性时",
-      "遍历属性时"
+      "读取属性时",
+      "遍历属性时",
+      "删除属性时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-864",
     "title": "JavaScript中Proxy的set拦截器何时触发？",
     "options": [
-      "设置属性时",
+      "遍历属性时",
       "读取属性时",
       "删除属性时",
-      "遍历属性时"
+      "设置属性时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-865",
     "title": "JavaScript中Proxy的has拦截器何时触发？",
     "options": [
-      "in操作符时",
-      "读取属性时",
       "设置属性时",
-      "删除属性时"
+      "in操作符时",
+      "删除属性时",
+      "读取属性时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-866",
     "title": "JavaScript中Proxy的deleteProperty拦截器何时触发？",
     "options": [
       "delete操作时",
-      "读取属性时",
       "设置属性时",
-      "遍历属性时"
+      "遍历属性时",
+      "读取属性时"
     ],
     "correctAnswer": 0
   },
@@ -179,43 +179,43 @@
     "id": "js-867",
     "title": "JavaScript中Proxy的ownKeys拦截器何时触发？",
     "options": [
-      "Object.getOwnPropertyNames时",
-      "读取属性时",
       "设置属性时",
-      "删除属性时"
+      "删除属性时",
+      "读取属性时",
+      "Object.getOwnPropertyNames时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-868",
     "title": "JavaScript中Reflect的apply方法相当于？",
     "options": [
-      "Function.prototype.apply",
-      "Function.prototype.call",
+      "以上都不对",
       "new Function",
-      "以上都不对"
+      "Function.prototype.apply",
+      "Function.prototype.call"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-869",
     "title": "JavaScript中Reflect的construct方法相当于？",
     "options": [
-      "new",
-      "apply",
       "call",
-      "bind"
+      "bind",
+      "apply",
+      "new"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-870",
     "title": "JavaScript中Map的forEach回调参数顺序？",
     "options": [
       "value, key, map",
-      "key, value, map",
       "value, index, map",
-      "以上都不对"
+      "以上都不对",
+      "key, value, map"
     ],
     "correctAnswer": 0
   },
@@ -223,31 +223,31 @@
     "id": "js-871",
     "title": "JavaScript中Set的forEach回调参数顺序？",
     "options": [
-      "value, value, set",
       "value, key, set",
       "key, value, set",
-      "以上都不对"
+      "以上都不对",
+      "value, value, set"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-872",
     "title": "JavaScript中WeakMap的用途？",
     "options": [
-      "存储私有数据，缓存",
-      "遍历数据",
       "共享数据",
+      "遍历数据",
+      "存储私有数据，缓存",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-873",
     "title": "JavaScript中WeakSet的用途？",
     "options": [
       "标记对象，存储对象",
-      "遍历数据",
       "共享数据",
+      "遍历数据",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -256,31 +256,31 @@
     "id": "js-874",
     "title": "JavaScript中ES2016的新特性有？",
     "options": [
+      "Symbol",
       "includes, 指数运算符**",
-      "async/await",
       "Proxy",
-      "Symbol"
+      "async/await"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-875",
     "title": "JavaScript中ES2017的新特性有？",
     "options": [
-      "async/await, Object.values/entries",
-      "includes",
+      "Symbol",
       "Proxy",
-      "Symbol"
+      "async/await, Object.values/entries",
+      "includes"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-876",
     "title": "JavaScript中ES2018的新特性有？",
     "options": [
       "异步迭代, 对象剩余/展开, Promise.finally",
-      "async/await",
       "includes",
+      "async/await",
       "Proxy"
     ],
     "correctAnswer": 0
@@ -289,21 +289,21 @@
     "id": "js-877",
     "title": "JavaScript中ES2019的新特性有？",
     "options": [
+      "includes",
       "Array.flat/flatMap, Object.fromEntries, trimStart/End",
-      "异步迭代",
       "async/await",
-      "includes"
+      "异步迭代"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-878",
     "title": "JavaScript中ES2020的新特性有？",
     "options": [
       "可选链, 空值合并, BigInt, dynamic import, globalThis",
+      "async/await",
       "Array.flat",
-      "异步迭代",
-      "async/await"
+      "异步迭代"
     ],
     "correctAnswer": 0
   },
@@ -311,12 +311,12 @@
     "id": "js-879",
     "title": "JavaScript中globalThis的作用是？",
     "options": [
-      "获取全局对象",
+      "获取原型对象",
       "获取当前对象",
       "获取父对象",
-      "获取原型对象"
+      "获取全局对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-880",
@@ -324,8 +324,8 @@
     "options": [
       "replaceAll, Promise.any, 逻辑赋值, 数字分隔符",
       "可选链",
-      "空值合并",
-      "BigInt"
+      "BigInt",
+      "空值合并"
     ],
     "correctAnswer": 0
   },
@@ -333,53 +333,53 @@
     "id": "js-881",
     "title": "JavaScript中逻辑赋值运算符有？",
     "options": [
-      "||=, &&=, ??=",
-      "||, &&",
       "?",
-      "以上都不对"
+      "||, &&",
+      "以上都不对",
+      "||=, &&=, ??="
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-882",
     "title": "JavaScript中数字分隔符的作用是？",
     "options": [
+      "以上都不对",
       "提高数字可读性",
-      "分隔整数和小数",
       "格式化数字",
-      "以上都不对"
+      "分隔整数和小数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-883",
     "title": "JavaScript中ES2022的新特性有？",
     "options": [
-      "Top-level await, class字段, at(), Object.hasOwn",
       "replaceAll",
-      "Promise.any",
-      "逻辑赋值"
+      "Top-level await, class字段, at(), Object.hasOwn",
+      "逻辑赋值",
+      "Promise.any"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-884",
     "title": "JavaScript中Object.hasOwn和hasOwnProperty的区别？",
     "options": [
-      "Object.hasOwn更安全，不依赖原型",
-      "没有区别",
       "hasOwnProperty更安全",
+      "没有区别",
+      "Object.hasOwn更安全，不依赖原型",
       "取决于对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-885",
     "title": "JavaScript中ES2023的新特性有？",
     "options": [
       "不可变数组方法, fromAsync, Hashbang",
-      "Top-level await",
       "class字段",
+      "Top-level await",
       "at()"
     ],
     "correctAnswer": 0
@@ -390,8 +390,8 @@
     "options": [
       "toSorted, toReversed, toSpliced, with",
       "sort, reverse",
-      "splice",
-      "以上都不对"
+      "以上都不对",
+      "splice"
     ],
     "correctAnswer": 0
   },
@@ -412,8 +412,8 @@
     "options": [
       "代码复用，维护性，命名空间",
       "性能更好",
-      "代码更少",
-      "以上都不对"
+      "以上都不对",
+      "代码更少"
     ],
     "correctAnswer": 0
   },
@@ -421,64 +421,64 @@
     "id": "js-889",
     "title": "JavaScript中AMD规范的特点？",
     "options": [
-      "异步加载，依赖前置",
-      "同步加载",
       "依赖后置",
-      "以上都不对"
+      "异步加载，依赖前置",
+      "以上都不对",
+      "同步加载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-890",
     "title": "JavaScript中CMD规范的特点？",
     "options": [
+      "以上都不对",
       "异步加载，依赖就近",
       "同步加载",
-      "依赖前置",
-      "以上都不对"
+      "依赖前置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-891",
     "title": "JavaScript中UMD规范的特点？",
     "options": [
-      "兼容AMD和CommonJS",
       "仅兼容AMD",
+      "兼容AMD和CommonJS",
       "仅兼容CommonJS",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-892",
     "title": "JavaScript中ES6 Module的特点？",
     "options": [
-      "静态结构，编译时加载",
-      "动态结构",
       "运行时加载",
-      "以上都不对"
+      "静态结构，编译时加载",
+      "以上都不对",
+      "动态结构"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-893",
     "title": "JavaScript中import * as的作用是？",
     "options": [
-      "导入整个模块",
+      "以上都不对",
       "导入默认",
-      "导入命名",
-      "以上都不对"
+      "导入整个模块",
+      "导入命名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-894",
     "title": "JavaScript中export和export default的区别？",
     "options": [
       "export命名导出，export default默认导出",
-      "没有区别",
       "export默认导出",
+      "没有区别",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -487,66 +487,66 @@
     "id": "js-895",
     "title": "JavaScript中一个模块可以有多个export default吗？",
     "options": [
+      "取决于环境",
       "不可以",
       "可以",
-      "取决于环境",
       "取决于严格模式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-896",
     "title": "JavaScript中import语句会提升吗？",
     "options": [
-      "会，在编译阶段执行",
       "不会",
-      "取决于位置",
-      "取决于环境"
+      "会，在编译阶段执行",
+      "取决于环境",
+      "取决于位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-897",
     "title": "JavaScript中import的路径可以是变量吗？",
     "options": [
-      "不可以，必须是字符串",
-      "可以",
       "取决于环境",
-      "取决于严格模式"
+      "取决于严格模式",
+      "不可以，必须是字符串",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-898",
     "title": "JavaScript中动态import()的路径可以是变量吗？",
     "options": [
-      "可以",
       "不可以",
-      "取决于环境",
-      "取决于严格模式"
+      "可以",
+      "取决于严格模式",
+      "取决于环境"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-899",
     "title": "JavaScript中import()返回的Promise何时解决？",
     "options": [
-      "模块加载完成后",
-      "立即解决",
       "执行后解决",
+      "立即解决",
+      "模块加载完成后",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-900",
     "title": "JavaScript中如何实现模块懒加载？",
     "options": [
-      "import()",
       "import",
+      "import()",
       "require",
       "include"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

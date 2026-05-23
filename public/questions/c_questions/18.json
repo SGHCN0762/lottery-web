@@ -5,8 +5,8 @@
     "options": [
       "必须是结构体的最后一个成员",
       "必须是指针类型",
-      "必须是整型",
-      "大小必须为1"
+      "大小必须为1",
+      "必须是整型"
     ],
     "correctAnswer": 0
   },
@@ -14,32 +14,32 @@
     "id": "c-852",
     "title": "C语言中，C11引入的_Generic关键字的作用是？",
     "options": [
-      "实现泛型编程选择",
-      "定义泛型宏",
       "类型检查",
-      "异常捕获"
+      "异常捕获",
+      "实现泛型编程选择",
+      "定义泛型宏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-853",
     "title": "C语言中，_Static_assert的作用是？",
     "options": [
-      "编译期断言",
       "运行期断言",
       "静态变量声明",
-      "静态函数声明"
+      "静态函数声明",
+      "编译期断言"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-854",
     "title": "C语言中，_Alignof运算符的作用是？",
     "options": [
       "获取类型的对齐要求",
+      "计算偏移量",
       "设置对齐方式",
-      "取消对齐",
-      "计算偏移量"
+      "取消对齐"
     ],
     "correctAnswer": 0
   },
@@ -48,8 +48,8 @@
     "title": "C语言中，_Alignas关键字的作用是？",
     "options": [
       "设置变量或类型的对齐方式",
-      "获取对齐要求",
       "取消对齐",
+      "获取对齐要求",
       "计算偏移量"
     ],
     "correctAnswer": 0
@@ -58,12 +58,12 @@
     "id": "c-856",
     "title": "C语言中，Noreturn函数说明符的作用是？",
     "options": [
-      "告诉编译器函数不会返回",
       "禁止内联",
-      "禁止优化",
-      "声明静态函数"
+      "告诉编译器函数不会返回",
+      "声明静态函数",
+      "禁止优化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-857",
@@ -80,45 +80,45 @@
     "id": "c-858",
     "title": "C语言中，如何实现类似C++的RAII机制？",
     "options": [
-      "利用cleanup属性或宏模拟",
-      "使用析构函数",
       "使用垃圾回收",
+      "使用析构函数",
+      "利用cleanup属性或宏模拟",
       "无法实现"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-859",
     "title": "C语言中，__attribute__((cleanup))的作用是？",
     "options": [
+      "关闭套接字",
       "变量离开作用域时自动调用指定函数",
-      "清理内存",
       "删除文件",
-      "关闭套接字"
+      "清理内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-860",
     "title": "C语言中，如何防止头文件重复包含？",
     "options": [
-      "使用#ifndef/#define/#endif或#pragma once",
       "使用static",
+      "使用#ifndef/#define/#endif或#pragma once",
       "使用extern",
       "使用inline"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-861",
     "title": "C语言中，#pragma once的缺点是？",
     "options": [
-      "非标准，某些编译器可能不支持",
       "效率低",
+      "非标准，某些编译器可能不支持",
       "容易冲突",
       "不能用于C++"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-862",
@@ -135,23 +135,23 @@
     "id": "c-863",
     "title": "C语言中，前置声明的作用是？",
     "options": [
-      "减少头文件包含，降低编译依赖",
-      "加快运行速度",
       "节省内存",
-      "简化代码"
+      "加快运行速度",
+      "简化代码",
+      "减少头文件包含，降低编译依赖"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-864",
     "title": "C语言中，PIMPL模式的优势是？",
     "options": [
-      "隐藏实现细节，减少编译依赖",
+      "实现多态",
       "提高运行效率",
-      "简化内存管理",
-      "实现多态"
+      "隐藏实现细节，减少编译依赖",
+      "简化内存管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-865",
@@ -159,8 +159,8 @@
     "options": [
       "使用结构体/函数前缀命名约定",
       "使用namespace关键字",
-      "使用static",
-      "使用宏"
+      "使用宏",
+      "使用static"
     ],
     "correctAnswer": 0
   },
@@ -169,9 +169,9 @@
     "title": "C语言中，回调函数的典型应用场景是？",
     "options": [
       "事件处理、排序比较、异步通知",
+      "类型定义",
       "内存分配",
-      "变量声明",
-      "类型定义"
+      "变量声明"
     ],
     "correctAnswer": 0
   },
@@ -179,23 +179,23 @@
     "id": "c-867",
     "title": "C语言中，使用回调函数需要注意什么？",
     "options": [
+      "函数名长度",
       "生命周期和上下文数据的传递",
-      "返回值类型",
       "参数个数",
-      "函数名长度"
+      "返回值类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-868",
     "title": "C语言中，状态机通常如何实现？",
     "options": [
+      "递归调用",
       "switch-case或函数指针数组",
       "if-else嵌套",
-      "递归调用",
       "循环队列"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-869",
@@ -203,8 +203,8 @@
     "options": [
       "代码清晰，易扩展，避免深度嵌套",
       "运行更快",
-      "节省内存",
-      "编译更小"
+      "编译更小",
+      "节省内存"
     ],
     "correctAnswer": 0
   },
@@ -212,21 +212,21 @@
     "id": "c-870",
     "title": "C语言中，面向对象编程的三大特征是？",
     "options": [
+      "抽象、继承、多态",
       "封装、继承、多态",
-      "抽象、封装、多态",
       "封装、继承、重载",
-      "抽象、继承、多态"
+      "抽象、封装、多态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-871",
     "title": "C语言中，如何实现封装？",
     "options": [
       "将数据和操作数据的函数指针放在结构体中",
-      "使用private关键字",
+      "使用namespace",
       "使用class",
-      "使用namespace"
+      "使用private关键字"
     ],
     "correctAnswer": 0
   },
@@ -234,21 +234,21 @@
     "id": "c-872",
     "title": "C语言中，如何实现继承？",
     "options": [
-      "结构体嵌套包含基类结构体",
       "使用extends关键字",
+      "使用宏定义",
       "使用虚函数",
-      "使用宏定义"
+      "结构体嵌套包含基类结构体"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-873",
     "title": "C语言中，如何实现多态？",
     "options": [
       "通过函数指针表和基类指针",
-      "使用virtual关键字",
+      "使用模板",
       "使用重载",
-      "使用模板"
+      "使用virtual关键字"
     ],
     "correctAnswer": 0
   },
@@ -258,8 +258,8 @@
     "options": [
       "用C语言实现面向对象编程",
       "网络编程",
-      "数据库操作",
-      "文件处理"
+      "文件处理",
+      "数据库操作"
     ],
     "correctAnswer": 0
   },
@@ -268,9 +268,9 @@
     "title": "C语言中，错误处理的常见方式有哪些？",
     "options": [
       "返回错误码、errno、跳转setjmp/longjmp",
-      "抛出异常",
       "断言失败",
-      "忽略错误"
+      "忽略错误",
+      "抛出异常"
     ],
     "correctAnswer": 0
   },
@@ -278,95 +278,95 @@
     "id": "c-876",
     "title": "C语言中，setjmp/longjmp相比返回错误码的优势？",
     "options": [
-      "可以直接跳转到错误处理点，避免层层返回",
-      "性能更高",
+      "支持异常类型",
       "更安全",
-      "支持异常类型"
+      "性能更高",
+      "可以直接跳转到错误处理点，避免层层返回"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-877",
     "title": "C语言中，setjmp/longjmp的潜在风险是？",
     "options": [
-      "可能跳过资源释放代码导致泄漏",
       "性能差",
       "语法复杂",
-      "不能跨函数"
+      "不能跨函数",
+      "可能跳过资源释放代码导致泄漏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-878",
     "title": "C语言中，如何安全使用setjmp/longjmp？",
     "options": [
-      "结合volatile和手动资源管理",
-      [
-        "避免使用"
-      ],
       [
         "在信号处理中使用"
       ],
       [
+        "避免使用"
+      ],
+      "结合volatile和手动资源管理",
+      [
         "在多线程中使用"
       ]
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-879",
     "title": "C语言中，防御性编程的核心思想是？",
     "options": [
-      "假设外部输入和条件不可靠，进行充分检查",
       "优化性能",
-      "减少代码量",
-      "增加功能"
+      "假设外部输入和条件不可靠，进行充分检查",
+      "增加功能",
+      "减少代码量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-880",
     "title": "C语言中，常见的防御性编程技巧有？",
     "options": [
+      "宏定义",
       "参数校验、断言、错误处理、资源保护",
       "使用全局变量",
-      "递归调用",
-      "宏定义"
+      "递归调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-881",
     "title": "C语言中，什么是内存对齐？",
     "options": [
-      "数据存放的地址必须是某个数的整数倍",
       "内存分配对齐",
-      "内存释放对齐",
-      "缓存对齐"
+      "缓存对齐",
+      "数据存放的地址必须是某个数的整数倍",
+      "内存释放对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-882",
     "title": "C语言中，内存对齐的主要原因是什么？",
     "options": [
+      "编译器要求",
       "硬件访问效率要求和某些平台必须对齐",
       "节省内存",
-      "编译器要求",
       "操作系统规定"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-883",
     "title": "C语言中，结构体对齐的规则是？",
     "options": [
-      "成员偏移是自身对齐数的整数倍，总大小是最大对齐数的整数倍",
       "所有成员紧挨着",
       "按1字节对齐",
+      "成员偏移是自身对齐数的整数倍，总大小是最大对齐数的整数倍",
       "随机对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-884",
@@ -374,8 +374,8 @@
     "options": [
       "使用#pragma pack或__attribute__((packed))",
       "使用static",
-      "使用const",
-      "使用volatile"
+      "使用volatile",
+      "使用const"
     ],
     "correctAnswer": 0
   },
@@ -383,42 +383,42 @@
     "id": "c-885",
     "title": "C语言中，使用#pragma pack(1)的后果是？",
     "options": [
-      "取消对齐优化，可能降低访问效率",
-      "提高访问效率",
       "增加内存占用",
-      "编译错误"
+      "编译错误",
+      "取消对齐优化，可能降低访问效率",
+      "提高访问效率"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-886",
     "title": "C语言中，位域的注意事项有哪些？",
     "options": [
+      "不能取地址",
       "位域的分配方向、对齐、是否可跨字节由实现定义",
       "不能使用整型",
-      "不能取地址",
       "大小固定"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-887",
     "title": "C语言中，为什么位域的可移植性差？",
     "options": [
-      "分配顺序、对齐、符号等行为取决于编译器",
       "语法复杂",
       "不支持浮点型",
+      "分配顺序、对齐、符号等行为取决于编译器",
       "占用内存大"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-888",
     "title": "C语言中，如何判断系统是大端还是小端？",
     "options": [
       "使用联合体或强制类型转换检查字节序",
-      "使用sizeof",
       "使用strlen",
+      "使用sizeof",
       "无法判断"
     ],
     "correctAnswer": 0
@@ -427,34 +427,34 @@
     "id": "c-889",
     "title": "C语言中，网络字节序是什么？",
     "options": [
-      "大端序",
       "小端序",
-      "主机字节序",
-      "不确定"
+      "大端序",
+      "不确定",
+      "主机字节序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-890",
     "title": "C语言中，htonl/htons的作用是？",
     "options": [
-      "将主机字节序转换为网络字节序",
-      "网络转主机",
       "大小端转换",
-      "字节对齐"
+      "字节对齐",
+      "将主机字节序转换为网络字节序",
+      "网络转主机"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-891",
     "title": "C语言中，字节序转换函数定义在哪个头文件？",
     "options": [
-      "arpa/inet.h或winsock2.h",
-      "stdio.h",
       "stdlib.h",
-      "string.h"
+      "string.h",
+      "stdio.h",
+      "arpa/inet.h或winsock2.h"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-892",
@@ -471,82 +471,82 @@
     "id": "c-893",
     "title": "C语言中，为什么VLA在C11中被降级为可选特性？",
     "options": [
-      "实现复杂且容易导致栈溢出安全问题",
+      "被其他特性替代",
       "性能太差",
       "语法不兼容",
-      "被其他特性替代"
+      "实现复杂且容易导致栈溢出安全问题"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-894",
     "title": "C语言中，如何安全地实现类似VLA的功能？",
     "options": [
+      "使用位域",
       "使用alloca或动态内存分配malloc",
-      "使用全局数组",
       "使用静态数组",
-      "使用位域"
+      "使用全局数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-895",
     "title": "C语言中，restrict关键字的含义是？",
     "options": [
-      "告诉编译器该指针是访问数据的唯一方式",
-      "限制变量作用域",
       "限制函数调用",
+      "限制变量作用域",
+      "告诉编译器该指针是访问数据的唯一方式",
       "限制类型转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-896",
     "title": "C语言中，使用restrict的好处是？",
     "options": [
-      "帮助编译器优化生成更高效的代码",
+      "增强可读性",
       "保证线程安全",
-      "防止溢出",
-      "增强可读性"
+      "帮助编译器优化生成更高效的代码",
+      "防止溢出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-897",
     "title": "C语言中，restrict指针的别名规则是？",
     "options": [
+      "无限制",
       "在指针生命周期内，不允许通过其他指针访问同一对象",
-      "允许一个别名",
       "允许两个别名",
-      "无限制"
+      "允许一个别名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-898",
     "title": "C语言中，volatile的正确使用场景是？",
     "options": [
-      "硬件寄存器映射、信号处理中的变量、多线程共享标志",
       [
         "所有全局变量"
       ],
       [
-        "循环变量"
-      ],
-      [
         "函数参数"
+      ],
+      "硬件寄存器映射、信号处理中的变量、多线程共享标志",
+      [
+        "循环变量"
       ]
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-899",
     "title": "C语言中，误用volatile的常见情况是？",
     "options": [
       "认为volatile能保证原子性或线程安全",
-      "用于局部变量",
       "用于常量",
-      "用于指针"
+      "用于指针",
+      "用于局部变量"
     ],
     "correctAnswer": 0
   },
@@ -554,11 +554,11 @@
     "id": "c-900",
     "title": "C语言中，volatile和锁的区别？",
     "options": [
-      "volatile仅防止编译器优化，锁保证原子性和可见性",
-      "volatile就是锁",
       "锁比volatile快",
-      "没有区别"
+      "没有区别",
+      "volatile就是锁",
+      "volatile仅防止编译器优化，锁保证原子性和可见性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

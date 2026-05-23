@@ -3,65 +3,65 @@
     "id": "react-751",
     "title": "Next.js 中 Error 的作用是？",
     "options": [
+      "数据获取",
       "捕获路由段的错误显示备用 UI",
       "日志记录",
-      "路由跳转",
-      "数据获取"
+      "路由跳转"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-752",
     "title": "Next.js 中 Loading 的作用是？",
     "options": [
-      "显示路由段的即时加载状态",
-      "数据预取",
+      "布局管理",
       "错误处理",
-      "布局管理"
+      "显示路由段的即时加载状态",
+      "数据预取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-753",
     "title": "RSC 中客户端和服务端组件如何组合？",
     "options": [
-      "服务端组件可以导入客户端组件，反之不行",
       "互相导入",
+      "只能通过 props 传递",
       "不能组合",
-      "只能通过 props 传递"
+      "服务端组件可以导入客户端组件，反之不行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-754",
     "title": "RSC 中如何将服务端数据传递给客户端组件？",
     "options": [
-      "通过 Props 序列化传递",
-      "全局变量",
+      "localStorage",
       "Context",
-      "localStorage"
+      "通过 Props 序列化传递",
+      "全局变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-755",
     "title": "Next.js 中 fetch 扩展的 cache 选项？",
     "options": [
+      "no-cache",
       "no-store, force-cache 等",
       "only-if-cached",
-      "no-cache",
       "reload"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-756",
     "title": "SSR 中内存泄漏的常见原因？",
     "options": [
       "全局变量未清理、定时器未清除",
-      "渲染过快",
       "数据过大",
-      "请求过少"
+      "请求过少",
+      "渲染过快"
     ],
     "correctAnswer": 0
   },
@@ -69,12 +69,12 @@
     "id": "react-757",
     "title": "Next.js 中如何实现重定向？",
     "options": [
-      "redirect 函数或 NextResponse.redirect",
       "window.location",
-      "router.push",
-      "history.pushState"
+      "history.pushState",
+      "redirect 函数或 NextResponse.redirect",
+      "router.push"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-758",
@@ -82,8 +82,8 @@
     "options": [
       "动态生成页面的 meta 标签信息",
       "生成静态页面",
-      "数据查询",
-      "路由配置"
+      "路由配置",
+      "数据查询"
     ],
     "correctAnswer": 0
   },
@@ -91,65 +91,65 @@
     "id": "react-759",
     "title": "RSC 为什么不能使用 useState？",
     "options": [
+      "安全原因",
       "服务端无交互，状态属于客户端",
       "性能问题",
-      "语法限制",
-      "安全原因"
+      "语法限制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-760",
     "title": "Next.js 中并行路由的作用是？",
     "options": [
-      "同时渲染多个页面到同一布局",
-      "并发请求",
       "路由缓存",
-      "路由守卫"
+      "路由守卫",
+      "同时渲染多个页面到同一布局",
+      "并发请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-761",
     "title": "Next.js 中拦截路由的作用是？",
     "options": [
-      "在当前布局内加载其他路由的模态框",
-      "阻止导航",
       "权限验证",
-      "数据拦截"
+      "数据拦截",
+      "阻止导航",
+      "在当前布局内加载其他路由的模态框"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-762",
     "title": "SSR 中如何优化 TTFB？",
     "options": [
-      "缓存页面、流式渲染、边缘计算",
-      "增加服务器",
       "减少 HTML",
-      "客户端渲染"
+      "缓存页面、流式渲染、边缘计算",
+      "客户端渲染",
+      "增加服务器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-763",
     "title": "Next.js 中路由组的作用是？",
     "options": [
-      "组织路由而不影响 URL 路径",
       "分组 API",
-      "权限控制",
-      "数据分组"
+      "组织路由而不影响 URL 路径",
+      "数据分组",
+      "权限控制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-764",
     "title": "Remix 中嵌套路由的数据获取方式？",
     "options": [
       "并行加载嵌套路由的 loader",
-      "串行加载",
+      "只加载子路由",
       "只加载父路由",
-      "只加载子路由"
+      "串行加载"
     ],
     "correctAnswer": 0
   },
@@ -158,9 +158,9 @@
     "title": "Gatsby 中插件的作用是？",
     "options": [
       "扩展功能如数据源、SEO、图片优化",
+      "UI 组件",
       "路由管理",
-      "状态管理",
-      "UI 组件"
+      "状态管理"
     ],
     "correctAnswer": 0
   },
@@ -168,32 +168,32 @@
     "id": "react-766",
     "title": "RSC 中 ref 的限制是？",
     "options": [
-      "服务端组件不能传递 ref 给客户端组件",
-      "无限制",
       "只能传递字符串 ref",
-      "只能传递回调 ref"
+      "只能传递回调 ref",
+      "服务端组件不能传递 ref 给客户端组件",
+      "无限制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-767",
     "title": "Next.js 中 notFound 函数的作用是？",
     "options": [
-      "触发 404 页面渲染",
       "删除路由",
       "重定向",
-      "错误处理"
+      "错误处理",
+      "触发 404 页面渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-768",
     "title": "SSR 中样式闪烁问题的原因？",
     "options": [
       "CSS 未及时加载导致无样式内容闪烁",
+      "字体问题",
       "JS 阻塞",
-      "图片加载慢",
-      "字体问题"
+      "图片加载慢"
     ],
     "correctAnswer": 0
   },
@@ -201,54 +201,54 @@
     "id": "react-769",
     "title": "Next.js 中 Image 组件的 placeholder 属性？",
     "options": [
-      "blur 或 empty 提供图片加载占位",
-      "颜色占位",
       "文字占位",
-      "透明占位"
+      "blur 或 empty 提供图片加载占位",
+      "透明占位",
+      "颜色占位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-770",
     "title": "Next.js 中 Font 优化模块的作用？",
     "options": [
+      "字体压缩",
       "自动优化字体并消除布局偏移",
       "字体下载",
-      "字体设计",
-      "字体压缩"
+      "字体设计"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-771",
     "title": "RSC 中序列化数据的限制？",
     "options": [
-      "不能传递函数、类等不可序列化数据",
-      "无限制",
       "只能传字符串",
+      "无限制",
+      "不能传递函数、类等不可序列化数据",
       "只能传 JSON"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-772",
     "title": "Next.js 中 Route Handlers 的作用是？",
     "options": [
+      "数据获取",
       "替代 API Routes 处理 Web 请求和响应",
-      "路由守卫",
       "页面渲染",
-      "数据获取"
+      "路由守卫"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-773",
     "title": "Next.js 中动态路由段如何定义？",
     "options": [
       "使用 [folderName] 语法",
+      "*folderName",
       "{folderName}",
-      ":folderName",
-      "*folderName"
+      ":folderName"
     ],
     "correctAnswer": 0
   },
@@ -256,76 +256,76 @@
     "id": "react-774",
     "title": "Next.js 中捕获所有路由段如何定义？",
     "options": [
-      "使用 [...folderName] 语法",
       "**folderName",
+      "*folderName",
       "[...folderName]",
-      "*folderName"
+      "使用 [...folderName] 语法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-775",
     "title": "Next.js 中可选捕获所有路由段如何定义？",
     "options": [
-      "使用 [[...folderName]] 语法",
       "[...folderName]",
+      "使用 [[...folderName]] 语法",
       "[[folderName]]",
       "(folderName)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-776",
     "title": "SSR 中如何处理第三方脚本？",
     "options": [
+      "内联脚本",
       "使用 Script 组件的 strategy 属性控制加载",
-      "直接插入 body",
       "不加载",
-      "内联脚本"
+      "直接插入 body"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-777",
     "title": "Next.js 中 React Cache 的作用是？",
     "options": [
-      "缓存数据获取函数的结果",
+      "缓存 DOM",
       "缓存组件",
-      "缓存路由",
-      "缓存 DOM"
+      "缓存数据获取函数的结果",
+      "缓存路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-778",
     "title": "Next.js 中 unstable_cache 的作用是？",
     "options": [
-      "在 Next.js 缓存层缓存数据",
       "浏览器缓存",
+      "CDN 缓存",
       "内存缓存",
-      "CDN 缓存"
+      "在 Next.js 缓存层缓存数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-779",
     "title": "Remix 中 Form 组件的作用是？",
     "options": [
-      "拦截表单提交并调用 Action",
-      "美化表单",
       "验证表单",
-      "重置表单"
+      "重置表单",
+      "拦截表单提交并调用 Action",
+      "美化表单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-780",
     "title": "SSR 中如何实现代码分割？",
     "options": [
       "使用动态导入和 Suspense",
-      "手动分割",
       "不支持分割",
-      "全量加载"
+      "全量加载",
+      "手动分割"
     ],
     "correctAnswer": 0
   },
@@ -333,12 +333,12 @@
     "id": "react-781",
     "title": "Next.js 中如何处理环境变量？",
     "options": [
+      "配置文件",
       "使用 .env 文件和 NEXT_PUBLIC_ 前缀",
-      "直接硬编码",
       "全局变量",
-      "配置文件"
+      "直接硬编码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-782",
@@ -346,8 +346,8 @@
     "options": [
       "使用自定义 Node.js 服务器处理请求",
       "优化性能",
-      "静态生成",
-      "路由管理"
+      "路由管理",
+      "静态生成"
     ],
     "correctAnswer": 0
   },
@@ -357,8 +357,8 @@
     "options": [
       "RSC 组件不会发送 JS 到客户端，SSR 会",
       "没有区别",
-      "RSC 不支持 SEO",
-      "SSR 更快"
+      "SSR 更快",
+      "RSC 不支持 SEO"
     ],
     "correctAnswer": 0
   },
@@ -366,89 +366,89 @@
     "id": "react-784",
     "title": "Next.js 中如何实现国际化路由？",
     "options": [
+      "正则匹配",
       "使用 i18n 配置或 Middleware",
-      "路由守卫",
       "动态路由",
-      "正则匹配"
+      "路由守卫"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-785",
     "title": "Next.js 中 Link 的 prefetch 属性作用？",
     "options": [
-      "控制是否在视口内预取页面数据",
       "预加载图片",
+      "控制是否在视口内预取页面数据",
       "预执行脚本",
       "预渲染页面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-786",
     "title": "SSR 中流式渲染的优势？",
     "options": [
+      "简化逻辑",
       "分块传输 HTML 减少首字节时间",
       "减少代码量",
-      "简化逻辑",
       "提高安全性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-787",
     "title": "Next.js 中如何实现灰度发布？",
     "options": [
+      "DNS 切换",
       "使用 Middleware 判断用户分组",
       "部署多版本",
-      "DNS 切换",
       "负载均衡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-788",
     "title": "Next.js 中 generateStaticParams 的作用是？",
     "options": [
-      "为动态路由生成静态参数",
+      "重定向",
       "获取数据",
-      "路由守卫",
-      "重定向"
+      "为动态路由生成静态参数",
+      "路由守卫"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-789",
     "title": "RSC 中边界是什么？",
     "options": [
-      "服务端组件导入客户端组件的位置",
       "路由边界",
       "数据边界",
+      "服务端组件导入客户端组件的位置",
       "错误边界"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-790",
     "title": "Next.js 中视图过渡 API 的支持？",
     "options": [
-      "使用 experimental.viewTransition 实现路由动画",
       "不支持",
-      "内置支持",
-      "需第三方库"
+      "使用 experimental.viewTransition 实现路由动画",
+      "需第三方库",
+      "内置支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-791",
     "title": "Gatsby 中 Shadowing 的作用是？",
     "options": [
-      "覆盖主题中的组件实现定制",
       "隐藏组件",
       "样式隔离",
-      "状态覆盖"
+      "状态覆盖",
+      "覆盖主题中的组件实现定制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-792",
@@ -465,21 +465,21 @@
     "id": "react-793",
     "title": "Next.js 中如何实现 A/B 测试？",
     "options": [
-      "使用 Middleware 或 Edge Config 分流",
       "前端随机",
+      "URL 参数",
       "后端重定向",
-      "URL 参数"
+      "使用 Middleware 或 Edge Config 分流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-794",
     "title": "SSR 中如何避免 X-Frame-Options 问题？",
     "options": [
       "设置响应头允许或拒绝 iframe 嵌入",
-      "前端判断",
       "忽略",
-      "使用 HTTPS"
+      "使用 HTTPS",
+      "前端判断"
     ],
     "correctAnswer": 0
   },
@@ -487,23 +487,23 @@
     "id": "react-795",
     "title": "Next.js 中路由处理程序的缓存控制？",
     "options": [
-      "使用 Cache-Control 响应头",
+      "配置文件",
       "自动缓存",
-      "不缓存",
-      "配置文件"
+      "使用 Cache-Control 响应头",
+      "不缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-796",
     "title": "Next.js 中 revalidatePath 的作用是？",
     "options": [
-      "按路径重新验证缓存数据",
       "路由守卫",
-      "重定向",
-      "页面刷新"
+      "按路径重新验证缓存数据",
+      "页面刷新",
+      "重定向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-797",
@@ -511,8 +511,8 @@
     "options": [
       "按标签重新验证缓存数据",
       "HTML 标签",
-      "组件标签",
-      "路由标签"
+      "路由标签",
+      "组件标签"
     ],
     "correctAnswer": 0
   },
@@ -520,33 +520,33 @@
     "id": "react-798",
     "title": "Next.js 中 cookies 函数的作用是？",
     "options": [
-      "在服务端组件或 Route Handler 中读取 Cookie",
-      "设置 Cookie",
       "删除 Cookie",
+      "设置 Cookie",
+      "在服务端组件或 Route Handler 中读取 Cookie",
       "加密 Cookie"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-799",
     "title": "Next.js 中 headers 函数的作用是？",
     "options": [
-      "在服务端组件读取请求头",
       "设置请求头",
+      "在服务端组件读取请求头",
       "删除请求头",
       "修改请求头"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-800",
     "title": "React 中 SSR 的全称是？",
     "options": [
-      "Server-Side Rendering",
       "Static-Side Rendering",
-      "Service-Side Rendering",
-      "State-Side Rendering"
+      "Server-Side Rendering",
+      "State-Side Rendering",
+      "Service-Side Rendering"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

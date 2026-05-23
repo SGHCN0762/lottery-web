@@ -3,32 +3,32 @@
     "id": "c-801",
     "title": "C语言中，连接池的作用是？",
     "options": [
-      "减少连接创建销毁开销",
-      "增加连接数",
       "减少内存",
-      "增加CPU"
+      "增加CPU",
+      "增加连接数",
+      "减少连接创建销毁开销"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-802",
     "title": "C语言中，内存池的作用是？",
     "options": [
-      "减少内存分配释放开销",
       "增加内存",
-      "减少CPU",
-      "增加连接"
+      "增加连接",
+      "减少内存分配释放开销",
+      "减少CPU"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-803",
     "title": "C语言中，对象池的作用是？",
     "options": [
       "复用对象，减少GC",
-      "增加对象",
       "减少连接",
-      "增加内存"
+      "增加内存",
+      "增加对象"
     ],
     "correctAnswer": 0
   },
@@ -36,89 +36,89 @@
     "id": "c-804",
     "title": "C语言中，生产者消费者模型需要？",
     "options": [
-      "缓冲区、互斥锁、条件变量",
       "只需要锁",
+      "缓冲区、互斥锁、条件变量",
       "只需要条件变量",
       "不需要同步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-805",
     "title": "C语言中，读者写者模型需要？",
     "options": [
-      "读写锁",
-      "互斥锁",
       "条件变量",
+      "互斥锁",
+      "读写锁",
       "信号量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-806",
     "title": "C语言中，哲学家就餐问题需要？",
     "options": [
-      "避免死锁的策略",
       "互斥锁",
-      "条件变量",
-      "信号量"
+      "信号量",
+      "避免死锁的策略",
+      "条件变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-807",
     "title": "C语言中，竞态条件是指？",
     "options": [
+      "CPU过载",
       "结果依赖于执行顺序",
       "内存不足",
-      "CPU过载",
       "死锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-808",
     "title": "C语言中，临界区是指？",
     "options": [
-      "访问共享资源的代码段",
-      "整个程序",
       "某个函数",
-      "某个文件"
+      "整个程序",
+      "某个文件",
+      "访问共享资源的代码段"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-809",
     "title": "C语言中，同步是指？",
     "options": [
-      "控制执行顺序",
-      "控制内存大小",
+      "控制网络带宽",
       "控制CPU使用",
-      "控制网络带宽"
+      "控制执行顺序",
+      "控制内存大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-810",
     "title": "C语言中，互斥是指？",
     "options": [
-      "防止同时访问共享资源",
       "控制执行顺序",
       "控制内存大小",
+      "防止同时访问共享资源",
       "控制网络带宽"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-811",
     "title": "C语言中，并发是指？",
     "options": [
+      "单任务",
       "多个任务在同一时间段执行",
-      "同一时刻执行",
       "顺序执行",
-      "单任务"
+      "同一时刻执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-812",
@@ -126,8 +126,8 @@
     "options": [
       "多个任务在同一时刻执行",
       "同一时间段执行",
-      "顺序执行",
-      "单任务"
+      "单任务",
+      "顺序执行"
     ],
     "correctAnswer": 0
   },
@@ -136,8 +136,8 @@
     "title": "C语言中，上下文切换的开销包括？",
     "options": [
       "保存恢复寄存器、栈、缓存失效",
-      "只有内存分配",
       "只有CPU计算",
+      "只有内存分配",
       "只有网络延迟"
     ],
     "correctAnswer": 0
@@ -146,12 +146,12 @@
     "id": "c-814",
     "title": "C语言中，线程比进程轻量的原因？",
     "options": [
-      "共享地址空间，切换快",
-      "不共享内存",
       "独立地址空间",
+      "不共享内存",
+      "共享地址空间，切换快",
       "切换慢"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-815",
@@ -159,8 +159,8 @@
     "options": [
       "提高CPU利用率、响应快",
       "编程简单",
-      "无同步问题",
-      "无死锁"
+      "无死锁",
+      "无同步问题"
     ],
     "correctAnswer": 0
   },
@@ -168,97 +168,97 @@
     "id": "c-816",
     "title": "C语言中，多线程的缺点是？",
     "options": [
+      "内存占用大",
       "同步复杂、容易死锁",
-      "效率低",
       "响应慢",
-      "内存占用大"
+      "效率低"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-817",
     "title": "C语言中，多进程的优点是？",
     "options": [
+      "通信快",
       "稳定性高、利用多核",
       "编程简单",
-      "通信快",
       "内存占用少"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-818",
     "title": "C语言中，多进程的缺点是？",
     "options": [
-      "创建开销大、通信复杂",
-      "不稳定",
+      "同步复杂",
       "不能利用多核",
-      "同步复杂"
+      "不稳定",
+      "创建开销大、通信复杂"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-819",
     "title": "C语言中，协程的特点是？",
     "options": [
-      "用户态调度，轻量",
       "内核态调度",
-      "重量级",
-      "多线程"
+      "多线程",
+      "用户态调度，轻量",
+      "重量级"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-820",
     "title": "C语言中，如何实现协程？",
     "options": [
-      "使用ucontext或汇编切换栈",
       "使用pthread",
+      "使用signal",
       "使用fork",
-      "使用signal"
+      "使用ucontext或汇编切换栈"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-821",
     "title": "C语言中，ucontext库的作用是？",
     "options": [
-      "用户级上下文切换",
-      "创建线程",
       "创建进程",
-      "内存分配"
+      "内存分配",
+      "创建线程",
+      "用户级上下文切换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-822",
     "title": "C语言中，setcontext的作用是？",
     "options": [
-      "切换到指定上下文",
       "获取当前上下文",
+      "切换到指定上下文",
       "修改上下文",
       "创建上下文"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-823",
     "title": "C语言中，getcontext的作用是？",
     "options": [
-      "获取当前上下文",
       "切换上下文",
       "修改上下文",
+      "获取当前上下文",
       "创建上下文"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-824",
     "title": "C语言中，makecontext的作用是？",
     "options": [
       "创建用户定义的上下文",
-      "获取上下文",
       "切换上下文",
+      "获取上下文",
       "修改上下文"
     ],
     "correctAnswer": 0
@@ -267,21 +267,21 @@
     "id": "c-825",
     "title": "C语言中，swapcontext的作用是？",
     "options": [
-      "保存当前上下文并切换到另一个",
-      "获取上下文",
       "创建上下文",
-      "修改上下文"
+      "保存当前上下文并切换到另一个",
+      "修改上下文",
+      "获取上下文"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-826",
     "title": "C语言中，异步信号安全函数的作用是？",
     "options": [
       "在信号处理函数中安全调用",
-      "在多线程中安全调用",
       "在多进程中安全调用",
-      "在网络中安全调用"
+      "在网络中安全调用",
+      "在多线程中安全调用"
     ],
     "correctAnswer": 0
   },
@@ -289,78 +289,78 @@
     "id": "c-827",
     "title": "C语言中，可重入函数的特点是？",
     "options": [
+      "只能调用一次",
       "可以被中断并安全再次调用",
       "不能被中断",
-      "只能调用一次",
       "只能在线程中调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-828",
     "title": "C语言中，不可重入函数的特点是？",
     "options": [
+      "线程安全",
       "使用了静态数据或修改了自身",
       "不使用静态数据",
-      "不修改自身",
-      "线程安全"
+      "不修改自身"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-829",
     "title": "C语言中，线程安全和可重入的关系？",
     "options": [
-      "可重入一定线程安全，反之不一定",
       "线程安全一定可重入",
+      "可重入一定线程安全，反之不一定",
       "没有关系",
       "两者等价"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-830",
     "title": "C语言中，pthread_cancel的作用是？",
     "options": [
-      "请求取消线程",
       "创建线程",
-      "等待线程",
-      "分离线程"
+      "请求取消线程",
+      "分离线程",
+      "等待线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-831",
     "title": "C语言中，pthread_setcancelstate的作用是？",
     "options": [
-      "设置取消状态",
-      "设置取消类型",
       "创建线程",
-      "等待线程"
+      "等待线程",
+      "设置取消状态",
+      "设置取消类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-832",
     "title": "C语言中，pthread_setcanceltype的作用是？",
     "options": [
-      "设置取消类型(同步/异步)",
       "设置取消状态",
       "创建线程",
-      "等待线程"
+      "等待线程",
+      "设置取消类型(同步/异步)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-833",
     "title": "C语言中，取消点是什么？",
     "options": [
-      "检查取消请求的位置",
       "创建线程的位置",
+      "检查取消请求的位置",
       "销毁线程的位置",
       "等待线程的位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-834",
@@ -368,8 +368,8 @@
     "options": [
       "注册线程清理函数",
       "取消线程",
-      "创建线程",
-      "等待线程"
+      "等待线程",
+      "创建线程"
     ],
     "correctAnswer": 0
   },
@@ -377,31 +377,31 @@
     "id": "c-835",
     "title": "C语言中，pthread_cleanup_pop的作用是？",
     "options": [
-      "执行或移除清理函数",
-      "注册清理函数",
       "取消线程",
-      "创建线程"
+      "注册清理函数",
+      "创建线程",
+      "执行或移除清理函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-836",
     "title": "C语言中，一次性初始化使用什么？",
     "options": [
-      "pthread_once",
-      "pthread_init",
       "pthread_create",
+      "pthread_init",
+      "pthread_once",
       "pthread_mutex"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-837",
     "title": "C语言中，pthread_once的作用是？",
     "options": [
       "保证初始化函数只执行一次",
-      "创建线程",
       "加锁",
+      "创建线程",
       "解锁"
     ],
     "correctAnswer": 0
@@ -411,9 +411,9 @@
     "title": "C语言中，屏障的作用是？",
     "options": [
       "让多个线程在某个点同步",
-      "互斥访问",
+      "信号通知",
       "条件等待",
-      "信号通知"
+      "互斥访问"
     ],
     "correctAnswer": 0
   },
@@ -421,23 +421,23 @@
     "id": "c-839",
     "title": "C语言中，pthread_barrier_init的作用是？",
     "options": [
-      "初始化屏障",
       "等待屏障",
+      "创建线程",
       "销毁屏障",
-      "创建线程"
+      "初始化屏障"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-840",
     "title": "C语言中，pthread_barrier_wait的作用是？",
     "options": [
-      "等待屏障",
-      "初始化屏障",
+      "创建线程",
       "销毁屏障",
-      "创建线程"
+      "等待屏障",
+      "初始化屏障"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-841",
@@ -445,8 +445,8 @@
     "options": [
       "__VA_ARGS__",
       "va_list",
-      "args...",
-      "..."
+      "...",
+      "args..."
     ],
     "correctAnswer": 0
   },
@@ -454,32 +454,32 @@
     "id": "c-842",
     "title": "C语言中，#和##在宏定义中的作用分别是？",
     "options": [
-      "字符串化和连接",
       "注释和连接",
-      "字符串化和分隔",
-      "取地址和解引用"
+      "字符串化和连接",
+      "取地址和解引用",
+      "字符串化和分隔"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-843",
     "title": "C语言中，do-while(0)在宏定义中的常见用途是？",
     "options": [
+      "提高运行效率",
       "保证宏展开后语法完整，避免分号问题",
       "强制循环一次",
-      "提高运行效率",
       "定义局部作用域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-844",
     "title": "C语言中，X Macro技巧的主要用途是？",
     "options": [
       "代码自动生成和列表维护",
-      "异常处理",
       "内存管理",
-      "泛型编程"
+      "泛型编程",
+      "异常处理"
     ],
     "correctAnswer": 0
   },
@@ -487,12 +487,12 @@
     "id": "c-845",
     "title": "C语言中，container_of宏的作用是？",
     "options": [
-      "通过结构体成员指针获取结构体本身指针",
-      "获取结构体大小",
+      "拷贝结构体",
       "初始化结构体",
-      "拷贝结构体"
+      "通过结构体成员指针获取结构体本身指针",
+      "获取结构体大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-846",
@@ -511,44 +511,44 @@
     "id": "c-847",
     "title": "C语言中，__builtin_expect的作用是？",
     "options": [
-      "分支预测优化",
-      "异常处理",
+      "日志记录",
       "内存对齐",
-      "日志记录"
+      "异常处理",
+      "分支预测优化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-848",
     "title": "C语言中，likely和unlikely宏通常基于什么实现？",
     "options": [
-      "__builtin_expect",
-      "typeof",
       "sizeof",
-      "offsetof"
+      "offsetof",
+      "__builtin_expect",
+      "typeof"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-849",
     "title": "C语言中，C99新增的指定初始化器有什么优势？",
     "options": [
-      "可按任意顺序初始化成员，增加可读性",
       "运行更快",
-      "节省内存",
-      "支持泛型"
+      "可按任意顺序初始化成员，增加可读性",
+      "支持泛型",
+      "节省内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-850",
     "title": "C语言中，复合字面量的生命周期取决于？",
     "options": [
-      "作用域：在函数内则随块结束，在函数外则静态",
-      "总是静态",
       "总是随块结束",
-      "由程序员手动管理"
+      "由程序员手动管理",
+      "总是静态",
+      "作用域：在函数内则随块结束，在函数外则静态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

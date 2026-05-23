@@ -3,45 +3,45 @@
     "id": "python-801",
     "title": "Python中cffi的作用是？",
     "options": [
-      "调用C函数",
       "调用Java函数",
       "以上都不对",
+      "调用C函数",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-802",
     "title": "Python中如何进行内存映射？",
     "options": [
-      "mmap模块",
-      "map函数",
       "以上都不对",
-      "以上都不对"
+      "mmap模块",
+      "以上都不对",
+      "map函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-803",
     "title": "Python中mmap的优点是？",
     "options": [
-      "随机访问大文件",
+      "以上都不对",
       "顺序访问小文件",
       "以上都不对",
-      "以上都不对"
+      "随机访问大文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-804",
     "title": "Python中如何处理大文件？",
     "options": [
-      "分块读取，mmap",
-      "全量读取",
       "以上都不对",
+      "全量读取",
+      "分块读取，mmap",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-805",
@@ -58,87 +58,87 @@
     "id": "python-806",
     "title": "Python中如何进行缓存？",
     "options": [
-      "functools.lru_cache",
+      "以上都不对",
       "redis",
-      "以上都可以",
-      "以上都不对"
+      "functools.lru_cache",
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-807",
     "title": "Python中lru_cache的参数有？",
     "options": [
-      "maxsize, typed",
       "size, type",
       "以上都不对",
+      "maxsize, typed",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-808",
     "title": "Python中lru_cache的maxsize=None表示？",
     "options": [
-      "无限制",
       "不缓存",
+      "无限制",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-809",
     "title": "Python中如何进行延迟加载？",
     "options": [
+      "以上都不对",
       "property, 描述符",
       "lazy",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-810",
     "title": "Python中如何进行预加载？",
     "options": [
-      "初始化时加载",
       "使用时加载",
+      "初始化时加载",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-811",
     "title": "Python中如何进行对象序列化？",
     "options": [
+      "以上都不对",
       "pickle, json",
       "serialize",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-812",
     "title": "Python中pickle的安全性如何？",
     "options": [
-      "不安全，可能执行恶意代码",
-      "安全",
       "以上都不对",
-      "以上都不对"
+      "不安全，可能执行恶意代码",
+      "以上都不对",
+      "安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-813",
     "title": "Python中如何安全地序列化？",
     "options": [
       "json, msgpack",
-      "pickle",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "pickle"
     ],
     "correctAnswer": 0
   },
@@ -146,109 +146,109 @@
     "id": "python-814",
     "title": "Python中如何进行深比较？",
     "options": [
-      "==",
       "is",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "=="
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-815",
     "title": "Python中如何进行浅比较？",
     "options": [
-      "is",
-      "==",
       "以上都不对",
-      "以上都不对"
+      "is",
+      "以上都不对",
+      "=="
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-816",
     "title": "Python中如何获取对象大小？",
     "options": [
-      "sys.getsizeof()",
-      "sizeof()",
       "以上都不对",
+      "sizeof()",
+      "sys.getsizeof()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-817",
     "title": "Python中sys.getsizeof()是否包含引用对象？",
     "options": [
-      "不包含",
       "包含",
+      "不包含",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-818",
     "title": "Python中如何获取对象总大小？",
     "options": [
-      "递归计算",
-      "getsizeof()",
       "以上都不对",
+      "getsizeof()",
+      "递归计算",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-819",
     "title": "Python中如何进行内存分析？",
     "options": [
-      "memory_profiler, tracemalloc",
+      "以上都不对",
       "profiler",
       "以上都不对",
-      "以上都不对"
+      "memory_profiler, tracemalloc"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-820",
     "title": "Python中memory_profiler的作用是？",
     "options": [
+      "以上都不对",
       "内存分析",
       "性能分析",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-821",
     "title": "Python中如何进行性能调优？",
     "options": [
-      "算法优化，缓存，并发",
-      "增加内存",
       "以上都不对",
-      "以上都不对"
+      "算法优化，缓存，并发",
+      "以上都不对",
+      "增加内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-822",
     "title": "Python中如何选择数据结构？",
     "options": [
-      "根据操作类型",
       "总是用list",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "根据操作类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-823",
     "title": "Python中如何进行字符串拼接优化？",
     "options": [
       "join()",
-      "+",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "+"
     ],
     "correctAnswer": 0
   },
@@ -256,21 +256,21 @@
     "id": "python-824",
     "title": "Python中如何进行循环优化？",
     "options": [
-      "减少属性查找，列表推导",
       "多嵌套循环",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "减少属性查找，列表推导"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-825",
     "title": "Python中如何进行条件优化？",
     "options": [
       "将常见条件放前面",
-      "将罕见条件放前面",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "将罕见条件放前面"
     ],
     "correctAnswer": 0
   },
@@ -278,21 +278,21 @@
     "id": "python-826",
     "title": "Python中如何进行函数调用优化？",
     "options": [
-      "内联，缓存",
-      "多调用",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "多调用",
+      "内联，缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-827",
     "title": "Python中如何进行I/O优化？",
     "options": [
       "批量操作，异步",
-      "单次操作",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "单次操作"
     ],
     "correctAnswer": 0
   },
@@ -311,42 +311,42 @@
     "id": "python-829",
     "title": "Python中如何进行数据库优化？",
     "options": [
+      "以上都不对",
       "索引，批量操作",
       "全表扫描",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-830",
     "title": "Python中如何进行算法优化？",
     "options": [
-      "选择合适算法，空间换时间",
       "暴力破解",
+      "选择合适算法，空间换时间",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-831",
     "title": "Python中如何进行并发优化？",
     "options": [
-      "多线程，多进程，协程",
-      "单线程",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "单线程",
+      "多线程，多进程，协程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-832",
     "title": "Python中如何进行缓存优化？",
     "options": [
       "LRU，TTL",
-      "不缓存",
       "以上都不对",
+      "不缓存",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -355,43 +355,43 @@
     "id": "python-833",
     "title": "Python中如何进行代码重构？",
     "options": [
-      "提取方法，简化条件",
-      "增加代码量",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "增加代码量",
+      "提取方法，简化条件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-834",
     "title": "Python中如何进行代码审查？",
     "options": [
+      "以上都不对",
       "人工审查，工具审查",
       "不审查",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-835",
     "title": "Python中如何进行持续集成？",
     "options": [
-      "CI工具，自动测试",
       "手动测试",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "CI工具，自动测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-836",
     "title": "Python中如何进行持续部署？",
     "options": [
       "CD工具，自动部署",
-      "手动部署",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "手动部署"
     ],
     "correctAnswer": 0
   },
@@ -400,9 +400,9 @@
     "title": "Python中如何进行监控告警？",
     "options": [
       "监控工具，告警规则",
-      "人工监控",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "人工监控"
     ],
     "correctAnswer": 0
   },
@@ -410,76 +410,76 @@
     "id": "python-838",
     "title": "Python中如何进行日志分析？",
     "options": [
-      "ELK，日志工具",
       "人工查看",
+      "ELK，日志工具",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-839",
     "title": "Python中如何进行故障排查？",
     "options": [
-      "日志，监控，调试",
+      "以上都不对",
       "重启",
       "以上都不对",
-      "以上都不对"
+      "日志，监控，调试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-840",
     "title": "Python中如何进行容量规划？",
     "options": [
-      "压测，监控",
       "估算",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "压测，监控"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-841",
     "title": "Python中PEP 8是什么？",
     "options": [
-      "代码风格指南",
       "语法规范",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "代码风格指南"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-842",
     "title": "Python中PEP 8推荐的缩进是？",
     "options": [
-      "4个空格",
+      "以上都不对",
       "2个空格",
       "Tab",
-      "以上都不对"
+      "4个空格"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-843",
     "title": "Python中PEP 8推荐的行长是？",
     "options": [
-      "79",
-      "80",
       "120",
-      "以上都不对"
+      "79",
+      "以上都不对",
+      "80"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-844",
     "title": "Python中PEP 8推荐的命名规范是？",
     "options": [
       "函数小写+下划线，类驼峰",
-      "全部驼峰",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "全部驼峰"
     ],
     "correctAnswer": 0
   },
@@ -487,66 +487,66 @@
     "id": "python-845",
     "title": "Python中PEP 484是什么？",
     "options": [
-      "类型提示",
-      "协程",
       "以上都不对",
-      "以上都不对"
+      "类型提示",
+      "以上都不对",
+      "协程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-846",
     "title": "Python中PEP 572是什么？",
     "options": [
-      "海象运算符",
       "f-string",
+      "海象运算符",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-847",
     "title": "Python中海象运算符是？",
     "options": [
-      ":=",
-      "=?",
       "以上都不对",
-      "以上都不对"
+      ":=",
+      "以上都不对",
+      "=?"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-848",
     "title": "Python中海象运算符的作用是？",
     "options": [
-      "赋值并返回值",
       "比较相等",
       "以上都不对",
+      "赋值并返回值",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-849",
     "title": "Python中PEP 3107是什么？",
     "options": [
-      "函数注解",
-      "类型提示",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "类型提示",
+      "函数注解"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-850",
     "title": "Python中PEP 498是什么？",
     "options": [
-      "f-string",
       "类型提示",
+      "f-string",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

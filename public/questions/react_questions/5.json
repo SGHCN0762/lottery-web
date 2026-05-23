@@ -4,8 +4,8 @@
     "title": "React 中如何使用 Hooks 实现步骤条？",
     "options": [
       "自定义 useStepper Hook 管理当前步骤和导航",
-      "直接使用 useState",
       "使用 useReducer",
+      "直接使用 useState",
       "使用 Context"
     ],
     "correctAnswer": 0
@@ -14,23 +14,23 @@
     "id": "react-202",
     "title": "React 中如何使用 Hooks 实现分页？",
     "options": [
-      "自定义 usePagination Hook 管理页码和数据切片",
       "直接使用 useState",
       "使用 useReducer",
+      "自定义 usePagination Hook 管理页码和数据切片",
       "使用 Context"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-203",
     "title": "React 中如何使用 Hooks 实现虚拟列表？",
     "options": [
-      "自定义 useVirtual Hook 计算可见区域和偏移",
-      "直接渲染全部",
       "使用 CSS 分页",
-      "使用 Intersection Observer"
+      "自定义 useVirtual Hook 计算可见区域和偏移",
+      "使用 Intersection Observer",
+      "直接渲染全部"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-204",
@@ -47,131 +47,131 @@
     "id": "react-205",
     "title": "React 中如何使用 Hooks 实现动画？",
     "options": [
-      "自定义 useAnimation Hook 结合 useRef 和 requestAnimationFrame",
-      "直接使用 CSS",
       "使用 setTimeout",
-      "使用 setInterval"
+      "使用 setInterval",
+      "自定义 useAnimation Hook 结合 useRef 和 requestAnimationFrame",
+      "直接使用 CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-206",
     "title": "React 中如何使用 Hooks 实现焦点管理？",
     "options": [
-      "自定义 useFocus Hook 结合 useRef 和 focus/blur 方法",
       "直接操作 DOM",
+      "使用 Redux",
       "使用 Context",
-      "使用 Redux"
+      "自定义 useFocus Hook 结合 useRef 和 focus/blur 方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-207",
     "title": "React 中如何使用 Hooks 实现点击外部检测？",
     "options": [
-      "自定义 useClickOutside Hook 结合 useRef 和事件监听",
-      "直接监听 document",
+      "使用 Redux",
       "使用 Context",
-      "使用 Redux"
+      "直接监听 document",
+      "自定义 useClickOutside Hook 结合 useRef 和事件监听"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-208",
     "title": "React 中如何使用 Hooks 实现 Intersection Observer？",
     "options": [
-      "自定义 useIntersection Hook 封装 IO API 监听元素可见性",
       "直接使用 IO API",
       "使用 scroll 事件",
+      "自定义 useIntersection Hook 封装 IO API 监听元素可见性",
       "使用 getBoundingClientRect"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-209",
     "title": "React 中如何使用 Hooks 实现 Web Worker？",
     "options": [
-      "自定义 useWorker Hook 封装 Worker 创建和通信",
       "直接创建 Worker",
       "使用 setTimeout",
-      "使用 Promise"
+      "使用 Promise",
+      "自定义 useWorker Hook 封装 Worker 创建和通信"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-210",
     "title": "React 中如何使用 Hooks 实现 WebSocket？",
     "options": [
-      "自定义 useWebSocket Hook 管理 WS 连接、消息和重连",
-      "直接创建 WS",
       "使用 fetch",
-      "使用 axios"
+      "自定义 useWebSocket Hook 管理 WS 连接、消息和重连",
+      "使用 axios",
+      "直接创建 WS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-211",
     "title": "React 中如何使用 Hooks 实现文件上传？",
     "options": [
+      "使用 FormData",
       "自定义 useFileUpload Hook 封装 FormData 和 fetch",
       "直接使用 input",
-      "使用 axios",
-      "使用 FormData"
+      "使用 axios"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-212",
     "title": "React 中如何使用 Hooks 实现文件下载？",
     "options": [
-      "自定义 useDownload Hook 封装 Blob 和 URL.createObjectURL",
       "直接使用 a 标签",
       "使用 fetch",
+      "自定义 useDownload Hook 封装 Blob 和 URL.createObjectURL",
       "使用 axios"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-213",
     "title": "React 中如何使用 Hooks 实现数据加密？",
     "options": [
-      "自定义 useCrypto Hook 封装 Web Crypto API",
-      "直接使用 CryptoJS",
       "使用 HTTPS",
-      "无法实现"
+      "直接使用 CryptoJS",
+      "无法实现",
+      "自定义 useCrypto Hook 封装 Web Crypto API"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-214",
     "title": "React 中如何使用 Hooks 实现数据序列化？",
     "options": [
-      "自定义 useSerialization Hook 封装 JSON 方法",
-      "直接使用 JSON",
       "使用 protobuf",
-      "使用 XML"
+      "自定义 useSerialization Hook 封装 JSON 方法",
+      "使用 XML",
+      "直接使用 JSON"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-215",
     "title": "React 中如何使用 Hooks 实现数据验证？",
     "options": [
-      "自定义 useValidation Hook 结合验证规则和状态",
-      "直接判断",
       "使用 PropTypes",
-      "使用 TypeScript"
+      "使用 TypeScript",
+      "自定义 useValidation Hook 结合验证规则和状态",
+      "直接判断"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-216",
     "title": "React 中如何使用 Hooks 实现数据格式化？",
     "options": [
       "自定义 useFormat Hook 封装格式化逻辑",
+      "使用 Redux",
       "直接调用方法",
-      "使用 Context",
-      "使用 Redux"
+      "使用 Context"
     ],
     "correctAnswer": 0
   },
@@ -179,32 +179,32 @@
     "id": "react-217",
     "title": "React 中如何使用 Hooks 实现数据脱敏？",
     "options": [
-      "自定义 useMask Hook 封装脱敏逻辑",
+      "使用 Redux",
       "直接替换字符串",
-      "使用 Context",
-      "使用 Redux"
+      "自定义 useMask Hook 封装脱敏逻辑",
+      "使用 Context"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-218",
     "title": "React 中如何使用 Hooks 实现数据聚合？",
     "options": [
-      "自定义 useAggregate Hook 封装聚合逻辑",
       "直接使用 reduce",
+      "自定义 useAggregate Hook 封装聚合逻辑",
       "使用 Context",
       "使用 Redux"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-219",
     "title": "React 中如何使用 Hooks 实现数据分组？",
     "options": [
       "自定义 useGroupBy Hook 封装分组逻辑",
-      "直接使用 reduce",
       "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "直接使用 reduce"
     ],
     "correctAnswer": 0
   },
@@ -212,32 +212,32 @@
     "id": "react-220",
     "title": "React 中如何使用 Hooks 实现数据统计？",
     "options": [
+      "使用 Redux",
       "自定义 useStatistics Hook 封装统计逻辑",
       "直接使用 Math",
-      "使用 Context",
-      "使用 Redux"
+      "使用 Context"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-221",
     "title": "React 中如何使用 Hooks 实现数据对比？",
     "options": [
-      "自定义 useDiff Hook 封装对比逻辑",
-      "直接比较",
       "使用 Context",
-      "使用 Redux"
+      "自定义 useDiff Hook 封装对比逻辑",
+      "使用 Redux",
+      "直接比较"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-222",
     "title": "React 中如何使用 Hooks 实现数据同步？",
     "options": [
       "自定义 useSync Hook 封装同步逻辑",
-      "直接赋值",
       "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "直接赋值"
     ],
     "correctAnswer": 0
   },
@@ -245,43 +245,43 @@
     "id": "react-223",
     "title": "React 中如何使用 Hooks 实现数据迁移？",
     "options": [
-      "自定义 useMigration Hook 封装迁移逻辑",
       "直接修改",
-      "使用 Context",
-      "使用 Redux"
+      "自定义 useMigration Hook 封装迁移逻辑",
+      "使用 Redux",
+      "使用 Context"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-224",
     "title": "React 中如何使用 Hooks 实现数据备份？",
     "options": [
-      "自定义 useBackup Hook 封装备份逻辑",
+      "使用 Redux",
       "直接复制",
       "使用 Context",
-      "使用 Redux"
+      "自定义 useBackup Hook 封装备份逻辑"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-225",
     "title": "React 中如何使用 Hooks 实现数据恢复？",
     "options": [
-      "自定义 useRestore Hook 封装恢复逻辑",
-      "直接覆盖",
       "使用 Context",
-      "使用 Redux"
+      "自定义 useRestore Hook 封装恢复逻辑",
+      "使用 Redux",
+      "直接覆盖"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-226",
     "title": "React 中如何使用 Hooks 实现数据清理？",
     "options": [
       "自定义 useCleanup Hook 封装清理逻辑",
-      "直接删除",
       "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "直接删除"
     ],
     "correctAnswer": 0
   },
@@ -289,23 +289,23 @@
     "id": "react-227",
     "title": "React 中如何使用 Hooks 实现数据压缩？",
     "options": [
-      "自定义 useCompress Hook 封装压缩库",
-      "直接使用 zlib",
       "使用 Context",
+      "直接使用 zlib",
+      "自定义 useCompress Hook 封装压缩库",
       "使用 Redux"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-228",
     "title": "React 中如何使用 Hooks 实现数据解压？",
     "options": [
-      "自定义 useDecompress Hook 封装解压库",
-      "直接使用 zlib",
       "使用 Context",
-      "使用 Redux"
+      "自定义 useDecompress Hook 封装解压库",
+      "使用 Redux",
+      "直接使用 zlib"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-229",
@@ -313,8 +313,8 @@
     "options": [
       "自定义 useChecksum Hook 封装校验逻辑",
       "直接计算",
-      "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "使用 Context"
     ],
     "correctAnswer": 0
   },
@@ -323,9 +323,9 @@
     "title": "React 中如何使用 Hooks 实现数据合并？",
     "options": [
       "自定义 useMerge Hook 封装合并逻辑",
-      "直接使用 Object.assign",
+      "使用 Redux",
       "使用 Context",
-      "使用 Redux"
+      "直接使用 Object.assign"
     ],
     "correctAnswer": 0
   },
@@ -334,8 +334,8 @@
     "title": "React 中如何使用 Hooks 处理复杂表单？",
     "options": [
       "自定义 useFormControl Hook 管理字段、验证和提交",
-      "直接使用 useState",
       "使用 useReducer",
+      "直接使用 useState",
       "使用 Context"
     ],
     "correctAnswer": 0
@@ -344,43 +344,43 @@
     "id": "react-232",
     "title": "React 中如何使用 Hooks 处理多步表单？",
     "options": [
-      "自定义 useMultiStepForm Hook 管理步骤和数据",
       "直接使用 useState",
       "使用 useReducer",
-      "使用 Context"
+      "使用 Context",
+      "自定义 useMultiStepForm Hook 管理步骤和数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-233",
     "title": "React 中如何使用 Hooks 处理动态表单？",
     "options": [
+      "使用 Context",
       "自定义 useDynamicForm Hook 管理字段增删",
       "直接使用 useState",
-      "使用 useReducer",
-      "使用 Context"
+      "使用 useReducer"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-234",
     "title": "React 中如何使用 Hooks 处理表单验证？",
     "options": [
-      "自定义 useFormValidation Hook 结合规则和错误状态",
       "直接判断",
       "使用 PropTypes",
+      "自定义 useFormValidation Hook 结合规则和错误状态",
       "使用 TypeScript"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-235",
     "title": "React 中如何使用 Hooks 处理表单提交？",
     "options": [
       "自定义 useFormSubmit Hook 封装提交和加载状态",
+      "使用 Context",
       "直接使用 fetch",
-      "使用 axios",
-      "使用 Context"
+      "使用 axios"
     ],
     "correctAnswer": 0
   },
@@ -389,9 +389,9 @@
     "title": "React 中如何使用 Hooks 处理表单重置？",
     "options": [
       "自定义 useFormReset Hook 保存初始值并提供重置方法",
+      "使用 Context",
       "直接赋值",
-      "使用 forceUpdate",
-      "使用 Context"
+      "使用 forceUpdate"
     ],
     "correctAnswer": 0
   },
@@ -399,32 +399,32 @@
     "id": "react-237",
     "title": "React 中如何使用 Hooks 处理表单联动？",
     "options": [
+      "使用 Redux",
       "自定义 useCascader Hook 监听字段变化更新其他字段",
-      "直接监听",
       "使用 Context",
-      "使用 Redux"
+      "直接监听"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-238",
     "title": "React 中如何使用 Hooks 处理表单异步验证？",
     "options": [
-      "自定义 useAsyncValidation Hook 结合 debounce 和 fetch",
       "直接验证",
       "使用 setTimeout",
+      "自定义 useAsyncValidation Hook 结合 debounce 和 fetch",
       "使用 Context"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-239",
     "title": "React 中如何使用 Hooks 处理表单防重复提交？",
     "options": [
       "自定义 useSubmitLock Hook 管理提交状态",
-      "直接使用 loading",
       "使用 disabled",
-      "使用 Context"
+      "使用 Context",
+      "直接使用 loading"
     ],
     "correctAnswer": 0
   },
@@ -433,8 +433,8 @@
     "title": "React 中如何使用 Hooks 处理表单草稿保存？",
     "options": [
       "自定义 useDraft Hook 结合 localStorage 和 debounce",
-      "直接保存",
       "使用 Context",
+      "直接保存",
       "使用 Redux"
     ],
     "correctAnswer": 0
@@ -443,32 +443,32 @@
     "id": "react-241",
     "title": "React 中如何使用 Hooks 处理表单数据转换？",
     "options": [
-      "自定义 useTransform Hook 封装输入输出转换",
+      "使用 Redux",
       "直接转换",
       "使用 Context",
-      "使用 Redux"
+      "自定义 useTransform Hook 封装输入输出转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-242",
     "title": "React 中如何使用 Hooks 处理表单历史记录？",
     "options": [
-      "自定义 useFormHistory Hook 保存操作记录实现撤销重做",
+      "使用 Redux",
       "直接保存数组",
       "使用 Context",
-      "使用 Redux"
+      "自定义 useFormHistory Hook 保存操作记录实现撤销重做"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-243",
     "title": "React 中如何使用 Hooks 实现乐观更新？",
     "options": [
       "自定义 useOptimistic Hook 先更新 UI 失败回滚",
+      "使用 Redux",
       "直接更新 state",
-      "使用 Context",
-      "使用 Redux"
+      "使用 Context"
     ],
     "correctAnswer": 0
   },
@@ -476,12 +476,12 @@
     "id": "react-244",
     "title": "React 中如何使用 Hooks 实现撤销重做？",
     "options": [
-      "自定义 useUndoRedo Hook 管理历史栈",
-      "直接保存 state",
       "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "自定义 useUndoRedo Hook 管理历史栈",
+      "直接保存 state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-245",
@@ -499,9 +499,9 @@
     "title": "React 中如何使用 Hooks 实现无限滚动？",
     "options": [
       "自定义 useInfiniteScroll Hook 结合 IO 和数据加载",
-      "直接监听 scroll",
       "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "直接监听 scroll"
     ],
     "correctAnswer": 0
   },
@@ -510,8 +510,8 @@
     "title": "React 中如何使用 Hooks 实现图片懒加载？",
     "options": [
       "自定义 useLazyLoad Hook 结合 IO 和 data-src",
-      "直接监听 scroll",
       "使用 Context",
+      "直接监听 scroll",
       "使用 CSS"
     ],
     "correctAnswer": 0
@@ -520,32 +520,32 @@
     "id": "react-248",
     "title": "React 中如何使用 Hooks 实现剪贴板操作？",
     "options": [
-      "自定义 useClipboard Hook 封装 Navigator.clipboard",
       "直接调用 API",
       "使用 document.execCommand",
-      "使用 Context"
+      "使用 Context",
+      "自定义 useClipboard Hook 封装 Navigator.clipboard"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-249",
     "title": "React 中如何使用 Hooks 实现全屏切换？",
     "options": [
-      "自定义 useFullscreen Hook 封装 Fullscreen API",
+      "使用 Context",
       "直接调用 API",
-      "使用 CSS",
-      "使用 Context"
+      "自定义 useFullscreen Hook 封装 Fullscreen API",
+      "使用 CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-250",
     "title": "React 中如何使用 Hooks 实现通知权限？",
     "options": [
       "自定义 useNotification Hook 封装 Notification API",
-      "直接调用 API",
       "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "直接调用 API"
     ],
     "correctAnswer": 0
   }

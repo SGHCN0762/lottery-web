@@ -3,21 +3,21 @@
     "id": "react-601",
     "title": "React 中单元测试的作用是？",
     "options": [
-      "验证独立模块功能是否正确",
+      "验证安全",
       "验证整体流程",
       "验证性能",
-      "验证安全"
+      "验证独立模块功能是否正确"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-602",
     "title": "React 中集成测试的作用是？",
     "options": [
       "验证模块间协作是否正确",
-      "验证独立模块",
+      "验证安全",
       "验证性能",
-      "验证安全"
+      "验证独立模块"
     ],
     "correctAnswer": 0
   },
@@ -25,210 +25,210 @@
     "id": "react-603",
     "title": "React 中 E2E 测试的作用是？",
     "options": [
+      "验证性能",
       "模拟用户真实操作验证整体流程",
       "验证独立模块",
-      "验证模块协作",
-      "验证性能"
+      "验证模块协作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-604",
     "title": "React 中 Jest 的作用是？",
     "options": [
-      "JavaScript 测试框架",
-      "UI 组件库",
       "状态管理",
-      "路由管理"
+      "JavaScript 测试框架",
+      "路由管理",
+      "UI 组件库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-605",
     "title": "React 中 React Testing Library 的作用是？",
     "options": [
-      "测试 React 组件的实用工具",
-      "测试网络请求",
       "测试性能",
-      "测试安全"
+      "测试安全",
+      "测试 React 组件的实用工具",
+      "测试网络请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-606",
     "title": "React 中 Enzyme 的作用是？",
     "options": [
+      "测试安全",
       "React 测试工具，侧重组件内部实现",
       "测试网络",
-      "测试性能",
-      "测试安全"
+      "测试性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-607",
     "title": "React Testing Library 和 Enzyme 的区别是？",
     "options": [
-      "RTL 侧重用户行为，Enzyme 侧重组件实现细节",
+      "两者功能相同",
       "没有区别",
       "RTL 侧重实现，Enzyme 侧重行为",
-      "两者功能相同"
+      "RTL 侧重用户行为，Enzyme 侧重组件实现细节"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-608",
     "title": "React 中 render 方法的测试作用是？",
     "options": [
+      "渲染到 Canvas",
       "渲染组件到虚拟 DOM 进行测试",
-      "渲染到真实 DOM",
       "渲染到字符串",
-      "渲染到 Canvas"
+      "渲染到真实 DOM"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-609",
     "title": "React 中 fireEvent 的作用是？",
     "options": [
-      "模拟 DOM 事件触发",
-      "创建事件",
+      "销毁事件",
       "监听事件",
-      "销毁事件"
+      "模拟 DOM 事件触发",
+      "创建事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-610",
     "title": "React 中 screen 的作用是？",
     "options": [
-      "查询虚拟 DOM 中的元素",
-      "渲染组件",
       "触发事件",
-      "创建组件"
+      "创建组件",
+      "渲染组件",
+      "查询虚拟 DOM 中的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-611",
     "title": "React 中 getByText 的作用是？",
     "options": [
-      "通过文本内容查找元素",
       "通过 ID 查找",
+      "通过属性查找",
       "通过类名查找",
-      "通过属性查找"
+      "通过文本内容查找元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-612",
     "title": "React 中 queryByText 的作用是？",
     "options": [
-      "通过文本查找元素，找不到返回 null 而非报错",
-      "通过文本查找，找不到报错",
+      "通过类名查找",
       "通过 ID 查找",
-      "通过类名查找"
+      "通过文本查找元素，找不到返回 null 而非报错",
+      "通过文本查找，找不到报错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-613",
     "title": "React 中 findByText 的作用是？",
     "options": [
-      "异步通过文本查找元素",
       "同步查找",
+      "通过类名查找",
       "通过 ID 查找",
-      "通过类名查找"
+      "异步通过文本查找元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-614",
     "title": "React 中 getByText 和 queryByText 的区别是？",
     "options": [
-      "找不到时 getBy 报错，query 返回 null",
-      "没有区别",
       "getBy 返回 null，query 报错",
+      "没有区别",
+      "找不到时 getBy 报错，query 返回 null",
       "两者功能相同"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-615",
     "title": "React 中 findByText 和 getByText 的区别是？",
     "options": [
+      "findBy 是同步的，getBy 是异步的",
       "findBy 是异步的，getBy 是同步的",
       "没有区别",
-      "findBy 是同步的，getBy 是异步的",
       "两者功能相同"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-616",
     "title": "React 中 waitFor 的作用是？",
     "options": [
-      "等待异步操作完成再断言",
-      "延迟执行",
+      "同步等待",
       "定时执行",
-      "同步等待"
+      "延迟执行",
+      "等待异步操作完成再断言"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-617",
     "title": "React 中 act 的作用是？",
     "options": [
-      "确保状态更新和副作用在断言前执行",
       "触发渲染",
       "模拟事件",
+      "确保状态更新和副作用在断言前执行",
       "创建组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-618",
     "title": "React 中为什么需要 act？",
     "options": [
-      "React 更新是异步的，act 确保同步完成",
       "性能优化",
+      "类型检查",
       "语法要求",
-      "类型检查"
+      "React 更新是异步的，act 确保同步完成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-619",
     "title": "React 中如何测试 useState？",
     "options": [
-      "触发事件并断言 UI 变化",
-      "直接读取 state",
       "使用 spy",
-      "无法测试"
+      "触发事件并断言 UI 变化",
+      "无法测试",
+      "直接读取 state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-620",
     "title": "React 中如何测试 useEffect？",
     "options": [
+      "无法测试",
       "使用 act 渲染并等待副作用执行后断言",
       "直接断言",
-      "使用 spy",
-      "无法测试"
+      "使用 spy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-621",
     "title": "React 中如何测试 useContext？",
     "options": [
-      "使用 Wrapper 包裹 Provider 后渲染测试",
       "直接渲染",
       "模拟 Context",
-      "无法测试"
+      "无法测试",
+      "使用 Wrapper 包裹 Provider 后渲染测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-622",
@@ -236,8 +236,8 @@
     "options": [
       "触发操作后断言 ref.current 绑定元素的属性",
       "直接断言",
-      "使用 spy",
-      "无法测试"
+      "无法测试",
+      "使用 spy"
     ],
     "correctAnswer": 0
   },
@@ -245,199 +245,199 @@
     "id": "react-623",
     "title": "React 中如何测试 useCallback？",
     "options": [
+      "无法测试",
       "比较函数执行结果或子组件渲染次数",
       "直接比较引用",
-      "使用 spy",
-      "无法测试"
+      "使用 spy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-624",
     "title": "React 中如何测试 useMemo？",
     "options": [
-      "比较计算结果或渲染次数",
+      "无法测试",
       "直接比较",
-      "使用 spy",
-      "无法测试"
+      "比较计算结果或渲染次数",
+      "使用 spy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-625",
     "title": "React 中如何测试 useReducer？",
     "options": [
-      "触发 dispatch 并断言 UI 变化",
-      "直接断言 state",
       "使用 spy",
+      "直接断言 state",
+      "触发 dispatch 并断言 UI 变化",
       "无法测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-626",
     "title": "React 中如何测试自定义 Hook？",
     "options": [
-      "使用 renderHook 工具或封装到测试组件",
-      "直接调用",
+      "无法测试",
       "使用 useEffect",
-      "无法测试"
+      "使用 renderHook 工具或封装到测试组件",
+      "直接调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-627",
     "title": "React 中 renderHook 的作用是？",
     "options": [
-      "在测试环境中渲染自定义 Hook",
-      "渲染组件",
       "模拟 DOM",
-      "模拟事件"
+      "模拟事件",
+      "在测试环境中渲染自定义 Hook",
+      "渲染组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-628",
     "title": "React 中如何测试异步组件？",
     "options": [
-      "使用 findBy、waitFor 和 act",
-      "同步测试",
       "使用 setTimeout",
-      "无法测试"
+      "无法测试",
+      "使用 findBy、waitFor 和 act",
+      "同步测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-629",
     "title": "React 中如何测试 React.lazy？",
     "options": [
-      "使用 Suspense 包裹并等待加载完成",
       "直接渲染",
+      "无法测试",
       "同步测试",
-      "无法测试"
+      "使用 Suspense 包裹并等待加载完成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-630",
     "title": "React 中如何测试 ErrorBoundary？",
     "options": [
-      "抛出错误并断言 fallback UI",
-      "正常渲染",
       "使用 try/catch",
-      "无法测试"
+      "无法测试",
+      "抛出错误并断言 fallback UI",
+      "正常渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-631",
     "title": "React 中如何测试 Portals？",
     "options": [
-      "断言 portal 目标容器中的内容",
       "忽略 portal",
+      "断言 portal 目标容器中的内容",
       "测试源容器",
       "无法测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-632",
     "title": "React 中如何测试路由？",
     "options": [
-      "使用 MemoryRouter 包裹并断言导航",
-      "使用 BrowserRouter",
+      "无法测试",
       "使用真实 URL",
-      "无法测试"
+      "使用 BrowserRouter",
+      "使用 MemoryRouter 包裹并断言导航"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-633",
     "title": "React 中如何测试 Redux？",
     "options": [
-      "使用 Provider 包裹或 mock Store",
       "直接测试",
+      "使用 Provider 包裹或 mock Store",
       "忽略 Redux",
       "无法测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-634",
     "title": "React 中如何测试网络请求？",
     "options": [
-      "使用 MSW 拦截请求返回模拟数据",
       "真实请求",
       "不测试",
-      "使用 axios mock"
+      "使用 axios mock",
+      "使用 MSW 拦截请求返回模拟数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-635",
     "title": "React 中 MSW 的作用是？",
     "options": [
-      "拦截网络请求的 Mock 服务",
-      "UI 组件库",
       "状态管理",
-      "路由管理"
+      "UI 组件库",
+      "路由管理",
+      "拦截网络请求的 Mock 服务"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-636",
     "title": "React 中如何测试表单？",
     "options": [
-      "模拟输入和提交事件断言数据",
       "直接读取 state",
+      "模拟输入和提交事件断言数据",
       "使用 spy",
       "无法测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-637",
     "title": "React 中如何测试事件处理？",
     "options": [
-      "触发事件并断言行为",
+      "无法测试",
       "直接调用函数",
       "使用 spy",
-      "无法测试"
+      "触发事件并断言行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-638",
     "title": "React 中如何测试条件渲染？",
     "options": [
-      "设置条件并断言元素存在或不存在",
       "只测试一种条件",
+      "无法测试",
       "忽略条件",
-      "无法测试"
+      "设置条件并断言元素存在或不存在"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-639",
     "title": "React 中如何测试列表渲染？",
     "options": [
-      "断言列表项数量和内容",
-      "只测试一项",
+      "无法测试",
       "忽略列表",
-      "无法测试"
+      "断言列表项数量和内容",
+      "只测试一项"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-640",
     "title": "React 中如何测试样式？",
     "options": [
-      "断言类名或计算样式",
-      "肉眼检查",
       "不测试样式",
-      "无法测试"
+      "肉眼检查",
+      "无法测试",
+      "断言类名或计算样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-641",
@@ -454,32 +454,32 @@
     "id": "react-642",
     "title": "React 中快照测试的缺点是？",
     "options": [
-      "容易产生无意义的更新",
-      "性能差",
       "不支持 CSS",
-      "不支持异步"
+      "性能差",
+      "不支持异步",
+      "容易产生无意义的更新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-643",
     "title": "React 中如何测试可访问性？",
     "options": [
-      "使用 jest-axe 或 axe-core",
-      "手动测试",
       "不测试",
-      "无法测试"
+      "手动测试",
+      "无法测试",
+      "使用 jest-axe 或 axe-core"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-644",
     "title": "React 中如何测试性能？",
     "options": [
       "使用 React.Profiler 或 Performance API",
-      "肉眼观察",
+      "无法测试",
       "不测试",
-      "无法测试"
+      "肉眼观察"
     ],
     "correctAnswer": 0
   },
@@ -487,66 +487,66 @@
     "id": "react-645",
     "title": "React 中如何测试安全？",
     "options": [
-      "检查 XSS、CSRF 防护",
       "不测试",
+      "检查 XSS、CSRF 防护",
       "手动测试",
       "无法测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-646",
     "title": "React 中如何测试国际化？",
     "options": [
+      "不测试",
       "切换语言并断言文本",
       "只测试一种语言",
-      "不测试",
       "无法测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-647",
     "title": "React 中如何测试主题？",
     "options": [
+      "不测试",
       "切换主题并断言样式",
       "只测试亮色",
-      "不测试",
       "无法测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-648",
     "title": "React 中如何测试权限？",
     "options": [
-      "设置权限并断言元素可见性",
       "只测试有权限",
+      "无法测试",
       "不测试",
-      "无法测试"
+      "设置权限并断言元素可见性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-649",
     "title": "React 中如何测试动画？",
     "options": [
-      "使用 jest.useFakeTimers 或 waitFor",
-      "真实等待",
       "不测试",
-      "无法测试"
+      "无法测试",
+      "真实等待",
+      "使用 jest.useFakeTimers 或 waitFor"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-650",
     "title": "React 中如何测试 WebSocket？",
     "options": [
+      "无法测试",
       "使用 mock-websocket 或 MSW",
-      "真实连接",
       "不测试",
-      "无法测试"
+      "真实连接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

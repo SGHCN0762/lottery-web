@@ -14,43 +14,43 @@
     "id": "c-52",
     "title": "C语言中，a %= b等价于？",
     "options": [
-      "a = a % b",
-      "a = b % a",
       "a % b",
+      "a = b % a",
+      "a = a % b",
       "a == b"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-53",
     "title": "C语言中，逻辑与运算符是？",
     "options": [
-      "&&",
+      "&",
       "||",
       "!",
-      "&"
+      "&&"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-54",
     "title": "C语言中，逻辑或运算符是？",
     "options": [
-      "&&",
       "||",
       "!",
-      "|"
+      "|",
+      "&&"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "c-55",
     "title": "C语言中，逻辑非运算符是？",
     "options": [
-      "&&",
       "||",
+      "~",
       "!",
-      "~"
+      "&&"
     ],
     "correctAnswer": 2
   },
@@ -58,21 +58,21 @@
     "id": "c-56",
     "title": "C语言中，位与运算符是？",
     "options": [
-      "&",
       "|",
       "^",
+      "&",
       "~"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-57",
     "title": "C语言中，位或运算符是？",
     "options": [
-      "&",
-      "|",
       "^",
-      "~"
+      "|",
+      "~",
+      "&"
     ],
     "correctAnswer": 1
   },
@@ -80,20 +80,20 @@
     "id": "c-58",
     "title": "C语言中，位异或运算符是？",
     "options": [
-      "&",
-      "|",
+      "~",
       "^",
-      "~"
+      "|",
+      "&"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "c-59",
     "title": "C语言中，位取反运算符是？",
     "options": [
-      "&",
-      "|",
       "^",
+      "|",
+      "&",
       "~"
     ],
     "correctAnswer": 3
@@ -102,12 +102,12 @@
     "id": "c-60",
     "title": "C语言中，左移运算符是？",
     "options": [
-      "<<",
-      ">>",
+      "<<<",
       ">>>",
-      "<<<"
+      ">>",
+      "<<"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-61",
@@ -124,12 +124,12 @@
     "id": "c-62",
     "title": "C语言中，a << 1等价于？",
     "options": [
-      "a * 2",
-      "a / 2",
       "a + 2",
-      "a - 2"
+      "a * 2",
+      "a - 2",
+      "a / 2"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-63",
@@ -137,8 +137,8 @@
     "options": [
       "a * 2",
       "a / 2",
-      "a + 2",
-      "a - 2"
+      "a - 2",
+      "a + 2"
     ],
     "correctAnswer": 1
   },
@@ -146,76 +146,76 @@
     "id": "c-64",
     "title": "C语言中，自增运算符++a是？",
     "options": [
-      "先自增后使用",
       "先使用后自增",
+      "只使用不自增",
       "只自增不使用",
-      "只使用不自增"
+      "先自增后使用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-65",
     "title": "C语言中，自增运算符a++是？",
     "options": [
       "先自增后使用",
+      "只使用不自增",
       "先使用后自增",
-      "只自增不使用",
-      "只使用不自增"
+      "只自增不使用"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "c-66",
     "title": "C语言中，sizeof是函数吗？",
     "options": [
-      "不是，是运算符",
-      "是",
       "取决于编译器",
-      "取决于类型"
+      "是",
+      "取决于类型",
+      "不是，是运算符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-67",
     "title": "C语言中，sizeof(\"hello\")的值是？",
     "options": [
       "5",
+      "8",
       "6",
-      "4",
-      "8"
+      "4"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "c-68",
     "title": "C语言中，strlen(\"hello\")的值是？",
     "options": [
+      "8",
       "5",
-      "6",
       "4",
-      "8"
+      "6"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-69",
     "title": "C语言中，NULL定义在哪个头文件？",
     "options": [
-      "stdio.h, stdlib.h等",
+      "string.h",
       "只有stdio.h",
       "只有stdlib.h",
-      "string.h"
+      "stdio.h, stdlib.h等"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-70",
     "title": "C语言中，NULL的值通常是？",
     "options": [
       "0",
+      "空格",
       "1",
-      "-1",
-      "空格"
+      "-1"
     ],
     "correctAnswer": 0
   },
@@ -223,23 +223,23 @@
     "id": "c-71",
     "title": "C语言中，void关键字的作用是？",
     "options": [
-      "表示无类型",
+      "表示整型",
+      "表示字符型",
       [
         "表示任意类型"
       ],
-      "表示整型",
-      "表示字符型"
+      "表示无类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-72",
     "title": "C语言中，void指针可以转换为任何类型的指针吗？",
     "options": [
       "可以",
+      "只能转换为int*",
       "不可以",
-      "只能转换为char*",
-      "只能转换为int*"
+      "只能转换为char*"
     ],
     "correctAnswer": 0
   },
@@ -247,34 +247,34 @@
     "id": "c-73",
     "title": "C语言中，const int *p表示？",
     "options": [
-      "p指向的值不可变",
-      "p本身不可变",
+      "p和指向的值都可变",
       "p和指向的值都不可变",
-      "p和指向的值都可变"
+      "p指向的值不可变",
+      "p本身不可变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-74",
     "title": "C语言中，int * const p表示？",
     "options": [
+      "p和指向的值都可变",
       "p指向的值不可变",
-      "p本身不可变",
       "p和指向的值都不可变",
-      "p和指向的值都可变"
+      "p本身不可变"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "c-75",
     "title": "C语言中，const int * const p表示？",
     "options": [
-      "p指向的值不可变",
       "p本身不可变",
       "p和指向的值都不可变",
+      "p指向的值不可变",
       "p和指向的值都可变"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "c-76",
@@ -282,8 +282,8 @@
     "options": [
       "给int起别名INTEGER",
       "定义一个int变量",
-      "定义一个宏",
-      "声明一个外部类型"
+      "声明一个外部类型",
+      "定义一个宏"
     ],
     "correctAnswer": 0
   },
@@ -291,23 +291,23 @@
     "id": "c-77",
     "title": "C语言中，枚举类型使用哪个关键字？",
     "options": [
-      "enum",
-      "struct",
       "union",
-      "typedef"
+      "struct",
+      "typedef",
+      "enum"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-78",
     "title": "C语言中，枚举值默认从几开始？",
     "options": [
-      "0",
-      "1",
       "-1",
-      "随机值"
+      "0",
+      "随机值",
+      "1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-79",
@@ -315,8 +315,8 @@
     "options": [
       "编译前",
       "编译时",
-      "运行时",
-      "链接时"
+      "链接时",
+      "运行时"
     ],
     "correctAnswer": 0
   },
@@ -324,45 +324,45 @@
     "id": "c-80",
     "title": "C语言中，#pragma的作用是？",
     "options": [
-      "设置编译器状态",
-      "定义宏",
       "包含文件",
-      "条件编译"
+      "条件编译",
+      "定义宏",
+      "设置编译器状态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-81",
     "title": "C语言中，#error的作用是？",
     "options": [
-      "生成编译错误信息",
+      "调试错误",
       "生成运行错误",
       "忽略错误",
-      "调试错误"
+      "生成编译错误信息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-82",
     "title": "C语言中，#line的作用是？",
     "options": [
-      "重置行号和文件名",
-      "跳转到指定行",
       "打印行号",
-      "注释行"
+      "跳转到指定行",
+      "注释行",
+      "重置行号和文件名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-83",
     "title": "C语言中，##运算符的作用是？",
     "options": [
-      "宏中连接两个标记",
-      "字符串化",
       "注释",
-      "逻辑与"
+      "逻辑与",
+      "宏中连接两个标记",
+      "字符串化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-84",
@@ -370,8 +370,8 @@
     "options": [
       "宏中字符串化参数",
       "连接两个标记",
-      "注释",
-      "预处理"
+      "预处理",
+      "注释"
     ],
     "correctAnswer": 0
   },
@@ -379,34 +379,34 @@
     "id": "c-85",
     "title": "C语言中，条件编译使用哪个指令？",
     "options": [
-      "#if, #ifdef, #ifndef",
       "#if, #else, #endif",
-      "#ifdef, #elif, #endif",
-      "以上都是"
+      "以上都是",
+      "#if, #ifdef, #ifndef",
+      "#ifdef, #elif, #endif"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "c-86",
     "title": "C语言中，#ifndef通常用于？",
     "options": [
-      "防止头文件重复包含",
-      "定义宏",
       "包含文件",
-      "条件执行"
+      "条件执行",
+      "防止头文件重复包含",
+      "定义宏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-87",
     "title": "C语言中，assert宏定义在哪个头文件？",
     "options": [
-      "assert.h",
-      "stdio.h",
+      "math.h",
       "stdlib.h",
-      "math.h"
+      "stdio.h",
+      "assert.h"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-88",
@@ -425,8 +425,8 @@
     "options": [
       "禁用assert",
       "启用assert",
-      "调试模式",
-      "发布模式"
+      "发布模式",
+      "调试模式"
     ],
     "correctAnswer": 0
   },
@@ -434,12 +434,12 @@
     "id": "c-90",
     "title": "C语言中，offsetof宏的作用是？",
     "options": [
-      "获取结构体成员的偏移量",
       "获取结构体大小",
-      "获取成员大小",
-      "获取成员地址"
+      "获取结构体成员的偏移量",
+      "获取成员地址",
+      "获取成员大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-91",
@@ -447,8 +447,8 @@
     "options": [
       "stdarg.h",
       "stdio.h",
-      "stdlib.h",
-      "vararg.h"
+      "vararg.h",
+      "stdlib.h"
     ],
     "correctAnswer": 0
   },
@@ -456,99 +456,99 @@
     "id": "c-92",
     "title": "C语言中，va_start的作用是？",
     "options": [
-      "获取可变参数列表的开始",
       "获取下一个参数",
       "结束可变参数获取",
-      "获取参数数量"
+      "获取参数数量",
+      "获取可变参数列表的开始"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-93",
     "title": "C语言中，va_arg的作用是？",
     "options": [
+      "获取参数数量",
       "获取可变参数列表的开始",
-      "获取下一个参数",
       "结束可变参数获取",
-      "获取参数数量"
+      "获取下一个参数"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "c-94",
     "title": "C语言中，va_end的作用是？",
     "options": [
-      "获取可变参数列表的开始",
+      "获取参数数量",
       "获取下一个参数",
-      "结束可变参数获取",
-      "获取参数数量"
+      "获取可变参数列表的开始",
+      "结束可变参数获取"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "c-95",
     "title": "C语言中，printf函数是可变参数函数吗？",
     "options": [
-      "是",
-      "不是",
       "取决于参数",
-      "取决于编译器"
+      "是",
+      "取决于编译器",
+      "不是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-96",
     "title": "C语言中，main函数的参数argc表示？",
     "options": [
-      "参数个数",
       "参数数组",
+      "程序名",
       "环境变量",
-      "程序名"
+      "参数个数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-97",
     "title": "C语言中，main函数的参数argv表示？",
     "options": [
       "参数个数",
-      "参数数组",
       "环境变量",
-      "程序名"
+      "程序名",
+      "参数数组"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "c-98",
     "title": "C语言中，argv[0]通常是什么？",
     "options": [
-      "程序名",
+      "环境变量",
       "第一个参数",
       "参数个数",
-      "环境变量"
+      "程序名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-99",
     "title": "C语言中，exit函数的作用是？",
     "options": [
-      "终止程序",
-      "退出函数",
       "跳过循环",
-      "返回主函数"
+      "返回主函数",
+      "退出函数",
+      "终止程序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-100",
     "title": "C语言中，exit(0)表示？",
     "options": [
-      "程序正常终止",
       "程序异常终止",
       "程序暂停",
-      "程序重启"
+      "程序重启",
+      "程序正常终止"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

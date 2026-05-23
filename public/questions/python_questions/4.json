@@ -4,9 +4,9 @@
     "title": "Python中MRO的算法是？",
     "options": [
       "C3线性化",
+      "随机",
       "深度优先",
-      "广度优先",
-      "随机"
+      "广度优先"
     ],
     "correctAnswer": 0
   },
@@ -15,88 +15,88 @@
     "title": "Python中多态的实现方式是？",
     "options": [
       "鸭子类型",
-      "方法重写",
       "接口实现",
-      "以上都是"
+      "以上都是",
+      "方法重写"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "python-153",
     "title": "Python中鸭子类型是指？",
     "options": [
-      "关注对象的行为而非类型",
       "关注对象的类型而非行为",
       "一种设计模式",
-      "一种数据类型"
+      "一种数据类型",
+      "关注对象的行为而非类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-154",
     "title": "Python中封装的实现方式是？",
     "options": [
+      "使用public关键字",
       "使用下划线约定",
       "使用private关键字",
-      "使用protected关键字",
-      "使用public关键字"
+      "使用protected关键字"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-155",
     "title": "Python中单下划线前缀表示？",
     "options": [
-      "内部使用",
       "私有",
-      "强私有",
-      "特殊方法"
+      "内部使用",
+      "特殊方法",
+      "强私有"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-156",
     "title": "Python中双下划线前缀表示？",
     "options": [
-      "内部使用",
       "私有，触发名称改写",
+      "特殊方法",
       "强私有，不触发名称改写",
-      "特殊方法"
+      "内部使用"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-157",
     "title": "Python中双下划线前后缀表示？",
     "options": [
-      "内部使用",
-      "私有",
+      "魔术方法",
       "强私有",
-      "魔术方法"
+      "私有",
+      "内部使用"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-158",
     "title": "Python中名称改写是指？",
     "options": [
+      "将_Class__attr改为__attr",
       "将__attr改为_Class__attr",
-      "将__attr改为__attr",
       "将attr改为__attr",
-      "将_Class__attr改为__attr"
+      "将__attr改为__attr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-159",
     "title": "Python中super()函数的作用是？",
     "options": [
-      "调用父类方法",
       "调用子类方法",
+      "调用静态方法",
       "调用类方法",
-      "调用静态方法"
+      "调用父类方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-160",
@@ -113,186 +113,186 @@
     "id": "python-161",
     "title": "Python中__new__和__init__的区别是？",
     "options": [
-      "__new__创建对象，__init__初始化对象",
-      "__new__初始化对象，__init__创建对象",
+      "取决于类型",
       "没有区别",
-      "取决于类型"
+      "__new__初始化对象，__init__创建对象",
+      "__new__创建对象，__init__初始化对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-162",
     "title": "Python中__call__方法的作用是？",
     "options": [
-      "使实例可调用",
       "使类可调用",
+      "使模块可调用",
       "使方法可调用",
-      "使模块可调用"
+      "使实例可调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-163",
     "title": "Python中__str__方法的作用是？",
     "options": [
-      "返回对象的字符串表示",
-      "返回对象的官方字符串表示",
       "返回对象的长度",
-      "返回对象的类型"
+      "返回对象的官方字符串表示",
+      "返回对象的类型",
+      "返回对象的字符串表示"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-164",
     "title": "Python中__repr__方法的作用是？",
     "options": [
+      "返回对象的长度",
       "返回对象的字符串表示",
       "返回对象的官方字符串表示",
-      "返回对象的长度",
       "返回对象的类型"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-165",
     "title": "Python中__len__方法的作用是？",
     "options": [
-      "返回对象的长度",
       "返回对象的字符串表示",
+      "返回对象的类型",
       "返回对象的布尔值",
-      "返回对象的类型"
+      "返回对象的长度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-166",
     "title": "Python中__getitem__方法的作用是？",
     "options": [
-      "实现索引访问",
-      "实现迭代",
       "实现切片",
-      "以上都是"
+      "以上都是",
+      "实现索引访问",
+      "实现迭代"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "python-167",
     "title": "Python中__setitem__方法的作用是？",
     "options": [
+      "以上都是",
       "实现索引赋值",
       "实现迭代",
-      "实现切片",
-      "以上都是"
+      "实现切片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-168",
     "title": "Python中__iter__方法的作用是？",
     "options": [
+      "实现长度",
       "实现迭代",
       "实现索引访问",
-      "实现切片",
-      "实现长度"
+      "实现切片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-169",
     "title": "Python中__next__方法的作用是？",
     "options": [
-      "返回下一个值",
-      "实现迭代",
       "实现索引访问",
+      "实现迭代",
+      "返回下一个值",
       "实现切片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-170",
     "title": "Python中__contains__方法的作用是？",
     "options": [
-      "实现in操作符",
-      "实现索引访问",
       "实现迭代",
+      "实现索引访问",
+      "实现in操作符",
       "实现切片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-171",
     "title": "Python中__add__方法的作用是？",
     "options": [
-      "实现+操作符",
-      "实现-操作符",
+      "实现/操作符",
       "实现*操作符",
-      "实现/操作符"
+      "实现+操作符",
+      "实现-操作符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-172",
     "title": "Python中__sub__方法的作用是？",
     "options": [
-      "实现+操作符",
       "实现-操作符",
+      "实现+操作符",
       "实现*操作符",
       "实现/操作符"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-173",
     "title": "Python中__mul__方法的作用是？",
     "options": [
+      "实现/操作符",
       "实现+操作符",
       "实现-操作符",
-      "实现*操作符",
-      "实现/操作符"
+      "实现*操作符"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-174",
     "title": "Python中__eq__方法的作用是？",
     "options": [
-      "实现==操作符",
       "实现!=操作符",
+      "实现>操作符",
       "实现<操作符",
-      "实现>操作符"
+      "实现==操作符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-175",
     "title": "Python中__lt__方法的作用是？",
     "options": [
       "实现==操作符",
-      "实现!=操作符",
       "实现<操作符",
+      "实现!=操作符",
       "实现>操作符"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-176",
     "title": "Python中__gt__方法的作用是？",
     "options": [
-      "实现==操作符",
-      "实现!=操作符",
+      "实现>操作符",
       "实现<操作符",
-      "实现>操作符"
+      "实现!=操作符",
+      "实现==操作符"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-177",
     "title": "Python中__enter__和__exit__方法的作用是？",
     "options": [
       "实现上下文管理器",
+      "实现装饰器",
       "实现迭代器",
-      "实现生成器",
-      "实现装饰器"
+      "实现生成器"
     ],
     "correctAnswer": 0
   },
@@ -300,32 +300,32 @@
     "id": "python-178",
     "title": "Python中__slots__的作用是？",
     "options": [
-      "限制类的属性",
       "增加类的属性",
+      "修改类的属性",
       "删除类的属性",
-      "修改类的属性"
+      "限制类的属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-179",
     "title": "Python中__slots__的好处是？",
     "options": [
-      "节省内存",
+      "以上都是",
       "提高访问速度",
       "防止动态添加属性",
-      "以上都是"
+      "节省内存"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-180",
     "title": "Python中描述符是指？",
     "options": [
       "实现了__get__, __set__, __delete__的类",
+      "实现了__new__的类",
       "实现了__init__的类",
-      "实现了__call__的类",
-      "实现了__new__的类"
+      "实现了__call__的类"
     ],
     "correctAnswer": 0
   },
@@ -333,43 +333,43 @@
     "id": "python-181",
     "title": "Python中元类是指？",
     "options": [
+      "类的父类",
       "创建类的类",
       "类的实例",
-      "类的父类",
       "类的子类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-182",
     "title": "Python中元类的默认类型是？",
     "options": [
-      "type",
       "object",
       "class",
-      "metaclass"
+      "metaclass",
+      "type"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-183",
     "title": "Python中如何自定义元类？",
     "options": [
-      "继承type",
-      "继承object",
       "继承class",
-      "继承metaclass"
+      "继承metaclass",
+      "继承type",
+      "继承object"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-184",
     "title": "Python中__metaclass__的作用是？",
     "options": [
       "指定元类",
+      "指定方法",
       "指定父类",
-      "指定属性",
-      "指定方法"
+      "指定属性"
     ],
     "correctAnswer": 0
   },
@@ -378,9 +378,9 @@
     "title": "Python中抽象基类的作用是？",
     "options": [
       "定义接口规范",
-      "实现多态",
+      "实现封装",
       "实现继承",
-      "实现封装"
+      "实现多态"
     ],
     "correctAnswer": 0
   },
@@ -390,8 +390,8 @@
     "options": [
       "abc",
       "abstract",
-      "interface",
-      "base"
+      "base",
+      "interface"
     ],
     "correctAnswer": 0
   },
@@ -399,21 +399,21 @@
     "id": "python-187",
     "title": "Python中@abstractmethod的作用是？",
     "options": [
-      "标记抽象方法",
-      "标记类方法",
       "标记静态方法",
-      "标记属性"
+      "标记抽象方法",
+      "标记属性",
+      "标记类方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-188",
     "title": "Python中抽象基类可以实例化吗？",
     "options": [
       "不可以",
-      "可以",
+      "取决于定义",
       "部分可以",
-      "取决于定义"
+      "可以"
     ],
     "correctAnswer": 0
   },
@@ -421,67 +421,67 @@
     "id": "python-189",
     "title": "Python中dataclass的作用是？",
     "options": [
-      "自动生成特殊方法",
+      "定义描述符",
       "定义抽象类",
-      "定义元类",
-      "定义描述符"
+      "自动生成特殊方法",
+      "定义元类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-190",
     "title": "Python中dataclass在哪个模块？",
     "options": [
+      "typing",
       "dataclasses",
-      "dataclass",
       "classes",
-      "typing"
+      "dataclass"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-191",
     "title": "Python中dataclass的默认属性是可变还是不可变？",
     "options": [
-      "可变",
       "不可变",
       "取决于定义",
+      "可变",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-192",
     "title": "Python中如何定义不可变的dataclass？",
     "options": [
-      "frozen=True",
-      "immutable=True",
       "readonly=True",
-      "const=True"
+      "frozen=True",
+      "const=True",
+      "immutable=True"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-193",
     "title": "Python中枚举类的作用是？",
     "options": [
-      "定义常量集合",
-      "定义变量集合",
       "定义函数集合",
+      "定义变量集合",
+      "定义常量集合",
       "定义类集合"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-194",
     "title": "Python中枚举类在哪个模块？",
     "options": [
-      "enum",
-      "enumerate",
       "constants",
-      "types"
+      "enum",
+      "types",
+      "enumerate"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-195",
@@ -498,55 +498,55 @@
     "id": "python-196",
     "title": "Python中@unique装饰器的作用是？",
     "options": [
-      "确保枚举值唯一",
       "确保枚举名唯一",
-      "确保枚举类型唯一",
-      "确保枚举成员唯一"
+      "确保枚举值唯一",
+      "确保枚举成员唯一",
+      "确保枚举类型唯一"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-197",
     "title": "Python中函数注解的作用是？",
     "options": [
-      "提供类型提示",
-      "强制类型检查",
       "运行时类型验证",
-      "以上都不对"
+      "以上都不对",
+      "强制类型检查",
+      "提供类型提示"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-198",
     "title": "Python中如何获取函数注解？",
     "options": [
-      "__annotations__",
       "__types__",
-      "__hints__",
-      "__notes__"
+      "__annotations__",
+      "__notes__",
+      "__hints__"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-199",
     "title": "Python中typing模块的作用是？",
     "options": [
-      "提供类型提示",
       "强制类型检查",
+      "提供类型提示",
       "运行时类型验证",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-200",
     "title": "Python中typing.List和list的区别是？",
     "options": [
-      "typing.List用于注解，list用于运行时",
       "typing.List用于运行时，list用于注解",
+      "typing.List用于注解，list用于运行时",
       "没有区别",
       "取决于版本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

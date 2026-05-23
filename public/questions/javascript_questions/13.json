@@ -3,21 +3,21 @@
     "id": "js-601",
     "title": "JavaScript中DOM的作用是？",
     "options": [
-      "操作HTML文档",
-      "操作CSS",
       "操作网络",
-      "操作线程"
+      "操作线程",
+      "操作CSS",
+      "操作HTML文档"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-602",
     "title": "JavaScript中document的作用是？",
     "options": [
       "表示整个HTML文档",
-      "表示DOM节点",
+      "表示属性",
       "表示元素",
-      "表示属性"
+      "表示DOM节点"
     ],
     "correctAnswer": 0
   },
@@ -25,12 +25,12 @@
     "id": "js-603",
     "title": "JavaScript中getElementById的作用是？",
     "options": [
+      "通过选择器获取元素",
       "通过ID获取元素",
-      "通过类名获取元素",
       "通过标签名获取元素",
-      "通过选择器获取元素"
+      "通过类名获取元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-604",
@@ -47,54 +47,54 @@
     "id": "js-605",
     "title": "JavaScript中getElementsByTagName的作用是？",
     "options": [
+      "通过选择器获取元素",
       "通过标签名获取元素集合",
       "通过ID获取元素",
-      "通过类名获取元素",
-      "通过选择器获取元素"
+      "通过类名获取元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-606",
     "title": "JavaScript中querySelector的作用是？",
     "options": [
+      "获取元素集合",
       "通过CSS选择器获取第一个元素",
       "获取所有元素",
-      "获取元素集合",
       "获取元素数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-607",
     "title": "JavaScript中querySelectorAll的作用是？",
     "options": [
-      "通过CSS选择器获取所有元素",
+      "获取元素数组",
       "获取第一个元素",
       "获取元素集合",
-      "获取元素数组"
+      "通过CSS选择器获取所有元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-608",
     "title": "JavaScript中createElement的作用是？",
     "options": [
-      "创建元素节点",
-      "创建文本节点",
+      "创建注释节点",
       "创建属性节点",
-      "创建注释节点"
+      "创建文本节点",
+      "创建元素节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-609",
     "title": "JavaScript中createTextNode的作用是？",
     "options": [
       "创建文本节点",
-      "创建元素节点",
       "创建属性节点",
-      "创建注释节点"
+      "创建注释节点",
+      "创建元素节点"
     ],
     "correctAnswer": 0
   },
@@ -102,34 +102,34 @@
     "id": "js-610",
     "title": "JavaScript中createDocumentFragment的作用是？",
     "options": [
-      "创建文档片段",
-      "创建元素节点",
+      "创建属性节点",
       "创建文本节点",
-      "创建属性节点"
+      "创建元素节点",
+      "创建文档片段"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-611",
     "title": "JavaScript中appendChild的作用是？",
     "options": [
-      "添加子节点到末尾",
-      "插入节点到指定位置",
+      "删除节点",
       "替换节点",
-      "删除节点"
+      "添加子节点到末尾",
+      "插入节点到指定位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-612",
     "title": "JavaScript中insertBefore的作用是？",
     "options": [
-      "在指定节点前插入",
       "添加子节点到末尾",
       "替换节点",
+      "在指定节点前插入",
       "删除节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-613",
@@ -146,75 +146,75 @@
     "id": "js-614",
     "title": "JavaScript中replaceChild的作用是？",
     "options": [
-      "替换子节点",
-      "添加子节点",
       "删除子节点",
-      "克隆子节点"
+      "添加子节点",
+      "克隆子节点",
+      "替换子节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-615",
     "title": "JavaScript中cloneNode的作用是？",
     "options": [
+      "移动节点",
       "克隆节点",
       "删除节点",
-      "替换节点",
-      "移动节点"
+      "替换节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-616",
     "title": "JavaScript中cloneNode(true)的作用是？",
     "options": [
-      "深克隆，包含子节点",
+      "仅克隆文本",
       "浅克隆",
-      "仅克隆属性",
-      "仅克隆文本"
+      "深克隆，包含子节点",
+      "仅克隆属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-617",
     "title": "JavaScript中cloneNode(false)的作用是？",
     "options": [
+      "仅克隆属性",
       "浅克隆，不包含子节点",
       "深克隆",
-      "仅克隆属性",
       "仅克隆文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-618",
     "title": "JavaScript中parentNode的作用是？",
     "options": [
-      "获取父节点",
       "获取子节点",
       "获取兄弟节点",
-      "获取第一个子节点"
+      "获取第一个子节点",
+      "获取父节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-619",
     "title": "JavaScript中childNodes的作用是？",
     "options": [
-      "获取所有子节点",
+      "获取最后一个子节点",
       "获取子元素",
       "获取第一个子节点",
-      "获取最后一个子节点"
+      "获取所有子节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-620",
     "title": "JavaScript中children的作用是？",
     "options": [
       "获取子元素",
-      "获取所有子节点",
       "获取第一个子节点",
+      "获取所有子节点",
       "获取最后一个子节点"
     ],
     "correctAnswer": 0
@@ -223,65 +223,65 @@
     "id": "js-621",
     "title": "JavaScript中firstChild的作用是？",
     "options": [
-      "获取第一个子节点",
+      "获取父节点",
       "获取第一个子元素",
       "获取最后一个子节点",
-      "获取父节点"
+      "获取第一个子节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-622",
     "title": "JavaScript中firstElementChild的作用是？",
     "options": [
-      "获取第一个子元素",
-      "获取第一个子节点",
+      "获取父元素",
       "获取最后一个子元素",
-      "获取父元素"
+      "获取第一个子节点",
+      "获取第一个子元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-623",
     "title": "JavaScript中lastChild的作用是？",
     "options": [
-      "获取最后一个子节点",
-      "获取最后一个子元素",
       "获取第一个子节点",
-      "获取父节点"
+      "获取父节点",
+      "获取最后一个子节点",
+      "获取最后一个子元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-624",
     "title": "JavaScript中nextSibling的作用是？",
     "options": [
-      "获取下一个兄弟节点",
       "获取下一个兄弟元素",
-      "获取上一个兄弟节点",
-      "获取父节点"
+      "获取下一个兄弟节点",
+      "获取父节点",
+      "获取上一个兄弟节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-625",
     "title": "JavaScript中nextElementSibling的作用是？",
     "options": [
-      "获取下一个兄弟元素",
       "获取下一个兄弟节点",
       "获取上一个兄弟元素",
-      "获取父元素"
+      "获取父元素",
+      "获取下一个兄弟元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-626",
     "title": "JavaScript中previousSibling的作用是？",
     "options": [
       "获取上一个兄弟节点",
+      "获取父节点",
       "获取上一个兄弟元素",
-      "获取下一个兄弟节点",
-      "获取父节点"
+      "获取下一个兄弟节点"
     ],
     "correctAnswer": 0
   },
@@ -289,87 +289,87 @@
     "id": "js-627",
     "title": "JavaScript中previousElementSibling的作用是？",
     "options": [
-      "获取上一个兄弟元素",
-      "获取上一个兄弟节点",
       "获取下一个兄弟元素",
-      "获取父元素"
+      "获取父元素",
+      "获取上一个兄弟节点",
+      "获取上一个兄弟元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-628",
     "title": "JavaScript中innerHTML的作用是？",
     "options": [
-      "获取或设置元素HTML内容",
+      "获取或设置样式",
       "获取或设置文本内容",
       "获取或设置属性",
-      "获取或设置样式"
+      "获取或设置元素HTML内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-629",
     "title": "JavaScript中innerText的作用是？",
     "options": [
-      "获取或设置元素文本内容",
       "获取或设置HTML内容",
+      "获取或设置元素文本内容",
       "获取或设置属性",
       "获取或设置样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-630",
     "title": "JavaScript中textContent的作用是？",
     "options": [
+      "获取或设置样式",
       "获取或设置元素文本内容",
       "获取或设置HTML内容",
-      "获取或设置属性",
-      "获取或设置样式"
+      "获取或设置属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-631",
     "title": "JavaScript中innerText和textContent的区别？",
     "options": [
-      "innerText受CSS影响，textContent不受",
+      "取决于浏览器",
       "没有区别",
-      "textContent受CSS影响",
-      "取决于浏览器"
+      "innerText受CSS影响，textContent不受",
+      "textContent受CSS影响"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-632",
     "title": "JavaScript中getAttribute的作用是？",
     "options": [
+      "判断是否有属性",
       "获取属性值",
       "设置属性值",
-      "删除属性",
-      "判断是否有属性"
+      "删除属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-633",
     "title": "JavaScript中setAttribute的作用是？",
     "options": [
-      "设置属性值",
       "获取属性值",
+      "设置属性值",
       "删除属性",
       "判断是否有属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-634",
     "title": "JavaScript中removeAttribute的作用是？",
     "options": [
       "删除属性",
-      "获取属性值",
+      "判断是否有属性",
       "设置属性值",
-      "判断是否有属性"
+      "获取属性值"
     ],
     "correctAnswer": 0
   },
@@ -379,8 +379,8 @@
     "options": [
       "判断是否有属性",
       "获取属性值",
-      "设置属性值",
-      "删除属性"
+      "删除属性",
+      "设置属性值"
     ],
     "correctAnswer": 0
   },
@@ -388,12 +388,12 @@
     "id": "js-636",
     "title": "JavaScript中attributes的作用是？",
     "options": [
-      "获取所有属性集合",
       "获取属性值",
-      "设置属性值",
-      "删除属性"
+      "删除属性",
+      "获取所有属性集合",
+      "设置属性值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-637",
@@ -401,8 +401,8 @@
     "options": [
       "操作data-*属性",
       "操作class",
-      "操作style",
-      "操作id"
+      "操作id",
+      "操作style"
     ],
     "correctAnswer": 0
   },
@@ -410,34 +410,34 @@
     "id": "js-638",
     "title": "JavaScript中style属性的作用是？",
     "options": [
-      "操作内联样式",
       "操作计算样式",
+      "操作CSS类",
       "操作样式表",
-      "操作CSS类"
+      "操作内联样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-639",
     "title": "JavaScript中getComputedStyle的作用是？",
     "options": [
-      "获取计算后的样式",
-      "获取内联样式",
       "设置样式",
-      "操作CSS类"
+      "获取内联样式",
+      "操作CSS类",
+      "获取计算后的样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-640",
     "title": "JavaScript中className的作用是？",
     "options": [
-      "获取或设置class属性",
+      "获取或设置tag",
       "获取或设置id",
       "获取或设置style",
-      "获取或设置tag"
+      "获取或设置class属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-641",
@@ -445,8 +445,8 @@
     "options": [
       "操作class列表",
       "操作class属性",
-      "操作style",
-      "操作id"
+      "操作id",
+      "操作style"
     ],
     "correctAnswer": 0
   },
@@ -454,20 +454,20 @@
     "id": "js-642",
     "title": "JavaScript中classList.add的作用是？",
     "options": [
-      "添加类",
-      "删除类",
       "切换类",
+      "删除类",
+      "添加类",
       "判断是否包含类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-643",
     "title": "JavaScript中classList.remove的作用是？",
     "options": [
       "删除类",
-      "添加类",
       "切换类",
+      "添加类",
       "判断是否包含类"
     ],
     "correctAnswer": 0
@@ -477,8 +477,8 @@
     "title": "JavaScript中classList.toggle的作用是？",
     "options": [
       "切换类",
-      "添加类",
       "删除类",
+      "添加类",
       "判断是否包含类"
     ],
     "correctAnswer": 0
@@ -498,23 +498,23 @@
     "id": "js-646",
     "title": "JavaScript中addEventListener的作用是？",
     "options": [
-      "添加事件监听",
-      "移除事件监听",
       "触发事件",
-      "创建事件"
+      "创建事件",
+      "添加事件监听",
+      "移除事件监听"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-647",
     "title": "JavaScript中removeEventListener的作用是？",
     "options": [
-      "移除事件监听",
       "添加事件监听",
       "触发事件",
+      "移除事件监听",
       "创建事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-648",
@@ -522,8 +522,8 @@
     "options": [
       "触发事件",
       "添加事件监听",
-      "移除事件监听",
-      "创建事件"
+      "创建事件",
+      "移除事件监听"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "js-649",
     "title": "JavaScript中addEventListener的第三个参数是？",
     "options": [
-      "选项对象或useCapture",
       "回调函数",
       "事件名称",
+      "选项对象或useCapture",
       "目标元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-650",
     "title": "JavaScript中事件冒泡是指？",
     "options": [
-      "事件从子元素向父元素传播",
-      "事件从父元素向子元素传播",
+      "事件随机传播",
       "事件不传播",
-      "事件随机传播"
+      "事件从父元素向子元素传播",
+      "事件从子元素向父元素传播"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

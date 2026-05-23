@@ -4,9 +4,9 @@
     "title": "Python中FileNotFoundError发生的原因是？",
     "options": [
       "文件不存在",
+      "索引错误",
       "值错误",
-      "名称错误",
-      "索引错误"
+      "名称错误"
     ],
     "correctAnswer": 0
   },
@@ -14,87 +14,87 @@
     "id": "python-402",
     "title": "Python中ImportError发生的原因是？",
     "options": [
-      "导入失败",
+      "索引错误",
       "值错误",
-      "名称错误",
-      "索引错误"
+      "导入失败",
+      "名称错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-403",
     "title": "Python中ModuleNotFoundError发生的原因是？",
     "options": [
+      "名称错误",
       "模块未找到",
       "值错误",
-      "名称错误",
       "索引错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-404",
     "title": "Python中ZeroDivisionError发生的原因是？",
     "options": [
-      "除零错误",
-      "值错误",
       "名称错误",
-      "索引错误"
+      "索引错误",
+      "值错误",
+      "除零错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-405",
     "title": "Python中StopIteration发生的原因是？",
     "options": [
+      "索引错误",
       "迭代结束",
       "值错误",
-      "名称错误",
-      "索引错误"
+      "名称错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-406",
     "title": "Python中KeyboardInterrupt发生的原因是？",
     "options": [
+      "索引错误",
       "用户中断",
-      "值错误",
       "名称错误",
-      "索引错误"
+      "值错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-407",
     "title": "Python中MemoryError发生的原因是？",
     "options": [
+      "索引错误",
       "内存不足",
       "值错误",
-      "名称错误",
-      "索引错误"
+      "名称错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-408",
     "title": "Python中OverflowError发生的原因是？",
     "options": [
-      "溢出",
-      "值错误",
+      "索引错误",
       "名称错误",
-      "索引错误"
+      "值错误",
+      "溢出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-409",
     "title": "Python中RecursionError发生的原因是？",
     "options": [
       "递归过深",
+      "索引错误",
       "值错误",
-      "名称错误",
-      "索引错误"
+      "名称错误"
     ],
     "correctAnswer": 0
   },
@@ -102,56 +102,56 @@
     "id": "python-410",
     "title": "Python中SyntaxError发生的原因是？",
     "options": [
-      "语法错误",
       "值错误",
       "名称错误",
+      "语法错误",
       "索引错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-411",
     "title": "Python中IndentationError发生的原因是？",
     "options": [
+      "索引错误",
       "缩进错误",
       "值错误",
-      "名称错误",
-      "索引错误"
+      "名称错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-412",
     "title": "Python中TabError发生的原因是？",
     "options": [
-      "Tab和空格混用",
-      "值错误",
       "名称错误",
-      "索引错误"
+      "值错误",
+      "索引错误",
+      "Tab和空格混用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-413",
     "title": "Python中SystemExit发生的原因是？",
     "options": [
-      "sys.exit()",
-      "值错误",
       "名称错误",
-      "索引错误"
+      "值错误",
+      "索引错误",
+      "sys.exit()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-414",
     "title": "Python中GeneratorExit发生的原因是？",
     "options": [
-      "生成器关闭",
-      "值错误",
       "名称错误",
-      "索引错误"
+      "索引错误",
+      "生成器关闭",
+      "值错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-415",
@@ -168,65 +168,65 @@
     "id": "python-416",
     "title": "Python中如何捕获所有异常？",
     "options": [
+      "以上都可以",
       "except Exception",
-      "except BaseException",
       "except",
-      "以上都可以"
+      "except BaseException"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-417",
     "title": "Python中except Exception和except的区别是？",
     "options": [
-      "except也捕获SystemExit等",
+      "取决于版本",
       "except Exception也捕获SystemExit等",
       "没有区别",
-      "取决于版本"
+      "except也捕获SystemExit等"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-418",
     "title": "Python中raise的作用是？",
     "options": [
-      "抛出异常",
       "捕获异常",
       "处理异常",
+      "抛出异常",
       "忽略异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-419",
     "title": "Python中raise...from的作用是？",
     "options": [
+      "异常传播",
       "异常链",
-      "异常转换",
       "异常抑制",
-      "异常传播"
+      "异常转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-420",
     "title": "Python中如何重新抛出异常？",
     "options": [
-      "raise",
+      "throw e",
       "raise e",
       "throw",
-      "throw e"
+      "raise"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-421",
     "title": "Python中assert的作用是？",
     "options": [
       "断言",
+      "调试输出",
       "异常处理",
-      "日志记录",
-      "调试输出"
+      "日志记录"
     ],
     "correctAnswer": 0
   },
@@ -245,32 +245,32 @@
     "id": "python-423",
     "title": "Python中如何禁用assert？",
     "options": [
-      "-O参数",
-      "-d参数",
       "-e参数",
-      "-a参数"
+      "-O参数",
+      "-a参数",
+      "-d参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-424",
     "title": "Python中warnings模块的作用是？",
     "options": [
-      "警告控制",
+      "调试输出",
       "异常处理",
       "日志记录",
-      "调试输出"
+      "警告控制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-425",
     "title": "Python中如何忽略警告？",
     "options": [
       "warnings.filterwarnings(\"ignore\")",
-      "warnings.ignore()",
+      "以上都不对",
       "warnings.disable()",
-      "以上都不对"
+      "warnings.ignore()"
     ],
     "correctAnswer": 0
   },
@@ -278,12 +278,12 @@
     "id": "python-426",
     "title": "Python中文件编码如何指定？",
     "options": [
-      "encoding参数",
-      "charset参数",
+      "以上都不对",
       "codec参数",
-      "以上都不对"
+      "charset参数",
+      "encoding参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-427",
@@ -300,21 +300,21 @@
     "id": "python-428",
     "title": "Python中如何处理编码错误？",
     "options": [
-      "errors参数",
       "error参数",
       "handler参数",
+      "errors参数",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-429",
     "title": "Python中errors参数的值有？",
     "options": [
       "strict, ignore, replace",
+      "以上都不对",
       "skip, stop, continue",
-      "raise, drop, fix",
-      "以上都不对"
+      "raise, drop, fix"
     ],
     "correctAnswer": 0
   },
@@ -323,9 +323,9 @@
     "title": "Python中errors参数的默认值是？",
     "options": [
       "strict",
+      "skip",
       "ignore",
-      "replace",
-      "skip"
+      "replace"
     ],
     "correctAnswer": 0
   },
@@ -333,12 +333,12 @@
     "id": "python-431",
     "title": "Python中如何判断文件是否已关闭？",
     "options": [
-      "file.closed",
       "file.isclosed()",
       "file.status",
-      "以上都不对"
+      "以上都不对",
+      "file.closed"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-432",
@@ -355,32 +355,32 @@
     "id": "python-433",
     "title": "Python中如何判断文件是否可读？",
     "options": [
-      "file.readable()",
-      "file.can_read()",
       "file.isreadable()",
-      "以上都不对"
+      "以上都不对",
+      "file.readable()",
+      "file.can_read()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-434",
     "title": "Python中如何判断文件是否可写？",
     "options": [
+      "file.iswritable()",
       "file.writable()",
       "file.can_write()",
-      "file.iswritable()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-435",
     "title": "Python中如何判断文件指针是否可定位？",
     "options": [
       "file.seekable()",
-      "file.can_seek()",
+      "以上都不对",
       "file.isseekable()",
-      "以上都不对"
+      "file.can_seek()"
     ],
     "correctAnswer": 0
   },
@@ -388,76 +388,76 @@
     "id": "python-436",
     "title": "Python中如何获取文件描述符？",
     "options": [
-      "file.fileno()",
-      "file.fd()",
       "file.descriptor()",
+      "file.fd()",
+      "file.fileno()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-437",
     "title": "Python中如何截断文件？",
     "options": [
-      "file.truncate()",
       "file.cut()",
+      "以上都不对",
       "file.trim()",
-      "以上都不对"
+      "file.truncate()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-438",
     "title": "Python中如何迭代文件行？",
     "options": [
-      "for line in file",
-      "file.foreach()",
       "file.iter()",
-      "以上都不对"
+      "以上都不对",
+      "for line in file",
+      "file.foreach()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-439",
     "title": "Python中大文件读取推荐方式是？",
     "options": [
+      "以上都不对",
       "按行读取",
-      "read全部",
       "readline全部",
-      "以上都不对"
+      "read全部"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-440",
     "title": "Python中csv模块的默认分隔符是？",
     "options": [
-      "逗号",
-      "制表符",
       "空格",
-      "分号"
+      "逗号",
+      "分号",
+      "制表符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-441",
     "title": "Python中csv模块的默认引用符是？",
     "options": [
-      "双引号",
-      "单引号",
       "反引号",
+      "单引号",
+      "双引号",
       "无"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-442",
     "title": "Python中如何处理CSV中的中文？",
     "options": [
       "指定encoding",
+      "以上都不对",
       "指定dialect",
-      "指定quotechar",
-      "以上都不对"
+      "指定quotechar"
     ],
     "correctAnswer": 0
   },
@@ -465,76 +465,76 @@
     "id": "python-443",
     "title": "Python中ini文件的节使用什么符号？",
     "options": [
-      "[]",
-      "()",
       "{}",
+      "()",
+      "[]",
       "<>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-444",
     "title": "Python中ini文件的注释使用什么符号？",
     "options": [
       "#",
+      "以上都可以",
       ";",
-      "//",
-      "以上都可以"
+      "//"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "python-445",
     "title": "Python中yaml模块的作用是？",
     "options": [
-      "YAML编解码",
-      "JSON编解码",
       "XML编解码",
-      "CSV编解码"
+      "YAML编解码",
+      "CSV编解码",
+      "JSON编解码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-446",
     "title": "Python中xml.etree.ElementTree的作用是？",
     "options": [
+      "JSON解析",
       "XML解析",
       "HTML解析",
-      "JSON解析",
       "CSV解析"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-447",
     "title": "Python中xml.dom的作用是？",
     "options": [
-      "DOM解析XML",
+      "以上都不对",
       "SAX解析XML",
-      "流式解析XML",
-      "以上都不对"
+      "DOM解析XML",
+      "流式解析XML"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-448",
     "title": "Python中xml.sax的作用是？",
     "options": [
-      "DOM解析XML",
       "SAX解析XML",
-      "流式解析XML",
-      "以上都不对"
+      "以上都不对",
+      "DOM解析XML",
+      "流式解析XML"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-449",
     "title": "Python中html.parser的作用是？",
     "options": [
       "HTML解析",
-      "XML解析",
+      "CSV解析",
       "JSON解析",
-      "CSV解析"
+      "XML解析"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "python-450",
     "title": "Python中base64模块的作用是？",
     "options": [
-      "Base64编解码",
+      "哈希计算",
       "加密解密",
       "压缩解压",
-      "哈希计算"
+      "Base64编解码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

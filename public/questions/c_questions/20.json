@@ -4,9 +4,9 @@
     "title": "C语言中，如何用宏实现泛型？",
     "options": [
       "使用类型参数化宏，如#define MAX(a,b) ((a)>(b)?(a):(b))",
-      "使用void*",
       "使用模板",
-      "使用函数重载"
+      "使用函数重载",
+      "使用void*"
     ],
     "correctAnswer": 0
   },
@@ -14,43 +14,43 @@
     "id": "c-952",
     "title": "C语言中，宏实现泛型的缺点是？",
     "options": [
+      "代码长",
       "无类型检查，可能产生副作用，难以调试",
       "性能差",
-      "代码长",
       "不支持复杂类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-953",
     "title": "C语言中，C11的_Generic如何实现泛型？",
     "options": [
-      "根据第一个参数的类型选择对应的表达式或函数",
-      "使用模板",
+      "使用宏",
       "使用虚函数",
-      "使用宏"
+      "根据第一个参数的类型选择对应的表达式或函数",
+      "使用模板"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-954",
     "title": "C语言中，构建系统Make的作用是？",
     "options": [
+      "版本控制",
       "根据依赖关系只编译修改过的文件，自动化构建",
       "代码审查",
-      "版本控制",
       "调试程序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-955",
     "title": "C语言中，CMake的作用是？",
     "options": [
       "跨平台生成构建文件(如Makefile)",
-      "编译代码",
+      "运行代码",
       "调试代码",
-      "运行代码"
+      "编译代码"
     ],
     "correctAnswer": 0
   },
@@ -58,87 +58,87 @@
     "id": "c-956",
     "title": "C语言中，静态库和动态库的区别？",
     "options": [
-      "静态库链接时复制到可执行文件，动态库运行时加载",
       "静态库运行时加载",
-      "动态库体积大",
-      "没有区别"
+      "没有区别",
+      "静态库链接时复制到可执行文件，动态库运行时加载",
+      "动态库体积大"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-957",
     "title": "C语言中，静态库的优缺点？",
     "options": [
-      "优点是独立运行，缺点是体积大更新难",
-      "优点是体积小",
       "缺点是不能独立运行",
-      "没有优缺点"
+      "没有优缺点",
+      "优点是独立运行，缺点是体积大更新难",
+      "优点是体积小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-958",
     "title": "C语言中，动态库的优缺点？",
     "options": [
-      "优点是体积小易更新共享，缺点是部署复杂版本冲突",
-      "优点是独立运行",
       "缺点是体积大",
-      "没有优缺点"
+      "没有优缺点",
+      "优点是独立运行",
+      "优点是体积小易更新共享，缺点是部署复杂版本冲突"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-959",
     "title": "C语言中，如何创建静态库？",
     "options": [
-      "gcc -c编译为目标文件，ar rcs打包为.a",
-      "gcc -shared",
       "ld -shared",
-      "make lib"
+      "gcc -c编译为目标文件，ar rcs打包为.a",
+      "make lib",
+      "gcc -shared"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-960",
     "title": "C语言中，如何创建动态库？",
     "options": [
-      "gcc -shared -fPIC -o lib.so",
-      "ar rcs",
+      "make shared",
       "gcc -static",
-      "make shared"
+      "ar rcs",
+      "gcc -shared -fPIC -o lib.so"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-961",
     "title": "C语言中，-fPIC选项的作用是？",
     "options": [
+      "静态链接",
       "生成位置无关代码，动态库必需",
-      "优化代码",
       "生成调试信息",
-      "静态链接"
+      "优化代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-962",
     "title": "C语言中，为什么动态库需要位置无关代码？",
     "options": [
-      "动态库加载地址不固定，代码需能放在任意地址执行",
-      "提高性能",
+      "编译器要求",
       "减少体积",
-      "编译器要求"
+      "提高性能",
+      "动态库加载地址不固定，代码需能放在任意地址执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-963",
     "title": "C语言中，RPATH的作用是？",
     "options": [
       "指定可执行文件运行时搜索动态库的路径",
-      "编译时搜索路径",
+      "源码搜索路径",
       "链接时搜索路径",
-      "源码搜索路径"
+      "编译时搜索路径"
     ],
     "correctAnswer": 0
   },
@@ -146,65 +146,65 @@
     "id": "c-964",
     "title": "C语言中，如何查看程序依赖的动态库？",
     "options": [
-      "使用ldd命令",
       "使用nm命令",
       "使用objdump",
+      "使用ldd命令",
       "使用readelf"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-965",
     "title": "C语言中，nm工具的作用是？",
     "options": [
-      "列出目标文件中的符号表",
       "查看依赖库",
-      "反汇编",
-      "查看段信息"
+      "查看段信息",
+      "列出目标文件中的符号表",
+      "反汇编"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-966",
     "title": "C语言中，strip工具的作用是？",
     "options": [
-      "移除可执行文件中的符号信息和调试信息",
-      "压缩文件",
+      "反汇编",
       "加密文件",
-      "反汇编"
+      "移除可执行文件中的符号信息和调试信息",
+      "压缩文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-967",
     "title": "C语言中，strip后的程序还能调试吗？",
     "options": [
-      "很难调试，符号信息丢失",
-      "完全可以",
+      "取决于编译器",
       "部分可以",
-      "取决于编译器"
+      "完全可以",
+      "很难调试，符号信息丢失"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-968",
     "title": "C语言中，objdump的作用是？",
     "options": [
-      "反汇编和查看目标文件信息",
-      "查看符号",
       "查看依赖",
-      "移除符号"
+      "移除符号",
+      "反汇编和查看目标文件信息",
+      "查看符号"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-969",
     "title": "C语言中，如何进行代码覆盖率测试？",
     "options": [
       "编译时加--coverage，运行后使用gcov",
-      "使用valgrind",
+      "使用lcov",
       "使用gdb",
-      "使用lcov"
+      "使用valgrind"
     ],
     "correctAnswer": 0
   },
@@ -212,67 +212,67 @@
     "id": "c-970",
     "title": "C语言中，lcov的作用是？",
     "options": [
-      "将gcov的数据生成HTML可视化报告",
-      "生成覆盖率数据",
+      "编译代码",
       "执行测试",
-      "编译代码"
+      "生成覆盖率数据",
+      "将gcov的数据生成HTML可视化报告"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-971",
     "title": "C语言中，gdb的核心功能是？",
     "options": [
-      "断点、单步执行、查看变量、调用栈分析",
       "代码格式化",
       "内存泄漏检测",
+      "断点、单步执行、查看变量、调用栈分析",
       "性能分析"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-972",
     "title": "C语言中，如何生成适合gdb调试的可执行文件？",
     "options": [
-      "gcc -g",
-      "gcc -O2",
       "gcc -Wall",
-      "gcc -shared"
+      "gcc -shared",
+      "gcc -g",
+      "gcc -O2"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-973",
     "title": "C语言中，core dump文件的作用是？",
     "options": [
+      "记录覆盖率",
       "记录程序崩溃时的内存映像和寄存器状态",
       "记录日志",
-      "记录覆盖率",
       "记录性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-974",
     "title": "C语言中，如何启用core dump生成？",
     "options": [
-      "ulimit -c unlimited",
       "gcc -g",
-      "使用gdb",
-      "使用valgrind"
+      "使用valgrind",
+      "ulimit -c unlimited",
+      "使用gdb"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-975",
     "title": "C语言中，perf工具的作用是？",
     "options": [
-      "性能分析，找出CPU热点",
+      "静态分析",
       "内存泄漏检测",
       "代码覆盖率",
-      "静态分析"
+      "性能分析，找出CPU热点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-976",
@@ -289,153 +289,153 @@
     "id": "c-977",
     "title": "C语言中，常见的C静态分析工具有？",
     "options": [
-      "splint, cppcheck, clang-tidy",
-      "valgrind, gdb",
+      "make, cmake",
       "perf, gprof",
-      "make, cmake"
+      "valgrind, gdb",
+      "splint, cppcheck, clang-tidy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-978",
     "title": "C语言中，单元测试框架Check的特点是？",
     "options": [
-      "专为C设计，支持夹具和多种断言",
       "仅支持C++",
-      "不支持断言",
-      "不支持夹具"
+      "不支持夹具",
+      "专为C设计，支持夹具和多种断言",
+      "不支持断言"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-979",
     "title": "C语言中，TDD的开发流程是？",
     "options": [
+      "只写实现",
       "先写测试，再写实现，然后重构",
-      "先写实现，再写测试",
       "只写测试",
-      "只写实现"
+      "先写实现，再写测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-980",
     "title": "C语言中，如何进行跨平台开发？",
     "options": [
-      "使用条件编译、跨平台库、抽象层",
       "只用Windows API",
+      "使用条件编译、跨平台库、抽象层",
       "只用Linux API",
       "只用标准库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-981",
     "title": "C语言中，条件编译如何用于跨平台？",
     "options": [
-      "使用#ifdef判断操作系统或编译器宏",
       "使用if-else",
+      "使用动态库",
       "使用虚函数",
-      "使用动态库"
+      "使用#ifdef判断操作系统或编译器宏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-982",
     "title": "C语言中，常见的跨平台库有哪些？",
     "options": [
+      "GTK",
       "SDL, Qt, libuv, APR",
-      "MFC",
       "Win32",
-      "GTK"
+      "MFC"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-983",
     "title": "C语言中，如何处理跨平台的数据类型差异？",
     "options": [
-      "使用stdint.h中的定宽类型如int32_t",
+      "使用指针",
       "使用int",
       "使用long",
-      "使用指针"
+      "使用stdint.h中的定宽类型如int32_t"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-984",
     "title": "C语言中，为什么应该使用size_t表示大小？",
     "options": [
-      "它是无符号类型，足以表示对象大小，跨平台安全",
       "它是32位",
       "它是64位",
+      "它是无符号类型，足以表示对象大小，跨平台安全",
       "性能更好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-985",
     "title": "C语言中，ptrdiff_t的作用是？",
     "options": [
-      "表示两个指针相减的有符号结果",
+      "表示地址",
       "表示大小",
-      "表示偏移",
-      "表示地址"
+      "表示两个指针相减的有符号结果",
+      "表示偏移"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-986",
     "title": "C语言中，代码规范(如MISRA C)的重要性？",
     "options": [
-      "提高安全性、可读性、可维护性，减少缺陷",
-      "提高性能",
       "减少内存",
+      "提高性能",
+      "提高安全性、可读性、可维护性，减少缺陷",
       "加快编译"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-987",
     "title": "C语言中，重构代码的原则是？",
     "options": [
-      "小步修改、频繁测试、保持行为不变",
       "大步修改",
       "不写测试",
+      "小步修改、频繁测试、保持行为不变",
       "改变行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-988",
     "title": "C语言中，如何安全地重构遗留代码？",
     "options": [
-      "先补充测试，再小步重构",
       "直接重写",
-      "使用宏替换",
-      "忽略警告"
+      "忽略警告",
+      "先补充测试，再小步重构",
+      "使用宏替换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-989",
     "title": "C语言中，Doxygen的常用注释标记是？",
     "options": [
-      "@param, @return, @brief, @note",
       "// TODO",
+      "@param, @return, @brief, @note",
       "/* BUG */",
       "#define"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-990",
     "title": "C语言中，如何设计一个好的C API？",
     "options": [
       "高内聚低耦合、明确的所有权、清晰的错误处理",
+      "避免文档",
       "尽量使用全局变量",
-      "暴露内部结构",
-      "避免文档"
+      "暴露内部结构"
     ],
     "correctAnswer": 0
   },
@@ -454,20 +454,20 @@
     "id": "c-992",
     "title": "C语言中，如何实现opaque pointer？",
     "options": [
-      "头文件只声明结构体指针，实现在.c文件中定义结构体",
+      "使用宏",
       "头文件定义结构体",
-      "使用void*",
-      "使用宏"
+      "头文件只声明结构体指针，实现在.c文件中定义结构体",
+      "使用void*"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-993",
     "title": "C语言中，回调函数中的user_data参数通常用于？",
     "options": [
       "传递上下文信息给回调函数",
-      "传递错误码",
       "传递返回值",
+      "传递错误码",
       "传递函数指针"
     ],
     "correctAnswer": 0
@@ -476,23 +476,23 @@
     "id": "c-994",
     "title": "C语言中，如何避免头文件中的符号冲突？",
     "options": [
-      "使用前缀命名、static修饰内部函数、避免导出不必要的符号",
       "使用同名",
       "使用全局变量",
+      "使用前缀命名、static修饰内部函数、避免导出不必要的符号",
       "使用宏定义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-995",
     "title": "C语言中，C23标准引入了哪些新特性？",
     "options": [
-      "bool成为内置类型、nullptr、auto类型推断、位域默认类型",
-      "类和对象",
       "垃圾回收",
-      "模板"
+      "类和对象",
+      "模板",
+      "bool成为内置类型、nullptr、auto类型推断、位域默认类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-996",
@@ -500,8 +500,8 @@
     "options": [
       "C23的auto只能从初始化器推断类型，不能用于函数参数",
       "完全相同",
-      "C23更强大",
-      "C23不支持"
+      "C23不支持",
+      "C23更强大"
     ],
     "correctAnswer": 0
   },
@@ -510,8 +510,8 @@
     "title": "C语言中，C23引入nullptr的好处是？",
     "options": [
       "类型安全的空指针常量，解决NULL的宏定义问题",
-      "更好记",
       "性能更高",
+      "更好记",
       "占用内存少"
     ],
     "correctAnswer": 0
@@ -521,9 +521,9 @@
     "title": "C语言中，C23的constexpr关键字的作用是？",
     "options": [
       "定义真正的编译期常量，可用于数组大小等",
-      "定义变量",
       "定义函数",
-      "定义类型"
+      "定义类型",
+      "定义变量"
     ],
     "correctAnswer": 0
   },
@@ -536,10 +536,10 @@
         "禁止位域"
       ],
       [
-        "取消位域"
+        "不支持bool"
       ],
       [
-        "不支持bool"
+        "取消位域"
       ]
     ],
     "correctAnswer": 0
@@ -548,11 +548,11 @@
     "id": "c-1000",
     "title": "C语言中，C23新增的#embed指令的作用是？",
     "options": [
-      "在编译时将文件内容直接嵌入到源代码中",
-      "包含头文件",
+      "条件编译",
       "定义宏",
-      "条件编译"
+      "在编译时将文件内容直接嵌入到源代码中",
+      "包含头文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

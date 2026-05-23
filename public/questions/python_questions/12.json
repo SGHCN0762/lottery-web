@@ -3,41 +3,41 @@
     "id": "python-551",
     "title": "Python中线程和进程的区别是？",
     "options": [
+      "取决于系统",
       "线程共享内存，进程独立内存",
       "线程独立内存，进程共享内存",
-      "没有区别",
-      "取决于系统"
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-552",
     "title": "Python中协程和线程的区别是？",
     "options": [
-      "协程用户态调度，线程内核态调度",
       "协程内核态调度，线程用户态调度",
       "没有区别",
+      "协程用户态调度，线程内核态调度",
       "取决于系统"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-553",
     "title": "Python中协程的优点是？",
     "options": [
+      "以上都不对",
       "轻量级，无切换开销",
       "可以利用多核",
-      "不需要同步",
-      "以上都不对"
+      "不需要同步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-554",
     "title": "Python中协程的缺点是？",
     "options": [
-      "不能利用多核",
       "需要异步生态",
+      "不能利用多核",
       "调试困难",
       "以上都是"
     ],
@@ -47,232 +47,232 @@
     "id": "python-555",
     "title": "Python中greenlet的作用是？",
     "options": [
-      "协程库",
       "线程库",
+      "以上都不对",
       "进程库",
-      "以上都不对"
+      "协程库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-556",
     "title": "Python中gevent的作用是？",
     "options": [
-      "协程库，基于greenlet",
+      "以上都不对",
       "线程库",
-      "进程库",
-      "以上都不对"
+      "协程库，基于greenlet",
+      "进程库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-557",
     "title": "Python中gevent的monkey patch作用是？",
     "options": [
-      "将阻塞函数替换为异步",
-      "修复bug",
       "增加功能",
-      "以上都不对"
+      "以上都不对",
+      "修复bug",
+      "将阻塞函数替换为异步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-558",
     "title": "Python中如何实现定时任务？",
     "options": [
+      "cron",
       "sched, threading.Timer, APScheduler",
       "time.sleep",
-      "cron",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-559",
     "title": "Python中APScheduler的作用是？",
     "options": [
-      "高级定时任务",
-      "简单定时任务",
       "进程调度",
+      "简单定时任务",
+      "高级定时任务",
       "线程调度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-560",
     "title": "Python中APScheduler的触发器有？",
     "options": [
-      "date, interval, cron",
-      "time, period, schedule",
+      "以上都不对",
       "once, repeat, loop",
-      "以上都不对"
+      "time, period, schedule",
+      "date, interval, cron"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-561",
     "title": "Python中如何实现守护进程？",
     "options": [
-      "python-daemon",
       "os.fork",
-      "以上都可以",
-      "以上都不对"
+      "以上都不对",
+      "python-daemon",
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-562",
     "title": "Python中os.fork()的作用是？",
     "options": [
-      "创建子进程",
       "创建子线程",
-      "创建协程",
-      "以上都不对"
+      "创建子进程",
+      "以上都不对",
+      "创建协程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-563",
     "title": "Python中os.fork()在Windows上可用吗？",
     "options": [
-      "不可用",
-      "可用",
       "部分可用",
-      "取决于版本"
+      "取决于版本",
+      "可用",
+      "不可用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-564",
     "title": "Python中multiprocessing在Windows上需要注意什么？",
     "options": [
-      "必须if __name__ == \"__main__\"",
       "不需要注意",
+      "必须if __name__ == \"__main__\"",
       "必须使用fork",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-565",
     "title": "Python中如何获取当前线程名？",
     "options": [
-      "threading.current_thread().name",
-      "threading.get_name()",
       "current_thread.name",
-      "以上都不对"
+      "threading.get_name()",
+      "以上都不对",
+      "threading.current_thread().name"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-566",
     "title": "Python中如何获取当前进程名？",
     "options": [
-      "multiprocessing.current_process().name",
       "multiprocessing.get_name()",
-      "current_process.name",
-      "以上都不对"
+      "以上都不对",
+      "multiprocessing.current_process().name",
+      "current_process.name"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-567",
     "title": "Python中如何设置线程名？",
     "options": [
-      "thread.name = \"xxx\"",
-      "thread.set_name(\"xxx\")",
+      "以上都不对",
       "thread.rename(\"xxx\")",
-      "以上都不对"
+      "thread.name = \"xxx\"",
+      "thread.set_name(\"xxx\")"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-568",
     "title": "Python中如何获取活跃线程数？",
     "options": [
-      "threading.active_count()",
+      "以上都不对",
       "threading.count()",
       "threading.num()",
-      "以上都不对"
+      "threading.active_count()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-569",
     "title": "Python中如何获取所有线程？",
     "options": [
-      "threading.enumerate()",
       "threading.all()",
       "threading.list()",
+      "threading.enumerate()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-570",
     "title": "Python中threading.local的作用是？",
     "options": [
-      "线程本地存储",
       "进程本地存储",
+      "以上都不对",
       "全局存储",
-      "以上都不对"
+      "线程本地存储"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-571",
     "title": "Python中如何实现线程安全的单例？",
     "options": [
-      "使用Lock或模块导入",
       "使用GIL",
       "使用协程",
-      "以上都不对"
+      "以上都不对",
+      "使用Lock或模块导入"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-572",
     "title": "Python中如何实现生产者消费者模式？",
     "options": [
+      "Semaphore",
       "Queue",
       "Lock",
-      "Semaphore",
       "Event"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-573",
     "title": "Python中如何实现读写锁？",
     "options": [
+      "以上都不对",
       "使用两个Lock或RLock",
-      "使用一个Lock",
       "使用Semaphore",
-      "以上都不对"
+      "使用一个Lock"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-574",
     "title": "Python中如何限制并发数？",
     "options": [
-      "Semaphore",
       "Lock",
-      "RLock",
-      "Event"
+      "Semaphore",
+      "Event",
+      "RLock"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-575",
     "title": "Python中如何实现线程间通知？",
     "options": [
-      "Event或Condition",
       "Lock",
       "Semaphore",
+      "Event或Condition",
       "Queue"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-576",
@@ -280,8 +280,8 @@
     "options": [
       "Value, Array, Manager",
       "Queue, Pipe",
-      "以上都可以",
-      "以上都不对"
+      "以上都不对",
+      "以上都可以"
     ],
     "correctAnswer": 0
   },
@@ -289,43 +289,43 @@
     "id": "python-577",
     "title": "Python中如何处理并发异常？",
     "options": [
-      "try...except",
       "Future.exception()",
-      "以上都可以",
-      "以上都不对"
+      "try...except",
+      "以上都不对",
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-578",
     "title": "Python中如何取消协程任务？",
     "options": [
+      "以上都不对",
       "task.cancel()",
       "task.stop()",
-      "task.abort()",
-      "以上都不对"
+      "task.abort()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-579",
     "title": "Python中如何设置协程超时？",
     "options": [
-      "asyncio.wait_for()",
       "asyncio.timeout()",
-      "task.timeout()",
-      "以上都不对"
+      "asyncio.wait_for()",
+      "以上都不对",
+      "task.timeout()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-580",
     "title": "Python中如何调试协程？",
     "options": [
       "aiomonitor",
-      "pdb",
+      "以上都不对",
       "以上都可以",
-      "以上都不对"
+      "pdb"
     ],
     "correctAnswer": 2
   },
@@ -334,20 +334,20 @@
     "title": "Python中如何测试协程？",
     "options": [
       "pytest-asyncio",
-      "unittest",
       "以上都可以",
-      "以上都不对"
+      "以上都不对",
+      "unittest"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-582",
     "title": "Python中异步生成器的aiter()和anext()作用是？",
     "options": [
       "异步迭代",
-      "同步迭代",
+      "以上都不对",
       "异步上下文",
-      "以上都不对"
+      "同步迭代"
     ],
     "correctAnswer": 0
   },
@@ -355,45 +355,45 @@
     "id": "python-583",
     "title": "Python中asyncio.Queue的作用是？",
     "options": [
-      "异步队列",
       "同步队列",
       "进程队列",
-      "以上都不对"
+      "以上都不对",
+      "异步队列"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-584",
     "title": "Python中asyncio.Lock的作用是？",
     "options": [
-      "异步锁",
       "同步锁",
-      "进程锁",
-      "以上都不对"
+      "异步锁",
+      "以上都不对",
+      "进程锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-585",
     "title": "Python中asyncio.Event的作用是？",
     "options": [
-      "异步事件",
-      "同步事件",
+      "以上都不对",
       "进程事件",
-      "以上都不对"
+      "同步事件",
+      "异步事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-586",
     "title": "Python中asyncio.Semaphore的作用是？",
     "options": [
+      "进程信号量",
       "异步信号量",
       "同步信号量",
-      "进程信号量",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-587",
@@ -410,109 +410,109 @@
     "id": "python-588",
     "title": "Python中如何将同步函数转为异步？",
     "options": [
-      "asyncio.to_thread()或run_in_executor()",
       "async()",
+      "以上都不对",
       "to_async()",
-      "以上都不对"
+      "asyncio.to_thread()或run_in_executor()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-589",
     "title": "Python中run_in_executor()的作用是？",
     "options": [
       "在线程池中执行同步函数",
-      "在进程池中执行同步函数",
       "以上都可以",
-      "以上都不对"
+      "以上都不对",
+      "在进程池中执行同步函数"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-590",
     "title": "Python中如何将异步函数转为同步？",
     "options": [
+      "以上都不对",
       "asyncio.run()",
-      "sync()",
       "to_sync()",
-      "以上都不对"
+      "sync()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-591",
     "title": "Python中协程的调度器是？",
     "options": [
-      "事件循环",
-      "线程池",
       "进程池",
-      "以上都不对"
+      "以上都不对",
+      "事件循环",
+      "线程池"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-592",
     "title": "Python中如何获取事件循环？",
     "options": [
-      "asyncio.get_event_loop()",
+      "以上都不对",
       "asyncio.get_loop()",
       "asyncio.loop()",
-      "以上都不对"
+      "asyncio.get_event_loop()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-593",
     "title": "Python中如何创建新事件循环？",
     "options": [
+      "asyncio.loop_new()",
       "asyncio.new_event_loop()",
       "asyncio.create_loop()",
-      "asyncio.loop_new()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-594",
     "title": "Python中如何设置事件循环？",
     "options": [
-      "asyncio.set_event_loop()",
-      "asyncio.set_loop()",
+      "以上都不对",
       "asyncio.loop_set()",
-      "以上都不对"
+      "asyncio.set_event_loop()",
+      "asyncio.set_loop()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-595",
     "title": "Python中uvloop的作用是？",
     "options": [
-      "快速事件循环",
+      "以上都不对",
       "普通事件循环",
-      "同步循环",
-      "以上都不对"
+      "快速事件循环",
+      "同步循环"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-596",
     "title": "Python中如何选择并发模型？",
     "options": [
-      "根据任务类型",
+      "总是协程",
       "总是多线程",
-      "总是多进程",
-      "总是协程"
+      "根据任务类型",
+      "总是多进程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-597",
     "title": "Python中GIL是指？",
     "options": [
       "全局解释器锁",
+      "以上都不对",
       "全局内存锁",
-      "通用接口层",
-      "以上都不对"
+      "通用接口层"
     ],
     "correctAnswer": 0
   },
@@ -520,12 +520,12 @@
     "id": "python-598",
     "title": "Python中GIL的作用是？",
     "options": [
-      "保证线程安全",
-      "提高性能",
       "支持多核",
-      "以上都不对"
+      "保证线程安全",
+      "以上都不对",
+      "提高性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-599",
@@ -533,8 +533,8 @@
     "options": [
       "多线程不能利用多核",
       "多进程不能利用多核",
-      "单线程性能下降",
-      "以上都不对"
+      "以上都不对",
+      "单线程性能下降"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "python-600",
     "title": "Python中GIL在什么情况下释放？",
     "options": [
-      "I/O操作时",
-      "执行C扩展时",
       "每执行一定字节码时",
-      "以上都是"
+      "以上都是",
+      "执行C扩展时",
+      "I/O操作时"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   }
 ]

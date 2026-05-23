@@ -3,12 +3,12 @@
     "id": "css-451",
     "title": "如何实现绝对定位元素的水平垂直居中？",
     "options": [
-      "top: 50%; left: 50%; transform: translate(-50%, -50%);",
       "margin: auto",
       "text-align: center",
+      "top: 50%; left: 50%; transform: translate(-50%, -50%);",
       "vertical-align: middle"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-452",
@@ -16,8 +16,8 @@
     "options": [
       "vertical-align: middle或flex/grid布局",
       "margin: auto",
-      "text-align: center",
-      "line-height"
+      "line-height",
+      "text-align: center"
     ],
     "correctAnswer": 0
   },
@@ -25,42 +25,42 @@
     "id": "css-453",
     "title": "如何实现不定宽高元素垂直居中？",
     "options": [
-      "flex/grid布局或absolute + transform",
       "margin: auto",
       "line-height",
-      "vertical-align"
+      "vertical-align",
+      "flex/grid布局或absolute + transform"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-454",
     "title": "clip属性的作用是？",
     "options": [
-      "裁剪绝对定位元素的可视区域(已废弃)",
-      "裁剪图片",
+      "裁剪边框",
       "裁剪文本",
-      "裁剪边框"
+      "裁剪图片",
+      "裁剪绝对定位元素的可视区域(已废弃)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-455",
     "title": "clip-path属性的优势是？",
     "options": [
+      "语法更简单",
       "支持各种形状裁剪且不限于定位元素",
       "性能更好",
-      "兼容性更好",
-      "语法更简单"
+      "兼容性更好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-456",
     "title": "如何使用CSS绘制三角形？",
     "options": [
       "利用border透明特性",
-      "利用clip-path",
       "利用transform",
+      "利用clip-path",
       "利用margin"
     ],
     "correctAnswer": 0
@@ -69,177 +69,177 @@
     "id": "css-457",
     "title": "如何使用CSS绘制圆形？",
     "options": [
-      "border-radius: 50%",
       "clip-path: circle()",
-      "transform: rotate",
-      "margin: auto"
+      "margin: auto",
+      "border-radius: 50%",
+      "transform: rotate"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-458",
     "title": "如何使用CSS绘制梯形？",
     "options": [
-      "利用3D变换或border",
-      "clip-path: polygon()",
+      "margin",
       "transform: skew",
-      "margin"
+      "clip-path: polygon()",
+      "利用3D变换或border"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-459",
     "title": "如何使用CSS绘制五边形？",
     "options": [
-      "clip-path: polygon()",
-      "border组合",
       "transform",
+      "border组合",
+      "clip-path: polygon()",
       "margin"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-460",
     "title": "如何使用CSS绘制箭头？",
     "options": [
+      "outline",
       "border旋转组合或clip-path",
-      "background-image",
       "content属性",
-      "outline"
+      "background-image"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-461",
     "title": "如何实现元素的阴影效果？",
     "options": [
-      "box-shadow",
       "text-shadow",
+      "outline",
       "filter: drop-shadow()",
-      "outline"
+      "box-shadow"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-462",
     "title": "box-shadow与filter: drop-shadow()的区别？",
     "options": [
-      "drop-shadow跟随元素形状，box-shadow是矩形",
       "没有区别",
-      "box-shadow性能更好",
-      "drop-shadow不支持模糊"
+      "drop-shadow跟随元素形状，box-shadow是矩形",
+      "drop-shadow不支持模糊",
+      "box-shadow性能更好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-463",
     "title": "如何实现内凹圆角效果？",
     "options": [
-      "radial-gradient或SVG",
-      "border-radius",
       "box-shadow",
-      "clip-path"
+      "clip-path",
+      "radial-gradient或SVG",
+      "border-radius"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-464",
     "title": "如何实现毛玻璃效果？",
     "options": [
+      "filter: blur()",
       "backdrop-filter: blur()",
       "opacity",
-      "filter: blur()",
       "background: transparent"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-465",
     "title": "如何实现渐变边框？",
     "options": [
-      "border-image或双层背景技巧",
-      "border-color",
       "outline",
-      "box-shadow"
+      "box-shadow",
+      "border-color",
+      "border-image或双层背景技巧"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-466",
     "title": "如何实现文字描边效果？",
     "options": [
+      "outline",
       "-webkit-text-stroke",
-      "text-shadow",
       "border",
-      "outline"
+      "text-shadow"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-467",
     "title": "如何实现长阴影效果？",
     "options": [
-      "多层text-shadow或box-shadow",
+      "clip-path",
       "filter: drop-shadow",
       "transform",
-      "clip-path"
+      "多层text-shadow或box-shadow"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-468",
     "title": "如何实现霓虹灯效果？",
     "options": [
+      "outline",
       "多层text-shadow或box-shadow配合亮色",
       "border",
-      "outline",
       "background"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-469",
     "title": "如何实现浮雕效果？",
     "options": [
-      "相对位置的亮暗双阴影",
       "border",
       "background",
-      "transform"
+      "transform",
+      "相对位置的亮暗双阴影"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-470",
     "title": "如何实现倒影效果？",
     "options": [
+      "filter",
       "-webkit-box-reflect",
       "transform: scaleY(-1)",
-      "clip-path",
-      "filter"
+      "clip-path"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-471",
     "title": "如何实现打字机效果？",
     "options": [
-      "steps()动画配合overflow和width",
-      "transition",
       "animation-delay",
-      "animation-direction"
+      "animation-direction",
+      "steps()动画配合overflow和width",
+      "transition"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-472",
     "title": "如何实现闪烁效果？",
     "options": [
+      "transform",
       "opacity或visibility动画",
       "background",
-      "border",
-      "transform"
+      "border"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-473",
@@ -257,8 +257,8 @@
     "title": "如何实现弹跳效果？",
     "options": [
       "transform: translateY配合cubic-bezier",
-      "margin动画",
       "position动画",
+      "margin动画",
       "height动画"
     ],
     "correctAnswer": 0
@@ -267,21 +267,21 @@
     "id": "css-475",
     "title": "如何实现旋转效果？",
     "options": [
-      "transform: rotate动画",
       "border-radius动画",
+      "transform: rotate动画",
       "margin动画",
       "position动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-476",
     "title": "如何实现缩放效果？",
     "options": [
       "transform: scale动画",
-      "width/height动画",
       "margin动画",
-      "position动画"
+      "position动画",
+      "width/height动画"
     ],
     "correctAnswer": 0
   },
@@ -291,8 +291,8 @@
     "options": [
       "opacity动画",
       "visibility动画",
-      "display动画",
-      "position动画"
+      "position动画",
+      "display动画"
     ],
     "correctAnswer": 0
   },
@@ -300,21 +300,21 @@
     "id": "css-478",
     "title": "如何实现滑动效果？",
     "options": [
-      "transform: translateX动画",
       "left/right动画",
       "margin动画",
-      "float动画"
+      "float动画",
+      "transform: translateX动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-479",
     "title": "如何实现翻转效果？",
     "options": [
       "transform: rotateY配合backface-visibility",
-      "rotateX",
+      "translate",
       "scale",
-      "translate"
+      "rotateX"
     ],
     "correctAnswer": 0
   },
@@ -322,109 +322,109 @@
     "id": "css-480",
     "title": "如何实现视差滚动效果？",
     "options": [
-      "background-attachment: fixed或transform3d",
       "position: sticky",
+      "background-attachment: fixed或transform3d",
       "float: left",
       "overflow: hidden"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-481",
     "title": "如何实现无限滚动效果？",
     "options": [
+      "margin: auto",
       "animation: scroll 10s linear infinite;",
-      "overflow: scroll",
       "position: relative",
-      "margin: auto"
+      "overflow: scroll"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-482",
     "title": "如何实现文字渐变效果？",
     "options": [
-      "background: linear-gradient配合-webkit-background-clip: text",
+      "border-image",
       "color: gradient",
-      "text-shadow",
-      "border-image"
+      "background: linear-gradient配合-webkit-background-clip: text",
+      "text-shadow"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-483",
     "title": "如何实现图片灰度效果？",
     "options": [
-      "filter: grayscale(1)",
-      "opacity: 0.5",
+      "mix-blend-mode",
       "background: gray",
-      "mix-blend-mode"
+      "opacity: 0.5",
+      "filter: grayscale(1)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-484",
     "title": "如何实现图片模糊效果？",
     "options": [
-      "filter: blur(5px)",
       "opacity",
       "background: transparent",
+      "filter: blur(5px)",
       "visibility: hidden"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-485",
     "title": "如何实现图片亮度调节？",
     "options": [
-      "filter: brightness(1.5)",
-      "opacity",
+      "mix-blend-mode",
       "background",
-      "mix-blend-mode"
+      "opacity",
+      "filter: brightness(1.5)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-486",
     "title": "如何实现图片对比度调节？",
     "options": [
-      "filter: contrast(2)",
       "opacity",
       "background",
-      "mix-blend-mode"
+      "mix-blend-mode",
+      "filter: contrast(2)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-487",
     "title": "如何实现图片色相旋转？",
     "options": [
-      "filter: hue-rotate(90deg)",
-      "background",
       "opacity",
-      "mix-blend-mode"
+      "mix-blend-mode",
+      "filter: hue-rotate(90deg)",
+      "background"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-488",
     "title": "如何实现图片反色效果？",
     "options": [
-      "filter: invert(1)",
       "opacity",
       "background",
-      "mix-blend-mode"
+      "mix-blend-mode",
+      "filter: invert(1)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-489",
     "title": "如何实现图片饱和度调节？",
     "options": [
       "filter: saturate(2)",
+      "mix-blend-mode",
       "opacity",
-      "background",
-      "mix-blend-mode"
+      "background"
     ],
     "correctAnswer": 0
   },
@@ -433,8 +433,8 @@
     "title": "如何实现图片褐色效果？",
     "options": [
       "filter: sepia(1)",
-      "opacity",
       "background",
+      "opacity",
       "mix-blend-mode"
     ],
     "correctAnswer": 0
@@ -443,54 +443,54 @@
     "id": "css-491",
     "title": "如何实现混合模式效果？",
     "options": [
-      "mix-blend-mode或background-blend-mode",
-      "opacity",
+      "z-index",
       "filter",
-      "z-index"
+      "opacity",
+      "mix-blend-mode或background-blend-mode"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-492",
     "title": "mix-blend-mode的作用是？",
     "options": [
-      "设置元素内容与下层内容的混合模式",
-      "设置背景混合",
       "设置透明度",
-      "设置滤镜"
+      "设置滤镜",
+      "设置背景混合",
+      "设置元素内容与下层内容的混合模式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-493",
     "title": "background-blend-mode的作用是？",
     "options": [
-      "设置元素的背景层之间的混合模式",
       "设置内容混合",
       "设置透明度",
+      "设置元素的背景层之间的混合模式",
       "设置滤镜"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-494",
     "title": "如何实现遮罩效果？",
     "options": [
-      "mask-image",
-      "clip-path",
       "overflow: hidden",
-      "z-index"
+      "mask-image",
+      "z-index",
+      "clip-path"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-495",
     "title": "mask-image的作用是？",
     "options": [
       "根据图像的透明度显示元素",
-      "裁剪元素",
+      "模糊元素",
       "隐藏元素",
-      "模糊元素"
+      "裁剪元素"
     ],
     "correctAnswer": 0
   },
@@ -499,9 +499,9 @@
     "title": "如何实现形状外浮动？",
     "options": [
       "shape-outside",
-      "float: left",
+      "mask-image",
       "clip-path",
-      "mask-image"
+      "float: left"
     ],
     "correctAnswer": 0
   },
@@ -509,20 +509,20 @@
     "id": "css-497",
     "title": "shape-outside的作用是？",
     "options": [
+      "模糊元素",
       "定义浮动元素的形状，使内联内容环绕",
-      "裁剪元素",
       "隐藏元素",
-      "模糊元素"
+      "裁剪元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-498",
     "title": "如何实现滚动捕捉？",
     "options": [
       "scroll-snap-type",
-      "overflow: scroll",
       "position: sticky",
+      "overflow: scroll",
       "touch-action"
     ],
     "correctAnswer": 0
@@ -533,8 +533,8 @@
     "options": [
       "水平方向强制滚动捕捉",
       "垂直方向捕捉",
-      "双向捕捉",
-      "可选捕捉"
+      "可选捕捉",
+      "双向捕捉"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "css-500",
     "title": "scroll-snap-align: center的作用是？",
     "options": [
+      "不对齐",
       "捕捉对齐方式为居中",
       "起始对齐",
-      "结束对齐",
-      "不对齐"
+      "结束对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

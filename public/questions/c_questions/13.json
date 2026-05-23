@@ -3,23 +3,23 @@
     "id": "c-601",
     "title": "C语言中，文件分为哪两种？",
     "options": [
-      "文本文件和二进制文件",
-      "源文件和目标文件",
+      "只读文件和读写文件",
       "头文件和库文件",
-      "只读文件和读写文件"
+      "文本文件和二进制文件",
+      "源文件和目标文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-602",
     "title": "C语言中，文本文件的特点是？",
     "options": [
-      "人可读，存储字符",
-      "不可读",
       "存储二进制",
+      "不可读",
+      "人可读，存储字符",
       "效率高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-603",
@@ -36,78 +36,78 @@
     "id": "c-604",
     "title": "C语言中，文件操作的基本步骤是？",
     "options": [
+      "只关闭",
       "打开、读写、关闭",
-      "只读写",
       "只打开",
-      "只关闭"
+      "只读写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-605",
     "title": "C语言中，fopen失败返回什么？",
     "options": [
-      "NULL",
       "0",
+      "NULL",
       "-1",
       "EOF"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-606",
     "title": "C语言中，fclose失败返回什么？",
     "options": [
+      "NULL",
       "EOF",
       "0",
-      "NULL",
       "-1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-607",
     "title": "C语言中，fgetc返回什么类型？",
     "options": [
+      "short",
       "int",
       "char",
-      "short",
       "void"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-608",
     "title": "C语言中，fgetc为什么返回int？",
     "options": [
-      "为了能返回EOF(-1)",
-      "char不够",
       "int更快",
-      "标准规定"
+      "char不够",
+      "标准规定",
+      "为了能返回EOF(-1)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-609",
     "title": "C语言中，fgets比gets安全的原因是？",
     "options": [
-      "可以指定最大读取长度",
       "读取更快",
       "读取更多",
+      "可以指定最大读取长度",
       "自动分配内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-610",
     "title": "C语言中，gets不安全的原因是？",
     "options": [
-      "没有长度限制，容易溢出",
-      "速度慢",
       "不能读空格",
-      "返回值不对"
+      "返回值不对",
+      "速度慢",
+      "没有长度限制，容易溢出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-611",
@@ -129,164 +129,164 @@
     "id": "c-613",
     "title": "C语言中，fseek的SEEK_SET表示？",
     "options": [
-      "文件开头",
-      "当前位置",
       "文件末尾",
-      "随机位置"
+      "随机位置",
+      "文件开头",
+      "当前位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-614",
     "title": "C语言中，fseek的SEEK_CUR表示？",
     "options": [
+      "文件末尾",
       "当前位置",
       "文件开头",
-      "文件末尾",
       "随机位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-615",
     "title": "C语言中，fseek的SEEK_END表示？",
     "options": [
-      "文件末尾",
       "文件开头",
       "当前位置",
+      "文件末尾",
       "随机位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-616",
     "title": "C语言中，ftell返回什么？",
     "options": [
-      "当前文件位置",
-      "文件大小",
       "文件名",
-      "文件描述符"
+      "当前文件位置",
+      "文件描述符",
+      "文件大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-617",
     "title": "C语言中，rewind等价于？",
     "options": [
-      "fseek(fp, 0, SEEK_SET)",
+      "fclose(fp)",
       "fseek(fp, 0, SEEK_END)",
-      "fseek(fp, 1, SEEK_SET)",
-      "fclose(fp)"
+      "fseek(fp, 0, SEEK_SET)",
+      "fseek(fp, 1, SEEK_SET)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-618",
     "title": "C语言中，feof在什么时候返回真？",
     "options": [
-      "读到文件结束符后",
+      "文件关闭时",
       "读到文件最后一个字符时",
       "文件打开时",
-      "文件关闭时"
+      "读到文件结束符后"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-619",
     "title": "C语言中，ferror的作用是？",
     "options": [
-      "判断文件是否出错",
-      "判断文件是否结束",
       "判断文件是否打开",
-      "判断文件是否关闭"
+      "判断文件是否结束",
+      "判断文件是否关闭",
+      "判断文件是否出错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-620",
     "title": "C语言中，标准I/O和系统I/O的区别？",
     "options": [
-      "标准I/O带缓冲，系统I/O不带",
-      "没有区别",
+      "标准I/O更快",
       "系统I/O带缓冲",
-      "标准I/O更快"
+      "标准I/O带缓冲，系统I/O不带",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-621",
     "title": "C语言中，行缓冲的特点是？",
     "options": [
-      "遇到换行符刷新",
       "满了刷新",
-      "不刷新",
-      "立即刷新"
+      "立即刷新",
+      "遇到换行符刷新",
+      "不刷新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-622",
     "title": "C语言中，全缓冲的特点是？",
     "options": [
-      "缓冲区满刷新",
-      "遇到换行刷新",
+      "立即刷新",
       "不刷新",
-      "立即刷新"
+      "缓冲区满刷新",
+      "遇到换行刷新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-623",
     "title": "C语言中，无缓冲的特点是？",
     "options": [
-      "立即刷新",
+      "不刷新",
       "满了刷新",
-      "遇到换行刷新",
-      "不刷新"
+      "立即刷新",
+      "遇到换行刷新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-624",
     "title": "C语言中，stderr通常是？",
     "options": [
-      "无缓冲",
-      "行缓冲",
       "全缓冲",
-      "随机"
+      "随机",
+      "无缓冲",
+      "行缓冲"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-625",
     "title": "C语言中，stdout连终端时通常是？",
     "options": [
-      "行缓冲",
+      "随机",
       "全缓冲",
       "无缓冲",
-      "随机"
+      "行缓冲"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-626",
     "title": "C语言中，stdout重定向到文件时通常是？",
     "options": [
-      "全缓冲",
-      "行缓冲",
       "无缓冲",
-      "随机"
+      "行缓冲",
+      "随机",
+      "全缓冲"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-627",
     "title": "C语言中，fflush的作用是？",
     "options": [
       "刷新缓冲区",
+      "读取文件",
       "关闭文件",
-      "打开文件",
-      "读取文件"
+      "打开文件"
     ],
     "correctAnswer": 0
   },
@@ -294,45 +294,45 @@
     "id": "c-628",
     "title": "C语言中，setbuf的作用是？",
     "options": [
+      "读取缓冲区",
       "设置缓冲区",
       "刷新缓冲区",
-      "关闭缓冲区",
-      "读取缓冲区"
+      "关闭缓冲区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-629",
     "title": "C语言中，setvbuf的作用是？",
     "options": [
-      "设置缓冲区和模式",
       "设置缓冲区",
+      "设置缓冲区和模式",
       "刷新缓冲区",
       "关闭缓冲区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-630",
     "title": "C语言中，tmpfile创建的文件在关闭时？",
     "options": [
-      "自动删除",
       "保留",
-      "移动",
-      "重命名"
+      "重命名",
+      "自动删除",
+      "移动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-631",
     "title": "C语言中，文件描述符是什么？",
     "options": [
-      "内核管理文件的整数索引",
-      "文件指针",
       "文件名",
+      "文件指针",
+      "内核管理文件的整数索引",
       "文件大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-632",
@@ -349,54 +349,54 @@
     "id": "c-633",
     "title": "C语言中，标准输出的文件描述符是？",
     "options": [
-      "1",
-      "0",
       "2",
-      "3"
+      "3",
+      "0",
+      "1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-634",
     "title": "C语言中，标准错误的文件描述符是？",
     "options": [
-      "2",
-      "0",
+      "3",
       "1",
-      "3"
+      "0",
+      "2"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-635",
     "title": "C语言中，fileno函数的作用是？",
     "options": [
-      "获取文件指针对应的文件描述符",
       "获取文件描述符对应的指针",
+      "关闭文件",
       "打开文件",
-      "关闭文件"
+      "获取文件指针对应的文件描述符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-636",
     "title": "C语言中，fdopen函数的作用是？",
     "options": [
-      "将文件描述符转为文件指针",
-      "将文件指针转为文件描述符",
       "打开文件",
-      "关闭文件"
+      "将文件指针转为文件描述符",
+      "关闭文件",
+      "将文件描述符转为文件指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-637",
     "title": "C语言中，数学库函数定义在哪个头文件？",
     "options": [
       "math.h",
-      "stdio.h",
+      "string.h",
       "stdlib.h",
-      "string.h"
+      "stdio.h"
     ],
     "correctAnswer": 0
   },
@@ -404,111 +404,111 @@
     "id": "c-638",
     "title": "C语言中，使用math.h需要链接什么库？",
     "options": [
-      "-lm",
       "-lmath",
       "-lc",
+      "-lm",
       "-lstd"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-639",
     "title": "C语言中，sin函数的参数单位是？",
     "options": [
-      "弧度",
       "角度",
+      "弧度",
       "梯度",
       "无单位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-640",
     "title": "C语言中，cos函数的参数单位是？",
     "options": [
+      "无单位",
       "弧度",
       "角度",
-      "梯度",
-      "无单位"
+      "梯度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-641",
     "title": "C语言中，tan函数的参数单位是？",
     "options": [
-      "弧度",
       "角度",
       "梯度",
+      "弧度",
       "无单位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-642",
     "title": "C语言中，log函数求的是什么？",
     "options": [
-      "自然对数",
+      "绝对值",
       "常用对数",
-      "以2为底对数",
-      "绝对值"
+      "自然对数",
+      "以2为底对数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-643",
     "title": "C语言中，log10函数求的是什么？",
     "options": [
-      "常用对数",
       "自然对数",
       "以2为底对数",
+      "常用对数",
       "绝对值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-644",
     "title": "C语言中，exp函数求的是什么？",
     "options": [
-      "e的x次方",
       "10的x次方",
+      "e的x次方",
       "2的x次方",
       "绝对值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-645",
     "title": "C语言中，fmod函数的作用是？",
     "options": [
+      "整数除法",
       "浮点数取模",
       "整数取模",
-      "浮点数除法",
-      "整数除法"
+      "浮点数除法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-646",
     "title": "C语言中，modf函数的作用是？",
     "options": [
-      "分解浮点数为整数和小数部分",
-      "取模",
       "四舍五入",
-      "求绝对值"
+      "求绝对值",
+      "分解浮点数为整数和小数部分",
+      "取模"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-647",
     "title": "C语言中，ldexp函数的作用是？",
     "options": [
-      "计算x * 2^exp",
-      "计算2^exp",
       "计算x^exp",
+      "计算2^exp",
+      "计算x * 2^exp",
       "计算log2(x)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-648",
@@ -516,8 +516,8 @@
     "options": [
       "分解浮点数为尾数和指数",
       "计算指数",
-      "计算对数",
-      "计算幂"
+      "计算幂",
+      "计算对数"
     ],
     "correctAnswer": 0
   },
@@ -525,22 +525,22 @@
     "id": "c-649",
     "title": "C语言中，hypot函数的作用是？",
     "options": [
-      "计算直角三角形斜边长",
-      "计算双曲线",
       "计算抛物线",
-      "计算圆面积"
+      "计算圆面积",
+      "计算双曲线",
+      "计算直角三角形斜边长"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-650",
     "title": "C语言中，时间库函数定义在哪个头文件？",
     "options": [
-      "time.h",
-      "date.h",
       "clock.h",
+      "date.h",
+      "time.h",
       "stdio.h"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

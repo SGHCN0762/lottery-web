@@ -3,21 +3,21 @@
     "id": "js-651",
     "title": "JavaScript中事件捕获是指？",
     "options": [
-      "事件从父元素向子元素传播",
-      "事件从子元素向父元素传播",
       "事件不传播",
+      "事件从子元素向父元素传播",
+      "事件从父元素向子元素传播",
       "事件随机传播"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-652",
     "title": "JavaScript中DOM事件流的顺序是？",
     "options": [
       "捕获 -> 目标 -> 冒泡",
+      "捕获 -> 冒泡 -> 目标",
       "冒泡 -> 目标 -> 捕获",
-      "目标 -> 捕获 -> 冒泡",
-      "捕获 -> 冒泡 -> 目标"
+      "目标 -> 捕获 -> 冒泡"
     ],
     "correctAnswer": 0
   },
@@ -25,34 +25,34 @@
     "id": "js-653",
     "title": "JavaScript中event.stopPropagation的作用是？",
     "options": [
-      "阻止事件传播",
-      "阻止默认行为",
       "阻止事件监听",
-      "阻止事件触发"
+      "阻止默认行为",
+      "阻止事件触发",
+      "阻止事件传播"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-654",
     "title": "JavaScript中event.preventDefault的作用是？",
     "options": [
-      "阻止默认行为",
       "阻止事件传播",
-      "阻止事件监听",
-      "阻止事件触发"
+      "阻止默认行为",
+      "阻止事件触发",
+      "阻止事件监听"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-655",
     "title": "JavaScript中event.target的作用是？",
     "options": [
-      "获取触发事件的元素",
-      "获取绑定事件的元素",
       "获取父元素",
-      "获取子元素"
+      "获取子元素",
+      "获取触发事件的元素",
+      "获取绑定事件的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-656",
@@ -60,8 +60,8 @@
     "options": [
       "获取绑定事件的元素",
       "获取触发事件的元素",
-      "获取父元素",
-      "获取子元素"
+      "获取子元素",
+      "获取父元素"
     ],
     "correctAnswer": 0
   },
@@ -69,20 +69,20 @@
     "id": "js-657",
     "title": "JavaScript中事件委托的原理是？",
     "options": [
+      "利用事件传播",
       "利用事件冒泡",
       "利用事件捕获",
-      "利用事件传播",
       "利用事件触发"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-658",
     "title": "JavaScript中事件委托的优点是？",
     "options": [
+      "代码简洁",
       "减少内存消耗，动态绑定",
       "提高性能",
-      "代码简洁",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -93,8 +93,8 @@
     "options": [
       "preventDefault()",
       "stopPropagation()",
-      "stopImmediatePropagation()",
-      "cancelBubble"
+      "cancelBubble",
+      "stopImmediatePropagation()"
     ],
     "correctAnswer": 0
   },
@@ -103,9 +103,9 @@
     "title": "JavaScript中如何阻止事件冒泡？",
     "options": [
       "stopPropagation()",
-      "preventDefault()",
       "stopImmediatePropagation()",
-      "cancelBubble"
+      "cancelBubble",
+      "preventDefault()"
     ],
     "correctAnswer": 0
   },
@@ -115,8 +115,8 @@
     "options": [
       "阻止后续同类型事件监听",
       "阻止事件冒泡",
-      "阻止默认行为",
-      "阻止事件触发"
+      "阻止事件触发",
+      "阻止默认行为"
     ],
     "correctAnswer": 0
   },
@@ -124,87 +124,87 @@
     "id": "js-662",
     "title": "JavaScript中如何创建自定义事件？",
     "options": [
-      "new CustomEvent()",
+      "以上都是",
       "new Event()",
       "document.createEvent()",
-      "以上都是"
+      "new CustomEvent()"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "js-663",
     "title": "JavaScript中CustomEvent和Event的区别是？",
     "options": [
-      "CustomEvent可以传数据",
-      "没有区别",
       "Event可以传数据",
-      "取决于浏览器"
+      "没有区别",
+      "取决于浏览器",
+      "CustomEvent可以传数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-664",
     "title": "JavaScript中如何传递数据给事件监听器？",
     "options": [
-      "CustomEvent的detail属性",
+      "以上都不对",
       "Event的data属性",
       "Event的detail属性",
-      "以上都不对"
+      "CustomEvent的detail属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-665",
     "title": "JavaScript中window对象的作用是？",
     "options": [
+      "表示元素",
       "表示浏览器窗口",
       "表示文档",
-      "表示元素",
       "表示节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-666",
     "title": "JavaScript中document对象的作用是？",
     "options": [
+      "表示节点",
       "表示HTML文档",
       "表示窗口",
-      "表示元素",
-      "表示节点"
+      "表示元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-667",
     "title": "JavaScript中navigator对象的作用是？",
     "options": [
-      "获取浏览器信息",
       "获取URL信息",
-      "获取历史记录",
-      "获取屏幕信息"
+      "获取屏幕信息",
+      "获取浏览器信息",
+      "获取历史记录"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-668",
     "title": "JavaScript中location对象的作用是？",
     "options": [
-      "获取和设置URL",
       "获取浏览器信息",
+      "获取屏幕信息",
       "获取历史记录",
-      "获取屏幕信息"
+      "获取和设置URL"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-669",
     "title": "JavaScript中history对象的作用是？",
     "options": [
       "操作浏览器历史记录",
-      "获取URL信息",
       "获取浏览器信息",
-      "获取屏幕信息"
+      "获取屏幕信息",
+      "获取URL信息"
     ],
     "correctAnswer": 0
   },
@@ -212,34 +212,34 @@
     "id": "js-670",
     "title": "JavaScript中screen对象的作用是？",
     "options": [
-      "获取屏幕信息",
       "获取URL信息",
+      "获取屏幕信息",
       "获取浏览器信息",
       "获取历史记录"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-671",
     "title": "JavaScript中location.href的作用是？",
     "options": [
-      "获取或设置完整URL",
-      "获取主机名",
       "获取路径",
-      "获取协议"
+      "获取协议",
+      "获取或设置完整URL",
+      "获取主机名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-672",
     "title": "JavaScript中location.reload的作用是？",
     "options": [
-      "重新加载页面",
       "跳转页面",
-      "替换页面",
-      "获取URL"
+      "获取URL",
+      "重新加载页面",
+      "替换页面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-673",
@@ -257,9 +257,9 @@
     "title": "JavaScript中location.replace的作用是？",
     "options": [
       "替换当前页面",
-      "跳转到新页面",
       "重新加载页面",
-      "获取URL"
+      "获取URL",
+      "跳转到新页面"
     ],
     "correctAnswer": 0
   },
@@ -279,9 +279,9 @@
     "title": "JavaScript中history.pushState的作用是？",
     "options": [
       "添加历史记录",
+      "删除历史记录",
       "替换历史记录",
-      "获取历史记录",
-      "删除历史记录"
+      "获取历史记录"
     ],
     "correctAnswer": 0
   },
@@ -290,9 +290,9 @@
     "title": "JavaScript中history.replaceState的作用是？",
     "options": [
       "替换历史记录",
+      "删除历史记录",
       "添加历史记录",
-      "获取历史记录",
-      "删除历史记录"
+      "获取历史记录"
     ],
     "correctAnswer": 0
   },
@@ -300,31 +300,31 @@
     "id": "js-678",
     "title": "JavaScript中popstate事件何时触发？",
     "options": [
-      "历史记录切换时",
-      "页面加载时",
       "页面关闭时",
-      "页面刷新时"
+      "页面刷新时",
+      "页面加载时",
+      "历史记录切换时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-679",
     "title": "JavaScript中hashchange事件何时触发？",
     "options": [
-      "URL的hash变化时",
-      "URL变化时",
       "页面加载时",
-      "页面刷新时"
+      "页面刷新时",
+      "URL变化时",
+      "URL的hash变化时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-680",
     "title": "JavaScript中如何获取页面滚动位置？",
     "options": [
+      "pageYOffset",
       "document.documentElement.scrollTop",
       "window.scrollY",
-      "pageYOffset",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -333,21 +333,21 @@
     "id": "js-681",
     "title": "JavaScript中scrollTo的作用是？",
     "options": [
-      "滚动到指定位置",
       "滚动指定距离",
       "获取滚动位置",
+      "滚动到指定位置",
       "监听滚动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-682",
     "title": "JavaScript中scrollBy的作用是？",
     "options": [
       "滚动指定距离",
+      "监听滚动",
       "滚动到指定位置",
-      "获取滚动位置",
-      "监听滚动"
+      "获取滚动位置"
     ],
     "correctAnswer": 0
   },
@@ -355,131 +355,131 @@
     "id": "js-683",
     "title": "JavaScript中如何获取元素尺寸？",
     "options": [
-      "getBoundingClientRect()",
       "offsetWidth",
       "clientWidth",
-      "以上都是"
+      "以上都是",
+      "getBoundingClientRect()"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "js-684",
     "title": "JavaScript中offsetWidth包含什么？",
     "options": [
-      "内容+内边距+边框",
-      "仅内容",
+      "内容+边框",
       "内容+内边距",
-      "内容+边框"
+      "仅内容",
+      "内容+内边距+边框"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-685",
     "title": "JavaScript中clientWidth包含什么？",
     "options": [
+      "内容+边框",
       "内容+内边距",
       "仅内容",
-      "内容+边框",
       "内容+内边距+边框"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-686",
     "title": "JavaScript中scrollWidth包含什么？",
     "options": [
-      "实际内容宽度+内边距",
-      "可见宽度",
       "可见宽度+边框",
-      "实际内容宽度+边框"
+      "实际内容宽度+边框",
+      "可见宽度",
+      "实际内容宽度+内边距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-687",
     "title": "JavaScript中offsetTop的作用是？",
     "options": [
-      "获取元素到定位父元素的距离",
-      "获取元素到文档顶部的距离",
       "获取元素到视口的距离",
-      "获取元素到父元素的距离"
+      "获取元素到文档顶部的距离",
+      "获取元素到父元素的距离",
+      "获取元素到定位父元素的距离"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-688",
     "title": "JavaScript中getBoundingClientRect返回什么？",
     "options": [
-      "元素相对视口的位置和尺寸",
       "元素相对文档的位置和尺寸",
-      "元素的偏移量",
-      "元素的滚动量"
+      "元素的滚动量",
+      "元素相对视口的位置和尺寸",
+      "元素的偏移量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-689",
     "title": "JavaScript中IntersectionObserver的作用是？",
     "options": [
-      "监听元素交叉比例",
-      "监听元素尺寸",
       "监听元素属性",
+      "监听元素尺寸",
+      "监听元素交叉比例",
       "监听元素内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-690",
     "title": "JavaScript中IntersectionObserver的应用场景？",
     "options": [
+      "样式修改",
       "懒加载，无限滚动",
       "动画",
-      "事件监听",
-      "样式修改"
+      "事件监听"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-691",
     "title": "JavaScript中ResizeObserver的作用是？",
     "options": [
-      "监听元素尺寸变化",
       "监听元素交叉",
-      "监听元素属性",
-      "监听元素内容"
+      "监听元素内容",
+      "监听元素尺寸变化",
+      "监听元素属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-692",
     "title": "JavaScript中MutationObserver的作用是？",
     "options": [
-      "监听DOM变化",
-      "监听元素尺寸",
+      "监听元素属性",
       "监听元素交叉",
-      "监听元素属性"
+      "监听元素尺寸",
+      "监听DOM变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-693",
     "title": "JavaScript中MutationObserver可以监听什么？",
     "options": [
-      "子节点，属性，文本内容",
       "仅子节点",
+      "子节点，属性，文本内容",
       "仅属性",
       "仅文本内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-694",
     "title": "JavaScript中PerformanceObserver的作用是？",
     "options": [
       "监听性能指标",
-      "监听DOM变化",
       "监听元素尺寸",
-      "监听元素属性"
+      "监听元素属性",
+      "监听DOM变化"
     ],
     "correctAnswer": 0
   },
@@ -487,12 +487,12 @@
     "id": "js-695",
     "title": "JavaScript中requestIdleCallback的作用是？",
     "options": [
-      "在浏览器空闲时执行任务",
       "在下一帧执行任务",
-      "立即执行任务",
-      "延迟执行任务"
+      "在浏览器空闲时执行任务",
+      "延迟执行任务",
+      "立即执行任务"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-696",
@@ -500,8 +500,8 @@
     "options": [
       "存储少量数据",
       "存储大量数据",
-      "存储文件",
-      "存储对象"
+      "存储对象",
+      "存储文件"
     ],
     "correctAnswer": 0
   },
@@ -509,21 +509,21 @@
     "id": "js-697",
     "title": "JavaScript中cookie的大小限制是？",
     "options": [
-      "约4KB",
       "约1MB",
+      "无限制",
       "约5MB",
-      "无限制"
+      "约4KB"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-698",
     "title": "JavaScript中localStorage的作用是？",
     "options": [
       "持久化存储数据",
+      "存储Session",
       "会话存储数据",
-      "存储Cookie",
-      "存储Session"
+      "存储Cookie"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "js-699",
     "title": "JavaScript中sessionStorage的作用是？",
     "options": [
+      "存储Session",
       "会话存储数据",
       "持久化存储数据",
-      "存储Cookie",
-      "存储Session"
+      "存储Cookie"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-700",
     "title": "JavaScript中localStorage和sessionStorage的区别？",
     "options": [
-      "localStorage持久，sessionStorage会话级",
       "没有区别",
+      "取决于浏览器",
       "sessionStorage持久，localStorage会话级",
-      "取决于浏览器"
+      "localStorage持久，sessionStorage会话级"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

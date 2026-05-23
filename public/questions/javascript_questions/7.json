@@ -3,12 +3,12 @@
     "id": "js-301",
     "title": "JavaScript中Array的slice作用是？",
     "options": [
-      "截取数组",
       "删除元素",
       "插入元素",
-      "替换元素"
+      "替换元素",
+      "截取数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-302",
@@ -25,154 +25,154 @@
     "id": "js-303",
     "title": "JavaScript中Array的sort作用是？",
     "options": [
-      "排序数组",
-      "反转数组",
       "截取数组",
-      "合并数组"
+      "合并数组",
+      "排序数组",
+      "反转数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-304",
     "title": "JavaScript中Array的splice作用是？",
     "options": [
-      "删除、插入、替换元素",
+      "反转数组",
       "截取数组",
-      "合并数组",
-      "反转数组"
+      "删除、插入、替换元素",
+      "合并数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-305",
     "title": "JavaScript中Array的toLocaleString作用是？",
     "options": [
-      "转为本地化字符串",
+      "转为数组",
       "转为字符串",
-      "转为JSON",
-      "转为数组"
+      "转为本地化字符串",
+      "转为JSON"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-306",
     "title": "JavaScript中Array的toString作用是？",
     "options": [
+      "转为数组",
       "转为字符串",
-      "转为本地化字符串",
       "转为JSON",
-      "转为数组"
+      "转为本地化字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-307",
     "title": "JavaScript中Array的values作用是？",
     "options": [
+      "返回数组",
       "返回值迭代器",
-      "返回键迭代器",
       "返回键值对迭代器",
-      "返回数组"
+      "返回键迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-308",
     "title": "JavaScript中Array的length属性是可写的吗？",
     "options": [
-      "是",
       "否",
-      "只读",
-      "取决于环境"
+      "取决于环境",
+      "是",
+      "只读"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-309",
     "title": "JavaScript中Array的length设为0会怎样？",
     "options": [
-      "清空数组",
+      "截取前0个元素",
       "报错",
-      "忽略",
-      "截取前0个元素"
+      "清空数组",
+      "忽略"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-310",
     "title": "JavaScript中稀疏数组是指？",
     "options": [
-      "含有空位的数组",
       "含有undefined的数组",
-      "含有null的数组",
-      "长度为0的数组"
+      "长度为0的数组",
+      "含有空位的数组",
+      "含有null的数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-311",
     "title": "JavaScript中forEach能中断吗？",
     "options": [
-      "不能",
       "能，用break",
-      "能，用return",
-      "能，用continue"
+      "不能",
+      "能，用continue",
+      "能，用return"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-312",
     "title": "JavaScript中sort默认是按什么排序？",
     "options": [
-      "UTF-16码点",
       "数字大小",
       "字符串长度",
+      "UTF-16码点",
       "对象键"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-313",
     "title": "JavaScript中如何按数字大小排序？",
     "options": [
-      "sort((a, b) => a - b)",
+      "sort(a, b)",
       "sort()",
       "sort((a, b) => a > b)",
-      "sort(a, b)"
+      "sort((a, b) => a - b)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-314",
     "title": "JavaScript中Math的abs作用是？",
     "options": [
-      "返回绝对值",
       [
         "返回最大值"
       ],
+      "返回平方根",
       "返回最小值",
-      "返回平方根"
+      "返回绝对值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-315",
     "title": "JavaScript中Math的ceil作用是？",
     "options": [
-      "向上取整",
       "向下取整",
       "四舍五入",
+      "向上取整",
       "取随机数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-316",
     "title": "JavaScript中Math的floor作用是？",
     "options": [
       "向下取整",
-      "向上取整",
       "四舍五入",
+      "向上取整",
       "取随机数"
     ],
     "correctAnswer": 0
@@ -182,9 +182,9 @@
     "title": "JavaScript中Math的round作用是？",
     "options": [
       "四舍五入",
+      "取随机数",
       "向上取整",
-      "向下取整",
-      "取随机数"
+      "向下取整"
     ],
     "correctAnswer": 0
   },
@@ -192,97 +192,97 @@
     "id": "js-318",
     "title": "JavaScript中Math的max作用是？",
     "options": [
-      "返回最大值",
-      "返回最小值",
       "返回绝对值",
+      "返回最小值",
+      "返回最大值",
       "返回平方根"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-319",
     "title": "JavaScript中Math的min作用是？",
     "options": [
-      "返回最小值",
-      "返回最大值",
+      "返回平方根",
       "返回绝对值",
-      "返回平方根"
+      "返回最大值",
+      "返回最小值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-320",
     "title": "JavaScript中Math的pow作用是？",
     "options": [
-      "返回幂运算",
       "返回平方根",
-      "返回绝对值",
-      "返回对数"
+      "返回幂运算",
+      "返回对数",
+      "返回绝对值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-321",
     "title": "JavaScript中Math的sqrt作用是？",
     "options": [
-      "返回平方根",
       "返回幂运算",
-      "返回绝对值",
-      "返回对数"
+      "返回对数",
+      "返回平方根",
+      "返回绝对值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-322",
     "title": "JavaScript中Math的random作用是？",
     "options": [
-      "返回0到1之间的随机数",
       "返回随机整数",
-      "返回随机字符串",
-      "返回随机布尔值"
+      "返回0到1之间的随机数",
+      "返回随机布尔值",
+      "返回随机字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-323",
     "title": "JavaScript中Math的sign作用是？",
     "options": [
+      "返回绝对值",
       "返回正负号",
       "返回符号",
-      "返回绝对值",
       "返回相反数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-324",
     "title": "JavaScript中Math的trunc作用是？",
     "options": [
-      "去除小数部分",
       "向上取整",
+      "四舍五入",
       "向下取整",
-      "四舍五入"
+      "去除小数部分"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-325",
     "title": "JavaScript中Date的now作用是？",
     "options": [
-      "获取当前时间戳",
       "获取当前日期",
+      "获取时区",
       "获取当前时间",
-      "获取时区"
+      "获取当前时间戳"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-326",
     "title": "JavaScript中Date的parse作用是？",
     "options": [
       "解析日期字符串",
-      "格式化日期",
       "获取时间戳",
+      "格式化日期",
       "设置日期"
     ],
     "correctAnswer": 0
@@ -291,20 +291,20 @@
     "id": "js-327",
     "title": "JavaScript中Date的UTC作用是？",
     "options": [
-      "获取UTC时间戳",
-      "获取本地时间戳",
       "格式化UTC日期",
+      "获取本地时间戳",
+      "获取UTC时间戳",
       "解析UTC日期"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-328",
     "title": "JavaScript中Date的getTime作用是？",
     "options": [
       "获取时间戳",
-      "获取年份",
       "获取月份",
+      "获取年份",
       "获取日期"
     ],
     "correctAnswer": 0
@@ -313,12 +313,12 @@
     "id": "js-329",
     "title": "JavaScript中Date的getFullYear作用是？",
     "options": [
-      "获取四位数年份",
-      "获取两位数年份",
       "获取月份",
+      "获取两位数年份",
+      "获取四位数年份",
       "获取日期"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-330",
@@ -335,31 +335,31 @@
     "id": "js-331",
     "title": "JavaScript中Date的getDate作用是？",
     "options": [
+      "获取年份",
       "获取日期(1-31)",
       "获取星期",
-      "获取月份",
-      "获取年份"
+      "获取月份"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-332",
     "title": "JavaScript中Date的getDay作用是？",
     "options": [
-      "获取星期(0-6)",
       "获取日期",
-      "获取月份",
-      "获取年份"
+      "获取年份",
+      "获取星期(0-6)",
+      "获取月份"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-333",
     "title": "JavaScript中Date的getHours作用是？",
     "options": [
       "获取小时",
-      "获取分钟",
       "获取秒",
+      "获取分钟",
       "获取毫秒"
     ],
     "correctAnswer": 0
@@ -368,43 +368,43 @@
     "id": "js-334",
     "title": "JavaScript中Date的getMinutes作用是？",
     "options": [
-      "获取分钟",
-      "获取小时",
       "获取秒",
-      "获取毫秒"
+      "获取分钟",
+      "获取毫秒",
+      "获取小时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-335",
     "title": "JavaScript中Date的getSeconds作用是？",
     "options": [
-      "获取秒",
       "获取分钟",
+      "获取秒",
       "获取小时",
       "获取毫秒"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-336",
     "title": "JavaScript中Date的getMilliseconds作用是？",
     "options": [
-      "获取毫秒",
-      "获取秒",
       "获取分钟",
+      "获取秒",
+      "获取毫秒",
       "获取小时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-337",
     "title": "JavaScript中Date的toISOString作用是？",
     "options": [
       "转为ISO格式字符串",
-      "转为本地格式",
       "转为JSON格式",
-      "转为UTC格式"
+      "转为UTC格式",
+      "转为本地格式"
     ],
     "correctAnswer": 0
   },
@@ -423,43 +423,43 @@
     "id": "js-339",
     "title": "JavaScript中Date的toLocaleDateString作用是？",
     "options": [
-      "转为本地日期字符串",
-      "转为本地时间字符串",
       "转为ISO格式",
-      "转为JSON格式"
+      "转为本地时间字符串",
+      "转为JSON格式",
+      "转为本地日期字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-340",
     "title": "JavaScript中Date的toLocaleTimeString作用是？",
     "options": [
+      "转为ISO格式",
       "转为本地时间字符串",
       "转为本地日期字符串",
-      "转为ISO格式",
       "转为JSON格式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-341",
     "title": "JavaScript中Date的toLocaleString作用是？",
     "options": [
-      "转为本地日期时间字符串",
-      "转为本地日期字符串",
       "转为本地时间字符串",
-      "转为ISO格式"
+      "转为本地日期字符串",
+      "转为ISO格式",
+      "转为本地日期时间字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-342",
     "title": "JavaScript中Date的setFullYear作用是？",
     "options": [
       "设置年份",
+      "设置时间",
       "设置月份",
-      "设置日期",
-      "设置时间"
+      "设置日期"
     ],
     "correctAnswer": 0
   },
@@ -468,9 +468,9 @@
     "title": "JavaScript中Date的setMonth作用是？",
     "options": [
       "设置月份",
-      "设置年份",
+      "设置时间",
       "设置日期",
-      "设置时间"
+      "设置年份"
     ],
     "correctAnswer": 0
   },
@@ -478,21 +478,21 @@
     "id": "js-344",
     "title": "JavaScript中Date的setDate作用是？",
     "options": [
-      "设置日期",
-      "设置月份",
       "设置年份",
-      "设置时间"
+      "设置月份",
+      "设置时间",
+      "设置日期"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-345",
     "title": "JavaScript中Date的setTime作用是？",
     "options": [
       "设置时间戳",
-      "设置年份",
       "设置月份",
-      "设置日期"
+      "设置日期",
+      "设置年份"
     ],
     "correctAnswer": 0
   },
@@ -501,8 +501,8 @@
     "title": "JavaScript中RegExp的test作用是？",
     "options": [
       "测试是否匹配",
-      "返回匹配结果",
       "替换匹配",
+      "返回匹配结果",
       "分割字符串"
     ],
     "correctAnswer": 0
@@ -512,8 +512,8 @@
     "title": "JavaScript中RegExp的exec作用是？",
     "options": [
       "返回匹配结果",
-      "测试是否匹配",
       "替换匹配",
+      "测试是否匹配",
       "分割字符串"
     ],
     "correctAnswer": 0
@@ -522,23 +522,23 @@
     "id": "js-348",
     "title": "JavaScript中RegExp的source作用是？",
     "options": [
+      "返回 lastIndex",
       "返回正则文本",
-      "返回标志",
       "返回匹配结果",
-      "返回 lastIndex"
+      "返回标志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-349",
     "title": "JavaScript中RegExp的flags作用是？",
     "options": [
-      "返回标志",
       "返回正则文本",
       "返回匹配结果",
-      "返回 lastIndex"
+      "返回 lastIndex",
+      "返回标志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-350",

@@ -3,67 +3,67 @@
     "id": "css-651",
     "title": "transform: scaleX(2)的作用是？",
     "options": [
-      "元素水平放大2倍",
       "垂直放大",
-      "整体放大",
-      "旋转"
+      "元素水平放大2倍",
+      "旋转",
+      "整体放大"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-652",
     "title": "transform: scaleY(0.5)的作用是？",
     "options": [
-      "元素垂直缩小到一半",
       "水平缩小",
       "整体缩小",
+      "元素垂直缩小到一半",
       "旋转"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-653",
     "title": "transform: rotate(45deg)的作用是？",
     "options": [
-      "元素顺时针旋转45度",
-      "逆时针旋转",
       "放大45度",
-      "移动45px"
+      "移动45px",
+      "元素顺时针旋转45度",
+      "逆时针旋转"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-654",
     "title": "transform: skew(30deg, 20deg)的作用是？",
     "options": [
-      "元素在X轴倾斜30度，Y轴倾斜20度",
-      "旋转",
       "缩放",
+      "旋转",
+      "元素在X轴倾斜30度，Y轴倾斜20度",
       "移动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-655",
     "title": "transform-origin属性的作用是？",
     "options": [
-      "设置变换的原点",
-      "设置变换的角度",
       "设置变换的大小",
-      "设置变换的方向"
+      "设置变换的角度",
+      "设置变换的方向",
+      "设置变换的原点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-656",
     "title": "transform-origin的默认值是？",
     "options": [
-      "50% 50% 0",
+      "left top",
       "0 0 0",
-      "100% 100%",
-      "left top"
+      "50% 50% 0",
+      "100% 100%"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-657",
@@ -80,21 +80,21 @@
     "id": "css-658",
     "title": "perspective属性的作用是？",
     "options": [
-      "设置3D变换的透视效果",
-      "设置2D变换",
       "设置透明度",
-      "设置位置"
+      "设置2D变换",
+      "设置位置",
+      "设置3D变换的透视效果"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-659",
     "title": "perspective值越小效果如何？",
     "options": [
       "透视效果越强烈（近大远小明显）",
-      "透视效果越弱",
       "没有影响",
-      "变成2D"
+      "变成2D",
+      "透视效果越弱"
     ],
     "correctAnswer": 0
   },
@@ -102,54 +102,54 @@
     "id": "css-660",
     "title": "perspective-origin属性的作用是？",
     "options": [
+      "设置位置",
       "设置透视的消失点",
       "设置变换原点",
-      "设置透明度",
-      "设置位置"
+      "设置透明度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-661",
     "title": "transform-style: preserve-3d的作用是？",
     "options": [
-      "子元素保留3D位置",
-      "子元素扁平化",
       "隐藏子元素",
-      "固定子元素"
+      "子元素扁平化",
+      "固定子元素",
+      "子元素保留3D位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-662",
     "title": "backface-visibility属性的作用是？",
     "options": [
-      "设置元素背面是否可见",
-      "设置正面可见性",
       "设置透明度",
-      "设置位置"
+      "设置正面可见性",
+      "设置位置",
+      "设置元素背面是否可见"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-663",
     "title": "backface-visibility: hidden常用于？",
     "options": [
-      "3D翻转效果隐藏背面",
       "2D动画",
       "颜色变化",
+      "3D翻转效果隐藏背面",
       "大小变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-664",
     "title": "transform: rotateX(45deg)的作用是？",
     "options": [
       "绕X轴旋转45度",
+      "2D旋转",
       "绕Y轴旋转",
-      "绕Z轴旋转",
-      "2D旋转"
+      "绕Z轴旋转"
     ],
     "correctAnswer": 0
   },
@@ -157,43 +157,43 @@
     "id": "css-665",
     "title": "transform: rotateY(45deg)的作用是？",
     "options": [
-      "绕Y轴旋转45度",
-      "绕X轴旋转",
+      "2D旋转",
       "绕Z轴旋转",
-      "2D旋转"
+      "绕Y轴旋转45度",
+      "绕X轴旋转"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-666",
     "title": "transform: rotateZ(45deg)的作用是？",
     "options": [
-      "绕Z轴旋转45度（等同于2D旋转）",
+      "3D旋转",
       "绕X轴旋转",
       "绕Y轴旋转",
-      "3D旋转"
+      "绕Z轴旋转45度（等同于2D旋转）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-667",
     "title": "transform: translate3d(10px, 20px, 30px)的作用是？",
     "options": [
-      "3D移动元素",
       "2D移动",
-      "3D旋转",
-      "3D缩放"
+      "3D移动元素",
+      "3D缩放",
+      "3D旋转"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-668",
     "title": "transform: translateZ(50px)的作用是？",
     "options": [
       "沿Z轴移动元素（靠近观察者）",
+      "2D移动",
       "沿X轴移动",
-      "沿Y轴移动",
-      "2D移动"
+      "沿Y轴移动"
     ],
     "correctAnswer": 0
   },
@@ -201,53 +201,53 @@
     "id": "css-669",
     "title": "transform: scale3d(2, 2, 2)的作用是？",
     "options": [
-      "3D缩放元素",
-      "2D缩放",
       "3D旋转",
-      "3D移动"
+      "3D缩放元素",
+      "3D移动",
+      "2D缩放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-670",
     "title": "transform: rotate3d(1, 1, 0, 45deg)的作用是？",
     "options": [
-      "绕指定轴3D旋转",
       "2D旋转",
+      "3D缩放",
       "3D移动",
-      "3D缩放"
+      "绕指定轴3D旋转"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-671",
     "title": "will-change属性的作用是？",
     "options": [
-      "提示浏览器元素将要变化以优化性能",
       "改变元素",
       "隐藏元素",
+      "提示浏览器元素将要变化以优化性能",
       "移动元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-672",
     "title": "will-change的常见值是？",
     "options": [
-      "transform, opacity, scroll-position",
       "color, background",
-      "display, position",
-      "width, height"
+      "width, height",
+      "transform, opacity, scroll-position",
+      "display, position"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-673",
     "title": "过度使用will-change会导致？",
     "options": [
       "内存占用增加，反而不利于性能",
-      "性能提升",
       "没有影响",
+      "性能提升",
       "代码错误"
     ],
     "correctAnswer": 0
@@ -256,76 +256,76 @@
     "id": "css-674",
     "title": "如何实现CSS性能优化？",
     "options": [
-      "使用transform代替top/left、will-change、减少重排重绘",
+      "增加属性",
       "增加动画",
       "增加选择器",
-      "增加属性"
+      "使用transform代替top/left、will-change、减少重排重绘"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-675",
     "title": "如何实现硬件加速？",
     "options": [
-      "transform: translateZ(0)或will-change: transform",
-      "增加内存",
       "增加CPU",
+      "增加内存",
+      "transform: translateZ(0)或will-change: transform",
       "增加带宽"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-676",
     "title": "硬件加速的原理是？",
     "options": [
-      "将元素提升到GPU合成层渲染",
+      "增加带宽",
       "增加CPU计算",
-      "增加内存",
-      "增加带宽"
+      "将元素提升到GPU合成层渲染",
+      "增加内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-677",
     "title": "如何避免动画卡顿？",
     "options": [
-      "使用transform和opacity、避免布局属性动画",
       "增加动画时间",
-      "减少颜色",
-      "增加大小"
+      "增加大小",
+      "使用transform和opacity、避免布局属性动画",
+      "减少颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-678",
     "title": "requestAnimationFrame与CSS动画的区别？",
     "options": [
-      "CSS动画在合成线程执行，JS动画在主线程",
+      "CSS动画更灵活",
       "没有区别",
-      "JS动画性能更好",
-      "CSS动画更灵活"
+      "CSS动画在合成线程执行，JS动画在主线程",
+      "JS动画性能更好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-679",
     "title": "如何实现页面加载动画？",
     "options": [
+      "opacity",
       "animation配合@keyframes",
-      "transition",
       "transform",
-      "opacity"
+      "transition"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-680",
     "title": "如何实现滚动触发动画？",
     "options": [
       "Intersection Observer或scroll事件",
+      "active",
       "hover",
-      "focus",
-      "active"
+      "focus"
     ],
     "correctAnswer": 0
   },
@@ -333,34 +333,34 @@
     "id": "css-681",
     "title": "如何实现鼠标跟随动画？",
     "options": [
+      "focus",
       "mousemove事件修改CSS变量",
       "hover",
-      "focus",
       "active"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-682",
     "title": "如何实现打字机效果？",
     "options": [
-      "steps()动画配合width/overflow",
       "transition",
-      "transform",
-      "opacity"
+      "steps()动画配合width/overflow",
+      "opacity",
+      "transform"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-683",
     "title": "如何实现数字滚动效果？",
     "options": [
+      "opacity",
       "transform: translateY配合steps()",
       "transition",
-      "opacity",
       "color"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-684",
@@ -368,8 +368,8 @@
     "options": [
       "width或transform: scaleX动画",
       "transition",
-      "opacity",
-      "color"
+      "color",
+      "opacity"
     ],
     "correctAnswer": 0
   },
@@ -377,42 +377,42 @@
     "id": "css-685",
     "title": "如何实现骨架屏闪烁效果？",
     "options": [
-      "background渐变配合animation移动",
+      "display",
       "opacity",
-      "visibility",
-      "display"
+      "background渐变配合animation移动",
+      "visibility"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-686",
     "title": "如何实现手风琴动画？",
     "options": [
-      "max-height过渡或grid布局",
-      "width过渡",
+      "color过渡",
       "opacity过渡",
-      "color过渡"
+      "width过渡",
+      "max-height过渡或grid布局"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-687",
     "title": "如何实现抽屉动画？",
     "options": [
+      "opacity过渡",
       "transform: translateX过渡",
       "width过渡",
-      "opacity过渡",
       "color过渡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-688",
     "title": "如何实现模态框动画？",
     "options": [
       "opacity和transform: scale过渡",
-      "width过渡",
       "height过渡",
+      "width过渡",
       "color过渡"
     ],
     "correctAnswer": 0
@@ -421,32 +421,32 @@
     "id": "css-689",
     "title": "如何实现Toast动画？",
     "options": [
-      "opacity和transform: translateY过渡",
-      "width过渡",
       "height过渡",
-      "color过渡"
+      "opacity和transform: translateY过渡",
+      "color过渡",
+      "width过渡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-690",
     "title": "如何实现轮播图动画？",
     "options": [
-      "transform: translateX动画",
-      "width动画",
       "height动画",
-      "opacity动画"
+      "width动画",
+      "opacity动画",
+      "transform: translateX动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-691",
     "title": "如何实现3D翻转动画？",
     "options": [
       "transform: rotateY配合backface-visibility",
+      "translate",
       "rotateX",
-      "scale",
-      "translate"
+      "scale"
     ],
     "correctAnswer": 0
   },
@@ -454,20 +454,20 @@
     "id": "css-692",
     "title": "如何实现卡片翻转效果？",
     "options": [
-      "transform-style: preserve-3d和rotateY",
-      "rotateX",
       "scale",
-      "translate"
+      "transform-style: preserve-3d和rotateY",
+      "translate",
+      "rotateX"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-693",
     "title": "如何实现果冻效果？",
     "options": [
       "scale弹跳cubic-bezier",
-      "linear",
       "ease-in",
+      "linear",
       "ease-out"
     ],
     "correctAnswer": 0
@@ -476,23 +476,23 @@
     "id": "css-694",
     "title": "如何实现摇摆效果？",
     "options": [
-      "rotate来回animation",
       "scale",
-      "translate",
-      "skew"
+      "skew",
+      "rotate来回animation",
+      "translate"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-695",
     "title": "如何实现脉冲效果？",
     "options": [
-      "scale交替animation",
-      "rotate",
       "translate",
+      "rotate",
+      "scale交替animation",
       "skew"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-696",
@@ -520,12 +520,12 @@
     "id": "css-698",
     "title": "如何实现旋转加载动画？",
     "options": [
-      "rotate 360度无限循环animation",
-      "translate",
       "scale",
-      "skew"
+      "skew",
+      "rotate 360度无限循环animation",
+      "translate"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-699",
@@ -542,11 +542,11 @@
     "id": "css-700",
     "title": "如何实现渐变加载动画？",
     "options": [
+      "rotate",
       "background-position移动animation",
-      "opacity",
       "scale",
-      "rotate"
+      "opacity"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

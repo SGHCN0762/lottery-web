@@ -3,21 +3,21 @@
     "id": "python-651",
     "title": "Python中smtplib的作用是？",
     "options": [
-      "发送邮件",
       "接收邮件",
+      "以上都不对",
       "解析邮件",
-      "以上都不对"
+      "发送邮件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-652",
     "title": "Python中poplib的作用是？",
     "options": [
-      "发送邮件",
-      "接收邮件",
       "解析邮件",
-      "以上都不对"
+      "接收邮件",
+      "以上都不对",
+      "发送邮件"
     ],
     "correctAnswer": 1
   },
@@ -25,31 +25,31 @@
     "id": "python-653",
     "title": "Python中imaplib的作用是？",
     "options": [
-      "发送邮件",
-      "接收邮件",
       "解析邮件",
-      "以上都不对"
+      "发送邮件",
+      "以上都不对",
+      "接收邮件"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-654",
     "title": "Python中email模块的作用是？",
     "options": [
+      "以上都不对",
       "发送邮件",
       "接收邮件",
-      "构建解析邮件",
-      "以上都不对"
+      "构建解析邮件"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-655",
     "title": "Python中如何操作FTP？",
     "options": [
       "ftplib",
-      "ftplib",
       "以上都不对",
+      "ftplib",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -58,34 +58,34 @@
     "id": "python-656",
     "title": "Python中如何操作SSH？",
     "options": [
-      "paramiko",
-      "sshlib",
       "以上都不对",
-      "以上都不对"
+      "paramiko",
+      "以上都不对",
+      "sshlib"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-657",
     "title": "Python中如何进行DNS查询？",
     "options": [
       "dnspython",
-      "dnslib",
       "以上都可以",
-      "以上都不对"
+      "以上都不对",
+      "dnslib"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-658",
     "title": "Python中如何抓取网络包？",
     "options": [
-      "scapy",
-      "pyshark",
       "以上都可以",
+      "pyshark",
+      "scapy",
       "以上都不对"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-659",
@@ -102,65 +102,65 @@
     "id": "python-660",
     "title": "Python中BeautifulSoup的作用是？",
     "options": [
-      "解析HTML",
-      "发送请求",
       "存储数据",
-      "以上都不对"
+      "以上都不对",
+      "解析HTML",
+      "发送请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-661",
     "title": "Python中lxml的作用是？",
     "options": [
-      "解析HTML/XML",
       "发送请求",
-      "存储数据",
-      "以上都不对"
+      "以上都不对",
+      "解析HTML/XML",
+      "存储数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-662",
     "title": "Python中scrapy的作用是？",
     "options": [
-      "爬虫框架",
       "Web框架",
+      "以上都不对",
       "数据处理",
-      "以上都不对"
+      "爬虫框架"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-663",
     "title": "Python中selenium的作用是？",
     "options": [
-      "浏览器自动化",
+      "以上都不对",
       "爬虫框架",
       "Web框架",
-      "以上都不对"
+      "浏览器自动化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-664",
     "title": "Python中pymysql的作用是？",
     "options": [
+      "以上都不对",
       "MySQL客户端",
       "PostgreSQL客户端",
-      "SQLite客户端",
-      "以上都不对"
+      "SQLite客户端"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-665",
     "title": "Python中psycopg2的作用是？",
     "options": [
-      "MySQL客户端",
-      "PostgreSQL客户端",
       "SQLite客户端",
-      "以上都不对"
+      "PostgreSQL客户端",
+      "以上都不对",
+      "MySQL客户端"
     ],
     "correctAnswer": 1
   },
@@ -168,8 +168,8 @@
     "id": "python-666",
     "title": "Python中sqlite3的作用是？",
     "options": [
-      "MySQL客户端",
       "PostgreSQL客户端",
+      "MySQL客户端",
       "SQLite客户端",
       "以上都不对"
     ],
@@ -179,20 +179,20 @@
     "id": "python-667",
     "title": "Python中SQLAlchemy的作用是？",
     "options": [
-      "ORM框架",
+      "以上都不对",
       "数据库驱动",
-      "SQL解析器",
-      "以上都不对"
+      "ORM框架",
+      "SQL解析器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-668",
     "title": "Python中Django ORM的作用是？",
     "options": [
       "ORM框架",
-      "数据库驱动",
       "SQL解析器",
+      "数据库驱动",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -201,12 +201,12 @@
     "id": "python-669",
     "title": "Python中MongoDB的客户端是？",
     "options": [
-      "pymongo",
+      "以上都不对",
       "mongodb",
       "以上都不对",
-      "以上都不对"
+      "pymongo"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-670",
@@ -223,23 +223,23 @@
     "id": "python-671",
     "title": "Python中如何连接数据库？",
     "options": [
-      "创建连接对象",
+      "以上都不对",
       "直接操作",
       "以上都不对",
-      "以上都不对"
+      "创建连接对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-672",
     "title": "Python中如何执行SQL？",
     "options": [
-      "cursor.execute()",
       "db.execute()",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "cursor.execute()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-673",
@@ -256,21 +256,21 @@
     "id": "python-674",
     "title": "Python中如何获取一条结果？",
     "options": [
-      "cursor.fetchone()",
-      "cursor.get_one()",
       "以上都不对",
-      "以上都不对"
+      "cursor.fetchone()",
+      "以上都不对",
+      "cursor.get_one()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-675",
     "title": "Python中如何防止SQL注入？",
     "options": [
       "参数化查询",
-      "字符串拼接",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "字符串拼接"
     ],
     "correctAnswer": 0
   },
@@ -278,23 +278,23 @@
     "id": "python-676",
     "title": "Python中如何使用事务？",
     "options": [
-      "commit()和rollback()",
       "save()和undo()",
+      "commit()和rollback()",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-677",
     "title": "Python中如何使用连接池？",
     "options": [
-      "DBUtils, SQLAlchemy",
-      "直接创建",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "直接创建",
+      "DBUtils, SQLAlchemy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-678",
@@ -302,8 +302,8 @@
     "options": [
       "数值计算",
       "数据分析",
-      "机器学习",
-      "以上都不对"
+      "以上都不对",
+      "机器学习"
     ],
     "correctAnswer": 0
   },
@@ -311,31 +311,31 @@
     "id": "python-679",
     "title": "Python中numpy的ndarray特点是？",
     "options": [
-      "多维数组，同类型",
-      "多维数组，不同类型",
       "一维数组，同类型",
-      "以上都不对"
+      "多维数组，不同类型",
+      "以上都不对",
+      "多维数组，同类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-680",
     "title": "Python中numpy的广播机制是指？",
     "options": [
-      "不同形状数组运算",
-      "广播消息",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "广播消息",
+      "不同形状数组运算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-681",
     "title": "Python中pandas的作用是？",
     "options": [
       "数据分析",
-      "数值计算",
       "机器学习",
+      "数值计算",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -345,8 +345,8 @@
     "title": "Python中pandas的Series是？",
     "options": [
       "一维数据结构",
-      "二维数据结构",
       "三维数据结构",
+      "二维数据结构",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -355,23 +355,23 @@
     "id": "python-683",
     "title": "Python中pandas的DataFrame是？",
     "options": [
-      "一维数据结构",
-      "二维数据结构",
       "三维数据结构",
-      "以上都不对"
+      "以上都不对",
+      "二维数据结构",
+      "一维数据结构"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-684",
     "title": "Python中pandas如何读取CSV？",
     "options": [
-      "read_csv()",
       "load_csv()",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "read_csv()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-685",
@@ -388,43 +388,43 @@
     "id": "python-686",
     "title": "Python中pandas如何分组？",
     "options": [
-      "groupby()",
-      "group()",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "group()",
+      "groupby()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-687",
     "title": "Python中pandas如何合并？",
     "options": [
+      "以上都不对",
       "merge(), concat()",
       "join(), combine()",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-688",
     "title": "Python中matplotlib的作用是？",
     "options": [
-      "数据可视化",
       "数据分析",
+      "数据可视化",
       "数值计算",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-689",
     "title": "Python中如何绘制折线图？",
     "options": [
       "plot()",
-      "line()",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "line()"
     ],
     "correctAnswer": 0
   },
@@ -432,121 +432,121 @@
     "id": "python-690",
     "title": "Python中如何绘制柱状图？",
     "options": [
-      "bar()",
       "hist()",
+      "bar()",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-691",
     "title": "Python中如何绘制散点图？",
     "options": [
-      "scatter()",
-      "point()",
       "以上都不对",
+      "point()",
+      "scatter()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-692",
     "title": "Python中如何绘制饼图？",
     "options": [
-      "pie()",
       "circle()",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "pie()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-693",
     "title": "Python中seaborn的作用是？",
     "options": [
-      "统计可视化",
-      "基础绘图",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "基础绘图",
+      "统计可视化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-694",
     "title": "Python中plotly的作用是？",
     "options": [
-      "交互式可视化",
-      "静态可视化",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "静态可视化",
+      "交互式可视化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-695",
     "title": "Python中bokeh的作用是？",
     "options": [
-      "交互式可视化",
-      "静态可视化",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "静态可视化",
+      "交互式可视化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-696",
     "title": "Python中如何处理日期时间数据？",
     "options": [
-      "datetime, pandas.to_datetime",
       "time, date",
       "以上都不对",
+      "datetime, pandas.to_datetime",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-697",
     "title": "Python中如何处理分类数据？",
     "options": [
       "pandas.Categorical",
+      "以上都不对",
       "category类型",
-      "以上都可以",
-      "以上都不对"
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-698",
     "title": "Python中如何处理时间序列？",
     "options": [
-      "pandas时间序列功能",
+      "以上都不对",
       "time模块",
       "以上都不对",
-      "以上都不对"
+      "pandas时间序列功能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-699",
     "title": "Python中如何进行数据透视？",
     "options": [
-      "pivot_table()",
       "pivot()",
-      "以上都可以",
-      "以上都不对"
+      "以上都不对",
+      "pivot_table()",
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-700",
     "title": "Python中如何进行数据重塑？",
     "options": [
-      "stack(), unstack()",
       "reshape()",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "stack(), unstack()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

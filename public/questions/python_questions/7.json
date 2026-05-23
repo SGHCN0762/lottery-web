@@ -3,120 +3,120 @@
     "id": "python-301",
     "title": "Python中logging的级别有？",
     "options": [
+      "以上都不对",
       "DEBUG, INFO, WARNING, ERROR, CRITICAL",
       "LOG, WARN, FATAL",
-      "TRACE, DEBUG",
-      "以上都不对"
+      "TRACE, DEBUG"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-302",
     "title": "Python中logging的默认级别是？",
     "options": [
-      "DEBUG",
-      "INFO",
+      "ERROR",
       "WARNING",
-      "ERROR"
+      "DEBUG",
+      "INFO"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-303",
     "title": "Python中argparse模块的作用是？",
     "options": [
-      "命令行参数解析",
       "环境变量解析",
       "配置文件解析",
-      "URL参数解析"
+      "URL参数解析",
+      "命令行参数解析"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-304",
     "title": "Python中configparser模块的作用是？",
     "options": [
-      "命令行参数解析",
-      "环境变量解析",
       "INI配置文件解析",
-      "URL参数解析"
+      "环境变量解析",
+      "URL参数解析",
+      "命令行参数解析"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-305",
     "title": "Python中os.path模块的作用是？",
     "options": [
-      "路径操作",
-      "文件操作",
       "目录操作",
+      "文件操作",
+      "路径操作",
       "系统操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-306",
     "title": "Python中os.path.join()的作用是？",
     "options": [
+      "获取绝对路径",
       "连接路径",
       "分割路径",
-      "获取绝对路径",
       "获取相对路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-307",
     "title": "Python中os.path.exists()的作用是？",
     "options": [
-      "判断路径是否存在",
-      "判断是否为文件",
+      "获取文件大小",
       "判断是否为目录",
-      "获取文件大小"
+      "判断路径是否存在",
+      "判断是否为文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-308",
     "title": "Python中os.path.isfile()的作用是？",
     "options": [
+      "获取文件大小",
       "判断路径是否存在",
       "判断是否为文件",
-      "判断是否为目录",
-      "获取文件大小"
+      "判断是否为目录"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-309",
     "title": "Python中os.path.isdir()的作用是？",
     "options": [
-      "判断路径是否存在",
-      "判断是否为文件",
+      "获取文件大小",
       "判断是否为目录",
-      "获取文件大小"
+      "判断路径是否存在",
+      "判断是否为文件"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-310",
     "title": "Python中os.path.basename()的作用是？",
     "options": [
+      "获取绝对路径",
       "获取目录名",
-      "获取文件名",
       "获取扩展名",
-      "获取绝对路径"
+      "获取文件名"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "python-311",
     "title": "Python中os.path.dirname()的作用是？",
     "options": [
       "获取目录名",
+      "获取绝对路径",
       "获取文件名",
-      "获取扩展名",
-      "获取绝对路径"
+      "获取扩展名"
     ],
     "correctAnswer": 0
   },
@@ -124,21 +124,21 @@
     "id": "python-312",
     "title": "Python中os.path.splitext()的作用是？",
     "options": [
-      "获取目录名",
-      "获取文件名",
       "分割扩展名",
-      "获取绝对路径"
+      "获取目录名",
+      "获取绝对路径",
+      "获取文件名"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-313",
     "title": "Python中os.path.abspath()的作用是？",
     "options": [
       "获取绝对路径",
-      "获取相对路径",
+      "获取符号链接路径",
       "获取规范路径",
-      "获取符号链接路径"
+      "获取相对路径"
     ],
     "correctAnswer": 0
   },
@@ -148,8 +148,8 @@
     "options": [
       "高级文件操作",
       "低级文件操作",
-      "路径操作",
-      "系统操作"
+      "系统操作",
+      "路径操作"
     ],
     "correctAnswer": 0
   },
@@ -159,8 +159,8 @@
     "options": [
       "复制文件内容",
       "复制文件内容和权限",
-      "复制目录",
-      "移动文件"
+      "移动文件",
+      "复制目录"
     ],
     "correctAnswer": 0
   },
@@ -168,21 +168,21 @@
     "id": "python-316",
     "title": "Python中shutil.copy2()的作用是？",
     "options": [
-      "复制文件内容",
-      "复制文件内容和元数据",
       "复制目录",
-      "移动文件"
+      "移动文件",
+      "复制文件内容和元数据",
+      "复制文件内容"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-317",
     "title": "Python中shutil.copytree()的作用是？",
     "options": [
-      "复制文件内容",
       "复制文件内容和权限",
+      "移动文件",
       "复制目录树",
-      "移动文件"
+      "复制文件内容"
     ],
     "correctAnswer": 2
   },
@@ -190,76 +190,76 @@
     "id": "python-318",
     "title": "Python中shutil.rmtree()的作用是？",
     "options": [
-      "删除文件",
-      "删除空目录",
+      "移动文件",
       "删除目录树",
-      "移动文件"
+      "删除文件",
+      "删除空目录"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-319",
     "title": "Python中shutil.move()的作用是？",
     "options": [
+      "移动文件或目录",
       "复制文件内容",
       "复制文件内容和权限",
-      "复制目录",
-      "移动文件或目录"
+      "复制目录"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-320",
     "title": "Python中tempfile模块的作用是？",
     "options": [
+      "路径操作",
       "临时文件操作",
       "永久文件操作",
-      "路径操作",
       "系统操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-321",
     "title": "Python中glob模块的作用是？",
     "options": [
-      "文件模式匹配",
-      "正则匹配",
       "字符串匹配",
-      "路径匹配"
+      "文件模式匹配",
+      "路径匹配",
+      "正则匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-322",
     "title": "Python中glob.glob()的返回值是？",
     "options": [
-      "列表",
-      "迭代器",
       "生成器",
-      "元组"
+      "元组",
+      "迭代器",
+      "列表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-323",
     "title": "Python中fnmatch模块的作用是？",
     "options": [
+      "路径匹配",
       "文件名匹配",
       "正则匹配",
-      "字符串匹配",
-      "路径匹配"
+      "字符串匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-324",
     "title": "Python中stat模块的作用是？",
     "options": [
       "文件状态",
-      "文件操作",
+      "系统操作",
       "目录操作",
-      "系统操作"
+      "文件操作"
     ],
     "correctAnswer": 0
   },
@@ -267,98 +267,98 @@
     "id": "python-325",
     "title": "Python中pathlib模块的作用是？",
     "options": [
-      "面向对象的路径操作",
       "函数式路径操作",
+      "系统操作",
       "低级路径操作",
-      "系统操作"
+      "面向对象的路径操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-326",
     "title": "Python中Path对象的/操作符作用是？",
     "options": [
-      "连接路径",
-      "分割路径",
       "获取绝对路径",
-      "获取相对路径"
+      "连接路径",
+      "获取相对路径",
+      "分割路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-327",
     "title": "Python中Path.read_text()的作用是？",
     "options": [
-      "读取文本文件",
+      "写入二进制文件",
       "读取二进制文件",
       "写入文本文件",
-      "写入二进制文件"
+      "读取文本文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-328",
     "title": "Python中Path.write_text()的作用是？",
     "options": [
       "读取文本文件",
-      "读取二进制文件",
       "写入文本文件",
+      "读取二进制文件",
       "写入二进制文件"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-329",
     "title": "Python中io模块的作用是？",
     "options": [
-      "输入输出流",
       "文件操作",
       "目录操作",
-      "系统操作"
+      "系统操作",
+      "输入输出流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-330",
     "title": "Python中io.StringIO的作用是？",
     "options": [
-      "内存字符串缓冲",
       "内存字节缓冲",
+      "网络缓冲",
       "文件缓冲",
-      "网络缓冲"
+      "内存字符串缓冲"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-331",
     "title": "Python中io.BytesIO的作用是？",
     "options": [
+      "文件缓冲",
       "内存字符串缓冲",
       "内存字节缓冲",
-      "文件缓冲",
       "网络缓冲"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-332",
     "title": "Python中sys.stdin的作用是？",
     "options": [
+      "标准错误",
       "标准输入",
       "标准输出",
-      "标准错误",
       "标准日志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-333",
     "title": "Python中sys.stdout的作用是？",
     "options": [
-      "标准输入",
-      "标准输出",
       "标准错误",
-      "标准日志"
+      "标准输出",
+      "标准日志",
+      "标准输入"
     ],
     "correctAnswer": 1
   },
@@ -366,10 +366,10 @@
     "id": "python-334",
     "title": "Python中sys.stderr的作用是？",
     "options": [
+      "标准日志",
       "标准输入",
-      "标准输出",
       "标准错误",
-      "标准日志"
+      "标准输出"
     ],
     "correctAnswer": 2
   },
@@ -377,23 +377,23 @@
     "id": "python-335",
     "title": "Python中time模块的作用是？",
     "options": [
+      "时区操作",
       "时间操作",
-      "日期操作",
       "日历操作",
-      "时区操作"
+      "日期操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-336",
     "title": "Python中time.time()的返回值是？",
     "options": [
-      "时间戳",
-      "时间元组",
       "时间字符串",
+      "时间元组",
+      "时间戳",
       "时间对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-337",
@@ -401,8 +401,8 @@
     "options": [
       "格式化时间",
       "解析时间",
-      "获取时间戳",
-      "获取时间元组"
+      "获取时间元组",
+      "获取时间戳"
     ],
     "correctAnswer": 0
   },
@@ -410,76 +410,76 @@
     "id": "python-338",
     "title": "Python中time.strptime()的作用是？",
     "options": [
-      "格式化时间",
       "解析时间",
-      "获取时间戳",
-      "获取时间元组"
+      "获取时间元组",
+      "格式化时间",
+      "获取时间戳"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-339",
     "title": "Python中datetime模块的作用是？",
     "options": [
       "时间操作",
-      "日期时间操作",
       "日历操作",
+      "日期时间操作",
       "时区操作"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-340",
     "title": "Python中datetime.date的作用是？",
     "options": [
-      "表示日期",
-      "表示时间",
       "表示日期时间",
-      "表示时间差"
+      "表示时间",
+      "表示时间差",
+      "表示日期"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-341",
     "title": "Python中datetime.time的作用是？",
     "options": [
+      "表示日期时间",
       "表示日期",
       "表示时间",
-      "表示日期时间",
-      "表示时间差"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": "python-342",
-    "title": "Python中datetime.datetime的作用是？",
-    "options": [
-      "表示日期",
-      "表示时间",
-      "表示日期时间",
       "表示时间差"
     ],
     "correctAnswer": 2
   },
   {
+    "id": "python-342",
+    "title": "Python中datetime.datetime的作用是？",
+    "options": [
+      "表示时间",
+      "表示时间差",
+      "表示日期",
+      "表示日期时间"
+    ],
+    "correctAnswer": 3
+  },
+  {
     "id": "python-343",
     "title": "Python中datetime.timedelta的作用是？",
     "options": [
-      "表示日期",
-      "表示时间",
       "表示日期时间",
-      "表示时间差"
+      "表示时间差",
+      "表示日期",
+      "表示时间"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "python-344",
     "title": "Python中calendar模块的作用是？",
     "options": [
+      "时区操作",
       "时间操作",
-      "日期操作",
       "日历操作",
-      "时区操作"
+      "日期操作"
     ],
     "correctAnswer": 2
   },
@@ -488,9 +488,9 @@
     "title": "Python中random.seed()的作用是？",
     "options": [
       "设置随机种子",
+      "排序随机数",
       "获取随机数",
-      "生成随机数",
-      "排序随机数"
+      "生成随机数"
     ],
     "correctAnswer": 0
   },
@@ -498,32 +498,32 @@
     "id": "python-346",
     "title": "Python中math模块的作用是？",
     "options": [
-      "数学运算",
-      "随机数",
       "时间操作",
-      "系统操作"
+      "系统操作",
+      "随机数",
+      "数学运算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-347",
     "title": "Python中math.ceil()的作用是？",
     "options": [
-      "向上取整",
-      "向下取整",
       "四舍五入",
-      "绝对值"
+      "向上取整",
+      "绝对值",
+      "向下取整"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-348",
     "title": "Python中math.floor()的作用是？",
     "options": [
-      "向上取整",
-      "向下取整",
       "四舍五入",
-      "绝对值"
+      "向下取整",
+      "绝对值",
+      "向上取整"
     ],
     "correctAnswer": 1
   },
@@ -531,22 +531,22 @@
     "id": "python-349",
     "title": "Python中math.sqrt()的作用是？",
     "options": [
-      "平方",
       "开方",
       "幂运算",
-      "对数"
+      "对数",
+      "平方"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-350",
     "title": "Python中cmath模块的作用是？",
     "options": [
-      "实数数学运算",
-      "复数数学运算",
+      "时间操作",
       "随机数",
-      "时间操作"
+      "复数数学运算",
+      "实数数学运算"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   }
 ]

@@ -3,64 +3,64 @@
     "id": "python-901",
     "title": "Python中如何进行变更日志？",
     "options": [
-      "CHANGELOG.md",
-      "commit log",
       "以上都不对",
-      "以上都不对"
+      "CHANGELOG.md",
+      "以上都不对",
+      "commit log"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-902",
     "title": "Python中如何进行代码审查？",
     "options": [
-      "Pull Request",
-      "邮件",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "Pull Request",
+      "邮件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-903",
     "title": "Python中如何进行知识分享？",
     "options": [
+      "以上都不对",
       "文档，培训，代码",
       "不分享",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-904",
     "title": "Python中如何进行项目管理？",
     "options": [
-      "敏捷，看板",
-      "瀑布",
       "以上都不对",
+      "瀑布",
+      "敏捷，看板",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-905",
     "title": "Python中如何进行需求管理？",
     "options": [
+      "以上都不对",
       "用户故事，任务",
       "不管理",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-906",
     "title": "Python中如何进行缺陷管理？",
     "options": [
       "Issue，Bug追踪",
-      "不管理",
       "以上都不对",
+      "不管理",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -69,64 +69,64 @@
     "id": "python-907",
     "title": "Python中如何进行技术债务管理？",
     "options": [
-      "识别，计划，偿还",
       "忽略",
+      "识别，计划，偿还",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-908",
     "title": "Python中如何进行架构演进？",
     "options": [
+      "以上都不对",
       "渐进式重构",
       "推翻重来",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-909",
     "title": "Python中如何进行团队协作？",
     "options": [
-      "规范，工具，沟通",
-      "各自开发",
       "以上都不对",
-      "以上都不对"
+      "规范，工具，沟通",
+      "以上都不对",
+      "各自开发"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-910",
     "title": "Python中如何进行代码规范？",
     "options": [
-      "PEP 8，lint",
       "不规范",
+      "PEP 8，lint",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-911",
     "title": "Python中如何进行错误处理？",
     "options": [
-      "异常，错误码",
-      "忽略",
       "以上都不对",
+      "忽略",
+      "异常，错误码",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-912",
     "title": "Python中如何进行日志记录？",
     "options": [
       "logging模块",
-      "print",
       "以上都不对",
+      "print",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -135,174 +135,174 @@
     "id": "python-913",
     "title": "Python中如何进行配置管理？",
     "options": [
-      "配置文件，环境变量",
-      "硬编码",
       "以上都不对",
+      "硬编码",
+      "配置文件，环境变量",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-914",
     "title": "Python中如何进行密钥管理？",
     "options": [
+      "以上都不对",
       "环境变量，密钥管理服务",
       "代码中",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-915",
     "title": "Python中如何进行国际化？",
     "options": [
-      "gettext",
+      "以上都不对",
       "i18n",
-      "以上都可以",
-      "以上都不对"
+      "gettext",
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-916",
     "title": "Python中gettext的作用是？",
     "options": [
-      "国际化",
-      "本地化",
       "以上都不对",
-      "以上都不对"
+      "国际化",
+      "以上都不对",
+      "本地化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-917",
     "title": "Python中如何进行本地化？",
     "options": [
-      "gettext",
+      "以上都不对",
       "l10n",
-      "以上都可以",
-      "以上都不对"
+      "gettext",
+      "以上都可以"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-918",
     "title": "Python中如何进行字符编码处理？",
     "options": [
-      "encode, decode",
-      "不处理",
       "以上都不对",
-      "以上都不对"
+      "encode, decode",
+      "以上都不对",
+      "不处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-919",
     "title": "Python3默认编码是？",
     "options": [
-      "UTF-8",
-      "GBK",
+      "以上都不对",
       "ASCII",
-      "以上都不对"
+      "GBK",
+      "UTF-8"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-920",
     "title": "Python中如何处理Unicode错误？",
     "options": [
-      "errors参数",
       "忽略",
+      "errors参数",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-921",
     "title": "Python中如何进行数据验证？",
     "options": [
+      "以上都不对",
       "pydantic, jsonschema",
       "不验证",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-922",
     "title": "Python中pydantic的作用是？",
     "options": [
-      "数据验证",
-      "ORM",
       "以上都不对",
-      "以上都不对"
+      "数据验证",
+      "以上都不对",
+      "ORM"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-923",
     "title": "Python中jsonschema的作用是？",
     "options": [
       "JSON验证",
-      "数据验证",
       "以上都可以",
+      "数据验证",
       "以上都不对"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-924",
     "title": "Python中如何进行API设计？",
     "options": [
-      "REST, GraphQL",
       "RPC",
       "以上都可以",
+      "REST, GraphQL",
       "以上都不对"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-925",
     "title": "Python中RESTful API的特点是？",
     "options": [
+      "以上都不对",
       "资源导向，HTTP动词",
       "动作导向",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-926",
     "title": "Python中GraphQL的特点是？",
     "options": [
-      "按需查询",
-      "固定返回",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "固定返回",
+      "按需查询"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-927",
     "title": "Python中如何进行API文档？",
     "options": [
-      "OpenAPI, Swagger",
+      "以上都不对",
       "Word",
       "以上都不对",
-      "以上都不对"
+      "OpenAPI, Swagger"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-928",
     "title": "Python中如何进行API版本管理？",
     "options": [
       "URL路径，Header",
-      "不管理",
       "以上都不对",
+      "不管理",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -311,20 +311,20 @@
     "id": "python-929",
     "title": "Python中如何进行API限流？",
     "options": [
-      "令牌桶，漏桶",
+      "以上都不对",
       "不限流",
       "以上都不对",
-      "以上都不对"
+      "令牌桶，漏桶"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-930",
     "title": "Python中如何进行API认证？",
     "options": [
       "JWT, OAuth",
-      "无认证",
       "以上都不对",
+      "无认证",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -334,9 +334,9 @@
     "title": "Python中JWT的作用是？",
     "options": [
       "令牌认证",
-      "加密",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "加密"
     ],
     "correctAnswer": 0
   },
@@ -345,8 +345,8 @@
     "title": "Python中OAuth的作用是？",
     "options": [
       "授权框架",
-      "认证",
       "以上都不对",
+      "认证",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -355,31 +355,31 @@
     "id": "python-933",
     "title": "Python中如何进行API缓存？",
     "options": [
-      "Redis, ETag",
-      "不缓存",
       "以上都不对",
-      "以上都不对"
+      "Redis, ETag",
+      "以上都不对",
+      "不缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-934",
     "title": "Python中如何进行API监控？",
     "options": [
-      "日志，指标",
-      "不监控",
       "以上都不对",
-      "以上都不对"
+      "日志，指标",
+      "以上都不对",
+      "不监控"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-935",
     "title": "Python中如何进行API测试？",
     "options": [
       "pytest, postman",
-      "不测试",
       "以上都不对",
+      "不测试",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -388,31 +388,31 @@
     "id": "python-936",
     "title": "Python中如何进行微服务？",
     "options": [
-      "FastAPI, Nameko",
       "单体",
+      "FastAPI, Nameko",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-937",
     "title": "Python中如何进行服务发现？",
     "options": [
-      "Consul, Eureka",
       "硬编码",
+      "Consul, Eureka",
       "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-938",
     "title": "Python中如何进行配置中心？",
     "options": [
       "etcd, Apollo",
-      "配置文件",
       "以上都不对",
+      "配置文件",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -421,31 +421,31 @@
     "id": "python-939",
     "title": "Python中如何进行消息队列？",
     "options": [
-      "RabbitMQ, Kafka",
       "直接调用",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "RabbitMQ, Kafka"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-940",
     "title": "Python中Celery的作用是？",
     "options": [
-      "任务队列",
-      "消息队列",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "消息队列",
+      "任务队列"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-941",
     "title": "Python中RabbitMQ的作用是？",
     "options": [
       "消息队列",
-      "任务队列",
       "以上都不对",
+      "任务队列",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -455,9 +455,9 @@
     "title": "Python中Kafka的作用是？",
     "options": [
       "消息队列",
-      "任务队列",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "任务队列"
     ],
     "correctAnswer": 0
   },
@@ -465,88 +465,88 @@
     "id": "python-943",
     "title": "Python中Django的作用是？",
     "options": [
-      "全栈Web框架",
+      "以上都不对",
       "微框架",
       "以上都不对",
-      "以上都不对"
+      "全栈Web框架"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-944",
     "title": "Python中Flask的作用是？",
     "options": [
-      "全栈Web框架",
       "微框架",
       "以上都不对",
+      "全栈Web框架",
       "以上都不对"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-945",
     "title": "Python中FastAPI的作用是？",
     "options": [
-      "异步Web框架",
-      "同步Web框架",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "同步Web框架",
+      "异步Web框架"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-946",
     "title": "Python中Tornado的作用是？",
     "options": [
+      "以上都不对",
       "异步Web框架",
       "同步Web框架",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-947",
     "title": "Python中WSGI的作用是？",
     "options": [
-      "Web服务器接口",
       "异步服务器接口",
       "以上都不对",
+      "Web服务器接口",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-948",
     "title": "Python中ASGI的作用是？",
     "options": [
       "Web服务器接口",
-      "异步服务器接口",
       "以上都不对",
+      "异步服务器接口",
       "以上都不对"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-949",
     "title": "Python中uwsgi的作用是？",
     "options": [
+      "以上都不对",
       "Web服务器",
       "应用服务器",
-      "以上都不对",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-950",
     "title": "Python中Gunicorn的作用是？",
     "options": [
-      "Web服务器",
-      "应用服务器",
       "以上都不对",
-      "以上都不对"
+      "以上都不对",
+      "Web服务器",
+      "应用服务器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

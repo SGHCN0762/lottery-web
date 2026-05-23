@@ -3,21 +3,21 @@
     "id": "go-601",
     "title": "Go语言中，变量分配在栈还是堆的决定者是？",
     "options": [
-      "编译器",
       "程序员",
-      "运行时",
-      "操作系统"
+      "编译器",
+      "操作系统",
+      "运行时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-602",
     "title": "Go语言中，逃逸分析的作用是？",
     "options": [
       "决定变量分配位置",
-      "检查并发错误",
       "优化算法",
-      "减少编译时间"
+      "减少编译时间",
+      "检查并发错误"
     ],
     "correctAnswer": 0
   },
@@ -25,91 +25,91 @@
     "id": "go-603",
     "title": "Go语言中，以下哪种情况可能导致逃逸？",
     "options": [
-      "返回局部变量指针",
       "使用局部变量",
-      "使用基本类型",
-      "使用循环"
+      "返回局部变量指针",
+      "使用循环",
+      "使用基本类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-604",
     "title": "Go语言中，垃圾回收器使用的算法是？",
     "options": [
+      "标记清除",
       "三色标记法",
       "引用计数",
-      "标记清除",
       "复制算法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-605",
     "title": "Go语言中，三色标记法的三种颜色是？",
     "options": [
-      "白、灰、黑",
-      "红、黄、绿",
+      "黑、白、红",
       "蓝、白、红",
-      "黑、白、红"
+      "白、灰、黑",
+      "红、黄、绿"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-606",
     "title": "Go语言中，白色对象表示什么？",
     "options": [
+      "正在标记",
       "未标记，可能是垃圾",
       [
         "已标记，不是垃圾"
       ],
-      "待标记",
-      "正在标记"
+      "待标记"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-607",
     "title": "Go语言中，灰色对象表示什么？",
     "options": [
-      "已标记，但引用未扫描",
       "未标记",
-      "已标记且引用已扫描",
-      "正在回收"
+      "已标记，但引用未扫描",
+      "正在回收",
+      "已标记且引用已扫描"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-608",
     "title": "Go语言中，黑色对象表示什么？",
     "options": [
-      "已标记且引用已扫描",
-      "未标记",
+      "正在回收",
       "待标记",
-      "正在回收"
+      "已标记且引用已扫描",
+      "未标记"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-609",
     "title": "Go语言中，写屏障的作用是？",
     "options": [
-      "保证三色标记的正确性",
-      "防止内存泄漏",
       "提高写入性能",
-      "保护内存安全"
+      "防止内存泄漏",
+      "保护内存安全",
+      "保证三色标记的正确性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-610",
     "title": "Go语言中，STW（Stop The World）是指？",
     "options": [
-      "暂停所有goroutine",
       "启动所有goroutine",
+      "暂停所有goroutine",
       "调度goroutine",
       "销毁goroutine"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-611",
@@ -126,12 +126,12 @@
     "id": "go-612",
     "title": "Go语言中，GOGC环境变量的作用是？",
     "options": [
-      "控制GC触发频率",
+      "控制GC线程数",
       "控制GC时间",
-      "控制GC算法",
-      "控制GC线程数"
+      "控制GC触发频率",
+      "控制GC算法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-613",
@@ -148,67 +148,67 @@
     "id": "go-614",
     "title": "Go语言中，如何手动触发GC？",
     "options": [
-      "runtime.GC()",
       "gc.Run()",
-      "os.GC()",
-      "mem.GC()"
+      "runtime.GC()",
+      "mem.GC()",
+      "os.GC()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-615",
     "title": "Go语言中，如何查看GC统计信息？",
     "options": [
-      "runtime.ReadMemStats",
-      "runtime.GCStats",
+      "mem.Stats",
       "debug.GCStats",
-      "mem.Stats"
+      "runtime.GCStats",
+      "runtime.ReadMemStats"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-616",
     "title": "Go语言中，内存对齐的目的是？",
     "options": [
+      "安全考虑",
       "提高访问效率",
       "节省内存",
-      "安全考虑",
       "编译要求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-617",
     "title": "Go语言中，结构体字段顺序会影响大小吗？",
     "options": [
-      "会，因为内存对齐",
+      "取决于编译器",
       "不会",
-      "取决于类型",
-      "取决于编译器"
+      "会，因为内存对齐",
+      "取决于类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-618",
     "title": "Go语言中，如何获取类型的大小？",
     "options": [
+      "reflect.Sizeof",
       "unsafe.Sizeof",
       "sizeof",
-      "runtime.Sizeof",
-      "reflect.Sizeof"
+      "runtime.Sizeof"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-619",
     "title": "Go语言中，指针的大小是固定的吗？",
     "options": [
-      "是，取决于架构（32/64位）",
       "否，取决于指向类型",
+      "总是4字节",
       "总是8字节",
-      "总是4字节"
+      "是，取决于架构（32/64位）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-620",
@@ -236,166 +236,166 @@
     "id": "go-622",
     "title": "Go语言中，接口的底层结构包含什么？",
     "options": [
-      "类型指针、数据指针",
-      "值、类型",
       "方法集、数据",
-      "名称、包路径"
+      "名称、包路径",
+      "值、类型",
+      "类型指针、数据指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-623",
     "title": "Go语言中，nil切片和空切片的区别是？",
     "options": [
-      "nil切片指针为nil，空切片指针不为nil",
+      "空切片容量为nil",
       "没有区别",
-      "nil切片长度不为0",
-      "空切片容量为nil"
+      "nil切片指针为nil，空切片指针不为nil",
+      "nil切片长度不为0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-624",
     "title": "Go语言中，如何避免内存泄漏？",
     "options": [
-      "及时释放引用、使用pprof分析",
+      "使用指针",
       "增加内存",
-      "减少分配",
-      "使用指针"
+      "及时释放引用、使用pprof分析",
+      "减少分配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-625",
     "title": "Go语言中，pprof的作用是？",
     "options": [
+      "代码格式化",
       "性能分析",
       "日志记录",
-      "单元测试",
-      "代码格式化"
+      "单元测试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-626",
     "title": "Go语言中，如何分析内存占用？",
     "options": [
-      "go tool pprof memprofile",
-      "go tool trace",
+      "go vet",
       "go test -bench",
-      "go vet"
+      "go tool trace",
+      "go tool pprof memprofile"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-627",
     "title": "Go语言中，如何分析CPU占用？",
     "options": [
-      "go tool pprof cpuprofile",
       "go tool trace",
+      "go run -race",
       "go test -v",
-      "go run -race"
+      "go tool pprof cpuprofile"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-628",
     "title": "Go语言中，trace的作用是？",
     "options": [
-      "追踪goroutine调度和GC",
+      "追踪网络请求",
       "追踪内存分配",
       "追踪函数调用",
-      "追踪网络请求"
+      "追踪goroutine调度和GC"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-629",
     "title": "Go语言中，竞态检测器使用什么技术？",
     "options": [
+      "基于运行时",
       "基于代码插桩",
-      "基于硬件",
       "基于编译器",
-      "基于运行时"
+      "基于硬件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-630",
     "title": "Go语言中，竞态检测器在生产环境建议开启吗？",
     "options": [
-      "不建议，有性能损耗",
       "建议",
       "无所谓",
-      "只在高并发时开启"
+      "只在高并发时开启",
+      "不建议，有性能损耗"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-631",
     "title": "Go语言中，cgo的作用是？",
     "options": [
+      "代码生成",
       "调用C代码",
       "调用Go代码",
-      "代码生成",
       "代码优化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-632",
     "title": "Go语言中，使用cgo的性能开销大吗？",
     "options": [
-      "大，涉及栈切换",
       "不大",
       "没有开销",
+      "大，涉及栈切换",
       "取决于C代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-633",
     "title": "Go语言中，如何禁止内联优化？",
     "options": [
-      "//go:noinline",
-      "//go:noescape",
       "//go:nosplit",
-      "//go:nowritebarrier"
+      "//go:nowritebarrier",
+      "//go:noinline",
+      "//go:noescape"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-634",
     "title": "Go语言中，如何禁止逃逸？",
     "options": [
-      "不能直接禁止，只能通过代码优化",
-      "//go:noescape",
       "//go:noinline",
-      "//go:stack"
+      "//go:stack",
+      "不能直接禁止，只能通过代码优化",
+      "//go:noescape"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-635",
     "title": "Go语言中，栈扩容的过程是？",
     "options": [
-      "分配新栈、拷贝数据、调整指针",
-      "直接在原栈后追加",
+      "报错栈溢出",
       "使用堆模拟",
-      "报错栈溢出"
+      "直接在原栈后追加",
+      "分配新栈、拷贝数据、调整指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-636",
     "title": "Go语言中，栈缩容的过程是？",
     "options": [
-      "分配更小栈、拷贝数据",
-      "直接截断",
       "不缩容",
-      "GC回收"
+      "直接截断",
+      "GC回收",
+      "分配更小栈、拷贝数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-637",
@@ -412,21 +412,21 @@
     "id": "go-638",
     "title": "Go语言中，MSpan的作用是？",
     "options": [
+      "管理调度",
       "管理内存页",
-      "管理goroutine",
       "管理线程",
-      "管理调度"
+      "管理goroutine"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-639",
     "title": "Go语言中，MCentral的作用是？",
     "options": [
       "管理MSpan",
+      "管理P",
       "管理MCache",
-      "管理M",
-      "管理P"
+      "管理M"
     ],
     "correctAnswer": 0
   },
@@ -445,101 +445,101 @@
     "id": "go-641",
     "title": "Go语言GMP模型中，Goroutine的主要作用是？",
     "options": [
-      "用户态协程",
-      "内核线程",
-      "逻辑处理器",
       "协程结构体",
-      "等待队列节点",
+      "用户态协程",
       "全局运行队列",
-      "本地运行队列",
+      "逻辑处理器",
       "网络轮询器",
       "系统监控",
-      "工作窃取"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "go-642",
-    "title": "Go语言GMP模型中，M的主要作用是？",
-    "options": [
-      "用户态协程",
       "内核线程",
-      "逻辑处理器",
-      "协程结构体",
       "等待队列节点",
-      "全局运行队列",
       "本地运行队列",
-      "网络轮询器",
-      "系统监控",
       "工作窃取"
     ],
     "correctAnswer": 1
   },
   {
+    "id": "go-642",
+    "title": "Go语言GMP模型中，M的主要作用是？",
+    "options": [
+      "等待队列节点",
+      "用户态协程",
+      "逻辑处理器",
+      "网络轮询器",
+      "系统监控",
+      "本地运行队列",
+      "工作窃取",
+      "协程结构体",
+      "全局运行队列",
+      "内核线程"
+    ],
+    "correctAnswer": 9
+  },
+  {
     "id": "go-643",
     "title": "Go语言GMP模型中，P的主要作用是？",
     "options": [
-      "用户态协程",
-      "内核线程",
-      "逻辑处理器",
-      "协程结构体",
-      "等待队列节点",
-      "全局运行队列",
-      "本地运行队列",
-      "网络轮询器",
       "系统监控",
-      "工作窃取"
+      "逻辑处理器",
+      "本地运行队列",
+      "等待队列节点",
+      "工作窃取",
+      "协程结构体",
+      "全局运行队列",
+      "用户态协程",
+      "网络轮询器",
+      "内核线程"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "go-644",
     "title": "Go语言GMP模型中，G的主要作用是？",
     "options": [
       "用户态协程",
-      "内核线程",
-      "逻辑处理器",
-      "协程结构体",
       "等待队列节点",
+      "内核线程",
+      "工作窃取",
+      "系统监控",
       "全局运行队列",
       "本地运行队列",
-      "网络轮询器",
-      "系统监控",
-      "工作窃取"
+      "协程结构体",
+      "逻辑处理器",
+      "网络轮询器"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 7
   },
   {
     "id": "go-645",
     "title": "Go语言GMP模型中，Sudog的主要作用是？",
     "options": [
-      "用户态协程",
-      "内核线程",
+      "工作窃取",
       "逻辑处理器",
-      "协程结构体",
       "等待队列节点",
-      "全局运行队列",
       "本地运行队列",
-      "网络轮询器",
+      "内核线程",
+      "协程结构体",
       "系统监控",
-      "工作窃取"
+      "全局运行队列",
+      "用户态协程",
+      "网络轮询器"
     ],
-    "correctAnswer": 4
+    "correctAnswer": 2
   },
   {
     "id": "go-646",
     "title": "Go语言GMP模型中，GlobRunq的主要作用是？",
     "options": [
-      "用户态协程",
-      "内核线程",
       "逻辑处理器",
+      "用户态协程",
       "协程结构体",
-      "等待队列节点",
-      "全局运行队列",
+      "工作窃取",
       "本地运行队列",
-      "网络轮询器",
+      "全局运行队列",
       "系统监控",
-      "工作窃取"
+      "内核线程",
+      "等待队列节点",
+      "网络轮询器"
     ],
     "correctAnswer": 5
   },
@@ -547,68 +547,68 @@
     "id": "go-647",
     "title": "Go语言GMP模型中，LocalRunq的主要作用是？",
     "options": [
-      "用户态协程",
-      "内核线程",
-      "逻辑处理器",
-      "协程结构体",
-      "等待队列节点",
+      "系统监控",
       "全局运行队列",
       "本地运行队列",
-      "网络轮询器",
-      "系统监控",
-      "工作窃取"
+      "协程结构体",
+      "逻辑处理器",
+      "用户态协程",
+      "内核线程",
+      "工作窃取",
+      "等待队列节点",
+      "网络轮询器"
     ],
-    "correctAnswer": 6
+    "correctAnswer": 2
   },
   {
     "id": "go-648",
     "title": "Go语言GMP模型中，NetPoller的主要作用是？",
     "options": [
-      "用户态协程",
+      "系统监控",
+      "全局运行队列",
+      "工作窃取",
+      "网络轮询器",
       "内核线程",
+      "用户态协程",
       "逻辑处理器",
       "协程结构体",
       "等待队列节点",
-      "全局运行队列",
-      "本地运行队列",
-      "网络轮询器",
-      "系统监控",
-      "工作窃取"
+      "本地运行队列"
     ],
-    "correctAnswer": 7
+    "correctAnswer": 3
   },
   {
     "id": "go-649",
     "title": "Go语言GMP模型中，Sysmon的主要作用是？",
     "options": [
-      "用户态协程",
-      "内核线程",
-      "逻辑处理器",
-      "协程结构体",
-      "等待队列节点",
-      "全局运行队列",
-      "本地运行队列",
+      "工作窃取",
       "网络轮询器",
+      "协程结构体",
+      "本地运行队列",
+      "逻辑处理器",
+      "全局运行队列",
+      "用户态协程",
       "系统监控",
-      "工作窃取"
+      "内核线程",
+      "等待队列节点"
     ],
-    "correctAnswer": 8
+    "correctAnswer": 7
   },
   {
     "id": "go-650",
     "title": "Go语言GMP模型中，WorkStealing的主要作用是？",
     "options": [
-      "用户态协程",
       "内核线程",
-      "逻辑处理器",
-      "协程结构体",
-      "等待队列节点",
-      "全局运行队列",
-      "本地运行队列",
       "网络轮询器",
+      "逻辑处理器",
+      "工作窃取",
+      "等待队列节点",
       "系统监控",
-      "工作窃取"
+      "协程结构体",
+      "本地运行队列",
+      "用户态协程",
+      "全局运行队列"
     ],
-    "correctAnswer": 9
+    "correctAnswer": 3
   }
 ]

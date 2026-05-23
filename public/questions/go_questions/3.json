@@ -3,31 +3,31 @@
     "id": "go-101",
     "title": "Go语言中，有缓冲通道的特点是？",
     "options": [
-      "缓冲区满时发送阻塞，缓冲区空时接收阻塞",
+      "不需要make创建",
       "发送永不阻塞",
-      "接收永不阻塞",
-      "不需要make创建"
+      "缓冲区满时发送阻塞，缓冲区空时接收阻塞",
+      "接收永不阻塞"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-102",
     "title": "Go语言中，关闭通道后可以从中接收数据吗？",
     "options": [
-      "可以，直到缓冲区为空返回零值",
-      "不可以",
+      "返回nil",
       "会引发panic",
-      "返回nil"
+      "不可以",
+      "可以，直到缓冲区为空返回零值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-103",
     "title": "Go语言中，向已关闭的通道发送数据会怎样？",
     "options": [
       "panic",
-      "返回false",
       "阻塞",
+      "返回false",
       "忽略"
     ],
     "correctAnswer": 0
@@ -36,32 +36,32 @@
     "id": "go-104",
     "title": "Go语言中，如何单向限制通道？",
     "options": [
-      "使用<-操作符",
-      "使用in/out关键字",
       "使用readonly/writeonly",
+      "使用in/out关键字",
+      "使用<-操作符",
       "无法限制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-105",
     "title": "Go语言中，select语句的作用是？",
     "options": [
-      "处理多个通道操作",
-      "处理多个条件",
       "处理多个错误",
+      "处理多个条件",
+      "处理多个通道操作",
       "处理多个返回值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-106",
     "title": "Go语言中，select中多个case同时就绪会怎样？",
     "options": [
       "随机执行一个",
-      "按顺序执行",
+      "执行最后一个",
       "报错",
-      "执行最后一个"
+      "按顺序执行"
     ],
     "correctAnswer": 0
   },
@@ -69,32 +69,32 @@
     "id": "go-107",
     "title": "Go语言中，sync.Mutex的作用是？",
     "options": [
-      "互斥锁",
-      "读写锁",
       "等待组",
-      "原子操作"
+      "原子操作",
+      "读写锁",
+      "互斥锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-108",
     "title": "Go语言中，sync.RWMutex的特点是？",
     "options": [
+      "不需要解锁",
       "允许多个读或一个写",
-      "只允许一个读或写",
       "允许多个写",
-      "不需要解锁"
+      "只允许一个读或写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-109",
     "title": "Go语言中，sync.WaitGroup的作用是？",
     "options": [
       "等待一组goroutine完成",
+      "等待锁释放",
       "等待通道关闭",
-      "等待条件满足",
-      "等待锁释放"
+      "等待条件满足"
     ],
     "correctAnswer": 0
   },
@@ -102,12 +102,12 @@
     "id": "go-110",
     "title": "Go语言中，sync.Once的作用是？",
     "options": [
-      "确保函数只执行一次",
-      "执行一次后删除",
+      "只运行一次程序",
       "只允许一个goroutine",
-      "只运行一次程序"
+      "执行一次后删除",
+      "确保函数只执行一次"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-111",
@@ -115,8 +115,8 @@
     "options": [
       "并发安全的映射",
       "有序映射",
-      "不可变映射",
-      "快速映射"
+      "快速映射",
+      "不可变映射"
     ],
     "correctAnswer": 0
   },
@@ -126,8 +126,8 @@
     "options": [
       "管理请求上下文、超时、取消",
       "管理内存",
-      "管理日志",
-      "管理配置"
+      "管理配置",
+      "管理日志"
     ],
     "correctAnswer": 0
   },
@@ -136,9 +136,9 @@
     "title": "Go语言中，context.WithCancel的作用是？",
     "options": [
       "创建可取消的上下文",
-      "创建带超时的上下文",
+      "创建空上下文",
       "创建传值的上下文",
-      "创建空上下文"
+      "创建带超时的上下文"
     ],
     "correctAnswer": 0
   },
@@ -146,42 +146,42 @@
     "id": "go-114",
     "title": "Go语言中，context.WithTimeout的作用是？",
     "options": [
+      "创建截止时间的上下文",
       "创建带超时的上下文",
       "创建可取消的上下文",
-      "创建传值的上下文",
-      "创建截止时间的上下文"
+      "创建传值的上下文"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-115",
     "title": "Go语言中，context.Value的作用是？",
     "options": [
-      "在上下文中传递值",
-      "修改上下文的值",
+      "比较上下文的值",
       "删除上下文的值",
-      "比较上下文的值"
+      "修改上下文的值",
+      "在上下文中传递值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-116",
     "title": "Go语言中，time包的Ticker作用是？",
     "options": [
-      "定时重复执行",
-      "延迟执行",
       "单次定时",
-      "测量时间"
+      "测量时间",
+      "延迟执行",
+      "定时重复执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-117",
     "title": "Go语言中，time包的Timer作用是？",
     "options": [
       "单次定时",
-      "定时重复执行",
       "测量时间",
+      "定时重复执行",
       "格式化时间"
     ],
     "correctAnswer": 0
@@ -190,21 +190,21 @@
     "id": "go-118",
     "title": "Go语言中，如何序列化和反序列化JSON？",
     "options": [
+      "io包",
       "encoding/json包",
-      "encoding/xml包",
       "fmt包",
-      "io包"
+      "encoding/xml包"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-119",
     "title": "Go语言中，json.Marshal的作用是？",
     "options": [
       "将对象序列化为JSON",
-      "将JSON反序列化为对象",
+      "验证JSON",
       "格式化JSON",
-      "验证JSON"
+      "将JSON反序列化为对象"
     ],
     "correctAnswer": 0
   },
@@ -212,12 +212,12 @@
     "id": "go-120",
     "title": "Go语言中，如何修改JSON字段名？",
     "options": [
-      "使用json标签",
       "修改结构体名",
       "修改变量名",
+      "使用json标签",
       "使用方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-121",
@@ -234,120 +234,120 @@
     "id": "go-122",
     "title": "Go语言中，以下哪个是正确的函数定义？",
     "options": [
-      "func add(a int, b int) int",
       "function add(a, b)",
-      "def add(a, b)",
-      "fn add(a, b)"
+      "fn add(a, b)",
+      "func add(a int, b int) int",
+      "def add(a, b)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-123",
     "title": "Go语言中，可变参数函数的语法是？",
     "options": [
-      "func(args ...int)",
-      "func(args int...)",
       "func(args []int)",
+      "func(args int...)",
+      "func(args ...int)",
       "func(*args int)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-124",
     "title": "Go语言中，可变参数在函数内部是什么类型？",
     "options": [
+      "列表",
       "切片",
       "数组",
-      "列表",
       "映射"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-125",
     "title": "Go语言中，defer语句的执行顺序是？",
     "options": [
+      "按声明顺序",
       "LIFO（后进先出）",
       "FIFO（先进先出）",
-      "随机执行",
-      "按声明顺序"
+      "随机执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-126",
     "title": "Go语言中，defer语句常用于？",
     "options": [
-      "资源释放、解锁、关闭文件",
+      "类型转换",
       "错误处理",
-      "并发控制",
-      "类型转换"
+      "资源释放、解锁、关闭文件",
+      "并发控制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-127",
     "title": "Go语言中，函数可以作为值传递吗？",
     "options": [
-      "可以",
       "不可以",
-      "只能作为参数",
-      "只能作为返回值"
+      "只能作为返回值",
+      "可以",
+      "只能作为参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-128",
     "title": "Go语言中，匿名函数可以赋值给变量吗？",
     "options": [
-      "可以",
       "不可以",
       "只能直接调用",
-      "只能作为参数"
+      "只能作为参数",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-129",
     "title": "Go语言中，闭包是指？",
     "options": [
-      "引用了外部作用域变量的函数",
-      "没有名字的函数",
+      "不能返回值的函数",
       "不能接受参数的函数",
-      "不能返回值的函数"
+      "引用了外部作用域变量的函数",
+      "没有名字的函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-130",
     "title": "Go语言中，方法与函数的区别是？",
     "options": [
-      "方法有接收者，函数没有",
       "函数有接收者，方法没有",
       "没有区别",
+      "方法有接收者，函数没有",
       "方法不能有参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-131",
     "title": "Go语言中，值接收者的方法可以被指针类型调用吗？",
     "options": [
-      "可以",
-      "不可以",
       "只能调用指针方法",
-      "取决于方法逻辑"
+      "取决于方法逻辑",
+      "不可以",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-132",
     "title": "Go语言中，指针接收者的方法可以被值类型调用吗？",
     "options": [
-      "可以，Go会自动取地址",
+      "取决于变量是否可寻址",
       "不可以",
-      "只能调用值方法",
-      "取决于变量是否可寻址"
+      "可以，Go会自动取地址",
+      "只能调用值方法"
     ],
     "correctAnswer": 1
   },
@@ -356,9 +356,9 @@
     "title": "Go语言中，结构体嵌套的作用是？",
     "options": [
       "实现代码复用，类似继承",
-      "实现多态",
       "实现接口",
-      "实现泛型"
+      "实现泛型",
+      "实现多态"
     ],
     "correctAnswer": 0
   },
@@ -366,32 +366,32 @@
     "id": "go-134",
     "title": "Go语言中，内嵌结构体的字段冲突如何解决？",
     "options": [
+      "随机选择",
       "显式指定外层结构体名",
       "编译报错",
-      "自动选择",
-      "随机选择"
+      "自动选择"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-135",
     "title": "Go语言中，接口定义使用哪个关键字？",
     "options": [
+      "abstract ...",
       "type ... interface",
-      "interface ...",
       "protocol ...",
-      "abstract ..."
+      "interface ..."
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-136",
     "title": "Go语言中，接口可以嵌入其他接口吗？",
     "options": [
       "可以",
-      "不可以",
       "只能嵌入一个",
-      "只能嵌入结构体"
+      "只能嵌入结构体",
+      "不可以"
     ],
     "correctAnswer": 0
   },
@@ -399,54 +399,54 @@
     "id": "go-137",
     "title": "Go语言中，类型实现接口需要使用什么关键字？",
     "options": [
-      "不需要关键字，隐式实现",
       "implements",
-      "extends",
-      "interface"
+      "interface",
+      "不需要关键字，隐式实现",
+      "extends"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-138",
     "title": "Go语言中，空接口的作用是？",
     "options": [
-      "接受任意类型的值",
-      "表示空值",
+      "表示未实现",
       "表示错误",
-      "表示未实现"
+      "接受任意类型的值",
+      "表示空值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-139",
     "title": "Go语言中，类型断言失败会怎样？",
     "options": [
-      "如果使用ok模式返回false，否则panic",
       "返回nil",
+      "编译错误",
       "返回零值",
-      "编译错误"
+      "如果使用ok模式返回false，否则panic"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-140",
     "title": "Go语言中，类型switch的语法是？",
     "options": [
-      "switch v := x.(type)",
       "switch type x",
       "case type of x",
-      "if type x"
+      "if type x",
+      "switch v := x.(type)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-141",
     "title": "Go语言中，Stringer接口的作用是？",
     "options": [
       "定义字符串表示形式",
-      "字符串拼接",
+      "字符串比较",
       "字符串分割",
-      "字符串比较"
+      "字符串拼接"
     ],
     "correctAnswer": 0
   },
@@ -454,76 +454,76 @@
     "id": "go-142",
     "title": "Go语言中，error接口的作用是？",
     "options": [
-      "表示错误状态",
+      "表示成功状态",
       "表示异常状态",
-      "表示空状态",
-      "表示成功状态"
+      "表示错误状态",
+      "表示空状态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-143",
     "title": "Go语言中，如何自定义错误类型？",
     "options": [
-      "实现error接口",
       "继承error类",
       "使用error关键字",
+      "实现error接口",
       "使用throw关键字"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-144",
     "title": "Go语言中，panic和recover的关系是？",
     "options": [
-      "recover可以捕获panic",
+      "两者可以互换",
       "panic可以捕获recover",
       "两者没有关系",
-      "两者可以互换"
+      "recover可以捕获panic"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-145",
     "title": "Go语言中，什么时候应该使用panic？",
     "options": [
-      "不可恢复的严重错误",
       "普通输入验证失败",
       "文件不存在",
+      "不可恢复的严重错误",
       "网络超时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-146",
     "title": "Go语言中，构造函数如何实现？",
     "options": [
-      "使用NewXXX命名的函数",
       "使用init函数",
+      "使用NewXXX命名的函数",
       "使用construct函数",
       "使用create函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-147",
     "title": "Go语言中，String方法的作用是？",
     "options": [
-      "自定义类型的字符串输出",
       "类型转换",
+      "字符串分割",
       "字符串加密",
-      "字符串分割"
+      "自定义类型的字符串输出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-148",
     "title": "Go语言中，接口的组合是指？",
     "options": [
       "将多个接口嵌入到一个接口中",
+      "接口多态",
       "将多个接口合并为一个类",
-      "接口继承",
-      "接口多态"
+      "接口继承"
     ],
     "correctAnswer": 0
   },
@@ -531,12 +531,12 @@
     "id": "go-149",
     "title": "Go语言中，结构体的字段标签如何获取？",
     "options": [
-      "使用反射reflect包",
       "使用unsafe包",
+      "使用strings包",
       "使用fmt包",
-      "使用strings包"
+      "使用反射reflect包"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-150",

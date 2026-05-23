@@ -3,10 +3,10 @@
     "id": "vue-301",
     "title": "Vue 中 v-if 和 v-show 的主要区别是什么？",
     "options": [
-      "v-if 支持动画",
+      "没有区别",
       "v-show 只是切换 display",
-      "v-if 性能更好",
-      "没有区别"
+      "v-if 支持动画",
+      "v-if 性能更好"
     ],
     "correctAnswer": 1
   },
@@ -14,9 +14,9 @@
     "id": "vue-302",
     "title": "Vue 中 v-bind 绑定 style 支持哪些值？",
     "options": [
-      "对象",
-      "数组",
       "字符串",
+      "数组",
+      "对象",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -25,9 +25,9 @@
     "id": "vue-303",
     "title": "Vue 中 v-bind 绑定 class 时，数组语法支持哪些元素？",
     "options": [
+      "三元表达式",
       "字符串",
       "对象",
-      "三元表达式",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -36,43 +36,43 @@
     "id": "vue-304",
     "title": "Vue 中 v-bind 可以绑定哪些属性？",
     "options": [
-      "HTML 属性",
       "DOM 属性",
-      "组件 props",
-      "以上都是"
+      "以上都是",
+      "HTML 属性",
+      "组件 props"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-305",
     "title": "Vue 中 v-bind 绑定内联样式时，值可以是？",
     "options": [
-      "字符串",
-      "对象",
       "数组",
-      "以上都是"
+      "字符串",
+      "以上都是",
+      "对象"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-306",
     "title": "Vue 中 v-bind.prop 修饰符的作用是？",
     "options": [
-      "绑定为 DOM property",
-      "绑定为 attribute",
       "特殊处理",
-      "禁用绑定"
+      "绑定为 attribute",
+      "禁用绑定",
+      "绑定为 DOM property"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-307",
     "title": "Vue 中 v-bind.attr 修饰符的作用是？",
     "options": [
       "显式绑定为 attribute",
+      "禁用",
       "绑定为 property",
-      "特殊处理",
-      "禁用"
+      "特殊处理"
     ],
     "correctAnswer": 0
   },
@@ -80,74 +80,74 @@
     "id": "vue-308",
     "title": "Vue 中 v-bind.camel 修饰符的作用是？",
     "options": [
-      "转换为驼峰命名",
       "转换为短横线",
-      "保持原样",
-      "大写转换"
+      "转换为驼峰命名",
+      "大写转换",
+      "保持原样"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-309",
     "title": "Vue 中 v-bind 绑定 style 时，浏览器前缀会自动添加吗？",
     "options": [
-      "会自动添加",
       "不会添加",
       "需要手动添加",
-      "部分添加"
+      "部分添加",
+      "会自动添加"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-310",
     "title": "Vue 中 v-bind 绑定 SVG 属性需要注意什么？",
     "options": [
-      "大小写敏感",
+      "以上都是",
       "需要命名空间",
-      "特殊处理",
-      "以上都是"
+      "大小写敏感",
+      "特殊处理"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-311",
     "title": "Vue 中 v-bind 的动态参数可以是 null 吗？",
     "options": [
-      "可以，会移除绑定",
+      "会忽略",
       "不可以",
-      "会报错",
-      "会忽略"
+      "可以，会移除绑定",
+      "会报错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-312",
     "title": "Vue 中 v-bind 绑定类名时，falsy 值会被？",
     "options": [
+      "报错",
       "忽略",
       "渲染为 false",
-      "报错",
       "转为字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-313",
     "title": "Vue 中 v-bind 的数组语法中，falsy 值会被？",
     "options": [
-      "忽略",
-      "渲染",
       "报错",
-      "转为空字符串"
+      "忽略",
+      "转为空字符串",
+      "渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-314",
     "title": "Vue 中 v-text 和插值的区别是？",
     "options": [
-      "v-text 覆盖全部内容",
       "插值可部分替换",
+      "v-text 覆盖全部内容",
       "v-text 更安全",
       "以上都是"
     ],
@@ -157,20 +157,20 @@
     "id": "vue-315",
     "title": "Vue 中 v-html 的安全风险是？",
     "options": [
-      "XSS 攻击",
       "性能问题",
       "兼容性问题",
+      "XSS 攻击",
       "没有风险"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-316",
     "title": "Vue 中 v-html 会忽略什么？",
     "options": [
       "Vue 模板语法",
-      "HTML 标签",
       "CSS 样式",
+      "HTML 标签",
       "JavaScript"
     ],
     "correctAnswer": 0
@@ -180,9 +180,9 @@
     "title": "Vue 中 v-text 和 {{}} 插值的 XSS 风险对比？",
     "options": [
       "v-text 更安全",
+      "都不安全",
       "插值更安全",
-      "一样安全",
-      "都不安全"
+      "一样安全"
     ],
     "correctAnswer": 0
   },
@@ -190,21 +190,21 @@
     "id": "vue-318",
     "title": "Vue 中 v-on 的修饰符 .stop 的作用是？",
     "options": [
+      "只触发一次",
       "阻止事件冒泡",
       "阻止默认行为",
-      "只触发一次",
       "捕获阶段触发"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-319",
     "title": "Vue 中 v-on 的事件修饰符 .once 的作用是？",
     "options": [
       "只触发一次",
+      "捕获阶段",
       "阻止冒泡",
-      "阻止默认行为",
-      "捕获阶段"
+      "阻止默认行为"
     ],
     "correctAnswer": 0
   },
@@ -212,109 +212,109 @@
     "id": "vue-320",
     "title": "Vue 中 v-on 的事件修饰符 .capture 的作用是？",
     "options": [
-      "使用捕获模式",
-      "阻止冒泡",
       "阻止默认行为",
-      "只触发一次"
+      "使用捕获模式",
+      "只触发一次",
+      "阻止冒泡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-321",
     "title": "Vue 中 v-on 的 passive 修饰符的作用是？",
     "options": [
-      "不调用 preventDefault",
-      "调用 preventDefault",
       "阻止冒泡",
-      "捕获阶段"
+      "调用 preventDefault",
+      "捕获阶段",
+      "不调用 preventDefault"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-322",
     "title": "Vue 中 v-on 的精确修饰符 .exact 的作用是？",
     "options": [
-      "要求精确匹配系统修饰键",
       "模糊匹配",
+      "要求精确匹配系统修饰键",
       "忽略修饰键",
       "全部匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-323",
     "title": "Vue 中 v-on 的按键修饰符 .enter 对应哪个键？",
     "options": [
-      "回车键",
       "空格键",
       "ESC 键",
-      "Tab 键"
+      "Tab 键",
+      "回车键"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-324",
     "title": "Vue 中 v-on 的系统修饰符 .ctrl 需要配合什么键？",
     "options": [
-      "Ctrl 键",
+      "Meta 键",
       "Alt 键",
       "Shift 键",
-      "Meta 键"
+      "Ctrl 键"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-325",
     "title": "Vue 中 v-on 的鼠标修饰符 .left 指的是？",
     "options": [
-      "鼠标左键",
+      "所有按键",
       "鼠标右键",
       "鼠标中键",
-      "所有按键"
+      "鼠标左键"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-326",
     "title": "Vue 中 v-on 的事件处理器可以是？",
     "options": [
-      "方法名",
-      "内联语句",
+      "以上都是",
       "函数表达式",
-      "以上都是"
+      "内联语句",
+      "方法名"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-327",
     "title": "Vue 中 v-on 的内联语句中可以访问 $event 吗？",
     "options": [
+      "默认禁用",
       "可以",
-      "不可以",
       "需要声明",
-      "默认禁用"
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-328",
     "title": "Vue 中 v-on 可以监听原生 DOM 事件吗？",
     "options": [
-      "可以",
-      "不可以",
       "只能自定义",
-      "需要特殊配置"
+      "可以",
+      "需要特殊配置",
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-329",
     "title": "Vue 中 v-on 可以绑定到组件的自定义事件吗？",
     "options": [
       "可以",
-      "不可以",
       "只能原生事件",
-      "需要特殊配置"
+      "需要特殊配置",
+      "不可以"
     ],
     "correctAnswer": 0
   },
@@ -322,43 +322,43 @@
     "id": "vue-330",
     "title": "Vue 中 v-on 的多个事件可以用同一个处理器吗？",
     "options": [
-      "可以，用空格分隔",
       "不可以",
+      "可以，用空格分隔",
       "需要分别绑定",
       "只能用数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-331",
     "title": "Vue 中 v-on 的事件名可以使用 kebab-case 吗？",
     "options": [
-      "可以，会自动转换",
+      "只能用 PascalCase",
       "不可以",
       "只能用 camelCase",
-      "只能用 PascalCase"
+      "可以，会自动转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-332",
     "title": "Vue 中 v-on 的 once 修饰符可以和 capture 一起用吗？",
     "options": [
+      "需要特殊语法",
       "可以",
       "不可以",
-      "需要特殊语法",
       "会冲突"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-333",
     "title": "Vue 中 v-on 的简写是？",
     "options": [
       "@",
-      ":",
+      "=",
       "#",
-      "="
+      ":"
     ],
     "correctAnswer": 0
   },
@@ -368,8 +368,8 @@
     "options": [
       "#",
       "@",
-      ":",
-      "%"
+      "%",
+      ":"
     ],
     "correctAnswer": 0
   },
@@ -378,8 +378,8 @@
     "title": "Vue 中 v-bind 的缩写 : 可以用于指令吗？",
     "options": [
       "不可以，只能用于绑定",
-      "可以",
       "只能用于事件",
+      "可以",
       "只能用于插槽"
     ],
     "correctAnswer": 0
@@ -388,42 +388,42 @@
     "id": "vue-336",
     "title": "Vue 中 v-bind 的修饰符可以组合使用吗？",
     "options": [
-      "可以",
       "不可以",
+      "可以",
       "只能用一个",
       "需要特殊语法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-337",
     "title": "Vue 中 v-cloak 的作用是？",
     "options": [
-      "隐藏未编译模板",
+      "以上都是",
       "防止闪烁",
       "CSS 配合使用",
-      "以上都是"
+      "隐藏未编译模板"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-338",
     "title": "Vue 中 v-pre 指令的作用是？",
     "options": [
+      "提前执行",
       "跳过编译",
       "预渲染",
-      "提前执行",
       "优先渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-339",
     "title": "Vue 中 v-once 指令的作用是？",
     "options": [
+      "静态优化",
       "只渲染一次",
       "永久缓存",
-      "静态优化",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -433,9 +433,9 @@
     "title": "Vue 中 v-memo 指令的作用是？",
     "options": [
       "缓存模板子树",
+      "缓存样式",
       "记忆计算结果",
-      "缓存事件",
-      "缓存样式"
+      "缓存事件"
     ],
     "correctAnswer": 0
   },
@@ -443,23 +443,23 @@
     "id": "vue-341",
     "title": "Vue 中 v-is 指令在 Vue 3 中的替代方案是？",
     "options": [
-      ":is 绑定",
-      "v-component",
       "component :is",
-      "v-bind:is"
+      "v-bind:is",
+      "v-component",
+      ":is 绑定"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "vue-342",
     "title": "Vue 中 v-for 的 key 可以用 index 吗？",
     "options": [
-      "不推荐，可能导致状态错乱",
       "推荐",
+      "无所谓",
       "必须",
-      "无所谓"
+      "不推荐，可能导致状态错乱"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-343",
@@ -467,8 +467,8 @@
     "options": [
       "v-for 优先级更高，造成性能浪费",
       "v-if 优先级更高",
-      "会报错",
-      "没有影响"
+      "没有影响",
+      "会报错"
     ],
     "correctAnswer": 0
   },
@@ -476,65 +476,65 @@
     "id": "vue-344",
     "title": "Vue 中 v-for 遍历对象时，参数顺序是？",
     "options": [
+      "index, key, value",
       "value, key, index",
       "key, value, index",
-      "index, key, value",
       "value, index, key"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-345",
     "title": "Vue 中 v-for 遍历数字时，从几开始？",
     "options": [
-      "1",
-      "0",
       "-1",
-      "自定义"
+      "1",
+      "自定义",
+      "0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-346",
     "title": "Vue 中 v-for 的分组渲染使用什么标签？",
     "options": [
-      "template",
-      "div",
+      "fragment",
       "span",
-      "fragment"
+      "template",
+      "div"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-347",
     "title": "Vue 中 v-model 的本质是？",
     "options": [
-      "语法糖",
       "双向绑定",
       "props + emit",
-      "以上都是"
+      "以上都是",
+      "语法糖"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-348",
     "title": "Vue 中 v-model 在组件上的默认 prop 是？",
     "options": [
-      "modelValue",
-      "value",
+      "input",
       "data",
-      "input"
+      "modelValue",
+      "value"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-349",
     "title": "Vue 中 v-model 的修饰符 .lazy 的作用是？",
     "options": [
       "在 change 事件后同步",
-      "在 input 事件后同步",
+      "不同步",
       "延迟 1 秒同步",
-      "不同步"
+      "在 input 事件后同步"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "vue-350",
     "title": "Vue 中 v-model 的修饰符 .number 的作用是？",
     "options": [
-      "自动转换为数字",
-      "限制输入",
       "格式化",
+      "限制输入",
+      "自动转换为数字",
       "验证"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

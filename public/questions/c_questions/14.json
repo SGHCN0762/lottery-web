@@ -3,32 +3,32 @@
     "id": "c-651",
     "title": "C语言中，time_t通常是什么类型？",
     "options": [
-      "长整型",
       "整型",
-      "浮点型",
-      "字符型"
+      "字符型",
+      "长整型",
+      "浮点型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-652",
     "title": "C语言中，time(NULL)的作用是？",
     "options": [
-      "获取当前时间戳",
+      "计算时间差",
       "获取当前时间字符串",
-      "设置时间",
-      "计算时间差"
+      "获取当前时间戳",
+      "设置时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-653",
     "title": "C语言中，clock_t通常是什么类型？",
     "options": [
       "长整型",
-      "整型",
+      "字符型",
       "浮点型",
-      "字符型"
+      "整型"
     ],
     "correctAnswer": 0
   },
@@ -37,8 +37,8 @@
     "title": "C语言中，CLOCKS_PER_SEC表示？",
     "options": [
       "每秒时钟周期数",
-      "每秒秒数",
       "每分钟时钟周期数",
+      "每秒秒数",
       "每毫秒时钟周期数"
     ],
     "correctAnswer": 0
@@ -47,20 +47,20 @@
     "id": "c-655",
     "title": "C语言中，localtime的作用是？",
     "options": [
-      "将时间戳转为本地时间结构体",
-      "将时间戳转为UTC时间",
       "获取时间戳",
+      "将时间戳转为UTC时间",
+      "将时间戳转为本地时间结构体",
       "格式化时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-656",
     "title": "C语言中，gmtime的作用是？",
     "options": [
       "将时间戳转为UTC时间结构体",
-      "将时间戳转为本地时间",
       "获取时间戳",
+      "将时间戳转为本地时间",
       "格式化时间"
     ],
     "correctAnswer": 0
@@ -69,98 +69,98 @@
     "id": "c-657",
     "title": "C语言中，mktime的作用是？",
     "options": [
+      "计算时间差",
       "将时间结构体转为时间戳",
-      "获取时间戳",
       "格式化时间",
-      "计算时间差"
+      "获取时间戳"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-658",
     "title": "C语言中，asctime的作用是？",
     "options": [
-      "将时间结构体转为字符串",
+      "计算时间差",
       "获取时间戳",
       "格式化时间",
-      "计算时间差"
+      "将时间结构体转为字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-659",
     "title": "C语言中，ctime的作用是？",
     "options": [
-      "将时间戳转为字符串",
       "获取时间戳",
       "格式化时间",
+      "将时间戳转为字符串",
       "计算时间差"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-660",
     "title": "C语言中，strftime的作用是？",
     "options": [
-      "格式化时间字符串",
-      "获取时间戳",
       "解析时间字符串",
-      "计算时间差"
+      "格式化时间字符串",
+      "计算时间差",
+      "获取时间戳"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-661",
     "title": "C语言中，difftime的作用是？",
     "options": [
-      "计算两个时间的差值",
       "获取时间戳",
+      "计算两个时间的差值",
       "格式化时间",
       "设置时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-662",
     "title": "C语言中，断言库定义在哪个头文件？",
     "options": [
-      "assert.h",
-      "stdio.h",
       "stdlib.h",
-      "math.h"
+      "math.h",
+      "assert.h",
+      "stdio.h"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-663",
     "title": "C语言中，断言失败会？",
     "options": [
-      "终止程序并输出错误信息",
-      "抛出异常",
       "返回错误码",
-      "忽略"
+      "忽略",
+      "终止程序并输出错误信息",
+      "抛出异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-664",
     "title": "C语言中，如何禁用断言？",
     "options": [
-      "定义NDEBUG宏",
-      "定义DEBUG宏",
       "删除assert语句",
-      "注释assert语句"
+      "定义NDEBUG宏",
+      "注释assert语句",
+      "定义DEBUG宏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-665",
     "title": "C语言中，局部变量存储在？",
     "options": [
       "栈区",
-      "堆区",
+      "BSS段",
       "数据段",
-      "BSS段"
+      "堆区"
     ],
     "correctAnswer": 0
   },
@@ -169,8 +169,8 @@
     "title": "C语言中，全局变量存储在？",
     "options": [
       "数据段或BSS段",
-      "栈区",
       "堆区",
+      "栈区",
       "代码段"
     ],
     "correctAnswer": 0
@@ -179,21 +179,21 @@
     "id": "c-667",
     "title": "C语言中，动态分配的内存存储在？",
     "options": [
-      "堆区",
-      "栈区",
       "数据段",
+      "栈区",
+      "堆区",
       "BSS段"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-668",
     "title": "C语言中，函数参数存储在？",
     "options": [
       "栈区",
-      "堆区",
+      "BSS段",
       "数据段",
-      "BSS段"
+      "堆区"
     ],
     "correctAnswer": 0
   },
@@ -202,9 +202,9 @@
     "title": "C语言中，静态局部变量存储在？",
     "options": [
       "数据段或BSS段",
-      "栈区",
+      "代码段",
       "堆区",
-      "代码段"
+      "栈区"
     ],
     "correctAnswer": 0
   },
@@ -212,12 +212,12 @@
     "id": "c-670",
     "title": "C语言中，字符串常量存储在？",
     "options": [
-      "常量区/只读数据段",
-      "栈区",
       "堆区",
-      "BSS段"
+      "常量区/只读数据段",
+      "BSS段",
+      "栈区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-671",
@@ -234,40 +234,29 @@
     "id": "c-672",
     "title": "C语言中，已初始化的全局变量存储在？",
     "options": [
-      "数据段",
-      "BSS段",
       "栈区",
-      "堆区"
+      "堆区",
+      "BSS段",
+      "数据段"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-673",
     "title": "C语言中，代码存储在？",
     "options": [
-      "代码段",
-      "数据段",
       "栈区",
-      "堆区"
+      "代码段",
+      "堆区",
+      "数据段"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-674",
     "title": "C语言中，宏定义存储在？",
     "options": [
       "代码段(展开后)",
-      "数据段",
-      "栈区",
-      "堆区"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "c-675",
-    "title": "C语言中，寄存器变量存储在？",
-    "options": [
-      "寄存器",
       "栈区",
       "堆区",
       "数据段"
@@ -275,79 +264,90 @@
     "correctAnswer": 0
   },
   {
+    "id": "c-675",
+    "title": "C语言中，寄存器变量存储在？",
+    "options": [
+      "堆区",
+      "数据段",
+      "栈区",
+      "寄存器"
+    ],
+    "correctAnswer": 3
+  },
+  {
     "id": "c-676",
     "title": "C语言中，外部变量使用什么关键字声明？",
     "options": [
-      "extern",
       "static",
+      "extern",
       "auto",
       "register"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-677",
     "title": "C语言中，静态全局变量的作用域是？",
     "options": [
-      "当前文件",
+      "当前块",
       "整个程序",
       "当前函数",
-      "当前块"
+      "当前文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-678",
     "title": "C语言中，静态局部变量的生命周期是？",
     "options": [
-      "整个程序运行期间",
       "函数调用期间",
+      "循环执行期间",
       "块执行期间",
-      "循环执行期间"
+      "整个程序运行期间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-679",
     "title": "C语言中，自动变量的生命周期是？",
     "options": [
-      "函数或块执行期间",
-      "整个程序运行期间",
       "直到手动释放",
+      "整个程序运行期间",
+      "函数或块执行期间",
       "直到断电"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-680",
     "title": "C语言中，volatile的作用是？",
     "options": [
-      "防止编译器优化",
-      "声明常量",
       "声明静态变量",
-      "声明外部变量"
+      "防止编译器优化",
+      "声明外部变量",
+      "声明常量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-681",
     "title": "C语言中，register的作用是？",
     "options": [
-      "建议编译器放入寄存器",
-      "声明常量",
       "声明静态变量",
-      "声明外部变量"
+      "声明外部变量",
+      "声明常量",
+      "建议编译器放入寄存器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-682",
     "title": "C语言中，auto的作用是？",
     "options": [
       "声明自动变量",
-      "声明常量",
       "声明静态变量",
-      "声明外部变量"
+      "声明外部变量",
+      "声明常量"
     ],
     "correctAnswer": 0
   },
@@ -355,12 +355,12 @@
     "id": "c-683",
     "title": "C语言中，typedef的作用是？",
     "options": [
-      "给类型起别名",
       "声明变量",
+      "给类型起别名",
       "定义宏",
       "条件编译"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-684",
@@ -388,32 +388,32 @@
     "id": "c-686",
     "title": "C语言中，break的作用是？",
     "options": [
-      "跳出循环或switch",
+      "返回值",
       "跳出函数",
       "继续循环",
-      "返回值"
+      "跳出循环或switch"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-687",
     "title": "C语言中，continue的作用是？",
     "options": [
-      "继续下一次循环",
       "跳出循环",
+      "继续下一次循环",
       "跳出函数",
       "返回值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-688",
     "title": "C语言中，switch的条件不能是？",
     "options": [
       "浮点型",
-      "整型",
+      "枚举型",
       "字符型",
-      "枚举型"
+      "整型"
     ],
     "correctAnswer": 0
   },
@@ -421,64 +421,64 @@
     "id": "c-689",
     "title": "C语言中，default在switch中的作用是？",
     "options": [
+      "最后一个执行",
       "处理所有未匹配的情况",
       "默认执行",
-      "第一个执行",
-      "最后一个执行"
+      "第一个执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-690",
     "title": "C语言中，case的值必须是？",
     "options": [
-      "常量表达式",
       "变量",
       "浮点数",
+      "常量表达式",
       "字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-691",
     "title": "C语言中，for循环的执行顺序是？",
     "options": [
-      "初始化、条件、循环体、更新",
-      "条件、初始化、循环体、更新",
+      "循环体、条件、初始化、更新",
       "初始化、循环体、条件、更新",
-      "循环体、条件、初始化、更新"
+      "初始化、条件、循环体、更新",
+      "条件、初始化、循环体、更新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-692",
     "title": "C语言中，while循环的特点是？",
     "options": [
-      "先判断后执行",
+      "不判断条件",
       "先执行后判断",
-      "只执行一次",
-      "不判断条件"
+      "先判断后执行",
+      "只执行一次"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-693",
     "title": "C语言中，do-while循环的特点是？",
     "options": [
-      "先执行后判断",
       "先判断后执行",
       "只执行一次",
+      "先执行后判断",
       "不判断条件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-694",
     "title": "C语言中，死循环的写法有？",
     "options": [
       "while(1), for(;;)",
-      "while(0)",
       "for(0)",
+      "while(0)",
       "do-while(0)"
     ],
     "correctAnswer": 0
@@ -488,8 +488,8 @@
     "title": "C语言中，逗号运算符的优先级是？",
     "options": [
       "最低",
-      "最高",
       "中等",
+      "最高",
       "不确定"
     ],
     "correctAnswer": 0
@@ -499,9 +499,9 @@
     "title": "C语言中，赋值运算符的优先级是？",
     "options": [
       "很低，仅高于逗号",
-      "最高",
       "中等",
-      "不确定"
+      "不确定",
+      "最高"
     ],
     "correctAnswer": 0
   },
@@ -509,21 +509,21 @@
     "id": "c-697",
     "title": "C语言中，逻辑与比逻辑或优先级？",
     "options": [
-      "高",
-      "低",
+      "不确定",
       "相同",
-      "不确定"
+      "低",
+      "高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-698",
     "title": "C语言中，算术运算符比关系运算符优先级？",
     "options": [
       "高",
+      "不确定",
       "低",
-      "相同",
-      "不确定"
+      "相同"
     ],
     "correctAnswer": 0
   },
@@ -532,8 +532,8 @@
     "title": "C语言中，单目运算符比双目运算符优先级？",
     "options": [
       "高",
-      "低",
       "相同",
+      "低",
       "不确定"
     ],
     "correctAnswer": 0
@@ -542,11 +542,11 @@
     "id": "c-700",
     "title": "C语言中，条件运算符(?:)的结合性是？",
     "options": [
-      "右结合",
       "左结合",
-      "无结合性",
-      "不确定"
+      "不确定",
+      "右结合",
+      "无结合性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

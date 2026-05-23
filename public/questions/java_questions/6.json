@@ -3,43 +3,43 @@
     "id": "java-251",
     "title": "Java中try-with-resources的作用是？",
     "options": [
-      "自动关闭资源",
       "手动关闭资源",
+      "自动关闭资源",
       "声明资源",
       "创建资源"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-252",
     "title": "Java中try-with-resources要求资源实现？",
     "options": [
-      "AutoCloseable",
-      "Closeable",
       "Serializable",
-      "Cloneable"
+      "Cloneable",
+      "AutoCloseable",
+      "Closeable"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-253",
     "title": "Java中multi-catch的语法是？",
     "options": [
-      "catch(Exception1 | Exception2 e)",
       "catch(Exception1, Exception2 e)",
-      "catch(Exception1 && Exception2 e)",
-      "catch(Exception1 Exception2 e)"
+      "catch(Exception1 Exception2 e)",
+      "catch(Exception1 | Exception2 e)",
+      "catch(Exception1 && Exception2 e)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-254",
     "title": "Java中异常链的作用是？",
     "options": [
       "保留原始异常信息",
+      "简化代码",
       "隐藏异常原因",
-      "提高性能",
-      "简化代码"
+      "提高性能"
     ],
     "correctAnswer": 0
   },
@@ -47,56 +47,56 @@
     "id": "java-255",
     "title": "Java中异常链使用哪个构造方法？",
     "options": [
+      "带stack参数的构造方法",
       "带cause参数的构造方法",
       "无参构造方法",
-      "带message参数的构造方法",
-      "带stack参数的构造方法"
+      "带message参数的构造方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-256",
     "title": "Java中异常链使用哪个方法设置原因？",
     "options": [
+      "putCause",
       "initCause",
       "setCause",
-      "addCause",
-      "putCause"
+      "addCause"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-257",
     "title": "Java中异常链使用哪个方法获取原因？",
     "options": [
-      "getCause",
       "getRootCause",
       "findCause",
-      "searchCause"
+      "searchCause",
+      "getCause"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-258",
     "title": "Java中printStackTrace()方法的作用是？",
     "options": [
-      "打印异常堆栈",
-      "打印异常消息",
       "打印异常原因",
-      "打印异常类型"
+      "打印异常类型",
+      "打印异常消息",
+      "打印异常堆栈"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-259",
     "title": "Java中getMessage()方法的作用是？",
     "options": [
-      "获取异常消息",
-      "获取异常堆栈",
+      "获取异常类型",
       "获取异常原因",
-      "获取异常类型"
+      "获取异常堆栈",
+      "获取异常消息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-260",
@@ -113,32 +113,32 @@
     "id": "java-261",
     "title": "Java中常见受检异常有？",
     "options": [
-      "IOException, SQLException",
       "NullPointerException, ArrayIndexOutOfBoundsException",
+      "以上都是",
       "OutOfMemoryError, StackOverflowError",
-      "以上都是"
+      "IOException, SQLException"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-262",
     "title": "Java中常见非受检异常有？",
     "options": [
-      "NullPointerException, ClassCastException",
-      "IOException, SQLException",
       "OutOfMemoryError, StackOverflowError",
+      "IOException, SQLException",
+      "NullPointerException, ClassCastException",
       "以上都是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-263",
     "title": "Java中常见错误有？",
     "options": [
       "OutOfMemoryError, StackOverflowError",
-      "IOException, SQLException",
+      "以上都是",
       "NullPointerException, ClassCastException",
-      "以上都是"
+      "IOException, SQLException"
     ],
     "correctAnswer": 0
   },
@@ -146,42 +146,42 @@
     "id": "java-264",
     "title": "Java中NullPointerException发生的原因是？",
     "options": [
+      "内存不足",
       "调用null对象的方法",
       "数组越界",
-      "类型转换错误",
-      "内存不足"
+      "类型转换错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-265",
     "title": "Java中ArrayIndexOutOfBoundsException发生的原因是？",
     "options": [
+      "类型转换错误",
       "数组越界",
       "调用null对象的方法",
-      "类型转换错误",
       "内存不足"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "java-266",
     "title": "Java中ClassCastException发生的原因是？",
     "options": [
+      "内存不足",
       "类型转换错误",
-      "调用null对象的方法",
       "数组越界",
-      "内存不足"
+      "调用null对象的方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-267",
     "title": "Java中NumberFormatException发生的原因是？",
     "options": [
       "数字格式错误",
-      "调用null对象的方法",
       "数组越界",
+      "调用null对象的方法",
       "内存不足"
     ],
     "correctAnswer": 0
@@ -190,78 +190,78 @@
     "id": "java-268",
     "title": "Java中StackOverflowError发生的原因是？",
     "options": [
-      "递归调用过深",
       "内存不足",
-      "数组越界",
-      "类型转换错误"
+      "递归调用过深",
+      "类型转换错误",
+      "数组越界"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-269",
     "title": "Java中OutOfMemoryError发生的原因是？",
     "options": [
-      "内存不足",
-      "递归调用过深",
+      "类型转换错误",
       "数组越界",
-      "类型转换错误"
+      "递归调用过深",
+      "内存不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-270",
     "title": "Java中ArithmeticException发生的原因是？",
     "options": [
+      "内存不足",
       "数学运算错误",
       "调用null对象的方法",
-      "数组越界",
-      "内存不足"
+      "数组越界"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-271",
     "title": "Java中IllegalArgumentException发生的原因是？",
     "options": [
-      "非法参数",
       "调用null对象的方法",
       "数组越界",
+      "非法参数",
       "内存不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-272",
     "title": "Java中IllegalStateException发生的原因是？",
     "options": [
-      "非法状态",
       "调用null对象的方法",
       "数组越界",
+      "非法状态",
       "内存不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-273",
     "title": "Java中ConcurrentModificationException发生的原因是？",
     "options": [
+      "内存不足",
       "并发修改集合",
       "调用null对象的方法",
-      "数组越界",
-      "内存不足"
+      "数组越界"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-274",
     "title": "Java中UnsupportedOperationException发生的原因是？",
     "options": [
-      "不支持的操作",
-      "调用null对象的方法",
       "数组越界",
-      "内存不足"
+      "内存不足",
+      "调用null对象的方法",
+      "不支持的操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-275",
@@ -278,78 +278,78 @@
     "id": "java-276",
     "title": "Java中FileNotFoundException发生的原因是？",
     "options": [
-      "文件不存在",
-      "调用null对象的方法",
       "数组越界",
+      "调用null对象的方法",
+      "文件不存在",
       "内存不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-277",
     "title": "Java中SQLException发生的原因是？",
     "options": [
-      "数据库错误",
-      "调用null对象的方法",
       "数组越界",
+      "调用null对象的方法",
+      "数据库错误",
       "内存不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-278",
     "title": "Java中ClassNotFoundException发生的原因是？",
     "options": [
-      "类找不到",
-      "调用null对象的方法",
       "数组越界",
-      "内存不足"
+      "类找不到",
+      "内存不足",
+      "调用null对象的方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-279",
     "title": "Java中CloneNotSupportedException发生的原因是？",
     "options": [
+      "内存不足",
       "不支持克隆",
-      "调用null对象的方法",
       "数组越界",
-      "内存不足"
+      "调用null对象的方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-280",
     "title": "Java中InterruptedException发生的原因是？",
     "options": [
-      "线程中断",
-      "调用null对象的方法",
       "数组越界",
-      "内存不足"
+      "调用null对象的方法",
+      "内存不足",
+      "线程中断"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-281",
     "title": "Java中反射获取类的方式有？",
     "options": [
-      "Class.forName(), 对象.getClass(), 类.class",
-      "Class.load(), 对象.loadClass()",
       "Class.find(), 对象.findClass()",
-      "以上都不对"
+      "以上都不对",
+      "Class.forName(), 对象.getClass(), 类.class",
+      "Class.load(), 对象.loadClass()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-282",
     "title": "Java中反射创建对象的方式有？",
     "options": [
+      "以上都不对",
       "newInstance(), 构造器.newInstance()",
-      "new(), create()",
       "build(), make()",
-      "以上都不对"
+      "new(), create()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-283",
@@ -366,12 +366,12 @@
     "id": "java-284",
     "title": "Java中反射获取字段的方式有？",
     "options": [
-      "getField(), getFields()",
+      "以上都不对",
       "findField(), findFields()",
-      "searchField(), searchFields()",
-      "以上都不对"
+      "getField(), getFields()",
+      "searchField(), searchFields()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-285",
@@ -379,8 +379,8 @@
     "options": [
       "invoke()",
       "call()",
-      "execute()",
-      "run()"
+      "run()",
+      "execute()"
     ],
     "correctAnswer": 0
   },
@@ -389,9 +389,9 @@
     "title": "Java中反射设置字段使用？",
     "options": [
       "set()",
-      "put()",
+      "value()",
       "assign()",
-      "value()"
+      "put()"
     ],
     "correctAnswer": 0
   },
@@ -399,32 +399,32 @@
     "id": "java-287",
     "title": "Java中反射获取字段使用？",
     "options": [
-      "get()",
-      "read()",
+      "obtain()",
       "fetch()",
-      "obtain()"
+      "read()",
+      "get()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-288",
     "title": "Java中反射可以访问私有成员吗？",
     "options": [
-      "可以，设置setAccessible(true)",
       "不可以",
+      "可以，设置setAccessible(true)",
       "只能访问公有",
       "取决于修饰符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-289",
     "title": "Java中反射的性能如何？",
     "options": [
       "比直接调用慢",
+      "取决于JVM",
       "比直接调用快",
-      "一样快",
-      "取决于JVM"
+      "一样快"
     ],
     "correctAnswer": 0
   },
@@ -433,9 +433,9 @@
     "title": "Java中反射破坏了什么特性？",
     "options": [
       "封装性",
-      "继承性",
       "多态性",
-      "抽象性"
+      "抽象性",
+      "继承性"
     ],
     "correctAnswer": 0
   },
@@ -445,8 +445,8 @@
     "options": [
       "SOURCE, CLASS, RUNTIME",
       "COMPILE, RUNTIME, DEPLOY",
-      "SOURCE, BINARY, EXECUTE",
-      "以上都不对"
+      "以上都不对",
+      "SOURCE, BINARY, EXECUTE"
     ],
     "correctAnswer": 0
   },
@@ -454,32 +454,32 @@
     "id": "java-292",
     "title": "Java中注解的目标有？",
     "options": [
-      "TYPE, FIELD, METHOD",
+      "以上都不对",
       "CLASS, VARIABLE, FUNCTION",
-      "PACKAGE, MODULE, INTERFACE",
-      "以上都不对"
+      "TYPE, FIELD, METHOD",
+      "PACKAGE, MODULE, INTERFACE"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-293",
     "title": "Java中@Override注解的作用是？",
     "options": [
+      "标记过时方法",
       "标记重写方法",
       "标记重载方法",
-      "标记过时方法",
       "标记废弃方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-294",
     "title": "Java中@Deprecated注解的作用是？",
     "options": [
       "标记过时方法",
-      "标记重写方法",
+      "标记废弃方法",
       "标记重载方法",
-      "标记废弃方法"
+      "标记重写方法"
     ],
     "correctAnswer": 0
   },
@@ -488,9 +488,9 @@
     "title": "Java中@SuppressWarnings注解的作用是？",
     "options": [
       "抑制警告",
-      "产生警告",
       "标记警告",
-      "处理警告"
+      "处理警告",
+      "产生警告"
     ],
     "correctAnswer": 0
   },
@@ -499,9 +499,9 @@
     "title": "Java中@FunctionalInterface注解的作用是？",
     "options": [
       "标记函数式接口",
-      "标记过时接口",
       "标记废弃接口",
-      "标记新接口"
+      "标记新接口",
+      "标记过时接口"
     ],
     "correctAnswer": 0
   },
@@ -509,44 +509,44 @@
     "id": "java-297",
     "title": "Java中自定义注解使用什么关键字？",
     "options": [
-      "@interface",
-      "interface",
       "annotation",
-      "define"
+      "@interface",
+      "define",
+      "interface"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-298",
     "title": "Java中注解可以有属性吗？",
     "options": [
+      "取决于类型",
       "可以",
       "不可以",
-      "只能有值",
-      "取决于类型"
+      "只能有值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-299",
     "title": "Java中注解的属性类型有限制吗？",
     "options": [
-      "有，只能是基本类型、String、Class、枚举、注解及数组",
-      "没有限制",
       "只能是基本类型",
-      "只能是String"
+      "没有限制",
+      "只能是String",
+      "有，只能是基本类型、String、Class、枚举、注解及数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-300",
     "title": "Java中注解的属性默认值如何设置？",
     "options": [
-      "default 关键字",
+      "setter",
       "default 方法",
       "constructor",
-      "setter"
+      "default 关键字"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

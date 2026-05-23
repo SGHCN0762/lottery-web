@@ -3,53 +3,53 @@
     "id": "c-151",
     "title": "C语言中，指针函数的作用是？",
     "options": [
+      "以上都可以",
       "返回动态分配的内存地址",
       "返回函数地址",
-      "返回数组地址",
-      "以上都可以"
+      "返回数组地址"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "c-152",
     "title": "C语言中，main函数可以被递归调用吗？",
     "options": [
-      "可以，但不推荐",
       "不可以",
       "只能调用一次",
+      "可以，但不推荐",
       "取决于操作系统"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-153",
     "title": "C语言中，exit和return的区别是？",
     "options": [
-      "exit终止程序，return返回函数",
-      "没有区别",
+      "exit返回函数",
       "return终止程序",
-      "exit返回函数"
+      "exit终止程序，return返回函数",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-154",
     "title": "C语言中，strlen函数的返回类型是？",
     "options": [
-      "size_t",
-      "int",
       "char*",
-      "void"
+      "void",
+      "int",
+      "size_t"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-155",
     "title": "C语言中，strcpy函数的作用是？",
     "options": [
       "字符串拷贝",
-      "字符串比较",
       "字符串连接",
+      "字符串比较",
       "字符串查找"
     ],
     "correctAnswer": 0
@@ -58,53 +58,53 @@
     "id": "c-156",
     "title": "C语言中，strcat函数的作用是？",
     "options": [
-      "字符串连接",
       "字符串拷贝",
       "字符串比较",
+      "字符串连接",
       "字符串查找"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-157",
     "title": "C语言中，strcmp函数的作用是？",
     "options": [
+      "字符串连接",
       "字符串比较",
       "字符串拷贝",
-      "字符串连接",
       "字符串查找"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-158",
     "title": "C语言中，strncpy相比strcpy多了什么？",
     "options": [
-      "指定拷贝长度",
-      "自动分配内存",
       "不拷贝\\0",
-      "更安全"
+      "自动分配内存",
+      "更安全",
+      "指定拷贝长度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-159",
     "title": "C语言中，strncat相比strcat多了什么？",
     "options": [
-      "指定连接长度",
-      "自动分配内存",
       "不添加\\0",
-      "更安全"
+      "指定连接长度",
+      "更安全",
+      "自动分配内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-160",
     "title": "C语言中，strncmp相比strcmp多了什么？",
     "options": [
       "指定比较长度",
-      "忽略大小写",
       "返回布尔值",
+      "忽略大小写",
       "更安全"
     ],
     "correctAnswer": 0
@@ -113,32 +113,32 @@
     "id": "c-161",
     "title": "C语言中，strchr函数的作用是？",
     "options": [
-      "查找字符首次出现的位置",
       "查找字符串",
+      "拷贝字符",
       "比较字符",
-      "拷贝字符"
+      "查找字符首次出现的位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-162",
     "title": "C语言中，strstr函数的作用是？",
     "options": [
-      "查找子串首次出现的位置",
-      "查找字符",
+      "连接字符串",
       "比较字符串",
-      "连接字符串"
+      "查找子串首次出现的位置",
+      "查找字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-163",
     "title": "C语言中，strtok函数的作用是？",
     "options": [
       "分割字符串",
-      "连接字符串",
+      "查找字符串",
       "比较字符串",
-      "查找字符串"
+      "连接字符串"
     ],
     "correctAnswer": 0
   },
@@ -146,21 +146,21 @@
     "id": "c-164",
     "title": "C语言中，memcpy函数的作用是？",
     "options": [
-      "内存拷贝",
-      "字符串拷贝",
+      "内存设置",
       "内存比较",
-      "内存设置"
+      "内存拷贝",
+      "字符串拷贝"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-165",
     "title": "C语言中，memmove函数的作用是？",
     "options": [
       "内存移动（处理重叠）",
+      "内存设置",
       "内存拷贝",
-      "内存比较",
-      "内存设置"
+      "内存比较"
     ],
     "correctAnswer": 0
   },
@@ -168,65 +168,65 @@
     "id": "c-166",
     "title": "C语言中，memset函数的作用是？",
     "options": [
-      "内存设置",
-      "内存拷贝",
       "内存比较",
-      "内存移动"
+      "内存设置",
+      "内存移动",
+      "内存拷贝"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-167",
     "title": "C语言中，memcmp函数的作用是？",
     "options": [
-      "内存比较",
-      "内存拷贝",
+      "内存移动",
       "内存设置",
-      "内存移动"
+      "内存拷贝",
+      "内存比较"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-168",
     "title": "C语言中，atoi函数的作用是？",
     "options": [
-      "字符串转整数",
-      "整数转字符串",
+      "浮点数转字符串",
       "字符串转浮点数",
-      "浮点数转字符串"
+      "字符串转整数",
+      "整数转字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-169",
     "title": "C语言中，atof函数的作用是？",
     "options": [
-      "字符串转浮点数",
       "浮点数转字符串",
-      "字符串转整数",
-      "整数转字符串"
+      "字符串转浮点数",
+      "整数转字符串",
+      "字符串转整数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-170",
     "title": "C语言中，itoa函数的作用是？",
     "options": [
-      "整数转字符串",
       "字符串转整数",
       "浮点数转字符串",
-      "字符串转浮点数"
+      "字符串转浮点数",
+      "整数转字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-171",
     "title": "C语言中，sprintf函数的作用是？",
     "options": [
       "格式化写入字符串",
-      "格式化输出到屏幕",
+      "格式化写入文件",
       "格式化读取字符串",
-      "格式化写入文件"
+      "格式化输出到屏幕"
     ],
     "correctAnswer": 0
   },
@@ -234,12 +234,12 @@
     "id": "c-172",
     "title": "C语言中，sscanf函数的作用是？",
     "options": [
-      "从字符串格式化读取",
       "从键盘格式化读取",
+      "格式化写入文件",
       "格式化写入字符串",
-      "格式化写入文件"
+      "从字符串格式化读取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-173",
@@ -256,23 +256,23 @@
     "id": "c-174",
     "title": "C语言中，fscanf函数的作用是？",
     "options": [
-      "从文件格式化读取",
       "从键盘格式化读取",
-      "格式化写入文件",
-      "格式化写入字符串"
+      "从文件格式化读取",
+      "格式化写入字符串",
+      "格式化写入文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-175",
     "title": "C语言中，abs函数的作用是？",
     "options": [
+      "求对数",
       "求绝对值",
       "求平方根",
-      "求幂",
-      "求对数"
+      "求幂"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-176",
@@ -290,8 +290,8 @@
     "title": "C语言中，sqrt函数的作用是？",
     "options": [
       "求平方根",
-      "求绝对值",
       "求幂",
+      "求绝对值",
       "求对数"
     ],
     "correctAnswer": 0
@@ -300,21 +300,21 @@
     "id": "c-178",
     "title": "C语言中，pow函数的作用是？",
     "options": [
-      "求幂",
       "求平方根",
+      "求幂",
       "求绝对值",
       "求对数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-179",
     "title": "C语言中，ceil函数的作用是？",
     "options": [
       "向上取整",
+      "求绝对值",
       "向下取整",
-      "四舍五入",
-      "求绝对值"
+      "四舍五入"
     ],
     "correctAnswer": 0
   },
@@ -323,42 +323,42 @@
     "title": "C语言中，floor函数的作用是？",
     "options": [
       "向下取整",
+      "求绝对值",
       "向上取整",
-      "四舍五入",
-      "求绝对值"
+      "四舍五入"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "c-181",
     "title": "C语言中，round函数的作用是？",
     "options": [
-      "四舍五入",
       "向上取整",
-      "向下取整",
-      "求绝对值"
+      "求绝对值",
+      "四舍五入",
+      "向下取整"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-182",
     "title": "C语言中，isalpha函数的作用是？",
     "options": [
-      "判断是否为字母",
-      "判断是否为数字",
       "判断是否为小写",
-      "判断是否为大写"
+      "判断是否为字母",
+      "判断是否为大写",
+      "判断是否为数字"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-183",
     "title": "C语言中，isdigit函数的作用是？",
     "options": [
       "判断是否为数字",
-      "判断是否为字母",
       "判断是否为小写",
-      "判断是否为大写"
+      "判断是否为大写",
+      "判断是否为字母"
     ],
     "correctAnswer": 0
   },
@@ -367,9 +367,9 @@
     "title": "C语言中，isupper函数的作用是？",
     "options": [
       "判断是否为大写字母",
-      "判断是否为小写字母",
       "判断是否为字母",
-      "判断是否为数字"
+      "判断是否为数字",
+      "判断是否为小写字母"
     ],
     "correctAnswer": 0
   },
@@ -377,53 +377,53 @@
     "id": "c-185",
     "title": "C语言中，islower函数的作用是？",
     "options": [
-      "判断是否为小写字母",
-      "判断是否为大写字母",
       "判断是否为字母",
-      "判断是否为数字"
+      "判断是否为数字",
+      "判断是否为小写字母",
+      "判断是否为大写字母"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-186",
     "title": "C语言中，toupper函数的作用是？",
     "options": [
-      "转大写",
-      "转小写",
+      "比较大小写",
       "判断大小写",
-      "比较大小写"
+      "转大写",
+      "转小写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-187",
     "title": "C语言中，tolower函数的作用是？",
     "options": [
-      "转小写",
-      "转大写",
       "判断大小写",
-      "比较大小写"
+      "转小写",
+      "比较大小写",
+      "转大写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-188",
     "title": "C语言中，setjmp/longjmp的作用是？",
     "options": [
-      "非局部跳转",
       "异常处理",
       "函数调用",
+      "非局部跳转",
       "循环控制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-189",
     "title": "C语言中，signal函数的作用是？",
     "options": [
       "处理信号",
-      "发送信号",
       "忽略信号",
+      "发送信号",
       "阻塞信号"
     ],
     "correctAnswer": 0
@@ -434,8 +434,8 @@
     "options": [
       "发送信号",
       "处理信号",
-      "忽略信号",
-      "阻塞信号"
+      "阻塞信号",
+      "忽略信号"
     ],
     "correctAnswer": 0
   },
@@ -443,12 +443,12 @@
     "id": "c-191",
     "title": "C语言中，SIGINT信号通常由什么触发？",
     "options": [
-      "Ctrl+C",
-      "Ctrl+Z",
       "Ctrl+\\",
-      "Kill"
+      "Ctrl+Z",
+      "Kill",
+      "Ctrl+C"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-192",
@@ -465,88 +465,88 @@
     "id": "c-193",
     "title": "C语言中，size_t是什么类型？",
     "options": [
+      "字符",
       "无符号整数",
-      "有符号整数",
       "浮点数",
-      "字符"
+      "有符号整数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-194",
     "title": "C语言中，ptrdiff_t是什么类型？",
     "options": [
-      "指针差值的有符号整数",
-      "无符号整数",
       "浮点数",
-      "字符"
+      "无符号整数",
+      "字符",
+      "指针差值的有符号整数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-195",
     "title": "C语言中，NULL和0的区别是？",
     "options": [
-      "NULL是指针，0是整数",
+      "取决于编译器",
       "没有区别",
-      "NULL是整数，0是指针",
-      "取决于编译器"
+      "NULL是指针，0是整数",
+      "NULL是整数，0是指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-196",
     "title": "C语言中，EOF表示什么？",
     "options": [
-      "文件结束标志",
-      "空指针",
       "错误标志",
-      "换行符"
+      "空指针",
+      "换行符",
+      "文件结束标志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-197",
     "title": "C语言中，stderr的作用是？",
     "options": [
-      "标准错误流",
+      "文件流",
       "标准输入流",
-      "标准输出流",
-      "文件流"
+      "标准错误流",
+      "标准输出流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-198",
     "title": "C语言中，stdin的作用是？",
     "options": [
-      "标准输入流",
-      "标准输出流",
       "标准错误流",
-      "文件流"
+      "文件流",
+      "标准输入流",
+      "标准输出流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-199",
     "title": "C语言中，stdout的作用是？",
     "options": [
-      "标准输出流",
       "标准输入流",
-      "标准错误流",
-      "文件流"
+      "文件流",
+      "标准输出流",
+      "标准错误流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-200",
     "title": "C语言中，fopen的模式\"w\"表示？",
     "options": [
-      "写，文件不存在则创建",
       "读",
+      "写，文件不存在则创建",
       "追加",
       "读写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

@@ -3,43 +3,43 @@
     "id": "java-751",
     "title": "Java中Major GC是指？",
     "options": [
-      "老年代GC",
-      "新生代GC",
       "全GC",
+      "新生代GC",
+      "老年代GC",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-752",
     "title": "Java中Full GC是指？",
     "options": [
-      "全GC",
       "新生代GC",
-      "老年代GC",
-      "以上都不对"
+      "以上都不对",
+      "全GC",
+      "老年代GC"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-753",
     "title": "Java中对象何时进入老年代？",
     "options": [
-      "年龄达到阈值，大对象，Survivor空间不足",
-      "刚创建",
       "Minor GC后",
-      "以上都不对"
+      "刚创建",
+      "以上都不对",
+      "年龄达到阈值，大对象，Survivor空间不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-754",
     "title": "Java中对象年龄如何增加？",
     "options": [
       "每经历一次Minor GC",
-      "每经历一次Major GC",
       "每经历一次Full GC",
-      "以上都不对"
+      "以上都不对",
+      "每经历一次Major GC"
     ],
     "correctAnswer": 0
   },
@@ -47,32 +47,32 @@
     "id": "java-755",
     "title": "Java中什么情况触发Full GC？",
     "options": [
-      "老年代不足，方法区不足，System.gc()",
+      "以上都不对",
       "Minor GC",
-      "对象分配",
-      "以上都不对"
+      "老年代不足，方法区不足，System.gc()",
+      "对象分配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-756",
     "title": "Java中垃圾收集器的类型有？",
     "options": [
-      "Serial, Parallel, CMS, G1, ZGC",
-      "Young, Old",
       "Minor, Major",
-      "以上都不对"
+      "Serial, Parallel, CMS, G1, ZGC",
+      "以上都不对",
+      "Young, Old"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-757",
     "title": "Java中Serial收集器的特点是？",
     "options": [
       "单线程，STW",
-      "多线程",
       "并发",
-      "以上都不对"
+      "以上都不对",
+      "多线程"
     ],
     "correctAnswer": 0
   },
@@ -80,42 +80,42 @@
     "id": "java-758",
     "title": "Java中Parallel收集器的特点是？",
     "options": [
-      "多线程，吞吐量优先",
       "单线程",
       "低延迟",
-      "以上都不对"
+      "以上都不对",
+      "多线程，吞吐量优先"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-759",
     "title": "Java中CMS收集器的特点是？",
     "options": [
-      "低延迟",
-      "吞吐量优先",
+      "以上都不对",
       "单线程",
-      "以上都不对"
+      "吞吐量优先",
+      "低延迟"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-760",
     "title": "Java中G1收集器的特点是？",
     "options": [
-      "分区收集，可预测停顿",
       "单线程",
       "吞吐量优先",
-      "以上都不对"
+      "以上都不对",
+      "分区收集，可预测停顿"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-761",
     "title": "Java中ZGC收集器的特点是？",
     "options": [
       "超低延迟",
-      "吞吐量优先",
       "单线程",
+      "吞吐量优先",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -124,45 +124,45 @@
     "id": "java-762",
     "title": "Java中STW是指？",
     "options": [
+      "Save The World",
       "Stop The World",
       "Start The World",
-      "Save The World",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-763",
     "title": "Java中如何判断对象可回收？",
     "options": [
-      "可达性分析",
-      "引用计数",
       "标记-清除",
+      "引用计数",
+      "可达性分析",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-764",
     "title": "Java中GC Roots包括？",
     "options": [
-      "栈帧引用，静态变量引用，常量引用，锁持有对象",
       "所有对象",
       "所有引用",
-      "以上都不对"
+      "以上都不对",
+      "栈帧引用，静态变量引用，常量引用，锁持有对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-765",
     "title": "Java中引用的类型有？",
     "options": [
-      "强引用，软引用，弱引用，虚引用",
-      "强引用，弱引用",
       "软引用，虚引用",
-      "以上都不对"
+      "以上都不对",
+      "强引用，弱引用",
+      "强引用，软引用，弱引用，虚引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-766",
@@ -170,8 +170,8 @@
     "options": [
       "不会被GC",
       "内存不足时被GC",
-      "下次GC时被GC",
-      "以上都不对"
+      "以上都不对",
+      "下次GC时被GC"
     ],
     "correctAnswer": 0
   },
@@ -181,8 +181,8 @@
     "options": [
       "内存不足时被GC",
       "不会被GC",
-      "下次GC时被GC",
-      "以上都不对"
+      "以上都不对",
+      "下次GC时被GC"
     ],
     "correctAnswer": 0
   },
@@ -190,45 +190,45 @@
     "id": "java-768",
     "title": "Java中弱引用的特点是？",
     "options": [
+      "内存不足时被GC",
       "下次GC时被GC",
       "不会被GC",
-      "内存不足时被GC",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-769",
     "title": "Java中虚引用的特点是？",
     "options": [
+      "以上都不对",
       "随时被GC，用于跟踪GC",
-      "不会被GC",
       "内存不足时被GC",
-      "以上都不对"
+      "不会被GC"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-770",
     "title": "Java中ReferenceQueue的作用是？",
     "options": [
-      "保存被回收的引用对象",
-      "保存强引用",
       "保存软引用",
-      "以上都不对"
+      "以上都不对",
+      "保存强引用",
+      "保存被回收的引用对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-771",
     "title": "Java中内存泄漏是指？",
     "options": [
-      "对象无法被回收",
-      "内存不足",
       "内存溢出",
-      "以上都不对"
+      "内存不足",
+      "以上都不对",
+      "对象无法被回收"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-772",
@@ -245,54 +245,54 @@
     "id": "java-773",
     "title": "Java中如何排查内存泄漏？",
     "options": [
-      "JMap, JStack, MAT",
-      "JConsole",
+      "以上都不对",
       "JStat",
-      "以上都不对"
+      "JMap, JStack, MAT",
+      "JConsole"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-774",
     "title": "Java中如何排查CPU过高？",
     "options": [
-      "top, JStack",
+      "以上都不对",
       "JMap",
-      "JStat",
-      "以上都不对"
+      "top, JStack",
+      "JStat"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-775",
     "title": "Java中JMap的作用是？",
     "options": [
-      "查看堆信息",
       "查看线程信息",
-      "查看类信息",
-      "以上都不对"
+      "查看堆信息",
+      "以上都不对",
+      "查看类信息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-776",
     "title": "Java中JStack的作用是？",
     "options": [
-      "查看线程信息",
-      "查看堆信息",
       "查看类信息",
-      "以上都不对"
+      "以上都不对",
+      "查看堆信息",
+      "查看线程信息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-777",
     "title": "Java中JStat的作用是？",
     "options": [
       "查看GC统计",
-      "查看堆信息",
+      "以上都不对",
       "查看线程信息",
-      "以上都不对"
+      "查看堆信息"
     ],
     "correctAnswer": 0
   },
@@ -301,8 +301,8 @@
     "title": "Java中JInfo的作用是？",
     "options": [
       "查看JVM参数",
-      "查看堆信息",
       "查看线程信息",
+      "查看堆信息",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -311,21 +311,21 @@
     "id": "java-779",
     "title": "Java中JConsole的作用是？",
     "options": [
-      "可视化监控",
       "命令行监控",
       "日志分析",
-      "以上都不对"
+      "以上都不对",
+      "可视化监控"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-780",
     "title": "Java中VisualVM的作用是？",
     "options": [
       "可视化监控",
-      "命令行监控",
       "日志分析",
-      "以上都不对"
+      "以上都不对",
+      "命令行监控"
     ],
     "correctAnswer": 0
   },
@@ -333,54 +333,54 @@
     "id": "java-781",
     "title": "Java中JVM参数-Xms的作用是？",
     "options": [
-      "初始堆大小",
-      "最大堆大小",
+      "方法区大小",
       "栈大小",
-      "方法区大小"
+      "最大堆大小",
+      "初始堆大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-782",
     "title": "Java中JVM参数-Xmx的作用是？",
     "options": [
-      "最大堆大小",
       "初始堆大小",
+      "最大堆大小",
       "栈大小",
       "方法区大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-783",
     "title": "Java中JVM参数-Xss的作用是？",
     "options": [
-      "栈大小",
       "初始堆大小",
+      "方法区大小",
       "最大堆大小",
-      "方法区大小"
+      "栈大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-784",
     "title": "Java中JVM参数-XX:MetaspaceSize的作用是？",
     "options": [
-      "元空间大小",
       "堆大小",
       "栈大小",
+      "元空间大小",
       "方法区大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-785",
     "title": "Java中JVM参数-XX:NewRatio的作用是？",
     "options": [
       "新生代与老年代比例",
-      "Eden与Survivor比例",
+      "以上都不对",
       "堆与方法区比例",
-      "以上都不对"
+      "Eden与Survivor比例"
     ],
     "correctAnswer": 0
   },
@@ -388,20 +388,20 @@
     "id": "java-786",
     "title": "Java中JVM参数-XX:SurvivorRatio的作用是？",
     "options": [
-      "Eden与Survivor比例",
       "新生代与老年代比例",
-      "堆与方法区比例",
-      "以上都不对"
+      "以上都不对",
+      "Eden与Survivor比例",
+      "堆与方法区比例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-787",
     "title": "Java中JVM参数-XX:MaxTenuringThreshold的作用是？",
     "options": [
       "对象晋升老年代年龄",
-      "新生代大小",
       "Survivor大小",
+      "新生代大小",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -410,23 +410,23 @@
     "id": "java-788",
     "title": "Java中JVM参数-XX:+UseG1GC的作用是？",
     "options": [
-      "使用G1收集器",
-      "使用CMS收集器",
       "使用Parallel收集器",
+      "使用CMS收集器",
+      "使用G1收集器",
       "使用Serial收集器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-789",
     "title": "Java中JVM参数-XX:+PrintGCDetails的作用是？",
     "options": [
-      "打印GC详情",
-      "打印GC统计",
+      "以上都不对",
       "打印GC日志",
-      "以上都不对"
+      "打印GC统计",
+      "打印GC详情"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-790",
@@ -443,43 +443,43 @@
     "id": "java-791",
     "title": "Java中方法区的实现是？",
     "options": [
-      "永久代或元空间",
-      "堆",
       "栈",
-      "以上都不对"
+      "以上都不对",
+      "永久代或元空间",
+      "堆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-792",
     "title": "Java中永久代和元空间的区别是？",
     "options": [
-      "元空间使用本地内存，永久代使用堆内存",
       "元空间使用堆内存，永久代使用本地内存",
-      "无区别",
-      "以上都不对"
+      "元空间使用本地内存，永久代使用堆内存",
+      "以上都不对",
+      "无区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-793",
     "title": "Java中字符串常量池的位置是？",
     "options": [
-      "堆",
-      "方法区",
       "栈",
-      "程序计数器"
+      "方法区",
+      "程序计数器",
+      "堆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-794",
     "title": "Java中Integer缓存池的范围是？",
     "options": [
       "-128到127",
-      "0到255",
+      "无限制",
       "-32768到32767",
-      "无限制"
+      "0到255"
     ],
     "correctAnswer": 0
   },
@@ -487,32 +487,32 @@
     "id": "java-795",
     "title": "Java中JVM调优的目标是？",
     "options": [
-      "降低GC停顿，提高吞吐量",
-      "增加内存使用",
+      "以上都不对",
       "增加GC频率",
-      "以上都不对"
+      "增加内存使用",
+      "降低GC停顿，提高吞吐量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-796",
     "title": "Java中如何选择垃圾收集器？",
     "options": [
-      "根据应用场景",
       "总是选G1",
-      "总是选CMS",
-      "以上都不对"
+      "以上都不对",
+      "根据应用场景",
+      "总是选CMS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-797",
     "title": "Java中如何避免频繁Full GC？",
     "options": [
       "增大老年代，避免内存泄漏",
-      "增大新生代",
+      "以上都不对",
       "减少对象创建",
-      "以上都不对"
+      "增大新生代"
     ],
     "correctAnswer": 0
   },
@@ -521,9 +521,9 @@
     "title": "Java中如何处理OOM？",
     "options": [
       "增加内存，排查泄漏，优化代码",
-      "重启应用",
       "忽略",
-      "以上都不对"
+      "以上都不对",
+      "重启应用"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "java-799",
     "title": "Java中JIT的优化技术有？",
     "options": [
-      "逃逸分析，内联，循环优化",
-      "解释执行",
+      "以上都不对",
       "字节码验证",
-      "以上都不对"
+      "解释执行",
+      "逃逸分析，内联，循环优化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-800",
     "title": "Java中逃逸分析的作用是？",
     "options": [
-      "对象分配优化",
+      "以上都不对",
       "内存泄漏检测",
-      "GC优化",
-      "以上都不对"
+      "对象分配优化",
+      "GC优化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

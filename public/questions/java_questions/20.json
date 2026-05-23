@@ -3,34 +3,34 @@
     "id": "java-951",
     "title": "Java中抽象工厂的特点是？",
     "options": [
-      "创建产品族",
-      "创建单一产品",
+      "以上都不对",
       "创建所有产品",
-      "以上都不对"
+      "创建产品族",
+      "创建单一产品"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-952",
     "title": "Java中建造者模式的作用是？",
     "options": [
-      "构建复杂对象",
-      "创建简单对象",
+      "以上都不对",
       "克隆对象",
-      "以上都不对"
+      "创建简单对象",
+      "构建复杂对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-953",
     "title": "Java中建造者模式的特点是？",
     "options": [
-      "分离构建和表示",
+      "以上都不对",
       "统一构建和表示",
-      "简化构建",
-      "以上都不对"
+      "分离构建和表示",
+      "简化构建"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-954",
@@ -47,67 +47,67 @@
     "id": "java-955",
     "title": "Java中原型模式的实现是？",
     "options": [
+      "实现Comparable接口",
       "实现Cloneable接口",
       "实现Serializable接口",
-      "实现Comparable接口",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-956",
     "title": "Java中深克隆和浅克隆的区别？",
     "options": [
-      "深克隆复制引用对象，浅克隆不复制",
       "浅克隆复制引用对象，深克隆不复制",
       "无区别",
+      "深克隆复制引用对象，浅克隆不复制",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-957",
     "title": "Java中适配器模式的作用是？",
     "options": [
-      "接口转换",
-      "接口创建",
       "接口隔离",
-      "以上都不对"
+      "接口创建",
+      "以上都不对",
+      "接口转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-958",
     "title": "Java中类适配器的实现是？",
     "options": [
-      "继承被适配类，实现目标接口",
+      "以上都不对",
       "组合被适配类，实现目标接口",
-      "实现被适配接口，继承目标类",
-      "以上都不对"
+      "继承被适配类，实现目标接口",
+      "实现被适配接口，继承目标类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-959",
     "title": "Java中对象适配器的实现是？",
     "options": [
-      "组合被适配类，实现目标接口",
-      "继承被适配类，实现目标接口",
       "实现被适配接口，继承目标类",
+      "继承被适配类，实现目标接口",
+      "组合被适配类，实现目标接口",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-960",
     "title": "Java中桥接模式的作用是？",
     "options": [
-      "分离抽象和实现",
-      "接口转换",
       "接口创建",
-      "以上都不对"
+      "接口转换",
+      "以上都不对",
+      "分离抽象和实现"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-961",
@@ -115,8 +115,8 @@
     "options": [
       "树形结构",
       "接口转换",
-      "对象克隆",
-      "以上都不对"
+      "以上都不对",
+      "对象克隆"
     ],
     "correctAnswer": 0
   },
@@ -124,12 +124,12 @@
     "id": "java-962",
     "title": "Java中装饰器模式的作用是？",
     "options": [
-      "动态添加功能",
       "接口转换",
-      "对象克隆",
-      "以上都不对"
+      "动态添加功能",
+      "以上都不对",
+      "对象克隆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-963",
@@ -137,8 +137,8 @@
     "options": [
       "装饰器更灵活",
       "继承更灵活",
-      "无区别",
-      "以上都不对"
+      "以上都不对",
+      "无区别"
     ],
     "correctAnswer": 0
   },
@@ -168,54 +168,54 @@
     "id": "java-966",
     "title": "Java中代理模式的作用是？",
     "options": [
-      "控制访问",
-      "接口转换",
       "对象克隆",
-      "以上都不对"
+      "以上都不对",
+      "接口转换",
+      "控制访问"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-967",
     "title": "Java中静态代理的特点是？",
     "options": [
+      "以上都不对",
       "代理类在编译时确定",
-      "代理类在运行时生成",
       "无代理类",
-      "以上都不对"
+      "代理类在运行时生成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-968",
     "title": "Java中动态代理的特点是？",
     "options": [
+      "以上都不对",
       "代理类在运行时生成",
-      "代理类在编译时确定",
       "无代理类",
-      "以上都不对"
+      "代理类在编译时确定"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-969",
     "title": "Java中JDK动态代理的特点是？",
     "options": [
-      "基于接口",
-      "基于类",
       "基于继承",
-      "以上都不对"
+      "以上都不对",
+      "基于接口",
+      "基于类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-970",
     "title": "Java中CGLIB动态代理的特点是？",
     "options": [
       "基于类",
+      "以上都不对",
       "基于接口",
-      "基于继承",
-      "以上都不对"
+      "基于继承"
     ],
     "correctAnswer": 0
   },
@@ -224,9 +224,9 @@
     "title": "Java中责任链模式的作用是？",
     "options": [
       "处理链式请求",
+      "以上都不对",
       "接口转换",
-      "对象克隆",
-      "以上都不对"
+      "对象克隆"
     ],
     "correctAnswer": 0
   },
@@ -234,54 +234,54 @@
     "id": "java-972",
     "title": "Java中命令模式的作用是？",
     "options": [
-      "封装请求为对象",
-      "接口转换",
       "对象克隆",
+      "接口转换",
+      "封装请求为对象",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-973",
     "title": "Java中解释器模式的作用是？",
     "options": [
-      "定义语言文法",
-      "接口转换",
+      "以上都不对",
       "对象克隆",
-      "以上都不对"
+      "接口转换",
+      "定义语言文法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-974",
     "title": "Java中迭代器模式的作用是？",
     "options": [
-      "顺序访问集合",
       "接口转换",
-      "对象克隆",
-      "以上都不对"
+      "以上都不对",
+      "顺序访问集合",
+      "对象克隆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-975",
     "title": "Java中介者模式的作用是？",
     "options": [
-      "封装交互",
       "接口转换",
-      "对象克隆",
-      "以上都不对"
+      "以上都不对",
+      "封装交互",
+      "对象克隆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-976",
     "title": "Java中备忘录模式的作用是？",
     "options": [
       "保存和恢复状态",
-      "接口转换",
       "对象克隆",
-      "以上都不对"
+      "以上都不对",
+      "接口转换"
     ],
     "correctAnswer": 0
   },
@@ -289,23 +289,23 @@
     "id": "java-977",
     "title": "Java中观察者模式的作用是？",
     "options": [
-      "定义一对多依赖",
+      "以上都不对",
       "接口转换",
-      "对象克隆",
-      "以上都不对"
+      "定义一对多依赖",
+      "对象克隆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-978",
     "title": "Java中状态模式的作用是？",
     "options": [
+      "对象克隆",
       "允许对象改变行为",
       "接口转换",
-      "对象克隆",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-979",
@@ -324,8 +324,8 @@
     "options": [
       "定义算法骨架",
       "接口转换",
-      "对象克隆",
-      "以上都不对"
+      "以上都不对",
+      "对象克隆"
     ],
     "correctAnswer": 0
   },
@@ -333,89 +333,89 @@
     "id": "java-981",
     "title": "Java中访问者模式的作用是？",
     "options": [
-      "分离数据结构与操作",
-      "接口转换",
       "对象克隆",
+      "接口转换",
+      "分离数据结构与操作",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-982",
     "title": "Java中开闭原则是指？",
     "options": [
-      "对扩展开放，对修改关闭",
       "对修改开放，对扩展关闭",
+      "以上都不对",
       "都不开放",
-      "以上都不对"
+      "对扩展开放，对修改关闭"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-983",
     "title": "Java中单一职责原则是指？",
     "options": [
-      "一个类只有一个引起变化的原因",
       "一个类只写一个方法",
+      "一个类只有一个引起变化的原因",
       "一个方法只写一行",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-984",
     "title": "Java中里氏替换原则是指？",
     "options": [
-      "子类可以替换父类",
-      "父类可以替换子类",
+      "以上都不对",
       "不能替换",
-      "以上都不对"
+      "父类可以替换子类",
+      "子类可以替换父类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-985",
     "title": "Java中依赖倒置原则是指？",
     "options": [
-      "依赖抽象，不依赖具体",
+      "以上都不对",
       "依赖具体，不依赖抽象",
       "都不依赖",
-      "以上都不对"
+      "依赖抽象，不依赖具体"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-986",
     "title": "Java中接口隔离原则是指？",
     "options": [
-      "客户端不应依赖不需要的接口",
       "接口越少越好",
       "接口越多越好",
+      "客户端不应依赖不需要的接口",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-987",
     "title": "Java中迪米特法则是指？",
     "options": [
-      "最少知道原则",
+      "以上都不对",
       "最多知道原则",
-      "不需要知道",
-      "以上都不对"
+      "最少知道原则",
+      "不需要知道"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-988",
     "title": "Java中合成复用原则是指？",
     "options": [
+      "以上都不对",
       "优先使用组合而非继承",
-      "优先使用继承而非组合",
       "都不使用",
-      "以上都不对"
+      "优先使用继承而非组合"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-989",
@@ -432,21 +432,21 @@
     "id": "java-990",
     "title": "Java中不可变对象的好处是？",
     "options": [
-      "线程安全，易于缓存",
-      "修改方便",
       "性能差",
-      "以上都不对"
+      "修改方便",
+      "以上都不对",
+      "线程安全，易于缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-991",
     "title": "Java中如何创建不可变对象？",
     "options": [
       "final类，final字段，无setter，深拷贝引用",
-      "使用static",
+      "以上都不对",
       "使用volatile",
-      "以上都不对"
+      "使用static"
     ],
     "correctAnswer": 0
   },
@@ -455,9 +455,9 @@
     "title": "Java中String为什么设计为不可变？",
     "options": [
       "字符串常量池，线程安全，安全",
-      "性能差",
+      "以上都不对",
       "内存占用大",
-      "以上都不对"
+      "性能差"
     ],
     "correctAnswer": 0
   },
@@ -465,45 +465,45 @@
     "id": "java-993",
     "title": "Java中防御性拷贝的作用是？",
     "options": [
-      "保护内部对象不被外部修改",
-      "提高性能",
+      "以上都不对",
       "减少内存",
-      "以上都不对"
+      "保护内部对象不被外部修改",
+      "提高性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-994",
     "title": "Java中fail-fast机制的实现是？",
     "options": [
-      "modCount计数器",
-      "加锁",
+      "以上都不对",
       "volatile",
-      "以上都不对"
+      "modCount计数器",
+      "加锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-995",
     "title": "Java中线程安全的单例最佳实践是？",
     "options": [
-      "枚举单例",
-      "饿汉式",
       "懒汉式",
-      "以上都不对"
+      "饿汉式",
+      "以上都不对",
+      "枚举单例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-996",
     "title": "Java中避免内存泄漏的最佳实践是？",
     "options": [
-      "及时释放引用，使用WeakReference",
+      "以上都不对",
       "多创建对象",
-      "少创建对象",
-      "以上都不对"
+      "及时释放引用，使用WeakReference",
+      "少创建对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-997",
@@ -511,8 +511,8 @@
     "options": [
       "重用对象减少开销",
       "创建更多对象",
-      "销毁对象",
-      "以上都不对"
+      "以上都不对",
+      "销毁对象"
     ],
     "correctAnswer": 0
   },
@@ -520,33 +520,33 @@
     "id": "java-998",
     "title": "Java中享元模式与对象池的区别是？",
     "options": [
+      "享元更复杂",
       "享元解决共享细粒度对象，池解决重用对象",
       "没有区别",
-      "享元更复杂",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-999",
     "title": "Java中代理模式与装饰器模式的区别是？",
     "options": [
-      "代理控制访问，装饰器增强功能",
-      "没有区别",
       "代理更简单",
-      "以上都不对"
+      "没有区别",
+      "以上都不对",
+      "代理控制访问，装饰器增强功能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-1000",
     "title": "Java中单例模式的实现方式有？",
     "options": [
-      "饿汉, 懒汉, 双重检查, 枚举",
+      "以上都不对",
       "工厂, 抽象工厂",
-      "建造者, 原型",
-      "以上都不对"
+      "饿汉, 懒汉, 双重检查, 枚举",
+      "建造者, 原型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

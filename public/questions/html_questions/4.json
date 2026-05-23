@@ -14,20 +14,20 @@
     "id": "html-152",
     "title": "<input>的autofocus属性用于？",
     "options": [
-      "页面加载时自动获取焦点",
       "自动对焦",
-      "自动完成",
-      "自动验证"
+      "自动验证",
+      "页面加载时自动获取焦点",
+      "自动完成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-153",
     "title": "<input>的form属性用于？",
     "options": [
       "将输入框与指定id的表单关联",
-      "设置表单名称",
       "提交表单",
+      "设置表单名称",
       "重置表单"
     ],
     "correctAnswer": 0
@@ -36,21 +36,21 @@
     "id": "html-154",
     "title": "<input>的multiple属性用于？",
     "options": [
-      "允许输入多个值（如多文件上传）",
       "多选框",
       "多次提交",
-      "多行输入"
+      "多行输入",
+      "允许输入多个值（如多文件上传）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-155",
     "title": "<optgroup>标签的作用是？",
     "options": [
       "定义选项组",
+      "定义表单",
       "定义选项",
-      "定义下拉列表",
-      "定义表单"
+      "定义下拉列表"
     ],
     "correctAnswer": 0
   },
@@ -58,43 +58,43 @@
     "id": "html-156",
     "title": "<optgroup>的label属性用于？",
     "options": [
+      "定义样式",
       "为选项组定义描述",
-      "定义选项值",
       "定义绑定",
-      "定义样式"
+      "定义选项值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-157",
     "title": "<button>标签与<input type=\"button\">的区别？",
     "options": [
-      "<button>可以包含HTML内容",
-      "没有区别",
       "<input>更灵活",
+      "没有区别",
+      "<button>可以包含HTML内容",
       "<button>不能提交"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-158",
     "title": "如何创建一个不含任何验证的提交按钮？",
     "options": [
-      "使用formnovalidate属性",
-      "取消action",
       "使用GET方法",
+      "取消action",
+      "使用formnovalidate属性",
       "删除name"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-159",
     "title": "<input type=\"reset\">的作用是？",
     "options": [
       "重置表单为初始值",
-      "清空表单为空白",
+      "删除表单",
       "提交表单",
-      "删除表单"
+      "清空表单为空白"
     ],
     "correctAnswer": 0
   },
@@ -102,175 +102,175 @@
     "id": "html-160",
     "title": "<input>的min和max属性用于？",
     "options": [
-      "限制数值或日期范围",
       "限制字符长度",
       "限制显示大小",
-      "限制文件大小"
+      "限制文件大小",
+      "限制数值或日期范围"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-161",
     "title": "表单验证中，:valid伪类的作用是？",
     "options": [
-      "选择验证通过的输入框",
       "选择未验证的",
+      "选择必填的",
       "选择验证失败的",
-      "选择必填的"
+      "选择验证通过的输入框"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-162",
     "title": "表单验证中，:invalid伪类的作用是？",
     "options": [
-      "选择验证失败的输入框",
+      "选择只读的",
       "选择验证通过的",
-      "选择禁用的",
-      "选择只读的"
+      "选择验证失败的输入框",
+      "选择禁用的"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-163",
     "title": "<input>的step=\"any\"的含义是？",
     "options": [
-      "允许输入任意小数",
       "步长为1",
       "步长为0",
+      "允许输入任意小数",
       "无步长限制(整数)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-164",
     "title": "如何实现表单的异步提交？",
     "options": [
-      "使用FormData和XMLHttpRequest/Fetch",
       "使用action",
+      "使用FormData和XMLHttpRequest/Fetch",
       "使用method",
       "使用target"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-165",
     "title": "<form>的target属性用于？",
     "options": [
-      "规定提交结果在哪里显示",
       "规定提交地址",
+      "规定编码",
       "规定提交方法",
-      "规定编码"
+      "规定提交结果在哪里显示"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-166",
     "title": "<input type=\"password\">的安全性体现在？",
     "options": [
-      "输入内容显示为掩码",
       "数据加密传输",
       "自动拦截",
-      "隐藏输入框"
+      "隐藏输入框",
+      "输入内容显示为掩码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-167",
     "title": "如何为表单控件设置提示信息？",
     "options": [
-      "使用title属性",
-      "使用placeholder",
+      "使用name",
       "使用alt",
-      "使用name"
+      "使用title属性",
+      "使用placeholder"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-168",
     "title": "<input>的checked属性用于？",
     "options": [
-      "预选checkbox或radio",
+      "设置只读",
       "验证输入",
       "禁用输入",
-      "设置只读"
+      "预选checkbox或radio"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-169",
     "title": "<input>的selected属性用于？",
     "options": [
-      "预选下拉列表的option",
-      "预选checkbox",
+      "禁用option",
       "预选radio",
-      "禁用option"
+      "预选下拉列表的option",
+      "预选checkbox"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-170",
     "title": "<textarea>的rows属性用于？",
     "options": [
-      "规定可见行数",
       "规定字符数",
+      "规定最大行数",
       "规定宽度",
-      "规定最大行数"
+      "规定可见行数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-171",
     "title": "<textarea>的cols属性用于？",
     "options": [
+      "规定最大列数",
       "规定可见列数",
-      "规定行数",
       "规定高度",
-      "规定最大列数"
+      "规定行数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-172",
     "title": "<textarea>默认的resize行为是？",
     "options": [
-      "浏览器默认可拉伸",
-      "不可拉伸",
       "只能水平拉伸",
-      "只能垂直拉伸"
+      "只能垂直拉伸",
+      "不可拉伸",
+      "浏览器默认可拉伸"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-173",
     "title": "如何禁止textarea拉伸？",
     "options": [
-      "resize: none",
-      "overflow: hidden",
+      "max-width: 100%",
       "display: block",
-      "max-width: 100%"
+      "overflow: hidden",
+      "resize: none"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-174",
     "title": "<input type=\"checkbox\">的value在未选中时会提交吗？",
     "options": [
-      "不会",
       "会提交空值",
+      "不会",
       "会提交0",
       "会提交false"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-175",
     "title": "如何将多个checkbox归为一组？",
     "options": [
       "使用相同的name属性",
-      "使用相同的id",
+      "使用相同的value",
       "使用相同的class",
-      "使用相同的value"
+      "使用相同的id"
     ],
     "correctAnswer": 0
   },
@@ -289,89 +289,89 @@
     "id": "html-177",
     "title": "<form>的enctype默认值是？",
     "options": [
-      "application/x-www-form-urlencoded",
       "multipart/form-data",
+      "application/json",
       "text/plain",
-      "application/json"
+      "application/x-www-form-urlencoded"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-178",
     "title": "<input>的accept属性用于？",
     "options": [
-      "规定文件上传的类型",
-      "规定字符集",
       "规定提交方式",
-      "规定验证规则"
+      "规定字符集",
+      "规定验证规则",
+      "规定文件上传的类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-179",
     "title": "<input type=\"file\">的capture属性用于？",
     "options": [
-      "指定调用摄像头或相册",
-      "捕获屏幕",
       "录制音频",
-      "截取图片"
+      "捕获屏幕",
+      "截取图片",
+      "指定调用摄像头或相册"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-180",
     "title": "<input>的formaction属性用于？",
     "options": [
-      "覆盖form的action属性",
       "定义表单方法",
-      "定义表单目标",
-      "定义表单编码"
+      "覆盖form的action属性",
+      "定义表单编码",
+      "定义表单目标"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-181",
     "title": "<input>的formmethod属性用于？",
     "options": [
-      "覆盖form的method属性",
       "定义提交地址",
-      "定义目标",
-      "定义验证"
+      "定义验证",
+      "覆盖form的method属性",
+      "定义目标"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-182",
     "title": "<input>的formenctype属性用于？",
     "options": [
-      "覆盖form的enctype属性",
-      "定义提交方法",
       "定义字符集",
-      "定义验证"
+      "定义验证",
+      "定义提交方法",
+      "覆盖form的enctype属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-183",
     "title": "<input>的formtarget属性用于？",
     "options": [
-      "覆盖form的target属性",
       "定义提交方法",
+      "覆盖form的target属性",
       "定义地址",
       "定义编码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-184",
     "title": "如何实现自定义表单验证逻辑？",
     "options": [
-      "使用JavaScript和Constraint Validation API",
       "仅用HTML属性",
       "仅用CSS",
-      "无法实现"
+      "无法实现",
+      "使用JavaScript和Constraint Validation API"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-185",
@@ -388,12 +388,12 @@
     "id": "html-186",
     "title": "如何阻止HTML5默认的表单验证？",
     "options": [
-      "在form添加novalidate",
+      "添加validate=\"false\"",
       "删除action",
-      "删除method",
-      "添加validate=\"false\""
+      "在form添加novalidate",
+      "删除method"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-187",
@@ -401,8 +401,8 @@
     "options": [
       "显示任务进度条",
       "显示度量",
-      "显示范围",
-      "显示加载"
+      "显示加载",
+      "显示范围"
     ],
     "correctAnswer": 0
   },
@@ -410,21 +410,21 @@
     "id": "html-188",
     "title": "<meter>标签的作用是？",
     "options": [
-      "显示标量度量（如磁盘使用率）",
+      "显示刻度",
       "显示进度",
       "显示滑块",
-      "显示刻度"
+      "显示标量度量（如磁盘使用率）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-189",
     "title": "<progress>的max属性用于？",
     "options": [
       "规定进度条的最大值",
+      "规定当前值",
       "规定最小值",
-      "规定步长",
-      "规定当前值"
+      "规定步长"
     ],
     "correctAnswer": 0
   },
@@ -434,8 +434,8 @@
     "options": [
       "规定被视为高的阈值",
       "规定最大值",
-      "规定最小值",
-      "规定最优值"
+      "规定最优值",
+      "规定最小值"
     ],
     "correctAnswer": 0
   },
@@ -445,8 +445,8 @@
     "options": [
       "规定被视为低的阈值",
       "规定最大值",
-      "规定高度",
-      "规定长度"
+      "规定长度",
+      "规定高度"
     ],
     "correctAnswer": 0
   },
@@ -456,8 +456,8 @@
     "options": [
       "规定最优度量值",
       "规定最大值",
-      "规定最小值",
-      "规定平均值"
+      "规定平均值",
+      "规定最小值"
     ],
     "correctAnswer": 0
   },
@@ -465,23 +465,23 @@
     "id": "html-193",
     "title": "<input type=\"hidden\">的主要用途是？",
     "options": [
-      "存储不需要显示的表单数据",
-      "隐藏表单",
+      "加密数据",
       "安全提交",
-      "加密数据"
+      "隐藏表单",
+      "存储不需要显示的表单数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-194",
     "title": "<form>的accept-charset属性用于？",
     "options": [
-      "规定服务器可处理的字符集",
-      "规定文件类型",
       "规定编码方式",
-      "规定语言"
+      "规定服务器可处理的字符集",
+      "规定语言",
+      "规定文件类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-195",
@@ -510,9 +510,9 @@
     "title": "<input>标签的type属性默认值是？",
     "options": [
       "text",
-      "password",
       "submit",
-      "radio"
+      "radio",
+      "password"
     ],
     "correctAnswer": 0
   },
@@ -520,33 +520,33 @@
     "id": "html-198",
     "title": "用于创建密码输入框的type属性是？",
     "options": [
-      "password",
-      "text",
       "hidden",
+      "text",
+      "password",
       "passwd"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-199",
     "title": "用于创建单选按钮的type属性是？",
     "options": [
-      "radio",
-      "checkbox",
       "select",
+      "checkbox",
+      "radio",
       "option"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-200",
     "title": "用于创建复选框的type属性是？",
     "options": [
-      "checkbox",
       "radio",
       "check",
-      "select"
+      "select",
+      "checkbox"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

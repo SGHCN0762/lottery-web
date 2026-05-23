@@ -3,20 +3,20 @@
     "id": "react-301",
     "title": "React Router 的主要作用是？",
     "options": [
-      "实现单页应用的路由管理",
+      "网络请求",
       "状态管理",
       "UI 组件库",
-      "网络请求"
+      "实现单页应用的路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-302",
     "title": "React Router v6 的主要变化是？",
     "options": [
       "API 更简洁、相对路由、嵌套路由优化",
-      "支持 Hash 路由",
       "移除 Hooks",
+      "支持 Hash 路由",
       "增加 Redux 集成"
     ],
     "correctAnswer": 0
@@ -25,42 +25,42 @@
     "id": "react-303",
     "title": "React Router 中 BrowserRouter 的作用是？",
     "options": [
+      "静态路由器",
       "使用 HTML5 History API 的路由器",
-      "使用 Hash 的路由器",
       "内存路由器",
-      "静态路由器"
+      "使用 Hash 的路由器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-304",
     "title": "React Router 中 HashRouter 的作用是？",
     "options": [
-      "使用 URL Hash 的路由器",
       "使用 History API 的路由器",
+      "使用 URL Hash 的路由器",
       "内存路由器",
       "静态路由器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-305",
     "title": "React Router 中 MemoryRouter 的作用是？",
     "options": [
-      "将路由保存在内存中，不修改 URL",
-      "使用 History API",
       "使用 Hash",
-      "持久化路由"
+      "使用 History API",
+      "持久化路由",
+      "将路由保存在内存中，不修改 URL"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-306",
     "title": "React Router 中 StaticRouter 的作用是？",
     "options": [
       "用于服务端渲染的路由器",
-      "客户端路由",
       "内存路由",
+      "客户端路由",
       "Hash 路由"
     ],
     "correctAnswer": 0
@@ -69,21 +69,21 @@
     "id": "react-307",
     "title": "React Router 中 Routes 组件的作用是？",
     "options": [
-      "根据路径匹配渲染路由",
       "定义路由",
       "导航链接",
-      "路由守卫"
+      "路由守卫",
+      "根据路径匹配渲染路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-308",
     "title": "React Router 中 Route 组件的作用是？",
     "options": [
       "定义路径与组件的映射关系",
-      "匹配路由",
       "导航链接",
-      "路由守卫"
+      "路由守卫",
+      "匹配路由"
     ],
     "correctAnswer": 0
   },
@@ -91,21 +91,21 @@
     "id": "react-309",
     "title": "React Router 中 Route 的 path 属性作用是？",
     "options": [
+      "定义重定向",
       "定义匹配的 URL 路径",
       "定义组件",
-      "定义参数",
-      "定义重定向"
+      "定义参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-310",
     "title": "React Router 中 Route 的 element 属性作用是？",
     "options": [
       "指定匹配时渲染的 React 元素",
+      "指定守卫",
       "指定组件路径",
-      "指定重定向",
-      "指定守卫"
+      "指定重定向"
     ],
     "correctAnswer": 0
   },
@@ -113,76 +113,76 @@
     "id": "react-311",
     "title": "React Router 中 Link 组件的作用是？",
     "options": [
-      "提供声明式导航",
-      "匹配路由",
       "渲染组件",
-      "重定向"
+      "匹配路由",
+      "重定向",
+      "提供声明式导航"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-312",
     "title": "React Router 中 NavLink 组件的作用是？",
     "options": [
-      "提供带激活状态的导航链接",
       "普通链接",
+      "重定向",
       "匹配路由",
-      "重定向"
+      "提供带激活状态的导航链接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-313",
     "title": "React Router 中 NavLink 的 activeClassName 作用是？",
     "options": [
-      "设置激活时的类名",
-      "设置默认类名",
       "设置悬停类名",
-      "设置禁用类名"
+      "设置禁用类名",
+      "设置默认类名",
+      "设置激活时的类名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-314",
     "title": "React Router 中 Navigate 组件的作用是？",
     "options": [
-      "实现声明式重定向",
-      "导航链接",
       "匹配路由",
-      "渲染组件"
+      "渲染组件",
+      "实现声明式重定向",
+      "导航链接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-315",
     "title": "React Router 中 Outlet 组件的作用是？",
     "options": [
-      "渲染子路由的占位组件",
       "导航链接",
+      "渲染子路由的占位组件",
       "重定向",
       "路由守卫"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-316",
     "title": "React Router 中 useNavigate Hook 的作用是？",
     "options": [
-      "编程式导航",
-      "获取参数",
       "获取路由信息",
-      "路由守卫"
+      "路由守卫",
+      "获取参数",
+      "编程式导航"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-317",
     "title": "React Router 中 useParams Hook 的作用是？",
     "options": [
       "获取动态路由参数",
-      "获取查询参数",
       "获取路径",
-      "获取路由信息"
+      "获取路由信息",
+      "获取查询参数"
     ],
     "correctAnswer": 0
   },
@@ -191,9 +191,9 @@
     "title": "React Router 中 useLocation Hook 的作用是？",
     "options": [
       "获取当前 URL 信息",
-      "获取参数",
       "导航",
-      "路由守卫"
+      "路由守卫",
+      "获取参数"
     ],
     "correctAnswer": 0
   },
@@ -202,9 +202,9 @@
     "title": "React Router 中 useSearchParams Hook 的作用是？",
     "options": [
       "获取和设置查询参数",
-      "获取动态参数",
+      "获取路由信息",
       "获取路径",
-      "获取路由信息"
+      "获取动态参数"
     ],
     "correctAnswer": 0
   },
@@ -212,31 +212,31 @@
     "id": "react-320",
     "title": "React Router 中 useRoutes Hook 的作用是？",
     "options": [
-      "使用对象配置定义路由",
       "获取路由信息",
-      "导航",
-      "路由守卫"
+      "路由守卫",
+      "使用对象配置定义路由",
+      "导航"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-321",
     "title": "React Router 中 useMatch Hook 的作用是？",
     "options": [
-      "匹配指定路径并返回信息",
-      "获取参数",
       "导航",
-      "路由守卫"
+      "匹配指定路径并返回信息",
+      "路由守卫",
+      "获取参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-322",
     "title": "React Router 中 useNavigate 的 replace 选项作用是？",
     "options": [
       "替换当前历史记录而不是推入",
-      "延迟导航",
       "刷新页面",
+      "延迟导航",
       "取消导航"
     ],
     "correctAnswer": 0
@@ -245,34 +245,34 @@
     "id": "react-323",
     "title": "React Router 中 useNavigate 的 state 选项作用是？",
     "options": [
-      "传递隐藏的状态数据到新路由",
-      "设置参数",
+      "设置路径",
       "设置查询",
-      "设置路径"
+      "设置参数",
+      "传递隐藏的状态数据到新路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-324",
     "title": "React Router 中动态路由参数如何定义？",
     "options": [
-      ":id",
-      "{id}",
       "<id>",
-      "[id]"
+      "[id]",
+      ":id",
+      "{id}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-325",
     "title": "React Router 中通配符路由如何定义？",
     "options": [
+      "**",
       "*",
       ":all",
-      "**",
       "/..."
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-326",
@@ -289,32 +289,32 @@
     "id": "react-327",
     "title": "React Router 中相对路由的优势是？",
     "options": [
-      "无需从根路径写起，构建更灵活",
       "性能更好",
       "支持 Hash",
+      "无需从根路径写起，构建更灵活",
       "支持 SSR"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-328",
     "title": "React Router v6 中如何实现路由守卫？",
     "options": [
-      "自定义组件判断 Auth 后渲染 Outlet 或 Navigate",
       "使用 onEnter 钩子",
       "使用 beforeEach",
+      "自定义组件判断 Auth 后渲染 Outlet 或 Navigate",
       "使用中间件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-329",
     "title": "React Router 中如何实现懒加载路由组件？",
     "options": [
       "React.lazy + Suspense 包裹 element",
-      "import() 直接使用",
+      "Webpack 魔法注释",
       "require()",
-      "Webpack 魔法注释"
+      "import() 直接使用"
     ],
     "correctAnswer": 0
   },
@@ -322,21 +322,21 @@
     "id": "react-330",
     "title": "React Router 中如何获取上一页路径？",
     "options": [
-      "使用 useLocation 的 state 或 history",
       "无法获取",
-      "使用 useNavigate",
-      "使用 useParams"
+      "使用 useLocation 的 state 或 history",
+      "使用 useParams",
+      "使用 useNavigate"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-331",
     "title": "React Router 中如何监听路由变化？",
     "options": [
       "使用 useLocation 结合 useEffect",
-      "使用 watch",
       "使用 onRouteChange",
-      "使用 beforeEach"
+      "使用 beforeEach",
+      "使用 watch"
     ],
     "correctAnswer": 0
   },
@@ -344,12 +344,12 @@
     "id": "react-332",
     "title": "React Router 中如何实现页面滚动恢复？",
     "options": [
-      "自定义 ScrollToTop 组件监听路由变化",
+      "无法实现",
       "使用 scrollRestoration",
       "使用浏览器默认",
-      "无法实现"
+      "自定义 ScrollToTop 组件监听路由变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-333",
@@ -366,12 +366,12 @@
     "id": "react-334",
     "title": "React Router 中 BrowserRouter 和 HashRouter 的选择？",
     "options": [
-      "BrowserRouter URL 美观需服务器配置，HashRouter 兼容性好",
+      "没有区别",
       "总是使用 HashRouter",
       "总是使用 BrowserRouter",
-      "没有区别"
+      "BrowserRouter URL 美观需服务器配置，HashRouter 兼容性好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-335",
@@ -388,76 +388,76 @@
     "id": "react-336",
     "title": "React Router 中如何实现权限路由？",
     "options": [
-      "封装 ProtectedRoute 组件判断权限",
-      "使用 onEnter",
       "使用 beforeEach",
-      "使用中间件"
+      "封装 ProtectedRoute 组件判断权限",
+      "使用中间件",
+      "使用 onEnter"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-337",
     "title": "React Router 中如何实现路由缓存？",
     "options": [
-      "React Router 不支持，需结合 KeepAlive 或状态管理",
-      "使用 CacheRoute",
       "使用 keepAlive 属性",
+      "使用 CacheRoute",
+      "React Router 不支持，需结合 KeepAlive 或状态管理",
       "使用 Outlet"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-338",
     "title": "React Router 中如何实现路由元信息？",
     "options": [
-      "在路由配置中添加自定义字段并在渲染时读取",
       "使用 meta 属性",
       "使用 useMeta",
+      "在路由配置中添加自定义字段并在渲染时读取",
       "无法实现"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-339",
     "title": "React Router 中如何实现查询参数解析？",
     "options": [
-      "使用 useSearchParams 或自定义解析",
       "使用 useParams",
       "使用 useLocation",
-      "使用 useQuery"
+      "使用 useQuery",
+      "使用 useSearchParams 或自定义解析"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-340",
     "title": "React Router 中如何实现路由跳转前确认？",
     "options": [
-      "自定义 Prompt 组件或 useBlocker",
       "使用 onBeforeLeave",
       "使用 beforeEach",
+      "自定义 Prompt 组件或 useBlocker",
       "使用 confirm"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-341",
     "title": "React Router 中如何实现多布局路由？",
     "options": [
-      "在父路由中使用不同布局组件包裹 Outlet",
-      "使用 Layout 组件",
       "使用 CSS",
-      "无法实现"
+      "在父路由中使用不同布局组件包裹 Outlet",
+      "无法实现",
+      "使用 Layout 组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-342",
     "title": "React Router 中如何实现路由别名？",
     "options": [
       "配置多个指向同一组件的路径",
+      "无法实现",
       "使用 alias 属性",
-      "使用 redirect",
-      "无法实现"
+      "使用 redirect"
     ],
     "correctAnswer": 0
   },
@@ -465,88 +465,88 @@
     "id": "react-343",
     "title": "React Router 中如何实现路由重定向？",
     "options": [
-      "使用 Navigate 组件或 useNavigate",
-      "使用 redirect 属性",
       "使用 alias",
+      "使用 redirect 属性",
+      "使用 Navigate 组件或 useNavigate",
       "使用 push"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-344",
     "title": "React Router 中如何实现路由过渡动画？",
     "options": [
-      "结合 CSSTransition 和 useLocation",
       "使用内置动画",
-      "使用 CSS only",
-      "无法实现"
+      "结合 CSSTransition 和 useLocation",
+      "无法实现",
+      "使用 CSS only"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-345",
     "title": "React Router 中如何实现路由预加载？",
     "options": [
-      "在 Link 悬停时动态 import 组件",
       "使用 preload 属性",
-      "使用 prefetch",
-      "无法实现"
+      "在 Link 悬停时动态 import 组件",
+      "无法实现",
+      "使用 prefetch"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-346",
     "title": "React Router 中如何实现路由切换埋点？",
     "options": [
-      "在 useLocation 的 useEffect 中上报",
+      "使用中间件",
       "使用 onRouteChange",
       "使用 beforeEach",
-      "使用中间件"
+      "在 useLocation 的 useEffect 中上报"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-347",
     "title": "React Router 中如何实现路由切换进度条？",
     "options": [
-      "监听路由变化显示 NProgress",
-      "使用内置进度条",
       "使用 CSS only",
-      "无法实现"
+      "使用内置进度条",
+      "无法实现",
+      "监听路由变化显示 NProgress"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-348",
     "title": "React Router 中如何实现路由切换取消请求？",
     "options": [
-      "在路由变化时使用 AbortController 取消",
-      "使用 cancelToken",
       "使用 cancel",
-      "无法实现"
+      "在路由变化时使用 AbortController 取消",
+      "无法实现",
+      "使用 cancelToken"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-349",
     "title": "React Router 中如何实现路由切换数据预取？",
     "options": [
-      "在 Loader 函数中预取或使用 useLoaderData",
       "在 useEffect 中获取",
+      "在 Loader 函数中预取或使用 useLoaderData",
       "在 render 中获取",
       "无法实现"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-350",
     "title": "React Router 中如何实现路由切换动画？",
     "options": [
-      "使用 Framer Motion 包裹 Outlet",
-      "使用内置动画",
       "使用 CSS only",
-      "无法实现"
+      "使用内置动画",
+      "无法实现",
+      "使用 Framer Motion 包裹 Outlet"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

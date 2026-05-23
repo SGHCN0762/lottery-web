@@ -14,76 +14,76 @@
     "id": "c-702",
     "title": "C语言中，算术运算符的结合性是？",
     "options": [
-      "左结合",
+      "不确定",
       "右结合",
       "无结合性",
-      "不确定"
+      "左结合"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-703",
     "title": "C语言中，类型转换的顺序是？",
     "options": [
-      "低精度向高精度转换",
       "高精度向低精度转换",
       "随机转换",
+      "低精度向高精度转换",
       "不转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-704",
     "title": "C语言中，强制类型转换的语法是？",
     "options": [
-      "(类型)表达式",
-      "类型(表达式)",
       "表达式 as 类型",
-      "cast(类型, 表达式)"
+      "cast(类型, 表达式)",
+      "类型(表达式)",
+      "(类型)表达式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-705",
     "title": "C语言中，隐式类型转换发生在？",
     "options": [
-      "赋值、运算、传参时",
       "只在强制转换时",
       "不发生",
+      "赋值、运算、传参时",
       "只在编译时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-706",
     "title": "C语言中，整数溢出会怎样？",
     "options": [
-      "未定义行为",
-      "抛出异常",
       "自动扩大类型",
-      "编译错误"
+      "抛出异常",
+      "编译错误",
+      "未定义行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-707",
     "title": "C语言中，浮点数精度丢失的原因是？",
     "options": [
-      "二进制无法精确表示某些十进制小数",
-      "内存不足",
+      "类型转换",
       "编译器优化",
-      "类型转换"
+      "二进制无法精确表示某些十进制小数",
+      "内存不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-708",
     "title": "C语言中，如何避免浮点数精度问题？",
     "options": [
       "使用更高精度类型或整数运算",
-      "不用浮点数",
       "强制转换",
-      "忽略"
+      "忽略",
+      "不用浮点数"
     ],
     "correctAnswer": 0
   },
@@ -91,76 +91,76 @@
     "id": "c-709",
     "title": "C语言中，逗号表达式的求值顺序是？",
     "options": [
-      "从左到右",
-      "从右到左",
       "随机",
-      "不确定"
+      "不确定",
+      "从左到右",
+      "从右到左"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-710",
     "title": "C语言中，逻辑短路是指？",
     "options": [
-      "&&和||在能确定结果时停止计算",
       "电路故障",
+      "编译优化",
       "代码错误",
-      "编译优化"
+      "&&和||在能确定结果时停止计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-711",
     "title": "C语言中，a && b如果a为假，b还会计算吗？",
     "options": [
-      "不会",
       "会",
       "取决于b",
+      "不会",
       "取决于编译器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-712",
     "title": "C语言中，a || b如果a为真，b还会计算吗？",
     "options": [
-      "不会",
       "会",
       "取决于b",
-      "取决于编译器"
+      "取决于编译器",
+      "不会"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-713",
     "title": "C语言中，++i + ++i是未定义行为吗？",
     "options": [
-      "是，修改两次之间没有顺序点",
-      "不是",
+      "结果是确定的",
       "取决于编译器",
-      "结果是确定的"
+      "不是",
+      "是，修改两次之间没有顺序点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-714",
     "title": "C语言中，顺序点是什么？",
     "options": [
-      "表达式求值和副作用完成的点",
-      "代码行号",
       "分号",
-      "大括号"
+      "表达式求值和副作用完成的点",
+      "大括号",
+      "代码行号"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-715",
     "title": "C语言中，函数调用是顺序点吗？",
     "options": [
       "是",
-      "不是",
+      "取决于编译器",
       "取决于参数",
-      "取决于编译器"
+      "不是"
     ],
     "correctAnswer": 0
   },
@@ -168,12 +168,12 @@
     "id": "c-716",
     "title": "C语言中，逻辑与&&是顺序点吗？",
     "options": [
-      "是",
       "不是",
       "取决于操作数",
-      "取决于编译器"
+      "取决于编译器",
+      "是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-717",
@@ -190,54 +190,54 @@
     "id": "c-718",
     "title": "C语言中，i = i++是未定义行为吗？",
     "options": [
+      "取决于编译器",
       "是，修改和读取没有顺序点",
       "不是",
-      "取决于编译器",
       "结果是确定的"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-719",
     "title": "C语言中，未定义行为的特点是？",
     "options": [
-      "结果不可预测，编译器不做假设",
       "结果固定",
+      "运行时报错",
       "编译器报错",
-      "运行时报错"
+      "结果不可预测，编译器不做假设"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-720",
     "title": "C语言中，未指定行为的特点是？",
     "options": [
-      "编译器可以选择，但必须在几种确定方式中选",
+      "运行时报错",
       "结果不可预测",
-      "编译器报错",
-      "运行时报错"
+      "编译器可以选择，但必须在几种确定方式中选",
+      "编译器报错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-721",
     "title": "C语言中，C11标准引入的线程库头文件是？",
     "options": [
-      "threads.h",
-      "pthread.h",
       "thread",
-      "mutex"
+      "pthread.h",
+      "mutex",
+      "threads.h"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-722",
     "title": "C语言中，thrd_create的作用是？",
     "options": [
       "创建线程",
+      "分离线程",
       "销毁线程",
-      "等待线程",
-      "分离线程"
+      "等待线程"
     ],
     "correctAnswer": 0
   },
@@ -245,54 +245,54 @@
     "id": "c-723",
     "title": "C语言中，thrd_join的作用是？",
     "options": [
+      "分离线程",
       "等待线程结束",
       "创建线程",
-      "销毁线程",
-      "分离线程"
+      "销毁线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-724",
     "title": "C语言中，thrd_detach的作用是？",
     "options": [
+      "等待线程",
       "分离线程，自动回收资源",
       "创建线程",
-      "等待线程",
       "销毁线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-725",
     "title": "C语言中，thrd_exit的作用是？",
     "options": [
+      "等待线程",
       "退出当前线程",
       "创建线程",
-      "等待线程",
       "分离线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-726",
     "title": "C语言中，mtx_init的作用是？",
     "options": [
-      "初始化互斥锁",
       "销毁互斥锁",
+      "解锁",
       "加锁",
-      "解锁"
+      "初始化互斥锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-727",
     "title": "C语言中，mtx_lock的作用是？",
     "options": [
       "加锁",
+      "销毁锁",
       "解锁",
-      "尝试加锁",
-      "销毁锁"
+      "尝试加锁"
     ],
     "correctAnswer": 0
   },
@@ -300,32 +300,32 @@
     "id": "c-728",
     "title": "C语言中，mtx_unlock的作用是？",
     "options": [
-      "解锁",
       "加锁",
       "尝试加锁",
-      "销毁锁"
+      "销毁锁",
+      "解锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-729",
     "title": "C语言中，mtx_destroy的作用是？",
     "options": [
-      "销毁互斥锁",
       "初始化互斥锁",
-      "加锁",
-      "解锁"
+      "销毁互斥锁",
+      "解锁",
+      "加锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-730",
     "title": "C语言中，cnd_init的作用是？",
     "options": [
       "初始化条件变量",
-      "销毁条件变量",
+      "通知条件",
       "等待条件",
-      "通知条件"
+      "销毁条件变量"
     ],
     "correctAnswer": 0
   },
@@ -333,31 +333,31 @@
     "id": "c-731",
     "title": "C语言中，cnd_wait的作用是？",
     "options": [
-      "等待条件变量",
-      "通知条件变量",
+      "销毁条件变量",
       "初始化条件变量",
-      "销毁条件变量"
+      "等待条件变量",
+      "通知条件变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-732",
     "title": "C语言中，cnd_signal的作用是？",
     "options": [
-      "通知一个等待线程",
-      "通知所有等待线程",
       "等待条件",
-      "销毁条件"
+      "销毁条件",
+      "通知所有等待线程",
+      "通知一个等待线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-733",
     "title": "C语言中，cnd_broadcast的作用是？",
     "options": [
       "通知所有等待线程",
-      "通知一个等待线程",
       "等待条件",
+      "通知一个等待线程",
       "销毁条件"
     ],
     "correctAnswer": 0
@@ -366,23 +366,23 @@
     "id": "c-734",
     "title": "C语言中，POSIX线程库的头文件是？",
     "options": [
-      "pthread.h",
       "threads.h",
-      "thread",
-      "mutex"
+      "mutex",
+      "pthread.h",
+      "thread"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-735",
     "title": "C语言中，pthread_create的作用是？",
     "options": [
-      "创建线程",
       "等待线程",
+      "分离线程",
       "退出线程",
-      "分离线程"
+      "创建线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-736",
@@ -390,8 +390,8 @@
     "options": [
       "等待线程结束",
       "创建线程",
-      "退出线程",
-      "分离线程"
+      "分离线程",
+      "退出线程"
     ],
     "correctAnswer": 0
   },
@@ -399,32 +399,32 @@
     "id": "c-737",
     "title": "C语言中，pthread_exit的作用是？",
     "options": [
-      "退出当前线程",
-      "创建线程",
       "等待线程",
-      "分离线程"
+      "分离线程",
+      "退出当前线程",
+      "创建线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-738",
     "title": "C语言中，pthread_detach的作用是？",
     "options": [
-      "分离线程",
+      "退出线程",
       "创建线程",
       "等待线程",
-      "退出线程"
+      "分离线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-739",
     "title": "C语言中，pthread_mutex_init的作用是？",
     "options": [
       "初始化互斥锁",
-      "加锁",
+      "销毁锁",
       "解锁",
-      "销毁锁"
+      "加锁"
     ],
     "correctAnswer": 0
   },
@@ -432,20 +432,20 @@
     "id": "c-740",
     "title": "C语言中，pthread_mutex_lock的作用是？",
     "options": [
-      "加锁",
       "解锁",
       "初始化锁",
+      "加锁",
       "销毁锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-741",
     "title": "C语言中，pthread_mutex_unlock的作用是？",
     "options": [
       "解锁",
-      "加锁",
       "初始化锁",
+      "加锁",
       "销毁锁"
     ],
     "correctAnswer": 0
@@ -454,12 +454,12 @@
     "id": "c-742",
     "title": "C语言中，pthread_mutex_destroy的作用是？",
     "options": [
+      "解锁",
       "销毁互斥锁",
-      "初始化互斥锁",
       "加锁",
-      "解锁"
+      "初始化互斥锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-743",
@@ -467,8 +467,8 @@
     "options": [
       "初始化条件变量",
       "等待条件",
-      "通知条件",
-      "销毁条件"
+      "销毁条件",
+      "通知条件"
     ],
     "correctAnswer": 0
   },
@@ -476,12 +476,12 @@
     "id": "c-744",
     "title": "C语言中，pthread_cond_wait的作用是？",
     "options": [
+      "初始化条件",
       "等待条件变量",
       "通知条件变量",
-      "初始化条件",
       "销毁条件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-745",
@@ -498,12 +498,12 @@
     "id": "c-746",
     "title": "C语言中，pthread_cond_broadcast的作用是？",
     "options": [
-      "通知所有等待线程",
-      "通知一个等待线程",
+      "销毁条件",
       "等待条件",
-      "销毁条件"
+      "通知所有等待线程",
+      "通知一个等待线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-747",
@@ -511,8 +511,8 @@
     "options": [
       "保护共享资源，防止数据竞争",
       "创建线程",
-      "销毁线程",
-      "等待线程"
+      "等待线程",
+      "销毁线程"
     ],
     "correctAnswer": 0
   },
@@ -520,33 +520,33 @@
     "id": "c-748",
     "title": "C语言中，条件变量的作用是？",
     "options": [
-      "线程间通知等待",
       "保护共享资源",
       "创建线程",
+      "线程间通知等待",
       "销毁线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-749",
     "title": "C语言中，死锁的条件是？",
     "options": [
-      "互斥、持有并等待、不可抢占、循环等待",
       "只互斥",
-      "只循环等待",
-      "只持有并等待"
+      "互斥、持有并等待、不可抢占、循环等待",
+      "只持有并等待",
+      "只循环等待"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-750",
     "title": "C语言中，如何避免死锁？",
     "options": [
-      "按顺序加锁、使用超时",
       "不使用锁",
-      "使用多把锁",
-      "增加线程"
+      "增加线程",
+      "按顺序加锁、使用超时",
+      "使用多把锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

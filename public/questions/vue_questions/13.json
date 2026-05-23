@@ -5,8 +5,8 @@
     "options": [
       "defineStore",
       "createStore",
-      "useStore",
-      "以上都可以"
+      "以上都可以",
+      "useStore"
     ],
     "correctAnswer": 0
   },
@@ -14,12 +14,12 @@
     "id": "vue-602",
     "title": "Pinia 中 state 的特点是？",
     "options": [
+      "以上都不对",
       "完全响应式",
-      "需要手动追踪",
       "不可变",
-      "以上都不对"
+      "需要手动追踪"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-603",
@@ -36,9 +36,9 @@
     "id": "vue-604",
     "title": "Pinia 中 actions 的特点是？",
     "options": [
-      "支持异步",
-      "可以修改 state",
       "可以调用其他 actions",
+      "可以修改 state",
+      "支持异步",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -48,9 +48,9 @@
     "title": "Pinia 中 store 的订阅方式是？",
     "options": [
       "$subscribe",
-      "watch",
       "computed",
-      "以上都可以"
+      "以上都可以",
+      "watch"
     ],
     "correctAnswer": 0
   },
@@ -58,12 +58,12 @@
     "id": "vue-606",
     "title": "Pinia 中 store 的 action 订阅方式是？",
     "options": [
-      "$onAction",
-      "watch",
       "computed",
+      "watch",
+      "$onAction",
       "以上都可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-607",
@@ -71,74 +71,74 @@
     "options": [
       "添加新属性",
       "添加新方法",
-      "修改现有方法",
-      "以上都可以"
+      "以上都可以",
+      "修改现有方法"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-608",
     "title": "Pinia 中 store 的命名空间是？",
     "options": [
-      "自动管理",
-      "手动配置",
       "不需要",
-      "以上都不对"
+      "手动配置",
+      "以上都不对",
+      "自动管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-609",
     "title": "Pinia 中 store 的持久化方案是？",
     "options": [
-      "插件实现",
       "内置功能",
+      "插件实现",
       "不需要",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-610",
     "title": "Pinia 中 store 的 TypeScript 支持是？",
     "options": [
+      "需要配置",
       "完整支持",
       "部分支持",
-      "不支持",
-      "需要配置"
+      "不支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-611",
     "title": "Pinia 中 defineStore 的第一个参数是？",
     "options": [
-      "store 的唯一 ID",
       "state",
+      "store 的唯一 ID",
       "getters",
       "actions"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-612",
     "title": "Pinia 中 defineStore 的第二个参数是？",
     "options": [
-      "setup 函数或 options 对象",
-      "state",
       "getters",
-      "actions"
+      "actions",
+      "setup 函数或 options 对象",
+      "state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-613",
     "title": "Pinia 中 Options Store 的选项包括？",
     "options": [
       "state, getters, actions",
-      "data, computed, methods",
       "state, actions, mutations",
-      "data, methods, watchers"
+      "data, methods, watchers",
+      "data, computed, methods"
     ],
     "correctAnswer": 0
   },
@@ -157,23 +157,23 @@
     "id": "vue-615",
     "title": "Pinia 中 Setup Store 的 ref 相当于 Options Store 的？",
     "options": [
-      "state",
       "getters",
+      "state",
       "actions",
       "mutations"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-616",
     "title": "Pinia 中 Setup Store 的 computed 相当于 Options Store 的？",
     "options": [
-      "getters",
       "state",
-      "actions",
-      "mutations"
+      "mutations",
+      "getters",
+      "actions"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-617",
@@ -181,8 +181,8 @@
     "options": [
       "actions",
       "state",
-      "getters",
-      "mutations"
+      "mutations",
+      "getters"
     ],
     "correctAnswer": 0
   },
@@ -190,32 +190,32 @@
     "id": "vue-618",
     "title": "Pinia 中如何重置 state？",
     "options": [
-      "store.$reset()",
       "store.reset()",
       "store.state = {}",
-      "store.$clear()"
+      "store.$clear()",
+      "store.$reset()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-619",
     "title": "Pinia 中如何批量修改 state？",
     "options": [
-      "store.$patch()",
-      "store.$update()",
       "store.$set()",
+      "store.$update()",
+      "store.$patch()",
       "store.$assign()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-620",
     "title": "Pinia 中 $patch 的参数可以是？",
     "options": [
       "对象或函数",
-      "只能是对象",
       "只能是函数",
-      "字符串"
+      "字符串",
+      "只能是对象"
     ],
     "correctAnswer": 0
   },
@@ -245,12 +245,12 @@
     "id": "vue-623",
     "title": "Pinia 中 $subscribe 的 mutation 参数包含？",
     "options": [
-      "type, storeName, payload",
       "event, data, target",
+      "type, storeName, payload",
       "action, state, result",
       "key, oldValue, newValue"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-624",
@@ -258,8 +258,8 @@
     "options": [
       "store.$onAction()",
       "store.$subscribe()",
-      "store.$watch()",
-      "store.$listen()"
+      "store.$listen()",
+      "store.$watch()"
     ],
     "correctAnswer": 0
   },
@@ -267,67 +267,67 @@
     "id": "vue-625",
     "title": "Pinia 中 $onAction 的 after 回调何时执行？",
     "options": [
-      "action 成功后",
       "action 执行前",
-      "action 失败后",
-      "action 完成后"
+      "action 完成后",
+      "action 成功后",
+      "action 失败后"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-626",
     "title": "Pinia 中 $onAction 的 onError 回调何时执行？",
     "options": [
-      "action 抛出错误时",
-      "action 成功后",
+      "action 完成后",
       "action 执行前",
-      "action 完成后"
+      "action 成功后",
+      "action 抛出错误时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-627",
     "title": "Pinia 中如何销毁 store？",
     "options": [
-      "store.$dispose()",
-      "store.$destroy()",
       "store.$remove()",
-      "store.$delete()"
+      "store.$delete()",
+      "store.$destroy()",
+      "store.$dispose()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-628",
     "title": "Pinia 中如何获取其他 store？",
     "options": [
-      "直接 useXxxStore()",
-      "store.$get()",
       "store.$find()",
+      "store.$get()",
+      "直接 useXxxStore()",
       "store.$fetch()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-629",
     "title": "Pinia 中如何在 action 中调用其他 action？",
     "options": [
-      "this.action()",
-      "store.action()",
       "dispatch()",
-      "commit()"
+      "commit()",
+      "store.action()",
+      "this.action()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-630",
     "title": "Pinia 中如何在 action 中访问 getters？",
     "options": [
-      "this.getter",
-      "store.getter",
       "getGetter()",
-      "computed()"
+      "this.getter",
+      "computed()",
+      "store.getter"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-631",
@@ -335,8 +335,8 @@
     "options": [
       "useXxxStore()",
       "store.$getInstance()",
-      "getStore()",
-      "Pinia.store"
+      "Pinia.store",
+      "getStore()"
     ],
     "correctAnswer": 0
   },
@@ -344,43 +344,43 @@
     "id": "vue-632",
     "title": "Pinia 中如何在 SSR 中使用 store？",
     "options": [
-      "使用函数式 store",
-      "直接使用",
+      "使用插件",
       "不需要特殊处理",
-      "使用插件"
+      "直接使用",
+      "使用函数式 store"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-633",
     "title": "Pinia 中插件的 install 函数接收？",
     "options": [
-      "context 对象",
       "app",
       "options",
-      "store"
+      "store",
+      "context 对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-634",
     "title": "Pinia 中插件的 context 对象包含？",
     "options": [
+      "state, getters, actions",
       "pinia, app, store, options",
       "app, router, store",
-      "state, getters, actions",
       "store, mutation, state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-635",
     "title": "Pinia 中插件的 store.$onAction 何时调用？",
     "options": [
       "action 执行时",
-      "state 变化时",
+      "store 销毁时",
       "getter 计算时",
-      "store 销毁时"
+      "state 变化时"
     ],
     "correctAnswer": 0
   },
@@ -388,31 +388,31 @@
     "id": "vue-636",
     "title": "Pinia 中插件的 store.$subscribe 何时调用？",
     "options": [
-      "state 变化时",
-      "action 执行时",
       "getter 计算时",
-      "store 销毁时"
+      "action 执行时",
+      "store 销毁时",
+      "state 变化时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-637",
     "title": "Pinia 中 mapState 辅助函数的作用是？",
     "options": [
+      "映射 store 到组件",
       "映射 state 到计算属性",
       "映射 actions 到方法",
-      "映射 getters 到计算属性",
-      "映射 store 到组件"
+      "映射 getters 到计算属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-638",
     "title": "Pinia 中 mapActions 辅助函数的作用是？",
     "options": [
       "映射 actions 到方法",
-      "映射 state 到计算属性",
       "映射 getters 到计算属性",
+      "映射 state 到计算属性",
       "映射 store 到组件"
     ],
     "correctAnswer": 0
@@ -421,54 +421,54 @@
     "id": "vue-639",
     "title": "Pinia 中 mapStores 辅助函数的作用是？",
     "options": [
-      "映射所有 store 到计算属性",
+      "映射 getters 到计算属性",
       "映射 state 到计算属性",
       "映射 actions 到方法",
-      "映射 getters 到计算属性"
+      "映射所有 store 到计算属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-640",
     "title": "Pinia 中 storeToRefs 的作用是？",
     "options": [
-      "解构 store 保持响应性",
-      "解构 state",
       "解构 actions",
+      "解构 state",
+      "解构 store 保持响应性",
       "解构 getters"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-641",
     "title": "Pinia 中为什么不推荐直接解构 store？",
     "options": [
+      "会丢失 getters",
       "会丢失响应性",
       "会报错",
-      "会丢失方法",
-      "会丢失 getters"
+      "会丢失方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-642",
     "title": "Pinia 中 createPinia 的作用是？",
     "options": [
-      "创建 Pinia 实例",
-      "创建 store",
       "创建插件",
-      "创建状态"
+      "创建 Pinia 实例",
+      "创建状态",
+      "创建 store"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-643",
     "title": "Pinia 中 app.use(pinia) 的作用是？",
     "options": [
       "注册 Pinia",
+      "注入状态",
       "创建 store",
-      "使用插件",
-      "注入状态"
+      "使用插件"
     ],
     "correctAnswer": 0
   },
@@ -476,75 +476,75 @@
     "id": "vue-644",
     "title": "Pinia 中 store 的 $id 属性作用是？",
     "options": [
+      "更新 store ID",
       "获取 store ID",
       "设置 store ID",
-      "删除 store ID",
-      "更新 store ID"
+      "删除 store ID"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-645",
     "title": "Pinia 中 store 的 $pinia 属性作用是？",
     "options": [
-      "获取 pinia 实例",
       "获取 app 实例",
       "获取 router 实例",
+      "获取 pinia 实例",
       "获取 store 实例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-646",
     "title": "Pinia 中 getters 之间如何互相访问？",
     "options": [
-      "this.getter",
-      "store.getter",
       "getGetter()",
+      "store.getter",
+      "this.getter",
       "computed()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-647",
     "title": "Pinia 中 getters 如何返回函数？",
     "options": [
-      "返回函数即可",
       "不支持",
       "需要特殊语法",
-      "使用 actions"
+      "使用 actions",
+      "返回函数即可"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-648",
     "title": "Pinia 中 actions 能否是异步的？",
     "options": [
+      "取决于配置",
       "能",
       "不能",
-      "只能同步",
-      "取决于配置"
+      "只能同步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-649",
     "title": "Pinia 中 mutations 是否存在？",
     "options": [
-      "不存在",
-      "存在",
+      "被 actions 替代",
       "可选",
-      "被 actions 替代"
+      "存在",
+      "不存在"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-650",
     "title": "Pinia 相比 Vuex 的优势是？",
     "options": [
+      "更轻量",
       "无 mutations",
       "完整 TypeScript 支持",
-      "更轻量",
       "以上都是"
     ],
     "correctAnswer": 3

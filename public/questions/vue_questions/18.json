@@ -3,31 +3,31 @@
     "id": "vue-851",
     "title": "Vue 中 createCommentVNode 的作用是？",
     "options": [
-      "创建注释 VNode",
-      "创建文本 VNode",
       "创建元素 VNode",
-      "创建组件 VNode"
+      "创建注释 VNode",
+      "创建组件 VNode",
+      "创建文本 VNode"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-852",
     "title": "Vue 中 createStaticVNode 的作用是？",
     "options": [
-      "创建静态 VNode",
       "创建动态 VNode",
       "创建文本 VNode",
-      "创建注释 VNode"
+      "创建注释 VNode",
+      "创建静态 VNode"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-853",
     "title": "Vue 中 resolveFilter 的作用是？",
     "options": [
       "Vue 3 已移除",
-      "解析过滤器",
       "创建过滤器",
+      "解析过滤器",
       "注册过滤器"
     ],
     "correctAnswer": 0
@@ -36,21 +36,21 @@
     "id": "vue-854",
     "title": "Vue 中 resolveDynamicComponent 的作用是？",
     "options": [
-      "解析动态组件",
-      "解析静态组件",
       "解析异步组件",
-      "解析原生组件"
+      "解析静态组件",
+      "解析原生组件",
+      "解析动态组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-855",
     "title": "Vue 中 render 函数如何返回多个根节点？",
     "options": [
       "返回数组",
-      "返回 Fragment",
       "返回对象",
-      "返回字符串"
+      "返回字符串",
+      "返回 Fragment"
     ],
     "correctAnswer": 0
   },
@@ -59,9 +59,9 @@
     "title": "Vue 中 render 函数如何访问 attrs？",
     "options": [
       "useAttrs()",
+      "以上都可以",
       "this.$attrs",
-      "context.attrs",
-      "以上都可以"
+      "context.attrs"
     ],
     "correctAnswer": 0
   },
@@ -69,12 +69,12 @@
     "id": "vue-857",
     "title": "Vue 中 render 函数如何访问 slots？",
     "options": [
-      "useSlots()",
+      "以上都可以",
       "this.$slots",
       "context.slots",
-      "以上都可以"
+      "useSlots()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-858",
@@ -82,8 +82,8 @@
     "options": [
       "emit()",
       "this.$emit",
-      "context.emit",
-      "以上都可以"
+      "以上都可以",
+      "context.emit"
     ],
     "correctAnswer": 0
   },
@@ -92,8 +92,8 @@
     "title": "Vue 中 render 函数如何使用 provide？",
     "options": [
       "provide()",
-      "this.$provide",
       "app.provide",
+      "this.$provide",
       "以上都可以"
     ],
     "correctAnswer": 0
@@ -102,32 +102,32 @@
     "id": "vue-860",
     "title": "Vue 中 render 函数如何使用 inject？",
     "options": [
+      "以上都可以",
       "inject()",
       "this.$inject",
-      "context.inject",
-      "以上都可以"
+      "context.inject"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-861",
     "title": "Vue 中 render 函数如何使用生命周期？",
     "options": [
-      "onMounted()",
       "this.$onMounted",
+      "以上都不对",
       "mounted()",
-      "以上都不对"
+      "onMounted()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-862",
     "title": "Vue 中 render 函数如何使用 computed？",
     "options": [
       "computed()",
+      "以上都不对",
       "this.$computed",
-      "compute()",
-      "以上都不对"
+      "compute()"
     ],
     "correctAnswer": 0
   },
@@ -135,142 +135,142 @@
     "id": "vue-863",
     "title": "Vue 中 render 函数如何使用 watch？",
     "options": [
-      "watch()",
-      "this.$watch",
       "observe()",
+      "this.$watch",
+      "watch()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-864",
     "title": "Vue 中 render 函数如何使用 ref？",
     "options": [
-      "ref()",
+      "以上都不对",
       "this.$ref",
       "createRef()",
-      "以上都不对"
+      "ref()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-865",
     "title": "Vue 中 render 函数如何使用 reactive？",
     "options": [
+      "以上都不对",
       "reactive()",
-      "this.$reactive",
       "createReactive()",
-      "以上都不对"
+      "this.$reactive"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-866",
     "title": "Vue 中 JSX 的配置方式是？",
     "options": [
       "@vitejs/plugin-vue-jsx",
-      "babel-plugin-jsx",
       "两者都可以",
-      "不需要配置"
+      "不需要配置",
+      "babel-plugin-jsx"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "vue-867",
     "title": "Vue 中 JSX 和模板的区别是？",
     "options": [
-      "JSX 更灵活",
-      "模板更直观",
       "JSX 支持完整 JavaScript",
-      "以上都是"
+      "以上都是",
+      "JSX 更灵活",
+      "模板更直观"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-868",
     "title": "Vue 中 JSX 如何使用 v-show？",
     "options": [
-      "v-show={true}",
-      "vShow={true}",
       "show={true}",
-      "display={true}"
+      "vShow={true}",
+      "display={true}",
+      "v-show={true}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-869",
     "title": "Vue 中 JSX 如何使用 v-model？",
     "options": [
-      "v-model={value}",
       "vModel={value}",
+      "v-model={value}",
       "model={value}",
       "value={value}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-870",
     "title": "Vue 中 JSX 如何使用 v-model 参数？",
     "options": [
-      "v-model:[arg]={value}",
-      "vModel[arg]={value}",
       "model[arg]={value}",
-      "value[arg]={value}"
+      "vModel[arg]={value}",
+      "value[arg]={value}",
+      "v-model:[arg]={value}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-871",
     "title": "Vue 中 JSX 如何使用自定义指令？",
     "options": [
-      "v-name={value}",
       "vName={value}",
       "name={value}",
-      "directive={value}"
+      "directive={value}",
+      "v-name={value}"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "vue-872",
     "title": "Vue 中 JSX 如何使用插槽？",
     "options": [
-      "v-slots={slots}",
       "vSlots={slots}",
       "slots={slots}",
+      "v-slots={slots}",
       "以上都不对"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "vue-873",
     "title": "Vue 中 JSX 如何使用作用域插槽？",
     "options": [
-      "v-slots={{ default: props => ... }}",
       "vSlots={{ default: props => ... }}",
       "slots={{ default: props => ... }}",
+      "v-slots={{ default: props => ... }}",
       "以上都不对"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "vue-874",
     "title": "Vue 中 JSX 如何使用 Fragment？",
     "options": [
-      "<>...</>",
-      "<Fragment>...</Fragment>",
+      "不支持",
       "两者都可以",
-      "不支持"
+      "<Fragment>...</Fragment>",
+      "<>...</>"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "vue-875",
     "title": "Vue 中 JSX 如何使用 Teleport？",
     "options": [
       "<Teleport>...</Teleport>",
+      "不支持",
       "<teleport>...</teleport>",
-      "两者都可以",
-      "不支持"
+      "两者都可以"
     ],
     "correctAnswer": 0
   },
@@ -279,9 +279,9 @@
     "title": "Vue 中 JSX 如何使用 Suspense？",
     "options": [
       "<Suspense>...</Suspense>",
-      "<suspense>...</suspense>",
+      "不支持",
       "两者都可以",
-      "不支持"
+      "<suspense>...</suspense>"
     ],
     "correctAnswer": 0
   },
@@ -290,9 +290,9 @@
     "title": "Vue 中 JSX 如何使用 KeepAlive？",
     "options": [
       "<KeepAlive>...</KeepAlive>",
+      "不支持",
       "<keep-alive>...</keep-alive>",
-      "两者都可以",
-      "不支持"
+      "两者都可以"
     ],
     "correctAnswer": 0
   },
@@ -300,12 +300,12 @@
     "id": "vue-878",
     "title": "Vue 中 JSX 如何使用 Transition？",
     "options": [
-      "<Transition>...</Transition>",
       "<transition>...</transition>",
+      "不支持",
       "两者都可以",
-      "不支持"
+      "<Transition>...</Transition>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-879",
@@ -313,8 +313,8 @@
     "options": [
       "<TransitionGroup>...</TransitionGroup>",
       "<transition-group>...</transition-group>",
-      "两者都可以",
-      "不支持"
+      "不支持",
+      "两者都可以"
     ],
     "correctAnswer": 0
   },
@@ -323,9 +323,9 @@
     "title": "Vue 中 JSX 如何绑定事件？",
     "options": [
       "onClick={handler}",
-      "on-click={handler}",
       "v-on:click={handler}",
-      "@click={handler}"
+      "@click={handler}",
+      "on-click={handler}"
     ],
     "correctAnswer": 0
   },
@@ -333,53 +333,53 @@
     "id": "vue-881",
     "title": "Vue 中 JSX 如何绑定修饰符？",
     "options": [
+      "以上都不对",
       "onClickWithModifiers={handler}",
-      "onClick.modifiers={handler}",
       "onClick_modifier={handler}",
-      "以上都不对"
+      "onClick.modifiers={handler}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-882",
     "title": "Vue 中 JSX 如何使用 v-if？",
     "options": [
-      "三元表达式",
       "v-if={true}",
       "if={true}",
+      "三元表达式",
       "condition={true}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-883",
     "title": "Vue 中 JSX 如何使用 v-for？",
     "options": [
-      "map 方法",
+      "each={list}",
       "v-for={list}",
       "for={list}",
-      "each={list}"
+      "map 方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-884",
     "title": "Vue 中 JSX 如何绑定 class？",
     "options": [
-      "class={className}",
-      "v-class={className}",
       "classes={className}",
+      "v-class={className}",
+      "class={className}",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-885",
     "title": "Vue 中 JSX 如何绑定 style？",
     "options": [
       "style={styleObj}",
-      "v-style={styleObj}",
       "styles={styleObj}",
+      "v-style={styleObj}",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -400,9 +400,9 @@
     "title": "Vue 中 JSX 如何绑定 ref？",
     "options": [
       "ref={refValue}",
-      "v-ref={refValue}",
       "el={refValue}",
-      "element={refValue}"
+      "element={refValue}",
+      "v-ref={refValue}"
     ],
     "correctAnswer": 0
   },
@@ -421,10 +421,10 @@
     "id": "vue-889",
     "title": "Vue 中 JSX 如何使用 v-memo？",
     "options": [
-      "v-memo={[deps]}",
-      "vMemo={[deps]}",
       "memo={[deps]}",
-      "以上都不对"
+      "vMemo={[deps]}",
+      "以上都不对",
+      "v-memo={[deps]}"
     ],
     "correctAnswer": 1
   },
@@ -433,120 +433,120 @@
     "title": "Vue 中 JSX 如何使用 v-html？",
     "options": [
       "v-html={html}",
-      "vHtml={html}",
       "innerHTML={html}",
-      "html={html}"
+      "html={html}",
+      "vHtml={html}"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "vue-891",
     "title": "Vue 中 JSX 如何使用 v-text？",
     "options": [
       "v-text={text}",
-      "vText={text}",
       "innerText={text}",
+      "vText={text}",
       "text={text}"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "vue-892",
     "title": "Vue 中 JSX 如何使用 v-cloak？",
     "options": [
-      "不支持",
-      "v-cloak",
       "vCloak",
-      "cloak"
+      "cloak",
+      "v-cloak",
+      "不支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-893",
     "title": "Vue 中 JSX 如何使用 v-pre？",
     "options": [
+      "pre",
       "不支持",
-      "v-pre",
       "vPre",
-      "pre"
+      "v-pre"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-894",
     "title": "Vue 中 JSX 的类型检查如何实现？",
     "options": [
-      "TypeScript",
-      "PropTypes",
+      "不支持",
       "两者都可以",
-      "不支持"
+      "TypeScript",
+      "PropTypes"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "vue-895",
     "title": "Vue 中 JSX 如何使用泛型组件？",
     "options": [
+      "需要特殊语法",
       "<Component<T>>",
       "<Component type={T}>",
-      "不支持",
-      "需要特殊语法"
+      "不支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-896",
     "title": "Vue 中 JSX 如何使用高阶组件？",
     "options": [
-      "函数包裹",
-      "装饰器",
       "继承",
-      "以上都不对"
+      "装饰器",
+      "以上都不对",
+      "函数包裹"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-897",
     "title": "Vue 中 JSX 如何使用 render 函数？",
     "options": [
-      "直接返回 JSX",
-      "h 函数",
+      "以上都不对",
       "模板",
-      "以上都不对"
+      "直接返回 JSX",
+      "h 函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-898",
     "title": "Vue 中 JSX 如何使用 Composition API？",
     "options": [
-      "setup 函数",
-      "选项式 API",
       "混合式 API",
+      "选项式 API",
+      "setup 函数",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-899",
     "title": "Vue 中 JSX 如何使用 TypeScript？",
     "options": [
-      "lang=\"tsx\"",
       "lang=\"jsx\"",
       "不需要",
+      "lang=\"tsx\"",
       "不支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-900",
     "title": "Vue 中 JSX 如何使用 CSS Modules？",
     "options": [
-      "style.className",
       "className",
       "class_name",
-      "以上都不对"
+      "以上都不对",
+      "style.className"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

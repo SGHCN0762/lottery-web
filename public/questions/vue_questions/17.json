@@ -4,9 +4,9 @@
     "title": "Vue 中 h 函数的作用是？",
     "options": [
       "创建 VNode",
-      "创建组件",
+      "以上都不对",
       "创建元素",
-      "以上都不对"
+      "创建组件"
     ],
     "correctAnswer": 0
   },
@@ -14,32 +14,32 @@
     "id": "vue-802",
     "title": "Vue 中 h 函数的参数顺序是？",
     "options": [
-      "type, props, children",
       "props, type, children",
       "children, props, type",
+      "type, props, children",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-803",
     "title": "Vue 中 VNode 的类型有？",
     "options": [
-      "元素",
       "组件",
       "文本",
-      "以上都是"
+      "以上都是",
+      "元素"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-804",
     "title": "Vue 中渲染函数的 setup 返回？",
     "options": [
       "渲染函数",
-      "VNode",
       "组件实例",
-      "以上都不对"
+      "以上都不对",
+      "VNode"
     ],
     "correctAnswer": 0
   },
@@ -48,20 +48,20 @@
     "title": "Vue 中函数式组件的特点是？",
     "options": [
       "无状态",
+      "以上都是",
       "无实例",
-      "性能更好",
-      "以上都是"
+      "性能更好"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-806",
     "title": "Vue 中渲染函数的插槽使用？",
     "options": [
       "slots 对象",
-      "this.$slots",
+      "以上都可以",
       "props",
-      "以上都可以"
+      "this.$slots"
     ],
     "correctAnswer": 0
   },
@@ -70,8 +70,8 @@
     "title": "Vue 中渲染函数的 emit 使用？",
     "options": [
       "emit 函数",
-      "this.$emit",
       "props",
+      "this.$emit",
       "以上都可以"
     ],
     "correctAnswer": 0
@@ -80,78 +80,78 @@
     "id": "vue-808",
     "title": "Vue 中渲染函数的指令使用？",
     "options": [
-      "withDirectives",
-      "directives 对象",
+      "以上都不对",
       "props",
-      "以上都不对"
+      "withDirectives",
+      "directives 对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-809",
     "title": "Vue 中渲染函数的组件注册？",
     "options": [
       "components 选项",
-      "全局注册",
       "局部注册",
-      "以上都可以"
+      "以上都可以",
+      "全局注册"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-810",
     "title": "Vue 中渲染函数的 TypeScript 支持？",
     "options": [
-      "完整支持",
-      "部分支持",
       "不支持",
-      "需要配置"
+      "部分支持",
+      "需要配置",
+      "完整支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-811",
     "title": "Vue 中 h 函数的 type 参数可以是？",
     "options": [
+      "以上都是",
       "HTML 标签名",
       "组件",
-      "异步组件",
-      "以上都是"
+      "异步组件"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-812",
     "title": "Vue 中 h 函数的 props 参数可以是？",
     "options": [
-      "对象",
       "数组",
       "字符串",
-      "null"
+      "null",
+      "对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-813",
     "title": "Vue 中 h 函数的 children 参数可以是？",
     "options": [
-      "字符串",
-      "数组",
+      "以上都是",
       "VNode",
-      "以上都是"
+      "字符串",
+      "数组"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-814",
     "title": "Vue 中 h 函数的 props 如何绑定事件？",
     "options": [
-      "onXxx",
-      "v-on:xxx",
+      "event:xxx",
       "@xxx",
-      "event:xxx"
+      "v-on:xxx",
+      "onXxx"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-815",
@@ -159,8 +159,8 @@
     "options": [
       "class",
       "className",
-      "classes",
-      "styleClass"
+      "styleClass",
+      "classes"
     ],
     "correctAnswer": 0
   },
@@ -168,21 +168,21 @@
     "id": "vue-816",
     "title": "Vue 中 h 函数的 props 如何绑定样式？",
     "options": [
-      "style",
       "styles",
       "css",
+      "style",
       "inlineStyle"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-817",
     "title": "Vue 中 h 函数的 props 如何绑定 v-model？",
     "options": [
       "modelValue + onUpdate:modelValue",
-      "v-model",
       "value + input",
-      "双向绑定"
+      "双向绑定",
+      "v-model"
     ],
     "correctAnswer": 0
   },
@@ -190,65 +190,65 @@
     "id": "vue-818",
     "title": "Vue 中 h 函数的 props 如何绑定 key？",
     "options": [
-      "key",
-      "v-key",
+      "id",
       "ref",
-      "id"
+      "key",
+      "v-key"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-819",
     "title": "Vue 中 h 函数的 props 如何绑定 ref？",
     "options": [
-      "ref",
-      "v-ref",
+      "element",
       "el",
-      "element"
+      "ref",
+      "v-ref"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-820",
     "title": "Vue 中 h 函数的 children 如何包含文本？",
     "options": [
-      "直接字符串",
+      "以上都是",
       "h(\"span\", \"text\")",
-      "h(Text, \"text\")",
-      "以上都是"
+      "直接字符串",
+      "h(Text, \"text\")"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-821",
     "title": "Vue 中 h 函数的 children 如何包含多个节点？",
     "options": [
-      "数组",
-      "多个参数",
       "Fragment",
-      "以上都是"
+      "数组",
+      "以上都是",
+      "多个参数"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-822",
     "title": "Vue 中 h 函数的 children 如何包含插槽？",
     "options": [
-      "h(component, null, { default: () => [...] })",
       "slot 属性",
-      "v-slot",
-      "以上都不对"
+      "h(component, null, { default: () => [...] })",
+      "以上都不对",
+      "v-slot"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-823",
     "title": "Vue 中 h 函数的 children 如何包含作用域插槽？",
     "options": [
       "h(component, null, { default: (props) => [...] })",
+      "以上都不对",
       "slot-scope",
-      "v-slot",
-      "以上都不对"
+      "v-slot"
     ],
     "correctAnswer": 0
   },
@@ -256,98 +256,98 @@
     "id": "vue-824",
     "title": "Vue 中 h 函数如何创建 Fragment？",
     "options": [
-      "h(Fragment, null, [...])",
-      "h(\"fragment\", null, [...])",
       "h(\"<>\", null, [...])",
-      "以上都不对"
+      "以上都不对",
+      "h(Fragment, null, [...])",
+      "h(\"fragment\", null, [...])"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-825",
     "title": "Vue 中 h 函数如何创建 Teleport？",
     "options": [
-      "h(Teleport, { to: \"#id\" }, [...])",
-      "h(\"teleport\", { to: \"#id\" }, [...])",
       "h(Teleport, \"#id\", [...])",
-      "以上都不对"
+      "以上都不对",
+      "h(Teleport, { to: \"#id\" }, [...])",
+      "h(\"teleport\", { to: \"#id\" }, [...])"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-826",
     "title": "Vue 中 h 函数如何创建 Suspense？",
     "options": [
-      "h(Suspense, null, { default: ..., fallback: ... })",
       "h(\"suspense\", null, ...)",
-      "h(Suspense, ...)",
-      "以上都不对"
+      "以上都不对",
+      "h(Suspense, null, { default: ..., fallback: ... })",
+      "h(Suspense, ...)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-827",
     "title": "Vue 中 h 函数如何创建 KeepAlive？",
     "options": [
-      "h(KeepAlive, null, [...])",
       "h(\"keep-alive\", null, [...])",
       "h(KeepAlive, ...)",
+      "h(KeepAlive, null, [...])",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-828",
     "title": "Vue 中 h 函数如何创建 Transition？",
     "options": [
+      "以上都不对",
       "h(Transition, { name: \"fade\" }, [...])",
-      "h(\"transition\", { name: \"fade\" }, [...])",
       "h(Transition, ...)",
-      "以上都不对"
+      "h(\"transition\", { name: \"fade\" }, [...])"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-829",
     "title": "Vue 中 h 函数如何创建 TransitionGroup？",
     "options": [
-      "h(TransitionGroup, { name: \"list\" }, [...])",
+      "以上都不对",
       "h(\"transition-group\", { name: \"list\" }, [...])",
       "h(TransitionGroup, ...)",
-      "以上都不对"
+      "h(TransitionGroup, { name: \"list\" }, [...])"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-830",
     "title": "Vue 中 resolveComponent 的作用是？",
     "options": [
+      "创建组件",
       "解析已注册的组件",
       "注册组件",
-      "创建组件",
       "销毁组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-831",
     "title": "Vue 中 resolveDirective 的作用是？",
     "options": [
+      "创建指令",
       "解析已注册的指令",
       "注册指令",
-      "创建指令",
       "销毁指令"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-832",
     "title": "Vue 中 withDirectives 的作用是？",
     "options": [
       "给 VNode 附加指令",
+      "销毁指令",
       "注册指令",
-      "创建指令",
-      "销毁指令"
+      "创建指令"
     ],
     "correctAnswer": 0
   },
@@ -355,21 +355,21 @@
     "id": "vue-833",
     "title": "Vue 中 withDirectives 的参数是？",
     "options": [
-      "vnode, directives",
-      "directives, vnode",
       "vnode, directive",
-      "directive, vnode"
+      "directives, vnode",
+      "directive, vnode",
+      "vnode, directives"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-834",
     "title": "Vue 中 withDirectives 的 directive 格式是？",
     "options": [
       "[directive, value, argument, modifiers]",
-      "directive",
+      "以上都不对",
       "{ directive, value }",
-      "以上都不对"
+      "directive"
     ],
     "correctAnswer": 0
   },
@@ -377,21 +377,21 @@
     "id": "vue-835",
     "title": "Vue 中 createVNode 的作用是？",
     "options": [
-      "创建 VNode",
+      "以上都不对",
       "创建组件",
-      "创建元素",
-      "以上都不对"
+      "创建 VNode",
+      "创建元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-836",
     "title": "Vue 中 createVNode 和 h 的区别是？",
     "options": [
       "h 是 createVNode 的封装",
+      "h 性能更好",
       "没有区别",
-      "createVNode 性能更好",
-      "h 性能更好"
+      "createVNode 性能更好"
     ],
     "correctAnswer": 0
   },
@@ -399,21 +399,21 @@
     "id": "vue-837",
     "title": "Vue 中 cloneVNode 的作用是？",
     "options": [
-      "克隆 VNode",
       "创建 VNode",
-      "合并 VNode",
-      "销毁 VNode"
+      "克隆 VNode",
+      "销毁 VNode",
+      "合并 VNode"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-838",
     "title": "Vue 中 cloneVNode 会合并 props 吗？",
     "options": [
       "会",
-      "不会",
       "取决于配置",
-      "报错"
+      "报错",
+      "不会"
     ],
     "correctAnswer": 0
   },
@@ -421,76 +421,76 @@
     "id": "vue-839",
     "title": "Vue 中 mergeProps 的作用是？",
     "options": [
-      "合并 props",
       "创建 props",
-      "验证 props",
-      "转换 props"
+      "合并 props",
+      "转换 props",
+      "验证 props"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-840",
     "title": "Vue 中 mergeProps 如何处理 class？",
     "options": [
-      "合并数组",
+      "忽略",
       "覆盖",
-      "报错",
-      "忽略"
+      "合并数组",
+      "报错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-841",
     "title": "Vue 中 mergeProps 如何处理 style？",
     "options": [
-      "合并对象",
       "覆盖",
       "报错",
+      "合并对象",
       "忽略"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-842",
     "title": "Vue 中 mergeProps 如何处理事件？",
     "options": [
-      "合并为数组",
       "覆盖",
-      "报错",
-      "忽略"
+      "忽略",
+      "合并为数组",
+      "报错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-843",
     "title": "Vue 中 isVNode 的作用是？",
     "options": [
-      "判断是否为 VNode",
       "创建 VNode",
-      "合并 VNode",
-      "销毁 VNode"
+      "判断是否为 VNode",
+      "销毁 VNode",
+      "合并 VNode"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-844",
     "title": "Vue 中 renderList 的作用是？",
     "options": [
+      "遍历列表",
       "渲染列表",
       "创建列表",
-      "遍历列表",
       "合并列表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-845",
     "title": "Vue 中 renderList 的参数是？",
     "options": [
       "list, fn",
-      "fn, list",
       "list",
-      "fn"
+      "fn",
+      "fn, list"
     ],
     "correctAnswer": 0
   },
@@ -498,54 +498,54 @@
     "id": "vue-846",
     "title": "Vue 中 renderSlot 的作用是？",
     "options": [
-      "渲染插槽",
-      "创建插槽",
       "合并插槽",
+      "创建插槽",
+      "渲染插槽",
       "销毁插槽"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-847",
     "title": "Vue 中 renderSlot 的参数是？",
     "options": [
-      "slots, name, props, fallback",
       "name, slots, props",
       "slots, name",
-      "name, props"
+      "name, props",
+      "slots, name, props, fallback"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-848",
     "title": "Vue 中 withCtx 的作用是？",
     "options": [
+      "销毁上下文",
       "提供渲染上下文",
       "创建上下文",
-      "合并上下文",
-      "销毁上下文"
+      "合并上下文"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-849",
     "title": "Vue 中 withCtx 的参数是？",
     "options": [
-      "fn",
       "ctx",
+      "fn",
       "fn, ctx",
       "ctx, fn"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-850",
     "title": "Vue 中 createTextVNode 的作用是？",
     "options": [
       "创建文本 VNode",
-      "创建元素 VNode",
+      "创建注释 VNode",
       "创建组件 VNode",
-      "创建注释 VNode"
+      "创建元素 VNode"
     ],
     "correctAnswer": 0
   }

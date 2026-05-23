@@ -3,109 +3,109 @@
     "id": "react-501",
     "title": "React 中性能优化的核心原则是？",
     "options": [
-      "减少不必要的渲染和计算",
-      "增加渲染次数",
+      "使用更多 Context",
       "使用更多 State",
-      "使用更多 Context"
+      "增加渲染次数",
+      "减少不必要的渲染和计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-502",
     "title": "React 中 shouldComponentUpdate 的作用是？",
     "options": [
-      "判断组件是否需要更新",
-      "强制更新",
       "卸载组件",
-      "挂载组件"
+      "强制更新",
+      "挂载组件",
+      "判断组件是否需要更新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-503",
     "title": "React 中 PureComponent 的作用是？",
     "options": [
-      "自动浅比较 Props 和 State 避免不必要更新",
       "深比较",
       "强制更新",
-      "缓存组件"
+      "缓存组件",
+      "自动浅比较 Props 和 State 避免不必要更新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-504",
     "title": "React 中 React.memo 的作用是？",
     "options": [
+      "强制更新",
       "对函数组件进行浅比较优化",
       "深比较",
-      "强制更新",
       "缓存计算结果"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-505",
     "title": "React 中 useMemo 的作用是？",
     "options": [
-      "缓存计算结果避免重复计算",
-      "缓存函数",
       "缓存组件",
-      "缓存 DOM"
+      "缓存 DOM",
+      "缓存函数",
+      "缓存计算结果避免重复计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-506",
     "title": "React 中 useCallback 的作用是？",
     "options": [
-      "缓存函数引用避免子组件不必要渲染",
-      "缓存计算结果",
+      "缓存 DOM",
       "缓存组件",
-      "缓存 DOM"
+      "缓存函数引用避免子组件不必要渲染",
+      "缓存计算结果"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-507",
     "title": "React 中虚拟化列表的作用是？",
     "options": [
-      "只渲染可见区域的项目减少 DOM 节点",
       "渲染全部项目",
       "增加 DOM 节点",
-      "美化列表"
+      "美化列表",
+      "只渲染可见区域的项目减少 DOM 节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-508",
     "title": "React 中常用的虚拟化列表库是？",
     "options": [
-      "react-window 和 react-virtualized",
-      "react-list",
+      "react-lazy",
       "react-scroll",
-      "react-lazy"
+      "react-window 和 react-virtualized",
+      "react-list"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-509",
     "title": "React 中代码分割的作用是？",
     "options": [
-      "按需加载代码减少初始包体积",
-      "合并代码",
+      "加密代码",
       "压缩代码",
-      "加密代码"
+      "按需加载代码减少初始包体积",
+      "合并代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-510",
     "title": "React 中 React.lazy 的作用是？",
     "options": [
       "动态导入组件实现代码分割",
-      "懒执行函数",
+      "懒加载数据",
       "懒加载样式",
-      "懒加载数据"
+      "懒执行函数"
     ],
     "correctAnswer": 0
   },
@@ -114,9 +114,9 @@
     "title": "React 中 key 的性能作用是？",
     "options": [
       "帮助 Diff 算法快速定位节点减少操作",
-      "增加渲染",
       "美化代码",
-      "无作用"
+      "无作用",
+      "增加渲染"
     ],
     "correctAnswer": 0
   },
@@ -124,23 +124,23 @@
     "id": "react-512",
     "title": "React 中 useEffect 的性能陷阱是？",
     "options": [
-      "依赖项不稳定导致无限循环或不必要执行",
-      "执行太快",
       "不支持异步",
+      "执行太快",
+      "依赖项不稳定导致无限循环或不必要执行",
       "内存泄漏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-513",
     "title": "React 中如何避免 Context 导致的不必要渲染？",
     "options": [
-      "拆分 Context、使用 memo、传递稳定引用",
       "不使用 Context",
+      "使用 useState",
       "使用 Redux",
-      "使用 useState"
+      "拆分 Context、使用 memo、传递稳定引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-514",
@@ -157,12 +157,12 @@
     "id": "react-515",
     "title": "React 中 Web Workers 的作用是？",
     "options": [
+      "渲染组件",
       "将计算密集型任务移到后台线程避免阻塞 UI",
-      "操作 DOM",
       "网络请求",
-      "渲染组件"
+      "操作 DOM"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-516",
@@ -170,8 +170,8 @@
     "options": [
       "限制高频事件处理函数的执行频率",
       "加速执行",
-      "并发执行",
-      "同步执行"
+      "同步执行",
+      "并发执行"
     ],
     "correctAnswer": 0
   },
@@ -179,109 +179,109 @@
     "id": "react-517",
     "title": "React 中如何优化图片加载？",
     "options": [
+      "CSS 背景图",
       "懒加载、响应式图片、WebP 格式、占位符",
       "加载原图",
-      "不使用图片",
-      "CSS 背景图"
+      "不使用图片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-518",
     "title": "React 中如何优化网络请求？",
     "options": [
-      "缓存、合并请求、预加载、GraphQL",
-      "每次重新请求",
+      "只使用 GET",
       "减少请求",
-      "只使用 GET"
+      "每次重新请求",
+      "缓存、合并请求、预加载、GraphQL"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-519",
     "title": "React 中 React.Profiler 的作用是？",
     "options": [
-      "测量组件渲染时间和频率识别性能瓶颈",
       "记录错误",
+      "测量组件渲染时间和频率识别性能瓶颈",
       "状态管理",
       "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-520",
     "title": "React 中 Chrome DevTools Performance 的作用是？",
     "options": [
-      "分析运行时性能和渲染帧率",
       "编辑代码",
+      "分析运行时性能和渲染帧率",
       "网络请求",
       "查看 DOM"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-521",
     "title": "React 中 Lighthouse 的作用是？",
     "options": [
-      "审计网页性能、可访问性、最佳实践",
-      "单元测试",
       "集成测试",
-      "E2E 测试"
+      "E2E 测试",
+      "单元测试",
+      "审计网页性能、可访问性、最佳实践"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-522",
     "title": "React 中如何优化 SSR 性能？",
     "options": [
-      "流式渲染、缓存、代码分割、预取",
+      "减少组件",
       "不使用 SSR",
       "增加服务器",
-      "减少组件"
+      "流式渲染、缓存、代码分割、预取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-523",
     "title": "React 中如何优化 SEO？",
     "options": [
+      "使用 iframe",
       "SSR/SSG、预渲染、Meta 标签、语义化 HTML",
       "增加关键词",
-      "隐藏内容",
-      "使用 iframe"
+      "隐藏内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-524",
     "title": "React 中如何优化首屏加载？",
     "options": [
-      "代码分割、预加载、SSR、骨架屏",
-      "增加动画",
+      "使用 CDN",
       "减少内容",
-      "使用 CDN"
+      "代码分割、预加载、SSR、骨架屏",
+      "增加动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-525",
     "title": "React 中如何优化交互响应？",
     "options": [
+      "使用 setTimeout",
       "使用并发特性、Web Worker、优化长任务",
       "增加 State",
-      "使用 setTimeout",
       "减少事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-526",
     "title": "React 中如何优化动画性能？",
     "options": [
       "使用 transform 和 opacity、will-change、requestAnimationFrame",
-      "使用 left/top",
+      "使用 CSS only",
       "使用 setInterval",
-      "使用 CSS only"
+      "使用 left/top"
     ],
     "correctAnswer": 0
   },
@@ -289,54 +289,54 @@
     "id": "react-527",
     "title": "React 中如何优化长列表渲染？",
     "options": [
-      "虚拟化列表、分页、懒加载、无限滚动",
+      "使用 forEach",
       "渲染全部",
-      "使用 map",
-      "使用 forEach"
+      "虚拟化列表、分页、懒加载、无限滚动",
+      "使用 map"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-528",
     "title": "React 中如何优化复杂计算？",
     "options": [
-      "useMemo、Web Worker、缓存、预计算",
-      "每次重新计算",
       "使用 useState",
-      "使用 useEffect"
+      "useMemo、Web Worker、缓存、预计算",
+      "使用 useEffect",
+      "每次重新计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-529",
     "title": "React 中如何优化事件处理？",
     "options": [
-      "事件委托、防抖节流、passive 监听",
-      "每次绑定新事件",
       "移除事件",
-      "使用内联函数"
+      "使用内联函数",
+      "每次绑定新事件",
+      "事件委托、防抖节流、passive 监听"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-530",
     "title": "React 中如何优化样式计算？",
     "options": [
-      "减少复杂选择器、使用 CSS Modules、避免重排重绘",
-      "使用内联样式",
       "使用重要选择器",
-      "增加样式"
+      "使用内联样式",
+      "增加样式",
+      "减少复杂选择器、使用 CSS Modules、避免重排重绘"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-531",
     "title": "React 中如何优化 DOM 操作？",
     "options": [
       "批量更新、减少 DOM 节点、使用 Fragment",
-      "直接操作 DOM",
       "频繁更新",
-      "使用 jQuery"
+      "使用 jQuery",
+      "直接操作 DOM"
     ],
     "correctAnswer": 0
   },
@@ -344,65 +344,65 @@
     "id": "react-532",
     "title": "React 中如何优化内存使用？",
     "options": [
-      "清理副作用、卸载无用组件、避免闭包陷阱",
-      "增加变量",
       "使用全局变量",
-      "不使用 State"
+      "清理副作用、卸载无用组件、避免闭包陷阱",
+      "不使用 State",
+      "增加变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-533",
     "title": "React 中如何优化打包体积？",
     "options": [
-      "Tree Shaking、代码分割、压缩、按需引入",
       "引入全部",
       "使用 CDN",
+      "Tree Shaking、代码分割、压缩、按需引入",
       "增加依赖"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-534",
     "title": "React 中如何优化运行时性能？",
     "options": [
-      "减少渲染、使用并发特性、优化算法",
-      "增加渲染",
+      "增加 State",
       "使用同步代码",
-      "增加 State"
+      "增加渲染",
+      "减少渲染、使用并发特性、优化算法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-535",
     "title": "React 中如何优化编译时性能？",
     "options": [
-      "使用 SWC、升级 Babel、缓存构建",
-      "减少代码",
       "增加插件",
-      "使用 Webpack"
+      "使用 Webpack",
+      "减少代码",
+      "使用 SWC、升级 Babel、缓存构建"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-536",
     "title": "React 中如何优化开发体验？",
     "options": [
-      "热更新、ESLint、TypeScript、调试工具",
-      "减少插件",
       "不使用 Lint",
-      "纯 JS 开发"
+      "热更新、ESLint、TypeScript、调试工具",
+      "纯 JS 开发",
+      "减少插件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-537",
     "title": "React 中如何优化测试性能？",
     "options": [
       "并行测试、快照测试、Mock 依赖",
-      "串行测试",
+      "只写 E2E",
       "不写测试",
-      "只写 E2E"
+      "串行测试"
     ],
     "correctAnswer": 0
   },
@@ -410,21 +410,21 @@
     "id": "react-538",
     "title": "React 中如何优化部署性能？",
     "options": [
-      "CDN、缓存策略、预渲染、容器化",
       "单台服务器",
+      "CDN、缓存策略、预渲染、容器化",
       "不缓存",
       "手动部署"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-539",
     "title": "React 中如何优化监控性能？",
     "options": [
       "性能指标上报、错误监控、用户行为追踪",
-      "不监控",
+      "手动检查",
       "只看日志",
-      "手动检查"
+      "不监控"
     ],
     "correctAnswer": 0
   },
@@ -432,23 +432,23 @@
     "id": "react-540",
     "title": "React 中如何优化安全性能？",
     "options": [
-      "XSS 防护、CSRF 防护、CSP 策略、HTTPS",
       "HTTP",
       "明文存储",
-      "不验证"
+      "不验证",
+      "XSS 防护、CSRF 防护、CSP 策略、HTTPS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-541",
     "title": "React 中如何优化可访问性？",
     "options": [
-      "语义化 HTML、ARIA 属性、键盘导航",
-      "只使用 div",
       "不使用 ARIA",
-      "只支持鼠标"
+      "只支持鼠标",
+      "只使用 div",
+      "语义化 HTML、ARIA 属性、键盘导航"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-542",
@@ -466,8 +466,8 @@
     "title": "React 中如何优化主题切换？",
     "options": [
       "CSS 变量、类名切换、动态加载样式",
-      "内联样式",
       "重新加载页面",
+      "内联样式",
       "不支持切换"
     ],
     "correctAnswer": 0
@@ -476,77 +476,77 @@
     "id": "react-544",
     "title": "React 中如何优化权限控制？",
     "options": [
-      "路由守卫、指令式渲染、缓存权限",
       "前端硬编码",
+      "后端只验证",
       "不控制",
-      "后端只验证"
+      "路由守卫、指令式渲染、缓存权限"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-545",
     "title": "React 中如何优化数据预取？",
     "options": [
-      "路由预取、悬停预取、空闲预取",
-      "不预取",
       "点击时获取",
+      "不预取",
+      "路由预取、悬停预取、空闲预取",
       "每次重新获取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-546",
     "title": "React 中如何优化数据缓存？",
     "options": [
-      "SWR 策略、本地存储、内存缓存",
-      "不缓存",
       "只缓存 GET",
-      "手动管理"
+      "手动管理",
+      "不缓存",
+      "SWR 策略、本地存储、内存缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-547",
     "title": "React 中如何优化错误恢复？",
     "options": [
+      "不处理",
       "错误边界、重试机制、降级 UI",
       "直接崩溃",
-      "刷新页面",
-      "不处理"
+      "刷新页面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-548",
     "title": "React 中如何优化日志记录？",
     "options": [
-      "批量上报、异步记录、级别过滤",
+      "只打印控制台",
       "同步记录",
-      "不记录",
-      "只打印控制台"
+      "批量上报、异步记录、级别过滤",
+      "不记录"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-549",
     "title": "React 中如何优化埋点上报？",
     "options": [
-      "批量发送、空闲时发送、压缩数据",
       "实时发送",
-      "不发送",
-      "全量发送"
+      "批量发送、空闲时发送、压缩数据",
+      "全量发送",
+      "不发送"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-550",
     "title": "React 中如何优化组件库？",
     "options": [
-      "Tree Shaking、按需加载、文档生成",
-      "全量引入",
+      "不使用组件库",
       "手动导入",
-      "不使用组件库"
+      "全量引入",
+      "Tree Shaking、按需加载、文档生成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

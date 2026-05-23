@@ -4,9 +4,9 @@
     "title": "WCAG的全称是？",
     "options": [
       "Web Content Accessibility Guidelines",
-      "Web Content Accessibility Guide",
       "Web Context Accessibility Guidelines",
-      "Web Content Application Guidelines"
+      "Web Content Application Guidelines",
+      "Web Content Accessibility Guide"
     ],
     "correctAnswer": 0
   },
@@ -14,111 +14,111 @@
     "id": "html-502",
     "title": "WCAG的四大原则是？",
     "options": [
-      "可感知、可操作、可理解、健壮",
       "可见、可用、易懂、快速",
       "清晰、简洁、一致、反馈",
-      "安全、可靠、高效、美观"
+      "安全、可靠、高效、美观",
+      "可感知、可操作、可理解、健壮"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-503",
     "title": "ARIA的全称是？",
     "options": [
-      "Accessible Rich Internet Applications",
+      "Accessible Responsive Internet Applications",
       "Accessible Rich Internet Architecture",
-      "Advanced Rich Internet Applications",
-      "Accessible Responsive Internet Applications"
+      "Accessible Rich Internet Applications",
+      "Advanced Rich Internet Applications"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-504",
     "title": "ARIA的作用是？",
     "options": [
-      "增强动态内容和UI控件的可访问性",
-      "增强样式",
       "增强交互",
-      "增强性能"
+      "增强性能",
+      "增强动态内容和UI控件的可访问性",
+      "增强样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-505",
     "title": "ARIA的三大主要特性是？",
     "options": [
-      "角色、状态、属性",
       "样式、行为、结构",
       "类、ID、标签",
-      "事件、方法、属性"
+      "事件、方法、属性",
+      "角色、状态、属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-506",
     "title": "aria-label属性的作用是？",
     "options": [
-      "为元素提供不可见的辅助文本",
-      "设置可见标签",
+      "设置描述",
       "设置标题",
-      "设置描述"
+      "设置可见标签",
+      "为元素提供不可见的辅助文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-507",
     "title": "aria-labelledby属性的作用是？",
     "options": [
+      "设置样式",
       "引用可见元素作为标签",
       "设置隐藏标签",
-      "设置ID",
-      "设置样式"
+      "设置ID"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-508",
     "title": "aria-describedby属性的作用是？",
     "options": [
-      "引用元素提供更详细的描述",
-      "简短描述",
       "设置标题",
+      "简短描述",
+      "引用元素提供更详细的描述",
       "设置链接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-509",
     "title": "aria-hidden属性的作用是？",
     "options": [
-      "对辅助技术隐藏元素",
-      "视觉隐藏",
       "显示元素",
+      "视觉隐藏",
+      "对辅助技术隐藏元素",
       "禁用元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-510",
     "title": "aria-expanded属性的作用是？",
     "options": [
+      "指示状态",
       "指示控件是否展开",
       "指示大小",
-      "指示位置",
-      "指示状态"
+      "指示位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-511",
     "title": "aria-checked属性的作用是？",
     "options": [
+      "指示状态",
       "指示复选框或单选框是否选中",
       "指示验证",
-      "指示状态",
       "指示可见"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-512",
@@ -126,8 +126,8 @@
     "options": [
       "指示控件是否禁用",
       "隐藏控件",
-      "删除控件",
-      "启用控件"
+      "启用控件",
+      "删除控件"
     ],
     "correctAnswer": 0
   },
@@ -135,31 +135,31 @@
     "id": "html-513",
     "title": "aria-live属性的作用是？",
     "options": [
-      "指示区域是否实时更新",
-      "指示存活",
       "指示活动",
+      "指示存活",
+      "指示区域是否实时更新",
       "指示位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-514",
     "title": "aria-live=\"polite\"的含义是？",
     "options": [
-      "用户空闲时播报更新",
       "立即播报",
-      "不播报",
-      "强制播报"
+      "强制播报",
+      "用户空闲时播报更新",
+      "不播报"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-515",
     "title": "aria-live=\"assertive\"的含义是？",
     "options": [
       "立即播报更新(高优先级)",
-      "空闲时播报",
       "不播报",
+      "空闲时播报",
       "低优先级播报"
     ],
     "correctAnswer": 0
@@ -169,8 +169,8 @@
     "title": "role=\"button\"的作用是？",
     "options": [
       "将元素标识为按钮",
-      "设置按钮样式",
       "添加点击事件",
+      "设置按钮样式",
       "禁用按钮"
     ],
     "correctAnswer": 0
@@ -181,8 +181,8 @@
     "options": [
       "标识重要且紧急的信息",
       "设置警告样式",
-      "弹出对话框",
-      "显示通知"
+      "显示通知",
+      "弹出对话框"
     ],
     "correctAnswer": 0
   },
@@ -191,9 +191,9 @@
     "title": "role=\"dialog\"的作用是？",
     "options": [
       "标识对话框",
-      "设置对话样式",
+      "显示对话",
       "创建对话框",
-      "显示对话"
+      "设置对话样式"
     ],
     "correctAnswer": 0
   },
@@ -202,9 +202,9 @@
     "title": "role=\"tablist\"的作用是？",
     "options": [
       "标识选项卡列表",
+      "标识菜单",
       "标识标签",
-      "标识列表",
-      "标识菜单"
+      "标识列表"
     ],
     "correctAnswer": 0
   },
@@ -212,54 +212,54 @@
     "id": "html-520",
     "title": "role=\"tab\"的作用是？",
     "options": [
-      "标识选项卡",
-      "标识标签页",
+      "标识链接",
       "标识按钮",
-      "标识链接"
+      "标识标签页",
+      "标识选项卡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-521",
     "title": "role=\"tabpanel\"的作用是？",
     "options": [
-      "标识选项卡面板",
       "标识面板",
       "标识容器",
+      "标识选项卡面板",
       "标识区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-522",
     "title": "role=\"slider\"的作用是？",
     "options": [
-      "标识滑块控件",
+      "标识范围",
       "标识滚动条",
-      "标识进度条",
-      "标识范围"
+      "标识滑块控件",
+      "标识进度条"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-523",
     "title": "role=\"progressbar\"的作用是？",
     "options": [
-      "标识进度条",
       "标识滑块",
       "标识加载条",
-      "标识状态"
+      "标识状态",
+      "标识进度条"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-524",
     "title": "role=\"tooltip\"的作用是？",
     "options": [
       "标识提示框",
+      "标识描述",
       "标识标题",
-      "标识标签",
-      "标识描述"
+      "标识标签"
     ],
     "correctAnswer": 0
   },
@@ -278,12 +278,12 @@
     "id": "html-526",
     "title": "<title>标签对SEO的重要性是？",
     "options": [
-      "影响搜索排名和用户点击",
-      "无影响",
       "仅影响显示",
-      "仅影响加载"
+      "影响搜索排名和用户点击",
+      "仅影响加载",
+      "无影响"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-527",
@@ -291,8 +291,8 @@
     "options": [
       "提供页面摘要影响点击率",
       "提高排名",
-      "增加关键词",
-      "定义编码"
+      "定义编码",
+      "增加关键词"
     ],
     "correctAnswer": 0
   },
@@ -301,9 +301,9 @@
     "title": "<meta name=\"keywords\">现在的状态是？",
     "options": [
       "大多数搜索引擎不再使用",
-      "非常重要",
+      "必须设置",
       "仍然有效",
-      "必须设置"
+      "非常重要"
     ],
     "correctAnswer": 0
   },
@@ -311,32 +311,32 @@
     "id": "html-529",
     "title": "<h1>标签对SEO的作用是？",
     "options": [
-      "强调页面核心主题",
       "无影响",
-      "增加链接",
-      "美化页面"
+      "美化页面",
+      "强调页面核心主题",
+      "增加链接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-530",
     "title": "语义化HTML对SEO的影响是？",
     "options": [
-      "帮助搜索引擎理解页面结构",
       "无影响",
+      "增加代码量",
       "降低排名",
-      "增加代码量"
+      "帮助搜索引擎理解页面结构"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-531",
     "title": "<a>标签的title属性对SEO的作用？",
     "options": [
       "微弱，主要改善用户体验",
-      "非常重要",
+      "提高排名",
       "无影响",
-      "提高排名"
+      "非常重要"
     ],
     "correctAnswer": 0
   },
@@ -344,34 +344,34 @@
     "id": "html-532",
     "title": "<link rel=\"canonical\">的作用是？",
     "options": [
-      "指定规范URL避免重复内容",
       "定义编码",
+      "指定规范URL避免重复内容",
       "引入样式",
       "定义图标"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-533",
     "title": "Open Graph (OG) 标签的作用是？",
     "options": [
-      "控制社交媒体分享时的显示内容",
       "优化搜索",
-      "加速加载",
-      "定义语义"
+      "定义语义",
+      "控制社交媒体分享时的显示内容",
+      "加速加载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-534",
     "title": "OG标签的前缀是？",
     "options": [
-      "og:",
       "meta:",
       "social:",
+      "og:",
       "share:"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-535",
@@ -379,8 +379,8 @@
     "options": [
       "定义分享标题",
       "定义类型",
-      "定义图片",
-      "定义描述"
+      "定义描述",
+      "定义图片"
     ],
     "correctAnswer": 0
   },
@@ -389,8 +389,8 @@
     "title": "og:image的作用是？",
     "options": [
       "定义分享图片",
-      "定义标题",
       "定义描述",
+      "定义标题",
       "定义链接"
     ],
     "correctAnswer": 0
@@ -400,9 +400,9 @@
     "title": "Twitter Card标签的作用是？",
     "options": [
       "控制Twitter分享时的显示",
+      "控制微博分享",
       "控制Facebook分享",
-      "控制微信分享",
-      "控制微博分享"
+      "控制微信分享"
     ],
     "correctAnswer": 0
   },
@@ -410,56 +410,56 @@
     "id": "html-538",
     "title": "Twitter Card标签的name前缀是？",
     "options": [
-      "twitter:",
-      "og:",
       "fb:",
-      "card:"
+      "og:",
+      "card:",
+      "twitter:"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-539",
     "title": "结构化数据的作用是？",
     "options": [
-      "生成搜索结果的富媒体片段",
       "美化页面",
+      "生成搜索结果的富媒体片段",
       "加速加载",
       "增加安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-540",
     "title": "结构化数据常用的格式是？",
     "options": [
+      "RDFa",
       "JSON-LD",
       "Microdata",
-      "RDFa",
       "以上都是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-541",
     "title": "JSON-LD通常放在哪个标签中？",
     "options": [
-      "<script type=\"application/ld+json\">",
       "<meta>",
-      "<link>",
-      "<style>"
+      "<style>",
+      "<script type=\"application/ld+json\">",
+      "<link>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-542",
     "title": "robots meta标签的作用是？",
     "options": [
-      "控制搜索引擎抓取和索引行为",
       "控制爬虫速度",
-      "控制抓取时间",
-      "控制抓取频率"
+      "控制抓取频率",
+      "控制搜索引擎抓取和索引行为",
+      "控制抓取时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-543",
@@ -467,8 +467,8 @@
     "options": [
       "禁止索引此页面",
       "禁止抓取",
-      "允许索引",
-      "允许抓取"
+      "允许抓取",
+      "允许索引"
     ],
     "correctAnswer": 0
   },
@@ -476,21 +476,21 @@
     "id": "html-544",
     "title": "<meta name=\"robots\" content=\"nofollow\">的含义是？",
     "options": [
-      "不追踪此页面的链接",
       "禁止索引",
+      "不追踪此页面的链接",
       "允许追踪",
       "禁止抓取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-545",
     "title": "<a rel=\"nofollow\">的作用是？",
     "options": [
       "告诉搜索引擎不要追踪此链接",
-      "禁止点击",
       "禁止跳转",
-      "打开新窗口"
+      "打开新窗口",
+      "禁止点击"
     ],
     "correctAnswer": 0
   },
@@ -498,21 +498,21 @@
     "id": "html-546",
     "title": "Sitemap的作用是？",
     "options": [
-      "告诉搜索引擎网站的可抓取URL",
-      "加速加载",
+      "定义路由",
       "优化结构",
-      "定义路由"
+      "告诉搜索引擎网站的可抓取URL",
+      "加速加载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-547",
     "title": "Sitemap通常使用什么格式？",
     "options": [
       "XML",
+      "TXT",
       "HTML",
-      "JSON",
-      "TXT"
+      "JSON"
     ],
     "correctAnswer": 0
   },
@@ -520,23 +520,23 @@
     "id": "html-548",
     "title": "面包屑导航对SEO的作用是？",
     "options": [
+      "美化界面",
       "帮助理解页面层级结构",
       "增加关键词",
-      "提高速度",
-      "美化界面"
+      "提高速度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-549",
     "title": "如何优化图片的SEO？",
     "options": [
-      "使用描述性文件名和alt文本",
+      "使用大图",
       "增加尺寸",
-      "增加数量",
-      "使用大图"
+      "使用描述性文件名和alt文本",
+      "增加数量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-550",
@@ -544,8 +544,8 @@
     "options": [
       "是排名因素之一",
       "无影响",
-      "影响很小",
-      "只影响体验"
+      "只影响体验",
+      "影响很小"
     ],
     "correctAnswer": 0
   }

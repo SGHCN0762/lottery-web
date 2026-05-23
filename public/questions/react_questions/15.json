@@ -3,65 +3,65 @@
     "id": "react-701",
     "title": "React 中 SSR 的全称是？",
     "options": [
+      "State-Side Rendering",
       "Server-Side Rendering",
       "Static-Side Rendering",
-      "Service-Side Rendering",
-      "State-Side Rendering"
+      "Service-Side Rendering"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-702",
     "title": "React 中 SSG 的全称是？",
     "options": [
-      "Static Site Generation",
-      "Server Site Generation",
       "Service Site Generation",
-      "State Site Generation"
+      "State Site Generation",
+      "Server Site Generation",
+      "Static Site Generation"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-703",
     "title": "React 中 CSR 的全称是？",
     "options": [
-      "Client-Side Rendering",
       "Cache-Side Rendering",
+      "Client-Side Rendering",
       "Component-Side Rendering",
       "Concurrent-Side Rendering"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-704",
     "title": "React 中 ISR 的全称是？",
     "options": [
-      "Incremental Static Regeneration",
-      "Initial Static Regeneration",
       "Internal Static Regeneration",
-      "Interactive Static Regeneration"
+      "Interactive Static Regeneration",
+      "Initial Static Regeneration",
+      "Incremental Static Regeneration"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-705",
     "title": "React 中 SSR 的优势是？",
     "options": [
-      "首屏快、SEO 友好",
-      "服务器压力小",
       "开发简单",
-      "交互流畅"
+      "首屏快、SEO 友好",
+      "交互流畅",
+      "服务器压力小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-706",
     "title": "React 中 SSR 的缺点是？",
     "options": [
       "服务器压力大、TTFB 长、开发复杂",
+      "交互卡顿",
       "首屏慢",
-      "SEO 差",
-      "交互卡顿"
+      "SEO 差"
     ],
     "correctAnswer": 0
   },
@@ -70,8 +70,8 @@
     "title": "React 中 CSR 的优势是？",
     "options": [
       "交互流畅、服务器压力小、开发简单",
-      "首屏快",
       "SEO 友好",
+      "首屏快",
       "TTFB 短"
     ],
     "correctAnswer": 0
@@ -82,8 +82,8 @@
     "options": [
       "首屏慢、SEO 差",
       "服务器压力大",
-      "开发复杂",
-      "TTFB 长"
+      "TTFB 长",
+      "开发复杂"
     ],
     "correctAnswer": 0
   },
@@ -91,43 +91,43 @@
     "id": "react-709",
     "title": "React 中 SSG 的优势是？",
     "options": [
-      "性能极佳、CDN 友好、SEO 友好",
-      "实时数据",
       "动态内容",
-      "服务器渲染"
+      "实时数据",
+      "服务器渲染",
+      "性能极佳、CDN 友好、SEO 友好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-710",
     "title": "React 中 SSG 的缺点是？",
     "options": [
-      "构建时间长、不适合频繁更新内容",
-      "性能差",
       "SEO 差",
-      "交互差"
+      "性能差",
+      "交互差",
+      "构建时间长、不适合频繁更新内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-711",
     "title": "React 中 ISR 的优势是？",
     "options": [
-      "增量更新无需全量构建",
+      "纯动态",
       "实时渲染",
-      "纯静态",
-      "纯动态"
+      "增量更新无需全量构建",
+      "纯静态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-712",
     "title": "React 中 Next.js 的作用是？",
     "options": [
       "React 全栈框架，支持 SSR/SSG/ISR",
-      "状态管理",
+      "测试框架",
       "UI 组件库",
-      "测试框架"
+      "状态管理"
     ],
     "correctAnswer": 0
   },
@@ -136,9 +136,9 @@
     "title": "React 中 Gatsby 的作用是？",
     "options": [
       "静态站点生成器",
-      "服务端框架",
+      "测试框架",
       "状态管理",
-      "测试框架"
+      "服务端框架"
     ],
     "correctAnswer": 0
   },
@@ -146,20 +146,20 @@
     "id": "react-714",
     "title": "React 中 Remix 的作用是？",
     "options": [
-      "全栈 Web 框架",
-      "静态生成器",
+      "测试框架",
       "UI 组件库",
-      "测试框架"
+      "静态生成器",
+      "全栈 Web 框架"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-715",
     "title": "React 中 renderToString 的作用是？",
     "options": [
       "将组件渲染为 HTML 字符串",
-      "渲染到 DOM",
       "渲染到字符串流",
+      "渲染到 DOM",
       "渲染到文件"
     ],
     "correctAnswer": 0
@@ -170,8 +170,8 @@
     "options": [
       "将组件渲染为 HTML 字节流",
       "渲染为字符串",
-      "渲染到 DOM",
-      "渲染到文件"
+      "渲染到文件",
+      "渲染到 DOM"
     ],
     "correctAnswer": 0
   },
@@ -179,23 +179,23 @@
     "id": "react-717",
     "title": "React 中 hydrate 的作用是？",
     "options": [
-      "在服务端渲染的 HTML 上附加事件监听",
-      "重新渲染",
       "销毁组件",
+      "重新渲染",
+      "在服务端渲染的 HTML 上附加事件监听",
       "创建组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-718",
     "title": "React 中 hydrate 和 render 的区别是？",
     "options": [
-      "hydrate 复用现有 DOM，render 重新创建",
       "没有区别",
-      "hydrate 更慢",
-      "render 复用 DOM"
+      "hydrate 复用现有 DOM，render 重新创建",
+      "render 复用 DOM",
+      "hydrate 更慢"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-719",
@@ -203,8 +203,8 @@
     "options": [
       "服务端和客户端渲染内容不一致",
       "服务器错误",
-      "网络延迟",
-      "浏览器兼容"
+      "浏览器兼容",
+      "网络延迟"
     ],
     "correctAnswer": 0
   },
@@ -212,12 +212,12 @@
     "id": "react-720",
     "title": "React 中 getServerSideProps 的作用是？",
     "options": [
-      "Next.js 中在每次请求时获取数据",
-      "构建时获取数据",
+      "静态数据",
       "客户端获取数据",
-      "静态数据"
+      "构建时获取数据",
+      "Next.js 中在每次请求时获取数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-721",
@@ -234,98 +234,98 @@
     "id": "react-722",
     "title": "React 中 getStaticPaths 的作用是？",
     "options": [
-      "Next.js 中定义动态路由的预渲染路径",
       "获取静态资源",
       "获取服务器数据",
-      "获取客户端数据"
+      "获取客户端数据",
+      "Next.js 中定义动态路由的预渲染路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-723",
     "title": "React 中 Next.js 的 API Routes 作用是？",
     "options": [
-      "创建后端 API 接口",
-      "前端路由",
+      "数据获取",
       "静态生成",
-      "数据获取"
+      "前端路由",
+      "创建后端 API 接口"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-724",
     "title": "React 中 Next.js 的 Image 组件作用是？",
     "options": [
-      "优化图片加载和性能",
-      "显示图片",
       "编辑图片",
-      "上传图片"
+      "优化图片加载和性能",
+      "上传图片",
+      "显示图片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-725",
     "title": "React 中 Next.js 的 Link 组件作用是？",
     "options": [
-      "客户端路由导航",
+      "外部链接",
       "服务端跳转",
-      "静态链接",
-      "外部链接"
+      "客户端路由导航",
+      "静态链接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-726",
     "title": "React 中 Next.js 的 Script 组件作用是？",
     "options": [
-      "优化脚本加载策略",
-      "执行脚本",
       "编译脚本",
-      "压缩脚本"
+      "执行脚本",
+      "压缩脚本",
+      "优化脚本加载策略"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-727",
     "title": "React 中 Next.js 的 Head 组件作用是？",
     "options": [
+      "路由管理",
       "管理文档 head 标签",
       "页面头部",
-      "路由管理",
       "状态管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-728",
     "title": "React 中 Next.js 的 Middleware 作用是？",
     "options": [
-      "在请求完成前运行代码进行拦截",
-      "中间件渲染",
       "静态生成",
-      "数据获取"
+      "数据获取",
+      "中间件渲染",
+      "在请求完成前运行代码进行拦截"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-729",
     "title": "React 中 Next.js 的 Edge Runtime 作用是？",
     "options": [
-      "在边缘节点运行代码减少延迟",
-      "浏览器运行",
       "服务器运行",
+      "浏览器运行",
+      "在边缘节点运行代码减少延迟",
       "本地运行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-730",
     "title": "React 中 Next.js 的 App Router 作用是？",
     "options": [
       "基于 React Server Components 的新路由系统",
-      "旧路由系统",
       "API 路由",
-      "静态路由"
+      "静态路由",
+      "旧路由系统"
     ],
     "correctAnswer": 0
   },
@@ -333,43 +333,43 @@
     "id": "react-731",
     "title": "React 中 React Server Components 的作用是？",
     "options": [
-      "在服务端渲染组件减少客户端 JS 体积",
-      "客户端渲染",
       "静态渲染",
-      "混合渲染"
+      "混合渲染",
+      "在服务端渲染组件减少客户端 JS 体积",
+      "客户端渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-732",
     "title": "React 中 Server Components 的优势是？",
     "options": [
-      "零客户端 JS、直接访问后端、自动代码分割",
-      "交互流畅",
       "开发简单",
-      "兼容性好"
+      "交互流畅",
+      "兼容性好",
+      "零客户端 JS、直接访问后端、自动代码分割"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-733",
     "title": "React 中 Server Components 的限制是？",
     "options": [
-      "不能使用 useState/useEffect 等客户端 API",
-      "不能渲染 HTML",
       "不能访问数据库",
-      "不能使用 Props"
+      "不能使用 Props",
+      "不能使用 useState/useEffect 等客户端 API",
+      "不能渲染 HTML"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-734",
     "title": "React 中 Client Components 如何声明？",
     "options": [
       "使用 \"use client\" 指令",
-      "\"use server\"",
       "\"use strict\"",
-      "\"use rsc\""
+      "\"use rsc\"",
+      "\"use server\""
     ],
     "correctAnswer": 0
   },
@@ -377,32 +377,32 @@
     "id": "react-735",
     "title": "Next.js 中 Server Actions 的作用是？",
     "options": [
-      "在服务端执行函数而无需手写 API",
+      "状态管理",
       "客户端操作",
-      "数据库连接",
-      "状态管理"
+      "在服务端执行函数而无需手写 API",
+      "数据库连接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-736",
     "title": "Next.js 中如何声明 Server Actions？",
     "options": [
-      "在函数顶部使用 \"use server\" 指令",
       "\"use client\"",
+      "\"use backend\"",
       "\"use api\"",
-      "\"use backend\""
+      "在函数顶部使用 \"use server\" 指令"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-737",
     "title": "Remix 中 Loader 的作用是？",
     "options": [
       "在服务端提供数据给路由组件",
-      "加载静态资源",
+      "懒加载",
       "客户端数据获取",
-      "懒加载"
+      "加载静态资源"
     ],
     "correctAnswer": 0
   },
@@ -411,9 +411,9 @@
     "title": "Remix 中 Action 的作用是？",
     "options": [
       "处理表单提交和数据变更",
-      "状态管理",
+      "组件渲染",
       "路由跳转",
-      "组件渲染"
+      "状态管理"
     ],
     "correctAnswer": 0
   },
@@ -421,32 +421,32 @@
     "id": "react-739",
     "title": "Next.js 中 getInitialProps 的特点？",
     "options": [
-      "兼容旧版 SSR，在服务端和客户端都会执行",
-      "只在服务端执行",
       "只在客户端执行",
-      "已废弃不可用"
+      "已废弃不可用",
+      "只在服务端执行",
+      "兼容旧版 SSR，在服务端和客户端都会执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-740",
     "title": "SSR 中如何处理样式注入？",
     "options": [
-      "收集服务端 CSS 并注入到 HTML 字符串",
       "忽略样式",
+      "内联所有样式",
       "客户端加载",
-      "内联所有样式"
+      "收集服务端 CSS 并注入到 HTML 字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-741",
     "title": "Next.js 中 _app.js 的作用是？",
     "options": [
       "全局布局和状态管理",
+      "静态生成",
       "页面路由",
-      "API 接口",
-      "静态生成"
+      "API 接口"
     ],
     "correctAnswer": 0
   },
@@ -454,32 +454,32 @@
     "id": "react-742",
     "title": "Next.js 中 _document.js 的作用是？",
     "options": [
-      "自定义 HTML 和 Body 标签",
       "页面布局",
-      "数据获取",
-      "路由管理"
+      "自定义 HTML 和 Body 标签",
+      "路由管理",
+      "数据获取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-743",
     "title": "Gatsby 中 GraphQL 的作用是？",
     "options": [
-      "在构建时查询和组合数据",
+      "路由管理",
       "服务端 API",
-      "客户端状态",
-      "路由管理"
+      "在构建时查询和组合数据",
+      "客户端状态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-744",
     "title": "Next.js 中预渲染的两种形式是？",
     "options": [
       "静态生成和服务端渲染",
-      "客户端渲染和静态生成",
+      "增量渲染和静态渲染",
       "服务端渲染和客户端渲染",
-      "增量渲染和静态渲染"
+      "客户端渲染和静态生成"
     ],
     "correctAnswer": 0
   },
@@ -487,21 +487,21 @@
     "id": "react-745",
     "title": "Next.js 中动态导入的作用是？",
     "options": [
+      "静态生成",
       "将组件按需加载减少初始包体积",
       "服务端渲染",
-      "静态生成",
       "数据获取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-746",
     "title": "SSR 中如何处理认证？",
     "options": [
       "通过 Cookie 或 Token 在服务端验证",
-      "客户端验证",
       "忽略认证",
-      "使用 localStorage"
+      "使用 localStorage",
+      "客户端验证"
     ],
     "correctAnswer": 0
   },
@@ -509,44 +509,44 @@
     "id": "react-747",
     "title": "Next.js 中 revalidate 的作用是？",
     "options": [
-      "设置 ISR 重新验证的时间间隔",
-      "验证表单",
       "路由守卫",
-      "缓存过期"
+      "缓存过期",
+      "设置 ISR 重新验证的时间间隔",
+      "验证表单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-748",
     "title": "RSC 中如何实现数据获取？",
     "options": [
-      "直接在组件中使用 async/await",
-      "使用 useEffect",
       "使用 axios",
-      "使用事件监听"
+      "直接在组件中使用 async/await",
+      "使用事件监听",
+      "使用 useEffect"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-749",
     "title": "Next.js 13 中 Layout 的作用是？",
     "options": [
-      "在路由间共享 UI 和状态",
       "数据获取",
-      "API 路由",
-      "静态生成"
+      "在路由间共享 UI 和状态",
+      "静态生成",
+      "API 路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-750",
     "title": "Next.js 13 中 Template 的作用是？",
     "options": [
-      "类似 Layout 但在导航时重新创建实例",
-      "共享 UI",
       "静态布局",
-      "数据模板"
+      "类似 Layout 但在导航时重新创建实例",
+      "数据模板",
+      "共享 UI"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

@@ -3,34 +3,34 @@
     "id": "cpp-301",
     "title": "C++中std::make_shared的优势是？",
     "options": [
-      "减少内存分配次数，提高缓存命中率",
-      "可以释放内存",
+      "以上都不对",
       "可以复制",
-      "以上都不对"
+      "减少内存分配次数，提高缓存命中率",
+      "可以释放内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-302",
     "title": "C++中异常处理的语法是？",
     "options": [
-      "try-catch-throw",
       "try-except-raise",
+      "assert",
       "if-else",
-      "assert"
+      "try-catch-throw"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-303",
     "title": "C++中throw的作用是？",
     "options": [
-      "抛出异常",
-      "捕获异常",
       "声明异常",
+      "捕获异常",
+      "抛出异常",
       "处理异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-304",
@@ -38,8 +38,8 @@
     "options": [
       "捕获所有异常",
       "捕获特定异常",
-      "捕获无异常",
-      "以上都不对"
+      "以上都不对",
+      "捕获无异常"
     ],
     "correctAnswer": 0
   },
@@ -58,23 +58,23 @@
     "id": "cpp-306",
     "title": "C++中异常安全等级有？",
     "options": [
-      "基本，强，不抛出",
-      "弱，强",
       "安全，不安全",
-      "以上都不对"
+      "弱，强",
+      "以上都不对",
+      "基本，强，不抛出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-307",
     "title": "C++中RAII与异常的关系是？",
     "options": [
-      "RAII保证异常时资源释放",
       "RAII禁止异常",
-      "异常禁止RAII",
-      "无关系"
+      "无关系",
+      "RAII保证异常时资源释放",
+      "异常禁止RAII"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-308",
@@ -82,8 +82,8 @@
     "options": [
       "连续内存，可能SSO",
       "链表",
-      "哈希表",
-      "树"
+      "树",
+      "哈希表"
     ],
     "correctAnswer": 0
   },
@@ -91,87 +91,87 @@
     "id": "cpp-309",
     "title": "C++中std::array与std::vector的区别是？",
     "options": [
-      "array大小固定，vector动态",
       "array动态，vector固定",
       "无区别",
+      "array大小固定，vector动态",
       "array在堆上"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-310",
     "title": "C++中std::deque的特点是？",
     "options": [
+      "链表实现",
       "双端队列，分段连续",
-      "单端队列",
       "连续内存",
-      "链表实现"
+      "单端队列"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-311",
     "title": "C++中std::stack的底层容器默认是？",
     "options": [
-      "deque",
       "vector",
-      "list",
-      "array"
+      "array",
+      "deque",
+      "list"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-312",
     "title": "C++中std::queue的底层容器默认是？",
     "options": [
-      "deque",
+      "array",
       "vector",
-      "list",
-      "array"
+      "deque",
+      "list"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-313",
     "title": "C++中std::vector的底层实现是？",
     "options": [
-      "动态数组",
       "链表",
-      "哈希表",
-      "红黑树"
+      "动态数组",
+      "红黑树",
+      "哈希表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-314",
     "title": "C++中std::list的底层实现是？",
     "options": [
-      "双向链表",
-      "动态数组",
       "哈希表",
+      "动态数组",
+      "双向链表",
       "红黑树"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-315",
     "title": "C++中std::map的底层实现是？",
     "options": [
-      "红黑树",
-      "动态数组",
+      "双向链表",
       "哈希表",
-      "双向链表"
+      "红黑树",
+      "动态数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-316",
     "title": "C++中std::unordered_map的底层实现是？",
     "options": [
       "哈希表",
-      "红黑树",
       "动态数组",
-      "双向链表"
+      "双向链表",
+      "红黑树"
     ],
     "correctAnswer": 0
   },
@@ -179,21 +179,21 @@
     "id": "cpp-317",
     "title": "C++中std::set的底层实现是？",
     "options": [
-      "红黑树",
-      "哈希表",
       "动态数组",
-      "双向链表"
+      "红黑树",
+      "双向链表",
+      "哈希表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-318",
     "title": "C++中std::vector的扩容机制通常是？",
     "options": [
       "2倍扩容",
-      "1.5倍扩容",
       "固定大小",
-      "不扩容"
+      "不扩容",
+      "1.5倍扩容"
     ],
     "correctAnswer": 0
   },
@@ -201,23 +201,23 @@
     "id": "cpp-319",
     "title": "C++中std::vector插入元素时迭代器失效的情况是？",
     "options": [
-      "发生扩容时",
       "插入尾部",
       "插入头部",
+      "发生扩容时",
       "永不失效"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-320",
     "title": "C++中std::list插入元素时迭代器失效吗？",
     "options": [
-      "不会",
       "会",
+      "不会",
       "部分会",
       "取决于位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-321",
@@ -225,8 +225,8 @@
     "options": [
       "不会",
       "会",
-      "部分会",
-      "取决于位置"
+      "取决于位置",
+      "部分会"
     ],
     "correctAnswer": 0
   },
@@ -234,65 +234,65 @@
     "id": "cpp-322",
     "title": "C++中std::unique_ptr的特点是？",
     "options": [
-      "独占所有权",
       "共享所有权",
+      "可以复制",
       "自动释放",
-      "可以复制"
+      "独占所有权"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-323",
     "title": "C++中std::shared_ptr的特点是？",
     "options": [
-      "共享所有权，引用计数",
-      "独占所有权",
       "无引用计数",
+      "独占所有权",
+      "共享所有权，引用计数",
       "不能复制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-324",
     "title": "C++中std::weak_ptr的作用是？",
     "options": [
-      "解决shared_ptr循环引用",
-      "独占所有权",
+      "替代裸指针",
       "共享所有权",
-      "替代裸指针"
+      "独占所有权",
+      "解决shared_ptr循环引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-325",
     "title": "C++中std::make_shared的优势是？",
     "options": [
-      "减少内存分配次数，提高缓存命中率",
+      "以上都不对",
       "可以释放内存",
       "可以复制",
-      "以上都不对"
+      "减少内存分配次数，提高缓存命中率"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-326",
     "title": "C++中异常处理的语法是？",
     "options": [
+      "if-else",
       "try-catch-throw",
       "try-except-raise",
-      "if-else",
       "assert"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-327",
     "title": "C++中throw的作用是？",
     "options": [
       "抛出异常",
-      "捕获异常",
+      "处理异常",
       "声明异常",
-      "处理异常"
+      "捕获异常"
     ],
     "correctAnswer": 0
   },
@@ -300,32 +300,32 @@
     "id": "cpp-328",
     "title": "C++中catch(...)的作用是？",
     "options": [
-      "捕获所有异常",
       "捕获特定异常",
       "捕获无异常",
+      "捕获所有异常",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-329",
     "title": "C++中noexcept的作用是？",
     "options": [
-      "声明函数不抛出异常",
-      "声明函数抛出异常",
       "捕获异常",
-      "忽略异常"
+      "声明函数不抛出异常",
+      "忽略异常",
+      "声明函数抛出异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-330",
     "title": "C++中异常安全等级有？",
     "options": [
       "基本，强，不抛出",
-      "弱，强",
       "安全，不安全",
-      "以上都不对"
+      "以上都不对",
+      "弱，强"
     ],
     "correctAnswer": 0
   },
@@ -333,131 +333,131 @@
     "id": "cpp-331",
     "title": "C++中RAII与异常的关系是？",
     "options": [
+      "无关系",
       "RAII保证异常时资源释放",
-      "RAII禁止异常",
       "异常禁止RAII",
-      "无关系"
+      "RAII禁止异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-332",
     "title": "C++中std::string的底层实现是？",
     "options": [
-      "连续内存，可能SSO",
       "链表",
+      "连续内存，可能SSO",
       "哈希表",
       "树"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-333",
     "title": "C++中std::array与std::vector的区别是？",
     "options": [
+      "array在堆上",
       "array大小固定，vector动态",
       "array动态，vector固定",
-      "无区别",
-      "array在堆上"
+      "无区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-334",
     "title": "C++中std::deque的特点是？",
     "options": [
-      "双端队列，分段连续",
       "单端队列",
-      "连续内存",
-      "链表实现"
+      "链表实现",
+      "双端队列，分段连续",
+      "连续内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-335",
     "title": "C++中std::stack的底层容器默认是？",
     "options": [
-      "deque",
-      "vector",
       "list",
+      "vector",
+      "deque",
       "array"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-336",
     "title": "C++中std::queue的底层容器默认是？",
     "options": [
-      "deque",
+      "array",
       "vector",
-      "list",
-      "array"
+      "deque",
+      "list"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-337",
     "title": "C++中std::vector的底层实现是？",
     "options": [
+      "红黑树",
       "动态数组",
-      "链表",
       "哈希表",
-      "红黑树"
+      "链表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-338",
     "title": "C++中std::list的底层实现是？",
     "options": [
-      "双向链表",
       "动态数组",
       "哈希表",
-      "红黑树"
+      "红黑树",
+      "双向链表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-339",
     "title": "C++中std::map的底层实现是？",
     "options": [
-      "红黑树",
       "动态数组",
       "哈希表",
+      "红黑树",
       "双向链表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-340",
     "title": "C++中std::unordered_map的底层实现是？",
     "options": [
-      "哈希表",
-      "红黑树",
       "动态数组",
-      "双向链表"
+      "哈希表",
+      "双向链表",
+      "红黑树"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-341",
     "title": "C++中std::set的底层实现是？",
     "options": [
-      "红黑树",
-      "哈希表",
+      "双向链表",
       "动态数组",
-      "双向链表"
+      "红黑树",
+      "哈希表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-342",
     "title": "C++中std::vector的扩容机制通常是？",
     "options": [
       "2倍扩容",
+      "不扩容",
       "1.5倍扩容",
-      "固定大小",
-      "不扩容"
+      "固定大小"
     ],
     "correctAnswer": 0
   },
@@ -465,88 +465,88 @@
     "id": "cpp-343",
     "title": "C++中std::vector插入元素时迭代器失效的情况是？",
     "options": [
-      "发生扩容时",
-      "插入尾部",
       "插入头部",
-      "永不失效"
+      "插入尾部",
+      "永不失效",
+      "发生扩容时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-344",
     "title": "C++中std::list插入元素时迭代器失效吗？",
     "options": [
-      "不会",
-      "会",
       "部分会",
-      "取决于位置"
+      "取决于位置",
+      "不会",
+      "会"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-345",
     "title": "C++中std::map插入元素时迭代器失效吗？",
     "options": [
-      "不会",
       "会",
       "部分会",
-      "取决于位置"
+      "取决于位置",
+      "不会"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-346",
     "title": "C++中std::unique_ptr的特点是？",
     "options": [
-      "独占所有权",
       "共享所有权",
       "自动释放",
-      "可以复制"
+      "可以复制",
+      "独占所有权"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-347",
     "title": "C++中std::shared_ptr的特点是？",
     "options": [
-      "共享所有权，引用计数",
-      "独占所有权",
+      "不能复制",
       "无引用计数",
-      "不能复制"
+      "独占所有权",
+      "共享所有权，引用计数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-348",
     "title": "C++中std::weak_ptr的作用是？",
     "options": [
-      "解决shared_ptr循环引用",
-      "独占所有权",
       "共享所有权",
-      "替代裸指针"
+      "替代裸指针",
+      "独占所有权",
+      "解决shared_ptr循环引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-349",
     "title": "C++中std::make_shared的优势是？",
     "options": [
-      "减少内存分配次数，提高缓存命中率",
-      "可以释放内存",
       "可以复制",
-      "以上都不对"
+      "以上都不对",
+      "可以释放内存",
+      "减少内存分配次数，提高缓存命中率"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-350",
     "title": "C++中异常处理的语法是？",
     "options": [
-      "try-catch-throw",
       "try-except-raise",
+      "try-catch-throw",
       "if-else",
       "assert"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

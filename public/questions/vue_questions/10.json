@@ -3,120 +3,120 @@
     "id": "vue-451",
     "title": "Vue 中组件的 $watch 方法作用是？",
     "options": [
-      "观察数据变化",
       "创建计算属性",
       "触发事件",
-      "监听路由"
+      "监听路由",
+      "观察数据变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-452",
     "title": "Vue 中组件注册的方式有哪些？",
     "options": [
-      "全局注册",
+      "以上都是",
       "局部注册",
-      "异步注册",
-      "以上都是"
+      "全局注册",
+      "异步注册"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-453",
     "title": "Vue 中全局注册组件的缺点是？",
     "options": [
-      "增加初始加载",
+      "以上都是",
       "无法 tree-shaking",
       "命名冲突",
-      "以上都是"
+      "增加初始加载"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-454",
     "title": "Vue 中组件名推荐使用什么格式？",
     "options": [
+      "都可以",
       "PascalCase",
       "kebab-case",
-      "camelCase",
-      "都可以"
+      "camelCase"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-455",
     "title": "Vue 中组件的 props 验证可以是？",
     "options": [
-      "类型",
       "验证函数",
-      "默认值",
-      "以上都是"
+      "以上都是",
+      "类型",
+      "默认值"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-456",
     "title": "Vue 中组件的 props 类型验证支持？",
     "options": [
-      "String",
-      "Number",
+      "以上都是",
       "自定义构造函数",
-      "以上都是"
+      "Number",
+      "String"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-457",
     "title": "Vue 中组件的 props 默认值可以是？",
     "options": [
-      "值",
-      "函数",
       "工厂函数",
-      "以上都是"
+      "函数",
+      "以上都是",
+      "值"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-458",
     "title": "Vue 中组件的 props required 选项作用是？",
     "options": [
+      "设置默认值",
       "标记为必填",
       "验证类型",
-      "设置默认值",
       "转换为响应式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-459",
     "title": "Vue 中组件的 props validator 函数接收？",
     "options": [
-      "value",
-      "props 对象",
       "组件实例",
-      "以上都是"
+      "value",
+      "以上都是",
+      "props 对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-460",
     "title": "Vue 中组件的非 prop attributes 会？",
     "options": [
-      "自动继承",
       "被忽略",
       "需要显式声明",
-      "报错"
+      "报错",
+      "自动继承"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-461",
     "title": "Vue 中组件的 inheritAttrs 选项作用是？",
     "options": [
       "控制属性继承",
+      "控制样式继承",
       "控制事件继承",
-      "控制插槽继承",
-      "控制样式继承"
+      "控制插槽继承"
     ],
     "correctAnswer": 0
   },
@@ -124,19 +124,19 @@
     "id": "vue-462",
     "title": "Vue 中组件的 emits 选项作用是？",
     "options": [
-      "声明触发的事件",
+      "销毁事件",
       "注册事件",
-      "监听事件",
-      "销毁事件"
+      "声明触发的事件",
+      "监听事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-463",
     "title": "Vue 中组件的 emits 选项的优势是？",
     "options": [
-      "文档化",
       "类型推导",
+      "文档化",
       "验证",
       "以上都是"
     ],
@@ -147,9 +147,9 @@
     "title": "Vue 中组件的 v-model 参数如何声明？",
     "options": [
       "emits: [\"update:title\"]",
-      "props: [\"title\"]",
+      "data: { title: \"\" }",
       "model: { prop: \"title\" }",
-      "data: { title: \"\" }"
+      "props: [\"title\"]"
     ],
     "correctAnswer": 0
   },
@@ -158,8 +158,8 @@
     "title": "Vue 中组件的模板引用如何获取？",
     "options": [
       "ref 属性 + this.$refs",
-      "id 属性 + getElementById",
       "class 属性 + querySelector",
+      "id 属性 + getElementById",
       "name 属性 + getElementsByName"
     ],
     "correctAnswer": 0
@@ -169,9 +169,9 @@
     "title": "Vue 中组件的 provide 和 inject 的关系是？",
     "options": [
       "祖先提供，后代注入",
+      "任意组件间通信",
       "父提供，子注入",
-      "兄弟间通信",
-      "任意组件间通信"
+      "兄弟间通信"
     ],
     "correctAnswer": 0
   },
@@ -179,87 +179,87 @@
     "id": "vue-467",
     "title": "Vue 中组件的 provide 如何提供响应式数据？",
     "options": [
-      "提供 ref 或 reactive",
-      "直接提供对象",
       "提供函数",
-      "无法提供"
+      "提供 ref 或 reactive",
+      "无法提供",
+      "直接提供对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-468",
     "title": "Vue 中组件的 inject 如何设置默认值？",
     "options": [
+      "无法设置",
       "第二参数或 default 函数",
       "required 选项",
-      "value 选项",
-      "无法设置"
+      "value 选项"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-469",
     "title": "Vue 中组件的 name 选项作用是？",
     "options": [
-      "递归组件",
       "调试信息",
-      "缓存标识",
-      "以上都是"
+      "以上都是",
+      "递归组件",
+      "缓存标识"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-470",
     "title": "Vue 中组件的 template 选项可以是？",
     "options": [
-      "字符串",
+      "以上都是",
       "模板元素",
-      "渲染函数",
-      "以上都是"
+      "字符串",
+      "渲染函数"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-471",
     "title": "Vue 中组件的 data 选项为什么必须是函数？",
     "options": [
-      "避免多个实例共享数据",
       "性能优化",
+      "避免多个实例共享数据",
       "代码规范",
       "历史原因"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-472",
     "title": "Vue 中组件的 components 选项作用是？",
     "options": [
-      "注册局部组件",
       "注册全局组件",
       "注册指令",
+      "注册局部组件",
       "注册过滤器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-473",
     "title": "Vue 中组件的 directives 选项作用是？",
     "options": [
-      "注册局部指令",
       "注册全局指令",
+      "注册局部指令",
       "注册组件",
       "注册过滤器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-474",
     "title": "Vue 中组件的 mixins 选项作用是？",
     "options": [
       "混入组件选项",
-      "混合组件样式",
+      "混合组件逻辑",
       "混合组件模板",
-      "混合组件逻辑"
+      "混合组件样式"
     ],
     "correctAnswer": 0
   },
@@ -268,8 +268,8 @@
     "title": "Vue 中组件的 extends 选项作用是？",
     "options": [
       "继承另一个组件",
-      "扩展组件功能",
       "混合组件选项",
+      "扩展组件功能",
       "注册组件"
     ],
     "correctAnswer": 0
@@ -278,21 +278,21 @@
     "id": "vue-476",
     "title": "Vue 中组件的 beforeCreate 钩子可以访问 this 吗？",
     "options": [
-      "可以，但数据未初始化",
+      "取决于配置",
       "不可以",
       "部分可以",
-      "取决于配置"
+      "可以，但数据未初始化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-477",
     "title": "Vue 中组件的 created 钩子可以访问 DOM 吗？",
     "options": [
       "不可以",
+      "取决于配置",
       "可以",
-      "部分可以",
-      "取决于配置"
+      "部分可以"
     ],
     "correctAnswer": 0
   },
@@ -301,9 +301,9 @@
     "title": "Vue 中组件的 beforeMount 钩子的作用是？",
     "options": [
       "挂载前，模板编译完成",
+      "更新前，数据已改变",
       "挂载后，DOM 已渲染",
-      "创建前，数据未初始化",
-      "更新前，数据已改变"
+      "创建前，数据未初始化"
     ],
     "correctAnswer": 0
   },
@@ -311,54 +311,54 @@
     "id": "vue-479",
     "title": "Vue 中组件的 mounted 钩子的作用是？",
     "options": [
-      "挂载后，DOM 已渲染",
-      "挂载前，模板编译完成",
       "创建后，数据已初始化",
-      "更新后，DOM 已更新"
+      "更新后，DOM 已更新",
+      "挂载前，模板编译完成",
+      "挂载后，DOM 已渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-480",
     "title": "Vue 中组件的 beforeUpdate 钩子的作用是？",
     "options": [
-      "更新前，数据已改变",
       "更新后，DOM 已更新",
-      "挂载前，模板编译完成",
-      "卸载前，组件仍可用"
+      "卸载前，组件仍可用",
+      "更新前，数据已改变",
+      "挂载前，模板编译完成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-481",
     "title": "Vue 中组件的 updated 钩子的作用是？",
     "options": [
-      "更新后，DOM 已更新",
       "更新前，数据已改变",
+      "卸载后，组件已销毁",
       "挂载后，DOM 已渲染",
-      "卸载后，组件已销毁"
+      "更新后，DOM 已更新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-482",
     "title": "Vue 中组件的 beforeUnmount 钩子的作用是？",
     "options": [
-      "卸载前，组件仍可用",
       "卸载后，组件已销毁",
-      "更新前，数据已改变",
-      "挂载前，模板编译完成"
+      "挂载前，模板编译完成",
+      "卸载前，组件仍可用",
+      "更新前，数据已改变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-483",
     "title": "Vue 中组件的 unmounted 钩子的作用是？",
     "options": [
       "卸载后，组件已销毁",
+      "挂载后，DOM 已渲染",
       "卸载前，组件仍可用",
-      "更新后，DOM 已更新",
-      "挂载后，DOM 已渲染"
+      "更新后，DOM 已更新"
     ],
     "correctAnswer": 0
   },
@@ -366,76 +366,76 @@
     "id": "vue-484",
     "title": "Vue 中组件的 errorCaptured 钩子的作用是？",
     "options": [
+      "捕获全局错误",
       "捕获后代组件错误",
-      "捕获路由错误",
       "捕获网络错误",
-      "捕获全局错误"
+      "捕获路由错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-485",
     "title": "Vue 中组件的 renderTracked 钩子的作用是？",
     "options": [
-      "追踪渲染依赖",
       "追踪事件",
+      "追踪渲染依赖",
       "追踪生命周期",
       "追踪指令"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-486",
     "title": "Vue 中组件的 renderTriggered 钩子的作用是？",
     "options": [
-      "追踪渲染触发原因",
       "追踪事件触发",
-      "追踪生命周期触发",
-      "追踪指令触发"
+      "追踪渲染触发原因",
+      "追踪指令触发",
+      "追踪生命周期触发"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-487",
     "title": "Vue 中组件的 activated 钩子的作用是？",
     "options": [
-      "被 keep-alive 缓存的组件激活时",
       "组件挂载时",
-      "组件更新时",
-      "组件创建时"
+      "被 keep-alive 缓存的组件激活时",
+      "组件创建时",
+      "组件更新时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-488",
     "title": "Vue 中组件的 deactivated 钩子的作用是？",
     "options": [
-      "被 keep-alive 缓存的组件停用时",
-      "组件卸载时",
       "组件销毁时",
-      "组件更新时"
+      "组件卸载时",
+      "组件更新时",
+      "被 keep-alive 缓存的组件停用时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-489",
     "title": "Vue 中组件的 serverPrefetch 钩子的作用是？",
     "options": [
-      "SSR 时预取数据",
-      "客户端预取",
       "服务端渲染",
+      "客户端预取",
+      "SSR 时预取数据",
       "客户端渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-490",
     "title": "Vue 中组件的 $forceUpdate 方法作用是？",
     "options": [
       "强制重新渲染",
-      "强制更新数据",
+      "强制更新计算属性",
       "强制更新 DOM",
-      "强制更新计算属性"
+      "强制更新数据"
     ],
     "correctAnswer": 0
   },
@@ -443,98 +443,98 @@
     "id": "vue-491",
     "title": "Vue 中组件的 $nextTick 方法作用是？",
     "options": [
-      "等待 DOM 更新后执行",
-      "延迟执行",
+      "立即执行",
       "异步执行",
-      "立即执行"
+      "延迟执行",
+      "等待 DOM 更新后执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-492",
     "title": "Vue 中组件的 $emit 方法作用是？",
     "options": [
-      "触发事件",
       "监听事件",
-      "注册事件",
-      "销毁事件"
+      "销毁事件",
+      "触发事件",
+      "注册事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-493",
     "title": "Vue 中组件的 $attrs 对象包含什么？",
     "options": [
-      "非 prop 属性",
-      "prop 属性",
       "事件",
-      "插槽"
+      "插槽",
+      "非 prop 属性",
+      "prop 属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-494",
     "title": "Vue 中组件的 $listeners 对象在 Vue 3 中被？",
     "options": [
-      "合并到 $attrs",
       "移除",
-      "保留不变",
-      "重命名"
+      "重命名",
+      "合并到 $attrs",
+      "保留不变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-495",
     "title": "Vue 中组件的 $slots 对象包含什么？",
     "options": [
-      "插槽内容",
-      "组件内容",
+      "渲染内容",
       "模板内容",
-      "渲染内容"
+      "组件内容",
+      "插槽内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-496",
     "title": "Vue 中组件的 $el 属性指向什么？",
     "options": [
-      "组件根 DOM 元素",
       "组件 VNode",
-      "组件模板",
-      "组件实例"
+      "组件根 DOM 元素",
+      "组件实例",
+      "组件模板"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-497",
     "title": "Vue 中组件的 $options 对象包含什么？",
     "options": [
-      "组件选项",
       "组件实例",
-      "组件数据",
-      "组件方法"
+      "组件方法",
+      "组件选项",
+      "组件数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-498",
     "title": "Vue 中组件的 $parent 属性指向什么？",
     "options": [
-      "父组件实例",
-      "根组件实例",
+      "兄弟组件实例",
       "子组件实例",
-      "兄弟组件实例"
+      "根组件实例",
+      "父组件实例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-499",
     "title": "Vue 中组件的 $root 属性指向什么？",
     "options": [
       "根组件实例",
-      "父组件实例",
+      "兄弟组件实例",
       "子组件实例",
-      "兄弟组件实例"
+      "父组件实例"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "vue-500",
     "title": "Vue 中组件的 $children 属性在 Vue 3 中被？",
     "options": [
-      "移除",
       "保留不变",
+      "合并到 $refs",
       "重命名",
-      "合并到 $refs"
+      "移除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

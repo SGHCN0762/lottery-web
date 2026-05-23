@@ -3,21 +3,21 @@
     "id": "python-251",
     "title": "Python中itertools模块的作用是？",
     "options": [
-      "提供迭代器工具",
-      "提供时间工具",
       "提供系统工具",
+      "提供时间工具",
+      "提供迭代器工具",
       "提供网络工具"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-252",
     "title": "Python中itertools.count()的作用是？",
     "options": [
       "创建无限计数器",
-      "创建有限计数器",
+      "创建累加器",
       "创建循环计数器",
-      "创建累加器"
+      "创建有限计数器"
     ],
     "correctAnswer": 0
   },
@@ -25,10 +25,10 @@
     "id": "python-253",
     "title": "Python中itertools.cycle()的作用是？",
     "options": [
+      "创建累加器",
       "创建无限计数器",
-      "创建有限计数器",
       "创建无限循环迭代器",
-      "创建累加器"
+      "创建有限计数器"
     ],
     "correctAnswer": 2
   },
@@ -36,9 +36,9 @@
     "id": "python-254",
     "title": "Python中itertools.repeat()的作用是？",
     "options": [
-      "创建无限计数器",
-      "创建重复元素的迭代器",
       "创建无限循环迭代器",
+      "创建重复元素的迭代器",
+      "创建无限计数器",
       "创建累加器"
     ],
     "correctAnswer": 1
@@ -47,111 +47,111 @@
     "id": "python-255",
     "title": "Python中itertools.chain()的作用是？",
     "options": [
-      "合并迭代器",
-      "过滤迭代器",
       "排序迭代器",
+      "过滤迭代器",
+      "合并迭代器",
       "分组迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-256",
     "title": "Python中itertools.groupby()的作用是？",
     "options": [
-      "合并迭代器",
-      "过滤迭代器",
       "排序迭代器",
-      "分组迭代器"
+      "过滤迭代器",
+      "分组迭代器",
+      "合并迭代器"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "python-257",
     "title": "Python中itertools.islice()的作用是？",
     "options": [
-      "切片迭代器",
-      "过滤迭代器",
       "排序迭代器",
-      "分组迭代器"
+      "分组迭代器",
+      "过滤迭代器",
+      "切片迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-258",
     "title": "Python中正则表达式模块是？",
     "options": [
-      "re",
-      "regex",
       "regexp",
-      "pattern"
+      "regex",
+      "pattern",
+      "re"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-259",
     "title": "Python中re.match()的作用是？",
     "options": [
-      "从开头匹配",
-      "搜索任意位置",
       "全文匹配",
-      "替换匹配"
+      "替换匹配",
+      "搜索任意位置",
+      "从开头匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-260",
     "title": "Python中re.search()的作用是？",
     "options": [
+      "替换匹配",
       "从开头匹配",
       "搜索任意位置",
-      "全文匹配",
-      "替换匹配"
+      "全文匹配"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-261",
     "title": "Python中re.findall()的作用是？",
     "options": [
       "从开头匹配",
-      "搜索任意位置",
       "找到所有匹配",
+      "搜索任意位置",
       "替换匹配"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-262",
     "title": "Python中re.sub()的作用是？",
     "options": [
-      "从开头匹配",
-      "搜索任意位置",
+      "替换匹配",
       "找到所有匹配",
-      "替换匹配"
+      "从开头匹配",
+      "搜索任意位置"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-263",
     "title": "Python中re.split()的作用是？",
     "options": [
-      "从开头匹配",
-      "搜索任意位置",
       "分割字符串",
-      "替换匹配"
+      "替换匹配",
+      "从开头匹配",
+      "搜索任意位置"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-264",
     "title": "Python中正则表达式的.表示？",
     "options": [
-      "任意字符",
-      "换行符",
       "空白符",
-      "数字"
+      "换行符",
+      "数字",
+      "任意字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-265",
@@ -168,54 +168,54 @@
     "id": "python-266",
     "title": "Python中正则表达式的+表示？",
     "options": [
-      "0次或多次",
-      "1次或多次",
+      "恰好n次",
       "0次或1次",
-      "恰好n次"
+      "1次或多次",
+      "0次或多次"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-267",
     "title": "Python中正则表达式的?表示？",
     "options": [
-      "0次或多次",
       "1次或多次",
-      "0次或1次",
-      "恰好n次"
+      "0次或多次",
+      "恰好n次",
+      "0次或1次"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-268",
     "title": "Python中正则表达式的^表示？",
     "options": [
-      "行首",
+      "数字",
       "行尾",
-      "任意字符",
-      "数字"
+      "行首",
+      "任意字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-269",
     "title": "Python中正则表达式的$表示？",
     "options": [
+      "任意字符",
       "行首",
       "行尾",
-      "任意字符",
       "数字"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-270",
     "title": "Python中正则表达式的\\d表示？",
     "options": [
       "数字",
+      "非空白",
       "非数字",
-      "空白",
-      "非空白"
+      "空白"
     ],
     "correctAnswer": 0
   },
@@ -223,54 +223,54 @@
     "id": "python-271",
     "title": "Python中正则表达式的\\w表示？",
     "options": [
-      "单词字符",
       "非单词字符",
+      "单词字符",
       "空白",
       "非空白"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-272",
     "title": "Python中正则表达式的\\s表示？",
     "options": [
+      "空白",
       "单词字符",
       "非单词字符",
-      "空白",
       "非空白"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-273",
     "title": "Python中正则表达式的\\b表示？",
     "options": [
-      "单词边界",
       "非单词边界",
-      "空白",
-      "非空白"
+      "非空白",
+      "单词边界",
+      "空白"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-274",
     "title": "Python中正则表达式的[]表示？",
     "options": [
+      "非操作",
       "字符集",
-      "分组",
       "或操作",
-      "非操作"
+      "分组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-275",
     "title": "Python中正则表达式的()表示？",
     "options": [
-      "字符集",
+      "非操作",
       "分组",
       "或操作",
-      "非操作"
+      "字符集"
     ],
     "correctAnswer": 1
   },
@@ -280,54 +280,54 @@
     "options": [
       "字符集",
       "分组",
-      "或操作",
-      "非操作"
+      "非操作",
+      "或操作"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-277",
     "title": "Python中正则表达式的(?P<name>...)表示？",
     "options": [
-      "命名分组",
       "非捕获分组",
       "正向肯定预查",
-      "正向否定预查"
+      "正向否定预查",
+      "命名分组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-278",
     "title": "Python中re.VERBOSE的作用是？",
     "options": [
-      "允许注释和空白",
-      "忽略大小写",
       "多行模式",
-      "点匹配换行"
+      "点匹配换行",
+      "允许注释和空白",
+      "忽略大小写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-279",
     "title": "Python中re.IGNORECASE的作用是？",
     "options": [
-      "允许注释和空白",
       "忽略大小写",
       "多行模式",
-      "点匹配换行"
+      "点匹配换行",
+      "允许注释和空白"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-280",
     "title": "Python中re.MULTILINE的作用是？",
     "options": [
-      "允许注释和空白",
-      "忽略大小写",
       "多行模式",
-      "点匹配换行"
+      "允许注释和空白",
+      "点匹配换行",
+      "忽略大小写"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-281",
@@ -335,10 +335,10 @@
     "options": [
       "允许注释和空白",
       "忽略大小写",
-      "多行模式",
-      "点匹配换行"
+      "点匹配换行",
+      "多行模式"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "python-282",
@@ -346,8 +346,8 @@
     "options": [
       "JSON编解码",
       "XML编解码",
-      "YAML编解码",
-      "CSV编解码"
+      "CSV编解码",
+      "YAML编解码"
     ],
     "correctAnswer": 0
   },
@@ -355,45 +355,45 @@
     "id": "python-283",
     "title": "Python中json.dumps()的作用是？",
     "options": [
-      "编码为JSON字符串",
+      "解码JSON文件",
       "解码JSON字符串",
       "编码为JSON文件",
-      "解码JSON文件"
+      "编码为JSON字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-284",
     "title": "Python中json.loads()的作用是？",
     "options": [
+      "解码JSON文件",
       "编码为JSON字符串",
-      "解码JSON字符串",
       "编码为JSON文件",
-      "解码JSON文件"
+      "解码JSON字符串"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "python-285",
     "title": "Python中json.dump()的作用是？",
     "options": [
+      "解码JSON文件",
       "编码为JSON字符串",
       "解码JSON字符串",
-      "编码为JSON文件",
-      "解码JSON文件"
+      "编码为JSON文件"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-286",
     "title": "Python中json.load()的作用是？",
     "options": [
-      "编码为JSON字符串",
-      "解码JSON字符串",
       "编码为JSON文件",
-      "解码JSON文件"
+      "解码JSON文件",
+      "解码JSON字符串",
+      "编码为JSON字符串"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "python-287",
@@ -401,8 +401,8 @@
     "options": [
       "对象序列化",
       "JSON编解码",
-      "XML编解码",
-      "CSV编解码"
+      "CSV编解码",
+      "XML编解码"
     ],
     "correctAnswer": 0
   },
@@ -421,78 +421,78 @@
     "id": "python-289",
     "title": "Python中pickle的安全性如何？",
     "options": [
-      "不安全，可能执行恶意代码",
+      "取决于版本",
       "安全",
-      "部分安全",
-      "取决于版本"
+      "不安全，可能执行恶意代码",
+      "部分安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-290",
     "title": "Python中csv模块的作用是？",
     "options": [
-      "CSV文件读写",
-      "JSON文件读写",
       "XML文件读写",
+      "JSON文件读写",
+      "CSV文件读写",
       "YAML文件读写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-291",
     "title": "Python中csv.reader()的作用是？",
     "options": [
+      "生成CSV字符串",
       "读取CSV文件",
       "写入CSV文件",
-      "解析CSV字符串",
-      "生成CSV字符串"
+      "解析CSV字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-292",
     "title": "Python中csv.writer()的作用是？",
     "options": [
-      "读取CSV文件",
-      "写入CSV文件",
+      "生成CSV字符串",
       "解析CSV字符串",
-      "生成CSV字符串"
+      "读取CSV文件",
+      "写入CSV文件"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "python-293",
     "title": "Python中csv.DictReader()的作用是？",
     "options": [
-      "按字典读取CSV",
       "按字典写入CSV",
+      "按列表写入CSV",
       "按列表读取CSV",
-      "按列表写入CSV"
+      "按字典读取CSV"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-294",
     "title": "Python中csv.DictWriter()的作用是？",
     "options": [
-      "按字典读取CSV",
       "按字典写入CSV",
+      "按字典读取CSV",
       "按列表读取CSV",
       "按列表写入CSV"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-295",
     "title": "Python中hashlib模块的作用是？",
     "options": [
-      "哈希算法",
+      "签名算法",
       "加密算法",
       "解密算法",
-      "签名算法"
+      "哈希算法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-296",
@@ -532,9 +532,9 @@
     "title": "Python中secrets模块的作用是？",
     "options": [
       "生成安全随机数",
+      "生成签名",
       "生成伪随机数",
-      "生成哈希",
-      "生成签名"
+      "生成哈希"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "python-300",
     "title": "Python中logging模块的作用是？",
     "options": [
-      "日志记录",
-      "调试输出",
       "异常处理",
-      "性能监控"
+      "日志记录",
+      "性能监控",
+      "调试输出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

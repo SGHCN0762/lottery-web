@@ -3,34 +3,34 @@
     "id": "html-401",
     "title": "Web Storage API包括哪两个对象？",
     "options": [
-      "localStorage和sessionStorage",
       "cookie和session",
+      "windowStorage和tabStorage",
       "cacheStorage和indexedDB",
-      "windowStorage和tabStorage"
+      "localStorage和sessionStorage"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-402",
     "title": "localStorage的特点是？",
     "options": [
-      "数据持久存储，关闭浏览器不丢失",
       "数据在会话结束丢失",
+      "数据大小无限制",
       "数据只在标签页内有效",
-      "数据大小无限制"
+      "数据持久存储，关闭浏览器不丢失"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-403",
     "title": "sessionStorage的特点是？",
     "options": [
-      "数据在页面会话结束(标签页关闭)时丢失",
       "数据持久存储",
-      "数据跨标签页共享",
-      "数据大小无限制"
+      "数据在页面会话结束(标签页关闭)时丢失",
+      "数据大小无限制",
+      "数据跨标签页共享"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-404",
@@ -48,9 +48,9 @@
     "title": "如何向localStorage存储数据？",
     "options": [
       "localStorage.setItem(key, value)",
-      "localStorage.add(key, value)",
+      "localStorage.push(key, value)",
       "localStorage.save(key, value)",
-      "localStorage.push(key, value)"
+      "localStorage.add(key, value)"
     ],
     "correctAnswer": 0
   },
@@ -58,230 +58,230 @@
     "id": "html-406",
     "title": "如何从localStorage读取数据？",
     "options": [
+      "localStorage.fetch(key)",
       "localStorage.getItem(key)",
       "localStorage.get(key)",
-      "localStorage.read(key)",
-      "localStorage.fetch(key)"
+      "localStorage.read(key)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-407",
     "title": "如何删除localStorage中的指定数据？",
     "options": [
+      "localStorage.remove(key)",
       "localStorage.removeItem(key)",
       "localStorage.delete(key)",
-      "localStorage.remove(key)",
       "localStorage.clear(key)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-408",
     "title": "如何清空localStorage的所有数据？",
     "options": [
-      "localStorage.clear()",
-      "localStorage.removeAll()",
+      "localStorage.reset()",
       "localStorage.deleteAll()",
-      "localStorage.reset()"
+      "localStorage.removeAll()",
+      "localStorage.clear()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-409",
     "title": "Web Storage只能存储什么类型的数据？",
     "options": [
-      "字符串",
-      "对象",
       "数组",
+      "对象",
+      "字符串",
       "数字"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-410",
     "title": "如何将对象存储到localStorage？",
     "options": [
-      "使用JSON.stringify()转换后存储",
+      "使用serialize()",
       "直接存储",
       "使用toString()",
-      "使用serialize()"
+      "使用JSON.stringify()转换后存储"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-411",
     "title": "如何从localStorage读取并还原对象？",
     "options": [
-      "使用JSON.parse()解析",
-      "直接读取",
       "使用eval()",
-      "使用deserialize()"
+      "使用JSON.parse()解析",
+      "使用deserialize()",
+      "直接读取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-412",
     "title": "Geolocation API的作用是？",
     "options": [
-      "获取用户的地理位置",
       "获取IP地址",
       "获取时区",
+      "获取用户的地理位置",
       "获取语言"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-413",
     "title": "获取当前位置的方法是？",
     "options": [
-      "navigator.geolocation.getCurrentPosition()",
       "navigator.getLocation()",
       "window.getGeolocation()",
-      "device.getLocation()"
+      "device.getLocation()",
+      "navigator.geolocation.getCurrentPosition()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-414",
     "title": "Geolocation API需要用户授权吗？",
     "options": [
-      "需要",
+      "只在HTTPS下需要",
       "不需要",
-      "取决于浏览器",
-      "只在HTTPS下需要"
+      "需要",
+      "取决于浏览器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-415",
     "title": "Drag and Drop API的核心事件是？",
     "options": [
-      "dragstart, drag, dragend",
-      "mousedown, mousemove, mouseup",
       "touchstart, touchmove, touchend",
-      "pointerdown, pointermove, pointerup"
+      "mousedown, mousemove, mouseup",
+      "pointerdown, pointermove, pointerup",
+      "dragstart, drag, dragend"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-416",
     "title": "拖拽目标元素的事件不包括？",
     "options": [
-      "dragover",
-      "dragenter",
       "dragleave",
-      "drop"
+      "drop",
+      "dragenter",
+      "dragover"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-417",
     "title": "如何让元素可拖拽？",
     "options": [
-      "设置draggable=\"true\"属性",
-      "设置drag=\"yes\"",
       "设置movable=\"true\"",
-      "设置drop=\"true\""
+      "设置drop=\"true\"",
+      "设置draggable=\"true\"属性",
+      "设置drag=\"yes\""
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-418",
     "title": "拖拽放置目标必须阻止什么事件的默认行为？",
     "options": [
-      "dragover",
-      "dragenter",
       "dragleave",
-      "drop"
+      "drop",
+      "dragenter",
+      "dragover"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-419",
     "title": "如何传递拖拽数据？",
     "options": [
+      "使用localStorage",
       "使用dataTransfer.setData()",
       "使用dataTransfer.getData()",
-      "使用event.data",
-      "使用localStorage"
+      "使用event.data"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-420",
     "title": "如何获取拖拽数据？",
     "options": [
-      "使用dataTransfer.getData()",
-      "使用dataTransfer.setData()",
       "使用event.data",
-      "使用sessionStorage"
+      "使用dataTransfer.setData()",
+      "使用sessionStorage",
+      "使用dataTransfer.getData()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-421",
     "title": "Web Workers的作用是？",
     "options": [
-      "在后台线程中运行脚本",
       "在主线程运行脚本",
       "渲染页面",
+      "在后台线程中运行脚本",
       "处理DOM"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-422",
     "title": "Web Workers能直接操作DOM吗？",
     "options": [
-      "不能",
       "能",
+      "取决于类型",
       "部分能",
-      "取决于类型"
+      "不能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-423",
     "title": "如何创建一个Web Worker？",
     "options": [
-      "new Worker(\"script.js\")",
       "new WebWorker(\"script.js\")",
       "Worker.create(\"script.js\")",
-      "window.createWorker(\"script.js\")"
+      "window.createWorker(\"script.js\")",
+      "new Worker(\"script.js\")"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-424",
     "title": "主线程和Worker如何通信？",
     "options": [
-      "postMessage()和onmessage",
-      "send()和receive()",
       "emit()和on()",
-      "dispatch()和listen()"
+      "dispatch()和listen()",
+      "postMessage()和onmessage",
+      "send()和receive()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-425",
     "title": "如何终止Web Worker？",
     "options": [
-      "worker.terminate()",
-      "worker.stop()",
       "worker.abort()",
-      "worker.kill()"
+      "worker.kill()",
+      "worker.terminate()",
+      "worker.stop()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-426",
     "title": "SharedWorker的特点是？",
     "options": [
       "可以被多个浏览上下文共享",
+      "能操作DOM",
       "只能被一个页面使用",
-      "不能通信",
-      "能操作DOM"
+      "不能通信"
     ],
     "correctAnswer": 0
   },
@@ -290,9 +290,9 @@
     "title": "Service Worker的作用是？",
     "options": [
       "拦截网络请求、缓存资源、离线工作",
-      "后台计算",
+      "UI渲染",
       "操作DOM",
-      "UI渲染"
+      "后台计算"
     ],
     "correctAnswer": 0
   },
@@ -300,23 +300,23 @@
     "id": "html-428",
     "title": "Service Worker的生命周期包括？",
     "options": [
-      "install, activate, fetch",
       "create, start, stop",
       "load, run, unload",
+      "install, activate, fetch",
       "init, process, destroy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-429",
     "title": "Service Worker能操作DOM吗？",
     "options": [
-      "不能",
       "能",
+      "取决于状态",
       "部分能",
-      "取决于状态"
+      "不能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-430",
@@ -333,67 +333,67 @@
     "id": "html-431",
     "title": "WebSocket的作用是？",
     "options": [
+      "获取位置",
       "在客户端和服务器之间建立全双工通信",
       "发送HTTP请求",
-      "存储数据",
-      "获取位置"
+      "存储数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-432",
     "title": "WebSocket与HTTP的区别是？",
     "options": [
+      "HTTP更快",
       "WebSocket是持久连接，HTTP是短连接",
       "没有区别",
-      "HTTP更快",
       "WebSocket更安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-433",
     "title": "如何创建WebSocket连接？",
     "options": [
-      "new WebSocket(url)",
-      "new Socket(url)",
       "WebSocket.connect(url)",
+      "new Socket(url)",
+      "new WebSocket(url)",
       "openSocket(url)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-434",
     "title": "WebSocket的readyState为1表示？",
     "options": [
+      "CLOSING",
       "OPEN (连接已建立)",
       "CONNECTING",
-      "CLOSING",
       "CLOSED"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-435",
     "title": "History API的作用是？",
     "options": [
-      "操作浏览器历史记录",
-      "获取浏览记录",
+      "管理书签",
       "清除缓存",
-      "管理书签"
+      "获取浏览记录",
+      "操作浏览器历史记录"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-436",
     "title": "history.pushState()的作用是？",
     "options": [
-      "向历史记录栈添加状态",
-      "替换当前状态",
       "后退一步",
-      "前进一步"
+      "前进一步",
+      "替换当前状态",
+      "向历史记录栈添加状态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-437",
@@ -401,8 +401,8 @@
     "options": [
       "替换当前历史记录条目",
       "添加新条目",
-      "删除条目",
-      "清空历史"
+      "清空历史",
+      "删除条目"
     ],
     "correctAnswer": 0
   },
@@ -410,86 +410,86 @@
     "id": "html-438",
     "title": "popstate事件在什么时候触发？",
     "options": [
+      "页面加载时",
       "活动历史条目更改时",
-      "pushState时",
       "replaceState时",
-      "页面加载时"
+      "pushState时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-439",
     "title": "Clipboard API的作用是？",
     "options": [
-      "读写系统剪贴板",
-      "复制文件",
+      "剪切文本",
       "粘贴图片",
-      "剪切文本"
+      "读写系统剪贴板",
+      "复制文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-440",
     "title": "如何使用Clipboard API复制文本？",
     "options": [
-      "navigator.clipboard.writeText()",
-      "document.execCommand(\"copy\")",
       "window.copy()",
-      "clipboard.copy()"
+      "clipboard.copy()",
+      "document.execCommand(\"copy\")",
+      "navigator.clipboard.writeText()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-441",
     "title": "如何使用Clipboard API读取文本？",
     "options": [
+      "clipboard.paste()",
       "navigator.clipboard.readText()",
       "document.execCommand(\"paste\")",
-      "window.paste()",
-      "clipboard.paste()"
+      "window.paste()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-442",
     "title": "Clipboard API需要用户授权吗？",
     "options": [
-      "需要",
-      "不需要",
       "取决于浏览器",
-      "只在HTTPS下需要"
+      "只在HTTPS下需要",
+      "不需要",
+      "需要"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-443",
     "title": "Fullscreen API的作用是？",
     "options": [
-      "全屏显示元素",
+      "最大化窗口",
       "退出全屏",
       "调整大小",
-      "最大化窗口"
+      "全屏显示元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-444",
     "title": "如何请求元素全屏？",
     "options": [
+      "screen.request()",
       "element.requestFullscreen()",
-      "element.fullscreen()",
       "window.fullscreen()",
-      "screen.request()"
+      "element.fullscreen()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-445",
     "title": "如何退出全屏？",
     "options": [
       "document.exitFullscreen()",
-      "element.exitFullscreen()",
       "window.exitFullscreen()",
+      "element.exitFullscreen()",
       "screen.exit()"
     ],
     "correctAnswer": 0
@@ -498,21 +498,21 @@
     "id": "html-446",
     "title": "Page Visibility API的作用是？",
     "options": [
-      "检测页面是否可见",
-      "隐藏页面",
       "显示页面",
-      "调整透明度"
+      "检测页面是否可见",
+      "调整透明度",
+      "隐藏页面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-447",
     "title": "document.visibilityState的值不包括？",
     "options": [
       "hidden",
-      "visible",
+      "minimized",
       "prerender",
-      "minimized"
+      "visible"
     ],
     "correctAnswer": 0
   },
@@ -520,32 +520,32 @@
     "id": "html-448",
     "title": "visibilitychange事件在什么时候触发？",
     "options": [
-      "页面可见性改变时",
-      "页面加载时",
       "页面关闭时",
+      "页面加载时",
+      "页面可见性改变时",
       "页面刷新时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-449",
     "title": "requestAnimationFrame的作用是？",
     "options": [
-      "在下次重绘前调用函数",
       "定时执行函数",
+      "在下次重绘前调用函数",
       "延迟执行函数",
       "异步执行函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-450",
     "title": "requestAnimationFrame的回调执行频率通常是？",
     "options": [
       "60fps",
-      "30fps",
+      "不固定",
       "120fps",
-      "不固定"
+      "30fps"
     ],
     "correctAnswer": 0
   }

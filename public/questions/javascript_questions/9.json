@@ -3,23 +3,23 @@
     "id": "js-401",
     "title": "JavaScript中如何用reduce实现map？",
     "options": [
-      "arr.reduce((acc, cur) => [...acc, fn(cur)], [])",
+      "无法实现",
       "arr.reduce((acc, cur) => fn(cur))",
-      "arr.reduce(fn)",
-      "无法实现"
+      "arr.reduce((acc, cur) => [...acc, fn(cur)], [])",
+      "arr.reduce(fn)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-402",
     "title": "JavaScript中如何用reduce实现filter？",
     "options": [
+      "无法实现",
       "arr.reduce((acc, cur) => fn(cur) ? [...acc, cur] : acc, [])",
       "arr.reduce((acc, cur) => fn(cur))",
-      "arr.reduce(fn)",
-      "无法实现"
+      "arr.reduce(fn)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-403",
@@ -36,45 +36,45 @@
     "id": "js-404",
     "title": "JavaScript中如何计算数组和？",
     "options": [
-      "arr.reduce((a, b) => a + b, 0)",
+      "arr.add()",
       "arr.sum()",
-      "Math.sum(arr)",
-      "arr.add()"
+      "arr.reduce((a, b) => a + b, 0)",
+      "Math.sum(arr)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-405",
     "title": "JavaScript中如何统计数组元素出现次数？",
     "options": [
-      "reduce计数",
+      "stats()",
       "count()",
-      "frequency()",
-      "stats()"
+      "reduce计数",
+      "frequency()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-406",
     "title": "JavaScript中如何数组去重？",
     "options": [
-      "Set, filter+indexOf, reduce",
-      "仅Set",
+      "仅reduce",
       "仅filter",
-      "仅reduce"
+      "Set, filter+indexOf, reduce",
+      "仅Set"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-407",
     "title": "JavaScript中[...new Set(arr)]的作用是？",
     "options": [
-      "数组去重",
-      "数组排序",
       "数组扁平化",
-      "数组过滤"
+      "数组去重",
+      "数组过滤",
+      "数组排序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-408",
@@ -82,8 +82,8 @@
     "options": [
       "filter+includes",
       "intersect()",
-      "and()",
-      "join()"
+      "join()",
+      "and()"
     ],
     "correctAnswer": 0
   },
@@ -91,32 +91,32 @@
     "id": "js-409",
     "title": "JavaScript中如何数组合并？",
     "options": [
-      "concat, [...arr1, ...arr2], push+apply",
-      "仅concat",
+      "仅push",
       "仅展开",
-      "仅push"
+      "仅concat",
+      "concat, [...arr1, ...arr2], push+apply"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-410",
     "title": "JavaScript中arr.push(...arr2)的作用是？",
     "options": [
-      "将arr2追加到arr",
+      "去重合并",
       "合并为新数组",
-      "替换arr",
-      "去重合并"
+      "将arr2追加到arr",
+      "替换arr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-411",
     "title": "JavaScript中如何数组差集？",
     "options": [
       "filter+!includes",
-      "diff()",
       "minus()",
-      "subtract()"
+      "subtract()",
+      "diff()"
     ],
     "correctAnswer": 0
   },
@@ -124,87 +124,87 @@
     "id": "js-412",
     "title": "JavaScript中如何数组排序？",
     "options": [
-      "sort",
       "order",
-      "arrange",
-      "rank"
+      "rank",
+      "sort",
+      "arrange"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-413",
     "title": "JavaScript中sort会改变原数组吗？",
     "options": [
-      "会",
-      "不会",
       "取决于参数",
-      "取决于环境"
+      "取决于环境",
+      "不会",
+      "会"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-414",
     "title": "JavaScript中如何不改变原数组排序？",
     "options": [
-      "toSorted",
+      "sort(imutable)",
       "slice().sort()",
-      "sort(false)",
-      "sort(imutable)"
+      "toSorted",
+      "sort(false)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-415",
     "title": "JavaScript中toSorted是ES几的？",
     "options": [
-      "ES2023",
       "ES6",
       "ES5",
+      "ES2023",
       "ES2020"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-416",
     "title": "JavaScript中toReversed的作用是？",
     "options": [
+      "反转对象",
       "不改变原数组反转",
       "改变原数组反转",
-      "反转字符串",
-      "反转对象"
+      "反转字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-417",
     "title": "JavaScript中toSpliced的作用是？",
     "options": [
-      "不改变原数组删除",
-      "改变原数组删除",
       "拼接数组",
-      "分割数组"
+      "分割数组",
+      "不改变原数组删除",
+      "改变原数组删除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-418",
     "title": "JavaScript中with的作用是？",
     "options": [
-      "不改变原数组更新元素",
       "更新元素",
-      "创建作用域",
-      "异常处理"
+      "异常处理",
+      "不改变原数组更新元素",
+      "创建作用域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-419",
     "title": "JavaScript中如何数组分组？",
     "options": [
       "reduce, Object.groupBy",
+      "split",
       "groupBy",
-      "partition",
-      "split"
+      "partition"
     ],
     "correctAnswer": 0
   },
@@ -214,8 +214,8 @@
     "options": [
       "ES2024",
       "ES6",
-      "ES5",
-      "ES2020"
+      "ES2020",
+      "ES5"
     ],
     "correctAnswer": 0
   },
@@ -223,42 +223,42 @@
     "id": "js-421",
     "title": "JavaScript中Map.groupBy的作用是？",
     "options": [
-      "分组到Map",
       "分组到Object",
+      "分组到Array",
       "分组到Set",
-      "分组到Array"
+      "分组到Map"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-422",
     "title": "JavaScript中Iterator的return方法何时调用？",
     "options": [
+      "遍历开始时",
       "提前终止遍历时",
-      "遍历结束时",
       "遍历出错时",
-      "遍历开始时"
+      "遍历结束时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-423",
     "title": "JavaScript中哪些操作会触发Iterator的return？",
     "options": [
-      "break, throw, return",
-      "for...of正常结束",
       "next()完成",
+      "for...of正常结束",
+      "break, throw, return",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-424",
     "title": "JavaScript中Generator函数执行后返回？",
     "options": [
       "迭代器",
-      "undefined",
       "结果",
+      "undefined",
       "Promise"
     ],
     "correctAnswer": 0
@@ -267,53 +267,53 @@
     "id": "js-425",
     "title": "JavaScript中Generator函数内部可以调用普通函数吗？",
     "options": [
-      "可以",
       "不可以",
       "取决于函数",
-      "取决于环境"
+      "取决于环境",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-426",
     "title": "JavaScript中普通函数内部可以调用Generator吗？",
     "options": [
-      "可以",
       "不可以",
-      "取决于函数",
-      "取决于环境"
+      "可以",
+      "取决于环境",
+      "取决于函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-427",
     "title": "JavaScript中Generator可以实现协程吗？",
     "options": [
-      "可以",
       "不可以",
+      "仅进程",
       "仅线程",
-      "仅进程"
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-428",
     "title": "JavaScript中Generator的异步实现方式是？",
     "options": [
-      "Thunk + Generator",
+      "以上都是",
       "Promise + Generator",
       "Callback + Generator",
-      "以上都是"
+      "Thunk + Generator"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-429",
     "title": "JavaScript中co库的作用是？",
     "options": [
       "自动执行Generator",
-      "创建Generator",
       "编译Generator",
+      "创建Generator",
       "调试Generator"
     ],
     "correctAnswer": 0
@@ -322,23 +322,23 @@
     "id": "js-430",
     "title": "JavaScript中async/await是Generator的语法糖吗？",
     "options": [
+      "取决于环境",
       "是",
-      "否",
       "部分是",
-      "取决于环境"
+      "否"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-431",
     "title": "JavaScript中Iterator和Generator的关系是？",
     "options": [
-      "Generator是创建Iterator的方式",
-      "没有关系",
       "Iterator是创建Generator的方式",
-      "两者相同"
+      "两者相同",
+      "Generator是创建Iterator的方式",
+      "没有关系"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-432",
@@ -356,9 +356,9 @@
     "title": "JavaScript中字符串可以被for...of遍历吗？",
     "options": [
       "可以",
-      "不可以",
       "取决于编码",
-      "取决于环境"
+      "取决于环境",
+      "不可以"
     ],
     "correctAnswer": 0
   },
@@ -366,54 +366,54 @@
     "id": "js-434",
     "title": "JavaScript中for...of遍历字符串得到？",
     "options": [
-      "字符",
-      "字符编码",
       "字符索引",
-      "字符对象"
+      "字符",
+      "字符对象",
+      "字符编码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-435",
     "title": "JavaScript中Map可以被for...of遍历吗？",
     "options": [
-      "可以",
-      "不可以",
+      "取决于环境",
       "取决于键类型",
-      "取决于环境"
+      "可以",
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-436",
     "title": "JavaScript中for...of遍历Map得到？",
     "options": [
-      "键值对数组",
       "键",
       "值",
-      "MapEntry对象"
+      "MapEntry对象",
+      "键值对数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-437",
     "title": "JavaScript中Set可以被for...of遍历吗？",
     "options": [
-      "可以",
-      "不可以",
+      "取决于环境",
       "取决于值类型",
-      "取决于环境"
+      "不可以",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-438",
     "title": "JavaScript中for...of遍历Set得到？",
     "options": [
       "值",
+      "SetEntry对象",
       "键值对",
-      "键",
-      "SetEntry对象"
+      "键"
     ],
     "correctAnswer": 0
   },
@@ -421,20 +421,20 @@
     "id": "js-439",
     "title": "JavaScript中arguments可以被for...of遍历吗？",
     "options": [
-      "不可以",
-      "可以",
       "取决于严格模式",
+      "可以",
+      "不可以",
       "取决于环境"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-440",
     "title": "JavaScript中如何使arguments可迭代？",
     "options": [
       "使用展开运算符或Array.from",
-      "添加Symbol.iterator",
       "使用for循环",
+      "添加Symbol.iterator",
       "无法实现"
     ],
     "correctAnswer": 0
@@ -443,65 +443,65 @@
     "id": "js-441",
     "title": "JavaScript中NodeList可以被for...of遍历吗？",
     "options": [
+      "取决于环境",
       "可以",
       "不可以",
-      "取决于浏览器",
-      "取决于环境"
+      "取决于浏览器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-442",
     "title": "JavaScript中TypedArray可以被for...of遍历吗？",
     "options": [
-      "可以",
-      "不可以",
+      "取决于环境",
       "取决于类型",
-      "取决于环境"
+      "不可以",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-443",
     "title": "JavaScript中Int8Array的作用是？",
     "options": [
-      "8位有符号整数数组",
       "8位无符号整数数组",
-      "8位浮点数数组",
-      "8位字符数组"
+      "8位字符数组",
+      "8位有符号整数数组",
+      "8位浮点数数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-444",
     "title": "JavaScript中Uint8Array的作用是？",
     "options": [
-      "8位无符号整数数组",
-      "8位有符号整数数组",
       "8位浮点数数组",
-      "8位字符数组"
+      "8位有符号整数数组",
+      "8位字符数组",
+      "8位无符号整数数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-445",
     "title": "JavaScript中Float32Array的作用是？",
     "options": [
-      "32位浮点数数组",
       "32位整数数组",
+      "32位布尔数组",
       "32位字符数组",
-      "32位布尔数组"
+      "32位浮点数数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-446",
     "title": "JavaScript中TypedArray和Array的区别是？",
     "options": [
       "TypedArray元素类型固定",
-      "没有区别",
+      "取决于环境",
       "Array元素类型固定",
-      "取决于环境"
+      "没有区别"
     ],
     "correctAnswer": 0
   },
@@ -509,34 +509,34 @@
     "id": "js-447",
     "title": "JavaScript中TypedArray有push方法吗？",
     "options": [
+      "取决于类型",
       "没有",
       "有",
-      "取决于类型",
       "取决于环境"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-448",
     "title": "JavaScript中TypedArray的buffer属性是？",
     "options": [
-      "底层ArrayBuffer",
-      "缓冲区大小",
+      "缓冲区数据",
       "缓冲区类型",
-      "缓冲区数据"
+      "缓冲区大小",
+      "底层ArrayBuffer"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-449",
     "title": "JavaScript中ArrayBuffer的作用是？",
     "options": [
-      "表示原始二进制数据缓冲区",
       "表示字符串",
-      "表示数组",
-      "表示对象"
+      "表示对象",
+      "表示原始二进制数据缓冲区",
+      "表示数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-450",

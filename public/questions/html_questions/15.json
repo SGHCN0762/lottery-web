@@ -3,34 +3,34 @@
     "id": "html-701",
     "title": "XSS的全称是？",
     "options": [
-      "Cross-Site Scripting",
       "Cross-Server Scripting",
-      "Cross-Site Security",
-      "Cross-Server Security"
+      "Cross-Server Security",
+      "Cross-Site Scripting",
+      "Cross-Site Security"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-702",
     "title": "XSS攻击的类型不包括？",
     "options": [
-      "Cross-Site Request (CSRF)",
-      "Stored XSS",
       "Reflected XSS",
+      "Stored XSS",
+      "Cross-Site Request (CSRF)",
       "DOM-based XSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-703",
     "title": "Stored XSS的特点是？",
     "options": [
-      "恶意脚本存储在服务器数据库中",
       "在URL中",
+      "恶意脚本存储在服务器数据库中",
       "在DOM中",
       "在Cookie中"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-704",
@@ -48,9 +48,9 @@
     "title": "DOM-based XSS的特点是？",
     "options": [
       "恶意脚本在客户端DOM操作中注入",
-      "在服务器端",
+      "在URL中",
       "在数据库",
-      "在URL中"
+      "在服务器端"
     ],
     "correctAnswer": 0
   },
@@ -58,12 +58,12 @@
     "id": "html-706",
     "title": "如何防御XSS？",
     "options": [
-      "转义HTML特殊字符, 使用CSP",
+      "使用Cookie",
       "使用HTTPS",
-      "使用POST",
-      "使用Cookie"
+      "转义HTML特殊字符, 使用CSP",
+      "使用POST"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-707",
@@ -71,8 +71,8 @@
     "options": [
       "<",
       ">",
-      "&",
-      "&nbsp;"
+      "&nbsp;",
+      "&"
     ],
     "correctAnswer": 0
   },
@@ -80,20 +80,20 @@
     "id": "html-708",
     "title": "HTML转义>字符应替换为？",
     "options": [
+      "&nbsp;",
       ">",
       "<",
-      "&",
-      "&nbsp;"
+      "&"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-709",
     "title": "HTML转义&字符应替换为？",
     "options": [
       "&",
-      "<",
       ">",
+      "<",
       "&copy;"
     ],
     "correctAnswer": 0
@@ -102,54 +102,54 @@
     "id": "html-710",
     "title": "HTML转义\"字符应替换为？",
     "options": [
+      "<",
       "\"",
       "&apos;",
-      "&",
-      "<"
+      "&"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-711",
     "title": "HTML转义'字符应替换为？",
     "options": [
-      "&apos;",
-      "\"",
       "&",
+      "\"",
+      "&apos;",
       "<"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-712",
     "title": "CSP如何防御XSS？",
     "options": [
-      "限制脚本来源禁止内联执行",
-      "加密数据",
       "压缩代码",
-      "加速加载"
+      "限制脚本来源禁止内联执行",
+      "加速加载",
+      "加密数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-713",
     "title": "CSP中default-src的作用是？",
     "options": [
+      "默认图片源",
       "作为其他指令的后备",
-      "默认脚本源",
       "默认样式源",
-      "默认图片源"
+      "默认脚本源"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-714",
     "title": "CSP中'unsafe-inline'的作用是？",
     "options": [
       "允许内联脚本/样式(不安全)",
-      "禁止内联",
+      "压缩内联",
       "加密内联",
-      "压缩内联"
+      "禁止内联"
     ],
     "correctAnswer": 0
   },
@@ -157,43 +157,43 @@
     "id": "html-715",
     "title": "CSP中'unsafe-eval'的作用是？",
     "options": [
-      "允许eval等动态代码执行(不安全)",
-      "禁止eval",
+      "优化eval",
       "加密eval",
-      "优化eval"
+      "禁止eval",
+      "允许eval等动态代码执行(不安全)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-716",
     "title": "CSP中'self'的作用是？",
     "options": [
-      "允许同源资源",
-      "允许所有资源",
       "禁止所有资源",
+      "允许所有资源",
+      "允许同源资源",
       "允许跨域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-717",
     "title": "CSP中'none'的作用是？",
     "options": [
-      "禁止加载任何资源",
+      "允许跨域",
       "允许所有",
       "允许同源",
-      "允许跨域"
+      "禁止加载任何资源"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-718",
     "title": "CSP的report-uri指令用于？",
     "options": [
       "指定违规报告发送地址",
-      "报告错误",
       "报告性能",
-      "报告加载"
+      "报告加载",
+      "报告错误"
     ],
     "correctAnswer": 0
   },
@@ -201,43 +201,43 @@
     "id": "html-719",
     "title": "CSRF的全称是？",
     "options": [
-      "Cross-Site Request Forgery",
+      "Cross-Site Resource Forgery",
       "Cross-Site Scripting Forgery",
-      "Cross-Server Request Forgery",
-      "Cross-Site Resource Forgery"
+      "Cross-Site Request Forgery",
+      "Cross-Server Request Forgery"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-720",
     "title": "CSRF攻击的原理是？",
     "options": [
-      "利用用户已登录的身份发起恶意请求",
-      "注入脚本",
+      "篡改页面",
       "窃取密码",
-      "篡改页面"
+      "利用用户已登录的身份发起恶意请求",
+      "注入脚本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-721",
     "title": "如何防御CSRF？",
     "options": [
-      "使用CSRF Token, 验证Referer",
       "使用CSP",
+      "使用HTTPS",
       "转义HTML",
-      "使用HTTPS"
+      "使用CSRF Token, 验证Referer"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-722",
     "title": "CSRF Token应放在哪里？",
     "options": [
       "表单隐藏字段或请求头",
-      "URL参数",
+      "LocalStorage",
       "Cookie",
-      "LocalStorage"
+      "URL参数"
     ],
     "correctAnswer": 0
   },
@@ -245,23 +245,23 @@
     "id": "html-723",
     "title": "SameSite Cookie属性的作用？",
     "options": [
-      "控制Cookie跨站发送行为",
-      "加密Cookie",
       "压缩Cookie",
-      "缓存Cookie"
+      "缓存Cookie",
+      "控制Cookie跨站发送行为",
+      "加密Cookie"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-724",
     "title": "SameSite=Strict的作用？",
     "options": [
-      "完全禁止跨站发送Cookie",
       "允许所有跨站",
+      "完全禁止跨站发送Cookie",
       "仅GET允许",
       "仅POST允许"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-725",
@@ -279,9 +279,9 @@
     "title": "SameSite=None的要求？",
     "options": [
       "必须配合Secure属性(仅HTTPS)",
-      "无需Secure",
       "允许HTTP",
-      "只允许HTTP"
+      "只允许HTTP",
+      "无需Secure"
     ],
     "correctAnswer": 0
   },
@@ -289,21 +289,21 @@
     "id": "html-727",
     "title": "点击劫持的原理是？",
     "options": [
-      "透明iframe覆盖诱骗用户点击",
-      "注入脚本",
       "窃取密码",
-      "篡改请求"
+      "透明iframe覆盖诱骗用户点击",
+      "篡改请求",
+      "注入脚本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-728",
     "title": "如何防御点击劫持？",
     "options": [
       "使用X-Frame-Options或CSP frame-ancestors",
-      "使用HTTPS",
+      "加密页面",
       "使用Token",
-      "加密页面"
+      "使用HTTPS"
     ],
     "correctAnswer": 0
   },
@@ -311,54 +311,54 @@
     "id": "html-729",
     "title": "X-Frame-Options的值不包括？",
     "options": [
-      "ALLOW-FROM",
-      "DENY",
+      "ALLOW-ALL",
       "SAMEORIGIN",
-      "ALLOW-ALL"
+      "DENY",
+      "ALLOW-FROM"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-730",
     "title": "X-Frame-Options: DENY的作用？",
     "options": [
-      "页面不允许在frame中显示",
-      "允许同源",
       "允许跨域",
-      "允许特定域"
+      "允许特定域",
+      "页面不允许在frame中显示",
+      "允许同源"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-731",
     "title": "X-Frame-Options: SAMEORIGIN的作用？",
     "options": [
-      "只允许同源页面在frame中嵌套",
       "完全禁止",
+      "允许特定域",
       "允许所有",
-      "允许特定域"
+      "只允许同源页面在frame中嵌套"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-732",
     "title": "CSP的frame-ancestors指令优于X-Frame-Options的原因？",
     "options": [
-      "支持多域名和通配符",
       "性能更好",
       "更安全",
+      "支持多域名和通配符",
       "更简单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-733",
     "title": "中间人攻击(MITM)的原理？",
     "options": [
       "攻击者截获并可能修改通信",
+      "篡改页面",
       "注入脚本",
-      "窃取Cookie",
-      "篡改页面"
+      "窃取Cookie"
     ],
     "correctAnswer": 0
   },
@@ -377,56 +377,56 @@
     "id": "html-735",
     "title": "HTTPS的作用是？",
     "options": [
-      "加密通信防止窃听和篡改",
-      "加速传输",
       "压缩数据",
-      "缓存资源"
+      "加密通信防止窃听和篡改",
+      "缓存资源",
+      "加速传输"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-736",
     "title": "HSTS的作用是？",
     "options": [
-      "强制浏览器只通过HTTPS访问",
-      "加密HTTP",
       "加速HTTPS",
-      "缓存HTTPS"
+      "缓存HTTPS",
+      "加密HTTP",
+      "强制浏览器只通过HTTPS访问"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-737",
     "title": "HSTS的Strict-Transport-Security头包含？",
     "options": [
-      "max-age, includeSubDomains, preload",
+      "max-size, public, immutable",
       "timeout, secure, cache",
       "expires, domain, secure",
-      "max-size, public, immutable"
+      "max-age, includeSubDomains, preload"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-738",
     "title": "includeSubDomains的作用？",
     "options": [
-      "将HSTS规则应用于所有子域",
       "排除子域",
-      "仅主域",
-      "指定子域"
+      "将HSTS规则应用于所有子域",
+      "指定子域",
+      "仅主域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-739",
     "title": "HSTS Preload List的作用？",
     "options": [
-      "浏览器内置列表首次访问即强制HTTPS",
       "预加载页面",
       "预加载脚本",
+      "浏览器内置列表首次访问即强制HTTPS",
       "预加载样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-740",
@@ -443,110 +443,110 @@
     "id": "html-741",
     "title": "如何防御SQL注入？",
     "options": [
+      "转义HTML",
       "使用参数化查询(预编译语句)",
       "使用CSP",
-      "使用HTTPS",
-      "转义HTML"
+      "使用HTTPS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-742",
     "title": "不依赖HTML防御SQL注入的原因？",
     "options": [
-      "SQL注入在服务器端发生",
       "HTML能防御",
+      "无关",
       "SQL在客户端",
-      "无关"
+      "SQL注入在服务器端发生"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-743",
     "title": "<a target=\"_blank\">的安全漏洞？",
     "options": [
-      "新页面可通过window.opener访问原页面",
       "无漏洞",
-      "XSS攻击",
-      "CSRF攻击"
+      "新页面可通过window.opener访问原页面",
+      "CSRF攻击",
+      "XSS攻击"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-744",
     "title": "如何修复target=\"_blank\"漏洞？",
     "options": [
-      "添加rel=\"noopener\"",
       "添加rel=\"noreferrer\"",
-      "添加rel=\"nofollow\"",
-      "添加rel=\"external\""
+      "添加rel=\"external\"",
+      "添加rel=\"noopener\"",
+      "添加rel=\"nofollow\""
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-745",
     "title": "rel=\"noopener\"的作用？",
     "options": [
-      "阻止新页面访问window.opener",
       "不发送引用",
+      "不缓存",
       "不追踪",
-      "不缓存"
+      "阻止新页面访问window.opener"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-746",
     "title": "rel=\"noreferrer\"的作用？",
     "options": [
-      "不发送Referer头",
       "阻止opener",
       "不追踪",
+      "不发送Referer头",
       "不缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-747",
     "title": "rel=\"noopener noreferrer\"组合的作用？",
     "options": [
-      "同时阻止opener和不发送Referer",
-      "仅阻止opener",
       "仅不发送Referer",
-      "无意义"
+      "无意义",
+      "仅阻止opener",
+      "同时阻止opener和不发送Referer"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-748",
     "title": "本地存储的安全风险？",
     "options": [
-      "XSS可轻易读取数据",
-      "无法读取",
       "加密存储",
-      "自动安全"
+      "自动安全",
+      "XSS可轻易读取数据",
+      "无法读取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-749",
     "title": "敏感数据不应存储在？",
     "options": [
+      "内存",
       "localStorage和sessionStorage",
-      "服务器",
       "数据库",
-      "内存"
+      "服务器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-750",
     "title": "Cookie的HttpOnly属性作用？",
     "options": [
-      "防止JavaScript访问Cookie",
       "只允许HTTP",
+      "防止JavaScript访问Cookie",
       "加密Cookie",
       "压缩Cookie"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

@@ -3,21 +3,21 @@
     "id": "python-451",
     "title": "Python中zlib模块的作用是？",
     "options": [
-      "压缩解压",
       "加密解密",
+      "哈希计算",
       "Base64编解码",
-      "哈希计算"
+      "压缩解压"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-452",
     "title": "Python中gzip模块的作用是？",
     "options": [
       "Gzip压缩解压",
-      "Zip压缩解压",
+      "Lzma压缩解压",
       "Bzip2压缩解压",
-      "Lzma压缩解压"
+      "Zip压缩解压"
     ],
     "correctAnswer": 0
   },
@@ -25,9 +25,9 @@
     "id": "python-453",
     "title": "Python中zipfile模块的作用是？",
     "options": [
-      "Gzip压缩解压",
-      "Zip压缩解压",
       "Bzip2压缩解压",
+      "Zip压缩解压",
+      "Gzip压缩解压",
       "Lzma压缩解压"
     ],
     "correctAnswer": 1
@@ -36,43 +36,43 @@
     "id": "python-454",
     "title": "Python中tarfile模块的作用是？",
     "options": [
-      "Tar归档",
       "Zip压缩解压",
-      "Gzip压缩解压",
-      "Bzip2压缩解压"
+      "Tar归档",
+      "Bzip2压缩解压",
+      "Gzip压缩解压"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-455",
     "title": "Python中struct模块的作用是？",
     "options": [
-      "字节和Python类型转换",
-      "字符串处理",
       "数值计算",
+      "字符串处理",
+      "字节和Python类型转换",
       "日期处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-456",
     "title": "Python中codecs模块的作用是？",
     "options": [
-      "编解码器",
       "代码执行",
       "代码检查",
-      "代码优化"
+      "代码优化",
+      "编解码器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-457",
     "title": "Python中如何检测文件编码？",
     "options": [
       "chardet库",
-      "codecs库",
+      "以上都不对",
       "encoding库",
-      "以上都不对"
+      "codecs库"
     ],
     "correctAnswer": 0
   },
@@ -80,32 +80,32 @@
     "id": "python-458",
     "title": "Python中如何监控文件变化？",
     "options": [
-      "watchdog库",
-      "os.walk()",
       "inotify",
-      "以上都不对"
+      "os.walk()",
+      "以上都不对",
+      "watchdog库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-459",
     "title": "Python中如何读写Excel文件？",
     "options": [
-      "openpyxl, xlrd, xlwt",
-      "excel库",
       "csv库",
-      "以上都不对"
+      "excel库",
+      "以上都不对",
+      "openpyxl, xlrd, xlwt"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-460",
     "title": "Python中如何读写Word文件？",
     "options": [
       "python-docx",
-      "word库",
       "doc库",
-      "以上都不对"
+      "以上都不对",
+      "word库"
     ],
     "correctAnswer": 0
   },
@@ -113,56 +113,56 @@
     "id": "python-461",
     "title": "Python中如何读写PDF文件？",
     "options": [
-      "PyPDF2, pdfplumber",
       "pdf库",
+      "PyPDF2, pdfplumber",
       "adobe库",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-462",
     "title": "Python中如何处理图片？",
     "options": [
-      "Pillow, OpenCV",
       "image库",
+      "以上都不对",
       "graphic库",
-      "以上都不对"
+      "Pillow, OpenCV"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-463",
     "title": "Python中如何发送邮件？",
     "options": [
-      "smtplib, email",
       "mail库",
+      "以上都不对",
       "post库",
-      "以上都不对"
+      "smtplib, email"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-464",
     "title": "Python中如何操作SSH？",
     "options": [
-      "paramiko",
-      "ssh库",
       "shell库",
-      "以上都不对"
+      "ssh库",
+      "以上都不对",
+      "paramiko"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-465",
     "title": "Python中如何执行系统命令？",
     "options": [
-      "subprocess",
+      "以上都可以",
       "os.system",
-      "os.popen",
-      "以上都可以"
+      "subprocess",
+      "os.popen"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-466",
@@ -170,8 +170,8 @@
     "options": [
       "运行命令并等待",
       "运行命令不等待",
-      "运行命令获取输出",
-      "运行命令获取状态"
+      "运行命令获取状态",
+      "运行命令获取输出"
     ],
     "correctAnswer": 0
   },
@@ -179,196 +179,196 @@
     "id": "python-467",
     "title": "Python中subprocess.Popen()的作用是？",
     "options": [
-      "运行命令并等待",
-      "运行命令不等待",
+      "以上都不对",
       "创建子进程",
-      "以上都不对"
+      "运行命令不等待",
+      "运行命令并等待"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-468",
     "title": "Python中如何获取命令输出？",
     "options": [
-      "subprocess.check_output()",
-      "subprocess.get_output()",
       "subprocess.read()",
-      "以上都不对"
+      "subprocess.check_output()",
+      "以上都不对",
+      "subprocess.get_output()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-469",
     "title": "Python中如何设置环境变量？",
     "options": [
-      "os.environ[key] = value",
+      "以上都不对",
       "os.setenv()",
-      "env.set()",
-      "以上都不对"
+      "os.environ[key] = value",
+      "env.set()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-470",
     "title": "Python中如何获取进程ID？",
     "options": [
-      "os.getpid()",
+      "以上都不对",
       "os.pid()",
-      "sys.pid()",
-      "以上都不对"
+      "os.getpid()",
+      "sys.pid()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-471",
     "title": "Python中如何获取父进程ID？",
     "options": [
-      "os.getppid()",
-      "os.ppid()",
       "sys.ppid()",
-      "以上都不对"
+      "os.ppid()",
+      "以上都不对",
+      "os.getppid()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-472",
     "title": "Python中如何杀死进程？",
     "options": [
-      "os.kill()",
-      "os.terminate()",
       "os.destroy()",
+      "os.terminate()",
+      "os.kill()",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-473",
     "title": "Python中signal模块的作用是？",
     "options": [
-      "信号处理",
+      "网络通信",
       "进程间通信",
-      "线程同步",
-      "网络通信"
+      "信号处理",
+      "线程同步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-474",
     "title": "Python中resource模块的作用是？",
     "options": [
+      "线程管理",
       "资源限制",
-      "内存管理",
       "进程管理",
-      "线程管理"
+      "内存管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-475",
     "title": "Python中ulimit如何设置？",
     "options": [
+      "以上都不对",
       "resource.setrlimit()",
-      "os.setlimit()",
       "sys.setlimit()",
-      "以上都不对"
+      "os.setlimit()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-476",
     "title": "Python中如何处理大文件？",
     "options": [
       "分块读取",
-      "内存映射",
       "生成器",
-      "以上都可以"
+      "以上都可以",
+      "内存映射"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "python-477",
     "title": "Python中mmap模块的作用是？",
     "options": [
-      "内存映射文件",
       "内存管理",
       "文件缓存",
-      "以上都不对"
+      "以上都不对",
+      "内存映射文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-478",
     "title": "Python中日志模块的Handler有？",
     "options": [
+      "OutputHandler, InputHandler",
       "StreamHandler, FileHandler",
       "ConsoleHandler, DiskHandler",
-      "OutputHandler, InputHandler",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-479",
     "title": "Python中日志模块的Formatter作用是？",
     "options": [
-      "格式化日志",
+      "记录日志",
       "过滤日志",
       "输出日志",
-      "记录日志"
+      "格式化日志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-480",
     "title": "Python中日志模块的Filter作用是？",
     "options": [
+      "记录日志",
       "格式化日志",
       "过滤日志",
-      "输出日志",
-      "记录日志"
+      "输出日志"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-481",
     "title": "Python中GIL是指？",
     "options": [
-      "全局解释器锁",
-      "全局内存锁",
       "通用接口层",
-      "以上都不对"
+      "全局内存锁",
+      "以上都不对",
+      "全局解释器锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-482",
     "title": "Python中GIL的作用是？",
     "options": [
-      "保证线程安全",
-      "提高性能",
       "支持多核",
-      "以上都不对"
+      "提高性能",
+      "以上都不对",
+      "保证线程安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-483",
     "title": "Python中GIL的影响是？",
     "options": [
-      "多线程不能利用多核",
-      "多进程不能利用多核",
       "单线程性能下降",
-      "以上都不对"
+      "以上都不对",
+      "多进程不能利用多核",
+      "多线程不能利用多核"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-484",
     "title": "Python中GIL在什么情况下释放？",
     "options": [
       "I/O操作时",
-      "执行C扩展时",
       "每执行一定字节码时",
+      "执行C扩展时",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -378,8 +378,8 @@
     "title": "Python中threading模块的作用是？",
     "options": [
       "多线程",
-      "多进程",
       "协程",
+      "多进程",
       "异步"
     ],
     "correctAnswer": 0
@@ -388,45 +388,45 @@
     "id": "python-486",
     "title": "Python中multiprocessing模块的作用是？",
     "options": [
+      "异步",
       "多线程",
-      "多进程",
       "协程",
-      "异步"
+      "多进程"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "python-487",
     "title": "Python中asyncio模块的作用是？",
     "options": [
+      "同步",
       "多线程",
       "多进程",
-      "协程",
-      "同步"
+      "协程"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-488",
     "title": "Python中创建线程的方式是？",
     "options": [
-      "threading.Thread",
-      "thread.Thread",
       "Thread.new",
-      "以上都不对"
+      "以上都不对",
+      "threading.Thread",
+      "thread.Thread"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-489",
     "title": "Python中启动线程的方法是？",
     "options": [
+      "begin()",
       "start()",
-      "run()",
       "execute()",
-      "begin()"
+      "run()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-490",
@@ -434,8 +434,8 @@
     "options": [
       "join()",
       "wait()",
-      "await()",
-      "sleep()"
+      "sleep()",
+      "await()"
     ],
     "correctAnswer": 0
   },
@@ -443,12 +443,12 @@
     "id": "python-491",
     "title": "Python中守护线程的设置方法是？",
     "options": [
-      "daemon=True",
       "daemon=False",
       "guard=True",
-      "以上都不对"
+      "以上都不对",
+      "daemon=True"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-492",
@@ -476,45 +476,45 @@
     "id": "python-494",
     "title": "Python中Lock的作用是？",
     "options": [
-      "互斥锁",
-      "递归锁",
       "信号量",
-      "事件"
+      "事件",
+      "互斥锁",
+      "递归锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-495",
     "title": "Python中RLock的作用是？",
     "options": [
-      "互斥锁",
-      "递归锁",
       "信号量",
-      "事件"
+      "事件",
+      "递归锁",
+      "互斥锁"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-496",
     "title": "Python中Lock和RLock的区别是？",
     "options": [
-      "RLock可被同一线程多次获取",
-      "Lock可被同一线程多次获取",
       "没有区别",
-      "取决于场景"
+      "RLock可被同一线程多次获取",
+      "取决于场景",
+      "Lock可被同一线程多次获取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-497",
     "title": "Python中Semaphore的作用是？",
     "options": [
-      "互斥锁",
-      "递归锁",
       "信号量，控制并发数",
+      "递归锁",
+      "互斥锁",
       "事件"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-498",
@@ -522,31 +522,31 @@
     "options": [
       "互斥锁",
       "递归锁",
-      "信号量",
-      "事件通知"
+      "事件通知",
+      "信号量"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "python-499",
     "title": "Python中Condition的作用是？",
     "options": [
-      "互斥锁",
-      "条件变量",
+      "事件",
       "信号量",
-      "事件"
+      "条件变量",
+      "互斥锁"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-500",
     "title": "Python中Barrier的作用是？",
     "options": [
-      "互斥锁",
       "条件变量",
-      "栅栏，等待所有线程",
-      "事件"
+      "互斥锁",
+      "事件",
+      "栅栏，等待所有线程"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   }
 ]

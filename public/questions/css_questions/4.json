@@ -4,9 +4,9 @@
     "title": "overflow: auto的作用是？",
     "options": [
       "内容溢出时自动显示滚动条",
-      "始终显示滚动条",
+      "内容自动换行",
       "隐藏溢出内容",
-      "内容自动换行"
+      "始终显示滚动条"
     ],
     "correctAnswer": 0
   },
@@ -14,20 +14,20 @@
     "id": "css-152",
     "title": "text-overflow: ellipsis的作用是？",
     "options": [
-      "文本溢出时显示省略号",
       "文本换行",
+      "文本溢出时显示省略号",
       "文本裁剪",
       "文本缩进"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-153",
     "title": "单行文本溢出显示省略号的条件是？",
     "options": [
       "white-space: nowrap; overflow: hidden; text-overflow: ellipsis;",
-      "display: block;",
       "width: 100%;",
+      "display: block;",
       "font-size: 14px;"
     ],
     "correctAnswer": 0
@@ -36,12 +36,12 @@
     "id": "css-154",
     "title": "多行文本溢出显示省略号使用什么属性？",
     "options": [
-      "-webkit-line-clamp",
-      "text-overflow",
       "overflow",
-      "white-space"
+      "text-overflow",
+      "white-space",
+      "-webkit-line-clamp"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-155",
@@ -58,32 +58,32 @@
     "id": "css-156",
     "title": "resize属性的作用是？",
     "options": [
-      "允许用户调整元素大小",
-      "调整字体大小",
+      "调整布局大小",
       "调整图片大小",
-      "调整布局大小"
+      "调整字体大小",
+      "允许用户调整元素大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-157",
     "title": "resize属性生效的条件是？",
     "options": [
-      "overflow不是visible",
+      "width和height设置",
       "display是block",
-      "position是absolute",
-      "width和height设置"
+      "overflow不是visible",
+      "position是absolute"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-158",
     "title": "clip-path属性的作用是？",
     "options": [
       "裁剪元素的可视区域",
-      "裁剪图片",
       "裁剪文本",
-      "裁剪边框"
+      "裁剪边框",
+      "裁剪图片"
     ],
     "correctAnswer": 0
   },
@@ -91,32 +91,32 @@
     "id": "css-159",
     "title": "clip-path: circle()的作用是？",
     "options": [
-      "创建圆形裁剪区域",
-      "创建椭圆裁剪区域",
+      "创建矩形裁剪区域",
       "创建多边形裁剪区域",
-      "创建矩形裁剪区域"
+      "创建椭圆裁剪区域",
+      "创建圆形裁剪区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-160",
     "title": "clip-path: polygon()的作用是？",
     "options": [
-      "创建多边形裁剪区域",
       "创建圆形裁剪区域",
+      "创建矩形裁剪区域",
       "创建椭圆裁剪区域",
-      "创建矩形裁剪区域"
+      "创建多边形裁剪区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-161",
     "title": "如何使用CSS绘制三角形？",
     "options": [
       "利用border的透明特性",
-      "利用clip-path",
       "利用transform",
-      "利用margin"
+      "利用margin",
+      "利用clip-path"
     ],
     "correctAnswer": 0
   },
@@ -124,12 +124,12 @@
     "id": "css-162",
     "title": "min-width和max-width的作用是？",
     "options": [
+      "设置百分比宽度",
       "限制元素宽度的范围",
       "设置固定宽度",
-      "设置百分比宽度",
       "设置弹性宽度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-163",
@@ -146,20 +146,20 @@
     "id": "css-164",
     "title": "box-sizing的兼容性如何？",
     "options": [
-      "现代浏览器完全支持",
       "不支持IE",
-      "不支持Chrome",
-      "不支持Firefox"
+      "不支持Firefox",
+      "现代浏览器完全支持",
+      "不支持Chrome"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-165",
     "title": "如何实现元素的等比例缩放？",
     "options": [
       "使用padding-bottom百分比技巧或aspect-ratio",
-      "使用width: auto",
       "使用height: auto",
+      "使用width: auto",
       "使用max-width"
     ],
     "correctAnswer": 0
@@ -168,133 +168,133 @@
     "id": "css-166",
     "title": "aspect-ratio属性的作用是？",
     "options": [
-      "设置盒子的宽高比",
       "设置宽度",
+      "设置缩放比例",
       "设置高度",
-      "设置缩放比例"
+      "设置盒子的宽高比"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-167",
     "title": "writing-mode属性的作用是？",
     "options": [
-      "设置文本的书写方向",
       "设置字体大小",
-      "设置行高",
-      "设置字间距"
+      "设置字间距",
+      "设置文本的书写方向",
+      "设置行高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-168",
     "title": "direction属性的作用是？",
     "options": [
-      "设置文本的方向（从左到右或从右到左）",
       "设置布局方向",
       "设置浮动方向",
+      "设置文本的方向（从左到右或从右到左）",
       "设置动画方向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-169",
     "title": "unicode-bidi属性的作用是？",
     "options": [
-      "处理双向文本",
-      "设置Unicode编码",
       "设置字体",
-      "设置语言"
+      "设置Unicode编码",
+      "设置语言",
+      "处理双向文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-170",
     "title": "overflow-wrap: break-word的作用是？",
     "options": [
-      "允许长单词在任意位置断行",
-      "禁止断行",
       "单词不换行",
-      "空格不断行"
+      "空格不断行",
+      "禁止断行",
+      "允许长单词在任意位置断行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-171",
     "title": "word-break: break-all的作用是？",
     "options": [
-      "允许非CJK文本在任意字符间断行",
       "只允许CJK断行",
+      "不换行",
       "保留空白",
-      "不换行"
+      "允许非CJK文本在任意字符间断行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-172",
     "title": "white-space: nowrap的作用是？",
     "options": [
-      "禁止文本换行",
-      "保留空白符",
       "合并空白符",
-      "正常换行"
+      "保留空白符",
+      "正常换行",
+      "禁止文本换行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-173",
     "title": "white-space: pre的作用是？",
     "options": [
-      "保留空白符序列和换行符",
+      "正常换行",
       "合并空白符",
-      "禁止换行",
-      "正常换行"
+      "保留空白符序列和换行符",
+      "禁止换行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-174",
     "title": "word-spacing属性的作用是？",
     "options": [
-      "设置单词之间的间距",
+      "设置缩进",
       "设置字母间距",
-      "设置行高",
-      "设置缩进"
+      "设置单词之间的间距",
+      "设置行高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-175",
     "title": "letter-spacing属性的作用是？",
     "options": [
+      "设置行高",
       "设置字母之间的间距",
       "设置单词间距",
-      "设置行高",
       "设置缩进"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-176",
     "title": "line-height属性的作用是？",
     "options": [
-      "设置行间距",
-      "设置字体大小",
       "设置字母间距",
-      "设置单词间距"
+      "设置单词间距",
+      "设置字体大小",
+      "设置行间距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-177",
     "title": "line-height: 1.5是相对于什么？",
     "options": [
-      "当前元素的font-size",
-      "浏览器默认大小",
+      "视口大小",
       "父元素font-size",
-      "视口大小"
+      "当前元素的font-size",
+      "浏览器默认大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-178",
@@ -302,8 +302,8 @@
     "options": [
       "继承方式不同，1.5子元素根据自身font-size计算，150%根据父元素计算",
       "没有区别",
-      "1.5更大",
-      "150%更大"
+      "150%更大",
+      "1.5更大"
     ],
     "correctAnswer": 0
   },
@@ -312,8 +312,8 @@
     "title": "text-indent属性的作用是？",
     "options": [
       "设置首行文本缩进",
-      "设置字母间距",
       "设置行高",
+      "设置字母间距",
       "设置对齐方式"
     ],
     "correctAnswer": 0
@@ -322,54 +322,54 @@
     "id": "css-180",
     "title": "text-align: justify的作用是？",
     "options": [
-      "两端对齐",
-      "左对齐",
       "右对齐",
+      "左对齐",
+      "两端对齐",
       "居中对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-181",
     "title": "vertical-align属性的作用是？",
     "options": [
-      "设置内联或表格单元格的垂直对齐",
       "设置块级元素垂直对齐",
+      "设置内联或表格单元格的垂直对齐",
       "设置水平对齐",
       "设置居中对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-182",
     "title": "vertical-align: middle的效果是？",
     "options": [
-      "元素中线与父元素基线加上x高度一半对齐",
       "完全居中",
       "顶部对齐",
+      "元素中线与父元素基线加上x高度一半对齐",
       "底部对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-183",
     "title": "text-transform: uppercase的作用是？",
     "options": [
-      "将文本转为大写",
       "转为小写",
-      "首字母大写",
-      "无变化"
+      "将文本转为大写",
+      "无变化",
+      "首字母大写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-184",
     "title": "text-decoration: underline的作用是？",
     "options": [
       "添加下划线",
+      "无装饰",
       "添加上划线",
-      "添加删除线",
-      "无装饰"
+      "添加删除线"
     ],
     "correctAnswer": 0
   },
@@ -377,67 +377,67 @@
     "id": "css-185",
     "title": "text-shadow属性的作用是？",
     "options": [
-      "添加文本阴影",
-      "添加边框阴影",
       "添加盒阴影",
-      "添加背景"
+      "添加背景",
+      "添加边框阴影",
+      "添加文本阴影"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-186",
     "title": "text-shadow的参数顺序是？",
     "options": [
-      "水平偏移 垂直偏移 模糊 颜色",
       "模糊 水平偏移 垂直偏移 颜色",
+      "水平偏移 垂直偏移 模糊 颜色",
       "颜色 水平偏移 垂直偏移 模糊",
       "水平偏移 垂直偏移 颜色 模糊"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-187",
     "title": "font属性的简写顺序是？",
     "options": [
+      "weight style size family",
       "style variant weight size/line-height family",
       "size family style weight",
-      "family size style",
-      "weight style size family"
+      "family size style"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-188",
     "title": "font-size: 62.5%的作用是？",
     "options": [
-      "将默认16px改为10px方便rem计算",
       "缩小字体",
-      "放大字体",
-      "重置字体"
+      "将默认16px改为10px方便rem计算",
+      "重置字体",
+      "放大字体"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-189",
     "title": "@font-face规则的作用是？",
     "options": [
+      "定义媒体查询",
       "自定义字体",
       "引入图片",
-      "定义动画",
-      "定义媒体查询"
+      "定义动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-190",
     "title": "@font-face中src的作用是？",
     "options": [
-      "指定字体文件的路径",
       "指定字体大小",
+      "指定字体文件的路径",
       "指定字体颜色",
       "指定字体样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-191",
@@ -456,8 +456,8 @@
     "options": [
       "先使用后备字体，自定义字体加载完后替换",
       "一直等待自定义字体",
-      "不使用自定义字体",
-      "隐藏文本直到字体加载"
+      "隐藏文本直到字体加载",
+      "不使用自定义字体"
     ],
     "correctAnswer": 0
   },
@@ -466,9 +466,9 @@
     "title": "line-height: normal的默认值大约是？",
     "options": [
       "1.2",
-      "1",
+      "2",
       "1.5",
-      "2"
+      "1"
     ],
     "correctAnswer": 0
   },
@@ -476,23 +476,23 @@
     "id": "css-194",
     "title": "line-height为无单位数值的好处是？",
     "options": [
-      "子元素根据自身font-size计算，避免继承异常",
-      "计算更简单",
       "性能更好",
-      "兼容性更好"
+      "子元素根据自身font-size计算，避免继承异常",
+      "兼容性更好",
+      "计算更简单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-195",
     "title": "如何实现中英文混排时的自动换行优化？",
     "options": [
+      "white-space: nowrap",
       "word-break: break-word",
       "word-break: break-all",
-      "white-space: nowrap",
       "overflow: hidden"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-196",
@@ -509,44 +509,44 @@
     "id": "css-197",
     "title": "counter-increment属性的作用是？",
     "options": [
-      "递增CSS计数器",
-      "设置计数器初始值",
       "重置计数器",
+      "设置计数器初始值",
+      "递增CSS计数器",
       "显示计数器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-198",
     "title": "counter-reset属性的作用是？",
     "options": [
-      "初始化或重置CSS计数器",
-      "递增计数器",
       "显示计数器",
-      "删除计数器"
+      "删除计数器",
+      "初始化或重置CSS计数器",
+      "递增计数器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-199",
     "title": "counter()函数的作用是？",
     "options": [
-      "获取计数器的值并插入内容",
       "递增计数器",
       "重置计数器",
-      "删除计数器"
+      "删除计数器",
+      "获取计数器的值并插入内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-200",
     "title": "quotes属性的作用是？",
     "options": [
-      "设置引号类型",
-      "设置引用",
+      "设置注释",
       "设置内容",
-      "设置注释"
+      "设置引号类型",
+      "设置引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

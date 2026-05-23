@@ -3,23 +3,23 @@
     "id": "js-501",
     "title": "JavaScript中Promise.allSettled有一个失败会怎样？",
     "options": [
-      "继续等待其他完成",
       "整体失败",
       "忽略失败",
+      "继续等待其他完成",
       "抛出警告"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-502",
     "title": "JavaScript中Promise.any有一个成功会怎样？",
     "options": [
+      "整体失败",
       "整体成功",
       "等待其他完成",
-      "整体失败",
       "忽略成功"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-503",
@@ -36,135 +36,135 @@
     "id": "js-504",
     "title": "JavaScript中Promise.race第一个完成会怎样？",
     "options": [
-      "以第一个结果为准",
-      "等待所有完成",
       "忽略第一个",
-      "抛出警告"
+      "抛出警告",
+      "以第一个结果为准",
+      "等待所有完成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-505",
     "title": "JavaScript中async函数的返回值是？",
     "options": [
-      "Promise",
-      "undefined",
+      "Generator",
       "普通值",
-      "Generator"
+      "Promise",
+      "undefined"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-506",
     "title": "JavaScript中await的作用是？",
     "options": [
-      "等待Promise解决",
+      "取消Promise",
+      "拒绝Promise",
       [
         "创建Promise"
       ],
-      "拒绝Promise",
-      "取消Promise"
+      "等待Promise解决"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-507",
     "title": "JavaScript中await只能在async函数中使用吗？",
     "options": [
-      "是",
       "否",
       "取决于环境",
-      "取决于严格模式"
+      "取决于严格模式",
+      "是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-508",
     "title": "JavaScript中async/await的优点是？",
     "options": [
-      "使异步代码看起来像同步",
       "性能更好",
+      "以上都是",
       "功能更强",
-      "以上都是"
+      "使异步代码看起来像同步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-509",
     "title": "JavaScript中await后面的表达式不是Promise会怎样？",
     "options": [
+      "返回原值",
       "包装为已解决的Promise",
       "报错",
-      "忽略",
-      "返回原值"
+      "忽略"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-510",
     "title": "JavaScript中async函数抛出异常会怎样？",
     "options": [
-      "返回已拒绝的Promise",
       "返回已解决的Promise",
+      "忽略异常",
       "抛出异常",
-      "忽略异常"
+      "返回已拒绝的Promise"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-511",
     "title": "JavaScript中try...catch能捕获await的异常吗？",
     "options": [
-      "能",
-      "不能",
       "取决于异常类型",
-      "取决于环境"
+      "取决于环境",
+      "能",
+      "不能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-512",
     "title": "JavaScript中Promise的回调是同步还是异步执行？",
     "options": [
-      "异步",
-      "同步",
       "取决于状态",
-      "取决于环境"
+      "取决于环境",
+      "异步",
+      "同步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-513",
     "title": "JavaScript中Promise构造函数的回调是同步还是异步执行？",
     "options": [
-      "同步",
       "异步",
       "取决于状态",
-      "取决于环境"
+      "取决于环境",
+      "同步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-514",
     "title": "JavaScript中如何实现Promise串行执行？",
     "options": [
-      "reduce + async/await",
+      "for + async/await",
       "forEach + async/await",
-      "map + async/await",
-      "for + async/await"
+      "reduce + async/await",
+      "map + async/await"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-515",
     "title": "JavaScript中如何实现Promise并发执行？",
     "options": [
-      "Promise.all + map",
-      "reduce + async/await",
+      "for + async/await",
       "forEach + async/await",
-      "for + async/await"
+      "Promise.all + map",
+      "reduce + async/await"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-516",
@@ -181,54 +181,54 @@
     "id": "js-517",
     "title": "JavaScript中回调地狱是指？",
     "options": [
-      "多层嵌套回调难以维护",
-      "回调函数过多",
       "回调函数过少",
-      "回调函数错误"
+      "回调函数错误",
+      "回调函数过多",
+      "多层嵌套回调难以维护"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-518",
     "title": "JavaScript中如何解决回调地狱？",
     "options": [
-      "Promise, async/await, Generator",
+      "仅Generator",
       "仅Promise",
       "仅async/await",
-      "仅Generator"
+      "Promise, async/await, Generator"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-519",
     "title": "JavaScript中Promise的缺点是？",
     "options": [
-      "无法取消，错误需要catch",
-      "性能差",
       "语法复杂",
-      "不支持并发"
+      "无法取消，错误需要catch",
+      "不支持并发",
+      "性能差"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-520",
     "title": "JavaScript中如何取消Promise？",
     "options": [
-      "使用AbortController",
-      "使用cancel()",
       "使用abort()",
-      "无法取消"
+      "无法取消",
+      "使用AbortController",
+      "使用cancel()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-521",
     "title": "JavaScript中AbortController的作用是？",
     "options": [
       "中止Fetch请求",
+      "中断事件",
       "取消Promise",
-      "终止进程",
-      "中断事件"
+      "终止进程"
     ],
     "correctAnswer": 0
   },
@@ -237,9 +237,9 @@
     "title": "JavaScript中AbortSignal的作用是？",
     "options": [
       "表示中止信号",
-      "中止请求",
       "创建控制器",
-      "处理异常"
+      "处理异常",
+      "中止请求"
     ],
     "correctAnswer": 0
   },
@@ -248,8 +248,8 @@
     "title": "JavaScript中setTimeout的回调是在哪个任务中执行？",
     "options": [
       "宏任务",
-      "微任务",
       "同步任务",
+      "微任务",
       "渲染任务"
     ],
     "correctAnswer": 0
@@ -258,23 +258,23 @@
     "id": "js-524",
     "title": "JavaScript中Promise的回调是在哪个任务中执行？",
     "options": [
+      "渲染任务",
       "微任务",
       "宏任务",
-      "同步任务",
-      "渲染任务"
+      "同步任务"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-525",
     "title": "JavaScript中MutationObserver的回调是在哪个任务中执行？",
     "options": [
-      "微任务",
       "宏任务",
       "同步任务",
-      "渲染任务"
+      "渲染任务",
+      "微任务"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-526",
@@ -293,8 +293,8 @@
     "options": [
       "宏任务",
       "微任务",
-      "同步任务",
-      "渲染任务"
+      "渲染任务",
+      "同步任务"
     ],
     "correctAnswer": 0
   },
@@ -302,20 +302,20 @@
     "id": "js-528",
     "title": "JavaScript中process.nextTick的回调是在哪个任务中执行？",
     "options": [
-      "微任务",
-      "宏任务",
       "同步任务",
-      "渲染任务"
+      "宏任务",
+      "渲染任务",
+      "微任务"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-529",
     "title": "JavaScript中微任务队列在什么时候清空？",
     "options": [
       "每个宏任务结束后",
-      "所有宏任务结束后",
       "渲染前",
+      "所有宏任务结束后",
       "渲染后"
     ],
     "correctAnswer": 0
@@ -324,34 +324,34 @@
     "id": "js-530",
     "title": "JavaScript中事件循环的来源是？",
     "options": [
+      "JavaScript引擎",
       "浏览器",
       "Node.js",
-      "JavaScript引擎",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-531",
     "title": "JavaScript中Node.js的事件循环和浏览器一样吗？",
     "options": [
-      "不完全一样",
       "完全一样",
-      "完全不同",
-      "取决于版本"
+      "取决于版本",
+      "不完全一样",
+      "完全不同"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-532",
     "title": "JavaScript中Node.js事件循环的阶段有？",
     "options": [
-      "timers, pending, idle, prepare, poll, check, close",
       "仅timers和poll",
       "仅microtask和macrotask",
+      "timers, pending, idle, prepare, poll, check, close",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-533",
@@ -359,8 +359,8 @@
     "options": [
       "获取新I/O事件",
       "执行定时器",
-      "执行setImmediate",
-      "关闭事件"
+      "关闭事件",
+      "执行setImmediate"
     ],
     "correctAnswer": 0
   },
@@ -369,8 +369,8 @@
     "title": "JavaScript中Node.js的check阶段的作用是？",
     "options": [
       "执行setImmediate",
-      "执行定时器",
       "获取新I/O事件",
+      "执行定时器",
       "关闭事件"
     ],
     "correctAnswer": 0
@@ -379,32 +379,32 @@
     "id": "js-535",
     "title": "JavaScript中Node.js的timers阶段的作用是？",
     "options": [
-      "执行setTimeout/setInterval",
       "执行setImmediate",
+      "关闭事件",
       "获取新I/O事件",
-      "关闭事件"
+      "执行setTimeout/setInterval"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-536",
     "title": "JavaScript中setTimeout和setImmediate在Node.js中的执行顺序？",
     "options": [
-      "不确定",
       "setTimeout先",
       "setImmediate先",
-      "取决于阶段"
+      "取决于阶段",
+      "不确定"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-537",
     "title": "JavaScript中setTimeout和setImmediate在IO回调中的执行顺序？",
     "options": [
       "setImmediate先",
+      "取决于阶段",
       "setTimeout先",
-      "不确定",
-      "取决于阶段"
+      "不确定"
     ],
     "correctAnswer": 0
   },
@@ -412,54 +412,54 @@
     "id": "js-538",
     "title": "JavaScript中process.nextTick为什么优先于Promise？",
     "options": [
-      "因为nextTick队列在微任务队列之前",
-      "因为nextTick是宏任务",
+      "取决于实现",
       "因为nextTick是同步的",
-      "取决于实现"
+      "因为nextTick是宏任务",
+      "因为nextTick队列在微任务队列之前"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-539",
     "title": "JavaScript中如何实现一个sleep函数？",
     "options": [
+      "requestAnimationFrame",
       "Promise + setTimeout",
-      "while循环",
       "setInterval",
-      "requestAnimationFrame"
+      "while循环"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-540",
     "title": "JavaScript中如何实现一个Promise.retry？",
     "options": [
+      "setInterval",
       "递归调用",
-      "循环调用",
       "setTimeout",
-      "setInterval"
+      "循环调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-541",
     "title": "JavaScript中如何实现一个Promise超时？",
     "options": [
-      "Promise.race + setTimeout",
+      "Promise.allSettled + setTimeout",
       "Promise.all + setTimeout",
-      "Promise.any + setTimeout",
-      "Promise.allSettled + setTimeout"
+      "Promise.race + setTimeout",
+      "Promise.any + setTimeout"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-542",
     "title": "JavaScript中Promise.all如果需要忽略错误怎么做？",
     "options": [
       "包装每个Promise的catch",
+      "无法忽略",
       "使用Promise.allSettled",
-      "使用try...catch",
-      "无法忽略"
+      "使用try...catch"
     ],
     "correctAnswer": 0
   },
@@ -469,8 +469,8 @@
     "options": [
       "for...of + await",
       "forEach + await",
-      "map + await",
-      "reduce + await"
+      "reduce + await",
+      "map + await"
     ],
     "correctAnswer": 0
   },
@@ -478,34 +478,34 @@
     "id": "js-544",
     "title": "JavaScript中forEach + await的问题？",
     "options": [
-      "不会等待前一个完成",
       "会等待前一个完成",
       "会报错",
-      "会并行执行"
+      "会并行执行",
+      "不会等待前一个完成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-545",
     "title": "JavaScript中map + await的问题？",
     "options": [
+      "会报错",
       "会并行执行",
       [
         "会顺序执行"
       ],
-      "会报错",
       "会等待前一个完成"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-546",
     "title": "JavaScript中如何实现发布订阅模式？",
     "options": [
       "EventEmitter",
-      "Promise",
       "Observable",
-      "Callback"
+      "Callback",
+      "Promise"
     ],
     "correctAnswer": 0
   },
@@ -513,12 +513,12 @@
     "id": "js-547",
     "title": "JavaScript中EventEmitter的on作用是？",
     "options": [
+      "移除事件",
       "注册事件",
       "触发事件",
-      "移除事件",
       "注册一次性事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-548",
@@ -535,20 +535,20 @@
     "id": "js-549",
     "title": "JavaScript中EventEmitter的off作用是？",
     "options": [
-      "移除事件",
       "注册事件",
       "触发事件",
-      "注册一次性事件"
+      "注册一次性事件",
+      "移除事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-550",
     "title": "JavaScript中EventEmitter的once作用是？",
     "options": [
       "注册一次性事件",
-      "注册事件",
       "触发事件",
+      "注册事件",
       "移除事件"
     ],
     "correctAnswer": 0

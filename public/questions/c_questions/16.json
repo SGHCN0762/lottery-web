@@ -5,8 +5,8 @@
     "options": [
       "读共享，写独占",
       "读写都独占",
-      "读写都共享",
-      "无锁"
+      "无锁",
+      "读写都共享"
     ],
     "correctAnswer": 0
   },
@@ -14,32 +14,32 @@
     "id": "c-752",
     "title": "C语言中，自旋锁的特点是？",
     "options": [
-      "忙等待，不释放CPU",
       "睡眠等待",
       "读写共享",
-      "无锁"
+      "无锁",
+      "忙等待，不释放CPU"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-753",
     "title": "C语言中，自旋锁适用于什么场景？",
     "options": [
-      "临界区短，不希望上下文切换",
       "临界区长",
-      "读多写少",
-      "写多读少"
+      "临界区短，不希望上下文切换",
+      "写多读少",
+      "读多写少"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-754",
     "title": "C语言中，原子操作的作用是？",
     "options": [
       "不可中断的操作",
-      "可中断的操作",
       "加锁操作",
-      "解锁操作"
+      "解锁操作",
+      "可中断的操作"
     ],
     "correctAnswer": 0
   },
@@ -48,9 +48,9 @@
     "title": "C语言中，C11原子操作头文件是？",
     "options": [
       "stdatomic.h",
+      "pthread.h",
       "atomic",
-      "threads.h",
-      "pthread.h"
+      "threads.h"
     ],
     "correctAnswer": 0
   },
@@ -59,8 +59,8 @@
     "title": "C语言中，atomic_int的作用是？",
     "options": [
       "声明原子整型",
-      "声明普通整型",
       "声明互斥锁",
+      "声明普通整型",
       "声明条件变量"
     ],
     "correctAnswer": 0
@@ -69,131 +69,131 @@
     "id": "c-757",
     "title": "C语言中，atomic_store的作用是？",
     "options": [
+      "原子交换",
       "原子存储",
       "原子加载",
-      "原子交换",
       "原子比较交换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-758",
     "title": "C语言中，atomic_load的作用是？",
     "options": [
-      "原子加载",
       "原子存储",
+      "原子比较交换",
       "原子交换",
-      "原子比较交换"
+      "原子加载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-759",
     "title": "C语言中，atomic_exchange的作用是？",
     "options": [
-      "原子交换",
       "原子加载",
       "原子存储",
-      "原子比较交换"
+      "原子比较交换",
+      "原子交换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-760",
     "title": "C语言中，atomic_compare_exchange_strong的作用是？",
     "options": [
-      "原子比较交换(强)",
-      "原子比较交换(弱)",
+      "原子存储",
       "原子加载",
-      "原子存储"
+      "原子比较交换(弱)",
+      "原子比较交换(强)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-761",
     "title": "C语言中，memory_order_relaxed表示？",
     "options": [
-      "无顺序约束",
       "获取语义",
       "释放语义",
+      "无顺序约束",
       "顺序一致"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-762",
     "title": "C语言中，memory_order_acquire表示？",
     "options": [
+      "顺序一致",
       "获取语义，后续读不能重排到此之前",
-      "无顺序约束",
       "释放语义",
-      "顺序一致"
+      "无顺序约束"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-763",
     "title": "C语言中，memory_order_release表示？",
     "options": [
+      "顺序一致",
       "释放语义，之前写不能重排到此之后",
-      "获取语义",
       "无顺序约束",
-      "顺序一致"
+      "获取语义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-764",
     "title": "C语言中，memory_order_seq_cst表示？",
     "options": [
+      "释放语义",
       "顺序一致，最严格",
       "获取语义",
-      "释放语义",
       "无顺序约束"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-765",
     "title": "C语言中，线程局部存储(TLS)的作用是？",
     "options": [
-      "每个线程有自己的变量副本",
       "共享变量",
-      "全局变量",
-      "局部变量"
+      "局部变量",
+      "每个线程有自己的变量副本",
+      "全局变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-766",
     "title": "C语言中，__thread关键字的作用是？",
     "options": [
+      "销毁线程",
       "声明线程局部变量(GNU扩展)",
-      "创建线程",
       "等待线程",
-      "销毁线程"
+      "创建线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-767",
     "title": "C语言中，_Thread_local是哪个标准引入的？",
     "options": [
-      "C11",
+      "C++11",
       "C99",
       "C89",
-      "C++11"
+      "C11"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-768",
     "title": "C语言中，pthread_key_create的作用是？",
     "options": [
       "创建线程特定数据键",
-      "创建线程",
       "创建互斥锁",
-      "创建条件变量"
+      "创建条件变量",
+      "创建线程"
     ],
     "correctAnswer": 0
   },
@@ -203,8 +203,8 @@
     "options": [
       "设置线程特定数据",
       "获取线程特定数据",
-      "创建键",
-      "删除键"
+      "删除键",
+      "创建键"
     ],
     "correctAnswer": 0
   },
@@ -212,67 +212,67 @@
     "id": "c-770",
     "title": "C语言中，pthread_getspecific的作用是？",
     "options": [
-      "获取线程特定数据",
       "设置线程特定数据",
-      "创建键",
-      "删除键"
+      "删除键",
+      "获取线程特定数据",
+      "创建键"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-771",
     "title": "C语言中，fork的作用是？",
     "options": [
-      "创建子进程",
       "创建线程",
       "执行程序",
+      "创建子进程",
       "等待进程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-772",
     "title": "C语言中，exec族函数的作用是？",
     "options": [
-      "执行新程序",
-      "创建进程",
+      "终止进程",
       "等待进程",
-      "终止进程"
+      "创建进程",
+      "执行新程序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-773",
     "title": "C语言中，waitpid的作用是？",
     "options": [
-      "等待子进程状态改变",
-      "创建进程",
       "执行程序",
-      "终止进程"
+      "等待子进程状态改变",
+      "终止进程",
+      "创建进程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-774",
     "title": "C语言中，exit的作用是？",
     "options": [
-      "终止进程",
-      "创建进程",
       "等待进程",
+      "创建进程",
+      "终止进程",
       "执行程序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-775",
     "title": "C语言中，getpid的作用是？",
     "options": [
-      "获取进程ID",
+      "终止进程",
       "获取父进程ID",
-      "创建进程",
-      "终止进程"
+      "获取进程ID",
+      "创建进程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-776",
@@ -289,54 +289,54 @@
     "id": "c-777",
     "title": "C语言中，管道(pipe)的作用是？",
     "options": [
-      "进程间通信",
+      "内存管理",
       "文件操作",
-      "网络通信",
-      "内存管理"
+      "进程间通信",
+      "网络通信"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-778",
     "title": "C语言中，命名管道(FIFO)的特点是？",
     "options": [
-      "可用于无亲缘关系进程间通信",
-      "只能用于亲缘进程",
+      "只能单向",
       "不能通信",
-      "只能单向"
+      "只能用于亲缘进程",
+      "可用于无亲缘关系进程间通信"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-779",
     "title": "C语言中，共享内存的特点是？",
     "options": [
-      "最快的IPC方式",
       "最慢的IPC",
-      "不能通信",
-      "只能单向"
+      "只能单向",
+      "最快的IPC方式",
+      "不能通信"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-780",
     "title": "C语言中，消息队列的特点是？",
     "options": [
-      "消息格式化，有边界",
+      "不能通信",
       "无边界",
-      "最快",
-      "不能通信"
+      "消息格式化，有边界",
+      "最快"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-781",
     "title": "C语言中，信号量(semaphore)的作用是？",
     "options": [
       "同步和互斥",
+      "只能通信",
       "只能同步",
-      "只能互斥",
-      "只能通信"
+      "只能互斥"
     ],
     "correctAnswer": 0
   },
@@ -344,23 +344,23 @@
     "id": "c-782",
     "title": "C语言中，信号的作用是？",
     "options": [
-      "通知进程发生了事件",
-      "传输数据",
       "分配内存",
-      "创建线程"
+      "创建线程",
+      "通知进程发生了事件",
+      "传输数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-783",
     "title": "C语言中，socket的作用是？",
     "options": [
-      "网络通信",
       "本地通信",
+      "网络通信",
       "内存共享",
       "文件操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-784",
@@ -368,8 +368,8 @@
     "options": [
       "面向连接、可靠",
       "无连接、不可靠",
-      "面向连接、不可靠",
-      "无连接、可靠"
+      "无连接、可靠",
+      "面向连接、不可靠"
     ],
     "correctAnswer": 0
   },
@@ -377,32 +377,32 @@
     "id": "c-785",
     "title": "C语言中，UDP的特点是？",
     "options": [
-      "无连接、不可靠、快",
-      "面向连接、可靠",
       "无连接、可靠",
-      "面向连接、不可靠"
+      "面向连接、不可靠",
+      "无连接、不可靠、快",
+      "面向连接、可靠"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-786",
     "title": "C语言中，select的作用是？",
     "options": [
+      "发送数据",
       "I/O多路复用",
       "创建套接字",
-      "连接服务器",
-      "发送数据"
+      "连接服务器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-787",
     "title": "C语言中，poll的作用是？",
     "options": [
       "I/O多路复用",
-      "创建套接字",
       "连接服务器",
-      "发送数据"
+      "发送数据",
+      "创建套接字"
     ],
     "correctAnswer": 0
   },
@@ -412,8 +412,8 @@
     "options": [
       "Linux特有的高效I/O多路复用",
       "创建套接字",
-      "连接服务器",
-      "发送数据"
+      "发送数据",
+      "连接服务器"
     ],
     "correctAnswer": 0
   },
@@ -421,12 +421,12 @@
     "id": "c-789",
     "title": "C语言中，epoll相比select的优势？",
     "options": [
-      "无连接数限制，效率不随连接数下降",
       "更简单",
       "跨平台",
-      "占用内存少"
+      "占用内存少",
+      "无连接数限制，效率不随连接数下降"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-790",
@@ -434,8 +434,8 @@
     "options": [
       "水平触发，只要缓冲区有数据就通知",
       "边缘触发",
-      "不触发",
-      "随机触发"
+      "随机触发",
+      "不触发"
     ],
     "correctAnswer": 0
   },
@@ -443,21 +443,21 @@
     "id": "c-791",
     "title": "C语言中，epoll的ET模式是？",
     "options": [
-      "边缘触发，状态变化时才通知",
       "水平触发",
-      "不触发",
-      "随机触发"
+      "随机触发",
+      "边缘触发，状态变化时才通知",
+      "不触发"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-792",
     "title": "C语言中，非阻塞I/O的特点是？",
     "options": [
       "操作不成功立即返回错误",
+      "只写不读",
       "一直等待",
-      "只读不写",
-      "只写不读"
+      "只读不写"
     ],
     "correctAnswer": 0
   },
@@ -466,9 +466,9 @@
     "title": "C语言中，异步I/O的特点是？",
     "options": [
       "内核完成操作后通知应用",
+      "同步等待",
       "应用一直等待",
-      "非阻塞轮询",
-      "同步等待"
+      "非阻塞轮询"
     ],
     "correctAnswer": 0
   },
@@ -476,77 +476,77 @@
     "id": "c-794",
     "title": "C语言中，Reactor模式的特点是？",
     "options": [
-      "同步非阻塞，事件循环",
+      "异步非阻塞",
       "异步阻塞",
-      "同步阻塞",
-      "异步非阻塞"
+      "同步非阻塞，事件循环",
+      "同步阻塞"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-795",
     "title": "C语言中，Proactor模式的特点是？",
     "options": [
-      "异步非阻塞，操作系统完成I/O",
-      "同步非阻塞",
       "同步阻塞",
+      "同步非阻塞",
+      "异步非阻塞，操作系统完成I/O",
       "异步阻塞"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-796",
     "title": "C语言中，libevent是什么？",
     "options": [
-      "事件通知库",
-      "网络库",
       "数据库",
-      "图形库"
+      "事件通知库",
+      "图形库",
+      "网络库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-797",
     "title": "C语言中，libev是什么？",
     "options": [
+      "图形库",
       "事件循环库",
       "网络库",
-      "数据库",
-      "图形库"
+      "数据库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-798",
     "title": "C语言中，nginx使用什么网络模型？",
     "options": [
-      "epoll多进程/多线程",
-      "select",
       "poll",
-      "阻塞I/O"
+      "select",
+      "阻塞I/O",
+      "epoll多进程/多线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-799",
     "title": "C语言中，Redis使用什么网络模型？",
     "options": [
-      "epoll单线程事件循环",
-      "select",
+      "多线程",
       "poll",
-      "多线程"
+      "select",
+      "epoll单线程事件循环"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-800",
     "title": "C语言中，线程池的作用是？",
     "options": [
-      "减少线程创建销毁开销",
       "增加线程数",
       "减少内存",
-      "增加CPU"
+      "增加CPU",
+      "减少线程创建销毁开销"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

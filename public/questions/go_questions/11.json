@@ -3,43 +3,43 @@
     "id": "go-501",
     "title": "Go语言中，struct标签如何通过反射获取？",
     "options": [
-      "Type.Field(i).Tag",
       "Value.Tag",
-      "Type.Tag",
-      "Value.Field(i).Tag"
+      "Value.Field(i).Tag",
+      "Type.Field(i).Tag",
+      "Type.Tag"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-502",
     "title": "Go语言中，reflect.Select的作用是？",
     "options": [
-      "动态执行select操作",
-      "选择类型",
+      "选择方法",
       "选择字段",
-      "选择方法"
+      "选择类型",
+      "动态执行select操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-503",
     "title": "Go语言中，reflect.MakeFunc的作用是？",
     "options": [
-      "动态创建函数",
-      "调用函数",
       "修改函数",
+      "调用函数",
+      "动态创建函数",
       "删除函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-504",
     "title": "Go语言中，reflect.MakeSlice的作用是？",
     "options": [
       "动态创建切片",
-      "修改切片",
+      "删除切片",
       "追加切片",
-      "删除切片"
+      "修改切片"
     ],
     "correctAnswer": 0
   },
@@ -47,32 +47,32 @@
     "id": "go-505",
     "title": "Go语言中，reflect.MakeMap的作用是？",
     "options": [
-      "动态创建映射",
       "修改映射",
+      "遍历映射",
       "删除映射",
-      "遍历映射"
+      "动态创建映射"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-506",
     "title": "Go语言中，reflect.New的作用是？",
     "options": [
-      "根据类型创建指针",
-      "创建值",
       "创建切片",
-      "创建映射"
+      "创建映射",
+      "创建值",
+      "根据类型创建指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-507",
     "title": "Go语言中，如何遍历映射的键值对？",
     "options": [
       "Value.MapKeys()和Value.MapIndex()",
+      "Value.Iterate()",
       "Value.Range()",
-      "for range Value",
-      "Value.Iterate()"
+      "for range Value"
     ],
     "correctAnswer": 0
   },
@@ -80,21 +80,21 @@
     "id": "go-508",
     "title": "Go语言中，unsafe.Pointer的作用是？",
     "options": [
-      "任意指针类型转换",
       "安全指针操作",
+      "任意指针类型转换",
       "智能指针",
       "空指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-509",
     "title": "Go语言中，unsafe.Pointer可以转换成uintptr吗？",
     "options": [
       "可以，但uintptr不是指针",
-      "不可以",
       "只能单向转换",
-      "取决于类型"
+      "取决于类型",
+      "不可以"
     ],
     "correctAnswer": 0
   },
@@ -104,8 +104,8 @@
     "options": [
       "类型的大小",
       "变量的地址",
-      "指针的大小",
-      "切片的长度"
+      "切片的长度",
+      "指针的大小"
     ],
     "correctAnswer": 0
   },
@@ -114,9 +114,9 @@
     "title": "Go语言中，unsafe.Offsetof返回什么？",
     "options": [
       "结构体字段的偏移量",
-      "结构体的大小",
       "结构体的地址",
-      "结构体的对齐"
+      "结构体的对齐",
+      "结构体的大小"
     ],
     "correctAnswer": 0
   },
@@ -125,9 +125,9 @@
     "title": "Go语言中，unsafe.Alignof返回什么？",
     "options": [
       "类型的对齐系数",
-      "类型的大小",
+      "类型的地址",
       "类型的偏移",
-      "类型的地址"
+      "类型的大小"
     ],
     "correctAnswer": 0
   },
@@ -135,103 +135,222 @@
     "id": "go-513",
     "title": "Go语言中，使用unsafe的风险是？",
     "options": [
+      "编译变慢",
       "破坏类型安全、GC不安全",
       [
         "性能下降"
       ],
-      "代码变长",
-      "编译变慢"
+      "代码变长"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-514",
     "title": "Go语言中，泛型约束中可以使用联合类型吗？",
     "options": [
-      "可以，使用|",
-      "不可以",
+      "只能使用结构体",
       "只能使用接口",
-      "只能使用结构体"
+      "不可以",
+      "可以，使用|"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-515",
     "title": "Go语言中，泛型约束中可以使用接口方法吗？",
     "options": [
-      "可以",
-      "不可以",
+      "只能使用comparable",
       "只能使用类型列表",
-      "只能使用comparable"
+      "可以",
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-516",
     "title": "Go语言中，泛型结构体可以嵌套泛型吗？",
     "options": [
-      "可以",
       "不可以",
       "只能嵌套具体类型",
+      "可以",
       "取决于约束"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-517",
     "title": "Go语言中，泛型函数的类型推断支持吗？",
     "options": [
-      "支持",
       "不支持",
-      "部分支持",
-      "取决于版本"
+      "取决于版本",
+      "支持",
+      "部分支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-518",
     "title": "Go语言中，泛型切片的声明是？",
     "options": [
-      "type MySlice[T any] []T",
       "type MySlice []T",
       "type MySlice[T] Slice",
-      "type MySlice(any) []any"
+      "type MySlice(any) []any",
+      "type MySlice[T any] []T"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-519",
     "title": "Go语言中，泛型映射的声明是？",
     "options": [
+      "type MyMap[K comparable]map[K]any",
       "type MyMap[K comparable, V any] map[K]V",
       "type MyMap[K, V] map",
-      "type MyMap map[any]any",
-      "type MyMap[K comparable]map[K]any"
+      "type MyMap map[any]any"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-520",
     "title": "Go语言中，泛型通道的声明是？",
     "options": [
-      "type MyChan[T any] chan T",
+      "type MyChan(any) chan any",
       "type MyChan chan T",
-      "type MyChan[T] Channel",
-      "type MyChan(any) chan any"
+      "type MyChan[T any] chan T",
+      "type MyChan[T] Channel"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-521",
     "title": "Go语言中，int类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
+      "nil",
+      "nil",
       "0.0",
+      "\"\"",
+      "nil",
+      "nil",
+      "0",
+      "nil",
+      "struct{}{}",
+      "false"
+    ],
+    "correctAnswer": 6
+  },
+  {
+    "id": "go-522",
+    "title": "Go语言中，string类型的零值是？",
+    "options": [
+      "nil",
+      "nil",
+      "0",
+      "false",
+      "nil",
+      "\"\"",
+      "struct{}{}",
+      "nil",
+      "nil",
+      "0.0"
+    ],
+    "correctAnswer": 5
+  },
+  {
+    "id": "go-523",
+    "title": "Go语言中，float64类型的零值是？",
+    "options": [
+      "0.0",
+      "nil",
+      "struct{}{}",
+      "nil",
+      "\"\"",
+      "false",
+      "nil",
+      "nil",
+      "0",
+      "nil"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-524",
+    "title": "Go语言中，bool类型的零值是？",
+    "options": [
+      "\"\"",
+      "false",
+      "nil",
+      "nil",
+      "struct{}{}",
+      "nil",
+      "nil",
+      "nil",
+      "0.0",
+      "0"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-525",
+    "title": "Go语言中，struct{}类型的零值是？",
+    "options": [
+      "0.0",
+      "struct{}{}",
+      "0",
+      "false",
+      "nil",
+      "nil",
+      "nil",
+      "nil",
+      "nil",
+      "\"\""
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-526",
+    "title": "Go语言中，[]int类型的零值是？",
+    "options": [
       "false",
       "struct{}{}",
       "nil",
       "nil",
+      "0.0",
+      "nil",
+      "nil",
+      "nil",
+      "\"\"",
+      "0"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "go-527",
+    "title": "Go语言中，map[string]int类型的零值是？",
+    "options": [
+      "0.0",
+      "false",
+      "nil",
+      "nil",
+      "nil",
+      "0",
+      "nil",
+      "struct{}{}",
+      "nil",
+      "\"\""
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "go-528",
+    "title": "Go语言中，chan int类型的零值是？",
+    "options": [
+      "nil",
+      "nil",
+      "false",
+      "0",
+      "struct{}{}",
+      "0.0",
+      "\"\"",
       "nil",
       "nil",
       "nil"
@@ -239,187 +358,68 @@
     "correctAnswer": 0
   },
   {
-    "id": "go-522",
-    "title": "Go语言中，string类型的零值是？",
+    "id": "go-529",
+    "title": "Go语言中，interface{}类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
       "struct{}{}",
       "nil",
       "nil",
+      "0.0",
       "nil",
       "nil",
-      "nil"
+      "nil",
+      "false",
+      "\"\"",
+      "0"
     ],
     "correctAnswer": 1
   },
   {
-    "id": "go-523",
-    "title": "Go语言中，float64类型的零值是？",
+    "id": "go-530",
+    "title": "Go语言中，func()类型的零值是？",
     "options": [
+      "nil",
+      "nil",
+      "nil",
       "0",
-      "\"\"",
-      "0.0",
+      "nil",
       "false",
+      "\"\"",
       "struct{}{}",
       "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
+      "0.0"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
-    "id": "go-524",
-    "title": "Go语言中，bool类型的零值是？",
+    "id": "go-531",
+    "title": "Go语言中，int类型的零值是？",
     "options": [
-      "0",
+      "nil",
+      "nil",
       "\"\"",
-      "0.0",
       "false",
+      "nil",
+      "0.0",
       "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": "go-525",
-    "title": "Go语言中，struct{}类型的零值是？",
-    "options": [
       "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 4
-  },
-  {
-    "id": "go-526",
-    "title": "Go语言中，[]int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 5
-  },
-  {
-    "id": "go-527",
-    "title": "Go语言中，map[string]int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 6
-  },
-  {
-    "id": "go-528",
-    "title": "Go语言中，chan int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
       "nil",
       "nil"
     ],
     "correctAnswer": 7
   },
   {
-    "id": "go-529",
-    "title": "Go语言中，interface{}类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 8
-  },
-  {
-    "id": "go-530",
-    "title": "Go语言中，func()类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 9
-  },
-  {
-    "id": "go-531",
-    "title": "Go语言中，int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 0
-  },
-  {
     "id": "go-532",
     "title": "Go语言中，string类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
-      "0.0",
       "false",
+      "\"\"",
+      "nil",
       "struct{}{}",
+      "0.0",
       "nil",
       "nil",
-      "nil",
+      "0",
       "nil",
       "nil"
     ],
@@ -429,33 +429,33 @@
     "id": "go-533",
     "title": "Go语言中，float64类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
+      "nil",
+      "nil",
+      "nil",
+      "nil",
+      "nil",
       "0.0",
       "false",
       "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
+      "0",
+      "\"\""
     ],
-    "correctAnswer": 2
+    "correctAnswer": 5
   },
   {
     "id": "go-534",
     "title": "Go语言中，bool类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
       "0.0",
+      "nil",
+      "nil",
       "false",
-      "struct{}{}",
+      "\"\"",
       "nil",
       "nil",
       "nil",
-      "nil",
-      "nil"
+      "0",
+      "struct{}{}"
     ],
     "correctAnswer": 3
   },
@@ -463,132 +463,13 @@
     "id": "go-535",
     "title": "Go语言中，struct{}类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
       "0.0",
-      "false",
       "struct{}{}",
       "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 4
-  },
-  {
-    "id": "go-536",
-    "title": "Go语言中，[]int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
       "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 5
-  },
-  {
-    "id": "go-537",
-    "title": "Go语言中，map[string]int类型的零值是？",
-    "options": [
       "0",
+      "nil",
       "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 6
-  },
-  {
-    "id": "go-538",
-    "title": "Go语言中，chan int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 7
-  },
-  {
-    "id": "go-539",
-    "title": "Go语言中，interface{}类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 8
-  },
-  {
-    "id": "go-540",
-    "title": "Go语言中，func()类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 9
-  },
-  {
-    "id": "go-541",
-    "title": "Go语言中，int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "go-542",
-    "title": "Go语言中，string类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
       "nil",
       "nil",
       "nil"
@@ -596,84 +477,169 @@
     "correctAnswer": 1
   },
   {
-    "id": "go-543",
-    "title": "Go语言中，float64类型的零值是？",
+    "id": "go-536",
+    "title": "Go语言中，[]int类型的零值是？",
     "options": [
       "0",
-      "\"\"",
+      "nil",
+      "nil",
       "0.0",
       "false",
       "struct{}{}",
       "nil",
+      "\"\"",
+      "nil",
+      "nil"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-537",
+    "title": "Go语言中，map[string]int类型的零值是？",
+    "options": [
+      "nil",
+      "nil",
+      "0",
+      "\"\"",
+      "false",
+      "0.0",
+      "nil",
+      "nil",
+      "struct{}{}",
+      "nil"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-538",
+    "title": "Go语言中，chan int类型的零值是？",
+    "options": [
       "nil",
       "nil",
       "nil",
+      "struct{}{}",
+      "\"\"",
+      "nil",
+      "0",
+      "nil",
+      "0.0",
+      "false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-539",
+    "title": "Go语言中，interface{}类型的零值是？",
+    "options": [
+      "nil",
+      "\"\"",
+      "nil",
+      "false",
+      "0.0",
+      "nil",
+      "nil",
+      "nil",
+      "0",
+      "struct{}{}"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-540",
+    "title": "Go语言中，func()类型的零值是？",
+    "options": [
+      "nil",
+      "0.0",
+      "nil",
+      "nil",
+      "false",
+      "0",
+      "struct{}{}",
+      "nil",
+      "nil",
+      "\"\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-541",
+    "title": "Go语言中，int类型的零值是？",
+    "options": [
+      "nil",
+      "0.0",
+      "0",
+      "nil",
+      "\"\"",
+      "nil",
+      "false",
+      "nil",
+      "struct{}{}",
       "nil"
     ],
     "correctAnswer": 2
   },
   {
-    "id": "go-544",
-    "title": "Go语言中，bool类型的零值是？",
+    "id": "go-542",
+    "title": "Go语言中，string类型的零值是？",
     "options": [
       "0",
-      "\"\"",
+      "nil",
+      "nil",
+      "nil",
       "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": "go-545",
-    "title": "Go语言中，struct{}类型的零值是？",
-    "options": [
-      "0",
       "\"\"",
-      "0.0",
       "false",
+      "nil",
       "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
-      "nil"
-    ],
-    "correctAnswer": 4
-  },
-  {
-    "id": "go-546",
-    "title": "Go语言中，[]int类型的零值是？",
-    "options": [
-      "0",
-      "\"\"",
-      "0.0",
-      "false",
-      "struct{}{}",
-      "nil",
-      "nil",
-      "nil",
-      "nil",
       "nil"
     ],
     "correctAnswer": 5
   },
   {
-    "id": "go-547",
-    "title": "Go语言中，map[string]int类型的零值是？",
+    "id": "go-543",
+    "title": "Go语言中，float64类型的零值是？",
     "options": [
       "0",
-      "\"\"",
-      "0.0",
+      "nil",
+      "nil",
       "false",
+      "\"\"",
+      "nil",
+      "0.0",
       "struct{}{}",
       "nil",
+      "nil"
+    ],
+    "correctAnswer": 6
+  },
+  {
+    "id": "go-544",
+    "title": "Go语言中，bool类型的零值是？",
+    "options": [
+      "false",
       "nil",
+      "nil",
+      "\"\"",
+      "nil",
+      "nil",
+      "0",
+      "0.0",
+      "struct{}{}",
+      "nil"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-545",
+    "title": "Go语言中，struct{}类型的零值是？",
+    "options": [
+      "nil",
+      "\"\"",
+      "0.0",
+      "nil",
+      "false",
+      "0",
+      "struct{}{}",
       "nil",
       "nil",
       "nil"
@@ -681,54 +647,88 @@
     "correctAnswer": 6
   },
   {
-    "id": "go-548",
-    "title": "Go语言中，chan int类型的零值是？",
+    "id": "go-546",
+    "title": "Go语言中，[]int类型的零值是？",
     "options": [
-      "0",
       "\"\"",
-      "0.0",
-      "false",
+      "nil",
+      "0",
       "struct{}{}",
       "nil",
       "nil",
+      "false",
       "nil",
-      "nil",
+      "0.0",
       "nil"
     ],
-    "correctAnswer": 7
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-547",
+    "title": "Go语言中，map[string]int类型的零值是？",
+    "options": [
+      "nil",
+      "\"\"",
+      "nil",
+      "false",
+      "struct{}{}",
+      "0.0",
+      "nil",
+      "nil",
+      "nil",
+      "0"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "go-548",
+    "title": "Go语言中，chan int类型的零值是？",
+    "options": [
+      "nil",
+      "false",
+      "nil",
+      "\"\"",
+      "nil",
+      "nil",
+      "0.0",
+      "nil",
+      "0",
+      "struct{}{}"
+    ],
+    "correctAnswer": 0
   },
   {
     "id": "go-549",
     "title": "Go语言中，interface{}类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
-      "0.0",
       "false",
+      "\"\"",
       "struct{}{}",
       "nil",
       "nil",
+      "0",
       "nil",
       "nil",
+      "0.0",
       "nil"
     ],
-    "correctAnswer": 8
+    "correctAnswer": 3
   },
   {
     "id": "go-550",
     "title": "Go语言中，func()类型的零值是？",
     "options": [
-      "0",
-      "\"\"",
+      "nil",
       "0.0",
-      "false",
+      "nil",
       "struct{}{}",
+      "0",
+      "nil",
+      "\"\"",
       "nil",
       "nil",
-      "nil",
-      "nil",
-      "nil"
+      "false"
     ],
-    "correctAnswer": 9
+    "correctAnswer": 0
   }
 ]

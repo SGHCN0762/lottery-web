@@ -3,12 +3,12 @@
     "id": "css-501",
     "title": "background-color的作用是？",
     "options": [
+      "设置阴影颜色",
       "设置元素的背景颜色",
-      "设置字体颜色",
       "设置边框颜色",
-      "设置阴影颜色"
+      "设置字体颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-502",
@@ -16,8 +16,8 @@
     "options": [
       "设置元素的背景图像",
       "设置内容图像",
-      "设置边框图像",
-      "设置列表图像"
+      "设置列表图像",
+      "设置边框图像"
     ],
     "correctAnswer": 0
   },
@@ -25,21 +25,21 @@
     "id": "css-503",
     "title": "background-repeat的默认值是？",
     "options": [
-      "repeat",
+      "repeat-y",
       "no-repeat",
-      "repeat-x",
-      "repeat-y"
+      "repeat",
+      "repeat-x"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-504",
     "title": "background-repeat: no-repeat的作用是？",
     "options": [
       "背景图像不平铺",
-      "水平平铺",
       "垂直平铺",
-      "双向平铺"
+      "双向平铺",
+      "水平平铺"
     ],
     "correctAnswer": 0
   },
@@ -48,9 +48,9 @@
     "title": "background-repeat: repeat-x的作用是？",
     "options": [
       "背景图像水平平铺",
+      "双向平铺",
       "垂直平铺",
-      "不平铺",
-      "双向平铺"
+      "不平铺"
     ],
     "correctAnswer": 0
   },
@@ -58,34 +58,34 @@
     "id": "css-506",
     "title": "background-repeat: repeat-y的作用是？",
     "options": [
-      "背景图像垂直平铺",
       "水平平铺",
       "不平铺",
-      "双向平铺"
+      "双向平铺",
+      "背景图像垂直平铺"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-507",
     "title": "background-position的默认值是？",
     "options": [
+      "left",
       "0% 0%",
-      "center",
       "top",
-      "left"
+      "center"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-508",
     "title": "background-position: center center的作用是？",
     "options": [
-      "背景图像居中显示",
-      "左上角显示",
+      "顶部居中",
       "右下角显示",
-      "顶部居中"
+      "背景图像居中显示",
+      "左上角显示"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-509",
@@ -102,87 +102,87 @@
     "id": "css-510",
     "title": "background-position百分比的计算方式是？",
     "options": [
+      "固定偏移量",
       "(容器尺寸 - 图片尺寸) * 百分比",
-      "容器尺寸 * 百分比",
       "图片尺寸 * 百分比",
-      "固定偏移量"
+      "容器尺寸 * 百分比"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-511",
     "title": "background-attachment: scroll的作用是？",
     "options": [
-      "背景随元素内容滚动",
-      "背景固定在视口",
       "背景不滚动",
-      "背景继承"
+      "背景随元素内容滚动",
+      "背景继承",
+      "背景固定在视口"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-512",
     "title": "background-attachment: fixed的作用是？",
     "options": [
+      "不显示背景",
       "背景固定在视口不随滚动",
-      "随内容滚动",
       "随元素滚动",
-      "不显示背景"
+      "随内容滚动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-513",
     "title": "background-size的作用是？",
     "options": [
-      "设置背景图像的尺寸",
-      "设置元素尺寸",
       "设置边框尺寸",
-      "设置字体尺寸"
+      "设置元素尺寸",
+      "设置字体尺寸",
+      "设置背景图像的尺寸"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-514",
     "title": "background-size: cover的作用是？",
     "options": [
-      "等比缩放覆盖整个容器，可能裁剪",
-      "等比缩放完整显示，可能留白",
       "固定尺寸",
+      "等比缩放完整显示，可能留白",
+      "等比缩放覆盖整个容器，可能裁剪",
       "原始尺寸"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-515",
     "title": "background-size: contain的作用是？",
     "options": [
-      "等比缩放完整显示图像，可能留白",
       "覆盖容器",
+      "原始尺寸",
       "固定尺寸",
-      "原始尺寸"
+      "等比缩放完整显示图像，可能留白"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-516",
     "title": "background-size: 100% 100%的作用是？",
     "options": [
-      "拉伸图像填满容器，可能变形",
       "等比缩放",
       "原始尺寸",
+      "拉伸图像填满容器，可能变形",
       "覆盖容器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-517",
     "title": "background-origin的作用是？",
     "options": [
       "设置背景定位的参考原点",
-      "设置背景大小",
       "设置背景裁剪",
-      "设置背景重复"
+      "设置背景重复",
+      "设置背景大小"
     ],
     "correctAnswer": 0
   },
@@ -190,21 +190,21 @@
     "id": "css-518",
     "title": "background-origin: padding-box的含义是？",
     "options": [
-      "背景从padding区域开始定位",
       "从border区域",
-      "从content区域",
-      "从margin区域"
+      "从margin区域",
+      "背景从padding区域开始定位",
+      "从content区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-519",
     "title": "background-origin: border-box的含义是？",
     "options": [
       "背景从border区域开始定位",
-      "从padding区域",
       "从content区域",
-      "从margin区域"
+      "从margin区域",
+      "从padding区域"
     ],
     "correctAnswer": 0
   },
@@ -212,20 +212,20 @@
     "id": "css-520",
     "title": "background-origin: content-box的含义是？",
     "options": [
-      "背景从content区域开始定位",
-      "从border区域",
       "从padding区域",
-      "从margin区域"
+      "从margin区域",
+      "从border区域",
+      "背景从content区域开始定位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-521",
     "title": "background-clip的作用是？",
     "options": [
       "设置背景的绘制区域",
-      "设置背景定位",
       "设置背景大小",
+      "设置背景定位",
       "设置背景重复"
     ],
     "correctAnswer": 0
@@ -234,78 +234,78 @@
     "id": "css-522",
     "title": "background-clip: padding-box的含义是？",
     "options": [
-      "背景裁剪到padding区域",
       "border区域",
+      "背景裁剪到padding区域",
       "content区域",
       "text区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-523",
     "title": "background-clip: content-box的含义是？",
     "options": [
+      "text区域",
       "背景裁剪到content区域",
       "border区域",
-      "padding区域",
-      "text区域"
+      "padding区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-524",
     "title": "background-clip: text的含义是？",
     "options": [
-      "背景裁剪到文字区域（文字渐变效果）",
-      "padding区域",
       "content区域",
-      "border区域"
+      "背景裁剪到文字区域（文字渐变效果）",
+      "border区域",
+      "padding区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-525",
     "title": "background简写属性的顺序是？",
     "options": [
-      "color image repeat attachment position/size",
       "image color position size",
-      "position color image repeat",
-      "size image color repeat"
+      "size image color repeat",
+      "color image repeat attachment position/size",
+      "position color image repeat"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-526",
     "title": "如何设置多重背景？",
     "options": [
-      "使用逗号分隔多个背景层",
       "使用空格分隔",
       "使用分号分隔",
+      "使用逗号分隔多个背景层",
       "多次设置background"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-527",
     "title": "多重背景的层叠顺序是？",
     "options": [
-      "第一层在最上面，最后一层在最下面",
+      "按颜色排序",
       "第一层在最下面",
       "随机顺序",
-      "按颜色排序"
+      "第一层在最上面，最后一层在最下面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-528",
     "title": "linear-gradient()的作用是？",
     "options": [
-      "创建线性渐变",
-      "创建径向渐变",
       "创建圆锥渐变",
-      "创建重复渐变"
+      "创建线性渐变",
+      "创建重复渐变",
+      "创建径向渐变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-529",
@@ -313,8 +313,8 @@
     "options": [
       "渐变的方向或角度",
       "渐变的颜色",
-      "渐变的大小",
-      "渐变的位置"
+      "渐变的位置",
+      "渐变的大小"
     ],
     "correctAnswer": 0
   },
@@ -322,142 +322,142 @@
     "id": "css-530",
     "title": "linear-gradient: to right表示？",
     "options": [
-      "渐变从左到右",
-      "从右到左",
       "从上到下",
-      "从下到上"
+      "从下到上",
+      "渐变从左到右",
+      "从右到左"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-531",
     "title": "linear-gradient: 45deg表示？",
     "options": [
-      "渐变角度为45度",
-      "从45度开始",
       "到45度结束",
-      "旋转45度"
+      "从45度开始",
+      "旋转45度",
+      "渐变角度为45度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-532",
     "title": "linear-gradient的颜色停止点默认分布是？",
     "options": [
+      "随机分布",
       "均匀分布",
-      "集中在起点",
       "集中在终点",
-      "随机分布"
+      "集中在起点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-533",
     "title": "如何设置渐变的硬边缘？",
     "options": [
-      "设置两个相邻颜色停止点在同一位置",
+      "改变角度",
       "增加模糊",
-      "设置透明度",
-      "改变角度"
+      "设置两个相邻颜色停止点在同一位置",
+      "设置透明度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-534",
     "title": "radial-gradient()的作用是？",
     "options": [
-      "创建径向渐变",
+      "创建重复渐变",
       "创建线性渐变",
-      "创建圆锥渐变",
-      "创建重复渐变"
+      "创建径向渐变",
+      "创建圆锥渐变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-535",
     "title": "radial-gradient的形状可以是？",
     "options": [
-      "circle或ellipse",
       "rectangle",
-      "triangle",
-      "polygon"
+      "polygon",
+      "circle或ellipse",
+      "triangle"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-536",
     "title": "radial-gradient: closest-side的含义是？",
     "options": [
-      "渐变半径从中心到最近的边",
+      "到最远的角",
       "到最远的边",
       "到最近的角",
-      "到最远的角"
+      "渐变半径从中心到最近的边"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-537",
     "title": "radial-gradient: farthest-corner的含义是？",
     "options": [
-      "渐变半径从中心到最远的角",
       "到最近的边",
       "到最远的边",
-      "到最近的角"
+      "到最近的角",
+      "渐变半径从中心到最远的角"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-538",
     "title": "conic-gradient()的作用是？",
     "options": [
-      "创建圆锥渐变（颜色围绕中心旋转）",
       "创建线性渐变",
-      "创建径向渐变",
-      "创建重复渐变"
+      "创建圆锥渐变（颜色围绕中心旋转）",
+      "创建重复渐变",
+      "创建径向渐变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-539",
     "title": "conic-gradient常用于实现什么效果？",
     "options": [
-      "饼图、色轮",
+      "阴影",
       "进度条",
-      "按钮",
-      "阴影"
+      "饼图、色轮",
+      "按钮"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-540",
     "title": "repeating-linear-gradient()的作用是？",
     "options": [
-      "创建重复的线性渐变",
-      "单次线性渐变",
       "径向渐变",
-      "圆锥渐变"
+      "圆锥渐变",
+      "创建重复的线性渐变",
+      "单次线性渐变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-541",
     "title": "repeating-radial-gradient()的作用是？",
     "options": [
-      "创建重复的径向渐变",
       "单次径向渐变",
+      "圆锥渐变",
       "线性渐变",
-      "圆锥渐变"
+      "创建重复的径向渐变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-542",
     "title": "如何实现条纹背景？",
     "options": [
       "repeating-linear-gradient配合硬边缘",
-      "background-image",
+      "box-shadow",
       "border",
-      "box-shadow"
+      "background-image"
     ],
     "correctAnswer": 0
   },
@@ -465,32 +465,32 @@
     "id": "css-543",
     "title": "如何实现网格背景？",
     "options": [
-      "多重linear-gradient",
-      "background-image",
       "border",
-      "box-shadow"
+      "box-shadow",
+      "background-image",
+      "多重linear-gradient"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-544",
     "title": "如何实现棋盘背景？",
     "options": [
-      "多重linear-gradient配合background-size",
-      "background-image",
+      "box-shadow",
       "border",
-      "box-shadow"
+      "background-image",
+      "多重linear-gradient配合background-size"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-545",
     "title": "如何实现波点背景？",
     "options": [
       "radial-gradient配合background-size",
-      "linear-gradient",
       "border",
-      "box-shadow"
+      "box-shadow",
+      "linear-gradient"
     ],
     "correctAnswer": 0
   },
@@ -498,55 +498,55 @@
     "id": "css-546",
     "title": "如何实现渐变边框？",
     "options": [
-      "border-image或双层背景技巧",
-      "border-color",
+      "box-shadow",
       "outline",
-      "box-shadow"
+      "border-color",
+      "border-image或双层背景技巧"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-547",
     "title": "border-image的作用是？",
     "options": [
-      "使用图像作为边框",
+      "设置边框样式",
       "设置边框颜色",
-      "设置边框宽度",
-      "设置边框样式"
+      "使用图像作为边框",
+      "设置边框宽度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-548",
     "title": "border-image-slice的作用是？",
     "options": [
-      "切割边框图像",
-      "缩放边框图像",
       "重复边框图像",
-      "填充边框图像"
+      "切割边框图像",
+      "填充边框图像",
+      "缩放边框图像"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-549",
     "title": "border-image-repeat: stretch的作用是？",
     "options": [
-      "拉伸切割区域填充",
       "重复填充",
       "圆形重复",
-      "不填充"
+      "不填充",
+      "拉伸切割区域填充"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-550",
     "title": "CSS Sprites的原理是？",
     "options": [
-      "将多张小图合并为一张大图通过background-position显示",
-      "压缩图片",
       "转换图片格式",
-      "延迟加载图片"
+      "压缩图片",
+      "延迟加载图片",
+      "将多张小图合并为一张大图通过background-position显示"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

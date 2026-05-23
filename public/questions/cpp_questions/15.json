@@ -3,54 +3,54 @@
     "id": "cpp-701",
     "title": "C++11中移动语义的作用是？",
     "options": [
-      "避免不必要的拷贝，提高性能",
       "移动指针",
+      "避免不必要的拷贝，提高性能",
       "移动引用",
       "移动类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-702",
     "title": "C++11中std::forward的作用是？",
     "options": [
-      "完美转发",
       "移动语义",
+      "异常处理",
       "类型转换",
-      "异常处理"
+      "完美转发"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-703",
     "title": "C++11中初始化列表的作用是？",
     "options": [
-      "统一初始化方式",
-      "初始化数组",
       "初始化类",
-      "以上都不对"
+      "统一初始化方式",
+      "以上都不对",
+      "初始化数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-704",
     "title": "C++11中std::initializer_list的作用是？",
     "options": [
-      "接收初始化列表",
-      "初始化变量",
       "初始化指针",
-      "初始化引用"
+      "初始化引用",
+      "接收初始化列表",
+      "初始化变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-705",
     "title": "C++11中基于范围的for循环语法是？",
     "options": [
       "for (auto& x : container)",
-      "for (x in container)",
       "foreach (x in container)",
-      "以上都不对"
+      "以上都不对",
+      "for (x in container)"
     ],
     "correctAnswer": 0
   },
@@ -58,32 +58,32 @@
     "id": "cpp-706",
     "title": "C++11中nullptr的优势是？",
     "options": [
+      "以上都不对",
       "不会隐式转换为整数，类型安全",
       "是整数0",
-      "是宏NULL",
-      "以上都不对"
+      "是宏NULL"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-707",
     "title": "C++11中强类型枚举的语法是？",
     "options": [
-      "enum class",
       "enum struct",
+      "以上都不对",
       "strong enum",
-      "以上都不对"
+      "enum class"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-708",
     "title": "C++11中constexpr的作用是？",
     "options": [
       "常量表达式，编译时求值",
-      "运行时求值",
+      "声明变量",
       "声明常量",
-      "声明变量"
+      "运行时求值"
     ],
     "correctAnswer": 0
   },
@@ -91,64 +91,64 @@
     "id": "cpp-709",
     "title": "C++11中委托构造的作用是？",
     "options": [
-      "构造函数调用另一个构造函数",
       "析构函数调用构造函数",
-      "构造函数调用析构函数",
-      "以上都不对"
+      "以上都不对",
+      "构造函数调用另一个构造函数",
+      "构造函数调用析构函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-710",
     "title": "C++11中继承构造的作用是？",
     "options": [
-      "派生类直接使用基类构造",
-      "重写构造",
       "删除构造",
-      "以上都不对"
+      "派生类直接使用基类构造",
+      "以上都不对",
+      "重写构造"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-711",
     "title": "C++14中泛型Lambda是指？",
     "options": [
-      "参数可以使用auto",
-      "返回值可以使用auto",
+      "以上都不对",
       "捕获可以使用auto",
-      "以上都不对"
+      "返回值可以使用auto",
+      "参数可以使用auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-712",
     "title": "C++14中std::make_unique的作用是？",
     "options": [
+      "创建裸指针",
       "创建unique_ptr",
       "创建shared_ptr",
-      "创建weak_ptr",
-      "创建裸指针"
+      "创建weak_ptr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-713",
     "title": "C++17中结构化绑定的语法是？",
     "options": [
-      "auto [x, y] = pair;",
-      "auto (x, y) = pair;",
       "tie(x, y) = pair;",
-      "以上都不对"
+      "auto (x, y) = pair;",
+      "以上都不对",
+      "auto [x, y] = pair;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-714",
     "title": "C++17中std::optional的作用是？",
     "options": [
       "表示可能存在的值",
-      "表示必须存在的值",
       "表示不存在的值",
+      "表示必须存在的值",
       "表示错误"
     ],
     "correctAnswer": 0
@@ -157,122 +157,122 @@
     "id": "cpp-715",
     "title": "C++17中std::variant的作用是？",
     "options": [
-      "类型安全的联合体",
       "动态类型",
       "可选类型",
-      "任意类型"
+      "任意类型",
+      "类型安全的联合体"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-716",
     "title": "C++17中std::any的作用是？",
     "options": [
-      "存储任意类型值",
       "类型安全联合体",
       "可选类型",
+      "存储任意类型值",
       "空类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-717",
     "title": "C++17中std::string_view的作用是？",
     "options": [
-      "非拥有字符串视图",
-      "拥有字符串",
       "字符串拷贝",
-      "字符串拼接"
+      "字符串拼接",
+      "非拥有字符串视图",
+      "拥有字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-718",
     "title": "C++17中if constexpr的作用是？",
     "options": [
-      "编译时条件判断",
-      "运行时条件判断",
       "常量定义",
-      "模板定义"
+      "模板定义",
+      "运行时条件判断",
+      "编译时条件判断"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-719",
     "title": "C++17中折叠表达式的作用是？",
     "options": [
-      "简化变参模板展开",
-      "简化Lambda",
       "简化初始化",
-      "简化继承"
+      "简化变参模板展开",
+      "简化继承",
+      "简化Lambda"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-720",
     "title": "C++20中概念的作用是？",
     "options": [
-      "命名模板参数约束",
       "定义类",
+      "定义变量",
       "定义函数",
-      "定义变量"
+      "命名模板参数约束"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-721",
     "title": "C++中内存分为哪些区域？",
     "options": [
-      "堆，栈，全局/静态，常量，代码区",
-      "堆，栈",
       "堆，栈，方法区",
-      "以上都不对"
+      "堆，栈",
+      "以上都不对",
+      "堆，栈，全局/静态，常量，代码区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-722",
     "title": "C++中栈的特点是？",
     "options": [
-      "自动管理，后进先出",
-      "手动管理",
       "随机访问",
-      "容量大"
+      "容量大",
+      "自动管理，后进先出",
+      "手动管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-723",
     "title": "C++中堆的特点是？",
     "options": [
-      "手动管理，容量大",
       "自动管理",
-      "后进先出",
-      "速度快"
+      "手动管理，容量大",
+      "速度快",
+      "后进先出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-724",
     "title": "C++中new和malloc的区别是？",
     "options": [
-      "new会调用构造函数，malloc只分配内存",
-      "没有区别",
+      "new更快",
       "malloc会调用构造函数",
-      "new更快"
+      "new会调用构造函数，malloc只分配内存",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-725",
     "title": "C++中delete和free的区别是？",
     "options": [
+      "delete更快",
       "delete会调用析构函数，free只释放内存",
       "没有区别",
-      "free会调用析构函数",
-      "delete更快"
+      "free会调用析构函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-726",
@@ -280,8 +280,8 @@
     "options": [
       "提高CPU访问效率",
       "节省内存",
-      "美观",
-      "编译器要求"
+      "编译器要求",
+      "美观"
     ],
     "correctAnswer": 0
   },
@@ -289,65 +289,65 @@
     "id": "cpp-727",
     "title": "C++中内存泄漏的原因是？",
     "options": [
-      "new后未delete",
       "栈溢出",
+      "new后未delete",
       "编译错误",
       "链接错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-728",
     "title": "C++中如何检测内存泄漏？",
     "options": [
-      "Valgrind, AddressSanitizer",
       "GDB",
       "LLDB",
+      "Valgrind, AddressSanitizer",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-729",
     "title": "C++中野指针是指？",
     "options": [
-      "指向已释放内存的指针",
       "未初始化的指针",
       "空指针",
+      "指向已释放内存的指针",
       "常量指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-730",
     "title": "C++中悬空指针是指？",
     "options": [
-      "指向已释放内存的指针",
-      "未初始化的指针",
       "空指针",
-      "常量指针"
+      "常量指针",
+      "未初始化的指针",
+      "指向已释放内存的指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-731",
     "title": "C++中智能指针的作用是？",
     "options": [
-      "自动管理内存生命周期",
       "提高访问速度",
       "减少内存占用",
+      "自动管理内存生命周期",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-732",
     "title": "C++中RAII机制的核心是？",
     "options": [
       "利用对象生命周期管理资源",
-      "智能指针",
       "异常处理",
-      "模板"
+      "模板",
+      "智能指针"
     ],
     "correctAnswer": 0
   },
@@ -355,23 +355,23 @@
     "id": "cpp-733",
     "title": "C++中placement new的作用是？",
     "options": [
-      "在指定内存上构造对象",
       "分配内存",
-      "释放内存",
-      "拷贝对象"
+      "在指定内存上构造对象",
+      "拷贝对象",
+      "释放内存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-734",
     "title": "C++中栈溢出的原因是？",
     "options": [
-      "递归过深或局部变量过大",
+      "空指针",
       "内存泄漏",
       "野指针",
-      "空指针"
+      "递归过深或局部变量过大"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-735",
@@ -379,8 +379,8 @@
     "options": [
       "浅拷贝会导致双重释放",
       "深拷贝会导致双重释放",
-      "没有问题",
-      "取决于编译器"
+      "取决于编译器",
+      "没有问题"
     ],
     "correctAnswer": 0
   },
@@ -389,9 +389,9 @@
     "title": "C++中对象的内存布局包括？",
     "options": [
       "虚函数表指针，成员变量",
+      "以上都不对",
       "只有成员变量",
-      "只有虚函数表",
-      "以上都不对"
+      "只有虚函数表"
     ],
     "correctAnswer": 0
   },
@@ -399,75 +399,75 @@
     "id": "cpp-737",
     "title": "C++中虚继承的内存布局是？",
     "options": [
+      "以上都不对",
       "增加虚基类表指针",
       "减少指针",
-      "无变化",
-      "以上都不对"
+      "无变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-738",
     "title": "C++中全局构造和析构的时机是？",
     "options": [
-      "main之前和之后",
+      "链接时",
       "main之中",
       "编译时",
-      "链接时"
+      "main之前和之后"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-739",
     "title": "C++中malloc的底层实现是？",
     "options": [
-      "brk/mmap系统调用",
-      "new",
+      "析构函数",
       "构造函数",
-      "析构函数"
+      "brk/mmap系统调用",
+      "new"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-740",
     "title": "C++中内存池的作用是？",
     "options": [
-      "减少内存分配开销和碎片",
       "增加内存",
       "减少内存",
+      "减少内存分配开销和碎片",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-741",
     "title": "C++中C++11的垃圾回收支持是？",
     "options": [
-      "C++不内置GC，推荐RAII",
-      "内置GC",
       "可选GC",
-      "以上都不对"
+      "以上都不对",
+      "C++不内置GC，推荐RAII",
+      "内置GC"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-742",
     "title": "C++中指针和引用在底层是？",
     "options": [
-      "都是地址",
-      "引用是指针常量",
       "引用是值",
+      "引用是指针常量",
+      "都是地址",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-743",
     "title": "C++中this指针是？",
     "options": [
       "隐式传入的常量指针",
-      "成员变量",
       "全局变量",
+      "成员变量",
       "局部变量"
     ],
     "correctAnswer": 0
@@ -487,21 +487,21 @@
     "id": "cpp-745",
     "title": "C++中内存分为哪些区域？",
     "options": [
-      "堆，栈，全局/静态，常量，代码区",
       "堆，栈",
       "堆，栈，方法区",
+      "堆，栈，全局/静态，常量，代码区",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-746",
     "title": "C++中栈的特点是？",
     "options": [
       "自动管理，后进先出",
-      "手动管理",
+      "容量大",
       "随机访问",
-      "容量大"
+      "手动管理"
     ],
     "correctAnswer": 0
   },
@@ -510,9 +510,9 @@
     "title": "C++中堆的特点是？",
     "options": [
       "手动管理，容量大",
-      "自动管理",
+      "速度快",
       "后进先出",
-      "速度快"
+      "自动管理"
     ],
     "correctAnswer": 0
   },
@@ -520,12 +520,12 @@
     "id": "cpp-748",
     "title": "C++中new和malloc的区别是？",
     "options": [
+      "malloc会调用构造函数",
       "new会调用构造函数，malloc只分配内存",
       "没有区别",
-      "malloc会调用构造函数",
       "new更快"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-749",
@@ -542,11 +542,11 @@
     "id": "cpp-750",
     "title": "C++中内存对齐的原因是？",
     "options": [
-      "提高CPU访问效率",
+      "编译器要求",
       "节省内存",
-      "美观",
-      "编译器要求"
+      "提高CPU访问效率",
+      "美观"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

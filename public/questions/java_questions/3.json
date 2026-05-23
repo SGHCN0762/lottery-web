@@ -3,85 +3,85 @@
     "id": "java-101",
     "title": "Java中哪个类用于压缩？",
     "options": [
-      "ZipOutputStream",
-      "GZIPOutputStream",
       "Deflater",
-      "以上都是"
+      "ZipOutputStream",
+      "以上都是",
+      "GZIPOutputStream"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "java-102",
     "title": "Java中哪个类用于加密？",
     "options": [
-      "MessageDigest",
+      "以上都是",
       "Cipher",
       "Signature",
-      "以上都是"
+      "MessageDigest"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "java-103",
     "title": "Java中哪个类用于证书？",
     "options": [
       "Certificate",
+      "以上都是",
       "KeyStore",
-      "KeyPair",
-      "以上都是"
+      "KeyPair"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "java-104",
     "title": "Java中哪个类用于JMX？",
     "options": [
-      "MBeanServer",
-      "ObjectName",
       "MBeanInfo",
-      "以上都是"
+      "ObjectName",
+      "以上都是",
+      "MBeanServer"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "java-105",
     "title": "Java中哪个类用于JNDI？",
     "options": [
-      "Context",
-      "InitialContext",
+      "以上都是",
       "NamingException",
-      "以上都是"
+      "Context",
+      "InitialContext"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "java-106",
     "title": "Java中哪个类用于RMI？",
     "options": [
       "Remote",
-      "UnicastRemoteObject",
+      "以上都是",
       "Registry",
-      "以上都是"
+      "UnicastRemoteObject"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "java-107",
     "title": "Java中哪个类用于JNI？",
     "options": [
-      "JNIEnv",
-      "jobject",
       "jclass",
-      "以上都是"
+      "以上都是",
+      "jobject",
+      "JNIEnv"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-108",
     "title": "Java中哪个类用于JVM？",
     "options": [
-      "Runtime",
       "System",
+      "Runtime",
       "ClassLoader",
       "以上都是"
     ],
@@ -91,12 +91,12 @@
     "id": "java-109",
     "title": "Java中哪个类用于GC？",
     "options": [
-      "GarbageCollector",
-      "Reference",
       "PhantomReference",
-      "以上都是"
+      "以上都是",
+      "Reference",
+      "GarbageCollector"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "java-110",
@@ -104,10 +104,10 @@
     "options": [
       "MemoryMXBean",
       "MemoryPoolMXBean",
-      "BufferPoolMXBean",
-      "以上都是"
+      "以上都是",
+      "BufferPoolMXBean"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "java-111",
@@ -124,23 +124,23 @@
     "id": "java-112",
     "title": "Java中哪个类用于日志？",
     "options": [
-      "Logger",
-      "LogManager",
+      "以上都是",
       "Handler",
-      "以上都是"
+      "Logger",
+      "LogManager"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "java-113",
     "title": "Java中哪个类用于配置？",
     "options": [
       "Properties",
-      "Preferences",
+      "以上都是",
       "ResourceBundle",
-      "以上都是"
+      "Preferences"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "java-114",
@@ -148,21 +148,21 @@
     "options": [
       "Locale",
       "ResourceBundle",
-      "MessageFormat",
-      "以上都是"
+      "以上都是",
+      "MessageFormat"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "java-115",
     "title": "Java中哪个类用于观察者模式？",
     "options": [
+      "以上都是",
       "Observable",
       "Observer",
-      "PropertyChangeListener",
-      "以上都是"
+      "PropertyChangeListener"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "java-116",
@@ -179,34 +179,34 @@
     "id": "java-117",
     "title": "Java中哪个类用于工厂模式？",
     "options": [
-      "Executors",
+      "以上都是",
       "Collections",
-      "Calendars",
-      "以上都是"
+      "Executors",
+      "Calendars"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "java-118",
     "title": "Java中哪个类用于装饰器模式？",
     "options": [
       "BufferedInputStream",
-      "DataInputStream",
       "ObjectInputStream",
-      "以上都是"
+      "以上都是",
+      "DataInputStream"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "java-119",
     "title": "Java中哪个类用于适配器模式？",
     "options": [
       "InputStreamReader",
+      "无",
       "OutputStreamWriter",
-      "以上都是",
-      "无"
+      "以上都是"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "java-120",
@@ -214,30 +214,30 @@
     "options": [
       "Proxy",
       "InvocationHandler",
-      "以上都是",
-      "无"
+      "无",
+      "以上都是"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "java-121",
     "title": "Java中封装的好处不包括？",
     "options": [
       "隐藏实现细节",
-      "提高安全性",
       "提高性能",
-      "便于修改"
+      "便于修改",
+      "提高安全性"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "java-122",
     "title": "Java中继承的好处不包括？",
     "options": [
+      "扩展性",
       "代码复用",
-      "多态性",
       "提高性能",
-      "扩展性"
+      "多态性"
     ],
     "correctAnswer": 2
   },
@@ -245,76 +245,76 @@
     "id": "java-123",
     "title": "Java中多态的好处不包括？",
     "options": [
-      "提高灵活性",
-      "降低耦合",
       "提高性能",
-      "可扩展性"
+      "降低耦合",
+      "可扩展性",
+      "提高灵活性"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "java-124",
     "title": "Java中抽象的好处不包括？",
     "options": [
       "规范设计",
-      "隐藏细节",
       "提高性能",
+      "隐藏细节",
       "便于分工"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "java-125",
     "title": "Java中接口的好处不包括？",
     "options": [
-      "规范行为",
       "多重继承",
       "提高性能",
+      "规范行为",
       "降低耦合"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "java-126",
     "title": "Java中重写与重载的区别是？",
     "options": [
-      "重写是子类方法，重载是同类方法",
       "重写是同类方法，重载是子类方法",
+      "重写是子类方法，重载是同类方法",
       "无区别",
       "取决于参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-127",
     "title": "Java中抽象类和接口的区别是？",
     "options": [
-      "抽象类可有构造方法",
       "接口可有构造方法",
+      "抽象类可有构造方法",
       "无区别",
       "取决于设计"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-128",
     "title": "Java中接口可以继承接口吗？",
     "options": [
-      "可以",
       "不可以",
-      "只能继承一个",
-      "取决于版本"
+      "可以",
+      "取决于版本",
+      "只能继承一个"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-129",
     "title": "Java中类可以继承多个类吗？",
     "options": [
       "不可以",
+      "取决于版本",
       "可以",
-      "只能继承两个",
-      "取决于版本"
+      "只能继承两个"
     ],
     "correctAnswer": 0
   },
@@ -322,12 +322,12 @@
     "id": "java-130",
     "title": "Java中类可以实现多个接口吗？",
     "options": [
-      "可以",
       "不可以",
-      "只能实现一个",
-      "取决于版本"
+      "可以",
+      "取决于版本",
+      "只能实现一个"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-131",
@@ -335,8 +335,8 @@
     "options": [
       "可以",
       "不可以",
-      "只能实现一个",
-      "取决于版本"
+      "取决于版本",
+      "只能实现一个"
     ],
     "correctAnswer": 0
   },
@@ -344,21 +344,21 @@
     "id": "java-132",
     "title": "Java中抽象类可以继承具体类吗？",
     "options": [
-      "可以",
+      "取决于版本",
       "不可以",
       "只能继承抽象类",
-      "取决于版本"
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-133",
     "title": "Java中抽象类可以有静态方法吗？",
     "options": [
       "可以",
-      "不可以",
       "只能有抽象方法",
-      "取决于版本"
+      "取决于版本",
+      "不可以"
     ],
     "correctAnswer": 0
   },
@@ -366,78 +366,78 @@
     "id": "java-134",
     "title": "Java中接口可以有静态方法吗？",
     "options": [
-      "Java 8+可以",
       "不可以",
-      "一直可以",
-      "取决于版本"
+      "Java 8+可以",
+      "取决于版本",
+      "一直可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-135",
     "title": "Java中接口可以有默认方法吗？",
     "options": [
-      "Java 8+可以",
       "不可以",
+      "Java 8+可以",
       "一直可以",
       "取决于版本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-136",
     "title": "Java中接口可以有私有方法吗？",
     "options": [
+      "一直可以",
       "Java 9+可以",
       "不可以",
-      "一直可以",
       "取决于版本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-137",
     "title": "Java中接口的变量默认是？",
     "options": [
-      "public static final",
-      "private",
+      "default",
       "protected",
-      "default"
+      "public static final",
+      "private"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-138",
     "title": "Java中接口的方法默认是？",
     "options": [
-      "public abstract",
-      "private",
       "protected",
+      "private",
+      "public abstract",
       "default"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-139",
     "title": "Java中构造方法可以被重写吗？",
     "options": [
-      "不可以",
       "可以",
       "可以重载",
+      "不可以",
       "取决于修饰符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-140",
     "title": "Java中构造方法可以被重载吗？",
     "options": [
-      "可以",
-      "不可以",
       "只能有一个",
-      "取决于修饰符"
+      "取决于修饰符",
+      "可以",
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-141",
@@ -465,88 +465,88 @@
     "id": "java-143",
     "title": "Java中this()和super()可以同时出现吗？",
     "options": [
-      "不可以",
-      "可以",
       "取决于位置",
+      "可以",
+      "不可以",
       "取决于修饰符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-144",
     "title": "Java中this()和super()必须放在构造方法第几行？",
     "options": [
-      "第一行",
-      "最后一行",
       "任意位置",
-      "取决于修饰符"
+      "最后一行",
+      "取决于修饰符",
+      "第一行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-145",
     "title": "Java中静态方法可以使用this吗？",
     "options": [
-      "不可以",
+      "取决于修饰符",
       "可以",
       "取决于位置",
-      "取决于修饰符"
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-146",
     "title": "Java中静态方法可以使用super吗？",
     "options": [
-      "不可以",
       "可以",
-      "取决于位置",
-      "取决于修饰符"
+      "取决于修饰符",
+      "不可以",
+      "取决于位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-147",
     "title": "Java中静态代码块什么时候执行？",
     "options": [
-      "类加载时",
-      "对象创建时",
+      "程序启动时",
       "方法调用时",
-      "程序启动时"
+      "对象创建时",
+      "类加载时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-148",
     "title": "Java中构造代码块什么时候执行？",
     "options": [
       "类加载时",
+      "程序启动时",
       "对象创建时",
-      "方法调用时",
-      "程序启动时"
+      "方法调用时"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "java-149",
     "title": "Java中局部代码块什么时候执行？",
     "options": [
-      "类加载时",
       "对象创建时",
-      "方法调用时",
-      "程序启动时"
+      "类加载时",
+      "程序启动时",
+      "方法调用时"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "java-150",
     "title": "Java中静态代码块可以有this吗？",
     "options": [
+      "取决于修饰符",
       "不可以",
-      "可以",
       "取决于位置",
-      "取决于修饰符"
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

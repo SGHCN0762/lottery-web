@@ -3,9 +3,9 @@
     "id": "vue-51",
     "title": "Vue 3 中 setup 语法糖的优势是？",
     "options": [
-      "代码更简洁",
-      "自动暴露变量",
       "更好的类型推导",
+      "自动暴露变量",
+      "代码更简洁",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -14,130 +14,130 @@
     "id": "vue-52",
     "title": "Vue 3 中 isProxy 函数的作用是？",
     "options": [
-      "判断是否为代理对象",
-      "创建代理",
       "解包代理",
-      "克隆代理"
+      "创建代理",
+      "克隆代理",
+      "判断是否为代理对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-53",
     "title": "Vue 中 $root 访问的是？",
     "options": [
-      "根组件实例",
       "当前组件",
-      "父组件",
-      "子组件"
+      "子组件",
+      "根组件实例",
+      "父组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-54",
     "title": "Vue 3 中 withDefaults 的作用是？",
     "options": [
-      "为 props 设置默认值",
-      "创建默认对象",
       "合并配置",
-      "初始化数据"
+      "创建默认对象",
+      "初始化数据",
+      "为 props 设置默认值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-55",
     "title": "Vue 中 v-pre 指令的作用是？",
     "options": [
-      "跳过编译",
-      "预渲染",
       "提前执行",
-      "优先渲染"
+      "跳过编译",
+      "优先渲染",
+      "预渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-56",
     "title": "Vue 3 中 setup 语法糖的顶级 await 特性？",
     "options": [
-      "自动使组件变为异步",
-      "需要配置",
       "不支持",
-      "需要包装"
+      "自动使组件变为异步",
+      "需要包装",
+      "需要配置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-57",
     "title": "Vue 3 中 setup 语法糖如何使用 TypeScript 泛型？",
     "options": [
       "<script setup lang=\"ts\" generic=\"T\">",
-      "defineProps<T>",
       "两种都可以",
+      "defineProps<T>",
       "都不支持"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "vue-58",
     "title": "Vue 3 中 setup 语法糖如何定义组件名？",
     "options": [
-      "defineOptions",
-      "name 选项",
+      "无法定义",
       "文件名",
-      "无法定义"
+      "defineOptions",
+      "name 选项"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-59",
     "title": "Vue 3 中 setup 语法糖如何定义 inheritAttrs？",
     "options": [
-      "defineOptions",
-      "inheritAttrs 选项",
       "setup 参数",
-      "无法定义"
+      "无法定义",
+      "defineOptions",
+      "inheritAttrs 选项"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-60",
     "title": "Vue 3 中 setup 语法糖如何访问组件实例？",
     "options": [
-      "getCurrentInstance",
       "this",
-      "无法访问",
-      "setup 参数"
+      "getCurrentInstance",
+      "setup 参数",
+      "无法访问"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-61",
     "title": "Vue 中 $options 包含什么？",
     "options": [
-      "组件选项",
-      "实例属性",
       "方法",
-      "数据"
+      "数据",
+      "组件选项",
+      "实例属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-62",
     "title": "Vue 3 中 computed 的 setter 何时使用？",
     "options": [
-      "需要写入时",
-      "只读场景",
       "不需要",
+      "只读场景",
+      "需要写入时",
       "初始化时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-63",
     "title": "Vue 中 v-text 和插值的区别是？",
     "options": [
-      "v-text 覆盖全部内容",
       "插值可部分替换",
       "v-text 更安全",
+      "v-text 覆盖全部内容",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -147,9 +147,9 @@
     "title": "Vue 3 中 onUnmounted 对应 Vue 2 的哪个钩子？",
     "options": [
       "destroyed",
-      "beforeDestroy",
+      "beforeUnmount",
       "unmounted",
-      "beforeUnmount"
+      "beforeDestroy"
     ],
     "correctAnswer": 0
   },
@@ -157,20 +157,20 @@
     "id": "vue-65",
     "title": "Vue 3 中 watchEffect 的清理函数何时执行？",
     "options": [
-      "副作用重新执行前",
-      "组件卸载时",
       "两者都会",
+      "组件卸载时",
+      "副作用重新执行前",
       "都不会"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "vue-66",
     "title": "Vue 3 中 defineExpose 的作用是？",
     "options": [
-      "暴露组件属性给父组件",
       "导出数据",
       "公开方法",
+      "暴露组件属性给父组件",
       "以上都是"
     ],
     "correctAnswer": 3
@@ -180,9 +180,9 @@
     "title": "Vue 中 v-html 的安全风险是？",
     "options": [
       "XSS 攻击",
-      "性能问题",
       "兼容性问题",
-      "没有风险"
+      "没有风险",
+      "性能问题"
     ],
     "correctAnswer": 0
   },
@@ -190,30 +190,30 @@
     "id": "vue-68",
     "title": "Vue 3 中 reactive 对于 Map 和 Set 的处理是？",
     "options": [
-      "使用 Proxy 拦截",
-      "不支持",
       "转为普通对象",
-      "报错"
+      "报错",
+      "使用 Proxy 拦截",
+      "不支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-69",
     "title": "Vue 3 中 shallowReactive 修改嵌套对象会触发更新吗？",
     "options": [
-      "不会",
-      "会",
       "部分触发",
-      "报错"
+      "报错",
+      "会",
+      "不会"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-70",
     "title": "Vue 3 中 defineProps 的泛型用法是？",
     "options": [
-      "defineProps<Type>()",
       "defineProps<T>()",
+      "defineProps<Type>()",
       "defineProps<{...}>()",
       "以上都可以"
     ],
@@ -223,32 +223,32 @@
     "id": "vue-71",
     "title": "Vue 中 v-bind 绑定 style 支持哪些值？",
     "options": [
-      "对象",
+      "以上都是",
       "数组",
-      "字符串",
-      "以上都是"
+      "对象",
+      "字符串"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-72",
     "title": "Vue 3 中 ref 的 .value 在 reactive 中会自动解包吗？",
     "options": [
+      "报错",
       "会",
-      "不会",
       "需要特殊处理",
-      "报错"
+      "不会"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-73",
     "title": "Vue 中 $data 访问的是？",
     "options": [
       "响应式数据对象",
+      "计算数据",
       "所有数据",
-      "原始数据",
-      "计算数据"
+      "原始数据"
     ],
     "correctAnswer": 0
   },
@@ -256,98 +256,98 @@
     "id": "vue-74",
     "title": "Vue 3 中 watch 的 immediate 选项作用是？",
     "options": [
-      "立即执行回调",
-      "深度监听",
       "同步执行",
-      "异步执行"
+      "异步执行",
+      "深度监听",
+      "立即执行回调"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-75",
     "title": "Vue 中 v-once 指令的作用是？",
     "options": [
-      "只渲染一次",
-      "永久缓存",
       "静态优化",
-      "以上都是"
+      "永久缓存",
+      "以上都是",
+      "只渲染一次"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-76",
     "title": "Vue 3 中 readonly 和 Object.freeze 的区别是？",
     "options": [
-      "readonly 是深度只读",
-      "freeze 是浅层冻结",
       "readonly 返回代理",
-      "以上都是"
+      "以上都是",
+      "freeze 是浅层冻结",
+      "readonly 是深度只读"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-77",
     "title": "Vue 3 中 toRaw 可以获取 ref 的原始值吗？",
     "options": [
-      "不能，只能获取 reactive 的",
+      "报错",
       "能",
       "需要特殊语法",
-      "报错"
+      "不能，只能获取 reactive 的"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-78",
     "title": "Vue 3 中 markRaw 的影响是可逆的吗？",
     "options": [
-      "不可逆",
       "可逆",
       "部分可逆",
-      "需要特殊处理"
+      "需要特殊处理",
+      "不可逆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-79",
     "title": "Vue 中 v-model 在组件上的默认 prop 是？",
     "options": [
-      "modelValue",
-      "value",
       "data",
-      "input"
+      "modelValue",
+      "input",
+      "value"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-80",
     "title": "Vue 3 中 watch 的 source 可以是数组吗？",
     "options": [
-      "可以，同时监听多个",
-      "不可以",
       "只能是对象",
-      "只能是函数"
+      "只能是函数",
+      "不可以",
+      "可以，同时监听多个"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-81",
     "title": "Vue 3 中 customRef 的工厂函数接收什么参数？",
     "options": [
-      "track, trigger",
-      "get, set",
       "value",
-      "deps"
+      "track, trigger",
+      "deps",
+      "get, set"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-82",
     "title": "Vue 3 中 effectScope 的 getCurrentScope 作用是？",
     "options": [
       "获取当前活跃的 scope",
-      "创建 scope",
+      "运行 scope",
       "销毁 scope",
-      "运行 scope"
+      "创建 scope"
     ],
     "correctAnswer": 0
   },
@@ -355,141 +355,141 @@
     "id": "vue-83",
     "title": "Vue 中 v-slot 的简写是？",
     "options": [
-      "#",
+      "%",
       "@",
       ":",
-      "%"
+      "#"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-84",
     "title": "Vue 3 中 onScopeDispose 的作用是？",
     "options": [
-      "在 scope 销毁时执行清理",
-      "创建 scope",
       "合并 scope",
-      "追踪 scope"
+      "创建 scope",
+      "追踪 scope",
+      "在 scope 销毁时执行清理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-85",
     "title": "Vue 3 中 reactive 和 ref 的选型建议是？",
     "options": [
-      "对象用 reactive，基本类型用 ref",
       "全部用 ref",
       "全部用 reactive",
-      "无明确建议"
+      "无明确建议",
+      "对象用 reactive，基本类型用 ref"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-86",
     "title": "Vue 3 中 computed 的返回值是？",
     "options": [
-      "只读的 ref",
       "普通值",
-      "reactive 对象",
-      "函数"
+      "函数",
+      "只读的 ref",
+      "reactive 对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-87",
     "title": "Vue 中 v-bind 的 .sync 修饰符在 Vue 3 中被什么替代？",
     "options": [
-      "v-model:propName",
-      "v-bind.sync",
+      "emit",
       "update:propName",
-      "emit"
+      "v-bind.sync",
+      "v-model:propName"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-88",
     "title": "Vue 3 中 watch 回调中访问的值是更新前还是更新后？",
     "options": [
-      "更新后",
       "更新前",
+      "更新后",
       "取决于配置",
       "不确定"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-89",
     "title": "Vue 3 中 watch 的 pre flush 选项意味着？",
     "options": [
-      "组件更新前执行",
       "组件更新后执行",
+      "组件更新前执行",
       "同步执行",
       "异步执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-90",
     "title": "Vue 3 中 watchEffect 返回什么？",
     "options": [
-      "停止监听的函数",
-      "副作用函数",
+      "undefined",
       "依赖数组",
-      "undefined"
+      "副作用函数",
+      "停止监听的函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-91",
     "title": "Vue 3 中 reactive 如何处理原生 DOM 元素？",
     "options": [
-      "保持原生行为",
       "转为响应式",
+      "忽略",
       "报错",
-      "忽略"
+      "保持原生行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-92",
     "title": "Vue 3 中 ref 用于模板引用时，初始值是？",
     "options": [
-      "null",
       "undefined",
-      "0",
-      "空字符串"
+      "空字符串",
+      "null",
+      "0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-93",
     "title": "Vue 中 $props 访问的是？",
     "options": [
-      "当前组件的 props",
       "所有属性",
       "父组件数据",
+      "当前组件的 props",
       "子组件数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-94",
     "title": "Vue 3 中 toHandlerKey 的作用是？",
     "options": [
-      "转换为事件处理器键名",
-      "创建事件",
       "绑定事件",
-      "触发事件"
+      "转换为事件处理器键名",
+      "触发事件",
+      "创建事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-95",
     "title": "Vue 中 hasInjectionContext 用于判断？",
     "options": [
       "是否有注入上下文",
-      "是否提供数据",
       "是否注入成功",
+      "是否提供数据",
       "是否有依赖"
     ],
     "correctAnswer": 0
@@ -498,43 +498,43 @@
     "id": "vue-96",
     "title": "Vue 3 中 reactive 的解构为何失去响应性？",
     "options": [
-      "解构创建新引用",
       "Vue 限制",
-      "JavaScript特性",
-      "以上都是"
+      "以上都是",
+      "解构创建新引用",
+      "JavaScript特性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-97",
     "title": "Vue 3 中 toRefs 解决了什么问题？",
     "options": [
-      "保持响应性解构",
-      "类型推导",
       "性能优化",
+      "类型推导",
+      "保持响应性解构",
       "代码简化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-98",
     "title": "Vue 3 中 computed 的 lazy 计算特性是指？",
     "options": [
-      "按需计算",
+      "缓存计算",
       "延迟计算",
-      "异步计算",
-      "缓存计算"
+      "按需计算",
+      "异步计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-99",
     "title": "Vue 3 中 watch 的 deep 选项默认值是？",
     "options": [
       "false",
-      "true",
       "auto",
-      "undefined"
+      "undefined",
+      "true"
     ],
     "correctAnswer": 0
   },
@@ -542,9 +542,9 @@
     "id": "vue-100",
     "title": "Vue 3 中 customRef 可以实现？",
     "options": [
+      "异步更新",
       "防抖",
       "节流",
-      "异步更新",
       "以上都可以"
     ],
     "correctAnswer": 3

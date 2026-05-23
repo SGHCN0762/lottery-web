@@ -3,101 +3,101 @@
     "id": "go-451",
     "title": "Go语言中，fmt包的主要作用是？",
     "options": [
+      "类型转换",
       "格式化I/O",
-      "操作系统功能",
       "输入输出接口",
       "字符串操作",
-      "类型转换",
       "数学计算",
       "时间处理",
+      "操作系统功能",
+      "加密哈希",
       "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
+      "JSON编解码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-452",
     "title": "Go语言中，os包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
       "字符串操作",
-      "类型转换",
+      "JSON编解码",
       "数学计算",
       "时间处理",
+      "格式化I/O",
+      "类型转换",
       "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
+      "操作系统功能",
+      "加密哈希",
+      "输入输出接口"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 7
   },
   {
     "id": "go-453",
     "title": "Go语言中，io包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
       "HTTP服务",
       "JSON编解码",
-      "加密哈希"
+      "加密哈希",
+      "操作系统功能",
+      "数学计算",
+      "类型转换",
+      "字符串操作",
+      "格式化I/O",
+      "时间处理",
+      "输入输出接口"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 9
   },
   {
     "id": "go-454",
     "title": "Go语言中，strings包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
       "时间处理",
-      "HTTP服务",
+      "格式化I/O",
       "JSON编解码",
-      "加密哈希"
+      "输入输出接口",
+      "操作系统功能",
+      "字符串操作",
+      "数学计算",
+      "类型转换",
+      "加密哈希",
+      "HTTP服务"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 5
   },
   {
     "id": "go-455",
     "title": "Go语言中，strconv包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
       "类型转换",
+      "操作系统功能",
+      "加密哈希",
+      "输入输出接口",
       "数学计算",
-      "时间处理",
       "HTTP服务",
+      "时间处理",
+      "格式化I/O",
       "JSON编解码",
-      "加密哈希"
+      "字符串操作"
     ],
-    "correctAnswer": 4
+    "correctAnswer": 0
   },
   {
     "id": "go-456",
     "title": "Go语言中，math包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
       "时间处理",
+      "字符串操作",
+      "加密哈希",
       "HTTP服务",
+      "格式化I/O",
+      "数学计算",
+      "类型转换",
+      "输入输出接口",
       "JSON编解码",
-      "加密哈希"
+      "操作系统功能"
     ],
     "correctAnswer": 5
   },
@@ -105,33 +105,33 @@
     "id": "go-457",
     "title": "Go语言中，time包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
+      "JSON编解码",
       "输入输出接口",
-      "字符串操作",
+      "时间处理",
+      "格式化I/O",
+      "加密哈希",
       "类型转换",
       "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
+      "操作系统功能",
+      "字符串操作",
+      "HTTP服务"
     ],
-    "correctAnswer": 6
+    "correctAnswer": 2
   },
   {
     "id": "go-458",
     "title": "Go语言中，net/http包的主要作用是？",
     "options": [
+      "字符串操作",
+      "数学计算",
+      "JSON编解码",
       "格式化I/O",
       "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
+      "加密哈希",
       "类型转换",
-      "数学计算",
-      "时间处理",
       "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
+      "时间处理",
+      "输入输出接口"
     ],
     "correctAnswer": 7
   },
@@ -139,16 +139,16 @@
     "id": "go-459",
     "title": "Go语言中，encoding/json包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
       "输入输出接口",
+      "加密哈希",
+      "时间处理",
+      "数学计算",
+      "操作系统功能",
+      "格式化I/O",
       "字符串操作",
       "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
       "JSON编解码",
-      "加密哈希"
+      "HTTP服务"
     ],
     "correctAnswer": 8
   },
@@ -156,339 +156,339 @@
     "id": "go-460",
     "title": "Go语言中，crypto/sha256包的主要作用是？",
     "options": [
-      "格式化I/O",
+      "HTTP服务",
       "操作系统功能",
       "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
       "时间处理",
-      "HTTP服务",
+      "数学计算",
+      "字符串操作",
       "JSON编解码",
-      "加密哈希"
+      "加密哈希",
+      "类型转换",
+      "格式化I/O"
     ],
-    "correctAnswer": 9
+    "correctAnswer": 7
   },
   {
     "id": "go-461",
     "title": "Go语言中，fmt包的主要作用是？",
     "options": [
-      "格式化I/O",
+      "数学计算",
       "操作系统功能",
+      "时间处理",
+      "格式化I/O",
+      "JSON编解码",
       "输入输出接口",
       "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
       "HTTP服务",
-      "JSON编解码",
+      "类型转换",
       "加密哈希"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-462",
     "title": "Go语言中，os包的主要作用是？",
     "options": [
-      "格式化I/O",
+      "加密哈希",
+      "数学计算",
+      "类型转换",
+      "时间处理",
+      "JSON编解码",
+      "HTTP服务",
       "操作系统功能",
       "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
+      "格式化I/O",
+      "字符串操作"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 6
   },
   {
     "id": "go-463",
     "title": "Go语言中，io包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
+      "时间处理",
       "输入输出接口",
-      "字符串操作",
       "类型转换",
       "数学计算",
-      "时间处理",
-      "HTTP服务",
       "JSON编解码",
-      "加密哈希"
+      "格式化I/O",
+      "字符串操作",
+      "加密哈希",
+      "HTTP服务",
+      "操作系统功能"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "go-464",
     "title": "Go语言中，strings包的主要作用是？",
     "options": [
-      "格式化I/O",
+      "JSON编解码",
+      "字符串操作",
+      "时间处理",
+      "数学计算",
+      "类型转换",
       "操作系统功能",
       "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": "go-465",
-    "title": "Go语言中，strconv包的主要作用是？",
-    "options": [
       "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
       "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 4
-  },
-  {
-    "id": "go-466",
-    "title": "Go语言中，math包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 5
-  },
-  {
-    "id": "go-467",
-    "title": "Go语言中，time包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 6
-  },
-  {
-    "id": "go-468",
-    "title": "Go语言中，net/http包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 7
-  },
-  {
-    "id": "go-469",
-    "title": "Go语言中，encoding/json包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 8
-  },
-  {
-    "id": "go-470",
-    "title": "Go语言中，crypto/sha256包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 9
-  },
-  {
-    "id": "go-471",
-    "title": "Go语言中，fmt包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "go-472",
-    "title": "Go语言中，os包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
       "加密哈希"
     ],
     "correctAnswer": 1
   },
   {
-    "id": "go-473",
-    "title": "Go语言中，io包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": "go-474",
-    "title": "Go语言中，strings包的主要作用是？",
-    "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": "go-475",
+    "id": "go-465",
     "title": "Go语言中，strconv包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
+      "HTTP服务",
       "输入输出接口",
-      "字符串操作",
-      "类型转换",
+      "加密哈希",
+      "操作系统功能",
+      "JSON编解码",
       "数学计算",
       "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
+      "格式化I/O",
+      "字符串操作",
+      "类型转换"
     ],
-    "correctAnswer": 4
+    "correctAnswer": 9
   },
   {
-    "id": "go-476",
+    "id": "go-466",
     "title": "Go语言中，math包的主要作用是？",
     "options": [
+      "类型转换",
       "格式化I/O",
       "操作系统功能",
+      "加密哈希",
       "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
       "HTTP服务",
+      "时间处理",
+      "数学计算",
       "JSON编解码",
-      "加密哈希"
+      "字符串操作"
     ],
-    "correctAnswer": 5
+    "correctAnswer": 7
   },
   {
-    "id": "go-477",
+    "id": "go-467",
     "title": "Go语言中，time包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
+      "JSON编解码",
+      "时间处理",
       "字符串操作",
+      "加密哈希",
       "类型转换",
       "数学计算",
-      "时间处理",
+      "格式化I/O",
       "HTTP服务",
+      "输入输出接口",
+      "操作系统功能"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-468",
+    "title": "Go语言中，net/http包的主要作用是？",
+    "options": [
+      "字符串操作",
+      "时间处理",
+      "格式化I/O",
+      "数学计算",
       "JSON编解码",
-      "加密哈希"
+      "类型转换",
+      "HTTP服务",
+      "输入输出接口",
+      "加密哈希",
+      "操作系统功能"
     ],
     "correctAnswer": 6
   },
   {
-    "id": "go-478",
-    "title": "Go语言中，net/http包的主要作用是？",
+    "id": "go-469",
+    "title": "Go语言中，encoding/json包的主要作用是？",
     "options": [
+      "时间处理",
+      "字符串操作",
+      "格式化I/O",
+      "输入输出接口",
+      "操作系统功能",
+      "数学计算",
+      "加密哈希",
+      "JSON编解码",
+      "HTTP服务",
+      "类型转换"
+    ],
+    "correctAnswer": 7
+  },
+  {
+    "id": "go-470",
+    "title": "Go语言中，crypto/sha256包的主要作用是？",
+    "options": [
+      "类型转换",
+      "加密哈希",
       "格式化I/O",
       "操作系统功能",
+      "时间处理",
+      "JSON编解码",
+      "HTTP服务",
+      "数学计算",
       "输入输出接口",
+      "字符串操作"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "go-471",
+    "title": "Go语言中，fmt包的主要作用是？",
+    "options": [
+      "数学计算",
+      "操作系统功能",
+      "格式化I/O",
       "字符串操作",
+      "JSON编解码",
+      "HTTP服务",
       "类型转换",
+      "加密哈希",
+      "时间处理",
+      "输入输出接口"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "go-472",
+    "title": "Go语言中，os包的主要作用是？",
+    "options": [
       "数学计算",
       "时间处理",
       "HTTP服务",
       "JSON编解码",
+      "字符串操作",
+      "输入输出接口",
+      "类型转换",
+      "操作系统功能",
+      "格式化I/O",
       "加密哈希"
     ],
     "correctAnswer": 7
   },
   {
+    "id": "go-473",
+    "title": "Go语言中，io包的主要作用是？",
+    "options": [
+      "字符串操作",
+      "类型转换",
+      "格式化I/O",
+      "JSON编解码",
+      "操作系统功能",
+      "时间处理",
+      "输入输出接口",
+      "HTTP服务",
+      "数学计算",
+      "加密哈希"
+    ],
+    "correctAnswer": 6
+  },
+  {
+    "id": "go-474",
+    "title": "Go语言中，strings包的主要作用是？",
+    "options": [
+      "时间处理",
+      "类型转换",
+      "JSON编解码",
+      "数学计算",
+      "加密哈希",
+      "字符串操作",
+      "HTTP服务",
+      "格式化I/O",
+      "输入输出接口",
+      "操作系统功能"
+    ],
+    "correctAnswer": 5
+  },
+  {
+    "id": "go-475",
+    "title": "Go语言中，strconv包的主要作用是？",
+    "options": [
+      "数学计算",
+      "输入输出接口",
+      "时间处理",
+      "格式化I/O",
+      "字符串操作",
+      "HTTP服务",
+      "JSON编解码",
+      "类型转换",
+      "加密哈希",
+      "操作系统功能"
+    ],
+    "correctAnswer": 7
+  },
+  {
+    "id": "go-476",
+    "title": "Go语言中，math包的主要作用是？",
+    "options": [
+      "输入输出接口",
+      "操作系统功能",
+      "时间处理",
+      "格式化I/O",
+      "数学计算",
+      "字符串操作",
+      "加密哈希",
+      "类型转换",
+      "HTTP服务",
+      "JSON编解码"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "id": "go-477",
+    "title": "Go语言中，time包的主要作用是？",
+    "options": [
+      "输入输出接口",
+      "格式化I/O",
+      "字符串操作",
+      "数学计算",
+      "JSON编解码",
+      "操作系统功能",
+      "类型转换",
+      "时间处理",
+      "HTTP服务",
+      "加密哈希"
+    ],
+    "correctAnswer": 7
+  },
+  {
+    "id": "go-478",
+    "title": "Go语言中，net/http包的主要作用是？",
+    "options": [
+      "类型转换",
+      "格式化I/O",
+      "加密哈希",
+      "操作系统功能",
+      "字符串操作",
+      "数学计算",
+      "JSON编解码",
+      "时间处理",
+      "HTTP服务",
+      "输入输出接口"
+    ],
+    "correctAnswer": 8
+  },
+  {
     "id": "go-479",
     "title": "Go语言中，encoding/json包的主要作用是？",
     "options": [
-      "格式化I/O",
-      "操作系统功能",
-      "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
       "HTTP服务",
+      "操作系统功能",
+      "字符串操作",
+      "加密哈希",
+      "格式化I/O",
+      "时间处理",
+      "类型转换",
+      "输入输出接口",
       "JSON编解码",
-      "加密哈希"
+      "数学计算"
     ],
     "correctAnswer": 8
   },
@@ -496,40 +496,40 @@
     "id": "go-480",
     "title": "Go语言中，crypto/sha256包的主要作用是？",
     "options": [
-      "格式化I/O",
+      "时间处理",
+      "JSON编解码",
+      "类型转换",
+      "加密哈希",
+      "字符串操作",
+      "数学计算",
+      "HTTP服务",
       "操作系统功能",
       "输入输出接口",
-      "字符串操作",
-      "类型转换",
-      "数学计算",
-      "时间处理",
-      "HTTP服务",
-      "JSON编解码",
-      "加密哈希"
+      "格式化I/O"
     ],
-    "correctAnswer": 9
+    "correctAnswer": 3
   },
   {
     "id": "go-481",
     "title": "Go语言中，泛型是在哪个版本引入的？",
     "options": [
-      "1.18",
       "1.17",
+      "1.18",
       "1.16",
       "1.20"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-482",
     "title": "Go语言中，类型参数列表使用什么括号？",
     "options": [
-      "[]",
       "()",
+      "[]",
       "<>",
       "{}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-483",
@@ -537,8 +537,8 @@
     "options": [
       "func Name[T any](param T)",
       "func Name(param T) any",
-      "func Name<T>(param T)",
-      "func Name(any param)"
+      "func Name(any param)",
+      "func Name<T>(param T)"
     ],
     "correctAnswer": 0
   },
@@ -546,67 +546,67 @@
     "id": "go-484",
     "title": "Go语言中，泛型类型的声明语法是？",
     "options": [
-      "type Name[T any] struct{}",
-      "type Name<T> struct{}",
       "type Name struct<T>",
-      "type Name(any) struct{}"
+      "type Name(any) struct{}",
+      "type Name<T> struct{}",
+      "type Name[T any] struct{}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-485",
     "title": "Go语言中，any是哪个类型的别名？",
     "options": [
+      "bool",
       "interface{}",
-      "struct{}",
       "uintptr",
-      "bool"
+      "struct{}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-486",
     "title": "Go语言中，comparable约束表示？",
     "options": [
-      "支持==和!=",
+      "支持所有操作",
       "支持<和>",
       "支持+和-",
-      "支持所有操作"
+      "支持==和!="
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-487",
     "title": "Go语言中，如何自定义类型约束？",
     "options": [
-      "使用interface包含类型列表",
-      "使用struct包含类型列表",
       "使用enum",
-      "使用typedef"
+      "使用typedef",
+      "使用interface包含类型列表",
+      "使用struct包含类型列表"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-488",
     "title": "Go语言中，类型约束中的~符号表示？",
     "options": [
-      "底层类型",
       "近似类型",
+      "底层类型",
       "按位取反",
       "忽略"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-489",
     "title": "Go语言中，泛型方法可以使用类型参数吗？",
     "options": [
-      "不可以，方法不能有自己的类型参数",
-      "可以",
       "只能使用类型的类型参数",
-      "取决于版本"
+      "取决于版本",
+      "可以",
+      "不可以，方法不能有自己的类型参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-490",
@@ -614,8 +614,8 @@
     "options": [
       "编译时",
       "运行时",
-      "链接时",
-      "加载时"
+      "加载时",
+      "链接时"
     ],
     "correctAnswer": 0
   },
@@ -624,9 +624,9 @@
     "title": "Go语言中，泛型使用字典机制实现，字典包含什么？",
     "options": [
       "类型信息",
-      "值信息",
       "内存地址",
-      "代码段"
+      "代码段",
+      "值信息"
     ],
     "correctAnswer": 0
   },
@@ -635,9 +635,9 @@
     "title": "Go语言中，反射的主要包是？",
     "options": [
       "reflect",
+      "meta",
       "mirror",
-      "type",
-      "meta"
+      "type"
     ],
     "correctAnswer": 0
   },
@@ -646,8 +646,8 @@
     "title": "Go语言中，reflect.TypeOf返回什么？",
     "options": [
       "reflect.Type",
-      "reflect.Value",
       "interface{}",
+      "reflect.Value",
       "string"
     ],
     "correctAnswer": 0
@@ -656,45 +656,45 @@
     "id": "go-494",
     "title": "Go语言中，reflect.ValueOf返回什么？",
     "options": [
-      "reflect.Value",
+      "string",
       "reflect.Type",
       "interface{}",
-      "string"
+      "reflect.Value"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-495",
     "title": "Go语言中，如何通过反射修改值？",
     "options": [
-      "Value.CanSet和Value.Set",
-      "直接赋值",
       "Type.Set",
-      "Value.Modify"
+      "直接赋值",
+      "Value.Modify",
+      "Value.CanSet和Value.Set"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-496",
     "title": "Go语言中，reflect.Kind表示什么？",
     "options": [
-      "底层类型种类",
       "具体类型名称",
-      "包名",
-      "方法集"
+      "方法集",
+      "底层类型种类",
+      "包名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-497",
     "title": "Go语言中，如何获取结构体的字段信息？",
     "options": [
-      "Type.Field(i)",
       "Type.Method(i)",
       "Value.Field(i)",
+      "Type.Field(i)",
       "Type.NumField()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-498",
@@ -702,8 +702,8 @@
     "options": [
       "Type.Method(i)",
       "Type.Field(i)",
-      "Value.Method(i)",
-      "Type.NumMethod()"
+      "Type.NumMethod()",
+      "Value.Method(i)"
     ],
     "correctAnswer": 0
   },
@@ -712,9 +712,9 @@
     "title": "Go语言中，如何判断是否实现了接口？",
     "options": [
       "Type.Implements(interfaceType)",
-      "Type.AssignableTo(interfaceType)",
       "Type.ConvertibleTo(interfaceType)",
-      "Type.Comparable()"
+      "Type.Comparable()",
+      "Type.AssignableTo(interfaceType)"
     ],
     "correctAnswer": 0
   },
@@ -723,9 +723,9 @@
     "title": "Go语言中，反射的性能如何？",
     "options": [
       "比直接调用慢很多",
-      "比直接调用快",
       "差不多",
-      "取决于类型"
+      "取决于类型",
+      "比直接调用快"
     ],
     "correctAnswer": 0
   }

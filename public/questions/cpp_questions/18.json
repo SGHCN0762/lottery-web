@@ -14,21 +14,21 @@
     "id": "cpp-852",
     "title": "C++中std::regex的作用是？",
     "options": [
-      "正则表达式",
-      "字符串拼接",
       "字符串分割",
+      "字符串拼接",
+      "正则表达式",
       "字符串替换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-853",
     "title": "C++中std::locale的作用是？",
     "options": [
       "本地化处理",
+      "文件操作",
       "正则表达式",
-      "字符串操作",
-      "文件操作"
+      "字符串操作"
     ],
     "correctAnswer": 0
   },
@@ -36,89 +36,89 @@
     "id": "cpp-854",
     "title": "C++中迭代器的分类有？",
     "options": [
+      "以上都不对",
       "输入，输出，前向，双向，随机访问",
       "只读，只写",
-      "前向，后向",
-      "以上都不对"
+      "前向，后向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-855",
     "title": "C++中反向迭代器的作用是？",
     "options": [
+      "以上都不对",
       "从后向前遍历",
       "从前向后遍历",
-      "随机访问",
-      "以上都不对"
+      "随机访问"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-856",
     "title": "C++中std::distance的作用是？",
     "options": [
-      "计算迭代器距离",
       "移动迭代器",
+      "交换迭代器",
       "比较迭代器",
-      "交换迭代器"
+      "计算迭代器距离"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-857",
     "title": "C++中std::advance的作用是？",
     "options": [
-      "移动迭代器指定距离",
       "计算距离",
       "比较迭代器",
+      "移动迭代器指定距离",
       "交换迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-858",
     "title": "C++中std::back_inserter的作用是？",
     "options": [
-      "创建在容器尾部插入的迭代器",
       "创建在头部插入的迭代器",
-      "创建随机访问迭代器",
-      "以上都不对"
+      "以上都不对",
+      "创建在容器尾部插入的迭代器",
+      "创建随机访问迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-859",
     "title": "C++中std::istream_iterator的作用是？",
     "options": [
-      "从流中读取",
+      "向容器写入",
       "向流中写入",
-      "从容器读取",
-      "向容器写入"
+      "从流中读取",
+      "从容器读取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-860",
     "title": "C++中std::ostream_iterator的作用是？",
     "options": [
-      "向流中写入",
+      "向容器写入",
       "从流中读取",
-      "从容器读取",
-      "向容器写入"
+      "向流中写入",
+      "从容器读取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-861",
     "title": "C++中仿函数是指？",
     "options": [
-      "重载了operator()的类",
-      "函数指针",
+      "普通函数",
       "Lambda",
-      "普通函数"
+      "函数指针",
+      "重载了operator()的类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-862",
@@ -135,76 +135,76 @@
     "id": "cpp-863",
     "title": "C++中std::bind的作用是？",
     "options": [
-      "绑定可调用对象和参数",
       "定义函数",
+      "绑定可调用对象和参数",
       "声明函数",
       "调用函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-864",
     "title": "C++中std::pair的作用是？",
     "options": [
-      "存储两个值的单元",
       "存储三个值",
       "存储任意个值",
+      "存储两个值的单元",
       "存储字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-865",
     "title": "C++中std::sort的底层算法是？",
     "options": [
-      "IntroSort",
       "QuickSort",
       "MergeSort",
+      "IntroSort",
       "HeapSort"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-866",
     "title": "C++中std::stable_sort的特点是？",
     "options": [
-      "保持相等元素相对顺序",
-      "不稳定排序",
       "使用快速排序",
-      "以上都不对"
+      "以上都不对",
+      "保持相等元素相对顺序",
+      "不稳定排序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-867",
     "title": "C++中std::find的复杂度是？",
     "options": [
-      "O(n)",
+      "O(n log n)",
       "O(log n)",
-      "O(1)",
-      "O(n log n)"
+      "O(n)",
+      "O(1)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-868",
     "title": "C++中std::binary_search的复杂度是？",
     "options": [
-      "O(log n)",
       "O(n)",
+      "O(n log n)",
       "O(1)",
-      "O(n log n)"
+      "O(log n)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-869",
     "title": "C++中std::lower_bound的作用是？",
     "options": [
       "查找第一个大于等于的元素",
-      "查找第一个大于的元素",
+      "查找等于的元素",
       "查找最后一个小于的元素",
-      "查找等于的元素"
+      "查找第一个大于的元素"
     ],
     "correctAnswer": 0
   },
@@ -212,65 +212,65 @@
     "id": "cpp-870",
     "title": "C++中std::upper_bound的作用是？",
     "options": [
-      "查找第一个大于的元素",
+      "查找等于的元素",
       "查找第一个大于等于的元素",
       "查找最后一个小于的元素",
-      "查找等于的元素"
+      "查找第一个大于的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-871",
     "title": "C++中std::transform的作用是？",
     "options": [
-      "对区间应用函数并存储结果",
-      "排序元素",
       "查找元素",
-      "替换元素"
+      "排序元素",
+      "替换元素",
+      "对区间应用函数并存储结果"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-872",
     "title": "C++中std::accumulate的作用是？",
     "options": [
+      "替换元素",
       "累加区间元素",
       "排序元素",
-      "查找元素",
-      "替换元素"
+      "查找元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-873",
     "title": "C++中std::for_each的作用是？",
     "options": [
-      "对区间每个元素应用函数",
       "累加元素",
       "排序元素",
+      "对区间每个元素应用函数",
       "查找元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-874",
     "title": "C++中std::remove的作用是？",
     "options": [
+      "替换元素",
       "逻辑删除元素，返回新逻辑末尾",
       "物理删除元素",
-      "查找元素",
-      "替换元素"
+      "查找元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-875",
     "title": "C++中erase-remove惯用法的作用是？",
     "options": [
       "物理删除容器中特定元素",
-      "逻辑删除",
       "排序",
-      "查找"
+      "查找",
+      "逻辑删除"
     ],
     "correctAnswer": 0
   },
@@ -278,31 +278,31 @@
     "id": "cpp-876",
     "title": "C++中std::regex的作用是？",
     "options": [
-      "正则表达式",
-      "字符串拼接",
       "字符串分割",
+      "字符串拼接",
+      "正则表达式",
       "字符串替换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-877",
     "title": "C++中std::locale的作用是？",
     "options": [
-      "本地化处理",
-      "正则表达式",
       "字符串操作",
-      "文件操作"
+      "本地化处理",
+      "文件操作",
+      "正则表达式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-878",
     "title": "C++中迭代器的分类有？",
     "options": [
       "输入，输出，前向，双向，随机访问",
-      "只读，只写",
       "前向，后向",
+      "只读，只写",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -312,8 +312,8 @@
     "title": "C++中反向迭代器的作用是？",
     "options": [
       "从后向前遍历",
-      "从前向后遍历",
       "随机访问",
+      "从前向后遍历",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -322,65 +322,65 @@
     "id": "cpp-880",
     "title": "C++中std::distance的作用是？",
     "options": [
-      "计算迭代器距离",
       "移动迭代器",
       "比较迭代器",
-      "交换迭代器"
+      "交换迭代器",
+      "计算迭代器距离"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-881",
     "title": "C++中std::advance的作用是？",
     "options": [
-      "移动迭代器指定距离",
-      "计算距离",
+      "交换迭代器",
       "比较迭代器",
-      "交换迭代器"
+      "计算距离",
+      "移动迭代器指定距离"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-882",
     "title": "C++中std::back_inserter的作用是？",
     "options": [
-      "创建在容器尾部插入的迭代器",
-      "创建在头部插入的迭代器",
       "创建随机访问迭代器",
-      "以上都不对"
+      "以上都不对",
+      "创建在容器尾部插入的迭代器",
+      "创建在头部插入的迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-883",
     "title": "C++中std::istream_iterator的作用是？",
     "options": [
-      "从流中读取",
       "向流中写入",
-      "从容器读取",
-      "向容器写入"
+      "从流中读取",
+      "向容器写入",
+      "从容器读取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-884",
     "title": "C++中std::ostream_iterator的作用是？",
     "options": [
+      "向容器写入",
       "向流中写入",
       "从流中读取",
-      "从容器读取",
-      "向容器写入"
+      "从容器读取"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-885",
     "title": "C++中仿函数是指？",
     "options": [
       "重载了operator()的类",
-      "函数指针",
+      "普通函数",
       "Lambda",
-      "普通函数"
+      "函数指针"
     ],
     "correctAnswer": 0
   },
@@ -388,23 +388,23 @@
     "id": "cpp-886",
     "title": "C++中std::function的作用是？",
     "options": [
-      "包装任意可调用对象",
       "定义函数",
-      "声明函数",
-      "调用函数"
+      "包装任意可调用对象",
+      "调用函数",
+      "声明函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-887",
     "title": "C++中std::bind的作用是？",
     "options": [
-      "绑定可调用对象和参数",
       "定义函数",
+      "调用函数",
       "声明函数",
-      "调用函数"
+      "绑定可调用对象和参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-888",
@@ -412,8 +412,8 @@
     "options": [
       "存储两个值的单元",
       "存储三个值",
-      "存储任意个值",
-      "存储字符串"
+      "存储字符串",
+      "存储任意个值"
     ],
     "correctAnswer": 0
   },
@@ -432,21 +432,21 @@
     "id": "cpp-890",
     "title": "C++中std::stable_sort的特点是？",
     "options": [
+      "以上都不对",
       "保持相等元素相对顺序",
-      "不稳定排序",
       "使用快速排序",
-      "以上都不对"
+      "不稳定排序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-891",
     "title": "C++中std::find的复杂度是？",
     "options": [
       "O(n)",
-      "O(log n)",
+      "O(n log n)",
       "O(1)",
-      "O(n log n)"
+      "O(log n)"
     ],
     "correctAnswer": 0
   },
@@ -454,12 +454,12 @@
     "id": "cpp-892",
     "title": "C++中std::binary_search的复杂度是？",
     "options": [
-      "O(log n)",
       "O(n)",
-      "O(1)",
-      "O(n log n)"
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-893",
@@ -476,32 +476,32 @@
     "id": "cpp-894",
     "title": "C++中std::upper_bound的作用是？",
     "options": [
+      "查找等于的元素",
       "查找第一个大于的元素",
-      "查找第一个大于等于的元素",
       "查找最后一个小于的元素",
-      "查找等于的元素"
+      "查找第一个大于等于的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-895",
     "title": "C++中std::transform的作用是？",
     "options": [
-      "对区间应用函数并存储结果",
-      "排序元素",
       "查找元素",
+      "排序元素",
+      "对区间应用函数并存储结果",
       "替换元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-896",
     "title": "C++中std::accumulate的作用是？",
     "options": [
       "累加区间元素",
-      "排序元素",
       "查找元素",
-      "替换元素"
+      "替换元素",
+      "排序元素"
     ],
     "correctAnswer": 0
   },
@@ -520,33 +520,33 @@
     "id": "cpp-898",
     "title": "C++中std::remove的作用是？",
     "options": [
-      "逻辑删除元素，返回新逻辑末尾",
-      "物理删除元素",
       "查找元素",
-      "替换元素"
+      "替换元素",
+      "逻辑删除元素，返回新逻辑末尾",
+      "物理删除元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-899",
     "title": "C++中erase-remove惯用法的作用是？",
     "options": [
+      "查找",
       "物理删除容器中特定元素",
-      "逻辑删除",
       "排序",
-      "查找"
+      "逻辑删除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-900",
     "title": "C++中std::regex的作用是？",
     "options": [
-      "正则表达式",
-      "字符串拼接",
       "字符串分割",
-      "字符串替换"
+      "字符串替换",
+      "正则表达式",
+      "字符串拼接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

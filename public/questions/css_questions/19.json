@@ -3,120 +3,120 @@
     "id": "css-901",
     "title": "CSS新特性:is()伪类的作用是？",
     "options": [
-      "简化多重选择器，接受可容错选择器列表",
       "排除选择器",
       "选择子元素",
+      "简化多重选择器，接受可容错选择器列表",
       "选择兄弟元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-902",
     "title": ":is()伪类的优先级如何计算？",
     "options": [
-      "取参数列表中优先级最高的选择器",
       "优先级为0",
       "优先级为1",
+      "取参数列表中优先级最高的选择器",
       "不参与计算"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-903",
     "title": ":where()伪类与:is()的区别是？",
     "options": [
-      ":where()的优先级始终为0",
-      "没有区别",
+      ":is()优先级为0",
       ":where()优先级更高",
-      ":is()优先级为0"
+      "没有区别",
+      ":where()的优先级始终为0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-904",
     "title": ":has()伪类的作用是？",
     "options": [
-      "选择包含指定子元素的父元素",
-      "选择子元素",
+      "选择后代元素",
       "选择兄弟元素",
-      "选择后代元素"
+      "选择子元素",
+      "选择包含指定子元素的父元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-905",
     "title": ":has()伪类常被称为？",
     "options": [
-      "父选择器",
+      "祖先选择器",
       "子选择器",
-      "兄弟选择器",
-      "祖先选择器"
+      "父选择器",
+      "兄弟选择器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-906",
     "title": "如何用:has()选择包含img的a标签？",
     "options": [
-      "a:has(img)",
+      "a + img",
       "a > img",
-      "a:contains(img)",
-      "a + img"
+      "a:has(img)",
+      "a:contains(img)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-907",
     "title": ":lang()伪类的作用是？",
     "options": [
-      "根据元素的语言匹配样式",
-      "设置语言",
+      "改变字体",
       "翻译文本",
-      "改变字体"
+      "设置语言",
+      "根据元素的语言匹配样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-908",
     "title": ":dir()伪类的作用是？",
     "options": [
-      "根据文本方向匹配元素",
       "设置方向",
-      "改变方向",
-      "镜像元素"
+      "根据文本方向匹配元素",
+      "镜像元素",
+      "改变方向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-909",
     "title": ":dir(ltr)匹配什么？",
     "options": [
-      "从左到右的文本方向",
-      "从右到左",
       "垂直方向",
-      "任意方向"
+      "从左到右的文本方向",
+      "任意方向",
+      "从右到左"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-910",
     "title": ":dir(rtl)匹配什么？",
     "options": [
+      "垂直方向",
       "从右到左的文本方向",
       "从左到右",
-      "垂直方向",
       "任意方向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-911",
     "title": "CSS Nesting原生嵌套的作用是？",
     "options": [
       "直接在CSS中实现选择器嵌套",
-      "增加性能",
       "减少代码量",
-      "浏览器兼容"
+      "浏览器兼容",
+      "增加性能"
     ],
     "correctAnswer": 0
   },
@@ -124,65 +124,65 @@
     "id": "css-912",
     "title": "CSS原生嵌套中&符号的作用是？",
     "options": [
+      "全局选择器",
       "引用父选择器",
       "子选择器",
-      "兄弟选择器",
-      "全局选择器"
+      "兄弟选择器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-913",
     "title": "CSS原生嵌套的语法是？",
     "options": [
-      "选择器后直接跟嵌套块",
-      "使用@nest规则",
       "使用大括号嵌套",
-      "使用缩进嵌套"
+      "选择器后直接跟嵌套块",
+      "使用缩进嵌套",
+      "使用@nest规则"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-914",
     "title": "@layer规则的作用是？",
     "options": [
+      "定义图层",
       "定义样式层的优先级顺序",
-      "定义动画层",
       "定义布局层",
-      "定义图层"
+      "定义动画层"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-915",
     "title": "@layer如何解决样式优先级问题？",
     "options": [
-      "通过层顺序控制，后声明的层优先级更高",
-      "提高权重",
       "使用!important",
-      "无法解决"
+      "无法解决",
+      "提高权重",
+      "通过层顺序控制，后声明的层优先级更高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-916",
     "title": "@layer的语法是？",
     "options": [
-      "@layer name { styles }",
       "@layer (name) { styles }",
       "#layer name",
-      "layer: name"
+      "layer: name",
+      "@layer name { styles }"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-917",
     "title": "如何声明一个空的@layer？",
     "options": [
       "@layer name;",
-      "@layer name {}",
+      "layer: name",
       "@layer (name)",
-      "layer: name"
+      "@layer name {}"
     ],
     "correctAnswer": 0
   },
@@ -190,21 +190,21 @@
     "id": "css-918",
     "title": "多个@layer的优先级顺序是？",
     "options": [
-      "按照声明顺序，后面的层优先级更高",
       "前面的高",
       "随机顺序",
-      "按字母顺序"
+      "按字母顺序",
+      "按照声明顺序，后面的层优先级更高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-919",
     "title": "未分层的样式与@layer的优先级？",
     "options": [
       "未分层样式始终覆盖分层样式",
-      "分层样式覆盖未分层",
+      "随机覆盖",
       "按声明顺序",
-      "随机覆盖"
+      "分层样式覆盖未分层"
     ],
     "correctAnswer": 0
   },
@@ -214,8 +214,8 @@
     "options": [
       "!important在@layer中优先级反转，先声明的层更高",
       "不变",
-      "都最高",
-      "都最低"
+      "都最低",
+      "都最高"
     ],
     "correctAnswer": 0
   },
@@ -223,34 +223,34 @@
     "id": "css-921",
     "title": "@container规则的作用是？",
     "options": [
-      "根据父容器尺寸应用样式",
+      "根据分辨率",
       "根据视口尺寸",
-      "根据设备类型",
-      "根据分辨率"
+      "根据父容器尺寸应用样式",
+      "根据设备类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-922",
     "title": "container-type属性的作用是？",
     "options": [
-      "定义容器的查询类型",
-      "定义容器大小",
       "定义容器位置",
-      "定义容器名称"
+      "定义容器名称",
+      "定义容器的查询类型",
+      "定义容器大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-923",
     "title": "container-type: size的含义是？",
     "options": [
-      "容器可在宽高两个方向查询",
+      "不能查询",
       "只能查宽度",
-      "只能查高度",
-      "不能查询"
+      "容器可在宽高两个方向查询",
+      "只能查高度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-924",
@@ -267,32 +267,32 @@
     "id": "css-925",
     "title": "container-name属性的作用是？",
     "options": [
+      "设置容器位置",
       "为容器命名以便@container查询",
-      "设置容器大小",
       "设置容器类型",
-      "设置容器位置"
+      "设置容器大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-926",
     "title": "@container的语法是？",
     "options": [
-      "@container name (condition) { styles }",
-      "@container condition",
+      "@parent condition",
       "@media container",
-      "@parent condition"
+      "@container name (condition) { styles }",
+      "@container condition"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-927",
     "title": "@container中的min-width条件是？",
     "options": [
       "容器宽度大于等于指定值",
+      "不等于",
       "小于等于",
-      "等于",
-      "不等于"
+      "等于"
     ],
     "correctAnswer": 0
   },
@@ -300,23 +300,23 @@
     "id": "css-928",
     "title": "CSS逻辑属性的作用是？",
     "options": [
-      "自动适配不同的书写模式方向",
-      "提高性能",
       "减少代码量",
-      "增加功能"
+      "增加功能",
+      "提高性能",
+      "自动适配不同的书写模式方向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-929",
     "title": "margin-block的逻辑方向是？",
     "options": [
-      "垂直方向（上下）",
-      "水平方向（左右）",
+      "任意方向",
       "对角线",
-      "任意方向"
+      "水平方向（左右）",
+      "垂直方向（上下）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-930",
@@ -333,32 +333,32 @@
     "id": "css-931",
     "title": "padding-block-start对应物理属性是？",
     "options": [
-      "padding-top (在LTR/RTL中)",
       "padding-bottom",
+      "padding-right",
       "padding-left",
-      "padding-right"
+      "padding-top (在LTR/RTL中)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-932",
     "title": "inline-size对应物理属性是？",
     "options": [
-      "width (在LTR/RTL中)",
-      "height",
       "min-width",
-      "max-width"
+      "height",
+      "max-width",
+      "width (在LTR/RTL中)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-933",
     "title": "block-size对应物理属性是？",
     "options": [
       "height (在LTR/RTL中)",
+      "max-height",
       "width",
-      "min-height",
-      "max-height"
+      "min-height"
     ],
     "correctAnswer": 0
   },
@@ -366,45 +366,45 @@
     "id": "css-934",
     "title": "border-inline对应物理属性是？",
     "options": [
+      "四个边框",
       "左右边框",
       "上下边框",
-      "四个边框",
       "对角边框"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-935",
     "title": "inset属性的作用是？",
     "options": [
-      "简写top/right/bottom/left",
-      "设置内边距",
       "设置外边距",
-      "设置阴影"
+      "设置内边距",
+      "设置阴影",
+      "简写top/right/bottom/left"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-936",
     "title": "inset-block属性的作用是？",
     "options": [
-      "简写垂直方向偏移",
+      "任意偏移",
       "水平方向偏移",
       "对角偏移",
-      "任意偏移"
+      "简写垂直方向偏移"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-937",
     "title": "inset-inline属性的作用是？",
     "options": [
+      "任意偏移",
       "简写水平方向偏移",
       "垂直方向偏移",
-      "对角偏移",
-      "任意偏移"
+      "对角偏移"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-938",
@@ -412,8 +412,8 @@
     "options": [
       "rgb(r g b / alpha)",
       "rgb(r, g, b, alpha)",
-      "rgba(r, g, b, alpha)",
-      "rgb(r g b, alpha)"
+      "rgb(r g b, alpha)",
+      "rgba(r, g, b, alpha)"
     ],
     "correctAnswer": 0
   },
@@ -422,9 +422,9 @@
     "title": "CSS颜色函数hsl()的新语法是？",
     "options": [
       "hsl(h s l / alpha)",
-      "hsl(h, s, l, alpha)",
+      "hsl(h s l, alpha)",
       "hsla(h, s, l, alpha)",
-      "hsl(h s l, alpha)"
+      "hsl(h, s, l, alpha)"
     ],
     "correctAnswer": 0
   },
@@ -432,21 +432,21 @@
     "id": "css-940",
     "title": "hwb()颜色函数的作用是？",
     "options": [
-      "使用色相、白度、黑度定义颜色",
-      "色相、饱和度、亮度",
+      "透明度",
       "红绿蓝",
-      "透明度"
+      "色相、饱和度、亮度",
+      "使用色相、白度、黑度定义颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-941",
     "title": "lab()颜色函数的作用是？",
     "options": [
       "基于CIE L*a*b*定义颜色",
-      "实验室颜色",
       "标签颜色",
-      "线性颜色"
+      "线性颜色",
+      "实验室颜色"
     ],
     "correctAnswer": 0
   },
@@ -454,97 +454,97 @@
     "id": "css-942",
     "title": "lch()颜色函数的作用是？",
     "options": [
-      "基于CIE LCH定义颜色",
+      "线性颜色",
       "液晶颜色",
       "标签颜色",
-      "线性颜色"
+      "基于CIE LCH定义颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-943",
     "title": "color()函数的作用是？",
     "options": [
-      "在指定颜色空间中定义颜色",
-      "获取颜色",
       "转换颜色",
-      "混合颜色"
+      "在指定颜色空间中定义颜色",
+      "混合颜色",
+      "获取颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-944",
     "title": "color-mix()函数的作用是？",
     "options": [
-      "在指定颜色空间中混合两种颜色",
       "混合三色",
-      "提取颜色",
-      "反转颜色"
+      "反转颜色",
+      "在指定颜色空间中混合两种颜色",
+      "提取颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-945",
     "title": "color-contrast()函数的作用是？",
     "options": [
-      "从列表中选择与背景对比度最高的颜色",
-      "计算对比度",
       "设置对比度",
-      "反转颜色"
+      "从列表中选择与背景对比度最高的颜色",
+      "反转颜色",
+      "计算对比度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-946",
     "title": "oklch()颜色函数的优势是？",
     "options": [
-      "视觉均匀的颜色空间，比hsl更直观",
       "性能更好",
       "兼容性更好",
+      "视觉均匀的颜色空间，比hsl更直观",
       "语法更简单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-947",
     "title": "CSS中currentColor关键字的作用是？",
     "options": [
-      "继承当前的color属性值",
-      "设置为黑色",
+      "设置为红色",
       "设置为透明",
-      "设置为红色"
+      "继承当前的color属性值",
+      "设置为黑色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-948",
     "title": "accent-color属性的作用是？",
     "options": [
-      "设置表单控件的主题色",
-      "设置强调色",
       "设置背景色",
-      "设置边框色"
+      "设置强调色",
+      "设置边框色",
+      "设置表单控件的主题色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-949",
     "title": "aspect-ratio属性的作用是？",
     "options": [
-      "设置盒子的宽高比",
-      "设置宽度",
       "设置高度",
+      "设置宽度",
+      "设置盒子的宽高比",
       "设置缩放比例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-950",
     "title": "aspect-ratio: 16 / 9的含义是？",
     "options": [
       "宽高比为16:9",
-      "宽度16px高度9px",
       "16倍宽9倍高",
+      "宽度16px高度9px",
       "16列9行"
     ],
     "correctAnswer": 0

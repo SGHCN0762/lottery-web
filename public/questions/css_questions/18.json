@@ -3,34 +3,34 @@
     "id": "css-851",
     "title": "Tailwind CSS如何实现暗黑模式？",
     "options": [
-      "dark:变体前缀",
-      "dark()函数",
       "@media dark",
-      "filter: invert"
+      "dark()函数",
+      "filter: invert",
+      "dark:变体前缀"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-852",
     "title": "Tailwind CSS如何实现响应式？",
     "options": [
-      "sm:, md:, lg:等前缀",
       "@media查询",
+      "sm:, md:, lg:等前缀",
       "container查询",
       "min-width属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-853",
     "title": "Tailwind CSS如何自定义配置？",
     "options": [
+      "package.json",
       "tailwind.config.js",
       "tailwind.css",
-      "package.json",
       ".env文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-854",
@@ -47,42 +47,42 @@
     "id": "css-855",
     "title": "CSS架构方法论BEM是指？",
     "options": [
-      "Block Element Modifier",
-      "Box Element Margin",
       "Block Extend Modify",
+      "Box Element Margin",
+      "Block Element Modifier",
       "Base Element Module"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-856",
     "title": "BEM中Block的含义是？",
     "options": [
+      "CSS属性",
       "独立的页面组件",
       "HTML标签",
-      "CSS属性",
       "JS变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-857",
     "title": "BEM中Element的含义是？",
     "options": [
-      "Block的组成部分",
       "HTML标签",
-      "CSS属性",
-      "JS变量"
+      "Block的组成部分",
+      "JS变量",
+      "CSS属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-858",
     "title": "BEM中Modifier的含义是？",
     "options": [
       "Block或Element的外观状态变体",
-      "HTML标签",
       "CSS属性",
+      "HTML标签",
       "JS变量"
     ],
     "correctAnswer": 0
@@ -102,34 +102,34 @@
     "id": "css-860",
     "title": "BEM命名规范中Modifier的分隔符是？",
     "options": [
+      "-",
       "--",
       "__",
-      "-",
       "_"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-861",
     "title": "OOCSS的核心原则是？",
     "options": [
-      "结构与皮肤分离、容器与内容分离",
       "面向对象编程",
       "组件化开发",
+      "结构与皮肤分离、容器与内容分离",
       "函数式编程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-862",
     "title": "SMACSS的核心分类是？",
     "options": [
-      "Base, Layout, Module, State, Theme",
-      "Block, Element, Modifier",
+      "Global, Local, Scoped",
       "Base, Component, Utility",
-      "Global, Local, Scoped"
+      "Base, Layout, Module, State, Theme",
+      "Block, Element, Modifier"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-863",
@@ -146,42 +146,42 @@
     "id": "css-864",
     "title": "CSS规范的作用是？",
     "options": [
-      "提高可维护性、可扩展性、协作效率",
-      "提高性能",
       "减少代码量",
-      "增加功能"
+      "增加功能",
+      "提高性能",
+      "提高可维护性、可扩展性、协作效率"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-865",
     "title": "如何组织大型项目的CSS文件？",
     "options": [
+      "随机组织",
       "按功能或组件分目录、使用预处理器",
-      "全部放在一个文件",
       "按字母排序",
-      "随机组织"
+      "全部放在一个文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-866",
     "title": "CSS命名空间的作用是？",
     "options": [
-      "避免样式冲突",
-      "提高性能",
       "减少代码量",
-      "增加功能"
+      "提高性能",
+      "增加功能",
+      "避免样式冲突"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-867",
     "title": "CSS linting工具的作用是？",
     "options": [
       "检查CSS代码质量和规范",
-      "压缩CSS",
       "编译CSS",
+      "压缩CSS",
       "运行CSS"
     ],
     "correctAnswer": 0
@@ -201,21 +201,21 @@
     "id": "css-869",
     "title": "Stylelint的作用是？",
     "options": [
+      "添加前缀",
       "检查CSS代码规范和错误",
       "压缩CSS",
-      "编译Sass",
-      "添加前缀"
+      "编译Sass"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-870",
     "title": "如何实现CSS的自动格式化？",
     "options": [
       "Prettier工具",
-      "手动格式化",
       "ESLint",
-      "Stylelint"
+      "Stylelint",
+      "手动格式化"
     ],
     "correctAnswer": 0
   },
@@ -223,108 +223,108 @@
     "id": "css-871",
     "title": "CSS压缩的作用是？",
     "options": [
-      "减小文件体积，加快加载速度",
-      "提高性能",
+      "规范代码",
       "增加功能",
-      "规范代码"
+      "提高性能",
+      "减小文件体积，加快加载速度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-872",
     "title": "常见的CSS压缩工具有？",
     "options": [
+      "Babel, TypeScript",
       "cssnano, clean-css",
       "UglifyJS, Terser",
-      "Babel, TypeScript",
       "Webpack, Rollup"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-873",
     "title": "cssnano的作用是？",
     "options": [
-      "优化和压缩CSS",
       "编译Sass",
+      "检查规范",
       "添加前缀",
-      "检查规范"
+      "优化和压缩CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-874",
     "title": "如何实现CSS的按需加载？",
     "options": [
-      "动态import或<link>标签动态插入",
-      "全部加载",
       "内联CSS",
-      "延迟加载"
+      "延迟加载",
+      "动态import或<link>标签动态插入",
+      "全部加载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-875",
     "title": "Critical CSS的作用是？",
     "options": [
-      "提取首屏关键CSS内联加载",
-      "压缩CSS",
+      "添加前缀",
       "编译Sass",
-      "添加前缀"
+      "提取首屏关键CSS内联加载",
+      "压缩CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-876",
     "title": "如何提取Critical CSS？",
     "options": [
-      "Critical, Penthouse等工具",
+      "不需要提取",
       "手动提取",
       "浏览器自动",
-      "不需要提取"
+      "Critical, Penthouse等工具"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-877",
     "title": "CSS Source Map的作用是？",
     "options": [
-      "映射编译后CSS到源文件方便调试",
-      "压缩CSS",
       "编译Sass",
-      "添加前缀"
+      "映射编译后CSS到源文件方便调试",
+      "添加前缀",
+      "压缩CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-878",
     "title": "如何配置CSS Source Map？",
     "options": [
-      "构建工具中设置devtool或sourcemap选项",
-      "浏览器设置",
       "CSS文件中声明",
+      "浏览器设置",
+      "构建工具中设置devtool或sourcemap选项",
       "无法配置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-879",
     "title": "CSS Houdini的作用是？",
     "options": [
-      "暴露CSS引擎API让开发者扩展CSS",
+      "CSS压缩工具",
       "CSS预处理器",
-      "CSS框架",
-      "CSS压缩工具"
+      "暴露CSS引擎API让开发者扩展CSS",
+      "CSS框架"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-880",
     "title": "CSS Houdini的Paint API作用是？",
     "options": [
       "用JS绘制CSS属性值",
-      "绘制Canvas",
       "绘制SVG",
+      "绘制Canvas",
       "绘制HTML"
     ],
     "correctAnswer": 0
@@ -333,31 +333,31 @@
     "id": "css-881",
     "title": "CSS Houdini的Typed OM作用是？",
     "options": [
-      "提供类型化的CSS值操作接口",
-      "类型检查",
       "对象模型",
+      "类型检查",
+      "提供类型化的CSS值操作接口",
       "文档模型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-882",
     "title": "CSS Houdini的Properties API作用是？",
     "options": [
-      "注册自定义CSS属性并约束类型",
-      "定义变量",
+      "定义mixin",
       "定义函数",
-      "定义mixin"
+      "注册自定义CSS属性并约束类型",
+      "定义变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-883",
     "title": "CSS Houdini的Worklet作用是？",
     "options": [
       "独立线程执行CSS相关JS代码",
-      "Web Worker",
       "Service Worker",
+      "Web Worker",
       "主线程运行"
     ],
     "correctAnswer": 0
@@ -366,43 +366,43 @@
     "id": "css-884",
     "title": "如何实现CSS的单元测试？",
     "options": [
-      "视觉回归测试或计算值断言",
-      "Jest测试",
       "Mocha测试",
-      "不需要测试"
+      "不需要测试",
+      "Jest测试",
+      "视觉回归测试或计算值断言"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-885",
     "title": "常见的CSS视觉回归测试工具有？",
     "options": [
-      "BackstopJS, Percy, Chromatic",
       "Jest, Mocha",
       "ESLint, Stylelint",
+      "BackstopJS, Percy, Chromatic",
       "Webpack, Vite"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-886",
     "title": "设计系统的作用是？",
     "options": [
+      "减少代码量",
       "统一产品设计和开发标准",
       "提高性能",
-      "减少代码量",
       "增加功能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-887",
     "title": "设计系统通常包含？",
     "options": [
       "设计令牌、组件库、文档",
+      "只有图片",
       "只有CSS",
-      "只有JS",
-      "只有图片"
+      "只有JS"
     ],
     "correctAnswer": 0
   },
@@ -410,87 +410,87 @@
     "id": "css-888",
     "title": "Design Token的作用是？",
     "options": [
-      "存储设计和样式决策的变量",
+      "加密密钥",
       "身份验证",
-      "接口令牌",
-      "加密密钥"
+      "存储设计和样式决策的变量",
+      "接口令牌"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-889",
     "title": "如何实现Design Token？",
     "options": [
-      "CSS自定义属性或预处理器变量",
       "JS变量",
+      "数据库存储",
       "JSON配置",
-      "数据库存储"
+      "CSS自定义属性或预处理器变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-890",
     "title": "CSS自定义属性与预处理器变量的区别？",
     "options": [
-      "自定义属性运行时动态，预处理器变量编译时静态",
-      "没有区别",
       "自定义属性静态，预处理器动态",
-      "性能不同"
+      "自定义属性运行时动态，预处理器变量编译时静态",
+      "性能不同",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-891",
     "title": "如何构建跨平台的Design Token？",
     "options": [
-      "Style Dictionary等工具转换格式",
+      "只使用JS",
       "手动复制",
-      "只使用CSS",
-      "只使用JS"
+      "Style Dictionary等工具转换格式",
+      "只使用CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-892",
     "title": "组件库的CSS架构原则是？",
     "options": [
-      "高内聚低耦合、可定制、可扩展",
-      "全部全局",
       "全部内联",
-      "不可修改"
+      "高内聚低耦合、可定制、可扩展",
+      "不可修改",
+      "全部全局"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-893",
     "title": "如何实现组件库的样式定制？",
     "options": [
-      "CSS变量、主题覆盖、BEM Modifier",
+      "无法定制",
       "修改源码",
-      "使用!important",
-      "无法定制"
+      "CSS变量、主题覆盖、BEM Modifier",
+      "使用!important"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-894",
     "title": "如何实现组件库的暗黑模式？",
     "options": [
-      "CSS变量切换或prefers-color-scheme",
       "filter: invert",
-      "background: black",
-      "color: white"
+      "color: white",
+      "CSS变量切换或prefers-color-scheme",
+      "background: black"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-895",
     "title": "如何实现组件库的国际化样式？",
     "options": [
       "RTL布局适配、字体大小调整",
-      "翻译文本",
       "修改颜色",
-      "更换图片"
+      "更换图片",
+      "翻译文本"
     ],
     "correctAnswer": 0
   },
@@ -498,32 +498,32 @@
     "id": "css-896",
     "title": "CSS中的RTL适配属性是？",
     "options": [
-      "direction: rtl",
-      "text-align: right",
       "float: right",
-      "position: right"
+      "text-align: right",
+      "position: right",
+      "direction: rtl"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-897",
     "title": "CSS逻辑属性margin-block-start的作用是？",
     "options": [
-      "设置块级方向起始边距",
       "设置上边距",
       "设置下边距",
-      "设置左边距"
+      "设置左边距",
+      "设置块级方向起始边距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-898",
     "title": "CSS逻辑属性inline-size的作用是？",
     "options": [
       "设置行内方向尺寸",
-      "设置宽度",
       "设置高度",
-      "设置外边距"
+      "设置外边距",
+      "设置宽度"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "css-899",
     "title": "CSS逻辑属性的优势是？",
     "options": [
-      "自动适配不同书写方向",
-      "性能更好",
       "兼容性更好",
-      "代码更少"
+      "性能更好",
+      "代码更少",
+      "自动适配不同书写方向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-900",
     "title": "如何管理CSS的依赖关系？",
     "options": [
-      "模块化导入、依赖图分析",
       "全局引入",
+      "随机加载",
       "内联样式",
-      "随机加载"
+      "模块化导入、依赖图分析"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

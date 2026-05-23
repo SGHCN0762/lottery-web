@@ -4,9 +4,9 @@
     "title": "CSS Grid布局的主要优势是？",
     "options": [
       "二维布局同时控制行和列",
-      "一维布局",
+      "固定布局",
       "打印布局",
-      "固定布局"
+      "一维布局"
     ],
     "correctAnswer": 0
   },
@@ -16,8 +16,8 @@
     "options": [
       "将元素设置为网格容器",
       "设置为块级元素",
-      "设置为弹性容器",
-      "设置为内联元素"
+      "设置为内联元素",
+      "设置为弹性容器"
     ],
     "correctAnswer": 0
   },
@@ -25,32 +25,32 @@
     "id": "css-303",
     "title": "grid-template-columns属性的作用是？",
     "options": [
-      "定义网格的列数和每列宽度",
       "定义行数",
+      "定义对齐方式",
       "定义间距",
-      "定义对齐方式"
+      "定义网格的列数和每列宽度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-304",
     "title": "grid-template-rows属性的作用是？",
     "options": [
-      "定义网格的行数和每行高度",
-      "定义列数",
       "定义间距",
+      "定义列数",
+      "定义网格的行数和每行高度",
       "定义对齐方式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-305",
     "title": "fr单位的作用是？",
     "options": [
       "表示网格容器中可用空间的一个等份",
-      "固定单位",
+      "像素单位",
       "百分比单位",
-      "像素单位"
+      "固定单位"
     ],
     "correctAnswer": 0
   },
@@ -58,32 +58,32 @@
     "id": "css-306",
     "title": "grid-template-columns: 1fr 2fr的含义是？",
     "options": [
-      "第二列是第一列的两倍宽",
-      "两列等宽",
       "第一列是第二列两倍",
-      "总宽度3fr"
+      "第二列是第一列的两倍宽",
+      "总宽度3fr",
+      "两列等宽"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-307",
     "title": "repeat()函数的作用是？",
     "options": [
-      "重复定义网格轨道",
-      "重复动画",
       "重复背景",
-      "重复内容"
+      "重复定义网格轨道",
+      "重复内容",
+      "重复动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-308",
     "title": "grid-template-columns: repeat(3, 1fr)的含义是？",
     "options": [
       "创建3列等宽布局",
-      "创建1列3fr布局",
       "创建3行等高布局",
-      "重复3次1fr"
+      "重复3次1fr",
+      "创建1列3fr布局"
     ],
     "correctAnswer": 0
   },
@@ -91,54 +91,54 @@
     "id": "css-309",
     "title": "auto-fill关键字的作用是？",
     "options": [
-      "自动填充列数以适应容器",
-      "自动填充内容",
       "自动填充高度",
-      "自动填充间距"
+      "自动填充间距",
+      "自动填充内容",
+      "自动填充列数以适应容器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-310",
     "title": "auto-fit关键字的作用是？",
     "options": [
-      "自动适应列数并折叠空轨道",
-      "自动适应内容",
       "自动适应高度",
-      "自动适应间距"
+      "自动适应间距",
+      "自动适应内容",
+      "自动适应列数并折叠空轨道"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-311",
     "title": "auto-fill和auto-fit的区别是？",
     "options": [
-      "auto-fit会折叠空轨道，auto-fill保留",
+      "auto-fit更宽",
       "没有区别",
       "auto-fill折叠空轨道",
-      "auto-fit更宽"
+      "auto-fit会折叠空轨道，auto-fill保留"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-312",
     "title": "minmax()函数的作用是？",
     "options": [
-      "定义网格轨道的最小和最大尺寸范围",
-      "定义最大值",
       "定义最小值",
+      "定义最大值",
+      "定义网格轨道的最小和最大尺寸范围",
       "定义平均值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-313",
     "title": "grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))的作用是？",
     "options": [
       "创建响应式网格，最小200px，自动填充",
-      "固定3列",
+      "最大200px宽度",
       "固定200px宽度",
-      "最大200px宽度"
+      "固定3列"
     ],
     "correctAnswer": 0
   },
@@ -147,9 +147,9 @@
     "title": "grid-column-gap属性的作用是？",
     "options": [
       "设置列间距",
-      "设置行间距",
       "设置边距",
-      "设置内边距"
+      "设置内边距",
+      "设置行间距"
     ],
     "correctAnswer": 0
   },
@@ -157,34 +157,34 @@
     "id": "css-315",
     "title": "grid-row-gap属性的作用是？",
     "options": [
-      "设置行间距",
       "设置列间距",
       "设置边距",
+      "设置行间距",
       "设置内边距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-316",
     "title": "gap属性是哪两个属性的简写？",
     "options": [
-      "grid-row-gap和grid-column-gap",
-      "margin和padding",
+      "top和left",
       "width和height",
-      "top和left"
+      "margin和padding",
+      "grid-row-gap和grid-column-gap"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-317",
     "title": "grid-template-areas属性的作用是？",
     "options": [
-      "通过命名区域定义网格布局",
       "定义列宽",
-      "定义行高",
-      "定义间距"
+      "通过命名区域定义网格布局",
+      "定义间距",
+      "定义行高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-318",
@@ -192,8 +192,8 @@
     "options": [
       "空网格单元",
       "命名区域",
-      "自动区域",
-      "重复区域"
+      "重复区域",
+      "自动区域"
     ],
     "correctAnswer": 0
   },
@@ -202,9 +202,9 @@
     "title": "如何将元素放置在命名区域中？",
     "options": [
       "grid-area: 区域名",
+      "area: 区域名",
       "grid-column: 区域名",
-      "grid-row: 区域名",
-      "area: 区域名"
+      "grid-row: 区域名"
     ],
     "correctAnswer": 0
   },
@@ -213,8 +213,8 @@
     "title": "grid-column-start属性的作用是？",
     "options": [
       "设置项目起始的列线",
-      "设置结束列线",
       "设置起始行线",
+      "设置结束列线",
       "设置结束行线"
     ],
     "correctAnswer": 0
@@ -225,8 +225,8 @@
     "options": [
       "设置项目结束的列线",
       "设置起始列线",
-      "设置起始行线",
-      "设置结束行线"
+      "设置结束行线",
+      "设置起始行线"
     ],
     "correctAnswer": 0
   },
@@ -234,21 +234,21 @@
     "id": "css-322",
     "title": "grid-row-start属性的作用是？",
     "options": [
-      "设置项目起始的行线",
       "设置结束行线",
       "设置起始列线",
-      "设置结束列线"
+      "设置结束列线",
+      "设置项目起始的行线"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-323",
     "title": "grid-row-end属性的作用是？",
     "options": [
       "设置项目结束的行线",
-      "设置起始行线",
       "设置起始列线",
-      "设置结束列线"
+      "设置结束列线",
+      "设置起始行线"
     ],
     "correctAnswer": 0
   },
@@ -268,9 +268,9 @@
     "title": "span关键字的作用是？",
     "options": [
       "指定项目跨越的网格数量",
-      "指定起始线",
+      "指定区域",
       "指定结束线",
-      "指定区域"
+      "指定起始线"
     ],
     "correctAnswer": 0
   },
@@ -278,12 +278,12 @@
     "id": "css-326",
     "title": "grid-column: 1 / span 2的含义是？",
     "options": [
-      "从第1列线开始跨越2个网格",
+      "第2列到第1列",
       "第1列到第2列",
-      "跨1列",
-      "第2列到第1列"
+      "从第1列线开始跨越2个网格",
+      "跨1列"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-327",
@@ -298,34 +298,34 @@
     "id": "css-328",
     "title": "grid-area: 1 / 1 / 3 / 3的含义是？",
     "options": [
-      "从行1列1到行3列3",
       "行1到行3",
+      "跨越2行2列",
       "列1到列3",
-      "跨越2行2列"
+      "从行1列1到行3列3"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-329",
     "title": "justify-items属性的作用是？",
     "options": [
-      "设置所有网格项目在单元格内的水平对齐",
+      "设置网格在容器内的垂直对齐",
       "设置垂直对齐",
-      "设置网格在容器内的水平对齐",
-      "设置网格在容器内的垂直对齐"
+      "设置所有网格项目在单元格内的水平对齐",
+      "设置网格在容器内的水平对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-330",
     "title": "align-items属性的作用是？",
     "options": [
-      "设置所有网格项目在单元格内的垂直对齐",
-      "设置水平对齐",
       "设置网格在容器内的垂直对齐",
+      "设置水平对齐",
+      "设置所有网格项目在单元格内的垂直对齐",
       "设置网格在容器内的水平对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-331",
@@ -342,65 +342,65 @@
     "id": "css-332",
     "title": "justify-content属性的作用是？",
     "options": [
-      "设置整个网格在容器内的水平对齐",
-      "设置项目在单元格内对齐",
       "设置垂直对齐",
-      "设置网格在容器内垂直对齐"
+      "设置整个网格在容器内的水平对齐",
+      "设置网格在容器内垂直对齐",
+      "设置项目在单元格内对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-333",
     "title": "align-content属性的作用是？",
     "options": [
-      "设置整个网格在容器内的垂直对齐",
       "设置水平对齐",
       "设置项目在单元格内对齐",
-      "设置网格在容器内水平对齐"
+      "设置网格在容器内水平对齐",
+      "设置整个网格在容器内的垂直对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-334",
     "title": "place-content属性是哪两个属性的简写？",
     "options": [
-      "align-content和justify-content",
-      "align-items和justify-items",
       "align-self和justify-self",
+      "align-items和justify-items",
+      "align-content和justify-content",
       "grid-row和grid-column"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-335",
     "title": "justify-self属性的作用是？",
     "options": [
-      "设置单个项目在单元格内的水平对齐",
       "设置垂直对齐",
+      "设置网格对齐",
       "设置所有项目对齐",
-      "设置网格对齐"
+      "设置单个项目在单元格内的水平对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-336",
     "title": "align-self属性的作用是？",
     "options": [
+      "设置网格对齐",
       "设置单个项目在单元格内的垂直对齐",
       "设置水平对齐",
-      "设置所有项目对齐",
-      "设置网格对齐"
+      "设置所有项目对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-337",
     "title": "place-self属性是哪两个属性的简写？",
     "options": [
       "align-self和justify-self",
-      "align-items和justify-items",
       "align-content和justify-content",
-      "grid-row和grid-column"
+      "grid-row和grid-column",
+      "align-items和justify-items"
     ],
     "correctAnswer": 0
   },
@@ -408,131 +408,131 @@
     "id": "css-338",
     "title": "grid-auto-rows属性的作用是？",
     "options": [
-      "设置隐式创建的行轨道大小",
-      "设置显式行大小",
       "设置列大小",
-      "设置间距"
+      "设置间距",
+      "设置隐式创建的行轨道大小",
+      "设置显式行大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-339",
     "title": "grid-auto-columns属性的作用是？",
     "options": [
-      "设置隐式创建的列轨道大小",
-      "设置显式列大小",
       "设置行大小",
-      "设置间距"
+      "设置间距",
+      "设置隐式创建的列轨道大小",
+      "设置显式列大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-340",
     "title": "grid-auto-flow属性的作用是？",
     "options": [
-      "指定自动放置算法的方向",
       "指定对齐方式",
       "指定间距",
+      "指定自动放置算法的方向",
       "指定大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-341",
     "title": "grid-auto-flow: row的作用是？",
     "options": [
-      "按行依次放置项目",
-      "按列放置",
       "按区域放置",
-      "按大小放置"
+      "按行依次放置项目",
+      "按大小放置",
+      "按列放置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-342",
     "title": "grid-auto-flow: column的作用是？",
     "options": [
+      "按区域放置",
       "按列依次放置项目",
       "按行放置",
-      "按区域放置",
       "按大小放置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-343",
     "title": "grid-auto-flow: dense的作用是？",
     "options": [
-      "使用密集填充算法避免空隙",
       "增加间距",
-      "减少间距",
-      "按顺序填充"
+      "使用密集填充算法避免空隙",
+      "按顺序填充",
+      "减少间距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-344",
     "title": "如何实现Grid的垂直居中？",
     "options": [
-      "align-items: center; justify-items: center;",
       "vertical-align: middle;",
+      "align-items: center; justify-items: center;",
       "margin: auto 0;",
       "line-height等于height"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-345",
     "title": "如何实现Grid的整个网格居中？",
     "options": [
-      "align-content: center; justify-content: center;",
-      "align-items: center;",
       "margin: auto;",
+      "align-items: center;",
+      "align-content: center; justify-content: center;",
       "text-align: center;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-346",
     "title": "Grid中如何实现响应式布局？",
     "options": [
-      "repeat(auto-fill, minmax())",
-      "media queries",
       "百分比宽度",
-      "flex布局"
+      "flex布局",
+      "media queries",
+      "repeat(auto-fill, minmax())"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-347",
     "title": "Grid中如何实现圣杯布局？",
     "options": [
-      "grid-template-areas命名区域",
       "grid-template-columns",
       "grid-auto-flow",
+      "grid-template-areas命名区域",
       "flex布局"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-348",
     "title": "Grid中如何实现画册布局？",
     "options": [
-      "grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))",
       "flex-wrap: wrap",
       "column-count",
-      "float: left"
+      "float: left",
+      "grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-349",
     "title": "Grid中如何实现重叠布局？",
     "options": [
       "通过grid-area定位使项目重叠，z-index控制层级",
-      "position: absolute",
       "margin负值",
-      "transform"
+      "transform",
+      "position: absolute"
     ],
     "correctAnswer": 0
   },
@@ -540,11 +540,11 @@
     "id": "css-350",
     "title": "Grid布局与Flexbox的区别？",
     "options": [
+      "Grid只用于表格",
       "Grid是二维布局，Flexbox是一维布局",
       "没有区别",
-      "Grid是一维，Flex是二维",
-      "Grid只用于表格"
+      "Grid是一维，Flex是二维"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

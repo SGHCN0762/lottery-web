@@ -4,9 +4,9 @@
     "title": "Java中String的getBytes()方法作用是？",
     "options": [
       "转为字节数组",
-      "转为字符数组",
+      "转为字符串数组",
       "转为整型数组",
-      "转为字符串数组"
+      "转为字符数组"
     ],
     "correctAnswer": 0
   },
@@ -14,78 +14,78 @@
     "id": "java-202",
     "title": "Java中String的valueOf()方法作用是？",
     "options": [
-      "将其他类型转为字符串",
       "将字符串转为其他类型",
       "比较字符串",
-      "拼接字符串"
+      "拼接字符串",
+      "将其他类型转为字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-203",
     "title": "Java中String的format()方法作用是？",
     "options": [
-      "格式化字符串",
-      "拼接字符串",
       "替换字符串",
-      "分割字符串"
+      "分割字符串",
+      "拼接字符串",
+      "格式化字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-204",
     "title": "Java中String的join()方法作用是？",
     "options": [
-      "拼接字符串",
       "格式化字符串",
       "替换字符串",
-      "分割字符串"
+      "分割字符串",
+      "拼接字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-205",
     "title": "Java中String的concat()方法作用是？",
     "options": [
+      "分割字符串",
       "拼接字符串",
       "格式化字符串",
-      "替换字符串",
-      "分割字符串"
+      "替换字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-206",
     "title": "Java中String的matches()方法作用是？",
     "options": [
-      "正则匹配",
-      "替换字符串",
       "分割字符串",
-      "拼接字符串"
+      "替换字符串",
+      "拼接字符串",
+      "正则匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-207",
     "title": "Java中Object的clone()方法是？",
     "options": [
+      "取决于实现",
       "浅克隆",
       "深克隆",
-      "不可克隆",
-      "取决于实现"
+      "不可克隆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-208",
     "title": "Java中Object的toString()方法返回？",
     "options": [
-      "类名@哈希码",
-      "对象内容",
       "对象名称",
-      "对象引用"
+      "类名@哈希码",
+      "对象引用",
+      "对象内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-209",
@@ -93,8 +93,8 @@
     "options": [
       "引用",
       "值",
-      "类型",
-      "哈希码"
+      "哈希码",
+      "类型"
     ],
     "correctAnswer": 0
   },
@@ -104,8 +104,8 @@
     "options": [
       "对象内存地址相关值",
       "对象内容哈希",
-      "对象名称哈希",
-      "对象引用哈希"
+      "对象引用哈希",
+      "对象名称哈希"
     ],
     "correctAnswer": 0
   },
@@ -113,131 +113,131 @@
     "id": "java-211",
     "title": "Java中Object的finalize()方法何时调用？",
     "options": [
-      "垃圾回收前",
-      "对象创建时",
       "对象使用时",
-      "手动调用"
+      "垃圾回收前",
+      "手动调用",
+      "对象创建时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-212",
     "title": "Java中Object的getClass()方法返回？",
     "options": [
-      "对象的运行时类",
-      "对象的编译时类",
+      "对象的接口",
       "对象的父类",
-      "对象的接口"
+      "对象的编译时类",
+      "对象的运行时类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-213",
     "title": "Java中Object的wait()方法作用是？",
     "options": [
-      "释放锁并等待",
-      "获取锁",
       "唤醒线程",
-      "中断线程"
+      "释放锁并等待",
+      "中断线程",
+      "获取锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-214",
     "title": "Java中Object的notify()方法作用是？",
     "options": [
-      "唤醒一个等待线程",
-      "唤醒所有等待线程",
       "释放锁",
-      "获取锁"
+      "获取锁",
+      "唤醒所有等待线程",
+      "唤醒一个等待线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-215",
     "title": "Java中Object的notifyAll()方法作用是？",
     "options": [
-      "唤醒所有等待线程",
-      "唤醒一个等待线程",
       "释放锁",
+      "唤醒一个等待线程",
+      "唤醒所有等待线程",
       "获取锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-216",
     "title": "Java中深克隆和浅克隆的区别是？",
     "options": [
-      "深克隆复制引用对象，浅克隆不复制",
+      "取决于实现",
       "浅克隆复制引用对象，深克隆不复制",
       "无区别",
-      "取决于实现"
+      "深克隆复制引用对象，浅克隆不复制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-217",
     "title": "Java中如何实现深克隆？",
     "options": [
       "序列化和反序列化",
-      "重写clone方法",
+      "以上都可以",
       "使用拷贝构造",
-      "以上都可以"
+      "重写clone方法"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "java-218",
     "title": "Java中组合和继承的区别是？",
     "options": [
-      "组合是has-a关系，继承是is-a关系",
-      "组合是is-a关系，继承是has-a关系",
+      "取决于设计",
       "无区别",
-      "取决于设计"
+      "组合是is-a关系，继承是has-a关系",
+      "组合是has-a关系，继承是is-a关系"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-219",
     "title": "Java中组合相比继承的优势是？",
     "options": [
       "封装性好",
+      "以上都是",
       "灵活性高",
-      "依赖性低",
-      "以上都是"
+      "依赖性低"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "java-220",
     "title": "Java中继承相比组合的优势是？",
     "options": [
       "代码复用直接",
+      "以上都是",
       "多态性",
-      "扩展性",
-      "以上都是"
+      "扩展性"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "java-221",
     "title": "Java中向上转型的特点是？",
     "options": [
-      "安全，自动",
-      "不安全，强制",
+      "取决于类型",
       "无变化",
-      "取决于类型"
+      "不安全，强制",
+      "安全，自动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-222",
     "title": "Java中向下转型的特点是？",
     "options": [
       "不安全，需要强制",
+      "取决于类型",
       "安全，自动",
-      "无变化",
-      "取决于类型"
+      "无变化"
     ],
     "correctAnswer": 0
   },
@@ -245,54 +245,54 @@
     "id": "java-223",
     "title": "Java中instanceof运算符的作用是？",
     "options": [
-      "判断对象是否属于某类型",
-      "判断类型是否兼容",
       "判断对象是否为null",
-      "判断类型是否为基本类型"
+      "判断类型是否为基本类型",
+      "判断对象是否属于某类型",
+      "判断类型是否兼容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-224",
     "title": "Java中多态的实现条件是？",
     "options": [
+      "以上都是",
       "继承，重写，向上转型",
-      "继承，重载，向下转型",
       "实现，重写，向上转型",
-      "以上都是"
+      "继承，重载，向下转型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-225",
     "title": "Java中动态绑定是指？",
     "options": [
-      "运行时确定调用方法",
-      "编译时确定调用方法",
       "链接时确定调用方法",
-      "加载时确定调用方法"
+      "运行时确定调用方法",
+      "加载时确定调用方法",
+      "编译时确定调用方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-226",
     "title": "Java中静态绑定是指？",
     "options": [
+      "加载时确定调用方法",
       "编译时确定调用方法",
       "运行时确定调用方法",
-      "链接时确定调用方法",
-      "加载时确定调用方法"
+      "链接时确定调用方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-227",
     "title": "Java中方法隐藏是指？",
     "options": [
       "静态方法的重写",
+      "静态方法的重载",
       "实例方法的重写",
-      "实例方法的重载",
-      "静态方法的重载"
+      "实例方法的重载"
     ],
     "correctAnswer": 0
   },
@@ -300,21 +300,21 @@
     "id": "java-228",
     "title": "Java中变量隐藏是指？",
     "options": [
-      "子类定义与父类同名的变量",
-      "子类定义与父类同名的常量",
       "子类定义与父类同名的方法",
-      "子类定义与父类同名的类"
+      "子类定义与父类同名的常量",
+      "子类定义与父类同名的类",
+      "子类定义与父类同名的变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-229",
     "title": "Java中内部类的分类有？",
     "options": [
       "成员内部类，局部内部类，匿名内部类，静态内部类",
-      "成员内部类，局部内部类，匿名内部类",
       "成员内部类，局部内部类",
-      "成员内部类"
+      "成员内部类",
+      "成员内部类，局部内部类，匿名内部类"
     ],
     "correctAnswer": 0
   },
@@ -322,34 +322,34 @@
     "id": "java-230",
     "title": "Java中内部类的优势是？",
     "options": [
-      "隐藏实现",
       "访问外部类私有成员",
       "实现多重继承",
-      "以上都是"
+      "以上都是",
+      "隐藏实现"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "java-231",
     "title": "Java中Lambda表达式的作用是？",
     "options": [
+      "以上都是",
       "简化匿名内部类",
       "提高性能",
-      "替代方法引用",
-      "以上都是"
+      "替代方法引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-232",
     "title": "Java中Lambda表达式的语法是？",
     "options": [
-      "(参数) -> {表达式}",
-      "(参数) <- {表达式}",
       "(参数) => {表达式}",
-      "(参数) -> 表达式"
+      "(参数) -> 表达式",
+      "(参数) <- {表达式}",
+      "(参数) -> {表达式}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-233",
@@ -366,21 +366,21 @@
     "id": "java-234",
     "title": "Java中函数式接口是指？",
     "options": [
-      "只有一个抽象方法的接口",
+      "以上都不对",
       "没有抽象方法的接口",
       "有多个抽象方法的接口",
-      "以上都不对"
+      "只有一个抽象方法的接口"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-235",
     "title": "Java中@FunctionalInterface注解的作用是？",
     "options": [
       "标记函数式接口",
+      "编译函数式接口",
       "定义函数式接口",
-      "实现函数式接口",
-      "编译函数式接口"
+      "实现函数式接口"
     ],
     "correctAnswer": 0
   },
@@ -388,76 +388,76 @@
     "id": "java-236",
     "title": "Java中方法引用的作用是？",
     "options": [
-      "简化Lambda表达式",
-      "提高性能",
       "替代Lambda表达式",
-      "以上都是"
+      "以上都是",
+      "简化Lambda表达式",
+      "提高性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-237",
     "title": "Java中方法引用的语法是？",
     "options": [
-      "类名::方法名",
-      "对象名::方法名",
       "类名::new",
-      "以上都是"
+      "类名::方法名",
+      "以上都是",
+      "对象名::方法名"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "java-238",
     "title": "Java中构造方法引用的语法是？",
     "options": [
-      "类名::new",
-      "类名::方法名",
       "对象名::方法名",
-      "new 类名"
+      "类名::方法名",
+      "new 类名",
+      "类名::new"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-239",
     "title": "Java中数组引用的语法是？",
     "options": [
-      "类型[]::new",
-      "类型[]::方法",
+      "以上都不对",
       "new 类型[]",
-      "以上都不对"
+      "类型[]::方法",
+      "类型[]::new"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-240",
     "title": "Java中封装的好处不包括？",
     "options": [
       "隐藏实现细节",
+      "便于修改",
       "提高安全性",
-      "提高性能",
-      "便于修改"
+      "提高性能"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "java-241",
     "title": "Java中异常的基类是？",
     "options": [
-      "Throwable",
       "Exception",
+      "RuntimeException",
       "Error",
-      "RuntimeException"
+      "Throwable"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-242",
     "title": "Java中Error的特点是？",
     "options": [
       "严重错误，程序无法处理",
-      "轻微错误，程序可以处理",
+      "运行错误",
       "编译错误",
-      "运行错误"
+      "轻微错误，程序可以处理"
     ],
     "correctAnswer": 0
   },
@@ -465,34 +465,34 @@
     "id": "java-243",
     "title": "Java中Exception的特点是？",
     "options": [
+      "系统错误",
       "程序可以处理的错误",
       "程序无法处理的错误",
-      "编译错误",
-      "系统错误"
+      "编译错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-244",
     "title": "Java中RuntimeException的特点是？",
     "options": [
+      "系统异常",
       "非受检异常",
-      "受检异常",
       "编译异常",
-      "系统异常"
+      "受检异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-245",
     "title": "Java中受检异常的特点是？",
     "options": [
-      "必须处理或声明",
       "可以不处理",
       "编译器不检查",
-      "运行时才检查"
+      "运行时才检查",
+      "必须处理或声明"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-246",
@@ -510,8 +510,8 @@
     "title": "Java中try-catch-finally的执行顺序是？",
     "options": [
       "try-catch-finally",
-      "try-finally-catch",
       "catch-try-finally",
+      "try-finally-catch",
       "finally-try-catch"
     ],
     "correctAnswer": 0
@@ -520,33 +520,33 @@
     "id": "java-248",
     "title": "Java中finally块一定会执行吗？",
     "options": [
-      "不一定，如System.exit()",
       "一定",
-      "取决于异常",
-      "取决于try"
+      "取决于try",
+      "不一定，如System.exit()",
+      "取决于异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-249",
     "title": "Java中throw和throws的区别是？",
     "options": [
-      "throw抛出异常，throws声明异常",
       "throw声明异常，throws抛出异常",
       "无区别",
+      "throw抛出异常，throws声明异常",
       "取决于位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-250",
     "title": "Java中自定义异常应该继承？",
     "options": [
-      "Exception或其子类",
-      "Error",
+      "Object",
       "Throwable",
-      "Object"
+      "Exception或其子类",
+      "Error"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

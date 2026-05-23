@@ -4,9 +4,9 @@
     "title": "CSS中position属性的默认值是？",
     "options": [
       "static",
+      "initial",
       "relative",
-      "absolute",
-      "initial"
+      "absolute"
     ],
     "correctAnswer": 0
   },
@@ -14,43 +14,43 @@
     "id": "css-402",
     "title": "position: relative的特点是？",
     "options": [
-      "相对自身原位置偏移，不脱离文档流",
       "相对父元素偏移",
       "脱离文档流",
+      "相对自身原位置偏移，不脱离文档流",
       "相对浏览器窗口定位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-403",
     "title": "position: absolute的特点是？",
     "options": [
-      "相对最近的非static祖先元素偏移，脱离文档流",
       "相对自身偏移",
-      "不脱离文档流",
-      "相对浏览器窗口定位"
+      "相对浏览器窗口定位",
+      "相对最近的非static祖先元素偏移，脱离文档流",
+      "不脱离文档流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-404",
     "title": "position: fixed的特点是？",
     "options": [
-      "相对浏览器窗口定位，脱离文档流",
       "相对父元素定位",
-      "相对自身定位",
-      "不脱离文档流"
+      "相对浏览器窗口定位，脱离文档流",
+      "不脱离文档流",
+      "相对自身定位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-405",
     "title": "position: sticky的特点是？",
     "options": [
       "相对定位和固定定位的混合",
-      "绝对定位",
+      "固定定位",
       "相对定位",
-      "固定定位"
+      "绝对定位"
     ],
     "correctAnswer": 0
   },
@@ -59,9 +59,9 @@
     "title": "absolute定位的包含块是？",
     "options": [
       "最近的非static定位的祖先元素",
-      "父元素",
       "html元素",
-      "浏览器窗口"
+      "浏览器窗口",
+      "父元素"
     ],
     "correctAnswer": 0
   },
@@ -69,197 +69,197 @@
     "id": "css-407",
     "title": "fixed定位的包含块是？",
     "options": [
-      "视口",
-      "父元素",
       "html元素",
-      "最近的定位祖先"
+      "最近的定位祖先",
+      "父元素",
+      "视口"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-408",
     "title": "sticky定位的包含块是？",
     "options": [
-      "最近的滚动祖先",
-      "父元素",
+      "视口",
       "html元素",
-      "视口"
+      "父元素",
+      "最近的滚动祖先"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-409",
     "title": "如何实现元素的垂直居中（已知宽高）？",
     "options": [
-      "absolute + 负margin",
       "margin: auto",
       "text-align: center",
-      "vertical-align: middle"
+      "vertical-align: middle",
+      "absolute + 负margin"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-410",
     "title": "如何实现元素的垂直居中（未知宽高）？",
     "options": [
+      "line-height",
       "absolute + transform",
       "margin: auto",
-      "text-align: center",
-      "line-height"
+      "text-align: center"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-411",
     "title": "absolute + margin: auto居中的条件是？",
     "options": [
-      "四个方向为0，元素有宽高",
+      "不需要宽高",
       "只需要top和left为0",
       "只需要margin: auto",
-      "不需要宽高"
+      "四个方向为0，元素有宽高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-412",
     "title": "transform: translate(-50%, -50%)是相对于什么？",
     "options": [
-      "元素自身的宽高",
       "父元素的宽高",
-      "视口大小",
-      "文档大小"
+      "元素自身的宽高",
+      "文档大小",
+      "视口大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-413",
     "title": "float属性的可用值不包括？",
     "options": [
-      "center",
       "left",
+      "none",
       "right",
-      "none"
+      "center"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-414",
     "title": "float: left的作用是？",
     "options": [
+      "元素固定在左侧",
       "元素向左浮动，文本环绕在右侧",
       "元素居左对齐",
-      "元素固定在左侧",
       "元素向左移动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-415",
     "title": "浮动元素对文档流的影响是？",
     "options": [
-      "脱离文档流，但影响文本排列",
       "不脱离文档流",
-      "完全不影响其他元素",
-      "隐藏元素"
+      "脱离文档流，但影响文本排列",
+      "隐藏元素",
+      "完全不影响其他元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-416",
     "title": "清除浮动的方法不包括？",
     "options": [
+      "overflow: hidden",
       "float: clear",
       "clearfix伪元素",
-      "overflow: hidden",
       "clear: both"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-417",
     "title": "clear: both的作用是？",
     "options": [
-      "元素两侧不允许有浮动元素",
+      "清除边框",
       "清除所有样式",
-      "清除内边距",
-      "清除边框"
+      "元素两侧不允许有浮动元素",
+      "清除内边距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-418",
     "title": "overflow: hidden清除浮动的原理是？",
     "options": [
-      "创建BFC包含浮动子元素",
-      "隐藏溢出内容",
       "清除样式",
-      "重置高度"
+      "创建BFC包含浮动子元素",
+      "重置高度",
+      "隐藏溢出内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-419",
     "title": "clearfix的实现原理是？",
     "options": [
-      "伪元素添加不可见块级元素清除浮动",
-      "隐藏溢出",
+      "重置样式",
       "创建BFC",
-      "重置样式"
+      "隐藏溢出",
+      "伪元素添加不可见块级元素清除浮动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-420",
     "title": "浮动导致的父元素高度塌陷是指？",
     "options": [
+      "子元素高度变为0",
       "父元素高度变为0不包含浮动子元素",
       "父元素高度增加",
-      "子元素高度变为0",
       "父元素溢出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-421",
     "title": "如何实现文字环绕图片？",
     "options": [
-      "图片float: left",
+      "文字float: right",
       "图片position: absolute",
-      "图片display: inline-block",
-      "文字float: right"
+      "图片float: left",
+      "图片display: inline-block"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-422",
     "title": "浮动布局的缺点是？",
     "options": [
-      "高度塌陷、布局复杂、响应式差",
+      "不支持中文",
       "性能差",
-      "不兼容",
-      "不支持中文"
+      "高度塌陷、布局复杂、响应式差",
+      "不兼容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-423",
     "title": "如何实现多列浮动布局？",
     "options": [
-      "float: left配合width百分比",
-      "display: inline-block",
       "column-count",
-      "position: absolute"
+      "float: left配合width百分比",
+      "position: absolute",
+      "display: inline-block"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-424",
     "title": "浮动元素之间的间距如何控制？",
     "options": [
       "margin",
-      "gap",
+      "border",
       "padding",
-      "border"
+      "gap"
     ],
     "correctAnswer": 0
   },
@@ -267,12 +267,12 @@
     "id": "css-425",
     "title": "浮动元素换行的条件是？",
     "options": [
-      "当前行宽度不足",
       "设置clear",
       "设置overflow",
+      "当前行宽度不足",
       "设置display"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-426",
@@ -280,8 +280,8 @@
     "options": [
       "父元素宽度足够或white-space: nowrap",
       "clear: none",
-      "overflow: hidden",
-      "display: block"
+      "display: block",
+      "overflow: hidden"
     ],
     "correctAnswer": 0
   },
@@ -289,21 +289,21 @@
     "id": "css-427",
     "title": "浮动与绝对定位的区别？",
     "options": [
-      "浮动影响文本排列，绝对定位完全脱离",
       "没有区别",
+      "绝对定位影响文本",
       "浮动完全脱离",
-      "绝对定位影响文本"
+      "浮动影响文本排列，绝对定位完全脱离"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-428",
     "title": "如何实现圣杯布局（浮动版）？",
     "options": [
       "负margin配合float和position: relative",
-      "flex布局",
+      "display: table",
       "grid布局",
-      "display: table"
+      "flex布局"
     ],
     "correctAnswer": 0
   },
@@ -311,34 +311,34 @@
     "id": "css-429",
     "title": "如何实现双飞翼布局（浮动版）？",
     "options": [
-      "负margin配合float和margin",
+      "display: table",
       "flex布局",
       "grid布局",
-      "display: table"
+      "负margin配合float和margin"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-430",
     "title": "负margin的作用是？",
     "options": [
-      "增加元素尺寸或改变位置",
-      "减少元素尺寸",
+      "清除浮动",
       "隐藏元素",
-      "清除浮动"
+      "增加元素尺寸或改变位置",
+      "减少元素尺寸"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-431",
     "title": "负margin: -10px对块级元素的影响？",
     "options": [
-      "元素向对应方向移动10px，后续元素跟随",
+      "元素隐藏",
       "元素缩小10px",
       "元素放大10px",
-      "元素隐藏"
+      "元素向对应方向移动10px，后续元素跟随"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-432",
@@ -357,8 +357,8 @@
     "options": [
       "大padding-bottom配合负margin-bottom",
       "设置相同height",
-      "display: table",
-      "flex布局"
+      "flex布局",
+      "display: table"
     ],
     "correctAnswer": 0
   },
@@ -366,98 +366,98 @@
     "id": "css-434",
     "title": "z-index的作用是？",
     "options": [
-      "控制定位元素的堆叠顺序",
-      "控制元素大小",
       "控制元素位置",
-      "控制元素透明度"
+      "控制元素透明度",
+      "控制定位元素的堆叠顺序",
+      "控制元素大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-435",
     "title": "z-index的默认值是？",
     "options": [
-      "auto",
       "0",
+      "-1",
       "1",
-      "-1"
+      "auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-436",
     "title": "z-index只在什么情况下生效？",
     "options": [
+      "float存在时",
       "position不是static时",
-      "任何情况",
       "display为block时",
-      "float存在时"
+      "任何情况"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-437",
     "title": "层叠上下文是什么？",
     "options": [
+      "元素的绘制顺序",
       "决定元素在Z轴上的渲染顺序的三维概念",
-      "元素的层叠顺序",
       "元素的显示顺序",
-      "元素的绘制顺序"
+      "元素的层叠顺序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-438",
     "title": "如何创建层叠上下文？",
     "options": [
-      "position + z-index、opacity < 1、transform等",
+      "float: left",
       "display: block",
-      "margin: auto",
-      "float: left"
+      "position + z-index、opacity < 1、transform等",
+      "margin: auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-439",
     "title": "层叠上下文的优先级规则是？",
     "options": [
-      "父层叠上下文 > 子层叠上下文",
-      "子层叠上下文 > 父层叠上下文",
       "z-index大的总是在上",
+      "子层叠上下文 > 父层叠上下文",
+      "父层叠上下文 > 子层叠上下文",
       "后渲染的在上"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-440",
     "title": "如何解决z-index失效问题？",
     "options": [
-      "检查是否创建层叠上下文和定位属性",
       "增加z-index值",
+      "检查是否创建层叠上下文和定位属性",
       "使用!important",
       "设置position: absolute"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-441",
     "title": "position: sticky的兼容性如何？",
     "options": [
-      "现代浏览器支持，IE不支持",
-      "所有浏览器支持",
       "只有Chrome支持",
-      "只有Firefox支持"
+      "只有Firefox支持",
+      "现代浏览器支持，IE不支持",
+      "所有浏览器支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-442",
     "title": "sticky定位失效的原因可能是？",
     "options": [
       "父元素overflow: hidden、未指定top/bottom、父元素高度不足",
-      "z-index未设置",
+      "margin: auto",
       "display: block",
-      "margin: auto"
+      "z-index未设置"
     ],
     "correctAnswer": 0
   },
@@ -465,65 +465,65 @@
     "id": "css-443",
     "title": "如何实现吸顶导航？",
     "options": [
-      "position: sticky; top: 0;",
+      "margin-top: 0;",
       "position: fixed; top: 0;",
-      "position: absolute; top: 0;",
-      "margin-top: 0;"
+      "position: sticky; top: 0;",
+      "position: absolute; top: 0;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-444",
     "title": "如何实现吸底操作栏？",
     "options": [
-      "position: sticky; bottom: 0;",
-      "position: fixed; bottom: 0;",
       "position: absolute; bottom: 0;",
+      "position: fixed; bottom: 0;",
+      "position: sticky; bottom: 0;",
       "margin-bottom: 0;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-445",
     "title": "fixed定位在移动端的问题？",
     "options": [
-      "软键盘弹出时定位异常、iOS滚动卡顿",
       "性能差",
+      "软键盘弹出时定位异常、iOS滚动卡顿",
       "不兼容",
       "无法点击"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-446",
     "title": "如何解决移动端fixed定位问题？",
     "options": [
-      "使用sticky替代或调整布局结构",
+      "不使用定位",
       "增加z-index",
-      "使用absolute",
-      "不使用定位"
+      "使用sticky替代或调整布局结构",
+      "使用absolute"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-447",
     "title": "absolute定位如何实现全屏遮罩？",
     "options": [
-      "top:0; right:0; bottom:0; left:0;",
+      "display: block;",
       "width:100%; height:100%;",
       "margin: auto;",
-      "display: block;"
+      "top:0; right:0; bottom:0; left:0;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-448",
     "title": "如何实现元素的水平居中？",
     "options": [
       "margin: 0 auto (块级) 或 text-align: center (内联)",
-      "vertical-align: middle",
       "position: absolute",
-      "float: left"
+      "float: left",
+      "vertical-align: middle"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "css-449",
     "title": "如何实现单行文本垂直居中？",
     "options": [
-      "line-height等于height",
       "vertical-align: middle",
+      "line-height等于height",
       "margin: auto 0",
       "padding: 50% 0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-450",
     "title": "如何实现多行文本垂直居中？",
     "options": [
-      "display: table-cell; vertical-align: middle;",
+      "text-align: center",
       "line-height",
-      "margin: auto",
-      "text-align: center"
+      "display: table-cell; vertical-align: middle;",
+      "margin: auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

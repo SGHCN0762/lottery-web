@@ -3,98 +3,98 @@
     "id": "go-201",
     "title": "Go语言中，以下哪种方式可以正确声明int类型变量？",
     "options": [
+      "define x int",
       "var x int",
-      "x := int()",
       "x = new(int)",
-      "define x int"
+      "x := int()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-202",
     "title": "Go语言中，以下哪种方式可以正确声明string类型变量？",
     "options": [
-      "var x string",
-      "x := string()",
       "x = new(string)",
+      "x := string()",
+      "var x string",
       "define x string"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-203",
     "title": "Go语言中，以下哪种方式可以正确声明float64类型变量？",
     "options": [
+      "x = new(float64)",
       "var x float64",
       "x := float64()",
-      "x = new(float64)",
       "define x float64"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-204",
     "title": "Go语言中，以下哪种方式可以正确声明bool类型变量？",
     "options": [
-      "var x bool",
       "x := bool()",
       "x = new(bool)",
-      "define x bool"
+      "define x bool",
+      "var x bool"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-205",
     "title": "Go语言中，以下哪种方式可以正确声明rune类型变量？",
     "options": [
+      "define x rune",
       "var x rune",
-      "x := rune()",
       "x = new(rune)",
-      "define x rune"
+      "x := rune()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-206",
     "title": "Go语言中，以下哪种方式可以正确声明byte类型变量？",
     "options": [
-      "var x byte",
-      "x := byte()",
       "x = new(byte)",
-      "define x byte"
+      "define x byte",
+      "var x byte",
+      "x := byte()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-207",
     "title": "Go语言中，以下哪种方式可以正确声明[]int类型变量？",
     "options": [
-      "var x []int",
-      "x := []int()",
       "x = new([]int)",
-      "define x []int"
+      "define x []int",
+      "var x []int",
+      "x := []int()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-208",
     "title": "Go语言中，以下哪种方式可以正确声明map[string]int类型变量？",
     "options": [
-      "var x map[string]int",
       "x := map[string]int()",
       "x = new(map[string]int)",
+      "var x map[string]int",
       "define x map[string]int"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-209",
     "title": "Go语言中，以下哪种方式可以正确声明int类型变量？",
     "options": [
       "var x int",
-      "x := int()",
       "x = new(int)",
-      "define x int"
+      "define x int",
+      "x := int()"
     ],
     "correctAnswer": 0
   },
@@ -102,54 +102,54 @@
     "id": "go-210",
     "title": "Go语言中，以下哪种方式可以正确声明string类型变量？",
     "options": [
-      "var x string",
-      "x := string()",
+      "define x string",
       "x = new(string)",
-      "define x string"
+      "var x string",
+      "x := string()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-211",
     "title": "Go语言中，以下哪种方式可以正确声明float64类型变量？",
     "options": [
-      "var x float64",
+      "define x float64",
       "x := float64()",
       "x = new(float64)",
-      "define x float64"
+      "var x float64"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-212",
     "title": "Go语言中，以下哪种方式可以正确声明bool类型变量？",
     "options": [
+      "define x bool",
       "var x bool",
-      "x := bool()",
       "x = new(bool)",
-      "define x bool"
+      "x := bool()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-213",
     "title": "Go语言中，以下哪种方式可以正确声明rune类型变量？",
     "options": [
-      "var x rune",
-      "x := rune()",
       "x = new(rune)",
-      "define x rune"
+      "define x rune",
+      "var x rune",
+      "x := rune()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-214",
     "title": "Go语言中，以下哪种方式可以正确声明byte类型变量？",
     "options": [
       "var x byte",
-      "x := byte()",
+      "define x byte",
       "x = new(byte)",
-      "define x byte"
+      "x := byte()"
     ],
     "correctAnswer": 0
   },
@@ -157,120 +157,120 @@
     "id": "go-215",
     "title": "Go语言中，以下哪种方式可以正确声明[]int类型变量？",
     "options": [
-      "var x []int",
       "x := []int()",
       "x = new([]int)",
+      "var x []int",
       "define x []int"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-216",
     "title": "Go语言中，以下哪种方式可以正确声明map[string]int类型变量？",
     "options": [
-      "var x map[string]int",
+      "define x map[string]int",
       "x := map[string]int()",
       "x = new(map[string]int)",
-      "define x map[string]int"
+      "var x map[string]int"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-217",
     "title": "Go语言中，以下哪种方式可以正确声明int类型变量？",
     "options": [
-      "var x int",
-      "x := int()",
       "x = new(int)",
-      "define x int"
+      "define x int",
+      "x := int()",
+      "var x int"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-218",
     "title": "Go语言中，以下哪种方式可以正确声明string类型变量？",
     "options": [
-      "var x string",
+      "define x string",
       "x := string()",
       "x = new(string)",
-      "define x string"
+      "var x string"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-219",
     "title": "Go语言中，以下哪种方式可以正确声明float64类型变量？",
     "options": [
-      "var x float64",
+      "define x float64",
       "x := float64()",
-      "x = new(float64)",
-      "define x float64"
+      "var x float64",
+      "x = new(float64)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-220",
     "title": "Go语言中，以下哪种方式可以正确声明bool类型变量？",
     "options": [
-      "var x bool",
-      "x := bool()",
+      "define x bool",
       "x = new(bool)",
-      "define x bool"
+      "var x bool",
+      "x := bool()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-221",
     "title": "Go语言中，以下哪种方式可以正确声明rune类型变量？",
     "options": [
+      "define x rune",
       "var x rune",
-      "x := rune()",
       "x = new(rune)",
-      "define x rune"
+      "x := rune()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-222",
     "title": "Go语言中，以下哪种方式可以正确声明byte类型变量？",
     "options": [
+      "define x byte",
       "var x byte",
-      "x := byte()",
       "x = new(byte)",
-      "define x byte"
+      "x := byte()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-223",
     "title": "Go语言中，以下哪种方式可以正确声明[]int类型变量？",
     "options": [
-      "var x []int",
+      "define x []int",
       "x := []int()",
-      "x = new([]int)",
-      "define x []int"
+      "var x []int",
+      "x = new([]int)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-224",
     "title": "Go语言中，以下哪种方式可以正确声明map[string]int类型变量？",
     "options": [
-      "var x map[string]int",
-      "x := map[string]int()",
       "x = new(map[string]int)",
-      "define x map[string]int"
+      "var x map[string]int",
+      "define x map[string]int",
+      "x := map[string]int()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-225",
     "title": "Go语言中，以下哪种方式可以正确声明int类型变量？",
     "options": [
       "var x int",
-      "x := int()",
       "x = new(int)",
-      "define x int"
+      "define x int",
+      "x := int()"
     ],
     "correctAnswer": 0
   },
@@ -278,23 +278,23 @@
     "id": "go-226",
     "title": "Go语言中，以下哪种方式可以正确声明string类型变量？",
     "options": [
-      "var x string",
-      "x := string()",
       "x = new(string)",
-      "define x string"
+      "define x string",
+      "x := string()",
+      "var x string"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-227",
     "title": "Go语言中，以下哪种方式可以正确声明float64类型变量？",
     "options": [
-      "var x float64",
       "x := float64()",
       "x = new(float64)",
-      "define x float64"
+      "define x float64",
+      "var x float64"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-228",
@@ -311,97 +311,97 @@
     "id": "go-229",
     "title": "Go语言中，以下哪种方式可以正确声明rune类型变量？",
     "options": [
-      "var x rune",
+      "define x rune",
       "x := rune()",
       "x = new(rune)",
-      "define x rune"
+      "var x rune"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-230",
     "title": "Go语言中，以下哪种方式可以正确声明byte类型变量？",
     "options": [
+      "x = new(byte)",
       "var x byte",
       "x := byte()",
-      "x = new(byte)",
       "define x byte"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-231",
     "title": "Go语言中，以下哪种方式可以正确声明[]int类型变量？",
     "options": [
-      "var x []int",
-      "x := []int()",
+      "define x []int",
       "x = new([]int)",
-      "define x []int"
+      "x := []int()",
+      "var x []int"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-232",
     "title": "Go语言中，以下哪种方式可以正确声明map[string]int类型变量？",
     "options": [
-      "var x map[string]int",
+      "define x map[string]int",
       "x := map[string]int()",
       "x = new(map[string]int)",
-      "define x map[string]int"
+      "var x map[string]int"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-233",
     "title": "Go语言中，以下哪种方式可以正确声明int类型变量？",
     "options": [
-      "var x int",
-      "x := int()",
       "x = new(int)",
-      "define x int"
+      "define x int",
+      "var x int",
+      "x := int()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-234",
     "title": "Go语言中，以下哪种方式可以正确声明string类型变量？",
     "options": [
+      "x = new(string)",
       "var x string",
       "x := string()",
-      "x = new(string)",
       "define x string"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-235",
     "title": "Go语言中，以下哪种方式可以正确声明float64类型变量？",
     "options": [
-      "var x float64",
       "x := float64()",
       "x = new(float64)",
+      "var x float64",
       "define x float64"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-236",
     "title": "Go语言中，以下哪种方式可以正确声明bool类型变量？",
     "options": [
-      "var x bool",
+      "define x bool",
       "x := bool()",
-      "x = new(bool)",
-      "define x bool"
+      "var x bool",
+      "x = new(bool)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-237",
     "title": "Go语言中，以下哪种方式可以正确声明rune类型变量？",
     "options": [
       "var x rune",
-      "x := rune()",
       "x = new(rune)",
+      "x := rune()",
       "define x rune"
     ],
     "correctAnswer": 0
@@ -410,12 +410,12 @@
     "id": "go-238",
     "title": "Go语言中，以下哪种方式可以正确声明byte类型变量？",
     "options": [
-      "var x byte",
-      "x := byte()",
       "x = new(byte)",
-      "define x byte"
+      "define x byte",
+      "x := byte()",
+      "var x byte"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-239",
@@ -432,109 +432,109 @@
     "id": "go-240",
     "title": "Go语言中，以下哪种方式可以正确声明map[string]int类型变量？",
     "options": [
-      "var x map[string]int",
       "x := map[string]int()",
-      "x = new(map[string]int)",
-      "define x map[string]int"
+      "var x map[string]int",
+      "define x map[string]int",
+      "x = new(map[string]int)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-241",
     "title": "Go语言中，goroutine的调度模型是？",
     "options": [
-      "GMP模型",
       "线程池模型",
-      "协程模型",
-      "进程模型"
+      "GMP模型",
+      "进程模型",
+      "协程模型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-242",
     "title": "Go语言中，GMP模型中的G代表什么？",
     "options": [
-      "Goroutine",
       "Generator",
-      "Global",
-      "Guard"
+      "Goroutine",
+      "Guard",
+      "Global"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-243",
     "title": "Go语言中，GMP模型中的M代表什么？",
     "options": [
-      "Machine（内核线程）",
       "Memory",
       "Manager",
+      "Machine（内核线程）",
       "Module"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-244",
     "title": "Go语言中，GMP模型中的P代表什么？",
     "options": [
-      "Processor（逻辑处理器）",
       "Process",
-      "Program",
-      "Pool"
+      "Pool",
+      "Processor（逻辑处理器）",
+      "Program"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-245",
     "title": "Go语言中，P的数量默认是多少？",
     "options": [
-      "等于CPU核心数",
-      "1",
+      "无限",
       "2",
-      "无限"
+      "1",
+      "等于CPU核心数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-246",
     "title": "Go语言中，Goroutine泄漏的常见原因？",
     "options": [
-      "通道未关闭、goroutine阻塞",
       "内存不足",
+      "文件未关闭",
       "CPU过高",
-      "文件未关闭"
+      "通道未关闭、goroutine阻塞"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-247",
     "title": "Go语言中，如何避免Goroutine泄漏？",
     "options": [
-      "使用context控制、确保通道关闭",
       "增加内存",
+      "使用context控制、确保通道关闭",
       "减少goroutine数量",
       "使用锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-248",
     "title": "Go语言中，无缓冲通道的发送操作会阻塞直到？",
     "options": [
-      "有接收者准备好",
-      "数据被缓冲",
+      "超时",
       "数据被丢弃",
-      "超时"
+      "有接收者准备好",
+      "数据被缓冲"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-249",
     "title": "Go语言中，有缓冲通道的发送操作会阻塞直到？",
     "options": [
       "缓冲区有空间",
+      "超时",
       "接收者准备好",
-      "通道关闭",
-      "超时"
+      "通道关闭"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "go-250",
     "title": "Go语言中，channel的零值是？",
     "options": [
-      "nil",
-      "empty",
+      "0",
       "closed",
-      "0"
+      "empty",
+      "nil"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

@@ -3,108 +3,108 @@
     "id": "js-201",
     "title": "JavaScript中getOwnPropertyDescriptor的作用是？",
     "options": [
-      "获取属性描述符",
       "设置属性描述符",
-      "删除属性描述符",
-      "遍历属性描述符"
+      "获取属性描述符",
+      "遍历属性描述符",
+      "删除属性描述符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-202",
     "title": "JavaScript中原型链查找的过程是？",
     "options": [
-      "自身 -> __proto__ -> ... -> null",
-      "自身 -> prototype -> ... -> null",
+      "以上都不对",
       "全局 -> 局部 -> 自身",
-      "以上都不对"
+      "自身 -> __proto__ -> ... -> null",
+      "自身 -> prototype -> ... -> null"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-203",
     "title": "JavaScript中属性遮蔽是指？",
     "options": [
-      "子对象属性覆盖父对象同名属性",
       "删除属性",
+      "修改属性描述符",
       "添加属性",
-      "修改属性描述符"
+      "子对象属性覆盖父对象同名属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-204",
     "title": "JavaScript中delete操作符能删除原型属性吗？",
     "options": [
-      "不能，只能删除自身属性",
-      "能",
       "取决于属性",
-      "取决于对象"
+      "取决于对象",
+      "能",
+      "不能，只能删除自身属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-205",
     "title": "JavaScript中delete操作符删除不存在的属性会？",
     "options": [
-      "返回true",
-      "返回false",
       "抛出错误",
-      "返回undefined"
+      "返回undefined",
+      "返回true",
+      "返回false"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-206",
     "title": "JavaScript中delete操作符删除不可配置属性会？",
     "options": [
-      "返回false",
+      "返回undefined",
       "返回true",
-      "抛出错误",
-      "返回undefined"
+      "返回false",
+      "抛出错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-207",
     "title": "JavaScript中严格模式下delete不可配置属性会？",
     "options": [
-      "抛出TypeError",
-      "返回false",
       "返回true",
-      "忽略"
+      "抛出TypeError",
+      "忽略",
+      "返回false"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-208",
     "title": "JavaScript中in操作符和hasOwnProperty的区别是？",
     "options": [
-      "in检查原型链，hasOwnProperty只检查自身",
+      "取决于对象",
       "没有区别",
-      "in只检查自身，hasOwnProperty检查原型链",
-      "取决于对象"
+      "in检查原型链，hasOwnProperty只检查自身",
+      "in只检查自身，hasOwnProperty检查原型链"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-209",
     "title": "JavaScript中如何阻止对象扩展？",
     "options": [
-      "Object.preventExtensions()",
-      "Object.freeze()",
       "Object.seal()",
-      "delete"
+      "Object.preventExtensions()",
+      "delete",
+      "Object.freeze()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-210",
     "title": "JavaScript中如何判断对象是否被冻结？",
     "options": [
       "Object.isFrozen()",
-      "Object.isSealed()",
       "Object.isExtensible()",
+      "Object.isSealed()",
       "typeof"
     ],
     "correctAnswer": 0
@@ -126,8 +126,8 @@
     "options": [
       "递归调用Object.freeze()",
       "Object.deepFreeze()",
-      "Object.freeze(obj, true)",
-      "无法实现"
+      "无法实现",
+      "Object.freeze(obj, true)"
     ],
     "correctAnswer": 0
   },
@@ -135,23 +135,23 @@
     "id": "js-213",
     "title": "JavaScript中class的constructor方法是？",
     "options": [
-      "构造方法",
-      "静态方法",
       "原型方法",
-      "私有方法"
+      "私有方法",
+      "静态方法",
+      "构造方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-214",
     "title": "JavaScript中class没有显式定义constructor会怎样？",
     "options": [
-      "默认添加空constructor",
+      "无法继承",
       "报错",
       "无法实例化",
-      "无法继承"
+      "默认添加空constructor"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-215",
@@ -159,8 +159,8 @@
     "options": [
       "prototype上",
       "实例上",
-      "constructor上",
-      "全局"
+      "全局",
+      "constructor上"
     ],
     "correctAnswer": 0
   },
@@ -168,87 +168,87 @@
     "id": "js-216",
     "title": "JavaScript中class的静态方法是挂在哪里的？",
     "options": [
-      "类本身上",
-      "prototype上",
+      "constructor上",
       "实例上",
-      "constructor上"
+      "prototype上",
+      "类本身上"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-217",
     "title": "JavaScript中class的静态属性如何定义？",
     "options": [
-      "static prop = value",
       "prop = value",
-      "constructor内定义",
-      "prototype上定义"
+      "prototype上定义",
+      "static prop = value",
+      "constructor内定义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-218",
     "title": "JavaScript中class的私有字段如何定义？",
     "options": [
-      "#field",
+      "@field",
       "_field",
-      "private field",
-      "@field"
+      "#field",
+      "private field"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-219",
     "title": "JavaScript中私有字段可以在类外部访问吗？",
     "options": [
-      "不可以",
+      "取决于环境",
       "可以",
-      "取决于字段名",
-      "取决于环境"
+      "不可以",
+      "取决于字段名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-220",
     "title": "JavaScript中私有方法如何定义？",
     "options": [
-      "#method() {}",
-      "private method() {}",
       "_method() {}",
-      "@method() {}"
+      "#method() {}",
+      "@method() {}",
+      "private method() {}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-221",
     "title": "JavaScript中class的extends本质是？",
     "options": [
-      "基于原型链的继承",
-      "基于接口的继承",
       "基于类的继承",
+      "基于接口的继承",
+      "基于原型链的继承",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-222",
     "title": "JavaScript中super作为函数调用时代表？",
     "options": [
-      "父构造函数",
       "父类的原型对象",
+      "父实例",
       "父类本身",
-      "父实例"
+      "父构造函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-223",
     "title": "JavaScript中super作为对象调用时代表？",
     "options": [
       "父类的原型对象",
-      "父构造函数",
       "父类本身",
-      "父实例"
+      "父实例",
+      "父构造函数"
     ],
     "correctAnswer": 0
   },
@@ -256,65 +256,65 @@
     "id": "js-224",
     "title": "JavaScript中子类继承原生构造函数可以获取内部属性吗？",
     "options": [
-      "可以",
+      "取决于环境",
       "不可以",
-      "取决于构造函数",
-      "取决于环境"
+      "可以",
+      "取决于构造函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-225",
     "title": "JavaScript中new.target的作用是？",
     "options": [
-      "检测是否被new调用",
+      "获取实例",
       "获取构造函数",
-      "获取原型",
-      "获取实例"
+      "检测是否被new调用",
+      "获取原型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-226",
     "title": "JavaScript中new.target在普通函数中返回？",
     "options": [
-      "undefined",
       "函数本身",
+      "undefined",
       "true",
       "false"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-227",
     "title": "JavaScript中new.target在子类中返回？",
     "options": [
-      "子类本身",
       "父类",
       "undefined",
+      "子类本身",
       "true"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-228",
     "title": "JavaScript中Symbol.hasInstance的作用是？",
     "options": [
-      "自定义instanceof行为",
-      "自定义迭代器",
+      "自定义字符串转换",
       "自定义类型转换",
-      "自定义字符串转换"
+      "自定义迭代器",
+      "自定义instanceof行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-229",
     "title": "JavaScript中如何自定义instanceof？",
     "options": [
       "定义Symbol.hasInstance静态方法",
-      "定义instanceof方法",
       "定义Symbol.instanceOf",
-      "无法自定义"
+      "无法自定义",
+      "定义instanceof方法"
     ],
     "correctAnswer": 0
   },
@@ -322,34 +322,34 @@
     "id": "js-230",
     "title": "JavaScript中对象的toStringTag可以修改吗？",
     "options": [
+      "取决于对象",
       "可以，通过Symbol.toStringTag",
-      "不可以",
       "只能修改内置对象",
-      "取决于对象"
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-231",
     "title": "JavaScript中Symbol.toPrimitive的作用是？",
     "options": [
-      "自定义类型转换行为",
-      "自定义字符串转换",
       "自定义数字转换",
-      "自定义布尔转换"
+      "自定义布尔转换",
+      "自定义字符串转换",
+      "自定义类型转换行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-232",
     "title": "JavaScript中对象转原始值的顺序是？",
     "options": [
-      "先toPrimitive再valueOf再toString",
-      "先valueOf再toString",
       "先toString再valueOf",
-      "取决于提示类型"
+      "先toPrimitive再valueOf再toString",
+      "取决于提示类型",
+      "先valueOf再toString"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-233",
@@ -366,21 +366,21 @@
     "id": "js-234",
     "title": "JavaScript中对象转字符串的提示类型是？",
     "options": [
-      "string",
       "number",
-      "default",
-      "boolean"
+      "boolean",
+      "string",
+      "default"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-235",
     "title": "JavaScript中对象相加的提示类型是？",
     "options": [
       "default",
+      "boolean",
       "number",
-      "string",
-      "boolean"
+      "string"
     ],
     "correctAnswer": 0
   },
@@ -388,23 +388,23 @@
     "id": "js-236",
     "title": "JavaScript中Date对象相加的提示类型是？",
     "options": [
-      "string",
       "number",
-      "default",
-      "boolean"
+      "string",
+      "boolean",
+      "default"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-237",
     "title": "JavaScript中Proxy的作用是？",
     "options": [
-      "拦截对象操作",
-      "克隆对象",
       "冻结对象",
+      "克隆对象",
+      "拦截对象操作",
       "合并对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-238",
@@ -421,21 +421,21 @@
     "id": "js-239",
     "title": "JavaScript中Proxy和Reflect的关系是？",
     "options": [
-      "Reflect提供Proxy的默认行为",
-      "没有关系",
       "Reflect替代Proxy",
+      "没有关系",
+      "Reflect提供Proxy的默认行为",
       "Proxy替代Reflect"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-240",
     "title": "JavaScript中Proxy可以拦截哪些操作？",
     "options": [
       "读取，赋值，删除，枚举等",
-      "仅读取",
       "仅赋值",
-      "仅删除"
+      "仅删除",
+      "仅读取"
     ],
     "correctAnswer": 0
   },
@@ -443,76 +443,76 @@
     "id": "js-241",
     "title": "JavaScript中String的charAt作用是？",
     "options": [
-      "返回指定位置字符",
       "返回字符编码",
-      "查找子串",
-      "截取字符串"
+      "返回指定位置字符",
+      "截取字符串",
+      "查找子串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-242",
     "title": "JavaScript中String的charCodeAt作用是？",
     "options": [
-      "返回指定位置字符的UTF-16编码",
-      "返回字符",
       "查找子串",
-      "截取字符串"
+      "返回字符",
+      "截取字符串",
+      "返回指定位置字符的UTF-16编码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-243",
     "title": "JavaScript中String的concat作用是？",
     "options": [
-      "拼接字符串",
+      "替换字符串",
       "截取字符串",
-      "查找字符串",
-      "替换字符串"
+      "拼接字符串",
+      "查找字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-244",
     "title": "JavaScript中String的indexOf作用是？",
     "options": [
-      "查找子串首次出现位置",
       "查找字符",
+      "查找子串首次出现位置",
       "截取字符串",
       "替换字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-245",
     "title": "JavaScript中String的lastIndexOf作用是？",
     "options": [
-      "查找子串最后出现位置",
-      "查找字符",
       "截取字符串",
-      "替换字符串"
+      "替换字符串",
+      "查找字符",
+      "查找子串最后出现位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-246",
     "title": "JavaScript中String的includes作用是？",
     "options": [
-      "判断是否包含子串",
       "查找子串位置",
       "截取字符串",
-      "替换字符串"
+      "替换字符串",
+      "判断是否包含子串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-247",
     "title": "JavaScript中String的startsWith作用是？",
     "options": [
       "判断是否以某子串开头",
+      "截取字符串",
       "判断是否以某子串结尾",
-      "判断是否包含",
-      "截取字符串"
+      "判断是否包含"
     ],
     "correctAnswer": 0
   },
@@ -521,9 +521,9 @@
     "title": "JavaScript中String的endsWith作用是？",
     "options": [
       "判断是否以某子串结尾",
+      "截取字符串",
       "判断是否以某子串开头",
-      "判断是否包含",
-      "截取字符串"
+      "判断是否包含"
     ],
     "correctAnswer": 0
   },
@@ -532,8 +532,8 @@
     "title": "JavaScript中String的match作用是？",
     "options": [
       "匹配正则表达式",
-      "替换字符串",
       "分割字符串",
+      "替换字符串",
       "截取字符串"
     ],
     "correctAnswer": 0
@@ -542,11 +542,11 @@
     "id": "js-250",
     "title": "JavaScript中String的replace作用是？",
     "options": [
-      "替换匹配的子串",
-      "匹配正则",
       "分割字符串",
-      "截取字符串"
+      "截取字符串",
+      "匹配正则",
+      "替换匹配的子串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

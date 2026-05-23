@@ -4,9 +4,9 @@
     "title": "Pinia 中如何组合多个 store？",
     "options": [
       "在 action 中调用其他 store",
-      "使用 mixins",
       "使用 extends",
-      "使用 plugins"
+      "使用 plugins",
+      "使用 mixins"
     ],
     "correctAnswer": 0
   },
@@ -14,32 +14,32 @@
     "id": "vue-652",
     "title": "Pinia 中如何测试 actions？",
     "options": [
-      "直接调用并断言",
-      "需要 mock",
       "无法测试",
-      "需要插件"
+      "需要插件",
+      "直接调用并断言",
+      "需要 mock"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-653",
     "title": "Pinia 中如何测试 getters？",
     "options": [
-      "直接访问并断言",
       "需要 mock",
       "无法测试",
-      "需要插件"
+      "需要插件",
+      "直接访问并断言"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-654",
     "title": "Pinia 中如何在插件中添加状态？",
     "options": [
-      "store.$state = {}",
+      "store.$add()",
       "store.newProp = value",
       "store.$patch()",
-      "store.$add()"
+      "store.$state = {}"
     ],
     "correctAnswer": 1
   },
@@ -47,43 +47,43 @@
     "id": "vue-655",
     "title": "Pinia 中如何在插件中重置新增状态？",
     "options": [
-      "在 reset 函数中处理",
-      "自动重置",
+      "手动删除",
       "无法重置",
-      "手动删除"
+      "在 reset 函数中处理",
+      "自动重置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-656",
     "title": "Pinia 中 store 的热更新如何实现？",
     "options": [
-      "useXxxStore(hot)",
-      "store.$hot()",
+      "自动支持",
       "store.$update()",
-      "自动支持"
+      "store.$hot()",
+      "useXxxStore(hot)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-657",
     "title": "Pinia 中如何使用 DevTools？",
     "options": [
+      "需要插件",
       "自动集成",
       "需要配置",
-      "不支持",
-      "需要插件"
+      "不支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-658",
     "title": "Pinia 中如何实现时间旅行？",
     "options": [
       "DevTools 内置支持",
+      "需要手动实现",
       "需要插件",
-      "不支持",
-      "需要手动实现"
+      "不支持"
     ],
     "correctAnswer": 0
   },
@@ -91,21 +91,21 @@
     "id": "vue-659",
     "title": "Pinia 中 $patch 函数式修改的优势是？",
     "options": [
-      "批量修改，性能更好",
       "支持异步",
+      "批量修改，性能更好",
       "支持链式调用",
       "更安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-660",
     "title": "Pinia 中如何监听特定 state 变化？",
     "options": [
       "watch(store.$state, ...)",
-      "store.$subscribe()",
       "store.$watch()",
-      "computed()"
+      "computed()",
+      "store.$subscribe()"
     ],
     "correctAnswer": 0
   },
@@ -113,78 +113,78 @@
     "id": "vue-661",
     "title": "Pinia 中如何持久化特定 state？",
     "options": [
-      "在插件中过滤",
-      "全部持久化",
+      "使用 localStorage",
       "无法指定",
-      "使用 localStorage"
+      "在插件中过滤",
+      "全部持久化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-662",
     "title": "Pinia 中如何处理表单验证？",
     "options": [
-      "在 actions 中验证",
       "使用 getters",
       "使用插件",
+      "在 actions 中验证",
       "在组件中验证"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-663",
     "title": "Pinia 中如何处理 API 请求？",
     "options": [
-      "在 actions 中请求",
       "在 getters 中请求",
+      "在 actions 中请求",
       "在 state 中请求",
       "在插件中请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-664",
     "title": "Pinia 中如何处理错误？",
     "options": [
-      "在 actions 中 try/catch",
       "在 getters 中处理",
+      "在 actions 中 try/catch",
       "在 state 中处理",
       "在插件中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-665",
     "title": "Pinia 中如何实现乐观更新？",
     "options": [
-      "先更新 state，失败回滚",
-      "先请求，成功更新",
+      "使用插件",
       "无法实现",
-      "使用插件"
+      "先更新 state，失败回滚",
+      "先请求，成功更新"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-666",
     "title": "Pinia 中如何实现撤销重做？",
     "options": [
-      "使用插件或自定义逻辑",
       "内置支持",
-      "无法实现",
-      "使用 mutations"
+      "使用 mutations",
+      "使用插件或自定义逻辑",
+      "无法实现"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-667",
     "title": "Pinia 中如何实现全局状态？",
     "options": [
-      "创建全局 store",
-      "使用 provide/inject",
       "使用 Vuex",
-      "使用 localStorage"
+      "使用 localStorage",
+      "使用 provide/inject",
+      "创建全局 store"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-668",
@@ -201,45 +201,45 @@
     "id": "vue-669",
     "title": "Pinia 中如何使用 Composition API？",
     "options": [
-      "setup 语法",
-      "mapState",
+      "mapStores",
       "mapActions",
-      "mapStores"
+      "setup 语法",
+      "mapState"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-670",
     "title": "Pinia 中如何使用 Options API？",
     "options": [
-      "mapState, mapActions",
-      "setup 语法",
+      "defineStore",
       "useStore",
-      "defineStore"
+      "mapState, mapActions",
+      "setup 语法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-671",
     "title": "Pinia 中 store 的生命周期是？",
     "options": [
+      "随组件创建销毁",
       "与组件无关，全局单例",
       "与组件相同",
-      "随组件创建销毁",
       "手动管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-672",
     "title": "Pinia 中如何处理循环依赖？",
     "options": [
-      "延迟导入 store",
-      "无法处理",
+      "删除依赖",
       "合并 store",
-      "删除依赖"
+      "无法处理",
+      "延迟导入 store"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-673",
@@ -256,20 +256,20 @@
     "id": "vue-674",
     "title": "Pinia 中如何实现国际化？",
     "options": [
-      "创建 i18n store",
       "使用插件",
-      "在 getters 中处理",
-      "在 actions 中处理"
+      "在 actions 中处理",
+      "创建 i18n store",
+      "在 getters 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-675",
     "title": "Pinia 中如何实现主题切换？",
     "options": [
-      "创建 theme store",
-      "使用 CSS 变量",
       "使用插件",
+      "使用 CSS 变量",
+      "创建 theme store",
       "以上都可以"
     ],
     "correctAnswer": 3
@@ -278,65 +278,65 @@
     "id": "vue-676",
     "title": "Pinia 中如何实现缓存？",
     "options": [
-      "在 state 中缓存",
+      "以上都可以",
       "使用 localStorage",
       "使用 sessionStorage",
-      "以上都可以"
+      "在 state 中缓存"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-677",
     "title": "Pinia 中如何实现分页？",
     "options": [
+      "以上都可以",
       "创建分页 store",
-      "在 actions 中处理",
       "在 getters 中处理",
-      "以上都可以"
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-678",
     "title": "Pinia 中如何实现搜索过滤？",
     "options": [
+      "在插件中处理",
       "在 getters 中处理",
       "在 actions 中处理",
-      "在 state 中处理",
-      "在插件中处理"
+      "在 state 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-679",
     "title": "Pinia 中如何实现排序？",
     "options": [
-      "在 getters 中处理",
-      "在 actions 中处理",
       "在 state 中处理",
+      "在 actions 中处理",
+      "在 getters 中处理",
       "在插件中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-680",
     "title": "Pinia 中如何实现 WebSocket？",
     "options": [
-      "在 actions 中管理",
       "在 getters 中管理",
-      "在 state 中管理",
-      "在插件中管理"
+      "在插件中管理",
+      "在 actions 中管理",
+      "在 state 中管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-681",
     "title": "Pinia 中如何实现定时器？",
     "options": [
       "在 actions 中管理",
-      "在 getters 中管理",
       "在 state 中管理",
-      "在插件中管理"
+      "在插件中管理",
+      "在 getters 中管理"
     ],
     "correctAnswer": 0
   },
@@ -344,21 +344,21 @@
     "id": "vue-682",
     "title": "Pinia 中如何实现文件上传？",
     "options": [
-      "在 actions 中处理",
-      "在 getters 中处理",
+      "在插件中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 getters 中处理",
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-683",
     "title": "Pinia 中如何实现数据加密？",
     "options": [
       "在插件中处理",
+      "在 state 中处理",
       "在 actions 中处理",
-      "在 getters 中处理",
-      "在 state 中处理"
+      "在 getters 中处理"
     ],
     "correctAnswer": 0
   },
@@ -366,54 +366,54 @@
     "id": "vue-684",
     "title": "Pinia 中如何实现数据转换？",
     "options": [
-      "在 getters 中处理",
-      "在 actions 中处理",
+      "在插件中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 getters 中处理",
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-685",
     "title": "Pinia 中如何实现数据验证？",
     "options": [
-      "在 actions 中处理",
-      "在 getters 中处理",
+      "在插件中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 actions 中处理",
+      "在 getters 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-686",
     "title": "Pinia 中如何实现数据格式化？",
     "options": [
-      "在 getters 中处理",
+      "在插件中处理",
       "在 actions 中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 getters 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-687",
     "title": "Pinia 中如何实现数据脱敏？",
     "options": [
-      "在 getters 中处理",
       "在 actions 中处理",
       "在 state 中处理",
+      "在 getters 中处理",
       "在插件中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-688",
     "title": "Pinia 中如何实现数据聚合？",
     "options": [
       "在 getters 中处理",
-      "在 actions 中处理",
+      "在插件中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 actions 中处理"
     ],
     "correctAnswer": 0
   },
@@ -421,120 +421,120 @@
     "id": "vue-689",
     "title": "Pinia 中如何实现数据分组？",
     "options": [
-      "在 getters 中处理",
-      "在 actions 中处理",
+      "在插件中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 actions 中处理",
+      "在 getters 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-690",
     "title": "Pinia 中如何实现数据统计？",
     "options": [
+      "在插件中处理",
       "在 getters 中处理",
-      "在 actions 中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-691",
     "title": "Pinia 中如何实现数据对比？",
     "options": [
-      "在 getters 中处理",
       "在 actions 中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在插件中处理",
+      "在 getters 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-692",
     "title": "Pinia 中如何实现数据同步？",
     "options": [
-      "在 actions 中处理",
-      "在 getters 中处理",
       "在 state 中处理",
+      "在 getters 中处理",
+      "在 actions 中处理",
       "在插件中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-693",
     "title": "Pinia 中如何实现数据迁移？",
     "options": [
-      "在插件中处理",
       "在 actions 中处理",
+      "在 state 中处理",
       "在 getters 中处理",
-      "在 state 中处理"
+      "在插件中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-694",
     "title": "Pinia 中如何实现数据备份？",
     "options": [
-      "在插件中处理",
-      "在 actions 中处理",
       "在 getters 中处理",
-      "在 state 中处理"
+      "在 state 中处理",
+      "在 actions 中处理",
+      "在插件中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-695",
     "title": "Pinia 中如何实现数据恢复？",
     "options": [
-      "在插件中处理",
-      "在 actions 中处理",
       "在 getters 中处理",
-      "在 state 中处理"
+      "在插件中处理",
+      "在 state 中处理",
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-696",
     "title": "Pinia 中如何实现数据清理？",
     "options": [
-      "在 actions 中处理",
       "在 getters 中处理",
+      "在插件中处理",
       "在 state 中处理",
-      "在插件中处理"
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-697",
     "title": "Pinia 中如何实现数据压缩？",
     "options": [
+      "在 state 中处理",
       "在插件中处理",
-      "在 actions 中处理",
       "在 getters 中处理",
-      "在 state 中处理"
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-698",
     "title": "Pinia 中如何实现数据解压？",
     "options": [
-      "在插件中处理",
-      "在 actions 中处理",
+      "在 state 中处理",
       "在 getters 中处理",
-      "在 state 中处理"
+      "在插件中处理",
+      "在 actions 中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-699",
     "title": "Pinia 中如何实现数据序列化？",
     "options": [
       "在插件中处理",
-      "在 actions 中处理",
+      "在 state 中处理",
       "在 getters 中处理",
-      "在 state 中处理"
+      "在 actions 中处理"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "vue-700",
     "title": "Pinia 中如何实现数据反序列化？",
     "options": [
-      "在插件中处理",
-      "在 actions 中处理",
       "在 getters 中处理",
-      "在 state 中处理"
+      "在 state 中处理",
+      "在 actions 中处理",
+      "在插件中处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

@@ -3,87 +3,87 @@
     "id": "css-1",
     "title": "CSS的全称是什么？",
     "options": [
+      "Colorful Style Sheets",
       "Cascading Style Sheets",
       "Creative Style Sheets",
-      "Computer Style Sheets",
-      "Colorful Style Sheets"
+      "Computer Style Sheets"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-2",
     "title": "以下哪个是正确的CSS语法？",
     "options": [
-      "selector {property: value;}",
+      "selector:property=value",
       "{property: value;}(selector)",
       "selector(property=value)",
-      "selector:property=value"
+      "selector {property: value;}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-3",
     "title": "如何在外部引入CSS？",
     "options": [
-      "<link rel=\"stylesheet\" href=\"style.css\">",
       "<style src=\"style.css\">",
       "<css>style.css</css>",
+      "<link rel=\"stylesheet\" href=\"style.css\">",
       "<stylesheet>style.css</stylesheet>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-4",
     "title": "CSS中ID选择器使用哪个符号？",
     "options": [
-      "#",
       ".",
+      "#",
       "*",
       "&"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-5",
     "title": "CSS中类选择器使用哪个符号？",
     "options": [
-      ".",
+      "~",
       "#",
       ":",
-      "~"
+      "."
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-6",
     "title": "如何选择所有<p>元素内部的<span>元素？",
     "options": [
-      "p span",
-      "p > span",
       "p + span",
+      "p > span",
+      "p span",
       "p ~ span"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-7",
     "title": "子选择器使用哪个符号？",
     "options": [
-      ">",
       " ",
+      "~",
       "+",
-      "~"
+      ">"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-8",
     "title": "相邻兄弟选择器使用哪个符号？",
     "options": [
       "+",
-      "~",
+      " ",
       ">",
-      " "
+      "~"
     ],
     "correctAnswer": 0
   },
@@ -91,65 +91,65 @@
     "id": "css-9",
     "title": "通用兄弟选择器使用哪个符号？",
     "options": [
-      "~",
-      "+",
       ">",
-      " "
+      "~",
+      " ",
+      "+"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-10",
     "title": "属性选择器的语法是？",
     "options": [
-      "[attribute]",
-      ".attribute",
       "#attribute",
-      "*attribute"
+      "*attribute",
+      ".attribute",
+      "[attribute]"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-11",
     "title": "如何选择具有title属性的元素？",
     "options": [
-      "[title]",
-      ".title",
+      "title",
       "#title",
-      "title"
+      "[title]",
+      ".title"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-12",
     "title": "如何选择title属性等于\"hello\"的元素？",
     "options": [
-      "[title=\"hello\"]",
       "[title~=\"hello\"]",
+      "[title^=\"hello\"]",
       "[title*=\"hello\"]",
-      "[title^=\"hello\"]"
+      "[title=\"hello\"]"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-13",
     "title": "[title~=\"hello\"]选择器的作用是？",
     "options": [
-      "选择title属性包含hello这个词的元素",
       "选择title属性以hello开头的元素",
-      "选择title属性包含hello字符串的元素",
-      "选择title属性以hello结尾的元素"
+      "选择title属性以hello结尾的元素",
+      "选择title属性包含hello这个词的元素",
+      "选择title属性包含hello字符串的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-14",
     "title": "[title^=\"hello\"]选择器的作用是？",
     "options": [
       "选择title属性以hello开头的元素",
-      "选择title属性以hello结尾的元素",
+      "选择title属性等于hello的元素",
       "选择title属性包含hello的元素",
-      "选择title属性等于hello的元素"
+      "选择title属性以hello结尾的元素"
     ],
     "correctAnswer": 0
   },
@@ -157,164 +157,164 @@
     "id": "css-15",
     "title": "[title$=\"hello\"]选择器的作用是？",
     "options": [
+      "选择title属性包含hello的元素",
       "选择title属性以hello结尾的元素",
       "选择title属性以hello开头的元素",
-      "选择title属性包含hello的元素",
       "选择title属性等于hello的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-16",
     "title": "[title*=\"hello\"]选择器的作用是？",
     "options": [
-      "选择title属性包含hello子串的元素",
-      "选择title属性包含hello单词的元素",
+      "选择title属性以hello结尾的元素",
       "选择title属性以hello开头的元素",
-      "选择title属性以hello结尾的元素"
+      "选择title属性包含hello子串的元素",
+      "选择title属性包含hello单词的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-17",
     "title": ":hover伪类的作用是？",
     "options": [
-      "鼠标悬停时应用样式",
-      "鼠标点击时应用样式",
       "元素获得焦点时应用样式",
+      "鼠标点击时应用样式",
+      "鼠标悬停时应用样式",
       "元素被禁用时应用样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-18",
     "title": ":focus伪类的作用是？",
     "options": [
-      "元素获得焦点时应用样式",
-      "鼠标悬停时应用样式",
+      "元素被选中时应用样式",
       "元素被激活时应用样式",
-      "元素被选中时应用样式"
+      "元素获得焦点时应用样式",
+      "鼠标悬停时应用样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-19",
     "title": ":active伪类的作用是？",
     "options": [
-      "元素被激活（点击）时应用样式",
-      "鼠标悬停时应用样式",
+      "元素被选中时应用样式",
       "元素获得焦点时应用样式",
-      "元素被选中时应用样式"
+      "元素被激活（点击）时应用样式",
+      "鼠标悬停时应用样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-20",
     "title": ":visited伪类的作用是？",
     "options": [
+      "选择活动的链接",
       "选择已访问的链接",
-      "选择未访问的链接",
       "选择悬停的链接",
-      "选择活动的链接"
+      "选择未访问的链接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-21",
     "title": ":first-child伪类的作用是？",
     "options": [
-      "选择父元素的第一个子元素",
       "选择父元素的第一个该类型子元素",
       "选择元素的第一个子节点",
-      "选择元素的第一个文本节点"
+      "选择元素的第一个文本节点",
+      "选择父元素的第一个子元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-22",
     "title": ":first-of-type伪类的作用是？",
     "options": [
+      "选择同类型中的第一个元素",
       "选择父元素的第一个该类型子元素",
       "选择父元素的第一个子元素",
-      "选择元素的第一个子节点",
-      "选择同类型中的第一个元素"
+      "选择元素的第一个子节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-23",
     "title": ":last-child伪类的作用是？",
     "options": [
-      "选择父元素的最后一个子元素",
+      "选择同类型中的最后一个元素",
       "选择父元素的最后一个该类型子元素",
       "选择元素的最后一个子节点",
-      "选择同类型中的最后一个元素"
+      "选择父元素的最后一个子元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-24",
     "title": ":nth-child(n)伪类的作用是？",
     "options": [
-      "选择父元素的第n个子元素",
       "选择同类型中的第n个元素",
-      "选择元素的第n个子节点",
-      "选择倒数第n个子元素"
+      "选择父元素的第n个子元素",
+      "选择倒数第n个子元素",
+      "选择元素的第n个子节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-25",
     "title": ":nth-of-type(n)伪类的作用是？",
     "options": [
-      "选择同类型中的第n个元素",
+      "选择倒数第n个同类型元素",
       "选择父元素的第n个子元素",
       "选择元素的第n个子节点",
-      "选择倒数第n个同类型元素"
+      "选择同类型中的第n个元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-26",
     "title": ":not(selector)伪类的作用是？",
     "options": [
+      "选择伪类元素",
       "选择不匹配指定选择器的元素",
       "选择匹配指定选择器的元素",
-      "排除所有元素",
-      "选择伪类元素"
+      "排除所有元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-27",
     "title": "::before伪元素的作用是？",
     "options": [
+      "选择元素的首字母",
       "在元素内容前插入生成内容",
       "在元素后插入生成内容",
-      "选择元素的第一行",
-      "选择元素的首字母"
+      "选择元素的第一行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-28",
     "title": "::after伪元素的作用是？",
     "options": [
-      "在元素内容后插入生成内容",
       "在元素前插入生成内容",
+      "在元素内容后插入生成内容",
       "选择元素的最后一行",
       "选择元素的最后一个字母"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-29",
     "title": "::first-line伪元素的作用是？",
     "options": [
       "选择块级元素的第一行",
-      "选择元素的首字母",
       "在元素前插入内容",
-      "选择元素的第一行内容"
+      "选择元素的第一行内容",
+      "选择元素的首字母"
     ],
     "correctAnswer": 0
   },
@@ -322,43 +322,43 @@
     "id": "css-30",
     "title": "::first-letter伪元素的作用是？",
     "options": [
-      "选择块级元素的首字母",
       "选择元素的第一行",
+      "选择块级元素的首字母",
       "在元素前插入内容",
       "选择元素的第一个单词"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-31",
     "title": "::selection伪元素的作用是？",
     "options": [
-      "选择用户选中的部分",
       "选择元素的首字母",
-      "选择元素的第一行",
-      "选择元素的焦点部分"
+      "选择元素的焦点部分",
+      "选择用户选中的部分",
+      "选择元素的第一行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-32",
     "title": "CSS优先级规则中，内联样式的权重是？",
     "options": [
-      "1000",
-      "100",
       "10",
-      "1"
+      "1",
+      "1000",
+      "100"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-33",
     "title": "CSS优先级规则中，ID选择器的权重是？",
     "options": [
       "100",
+      "1",
       "1000",
-      "10",
-      "1"
+      "10"
     ],
     "correctAnswer": 0
   },
@@ -377,56 +377,56 @@
     "id": "css-35",
     "title": "CSS优先级规则中，标签选择器的权重是？",
     "options": [
-      "1",
-      "10",
-      "100",
-      "0"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "css-36",
-    "title": "CSS优先级规则中，通配符选择器的权重是？",
-    "options": [
       "0",
       "1",
       "10",
       "100"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
+  },
+  {
+    "id": "css-36",
+    "title": "CSS优先级规则中，通配符选择器的权重是？",
+    "options": [
+      "10",
+      "0",
+      "100",
+      "1"
+    ],
+    "correctAnswer": 1
   },
   {
     "id": "css-37",
     "title": "如何覆盖高优先级的样式？",
     "options": [
-      "使用!important",
       "增加选择器层级",
       "使用内联样式",
+      "使用!important",
       "以上都可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-38",
     "title": "CSS继承的特性是指？",
     "options": [
-      "子元素自动获得父元素的某些样式",
-      "父元素获得子元素的样式",
+      "所有样式都会继承",
       "兄弟元素互相获取样式",
-      "所有样式都会继承"
+      "子元素自动获得父元素的某些样式",
+      "父元素获得子元素的样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-39",
     "title": "以下哪个属性是不可继承的？",
     "options": [
-      "margin",
-      "color",
+      "visibility",
       "font-size",
-      "visibility"
+      "color",
+      "margin"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-40",
@@ -443,109 +443,109 @@
     "id": "css-41",
     "title": "inherit关键字的作用是？",
     "options": [
-      "强制继承父元素的属性值",
-      "重置为初始值",
       "取消当前样式",
+      "重置为初始值",
+      "强制继承父元素的属性值",
       "应用浏览器默认样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-42",
     "title": "initial关键字的作用是？",
     "options": [
-      "将属性重置为CSS规范定义的初始值",
-      "继承父元素值",
       "应用浏览器默认样式",
-      "取消样式"
+      "将属性重置为CSS规范定义的初始值",
+      "取消样式",
+      "继承父元素值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-43",
     "title": "unset关键字的作用是？",
     "options": [
-      "如果属性可继承则继承，否则重置为初始值",
       "直接重置为初始值",
+      "如果属性可继承则继承，否则重置为初始值",
       "直接继承父元素值",
       "删除属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-44",
     "title": "revert关键字的作用是？",
     "options": [
-      "将样式回退到浏览器默认样式",
       "重置为CSS初始值",
       "继承父元素值",
+      "将样式回退到浏览器默认样式",
       "取消样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-45",
     "title": "CSS中的注释语法是？",
     "options": [
+      "<!-- 注释 -->",
       "/* 注释 */",
       "// 注释",
-      "<!-- 注释 -->",
       "# 注释"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-46",
     "title": "currentColor关键字的作用是？",
     "options": [
-      "继承当前的color属性值",
-      "设置为黑色",
+      "设置为红色",
       "设置为透明",
-      "设置为红色"
+      "继承当前的color属性值",
+      "设置为黑色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-47",
     "title": "CSS变量（自定义属性）的前缀是？",
     "options": [
-      "--",
       "$",
       "@",
-      "!"
+      "!",
+      "--"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-48",
     "title": "var()函数的作用是？",
     "options": [
+      "调用函数",
       "插入自定义属性的值",
-      "定义变量",
       "计算值",
-      "调用函数"
+      "定义变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-49",
     "title": "如何定义一个名为main-color的CSS变量？",
     "options": [
+      "var-main-color: red;",
       "--main-color: red;",
-      "$main-color: red;",
       "@main-color: red;",
-      "var-main-color: red;"
+      "$main-color: red;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-50",
     "title": "calc()函数的作用是？",
     "options": [
       "进行数学计算",
+      "计算选择器",
       "调用函数",
-      "定义变量",
-      "计算选择器"
+      "定义变量"
     ],
     "correctAnswer": 0
   }

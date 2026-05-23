@@ -3,56 +3,56 @@
     "id": "java-801",
     "title": "Java中栈上分配是指？",
     "options": [
-      "对象分配在栈上",
+      "以上都不对",
       "对象分配在堆上",
-      "对象分配在方法区",
-      "以上都不对"
+      "对象分配在栈上",
+      "对象分配在方法区"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-802",
     "title": "Java中标量替换是指？",
     "options": [
-      "将对象拆解为基本类型",
-      "替换对象引用",
       "替换方法调用",
-      "以上都不对"
+      "以上都不对",
+      "替换对象引用",
+      "将对象拆解为基本类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-803",
     "title": "Java中锁优化技术有？",
     "options": [
-      "偏向锁，轻量级锁，自旋锁，锁消除",
       "重量级锁",
       "乐观锁",
-      "以上都不对"
+      "以上都不对",
+      "偏向锁，轻量级锁，自旋锁，锁消除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-804",
     "title": "Java中锁消除是指？",
     "options": [
-      "JIT消除不可能共享的锁",
       "手动消除锁",
-      "锁降级",
-      "以上都不对"
+      "以上都不对",
+      "JIT消除不可能共享的锁",
+      "锁降级"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-805",
     "title": "Java中锁粗化是指？",
     "options": [
-      "将多次锁操作合并为一次",
-      "将一次锁操作拆分为多次",
       "锁升级",
+      "将一次锁操作拆分为多次",
+      "将多次锁操作合并为一次",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-806",
@@ -60,8 +60,8 @@
     "options": [
       "根据情况调整自旋次数",
       "固定自旋次数",
-      "不自旋",
-      "以上都不对"
+      "以上都不对",
+      "不自旋"
     ],
     "correctAnswer": 0
   },
@@ -69,97 +69,97 @@
     "id": "java-807",
     "title": "Java中JVM的错误有？",
     "options": [
+      "以上都不对",
       "StackOverflowError, OutOfMemoryError",
       "NullPointerException",
-      "ClassCastException",
-      "以上都不对"
+      "ClassCastException"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-808",
     "title": "Java中StackOverflowError的原因是？",
     "options": [
+      "以上都不对",
       "递归过深或栈太小",
       "堆内存不足",
-      "方法区不足",
-      "以上都不对"
+      "方法区不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-809",
     "title": "Java中OOM的类型有？",
     "options": [
+      "以上都不对",
       "Java heap space, Metaspace, GC overhead limit",
-      "StackOverflow",
-      "以上都不对"
+      "StackOverflow"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-810",
     "title": "Java中GC overhead limit exceeded是指？",
     "options": [
-      "GC花费时间过多",
+      "以上都不对",
       "内存不足",
       "GC次数过多",
-      "以上都不对"
+      "GC花费时间过多"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-811",
     "title": "Java中Direct buffer memory是指？",
     "options": [
+      "方法区不足",
       "直接内存不足",
       "堆内存不足",
-      "方法区不足",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-812",
     "title": "Java中unable to create new native thread是指？",
     "options": [
-      "线程数过多",
-      "内存不足",
       "CPU不足",
-      "以上都不对"
+      "线程数过多",
+      "以上都不对",
+      "内存不足"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-813",
     "title": "Java中如何监控JVM？",
     "options": [
+      "JStack",
       "JMX, JConsole, VisualVM, Prometheus",
       "JMap",
-      "JStack",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-814",
     "title": "Java中如何排查死锁？",
     "options": [
-      "JStack, JConsole",
       "JMap",
+      "以上都不对",
       "JStat",
-      "以上都不对"
+      "JStack, JConsole"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-815",
     "title": "Java中如何排查内存泄漏？",
     "options": [
       "MAT, JMap, JConsole",
-      "JStack",
+      "以上都不对",
       "JStat",
-      "以上都不对"
+      "JStack"
     ],
     "correctAnswer": 0
   },
@@ -167,43 +167,43 @@
     "id": "java-816",
     "title": "Java中如何排查CPU过高？",
     "options": [
-      "top, JStack, JConsole",
+      "以上都不对",
       "JMap",
       "JStat",
-      "以上都不对"
+      "top, JStack, JConsole"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-817",
     "title": "Java中如何排查类加载问题？",
     "options": [
-      "-verbose:class, JConsole",
-      "JMap",
       "JStack",
-      "以上都不对"
+      "JMap",
+      "以上都不对",
+      "-verbose:class, JConsole"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-818",
     "title": "Java中如何排查线程问题？",
     "options": [
-      "JStack, JConsole, VisualVM",
-      "JMap",
       "JStat",
-      "以上都不对"
+      "JStack, JConsole, VisualVM",
+      "以上都不对",
+      "JMap"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-819",
     "title": "Java中如何排查GC问题？",
     "options": [
       "GC日志, JStat, JConsole",
-      "JMap",
       "JStack",
-      "以上都不对"
+      "以上都不对",
+      "JMap"
     ],
     "correctAnswer": 0
   },
@@ -211,120 +211,120 @@
     "id": "java-820",
     "title": "Java中如何排查性能问题？",
     "options": [
+      "以上都不对",
       "JFR, JMC, Arthas",
       "JMap",
-      "JStack",
-      "以上都不对"
+      "JStack"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-821",
     "title": "Java中JVM的组成部分有？",
     "options": [
-      "类加载器，运行时数据区，执行引擎",
       "编译器，解释器",
+      "以上都不对",
       "垃圾回收器，内存管理",
-      "以上都不对"
+      "类加载器，运行时数据区，执行引擎"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-822",
     "title": "Java中运行时数据区包括？",
     "options": [
-      "堆，栈，方法区，程序计数器，本地方法栈",
       "堆，栈，方法区",
       "堆，栈",
+      "堆，栈，方法区，程序计数器，本地方法栈",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-823",
     "title": "Java中堆的特点是？",
     "options": [
+      "存储类信息",
       "线程共享，存储对象",
       "线程私有，存储局部变量",
-      "存储类信息",
       "存储常量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-824",
     "title": "Java中栈的特点是？",
     "options": [
-      "线程私有，存储局部变量",
-      "线程共享，存储对象",
       "存储类信息",
+      "线程共享，存储对象",
+      "线程私有，存储局部变量",
       "存储常量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-825",
     "title": "Java中方法区的特点是？",
     "options": [
+      "存储对象",
       "线程共享，存储类信息",
       "线程私有，存储局部变量",
-      "存储对象",
       "存储常量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-826",
     "title": "Java中程序计数器的特点是？",
     "options": [
-      "线程私有，记录执行位置",
-      "线程共享，存储对象",
       "存储类信息",
-      "存储常量"
+      "存储常量",
+      "线程私有，记录执行位置",
+      "线程共享，存储对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-827",
     "title": "Java中本地方法栈的特点是？",
     "options": [
-      "线程私有，服务Native方法",
       "线程共享，存储对象",
-      "存储类信息",
-      "存储常量"
+      "存储常量",
+      "线程私有，服务Native方法",
+      "存储类信息"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-828",
     "title": "Java中堆的分区有？",
     "options": [
-      "新生代，老年代",
       "Eden，Survivor",
+      "新生代，老年代",
       "Young，Old，Perm",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-829",
     "title": "Java中新生代的分区有？",
     "options": [
-      "Eden，Survivor0，Survivor1",
+      "以上都不对",
       "Eden，Old",
-      "Young，Old",
-      "以上都不对"
+      "Eden，Survivor0，Survivor1",
+      "Young，Old"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-830",
     "title": "Java中对象分配在哪个区域？",
     "options": [
       "堆",
+      "程序计数器",
       "栈",
-      "方法区",
-      "程序计数器"
+      "方法区"
     ],
     "correctAnswer": 0
   },
@@ -343,78 +343,78 @@
     "id": "java-832",
     "title": "Java中类信息分配在哪个区域？",
     "options": [
+      "程序计数器",
       "方法区",
       "堆",
-      "栈",
-      "程序计数器"
+      "栈"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-833",
     "title": "Java中常量池分配在哪个区域？",
     "options": [
-      "方法区",
-      "堆",
       "栈",
+      "堆",
+      "方法区",
       "程序计数器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-834",
     "title": "Java中静态变量分配在哪个区域？",
     "options": [
-      "方法区",
-      "堆",
       "栈",
+      "堆",
+      "方法区",
       "程序计数器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-835",
     "title": "Java中JIT编译器的作用是？",
     "options": [
-      "将热点代码编译为本地代码",
       "解释执行字节码",
+      "以上都不对",
       "加载类",
-      "以上都不对"
+      "将热点代码编译为本地代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-836",
     "title": "Java中AOT编译器的作用是？",
     "options": [
+      "解释执行",
       "提前编译为本地代码",
       "运行时编译",
-      "解释执行",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-837",
     "title": "Java中类加载的过程是？",
     "options": [
-      "加载，验证，准备，解析，初始化",
       "编译，解释，执行",
-      "创建，使用，销毁",
-      "以上都不对"
+      "加载，验证，准备，解析，初始化",
+      "以上都不对",
+      "创建，使用，销毁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-838",
     "title": "Java中类加载器的类型有？",
     "options": [
-      "Bootstrap, Extension, Application",
+      "以上都不对",
       "System, Custom",
-      "Parent, Child",
-      "以上都不对"
+      "Bootstrap, Extension, Application",
+      "Parent, Child"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-839",
@@ -432,9 +432,9 @@
     "title": "Java中双亲委派模型的好处是？",
     "options": [
       "保证核心类安全",
+      "以上都不对",
       "提高加载速度",
-      "减少内存占用",
-      "以上都不对"
+      "减少内存占用"
     ],
     "correctAnswer": 0
   },
@@ -442,54 +442,54 @@
     "id": "java-841",
     "title": "Java 8的新特性有？",
     "options": [
+      "以上都不对",
       "Lambda, Stream, Optional, 新日期API",
-      "泛型, 注解",
       "枚举, 静态导入",
-      "以上都不对"
+      "泛型, 注解"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-842",
     "title": "Java 8的Lambda表达式作用是？",
     "options": [
-      "简化函数式接口实现",
       "提高性能",
+      "以上都是",
       "替代匿名类",
-      "以上都是"
+      "简化函数式接口实现"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "java-843",
     "title": "Java 8的函数式接口有？",
     "options": [
+      "以上都不对",
       "Predicate, Function, Consumer, Supplier",
       "Runnable, Callable",
-      "Comparable, Comparator",
-      "以上都不对"
+      "Comparable, Comparator"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "java-844",
     "title": "Java 8的Predicate接口的作用是？",
     "options": [
-      "判断",
-      "转换",
       "消费",
+      "转换",
+      "判断",
       "提供"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-845",
     "title": "Java 8的Function接口的作用是？",
     "options": [
       "转换",
+      "提供",
       "判断",
-      "消费",
-      "提供"
+      "消费"
     ],
     "correctAnswer": 0
   },
@@ -497,12 +497,12 @@
     "id": "java-846",
     "title": "Java 8的Consumer接口的作用是？",
     "options": [
-      "消费",
-      "判断",
       "转换",
+      "判断",
+      "消费",
       "提供"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-847",
@@ -510,8 +510,8 @@
     "options": [
       "提供",
       "判断",
-      "转换",
-      "消费"
+      "消费",
+      "转换"
     ],
     "correctAnswer": 0
   },
@@ -519,33 +519,33 @@
     "id": "java-848",
     "title": "Java 8的Optional类的作用是？",
     "options": [
-      "避免NullPointerException",
       "替代null",
       "包装对象",
+      "避免NullPointerException",
       "以上都是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-849",
     "title": "Java 8的Optional.of()方法作用是？",
     "options": [
-      "创建Optional，不允许null",
-      "创建Optional，允许null",
       "创建空Optional",
-      "以上都不对"
+      "以上都不对",
+      "创建Optional，不允许null",
+      "创建Optional，允许null"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "java-850",
     "title": "Java 8的Optional.ofNullable()方法作用是？",
     "options": [
+      "创建空Optional",
       "创建Optional，允许null",
       "创建Optional，不允许null",
-      "创建空Optional",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

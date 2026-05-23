@@ -3,87 +3,87 @@
     "id": "html-101",
     "title": "表单的根标签是？",
     "options": [
-      "<form>",
       "<input>",
-      "<fieldset>",
-      "<label>"
+      "<label>",
+      "<form>",
+      "<fieldset>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-102",
     "title": "<input>标签的type属性默认值是？",
     "options": [
-      "text",
-      "password",
       "submit",
-      "radio"
+      "radio",
+      "password",
+      "text"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-103",
     "title": "用于创建密码输入框的type属性是？",
     "options": [
-      "password",
       "text",
+      "password",
       "hidden",
       "passwd"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-104",
     "title": "用于创建单选按钮的type属性是？",
     "options": [
-      "radio",
       "checkbox",
+      "radio",
       "select",
       "option"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-105",
     "title": "用于创建复选框的type属性是？",
     "options": [
-      "checkbox",
-      "radio",
       "check",
-      "select"
+      "select",
+      "radio",
+      "checkbox"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-106",
     "title": "用于提交表单的按钮type是？",
     "options": [
-      "submit",
-      "button",
+      "action",
       "reset",
-      "action"
+      "button",
+      "submit"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-107",
     "title": "用于重置表单的按钮type是？",
     "options": [
+      "clear",
       "reset",
       "submit",
-      "clear",
       "button"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-108",
     "title": "<textarea>标签的作用是？",
     "options": [
       "多行文本输入",
+      "下拉列表",
       "单行文本输入",
-      "密码输入",
-      "下拉列表"
+      "密码输入"
     ],
     "correctAnswer": 0
   },
@@ -92,9 +92,9 @@
     "title": "<select>标签的作用是？",
     "options": [
       "创建下拉列表",
-      "创建文本域",
       "创建单选框",
-      "创建表格"
+      "创建表格",
+      "创建文本域"
     ],
     "correctAnswer": 0
   },
@@ -102,65 +102,65 @@
     "id": "html-110",
     "title": "<option>标签的作用是？",
     "options": [
-      "定义下拉列表的选项",
-      "定义下拉列表",
       "定义表单",
-      "定义输入框"
+      "定义输入框",
+      "定义下拉列表",
+      "定义下拉列表的选项"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-111",
     "title": "<label>标签的作用是？",
     "options": [
-      "为表单控件定义标注",
+      "定义表单",
       "定义输入框",
-      "定义字段集",
-      "定义表单"
+      "为表单控件定义标注",
+      "定义字段集"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-112",
     "title": "<label>标签的for属性用于？",
     "options": [
-      "绑定对应的表单控件id",
+      "定义链接",
       "定义样式",
       "定义行为",
-      "定义链接"
+      "绑定对应的表单控件id"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-113",
     "title": "<fieldset>标签的作用是？",
     "options": [
-      "将表单内的相关元素分组",
-      "定义表单",
       "定义输入框",
+      "定义表单",
+      "将表单内的相关元素分组",
       "定义标签"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-114",
     "title": "<legend>标签的作用是？",
     "options": [
-      "为fieldset定义标题",
-      "定义图例",
       "定义标签",
-      "定义说明"
+      "定义图例",
+      "定义说明",
+      "为fieldset定义标题"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-115",
     "title": "<form>标签的action属性用于？",
     "options": [
       "规定提交表单时向何处发送数据",
-      "定义表单方法",
+      "定义验证",
       "定义编码",
-      "定义验证"
+      "定义表单方法"
     ],
     "correctAnswer": 0
   },
@@ -168,20 +168,20 @@
     "id": "html-116",
     "title": "<form>标签的method属性用于？",
     "options": [
+      "定义加密",
       "规定发送表单数据的HTTP方法",
-      "定义动作",
       "定义目标",
-      "定义加密"
+      "定义动作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-117",
     "title": "表单提交的两种常用方法是？",
     "options": [
       "GET和POST",
-      "PUT和DELETE",
       "SEND和RECEIVE",
+      "PUT和DELETE",
       "PATCH和HEAD"
     ],
     "correctAnswer": 0
@@ -190,42 +190,42 @@
     "id": "html-118",
     "title": "GET方法提交数据的特点是？",
     "options": [
-      "数据在URL中可见",
       "数据更安全",
-      "数据量无限制",
-      "无法被缓存"
+      "无法被缓存",
+      "数据在URL中可见",
+      "数据量无限制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-119",
     "title": "POST方法提交数据的特点是？",
     "options": [
-      "数据在请求体中",
       "数据在URL中",
+      "无法加密",
       "只能提交文本",
-      "无法加密"
+      "数据在请求体中"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-120",
     "title": "<input>的placeholder属性用于？",
     "options": [
-      "提供输入字段的预期提示",
+      "限制长度",
       "设置默认值",
       "验证输入",
-      "限制长度"
+      "提供输入字段的预期提示"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-121",
     "title": "<input>的required属性用于？",
     "options": [
       "指示输入字段必填",
-      "设置只读",
       "禁用输入",
+      "设置只读",
       "隐藏输入"
     ],
     "correctAnswer": 0
@@ -235,9 +235,9 @@
     "title": "<input>的disabled属性用于？",
     "options": [
       "禁用输入字段",
-      "设置必填",
+      "隐藏字段",
       "设置只读",
-      "隐藏字段"
+      "设置必填"
     ],
     "correctAnswer": 0
   },
@@ -245,65 +245,65 @@
     "id": "html-123",
     "title": "<input>的readonly属性用于？",
     "options": [
-      "设置输入字段为只读",
-      "禁用字段",
       "设置必填",
-      "隐藏字段"
+      "隐藏字段",
+      "禁用字段",
+      "设置输入字段为只读"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-124",
     "title": "<input>的value属性用于？",
     "options": [
+      "设置名称",
       "规定输入字段的初始值",
-      "设置提示",
       "设置类型",
-      "设置名称"
+      "设置提示"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-125",
     "title": "<input>的name属性用于？",
     "options": [
-      "标识表单数据提交时的键名",
+      "设置样式",
       "设置显示名称",
       "设置ID",
-      "设置样式"
+      "标识表单数据提交时的键名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-126",
     "title": "<input>的maxlength属性用于？",
     "options": [
-      "规定输入字段的最大字符长度",
       "设置最小长度",
+      "设置高度",
       "设置宽度",
-      "设置高度"
+      "规定输入字段的最大字符长度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-127",
     "title": "<input>的size属性用于？",
     "options": [
-      "规定输入字段的可见宽度",
       "设置最大长度",
       "设置高度",
-      "设置文件大小"
+      "设置文件大小",
+      "规定输入字段的可见宽度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-128",
     "title": "用于上传文件的type属性是？",
     "options": [
       "file",
+      "attachment",
       "upload",
-      "document",
-      "attachment"
+      "document"
     ],
     "correctAnswer": 0
   },
@@ -311,32 +311,32 @@
     "id": "html-129",
     "title": "文件上传表单必须设置的enctype是？",
     "options": [
-      "multipart/form-data",
-      "application/x-www-form-urlencoded",
       "text/plain",
-      "multipart/file"
+      "multipart/file",
+      "application/x-www-form-urlencoded",
+      "multipart/form-data"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-130",
     "title": "用于隐藏输入字段的type属性是？",
     "options": [
-      "hidden",
+      "secret",
       "invisible",
       "display:none",
-      "secret"
+      "hidden"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-131",
     "title": "用于创建数字输入框的type属性是？",
     "options": [
       "number",
-      "int",
       "digit",
-      "float"
+      "float",
+      "int"
     ],
     "correctAnswer": 0
   },
@@ -344,21 +344,21 @@
     "id": "html-132",
     "title": "<input type=\"number\">的step属性用于？",
     "options": [
+      "设置精度",
       "规定数字步长",
-      "设置最大值",
       "设置最小值",
-      "设置精度"
+      "设置最大值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-133",
     "title": "用于创建范围滑块的type属性是？",
     "options": [
       "range",
-      "slider",
+      "bar",
       "progress",
-      "bar"
+      "slider"
     ],
     "correctAnswer": 0
   },
@@ -367,9 +367,9 @@
     "title": "用于创建颜色选择器的type属性是？",
     "options": [
       "color",
+      "hue",
       "rgb",
-      "palette",
-      "hue"
+      "palette"
     ],
     "correctAnswer": 0
   },
@@ -378,8 +378,8 @@
     "title": "用于创建日期选择器的type属性是？",
     "options": [
       "date",
-      "calendar",
       "datetime",
+      "calendar",
       "day"
     ],
     "correctAnswer": 0
@@ -388,23 +388,23 @@
     "id": "html-136",
     "title": "用于创建月份选择器的type属性是？",
     "options": [
-      "month",
-      "year",
       "week",
-      "time"
+      "year",
+      "time",
+      "month"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-137",
     "title": "用于创建周选择器的type属性是？",
     "options": [
+      "year",
       "week",
-      "month",
       "date",
-      "year"
+      "month"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-138",
@@ -412,8 +412,8 @@
     "options": [
       "time",
       "hour",
-      "minute",
-      "clock"
+      "clock",
+      "minute"
     ],
     "correctAnswer": 0
   },
@@ -421,65 +421,65 @@
     "id": "html-139",
     "title": "用于创建邮箱输入框的type属性是？",
     "options": [
-      "email",
-      "mail",
       "address",
-      "url"
+      "email",
+      "url",
+      "mail"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-140",
     "title": "<input type=\"email\">可以自动验证？",
     "options": [
-      "邮箱格式",
       "电话格式",
-      "网址格式",
-      "日期格式"
+      "邮箱格式",
+      "日期格式",
+      "网址格式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-141",
     "title": "用于创建电话号码输入框的type属性是？",
     "options": [
+      "mobile",
       "tel",
       "phone",
-      "mobile",
       "call"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-142",
     "title": "用于创建URL输入框的type属性是？",
     "options": [
-      "url",
+      "web",
       "link",
-      "href",
-      "web"
+      "url",
+      "href"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-143",
     "title": "用于创建搜索框的type属性是？",
     "options": [
+      "text",
       "search",
       "find",
-      "query",
-      "text"
+      "query"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-144",
     "title": "<input type=\"image\">的作用是？",
     "options": [
       "定义图像作为提交按钮",
-      "显示图片",
+      "图片预览",
       "上传图片",
-      "图片预览"
+      "显示图片"
     ],
     "correctAnswer": 0
   },
@@ -488,9 +488,9 @@
     "title": "<datalist>标签的作用是？",
     "options": [
       "定义输入域的选项列表",
-      "定义下拉列表",
       "定义数据集",
-      "定义列表"
+      "定义列表",
+      "定义下拉列表"
     ],
     "correctAnswer": 0
   },
@@ -499,8 +499,8 @@
     "title": "如何将input与datalist绑定？",
     "options": [
       "使用list属性",
-      "使用for属性",
       "使用src属性",
+      "使用for属性",
       "使用data属性"
     ],
     "correctAnswer": 0
@@ -509,44 +509,44 @@
     "id": "html-147",
     "title": "<output>标签的作用是？",
     "options": [
-      "表示计算结果",
-      "输出文本",
       "打印内容",
-      "显示错误"
+      "显示错误",
+      "表示计算结果",
+      "输出文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-148",
     "title": "<keygen>标签在HTML5中的状态是？",
     "options": [
-      "已废弃",
       "推荐使用",
       "新增",
+      "已废弃",
       "不变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-149",
     "title": "<form>的novalidate属性用于？",
     "options": [
-      "提交时不对表单进行验证",
       "禁止提交",
+      "提交时不对表单进行验证",
       "隐藏表单",
       "禁用表单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-150",
     "title": "<form>的autocomplete属性用于？",
     "options": [
-      "控制表单自动完成功能",
-      "自动验证",
       "自动提交",
+      "自动验证",
+      "控制表单自动完成功能",
       "自动填充样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

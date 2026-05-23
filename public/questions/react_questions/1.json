@@ -3,65 +3,65 @@
     "id": "react-1",
     "title": "React 中用于创建组件的两种主要方式是？",
     "options": [
-      "函数组件和类组件",
-      "无状态组件和有状态组件",
       "纯组件和普通组件",
-      "高阶组件和低阶组件"
+      "无状态组件和有状态组件",
+      "高阶组件和低阶组件",
+      "函数组件和类组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-2",
     "title": "JSX 的本质是什么？",
     "options": [
-      "JavaScript 的语法扩展",
       "HTML 模板",
       "一种框架",
+      "JavaScript 的语法扩展",
       "CSS 预处理器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-3",
     "title": "React 中渲染列表时为什么要使用 key？",
     "options": [
-      "帮助 React 识别哪些元素发生了变化",
-      "提高渲染速度",
       "为了代码美观",
+      "提高渲染速度",
+      "帮助 React 识别哪些元素发生了变化",
       "React 强制要求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-4",
     "title": "React 中 key 应该使用什么值？",
     "options": [
-      "稳定的唯一标识",
-      "数组索引",
       "随机数",
-      "顺序整数"
+      "数组索引",
+      "顺序整数",
+      "稳定的唯一标识"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-5",
     "title": "React 组件的 props 有什么特点？",
     "options": [
-      "只读不可修改",
       "可以双向绑定",
       "可以随意修改",
-      "只能在构造函数中修改"
+      "只能在构造函数中修改",
+      "只读不可修改"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-6",
     "title": "React 中修改 state 的正确方式是？",
     "options": [
       "setState 或 useState 的更新函数",
-      "直接修改 this.state",
       "通过 props 修改",
-      "使用 forceUpdate"
+      "使用 forceUpdate",
+      "直接修改 this.state"
     ],
     "correctAnswer": 0
   },
@@ -69,64 +69,64 @@
     "id": "react-7",
     "title": "React 中 setState 是同步还是异步的？",
     "options": [
-      "在 React 控制的上下文中是异步的",
       "始终是同步的",
       "始终是异步的",
+      "在 React 控制的上下文中是异步的",
       "取决于浏览器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-8",
     "title": "React 事件处理与原生 DOM 事件的主要区别是？",
     "options": [
-      "使用驼峰命名和 SyntheticEvent",
       "没有区别",
+      "使用驼峰命名和 SyntheticEvent",
       "使用短横线命名",
       "不支持事件委托"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-9",
     "title": "React 中的 SyntheticEvent 是什么？",
     "options": [
-      "React 实现的跨浏览器事件包装器",
+      "Node.js 事件",
       "原生 DOM 事件",
-      "自定义事件总线",
-      "Node.js 事件"
+      "React 实现的跨浏览器事件包装器",
+      "自定义事件总线"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-10",
     "title": "React 组件的 render 方法在什么时候会被调用？",
     "options": [
-      "state 或 props 改变时",
-      "只在挂载时",
       "只在卸载时",
-      "手动调用时"
+      "只在挂载时",
+      "手动调用时",
+      "state 或 props 改变时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-11",
     "title": "React 中如何阻止组件渲染？",
     "options": [
+      "抛出错误",
       "在 render 中返回 null",
-      "返回 undefined",
       "返回 false",
-      "抛出错误"
+      "返回 undefined"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-12",
     "title": "React Fragment 的作用是？",
     "options": [
       "在不添加额外 DOM 节点的情况下包裹子元素",
-      "提高渲染性能",
       "缓存组件",
+      "提高渲染性能",
       "处理错误"
     ],
     "correctAnswer": 0
@@ -135,65 +135,65 @@
     "id": "react-13",
     "title": "React 严格模式有什么作用？",
     "options": [
-      "识别潜在问题并发出警告",
-      "提高生产环境性能",
+      "处理跨域",
       "压缩代码",
-      "处理跨域"
+      "提高生产环境性能",
+      "识别潜在问题并发出警告"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-14",
     "title": "React 中受控组件是什么？",
     "options": [
-      "表单值由 React state 控制的组件",
       "受父组件控制的组件",
+      "表单值由 React state 控制的组件",
       "不可修改的组件",
       "单例组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-15",
     "title": "React 中非受控组件是什么？",
     "options": [
-      "表单值由 DOM 自身管理的组件",
-      "不受 React 管理的组件",
       "没有 state 的组件",
-      "全局组件"
+      "全局组件",
+      "不受 React 管理的组件",
+      "表单值由 DOM 自身管理的组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-16",
     "title": "React 中 ref 的作用是？",
     "options": [
-      "访问 DOM 节点或 React 元素实例",
-      "传递数据",
       "管理状态",
+      "传递数据",
+      "访问 DOM 节点或 React 元素实例",
       "处理副作用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-17",
     "title": "React 中 createRef 和 useRef 的区别是？",
     "options": [
-      "createRef 每次渲染都创建新实例，useRef 保持不变",
-      "没有区别",
       "useRef 只能用于函数组件",
-      "createRef 性能更好"
+      "createRef 性能更好",
+      "没有区别",
+      "createRef 每次渲染都创建新实例，useRef 保持不变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-18",
     "title": "React 中为什么不能在循环或条件语句中使用 Hooks？",
     "options": [
       "违反 Hooks 调用顺序规则会导致状态错乱",
-      "性能问题",
       "语法限制",
-      "类型错误"
+      "类型错误",
+      "性能问题"
     ],
     "correctAnswer": 0
   },
@@ -201,56 +201,56 @@
     "id": "react-19",
     "title": "React 的单向数据流是指什么？",
     "options": [
-      "数据从父组件通过 props 传递给子组件",
-      "数据只能从上往下流动",
+      "以上都是",
       "数据不可变",
-      "以上都是"
+      "数据从父组件通过 props 传递给子组件",
+      "数据只能从上往下流动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-20",
     "title": "React 中 this.setState 的第二个参数是什么？",
     "options": [
-      "状态更新后的回调函数",
       "要更新的状态",
-      "props",
-      "下一个状态"
+      "状态更新后的回调函数",
+      "下一个状态",
+      "props"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-21",
     "title": "React 中什么是状态提升？",
     "options": [
-      "将共享状态提升到最近的共同父组件",
-      "将状态移到 Redux",
       "增加组件层级",
-      "使用 Context"
+      "将状态移到 Redux",
+      "使用 Context",
+      "将共享状态提升到最近的共同父组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-22",
     "title": "React 中组件组合模式的作用是？",
     "options": [
-      "通过嵌套和 children 实现组件复用",
+      "性能优化",
       "多重继承",
       "代码分割",
-      "性能优化"
+      "通过嵌套和 children 实现组件复用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-23",
     "title": "React 中 JSX 中的条件渲染方式不包括？",
     "options": [
-      "v-if 指令",
-      "三元运算符",
       "逻辑与 (&&) 运算符",
-      "if-else 函数"
+      "if-else 函数",
+      "v-if 指令",
+      "三元运算符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-24",
@@ -258,8 +258,8 @@
     "options": [
       "在 JSX 中插入原生 HTML",
       "设置安全的样式",
-      "防止 XSS 攻击",
-      "绑定事件"
+      "绑定事件",
+      "防止 XSS 攻击"
     ],
     "correctAnswer": 0
   },
@@ -267,76 +267,76 @@
     "id": "react-25",
     "title": "React 中如何为组件添加默认 Props？",
     "options": [
-      "Component.defaultProps 或函数参数默认值",
+      "以上都不对",
       "this.defaultProps",
-      "constructor 设置",
-      "以上都不对"
+      "Component.defaultProps 或函数参数默认值",
+      "constructor 设置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-26",
     "title": "React 中类组件的生命周期分为哪三个阶段？",
     "options": [
-      "挂载、更新、卸载",
-      "创建、渲染、销毁",
       "初始化、运行、停止",
-      "开始、过程、结束"
+      "开始、过程、结束",
+      "创建、渲染、销毁",
+      "挂载、更新、卸载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-27",
     "title": "React 中类组件的 constructor 中必须做的第一件事是？",
     "options": [
+      "返回 this",
       "调用 super(props)",
-      "初始化 state",
       "绑定方法",
-      "返回 this"
+      "初始化 state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-28",
     "title": "React 中类组件的 static getDerivedStateFromProps 的作用是？",
     "options": [
-      "在渲染前根据 props 更新 state",
       "获取派生状态",
       "替换 componentWillReceiveProps",
+      "在渲染前根据 props 更新 state",
       "以上都是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-29",
     "title": "React 中类组件的 componentDidMount 的执行时机是？",
     "options": [
-      "组件挂载后立即调用",
       "组件渲染前",
       "组件更新后",
-      "组件卸载前"
+      "组件卸载前",
+      "组件挂载后立即调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-30",
     "title": "React 中类组件的 shouldComponentUpdate 的作用是？",
     "options": [
-      "决定组件是否需要重新渲染",
       "强制组件更新",
-      "处理错误",
-      "获取快照"
+      "获取快照",
+      "决定组件是否需要重新渲染",
+      "处理错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-31",
     "title": "React 中类组件的 componentDidUpdate 的执行时机是？",
     "options": [
       "组件更新后立即调用",
-      "组件挂载后",
+      "组件卸载前",
       "组件渲染前",
-      "组件卸载前"
+      "组件挂载后"
     ],
     "correctAnswer": 0
   },
@@ -344,56 +344,56 @@
     "id": "react-32",
     "title": "React 中类组件的 componentWillUnmount 的作用是？",
     "options": [
-      "在组件卸载前执行清理操作",
-      "销毁组件实例",
       "移除 DOM 节点",
-      "取消事件监听"
+      "取消事件监听",
+      "在组件卸载前执行清理操作",
+      "销毁组件实例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-33",
     "title": "React.PureComponent 和 React.Component 的区别是？",
     "options": [
+      "Component 性能更好",
       "PureComponent 自动进行浅比较 shouldComponentUpdate",
       "没有区别",
-      "Component 性能更好",
       "PureComponent 不支持 state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-34",
     "title": "React 中 React.memo 的作用是？",
     "options": [
-      "对函数组件进行浅比较优化",
+      "代码分割",
       "缓存函数",
-      "记录日志",
-      "代码分割"
+      "对函数组件进行浅比较优化",
+      "记录日志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-35",
     "title": "React 中浅比较是如何工作的？",
     "options": [
+      "比较 JSON 字符串",
       "比较基本类型值和引用类型的引用",
       "深度遍历比较",
-      "只比较第一层属性值",
-      "比较 JSON 字符串"
+      "只比较第一层属性值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-36",
     "title": "React 中 Children API 的作用是？",
     "options": [
-      "处理 this.props.children 的工具集",
-      "访问子组件实例",
+      "克隆子组件",
       "创建子组件",
-      "克隆子组件"
+      "访问子组件实例",
+      "处理 this.props.children 的工具集"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-37",
@@ -411,9 +411,9 @@
     "title": "React 中 createElement 的作用是？",
     "options": [
       "创建并返回指定类型的 React 元素",
-      "创建 DOM 节点",
       "创建类实例",
-      "创建组件"
+      "创建组件",
+      "创建 DOM 节点"
     ],
     "correctAnswer": 0
   },
@@ -421,21 +421,21 @@
     "id": "react-39",
     "title": "React 中为什么 JSX 能够防止 XSS 攻击？",
     "options": [
-      "React 在渲染前会将字符串进行转义",
       "JSX 是编译时运行的",
       "JSX 不支持 HTML",
-      "使用虚拟 DOM"
+      "使用虚拟 DOM",
+      "React 在渲染前会将字符串进行转义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-40",
     "title": "React 中 JSX 的编译结果是什么？",
     "options": [
       "React.createElement 调用",
+      "虚拟节点对象",
       "DOM 操作",
-      "模板字符串",
-      "虚拟节点对象"
+      "模板字符串"
     ],
     "correctAnswer": 0
   },
@@ -443,109 +443,109 @@
     "id": "react-41",
     "title": "React 中如何实现代码分割？",
     "options": [
-      "动态 import() 和 React.lazy",
+      "代码压缩",
       "import 语句",
       "require 函数",
-      "代码压缩"
+      "动态 import() 和 React.lazy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-42",
     "title": "React 中 Suspense 组件的作用是？",
     "options": [
-      "在组件加载时显示 fallback 内容",
       "处理错误",
+      "并发模式",
       "延迟渲染",
-      "并发模式"
+      "在组件加载时显示 fallback 内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-43",
     "title": "React 中 ErrorBoundary 的作用是？",
     "options": [
-      "捕获子组件树的 JavaScript 错误",
-      "处理 HTTP 错误",
       "捕获事件错误",
-      "语法错误检查"
+      "处理 HTTP 错误",
+      "语法错误检查",
+      "捕获子组件树的 JavaScript 错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-44",
     "title": "React 中 getDerivedStateFromError 的作用是？",
     "options": [
-      "在后代组件抛出错误后更新 state",
       "渲染备用 UI",
-      "记录错误日志",
-      "阻止错误冒泡"
+      "在后代组件抛出错误后更新 state",
+      "阻止错误冒泡",
+      "记录错误日志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-45",
     "title": "React 中 componentDidCatch 的作用是？",
     "options": [
-      "在后代组件抛出错误后记录日志",
-      "更新 state",
+      "恢复组件",
       "渲染备用 UI",
-      "恢复组件"
+      "在后代组件抛出错误后记录日志",
+      "更新 state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-46",
     "title": "React 中 Context 的作用是？",
     "options": [
-      "跨层级传递数据而无需手动传递 props",
+      "路由管理",
       "全局状态管理",
       "组件通信",
-      "路由管理"
+      "跨层级传递数据而无需手动传递 props"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-47",
     "title": "React 中 Context 的组成包括？",
     "options": [
-      "React.createContext, Provider, Consumer",
       "Store, Reducer, Action",
       "Provider, Consumer, State",
-      "Context, Provider, Dispatcher"
+      "Context, Provider, Dispatcher",
+      "React.createContext, Provider, Consumer"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-48",
     "title": "React 中 Context 的消费方式不包括？",
     "options": [
-      "useStore",
       "useContext Hook",
       "Consumer 组件",
+      "useStore",
       "contextType 静态属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-49",
     "title": "React 中 Context 的缺点是？",
     "options": [
-      "组件复用困难，性能优化较难",
-      "不支持异步",
       "不能传递对象",
-      "只能在顶层使用"
+      "不支持异步",
+      "只能在顶层使用",
+      "组件复用困难，性能优化较难"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-50",
     "title": "React 中高阶组件的定义是？",
     "options": [
       "接收组件并返回新组件的函数",
-      "继承其他组件的类",
+      "被包裹的组件",
       "使用 Hooks 的组件",
-      "被包裹的组件"
+      "继承其他组件的类"
     ],
     "correctAnswer": 0
   }

@@ -3,34 +3,34 @@
     "id": "js-551",
     "title": "JavaScript中观察者模式和发布订阅模式的区别？",
     "options": [
-      "观察者模式没有中间人",
       "没有区别",
       "发布订阅没有中间人",
-      "取决于实现"
+      "取决于实现",
+      "观察者模式没有中间人"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-552",
     "title": "JavaScript中Promise的then回调返回值会怎样？",
     "options": [
-      "包装为新的Promise",
       "被忽略",
       "返回原值",
-      "报错"
+      "报错",
+      "包装为新的Promise"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-553",
     "title": "JavaScript中Promise的then回调抛出异常会怎样？",
     "options": [
-      "变为rejected状态",
-      "被忽略",
+      "报错",
       "变为pending状态",
-      "报错"
+      "变为rejected状态",
+      "被忽略"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-554",
@@ -47,45 +47,45 @@
     "id": "js-555",
     "title": "JavaScript中Promise的链式调用的原理是？",
     "options": [
-      "then返回新的Promise",
       "then返回this",
-      "then修改原Promise",
-      "以上都不对"
+      "以上都不对",
+      "then返回新的Promise",
+      "then修改原Promise"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-556",
     "title": "JavaScript中Promise穿透是指？",
     "options": [
+      "then返回undefined",
       "then非函数参数会透传value",
       "then不执行",
-      "then报错",
-      "then返回undefined"
+      "then报错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-557",
     "title": "JavaScript中Promise.resolve(thenable)会怎样？",
     "options": [
-      "执行thenable的then方法",
-      "直接解决",
+      "忽略",
       "报错",
-      "忽略"
+      "执行thenable的then方法",
+      "直接解决"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-558",
     "title": "JavaScript中thenable是指？",
     "options": [
+      "数组",
       "具有then方法的对象",
-      "Promise对象",
       "函数",
-      "数组"
+      "Promise对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-559",
@@ -93,8 +93,8 @@
     "options": [
       "使用Promise构造函数",
       "使用async/await",
-      "使用Generator",
-      "无法转换"
+      "无法转换",
+      "使用Generator"
     ],
     "correctAnswer": 0
   },
@@ -102,56 +102,56 @@
     "id": "js-560",
     "title": "JavaScript中promisify的作用是？",
     "options": [
-      "将回调风格转为Promise风格",
       [
         "将Promise转为回调"
       ],
+      "将回调风格转为Promise风格",
       "创建Promise",
       "取消Promise"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-561",
     "title": "JavaScript中如何处理未捕获的Promise异常？",
     "options": [
-      "unhandledrejection事件",
       "rejectionhandled事件",
       "error事件",
-      "exception事件"
+      "exception事件",
+      "unhandledrejection事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-562",
     "title": "JavaScript中unhandledrejection事件何时触发？",
     "options": [
-      "Promise被拒绝且没有catch",
       "Promise被拒绝",
-      "Promise被解决",
-      "Promise被取消"
+      "Promise被取消",
+      "Promise被拒绝且没有catch",
+      "Promise被解决"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-563",
     "title": "JavaScript中rejectionhandled事件何时触发？",
     "options": [
-      "Promise被拒绝后添加catch",
       "Promise被拒绝",
-      "Promise被解决",
-      "Promise被取消"
+      "Promise被拒绝后添加catch",
+      "Promise被取消",
+      "Promise被解决"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-564",
     "title": "JavaScript中async函数中的异常如何全局捕获？",
     "options": [
       "unhandledrejection事件",
-      "error事件",
       "exception事件",
-      "try...catch"
+      "try...catch",
+      "error事件"
     ],
     "correctAnswer": 0
   },
@@ -159,12 +159,12 @@
     "id": "js-565",
     "title": "JavaScript中fetch的异常如何处理？",
     "options": [
-      "检查response.ok",
       "catch",
       "try...catch",
+      "检查response.ok",
       "error事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-566",
@@ -172,8 +172,8 @@
     "options": [
       "不会",
       "会",
-      "取决于状态码",
-      "取决于环境"
+      "取决于环境",
+      "取决于状态码"
     ],
     "correctAnswer": 0
   },
@@ -181,65 +181,65 @@
     "id": "js-567",
     "title": "JavaScript中fetch网络错误会抛出异常吗？",
     "options": [
-      "会",
-      "不会",
       "取决于错误类型",
+      "不会",
+      "会",
       "取决于环境"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-568",
     "title": "JavaScript中fetch如何设置超时？",
     "options": [
-      "Promise.race + AbortController",
+      "fetch.timeout",
       "timeout参数",
-      "setTimeout + reject",
-      "fetch.timeout"
+      "Promise.race + AbortController",
+      "setTimeout + reject"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-569",
     "title": "JavaScript中fetch如何取消请求？",
     "options": [
+      "AbortSignal",
       "AbortController",
-      "cancel()",
       "abort()",
-      "AbortSignal"
+      "cancel()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-570",
     "title": "JavaScript中fetch如何处理Cookie？",
     "options": [
-      "credentials参数",
       "cookie参数",
-      "header",
-      "withCredentials"
+      "withCredentials",
+      "credentials参数",
+      "header"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-571",
     "title": "JavaScript中fetch的credentials默认值是？",
     "options": [
+      "omit",
       "same-origin",
       "include",
-      "omit",
       "none"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-572",
     "title": "JavaScript中fetch如何处理CORS？",
     "options": [
       "mode参数",
-      "cors参数",
+      "withCredentials",
       "header",
-      "withCredentials"
+      "cors参数"
     ],
     "correctAnswer": 0
   },
@@ -247,23 +247,23 @@
     "id": "js-573",
     "title": "JavaScript中fetch的mode参数有？",
     "options": [
-      "cors, no-cors, same-origin",
       "only-cors",
+      "cors, no-cors, same-origin",
       "no-cors",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-574",
     "title": "JavaScript中fetch如何上传文件？",
     "options": [
-      "FormData",
       "Blob",
-      "File",
-      "ArrayBuffer"
+      "FormData",
+      "ArrayBuffer",
+      "File"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-575",
@@ -280,54 +280,54 @@
     "id": "js-576",
     "title": "JavaScript中fetch如何获取进度？",
     "options": [
-      "无法直接获取",
-      "progress事件",
       "onprogress",
+      "progress事件",
+      "无法直接获取",
       "loading事件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-577",
     "title": "JavaScript中XMLHttpRequest如何获取上传进度？",
     "options": [
-      "upload.onprogress",
-      "onprogress",
       "progress事件",
-      "loading事件"
+      "onprogress",
+      "loading事件",
+      "upload.onprogress"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-578",
     "title": "JavaScript中XMLHttpRequest和fetch的区别？",
     "options": [
-      "XHR基于事件，fetch基于Promise",
-      "没有区别",
+      "取决于环境",
       "fetch基于事件，XHR基于Promise",
-      "取决于环境"
+      "没有区别",
+      "XHR基于事件，fetch基于Promise"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-579",
     "title": "JavaScript中WebSocket的作用是？",
     "options": [
-      "全双工通信",
       "半双工通信",
-      "单工通信",
-      "无连接通信"
+      "无连接通信",
+      "全双工通信",
+      "单工通信"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-580",
     "title": "JavaScript中WebSocket的协议是？",
     "options": [
       "ws/wss",
+      "ftp/sftp",
       "http/https",
-      "tcp/udp",
-      "ftp/sftp"
+      "tcp/udp"
     ],
     "correctAnswer": 0
   },
@@ -347,8 +347,8 @@
     "title": "JavaScript中WebSocket的onopen事件何时触发？",
     "options": [
       "连接建立时",
-      "连接关闭时",
       "收到消息时",
+      "连接关闭时",
       "发生错误时"
     ],
     "correctAnswer": 0
@@ -357,155 +357,155 @@
     "id": "js-583",
     "title": "JavaScript中WebSocket的onmessage事件何时触发？",
     "options": [
-      "收到消息时",
-      "连接建立时",
+      "发生错误时",
       "连接关闭时",
-      "发生错误时"
+      "连接建立时",
+      "收到消息时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-584",
     "title": "JavaScript中WebSocket的onclose事件何时触发？",
     "options": [
-      "连接关闭时",
-      "连接建立时",
       "收到消息时",
-      "发生错误时"
+      "连接关闭时",
+      "发生错误时",
+      "连接建立时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-585",
     "title": "JavaScript中WebSocket的onerror事件何时触发？",
     "options": [
-      "发生错误时",
+      "连接关闭时",
       "连接建立时",
       "收到消息时",
-      "连接关闭时"
+      "发生错误时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-586",
     "title": "JavaScript中WebSocket如何发送消息？",
     "options": [
-      "send()",
-      "post()",
       "write()",
+      "post()",
+      "send()",
       "emit()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-587",
     "title": "JavaScript中WebSocket如何关闭连接？",
     "options": [
-      "close()",
-      "end()",
       "destroy()",
-      "terminate()"
+      "close()",
+      "terminate()",
+      "end()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-588",
     "title": "JavaScript中Server-Sent Events的作用是？",
     "options": [
+      "无连接通信",
       "服务器单向推送",
-      "全双工通信",
       "半双工通信",
-      "无连接通信"
+      "全双工通信"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-589",
     "title": "JavaScript中EventSource的作用是？",
     "options": [
-      "接收SSE推送",
+      "创建HTTP请求",
       "发送SSE",
       "创建WebSocket",
-      "创建HTTP请求"
+      "接收SSE推送"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-590",
     "title": "JavaScript中Web Worker的作用是？",
     "options": [
-      "在后台线程中运行脚本",
       "创建子进程",
+      "创建定时器",
       "创建服务",
-      "创建定时器"
+      "在后台线程中运行脚本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-591",
     "title": "JavaScript中Web Worker可以操作DOM吗？",
     "options": [
-      "不能",
+      "取决于环境",
       "能",
-      "取决于线程",
-      "取决于环境"
+      "不能",
+      "取决于线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-592",
     "title": "JavaScript中Web Worker如何通信？",
     "options": [
-      "postMessage",
       "sendMessage",
       "emit",
-      "call"
+      "call",
+      "postMessage"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-593",
     "title": "JavaScript中Service Worker的作用是？",
     "options": [
-      "拦截网络请求，缓存资源",
       "后台计算",
-      "UI渲染",
-      "DOM操作"
+      "DOM操作",
+      "拦截网络请求，缓存资源",
+      "UI渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-594",
     "title": "JavaScript中Service Worker的生命周期有？",
     "options": [
-      "install, activate, fetch",
-      "create, start, stop",
       "open, close",
-      "connect, disconnect"
+      "install, activate, fetch",
+      "connect, disconnect",
+      "create, start, stop"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-595",
     "title": "JavaScript中Worklet的作用是？",
     "options": [
-      "运行特定类型的任务",
       "后台计算",
+      "DOM操作",
       "网络拦截",
-      "DOM操作"
+      "运行特定类型的任务"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-596",
     "title": "JavaScript中Audio Worklet的作用是？",
     "options": [
-      "音频处理",
-      "视频处理",
       "图像处理",
-      "网络处理"
+      "音频处理",
+      "网络处理",
+      "视频处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-597",
@@ -513,8 +513,8 @@
     "options": [
       "自定义绘制",
       "音频处理",
-      "视频处理",
-      "网络处理"
+      "网络处理",
+      "视频处理"
     ],
     "correctAnswer": 0
   },
@@ -523,9 +523,9 @@
     "title": "JavaScript中Animation Worklet的作用是？",
     "options": [
       "动画处理",
+      "网络处理",
       "音频处理",
-      "视频处理",
-      "网络处理"
+      "视频处理"
     ],
     "correctAnswer": 0
   },
@@ -533,22 +533,22 @@
     "id": "js-599",
     "title": "JavaScript中如何实现异步串行？",
     "options": [
-      "await依次执行",
       "Promise.all",
       "Promise.race",
-      "forEach"
+      "forEach",
+      "await依次执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-600",
     "title": "JavaScript中如何实现异步并行？",
     "options": [
-      "Promise.all",
-      "await依次执行",
+      "reduce",
       "for循环",
-      "reduce"
+      "Promise.all",
+      "await依次执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

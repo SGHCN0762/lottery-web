@@ -3,12 +3,12 @@
     "id": "css-601",
     "title": "transition属性的作用是？",
     "options": [
-      "定义元素状态变化时的过渡效果",
-      "定义动画关键帧",
+      "定义旋转",
       "定义变换",
-      "定义旋转"
+      "定义元素状态变化时的过渡效果",
+      "定义动画关键帧"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-602",
@@ -25,131 +25,131 @@
     "id": "css-603",
     "title": "transition-duration的作用是？",
     "options": [
-      "指定过渡的持续时间",
       "指定过渡属性",
       "指定过渡延迟",
+      "指定过渡的持续时间",
       "指定过渡速度曲线"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-604",
     "title": "transition-timing-function的作用是？",
     "options": [
-      "指定过渡的速度曲线",
+      "指定过渡延迟",
       "指定过渡属性",
-      "指定过渡时间",
-      "指定过渡延迟"
+      "指定过渡的速度曲线",
+      "指定过渡时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-605",
     "title": "transition-delay的作用是？",
     "options": [
+      "指定过渡时间",
       "指定过渡的延迟时间",
       "指定过渡属性",
-      "指定过渡时间",
       "指定过渡速度曲线"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-606",
     "title": "transition简写属性的顺序是？",
     "options": [
-      "property duration timing-function delay",
       "duration property delay timing",
       "delay duration property timing",
-      "timing duration delay property"
+      "timing duration delay property",
+      "property duration timing-function delay"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-607",
     "title": "ease时间函数的特点是？",
     "options": [
-      "开始和结束慢，中间快",
+      "开始快，结束慢",
       "匀速",
-      "开始慢，结束快",
-      "开始快，结束慢"
+      "开始和结束慢，中间快",
+      "开始慢，结束快"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-608",
     "title": "linear时间函数的特点是？",
     "options": [
-      "匀速",
       "开始慢结束快",
-      "开始快结束慢",
-      "中间快"
+      "中间快",
+      "匀速",
+      "开始快结束慢"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-609",
     "title": "ease-in时间函数的特点是？",
     "options": [
-      "开始慢，结束快",
-      "匀速",
       "开始快结束慢",
-      "中间快"
+      "中间快",
+      "开始慢，结束快",
+      "匀速"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-610",
     "title": "ease-out时间函数的特点是？",
     "options": [
-      "开始快，结束慢",
+      "中间快",
       "匀速",
       "开始慢结束快",
-      "中间快"
+      "开始快，结束慢"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-611",
     "title": "ease-in-out时间函数的特点是？",
     "options": [
-      "开始和结束慢，中间快",
-      "匀速",
       "开始慢结束快",
-      "开始快结束慢"
+      "开始快结束慢",
+      "开始和结束慢，中间快",
+      "匀速"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-612",
     "title": "cubic-bezier()的作用是？",
     "options": [
-      "自定义贝塞尔曲线时间函数",
-      "定义颜色",
       "定义形状",
-      "定义位置"
+      "定义位置",
+      "定义颜色",
+      "自定义贝塞尔曲线时间函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-613",
     "title": "cubic-bezier的四个参数表示？",
     "options": [
-      "两个控制点的x,y坐标",
       "四个颜色值",
+      "两个控制点的x,y坐标",
       "四个位置值",
       "四个大小值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-614",
     "title": "steps()时间函数的作用是？",
     "options": [
       "将过渡分为离散步骤执行",
-      "平滑过渡",
+      "减速过渡",
       "加速过渡",
-      "减速过渡"
+      "平滑过渡"
     ],
     "correctAnswer": 0
   },
@@ -157,45 +157,45 @@
     "id": "css-615",
     "title": "steps(5, end)的含义是？",
     "options": [
-      "分5步执行，在每步结束时变化",
-      "分5步执行，在每步开始时变化",
       "第5步结束",
-      "5秒后结束"
+      "5秒后结束",
+      "分5步执行，在每步开始时变化",
+      "分5步执行，在每步结束时变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-616",
     "title": "steps(5, start)的含义是？",
     "options": [
-      "分5步执行，在每步开始时变化",
-      "分5步执行，在每步结束时变化",
       "第5步开始",
-      "5秒后开始"
+      "5秒后开始",
+      "分5步执行，在每步开始时变化",
+      "分5步执行，在每步结束时变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-617",
     "title": "step-end等同于？",
     "options": [
-      "steps(1, end)",
       "steps(1, start)",
       "steps(end)",
+      "steps(1, end)",
       "step(1)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-618",
     "title": "step-start等同于？",
     "options": [
+      "step(1)",
       "steps(1, start)",
-      "steps(1, end)",
       "steps(start)",
-      "step(1)"
+      "steps(1, end)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-619",
@@ -212,12 +212,12 @@
     "id": "css-620",
     "title": "display: none可以应用过渡吗？",
     "options": [
+      "取决于浏览器",
       "不可以，因为不能在display状态间插值",
       "可以",
-      "部分可以",
-      "取决于浏览器"
+      "部分可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-621",
@@ -225,8 +225,8 @@
     "options": [
       "使用visibility和opacity配合",
       "直接transition display",
-      "使用animation",
-      "无法实现"
+      "无法实现",
+      "使用animation"
     ],
     "correctAnswer": 0
   },
@@ -235,9 +235,9 @@
     "title": "animation属性的作用是？",
     "options": [
       "定义关键帧动画",
+      "定义旋转",
       "定义过渡",
-      "定义变换",
-      "定义旋转"
+      "定义变换"
     ],
     "correctAnswer": 0
   },
@@ -245,32 +245,32 @@
     "id": "css-623",
     "title": "@keyframes规则的作用是？",
     "options": [
-      "定义动画的关键帧序列",
-      "定义过渡",
       "定义变换",
-      "定义旋转"
+      "定义旋转",
+      "定义过渡",
+      "定义动画的关键帧序列"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-624",
     "title": "@keyframes中from等同于？",
     "options": [
-      "0%",
-      "100%",
       "0",
-      "start"
+      "100%",
+      "start",
+      "0%"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-625",
     "title": "@keyframes中to等同于？",
     "options": [
       "100%",
-      "0%",
       "1",
-      "end"
+      "end",
+      "0%"
     ],
     "correctAnswer": 0
   },
@@ -278,32 +278,32 @@
     "id": "css-626",
     "title": "animation-name的作用是？",
     "options": [
+      "指定动画速度",
       "指定@keyframes动画名称",
-      "指定动画时间",
       "指定动画延迟",
-      "指定动画速度"
+      "指定动画时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-627",
     "title": "animation-duration的作用是？",
     "options": [
-      "指定动画持续时间",
-      "指定动画名称",
       "指定动画延迟",
-      "指定动画速度"
+      "指定动画名称",
+      "指定动画速度",
+      "指定动画持续时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-628",
     "title": "animation-timing-function的作用是？",
     "options": [
       "指定动画速度曲线",
-      "指定动画名称",
+      "指定动画延迟",
       "指定动画时间",
-      "指定动画延迟"
+      "指定动画名称"
     ],
     "correctAnswer": 0
   },
@@ -311,98 +311,98 @@
     "id": "css-629",
     "title": "animation-delay的作用是？",
     "options": [
-      "指定动画延迟时间",
       "指定动画名称",
-      "指定动画时间",
-      "指定动画速度"
+      "指定动画速度",
+      "指定动画延迟时间",
+      "指定动画时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-630",
     "title": "animation-iteration-count的作用是？",
     "options": [
-      "指定动画播放次数",
       "指定动画名称",
       "指定动画时间",
+      "指定动画播放次数",
       "指定动画速度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-631",
     "title": "animation-iteration-count: infinite的作用是？",
     "options": [
-      "无限循环播放",
       "播放1次",
-      "播放2次",
-      "不播放"
+      "不播放",
+      "无限循环播放",
+      "播放2次"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-632",
     "title": "animation-direction的作用是？",
     "options": [
-      "指定动画播放方向",
       "指定播放次数",
-      "指定播放时间",
-      "指定播放速度"
+      "指定播放速度",
+      "指定动画播放方向",
+      "指定播放时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-633",
     "title": "animation-direction: normal的作用是？",
     "options": [
-      "正常方向播放",
-      "反向播放",
       "交替播放",
+      "反向播放",
+      "正常方向播放",
       "反向交替播放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-634",
     "title": "animation-direction: reverse的作用是？",
     "options": [
+      "交替播放",
       "反向播放",
       "正常播放",
-      "交替播放",
       "反向交替播放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-635",
     "title": "animation-direction: alternate的作用是？",
     "options": [
-      "交替反向播放",
       "正常播放",
-      "反向播放",
-      "反向交替播放"
+      "反向交替播放",
+      "交替反向播放",
+      "反向播放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-636",
     "title": "animation-direction: alternate-reverse的作用是？",
     "options": [
-      "反向开始交替播放",
+      "交替播放",
       "正常播放",
       "反向播放",
-      "交替播放"
+      "反向开始交替播放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-637",
     "title": "animation-fill-mode的作用是？",
     "options": [
       "指定动画执行前后的样式状态",
-      "指定播放方向",
+      "指定播放速度",
       "指定播放次数",
-      "指定播放速度"
+      "指定播放方向"
     ],
     "correctAnswer": 0
   },
@@ -411,9 +411,9 @@
     "title": "animation-fill-mode: none的作用是？",
     "options": [
       "动画外样式不应用关键帧样式",
-      "保持最后一帧",
       "应用第一帧",
-      "保持当前帧"
+      "保持当前帧",
+      "保持最后一帧"
     ],
     "correctAnswer": 0
   },
@@ -421,87 +421,87 @@
     "id": "css-639",
     "title": "animation-fill-mode: forwards的作用是？",
     "options": [
-      "动画结束后保持最后一帧样式",
       "不保持",
-      "应用第一帧",
-      "保持当前帧"
+      "动画结束后保持最后一帧样式",
+      "保持当前帧",
+      "应用第一帧"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-640",
     "title": "animation-fill-mode: backwards的作用是？",
     "options": [
-      "动画开始前应用第一帧样式",
-      "不应用",
+      "保持当前帧",
       "保持最后一帧",
-      "保持当前帧"
+      "动画开始前应用第一帧样式",
+      "不应用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-641",
     "title": "animation-fill-mode: both的作用是？",
     "options": [
-      "同时应用forwards和backwards",
       "不应用",
-      "只应用forwards",
-      "只应用backwards"
+      "只应用backwards",
+      "同时应用forwards和backwards",
+      "只应用forwards"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-642",
     "title": "animation-play-state的作用是？",
     "options": [
-      "控制动画播放或暂停",
       "控制播放方向",
+      "控制动画播放或暂停",
       "控制播放次数",
       "控制播放速度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-643",
     "title": "animation-play-state: paused的作用是？",
     "options": [
+      "结束动画",
       "暂停动画",
       "播放动画",
-      "结束动画",
       "重启动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-644",
     "title": "animation简写属性的顺序是？",
     "options": [
-      "name duration timing-function delay iteration-count direction fill-mode play-state",
       "duration name delay timing",
       "delay duration name timing",
-      "timing duration delay name"
+      "timing duration delay name",
+      "name duration timing-function delay iteration-count direction fill-mode play-state"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-645",
     "title": "如何实现动画的暂停和继续？",
     "options": [
-      "切换animation-play-state: paused和running",
       "删除animation",
       "修改duration",
-      "修改delay"
+      "修改delay",
+      "切换animation-play-state: paused和running"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-646",
     "title": "transform属性的作用是？",
     "options": [
       "对元素进行2D或3D变换",
-      "改变颜色",
+      "改变位置",
       "改变大小",
-      "改变位置"
+      "改变颜色"
     ],
     "correctAnswer": 0
   },
@@ -509,21 +509,21 @@
     "id": "css-647",
     "title": "transform: translate(50px, 100px)的作用是？",
     "options": [
-      "元素向右移动50px，向下移动100px",
       "放大50px",
-      "旋转50度",
-      "倾斜50度"
+      "倾斜50度",
+      "元素向右移动50px，向下移动100px",
+      "旋转50度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-648",
     "title": "transform: translateX(50px)的作用是？",
     "options": [
       "元素水平向右移动50px",
+      "旋转",
       "垂直移动",
-      "放大",
-      "旋转"
+      "放大"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "css-649",
     "title": "transform: translateY(50px)的作用是？",
     "options": [
+      "旋转",
       "元素垂直向下移动50px",
-      "水平移动",
       "放大",
-      "旋转"
+      "水平移动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-650",
     "title": "transform: scale(2)的作用是？",
     "options": [
-      "元素放大2倍",
-      "缩小2倍",
+      "旋转2度",
       "移动2倍",
-      "旋转2度"
+      "元素放大2倍",
+      "缩小2倍"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

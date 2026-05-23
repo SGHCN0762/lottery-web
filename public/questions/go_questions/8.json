@@ -3,37 +3,37 @@
     "id": "go-351",
     "title": "Go语言中，sync包中Lock/Unlock方法属于哪个类型？",
     "options": [
-      "Mutex",
-      "RWMutex",
       "WaitGroup",
       "Once",
-      "Pool"
+      "RWMutex",
+      "Pool",
+      "Mutex"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 4
   },
   {
     "id": "go-352",
     "title": "Go语言中，sync包中RLock/RUnlock方法属于哪个类型？",
     "options": [
+      "Pool",
       "Mutex",
-      "RWMutex",
       "WaitGroup",
-      "Once",
-      "Pool"
+      "RWMutex",
+      "Once"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "go-353",
     "title": "Go语言中，sync包中Wait/Done方法属于哪个类型？",
     "options": [
-      "Mutex",
-      "RWMutex",
       "WaitGroup",
+      "Mutex",
       "Once",
+      "RWMutex",
       "Pool"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "go-354",
@@ -41,105 +41,105 @@
     "options": [
       "Mutex",
       "RWMutex",
-      "WaitGroup",
       "Once",
+      "WaitGroup",
       "Pool"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "go-355",
     "title": "Go语言中，sync包中Add/Done/Wait方法属于哪个类型？",
     "options": [
-      "Mutex",
-      "RWMutex",
-      "WaitGroup",
       "Once",
-      "Pool"
+      "WaitGroup",
+      "RWMutex",
+      "Pool",
+      "Mutex"
     ],
-    "correctAnswer": 4
+    "correctAnswer": 3
   },
   {
     "id": "go-356",
     "title": "Go语言中，sync包中Lock/Unlock方法属于哪个类型？",
     "options": [
-      "Mutex",
-      "RWMutex",
-      "WaitGroup",
       "Once",
-      "Pool"
+      "Pool",
+      "WaitGroup",
+      "Mutex",
+      "RWMutex"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-357",
     "title": "Go语言中，sync包中RLock/RUnlock方法属于哪个类型？",
     "options": [
       "Mutex",
-      "RWMutex",
       "WaitGroup",
+      "Pool",
       "Once",
-      "Pool"
+      "RWMutex"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 4
   },
   {
     "id": "go-358",
     "title": "Go语言中，sync包中Wait/Done方法属于哪个类型？",
     "options": [
-      "Mutex",
-      "RWMutex",
       "WaitGroup",
+      "RWMutex",
+      "Mutex",
       "Once",
       "Pool"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "go-359",
     "title": "Go语言中，sync包中Do方法属于哪个类型？",
     "options": [
-      "Mutex",
-      "RWMutex",
-      "WaitGroup",
       "Once",
+      "WaitGroup",
+      "RWMutex",
+      "Mutex",
       "Pool"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "go-360",
     "title": "Go语言中，sync包中Add/Done/Wait方法属于哪个类型？",
     "options": [
-      "Mutex",
+      "Pool",
       "RWMutex",
-      "WaitGroup",
       "Once",
-      "Pool"
+      "Mutex",
+      "WaitGroup"
     ],
-    "correctAnswer": 4
+    "correctAnswer": 0
   },
   {
     "id": "go-361",
     "title": "Go语言中，错误处理的惯用法是？",
     "options": [
-      "if err != nil",
       "try/catch",
-      "on error resume next",
-      "忽略错误"
+      "忽略错误",
+      "if err != nil",
+      "on error resume next"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-362",
     "title": "Go语言中，自定义错误类型通常实现哪个接口？",
     "options": [
+      "Exception",
       "error",
       "Error",
-      "Exception",
       "Throwable"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-363",
@@ -158,12 +158,12 @@
     "id": "go-364",
     "title": "Go语言中，fmt.Errorf支持格式化，它属于哪个包？",
     "options": [
-      "fmt",
-      "errors",
       "log",
-      "os"
+      "os",
+      "fmt",
+      "errors"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-365",
@@ -173,8 +173,8 @@
       [
         "隐藏错误"
       ],
-      "修改错误类型",
-      "删除错误"
+      "删除错误",
+      "修改错误类型"
     ],
     "correctAnswer": 0
   },
@@ -182,31 +182,31 @@
     "id": "go-366",
     "title": "Go语言中，如何解包错误？",
     "options": [
-      "errors.Unwrap",
+      "errors.Get",
       "errors.Unpack",
-      "errors.Extract",
-      "errors.Get"
+      "errors.Unwrap",
+      "errors.Extract"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-367",
     "title": "Go语言中，errors.Is相比==的优势是？",
     "options": [
+      "支持跨包",
       "可以判断错误链",
-      "性能更高",
       "更简洁",
-      "支持跨包"
+      "性能更高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-368",
     "title": "Go语言中，errors.As相比类型断言的优势是？",
     "options": [
       "可以判断错误链中的类型",
-      "性能更高",
       "更简洁",
+      "性能更高",
       "支持跨包"
     ],
     "correctAnswer": 0
@@ -215,98 +215,98 @@
     "id": "go-369",
     "title": "Go语言中，defer recover可以捕获其他goroutine的panic吗？",
     "options": [
+      "取决于goroutine状态",
       "不可以",
       "可以",
-      "取决于panic类型",
-      "取决于goroutine状态"
+      "取决于panic类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-370",
     "title": "Go语言中，os包的Open函数返回什么？",
     "options": [
-      "*os.File和error",
       "os.File",
-      "[]byte",
-      "string"
+      "*os.File和error",
+      "string",
+      "[]byte"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-371",
     "title": "Go语言中，io.Reader接口的核心方法是？",
     "options": [
-      "Read",
       "Write",
-      "Close",
-      "Flush"
+      "Flush",
+      "Read",
+      "Close"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-372",
     "title": "Go语言中，io.Writer接口的核心方法是？",
     "options": [
-      "Write",
       "Read",
+      "Write",
       "Close",
       "Flush"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-373",
     "title": "Go语言中，io.Copy的作用是？",
     "options": [
-      "从Reader拷贝到Writer",
+      "复制字符串",
       "复制文件",
-      "复制切片",
-      "复制字符串"
+      "从Reader拷贝到Writer",
+      "复制切片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-374",
     "title": "Go语言中，bufio包的作用是？",
     "options": [
-      "带缓冲的I/O",
-      "格式化I/O",
       "网络I/O",
-      "系统I/O"
+      "系统I/O",
+      "格式化I/O",
+      "带缓冲的I/O"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-375",
     "title": "Go语言中，strconv包的作用是？",
     "options": [
-      "字符串和基本类型转换",
       "字符串操作",
       "正则表达式",
-      "编码解码"
+      "编码解码",
+      "字符串和基本类型转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-376",
     "title": "Go语言中，strings包的Contains作用是？",
     "options": [
-      "判断子串",
+      "连接字符串",
       "替换子串",
       "分割字符串",
-      "连接字符串"
+      "判断子串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-377",
     "title": "Go语言中，strings包的Split作用是？",
     "options": [
       "分割字符串",
+      "判断前缀",
       "连接字符串",
-      "替换子串",
-      "判断前缀"
+      "替换子串"
     ],
     "correctAnswer": 0
   },
@@ -314,75 +314,75 @@
     "id": "go-378",
     "title": "Go语言中，strings包的Join作用是？",
     "options": [
-      "连接字符串",
+      "判断后缀",
       "分割字符串",
-      "替换子串",
-      "判断后缀"
+      "连接字符串",
+      "替换子串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-379",
     "title": "Go语言中，regexp包的作用是？",
     "options": [
-      "正则表达式",
+      "文件操作",
       "字符串操作",
       "类型转换",
-      "文件操作"
+      "正则表达式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-380",
     "title": "Go语言中，encoding/json包的Marshal返回什么？",
     "options": [
-      "[]byte和error",
       "string和error",
-      "map和error",
-      "interface和error"
+      "[]byte和error",
+      "interface和error",
+      "map和error"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-381",
     "title": "Go语言中，json.Unmarshal的参数是？",
     "options": [
-      "[]byte和接口指针",
-      "string和接口",
       "io.Reader和接口",
+      "string和接口",
+      "[]byte和接口指针",
       "map和接口"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-382",
     "title": "Go语言中，json:\"-\"标签的作用是？",
     "options": [
-      "忽略字段",
       "重命名字段",
+      "忽略字段",
       "可选字段",
       "默认值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-383",
     "title": "Go语言中，json:\"name,omitempty\"的作用是？",
     "options": [
-      "零值时忽略字段",
+      "默认值name",
       "重命名并必填",
       "允许为空",
-      "默认值name"
+      "零值时忽略字段"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-384",
     "title": "Go语言中，time包的Format方法使用什么作为参考？",
     "options": [
       "2006-01-02 15:04:05",
-      "YYYY-MM-DD HH:mm:ss",
       "1970-01-01 00:00:00",
+      "YYYY-MM-DD HH:mm:ss",
       "2020-01-01 12:00:00"
     ],
     "correctAnswer": 0
@@ -392,9 +392,9 @@
     "title": "Go语言中，time.Parse的作用是？",
     "options": [
       "解析时间字符串",
-      "格式化时间",
       "获取当前时间",
-      "计算时间差"
+      "计算时间差",
+      "格式化时间"
     ],
     "correctAnswer": 0
   },
@@ -402,45 +402,45 @@
     "id": "go-386",
     "title": "Go语言中，time.Duration表示什么？",
     "options": [
+      "时间戳",
       "时间间隔",
-      "时间点",
       "时区",
-      "时间戳"
+      "时间点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-387",
     "title": "Go语言中，net/http包的ListenAndServe作用是？",
     "options": [
-      "启动HTTP服务",
-      "发送HTTP请求",
       "创建路由",
-      "处理请求"
+      "启动HTTP服务",
+      "处理请求",
+      "发送HTTP请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-388",
     "title": "Go语言中，http.Handler接口的方法是？",
     "options": [
-      "ServeHTTP",
+      "Listen",
       "Handle",
       "HandleFunc",
-      "Listen"
+      "ServeHTTP"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-389",
     "title": "Go语言中，http.HandleFunc的作用是？",
     "options": [
-      "注册路由处理函数",
       "发送请求",
       "创建服务器",
+      "注册路由处理函数",
       "关闭连接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-390",
@@ -448,8 +448,8 @@
     "options": [
       "http.Client{}",
       "http.NewClient()",
-      "http.Get()",
-      "http.Post()"
+      "http.Post()",
+      "http.Get()"
     ],
     "correctAnswer": 0
   },
@@ -457,98 +457,98 @@
     "id": "go-391",
     "title": "Go语言中，net/url包的作用是？",
     "options": [
-      "URL解析和构建",
+      "Socket编程",
       "网络请求",
-      "DNS查询",
-      "Socket编程"
+      "URL解析和构建",
+      "DNS查询"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-392",
     "title": "Go语言中，crypto/md5包的作用是？",
     "options": [
-      "MD5哈希",
       "MD5加密",
       "MD5解密",
+      "MD5哈希",
       "MD5签名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-393",
     "title": "Go语言中，crypto/sha256包的作用是？",
     "options": [
-      "SHA256哈希",
       "SHA256加密",
+      "SHA256签名",
       "SHA256解密",
-      "SHA256签名"
+      "SHA256哈希"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-394",
     "title": "Go语言中，os/exec包的作用是？",
     "options": [
-      "执行外部命令",
       "执行内部函数",
+      "执行测试",
       "执行脚本",
-      "执行测试"
+      "执行外部命令"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-395",
     "title": "Go语言中，flag包的作用是？",
     "options": [
+      "日志解析",
       "命令行参数解析",
-      "环境变量解析",
       "配置文件解析",
-      "日志解析"
+      "环境变量解析"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-396",
     "title": "Go语言中，log包的默认输出是？",
     "options": [
-      "标准错误",
-      "标准输出",
+      "网络",
       "文件",
-      "网络"
+      "标准输出",
+      "标准错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-397",
     "title": "Go语言中，path/filepath包的作用是？",
     "options": [
-      "跨平台路径操作",
       "文件读写",
       "目录遍历",
-      "文件监控"
+      "文件监控",
+      "跨平台路径操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-398",
     "title": "Go语言中，sort包的作用是？",
     "options": [
-      "排序切片",
       "排序数组",
       "排序映射",
-      "排序字符串"
+      "排序字符串",
+      "排序切片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-399",
     "title": "Go语言中，sort.Interface需要实现哪三个方法？",
     "options": [
       "Len, Less, Swap",
+      "Length, Equal, Move",
       "Size, Compare, Exchange",
-      "Count, Before, After",
-      "Length, Equal, Move"
+      "Count, Before, After"
     ],
     "correctAnswer": 0
   },
@@ -556,11 +556,11 @@
     "id": "go-400",
     "title": "Go语言中，container/heap包的作用是？",
     "options": [
-      "实现堆",
       "实现链表",
+      "实现树",
       "实现环",
-      "实现树"
+      "实现堆"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

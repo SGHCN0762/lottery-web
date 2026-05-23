@@ -3,23 +3,23 @@
     "id": "css-551",
     "title": "CSS Sprites的优点是？",
     "options": [
-      "减少HTTP请求",
-      "增加清晰度",
       "简化代码",
+      "增加清晰度",
+      "减少HTTP请求",
       "提高性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-552",
     "title": "CSS Sprites的缺点是？",
     "options": [
-      "维护成本高、内存占用可能增加",
-      "增加请求",
       "降低清晰度",
-      "代码复杂"
+      "维护成本高、内存占用可能增加",
+      "代码复杂",
+      "增加请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-553",
@@ -36,64 +36,64 @@
     "id": "css-554",
     "title": "object-fit属性的作用是？",
     "options": [
-      "设置替换元素（如img）内容如何适应容器",
-      "设置背景适应",
       "设置边框适应",
+      "设置背景适应",
+      "设置替换元素（如img）内容如何适应容器",
       "设置字体适应"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-555",
     "title": "object-fit: cover的作用是？",
     "options": [
-      "等比缩放覆盖容器，可能裁剪",
       "完整显示可能留白",
-      "拉伸填满",
-      "原始大小"
+      "等比缩放覆盖容器，可能裁剪",
+      "原始大小",
+      "拉伸填满"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-556",
     "title": "object-fit: contain的作用是？",
     "options": [
-      "等比缩放完整显示，可能留白",
-      "覆盖容器",
       "拉伸填满",
-      "原始大小"
+      "原始大小",
+      "覆盖容器",
+      "等比缩放完整显示，可能留白"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-557",
     "title": "object-fit: fill的作用是？",
     "options": [
-      "拉伸填满容器，可能变形",
       "等比缩放",
-      "覆盖容器",
-      "原始大小"
+      "原始大小",
+      "拉伸填满容器，可能变形",
+      "覆盖容器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-558",
     "title": "object-position属性的作用是？",
     "options": [
-      "设置替换元素内容在容器中的位置",
-      "设置背景位置",
       "设置边框位置",
-      "设置字体位置"
+      "设置背景位置",
+      "设置字体位置",
+      "设置替换元素内容在容器中的位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-559",
     "title": "image-rendering属性的作用是？",
     "options": [
       "设置图像缩放算法",
-      "设置图像大小",
       "设置图像位置",
+      "设置图像大小",
       "设置图像透明度"
     ],
     "correctAnswer": 0
@@ -102,43 +102,43 @@
     "id": "css-560",
     "title": "image-rendering: pixelated的作用是？",
     "options": [
-      "缩放时使用最近邻算法保持像素风格",
       "平滑缩放",
+      "缩放时使用最近邻算法保持像素风格",
       "高画质缩放",
       "自动缩放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-561",
     "title": "如何实现响应式图片？",
     "options": [
-      "<picture>元素或img的srcset属性",
+      "object-fit: cover",
       "width: 100%",
-      "max-width: 100%",
-      "object-fit: cover"
+      "<picture>元素或img的srcset属性",
+      "max-width: 100%"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-562",
     "title": "image-set()函数的作用是？",
     "options": [
-      "根据分辨率选择不同的背景图像",
-      "设置多背景",
       "裁剪图像",
-      "缩放图像"
+      "设置多背景",
+      "缩放图像",
+      "根据分辨率选择不同的背景图像"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-563",
     "title": "如何实现暗黑模式下的图片变暗？",
     "options": [
       "filter: brightness(0.8)或混合模式",
-      "opacity",
+      "display",
       "visibility",
-      "display"
+      "opacity"
     ],
     "correctAnswer": 0
   },
@@ -147,9 +147,9 @@
     "title": "如何实现图片悬停放大效果？",
     "options": [
       "transform: scale(1.1)配合overflow: hidden",
-      "width: 110%",
+      "padding: 5%",
       "margin: 5%",
-      "padding: 5%"
+      "width: 110%"
     ],
     "correctAnswer": 0
   },
@@ -157,21 +157,21 @@
     "id": "css-565",
     "title": "如何实现背景颜色渐变动画？",
     "options": [
-      "background-size放大配合transition",
       "直接transition gradient",
+      "background-size放大配合transition",
       "animation gradient",
       "hover改变颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-566",
     "title": "为什么不能直接transition渐变？",
     "options": [
       "浏览器无法在两个渐变状态间插值",
+      "兼容问题",
       "性能问题",
-      "语法限制",
-      "兼容问题"
+      "语法限制"
     ],
     "correctAnswer": 0
   },
@@ -179,45 +179,45 @@
     "id": "css-567",
     "title": "如何实现背景颜色闪烁？",
     "options": [
+      "hover",
       "animation改变background-color",
       "transition",
-      "hover",
       "active"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-568",
     "title": "如何实现磨砂玻璃效果？",
     "options": [
-      "backdrop-filter: blur(10px); background: rgba(255,255,255,0.5);",
       "opacity: 0.5",
+      "visibility: hidden",
       "filter: blur",
-      "visibility: hidden"
+      "backdrop-filter: blur(10px); background: rgba(255,255,255,0.5);"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-569",
     "title": "backdrop-filter与filter的区别？",
     "options": [
-      "backdrop-filter作用于元素背后的内容，filter作用于元素自身",
       "没有区别",
+      "backdrop-filter作用于元素背后的内容，filter作用于元素自身",
       "filter作用于背后",
       "backdrop性能更好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-570",
     "title": "如何实现水印效果？",
     "options": [
-      "伪元素+pointer-events: none+repeat背景",
-      "background-image",
       "border-image",
-      "outline"
+      "outline",
+      "background-image",
+      "伪元素+pointer-events: none+repeat背景"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-571",
@@ -234,12 +234,12 @@
     "id": "css-572",
     "title": "如何实现图片马赛克效果？",
     "options": [
+      "visibility",
       "大像素的repeating-linear-gradient或canvas",
       "filter: blur",
-      "opacity",
-      "visibility"
+      "opacity"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-573",
@@ -257,9 +257,9 @@
     "title": "mask-size的作用是？",
     "options": [
       "设置遮罩图像的大小",
+      "设置字体大小",
       "设置背景大小",
-      "设置边框大小",
-      "设置字体大小"
+      "设置边框大小"
     ],
     "correctAnswer": 0
   },
@@ -278,21 +278,21 @@
     "id": "css-576",
     "title": "mask-position的作用是？",
     "options": [
+      "设置边框位置",
       "设置遮罩图像的位置",
       "设置背景位置",
-      "设置边框位置",
       "设置字体位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-577",
     "title": "如何实现SVG遮罩？",
     "options": [
       "mask-image: url(mask.svg)",
+      "border-image: url(mask.svg)",
       "clip-path: url(mask.svg)",
-      "filter: url(mask.svg)",
-      "border-image: url(mask.svg)"
+      "filter: url(mask.svg)"
     ],
     "correctAnswer": 0
   },
@@ -300,45 +300,45 @@
     "id": "css-578",
     "title": "如何实现渐变遮罩？",
     "options": [
-      "mask-image: linear-gradient(...)",
-      "background-clip",
       "clip-path",
-      "filter"
+      "mask-image: linear-gradient(...)",
+      "filter",
+      "background-clip"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-579",
     "title": "如何实现图片灰度悬停变彩色？",
     "options": [
-      "默认grayscale(1)，hover时grayscale(0)",
       "opacity变化",
-      "visibility变化",
-      "display变化"
+      "display变化",
+      "默认grayscale(1)，hover时grayscale(0)",
+      "visibility变化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-580",
     "title": "如何实现图片高斯模糊？",
     "options": [
-      "filter: blur(5px)",
       "opacity: 0.5",
-      "background: transparent",
-      "visibility: hidden"
+      "filter: blur(5px)",
+      "visibility: hidden",
+      "background: transparent"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-581",
     "title": "如何实现背景视差效果？",
     "options": [
-      "background-attachment: fixed",
-      "position: fixed",
       "position: sticky",
-      "overflow: hidden"
+      "position: fixed",
+      "overflow: hidden",
+      "background-attachment: fixed"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-582",
@@ -346,8 +346,8 @@
     "options": [
       "多个background-image用逗号分隔",
       "z-index叠加",
-      "position: absolute",
-      "display: flex"
+      "display: flex",
+      "position: absolute"
     ],
     "correctAnswer": 0
   },
@@ -355,34 +355,34 @@
     "id": "css-583",
     "title": "如何实现渐变文字？",
     "options": [
-      "background: linear-gradient; -webkit-background-clip: text; color: transparent;",
       "color: gradient",
       "text-shadow",
-      "border-image"
+      "border-image",
+      "background: linear-gradient; -webkit-background-clip: text; color: transparent;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-584",
     "title": "如何实现下划线动画？",
     "options": [
-      "伪元素width/height过渡",
-      "text-decoration过渡",
       "border-bottom过渡",
-      "outline过渡"
+      "伪元素width/height过渡",
+      "outline过渡",
+      "text-decoration过渡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-585",
     "title": "如何实现背景颜色滑入效果？",
     "options": [
-      "伪元素transform: scaleX过渡",
-      "background过渡",
       "color过渡",
-      "opacity过渡"
+      "background过渡",
+      "opacity过渡",
+      "伪元素transform: scaleX过渡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-586",
@@ -399,32 +399,32 @@
     "id": "css-587",
     "title": "如何实现打字机下划线效果？",
     "options": [
-      "border-right动画",
-      "text-decoration动画",
       "background动画",
-      "outline动画"
+      "outline动画",
+      "text-decoration动画",
+      "border-right动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-588",
     "title": "如何实现链接悬停效果？",
     "options": [
-      "伪元素transform或border-bottom过渡",
-      "text-decoration",
+      "font-size变化",
       "color变化",
-      "font-size变化"
+      "text-decoration",
+      "伪元素transform或border-bottom过渡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-589",
     "title": "如何实现按钮按下效果？",
     "options": [
       "active伪类transform: translateY或box-shadow变化",
-      "hover效果",
       "focus效果",
-      "visited效果"
+      "visited效果",
+      "hover效果"
     ],
     "correctAnswer": 0
   },
@@ -432,21 +432,21 @@
     "id": "css-590",
     "title": "如何实现卡片悬停上浮效果？",
     "options": [
+      "position变化",
       "hover时transform: translateY(-5px)和box-shadow增加",
       "margin-top减少",
-      "position变化",
       "z-index增加"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-591",
     "title": "如何实现图片悬停遮罩效果？",
     "options": [
       "伪元素opacity从0到1",
+      "z-index变化",
       "visibility变化",
-      "display变化",
-      "z-index变化"
+      "display变化"
     ],
     "correctAnswer": 0
   },
@@ -454,53 +454,53 @@
     "id": "css-592",
     "title": "如何实现背景纹理效果？",
     "options": [
-      "重复的小图案背景",
       "大图片背景",
+      "重复的小图案背景",
       "纯色背景",
       "渐变背景"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-593",
     "title": "如何实现噪点背景效果？",
     "options": [
-      "SVG filter或base64噪点图片",
       "linear-gradient",
       "radial-gradient",
-      "conic-gradient"
+      "conic-gradient",
+      "SVG filter或base64噪点图片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-594",
     "title": "如何实现几何图案背景？",
     "options": [
+      "纯色",
       "repeating-linear-gradient组合",
       "大图片",
-      "纯色",
       "单次渐变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-595",
     "title": "如何实现动态渐变背景？",
     "options": [
-      "animation改变background-position或background-size",
       "transition",
       "hover",
-      "active"
+      "active",
+      "animation改变background-position或background-size"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-596",
     "title": "如何实现彩虹背景？",
     "options": [
       "linear-gradient多色停止点",
-      "radial-gradient",
       "conic-gradient",
+      "radial-gradient",
       "纯色"
     ],
     "correctAnswer": 0
@@ -511,8 +511,8 @@
     "options": [
       "多重radial-gradient配合animation",
       "linear-gradient",
-      "纯色",
-      "图片背景"
+      "图片背景",
+      "纯色"
     ],
     "correctAnswer": 0
   },
@@ -521,9 +521,9 @@
     "title": "如何实现星空背景效果？",
     "options": [
       "radial-gradient小圆点配合animation",
-      "linear-gradient",
       "纯色",
-      "图片背景"
+      "图片背景",
+      "linear-gradient"
     ],
     "correctAnswer": 0
   },
@@ -532,9 +532,9 @@
     "title": "如何实现气泡背景效果？",
     "options": [
       "radial-gradient圆形配合animation",
-      "linear-gradient",
+      "图片背景",
       "纯色",
-      "图片背景"
+      "linear-gradient"
     ],
     "correctAnswer": 0
   },
@@ -543,9 +543,9 @@
     "title": "如何实现波浪背景效果？",
     "options": [
       "SVG或clip-path配合animation",
-      "linear-gradient",
+      "图片背景",
       "纯色",
-      "图片背景"
+      "linear-gradient"
     ],
     "correctAnswer": 0
   }

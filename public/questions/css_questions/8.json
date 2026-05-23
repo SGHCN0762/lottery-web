@@ -3,53 +3,53 @@
     "id": "css-351",
     "title": "Grid中gap与margin的区别？",
     "options": [
-      "gap只在轨道之间，margin在项目四周",
-      "没有区别",
       "gap性能差",
-      "margin更灵活"
+      "margin更灵活",
+      "没有区别",
+      "gap只在轨道之间，margin在项目四周"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-352",
     "title": "Grid中如何实现粘性页脚？",
     "options": [
-      "grid-template-rows: 1fr auto",
-      "position: fixed",
       "margin-top: auto",
-      "flex: 1"
+      "grid-template-rows: 1fr auto",
+      "flex: 1",
+      "position: fixed"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-353",
     "title": "Grid中如何实现侧边栏布局？",
     "options": [
-      "grid-template-columns: 200px 1fr",
       "float: left",
       "position: absolute",
-      "display: inline-block"
+      "display: inline-block",
+      "grid-template-columns: 200px 1fr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-354",
     "title": "Grid中如何实现12列栅格系统？",
     "options": [
-      "grid-template-columns: repeat(12, 1fr)",
+      "column-count: 12",
       "width: 8.33%",
       "flex: 1",
-      "column-count: 12"
+      "grid-template-columns: repeat(12, 1fr)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-355",
     "title": "Grid中如何实现跨列？",
     "options": [
       "grid-column: span 2",
-      "column-span: all",
       "float: left",
+      "column-span: all",
       "width: 200%"
     ],
     "correctAnswer": 0
@@ -60,8 +60,8 @@
     "options": [
       "grid-row: span 2",
       "row-span: 2",
-      "height: 200%",
-      "display: block"
+      "display: block",
+      "height: 200%"
     ],
     "correctAnswer": 0
   },
@@ -69,21 +69,21 @@
     "id": "css-357",
     "title": "Grid中如何实现瀑布流？",
     "options": [
-      "Grid本身不支持，需配合JS或masonry属性(实验性)",
-      "grid-auto-flow: dense",
       "flex-direction: column",
-      "column-count"
+      "grid-auto-flow: dense",
+      "column-count",
+      "Grid本身不支持，需配合JS或masonry属性(实验性)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-358",
     "title": "Grid中如何实现卡片列表？",
     "options": [
       "grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;",
-      "flex-wrap: wrap",
+      "float: left",
       "display: inline-block",
-      "float: left"
+      "flex-wrap: wrap"
     ],
     "correctAnswer": 0
   },
@@ -91,43 +91,43 @@
     "id": "css-359",
     "title": "Grid中如何实现自适应列数？",
     "options": [
-      "repeat(auto-fill, minmax(200px, 1fr))",
-      "column-count",
       "flex-wrap: wrap",
-      "display: inline-block"
+      "display: inline-block",
+      "column-count",
+      "repeat(auto-fill, minmax(200px, 1fr))"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-360",
     "title": "Grid中如何实现固定列宽？",
     "options": [
-      "grid-template-columns: 200px 1fr",
       "width: 200px",
+      "grid-template-columns: 200px 1fr",
       "min-width: 200px",
       "max-width: 200px"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-361",
     "title": "Grid中如何实现等宽列？",
     "options": [
-      "grid-template-columns: repeat(3, 1fr)",
+      "display: table-cell",
       "width: 33.33%",
       "flex: 1",
-      "display: table-cell"
+      "grid-template-columns: repeat(3, 1fr)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-362",
     "title": "Grid中如何实现等高行？",
     "options": [
       "Grid默认等高",
-      "height: 100%",
+      "display: table-row",
       "align-items: stretch",
-      "display: table-row"
+      "height: 100%"
     ],
     "correctAnswer": 0
   },
@@ -135,186 +135,186 @@
     "id": "css-363",
     "title": "Grid中如何实现网格线命名？",
     "options": [
-      "grid-template-columns: [line1] 1fr [line2] 2fr",
       "line-name: 1fr",
       "grid-line: 1",
-      "name: line1"
+      "name: line1",
+      "grid-template-columns: [line1] 1fr [line2] 2fr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-364",
     "title": "Grid中如何使用命名线定位？",
     "options": [
-      "grid-column: line1 / line2",
       "grid-column: 1 / 2",
-      "grid-area: line1",
-      "column: line1"
+      "column: line1",
+      "grid-column: line1 / line2",
+      "grid-area: line1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-365",
     "title": "Grid中subgrid的作用是？",
     "options": [
-      "子网格继承父网格的轨道定义",
-      "创建子元素",
+      "合并网格",
       "嵌套网格",
-      "合并网格"
+      "子网格继承父网格的轨道定义",
+      "创建子元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-366",
     "title": "Grid中如何实现嵌套网格？",
     "options": [
+      "grid-template-areas",
       "子元素设置display: grid",
       "subgrid",
-      "grid-template-areas",
       "position: relative"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-367",
     "title": "Grid中如何实现表格布局？",
     "options": [
-      "grid-template-columns: repeat(4, 1fr)",
-      "display: table",
       "border-collapse",
-      "float: left"
+      "float: left",
+      "display: table",
+      "grid-template-columns: repeat(4, 1fr)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-368",
     "title": "Grid中如何实现表单布局？",
     "options": [
-      "grid-template-columns: 100px 1fr; gap: 10px;",
-      "display: flex",
       "display: table",
+      "display: flex",
+      "grid-template-columns: 100px 1fr; gap: 10px;",
       "float: left"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-369",
     "title": "Grid中如何实现仪表盘布局？",
     "options": [
-      "grid-template-areas和grid-area配合",
-      "position: absolute",
       "float: left",
-      "display: inline-block"
+      "display: inline-block",
+      "grid-template-areas和grid-area配合",
+      "position: absolute"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-370",
     "title": "Grid中如何实现全屏布局？",
     "options": [
-      "grid-template-rows: auto 1fr auto; grid-template-columns: 200px 1fr;",
-      "height: 100vh",
       "position: fixed",
-      "margin: 0"
+      "margin: 0",
+      "grid-template-rows: auto 1fr auto; grid-template-columns: 200px 1fr;",
+      "height: 100vh"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-371",
     "title": "Grid中如何实现分栏布局？",
     "options": [
-      "grid-template-columns: 1fr 1fr",
-      "column-count: 2",
+      "float: left",
       "flex: 1",
-      "float: left"
+      "column-count: 2",
+      "grid-template-columns: 1fr 1fr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-372",
     "title": "Grid中如何实现九宫格布局？",
     "options": [
-      "grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);",
-      "width: 33.33%",
       "display: inline-block",
-      "float: left"
+      "width: 33.33%",
+      "float: left",
+      "grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-373",
     "title": "Grid中如何实现骰子布局？",
     "options": [
-      "grid-template-areas配合justify-self和align-self",
-      "flex布局",
+      "float: left",
       "position: absolute",
-      "float: left"
+      "flex布局",
+      "grid-template-areas配合justify-self和align-self"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-374",
     "title": "Grid中如何实现日历布局？",
     "options": [
-      "grid-template-columns: repeat(7, 1fr);",
-      "display: table",
       "float: left",
+      "display: table",
+      "grid-template-columns: repeat(7, 1fr);",
       "column-count: 7"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-375",
     "title": "Grid中如何实现图片墙？",
     "options": [
-      "repeat(auto-fill, minmax())配合span",
+      "display: inline-block",
       "flex-wrap: wrap",
-      "column-count",
-      "display: inline-block"
+      "repeat(auto-fill, minmax())配合span",
+      "column-count"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-376",
     "title": "Grid中如何实现键盘布局？",
     "options": [
-      "grid-template-columns配合span跨列",
       "flex布局",
+      "position: absolute",
       "display: table",
-      "position: absolute"
+      "grid-template-columns配合span跨列"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-377",
     "title": "Grid中如何实现时间轴布局？",
     "options": [
-      "grid-template-columns: 100px 50px 1fr",
       "flex布局",
       "float: left",
-      "position: relative"
+      "position: relative",
+      "grid-template-columns: 100px 50px 1fr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-378",
     "title": "Grid中如何实现标签页布局？",
     "options": [
-      "grid-template-rows: auto 1fr",
+      "position: relative",
       "flex布局",
-      "display: block",
-      "position: relative"
+      "grid-template-rows: auto 1fr",
+      "display: block"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-379",
     "title": "Grid中如何实现对话框布局？",
     "options": [
       "place-items: center",
-      "position: fixed",
+      "text-align: center",
       "margin: auto",
-      "text-align: center"
+      "position: fixed"
     ],
     "correctAnswer": 0
   },
@@ -322,21 +322,21 @@
     "id": "css-380",
     "title": "Grid中如何实现抽屉布局？",
     "options": [
-      "grid-template-columns: auto 1fr",
-      "position: fixed",
       "transform: translateX",
-      "margin-left: -200px"
+      "position: fixed",
+      "margin-left: -200px",
+      "grid-template-columns: auto 1fr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-381",
     "title": "Grid中如何实现步骤条布局？",
     "options": [
       "grid-template-columns: repeat(4, 1fr)",
-      "flex: 1",
+      "display: inline-block",
       "width: 25%",
-      "display: inline-block"
+      "flex: 1"
     ],
     "correctAnswer": 0
   },
@@ -345,9 +345,9 @@
     "title": "Grid中如何实现面包屑布局？",
     "options": [
       "grid-template-columns: auto auto 1fr",
-      "display: inline",
+      "text-align: left",
       "float: left",
-      "text-align: left"
+      "display: inline"
     ],
     "correctAnswer": 0
   },
@@ -355,21 +355,21 @@
     "id": "css-383",
     "title": "Grid中如何实现分页器布局？",
     "options": [
-      "justify-content: center; gap: 8px;",
-      "text-align: center",
       "margin: 0 auto",
-      "display: inline-block"
+      "justify-content: center; gap: 8px;",
+      "display: inline-block",
+      "text-align: center"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-384",
     "title": "Grid中如何实现头像列表布局？",
     "options": [
       "grid-template-columns: repeat(auto-fill, 40px); gap: 8px;",
-      "display: inline-block",
       "float: left",
-      "position: absolute"
+      "position: absolute",
+      "display: inline-block"
     ],
     "correctAnswer": 0
   },
@@ -378,9 +378,9 @@
     "title": "Grid中如何实现工具栏布局？",
     "options": [
       "grid-template-columns: 1fr auto auto; gap: 8px; align-items: center;",
-      "display: inline",
       "float: left",
-      "text-align: left"
+      "text-align: left",
+      "display: inline"
     ],
     "correctAnswer": 0
   },
@@ -388,32 +388,32 @@
     "id": "css-386",
     "title": "Grid中如何实现列表布局？",
     "options": [
-      "grid-template-rows: auto; gap: 10px;",
       "display: block",
+      "grid-template-rows: auto; gap: 10px;",
       "float: left",
       "position: relative"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-387",
     "title": "Grid中如何实现卡片角标布局？",
     "options": [
+      "margin-left: auto",
       "position: absolute配合grid容器",
       "float: right",
-      "margin-left: auto",
       "text-align: right"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-388",
     "title": "Grid中如何实现开关组件布局？",
     "options": [
       "grid-template-columns: 40px 1fr; align-items: center;",
+      "display: inline-block",
       "display: flex",
-      "float: left",
-      "display: inline-block"
+      "float: left"
     ],
     "correctAnswer": 0
   },
@@ -421,34 +421,34 @@
     "id": "css-389",
     "title": "Grid中如何实现骨架屏布局？",
     "options": [
-      "grid布局配合渐变动画",
       "display: none",
-      "opacity: 0",
-      "visibility: hidden"
+      "grid布局配合渐变动画",
+      "visibility: hidden",
+      "opacity: 0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-390",
     "title": "Grid中如何实现响应式卡片布局？",
     "options": [
-      "repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;",
       "width: 50%",
       "float: left",
-      "column-count"
+      "column-count",
+      "repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-391",
     "title": "Grid中如何实现双行文本截断？",
     "options": [
+      "overflow: hidden",
       "-webkit-line-clamp: 2",
       "height限制",
-      "overflow: hidden",
       "text-overflow: ellipsis"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-392",
@@ -465,43 +465,43 @@
     "id": "css-393",
     "title": "Grid中如何实现居中对齐且左右定宽？",
     "options": [
-      "grid-template-columns: 200px 1fr 200px",
-      "flex布局",
       "margin: 0 auto",
-      "position: absolute"
+      "position: absolute",
+      "grid-template-columns: 200px 1fr 200px",
+      "flex布局"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-394",
     "title": "Grid中如何实现多列等高？",
     "options": [
+      "max-height",
       "Grid默认等高",
-      "设置相同height",
       "min-height",
-      "max-height"
+      "设置相同height"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-395",
     "title": "Grid中如何实现单行两端对齐？",
     "options": [
+      "float: left",
       "justify-content: space-between",
       "text-align: justify",
-      "margin: 0 auto",
-      "float: left"
+      "margin: 0 auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-396",
     "title": "Grid中如何实现垂直排列？",
     "options": [
       "grid-template-rows: auto auto",
-      "display: block",
       "float: left",
-      "column-count"
+      "column-count",
+      "display: block"
     ],
     "correctAnswer": 0
   },
@@ -509,43 +509,43 @@
     "id": "css-397",
     "title": "Grid中如何实现水平排列？",
     "options": [
-      "grid-template-columns: auto auto",
       "display: inline",
-      "float: left",
-      "text-align: left"
+      "text-align: left",
+      "grid-template-columns: auto auto",
+      "float: left"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-398",
     "title": "Grid中如何实现自适应宽度？",
     "options": [
-      "grid-template-columns: 1fr",
-      "width: 100%",
       "display: block",
-      "overflow: hidden"
+      "overflow: hidden",
+      "grid-template-columns: 1fr",
+      "width: 100%"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-399",
     "title": "Grid中如何实现固定宽度？",
     "options": [
-      "grid-template-columns: 200px",
-      "width: 200px",
       "max-width: 200px",
-      "min-width: 200px"
+      "min-width: 200px",
+      "grid-template-columns: 200px",
+      "width: 200px"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-400",
     "title": "Grid中如何实现自适应高度？",
     "options": [
       "grid-template-rows: 1fr",
+      "overflow: hidden",
       "height: 100%",
-      "display: block",
-      "overflow: hidden"
+      "display: block"
     ],
     "correctAnswer": 0
   }

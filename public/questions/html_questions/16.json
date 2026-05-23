@@ -5,8 +5,8 @@
     "options": [
       "XSS窃取Cookie",
       "CSRF",
-      "SQL注入",
-      "点击劫持"
+      "点击劫持",
+      "SQL注入"
     ],
     "correctAnswer": 0
   },
@@ -15,8 +15,8 @@
     "title": "Cookie的Secure属性作用？",
     "options": [
       "仅通过HTTPS发送Cookie",
-      "加密Cookie",
       "防止JS访问",
+      "加密Cookie",
       "防止跨站"
     ],
     "correctAnswer": 0
@@ -26,9 +26,9 @@
     "title": "Cookie的Path属性作用？",
     "options": [
       "限制Cookie在指定路径下发送",
-      "设置大小",
       "设置时间",
-      "设置域名"
+      "设置域名",
+      "设置大小"
     ],
     "correctAnswer": 0
   },
@@ -36,109 +36,109 @@
     "id": "html-754",
     "title": "Cookie的Domain属性作用？",
     "options": [
-      "指定Cookie有效的域名",
-      "设置路径",
+      "设置安全",
       "设置大小",
-      "设置安全"
+      "指定Cookie有效的域名",
+      "设置路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-755",
     "title": "第三方Cookie的问题？",
     "options": [
-      "用于跨站追踪用户隐私",
       "提高安全",
-      "加速加载",
-      "方便开发"
+      "用于跨站追踪用户隐私",
+      "方便开发",
+      "加速加载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-756",
     "title": "如何阻止第三方Cookie？",
     "options": [
-      "浏览器设置或SameSite属性",
+      "Path",
       "HttpOnly",
-      "Secure",
-      "Path"
+      "浏览器设置或SameSite属性",
+      "Secure"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-757",
     "title": "<iframe>的安全风险？",
     "options": [
-      "嵌入恶意内容, 点击劫持, 跨域通信",
-      "无风险",
       "加速加载",
-      "提高性能"
+      "提高性能",
+      "嵌入恶意内容, 点击劫持, 跨域通信",
+      "无风险"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-758",
     "title": "sandbox属性的限制不包括？",
     "options": [
-      "允许所有脚本执行",
       "禁止表单提交",
+      "允许所有脚本执行",
       "禁止弹窗",
       "禁止同源访问"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-759",
     "title": "sandbox=\"allow-scripts\"的作用？",
     "options": [
-      "允许iframe执行脚本",
       "禁止脚本",
       "允许表单",
+      "允许iframe执行脚本",
       "允许弹窗"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-760",
     "title": "sandbox=\"allow-same-origin\"的风险？",
     "options": [
-      "可能让iframe绕过同源策略",
       "无风险",
-      "更安全",
-      "加速加载"
+      "加速加载",
+      "可能让iframe绕过同源策略",
+      "更安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-761",
     "title": "postMessage的安全要求？",
     "options": [
+      "只验证数据",
       "始终验证origin和source",
       "不验证",
-      "只验证数据",
       "只验证来源页面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-762",
     "title": "接收message时如何验证来源？",
     "options": [
-      "检查event.origin",
+      "检查event.type",
       "检查event.data",
-      "检查event.source",
-      "检查event.type"
+      "检查event.origin",
+      "检查event.source"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-763",
     "title": "发送message时如何指定目标？",
     "options": [
       "使用targetOrigin参数",
-      "使用targetDomain",
+      "使用targetWindow",
       "使用targetUrl",
-      "使用targetWindow"
+      "使用targetDomain"
     ],
     "correctAnswer": 0
   },
@@ -146,108 +146,108 @@
     "id": "html-764",
     "title": "targetOrigin设置为\"*\"的风险？",
     "options": [
-      "任何窗口都可接收消息",
+      "加速传输",
       "无风险",
-      "更安全",
-      "加速传输"
+      "任何窗口都可接收消息",
+      "更安全"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-765",
     "title": "Subresource Integrity (SRI) 防御什么？",
     "options": [
-      "CDN被攻陷导致的恶意代码注入",
       "XSS",
+      "CDN被攻陷导致的恶意代码注入",
       "CSRF",
       "MITM"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-766",
     "title": "SRI如何工作？",
     "options": [
-      "比对资源哈希值与integrity属性",
-      "加密资源",
       "压缩资源",
-      "缓存资源"
+      "比对资源哈希值与integrity属性",
+      "缓存资源",
+      "加密资源"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-767",
     "title": "SRI支持哪些哈希算法？",
     "options": [
+      "aes, rsa",
       "sha256, sha384, sha512",
       "md5, sha1",
-      "aes, rsa",
       "base64"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-768",
     "title": "integrity属性格式是？",
     "options": [
-      "算法-Base64哈希值",
       "Base64-算法",
+      "算法-md5",
       "哈希值-算法",
-      "算法-md5"
+      "算法-Base64哈希值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-769",
     "title": "CORS如何防御安全风险？",
     "options": [
-      "限制跨域资源访问需服务器授权",
-      "允许所有跨域",
+      "禁止跨域",
       "加密跨域",
-      "禁止跨域"
+      "允许所有跨域",
+      "限制跨域资源访问需服务器授权"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-770",
     "title": "Access-Control-Allow-Origin的作用？",
     "options": [
-      "指定允许访问的源",
-      "允许所有源",
       "禁止所有源",
-      "加密源"
+      "指定允许访问的源",
+      "加密源",
+      "允许所有源"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-771",
     "title": "Access-Control-Allow-Credentials的作用？",
     "options": [
-      "允许跨域请求携带凭证",
-      "禁止凭证",
+      "验证凭证",
       "加密凭证",
-      "验证凭证"
+      "禁止凭证",
+      "允许跨域请求携带凭证"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-772",
     "title": "预检请求的作用？",
     "options": [
-      "对复杂请求先发送OPTIONS检查权限",
-      "加速请求",
       "缓存请求",
-      "压缩请求"
+      "对复杂请求先发送OPTIONS检查权限",
+      "压缩请求",
+      "加速请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-773",
     "title": "哪些情况触发预检？",
     "options": [
       "自定义头, 非简单方法, 非简单Content-Type",
-      "所有请求",
       "GET请求",
+      "所有请求",
       "同源请求"
     ],
     "correctAnswer": 0
@@ -256,32 +256,32 @@
     "id": "html-774",
     "title": "DNS重绑定攻击的原理？",
     "options": [
-      "DNS解析IP频繁变化绕过同源策略",
       "修改DNS",
+      "DNS解析IP频繁变化绕过同源策略",
       "劫持DNS",
       "加密DNS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-775",
     "title": "如何防御DNS重绑定？",
     "options": [
-      "验证Host头, DNS锁定",
-      "使用HTTPS",
       "使用CSP",
-      "使用SRI"
+      "验证Host头, DNS锁定",
+      "使用SRI",
+      "使用HTTPS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-776",
     "title": "Prototype Pollution的原理？",
     "options": [
       "修改JavaScript对象原型链",
-      "注入HTML",
+      "伪造请求",
       "篡改CSS",
-      "伪造请求"
+      "注入HTML"
     ],
     "correctAnswer": 0
   },
@@ -290,9 +290,9 @@
     "title": "如何防御Prototype Pollution？",
     "options": [
       "深度合并对象时过滤__proto__等键",
-      "使用CSP",
       "使用HTTPS",
-      "转义HTML"
+      "转义HTML",
+      "使用CSP"
     ],
     "correctAnswer": 0
   },
@@ -300,21 +300,21 @@
     "id": "html-778",
     "title": "Supply Chain Attack(供应链攻击)原理？",
     "options": [
-      "第三方依赖被植入恶意代码",
       "网络攻击",
+      "第三方依赖被植入恶意代码",
       "物理攻击",
       "社会工程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-779",
     "title": "如何防御供应链攻击？",
     "options": [
       "使用SRI, 锁定依赖版本, 审计代码",
+      "使用Cookie",
       "使用HTTPS",
-      "使用CSP",
-      "使用Cookie"
+      "使用CSP"
     ],
     "correctAnswer": 0
   },
@@ -322,54 +322,54 @@
     "id": "html-780",
     "title": "内容嗅探攻击原理？",
     "options": [
-      "浏览器忽略Content-Type执行恶意内容",
       "嗅探网络",
-      "嗅探密码",
-      "嗅探Cookie"
+      "浏览器忽略Content-Type执行恶意内容",
+      "嗅探Cookie",
+      "嗅探密码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-781",
     "title": "如何防御内容嗅探？",
     "options": [
-      "设置X-Content-Type-Options: nosniff",
       "使用HTTPS",
+      "设置X-Content-Type-Options: nosniff",
       "使用CSP",
       "使用SRI"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-782",
     "title": "X-Content-Type-Options: nosniff的作用？",
     "options": [
-      "强制浏览器遵守Content-Type",
       "禁止嗅探网络",
-      "禁止缓存",
-      "禁止跨域"
+      "强制浏览器遵守Content-Type",
+      "禁止跨域",
+      "禁止缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-783",
     "title": "Referrer Policy的作用？",
     "options": [
-      "控制请求时携带的Referer头信息量",
+      "重定向策略",
       "引用策略",
-      "刷新策略",
-      "重定向策略"
+      "控制请求时携带的Referer头信息量",
+      "刷新策略"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-784",
     "title": "Referrer-Policy: no-referrer的作用？",
     "options": [
       "不发送任何Referer",
+      "发送路径",
       "发送完整URL",
-      "发送仅域名",
-      "发送路径"
+      "发送仅域名"
     ],
     "correctAnswer": 0
   },
@@ -378,9 +378,9 @@
     "title": "Referrer-Policy: same-origin的作用？",
     "options": [
       "仅同源请求发送Referer",
-      "不发送",
       "总是发送",
-      "跨域发送"
+      "跨域发送",
+      "不发送"
     ],
     "correctAnswer": 0
   },
@@ -388,23 +388,23 @@
     "id": "html-786",
     "title": "Referrer-Policy: strict-origin的作用？",
     "options": [
+      "总是发送",
       "同源发完整，跨域HTTPS到HTTPS仅发域名",
       "不发送",
-      "总是发送",
       "发送完整"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-787",
     "title": "Feature Policy / Permissions Policy的作用？",
     "options": [
-      "控制浏览器功能(如摄像头, 地理位置)的使用",
       "控制样式",
-      "控制脚本",
-      "控制缓存"
+      "控制浏览器功能(如摄像头, 地理位置)的使用",
+      "控制缓存",
+      "控制脚本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-788",
@@ -421,21 +421,21 @@
     "id": "html-789",
     "title": "Permissions-Policy: geolocation=(self)的作用？",
     "options": [
-      "仅允许同源使用地理位置",
-      "允许所有",
       "禁止所有",
-      "允许特定域"
+      "允许特定域",
+      "允许所有",
+      "仅允许同源使用地理位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-790",
     "title": "Trusted Types API的作用？",
     "options": [
       "防止DOM XSS攻击",
-      "类型检查",
       "加密数据",
-      "压缩代码"
+      "压缩代码",
+      "类型检查"
     ],
     "correctAnswer": 0
   },
@@ -443,12 +443,12 @@
     "id": "html-791",
     "title": "Trusted Types如何工作？",
     "options": [
+      "静态分析",
       "要求DOM sink只接受可信类型而非字符串",
       "编译检查",
-      "运行时检查",
-      "静态分析"
+      "运行时检查"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-792",
@@ -456,8 +456,8 @@
     "options": [
       "trustedTypes.createPolicy()",
       "new TrustedType()",
-      "TrustedType.create()",
-      "policy.create()"
+      "policy.create()",
+      "TrustedType.create()"
     ],
     "correctAnswer": 0
   },
@@ -466,9 +466,9 @@
     "title": "自动化安全测试工具不包括？",
     "options": [
       "Photoshop",
-      "OWASP ZAP",
+      "Netsparker",
       "Burp Suite",
-      "Netsparker"
+      "OWASP ZAP"
     ],
     "correctAnswer": 0
   },
@@ -476,21 +476,21 @@
     "id": "html-794",
     "title": "浏览器安全策略总结不包括？",
     "options": [
+      "X-Frame-Options",
       "CSS Grid布局",
-      "CSP",
       "HSTS",
-      "X-Frame-Options"
+      "CSP"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-795",
     "title": "XSS的全称是？",
     "options": [
       "Cross-Site Scripting",
-      "Cross-Server Scripting",
       "Cross-Site Security",
-      "Cross-Server Security"
+      "Cross-Server Security",
+      "Cross-Server Scripting"
     ],
     "correctAnswer": 0
   },
@@ -498,55 +498,55 @@
     "id": "html-796",
     "title": "XSS攻击的类型不包括？",
     "options": [
-      "Cross-Site Request (CSRF)",
       "Stored XSS",
+      "DOM-based XSS",
       "Reflected XSS",
-      "DOM-based XSS"
+      "Cross-Site Request (CSRF)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-797",
     "title": "Stored XSS的特点是？",
     "options": [
+      "在Cookie中",
       "恶意脚本存储在服务器数据库中",
       "在URL中",
-      "在DOM中",
-      "在Cookie中"
+      "在DOM中"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-798",
     "title": "Reflected XSS的特点是？",
     "options": [
-      "恶意脚本在URL参数中反射回页面",
       "存储在服务器",
       "在DOM中",
+      "恶意脚本在URL参数中反射回页面",
       "在本地存储"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-799",
     "title": "DOM-based XSS的特点是？",
     "options": [
-      "恶意脚本在客户端DOM操作中注入",
+      "在URL中",
       "在服务器端",
       "在数据库",
-      "在URL中"
+      "恶意脚本在客户端DOM操作中注入"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-800",
     "title": "如何防御XSS？",
     "options": [
-      "转义HTML特殊字符, 使用CSP",
+      "使用Cookie",
       "使用HTTPS",
-      "使用POST",
-      "使用Cookie"
+      "转义HTML特殊字符, 使用CSP",
+      "使用POST"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

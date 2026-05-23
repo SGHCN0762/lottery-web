@@ -3,56 +3,56 @@
     "id": "cpp-51",
     "title": "C++中#pragma once的作用是？",
     "options": [
-      "防止头文件重复包含",
       "只编译一次",
+      "输出信息",
       "优化代码",
-      "输出信息"
+      "防止头文件重复包含"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-52",
     "title": "C++中sizeof(空类)的大小是？",
     "options": [
       "0",
+      "8",
       "1",
-      "4",
-      "8"
+      "4"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "cpp-53",
     "title": "C++中struct和class的默认访问权限是？",
     "options": [
-      "struct为public，class为private",
-      "都是private",
       "都是public",
-      "取决于编译器"
+      "取决于编译器",
+      "struct为public，class为private",
+      "都是private"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-54",
     "title": "C++中如何禁止类在堆上分配内存？",
     "options": [
-      "私有化operator new",
       "私有化构造函数",
+      "使用static",
       "使用delete",
-      "使用static"
+      "私有化operator new"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-55",
     "title": "C++中如何禁止类在栈上分配内存？",
     "options": [
-      "私有化析构函数",
-      "私有化构造函数",
+      "使用static",
       "使用delete",
-      "使用static"
+      "私有化构造函数",
+      "私有化析构函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-56",
@@ -69,120 +69,120 @@
     "id": "cpp-57",
     "title": "C++中static_cast的作用是？",
     "options": [
-      "隐式转换和子类父类转换",
       "去除const",
+      "不相关类型转换",
       "多态向下转型",
-      "不相关类型转换"
+      "隐式转换和子类父类转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-58",
     "title": "C++中dynamic_cast的作用是？",
     "options": [
-      "多态向下安全转型",
       "隐式转换",
+      "多态向下安全转型",
       "去除const",
       "不相关类型转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-59",
     "title": "C++中const_cast的作用是？",
     "options": [
+      "不相关类型转换",
       "去除const或volatile",
       "隐式转换",
-      "子类父类转换",
-      "不相关类型转换"
+      "子类父类转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-60",
     "title": "C++中reinterpret_cast的作用是？",
     "options": [
-      "底层位重新解释",
+      "去除const",
       "隐式转换",
       "子类父类转换",
-      "去除const"
+      "底层位重新解释"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-61",
     "title": "C++中哪个关键字用于定义常量？",
     "options": [
-      "const",
-      "define",
       "final",
-      "static"
+      "const",
+      "static",
+      "define"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-62",
     "title": "C++中sizeof(char)的大小是？",
     "options": [
-      "1",
+      "8",
       "2",
       "4",
-      "8"
+      "1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-63",
     "title": "C++中int类型一般占几个字节？",
     "options": [
       "2",
+      "取决于编译器",
       "4",
-      "8",
-      "取决于编译器"
+      "8"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "cpp-64",
     "title": "C++中哪个关键字用于动态内存分配？",
     "options": [
-      "malloc",
       "new",
-      "alloc",
-      "create"
+      "malloc",
+      "create",
+      "alloc"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "cpp-65",
     "title": "C++中指针占几个字节？（64位系统）",
     "options": [
-      "4",
       "8",
+      "2",
       "16",
-      "2"
+      "4"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "cpp-66",
     "title": "C++中引用和指针的区别是？",
     "options": [
-      "引用必须初始化且不能重绑",
-      "指针必须初始化",
       "没有区别",
-      "引用可以重绑"
+      "指针必须初始化",
+      "引用可以重绑",
+      "引用必须初始化且不能重绑"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-67",
     "title": "C++中哪个关键字表示空指针？",
     "options": [
+      "0",
       "null",
-      "NULL",
       "nullptr",
-      "0"
+      "NULL"
     ],
     "correctAnswer": 2
   },
@@ -190,43 +190,43 @@
     "id": "cpp-68",
     "title": "C++中const int* p的含义是？",
     "options": [
+      "都不是常量",
       "指针是常量",
       "指向的值是常量",
-      "都是常量",
-      "都不是常量"
+      "都是常量"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "cpp-69",
     "title": "C++中int* const p的含义是？",
     "options": [
-      "指针是常量",
-      "指向的值是常量",
       "都是常量",
+      "指向的值是常量",
+      "指针是常量",
       "都不是常量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-70",
     "title": "C++中auto关键字的作用是？",
     "options": [
+      "自动初始化",
       "自动存储期",
       "自动类型推导",
-      "自动释放",
-      "自动初始化"
+      "自动释放"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "cpp-71",
     "title": "C++中static局部变量的特点是？",
     "options": [
       "函数结束不销毁",
-      "每次调用重新初始化",
+      "线程安全",
       "存储在栈上",
-      "线程安全"
+      "每次调用重新初始化"
     ],
     "correctAnswer": 0
   },
@@ -234,54 +234,54 @@
     "id": "cpp-72",
     "title": "C++中全局变量的默认链接性是？",
     "options": [
-      "内部",
       "外部",
+      "内部",
+      "取决于编译器",
+      "无"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "cpp-73",
+    "title": "C++中static全局变量的链接性是？",
+    "options": [
+      "外部",
+      "内部",
       "无",
       "取决于编译器"
     ],
     "correctAnswer": 1
   },
   {
-    "id": "cpp-73",
-    "title": "C++中static全局变量的链接性是？",
-    "options": [
-      "内部",
-      "外部",
-      "无",
-      "取决于编译器"
-    ],
-    "correctAnswer": 0
-  },
-  {
     "id": "cpp-74",
     "title": "C++中volatile关键字的作用是？",
     "options": [
-      "禁止编译器优化",
+      "声明引用",
       "声明常量",
-      "声明静态",
-      "声明引用"
+      "禁止编译器优化",
+      "声明静态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-75",
     "title": "C++中enum和enum class的区别是？",
     "options": [
-      "enum class不会隐式转换",
+      "enum class不能指定类型",
       "enum class会隐式转换",
-      "没有区别",
-      "enum class不能指定类型"
+      "enum class不会隐式转换",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-76",
     "title": "C++中using和typedef的区别是？",
     "options": [
       "using支持模板别名",
-      "typedef支持模板别名",
       "没有区别",
-      "using不能定义函数指针"
+      "using不能定义函数指针",
+      "typedef支持模板别名"
     ],
     "correctAnswer": 0
   },
@@ -289,45 +289,45 @@
     "id": "cpp-77",
     "title": "C++中decltype关键字的作用是？",
     "options": [
-      "推导表达式类型",
       "获取运行时类型",
-      "强制类型转换",
-      "声明变量"
+      "声明变量",
+      "推导表达式类型",
+      "强制类型转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-78",
     "title": "C++中explicit关键字的作用是？",
     "options": [
-      "禁止隐式转换",
-      "允许隐式转换",
       "声明虚函数",
-      "声明静态函数"
+      "禁止隐式转换",
+      "声明静态函数",
+      "允许隐式转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-79",
     "title": "C++中mutable关键字的作用是？",
     "options": [
-      "允许const对象修改",
-      "声明可变参数",
       "声明静态变量",
-      "声明常量"
+      "声明常量",
+      "允许const对象修改",
+      "声明可变参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-80",
     "title": "C++中预处理器指令#include的作用是？",
     "options": [
-      "包含头文件",
       "定义宏",
-      "条件编译",
-      "编译指令"
+      "编译指令",
+      "包含头文件",
+      "条件编译"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-81",
@@ -346,8 +346,8 @@
     "options": [
       "0",
       "1",
-      "4",
-      "8"
+      "8",
+      "4"
     ],
     "correctAnswer": 1
   },
@@ -355,12 +355,12 @@
     "id": "cpp-83",
     "title": "C++中struct和class的默认访问权限是？",
     "options": [
-      "struct为public，class为private",
-      "都是private",
+      "取决于编译器",
       "都是public",
-      "取决于编译器"
+      "都是private",
+      "struct为public，class为private"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-84",
@@ -368,8 +368,8 @@
     "options": [
       "私有化operator new",
       "私有化构造函数",
-      "使用delete",
-      "使用static"
+      "使用static",
+      "使用delete"
     ],
     "correctAnswer": 0
   },
@@ -377,32 +377,32 @@
     "id": "cpp-85",
     "title": "C++中如何禁止类在栈上分配内存？",
     "options": [
-      "私有化析构函数",
       "私有化构造函数",
       "使用delete",
-      "使用static"
+      "使用static",
+      "私有化析构函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-86",
     "title": "C++中extern \"C\"的作用是？",
     "options": [
-      "实现C和C++混合编程",
       "声明外部变量",
-      "声明常量",
-      "声明静态函数"
+      "声明静态函数",
+      "实现C和C++混合编程",
+      "声明常量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-87",
     "title": "C++中static_cast的作用是？",
     "options": [
       "隐式转换和子类父类转换",
+      "不相关类型转换",
       "去除const",
-      "多态向下转型",
-      "不相关类型转换"
+      "多态向下转型"
     ],
     "correctAnswer": 0
   },
@@ -410,67 +410,67 @@
     "id": "cpp-88",
     "title": "C++中dynamic_cast的作用是？",
     "options": [
-      "多态向下安全转型",
-      "隐式转换",
       "去除const",
-      "不相关类型转换"
+      "不相关类型转换",
+      "隐式转换",
+      "多态向下安全转型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-89",
     "title": "C++中const_cast的作用是？",
     "options": [
-      "去除const或volatile",
-      "隐式转换",
       "子类父类转换",
+      "隐式转换",
+      "去除const或volatile",
       "不相关类型转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-90",
     "title": "C++中reinterpret_cast的作用是？",
     "options": [
-      "底层位重新解释",
       "隐式转换",
       "子类父类转换",
-      "去除const"
+      "去除const",
+      "底层位重新解释"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-91",
     "title": "C++中哪个关键字用于定义常量？",
     "options": [
+      "static",
       "const",
-      "define",
       "final",
-      "static"
+      "define"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-92",
     "title": "C++中sizeof(char)的大小是？",
     "options": [
-      "1",
       "2",
-      "4",
-      "8"
+      "1",
+      "8",
+      "4"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-93",
     "title": "C++中int类型一般占几个字节？",
     "options": [
-      "2",
-      "4",
       "8",
-      "取决于编译器"
+      "取决于编译器",
+      "4",
+      "2"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "cpp-94",
@@ -478,8 +478,8 @@
     "options": [
       "malloc",
       "new",
-      "alloc",
-      "create"
+      "create",
+      "alloc"
     ],
     "correctAnswer": 1
   },
@@ -487,54 +487,54 @@
     "id": "cpp-95",
     "title": "C++中指针占几个字节？（64位系统）",
     "options": [
-      "4",
       "8",
+      "2",
       "16",
-      "2"
+      "4"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "cpp-96",
     "title": "C++中引用和指针的区别是？",
     "options": [
-      "引用必须初始化且不能重绑",
       "指针必须初始化",
-      "没有区别",
-      "引用可以重绑"
+      "引用必须初始化且不能重绑",
+      "引用可以重绑",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-97",
     "title": "C++中哪个关键字表示空指针？",
     "options": [
-      "null",
-      "NULL",
       "nullptr",
-      "0"
+      "0",
+      "NULL",
+      "null"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "cpp-98",
     "title": "C++中const int* p的含义是？",
     "options": [
-      "指针是常量",
       "指向的值是常量",
-      "都是常量",
-      "都不是常量"
+      "都不是常量",
+      "指针是常量",
+      "都是常量"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "cpp-99",
     "title": "C++中int* const p的含义是？",
     "options": [
       "指针是常量",
+      "都不是常量",
       "指向的值是常量",
-      "都是常量",
-      "都不是常量"
+      "都是常量"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "cpp-100",
     "title": "C++中auto关键字的作用是？",
     "options": [
-      "自动存储期",
-      "自动类型推导",
+      "自动初始化",
       "自动释放",
-      "自动初始化"
+      "自动存储期",
+      "自动类型推导"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   }
 ]

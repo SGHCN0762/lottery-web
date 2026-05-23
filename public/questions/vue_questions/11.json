@@ -3,142 +3,142 @@
     "id": "vue-501",
     "title": "Vue Router 中路由模式有？",
     "options": [
-      "hash",
-      "history",
+      "以上都是",
       "memory",
-      "以上都是"
+      "hash",
+      "history"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "vue-502",
     "title": "Vue Router 中 hash 模式的特点是？",
     "options": [
-      "URL 带 #",
       "兼容性好",
       "不需要服务器配置",
-      "以上都是"
+      "以上都是",
+      "URL 带 #"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-503",
     "title": "Vue Router 中 history 模式的特点是？",
     "options": [
       "URL 美观",
+      "以上都是",
       "需要服务器配置",
-      "支持 HTML5 History API",
-      "以上都是"
+      "支持 HTML5 History API"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-504",
     "title": "Vue Router 中动态路由参数使用？",
     "options": [
-      ":id",
-      "{id}",
+      "[id]",
       "<id>",
-      "[id]"
+      "{id}",
+      ":id"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-505",
     "title": "Vue Router 中嵌套路由使用？",
     "options": [
-      "children 配置",
-      "nested 配置",
       "sub 配置",
-      "以上都不对"
+      "children 配置",
+      "以上都不对",
+      "nested 配置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-506",
     "title": "Vue Router 中命名路由的作用是？",
     "options": [
-      "简化导航",
-      "代码更清晰",
       "避免硬编码",
-      "以上都是"
+      "以上都是",
+      "代码更清晰",
+      "简化导航"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 1
   },
   {
     "id": "vue-507",
     "title": "Vue Router 中命名视图的作用是？",
     "options": [
-      "同时显示多个视图",
       "命名路由",
       "嵌套路由",
+      "同时显示多个视图",
       "动态路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-508",
     "title": "Vue Router 中重定向使用？",
     "options": [
-      "redirect 配置",
-      "alias 配置",
       "forward 配置",
-      "以上都不对"
+      "以上都不对",
+      "redirect 配置",
+      "alias 配置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-509",
     "title": "Vue Router 中 alias 和 redirect 的区别是？",
     "options": [
-      "alias 保留 URL",
       "redirect 改变 URL",
+      "redirect 保留 URL",
       "alias 改变 URL",
-      "redirect 保留 URL"
+      "alias 保留 URL"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "vue-510",
     "title": "Vue Router 中导航守卫的类型有？",
     "options": [
       "全局",
-      "路由独享",
       "组件内",
-      "以上都是"
+      "以上都是",
+      "路由独享"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-511",
     "title": "Vue Router 中全局前置守卫是？",
     "options": [
-      "beforeEach",
+      "onRouteChange",
       "beforeResolve",
-      "afterEach",
-      "onRouteChange"
+      "beforeEach",
+      "afterEach"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-512",
     "title": "Vue Router 中全局解析守卫是？",
     "options": [
-      "beforeResolve",
       "beforeEach",
-      "afterEach",
-      "onRouteChange"
+      "beforeResolve",
+      "onRouteChange",
+      "afterEach"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-513",
     "title": "Vue Router 中全局后置钩子是？",
     "options": [
       "afterEach",
+      "onRouteChange",
       "beforeEach",
-      "beforeResolve",
-      "onRouteChange"
+      "beforeResolve"
     ],
     "correctAnswer": 0
   },
@@ -147,9 +147,9 @@
     "title": "Vue Router 中路由独享守卫是？",
     "options": [
       "beforeEnter",
-      "beforeRouteEnter",
       "beforeRouteUpdate",
-      "beforeRouteLeave"
+      "beforeRouteLeave",
+      "beforeRouteEnter"
     ],
     "correctAnswer": 0
   },
@@ -168,76 +168,76 @@
     "id": "vue-516",
     "title": "Vue Router 中 beforeRouteEnter 守卫能访问 this 吗？",
     "options": [
-      "不能，使用 next(vm => {}) 访问",
       "能",
       "有时能",
+      "不能，使用 next(vm => {}) 访问",
       "取决于配置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-517",
     "title": "Vue Router 中路由懒加载使用？",
     "options": [
-      "() => import()",
       "import()",
       "require()",
+      "() => import()",
       "load()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-518",
     "title": "Vue Router 中路由懒加载的魔法注释是？",
     "options": [
-      "/* webpackChunkName: \"about\" */",
       "// webpackChunkName: \"about\"",
+      "/* webpackChunkName: \"about\" */",
       "<!-- webpackChunkName: \"about\" -->",
       "/* chunkName: \"about\" */"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-519",
     "title": "Vue Router 中 router-link 的 tag 属性在 Vue 3 中被什么替代？",
     "options": [
+      "element",
       "custom",
       "is",
-      "as",
-      "element"
+      "as"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-520",
     "title": "Vue Router 中 router-link 的 active-class 作用是？",
     "options": [
-      "设置活跃链接类名",
       "设置非活跃类名",
+      "设置动画类名",
       "设置过渡类名",
-      "设置动画类名"
+      "设置活跃链接类名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-521",
     "title": "Vue Router 中 router-link 的 exact-active-class 作用是？",
     "options": [
-      "设置精确活跃链接类名",
+      "设置过渡类名",
       "设置活跃类名",
       "设置非活跃类名",
-      "设置过渡类名"
+      "设置精确活跃链接类名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-522",
     "title": "Vue Router 中 router-view 的作用是？",
     "options": [
       "显示匹配的组件",
-      "链接路由",
+      "路由配置",
       "导航守卫",
-      "路由配置"
+      "链接路由"
     ],
     "correctAnswer": 0
   },
@@ -246,9 +246,9 @@
     "title": "Vue Router 中 router.addRoute 的作用是？",
     "options": [
       "动态添加路由",
+      "查询路由",
       "删除路由",
-      "修改路由",
-      "查询路由"
+      "修改路由"
     ],
     "correctAnswer": 0
   },
@@ -258,8 +258,8 @@
     "options": [
       "动态删除路由",
       "添加路由",
-      "修改路由",
-      "查询路由"
+      "查询路由",
+      "修改路由"
     ],
     "correctAnswer": 0
   },
@@ -267,89 +267,89 @@
     "id": "vue-525",
     "title": "Vue Router 中 router.hasRoute 的作用是？",
     "options": [
+      "删除路由",
       "检查路由是否存在",
       "添加路由",
-      "删除路由",
       "修改路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-526",
     "title": "Vue Router 中 router.getRoutes 的作用是？",
     "options": [
-      "获取所有路由记录",
-      "添加路由",
+      "修改路由",
       "删除路由",
-      "修改路由"
+      "获取所有路由记录",
+      "添加路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-527",
     "title": "Vue Router 中 useRoute 的作用是？",
     "options": [
+      "添加路由",
       "获取当前路由信息",
       "获取路由器实例",
-      "导航到新路由",
-      "添加路由"
+      "导航到新路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-528",
     "title": "Vue Router 中 useRouter 的作用是？",
     "options": [
-      "获取路由器实例",
-      "获取当前路由信息",
       "添加路由",
-      "删除路由"
+      "获取当前路由信息",
+      "删除路由",
+      "获取路由器实例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-529",
     "title": "Vue Router 中 route.params 的作用是？",
     "options": [
-      "获取动态路由参数",
-      "获取查询参数",
       "获取哈希值",
-      "获取路径"
+      "获取查询参数",
+      "获取路径",
+      "获取动态路由参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-530",
     "title": "Vue Router 中 route.query 的作用是？",
     "options": [
-      "获取查询参数",
       "获取动态路由参数",
       "获取哈希值",
-      "获取路径"
+      "获取路径",
+      "获取查询参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-531",
     "title": "Vue Router 中 route.hash 的作用是？",
     "options": [
-      "获取哈希值",
-      "获取查询参数",
       "获取动态路由参数",
-      "获取路径"
+      "获取路径",
+      "获取查询参数",
+      "获取哈希值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-532",
     "title": "Vue Router 中 route.fullPath 的作用是？",
     "options": [
-      "获取完整路径",
       "获取路径",
+      "获取哈希值",
       "获取查询参数",
-      "获取哈希值"
+      "获取完整路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-533",
@@ -357,8 +357,8 @@
     "options": [
       "获取路由名称",
       "获取路由路径",
-      "获取路由参数",
-      "获取路由组件"
+      "获取路由组件",
+      "获取路由参数"
     ],
     "correctAnswer": 0
   },
@@ -366,23 +366,23 @@
     "id": "vue-534",
     "title": "Vue Router 中 route.meta 的作用是？",
     "options": [
-      "获取路由元信息",
-      "获取路由名称",
       "获取路由路径",
+      "获取路由名称",
+      "获取路由元信息",
       "获取路由参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-535",
     "title": "Vue Router 中 route.matched 的作用是？",
     "options": [
-      "获取匹配的路由记录",
+      "获取路由参数",
       "获取路由名称",
-      "获取路由路径",
-      "获取路由参数"
+      "获取匹配的路由记录",
+      "获取路由路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-536",
@@ -390,8 +390,8 @@
     "options": [
       "获取重定向来源",
       "获取路由名称",
-      "获取路由路径",
-      "获取路由参数"
+      "获取路由参数",
+      "获取路由路径"
     ],
     "correctAnswer": 0
   },
@@ -410,12 +410,12 @@
     "id": "vue-538",
     "title": "Vue Router 中 router.replace 的作用是？",
     "options": [
-      "替换当前路由",
-      "导航到新路由",
+      "前进一步",
       "后退一步",
-      "前进一步"
+      "替换当前路由",
+      "导航到新路由"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "vue-539",
@@ -423,8 +423,8 @@
     "options": [
       "前进或后退指定步数",
       "导航到新路由",
-      "替换当前路由",
-      "刷新路由"
+      "刷新路由",
+      "替换当前路由"
     ],
     "correctAnswer": 0
   },
@@ -432,34 +432,34 @@
     "id": "vue-540",
     "title": "Vue Router 中 router.back 的作用是？",
     "options": [
-      "后退一步",
-      "前进一步",
+      "替换当前路由",
       "导航到新路由",
-      "替换当前路由"
+      "前进一步",
+      "后退一步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-541",
     "title": "Vue Router 中 router.forward 的作用是？",
     "options": [
-      "前进一步",
-      "后退一步",
       "导航到新路由",
+      "后退一步",
+      "前进一步",
       "替换当前路由"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-542",
     "title": "Vue Router 中 router.beforeEach 的参数是？",
     "options": [
-      "to, from, next",
       "to, from",
-      "from, to, next",
-      "next, to, from"
+      "to, from, next",
+      "next, to, from",
+      "from, to, next"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-543",
@@ -467,19 +467,19 @@
     "options": [
       "确认导航",
       "取消导航",
-      "重定向",
-      "以上都是"
+      "以上都是",
+      "重定向"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "vue-544",
     "title": "Vue Router 中 next(false) 的作用是？",
     "options": [
       "取消导航",
-      "确认导航",
+      "报错",
       "重定向",
-      "报错"
+      "确认导航"
     ],
     "correctAnswer": 0
   },
@@ -487,23 +487,23 @@
     "id": "vue-545",
     "title": "Vue Router 中 next(\"/\") 的作用是？",
     "options": [
-      "重定向到 \"/\"",
       "取消导航",
       "确认导航",
-      "报错"
+      "报错",
+      "重定向到 \"/\""
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "vue-546",
     "title": "Vue Router 中 next(error) 的作用是？",
     "options": [
-      "导航失败",
-      "确认导航",
       "取消导航",
-      "重定向"
+      "重定向",
+      "导航失败",
+      "确认导航"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "vue-547",
@@ -511,8 +511,8 @@
     "options": [
       "控制路由切换时的滚动位置",
       "控制页面缩放",
-      "控制动画效果",
-      "控制过渡效果"
+      "控制过渡效果",
+      "控制动画效果"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "vue-549",
     "title": "Vue Router 中滚动行为的 savedPosition 参数作用是？",
     "options": [
+      "获取目标滚动位置",
       "获取前进/后退时的历史位置",
       "获取当前滚动位置",
-      "获取目标滚动位置",
       "获取默认滚动位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "vue-550",
     "title": "Vue Router 中路由元信息的作用是？",
     "options": [
-      "附加自定义数据",
       "验证权限",
-      "控制过渡",
-      "以上都是"
+      "附加自定义数据",
+      "以上都是",
+      "控制过渡"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   }
 ]

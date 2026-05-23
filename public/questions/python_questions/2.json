@@ -4,8 +4,8 @@
     "title": "Python中else子句可以和哪个语句一起使用？",
     "options": [
       "if",
-      "for",
       "try",
+      "for",
       "以上都可以"
     ],
     "correctAnswer": 3
@@ -14,153 +14,153 @@
     "id": "python-52",
     "title": "Python中for...else中else何时执行？",
     "options": [
-      "循环正常结束时",
       "循环break时",
       "循环continue时",
+      "循环正常结束时",
       "总是执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-53",
     "title": "Python中try...else中else何时执行？",
     "options": [
-      "try无异常时",
-      "try有异常时",
       "finally执行后",
-      "总是执行"
+      "总是执行",
+      "try无异常时",
+      "try有异常时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-54",
     "title": "Python中with语句的作用是？",
     "options": [
-      "异常处理",
-      "上下文管理",
+      "条件判断",
       "循环控制",
-      "条件判断"
+      "上下文管理",
+      "异常处理"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-55",
     "title": "Python中字符串的join()方法作用是？",
     "options": [
-      "连接字符串",
+      "替换字符串",
       "分割字符串",
       "查找字符串",
-      "替换字符串"
+      "连接字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-56",
     "title": "Python中字符串的split()方法作用是？",
     "options": [
-      "连接字符串",
       "分割字符串",
+      "替换字符串",
       "查找字符串",
-      "替换字符串"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": "python-57",
-    "title": "Python中字符串的strip()方法作用是？",
-    "options": [
-      "去除首尾指定字符",
-      "去除所有指定字符",
-      "居中对齐",
-      "左对齐"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": "python-58",
-    "title": "Python中字符串的replace()方法作用是？",
-    "options": [
-      "连接字符串",
-      "分割字符串",
-      "查找字符串",
-      "替换字符串"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": "python-59",
-    "title": "Python中字符串的find()方法作用是？",
-    "options": [
-      "查找子串位置",
-      "替换子串",
-      "分割字符串",
       "连接字符串"
     ],
     "correctAnswer": 0
   },
   {
+    "id": "python-57",
+    "title": "Python中字符串的strip()方法作用是？",
+    "options": [
+      "去除所有指定字符",
+      "去除首尾指定字符",
+      "左对齐",
+      "居中对齐"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-58",
+    "title": "Python中字符串的replace()方法作用是？",
+    "options": [
+      "查找字符串",
+      "替换字符串",
+      "分割字符串",
+      "连接字符串"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "python-59",
+    "title": "Python中字符串的find()方法作用是？",
+    "options": [
+      "替换子串",
+      "分割字符串",
+      "查找子串位置",
+      "连接字符串"
+    ],
+    "correctAnswer": 2
+  },
+  {
     "id": "python-60",
     "title": "Python中字符串的count()方法作用是？",
     "options": [
-      "计算长度",
       "计算子串出现次数",
       "查找子串位置",
-      "替换子串"
+      "替换子串",
+      "计算长度"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-61",
     "title": "Python中字符串的startswith()方法作用是？",
     "options": [
-      "判断是否以指定前缀开头",
-      "判断是否以指定后缀结尾",
+      "转换为小写",
       "转换为大写",
-      "转换为小写"
+      "判断是否以指定后缀结尾",
+      "判断是否以指定前缀开头"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-62",
     "title": "Python中字符串的endswith()方法作用是？",
     "options": [
-      "判断是否以指定前缀开头",
       "判断是否以指定后缀结尾",
       "转换为大写",
-      "转换为小写"
+      "转换为小写",
+      "判断是否以指定前缀开头"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-63",
     "title": "Python中字符串的upper()方法作用是？",
     "options": [
+      "反转字符串",
       "转换为大写",
       "转换为小写",
-      "首字母大写",
-      "反转字符串"
+      "首字母大写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-64",
     "title": "Python中字符串的lower()方法作用是？",
     "options": [
-      "转换为大写",
       "转换为小写",
       "首字母大写",
-      "反转字符串"
+      "反转字符串",
+      "转换为大写"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "python-65",
     "title": "Python中字符串的title()方法作用是？",
     "options": [
-      "转换为大写",
       "转换为小写",
+      "反转字符串",
       "每个单词首字母大写",
-      "反转字符串"
+      "转换为大写"
     ],
     "correctAnswer": 2
   },
@@ -168,12 +168,12 @@
     "id": "python-66",
     "title": "Python中字符串的capitalize()方法作用是？",
     "options": [
-      "转换为大写",
       "转换为小写",
-      "首字母大写",
-      "反转字符串"
+      "反转字符串",
+      "转换为大写",
+      "首字母大写"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-67",
@@ -190,32 +190,32 @@
     "id": "python-68",
     "title": "Python中字符串的isalpha()方法作用是？",
     "options": [
-      "判断是否为数字",
-      "判断是否为字母",
+      "判断是否为标题",
       "判断是否为空格",
-      "判断是否为标题"
+      "判断是否为数字",
+      "判断是否为字母"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "python-69",
     "title": "Python中字符串的isspace()方法作用是？",
     "options": [
-      "判断是否为数字",
-      "判断是否为字母",
       "判断是否为空格",
-      "判断是否为标题"
+      "判断是否为标题",
+      "判断是否为字母",
+      "判断是否为数字"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "python-70",
     "title": "Python中字符串的format()方法中{}的用法是？",
     "options": [
       "位置或关键字参数",
+      "变量名",
       "只能位置参数",
-      "只能关键字参数",
-      "变量名"
+      "只能关键字参数"
     ],
     "correctAnswer": 0
   },
@@ -223,12 +223,12 @@
     "id": "python-71",
     "title": "Python中f-string中{}的用法是？",
     "options": [
+      "字符串",
       "表达式",
       "只能变量",
-      "只能函数",
-      "字符串"
+      "只能函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-72",
@@ -236,8 +236,8 @@
     "options": [
       "深拷贝",
       "浅拷贝",
-      "既不是",
-      "取决于元素"
+      "取决于元素",
+      "既不是"
     ],
     "correctAnswer": 1
   },
@@ -245,9 +245,9 @@
     "id": "python-73",
     "title": "Python中字典的copy()方法是深拷贝还是浅拷贝？",
     "options": [
-      "深拷贝",
-      "浅拷贝",
       "既不是",
+      "浅拷贝",
+      "深拷贝",
       "取决于元素"
     ],
     "correctAnswer": 1
@@ -256,54 +256,54 @@
     "id": "python-74",
     "title": "Python中如何判断列表是否为空？",
     "options": [
-      "if not list",
       "if list == null",
-      "if list == undefined",
-      "if list == None"
+      "if not list",
+      "if list == None",
+      "if list == undefined"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-75",
     "title": "Python中如何合并两个字典？",
     "options": [
+      "dict1.append(dict2)",
       "dict1.update(dict2)",
       "dict1.add(dict2)",
-      "dict1.append(dict2)",
       "dict1.extend(dict2)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "python-76",
     "title": "Python中如何删除字典的键？",
     "options": [
-      "del dict[key]",
       "dict.delete(key)",
-      "dict.remove(key)",
-      "dict.pop(key)"
+      "dict.pop(key)",
+      "del dict[key]",
+      "dict.remove(key)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-77",
     "title": "Python中如何获取字典的所有键？",
     "options": [
-      "dict.keys()",
       "dict.values()",
       "dict.items()",
-      "dict.all()"
+      "dict.all()",
+      "dict.keys()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-78",
     "title": "Python中如何获取字典的所有值？",
     "options": [
-      "dict.keys()",
+      "dict.all()",
       "dict.values()",
-      "dict.items()",
-      "dict.all()"
+      "dict.keys()",
+      "dict.items()"
     ],
     "correctAnswer": 1
   },
@@ -311,32 +311,32 @@
     "id": "python-79",
     "title": "Python中如何获取字典的所有键值对？",
     "options": [
-      "dict.keys()",
       "dict.values()",
-      "dict.items()",
-      "dict.all()"
+      "dict.keys()",
+      "dict.all()",
+      "dict.items()"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "python-80",
     "title": "Python中集合的add()方法作用是？",
     "options": [
-      "添加元素",
-      "删除元素",
       "更新集合",
-      "清空集合"
+      "删除元素",
+      "清空集合",
+      "添加元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-81",
     "title": "Python中集合的discard()方法作用是？",
     "options": [
-      "添加元素",
-      "删除元素，不存在不报错",
       "删除元素，不存在报错",
-      "清空集合"
+      "删除元素，不存在不报错",
+      "清空集合",
+      "添加元素"
     ],
     "correctAnswer": 1
   },
@@ -344,12 +344,12 @@
     "id": "python-82",
     "title": "Python中集合的remove()方法作用是？",
     "options": [
-      "添加元素",
       "删除元素，不存在不报错",
       "删除元素，不存在报错",
-      "清空集合"
+      "清空集合",
+      "添加元素"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-83",
@@ -367,20 +367,20 @@
     "title": "Python中集合的update()方法作用是？",
     "options": [
       "添加元素",
-      "删除元素",
       "更新集合",
-      "清空集合"
+      "清空集合",
+      "删除元素"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-85",
     "title": "Python中解包操作符*的作用是？",
     "options": [
       "解包可迭代对象",
+      "乘法",
       "解包字典",
-      "幂运算",
-      "乘法"
+      "幂运算"
     ],
     "correctAnswer": 0
   },
@@ -388,20 +388,20 @@
     "id": "python-86",
     "title": "Python中解包操作符**的作用是？",
     "options": [
+      "幂运算",
       "解包可迭代对象",
       "解包字典",
-      "幂运算",
       "乘法"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "python-87",
     "title": "Python中如何定义多行字符串？",
     "options": [
       "三个引号",
-      "三个双引号",
       "反斜杠续行",
+      "三个双引号",
       "以上都可以"
     ],
     "correctAnswer": 3
@@ -410,131 +410,131 @@
     "id": "python-88",
     "title": "Python中原始字符串的前缀是？",
     "options": [
-      "r",
-      "u",
       "b",
-      "f"
+      "f",
+      "r",
+      "u"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-89",
     "title": "Python中字节串的前缀是？",
     "options": [
-      "r",
       "u",
       "b",
-      "f"
+      "f",
+      "r"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": "python-90",
     "title": "Python中格式化字符串的前缀是？",
     "options": [
-      "r",
-      "u",
+      "f",
       "b",
-      "f"
+      "r",
+      "u"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-91",
     "title": "Python中枚举类型的定义使用？",
     "options": [
-      "enum.Enum",
       "Enum",
       "enumerate",
+      "enum.Enum",
       "enum"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-92",
     "title": "Python中全局变量声明使用？",
     "options": [
-      "global",
-      "nonlocal",
       "static",
-      "public"
+      "nonlocal",
+      "public",
+      "global"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-93",
     "title": "Python中非局部变量声明使用？",
     "options": [
       "global",
-      "nonlocal",
       "static",
-      "public"
+      "public",
+      "nonlocal"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "python-94",
     "title": "Python中如何查看所有关键字？",
     "options": [
-      "keyword.kwlist",
       "keywords()",
       "help()",
-      "dir()"
+      "dir()",
+      "keyword.kwlist"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-95",
     "title": "Python中如何查看模块的所有函数？",
     "options": [
-      "dir(module)",
+      "以上都可以",
       "help(module)",
       "module.__all__",
-      "以上都可以"
+      "dir(module)"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-96",
     "title": "Python中如何获取变量占用的字节数？",
     "options": [
-      "sys.getsizeof()",
-      "sizeof()",
       "size()",
-      "len()"
+      "len()",
+      "sizeof()",
+      "sys.getsizeof()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "python-97",
     "title": "Python中如何获取对象的所有属性？",
     "options": [
-      "dir(obj)",
-      "obj.__dict__",
+      "以上都可以",
       "vars(obj)",
-      "以上都可以"
+      "obj.__dict__",
+      "dir(obj)"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "python-98",
     "title": "Python中如何判断对象是否有某个属性？",
     "options": [
-      "hasattr()",
+      "delattr()",
       "getattr()",
-      "setattr()",
-      "delattr()"
+      "hasattr()",
+      "setattr()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "python-99",
     "title": "Python中如何获取对象的属性值？",
     "options": [
-      "hasattr()",
+      "delattr()",
       "getattr()",
-      "setattr()",
-      "delattr()"
+      "hasattr()",
+      "setattr()"
     ],
     "correctAnswer": 1
   },
@@ -542,11 +542,11 @@
     "id": "python-100",
     "title": "Python中如何设置对象的属性值？",
     "options": [
-      "hasattr()",
-      "getattr()",
       "setattr()",
-      "delattr()"
+      "hasattr()",
+      "delattr()",
+      "getattr()"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   }
 ]

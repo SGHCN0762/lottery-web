@@ -3,54 +3,54 @@
     "id": "js-251",
     "title": "JavaScript中String的replaceAll作用是？",
     "options": [
-      "替换所有匹配的子串",
-      "替换第一个匹配",
       "匹配正则",
-      "分割字符串"
+      "分割字符串",
+      "替换所有匹配的子串",
+      "替换第一个匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-252",
     "title": "JavaScript中String的search作用是？",
     "options": [
-      "查找匹配正则的位置",
+      "分割字符串",
       "匹配正则",
       "替换字符串",
-      "分割字符串"
+      "查找匹配正则的位置"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-253",
     "title": "JavaScript中String的slice作用是？",
     "options": [
-      "截取字符串",
       "替换字符串",
       "分割字符串",
+      "截取字符串",
       "拼接字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-254",
     "title": "JavaScript中String的substring作用是？",
     "options": [
+      "分割字符串",
       "截取字符串",
       "替换字符串",
-      "分割字符串",
       "拼接字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-255",
     "title": "JavaScript中String的substr作用是？",
     "options": [
       "截取指定长度字符串",
+      "分割字符串",
       "截取字符串",
-      "替换字符串",
-      "分割字符串"
+      "替换字符串"
     ],
     "correctAnswer": 0
   },
@@ -58,21 +58,21 @@
     "id": "js-256",
     "title": "JavaScript中String的split作用是？",
     "options": [
+      "替换字符串",
       "分割字符串为数组",
       "截取字符串",
-      "替换字符串",
       "拼接字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-257",
     "title": "JavaScript中String的trim作用是？",
     "options": [
       "去除首尾空白",
-      "去除所有空白",
       "去除前导空白",
-      "去除尾部空白"
+      "去除尾部空白",
+      "去除所有空白"
     ],
     "correctAnswer": 0
   },
@@ -91,12 +91,12 @@
     "id": "js-259",
     "title": "JavaScript中String的trimEnd作用是？",
     "options": [
-      "去除尾部空白",
+      "去除所有空白",
       "去除前导空白",
       "去除首尾空白",
-      "去除所有空白"
+      "去除尾部空白"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-260",
@@ -104,8 +104,8 @@
     "options": [
       "头部补全字符串",
       "尾部补全字符串",
-      "去除空白",
-      "重复字符串"
+      "重复字符串",
+      "去除空白"
     ],
     "correctAnswer": 0
   },
@@ -113,21 +113,21 @@
     "id": "js-261",
     "title": "JavaScript中String的padEnd作用是？",
     "options": [
-      "尾部补全字符串",
-      "头部补全字符串",
       "去除空白",
-      "重复字符串"
+      "头部补全字符串",
+      "重复字符串",
+      "尾部补全字符串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-262",
     "title": "JavaScript中String的repeat作用是？",
     "options": [
       "重复字符串",
+      "替换字符串",
       "补全字符串",
-      "截取字符串",
-      "替换字符串"
+      "截取字符串"
     ],
     "correctAnswer": 0
   },
@@ -136,8 +136,8 @@
     "title": "JavaScript中String的toUpperCase作用是？",
     "options": [
       "转大写",
-      "转小写",
       "转首字母大写",
+      "转小写",
       "转驼峰"
     ],
     "correctAnswer": 0
@@ -157,23 +157,23 @@
     "id": "js-265",
     "title": "JavaScript中String的at作用是？",
     "options": [
-      "返回指定索引字符，支持负数",
       "返回字符编码",
-      "查找子串",
-      "截取字符串"
+      "截取字符串",
+      "返回指定索引字符，支持负数",
+      "查找子串"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-266",
     "title": "JavaScript中String的length是属性还是方法？",
     "options": [
-      "属性",
       "方法",
+      "属性",
       "两者都是",
       "两者都不是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-267",
@@ -190,76 +190,76 @@
     "id": "js-268",
     "title": "JavaScript中模板字符串的作用是？",
     "options": [
-      "拼接字符串，支持换行和表达式",
       "定义字符串",
+      "格式化字符串",
       "转义字符串",
-      "格式化字符串"
+      "拼接字符串，支持换行和表达式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-269",
     "title": "JavaScript中模板字符串如何嵌入变量？",
     "options": [
-      "${var}",
+      "$var",
       "{{var}}",
-      "#{var}",
-      "$var"
+      "${var}",
+      "#{var}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-270",
     "title": "JavaScript中标签模板的作用是？",
     "options": [
-      "自定义模板字符串处理",
-      "定义HTML标签",
+      "以上都不对",
       "定义XML标签",
-      "以上都不对"
+      "自定义模板字符串处理",
+      "定义HTML标签"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-271",
     "title": "JavaScript中Array的isArray作用是？",
     "options": [
-      "判断是否是数组",
       "判断是否是对象",
-      "判断是否是函数",
-      "判断是否是字符串"
+      "判断是否是字符串",
+      "判断是否是数组",
+      "判断是否是函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-272",
     "title": "JavaScript中Array的from作用是？",
     "options": [
-      "将类数组或可迭代对象转为数组",
-      "创建数组",
       "判断数组",
+      "创建数组",
+      "将类数组或可迭代对象转为数组",
       "合并数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-273",
     "title": "JavaScript中Array的of作用是？",
     "options": [
-      "创建数组",
       "将类数组转为数组",
       "判断数组",
-      "合并数组"
+      "合并数组",
+      "创建数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-274",
     "title": "JavaScript中Array的at作用是？",
     "options": [
       "返回指定索引元素，支持负数",
-      "添加元素",
+      "查找元素",
       "删除元素",
-      "查找元素"
+      "添加元素"
     ],
     "correctAnswer": 0
   },
@@ -267,34 +267,34 @@
     "id": "js-275",
     "title": "JavaScript中Array的concat作用是？",
     "options": [
+      "查找元素",
       "合并数组",
       "截取数组",
-      "查找元素",
       "排序数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-276",
     "title": "JavaScript中Array的copyWithin作用是？",
     "options": [
-      "数组内部复制",
       "合并数组",
       "截取数组",
-      "填充数组"
+      "填充数组",
+      "数组内部复制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-277",
     "title": "JavaScript中Array的entries作用是？",
     "options": [
-      "返回键值对迭代器",
-      "返回键迭代器",
+      "返回数组",
       "返回值迭代器",
-      "返回数组"
+      "返回键值对迭代器",
+      "返回键迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-278",
@@ -311,64 +311,64 @@
     "id": "js-279",
     "title": "JavaScript中Array的fill作用是？",
     "options": [
-      "填充数组",
       "复制数组",
+      "填充数组",
       "合并数组",
       "截取数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-280",
     "title": "JavaScript中Array的filter作用是？",
     "options": [
-      "过滤元素",
+      "累加元素",
       "判断元素",
-      "遍历元素",
-      "累加元素"
+      "过滤元素",
+      "遍历元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-281",
     "title": "JavaScript中Array的find作用是？",
     "options": [
-      "查找第一个满足条件的元素",
       "查找满足条件的所有元素",
       "查找元素索引",
-      "遍历元素"
+      "遍历元素",
+      "查找第一个满足条件的元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-282",
     "title": "JavaScript中Array的findIndex作用是？",
     "options": [
+      "遍历元素",
       "查找第一个满足条件的索引",
       "查找满足条件的所有索引",
-      "查找元素",
-      "遍历元素"
+      "查找元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-283",
     "title": "JavaScript中Array的findLast作用是？",
     "options": [
-      "查找最后一个满足条件的元素",
       "查找第一个满足条件的元素",
+      "查找最后一个满足条件的元素",
       "查找索引",
       "遍历元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-284",
     "title": "JavaScript中Array的findLastIndex作用是？",
     "options": [
       "查找最后一个满足条件的索引",
-      "查找第一个满足条件的索引",
       "查找元素",
+      "查找第一个满足条件的索引",
       "遍历元素"
     ],
     "correctAnswer": 0
@@ -377,43 +377,43 @@
     "id": "js-285",
     "title": "JavaScript中Array的flat作用是？",
     "options": [
-      "扁平化数组",
       "映射并扁平化",
-      "排序数组",
-      "反转数组"
+      "扁平化数组",
+      "反转数组",
+      "排序数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-286",
     "title": "JavaScript中Array的flatMap作用是？",
     "options": [
-      "映射并扁平化",
-      "仅扁平化",
+      "排序数组",
       "仅映射",
-      "排序数组"
+      "映射并扁平化",
+      "仅扁平化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-287",
     "title": "JavaScript中Array的forEach作用是？",
     "options": [
-      "遍历数组",
       "过滤数组",
-      "映射数组",
-      "累加数组"
+      "遍历数组",
+      "累加数组",
+      "映射数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-288",
     "title": "JavaScript中Array的includes作用是？",
     "options": [
       "判断是否包含元素",
-      "查找元素索引",
+      "删除元素",
       "添加元素",
-      "删除元素"
+      "查找元素索引"
     ],
     "correctAnswer": 0
   },
@@ -422,9 +422,9 @@
     "title": "JavaScript中Array的indexOf作用是？",
     "options": [
       "查找元素首次出现索引",
-      "查找元素最后出现索引",
+      "添加元素",
       "判断是否包含",
-      "添加元素"
+      "查找元素最后出现索引"
     ],
     "correctAnswer": 0
   },
@@ -433,8 +433,8 @@
     "title": "JavaScript中Array的join作用是？",
     "options": [
       "将数组转为字符串",
-      "将字符串转为数组",
       "合并数组",
+      "将字符串转为数组",
       "截取数组"
     ],
     "correctAnswer": 0
@@ -443,32 +443,32 @@
     "id": "js-291",
     "title": "JavaScript中Array的keys作用是？",
     "options": [
-      "返回键迭代器",
       "返回值迭代器",
       "返回键值对迭代器",
+      "返回键迭代器",
       "返回数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-292",
     "title": "JavaScript中Array的lastIndexOf作用是？",
     "options": [
-      "查找元素最后出现索引",
       "查找元素首次出现索引",
-      "判断是否包含",
-      "添加元素"
+      "添加元素",
+      "查找元素最后出现索引",
+      "判断是否包含"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-293",
     "title": "JavaScript中Array的map作用是？",
     "options": [
       "映射数组",
-      "过滤数组",
+      "累加数组",
       "遍历数组",
-      "累加数组"
+      "过滤数组"
     ],
     "correctAnswer": 0
   },
@@ -476,43 +476,43 @@
     "id": "js-294",
     "title": "JavaScript中Array的pop作用是？",
     "options": [
-      "删除末尾元素",
+      "添加首元素",
       "删除首元素",
-      "添加末尾元素",
-      "添加首元素"
+      "删除末尾元素",
+      "添加末尾元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-295",
     "title": "JavaScript中Array的push作用是？",
     "options": [
+      "删除首元素",
       "添加末尾元素",
       "添加首元素",
-      "删除末尾元素",
-      "删除首元素"
+      "删除末尾元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-296",
     "title": "JavaScript中Array的reduce作用是？",
     "options": [
-      "累加数组",
-      "映射数组",
+      "遍历数组",
       "过滤数组",
-      "遍历数组"
+      "映射数组",
+      "累加数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-297",
     "title": "JavaScript中Array的reduceRight作用是？",
     "options": [
       "从右向左累加",
+      "过滤数组",
       "从左向右累加",
-      "映射数组",
-      "过滤数组"
+      "映射数组"
     ],
     "correctAnswer": 0
   },
@@ -520,12 +520,12 @@
     "id": "js-298",
     "title": "JavaScript中Array的reverse作用是？",
     "options": [
-      "反转数组",
       "排序数组",
-      "截取数组",
-      "合并数组"
+      "反转数组",
+      "合并数组",
+      "截取数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-299",
@@ -533,8 +533,8 @@
     "options": [
       "删除首元素",
       "删除末尾元素",
-      "添加首元素",
-      "添加末尾元素"
+      "添加末尾元素",
+      "添加首元素"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "js-300",
     "title": "JavaScript中Array的unshift作用是？",
     "options": [
-      "添加首元素",
-      "添加末尾元素",
+      "删除末尾元素",
       "删除首元素",
-      "删除末尾元素"
+      "添加末尾元素",
+      "添加首元素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

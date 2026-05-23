@@ -3,19 +3,19 @@
     "id": "js-1",
     "title": "JavaScript中typeof null的结果是？",
     "options": [
-      "\"null\"",
-      "\"object\"",
+      "\"boolean\"",
       "\"undefined\"",
-      "\"boolean\""
+      "\"object\"",
+      "\"null\""
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "js-2",
     "title": "JavaScript中以下哪个不是基本数据类型？",
     "options": [
-      "Symbol",
       "BigInt",
+      "Symbol",
       "Object",
       "undefined"
     ],
@@ -25,23 +25,23 @@
     "id": "js-3",
     "title": "JavaScript中NaN === NaN的结果是？",
     "options": [
+      "TypeError",
       "true",
       "false",
-      "TypeError",
       "undefined"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "js-4",
     "title": "JavaScript中isNaN(\"hello\")的结果是？",
     "options": [
-      "true",
       "false",
-      "TypeError",
-      "NaN"
+      "true",
+      "NaN",
+      "TypeError"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-5",
@@ -58,67 +58,67 @@
     "id": "js-6",
     "title": "JavaScript中0.1 + 0.2 === 0.3的结果是？",
     "options": [
-      "true",
-      "false",
+      "NaN",
       "TypeError",
-      "NaN"
+      "false",
+      "true"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "js-7",
     "title": "JavaScript中判断一个变量是否是数组的方法是？",
     "options": [
-      "typeof",
-      "instanceof",
       "isArray()",
+      "instanceof",
+      "typeof",
       "Object.prototype.toString.call()"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "js-8",
     "title": "JavaScript中void 0的值是？",
     "options": [
       "0",
-      "undefined",
+      "NaN",
       "null",
-      "NaN"
+      "undefined"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "js-9",
     "title": "JavaScript中以下哪个关键字用于声明常量？",
     "options": [
-      "var",
       "let",
-      "const",
-      "static"
+      "var",
+      "static",
+      "const"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": "js-10",
     "title": "JavaScript中let和var的区别是？",
     "options": [
-      "let有块级作用域，var没有",
+      "let可以重复声明",
       "var有块级作用域，let没有",
       "没有区别",
-      "let可以重复声明"
+      "let有块级作用域，var没有"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-11",
     "title": "JavaScript中const声明的对象可以修改属性吗？",
     "options": [
-      "可以",
-      "不可以",
       "取决于严格模式",
-      "取决于对象类型"
+      "不可以",
+      "取决于对象类型",
+      "可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-12",
@@ -126,8 +126,8 @@
     "options": [
       "var",
       "let/const",
-      "function",
-      "class"
+      "class",
+      "function"
     ],
     "correctAnswer": 1
   },
@@ -136,9 +136,9 @@
     "title": "JavaScript中==和===的区别是？",
     "options": [
       "==比较值，===比较值和类型",
+      "取决于操作数",
       "===比较值，==比较值和类型",
-      "没有区别",
-      "取决于操作数"
+      "没有区别"
     ],
     "correctAnswer": 0
   },
@@ -148,8 +148,8 @@
     "options": [
       "true",
       "false",
-      "TypeError",
-      "NaN"
+      "NaN",
+      "TypeError"
     ],
     "correctAnswer": 0
   },
@@ -157,10 +157,10 @@
     "id": "js-15",
     "title": "JavaScript中null === undefined的结果是？",
     "options": [
-      "true",
-      "false",
       "TypeError",
-      "NaN"
+      "false",
+      "NaN",
+      "true"
     ],
     "correctAnswer": 1
   },
@@ -169,9 +169,9 @@
     "title": "JavaScript中+true的结果是？",
     "options": [
       "1",
+      "NaN",
       "0",
-      "\"true\"",
-      "NaN"
+      "\"true\""
     ],
     "correctAnswer": 0
   },
@@ -179,98 +179,98 @@
     "id": "js-17",
     "title": "JavaScript中+\"\"的结果是？",
     "options": [
-      "0",
+      "undefined",
       "\"\"",
-      "NaN",
-      "undefined"
+      "0",
+      "NaN"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-18",
     "title": "JavaScript中!\"hello\"的结果是？",
     "options": [
-      "true",
       "false",
-      "\"hello\"",
-      "TypeError"
+      "TypeError",
+      "true",
+      "\"hello\""
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "js-19",
     "title": "JavaScript中!!\"hello\"的结果是？",
     "options": [
-      "true",
       "false",
-      "\"hello\"",
-      "TypeError"
+      "TypeError",
+      "true",
+      "\"hello\""
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-20",
     "title": "JavaScript中1 + \"2\"的结果是？",
     "options": [
       "3",
-      "\"12\"",
       "NaN",
+      "\"12\"",
       "TypeError"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "js-21",
     "title": "JavaScript中\"2\" - 1的结果是？",
     "options": [
-      "1",
-      "\"21\"",
       "NaN",
-      "TypeError"
+      "TypeError",
+      "\"21\"",
+      "1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-22",
     "title": "JavaScript中true + true的结果是？",
     "options": [
-      "2",
       "true",
+      "NaN",
       "\"truetrue\"",
-      "NaN"
+      "2"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-23",
     "title": "JavaScript中[] == ![]的结果是？",
     "options": [
-      "true",
       "false",
-      "TypeError",
-      "NaN"
+      "NaN",
+      "true",
+      "TypeError"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-24",
     "title": "JavaScript中[] == false的结果是？",
     "options": [
-      "true",
-      "false",
       "TypeError",
-      "NaN"
+      "true",
+      "NaN",
+      "false"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-25",
     "title": "JavaScript中{} + []的结果是？",
     "options": [
       "0",
-      "\"[object Object]\"",
+      "undefined",
       "NaN",
-      "undefined"
+      "\"[object Object]\""
     ],
     "correctAnswer": 0
   },
@@ -278,21 +278,21 @@
     "id": "js-26",
     "title": "JavaScript中[] + {}的结果是？",
     "options": [
-      "0",
-      "\"[object Object]\"",
       "NaN",
-      "undefined"
+      "undefined",
+      "\"[object Object]\"",
+      "0"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "js-27",
     "title": "JavaScript中typeof typeof 1的结果是？",
     "options": [
-      "\"number\"",
-      "\"string\"",
       "\"object\"",
-      "\"undefined\""
+      "\"string\"",
+      "\"undefined\"",
+      "\"number\""
     ],
     "correctAnswer": 1
   },
@@ -300,12 +300,12 @@
     "id": "js-28",
     "title": "JavaScript中以下哪个是逻辑与操作符？",
     "options": [
-      "&&",
       "||",
+      "&&",
       "!",
       "&"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-29",
@@ -313,8 +313,8 @@
     "options": [
       "??",
       "||",
-      "?.",
-      "&&"
+      "&&",
+      "?."
     ],
     "correctAnswer": 0
   },
@@ -322,10 +322,10 @@
     "id": "js-30",
     "title": "JavaScript中以下哪个是可选链操作符？",
     "options": [
+      "&&",
       "??",
-      "||",
       "?.",
-      "&&"
+      "||"
     ],
     "correctAnswer": 2
   },
@@ -333,155 +333,155 @@
     "id": "js-31",
     "title": "JavaScript中??和||的区别是？",
     "options": [
-      "??只对null/undefined生效，||对所有falsy值生效",
-      "没有区别",
       "??对所有falsy值生效，||只对null/undefined生效",
-      "取决于环境"
+      "??只对null/undefined生效，||对所有falsy值生效",
+      "取决于环境",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-32",
     "title": "JavaScript中逗号操作符的作用是？",
     "options": [
-      "返回最后一个表达式的值",
       "返回第一个表达式的值",
       "分隔参数",
+      "返回最后一个表达式的值",
       "语法错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-33",
     "title": "JavaScript中delete操作符的作用是？",
     "options": [
-      "删除对象属性",
+      "删除类",
       "删除变量",
       "删除函数",
-      "删除类"
+      "删除对象属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-34",
     "title": "JavaScript中typeof class的结果是？",
     "options": [
+      "\"undefined\"",
       "\"class\"",
       "\"function\"",
-      "\"object\"",
-      "\"undefined\""
+      "\"object\""
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": "js-35",
     "title": "JavaScript中label语句的作用是？",
     "options": [
+      "语法错误",
       "标记循环以供break/continue使用",
       "定义变量",
-      "定义函数",
-      "语法错误"
+      "定义函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-36",
     "title": "JavaScript中with语句为什么不推荐使用？",
     "options": [
-      "导致作用域混乱，性能差",
       "语法错误",
-      "不兼容ES6",
-      "没有作用"
+      "导致作用域混乱，性能差",
+      "没有作用",
+      "不兼容ES6"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-37",
     "title": "JavaScript中use strict的作用是？",
     "options": [
-      "启用严格模式",
-      "启用松散模式",
       "启用ES6模式",
-      "没有作用"
+      "没有作用",
+      "启用松散模式",
+      "启用严格模式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-38",
     "title": "JavaScript严格模式下禁止什么？",
     "options": [
-      "未声明变量赋值，删除不可删属性，with语句",
+      "使用class",
       "使用let/const",
       "使用箭头函数",
-      "使用class"
+      "未声明变量赋值，删除不可删属性，with语句"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-39",
     "title": "JavaScript中eval的作用是？",
     "options": [
+      "编译代码",
       "执行字符串代码",
-      "计算数学表达式",
       "解析JSON",
-      "编译代码"
+      "计算数学表达式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-40",
     "title": "JavaScript中为什么不推荐使用eval？",
     "options": [
-      "安全风险，性能差，难以调试",
       "语法错误",
       "不兼容ES6",
-      "没有作用"
+      "没有作用",
+      "安全风险，性能差，难以调试"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-41",
     "title": "JavaScript中void操作符的作用是？",
     "options": [
-      "返回undefined",
-      "删除对象",
+      "抛出异常",
       "声明变量",
-      "抛出异常"
+      "删除对象",
+      "返回undefined"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-42",
     "title": "JavaScript中typeof NaN的结果是？",
     "options": [
-      "\"NaN\"",
-      "\"number\"",
       "\"undefined\"",
-      "\"object\""
+      "\"NaN\"",
+      "\"object\"",
+      "\"number\""
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "js-43",
     "title": "JavaScript中Infinity的类型是？",
     "options": [
-      "\"Infinity\"",
-      "\"number\"",
+      "\"undefined\"",
       "\"object\"",
-      "\"undefined\""
+      "\"Infinity\"",
+      "\"number\""
     ],
-    "correctAnswer": 1
+    "correctAnswer": 3
   },
   {
     "id": "js-44",
     "title": "JavaScript中0/0的结果是？",
     "options": [
-      "0",
-      "Infinity",
       "NaN",
-      "TypeError"
+      "Infinity",
+      "TypeError",
+      "0"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   },
   {
     "id": "js-45",
@@ -500,8 +500,8 @@
     "options": [
       "true",
       "false",
-      "NaN",
-      "TypeError"
+      "TypeError",
+      "NaN"
     ],
     "correctAnswer": 0
   },
@@ -509,44 +509,44 @@
     "id": "js-47",
     "title": "JavaScript中Object.is(NaN, NaN)的结果是？",
     "options": [
+      "TypeError",
       "true",
       "false",
-      "NaN",
-      "TypeError"
+      "NaN"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-48",
     "title": "JavaScript中Object.is(0, -0)的结果是？",
     "options": [
-      "true",
       "false",
       "NaN",
-      "TypeError"
+      "TypeError",
+      "true"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": "js-49",
     "title": "JavaScript中Number.MAX_SAFE_INTEGER是？",
     "options": [
-      "2^53 - 1",
       "2^31 - 1",
+      "2^53 - 1",
       "2^63 - 1",
       "Infinity"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-50",
     "title": "JavaScript中BigInt的声明方式是？",
     "options": [
+      "以上都是",
       "数字后加n",
-      "数字前加b",
       "BigInt()",
-      "以上都是"
+      "数字前加b"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   }
 ]

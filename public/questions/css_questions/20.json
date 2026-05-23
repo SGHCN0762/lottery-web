@@ -3,21 +3,21 @@
     "id": "css-951",
     "title": "content-visibility属性的作用是？",
     "options": [
-      "跳过屏幕外内容的渲染提升性能",
       "设置内容可见性",
+      "删除内容",
       "隐藏内容",
-      "删除内容"
+      "跳过屏幕外内容的渲染提升性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-952",
     "title": "content-visibility: auto的好处是？",
     "options": [
       "浏览器自动跳过屏幕外渲染",
+      "自动删除",
       "自动显示",
-      "自动隐藏",
-      "自动删除"
+      "自动隐藏"
     ],
     "correctAnswer": 0
   },
@@ -25,76 +25,76 @@
     "id": "css-953",
     "title": "contain-intrinsic-size属性的作用是？",
     "options": [
-      "为受contain影响的元素提供预估尺寸",
       "设置固有尺寸",
-      "设置最大尺寸",
-      "设置最小尺寸"
+      "设置最小尺寸",
+      "为受contain影响的元素提供预估尺寸",
+      "设置最大尺寸"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-954",
     "title": "scroll-snap-type属性的作用是？",
     "options": [
+      "设置滚动方向",
       "定义滚动捕捉的类型和方向",
       "设置滚动条",
-      "设置滚动速度",
-      "设置滚动方向"
+      "设置滚动速度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-955",
     "title": "scroll-snap-type: x mandatory的含义是？",
     "options": [
-      "水平方向强制捕捉",
-      "垂直方向捕捉",
+      "可选捕捉",
       "双向捕捉",
-      "可选捕捉"
+      "水平方向强制捕捉",
+      "垂直方向捕捉"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-956",
     "title": "scroll-snap-type: y proximity的含义是？",
     "options": [
-      "垂直方向接近时捕捉",
+      "双向捕捉",
       "水平方向捕捉",
       "强制捕捉",
-      "双向捕捉"
+      "垂直方向接近时捕捉"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-957",
     "title": "scroll-snap-align属性的作用是？",
     "options": [
+      "定义捕捉方向",
       "定义捕捉对齐方式",
       "定义捕捉类型",
-      "定义捕捉方向",
       "定义捕捉距离"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-958",
     "title": "scroll-snap-align: center的含义是？",
     "options": [
-      "元素中心对齐捕捉点",
-      "起始对齐",
+      "不对齐",
       "结束对齐",
-      "不对齐"
+      "元素中心对齐捕捉点",
+      "起始对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-959",
     "title": "scroll-snap-stop属性的作用是？",
     "options": [
       "防止滚动时跳过捕捉点",
+      "取消捕捉",
       "停止滚动",
-      "开始捕捉",
-      "取消捕捉"
+      "开始捕捉"
     ],
     "correctAnswer": 0
   },
@@ -102,32 +102,32 @@
     "id": "css-960",
     "title": "scroll-margin属性的作用是？",
     "options": [
+      "设置边框",
       "定义滚动捕捉的偏移边距",
       "设置外边距",
-      "设置内边距",
-      "设置边框"
+      "设置内边距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-961",
     "title": "scroll-padding属性的作用是？",
     "options": [
-      "定义滚动容器的内偏移",
-      "设置外边距",
       "设置内边距",
-      "设置边框"
+      "定义滚动容器的内偏移",
+      "设置边框",
+      "设置外边距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-962",
     "title": "overscroll-behavior属性的作用是？",
     "options": [
       "控制滚动到边界时的行为",
+      "控制滚动条",
       "控制滚动速度",
-      "控制滚动方向",
-      "控制滚动条"
+      "控制滚动方向"
     ],
     "correctAnswer": 0
   },
@@ -136,9 +136,9 @@
     "title": "overscroll-behavior: contain的含义是？",
     "options": [
       "阻止滚动链传播",
-      "包含滚动",
       "禁止滚动",
-      "自动滚动"
+      "自动滚动",
+      "包含滚动"
     ],
     "correctAnswer": 0
   },
@@ -147,9 +147,9 @@
     "title": "overscroll-behavior: none的含义是？",
     "options": [
       "禁止边界过度效果和滚动链",
-      "无滚动",
       "默认滚动",
-      "自动滚动"
+      "自动滚动",
+      "无滚动"
     ],
     "correctAnswer": 0
   },
@@ -157,67 +157,67 @@
     "id": "css-965",
     "title": "scroll-behavior: smooth的作用是？",
     "options": [
+      "禁止滚动",
       "平滑滚动",
       "瞬间滚动",
-      "禁止滚动",
       "自动滚动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-966",
     "title": "@scroll-timeline规则的作用是？",
     "options": [
-      "定义基于滚动的动画时间线",
-      "定义关键帧",
       "定义过渡",
-      "定义变换"
+      "定义基于滚动的动画时间线",
+      "定义变换",
+      "定义关键帧"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-967",
     "title": "animation-timeline: scroll()的作用是？",
     "options": [
-      "将动画绑定到滚动进度",
       "定义时间",
-      "定义速度",
-      "定义方向"
+      "定义方向",
+      "将动画绑定到滚动进度",
+      "定义速度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-968",
     "title": "scroll-timeline-name属性的作用是？",
     "options": [
-      "命名滚动时间线",
-      "定义时间",
       "定义速度",
-      "定义方向"
+      "定义时间",
+      "定义方向",
+      "命名滚动时间线"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-969",
     "title": "scroll-timeline-axis属性的作用是？",
     "options": [
-      "指定滚动时间线的轴",
-      "定义名称",
+      "定义速度",
       "定义时间",
-      "定义速度"
+      "定义名称",
+      "指定滚动时间线的轴"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-970",
     "title": "View Transitions API的作用是？",
     "options": [
-      "创建DOM状态间的平滑过渡动画",
-      "定义关键帧",
+      "定义旋转",
       "定义变换",
-      "定义旋转"
+      "创建DOM状态间的平滑过渡动画",
+      "定义关键帧"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-971",
@@ -234,75 +234,75 @@
     "id": "css-972",
     "title": "::view-transition伪元素的作用是？",
     "options": [
+      "过渡动画",
       "视图过渡的根容器",
       "旧状态",
-      "新状态",
-      "过渡动画"
+      "新状态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-973",
     "title": "::view-transition-old()伪元素的作用是？",
     "options": [
-      "代表过渡的旧视图状态",
-      "新状态",
       "根容器",
-      "动画"
+      "代表过渡的旧视图状态",
+      "动画",
+      "新状态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-974",
     "title": "::view-transition-new()伪元素的作用是？",
     "options": [
-      "代表过渡的新视图状态",
       "旧状态",
       "根容器",
-      "动画"
+      "动画",
+      "代表过渡的新视图状态"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-975",
     "title": "::view-transition-image-pair()的作用是？",
     "options": [
-      "包含新旧视图的容器",
       "旧视图",
+      "动画",
       "新视图",
-      "动画"
+      "包含新旧视图的容器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-976",
     "title": "::view-transition-group()的作用是？",
     "options": [
-      "为特定元素创建独立的过渡组",
       "整体过渡",
+      "为特定元素创建独立的过渡组",
       "背景过渡",
       "前景过渡"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-977",
     "title": "view-transition-name属性的作用是？",
     "options": [
-      "为元素分配唯一的过渡名称",
       "设置名称",
+      "设置位置",
       "设置类型",
-      "设置位置"
+      "为元素分配唯一的过渡名称"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-978",
     "title": "如何实现页面切换动画？",
     "options": [
       "View Transitions API配合类名切换",
-      "transition",
       "transform",
+      "transition",
       "opacity"
     ],
     "correctAnswer": 0
@@ -311,98 +311,98 @@
     "id": "css-979",
     "title": "如何实现元素位置变化的过渡动画？",
     "options": [
-      "view-transition-name配合API",
-      "position过渡",
+      "left过渡",
       "margin过渡",
-      "left过渡"
+      "position过渡",
+      "view-transition-name配合API"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-980",
     "title": "CSS Subgrid的作用是？",
     "options": [
+      "合并网格",
       "子网格继承父网格的轨道定义",
       "创建子元素",
-      "嵌套网格",
-      "合并网格"
+      "嵌套网格"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-981",
     "title": "grid-template-columns: subgrid的含义是？",
     "options": [
-      "子元素继承父元素的列定义",
-      "创建子列",
       "嵌套列",
-      "合并列"
+      "合并列",
+      "创建子列",
+      "子元素继承父元素的列定义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-982",
     "title": "Subgrid解决了什么问题？",
     "options": [
-      "子网格与父网格轨道对齐",
+      "语法问题",
       "性能问题",
       "兼容问题",
-      "语法问题"
+      "子网格与父网格轨道对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-983",
     "title": "text-wrap: balance的作用是？",
     "options": [
-      "平衡多行文本的行宽",
       "禁止换行",
-      "强制换行",
-      "居中对齐"
+      "平衡多行文本的行宽",
+      "居中对齐",
+      "强制换行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-984",
     "title": "text-wrap: pretty的作用是？",
     "options": [
-      "优化排版避免末尾孤词",
       "美化字体",
+      "优化排版避免末尾孤词",
       "添加装饰",
       "设置颜色"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-985",
     "title": "hyphens属性的作用是？",
     "options": [
-      "控制单词断字行为",
       "设置连字符",
+      "设置行高",
       "设置字间距",
-      "设置行高"
+      "控制单词断字行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-986",
     "title": "hyphens: auto的含义是？",
     "options": [
-      "浏览器自动断字",
-      "不断字",
+      "隐藏连字符",
       "手动断字",
-      "隐藏连字符"
+      "浏览器自动断字",
+      "不断字"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-987",
     "title": "text-decoration-thickness属性的作用是？",
     "options": [
       "设置文本装饰线厚度",
-      "设置颜色",
+      "设置偏移",
       "设置样式",
-      "设置偏移"
+      "设置颜色"
     ],
     "correctAnswer": 0
   },
@@ -410,65 +410,65 @@
     "id": "css-988",
     "title": "text-underline-offset属性的作用是？",
     "options": [
+      "设置样式",
       "设置下划线偏移距离",
-      "设置厚度",
       "设置颜色",
-      "设置样式"
+      "设置厚度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-989",
     "title": "font-display属性的作用是？",
     "options": [
-      "控制字体加载期间的显示行为",
+      "设置字体样式",
       "设置字体大小",
       "设置字体颜色",
-      "设置字体样式"
+      "控制字体加载期间的显示行为"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-990",
     "title": "font-display: swap的行为是？",
     "options": [
-      "先显示后备字体，加载完后替换",
       "一直等待",
+      "先显示后备字体，加载完后替换",
       "不显示",
       "隐藏文本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-991",
     "title": "@font-face中unicode-range的作用是？",
     "options": [
-      "指定字体适用的Unicode范围",
       "设置编码",
       "设置大小",
-      "设置样式"
+      "设置样式",
+      "指定字体适用的Unicode范围"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-992",
     "title": "unicode-range的好处是？",
     "options": [
+      "改变编码",
       "按需加载字体子集减小体积",
-      "增加字符",
       "减少字符",
-      "改变编码"
+      "增加字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-993",
     "title": "CSS中size-adjust属性的作用是？",
     "options": [
       "调整字体的整体尺寸比例",
-      "调整大小",
       "调整间距",
-      "调整粗细"
+      "调整粗细",
+      "调整大小"
     ],
     "correctAnswer": 0
   },
@@ -478,8 +478,8 @@
     "options": [
       "覆盖字体的上升度量",
       "覆盖下降",
-      "覆盖行高",
-      "覆盖间距"
+      "覆盖间距",
+      "覆盖行高"
     ],
     "correctAnswer": 0
   },
@@ -487,31 +487,31 @@
     "id": "css-995",
     "title": "descent-override属性的作用是？",
     "options": [
-      "覆盖字体的下降度量",
-      "覆盖上升",
       "覆盖行高",
+      "覆盖上升",
+      "覆盖字体的下降度量",
       "覆盖间距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-996",
     "title": "line-gap-override属性的作用是？",
     "options": [
+      "覆盖下降",
       "覆盖字体的行间距度量",
       "覆盖上升",
-      "覆盖下降",
       "覆盖大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-997",
     "title": "CSS中math-style属性的作用是？",
     "options": [
       "控制数学公式的显示样式",
-      "设置数学字体",
       "设置数学颜色",
+      "设置数学字体",
       "设置数学大小"
     ],
     "correctAnswer": 0
@@ -520,23 +520,23 @@
     "id": "css-998",
     "title": "CSS中math-depth属性的作用是？",
     "options": [
-      "控制数学公式的嵌套深度缩放",
       "设置深度",
+      "控制数学公式的嵌套深度缩放",
       "设置颜色",
       "设置大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-999",
     "title": "CSS中math-shift属性的作用是？",
     "options": [
-      "控制数学公式的上标移位",
-      "设置移位",
+      "设置大小",
       "设置颜色",
-      "设置大小"
+      "设置移位",
+      "控制数学公式的上标移位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-1000",
@@ -544,8 +544,8 @@
     "options": [
       "注册自定义CSS属性并约束类型",
       "定义变量",
-      "定义函数",
-      "定义mixin"
+      "定义mixin",
+      "定义函数"
     ],
     "correctAnswer": 0
   }

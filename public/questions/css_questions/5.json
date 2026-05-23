@@ -3,21 +3,21 @@
     "id": "css-201",
     "title": "Flexbox布局的主要优势是？",
     "options": [
-      "一维布局的灵活排列和对齐",
-      "二维表格布局",
       "打印布局",
-      "固定布局"
+      "固定布局",
+      "一维布局的灵活排列和对齐",
+      "二维表格布局"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-202",
     "title": "display: flex的作用是？",
     "options": [
       "将元素设置为弹性容器",
-      "设置为块级元素",
       "设置为内联元素",
-      "设置为网格容器"
+      "设置为网格容器",
+      "设置为块级元素"
     ],
     "correctAnswer": 0
   },
@@ -25,75 +25,75 @@
     "id": "css-203",
     "title": "flex-direction的默认值是？",
     "options": [
-      "row",
       "column",
       "row-reverse",
+      "row",
       "column-reverse"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-204",
     "title": "flex-direction: row-reverse的作用是？",
     "options": [
-      "主轴为水平方向，起点在右端",
-      "主轴为垂直方向",
       "主轴为水平方向，起点在左端",
-      "主轴为垂直方向，起点在下端"
+      "主轴为垂直方向，起点在下端",
+      "主轴为垂直方向",
+      "主轴为水平方向，起点在右端"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-205",
     "title": "flex-wrap的默认值是？",
     "options": [
-      "nowrap",
-      "wrap",
+      "auto",
       "wrap-reverse",
-      "auto"
+      "wrap",
+      "nowrap"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-206",
     "title": "flex-wrap: wrap的作用是？",
     "options": [
-      "子元素换行显示",
       "不换行",
       "反向换行",
+      "子元素换行显示",
       "自动换行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-207",
     "title": "justify-content属性的作用是？",
     "options": [
-      "定义项目在主轴上的对齐方式",
+      "定义换行方式",
       "定义在交叉轴上的对齐",
-      "定义自身对齐",
-      "定义换行方式"
+      "定义项目在主轴上的对齐方式",
+      "定义自身对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-208",
     "title": "justify-content: space-between的效果是？",
     "options": [
+      "均匀分布",
       "两端对齐，项目之间间隔相等",
       "项目之间和两端间隔相等",
-      "居中对齐",
-      "均匀分布"
+      "居中对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-209",
     "title": "justify-content: space-around的效果是？",
     "options": [
       "项目两侧间隔相等，项目间间隔是两端的两倍",
-      "两端对齐",
       "居中对齐",
+      "两端对齐",
       "均匀分布"
     ],
     "correctAnswer": 0
@@ -102,12 +102,12 @@
     "id": "css-210",
     "title": "justify-content: space-evenly的效果是？",
     "options": [
-      "项目和两端间隔完全相等",
       "两端对齐",
       "项目间间隔是两端两倍",
-      "居中对齐"
+      "居中对齐",
+      "项目和两端间隔完全相等"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-211",
@@ -124,155 +124,155 @@
     "id": "css-212",
     "title": "align-items: stretch的效果是？",
     "options": [
-      "如果项目未设置高度，将占满整个容器高度",
-      "顶部对齐",
       "底部对齐",
+      "顶部对齐",
+      "如果项目未设置高度，将占满整个容器高度",
       "居中对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-213",
     "title": "align-items: center的效果是？",
     "options": [
-      "交叉轴居中对齐",
       "主轴居中",
+      "交叉轴居中对齐",
       "顶部对齐",
       "底部对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-214",
     "title": "align-items: flex-start的效果是？",
     "options": [
-      "交叉轴起点对齐",
       "交叉轴终点对齐",
-      "主轴起点对齐",
-      "主轴终点对齐"
+      "主轴终点对齐",
+      "交叉轴起点对齐",
+      "主轴起点对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-215",
     "title": "align-content属性的作用是？",
     "options": [
+      "主轴对齐",
       "多根轴线的对齐方式",
       "单根轴线对齐",
-      "主轴对齐",
       "交叉轴单行对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-216",
     "title": "align-content生效的前提是？",
     "options": [
-      "容器有多根轴线（flex-wrap: wrap且换行）",
-      "单行容器",
       "设置了高度",
+      "单行容器",
+      "容器有多根轴线（flex-wrap: wrap且换行）",
       "设置了宽度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-217",
     "title": "flex-flow属性是哪两个属性的简写？",
     "options": [
-      "flex-direction和flex-wrap",
-      "flex-grow和flex-shrink",
       "justify-content和align-items",
-      "flex-basis和flex-grow"
+      "flex-basis和flex-grow",
+      "flex-grow和flex-shrink",
+      "flex-direction和flex-wrap"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-218",
     "title": "order属性的作用是？",
     "options": [
-      "定义项目的排列顺序",
-      "定义对齐方式",
       "定义大小",
+      "定义对齐方式",
+      "定义项目的排列顺序",
       "定义换行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-219",
     "title": "order的默认值是？",
     "options": [
-      "0",
       "1",
-      "-1",
-      "auto"
+      "auto",
+      "0",
+      "-1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-220",
     "title": "order值越小项目越靠？",
     "options": [
+      "越靠下",
       "越靠前",
-      "越靠后",
       "越靠上",
-      "越靠下"
+      "越靠后"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-221",
     "title": "flex-grow属性的作用是？",
     "options": [
-      "定义项目的放大比例",
       "定义缩小比例",
-      "定义初始大小",
-      "定义对齐方式"
+      "定义对齐方式",
+      "定义项目的放大比例",
+      "定义初始大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-222",
     "title": "flex-grow的默认值是？",
     "options": [
-      "0",
+      "none",
       "1",
-      "auto",
-      "none"
+      "0",
+      "auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-223",
     "title": "如果所有项目的flex-grow都为1，效果是？",
     "options": [
+      "只放大第一个",
       "等分剩余空间",
-      "不放大",
       "按比例放大",
-      "只放大第一个"
+      "不放大"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-224",
     "title": "flex-shrink属性的作用是？",
     "options": [
-      "定义项目的缩小比例",
       "定义放大比例",
+      "定义对齐方式",
       "定义初始大小",
-      "定义对齐方式"
+      "定义项目的缩小比例"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-225",
     "title": "flex-shrink的默认值是？",
     "options": [
+      "auto",
       "1",
       "0",
-      "auto",
       "none"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-226",
@@ -280,8 +280,8 @@
     "options": [
       "等比例缩小",
       "不缩小",
-      "只缩小最后一个",
-      "溢出容器"
+      "溢出容器",
+      "只缩小最后一个"
     ],
     "correctAnswer": 0
   },
@@ -289,21 +289,21 @@
     "id": "css-227",
     "title": "flex-shrink: 0的作用是？",
     "options": [
-      "项目不缩小",
-      "项目不放大",
       "项目放大",
-      "项目缩小"
+      "项目不缩小",
+      "项目缩小",
+      "项目不放大"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-228",
     "title": "flex-basis属性的作用是？",
     "options": [
       "定义项目在分配多余空间之前的初始大小",
-      "定义放大比例",
+      "定义对齐方式",
       "定义缩小比例",
-      "定义对齐方式"
+      "定义放大比例"
     ],
     "correctAnswer": 0
   },
@@ -311,56 +311,56 @@
     "id": "css-229",
     "title": "flex-basis的默认值是？",
     "options": [
-      "auto",
+      "1px",
       "0",
       "100%",
-      "1px"
+      "auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-230",
     "title": "flex-basis: auto的含义是？",
     "options": [
-      "项目本身的大小",
       "0大小",
       "100%大小",
-      "继承父元素"
+      "继承父元素",
+      "项目本身的大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-231",
     "title": "flex属性是哪三个属性的简写？",
     "options": [
-      "flex-grow, flex-shrink, flex-basis",
+      "align-self, flex-grow, flex-basis",
       "flex-direction, flex-wrap, flex-flow",
-      "order, flex-grow, flex-shrink",
-      "align-self, flex-grow, flex-basis"
+      "flex-grow, flex-shrink, flex-basis",
+      "order, flex-grow, flex-shrink"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-232",
     "title": "flex: 1等同于？",
     "options": [
+      "flex: 1 0 auto",
       "flex: 1 1 0%",
-      "flex: 1 1 auto",
       "flex: 0 1 auto",
-      "flex: 1 0 auto"
+      "flex: 1 1 auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-233",
     "title": "flex: auto等同于？",
     "options": [
-      "flex: 1 1 auto",
       "flex: 1 1 0%",
+      "flex: 1 1 auto",
       "flex: 0 1 auto",
       "flex: 0 0 auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-234",
@@ -379,8 +379,8 @@
     "options": [
       "允许单个项目与其他项目不一样的对齐方式",
       "设置主轴对齐",
-      "设置所有项目对齐",
-      "设置容器对齐"
+      "设置容器对齐",
+      "设置所有项目对齐"
     ],
     "correctAnswer": 0
   },
@@ -388,98 +388,98 @@
     "id": "css-236",
     "title": "align-self的默认值是？",
     "options": [
-      "auto",
-      "flex-start",
       "center",
-      "stretch"
+      "flex-start",
+      "stretch",
+      "auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-237",
     "title": "align-self: auto的含义是？",
     "options": [
+      "居中对齐",
       "继承父元素的align-items属性",
       "顶部对齐",
-      "底部对齐",
-      "居中对齐"
+      "底部对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-238",
     "title": "如何实现Flexbox的垂直居中？",
     "options": [
-      "justify-content: center; align-items: center;",
       "margin: auto 0;",
       "vertical-align: middle;",
-      "line-height等于height"
+      "line-height等于height",
+      "justify-content: center; align-items: center;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-239",
     "title": "Flexbox中margin: auto的作用是？",
     "options": [
-      "吸收额外空间实现居中或两端对齐",
       "只设置边距",
       "清除浮动",
-      "设置宽度"
+      "设置宽度",
+      "吸收额外空间实现居中或两端对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-240",
     "title": "flex项目设置position: absolute会怎样？",
     "options": [
+      "隐藏元素",
       "脱离Flex布局，相对于定位父元素定位",
-      "仍然受Flex布局控制",
       "失去大小",
-      "隐藏元素"
+      "仍然受Flex布局控制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-241",
     "title": "Flexbox中min-width的作用是？",
     "options": [
-      "防止项目缩小到低于此值",
-      "设置固定宽度",
       "设置最大宽度",
-      "设置初始宽度"
+      "设置初始宽度",
+      "防止项目缩小到低于此值",
+      "设置固定宽度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-242",
     "title": "Flexbox中max-width的作用是？",
     "options": [
-      "防止项目放大到超过此值",
-      "设置最小宽度",
+      "设置初始宽度",
       "设置固定宽度",
-      "设置初始宽度"
+      "防止项目放大到超过此值",
+      "设置最小宽度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-243",
     "title": "Flexbox中gap属性的作用是？",
     "options": [
-      "设置项目之间的间距",
-      "设置外边距",
       "设置内边距",
+      "设置外边距",
+      "设置项目之间的间距",
       "设置边框"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-244",
     "title": "gap属性是哪两个属性的简写？",
     "options": [
       "row-gap和column-gap",
+      "top和left",
       "margin和padding",
-      "width和height",
-      "top和left"
+      "width和height"
     ],
     "correctAnswer": 0
   },
@@ -487,42 +487,42 @@
     "id": "css-245",
     "title": "Flexbox中如何实现等高布局？",
     "options": [
-      "默认就是等高（align-items: stretch）",
-      "设置相同height",
+      "使用position",
       "使用float",
-      "使用position"
+      "设置相同height",
+      "默认就是等高（align-items: stretch）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-246",
     "title": "Flexbox中如何实现圣杯布局？",
     "options": [
-      "结合flex-grow和order",
-      "只用float",
       "只用position",
-      "只用margin"
+      "只用margin",
+      "结合flex-grow和order",
+      "只用float"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-247",
     "title": "Flexbox中如何实现粘性页脚？",
     "options": [
-      "主内容flex: 1，页脚flex: none",
       "页脚position: fixed",
+      "主内容flex: 1，页脚flex: none",
       "主内容height: 100%",
       "页脚margin-top: auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-248",
     "title": "Flexbox中伪元素如何影响布局？",
     "options": [
       "伪元素也会成为flex项目",
-      "不影响",
       "脱离布局",
+      "不影响",
       "隐藏"
     ],
     "correctAnswer": 0
@@ -531,22 +531,22 @@
     "id": "css-249",
     "title": "Flexbox中如何处理文本溢出？",
     "options": [
+      "flex-shrink: 0",
       "min-width: 0配合text-overflow",
       "直接overflow: hidden",
-      "不处理",
-      "flex-shrink: 0"
+      "不处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-250",
     "title": "Flexbox中flex-basis和width的优先级？",
     "options": [
-      "flex-basis优先于width",
-      "width优先",
+      "取决于顺序",
       "相同",
-      "取决于顺序"
+      "width优先",
+      "flex-basis优先于width"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

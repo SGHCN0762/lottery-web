@@ -3,45 +3,45 @@
     "id": "html-801",
     "title": "字符编码的作用是？",
     "options": [
-      "将字节序列映射为字符",
+      "翻译语言",
       "加密数据",
-      "压缩数据",
-      "翻译语言"
+      "将字节序列映射为字符",
+      "压缩数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-802",
     "title": "UTF-8的全称是？",
     "options": [
-      "Unicode Transformation Format - 8-bit",
       "Universal Text Format - 8",
+      "Universal Transformation Encoding - 8",
       "Unified Text Encoding - 8",
-      "Universal Transformation Encoding - 8"
+      "Unicode Transformation Format - 8-bit"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-803",
     "title": "UTF-8的优势是？",
     "options": [
-      "兼容ASCII, 可变长, 支持全球字符",
       "固定长度",
+      "最短编码",
       "仅英文",
-      "最短编码"
+      "兼容ASCII, 可变长, 支持全球字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-804",
     "title": "HTML5推荐使用哪种编码？",
     "options": [
-      "UTF-8",
       "GBK",
-      "ISO-8859-1",
-      "ASCII"
+      "UTF-8",
+      "ASCII",
+      "ISO-8859-1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-805",
@@ -49,8 +49,8 @@
     "options": [
       "<meta charset=\"UTF-8\">",
       "<meta encoding=\"UTF-8\">",
-      "<meta http-equiv=\"Content-Type\">",
-      "<?xml encoding=\"UTF-8\"?>"
+      "<?xml encoding=\"UTF-8\"?>",
+      "<meta http-equiv=\"Content-Type\">"
     ],
     "correctAnswer": 0
   },
@@ -58,76 +58,76 @@
     "id": "html-806",
     "title": "<meta charset>应放在什么位置？",
     "options": [
-      "<head>的最前面",
-      "<body>前",
       "任意位置",
-      "<html>前"
+      "<html>前",
+      "<head>的最前面",
+      "<body>前"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-807",
     "title": "为什么charset要放在最前面？",
     "options": [
-      "避免浏览器猜测编码导致乱码",
-      "性能更好",
       "语法要求",
-      "美观"
+      "美观",
+      "性能更好",
+      "避免浏览器猜测编码导致乱码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-808",
     "title": "BOM(Byte Order Mark)的作用？",
     "options": [
-      "标识字节序(UTF-8中不推荐使用)",
-      "标记开始",
+      "标记编码",
       "标记结束",
-      "标记编码"
+      "标记开始",
+      "标识字节序(UTF-8中不推荐使用)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-809",
     "title": "HTML实体的作用是？",
     "options": [
-      "在HTML中表示保留字符或特殊符号",
-      "加密字符",
       "压缩字符",
+      "加密字符",
+      "在HTML中表示保留字符或特殊符号",
       "翻译字符"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-810",
     "title": "HTML实体的格式是？",
     "options": [
-      "&name; 或 &#number; 或 &#xhex;",
-      "%name",
       "\\name",
-      "@name"
+      "%name",
+      "@name",
+      "&name; 或 &#number; 或 &#xhex;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-811",
     "title": "空格的HTML实体名称是？",
     "options": [
-      "&nbsp;",
       "&space;",
+      "&nbsp;",
       "&blank;",
       "&tab;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-812",
     "title": "<的HTML实体名称是？",
     "options": [
       "<",
-      "&less;",
+      "&bracket;",
       "&open;",
-      "&bracket;"
+      "&less;"
     ],
     "correctAnswer": 0
   },
@@ -136,8 +136,8 @@
     "title": ">的HTML实体名称是？",
     "options": [
       ">",
-      "&greater;",
       "&close;",
+      "&greater;",
       "&bracket;"
     ],
     "correctAnswer": 0
@@ -146,34 +146,34 @@
     "id": "html-814",
     "title": "&的HTML实体名称是？",
     "options": [
-      "&",
-      "&and;",
       "&ref;",
+      "&and;",
+      "&",
       "&symbol;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-815",
     "title": "\"的HTML实体名称是？",
     "options": [
-      "\"",
       "&double;",
-      "&dquote;",
-      "&string;"
+      "&string;",
+      "\"",
+      "&dquote;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-816",
     "title": "'的HTML实体名称是？",
     "options": [
-      "&apos;",
       "&single;",
-      "&squote;",
-      "&char;"
+      "&apos;",
+      "&char;",
+      "&squote;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-817",
@@ -181,8 +181,8 @@
     "options": [
       "&copy;",
       "&copyright;",
-      "&c;",
-      "&cc;"
+      "&cc;",
+      "&c;"
     ],
     "correctAnswer": 0
   },
@@ -191,8 +191,8 @@
     "title": "®的HTML实体名称是？",
     "options": [
       "&reg;",
-      "&registered;",
       "&r;",
+      "&registered;",
       "&trademark;"
     ],
     "correctAnswer": 0
@@ -201,56 +201,56 @@
     "id": "html-819",
     "title": "™的HTML实体名称是？",
     "options": [
-      "&trade;",
       "&trademark;",
       "&tm;",
+      "&trade;",
       "&t;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-820",
     "title": "€的HTML实体名称是？",
     "options": [
+      "&money;",
       "&euro;",
       "&european;",
-      "&eur;",
-      "&money;"
+      "&eur;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-821",
     "title": "¥的HTML实体名称是？",
     "options": [
+      "&cny;",
       "&yen;",
-      "&yuan;",
       "&rmb;",
-      "&cny;"
+      "&yuan;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-822",
     "title": "§的HTML实体名称是？",
     "options": [
-      "&sect;",
+      "&par;",
       "&section;",
       "&s;",
-      "&par;"
+      "&sect;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-823",
     "title": "±的HTML实体名称是？",
     "options": [
-      "&plusmn;",
       "&plusminus;",
+      "&diff;",
       "&pm;",
-      "&diff;"
+      "&plusmn;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-824",
@@ -258,8 +258,8 @@
     "options": [
       "&times;",
       "&multiply;",
-      "&x;",
-      "&cross;"
+      "&cross;",
+      "&x;"
     ],
     "correctAnswer": 0
   },
@@ -267,53 +267,53 @@
     "id": "html-825",
     "title": "÷的HTML实体名称是？",
     "options": [
-      "&divide;",
       "&division;",
+      "&slash;",
       "&div;",
-      "&slash;"
+      "&divide;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-826",
     "title": "•的HTML实体名称是？",
     "options": [
-      "&bull;",
       "&bullet;",
       "&dot;",
+      "&bull;",
       "&point;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-827",
     "title": "…的HTML实体名称是？",
     "options": [
-      "&hellip;",
       "&ellipsis;",
       "&dots;",
-      "&etc;"
+      "&etc;",
+      "&hellip;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-828",
     "title": "°的HTML实体名称是？",
     "options": [
-      "&deg;",
-      "&degree;",
+      "&temp;",
       "&o;",
-      "&temp;"
+      "&degree;",
+      "&deg;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-829",
     "title": "¶的HTML实体名称是？",
     "options": [
       "&para;",
-      "&paragraph;",
       "&p;",
+      "&paragraph;",
       "&text;"
     ],
     "correctAnswer": 0
@@ -322,133 +322,133 @@
     "id": "html-830",
     "title": "µ的HTML实体名称是？",
     "options": [
-      "&micro;",
       "&mu;",
       "&micro;",
-      "&u;"
+      "&u;",
+      "&micro;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-831",
     "title": "中间点的HTML实体是？",
     "options": [
-      "&middot;",
+      "&point;",
       "&centerdot;",
-      "&dot;",
-      "&point;"
+      "&middot;",
+      "&dot;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-832",
     "title": "2的HTML实体是？",
     "options": [
-      "&sup2;",
-      "&square;",
       "&two;",
+      "&square;",
+      "&sup2;",
       "&2;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-833",
     "title": "3的HTML实体是？",
     "options": [
-      "&sup3;",
-      "&cube;",
       "&three;",
-      "&3;"
+      "&3;",
+      "&sup3;",
+      "&cube;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-834",
     "title": "1/4的HTML实体是？",
     "options": [
-      "&frac14;",
       "&quarter;",
       "&1/4;",
+      "&frac14;",
       "&f14;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-835",
     "title": "1/2的HTML实体是？",
     "options": [
-      "&frac12;",
-      "&half;",
+      "&f12;",
       "&1/2;",
-      "&f12;"
+      "&frac12;",
+      "&half;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-836",
     "title": "3/4的HTML实体是？",
     "options": [
+      "&3/4;",
       "&frac34;",
       "&threequarter;",
-      "&3/4;",
       "&f34;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-837",
     "title": "国际化的简称是？",
     "options": [
-      "i18n",
       "l10n",
+      "i18n",
       "g11n",
       "a11y"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-838",
     "title": "本地化的简称是？",
     "options": [
+      "g11n",
       "l10n",
       "i18n",
-      "g11n",
       "a11y"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-839",
     "title": "全球化的简称是？",
     "options": [
-      "g11n",
+      "a11y",
       "i18n",
-      "l10n",
-      "a11y"
+      "g11n",
+      "l10n"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-840",
     "title": "可访问性的简称是？",
     "options": [
-      "a11y",
+      "g11n",
       "i18n",
       "l10n",
-      "g11n"
+      "a11y"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-841",
     "title": "i18n中的18代表什么？",
     "options": [
-      "internationalization中间的18个字母",
       "18种语言",
+      "18个国家",
       "18个标准",
-      "18个国家"
+      "internationalization中间的18个字母"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-842",
@@ -456,8 +456,8 @@
     "options": [
       "声明页面语言为英语",
       "设置编码",
-      "设置方向",
-      "设置地区"
+      "设置地区",
+      "设置方向"
     ],
     "correctAnswer": 0
   },
@@ -465,31 +465,31 @@
     "id": "html-843",
     "title": "<html lang=\"zh-CN\">的作用？",
     "options": [
-      "声明页面语言为简体中文",
       "繁体中文",
-      "英语",
-      "日语"
+      "日语",
+      "声明页面语言为简体中文",
+      "英语"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-844",
     "title": "<html lang=\"zh-TW\">的作用？",
     "options": [
-      "声明页面语言为繁体中文",
+      "韩语",
       "简体中文",
       "英语",
-      "韩语"
+      "声明页面语言为繁体中文"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-845",
     "title": "lang属性对搜索引擎的作用？",
     "options": [
       "帮助确定页面语言服务正确地区结果",
-      "提高排名",
       "增加关键词",
+      "提高排名",
       "加速索引"
     ],
     "correctAnswer": 0
@@ -498,55 +498,55 @@
     "id": "html-846",
     "title": "lang属性对屏幕阅读器的作用？",
     "options": [
-      "选择正确的语音引擎和发音",
-      "调整音量",
+      "翻译内容",
       "加快语速",
-      "翻译内容"
+      "调整音量",
+      "选择正确的语音引擎和发音"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-847",
     "title": "dir属性的作用？",
     "options": [
-      "设置文本方向",
       "设置语言",
       "设置编码",
-      "设置地区"
+      "设置地区",
+      "设置文本方向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-848",
     "title": "dir=\"ltr\"表示？",
     "options": [
+      "自动",
       "从左到右",
       "从右到左",
-      "自动",
       "垂直"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-849",
     "title": "dir=\"rtl\"表示？",
     "options": [
-      "从右到左",
       "从左到右",
+      "垂直",
       "自动",
-      "垂直"
+      "从右到左"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-850",
     "title": "dir=\"auto\"表示？",
     "options": [
-      "根据内容自动判断方向",
-      "从左到右",
       "从右到左",
-      "垂直"
+      "垂直",
+      "根据内容自动判断方向",
+      "从左到右"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

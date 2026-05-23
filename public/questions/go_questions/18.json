@@ -3,32 +3,32 @@
     "id": "go-851",
     "title": "Go语言中，如何获取POST请求体？",
     "options": [
-      "r.Body",
+      "r.Header",
       "r.URL.Query()",
-      "r.FormValue()",
-      "r.Header"
+      "r.Body",
+      "r.FormValue()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-852",
     "title": "Go语言中，如何设置HTTP超时？",
     "options": [
+      "以上都可以",
       "http.Client{Timeout:}",
-      "http.Server{Timeout:}",
       "context.WithTimeout",
-      "以上都可以"
+      "http.Server{Timeout:}"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "go-853",
     "title": "Go语言中，RESTful API的设计原则是？",
     "options": [
       "资源导向、使用HTTP动词",
-      "动作导向",
       "RPC风格",
-      "SOAP风格"
+      "SOAP风格",
+      "动作导向"
     ],
     "correctAnswer": 0
   },
@@ -36,32 +36,32 @@
     "id": "go-854",
     "title": "Go语言中，JWT的作用是？",
     "options": [
+      "压缩数据",
       "无状态认证",
       "加密数据",
-      "压缩数据",
       "路由分发"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-855",
     "title": "Go语言中，WebSocket如何实现？",
     "options": [
-      "gorilla/websocket或nhooyr.io/websocket",
-      "net/http原生支持",
       "net/rpc",
-      "只能使用第三方"
+      "net/http原生支持",
+      "只能使用第三方",
+      "gorilla/websocket或nhooyr.io/websocket"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-856",
     "title": "Go语言中，RPC框架有哪些？",
     "options": [
       "net/rpc, gRPC",
-      "http/rpc",
+      "json/rpc",
       "soap/rpc",
-      "json/rpc"
+      "http/rpc"
     ],
     "correctAnswer": 0
   },
@@ -69,144 +69,144 @@
     "id": "go-857",
     "title": "Go语言中，gRPC使用什么协议？",
     "options": [
+      "TCP",
       "HTTP/2",
       "HTTP/1.1",
-      "TCP",
       "UDP"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-858",
     "title": "Go语言中，gRPC使用什么序列化？",
     "options": [
+      "Thrift",
       "Protobuf",
       "JSON",
-      "XML",
-      "Thrift"
+      "XML"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-859",
     "title": "Go语言中，gRPC支持哪些模式？",
     "options": [
-      "单向、服务端流、客户端流、双向流",
-      "只有单向",
+      "请求响应模式",
       "只有双向流",
-      "请求响应模式"
+      "单向、服务端流、客户端流、双向流",
+      "只有单向"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-860",
     "title": "Go语言中，如何实现API限流？",
     "options": [
-      "令牌桶或漏桶算法",
       "增加服务器",
-      "使用缓存",
-      "使用队列"
+      "令牌桶或漏桶算法",
+      "使用队列",
+      "使用缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-861",
     "title": "Go语言中，如何实现API熔断？",
     "options": [
-      "使用断路器模式",
-      "增加超时",
       "增加重试",
-      "增加限流"
+      "使用断路器模式",
+      "增加限流",
+      "增加超时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-862",
     "title": "Go语言中，如何实现API降级？",
     "options": [
-      "返回默认值或缓存数据",
       "返回错误",
       "增加服务器",
-      "增加限流"
+      "增加限流",
+      "返回默认值或缓存数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-863",
     "title": "Go语言中，如何实现API监控？",
     "options": [
-      "Prometheus + Grafana",
       "Zabbix",
-      "Nagios",
-      "ELK"
+      "Prometheus + Grafana",
+      "ELK",
+      "Nagios"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-864",
     "title": "Go语言中，如何实现API日志？",
     "options": [
       "中间件记录",
-      "拦截器记录",
       "AOP记录",
-      "以上都可以"
+      "以上都可以",
+      "拦截器记录"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "go-865",
     "title": "Go语言中，如何实现API配置？",
     "options": [
-      "Viper库",
-      "环境变量",
+      "以上都可以",
       "配置文件",
-      "以上都可以"
+      "环境变量",
+      "Viper库"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "go-866",
     "title": "Go语言中，Web框架Gin的特点是？",
     "options": [
-      "轻量、高性能、路由快",
+      "企业级、规范",
       "全栈、重量级",
       "异步、协程",
-      "企业级、规范"
+      "轻量、高性能、路由快"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-867",
     "title": "Go语言中，Web框架Echo的特点是？",
     "options": [
-      "极简、高性能",
-      "全栈、重量级",
       "异步、协程",
+      "全栈、重量级",
+      "极简、高性能",
       "企业级、规范"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-868",
     "title": "Go语言中，Web框架Beego的特点是？",
     "options": [
-      "全栈、企业级",
-      "轻量、高性能",
       "极简",
-      "微框架"
+      "微框架",
+      "全栈、企业级",
+      "轻量、高性能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-869",
     "title": "Go语言中，ORM框架GORM的特点是？",
     "options": [
-      "全功能、开发者友好",
       "极简",
+      "全功能、开发者友好",
       "性能最高",
       "只支持MySQL"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-870",
@@ -214,8 +214,8 @@
     "options": [
       "database/sql",
       "sql/db",
-      "orm/sql",
-      "db/mysql"
+      "db/mysql",
+      "orm/sql"
     ],
     "correctAnswer": 0
   },
@@ -223,98 +223,98 @@
     "id": "go-871",
     "title": "Go语言中，如何防止SQL注入？",
     "options": [
-      "使用参数化查询",
       "拼接SQL",
       "使用ORM",
-      "过滤输入"
+      "过滤输入",
+      "使用参数化查询"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-872",
     "title": "Go语言中，连接池如何配置？",
     "options": [
-      "SetMaxOpenConns等",
-      "SetPoolSize",
+      "SetLimit",
       "SetMaxConn",
-      "SetLimit"
+      "SetMaxOpenConns等",
+      "SetPoolSize"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-873",
     "title": "Go语言中，Redis客户端常用哪个库？",
     "options": [
-      "go-redis",
-      "redigo",
       "goredis",
+      "redigo",
+      "go-redis",
       "redis-go"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-874",
     "title": "Go语言中，MongoDB客户端常用哪个库？",
     "options": [
-      "mongo-go-driver",
       "mgo",
       "gomongo",
-      "mongodb-go"
+      "mongodb-go",
+      "mongo-go-driver"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-875",
     "title": "Go语言中，Kafka客户端常用哪个库？",
     "options": [
-      "confluent-kafka-go, sarama",
-      "kafka-go",
       "gokafka",
-      "kafka-client"
+      "kafka-go",
+      "kafka-client",
+      "confluent-kafka-go, sarama"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-876",
     "title": "Go语言中，如何实现微服务？",
     "options": [
-      "go-micro, go-kit, kratos",
+      "echo",
       "gin",
-      "beego",
-      "echo"
+      "go-micro, go-kit, kratos",
+      "beego"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-877",
     "title": "Go语言中，服务注册与发现常用什么？",
     "options": [
-      "Consul, Etcd, Nacos",
       "Eureka",
       "Zookeeper",
-      "Redis"
+      "Redis",
+      "Consul, Etcd, Nacos"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-878",
     "title": "Go语言中，分布式链路追踪常用什么？",
     "options": [
-      "Jaeger, Zipkin",
-      "SkyWalking",
       "Prometheus",
-      "ELK"
+      "ELK",
+      "SkyWalking",
+      "Jaeger, Zipkin"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-879",
     "title": "Go语言中，配置中心常用什么？",
     "options": [
       "Apollo, Nacos, Etcd",
+      "Zookeeper",
       "Spring Cloud Config",
-      "Disconf",
-      "Zookeeper"
+      "Disconf"
     ],
     "correctAnswer": 0
   },
@@ -322,32 +322,32 @@
     "id": "go-880",
     "title": "Go语言中，消息队列的作用是？",
     "options": [
-      "解耦、削峰、异步",
-      "加密、解密",
       "路由、转发",
-      "存储、计算"
+      "存储、计算",
+      "加密、解密",
+      "解耦、削峰、异步"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-881",
     "title": "Go语言中，TCP服务端的开发流程是？",
     "options": [
-      "Listen, Accept, Read/Write, Close",
-      "Dial, Read/Write, Close",
       "Connect, Send/Recv",
+      "Dial, Read/Write, Close",
+      "Listen, Accept, Read/Write, Close",
       "Bind, Listen, Accept"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-882",
     "title": "Go语言中，TCP客户端的开发流程是？",
     "options": [
       "Dial, Read/Write, Close",
-      "Listen, Accept, Read/Write",
       "Connect, Send/Recv",
-      "Bind, Listen, Dial"
+      "Bind, Listen, Dial",
+      "Listen, Accept, Read/Write"
     ],
     "correctAnswer": 0
   },
@@ -355,12 +355,12 @@
     "id": "go-883",
     "title": "Go语言中，net.Dial的作用是？",
     "options": [
-      "建立连接",
+      "关闭连接",
       "监听端口",
       "接受连接",
-      "关闭连接"
+      "建立连接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-884",
@@ -388,21 +388,21 @@
     "id": "go-886",
     "title": "Go语言中，HTTP服务端如何处理路由？",
     "options": [
-      "http.ServeMux或第三方路由",
-      "http.Handler",
       "http.Server",
-      "http.Request"
+      "http.Request",
+      "http.ServeMux或第三方路由",
+      "http.Handler"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-887",
     "title": "Go语言中，http.ResponseWriter的作用是？",
     "options": [
       "写入响应",
+      "中间件处理",
       "读取请求",
-      "路由分发",
-      "中间件处理"
+      "路由分发"
     ],
     "correctAnswer": 0
   },
@@ -410,78 +410,78 @@
     "id": "go-888",
     "title": "Go语言中，http.Request的作用是？",
     "options": [
-      "读取请求",
-      "写入响应",
+      "中间件处理",
       "路由分发",
-      "中间件处理"
+      "写入响应",
+      "读取请求"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-889",
     "title": "Go语言中，中间件的实现原理是？",
     "options": [
-      "嵌套Handler",
       "继承Handler",
-      "实现接口",
-      "使用注解"
+      "嵌套Handler",
+      "使用注解",
+      "实现接口"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-890",
     "title": "Go语言中，如何获取GET请求参数？",
     "options": [
+      "r.Header",
       "r.URL.Query()",
       "r.FormValue()",
-      "r.Body",
-      "r.Header"
+      "r.Body"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-891",
     "title": "Go语言中，如何获取POST请求体？",
     "options": [
-      "r.Body",
+      "r.Header",
       "r.URL.Query()",
       "r.FormValue()",
-      "r.Header"
+      "r.Body"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "go-892",
     "title": "Go语言中，如何设置HTTP超时？",
     "options": [
-      "http.Client{Timeout:}",
-      "http.Server{Timeout:}",
       "context.WithTimeout",
-      "以上都可以"
+      "http.Server{Timeout:}",
+      "以上都可以",
+      "http.Client{Timeout:}"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": "go-893",
     "title": "Go语言中，RESTful API的设计原则是？",
     "options": [
-      "资源导向、使用HTTP动词",
-      "动作导向",
       "RPC风格",
+      "动作导向",
+      "资源导向、使用HTTP动词",
       "SOAP风格"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-894",
     "title": "Go语言中，JWT的作用是？",
     "options": [
-      "无状态认证",
-      "加密数据",
       "压缩数据",
-      "路由分发"
+      "路由分发",
+      "无状态认证",
+      "加密数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-895",
@@ -498,20 +498,20 @@
     "id": "go-896",
     "title": "Go语言中，RPC框架有哪些？",
     "options": [
-      "net/rpc, gRPC",
-      "http/rpc",
       "soap/rpc",
-      "json/rpc"
+      "json/rpc",
+      "net/rpc, gRPC",
+      "http/rpc"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "go-897",
     "title": "Go语言中，gRPC使用什么协议？",
     "options": [
       "HTTP/2",
-      "HTTP/1.1",
       "TCP",
+      "HTTP/1.1",
       "UDP"
     ],
     "correctAnswer": 0
@@ -520,33 +520,33 @@
     "id": "go-898",
     "title": "Go语言中，gRPC使用什么序列化？",
     "options": [
-      "Protobuf",
       "JSON",
-      "XML",
-      "Thrift"
+      "Protobuf",
+      "Thrift",
+      "XML"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-899",
     "title": "Go语言中，gRPC支持哪些模式？",
     "options": [
-      "单向、服务端流、客户端流、双向流",
       "只有单向",
+      "单向、服务端流、客户端流、双向流",
       "只有双向流",
       "请求响应模式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "go-900",
     "title": "Go语言中，如何实现API限流？",
     "options": [
-      "令牌桶或漏桶算法",
-      "增加服务器",
       "使用缓存",
-      "使用队列"
+      "增加服务器",
+      "使用队列",
+      "令牌桶或漏桶算法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

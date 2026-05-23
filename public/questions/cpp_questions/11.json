@@ -3,32 +3,32 @@
     "id": "cpp-501",
     "title": "C++中std::this_thread::sleep_for的作用是？",
     "options": [
+      "中断",
       "休眠指定时间",
-      "让出CPU",
       "等待",
-      "中断"
+      "让出CPU"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-502",
     "title": "C++中std::this_thread::get_id的作用是？",
     "options": [
-      "获取线程ID",
       "设置线程ID",
-      "获取线程名",
-      "设置线程名"
+      "设置线程名",
+      "获取线程ID",
+      "获取线程名"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-503",
     "title": "C++中虚假唤醒是指？",
     "options": [
       "条件变量无通知时唤醒",
-      "条件变量通知时唤醒",
       "线程异常",
-      "线程结束"
+      "线程结束",
+      "条件变量通知时唤醒"
     ],
     "correctAnswer": 0
   },
@@ -36,43 +36,43 @@
     "id": "cpp-504",
     "title": "C++中如何避免虚假唤醒？",
     "options": [
-      "在循环中检查条件",
-      "使用if判断",
       "不使用条件变量",
+      "使用if判断",
+      "在循环中检查条件",
       "使用互斥量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-505",
     "title": "C++中std::thread的作用是？",
     "options": [
-      "创建和管理线程",
-      "创建进程",
       "创建协程",
-      "创建池"
+      "创建池",
+      "创建进程",
+      "创建和管理线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-506",
     "title": "C++中std::mutex的作用是？",
     "options": [
-      "互斥锁",
-      "条件变量",
       "信号量",
+      "条件变量",
+      "互斥锁",
       "自旋锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-507",
     "title": "C++中std::lock_guard的作用是？",
     "options": [
       "RAII管理锁",
-      "手动加锁",
+      "信号量",
       "条件变量",
-      "信号量"
+      "手动加锁"
     ],
     "correctAnswer": 0
   },
@@ -80,21 +80,21 @@
     "id": "cpp-508",
     "title": "C++中std::unique_lock的作用是？",
     "options": [
-      "灵活管理锁，可延迟加锁",
-      "只能RAII管理",
       "手动管理",
-      "不可延迟"
+      "不可延迟",
+      "只能RAII管理",
+      "灵活管理锁，可延迟加锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-509",
     "title": "C++中std::condition_variable的作用是？",
     "options": [
       "条件等待和通知",
-      "互斥访问",
+      "异步计算",
       "原子操作",
-      "异步计算"
+      "互斥访问"
     ],
     "correctAnswer": 0
   },
@@ -102,34 +102,34 @@
     "id": "cpp-510",
     "title": "C++中std::atomic的作用是？",
     "options": [
-      "原子操作",
       "互斥锁",
       "条件变量",
-      "异步计算"
+      "异步计算",
+      "原子操作"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-511",
     "title": "C++中std::async的作用是？",
     "options": [
-      "异步执行任务",
+      "创建条件变量",
       "创建线程",
       "创建锁",
-      "创建条件变量"
+      "异步执行任务"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-512",
     "title": "C++中std::future的作用是？",
     "options": [
+      "创建条件变量",
       "获取异步结果",
-      "创建线程",
       "创建锁",
-      "创建条件变量"
+      "创建线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-513",
@@ -137,8 +137,8 @@
     "options": [
       "设置异步结果",
       "获取异步结果",
-      "创建线程",
-      "创建锁"
+      "创建锁",
+      "创建线程"
     ],
     "correctAnswer": 0
   },
@@ -146,43 +146,43 @@
     "id": "cpp-514",
     "title": "C++中std::packaged_task的作用是？",
     "options": [
+      "获取异步结果",
       "包装可调用对象为异步任务",
       "设置异步结果",
-      "获取异步结果",
       "创建线程"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-515",
     "title": "C++中内存模型的顺序一致性是？",
     "options": [
-      "所有线程看到相同操作顺序",
-      "每个线程看到不同顺序",
       "无顺序",
-      "取决于编译器"
+      "取决于编译器",
+      "每个线程看到不同顺序",
+      "所有线程看到相同操作顺序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-516",
     "title": "C++中memory_order_relaxed的含义是？",
     "options": [
-      "无顺序保证",
       "获取语义",
+      "顺序一致",
       "释放语义",
-      "顺序一致"
+      "无顺序保证"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-517",
     "title": "C++中memory_order_acquire的含义是？",
     "options": [
       "获取语义，后续读不能重排到此之前",
-      "无顺序保证",
       "释放语义",
-      "顺序一致"
+      "顺序一致",
+      "无顺序保证"
     ],
     "correctAnswer": 0
   },
@@ -190,76 +190,76 @@
     "id": "cpp-518",
     "title": "C++中memory_order_release的含义是？",
     "options": [
-      "释放语义，之前写不能重排到此之后",
-      "获取语义",
       "无顺序保证",
-      "顺序一致"
+      "顺序一致",
+      "获取语义",
+      "释放语义，之前写不能重排到此之后"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-519",
     "title": "C++中死锁的条件有？",
     "options": [
-      "互斥，持有并等待，不可抢占，循环等待",
       "互斥",
       "循环等待",
+      "互斥，持有并等待，不可抢占，循环等待",
       "持有并等待"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-520",
     "title": "C++中std::lock的作用是？",
     "options": [
-      "同时锁定多个互斥量且避免死锁",
       "只锁一个",
       "解锁",
+      "同时锁定多个互斥量且避免死锁",
       "尝试锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-521",
     "title": "C++中std::shared_mutex的作用是？",
     "options": [
-      "读写锁",
-      "互斥锁",
       "自旋锁",
-      "递归锁"
+      "递归锁",
+      "互斥锁",
+      "读写锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-522",
     "title": "C++中std::call_once的作用是？",
     "options": [
-      "保证函数只执行一次",
       "调用一次",
-      "多次调用",
-      "异步调用"
+      "异步调用",
+      "保证函数只执行一次",
+      "多次调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-523",
     "title": "C++中线程局部存储使用？",
     "options": [
-      "thread_local",
-      "static",
       "volatile",
-      "extern"
+      "static",
+      "extern",
+      "thread_local"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-524",
     "title": "C++中std::this_thread::yield的作用是？",
     "options": [
       "让出CPU时间",
+      "中断",
       "休眠",
-      "等待",
-      "中断"
+      "等待"
     ],
     "correctAnswer": 0
   },
@@ -267,54 +267,54 @@
     "id": "cpp-525",
     "title": "C++中std::this_thread::sleep_for的作用是？",
     "options": [
-      "休眠指定时间",
-      "让出CPU",
       "等待",
-      "中断"
+      "休眠指定时间",
+      "中断",
+      "让出CPU"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-526",
     "title": "C++中std::this_thread::get_id的作用是？",
     "options": [
-      "获取线程ID",
       "设置线程ID",
       "获取线程名",
-      "设置线程名"
+      "设置线程名",
+      "获取线程ID"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-527",
     "title": "C++中虚假唤醒是指？",
     "options": [
-      "条件变量无通知时唤醒",
       "条件变量通知时唤醒",
-      "线程异常",
-      "线程结束"
+      "线程结束",
+      "条件变量无通知时唤醒",
+      "线程异常"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-528",
     "title": "C++中如何避免虚假唤醒？",
     "options": [
-      "在循环中检查条件",
-      "使用if判断",
       "不使用条件变量",
-      "使用互斥量"
+      "使用互斥量",
+      "使用if判断",
+      "在循环中检查条件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-529",
     "title": "C++中std::thread的作用是？",
     "options": [
       "创建和管理线程",
-      "创建进程",
       "创建协程",
-      "创建池"
+      "创建池",
+      "创建进程"
     ],
     "correctAnswer": 0
   },
@@ -333,20 +333,20 @@
     "id": "cpp-531",
     "title": "C++中std::lock_guard的作用是？",
     "options": [
-      "RAII管理锁",
+      "信号量",
       "手动加锁",
-      "条件变量",
-      "信号量"
+      "RAII管理锁",
+      "条件变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-532",
     "title": "C++中std::unique_lock的作用是？",
     "options": [
       "灵活管理锁，可延迟加锁",
-      "只能RAII管理",
       "手动管理",
+      "只能RAII管理",
       "不可延迟"
     ],
     "correctAnswer": 0
@@ -357,8 +357,8 @@
     "options": [
       "条件等待和通知",
       "互斥访问",
-      "原子操作",
-      "异步计算"
+      "异步计算",
+      "原子操作"
     ],
     "correctAnswer": 0
   },
@@ -366,53 +366,53 @@
     "id": "cpp-534",
     "title": "C++中std::atomic的作用是？",
     "options": [
-      "原子操作",
-      "互斥锁",
       "条件变量",
-      "异步计算"
+      "异步计算",
+      "原子操作",
+      "互斥锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-535",
     "title": "C++中std::async的作用是？",
     "options": [
-      "异步执行任务",
+      "创建条件变量",
       "创建线程",
-      "创建锁",
-      "创建条件变量"
+      "异步执行任务",
+      "创建锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-536",
     "title": "C++中std::future的作用是？",
     "options": [
-      "获取异步结果",
       "创建线程",
-      "创建锁",
-      "创建条件变量"
+      "创建条件变量",
+      "获取异步结果",
+      "创建锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-537",
     "title": "C++中std::promise的作用是？",
     "options": [
-      "设置异步结果",
-      "获取异步结果",
       "创建线程",
-      "创建锁"
+      "创建锁",
+      "设置异步结果",
+      "获取异步结果"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-538",
     "title": "C++中std::packaged_task的作用是？",
     "options": [
       "包装可调用对象为异步任务",
-      "设置异步结果",
       "获取异步结果",
+      "设置异步结果",
       "创建线程"
     ],
     "correctAnswer": 0
@@ -421,32 +421,32 @@
     "id": "cpp-539",
     "title": "C++中内存模型的顺序一致性是？",
     "options": [
+      "无顺序",
       "所有线程看到相同操作顺序",
       "每个线程看到不同顺序",
-      "无顺序",
       "取决于编译器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-540",
     "title": "C++中memory_order_relaxed的含义是？",
     "options": [
-      "无顺序保证",
+      "顺序一致",
       "获取语义",
       "释放语义",
-      "顺序一致"
+      "无顺序保证"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-541",
     "title": "C++中memory_order_acquire的含义是？",
     "options": [
       "获取语义，后续读不能重排到此之前",
-      "无顺序保证",
+      "顺序一致",
       "释放语义",
-      "顺序一致"
+      "无顺序保证"
     ],
     "correctAnswer": 0
   },
@@ -454,65 +454,65 @@
     "id": "cpp-542",
     "title": "C++中memory_order_release的含义是？",
     "options": [
-      "释放语义，之前写不能重排到此之后",
       "获取语义",
+      "释放语义，之前写不能重排到此之后",
       "无顺序保证",
       "顺序一致"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-543",
     "title": "C++中死锁的条件有？",
     "options": [
-      "互斥，持有并等待，不可抢占，循环等待",
       "互斥",
       "循环等待",
-      "持有并等待"
+      "持有并等待",
+      "互斥，持有并等待，不可抢占，循环等待"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-544",
     "title": "C++中std::lock的作用是？",
     "options": [
-      "同时锁定多个互斥量且避免死锁",
-      "只锁一个",
+      "尝试锁",
       "解锁",
-      "尝试锁"
+      "只锁一个",
+      "同时锁定多个互斥量且避免死锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-545",
     "title": "C++中std::shared_mutex的作用是？",
     "options": [
-      "读写锁",
       "互斥锁",
-      "自旋锁",
-      "递归锁"
+      "递归锁",
+      "读写锁",
+      "自旋锁"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-546",
     "title": "C++中std::call_once的作用是？",
     "options": [
-      "保证函数只执行一次",
-      "调用一次",
       "多次调用",
+      "调用一次",
+      "保证函数只执行一次",
       "异步调用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-547",
     "title": "C++中线程局部存储使用？",
     "options": [
       "thread_local",
-      "static",
+      "extern",
       "volatile",
-      "extern"
+      "static"
     ],
     "correctAnswer": 0
   },
@@ -520,12 +520,12 @@
     "id": "cpp-548",
     "title": "C++中std::this_thread::yield的作用是？",
     "options": [
-      "让出CPU时间",
-      "休眠",
       "等待",
-      "中断"
+      "中断",
+      "休眠",
+      "让出CPU时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-549",
@@ -542,11 +542,11 @@
     "id": "cpp-550",
     "title": "C++中std::this_thread::get_id的作用是？",
     "options": [
-      "获取线程ID",
       "设置线程ID",
       "获取线程名",
-      "设置线程名"
+      "设置线程名",
+      "获取线程ID"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

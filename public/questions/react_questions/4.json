@@ -3,54 +3,54 @@
     "id": "react-151",
     "title": "React 中 useEffect 的依赖项是数组时，React 如何比较变化？",
     "options": [
-      "Object.is",
-      "===",
       "==",
-      "deepEqual"
+      "deepEqual",
+      "Object.is",
+      "==="
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-152",
     "title": "React 中 useEffect 依赖项为对象时会发生什么？",
     "options": [
-      "每次渲染都触发，因为引用不同",
       "不触发",
       "偶尔触发",
-      "报错"
+      "报错",
+      "每次渲染都触发，因为引用不同"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-153",
     "title": "React 中如何让对象作为依赖项稳定？",
     "options": [
-      "useMemo 包裹对象",
       "直接使用",
       "useState 包裹",
-      "JSON.stringify"
+      "JSON.stringify",
+      "useMemo 包裹对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-154",
     "title": "React 中如何让函数作为依赖项稳定？",
     "options": [
-      "useCallback 包裹函数",
       "直接使用",
-      "useRef 包裹",
-      "useEffect 包裹"
+      "useEffect 包裹",
+      "useCallback 包裹函数",
+      "useRef 包裹"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-155",
     "title": "React 中 useEffect 内部可以使用 async/await 吗？",
     "options": [
       "不能直接使用，需要内部定义异步函数",
+      "取决于环境",
       "可以直接使用",
-      "只能使用 Promise",
-      "取决于环境"
+      "只能使用 Promise"
     ],
     "correctAnswer": 0
   },
@@ -58,43 +58,43 @@
     "id": "react-156",
     "title": "React 中 useEffect 为什么不能直接传入 async 函数？",
     "options": [
-      "async 函数返回 Promise，而 effect 需要返回清理函数或无返回值",
       "性能问题",
-      "语法限制",
-      "React 不支持异步"
+      "async 函数返回 Promise，而 effect 需要返回清理函数或无返回值",
+      "React 不支持异步",
+      "语法限制"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-157",
     "title": "React 中 useReducer 的 dispatch 函数是稳定的吗？",
     "options": [
-      "是，组件生命周期内不会改变",
-      "否，每次渲染都改变",
       "取决于 state",
+      "否，每次渲染都改变",
+      "是，组件生命周期内不会改变",
       "取决于 action"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-158",
     "title": "React 中 useState 的 setter 函数是稳定的吗？",
     "options": [
-      "是，不会在重新渲染中改变",
       "否，每次都改变",
+      "偶尔改变",
       "取决于值",
-      "偶尔改变"
+      "是，不会在重新渲染中改变"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-159",
     "title": "React 中 dispatch 和 setter 的稳定性意味着什么？",
     "options": [
       "可以安全地从 useEffect 依赖中移除",
-      "必须加入依赖",
       "会导致无限循环",
-      "没有意义"
+      "没有意义",
+      "必须加入依赖"
     ],
     "correctAnswer": 0
   },
@@ -102,20 +102,20 @@
     "id": "react-160",
     "title": "React 中 useReducer 相比 useState 的优势是？",
     "options": [
-      "处理复杂逻辑更清晰，状态管理更集中",
       "性能更好",
-      "语法更简单",
-      "代码更少"
+      "处理复杂逻辑更清晰，状态管理更集中",
+      "代码更少",
+      "语法更简单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-161",
     "title": "React 中 reducer 函数的特点是？",
     "options": [
       "纯函数，接收旧状态和 action，返回新状态",
-      "可以修改旧状态",
       "支持异步",
+      "可以修改旧状态",
       "可以访问 DOM"
     ],
     "correctAnswer": 0
@@ -124,54 +124,54 @@
     "id": "react-162",
     "title": "React 中 action 的通常形态是？",
     "options": [
+      "数组",
       "包含 type 和 payload 的对象",
       "字符串",
-      "函数",
-      "数组"
+      "函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-163",
     "title": "React 中 useReducer 如何初始化复杂状态？",
     "options": [
-      "使用第三个参数作为惰性初始化函数",
-      "直接赋值对象",
+      "在 reducer 中初始化",
       "使用 useState",
-      "在 reducer 中初始化"
+      "使用第三个参数作为惰性初始化函数",
+      "直接赋值对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-164",
     "title": "React 中 useContext 的更新机制是？",
     "options": [
-      "Provider 的 value 变化时触发消费者重渲染",
       "手动调用更新",
       "定时更新",
-      "dispatch 触发"
+      "dispatch 触发",
+      "Provider 的 value 变化时触发消费者重渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-165",
     "title": "React 中 Context Provider 的 value 使用对象时如何优化？",
     "options": [
-      "使用 useMemo 包裹 value 避免不必要的更新",
       "不需要优化",
+      "使用 useMemo 包裹 value 避免不必要的更新",
       "使用 useState",
       "直接赋值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-166",
     "title": "React 中 useCallback 的依赖项如何确定？",
     "options": [
       "包含回调内部使用的所有响应式值",
+      "只写 props",
       "不写依赖",
-      "只写 state",
-      "只写 props"
+      "只写 state"
     ],
     "correctAnswer": 0
   },
@@ -180,9 +180,9 @@
     "title": "React 中 useMemo 的依赖项如何确定？",
     "options": [
       "包含计算函数内部使用的所有响应式值",
+      "只写 props",
       "不写依赖",
-      "只写 state",
-      "只写 props"
+      "只写 state"
     ],
     "correctAnswer": 0
   },
@@ -190,43 +190,43 @@
     "id": "react-168",
     "title": "React 中 useCallback 和 useMemo 的区别是？",
     "options": [
-      "useCallback 缓存函数，useMemo 缓存计算结果",
       "没有区别",
+      "useCallback 缓存函数，useMemo 缓存计算结果",
       "useCallback 缓存结果，useMemo 缓存函数",
       "两者功能相同"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-169",
     "title": "React 中 useRef 的 current 属性初始值是？",
     "options": [
-      "传入的参数或 null",
       "undefined",
+      "空字符串",
       "0",
-      "空字符串"
+      "传入的参数或 null"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-170",
     "title": "React 中 useRef 可以在组件间传递吗？",
     "options": [
-      "可以，通过 props 或 forwardRef",
       "不可以",
+      "可以，通过 props 或 forwardRef",
       "只能内部使用",
       "只能父传子"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-171",
     "title": "React 中 useImperativeHandle 的第二个参数是什么？",
     "options": [
       "回调函数，返回暴露给父组件的值",
+      "初始值",
       "ref 对象",
-      "依赖项",
-      "初始值"
+      "依赖项"
     ],
     "correctAnswer": 0
   },
@@ -234,23 +234,23 @@
     "id": "react-172",
     "title": "React 中 useImperativeHandle 的第三个参数是什么？",
     "options": [
-      "依赖项数组",
-      "回调函数",
       "ref 对象",
-      "默认值"
+      "回调函数",
+      "默认值",
+      "依赖项数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-173",
     "title": "React 中 useLayoutEffect 与 componentDidMount 的区别是？",
     "options": [
-      "useLayoutEffect 在 DOM 更新后同步调用，componentDidMount 在渲染后调用",
-      "没有区别",
       "执行顺序不同",
-      "参数不同"
+      "useLayoutEffect 在 DOM 更新后同步调用，componentDidMount 在渲染后调用",
+      "参数不同",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-174",
@@ -269,8 +269,8 @@
     "options": [
       "读取布局、同步重新渲染、测量 DOM",
       "数据获取",
-      "事件监听",
-      "修改 state"
+      "修改 state",
+      "事件监听"
     ],
     "correctAnswer": 0
   },
@@ -278,21 +278,21 @@
     "id": "react-176",
     "title": "React 中如何使用 Hooks 处理防抖？",
     "options": [
-      "使用 useRef 保存定时器结合 useCallback",
-      "直接使用 setTimeout",
+      "使用 useState",
       "使用 useEffect",
-      "使用 useState"
+      "直接使用 setTimeout",
+      "使用 useRef 保存定时器结合 useCallback"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-177",
     "title": "React 中如何使用 Hooks 处理节流？",
     "options": [
       "使用 useRef 保存定时器结合 useCallback",
-      "直接使用 setInterval",
       "使用 useEffect",
-      "使用 useState"
+      "使用 useState",
+      "直接使用 setInterval"
     ],
     "correctAnswer": 0
   },
@@ -300,43 +300,43 @@
     "id": "react-178",
     "title": "React 中如何使用 Hooks 处理上一帧动画？",
     "options": [
-      "使用 useRef 保存 requestAnimationFrame ID",
-      "使用 useState",
       "使用 useEffect",
-      "使用 useMemo"
+      "使用 useState",
+      "使用 useMemo",
+      "使用 useRef 保存 requestAnimationFrame ID"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-179",
     "title": "React 中如何使用 Hooks 实现组件间通信？",
     "options": [
-      "自定义 Hook 结合 Context 或事件总线",
-      "只能通过 Props",
+      "无法实现",
       "只能通过 Redux",
-      "无法实现"
+      "自定义 Hook 结合 Context 或事件总线",
+      "只能通过 Props"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-180",
     "title": "React 中如何使用 Hooks 管理表单状态？",
     "options": [
-      "自定义 useForm Hook 封装 state 和事件处理",
       "只能使用受控组件",
       "只能使用非受控组件",
+      "自定义 useForm Hook 封装 state 和事件处理",
       "无法封装"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-181",
     "title": "React 中如何使用 Hooks 封装定时器？",
     "options": [
       "自定义 useInterval Hook 管理 setInterval",
+      "使用 requestAnimationFrame",
       "直接使用 setInterval",
-      "使用 setTimeout",
-      "使用 requestAnimationFrame"
+      "使用 setTimeout"
     ],
     "correctAnswer": 0
   },
@@ -344,12 +344,12 @@
     "id": "react-182",
     "title": "React 中如何使用 Hooks 封装窗口大小监听？",
     "options": [
-      "自定义 useWindowSize Hook 监听 resize 事件",
+      "使用 Context",
       "直接监听 resize",
-      "使用 CSS 媒体查询",
-      "使用 Context"
+      "自定义 useWindowSize Hook 监听 resize 事件",
+      "使用 CSS 媒体查询"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-183",
@@ -366,12 +366,12 @@
     "id": "react-184",
     "title": "React 中如何使用 Hooks 封装本地存储？",
     "options": [
-      "自定义 useLocalStorage Hook 同步 state 和 storage",
+      "使用 Cookie",
       "直接使用 localStorage",
-      "使用 sessionStorage",
-      "使用 Cookie"
+      "自定义 useLocalStorage Hook 同步 state 和 storage",
+      "使用 sessionStorage"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-185",
@@ -379,8 +379,8 @@
     "options": [
       "自定义 useScrollPosition Hook 监听 scroll 事件",
       "直接监听 scroll",
-      "使用 Context",
-      "使用 Redux"
+      "使用 Redux",
+      "使用 Context"
     ],
     "correctAnswer": 0
   },
@@ -390,8 +390,8 @@
     "options": [
       "自定义 useFetch Hook 管理加载、数据和错误状态",
       "直接使用 fetch",
-      "使用 axios",
-      "使用 useEffect"
+      "使用 useEffect",
+      "使用 axios"
     ],
     "correctAnswer": 0
   },
@@ -401,8 +401,8 @@
     "options": [
       "data, error, loading",
       "response, status",
-      "promise, cancel",
-      "data, fetch"
+      "data, fetch",
+      "promise, cancel"
     ],
     "correctAnswer": 0
   },
@@ -410,120 +410,120 @@
     "id": "react-188",
     "title": "React 中如何取消 useEffect 中的 fetch 请求？",
     "options": [
-      "使用 AbortController",
       "无法取消",
+      "使用 cancel()",
       "使用 clearTimeout",
-      "使用 cancel()"
+      "使用 AbortController"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-189",
     "title": "React 中 AbortController 的作用是？",
     "options": [
-      "中止一个或多个 Web 请求",
       "中止 DOM 操作",
       "中止事件",
+      "中止一个或多个 Web 请求",
       "中止渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-190",
     "title": "React 中 useEffect 中使用 AbortController 的流程是？",
     "options": [
-      "创建 controller，传递 signal 给 fetch，清理时调用 abort",
-      "直接调用 abort",
       "在 fetch 后 abort",
+      "直接调用 abort",
+      "创建 controller，传递 signal 给 fetch，清理时调用 abort",
       "在 then 中 abort"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-191",
     "title": "React 中如何使用 Hooks 实现权限控制？",
     "options": [
-      "自定义 useAuth Hook 结合 Context",
       "直接判断",
+      "使用路由守卫",
       "使用 Redux",
-      "使用路由守卫"
+      "自定义 useAuth Hook 结合 Context"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-192",
     "title": "React 中如何使用 Hooks 实现国际化？",
     "options": [
+      "使用 Redux",
       "自定义 useI18n Hook 结合 Context",
       "直接使用 JSON",
-      "使用 Redux",
       "使用 i18n 库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-193",
     "title": "React 中如何使用 Hooks 实现主题切换？",
     "options": [
+      "使用 styled-components",
       "自定义 useTheme Hook 结合 Context 和 CSS 变量",
-      "直接修改 CSS",
       "使用 Redux",
-      "使用 styled-components"
+      "直接修改 CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-194",
     "title": "React 中如何使用 Hooks 实现全屏功能？",
     "options": [
+      "使用 Redux",
       "自定义 useFullscreen Hook 封装 Fullscreen API",
-      "直接调用 API",
       "使用 CSS",
-      "使用 Redux"
+      "直接调用 API"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-195",
     "title": "React 中如何使用 Hooks 实现剪贴板功能？",
     "options": [
-      "自定义 useClipboard Hook 封装 Clipboard API",
-      "直接调用 API",
       "使用 document.execCommand",
-      "使用 Redux"
+      "使用 Redux",
+      "直接调用 API",
+      "自定义 useClipboard Hook 封装 Clipboard API"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-196",
     "title": "React 中如何使用 Hooks 实现网络状态检测？",
     "options": [
-      "自定义 useOnlineStatus Hook 监听 online/offline 事件",
       "直接监听事件",
+      "自定义 useOnlineStatus Hook 监听 online/offline 事件",
       "使用 navigator.onLine",
       "使用 ping"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-197",
     "title": "React 中如何使用 Hooks 实现地理位置？",
     "options": [
+      "使用 Redux",
       "自定义 useGeolocation Hook 封装 Geolocation API",
       "直接调用 API",
-      "使用 IP 定位",
-      "使用 Redux"
+      "使用 IP 定位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-198",
     "title": "React 中如何使用 Hooks 实现媒体查询？",
     "options": [
       "自定义 useMediaQuery Hook 监听 matchMedia 变化",
+      "使用 Redux",
       "使用 CSS 媒体查询",
-      "使用 window.innerWidth",
-      "使用 Redux"
+      "使用 window.innerWidth"
     ],
     "correctAnswer": 0
   },
@@ -532,9 +532,9 @@
     "title": "React 中如何使用 Hooks 实现倒计时？",
     "options": [
       "自定义 useCountdown Hook 结合 useEffect 和 setInterval",
+      "使用 requestAnimationFrame",
       "直接使用 setInterval",
-      "使用 setTimeout",
-      "使用 requestAnimationFrame"
+      "使用 setTimeout"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "react-200",
     "title": "React 中如何使用 Hooks 实现计数器？",
     "options": [
-      "自定义 useCounter Hook 封装 useState 和增减逻辑",
-      "直接使用 useState",
       "使用 useReducer",
-      "使用 Context"
+      "使用 Context",
+      "自定义 useCounter Hook 封装 useState 和增减逻辑",
+      "直接使用 useState"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

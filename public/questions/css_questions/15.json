@@ -25,21 +25,21 @@
     "id": "css-703",
     "title": "@media的基本语法是？",
     "options": [
-      "@media mediatype and (condition) { styles }",
       "@media: condition { styles }",
       "@media condition styles",
-      "@media (condition) styles"
+      "@media (condition) styles",
+      "@media mediatype and (condition) { styles }"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-704",
     "title": "媒体类型screen表示？",
     "options": [
       "屏幕设备",
-      "打印设备",
+      "所有设备",
       "语音设备",
-      "所有设备"
+      "打印设备"
     ],
     "correctAnswer": 0
   },
@@ -47,45 +47,45 @@
     "id": "css-705",
     "title": "媒体类型print表示？",
     "options": [
-      "打印设备",
-      "屏幕设备",
       "语音设备",
-      "所有设备"
+      "所有设备",
+      "屏幕设备",
+      "打印设备"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-706",
     "title": "响应式设计的核心原则是？",
     "options": [
+      "表格布局、像素单位",
       "弹性布局、媒体查询、弹性图片",
       "固定布局、固定宽度",
-      "绝对定位、固定高度",
-      "表格布局、像素单位"
+      "绝对定位、固定高度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-707",
     "title": "媒体查询的作用是？",
     "options": [
+      "压缩媒体",
       "根据设备特性应用不同的CSS样式",
-      "查询媒体文件",
       "播放媒体",
-      "压缩媒体"
+      "查询媒体文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-708",
     "title": "@media的基本语法是？",
     "options": [
-      "@media mediatype and (condition) { styles }",
-      "@media: condition { styles }",
       "@media condition styles",
-      "@media (condition) styles"
+      "@media: condition { styles }",
+      "@media (condition) styles",
+      "@media mediatype and (condition) { styles }"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-709",
@@ -93,8 +93,8 @@
     "options": [
       "屏幕设备",
       "打印设备",
-      "语音设备",
-      "所有设备"
+      "所有设备",
+      "语音设备"
     ],
     "correctAnswer": 0
   },
@@ -102,23 +102,23 @@
     "id": "css-710",
     "title": "媒体类型print表示？",
     "options": [
-      "打印设备",
       "屏幕设备",
-      "语音设备",
-      "所有设备"
+      "打印设备",
+      "所有设备",
+      "语音设备"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-711",
     "title": "媒体类型all表示？",
     "options": [
-      "所有设备",
+      "仅语音",
       "仅屏幕",
       "仅打印",
-      "仅语音"
+      "所有设备"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-712",
@@ -126,8 +126,8 @@
     "options": [
       "语音设备",
       "屏幕设备",
-      "打印设备",
-      "所有设备"
+      "所有设备",
+      "打印设备"
     ],
     "correctAnswer": 0
   },
@@ -135,42 +135,42 @@
     "id": "css-713",
     "title": "max-width: 768px的含义是？",
     "options": [
-      "屏幕宽度小于等于768px时应用",
+      "不限制宽度",
       "大于768px",
-      "等于768px",
-      "不限制宽度"
+      "屏幕宽度小于等于768px时应用",
+      "等于768px"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-714",
     "title": "min-width: 768px的含义是？",
     "options": [
-      "屏幕宽度大于等于768px时应用",
-      "小于768px",
       "等于768px",
-      "不限制宽度"
+      "不限制宽度",
+      "小于768px",
+      "屏幕宽度大于等于768px时应用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-715",
     "title": "移动优先的设计策略是？",
     "options": [
+      "只设计桌面端",
       "默认样式为移动端，用min-width向上扩展",
-      "默认桌面端，用max-width向下",
       "只设计移动端",
-      "只设计桌面端"
+      "默认桌面端，用max-width向下"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-716",
     "title": "桌面优先的设计策略是？",
     "options": [
       "默认样式为桌面端，用max-width向下适配",
-      "默认移动端，用min-width向上",
       "只设计桌面端",
+      "默认移动端，用min-width向上",
       "只设计移动端"
     ],
     "correctAnswer": 0
@@ -179,45 +179,45 @@
     "id": "css-717",
     "title": "常见的移动端断点是？",
     "options": [
-      "768px",
       "1024px",
-      "1280px",
-      "480px"
+      "768px",
+      "480px",
+      "1280px"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-718",
     "title": "常见的平板断点是？",
     "options": [
-      "768px - 1024px",
+      "1280px以上",
       "480px - 768px",
       "1024px - 1280px",
-      "1280px以上"
+      "768px - 1024px"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-719",
     "title": "常见的桌面端断点是？",
     "options": [
-      "1024px以上",
       "768px以下",
       "480px以下",
+      "1024px以上",
       "768px"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-720",
     "title": "orientation: portrait表示？",
     "options": [
-      "竖屏",
-      "横屏",
       "正方形",
-      "任意方向"
+      "任意方向",
+      "横屏",
+      "竖屏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-721",
@@ -234,23 +234,23 @@
     "id": "css-722",
     "title": "resolution媒体特性用于？",
     "options": [
+      "检测方向",
       "检测屏幕分辨率",
       "检测宽度",
-      "检测高度",
-      "检测方向"
+      "检测高度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-723",
     "title": "如何检测高分辨率屏幕？",
     "options": [
+      "retina: true",
       "min-resolution: 2dppx",
-      "width: 2x",
       "pixel: 2",
-      "retina: true"
+      "width: 2x"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-724",
@@ -258,8 +258,8 @@
     "options": [
       "检测用户是否启用暗黑模式",
       "强制启用暗黑模式",
-      "禁用暗黑模式",
-      "设置颜色方案"
+      "设置颜色方案",
+      "禁用暗黑模式"
     ],
     "correctAnswer": 0
   },
@@ -267,23 +267,23 @@
     "id": "css-725",
     "title": "prefers-reduced-motion: reduce的作用是？",
     "options": [
+      "加速动画",
       "检测用户是否希望减少动画",
       "增加动画",
-      "反转动画",
-      "加速动画"
+      "反转动画"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-726",
     "title": "prefers-contrast: high的作用是？",
     "options": [
-      "检测用户是否需要高对比度",
+      "反转颜色",
       "降低对比度",
-      "设置对比度",
-      "反转颜色"
+      "检测用户是否需要高对比度",
+      "设置对比度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-727",
@@ -300,32 +300,32 @@
     "id": "css-728",
     "title": "@container规则的语法是？",
     "options": [
-      "@container name (condition) { styles }",
-      "@container condition",
       "@media container",
+      "@container condition",
+      "@container name (condition) { styles }",
       "@parent condition"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-729",
     "title": "如何定义容器查询的容器？",
     "options": [
-      "container-type: inline-size",
-      "display: container",
       "position: container",
-      "container: true"
+      "container: true",
+      "display: container",
+      "container-type: inline-size"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-730",
     "title": "container-type: inline-size的作用是？",
     "options": [
       "允许在行内方向进行容器查询",
-      "块级方向",
       "双向",
-      "禁止查询"
+      "禁止查询",
+      "块级方向"
     ],
     "correctAnswer": 0
   },
@@ -333,21 +333,21 @@
     "id": "css-731",
     "title": "container-name属性的作用是？",
     "options": [
+      "设置容器位置",
       "为容器命名以便查询",
       "设置容器大小",
-      "设置容器类型",
-      "设置容器位置"
+      "设置容器类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-732",
     "title": "视口单位vw、vh在响应式中的作用是？",
     "options": [
       "根据视口大小自适应",
-      "固定大小",
       "根据容器大小",
-      "根据字体大小"
+      "根据字体大小",
+      "固定大小"
     ],
     "correctAnswer": 0
   },
@@ -356,8 +356,8 @@
     "title": "clamp()函数的作用是？",
     "options": [
       "将值限制在最小和最大范围内",
-      "计算值",
       "定义变量",
+      "计算值",
       "调用函数"
     ],
     "correctAnswer": 0
@@ -366,21 +366,21 @@
     "id": "css-734",
     "title": "clamp(1rem, 2.5vw, 2rem)的含义是？",
     "options": [
-      "字体大小在1rem到2rem间随视口变化",
       "固定2.5vw",
-      "固定1rem",
-      "固定2rem"
+      "字体大小在1rem到2rem间随视口变化",
+      "固定2rem",
+      "固定1rem"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-735",
     "title": "min()函数的作用是？",
     "options": [
       "从逗号分隔的表达式中选择最小值",
-      "设置最小宽度",
+      "查找最小元素",
       "计算最小值",
-      "查找最小元素"
+      "设置最小宽度"
     ],
     "correctAnswer": 0
   },
@@ -389,9 +389,9 @@
     "title": "max()函数的作用是？",
     "options": [
       "从逗号分隔的表达式中选择最大值",
+      "查找最大元素",
       "设置最大宽度",
-      "计算最大值",
-      "查找最大元素"
+      "计算最大值"
     ],
     "correctAnswer": 0
   },
@@ -399,54 +399,54 @@
     "id": "css-737",
     "title": "如何实现响应式图片？",
     "options": [
-      "<picture>元素或srcset属性",
-      "width: 100%",
       "max-width: 100%",
-      "object-fit: cover"
+      "object-fit: cover",
+      "width: 100%",
+      "<picture>元素或srcset属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-738",
     "title": "<picture>元素的作用是？",
     "options": [
+      "缩放图片",
       "根据条件加载不同图片",
       "显示多张图片",
-      "裁剪图片",
-      "缩放图片"
+      "裁剪图片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-739",
     "title": "img的srcset属性的作用是？",
     "options": [
+      "设置图片格式",
       "提供不同分辨率的图片源",
-      "设置图片路径",
       "设置图片大小",
-      "设置图片格式"
+      "设置图片路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-740",
     "title": "img的sizes属性的作用是？",
     "options": [
-      "告诉浏览器图片在页面中的预期尺寸",
-      "设置图片实际大小",
+      "设置图片路径",
       "设置图片格式",
-      "设置图片路径"
+      "设置图片实际大小",
+      "告诉浏览器图片在页面中的预期尺寸"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-741",
     "title": "如何实现响应式字体？",
     "options": [
       "clamp()或vw单位配合rem",
+      "固定pt",
       "固定px",
-      "固定em",
-      "固定pt"
+      "固定em"
     ],
     "correctAnswer": 0
   },
@@ -454,21 +454,21 @@
     "id": "css-742",
     "title": "如何实现响应式间距？",
     "options": [
-      "使用vw或clamp()",
       "固定px",
-      "固定em",
-      "固定pt"
+      "使用vw或clamp()",
+      "固定pt",
+      "固定em"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-743",
     "title": "如何实现响应式网格？",
     "options": [
       "repeat(auto-fill, minmax())",
-      "固定列数",
+      "百分比宽度",
       "固定宽度",
-      "百分比宽度"
+      "固定列数"
     ],
     "correctAnswer": 0
   },
@@ -476,21 +476,21 @@
     "id": "css-744",
     "title": "如何隐藏移动端元素？",
     "options": [
-      "display: none配合媒体查询",
-      "visibility: hidden",
+      "position: absolute",
       "opacity: 0",
-      "position: absolute"
+      "visibility: hidden",
+      "display: none配合媒体查询"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-745",
     "title": "如何实现移动端导航？",
     "options": [
       "媒体查询配合flex/grid",
-      "float",
       "table",
-      "inline-block"
+      "inline-block",
+      "float"
     ],
     "correctAnswer": 0
   },
@@ -498,21 +498,21 @@
     "id": "css-746",
     "title": "移动端1px边框问题的原因是？",
     "options": [
-      "高分辨率屏幕下CSS像素对应多个物理像素",
-      "浏览器bug",
+      "边框太细",
       "CSS不支持1px",
-      "边框太细"
+      "高分辨率屏幕下CSS像素对应多个物理像素",
+      "浏览器bug"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-747",
     "title": "如何解决1px边框问题？",
     "options": [
       "transform: scaleY(0.5)或viewport缩放",
+      "使用outline",
       "border: 0.5px",
-      "不使用边框",
-      "使用outline"
+      "不使用边框"
     ],
     "correctAnswer": 0
   },
@@ -520,33 +520,33 @@
     "id": "css-748",
     "title": "viewport meta标签的作用是？",
     "options": [
+      "设置标题",
       "控制移动端视口的大小和缩放",
       "设置编码",
-      "引入样式",
-      "设置标题"
+      "引入样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-749",
     "title": "viewport的initial-scale=1的作用是？",
     "options": [
-      "设置页面初始缩放比例为1",
+      "自动缩放",
       "缩放到2倍",
       "禁止缩放",
-      "自动缩放"
+      "设置页面初始缩放比例为1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-750",
     "title": "viewport的user-scalable=no的作用是？",
     "options": [
-      "禁止用户手动缩放",
       "允许缩放",
       "强制缩放",
-      "自动缩放"
+      "自动缩放",
+      "禁止用户手动缩放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

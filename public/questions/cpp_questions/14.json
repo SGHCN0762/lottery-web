@@ -4,9 +4,9 @@
     "title": "C++11中右值引用使用什么符号？",
     "options": [
       "&&",
+      "&&&",
       "&",
-      "*",
-      "&&&"
+      "*"
     ],
     "correctAnswer": 0
   },
@@ -14,86 +14,86 @@
     "id": "cpp-652",
     "title": "C++11中std::move的作用是？",
     "options": [
+      "删除对象",
       "将左值转换为右值",
-      "移动对象",
       "复制对象",
-      "删除对象"
+      "移动对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-653",
     "title": "C++11中移动语义的作用是？",
     "options": [
-      "避免不必要的拷贝，提高性能",
       "移动指针",
-      "移动引用",
-      "移动类"
+      "移动类",
+      "避免不必要的拷贝，提高性能",
+      "移动引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-654",
     "title": "C++11中std::forward的作用是？",
     "options": [
-      "完美转发",
       "移动语义",
       "类型转换",
+      "完美转发",
       "异常处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-655",
     "title": "C++11中初始化列表的作用是？",
     "options": [
-      "统一初始化方式",
-      "初始化数组",
       "初始化类",
-      "以上都不对"
+      "以上都不对",
+      "初始化数组",
+      "统一初始化方式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-656",
     "title": "C++11中std::initializer_list的作用是？",
     "options": [
-      "接收初始化列表",
-      "初始化变量",
       "初始化指针",
+      "初始化变量",
+      "接收初始化列表",
       "初始化引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-657",
     "title": "C++11中基于范围的for循环语法是？",
     "options": [
-      "for (auto& x : container)",
+      "以上都不对",
       "for (x in container)",
       "foreach (x in container)",
-      "以上都不对"
+      "for (auto& x : container)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-658",
     "title": "C++11中nullptr的优势是？",
     "options": [
+      "以上都不对",
       "不会隐式转换为整数，类型安全",
-      "是整数0",
       "是宏NULL",
-      "以上都不对"
+      "是整数0"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-659",
     "title": "C++11中强类型枚举的语法是？",
     "options": [
       "enum class",
-      "enum struct",
       "strong enum",
+      "enum struct",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -102,21 +102,21 @@
     "id": "cpp-660",
     "title": "C++11中constexpr的作用是？",
     "options": [
-      "常量表达式，编译时求值",
       "运行时求值",
-      "声明常量",
-      "声明变量"
+      "常量表达式，编译时求值",
+      "声明变量",
+      "声明常量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-661",
     "title": "C++11中委托构造的作用是？",
     "options": [
       "构造函数调用另一个构造函数",
+      "以上都不对",
       "析构函数调用构造函数",
-      "构造函数调用析构函数",
-      "以上都不对"
+      "构造函数调用析构函数"
     ],
     "correctAnswer": 0
   },
@@ -124,87 +124,87 @@
     "id": "cpp-662",
     "title": "C++11中继承构造的作用是？",
     "options": [
-      "派生类直接使用基类构造",
       "重写构造",
       "删除构造",
+      "派生类直接使用基类构造",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-663",
     "title": "C++14中泛型Lambda是指？",
     "options": [
-      "参数可以使用auto",
+      "以上都不对",
       "返回值可以使用auto",
       "捕获可以使用auto",
-      "以上都不对"
+      "参数可以使用auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-664",
     "title": "C++14中std::make_unique的作用是？",
     "options": [
-      "创建unique_ptr",
+      "创建裸指针",
       "创建shared_ptr",
       "创建weak_ptr",
-      "创建裸指针"
+      "创建unique_ptr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-665",
     "title": "C++17中结构化绑定的语法是？",
     "options": [
-      "auto [x, y] = pair;",
       "auto (x, y) = pair;",
       "tie(x, y) = pair;",
-      "以上都不对"
+      "以上都不对",
+      "auto [x, y] = pair;"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-666",
     "title": "C++17中std::optional的作用是？",
     "options": [
-      "表示可能存在的值",
-      "表示必须存在的值",
+      "表示错误",
       "表示不存在的值",
-      "表示错误"
+      "表示可能存在的值",
+      "表示必须存在的值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-667",
     "title": "C++17中std::variant的作用是？",
     "options": [
-      "类型安全的联合体",
       "动态类型",
-      "可选类型",
-      "任意类型"
+      "任意类型",
+      "类型安全的联合体",
+      "可选类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-668",
     "title": "C++17中std::any的作用是？",
     "options": [
-      "存储任意类型值",
       "类型安全联合体",
+      "存储任意类型值",
       "可选类型",
       "空类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-669",
     "title": "C++17中std::string_view的作用是？",
     "options": [
       "非拥有字符串视图",
-      "拥有字符串",
       "字符串拷贝",
-      "字符串拼接"
+      "字符串拼接",
+      "拥有字符串"
     ],
     "correctAnswer": 0
   },
@@ -212,21 +212,21 @@
     "id": "cpp-670",
     "title": "C++17中if constexpr的作用是？",
     "options": [
-      "编译时条件判断",
       "运行时条件判断",
-      "常量定义",
-      "模板定义"
+      "编译时条件判断",
+      "模板定义",
+      "常量定义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-671",
     "title": "C++17中折叠表达式的作用是？",
     "options": [
       "简化变参模板展开",
+      "简化继承",
       "简化Lambda",
-      "简化初始化",
-      "简化继承"
+      "简化初始化"
     ],
     "correctAnswer": 0
   },
@@ -234,119 +234,119 @@
     "id": "cpp-672",
     "title": "C++20中概念的作用是？",
     "options": [
+      "定义变量",
       "命名模板参数约束",
-      "定义类",
       "定义函数",
-      "定义变量"
+      "定义类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-673",
     "title": "C++11中Lambda表达式的语法是？",
     "options": [
-      "[捕获](参数) -> 返回类型 { 函数体 }",
-      "(参数) -> 返回类型 { 函数体 }",
       "[参数](捕获) { 函数体 }",
+      "(参数) -> 返回类型 { 函数体 }",
+      "[捕获](参数) -> 返回类型 { 函数体 }",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-674",
     "title": "C++11中Lambda默认捕获方式有？",
     "options": [
-      "= 和 &",
       "* 和 &",
       "= 和 *",
-      "以上都不对"
+      "以上都不对",
+      "= 和 &"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-675",
     "title": "C++11中右值引用使用什么符号？",
     "options": [
-      "&&",
-      "&",
+      "&&&",
       "*",
-      "&&&"
+      "&&",
+      "&"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-676",
     "title": "C++11中std::move的作用是？",
     "options": [
+      "删除对象",
       "将左值转换为右值",
       "移动对象",
-      "复制对象",
-      "删除对象"
+      "复制对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-677",
     "title": "C++11中移动语义的作用是？",
     "options": [
+      "移动引用",
       "避免不必要的拷贝，提高性能",
       "移动指针",
-      "移动引用",
       "移动类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-678",
     "title": "C++11中std::forward的作用是？",
     "options": [
-      "完美转发",
       "移动语义",
-      "类型转换",
-      "异常处理"
+      "完美转发",
+      "异常处理",
+      "类型转换"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-679",
     "title": "C++11中初始化列表的作用是？",
     "options": [
-      "统一初始化方式",
       "初始化数组",
-      "初始化类",
-      "以上都不对"
+      "统一初始化方式",
+      "以上都不对",
+      "初始化类"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-680",
     "title": "C++11中std::initializer_list的作用是？",
     "options": [
-      "接收初始化列表",
       "初始化变量",
-      "初始化指针",
-      "初始化引用"
+      "接收初始化列表",
+      "初始化引用",
+      "初始化指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-681",
     "title": "C++11中基于范围的for循环语法是？",
     "options": [
-      "for (auto& x : container)",
-      "for (x in container)",
       "foreach (x in container)",
-      "以上都不对"
+      "以上都不对",
+      "for (auto& x : container)",
+      "for (x in container)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-682",
     "title": "C++11中nullptr的优势是？",
     "options": [
       "不会隐式转换为整数，类型安全",
-      "是整数0",
       "是宏NULL",
+      "是整数0",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -355,32 +355,32 @@
     "id": "cpp-683",
     "title": "C++11中强类型枚举的语法是？",
     "options": [
-      "enum class",
-      "enum struct",
+      "以上都不对",
       "strong enum",
-      "以上都不对"
+      "enum class",
+      "enum struct"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-684",
     "title": "C++11中constexpr的作用是？",
     "options": [
-      "常量表达式，编译时求值",
-      "运行时求值",
       "声明常量",
-      "声明变量"
+      "运行时求值",
+      "声明变量",
+      "常量表达式，编译时求值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-685",
     "title": "C++11中委托构造的作用是？",
     "options": [
       "构造函数调用另一个构造函数",
-      "析构函数调用构造函数",
+      "以上都不对",
       "构造函数调用析构函数",
-      "以上都不对"
+      "析构函数调用构造函数"
     ],
     "correctAnswer": 0
   },
@@ -388,21 +388,21 @@
     "id": "cpp-686",
     "title": "C++11中继承构造的作用是？",
     "options": [
-      "派生类直接使用基类构造",
+      "以上都不对",
       "重写构造",
       "删除构造",
-      "以上都不对"
+      "派生类直接使用基类构造"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-687",
     "title": "C++14中泛型Lambda是指？",
     "options": [
       "参数可以使用auto",
-      "返回值可以使用auto",
+      "以上都不对",
       "捕获可以使用auto",
-      "以上都不对"
+      "返回值可以使用auto"
     ],
     "correctAnswer": 0
   },
@@ -410,20 +410,20 @@
     "id": "cpp-688",
     "title": "C++14中std::make_unique的作用是？",
     "options": [
+      "创建weak_ptr",
       "创建unique_ptr",
       "创建shared_ptr",
-      "创建weak_ptr",
       "创建裸指针"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-689",
     "title": "C++17中结构化绑定的语法是？",
     "options": [
       "auto [x, y] = pair;",
-      "auto (x, y) = pair;",
       "tie(x, y) = pair;",
+      "auto (x, y) = pair;",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -432,78 +432,78 @@
     "id": "cpp-690",
     "title": "C++17中std::optional的作用是？",
     "options": [
-      "表示可能存在的值",
+      "表示错误",
       "表示必须存在的值",
       "表示不存在的值",
-      "表示错误"
+      "表示可能存在的值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "cpp-691",
     "title": "C++17中std::variant的作用是？",
     "options": [
-      "类型安全的联合体",
       "动态类型",
       "可选类型",
+      "类型安全的联合体",
       "任意类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-692",
     "title": "C++17中std::any的作用是？",
     "options": [
-      "存储任意类型值",
       "类型安全联合体",
-      "可选类型",
-      "空类型"
+      "空类型",
+      "存储任意类型值",
+      "可选类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-693",
     "title": "C++17中std::string_view的作用是？",
     "options": [
-      "非拥有字符串视图",
       "拥有字符串",
       "字符串拷贝",
+      "非拥有字符串视图",
       "字符串拼接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-694",
     "title": "C++17中if constexpr的作用是？",
     "options": [
+      "模板定义",
       "编译时条件判断",
       "运行时条件判断",
-      "常量定义",
-      "模板定义"
+      "常量定义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-695",
     "title": "C++17中折叠表达式的作用是？",
     "options": [
-      "简化变参模板展开",
+      "简化继承",
       "简化Lambda",
-      "简化初始化",
-      "简化继承"
+      "简化变参模板展开",
+      "简化初始化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-696",
     "title": "C++20中概念的作用是？",
     "options": [
+      "定义函数",
       "命名模板参数约束",
       "定义类",
-      "定义函数",
       "定义变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "cpp-697",
@@ -520,12 +520,12 @@
     "id": "cpp-698",
     "title": "C++11中Lambda默认捕获方式有？",
     "options": [
-      "= 和 &",
       "* 和 &",
       "= 和 *",
+      "= 和 &",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "cpp-699",
@@ -542,11 +542,11 @@
     "id": "cpp-700",
     "title": "C++11中std::move的作用是？",
     "options": [
-      "将左值转换为右值",
+      "删除对象",
       "移动对象",
       "复制对象",
-      "删除对象"
+      "将左值转换为右值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

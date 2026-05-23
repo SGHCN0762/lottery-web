@@ -4,9 +4,9 @@
     "title": "JavaScript中数据描述符有？",
     "options": [
       "value, writable, enumerable, configurable",
-      "get, set",
+      "只有writable",
       "只有value",
-      "只有writable"
+      "get, set"
     ],
     "correctAnswer": 0
   },
@@ -14,97 +14,97 @@
     "id": "js-152",
     "title": "JavaScript中存取描述符有？",
     "options": [
-      "get, set",
       "value, writable",
+      "get, set",
       "只有get",
       "只有set"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-153",
     "title": "JavaScript中writable为false时？",
     "options": [
-      "属性值不能修改",
-      "属性不能删除",
       "属性不能遍历",
-      "属性不能重新配置"
+      "属性值不能修改",
+      "属性不能重新配置",
+      "属性不能删除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-154",
     "title": "JavaScript中configurable为false时？",
     "options": [
-      "属性不能删除或重新配置",
+      "属性不能访问",
       "属性值不能修改",
-      "属性不能遍历",
-      "属性不能访问"
+      "属性不能删除或重新配置",
+      "属性不能遍历"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-155",
     "title": "JavaScript中enumerable为false时？",
     "options": [
-      "属性不能遍历",
-      "属性值不能修改",
+      "属性不能重新配置",
       "属性不能删除",
-      "属性不能重新配置"
+      "属性不能遍历",
+      "属性值不能修改"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-156",
     "title": "JavaScript中getter的作用是？",
     "options": [
-      "读取属性时执行",
       "设置属性时执行",
+      "遍历属性时执行",
       "删除属性时执行",
-      "遍历属性时执行"
+      "读取属性时执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-157",
     "title": "JavaScript中setter的作用是？",
     "options": [
-      "设置属性时执行",
       "读取属性时执行",
+      "设置属性时执行",
       "删除属性时执行",
       "遍历属性时执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-158",
     "title": "JavaScript中this的指向是？",
     "options": [
+      "始终指向对象",
       "运行时确定",
-      "定义时确定",
       "始终指向全局",
-      "始终指向对象"
+      "定义时确定"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-159",
     "title": "JavaScript中全局作用域下this指向？",
     "options": [
+      "取决于环境",
       "全局对象",
       "undefined",
-      "当前对象",
-      "取决于环境"
+      "当前对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-160",
     "title": "JavaScript中普通函数中this指向？",
     "options": [
       "调用者",
-      "定义者",
       "全局对象",
+      "定义者",
       "undefined"
     ],
     "correctAnswer": 0
@@ -114,9 +114,9 @@
     "title": "JavaScript中箭头函数中this指向？",
     "options": [
       "定义时所在上下文",
-      "调用者",
       "全局对象",
-      "undefined"
+      "undefined",
+      "调用者"
     ],
     "correctAnswer": 0
   },
@@ -125,8 +125,8 @@
     "title": "JavaScript中箭头函数可以使用call改变this吗？",
     "options": [
       "不能",
-      "能",
       "取决于参数",
+      "能",
       "取决于环境"
     ],
     "correctAnswer": 0
@@ -135,65 +135,65 @@
     "id": "js-163",
     "title": "JavaScript中call的作用是？",
     "options": [
+      "创建新函数",
       "改变this指向并立即执行",
-      "改变this指向不执行",
       "绑定this指向",
-      "创建新函数"
+      "改变this指向不执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-164",
     "title": "JavaScript中apply的作用是？",
     "options": [
-      "改变this指向并立即执行",
       "改变this指向不执行",
+      "改变this指向并立即执行",
       "绑定this指向",
       "创建新函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-165",
     "title": "JavaScript中call和apply的区别是？",
     "options": [
-      "参数传递方式不同",
       "this指向不同",
-      "执行时机不同",
-      "没有区别"
+      "参数传递方式不同",
+      "没有区别",
+      "执行时机不同"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-166",
     "title": "JavaScript中bind的作用是？",
     "options": [
+      "创建新对象",
       "绑定this指向返回新函数",
       "改变this指向并立即执行",
-      "绑定参数",
-      "创建新对象"
+      "绑定参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-167",
     "title": "JavaScript中bind返回的函数能作为构造函数吗？",
     "options": [
-      "能，但this绑定失效",
+      "取决于参数",
       "不能",
-      "能，且this绑定生效",
-      "取决于参数"
+      "能，但this绑定失效",
+      "能，且this绑定生效"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-168",
     "title": "JavaScript中箭头函数的特点是？",
     "options": [
       "没有this，没有arguments，不能new",
+      "以上都是",
       "有this，有arguments，能new",
-      "没有原型",
-      "以上都是"
+      "没有原型"
     ],
     "correctAnswer": 0
   },
@@ -201,23 +201,23 @@
     "id": "js-169",
     "title": "JavaScript中箭头函数可以作为生成器吗？",
     "options": [
-      "不能",
-      "能",
       "取决于语法",
-      "取决于环境"
+      "能",
+      "取决于环境",
+      "不能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-170",
     "title": "JavaScript中箭头函数有原型吗？",
     "options": [
-      "没有",
       "有",
       "取决于定义",
+      "没有",
       "取决于环境"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-171",
@@ -235,9 +235,9 @@
     "title": "JavaScript中数组解构的作用是？",
     "options": [
       "提取数组元素",
+      "排序数组",
       "合并数组",
-      "克隆数组",
-      "排序数组"
+      "克隆数组"
     ],
     "correctAnswer": 0
   },
@@ -245,43 +245,43 @@
     "id": "js-173",
     "title": "JavaScript中解构时如何重命名？",
     "options": [
-      "使用冒号",
       "使用等号",
+      "不能重命名",
       "使用as",
-      "不能重命名"
+      "使用冒号"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-174",
     "title": "JavaScript中解构时如何设置默认值？",
     "options": [
-      "使用等号",
       "使用冒号",
-      "使用双问号",
-      "不能设置"
+      "使用等号",
+      "不能设置",
+      "使用双问号"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-175",
     "title": "JavaScript中展开运算符...的作用是？",
     "options": [
-      "展开可迭代对象",
-      "合并对象",
+      "以上都是",
       "收集参数",
-      "以上都是"
+      "合并对象",
+      "展开可迭代对象"
     ],
-    "correctAnswer": 3
+    "correctAnswer": 0
   },
   {
     "id": "js-176",
     "title": "JavaScript中剩余参数...的作用是？",
     "options": [
       "收集多余参数",
-      "展开数组",
+      "克隆数组",
       "合并对象",
-      "克隆数组"
+      "展开数组"
     ],
     "correctAnswer": 0
   },
@@ -289,23 +289,23 @@
     "id": "js-177",
     "title": "JavaScript中剩余参数必须是最后一个参数吗？",
     "options": [
-      "必须",
       "不必",
+      "取决于环境",
       "取决于类型",
-      "取决于环境"
+      "必须"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-178",
     "title": "JavaScript中arguments是数组吗？",
     "options": [
-      "不是，是类数组对象",
-      "是",
       "取决于环境",
+      "是",
+      "不是，是类数组对象",
       "取决于严格模式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-179",
@@ -313,8 +313,8 @@
     "options": [
       "Array.from(), [...arguments], Array.prototype.slice.call()",
       "arguments.toArray()",
-      "Array(arguments)",
-      "Object.keys(arguments)"
+      "Object.keys(arguments)",
+      "Array(arguments)"
     ],
     "correctAnswer": 0
   },
@@ -324,8 +324,8 @@
     "options": [
       "计算属性名，方法简写，属性简写",
       "只有方法简写",
-      "只有属性简写",
-      "以上都不对"
+      "以上都不对",
+      "只有属性简写"
     ],
     "correctAnswer": 0
   },
@@ -334,8 +334,8 @@
     "title": "JavaScript中计算属性名的语法是？",
     "options": [
       "[expression]",
-      "expression",
       "${expression}",
+      "expression",
       "以上都不对"
     ],
     "correctAnswer": 0
@@ -344,53 +344,53 @@
     "id": "js-182",
     "title": "JavaScript中方法简写的语法是？",
     "options": [
-      "method() {}",
-      "method: function() {}",
+      "以上都不对",
       "method => {}",
-      "以上都不对"
+      "method: function() {}",
+      "method() {}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-183",
     "title": "JavaScript中属性简写的语法是？",
     "options": [
-      "{x}",
       "{x: x}",
+      "{x}",
       "{x = x}",
       "以上都不对"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-184",
     "title": "JavaScript中Object.is()的作用是？",
     "options": [
-      "比较两个值是否相同",
-      "比较引用",
       "比较类型",
-      "比较值和类型"
+      "比较值和类型",
+      "比较两个值是否相同",
+      "比较引用"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-185",
     "title": "JavaScript中Object.assign()的polyfill实现关键点是？",
     "options": [
-      "遍历源对象的可枚举自有属性",
       "遍历所有属性",
-      "深拷贝属性",
-      "绑定this"
+      "遍历源对象的可枚举自有属性",
+      "绑定this",
+      "深拷贝属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-186",
     "title": "JavaScript中如何判断属性是自有还是继承？",
     "options": [
       "hasOwnProperty",
-      "in",
       "typeof",
+      "in",
       "instanceof"
     ],
     "correctAnswer": 0
@@ -399,32 +399,32 @@
     "id": "js-187",
     "title": "JavaScript中如何遍历对象？",
     "options": [
-      "for...in, Object.keys(), Object.entries()",
-      "for...of",
+      "map",
       "forEach",
-      "map"
+      "for...of",
+      "for...in, Object.keys(), Object.entries()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-188",
     "title": "JavaScript中for...of能遍历对象吗？",
     "options": [
-      "不能，对象不可迭代",
+      "取决于环境",
       "能",
-      "取决于对象",
-      "取决于环境"
+      "不能，对象不可迭代",
+      "取决于对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-189",
     "title": "JavaScript中如何使对象可迭代？",
     "options": [
       "实现Symbol.iterator方法",
-      "实现length属性",
+      "实现for方法",
       "实现forEach方法",
-      "实现for方法"
+      "实现length属性"
     ],
     "correctAnswer": 0
   },
@@ -432,12 +432,12 @@
     "id": "js-190",
     "title": "JavaScript中Symbol.iterator的作用是？",
     "options": [
-      "定义对象的默认迭代器",
       "定义对象的属性",
+      "定义对象的默认迭代器",
       "定义对象的方法",
       "定义对象的构造函数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-191",
@@ -445,8 +445,8 @@
     "options": [
       "键值对数组",
       "键数组",
-      "值数组",
-      "对象"
+      "对象",
+      "值数组"
     ],
     "correctAnswer": 0
   },
@@ -466,9 +466,9 @@
     "title": "JavaScript中Object.values()返回？",
     "options": [
       "值数组",
+      "对象",
       "键数组",
-      "键值对数组",
-      "对象"
+      "键值对数组"
     ],
     "correctAnswer": 0
   },
@@ -476,45 +476,45 @@
     "id": "js-194",
     "title": "JavaScript中Object.keys()返回？",
     "options": [
+      "对象",
       "键数组",
-      "值数组",
       "键值对数组",
-      "对象"
+      "值数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-195",
     "title": "JavaScript中getter和setter属于哪种描述符？",
     "options": [
-      "存取描述符",
+      "两者都不是",
       "数据描述符",
-      "两者都是",
-      "两者都不是"
+      "存取描述符",
+      "两者都是"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-196",
     "title": "JavaScript中同时定义getter和value会怎样？",
     "options": [
-      "抛出TypeError",
       "value生效",
-      "getter生效",
-      "取决于顺序"
+      "取决于顺序",
+      "抛出TypeError",
+      "getter生效"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-197",
     "title": "JavaScript中defineProperty默认的writable是？",
     "options": [
-      "false",
       "true",
       "取决于属性",
-      "取决于对象"
+      "取决于对象",
+      "false"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-198",
@@ -522,8 +522,8 @@
     "options": [
       "false",
       "true",
-      "取决于属性",
-      "取决于对象"
+      "取决于对象",
+      "取决于属性"
     ],
     "correctAnswer": 0
   },
@@ -533,8 +533,8 @@
     "options": [
       "false",
       "true",
-      "取决于属性",
-      "取决于对象"
+      "取决于对象",
+      "取决于属性"
     ],
     "correctAnswer": 0
   },
@@ -542,11 +542,11 @@
     "id": "js-200",
     "title": "JavaScript中defineProperties的作用是？",
     "options": [
-      "同时定义多个属性",
       "定义单个属性",
+      "遍历多个属性",
       "删除多个属性",
-      "遍历多个属性"
+      "同时定义多个属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   }
 ]

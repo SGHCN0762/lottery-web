@@ -3,65 +3,65 @@
     "id": "html-601",
     "title": "关键渲染路径的步骤是？",
     "options": [
-      "DOM -> CSSOM -> Render Tree -> Layout -> Paint",
+      "解析 -> 执行 -> 显示",
       "HTML -> CSS -> JS",
-      "请求 -> 响应 -> 渲染",
-      "解析 -> 执行 -> 显示"
+      "DOM -> CSSOM -> Render Tree -> Layout -> Paint",
+      "请求 -> 响应 -> 渲染"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-602",
     "title": "阻塞渲染的资源是？",
     "options": [
-      "CSS和默认的JS",
       "图片",
+      "视频",
       "字体",
-      "视频"
+      "CSS和默认的JS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-603",
     "title": "如何避免CSS阻塞渲染？",
     "options": [
-      "减少关键CSS，非关键CSS异步加载",
-      "不用CSS",
       "内联所有CSS",
-      "放在body底部"
+      "减少关键CSS，非关键CSS异步加载",
+      "放在body底部",
+      "不用CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-604",
     "title": "如何避免JS阻塞解析？",
     "options": [
-      "使用defer或async",
       "不用JS",
       "内联JS",
+      "使用defer或async",
       "放在head中"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-605",
     "title": "defer和async的共同点是？",
     "options": [
-      "都不阻塞HTML解析",
-      "都按顺序执行",
       "都在DOMContentLoaded后执行",
-      "都阻塞渲染"
+      "都阻塞渲染",
+      "都不阻塞HTML解析",
+      "都按顺序执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-606",
     "title": "defer和async的区别是？",
     "options": [
       "defer按顺序执行，async谁先加载完谁执行",
-      "没有区别",
+      "defer不阻塞，async阻塞",
       "defer异步，async延迟",
-      "defer不阻塞，async阻塞"
+      "没有区别"
     ],
     "correctAnswer": 0
   },
@@ -70,8 +70,8 @@
     "title": "预加载资源使用哪个标签？",
     "options": [
       "<link rel=\"preload\">",
-      "<link rel=\"prefetch\">",
       "<link rel=\"preconnect\">",
+      "<link rel=\"prefetch\">",
       "<link rel=\"dns-prefetch\">"
     ],
     "correctAnswer": 0
@@ -80,21 +80,21 @@
     "id": "html-608",
     "title": "preload的作用是？",
     "options": [
-      "提前加载当前页面必需的资源",
+      "解析DNS",
       "加载下个页面资源",
-      "建立连接",
-      "解析DNS"
+      "提前加载当前页面必需的资源",
+      "建立连接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-609",
     "title": "prefetch的作用是？",
     "options": [
       "提前加载未来可能需要的资源",
-      "加载当前资源",
       "建立连接",
-      "解析DNS"
+      "解析DNS",
+      "加载当前资源"
     ],
     "correctAnswer": 0
   },
@@ -102,21 +102,21 @@
     "id": "html-610",
     "title": "preconnect的作用是？",
     "options": [
-      "提前建立服务器连接",
+      "缓存资源",
       "加载资源",
       "解析DNS",
-      "缓存资源"
+      "提前建立服务器连接"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-611",
     "title": "dns-prefetch的作用是？",
     "options": [
       "提前解析域名",
+      "缓存资源",
       "建立连接",
-      "加载资源",
-      "缓存资源"
+      "加载资源"
     ],
     "correctAnswer": 0
   },
@@ -125,9 +125,9 @@
     "title": "预渲染页面使用哪个标签？",
     "options": [
       "<link rel=\"prerender\">",
+      "<link rel=\"preconnect\">",
       "<link rel=\"preload\">",
-      "<link rel=\"prefetch\">",
-      "<link rel=\"preconnect\">"
+      "<link rel=\"prefetch\">"
     ],
     "correctAnswer": 0
   },
@@ -135,43 +135,43 @@
     "id": "html-613",
     "title": "图片懒加载的HTML属性是？",
     "options": [
-      "loading=\"lazy\"",
       "lazy=\"true\"",
+      "loading=\"lazy\"",
       "load=\"lazy\"",
       "src=\"lazy\""
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-614",
     "title": "iframe懒加载的HTML属性是？",
     "options": [
-      "loading=\"lazy\"",
-      "lazy=\"true\"",
+      "src=\"lazy\"",
       "load=\"lazy\"",
-      "src=\"lazy\""
+      "lazy=\"true\"",
+      "loading=\"lazy\""
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-615",
     "title": "减少DOM节点数的好处是？",
     "options": [
-      "加快解析和渲染速度",
+      "增加功能",
       "增加内存",
-      "减慢加载",
-      "增加功能"
+      "加快解析和渲染速度",
+      "减慢加载"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-616",
     "title": "深层次嵌套DOM的问题？",
     "options": [
       "增加重排重绘成本",
-      "提高性能",
       "代码更清晰",
-      "易于维护"
+      "易于维护",
+      "提高性能"
     ],
     "correctAnswer": 0
   },
@@ -180,9 +180,9 @@
     "title": "innerHTML和document.createElement的性能差异？",
     "options": [
       "createElement更安全且在大量修改时可能更快",
-      "innerHTML总是更快",
       "没有差异",
-      "createElement更慢"
+      "createElement更慢",
+      "innerHTML总是更快"
     ],
     "correctAnswer": 0
   },
@@ -192,8 +192,8 @@
     "options": [
       "重排改变几何属性，重绘改变外观",
       "重排更快",
-      "重绘更慢",
-      "没有区别"
+      "没有区别",
+      "重绘更慢"
     ],
     "correctAnswer": 0
   },
@@ -202,9 +202,9 @@
     "title": "触发重排的属性不包括？",
     "options": [
       "color",
-      "width",
       "height",
-      "margin"
+      "margin",
+      "width"
     ],
     "correctAnswer": 0
   },
@@ -212,21 +212,21 @@
     "id": "html-620",
     "title": "触发重绘的属性包括？",
     "options": [
+      "top, left",
       "color, visibility, box-shadow",
       "width, height",
-      "top, left",
       "display"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-621",
     "title": "如何减少重排重绘？",
     "options": [
       "批量修改DOM，使用文档片段，避免逐条修改样式",
-      "频繁修改",
       "使用table布局",
-      "增加DOM深度"
+      "增加DOM深度",
+      "频繁修改"
     ],
     "correctAnswer": 0
   },
@@ -234,34 +234,34 @@
     "id": "html-622",
     "title": "document.createDocumentFragment()的作用是？",
     "options": [
-      "创建轻量级文档片段批量插入DOM",
       "创建新文档",
-      "创建节点",
-      "创建元素"
+      "创建轻量级文档片段批量插入DOM",
+      "创建元素",
+      "创建节点"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-623",
     "title": "虚拟DOM的作用是？",
     "options": [
-      "在内存中比较差异最小化DOM操作",
       "替代真实DOM",
+      "在内存中比较差异最小化DOM操作",
       "加速网络",
       "减少代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-624",
     "title": "CSS Sprite的作用是？",
     "options": [
-      "减少图片请求数",
-      "增加图片大小",
       "提高分辨率",
-      "实现动画"
+      "实现动画",
+      "增加图片大小",
+      "减少图片请求数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-625",
@@ -278,109 +278,109 @@
     "id": "html-626",
     "title": "何时使用Base64图片？",
     "options": [
-      "极小且不常更新的图片",
-      "大图片",
       "所有图片",
-      "背景图片"
+      "极小且不常更新的图片",
+      "背景图片",
+      "大图片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-627",
     "title": "字体闪烁(FOIT)的原因是？",
     "options": [
-      "自定义字体未加载完成时文本不可见",
       "字体太大",
+      "自定义字体未加载完成时文本不可见",
       "网络太慢",
       "浏览器不支持"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-628",
     "title": "如何解决字体闪烁？",
     "options": [
+      "缩小字体",
       "使用font-display: swap",
       "不使用自定义字体",
-      "增大字体",
-      "缩小字体"
+      "增大字体"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-629",
     "title": "font-display: optional的行为是？",
     "options": [
-      "浏览器决定是否使用自定义字体，极短阻塞",
       "总是等待",
+      "浏览器决定是否使用自定义字体，极短阻塞",
       "总是替换",
       "总是阻塞"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-630",
     "title": "资源提示Resource Hints包括？",
     "options": [
-      "preload, prefetch, preconnect, dns-prefetch",
+      "header, footer, main",
       "link, script, img",
       "meta, title, style",
-      "header, footer, main"
+      "preload, prefetch, preconnect, dns-prefetch"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-631",
     "title": "HTTP缓存头Cache-Control的作用是？",
     "options": [
-      "控制资源的缓存策略",
       "控制编码",
-      "控制压缩",
-      "控制路由"
+      "控制资源的缓存策略",
+      "控制路由",
+      "控制压缩"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-632",
     "title": "Cache-Control: max-age=3600表示？",
     "options": [
-      "缓存有效期为3600秒",
-      "缓存大小3600KB",
       "请求时间3600ms",
-      "连接数3600"
+      "缓存有效期为3600秒",
+      "连接数3600",
+      "缓存大小3600KB"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-633",
     "title": "Cache-Control: no-cache表示？",
     "options": [
+      "永久缓存",
       "使用前必须向服务器验证",
       "不缓存",
-      "永久缓存",
       "只在内存缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-634",
     "title": "Cache-Control: no-store表示？",
     "options": [
-      "完全不缓存任何内容",
+      "只在磁盘缓存",
       "使用前验证",
-      "永久缓存",
-      "只在磁盘缓存"
+      "完全不缓存任何内容",
+      "永久缓存"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-635",
     "title": "ETag的作用是？",
     "options": [
       "标识资源版本用于协商缓存",
-      "加密数据",
       "压缩数据",
-      "路由请求"
+      "路由请求",
+      "加密数据"
     ],
     "correctAnswer": 0
   },
@@ -389,9 +389,9 @@
     "title": "Last-Modified的作用是？",
     "options": [
       "记录资源最后修改时间",
-      "设置过期时间",
       "设置缓存大小",
-      "设置编码"
+      "设置编码",
+      "设置过期时间"
     ],
     "correctAnswer": 0
   },
@@ -399,53 +399,53 @@
     "id": "html-637",
     "title": "强缓存和协商缓存的区别是？",
     "options": [
-      "强缓存不请求服务器，协商缓存要验证",
       "没有区别",
+      "协商缓存更快",
       "强缓存更快但旧",
-      "协商缓存更快"
+      "强缓存不请求服务器，协商缓存要验证"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-638",
     "title": "CDN的作用是？",
     "options": [
-      "从距离用户最近的服务器获取资源",
       "加密数据",
       "压缩数据",
+      "从距离用户最近的服务器获取资源",
       "存储数据"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-639",
     "title": "Gzip/Brotli压缩的作用是？",
     "options": [
-      "减小传输文件体积",
-      "加密文件",
       "合并文件",
-      "缓存文件"
+      "减小传输文件体积",
+      "缓存文件",
+      "加密文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-640",
     "title": "HTML压缩的好处是？",
     "options": [
-      "移除空格注释减小体积",
-      "增加可读性",
       "加速解析",
-      "增加功能"
+      "移除空格注释减小体积",
+      "增加功能",
+      "增加可读性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-641",
     "title": "代码分割的作用是？",
     "options": [
       "按需加载代码减少初始负载",
-      "拆分文件",
       "合并文件",
+      "拆分文件",
       "压缩代码"
     ],
     "correctAnswer": 0
@@ -454,76 +454,76 @@
     "id": "html-642",
     "title": "Tree Shaking的作用是？",
     "options": [
-      "移除未使用的代码",
+      "合并代码",
       "摇动树",
       "压缩代码",
-      "合并代码"
+      "移除未使用的代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-643",
     "title": "Service Worker缓存的优势是？",
     "options": [
-      "离线可用，细粒度控制缓存策略",
       "自动缓存",
-      "无需代码",
-      "只在在线时有效"
+      "只在在线时有效",
+      "离线可用，细粒度控制缓存策略",
+      "无需代码"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-644",
     "title": "Cache API的add()方法用于？",
     "options": [
+      "删除缓存",
       "获取URL并将其响应加入缓存",
-      "添加自定义响应",
       "添加键值对",
-      "删除缓存"
+      "添加自定义响应"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-645",
     "title": "Cache API的addAll()方法用于？",
     "options": [
+      "更新缓存",
       "批量获取URL并缓存响应",
       "添加单个URL",
-      "删除多个",
-      "更新缓存"
+      "删除多个"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-646",
     "title": "Cache API的match()方法用于？",
     "options": [
-      "在缓存中查找匹配的响应",
-      "匹配URL",
       "匹配请求",
-      "匹配头信息"
+      "在缓存中查找匹配的响应",
+      "匹配头信息",
+      "匹配URL"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-647",
     "title": "图片格式WebP的优势是？",
     "options": [
-      "同等质量下体积更小",
-      "兼容性最好",
+      "支持动画",
       "无需解码",
-      "支持动画"
+      "兼容性最好",
+      "同等质量下体积更小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-648",
     "title": "图片格式AVIF的优势是？",
     "options": [
       "比WebP压缩率更高",
-      "兼容性最好",
       "最老格式",
-      "无需解码"
+      "无需解码",
+      "兼容性最好"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "html-649",
     "title": "SVG优化的方法不包括？",
     "options": [
-      "增加冗余属性",
       "移除编辑器元数据",
-      "简化路径",
-      "移除注释"
+      "移除注释",
+      "增加冗余属性",
+      "简化路径"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-650",
     "title": "<script>的integrity属性用于？",
     "options": [
-      "验证资源完整性防止篡改",
+      "延迟加载",
       "加密脚本",
-      "压缩脚本",
-      "延迟加载"
+      "验证资源完整性防止篡改",
+      "压缩脚本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

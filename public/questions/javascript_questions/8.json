@@ -3,34 +3,34 @@
     "id": "js-351",
     "title": "JavaScript中正则的g标志表示？",
     "options": [
-      "全局匹配",
-      "忽略大小写",
+      "点匹配换行",
       "多行匹配",
-      "点匹配换行"
+      "忽略大小写",
+      "全局匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-352",
     "title": "JavaScript中正则的i标志表示？",
     "options": [
-      "忽略大小写",
-      "全局匹配",
       "多行匹配",
-      "点匹配换行"
+      "点匹配换行",
+      "全局匹配",
+      "忽略大小写"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-353",
     "title": "JavaScript中正则的m标志表示？",
     "options": [
-      "多行匹配",
+      "点匹配换行",
       "全局匹配",
       "忽略大小写",
-      "点匹配换行"
+      "多行匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-354",
@@ -38,8 +38,8 @@
     "options": [
       "点匹配换行",
       "全局匹配",
-      "忽略大小写",
-      "多行匹配"
+      "多行匹配",
+      "忽略大小写"
     ],
     "correctAnswer": 0
   },
@@ -47,23 +47,23 @@
     "id": "js-355",
     "title": "JavaScript中正则的u标志表示？",
     "options": [
-      "Unicode模式",
-      "全局匹配",
       "忽略大小写",
-      "多行匹配"
+      "多行匹配",
+      "Unicode模式",
+      "全局匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-356",
     "title": "JavaScript中正则的y标志表示？",
     "options": [
-      "粘附匹配",
-      "全局匹配",
       "忽略大小写",
-      "多行匹配"
+      "多行匹配",
+      "全局匹配",
+      "粘附匹配"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-357",
@@ -71,8 +71,8 @@
     "options": [
       "返回匹配索引",
       "全局匹配",
-      "忽略大小写",
-      "多行匹配"
+      "多行匹配",
+      "忽略大小写"
     ],
     "correctAnswer": 0
   },
@@ -80,21 +80,21 @@
     "id": "js-358",
     "title": "JavaScript中Error的类型有？",
     "options": [
-      "EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError",
-      "只有Error",
       "只有TypeError",
+      "只有Error",
+      "EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError",
       "只有SyntaxError"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-359",
     "title": "JavaScript中ReferenceError是指？",
     "options": [
       "引用未声明变量",
-      "类型错误",
+      "范围错误",
       "语法错误",
-      "范围错误"
+      "类型错误"
     ],
     "correctAnswer": 0
   },
@@ -102,23 +102,23 @@
     "id": "js-360",
     "title": "JavaScript中TypeError是指？",
     "options": [
-      "类型不匹配错误",
-      "引用错误",
       "语法错误",
-      "范围错误"
+      "范围错误",
+      "类型不匹配错误",
+      "引用错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-361",
     "title": "JavaScript中Iterator的作用是？",
     "options": [
-      "提供统一的遍历接口",
       "创建对象",
-      "冻结对象",
-      "合并对象"
+      "提供统一的遍历接口",
+      "合并对象",
+      "冻结对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-362",
@@ -135,20 +135,20 @@
     "id": "js-363",
     "title": "JavaScript中Iterator的next方法返回？",
     "options": [
-      "{value, done}",
-      "{key, value}",
       "{item, end}",
-      "{result, status}"
+      "{result, status}",
+      "{value, done}",
+      "{key, value}"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-364",
     "title": "JavaScript中Iterator的done为true表示？",
     "options": [
       "遍历结束",
-      "遍历继续",
       "遍历错误",
+      "遍历继续",
       "遍历暂停"
     ],
     "correctAnswer": 0
@@ -157,56 +157,56 @@
     "id": "js-365",
     "title": "JavaScript中for...of循环使用什么接口？",
     "options": [
+      "AsyncIterator",
       "Iterator",
-      "Enumerator",
       "Generator",
-      "AsyncIterator"
+      "Enumerator"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-366",
     "title": "JavaScript中for...of和for...in的区别是？",
     "options": [
-      "for...of遍历值，for...in遍历键",
-      "for...of遍历键，for...in遍历值",
       "没有区别",
-      "取决于对象"
+      "取决于对象",
+      "for...of遍历值，for...in遍历键",
+      "for...of遍历键，for...in遍历值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-367",
     "title": "JavaScript中哪些内置对象可迭代？",
     "options": [
-      "Array, Map, Set, String, TypedArray, arguments",
-      "Object, Function",
+      "以上都不对",
       "Number, Boolean",
-      "以上都不对"
+      "Object, Function",
+      "Array, Map, Set, String, TypedArray, arguments"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-368",
     "title": "JavaScript中Generator函数的作用是？",
     "options": [
-      "创建迭代器",
+      "创建代理",
       "创建异步函数",
       "创建类",
-      "创建代理"
+      "创建迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-369",
     "title": "JavaScript中Generator函数的声明方式是？",
     "options": [
-      "function*",
-      "function",
+      "function+",
       "async function",
-      "function+"
+      "function",
+      "function*"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-370",
@@ -224,9 +224,9 @@
     "title": "JavaScript中yield*表达式的作用是？",
     "options": [
       "委托给另一个生成器",
-      "返回多个值",
+      "恢复执行",
       "抛出异常",
-      "恢复执行"
+      "返回多个值"
     ],
     "correctAnswer": 0
   },
@@ -234,21 +234,21 @@
     "id": "js-372",
     "title": "JavaScript中Generator的next方法参数作用是？",
     "options": [
-      "替换上一个yield的返回值",
-      "设置下一个yield的值",
       "设置done的值",
-      "设置value的值"
+      "设置value的值",
+      "替换上一个yield的返回值",
+      "设置下一个yield的值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-373",
     "title": "JavaScript中Generator的return方法作用是？",
     "options": [
       "结束生成器并返回值",
-      "暂停生成器",
       "抛出异常",
-      "恢复执行"
+      "恢复执行",
+      "暂停生成器"
     ],
     "correctAnswer": 0
   },
@@ -267,54 +267,54 @@
     "id": "js-375",
     "title": "JavaScript中AsyncGenerator的作用是？",
     "options": [
-      "创建异步迭代器",
       "创建同步迭代器",
       "创建类",
-      "创建代理"
+      "创建代理",
+      "创建异步迭代器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-376",
     "title": "JavaScript中AsyncGenerator的声明方式是？",
     "options": [
-      "async function*",
-      "function*",
       "async function",
-      "function+"
+      "async function*",
+      "function+",
+      "function*"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-377",
     "title": "JavaScript中await yield的作用是？",
     "options": [
-      "异步暂停",
-      "同步暂停",
       "抛出异常",
+      "同步暂停",
+      "异步暂停",
       "恢复执行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-378",
     "title": "JavaScript中for await...of的作用是？",
     "options": [
-      "遍历异步可迭代对象",
+      "遍历数组",
       "遍历同步可迭代对象",
       "遍历对象",
-      "遍历数组"
+      "遍历异步可迭代对象"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-379",
     "title": "JavaScript中Symbol.asyncIterator的作用是？",
     "options": [
       "定义异步迭代器",
-      "定义同步迭代器",
+      "定义方法",
       "定义属性",
-      "定义方法"
+      "定义同步迭代器"
     ],
     "correctAnswer": 0
   },
@@ -322,99 +322,99 @@
     "id": "js-380",
     "title": "JavaScript中数组的解构赋值本质是？",
     "options": [
-      "使用Iterator接口",
-      "使用for循环",
+      "使用keys",
       "使用索引",
-      "使用keys"
+      "使用for循环",
+      "使用Iterator接口"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-381",
     "title": "JavaScript中对象的解构赋值本质是？",
     "options": [
-      "使用属性查找",
-      "使用Iterator",
       "使用for循环",
+      "使用Iterator",
+      "使用属性查找",
       "使用entries"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-382",
     "title": "JavaScript中展开运算符的本质是？",
     "options": [
-      "使用Iterator接口",
       "使用for循环",
       "使用索引",
+      "使用Iterator接口",
       "使用keys"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-383",
     "title": "JavaScript中Array.from的第二个参数作用是？",
     "options": [
-      "映射函数",
-      "执行上下文",
       "长度",
+      "执行上下文",
+      "映射函数",
       "起始索引"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-384",
     "title": "JavaScript中Array.from的第三个参数作用是？",
     "options": [
-      "映射函数的this",
       "映射函数",
       "长度",
-      "起始索引"
+      "起始索引",
+      "映射函数的this"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-385",
     "title": "JavaScript中Array.of和Array的区别是？",
     "options": [
-      "Array.of处理单个数字参数",
       "没有区别",
+      "Array.of处理单个数字参数",
       "Array处理单个数字参数更好",
       "取决于参数"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-386",
     "title": "JavaScript中Array(7)会创建什么？",
     "options": [
-      "长度为7的空数组",
+      "长度为7的密集数组",
       [
         "包含数字7的数组"
       ],
-      "报错",
-      "长度为7的密集数组"
+      "长度为7的空数组",
+      "报错"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-387",
     "title": "JavaScript中Array.of(7)会创建什么？",
     "options": [
-      "包含数字7的数组",
-      "长度为7的空数组",
       "报错",
-      "长度为7的密集数组"
+      "长度为7的空数组",
+      "长度为7的密集数组",
+      "包含数字7的数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-388",
     "title": "JavaScript中如何判断数组是否为空？",
     "options": [
       "arr.length === 0",
-      "arr === []",
       "arr == null",
+      "arr === []",
       "!arr"
     ],
     "correctAnswer": 0
@@ -423,23 +423,23 @@
     "id": "js-389",
     "title": "JavaScript中如何清空数组？",
     "options": [
+      "arr.clear()",
       "arr.length = 0",
       "arr = []",
-      "delete arr",
-      "arr.clear()"
+      "delete arr"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-390",
     "title": "JavaScript中如何创建二维数组？",
     "options": [
+      "[[] * n]",
       "Array(n).fill().map(() => Array(m).fill(0))",
-      "Array(n, m)",
       "new Array(n, m)",
-      "[[] * n]"
+      "Array(n, m)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-391",
@@ -456,87 +456,87 @@
     "id": "js-392",
     "title": "JavaScript中如何正确创建二维数组？",
     "options": [
-      "Array.from({length: n}, () => [])",
-      "Array(n).fill([])",
+      "[[] * n]",
       "new Array(n, m)",
-      "[[] * n]"
+      "Array(n).fill([])",
+      "Array.from({length: n}, () => [])"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-393",
     "title": "JavaScript中数组扁平化的方法有？",
     "options": [
-      "flat, reduce, 递归",
-      "仅flat",
+      "仅递归",
       "仅reduce",
-      "仅递归"
+      "flat, reduce, 递归",
+      "仅flat"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-394",
     "title": "JavaScript中flat的参数默认是？",
     "options": [
-      "1",
       "0",
       "Infinity",
+      "1",
       "-1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "js-395",
     "title": "JavaScript中如何完全扁平化数组？",
     "options": [
-      "flat(Infinity)",
+      "flat(-1)",
       "flat()",
       "flat(0)",
-      "flat(-1)"
+      "flat(Infinity)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-396",
     "title": "JavaScript中flatMap的作用是？",
     "options": [
-      "先map再flat(1)",
+      "仅flat",
       "先flat再map",
       "仅map",
-      "仅flat"
+      "先map再flat(1)"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-397",
     "title": "JavaScript中reduce的参数有？",
     "options": [
+      "回调, 上下文",
       "回调, 初始值",
-      "仅回调",
       "回调, 初始值, 上下文",
-      "回调, 上下文"
+      "仅回调"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "js-398",
     "title": "JavaScript中reduce回调的参数有？",
     "options": [
-      "累加器, 当前值, 索引, 数组",
       "累加器, 当前值",
+      "当前值, 索引",
       "当前值, 累加器",
-      "当前值, 索引"
+      "累加器, 当前值, 索引, 数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "js-399",
     "title": "JavaScript中reduce没有初始值时会怎样？",
     "options": [
       "使用第一个元素作为初始值",
+      "使用undefined",
       "报错",
-      "使用0作为初始值",
-      "使用undefined"
+      "使用0作为初始值"
     ],
     "correctAnswer": 0
   },
@@ -544,11 +544,11 @@
     "id": "js-400",
     "title": "JavaScript中空数组使用reduce没有初始值会？",
     "options": [
-      "抛出TypeError",
-      "返回undefined",
       "返回0",
-      "返回null"
+      "抛出TypeError",
+      "返回null",
+      "返回undefined"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

@@ -3,32 +3,32 @@
     "id": "react-851",
     "title": "React 中 babel-loader 的作用是？",
     "options": [
-      "使用 Babel 转换 JS 文件",
+      "加载字体",
       "加载 CSS",
       "加载图片",
-      "加载字体"
+      "使用 Babel 转换 JS 文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-852",
     "title": "React 中 css-loader 的作用是？",
     "options": [
-      "解析 CSS 中的 import 和 url",
+      "提取 CSS",
       "插入样式到 DOM",
-      "压缩 CSS",
-      "提取 CSS"
+      "解析 CSS 中的 import 和 url",
+      "压缩 CSS"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-853",
     "title": "React 中 style-loader 的作用是？",
     "options": [
       "将 CSS 插入到 DOM 的 style 标签",
-      "解析 import",
+      "提取 CSS",
       "压缩 CSS",
-      "提取 CSS"
+      "解析 import"
     ],
     "correctAnswer": 0
   },
@@ -36,100 +36,100 @@
     "id": "react-854",
     "title": "React 中 MiniCssExtractPlugin 的作用是？",
     "options": [
-      "将 CSS 提取为独立文件",
-      "插入样式",
+      "压缩 CSS",
       "解析 import",
-      "压缩 CSS"
+      "将 CSS 提取为独立文件",
+      "插入样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-855",
     "title": "React 中 HtmlWebpackPlugin 的作用是？",
     "options": [
-      "自动生成 HTML 文件并引入打包资源",
-      "压缩 HTML",
       "解析 HTML",
-      "提取 HTML"
+      "自动生成 HTML 文件并引入打包资源",
+      "提取 HTML",
+      "压缩 HTML"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-856",
     "title": "React 中 Vite 插件的作用是？",
     "options": [
+      "压缩代码",
       "扩展 Vite 功能遵循 Rollup 插件接口",
-      "转换文件",
       "打包代码",
-      "压缩代码"
+      "转换文件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-857",
     "title": "React 中 SWC 的作用是？",
     "options": [
-      "基于 Rust 的高性能编译器替代 Babel",
+      "UI 组件库",
       "状态管理",
-      "路由管理",
-      "UI 组件库"
+      "基于 Rust 的高性能编译器替代 Babel",
+      "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-858",
     "title": "React 中 esbuild 的作用是？",
     "options": [
-      "极快的 JS 打包器和压缩器",
-      "代码检查",
       "类型检查",
-      "单元测试"
+      "极快的 JS 打包器和压缩器",
+      "单元测试",
+      "代码检查"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-859",
     "title": "React 中 Tsup 的作用是？",
     "options": [
-      "零配置打包 TypeScript 库",
+      "代码检查",
       "打包应用",
       "开发服务器",
-      "代码检查"
+      "零配置打包 TypeScript 库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-860",
     "title": "React 中 Changeset 的作用是？",
     "options": [
-      "管理 Monorepo 版本和变更日志",
-      "代码检查",
       "单元测试",
-      "性能监控"
+      "代码检查",
+      "性能监控",
+      "管理 Monorepo 版本和变更日志"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-861",
     "title": "React 中 Semantic Versioning 的规则？",
     "options": [
-      "主版本.次版本.修订版本",
       "版本号.构建号",
-      "日期版本",
-      "随机版本"
+      "主版本.次版本.修订版本",
+      "随机版本",
+      "日期版本"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-862",
     "title": "React 中 npm publish 的流程？",
     "options": [
-      "登录、验证、打包、发布到 Registry",
       "直接推送代码",
-      "Git 提交",
-      "Docker 部署"
+      "登录、验证、打包、发布到 Registry",
+      "Docker 部署",
+      "Git 提交"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-863",
@@ -137,8 +137,8 @@
     "options": [
       "Babel 插件或 package.json sideEffects",
       "全量引入",
-      "手动导入",
-      "CDN 加载"
+      "CDN 加载",
+      "手动导入"
     ],
     "correctAnswer": 0
   },
@@ -147,9 +147,9 @@
     "title": "React 中 Docusaurus 的作用是？",
     "options": [
       "构建项目文档网站",
+      "路由管理",
       "状态管理",
-      "UI 组件库",
-      "路由管理"
+      "UI 组件库"
     ],
     "correctAnswer": 0
   },
@@ -158,9 +158,9 @@
     "title": "React 中 TSDoc 的作用是？",
     "options": [
       "规范 TypeScript 代码注释生成文档",
-      "代码检查",
+      "性能监控",
       "单元测试",
-      "性能监控"
+      "代码检查"
     ],
     "correctAnswer": 0
   },
@@ -168,12 +168,12 @@
     "id": "react-866",
     "title": "React 中 Chromatic 的作用是？",
     "options": [
-      "可视化测试和发布 Storybook",
-      "代码压缩",
       "类型检查",
-      "模块打包"
+      "可视化测试和发布 Storybook",
+      "模块打包",
+      "代码压缩"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-867",
@@ -190,89 +190,89 @@
     "id": "react-868",
     "title": "React 中 Google Analytics 的作用是？",
     "options": [
-      "分析用户行为和流量数据",
       "错误监控",
+      "分析用户行为和流量数据",
       "性能优化",
       "代码检查"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-869",
     "title": "React 中 Mixpanel 的作用是？",
     "options": [
+      "代码检查",
       "产品分析和用户行为追踪",
-      "错误监控",
       "性能优化",
-      "代码检查"
+      "错误监控"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-870",
     "title": "React 中 PostCSS 的作用是？",
     "options": [
-      "使用 JS 插件转换 CSS 如 Autoprefixer",
-      "CSS 预处理器",
+      "CSS 压缩",
       "CSS 框架",
-      "CSS 压缩"
+      "使用 JS 插件转换 CSS 如 Autoprefixer",
+      "CSS 预处理器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-871",
     "title": "React 中 Autoprefixer 的作用是？",
     "options": [
+      "CSS 格式化",
       "自动添加 CSS 浏览器前缀",
       "CSS 压缩",
-      "CSS 格式化",
       "CSS 验证"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-872",
     "title": "React 中 Tailwind CSS 的作用是？",
     "options": [
+      "状态管理",
       "原子化 CSS 框架快速构建界面",
       "组件库",
-      "状态管理",
       "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-873",
     "title": "React 中 UnoCSS 的作用是？",
     "options": [
+      "CSS 验证",
       "即时按需原子化 CSS 引擎",
       "CSS 预处理器",
-      "CSS 压缩",
-      "CSS 验证"
+      "CSS 压缩"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-874",
     "title": "React 中 Ant Design 的特点？",
     "options": [
+      "只支持 SSR",
       "企业级 UI 组件库，功能丰富",
-      "轻量级",
       "只支持移动端",
-      "只支持 SSR"
+      "轻量级"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-875",
     "title": "React 中 Material-UI 的特点？",
     "options": [
-      "基于 Material Design 的组件库",
       "企业级",
+      "只支持 TypeScript",
       "极简风格",
-      "只支持 TypeScript"
+      "基于 Material Design 的组件库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-876",
@@ -280,8 +280,8 @@
     "options": [
       "可访问性优先、可组合、主题化",
       "企业级",
-      "Material Design",
-      "不可定制"
+      "不可定制",
+      "Material Design"
     ],
     "correctAnswer": 0
   },
@@ -290,9 +290,9 @@
     "title": "React 中 Radix UI 的特点？",
     "options": [
       "无样式可访问性组件原语",
-      "完整组件库",
+      "状态管理",
       "CSS 框架",
-      "状态管理"
+      "完整组件库"
     ],
     "correctAnswer": 0
   },
@@ -300,21 +300,21 @@
     "id": "react-878",
     "title": "React 中 Headless UI 的特点？",
     "options": [
-      "无样式但包含交互逻辑的组件",
-      "有样式组件",
       "CSS 框架",
-      "图标库"
+      "无样式但包含交互逻辑的组件",
+      "图标库",
+      "有样式组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-879",
     "title": "React 中 Formik 的作用是？",
     "options": [
       "简化 React 表单处理和验证",
+      "UI 组件",
       "状态管理",
-      "路由管理",
-      "UI 组件"
+      "路由管理"
     ],
     "correctAnswer": 0
   },
@@ -322,32 +322,32 @@
     "id": "react-880",
     "title": "React 中 React Hook Form 的作用是？",
     "options": [
-      "高性能灵活的表单验证库",
       "UI 组件库",
+      "高性能灵活的表单验证库",
       "状态管理",
       "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-881",
     "title": "React 中 Zod 的作用是？",
     "options": [
-      "TypeScript 优先的模式验证库",
-      "状态管理",
       "路由管理",
-      "UI 组件"
+      "状态管理",
+      "UI 组件",
+      "TypeScript 优先的模式验证库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-882",
     "title": "React 中 Yup 的作用是？",
     "options": [
       "对象模式验证库常用于表单",
-      "状态管理",
+      "UI 组件",
       "路由管理",
-      "UI 组件"
+      "状态管理"
     ],
     "correctAnswer": 0
   },
@@ -355,198 +355,198 @@
     "id": "react-883",
     "title": "React 中 Axios 的作用是？",
     "options": [
-      "基于 Promise 的 HTTP 客户端",
+      "UI 组件",
       "状态管理",
       "路由管理",
-      "UI 组件"
+      "基于 Promise 的 HTTP 客户端"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-884",
     "title": "React 中 SWR 的作用是？",
     "options": [
-      "数据请求的 React Hooks 库",
-      "状态管理",
       "路由管理",
-      "UI 组件"
+      "数据请求的 React Hooks 库",
+      "UI 组件",
+      "状态管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-885",
     "title": "React 中 React Query 的作用是？",
     "options": [
-      "服务端状态管理和数据请求库",
       "客户端状态",
       "路由管理",
+      "服务端状态管理和数据请求库",
       "UI 组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-886",
     "title": "React 中 React Query 的核心概念？",
     "options": [
+      "Router, Route, Link",
       "Query, Mutation, Invalidation",
-      "Store, Reducer, Action",
       "State, Props, Context",
-      "Router, Route, Link"
+      "Store, Reducer, Action"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-887",
     "title": "React 中 Framer Motion 的作用是？",
     "options": [
-      "强大的 React 动画和手势库",
       "状态管理",
+      "UI 组件",
       "路由管理",
-      "UI 组件"
+      "强大的 React 动画和手势库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-888",
     "title": "React 中 React Spring 的作用是？",
     "options": [
-      "基于物理弹簧的动画库",
       "路由管理",
-      "状态管理",
-      "UI 组件"
+      "UI 组件",
+      "基于物理弹簧的动画库",
+      "状态管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-889",
     "title": "React 中 React DnD 的作用是？",
     "options": [
+      "路由管理",
       "实现复杂拖拽交互的库",
-      "动画库",
       "状态管理",
-      "路由管理"
+      "动画库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-890",
     "title": "React 中 React Virtualized 的特点？",
     "options": [
-      "老牌虚拟列表组件库",
       "最新最快",
       "不支持表格",
-      "不支持网格"
+      "不支持网格",
+      "老牌虚拟列表组件库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-891",
     "title": "React 中 react-window 的特点？",
     "options": [
-      "轻量高效的虚拟列表组件",
       "功能最多",
+      "不支持动态尺寸",
       "体积最大",
-      "不支持动态尺寸"
+      "轻量高效的虚拟列表组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-892",
     "title": "React 中 TanStack Virtual 的特点？",
     "options": [
-      "无框架依赖的虚拟化核心",
       "只支持 React",
       "体积最大",
-      "不支持动态尺寸"
+      "不支持动态尺寸",
+      "无框架依赖的虚拟化核心"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-893",
     "title": "React 中 React Three Fiber 的作用是？",
     "options": [
-      "React 式的 Three.js 3D 渲染器",
-      "2D 渲染",
+      "路由管理",
       "状态管理",
-      "路由管理"
+      "2D 渲染",
+      "React 式的 Three.js 3D 渲染器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "react-894",
     "title": "React 中 D3.js 的作用是？",
     "options": [
-      "数据驱动文档操作实现数据可视化",
-      "3D 渲染",
       "状态管理",
+      "3D 渲染",
+      "数据驱动文档操作实现数据可视化",
       "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-895",
     "title": "React 中 ECharts 的作用是？",
     "options": [
-      "功能丰富的数据可视化图表库",
       "3D 渲染",
-      "状态管理",
-      "路由管理"
+      "功能丰富的数据可视化图表库",
+      "路由管理",
+      "状态管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-896",
     "title": "React 中 Mapbox GL JS 的作用是？",
     "options": [
-      "渲染交互式地图",
       "3D 渲染",
-      "图表库",
-      "状态管理"
+      "渲染交互式地图",
+      "状态管理",
+      "图表库"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-897",
     "title": "React 中 react-i18next 的作用是？",
     "options": [
-      "React 国际化框架",
       "状态管理",
-      "路由管理",
-      "UI 组件"
+      "React 国际化框架",
+      "UI 组件",
+      "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-898",
     "title": "React 中 Day.js 的作用是？",
     "options": [
+      "路由管理",
       "轻量级日期处理库",
       "状态管理",
-      "路由管理",
       "UI 组件"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "react-899",
     "title": "React 中 Lodash 的作用是？",
     "options": [
-      "提供模块化实用工具函数",
-      "UI 组件",
       "状态管理",
+      "UI 组件",
+      "提供模块化实用工具函数",
       "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "react-900",
     "title": "React 中 ramda 的作用是？",
     "options": [
-      "函数式编程工具库",
-      "UI 组件",
       "状态管理",
+      "UI 组件",
+      "函数式编程工具库",
       "路由管理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

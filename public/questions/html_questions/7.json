@@ -3,53 +3,53 @@
     "id": "html-301",
     "title": "HTML5语义化的主要目的是？",
     "options": [
-      "让代码更易读、对机器更友好",
       "减少代码量",
+      "让代码更易读、对机器更友好",
       "提高性能",
       "增加功能"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-302",
     "title": "<header>标签的作用是？",
     "options": [
-      "定义文档或节的页眉",
+      "定义导航",
       "定义标题",
-      "定义头部区域",
-      "定义导航"
+      "定义文档或节的页眉",
+      "定义头部区域"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-303",
     "title": "<nav>标签的作用是？",
     "options": [
-      "定义导航链接",
       "定义导航栏",
+      "定义导航链接",
       "定义菜单",
       "定义侧边栏"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-304",
     "title": "<main>标签的作用是？",
     "options": [
+      "定义容器",
       "规定文档的主内容",
       "定义主要内容区",
-      "定义主体",
-      "定义容器"
+      "定义主体"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-305",
     "title": "一个页面中可以有几个<main>标签？",
     "options": [
       "1个",
-      "多个",
       "0个",
+      "多个",
       "无限制"
     ],
     "correctAnswer": 0
@@ -58,21 +58,21 @@
     "id": "html-306",
     "title": "<article>标签的作用是？",
     "options": [
+      "定义区块",
       "定义独立的自包含内容",
       "定义文章",
-      "定义段落",
-      "定义区块"
+      "定义段落"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-307",
     "title": "<section>标签的作用是？",
     "options": [
       "定义文档中的节",
+      "定义块",
       "定义部分",
-      "定义区域",
-      "定义块"
+      "定义区域"
     ],
     "correctAnswer": 0
   },
@@ -80,21 +80,21 @@
     "id": "html-308",
     "title": "<aside>标签的作用是？",
     "options": [
-      "定义页面内容之外的内容",
-      "定义侧边栏",
       "定义附加信息",
+      "定义侧边栏",
+      "定义页面内容之外的内容",
       "定义注释"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-309",
     "title": "<footer>标签的作用是？",
     "options": [
       "定义文档或节的页脚",
+      "定义版权",
       "定义底部",
-      "定义结尾",
-      "定义版权"
+      "定义结尾"
     ],
     "correctAnswer": 0
   },
@@ -102,32 +102,32 @@
     "id": "html-310",
     "title": "<details>标签的作用是？",
     "options": [
-      "创建可折叠的附加细节",
-      "定义详情",
+      "定义描述",
       "定义摘要",
-      "定义描述"
+      "创建可折叠的附加细节",
+      "定义详情"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-311",
     "title": "<summary>标签的作用是？",
     "options": [
-      "为details定义可见的标题",
       "定义摘要",
-      "定义总结",
-      "定义概览"
+      "为details定义可见的标题",
+      "定义概览",
+      "定义总结"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-312",
     "title": "<dialog>标签的作用是？",
     "options": [
       "定义对话框或窗口",
-      "定义对话",
+      "定义提示",
       "定义弹窗",
-      "定义提示"
+      "定义对话"
     ],
     "correctAnswer": 0
   },
@@ -136,9 +136,9 @@
     "title": "<dialog>的open属性用于？",
     "options": [
       "指示对话框可见",
+      "启用对话框",
       "打开对话框",
-      "关闭对话框",
-      "启用对话框"
+      "关闭对话框"
     ],
     "correctAnswer": 0
   },
@@ -146,20 +146,20 @@
     "id": "html-314",
     "title": "<data>标签的value属性用于？",
     "options": [
-      "提供机器可读的值",
       "提供显示值",
       "提供ID",
+      "提供机器可读的值",
       "提供名称"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-315",
     "title": "<time>的datetime属性用于？",
     "options": [
       "提供机器可读的日期时间",
-      "提供显示时间",
       "提供格式",
+      "提供显示时间",
       "提供时区"
     ],
     "correctAnswer": 0
@@ -168,54 +168,54 @@
     "id": "html-316",
     "title": "<hgroup>标签的作用是？",
     "options": [
-      "将标题和副标题组合",
       "定义标题组",
       "定义层级",
-      "定义样式"
+      "定义样式",
+      "将标题和副标题组合"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-317",
     "title": "<search>标签的作用是？",
     "options": [
-      "定义搜索相关的内容区域",
-      "定义搜索框",
       "定义搜索按钮",
+      "定义搜索框",
+      "定义搜索相关的内容区域",
       "定义搜索结果"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-318",
     "title": "语义化标签对SEO的影响是？",
     "options": [
-      "提高搜索排名和抓取效率",
-      "降低排名",
       "无影响",
+      "降低排名",
+      "提高搜索排名和抓取效率",
       "增加加载时间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-319",
     "title": "<div>和<span>被称为什么元素？",
     "options": [
-      "无语义容器",
+      "内联容器",
       "语义容器",
       "块级容器",
-      "内联容器"
+      "无语义容器"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-320",
     "title": "<header>可以包含哪些内容？",
     "options": [
       "标题、导航、搜索框等",
+      "仅图片",
       "仅标题",
-      "仅导航",
-      "仅图片"
+      "仅导航"
     ],
     "correctAnswer": 0
   },
@@ -223,32 +223,32 @@
     "id": "html-321",
     "title": "<footer>通常包含哪些内容？",
     "options": [
-      "版权、联系信息、链接等",
-      "仅版权",
+      "仅图片",
       "仅链接",
-      "仅图片"
+      "版权、联系信息、链接等",
+      "仅版权"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-322",
     "title": "<article>的典型使用场景是？",
     "options": [
-      "博客文章、新闻报道、评论",
-      "侧边栏",
       "导航栏",
+      "侧边栏",
+      "博客文章、新闻报道、评论",
       "页脚"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-323",
     "title": "<section>的典型使用场景是？",
     "options": [
       "章节、选项卡式内容、分组",
-      "独立文章",
       "导航",
-      "页眉"
+      "页眉",
+      "独立文章"
     ],
     "correctAnswer": 0
   },
@@ -256,20 +256,20 @@
     "id": "html-324",
     "title": "<aside>的典型使用场景是？",
     "options": [
+      "页脚",
       "侧边栏、广告、引用块",
       "主内容",
-      "导航",
-      "页脚"
+      "导航"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-325",
     "title": "<address>的典型使用场景是？",
     "options": [
       "联系信息",
-      "地址栏",
       "页脚",
+      "地址栏",
       "侧边栏"
     ],
     "correctAnswer": 0
@@ -290,9 +290,9 @@
     "title": "<details>默认的状态是？",
     "options": [
       "折叠隐藏",
-      "展开显示",
+      "只读",
       "禁用",
-      "只读"
+      "展开显示"
     ],
     "correctAnswer": 0
   },
@@ -300,108 +300,108 @@
     "id": "html-328",
     "title": "如何让<details>默认展开？",
     "options": [
-      "添加open属性",
       "添加visible属性",
+      "添加expand属性",
       "添加show属性",
-      "添加expand属性"
+      "添加open属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-329",
     "title": "<dialog>如何显示为模态框？",
     "options": [
+      "使用modal属性",
       "使用showModal()方法",
       "使用show()方法",
-      "使用open属性",
-      "使用modal属性"
+      "使用open属性"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-330",
     "title": "<dialog>如何显示为非模态框？",
     "options": [
+      "使用display属性",
       "使用show()方法",
-      "使用showModal()方法",
       "使用visible属性",
-      "使用display属性"
+      "使用showModal()方法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-331",
     "title": "<dialog>如何关闭？",
     "options": [
-      "使用close()方法",
       "使用hide()方法",
+      "使用close()方法",
       "删除open属性",
       "以上都可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-332",
     "title": "<dialog>的::backdrop伪元素用于？",
     "options": [
-      "设置模态对话框背景的样式",
-      "设置对话框样式",
+      "设置边框样式",
       "设置内容样式",
-      "设置边框样式"
+      "设置模态对话框背景的样式",
+      "设置对话框样式"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-333",
     "title": "<main>标签应该放在哪个标签内部？",
     "options": [
-      "body",
-      "header",
       "footer",
-      "article"
+      "article",
+      "header",
+      "body"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-334",
     "title": "<main>标签不应该包含哪些内容？",
     "options": [
-      "导航、侧边栏、页脚、logo",
       "文章",
+      "图片",
       "段落",
-      "图片"
+      "导航、侧边栏、页脚、logo"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-335",
     "title": "<section>与<div>的区别是？",
     "options": [
-      "section有语义，div无语义",
-      "没有区别",
       "section是内联，div是块级",
+      "没有区别",
+      "section有语义，div无语义",
       "div有语义，section无语义"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-336",
     "title": "<article>与<section>的区别是？",
     "options": [
-      "article是独立的，section是文档的节",
-      "没有区别",
       "section是独立的",
-      "article是节"
+      "article是节",
+      "没有区别",
+      "article是独立的，section是文档的节"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-337",
     "title": "<nav>标签可以出现多次吗？",
     "options": [
       "可以，页脚和页眉都可以有",
-      "不可以",
       "只能一次",
+      "不可以",
       "最多两次"
     ],
     "correctAnswer": 0
@@ -410,34 +410,34 @@
     "id": "html-338",
     "title": "<h1>到<h6>标签的语义是？",
     "options": [
-      "表示标题层级",
-      "表示字体大小",
       "表示颜色",
+      "表示字体大小",
+      "表示标题层级",
       "表示粗细"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-339",
     "title": "<strong>和<b>的语义区别是？",
     "options": [
-      "strong表示重要，b仅加粗",
-      "没有区别",
       "b表示重要",
-      "strong仅加粗"
+      "strong仅加粗",
+      "没有区别",
+      "strong表示重要，b仅加粗"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-340",
     "title": "<em>和<i>的语义区别是？",
     "options": [
-      "em表示强调，i仅斜体",
       "没有区别",
-      "i表示强调",
-      "em仅斜体"
+      "em表示强调，i仅斜体",
+      "em仅斜体",
+      "i表示强调"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-341",
@@ -455,8 +455,8 @@
     "title": "<blockquote>和<q>的语义区别是？",
     "options": [
       "blockquote是块级引用，q是内联引用",
-      "没有区别",
       "q是块级",
+      "没有区别",
       "blockquote是内联"
     ],
     "correctAnswer": 0
@@ -466,9 +466,9 @@
     "title": "<cite>标签的语义是？",
     "options": [
       "表示作品标题",
-      "表示引用块",
+      "表示定义",
       "表示缩写",
-      "表示定义"
+      "表示引用块"
     ],
     "correctAnswer": 0
   },
@@ -477,8 +477,8 @@
     "title": "<dfn>标签的语义是？",
     "options": [
       "表示术语的定义实例",
-      "表示缩写",
       "表示引用",
+      "表示缩写",
       "表示强调"
     ],
     "correctAnswer": 0
@@ -487,23 +487,23 @@
     "id": "html-345",
     "title": "<abbr>标签的title属性用于？",
     "options": [
-      "提供缩写的完整描述",
       "提供样式",
       "提供链接",
-      "提供ID"
+      "提供ID",
+      "提供缩写的完整描述"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-346",
     "title": "<ins>标签的语义是？",
     "options": [
-      "表示插入的文本",
       "表示下划线",
+      "表示插入的文本",
       "表示强调",
       "表示删除"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-347",
@@ -511,8 +511,8 @@
     "options": [
       "表示代码片段",
       "表示预格式",
-      "表示变量",
-      "表示键盘"
+      "表示键盘",
+      "表示变量"
     ],
     "correctAnswer": 0
   },
@@ -522,8 +522,8 @@
     "options": [
       "表示键盘输入",
       "表示代码",
-      "表示变量",
-      "表示输出"
+      "表示输出",
+      "表示变量"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "html-349",
     "title": "<samp>标签的语义是？",
     "options": [
-      "表示程序输出",
-      "表示输入",
       "表示变量",
-      "表示代码"
+      "表示代码",
+      "表示程序输出",
+      "表示输入"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-350",
     "title": "<var>标签的语义是？",
     "options": [
-      "表示变量",
       "表示代码",
+      "表示变量",
       "表示输入",
       "表示输出"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

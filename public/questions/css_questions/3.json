@@ -3,32 +3,32 @@
     "id": "css-101",
     "title": "CSS盒模型由哪几部分组成？",
     "options": [
-      "内容、内边距、边框、外边距",
-      "内容、边框、外边距",
+      "内容、边框、背景",
       "内容、内边距、外边距",
-      "内容、边框、背景"
+      "内容、内边距、边框、外边距",
+      "内容、边框、外边距"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-102",
     "title": "box-sizing: content-box的特点是？",
     "options": [
-      "width只包含内容区域",
       "width包含内容和内边距",
       "width包含内容、内边距和边框",
+      "width只包含内容区域",
       "width包含所有"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-103",
     "title": "box-sizing: border-box的特点是？",
     "options": [
       "width包含内容、内边距和边框",
-      "width只包含内容",
+      "width包含所有",
       "width包含内容和内边距",
-      "width包含所有"
+      "width只包含内容"
     ],
     "correctAnswer": 0
   },
@@ -47,21 +47,21 @@
     "id": "css-105",
     "title": "margin的合并（折叠）发生在什么情况？",
     "options": [
-      "相邻块级元素的垂直margin",
       "水平margin",
-      "内联元素margin",
-      "padding之间"
+      "padding之间",
+      "相邻块级元素的垂直margin",
+      "内联元素margin"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-106",
     "title": "如何避免margin合并？",
     "options": [
       "使用padding代替、创建BFC、使用浮动",
+      "设置width",
       "增加margin值",
-      "使用border-box",
-      "设置width"
+      "使用border-box"
     ],
     "correctAnswer": 0
   },
@@ -69,23 +69,23 @@
     "id": "css-107",
     "title": "margin: 0 auto的作用是？",
     "options": [
-      "块级元素水平居中",
       "垂直居中",
-      "水平垂直居中",
-      "清除浮动"
+      "块级元素水平居中",
+      "清除浮动",
+      "水平垂直居中"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-108",
     "title": "margin: 0 auto生效的条件是？",
     "options": [
-      "元素必须有明确的width且为块级元素",
-      "元素必须有height",
       "元素必须是内联元素",
+      "元素必须有height",
+      "元素必须有明确的width且为块级元素",
       "元素必须绝对定位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-109",
@@ -93,8 +93,8 @@
     "options": [
       "包含块的宽度",
       "包含块的高度",
-      "元素自身的宽度",
-      "元素自身的高度"
+      "元素自身的高度",
+      "元素自身的宽度"
     ],
     "correctAnswer": 0
   },
@@ -102,12 +102,12 @@
     "id": "css-110",
     "title": "margin的百分比是相对于什么计算的？",
     "options": [
-      "包含块的宽度",
-      "包含块的高度",
       "元素自身的宽度",
-      "元素自身的高度"
+      "元素自身的高度",
+      "包含块的宽度",
+      "包含块的高度"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-111",
@@ -115,8 +115,8 @@
     "options": [
       "width style color",
       "style color width",
-      "color width style",
-      "width color style"
+      "width color style",
+      "color width style"
     ],
     "correctAnswer": 0
   },
@@ -124,53 +124,53 @@
     "id": "css-112",
     "title": "border-style的默认值是？",
     "options": [
-      "none",
       "solid",
-      "dashed",
-      "dotted"
+      "none",
+      "dotted",
+      "dashed"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-113",
     "title": "border-width的默认值是？",
     "options": [
-      "medium",
+      "0",
       "thin",
       "thick",
-      "0"
+      "medium"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-114",
     "title": "border-color的默认值是？",
     "options": [
-      "currentColor",
       "black",
       "transparent",
-      "white"
+      "white",
+      "currentColor"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-115",
     "title": "border-radius: 50%的作用是？",
     "options": [
-      "创建圆形或椭圆形",
-      "创建圆角矩形",
       "创建三角形",
+      "创建圆角矩形",
+      "创建圆形或椭圆形",
       "创建梯形"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-116",
     "title": "outline与border的区别是？",
     "options": [
       "outline不占据布局空间",
-      "outline占据空间",
       "outline可以设置圆角",
+      "outline占据空间",
       "outline可以设置样式"
     ],
     "correctAnswer": 0
@@ -180,8 +180,8 @@
     "title": "outline-offset属性的作用是？",
     "options": [
       "设置轮廓与边框的偏移量",
-      "设置轮廓宽度",
       "设置轮廓颜色",
+      "设置轮廓宽度",
       "设置轮廓样式"
     ],
     "correctAnswer": 0
@@ -191,9 +191,9 @@
     "title": "box-shadow的参数顺序是？",
     "options": [
       "水平偏移 垂直偏移 模糊 扩展 颜色",
+      "水平偏移 垂直偏移 颜色 模糊",
       "模糊 水平偏移 垂直偏移 颜色",
-      "颜色 水平偏移 垂直偏移 模糊",
-      "水平偏移 垂直偏移 颜色 模糊"
+      "颜色 水平偏移 垂直偏移 模糊"
     ],
     "correctAnswer": 0
   },
@@ -202,9 +202,9 @@
     "title": "box-shadow中inset关键字的作用是？",
     "options": [
       "将外部阴影改为内部阴影",
-      "增加阴影大小",
+      "改变阴影颜色",
       "减少阴影模糊",
-      "改变阴影颜色"
+      "增加阴影大小"
     ],
     "correctAnswer": 0
   },
@@ -212,153 +212,153 @@
     "id": "css-120",
     "title": "如何用box-shadow实现多重阴影？",
     "options": [
+      "多次设置box-shadow",
       "使用逗号分隔多个阴影值",
-      "使用空格分隔",
       "使用分号分隔",
-      "多次设置box-shadow"
+      "使用空格分隔"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-121",
     "title": "文档流是指？",
     "options": [
-      "元素在页面中的默认排列规则",
       "水流效果",
       "文字环绕效果",
+      "元素在页面中的默认排列规则",
       "绝对定位布局"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-122",
     "title": "块级元素在文档流中的特点是？",
     "options": [
-      "独占一行，可设置宽高",
       "不独占一行，可设置宽高",
+      "独占一行，可设置宽高",
       "独占一行，不可设置宽高",
       "不独占一行，不可设置宽高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-123",
     "title": "内联元素在文档流中的特点是？",
     "options": [
-      "不独占一行，不可设置宽高",
       "独占一行，可设置宽高",
-      "不独占一行，可设置宽高",
-      "独占一行，不可设置宽高"
+      "独占一行，不可设置宽高",
+      "不独占一行，不可设置宽高",
+      "不独占一行，可设置宽高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-124",
     "title": "内联块元素的特点是？",
     "options": [
-      "不独占一行，可设置宽高",
       "独占一行，可设置宽高",
+      "独占一行，不可设置宽高",
       "不独占一行，不可设置宽高",
-      "独占一行，不可设置宽高"
+      "不独占一行，可设置宽高"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-125",
     "title": "display: none的作用是？",
     "options": [
+      "透明化元素",
       "隐藏元素且不占据空间",
-      "隐藏元素但占据空间",
       "显示元素",
-      "透明化元素"
+      "隐藏元素但占据空间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-126",
     "title": "visibility: hidden的作用是？",
     "options": [
-      "隐藏元素但占据空间",
       "隐藏元素且不占据空间",
       "显示元素",
-      "移除元素"
+      "移除元素",
+      "隐藏元素但占据空间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-127",
     "title": "opacity: 0的作用是？",
     "options": [
-      "透明化元素但占据空间",
       "隐藏元素且不占据空间",
       "移除元素",
-      "改变元素大小"
+      "改变元素大小",
+      "透明化元素但占据空间"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-128",
     "title": "如何清除元素默认的外边距和内边距？",
     "options": [
-      "* { margin: 0; padding: 0; }",
-      "body { margin: 0; }",
       "div { padding: 0; }",
-      "html { margin: 0; }"
+      "body { margin: 0; }",
+      "html { margin: 0; }",
+      "* { margin: 0; padding: 0; }"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-129",
     "title": "BFC的全称是？",
     "options": [
-      "Block Formatting Context",
+      "Box Format Content",
       "Block Format Content",
-      "Box Formatting Context",
-      "Box Format Content"
+      "Block Formatting Context",
+      "Box Formatting Context"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-130",
     "title": "BFC的作用不包括？",
     "options": [
-      "创建动画效果",
-      "避免margin合并",
       "清除浮动",
-      "阻止元素被浮动覆盖"
+      "阻止元素被浮动覆盖",
+      "创建动画效果",
+      "避免margin合并"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-131",
     "title": "如何创建BFC？",
     "options": [
+      "position: relative",
       "overflow: hidden/auto/scroll",
       "display: block",
-      "margin: auto",
-      "position: relative"
+      "margin: auto"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-132",
     "title": "float属性的作用是？",
     "options": [
-      "实现元素浮动",
-      "固定定位",
+      "网格布局",
       "弹性布局",
-      "网格布局"
+      "固定定位",
+      "实现元素浮动"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-133",
     "title": "浮动元素的特点是？",
     "options": [
       "脱离文档流，向左或向右移动",
-      "脱离文档流，固定位置",
+      "隐藏元素",
       "不脱离文档流",
-      "隐藏元素"
+      "脱离文档流，固定位置"
     ],
     "correctAnswer": 0
   },
@@ -368,8 +368,8 @@
     "options": [
       "清除浮动（clearfix）",
       "增加父元素高度",
-      "设置父元素overflow",
-      "以上都可以"
+      "以上都可以",
+      "设置父元素overflow"
     ],
     "correctAnswer": 0
   },
@@ -377,12 +377,12 @@
     "id": "css-135",
     "title": "clearfix的常用实现方式是？",
     "options": [
-      "::after { content: \"\"; display: block; clear: both; }",
       "::before { clear: both; }",
       "overflow: hidden",
-      "float: none"
+      "float: none",
+      "::after { content: \"\"; display: block; clear: both; }"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-136",
@@ -400,9 +400,9 @@
     "title": "position: static的特点是？",
     "options": [
       "默认定位，元素出现在正常流中",
-      "相对定位",
+      "固定定位",
       "绝对定位",
-      "固定定位"
+      "相对定位"
     ],
     "correctAnswer": 0
   },
@@ -421,32 +421,32 @@
     "id": "css-139",
     "title": "position: absolute的特点是？",
     "options": [
-      "相对最近的非static祖先元素偏移，脱离文档流",
+      "相对浏览器窗口定位",
       "相对自身偏移",
       "不脱离文档流",
-      "相对浏览器窗口定位"
+      "相对最近的非static祖先元素偏移，脱离文档流"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-140",
     "title": "position: fixed的特点是？",
     "options": [
-      "相对浏览器窗口定位，脱离文档流",
       "相对父元素定位",
-      "相对自身定位",
-      "不脱离文档流"
+      "相对浏览器窗口定位，脱离文档流",
+      "不脱离文档流",
+      "相对自身定位"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-141",
     "title": "position: sticky的特点是？",
     "options": [
       "相对定位和固定定位的混合",
+      "固定定位",
       "绝对定位",
-      "相对定位",
-      "固定定位"
+      "相对定位"
     ],
     "correctAnswer": 0
   },
@@ -454,99 +454,99 @@
     "id": "css-142",
     "title": "sticky定位的生效条件是？",
     "options": [
+      "必须设置overflow",
       "必须指定top/bottom/left/right之一",
       "父元素必须有高度",
-      "必须设置z-index",
-      "必须设置overflow"
+      "必须设置z-index"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-143",
     "title": "top/bottom/left/right属性只在什么情况下生效？",
     "options": [
-      "position不是static时",
       "任何情况都生效",
       "display为block时",
-      "float存在时"
+      "float存在时",
+      "position不是static时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-144",
     "title": "z-index属性的作用是？",
     "options": [
-      "控制定位元素的堆叠顺序",
-      "控制元素大小",
+      "控制元素透明度",
       "控制元素位置",
-      "控制元素透明度"
+      "控制元素大小",
+      "控制定位元素的堆叠顺序"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-145",
     "title": "z-index只在什么情况下生效？",
     "options": [
-      "position不是static时",
       "任何情况都生效",
+      "position不是static时",
       "display为block时",
       "float存在时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-146",
     "title": "层叠上下文是什么？",
     "options": [
-      "决定元素在Z轴上的渲染顺序的三维概念",
+      "元素的绘制顺序",
       "元素的层叠顺序",
       "元素的显示顺序",
-      "元素的绘制顺序"
+      "决定元素在Z轴上的渲染顺序的三维概念"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "css-147",
     "title": "如何创建层叠上下文？",
     "options": [
+      "float: left",
       "position+ z-index、opacity < 1、transform等",
-      "display: block",
       "margin: auto",
-      "float: left"
+      "display: block"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "css-148",
     "title": "display: inline-block的空白间隙问题如何解决？",
     "options": [
-      "删除HTML中的空白字符、负margin、font-size: 0",
       "设置width: 100%",
       "设置float",
+      "删除HTML中的空白字符、负margin、font-size: 0",
       "设置position"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-149",
     "title": "overflow属性的默认值是？",
     "options": [
-      "visible",
-      "hidden",
+      "scroll",
       "auto",
-      "scroll"
+      "visible",
+      "hidden"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "css-150",
     "title": "overflow: hidden的作用是？",
     "options": [
-      "裁剪溢出内容并隐藏",
+      "内容溢出显示",
       "显示滚动条",
-      "内容自动换行",
-      "内容溢出显示"
+      "裁剪溢出内容并隐藏",
+      "内容自动换行"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]

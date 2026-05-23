@@ -3,141 +3,141 @@
     "id": "html-551",
     "title": "移动端友好性对SEO的影响是？",
     "options": [
+      "只影响体验",
       "是排名因素(移动优先索引)",
-      "无影响",
       "影响很小",
-      "只影响体验"
+      "无影响"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-552",
     "title": "HTTPS对SEO的影响是？",
     "options": [
-      "是轻微排名因素",
-      "无影响",
       "影响很大",
-      "降低排名"
+      "是轻微排名因素",
+      "降低排名",
+      "无影响"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-553",
     "title": "<strong>和<b>对SEO的区别？",
     "options": [
-      "strong有语义权重，b无",
       "没有区别",
+      "strong无权重",
       "b权重更高",
-      "strong无权重"
+      "strong有语义权重，b无"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-554",
     "title": "<em>和<i>对SEO的区别？",
     "options": [
+      "i权重更高",
       "em有语义权重，i无",
       "没有区别",
-      "i权重更高",
       "em无权重"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-555",
     "title": "<caption>对SEO的作用是？",
     "options": [
-      "帮助理解表格内容",
-      "无影响",
       "增加关键词",
+      "无影响",
+      "帮助理解表格内容",
       "美化表格"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-556",
     "title": "<figcaption>对SEO的作用是？",
     "options": [
-      "帮助理解图片/图表内容",
-      "无影响",
       "增加链接",
+      "无影响",
+      "帮助理解图片/图表内容",
       "美化图片"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-557",
     "title": "<abbr>的title属性对SEO的作用？",
     "options": [
-      "提供缩写全称辅助理解",
       "无影响",
-      "增加关键词",
-      "定义链接"
+      "提供缩写全称辅助理解",
+      "定义链接",
+      "增加关键词"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-558",
     "title": "ARIA过度使用会导致？",
     "options": [
-      "屏幕阅读器输出混乱",
-      "提高可访问性",
       "增强SEO",
-      "提高性能"
+      "提高性能",
+      "提高可访问性",
+      "屏幕阅读器输出混乱"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-559",
     "title": "ARIA的第一条规则是？",
     "options": [
-      "如果原生HTML元素能实现，就不要用ARIA",
       "总是使用ARIA",
+      "如果原生HTML元素能实现，就不要用ARIA",
       "只用ARIA",
       "避免使用ARIA"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-560",
     "title": "tabindex属性的作用是？",
     "options": [
-      "控制元素是否可通过Tab键获取焦点",
       "设置Tab顺序",
-      "设置索引",
-      "设置标签"
+      "设置标签",
+      "控制元素是否可通过Tab键获取焦点",
+      "设置索引"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-561",
     "title": "tabindex=\"0\"的作用是？",
     "options": [
-      "按文档顺序将元素加入Tab序列",
+      "设为末尾",
       "移出序列",
-      "设为首个",
-      "设为末尾"
+      "按文档顺序将元素加入Tab序列",
+      "设为首个"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-562",
     "title": "tabindex=\"-1\"的作用是？",
     "options": [
-      "允许通过脚本获取焦点但不在Tab序列中",
       "移除焦点",
+      "禁止焦点",
       "设为首个",
-      "禁止焦点"
+      "允许通过脚本获取焦点但不在Tab序列中"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-563",
     "title": "tabindex大于0的做法推荐吗？",
     "options": [
       "不推荐，打乱自然Tab顺序",
-      "推荐",
       "无所谓",
+      "推荐",
       "必须设置"
     ],
     "correctAnswer": 0
@@ -147,8 +147,8 @@
     "title": "accesskey属性的作用是？",
     "options": [
       "为元素设置快捷键",
-      "设置访问权限",
       "设置密钥",
+      "设置访问权限",
       "设置密码"
     ],
     "correctAnswer": 0
@@ -157,34 +157,34 @@
     "id": "html-565",
     "title": "accesskey的问题不包括？",
     "options": [
-      "增加代码量",
-      "与浏览器快捷键冲突",
       "难以发现",
-      "不同浏览器按键不同"
+      "不同浏览器按键不同",
+      "增加代码量",
+      "与浏览器快捷键冲突"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-566",
     "title": "对比度至少应达到多少？",
     "options": [
+      "10:1",
       "4.5:1 (普通文本)",
       "1:1",
-      "2:1",
-      "10:1"
+      "2:1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-567",
     "title": "大文本(18pt或14pt粗体)的对比度至少？",
     "options": [
-      "3:1",
       "4.5:1",
       "2:1",
+      "3:1",
       "1:1"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-568",
@@ -202,9 +202,9 @@
     "title": ":focus-visible伪类的作用是？",
     "options": [
       "仅在键盘导航时显示焦点",
+      "鼠标焦点",
       "总是显示焦点",
-      "隐藏焦点",
-      "鼠标焦点"
+      "隐藏焦点"
     ],
     "correctAnswer": 0
   },
@@ -212,43 +212,43 @@
     "id": "html-570",
     "title": "跳过导航链接的作用是？",
     "options": [
+      "提高SEO",
       "让键盘用户跳过重复的导航",
       "加快加载",
-      "提高SEO",
       "美化页面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-571",
     "title": "跳过导航通常放在页面的什么位置？",
     "options": [
-      "页面最顶部",
       "导航内",
+      "侧边栏",
       "页脚",
-      "侧边栏"
+      "页面最顶部"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-572",
     "title": "表单错误提示应如何关联？",
     "options": [
+      "用alert",
       "使用aria-describedby关联到输入框",
       "放在旁边",
-      "放在底部",
-      "用alert"
+      "放在底部"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-573",
     "title": "必填字段的指示器应如何标记？",
     "options": [
       "使用aria-required=\"true\"",
-      "只用星号",
+      "只用placeholder",
       "只用颜色",
-      "只用placeholder"
+      "只用星号"
     ],
     "correctAnswer": 0
   },
@@ -256,21 +256,21 @@
     "id": "html-574",
     "title": "装饰性图片的alt应如何设置？",
     "options": [
-      "alt=\"\" (空值)",
-      "alt=\"装饰\"",
       "不设置alt",
-      "alt=\"图片\""
+      "alt=\"图片\"",
+      "alt=\"\" (空值)",
+      "alt=\"装饰\""
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-575",
     "title": "复杂图表的alt应如何设置？",
     "options": [
       "提供详细描述或链接到长描述",
-      "alt=\"图表\"",
       "alt=\"\"",
-      "不设置alt"
+      "不设置alt",
+      "alt=\"图表\""
     ],
     "correctAnswer": 0
   },
@@ -278,131 +278,131 @@
     "id": "html-576",
     "title": "auto-playing音频的可访问性问题？",
     "options": [
-      "不应自动播放，或提供暂停按钮",
-      "声音越大越好",
       "无需控制",
-      "自动播放好"
+      "不应自动播放，或提供暂停按钮",
+      "自动播放好",
+      "声音越大越好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-577",
     "title": "闪烁内容的风险是？",
     "options": [
-      "可能引发光敏性癫痫",
-      "吸引注意力",
+      "增加美观",
       "提高可见性",
-      "增加美观"
+      "可能引发光敏性癫痫",
+      "吸引注意力"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-578",
     "title": "每秒闪烁次数不应超过？",
     "options": [
-      "3次",
+      "1次",
       "5次",
       "10次",
-      "1次"
+      "3次"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-579",
     "title": "<iframe>的可访问性要求是？",
     "options": [
+      "设置name",
       "提供title属性描述内容",
-      "无需处理",
       "设置alt",
-      "设置name"
+      "无需处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-580",
     "title": "色彩依赖的问题是指？",
     "options": [
-      "仅用颜色传达信息，色盲用户无法识别",
+      "颜色不搭配",
       "颜色太鲜艳",
       "颜色太少",
-      "颜色不搭配"
+      "仅用颜色传达信息，色盲用户无法识别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-581",
     "title": "如何解决色彩依赖？",
     "options": [
-      "同时使用文本或图标标识",
-      "增加颜色",
+      "删除颜色",
       "改变颜色",
-      "删除颜色"
+      "增加颜色",
+      "同时使用文本或图标标识"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-582",
     "title": "文本缩放的要求是？",
     "options": [
-      "页面应支持放大到200%而不丢失内容",
       "不能缩放",
+      "支持50%",
       "支持100%",
-      "支持50%"
+      "页面应支持放大到200%而不丢失内容"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-583",
     "title": "屏幕阅读器如何处理<details>？",
     "options": [
-      "作为可展开/折叠的区域播报",
       "忽略",
       "总是展开",
-      "总是折叠"
+      "总是折叠",
+      "作为可展开/折叠的区域播报"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-584",
     "title": "<dialog>的可访问性优势是？",
     "options": [
+      "样式更好",
       "自动管理焦点陷阱和Esc关闭",
       "没有优势",
-      "样式更好",
       "动画更顺"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-585",
     "title": "焦点陷阱是指？",
     "options": [
-      "将焦点限制在模态对话框内",
+      "焦点在外部",
       "焦点消失",
-      "焦点乱跳",
-      "焦点在外部"
+      "将焦点限制在模态对话框内",
+      "焦点乱跳"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-586",
     "title": "如何测试网页可访问性？",
     "options": [
+      "不需要测试",
       "使用屏幕阅读器、键盘导航、审计工具",
-      "只看页面",
       "只用鼠标",
-      "不需要测试"
+      "只看页面"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-587",
     "title": "常见的可访问性审计工具有？",
     "options": [
       "Lighthouse, axe, WAVE",
-      "ESLint, Prettier",
       "Chrome DevTools",
-      "Webpack"
+      "Webpack",
+      "ESLint, Prettier"
     ],
     "correctAnswer": 0
   },
@@ -410,56 +410,56 @@
     "id": "html-588",
     "title": "Lighthouse的可访问性审计基于？",
     "options": [
-      "WCAG标准",
-      "个人经验",
       "浏览器规则",
-      "CSS规范"
+      "CSS规范",
+      "WCAG标准",
+      "个人经验"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-589",
     "title": "<html lang=\"zh-CN\">对可访问性的影响是？",
     "options": [
-      "屏幕阅读器会选择正确的语音引擎",
+      "影响编码",
       "无影响",
       "影响翻译",
-      "影响编码"
+      "屏幕阅读器会选择正确的语音引擎"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-590",
     "title": "链接文本的最佳实践是？",
     "options": [
+      "使用URL",
       "描述链接目标而非\"点击这里\"",
-      "越短越好",
       "越长越好",
-      "使用URL"
+      "越短越好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-591",
     "title": "响应式设计对可访问性的影响是？",
     "options": [
-      "适应不同设备改善体验",
-      "无影响",
       "降低体验",
-      "增加代码量"
+      "增加代码量",
+      "适应不同设备改善体验",
+      "无影响"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-592",
     "title": "触摸目标的最小尺寸建议是？",
     "options": [
-      "44x44 CSS像素",
       "10x10",
+      "100x100",
       "20x20",
-      "100x100"
+      "44x44 CSS像素"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-593",
@@ -467,8 +467,8 @@
     "options": [
       "必须提供非手势的替代操作",
       "手势最方便",
-      "不需要替代",
-      "禁止手势"
+      "禁止手势",
+      "不需要替代"
     ],
     "correctAnswer": 0
   },
@@ -477,9 +477,9 @@
     "title": "<video>的可访问性要求是？",
     "options": [
       "提供字幕和音频描述",
-      "无需处理",
+      "提供下载",
       "设置alt",
-      "提供下载"
+      "无需处理"
     ],
     "correctAnswer": 0
   },
@@ -487,66 +487,66 @@
     "id": "html-595",
     "title": "<audio>的可访问性要求是？",
     "options": [
-      "提供文本转录",
-      "无需处理",
       "设置alt",
-      "提供下载"
+      "提供文本转录",
+      "提供下载",
+      "无需处理"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "html-596",
     "title": "占位符的可访问性问题？",
     "options": [
-      "不能替代label，对比度常不足",
+      "必须使用",
       "很好用",
-      "替代label",
-      "必须使用"
+      "不能替代label，对比度常不足",
+      "替代label"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-597",
     "title": "自动填充的可访问性？",
     "options": [
-      "帮助残障用户快速填写表单",
-      "降低体验",
       "增加错误",
-      "无需支持"
+      "降低体验",
+      "无需支持",
+      "帮助残障用户快速填写表单"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "html-598",
     "title": "autocomplete属性对可访问性的帮助？",
     "options": [
-      "帮助浏览器和辅助技术理解字段用途",
-      "无帮助",
       "增加安全",
-      "加速加载"
+      "加速加载",
+      "帮助浏览器和辅助技术理解字段用途",
+      "无帮助"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-599",
     "title": "验证码(CAPTCHA)的可访问性问题？",
     "options": [
-      "对残障用户极不友好，需提供替代方案",
-      "非常友好",
       "无需替代",
-      "必须使用图片"
+      "必须使用图片",
+      "对残障用户极不友好，需提供替代方案",
+      "非常友好"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "html-600",
     "title": "音频验证码的作用是？",
     "options": [
+      "播放音乐",
       "为视觉障碍用户提供验证替代",
       "增加难度",
-      "播放音乐",
       "干扰用户"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   }
 ]

@@ -3,21 +3,21 @@
     "id": "c-251",
     "title": "C语言中，数组指针如何定义？",
     "options": [
-      "int (*arr)[10]",
-      "int *arr[10]",
       "int arr[10]",
-      "int **arr"
+      "int (*arr)[10]",
+      "int **arr",
+      "int *arr[10]"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-252",
     "title": "C语言中，指针数组存储的是什么？",
     "options": [
       "指针",
-      "数组",
       "值",
-      "地址的地址"
+      "地址的地址",
+      "数组"
     ],
     "correctAnswer": 0
   },
@@ -25,67 +25,67 @@
     "id": "c-253",
     "title": "C语言中，数组指针指向的是什么？",
     "options": [
-      "整个数组",
-      "首元素",
       "指针",
-      "地址"
+      "首元素",
+      "地址",
+      "整个数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-254",
     "title": "C语言中，二维数组a[m][n]的a[i]是什么？",
     "options": [
-      "一维数组的首地址",
-      "元素值",
+      "二维数组",
       "指针数组",
-      "二维数组"
+      "一维数组的首地址",
+      "元素值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-255",
     "title": "C语言中，a[m][n]的a是什么类型？",
     "options": [
-      "指向一维数组的指针",
       "指向元素的指针",
       "二级指针",
+      "指向一维数组的指针",
       "指针数组"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-256",
     "title": "C语言中，void指针可以自增吗？",
     "options": [
-      "不可以，因为不知道大小",
       "可以",
-      "取决于类型",
-      "取决于编译器"
+      "不可以，因为不知道大小",
+      "取决于编译器",
+      "取决于类型"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-257",
     "title": "C语言中，const指针和指针const的区别？",
     "options": [
-      "const在*前修饰数据，在*后修饰指针",
-      "没有区别",
       "const在*前修饰指针",
-      "const在*后修饰数据"
+      "const在*后修饰数据",
+      "const在*前修饰数据，在*后修饰指针",
+      "没有区别"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-258",
     "title": "C语言中，指针可以作为函数返回值吗？",
     "options": [
-      "可以，但不能返回局部变量地址",
       "不可以",
-      "可以，返回任何地址",
-      "取决于类型"
+      "取决于类型",
+      "可以，但不能返回局部变量地址",
+      "可以，返回任何地址"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-259",
@@ -93,8 +93,8 @@
     "options": [
       "pf(args)或(*pf)(args)",
       "pf.args",
-      "pf->args",
-      "call pf(args)"
+      "call pf(args)",
+      "pf->args"
     ],
     "correctAnswer": 0
   },
@@ -102,32 +102,32 @@
     "id": "c-260",
     "title": "C语言中，回调函数如何实现？",
     "options": [
-      "将函数指针作为参数传递",
+      "使用递归",
       "使用宏",
-      "使用内联",
-      "使用递归"
+      "将函数指针作为参数传递",
+      "使用内联"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-261",
     "title": "C语言中，右左法则用于？",
     "options": [
-      "解析复杂的C语言声明",
       "代码规范",
-      "命名规则",
-      "编译优化"
+      "编译优化",
+      "解析复杂的C语言声明",
+      "命名规则"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-262",
     "title": "C语言中，int (*(*p)(int))[10]表示？",
     "options": [
       "函数指针，返回数组指针",
-      "数组指针，指向函数",
       "指针数组，存函数",
-      "函数，返回指针数组"
+      "函数，返回指针数组",
+      "数组指针，指向函数"
     ],
     "correctAnswer": 0
   },
@@ -135,12 +135,12 @@
     "id": "c-263",
     "title": "C语言中，malloc返回的指针需要强制转换吗？",
     "options": [
-      "C语言不需要，C++需要",
+      "取决于类型",
       "都需要",
       "都不需要",
-      "取决于类型"
+      "C语言不需要，C++需要"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-264",
@@ -157,43 +157,43 @@
     "id": "c-265",
     "title": "C语言中，内存分配失败malloc返回？",
     "options": [
-      "NULL",
       "0",
       "-1",
-      "异常"
+      "异常",
+      "NULL"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-266",
     "title": "C语言中，calloc的参数是？",
     "options": [
-      "元素数量和每个元素大小",
+      "地址和大小",
       "总字节数",
-      "类型和数量",
-      "地址和大小"
+      "元素数量和每个元素大小",
+      "类型和数量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-267",
     "title": "C语言中，realloc可以缩小内存吗？",
     "options": [
-      "可以",
-      "不可以",
+      "取决于大小",
       "只能扩大",
-      "取决于大小"
+      "可以",
+      "不可以"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-268",
     "title": "C语言中，realloc(NULL, size)等价于？",
     "options": [
       "malloc(size)",
-      "calloc(size)",
+      "new",
       "free",
-      "new"
+      "calloc(size)"
     ],
     "correctAnswer": 0
   },
@@ -213,9 +213,9 @@
     "title": "C语言中，alloca分配的内存需要free吗？",
     "options": [
       "不需要，函数结束自动释放",
-      "需要",
+      "取决于编译器",
       "取决于类型",
-      "取决于编译器"
+      "需要"
     ],
     "correctAnswer": 0
   },
@@ -223,21 +223,21 @@
     "id": "c-271",
     "title": "C语言中，内存布局从低到高通常是？",
     "options": [
+      "堆、栈、代码段、数据段",
       "代码段、数据段、BSS段、堆、栈",
       "栈、堆、数据段、代码段",
-      "堆、栈、代码段、数据段",
       "随机"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-272",
     "title": "C语言中，栈区的特点？",
     "options": [
       "自动分配释放，后进先出",
-      "手动分配释放",
+      "只读",
       "全局存在",
-      "只读"
+      "手动分配释放"
     ],
     "correctAnswer": 0
   },
@@ -245,43 +245,43 @@
     "id": "c-273",
     "title": "C语言中，堆区的特点？",
     "options": [
+      "后进先出",
       "手动分配释放，空间大",
       "自动分配释放",
-      "后进先出",
       "只读"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-274",
     "title": "C语言中，BSS段存储什么？",
     "options": [
-      "未初始化的全局变量",
-      "已初始化的全局变量",
+      "常量",
       "局部变量",
-      "常量"
+      "未初始化的全局变量",
+      "已初始化的全局变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-275",
     "title": "C语言中，数据段存储什么？",
     "options": [
-      "已初始化的全局变量",
       "未初始化的全局变量",
+      "指令",
       "局部变量",
-      "指令"
+      "已初始化的全局变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-276",
     "title": "C语言中，代码段存储什么？",
     "options": [
       "执行指令",
-      "全局变量",
       "局部变量",
-      "常量"
+      "常量",
+      "全局变量"
     ],
     "correctAnswer": 0
   },
@@ -290,9 +290,9 @@
     "title": "C语言中，字符串常量存储在？",
     "options": [
       "常量区/只读数据段",
+      "BSS段",
       "栈区",
-      "堆区",
-      "BSS段"
+      "堆区"
     ],
     "correctAnswer": 0
   },
@@ -301,9 +301,9 @@
     "title": "C语言中，试图修改字符串常量会怎样？",
     "options": [
       "段错误或未定义行为",
-      "编译错误",
       "正常修改",
-      "警告"
+      "警告",
+      "编译错误"
     ],
     "correctAnswer": 0
   },
@@ -311,12 +311,12 @@
     "id": "c-279",
     "title": "C语言中，char *s = \"hello\"; s[0] = 'H'; 合法吗？",
     "options": [
-      "不合法，未定义行为",
-      "合法",
       "取决于编译器",
+      "合法",
+      "不合法，未定义行为",
       "只在C++合法"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-280",
@@ -333,43 +333,43 @@
     "id": "c-281",
     "title": "C语言中，数组越界访问会怎样？",
     "options": [
-      "未定义行为",
+      "返回0",
       "编译错误",
-      "运行错误",
-      "返回0"
+      "未定义行为",
+      "运行错误"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-282",
     "title": "C语言中，缓冲区溢出的原因是？",
     "options": [
+      "类型不匹配",
       "写入数据超过缓冲区大小",
       "内存不足",
-      "指针未初始化",
-      "类型不匹配"
+      "指针未初始化"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-283",
     "title": "C语言中，如何防止缓冲区溢出？",
     "options": [
+      "使用寄存器变量",
       "使用安全的函数如strncpy",
       "使用指针",
-      "使用全局变量",
-      "使用寄存器变量"
+      "使用全局变量"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-284",
     "title": "C语言中，对齐(alignment)的目的是？",
     "options": [
       "提高CPU访问内存效率",
-      "节省内存",
       "安全考虑",
-      "编译要求"
+      "编译要求",
+      "节省内存"
     ],
     "correctAnswer": 0
   },
@@ -377,87 +377,87 @@
     "id": "c-285",
     "title": "C语言中，结构体对齐的规则是？",
     "options": [
-      "按最大成员大小对齐",
       "按1字节对齐",
       "按指针大小对齐",
-      "随机对齐"
+      "随机对齐",
+      "按最大成员大小对齐"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-286",
     "title": "C语言中，#pragma pack(1)的作用是？",
     "options": [
-      "取消结构体对齐（1字节对齐）",
-      "设置1字节对齐",
+      "设置1字节偏移",
       "设置1字节大小",
-      "设置1字节偏移"
+      "设置1字节对齐",
+      "取消结构体对齐（1字节对齐）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-287",
     "title": "C语言中，指针运算的单位是什么？",
     "options": [
+      "8字节",
       "所指向类型的大小",
       "1字节",
-      "4字节",
-      "8字节"
+      "4字节"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-288",
     "title": "C语言中，int a[5]; a+1跳过几个字节？",
     "options": [
-      "4",
-      "1",
       "2",
-      "8"
+      "1",
+      "8",
+      "4"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-289",
     "title": "C语言中，int (*a)[5]; a+1跳过几个字节？",
     "options": [
-      "20",
-      "4",
+      "8",
       "5",
-      "8"
+      "20",
+      "4"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-290",
     "title": "C语言中，二级指针用于？",
     "options": [
-      "修改指针本身的值",
-      "修改指针指向的值",
+      "函数参数",
       "二维数组",
-      "函数参数"
+      "修改指针本身的值",
+      "修改指针指向的值"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": "c-291",
     "title": "C语言中，如何通过函数修改指针？",
     "options": [
-      "传递指针的地址（二级指针）",
       "传递指针",
+      "返回指针",
       "传递值",
-      "返回指针"
+      "传递指针的地址（二级指针）"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-292",
     "title": "C语言中，数组作为函数参数退化为？",
     "options": [
       "指针",
+      "结构体",
       "引用",
-      "值",
-      "结构体"
+      "值"
     ],
     "correctAnswer": 0
   },
@@ -466,9 +466,9 @@
     "title": "C语言中，在函数内计算数组大小可行吗？",
     "options": [
       "不可行，因为退化为指针",
-      "可行",
       "取决于类型",
-      "取决于编译器"
+      "取决于编译器",
+      "可行"
     ],
     "correctAnswer": 0
   },
@@ -476,34 +476,34 @@
     "id": "c-294",
     "title": "C语言中，strlen和sizeof的区别？",
     "options": [
-      "strlen是长度，sizeof是大小",
-      "没有区别",
+      "strlen是大小",
       "sizeof是长度",
-      "strlen是大小"
+      "没有区别",
+      "strlen是长度，sizeof是大小"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": "c-295",
     "title": "C语言中，动态分配二维数组的方法？",
     "options": [
+      "无法分配",
       "先分配行指针，再分配每行",
       "直接malloc",
-      "使用alloca",
-      "无法分配"
+      "使用alloca"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-296",
     "title": "C语言中，释放动态二维数组的方法？",
     "options": [
-      "先释放每行，再释放行指针",
       "直接free",
-      "不需要释放",
-      "使用delete"
+      "先释放每行，再释放行指针",
+      "使用delete",
+      "不需要释放"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-297",
@@ -522,8 +522,8 @@
     "options": [
       "C99",
       "C89",
-      "C11",
-      "C++"
+      "C++",
+      "C11"
     ],
     "correctAnswer": 0
   },
@@ -531,22 +531,22 @@
     "id": "c-299",
     "title": "C语言中，变长数组(VLA)是哪个标准引入的？",
     "options": [
+      "C++",
       "C99",
-      "C89",
       "C11",
-      "C++"
+      "C89"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": "c-300",
     "title": "C语言中，变长数组的长度在什么时候确定？",
     "options": [
-      "运行时",
-      "编译时",
       "链接时",
-      "预处理时"
+      "预处理时",
+      "运行时",
+      "编译时"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   }
 ]
