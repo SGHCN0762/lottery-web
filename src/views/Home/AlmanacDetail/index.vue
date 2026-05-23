@@ -23,7 +23,7 @@
       <AlmanacPengZu :almanac="almanac" />
 
       <div class="save-image-btn">
-        <van-icon name="photo-o" @click="handleSaveImage" size="24" color="#d4a017" />
+        <generate-image :page-ref="pageRef" :icon-props="{ color: '#d4a017', size: 24 }" />
       </div>
     </div>
   </div>
@@ -31,8 +31,8 @@
 
 <script setup>
   import { ref } from 'vue';
+  import GenerateImage from '@/components/GenerateImage/index.vue';
   import { useAlmanacDetail } from './hooks/useAlmanacDetail';
-  import { useSaveImage } from '@/hooks/useSaveImage';
   import AlmanacHeader from './components/AlmanacHeader.vue';
   import AlmanacYiJi from './components/AlmanacYiJi.vue';
   import AlmanacChongSha from './components/AlmanacChongSha.vue';
@@ -40,22 +40,8 @@
   import AlmanacPengZu from './components/AlmanacPengZu.vue';
 
   const { almanac, lunarInfo, dateStr, scrollToTimeLuck } = useAlmanacDetail();
-  const { isSaving, saveImage } = useSaveImage();
 
   const pageRef = ref(null);
-
-  const handleSaveImage = async () => {
-    if (!pageRef.value) return;
-    try {
-      await saveImage(pageRef.value, {
-        filename: `almanac_${dateStr}`,
-        type: 'png',
-        quality: 0.95,
-      });
-    } catch (err) {
-      console.error('保存图片失败:', err);
-    }
-  };
 </script>
 
 <style lang="less" scoped>
