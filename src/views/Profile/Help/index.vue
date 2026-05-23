@@ -207,9 +207,7 @@
   // 调试用：检查国际化数据
   const debugI18n = computed(() => {
     const result = t('help.pointsPopup.use.items');
-    console.log('t(help.pointsPopup.use.items):', result);
-    console.log('Type:', typeof result);
-    console.log('Is array:', Array.isArray(result));
+
     return result;
   });
 

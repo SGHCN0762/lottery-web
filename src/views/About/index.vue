@@ -16,8 +16,10 @@
       @call-phone="handleCallPhone" 
     />
 
-    <!-- 弹窗组件 -->
-    <LegalPopup 
+    <!-- 弹窗组件 - 异步加载 -->
+    <component 
+      v-if="popupVisible && LegalPopup"
+      :is="LegalPopup"
       v-model:show="popupVisible" 
       :type="currentPopup" 
     />
@@ -25,14 +27,16 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, shallowRef, defineAsyncComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { showToast } from 'vant'
 import AppCard from './components/AppCard.vue'
 import HealthSection from './components/HealthSection.vue'
 import LegalSection from './components/LegalSection.vue'
 import ContactSection from './components/ContactSection.vue'
-import LegalPopup from './components/LegalPopup.vue'
+
+// 异步加载弹窗组件 - 优化FCP
+const LegalPopup = defineAsyncComponent(() => import('./components/LegalPopup.vue'))
 
 // ========================================
 // i18n

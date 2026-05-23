@@ -79,7 +79,6 @@
   /** 标签页切换 */
   const handleTabChange = name => {
     // 由于使用了 route 属性，Vant 会自动处理路由跳转
-    console.log('切换到标签:', name);
   };
 </script>
 

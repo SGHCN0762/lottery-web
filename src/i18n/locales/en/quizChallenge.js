@@ -1,0 +1,38 @@
+// Module
+export default {
+
+  title: 'Quiz Challenge',
+  startDesc: 'Choose your technical field and start the challenge!',
+  selectCategory: 'Select Category',
+  selectCount: 'Select Question Count',
+  start: 'Start Challenge',
+  myPoints: 'My Points',
+  currentQuestion: 'Current Question',
+  progress: 'Progress',
+  submitAnswer: 'Submit Answer',
+  nextQuestion: 'Next Question',
+  viewResult: 'View Result',
+  backToAnswer: 'Back to Answering',
+  streak: '{count} Streak',
+  correctCount: 'Correct Answers',
+  earnedPoints: 'Earned Points',
+  maxStreak: 'Max Streak',
+  completed: 'Challenge Completed',
+  tryAgain: 'Try Again',
+  success: 'Congratulations! You earned {points} points',
+  loadError: 'Failed to load questions, please try again',
+  bonus: 'Awesome! {count} consecutive correct answers, bonus {bonus} points',
+  wrongAnswer: 'Wrong answer, keep going!',
+  correct: 'Correct',
+  wrong: 'Wrong',
+  questionNavigation: 'Question Navigation',
+  unanswered: 'Unanswered',
+  rules: {
+    title: 'Game Rules',
+    rule1: 'Choose your preferred technical category',
+    rule2: 'Earn base points for each correct answer',
+    rule3: 'Get bonus points for consecutive correct answers',
+    rule4: 'Wrong answers do not deduct points but break the streak',
+  },
+
+}

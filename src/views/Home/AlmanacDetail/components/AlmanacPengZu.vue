@@ -20,14 +20,14 @@ const props = defineProps({
   h4 {
     font-size: 16px;
     font-weight: 600;
-    color: #000000;
+    color: var(--color-text-primary);
     margin: 0 0 var(--spacing-md) 0;
   }
 
   p {
     font-size: 14px;
     line-height: 1.8;
-    color: #7f7f7f;
+    color: var(--color-text-secondary);
     margin: 0 0 6px 0;
   }
 }

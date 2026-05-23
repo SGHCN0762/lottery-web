@@ -16,6 +16,9 @@ import router from './router';
 // 国际化
 import i18n from './i18n';
 
+// 调试工具
+import vConsole from './utils/vconsole';
+
 // Vant 组件按需导入
 import {
   ConfigProvider,
@@ -39,7 +42,6 @@ import {
 // 导入 Vant 语言包
 import vantZhCN from 'vant/es/locale/lang/zh-CN';
 import vantEnUS from 'vant/es/locale/lang/en-US';
-import vantZhTW from 'vant/es/locale/lang/zh-TW';
 
 // 主题管理
 import { useThemeStore } from './stores/theme';
@@ -102,9 +104,6 @@ const initVantLocale = () => {
       break;
     case 'en':
       Locale.use('en-US', vantEnUS);
-      break;
-    case 'zh-TW':
-      Locale.use('zh-TW', vantZhTW);
       break;
     default:
       Locale.use('zh-CN', vantZhCN);

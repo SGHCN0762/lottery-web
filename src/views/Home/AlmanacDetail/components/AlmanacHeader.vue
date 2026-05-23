@@ -68,13 +68,13 @@ const scrollToTimeLuck = () => {
     h2 {
       font-size: 22px;
       font-weight: 600;
-      color: #000000;
+      color: var(--color-text-primary);
       margin: 0 0 6px 0;
     }
 
     p {
       font-size: 15px;
-      color: #7f7f7f;
+      color: var(--color-text-secondary);
       margin: 0;
     }
   }

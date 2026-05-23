@@ -61,6 +61,13 @@
     padding: var(--spacing-2xl);
     box-shadow: var(--shadow-card);
 
+    /* 日历特定颜色变量 */
+    --calendar-today-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --calendar-today-shadow: rgba(102, 126, 234, 0.4);
+    --calendar-festival-gradient: linear-gradient(135deg, rgba(255, 149, 0, 0.1) 0%, rgba(255, 149, 0, 0.05) 100%);
+    --calendar-solar-term-color: #07c160;
+    --calendar-solar-term-gradient: linear-gradient(135deg, rgba(7, 193, 96, 0.1) 0%, rgba(7, 193, 96, 0.05) 100%);
+
     .calendar-header {
       display: flex;
       justify-content: space-between;
@@ -137,9 +144,9 @@
         }
 
         &.is-today {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: var(--calendar-today-gradient);
           color: white;
-          box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+          box-shadow: 0 4px 12px var(--calendar-today-shadow);
           animation: todayPulse 2s ease-in-out infinite;
 
           .date-solar,
@@ -149,22 +156,14 @@
         }
 
         &.has-festival {
-          background: linear-gradient(
-            135deg,
-            rgba(255, 149, 0, 0.1) 0%,
-            rgba(255, 149, 0, 0.05) 100%
-          );
+          background: var(--calendar-festival-gradient);
           border: 2px solid var(--color-warning);
         }
 
         /* 节气特殊样式 - 使用绿色主题 */
         &.has-solar-term {
-          background: linear-gradient(
-            135deg,
-            rgba(7, 193, 96, 0.1) 0%,
-            rgba(7, 193, 96, 0.05) 100%
-          );
-          border: 2px solid #07c160;
+          background: var(--calendar-solar-term-gradient);
+          border: 2px solid var(--calendar-solar-term-color);
         }
 
         .date-solar {
@@ -182,7 +181,7 @@
 
           /* 节气文字使用绿色高亮 */
           &.solar-term-text {
-            color: #07c160;
+            color: var(--calendar-solar-term-color);
             font-weight: var(--font-weight-medium);
           }
         }

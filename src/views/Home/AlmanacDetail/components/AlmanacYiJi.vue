@@ -52,7 +52,7 @@ const props = defineProps({
       margin-bottom: var(--spacing-md);
       font-size: 16px;
       font-weight: 600;
-      color: #000000;
+      color: var(--color-text-primary);
 
       .icon {
         font-size: 18px;
@@ -83,14 +83,14 @@ const props = defineProps({
       }
 
       .ji-tag {
-        background: rgba(26, 26, 26, 0.06);
-        border: 1px solid rgba(26, 26, 26, 0.2);
-        color: #1a1a1a;
+        background: var(--color-bg-tertiary);
+        border: 1px solid var(--color-border);
+        color: var(--color-text-primary);
       }
 
       .empty-text {
         font-size: 14px;
-        color: #b2b2b2;
+        color: var(--color-text-tertiary);
       }
     }
   }

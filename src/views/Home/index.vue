@@ -38,21 +38,25 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue';
+  import { ref, defineAsyncComponent } from 'vue';
   import { useRouter } from 'vue-router';
   import { showToast } from 'vant';
   import CustomCalendar from './components/CustomCalendar.vue';
   import HeaderCard from './components/HeaderCard.vue';
   import NewYearEveEntry from './components/NewYearEveEntry.vue';
   import UpcomingFestivals from './components/UpcomingFestivals.vue';
-  import DateDetailModal from './components/DateDetailModal.vue';
-  import FestivalDetailModal from './components/FestivalDetailModal.vue';
   import { useLunar } from './hooks/useLunar';
   import { useFestivals } from './hooks/useFestivals';
   import { useCalendar } from './hooks/useCalendar';
   import { useCurrentDate } from './hooks/useCurrentDate';
   import { useNewYearEve } from '../../hooks/useNewYearEve';
   import { getFestivalOrSolarTermInfo } from './data/festivalInfo';
+
+  // 异步加载弹窗组件 - 优化FCP
+  const DateDetailModal = defineAsyncComponent(() => import('./components/DateDetailModal.vue'));
+  const FestivalDetailModal = defineAsyncComponent(
+    () => import('./components/FestivalDetailModal.vue')
+  );
 
   const router = useRouter();
 

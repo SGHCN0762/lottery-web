@@ -41,7 +41,7 @@
         </div>
 
         <!-- 黄历按钮 -->
-        <almanc-card v-if="date" @click="handleViewAlmanac" />
+        <almanc-card v-if="!isEmpty(date)" @click="handleViewAlmanac" />
       </div>
     </div>
   </van-popup>
@@ -52,6 +52,7 @@
   import { Popup as VanPopup } from 'vant';
   import { getFestivalOrSolarTermInfo } from '../data/festivalInfo';
   import AlmancCard from './AlmancCard.vue';
+  import { isEmpty } from 'lodash-es';
 
   const props = defineProps({
     show: {
@@ -124,7 +125,7 @@
         p {
           font-size: 15px;
           line-height: 1.8;
-          color: #333333;
+          color: var(--color-text-secondary);
           margin: 0;
           text-align: justify;
         }
@@ -135,7 +136,7 @@
         h4 {
           font-size: 15px;
           font-weight: 600;
-          color: #000000;
+          color: var(--color-text-primary);
           margin: 0 0 var(--spacing-md) 0;
           padding-left: 0;
           border-left: none;
@@ -153,7 +154,7 @@
             border: 1px solid rgba(255, 149, 0, 0.2);
             border-radius: 6px;
             font-size: 13px;
-            color: #ff9500;
+            color: var(--color-warning);
             transition: all 0.15s ease;
 
             &:active {

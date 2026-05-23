@@ -205,8 +205,6 @@
         type: 'success',
         duration: 2000,
       });
-
-      console.log('[答题挑战] 游戏结束，获得积分:', earnedPoints.value);
     }
   });
 
@@ -244,17 +242,16 @@
 
       // 开始游戏
       gameStarted.value = true;
-      console.log('[答题挑战] 游戏开始，分类:', categories, '题目数量:', count);
     } catch (error) {
       // 关闭加载提示
       closeToast();
-      
+
       // 显示错误提示
       showToast({
         message: t('quizChallenge.loadError'),
         type: 'fail',
       });
-      
+
       console.error('[答题挑战] 加载题目失败:', error);
     }
   };

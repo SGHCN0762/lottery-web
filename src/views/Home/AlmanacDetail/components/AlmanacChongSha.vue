@@ -26,7 +26,7 @@ const props = defineProps({
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-md);
   padding: var(--spacing-lg);
-  background: rgba(0, 0, 0, 0.02);
+  background: var(--color-bg-tertiary);
   border-radius: 10px;
 
   .info-item {
@@ -36,12 +36,12 @@ const props = defineProps({
 
     .label {
       font-size: 13px;
-      color: #b2b2b2;
+      color: var(--color-text-tertiary);
     }
 
     .value {
       font-size: 15px;
-      color: #333333;
+      color: var(--color-text-primary);
       font-weight: 500;
     }
   }

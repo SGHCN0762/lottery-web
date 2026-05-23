@@ -204,10 +204,7 @@
             <div class="value reply">{{ currentReport.reply }}</div>
           </div>
 
-          <div
-            class="detail-item"
-            v-if="currentReport.images && currentReport.images.length > 0"
-          >
+          <div class="detail-item" v-if="currentReport.images && currentReport.images.length > 0">
             <div class="label">证据截图</div>
             <div class="value">
               <van-image
@@ -358,7 +355,6 @@
    */
   const afterRead = file => {
     // 这里可以添加图片上传到服务器的逻辑
-    console.log('图片已选择:', file);
   };
 
   /**

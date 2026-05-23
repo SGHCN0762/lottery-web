@@ -30,7 +30,6 @@
   // 导入 Vant 语言包
   import vantZhCN from 'vant/es/locale/lang/zh-CN';
   import vantEnUS from 'vant/es/locale/lang/en-US';
-  import vantZhTW from 'vant/es/locale/lang/zh-TW';
 
   // ========================================
   // i18n
@@ -48,8 +47,6 @@
         return vantZhCN;
       case 'en':
         return vantEnUS;
-      case 'zh-TW':
-        return vantZhTW;
       default:
         return vantZhCN;
     }

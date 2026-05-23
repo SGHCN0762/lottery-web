@@ -339,8 +339,6 @@ router.beforeEach((to, from, next) => {
 // 全局后置路由钩子（用于语言切换时更新标题）
 // ========================================
 router.afterEach((to, from) => {
-  console.log(`页面跳转: ${from.path || '初始加载'} -> ${to.path}`);
-
   // 语言切换后重新设置标题
   if (to.meta.title) {
     const translatedTitle = i18n.global.t(to.meta.title);

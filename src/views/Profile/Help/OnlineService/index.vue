@@ -247,7 +247,7 @@
     {
       id: 3,
       question: t('help.onlineService.faq.howToContact'),
-      answer: t('help.onlineService.faq.howToContactAnswer'),
+      answer: t('help.onlineService.faq.howToContactAnswer', { email: 'support@lottery.com' }),
     },
   ]);
 
@@ -422,9 +422,7 @@
   // ========================================
   // 生命周期
   // ========================================
-  onMounted(() => {
-    console.log(t('help.onlineService.pageLoaded'));
-  });
+  onMounted(() => {});
 </script>
 
 <style lang="less" scoped>

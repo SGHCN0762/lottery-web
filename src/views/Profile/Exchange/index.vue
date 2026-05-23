@@ -6,12 +6,7 @@
         <div class="label">可用积分</div>
         <div class="value">{{ availablePoints }}</div>
       </div>
-      <van-button 
-        type="primary" 
-        size="small" 
-        round
-        @click="showRechargeDialog = true"
-      >
+      <van-button type="primary" size="small" round @click="showRechargeDialog = true">
         充值积分
       </van-button>
     </section>
@@ -29,7 +24,7 @@
     <!-- 兑换商品列表 -->
     <section class="products-list">
       <van-empty v-if="filteredProducts.length === 0" description="暂无可兑换商品" />
-      
+
       <div v-else class="products-grid">
         <div
           v-for="product in filteredProducts"
@@ -47,15 +42,9 @@
             >
               <template v-slot:error>加载失败</template>
             </van-image>
-            <van-tag 
-              v-if="product.hot" 
-              type="danger" 
-              class="hot-tag"
-            >
-              热门
-            </van-tag>
+            <van-tag v-if="product.hot" type="danger" class="hot-tag"> 热门 </van-tag>
           </div>
-          
+
           <div class="product-info">
             <h3 class="product-name">{{ product.name }}</h3>
             <p class="product-desc">{{ product.description }}</p>
@@ -64,9 +53,9 @@
                 <van-icon name="gold-coin-o" />
                 <span>{{ product.price }}</span>
               </div>
-              <van-button 
-                type="primary" 
-                size="mini" 
+              <van-button
+                type="primary"
+                size="mini"
                 round
                 :disabled="availablePoints < product.price"
                 @click.stop="handleExchange(product)"
@@ -80,18 +69,13 @@
     </section>
 
     <!-- 商品详情弹窗 -->
-    <van-popup
-      v-model:show="showDetailPopup"
-      round
-      position="bottom"
-      :style="{ height: '70%' }"
-    >
+    <van-popup v-model:show="showDetailPopup" round position="bottom" :style="{ height: '70%' }">
       <div class="detail-popup" v-if="currentProduct">
         <div class="popup-header">
           <h3>商品详情</h3>
           <van-icon name="cross" @click="showDetailPopup = false" />
         </div>
-        
+
         <div class="popup-content">
           <van-image
             width="100%"
@@ -100,16 +84,16 @@
             fit="contain"
             radius="var(--radius-md)"
           />
-          
+
           <div class="detail-info">
             <h2 class="detail-name">{{ currentProduct.name }}</h2>
             <p class="detail-desc">{{ currentProduct.description }}</p>
-            
+
             <div class="detail-specs">
               <h4>商品规格</h4>
               <p>{{ currentProduct.specs || '标准版' }}</p>
             </div>
-            
+
             <div class="detail-rules">
               <h4>兑换规则</h4>
               <ul>
@@ -121,7 +105,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="popup-footer">
           <div class="footer-price">
             <van-icon name="gold-coin-o" />
@@ -175,490 +159,488 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { showToast, showSuccessToast } from 'vant'
-import { 
-  Tabs as VanTabs,
-  Tab as VanTab,
-  Image as VanImage,
-  Tag as VanTag,
-  Button as VanButton,
-  Icon as VanIcon,
-  Empty as VanEmpty,
-  Popup as VanPopup,
-  Dialog as VanDialog
-} from 'vant'
+  import { ref, computed, onMounted } from 'vue';
+  import { showToast, showSuccessToast } from 'vant';
+  import {
+    Tabs as VanTabs,
+    Tab as VanTab,
+    Image as VanImage,
+    Tag as VanTag,
+    Button as VanButton,
+    Icon as VanIcon,
+    Empty as VanEmpty,
+    Popup as VanPopup,
+    Dialog as VanDialog,
+  } from 'vant';
 
-// ========================================
-// 响应式数据
-// ========================================
-const activeCategory = ref('all')
-const availablePoints = ref(0)
-const showDetailPopup = ref(false)
-const showConfirmDialog = ref(false)
-const showRechargeDialog = ref(false)
-const currentProduct = ref(null)
-const allProducts = ref([])
+  // ========================================
+  // 响应式数据
+  // ========================================
+  const activeCategory = ref('all');
+  const availablePoints = ref(0);
+  const showDetailPopup = ref(false);
+  const showConfirmDialog = ref(false);
+  const showRechargeDialog = ref(false);
+  const currentProduct = ref(null);
+  const allProducts = ref([]);
 
-// ========================================
-// 计算属性
-// ========================================
-const filteredProducts = computed(() => {
-  if (activeCategory.value === 'all') {
-    return allProducts.value
-  }
-  return allProducts.value.filter(p => p.category === activeCategory.value)
-})
-
-// ========================================
-// 商品数据
-// ========================================
-const generateProducts = () => {
-  return [
-    {
-      id: 1,
-      name: '精美马克杯',
-      description: '高品质陶瓷马克杯，容量350ml',
-      price: 200,
-      category: 'physical',
-      image: 'https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg',
-      hot: true,
-      specs: '白色/黑色可选，容量350ml'
-    },
-    {
-      id: 2,
-      name: '定制T恤',
-      description: '纯棉舒适T恤，多尺码可选',
-      price: 500,
-      category: 'physical',
-      image: 'https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg',
-      hot: false,
-      specs: 'S/M/L/XL码，多色可选'
-    },
-    {
-      id: 3,
-      name: '幸运转盘券',
-      description: '免费转动幸运转盘3次',
-      price: 50,
-      category: 'virtual',
-      image: 'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg',
-      hot: true,
-      specs: '有效期7天'
-    },
-    {
-      id: 4,
-      name: '答题复活卡',
-      description: '答题挑战答错时可复活一次',
-      price: 80,
-      category: 'virtual',
-      image: 'https://fastly.jsdelivr.net/npm/@vant/assets/dog.jpeg',
-      hot: false,
-      specs: '每局限用1次'
-    },
-    {
-      id: 5,
-      name: 'VIP会员（月）',
-      description: '享受专属特权和额外奖励',
-      price: 1000,
-      category: 'privilege',
-      image: 'https://fastly.jsdelivr.net/npm/@vant/assets/leaf.jpeg',
-      hot: true,
-      specs: '每日签到双倍积分，专属客服'
-    },
-    {
-      id: 6,
-      name: '游戏提示卡',
-      description: '数字猜猜猜可获得一次提示',
-      price: 30,
-      category: 'virtual',
-      image: 'https://fastly.jsdelivr.net/npm/@vant/assets/orange.jpeg',
-      hot: false,
-      specs: '提示偏大或偏小'
+  // ========================================
+  // 计算属性
+  // ========================================
+  const filteredProducts = computed(() => {
+    if (activeCategory.value === 'all') {
+      return allProducts.value;
     }
-  ]
-}
+    return allProducts.value.filter(p => p.category === activeCategory.value);
+  });
 
-// ========================================
-// 工具函数
-// ========================================
+  // ========================================
+  // 商品数据
+  // ========================================
+  const generateProducts = () => {
+    return [
+      {
+        id: 1,
+        name: '精美马克杯',
+        description: '高品质陶瓷马克杯，容量350ml',
+        price: 200,
+        category: 'physical',
+        image: 'https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg',
+        hot: true,
+        specs: '白色/黑色可选，容量350ml',
+      },
+      {
+        id: 2,
+        name: '定制T恤',
+        description: '纯棉舒适T恤，多尺码可选',
+        price: 500,
+        category: 'physical',
+        image: 'https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg',
+        hot: false,
+        specs: 'S/M/L/XL码，多色可选',
+      },
+      {
+        id: 3,
+        name: '幸运转盘券',
+        description: '免费转动幸运转盘3次',
+        price: 50,
+        category: 'virtual',
+        image: 'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg',
+        hot: true,
+        specs: '有效期7天',
+      },
+      {
+        id: 4,
+        name: '答题复活卡',
+        description: '答题挑战答错时可复活一次',
+        price: 80,
+        category: 'virtual',
+        image: 'https://fastly.jsdelivr.net/npm/@vant/assets/dog.jpeg',
+        hot: false,
+        specs: '每局限用1次',
+      },
+      {
+        id: 5,
+        name: 'VIP会员（月）',
+        description: '享受专属特权和额外奖励',
+        price: 1000,
+        category: 'privilege',
+        image: 'https://fastly.jsdelivr.net/npm/@vant/assets/leaf.jpeg',
+        hot: true,
+        specs: '每日签到双倍积分，专属客服',
+      },
+      {
+        id: 6,
+        name: '游戏提示卡',
+        description: '数字猜猜猜可获得一次提示',
+        price: 30,
+        category: 'virtual',
+        image: 'https://fastly.jsdelivr.net/npm/@vant/assets/orange.jpeg',
+        hot: false,
+        specs: '提示偏大或偏小',
+      },
+    ];
+  };
 
-/**
- * 加载数据
- */
-const loadData = () => {
-  // 加载用户积分
-  const userInfo = localStorage.getItem('userInfo')
-  if (userInfo) {
-    const user = JSON.parse(userInfo)
-    availablePoints.value = user.points || 1580
-  } else {
-    availablePoints.value = 1580
-  }
+  // ========================================
+  // 工具函数
+  // ========================================
 
-  // 加载商品列表
-  allProducts.value = generateProducts()
-}
+  /**
+   * 加载数据
+   */
+  const loadData = () => {
+    // 加载用户积分
+    const userInfo = localStorage.getItem('userInfo');
+    if (userInfo) {
+      const user = JSON.parse(userInfo);
+      availablePoints.value = user.points || 1580;
+    } else {
+      availablePoints.value = 1580;
+    }
 
-/**
- * 分类切换
- */
-const handleCategoryChange = () => {
-  console.log('切换到分类:', activeCategory.value)
-}
+    // 加载商品列表
+    allProducts.value = generateProducts();
+  };
 
-/**
- * 显示商品详情
- */
-const showProductDetail = (product) => {
-  currentProduct.value = product
-  showDetailPopup.value = true
-}
+  /**
+   * 分类切换
+   */
+  const handleCategoryChange = () => {};
 
-/**
- * 处理兑换
- */
-const handleExchange = (product) => {
-  if (availablePoints.value < product.price) {
-    showToast('积分不足')
-    return
-  }
-  
-  currentProduct.value = product
-  showDetailPopup.value = false
-  showConfirmDialog.value = true
-}
+  /**
+   * 显示商品详情
+   */
+  const showProductDetail = product => {
+    currentProduct.value = product;
+    showDetailPopup.value = true;
+  };
 
-/**
- * 确认兑换
- */
-const confirmExchange = () => {
-  if (!currentProduct.value) return
-  
-  // 扣除积分
-  availablePoints.value -= currentProduct.value.price
-  
-  // 更新 localStorage
-  const userInfo = localStorage.getItem('userInfo')
-  if (userInfo) {
-    const user = JSON.parse(userInfo)
-    user.points = availablePoints.value
-    localStorage.setItem('userInfo', JSON.stringify(user))
-  }
-  
-  showSuccessToast('兑换成功！')
-  showConfirmDialog.value = false
-  
-  // TODO: 添加兑换记录
-  addExchangeRecord(currentProduct.value)
-}
+  /**
+   * 处理兑换
+   */
+  const handleExchange = product => {
+    if (availablePoints.value < product.price) {
+      showToast('积分不足');
+      return;
+    }
 
-/**
- * 添加兑换记录
- */
-const addExchangeRecord = (product) => {
-  const records = JSON.parse(localStorage.getItem('exchangeRecords') || '[]')
-  records.unshift({
-    id: Date.now(),
-    productName: product.name,
-    price: product.price,
-    time: Date.now(),
-    status: 'pending'
-  })
-  localStorage.setItem('exchangeRecords', JSON.stringify(records))
-}
+    currentProduct.value = product;
+    showDetailPopup.value = false;
+    showConfirmDialog.value = true;
+  };
 
-/**
- * 处理充值
- */
-const handleRecharge = () => {
-  // 测试期间免费赠送100积分
-  availablePoints.value += 100
-  
-  // 更新 localStorage
-  const userInfo = localStorage.getItem('userInfo')
-  if (userInfo) {
-    const user = JSON.parse(userInfo)
-    user.points = availablePoints.value
-    localStorage.setItem('userInfo', JSON.stringify(user))
-  }
-  
-  showSuccessToast('充值成功！获得100积分')
-}
+  /**
+   * 确认兑换
+   */
+  const confirmExchange = () => {
+    if (!currentProduct.value) return;
 
-// ========================================
-// 生命周期
-// ========================================
-onMounted(() => {
-  loadData()
-})
+    // 扣除积分
+    availablePoints.value -= currentProduct.value.price;
+
+    // 更新 localStorage
+    const userInfo = localStorage.getItem('userInfo');
+    if (userInfo) {
+      const user = JSON.parse(userInfo);
+      user.points = availablePoints.value;
+      localStorage.setItem('userInfo', JSON.stringify(user));
+    }
+
+    showSuccessToast('兑换成功！');
+    showConfirmDialog.value = false;
+
+    // TODO: 添加兑换记录
+    addExchangeRecord(currentProduct.value);
+  };
+
+  /**
+   * 添加兑换记录
+   */
+  const addExchangeRecord = product => {
+    const records = JSON.parse(localStorage.getItem('exchangeRecords') || '[]');
+    records.unshift({
+      id: Date.now(),
+      productName: product.name,
+      price: product.price,
+      time: Date.now(),
+      status: 'pending',
+    });
+    localStorage.setItem('exchangeRecords', JSON.stringify(records));
+  };
+
+  /**
+   * 处理充值
+   */
+  const handleRecharge = () => {
+    // 测试期间免费赠送100积分
+    availablePoints.value += 100;
+
+    // 更新 localStorage
+    const userInfo = localStorage.getItem('userInfo');
+    if (userInfo) {
+      const user = JSON.parse(userInfo);
+      user.points = availablePoints.value;
+      localStorage.setItem('userInfo', JSON.stringify(user));
+    }
+
+    showSuccessToast('充值成功！获得100积分');
+  };
+
+  // ========================================
+  // 生命周期
+  // ========================================
+  onMounted(() => {
+    loadData();
+  });
 </script>
 
 <style lang="less" scoped>
-.exchange-page {
-  min-height: 100%;
-  background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-lg);
-}
+  .exchange-page {
+    min-height: 100%;
+    background: var(--color-bg-primary);
+    padding-bottom: var(--spacing-lg);
+  }
 
-/* ========================================
+  /* ========================================
    积分余额卡片
    ======================================== */
-.balance-card {
-  margin: var(--spacing-sm);
-  padding: var(--spacing-md);
-  background: var(--gradient-primary);
-  border-radius: var(--radius-md);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
+  .balance-card {
+    margin: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 
-  .balance-info {
-    .label {
-      font-size: 12px;
-      opacity: 0.85;
-      margin-bottom: 2px;
-    }
+    .balance-info {
+      .label {
+        font-size: 12px;
+        opacity: 0.85;
+        margin-bottom: 2px;
+      }
 
-    .value {
-      font-size: var(--font-size-xl);
-      font-weight: var(--font-weight-bold);
+      .value {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+      }
     }
   }
-}
 
-/* ========================================
+  /* ========================================
    分类标签
    ======================================== */
-.category-tabs {
-  margin: 0 var(--spacing-sm) var(--spacing-sm);
-}
+  .category-tabs {
+    margin: 0 var(--spacing-sm) var(--spacing-sm);
+  }
 
-/* ========================================
+  /* ========================================
    商品列表
    ======================================== */
-.products-list {
-  margin: 0 var(--spacing-sm);
+  .products-list {
+    margin: 0 var(--spacing-sm);
 
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-sm);
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-sm);
 
-    .product-card {
-      background: var(--color-bg-secondary);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      transition: transform var(--transition-fast);
-      cursor: pointer;
+      .product-card {
+        background: var(--color-bg-secondary);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        transition: transform var(--transition-fast);
+        cursor: pointer;
 
-      &:active {
-        transform: scale(0.98);
-      }
-
-      .product-image {
-        position: relative;
-
-        .hot-tag {
-          position: absolute;
-          top: var(--spacing-xs);
-          right: var(--spacing-xs);
-        }
-      }
-
-      .product-info {
-        padding: var(--spacing-sm);
-
-        .product-name {
-          font-size: var(--font-size-sm);
-          font-weight: var(--font-weight-semibold);
-          color: var(--color-text-primary);
-          margin: 0 0 3px 0;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+        &:active {
+          transform: scale(0.98);
         }
 
-        .product-desc {
-          font-size: 11px;
-          color: var(--color-text-secondary);
-          margin: 0 0 var(--spacing-xs) 0;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+        .product-image {
+          position: relative;
+
+          .hot-tag {
+            position: absolute;
+            top: var(--spacing-xs);
+            right: var(--spacing-xs);
+          }
         }
 
-        .product-footer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+        .product-info {
+          padding: var(--spacing-sm);
 
-          .product-price {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-xs);
-            color: var(--color-warning);
+          .product-name {
+            font-size: var(--font-size-sm);
             font-weight: var(--font-weight-semibold);
+            color: var(--color-text-primary);
+            margin: 0 0 3px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
 
-            span {
-              font-size: var(--font-size-md);
+          .product-desc {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            margin: 0 0 var(--spacing-xs) 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .product-price {
+              display: flex;
+              align-items: center;
+              gap: var(--spacing-xs);
+              color: var(--color-warning);
+              font-weight: var(--font-weight-semibold);
+
+              span {
+                font-size: var(--font-size-md);
+              }
             }
           }
         }
       }
     }
   }
-}
 
-/* ========================================
+  /* ========================================
    商品详情弹窗
    ======================================== */
-.detail-popup {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-
-  .popup-header {
+  .detail-popup {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md);
-    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
 
-    h3 {
-      margin: 0;
-      font-size: var(--font-size-md);
-      color: var(--color-text-primary);
-    }
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--spacing-md);
+      border-bottom: 1px solid var(--color-border);
 
-    .van-icon {
-      font-size: 18px;
-      cursor: pointer;
-      color: var(--color-text-secondary);
-    }
-  }
-
-  .popup-content {
-    flex: 1;
-    overflow-y: auto;
-    padding: var(--spacing-md);
-
-    .detail-info {
-      margin-top: var(--spacing-md);
-
-      .detail-name {
-        font-size: var(--font-size-lg);
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-xs) 0;
-      }
-
-      .detail-desc {
-        font-size: 13px;
-        color: var(--color-text-secondary);
-        line-height: 1.6;
-        margin: 0 0 var(--spacing-md) 0;
-      }
-
-      h4 {
-        font-size: var(--font-size-sm);
-        color: var(--color-text-primary);
-        margin: 0 0 var(--spacing-xs) 0;
-        font-weight: var(--font-weight-semibold);
-      }
-
-      p {
-        font-size: 13px;
-        color: var(--color-text-secondary);
-        line-height: 1.6;
-        margin: 0 0 var(--spacing-md) 0;
-      }
-
-      ul {
-        padding-left: var(--spacing-md);
+      h3 {
         margin: 0;
+        font-size: var(--font-size-md);
+        color: var(--color-text-primary);
+      }
 
-        li {
+      .van-icon {
+        font-size: 18px;
+        cursor: pointer;
+        color: var(--color-text-secondary);
+      }
+    }
+
+    .popup-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: var(--spacing-md);
+
+      .detail-info {
+        margin-top: var(--spacing-md);
+
+        .detail-name {
+          font-size: var(--font-size-lg);
+          color: var(--color-text-primary);
+          margin: 0 0 var(--spacing-xs) 0;
+        }
+
+        .detail-desc {
           font-size: 13px;
           color: var(--color-text-secondary);
-          line-height: 1.8;
+          line-height: 1.6;
+          margin: 0 0 var(--spacing-md) 0;
+        }
+
+        h4 {
+          font-size: var(--font-size-sm);
+          color: var(--color-text-primary);
+          margin: 0 0 var(--spacing-xs) 0;
+          font-weight: var(--font-weight-semibold);
+        }
+
+        p {
+          font-size: 13px;
+          color: var(--color-text-secondary);
+          line-height: 1.6;
+          margin: 0 0 var(--spacing-md) 0;
+        }
+
+        ul {
+          padding-left: var(--spacing-md);
+          margin: 0;
+
+          li {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+          }
         }
       }
     }
-  }
 
-  .popup-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md);
-    border-top: 1px solid var(--color-border);
-    background: var(--color-bg-secondary);
-
-    .footer-price {
+    .popup-footer {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: var(--spacing-xs);
-      color: var(--color-warning);
-      font-size: var(--font-size-lg);
-      font-weight: var(--font-weight-bold);
+      padding: var(--spacing-md);
+      border-top: 1px solid var(--color-border);
+      background: var(--color-bg-secondary);
+
+      .footer-price {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        color: var(--color-warning);
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-bold);
+      }
     }
   }
-}
 
-/* ========================================
+  /* ========================================
    确认兑换内容
    ======================================== */
-.confirm-content {
-  padding: var(--spacing-md);
-  text-align: center;
+  .confirm-content {
+    padding: var(--spacing-md);
+    text-align: center;
 
-  p {
-    font-size: 13px;
-    color: var(--color-text-secondary);
-    margin: 0 0 var(--spacing-sm) 0;
-  }
-
-  .confirm-product {
-    background: var(--color-bg-tertiary);
-    padding: var(--spacing-sm);
-    border-radius: var(--radius-sm);
-    margin: var(--spacing-sm) 0;
-
-    strong {
-      display: block;
-      font-size: var(--font-size-sm);
-      color: var(--color-text-primary);
-      margin-bottom: 3px;
+    p {
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      margin: 0 0 var(--spacing-sm) 0;
     }
 
-    .confirm-price {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--spacing-xs);
-      color: var(--color-warning);
-      font-size: var(--font-size-md);
-      font-weight: var(--font-weight-semibold);
+    .confirm-product {
+      background: var(--color-bg-tertiary);
+      padding: var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      margin: var(--spacing-sm) 0;
+
+      strong {
+        display: block;
+        font-size: var(--font-size-sm);
+        color: var(--color-text-primary);
+        margin-bottom: 3px;
+      }
+
+      .confirm-price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-xs);
+        color: var(--color-warning);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-semibold);
+      }
+    }
+
+    .confirm-tip {
+      font-size: 11px;
+      color: var(--color-danger);
     }
   }
 
-  .confirm-tip {
-    font-size: 11px;
-    color: var(--color-danger);
-  }
-}
-
-/* ========================================
+  /* ========================================
    充值内容
    ======================================== */
-.recharge-content {
-  padding: var(--spacing-md);
+  .recharge-content {
+    padding: var(--spacing-md);
 
-  p {
-    font-size: 13px;
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-    margin: 0 0 var(--spacing-xs) 0;
+    p {
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin: 0 0 var(--spacing-xs) 0;
+    }
   }
-}
 </style>

@@ -7,7 +7,6 @@ export function useNewYearEve() {
   const newYearEveDate = computed(() => {
     // 获取当前年份
     const currentYear = new Date().getFullYear();
-    console.log('当前年份:', currentYear);
 
     // 使用与 springFestivalCountdown 相同的逻辑查找春节日期
     let springFestivalDate = null;
@@ -36,8 +35,6 @@ export function useNewYearEve() {
       if (springFestivalDate) break;
     }
 
-    console.log('春节日期:', springFestivalDate);
-
     if (!springFestivalDate) {
       console.error('无法计算春节日期，使用默认值');
       return new Date(currentYear + 1, 1, 10); // 默认值
@@ -46,7 +43,6 @@ export function useNewYearEve() {
     // 除夕是春节的前一天
     const newYearEve = new Date(springFestivalDate);
     newYearEve.setDate(newYearEve.getDate() - 1);
-    console.log('除夕日期:', newYearEve);
 
     // 确保返回的是有效的日期对象
     if (isNaN(newYearEve.getTime())) {
@@ -59,6 +55,6 @@ export function useNewYearEve() {
   });
 
   return {
-    newYearEveDate
+    newYearEveDate,
   };
 }

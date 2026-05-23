@@ -81,14 +81,14 @@
             <span class="rule-desc">{{ t('help.onlineService.replies.points') }}</span>
           </template>
         </van-cell>
-        <van-cell title="奖励何时发放？">
+        <van-cell :title="t('invite.rewardDistributionTitle')">
           <template #label>
-            <span class="rule-desc">好友完成首次游戏后，奖励将自动发放到您的账户</span>
+            <span class="rule-desc">{{ t('invite.rewardDistributionDesc') }}</span>
           </template>
         </van-cell>
-        <van-cell title="有邀请上限吗？">
+        <van-cell :title="t('invite.inviteLimitTitle')">
           <template #label>
-            <span class="rule-desc">没有上限，邀请越多，奖励越多</span>
+            <span class="rule-desc">{{ t('invite.inviteLimitDesc') }}</span>
           </template>
         </van-cell>
       </van-cell-group>

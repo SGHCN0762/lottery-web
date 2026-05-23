@@ -94,13 +94,11 @@ export function useQuestions() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      console.log(category, data);
 
       // 更新缓存
       allQuestions.value[category] = data;
       loadedCategories.value.add(category);
 
-      console.log(`[答题挑战] 成功加载分类 "${category}" 的题目，共 ${data.length} 道`);
       return data;
     } catch (error) {
       console.error(`[答题挑战] 加载分类 "${category}" 失败:`, error);
@@ -161,10 +159,6 @@ export function useQuestions() {
 
       // 最后再打乱一次顺序
       questions.value.sort(() => Math.random() - 0.5);
-
-      console.log(
-        `[答题挑战] 准备了 ${questions.value.length} 道题目，分类: ${categories.join(', ')}`
-      );
     } catch (error) {
       console.error('[答题挑战] 准备题目失败:', error);
       throw error;

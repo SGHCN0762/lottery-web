@@ -1,0 +1,38 @@
+// 答题挑战
+export default {
+
+  title: '答题挑战',
+  startDesc: '展示你的技术知识！',
+  myPoints: '我的积分',
+  currentQuestion: '当前题目',
+  start: '开始挑战',
+  submitAnswer: '提交答案',
+  nextQuestion: '下一题',
+  viewResult: '查看结果',
+  backToAnswer: '返回答题',
+  tryAgain: '再次挑战',
+  completed: '挑战完成！',
+  progress: '进度',
+  streak: '连续答对 {count} 题',
+  correctCount: '答对题数',
+  earnedPoints: '获得积分',
+  maxStreak: '最高连击',
+  bonus: '太棒了！连续{count}题，额外奖励{bonus}积分',
+  wrongAnswer: '答错了，继续加油！',
+  success: '恭喜获得 {points} 积分！',
+  selectCategory: '选择挑战分类（可多选）',
+  selectCount: '选择题目数量',
+  correct: '答对',
+  wrong: '答错',
+  questionNavigation: '题目导航',
+  unanswered: '未作答',
+  loadError: '加载题目失败',
+  rules: {
+    title: '游戏规则',
+    rule1: '可选择多个技术分类进行挑战',
+    rule2: '可自定义挑战题目数量（5-50题）',
+    rule3: '每答对一题获得5积分，连续答对有额外奖励',
+    rule4: '连续答对奖励：2题+5分，3题+10分，4题+15分，5题及以上+25分',
+  },
+
+}

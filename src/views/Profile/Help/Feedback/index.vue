@@ -340,7 +340,6 @@
    */
   const afterRead = file => {
     // 这里可以添加图片上传到服务器的逻辑
-    console.log('图片已选择:', file);
   };
 
   /**

@@ -1,5 +1,5 @@
-import { showToast } from 'vant'
-import { useI18n } from 'vue-i18n'
+import { showToast } from 'vant';
+import { useI18n } from 'vue-i18n';
 
 /**
  * 抽奖核心逻辑 Hook
@@ -12,9 +12,9 @@ import { useI18n } from 'vue-i18n'
  */
 export function useLottery(userPointsHook, spinHistoryHook, wheelRotationHook, prizes, t) {
   // 从其他hooks中解构所需的方法和状态
-  const { userPoints, updateUserPoints } = userPointsHook
-  const { addSpinRecord } = spinHistoryHook
-  const { isSpinning, spinToPrize, resetWheel } = wheelRotationHook
+  const { userPoints, updateUserPoints } = userPointsHook;
+  const { addSpinRecord } = spinHistoryHook;
+  const { isSpinning, spinToPrize, resetWheel } = wheelRotationHook;
 
   /**
    * 开始抽奖
@@ -26,33 +26,31 @@ export function useLottery(userPointsHook, spinHistoryHook, wheelRotationHook, p
       showToast({
         message: t('luckyWheel.insufficientPoints'),
         type: 'fail',
-        duration: 2000
-      })
-      return
+        duration: 2000,
+      });
+      return;
     }
 
     // 防止重复点击
-    if (isSpinning.value) return
+    if (isSpinning.value) return;
 
-    isSpinning.value = true
+    isSpinning.value = true;
 
     // 扣除抽奖费用
-    updateUserPoints(-10)
+    updateUserPoints(-10);
 
     // 随机选择奖品索引（0-5）
-    const prizeIndex = Math.floor(Math.random() * prizes.length)
-    const selectedPrize = prizes[prizeIndex]
-
-    console.log('[幸运转盘] 选中奖品:', selectedPrize.name, '索引:', prizeIndex)
+    const prizeIndex = Math.floor(Math.random() * prizes.length);
+    const selectedPrize = prizes[prizeIndex];
 
     // 执行旋转动画
-    const wonPrize = await spinToPrize(prizeIndex, selectedPrize)
+    const wonPrize = await spinToPrize(prizeIndex, selectedPrize);
 
     // 旋转结束，发放奖励
-    handleWin(wonPrize)
+    handleWin(wonPrize);
 
-    resetWheel()
-  }
+    resetWheel();
+  };
 
   /**
    * 处理中奖逻辑
@@ -60,28 +58,28 @@ export function useLottery(userPointsHook, spinHistoryHook, wheelRotationHook, p
    *
    * @param {Object} prize - 中奖的奖品对象
    */
-  const handleWin = (prize) => {
+  const handleWin = prize => {
     // 检查奖品对象是否存在且包含points属性
     if (!prize || !prize.points) {
-      console.error("奖品数据不完整:", prize);
+      console.error('奖品数据不完整:', prize);
       return;
     }
-    
+
     // 添加奖品积分到用户总积分
-    updateUserPoints(prize.points)
+    updateUserPoints(prize.points);
 
     // 添加到历史记录
-    addSpinRecord(prize)
+    addSpinRecord(prize);
 
     // 显示中奖提示
     showToast({
-      message: t('luckyWheel.won', { prize: prize.name || "未知奖品" }),
+      message: t('luckyWheel.won', { prize: prize.name || '未知奖品' }),
       type: 'success',
-      duration: 2000
-    })
-  }
+      duration: 2000,
+    });
+  };
 
   return {
-    startSpin
-  }
+    startSpin,
+  };
 }

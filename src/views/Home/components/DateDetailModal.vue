@@ -90,13 +90,17 @@
         padding: var(--spacing-md);
         background: linear-gradient(
           135deg,
-          rgba(255, 149, 0, 0.1) 0%,
-          rgba(255, 149, 0, 0.05) 100%
+          rgba(var(--color-warning-rgb, 255, 149, 0), 0.1) 0%,
+          rgba(var(--color-warning-rgb, 255, 149, 0), 0.05) 100%
         );
         border-radius: var(--radius-md);
         font-size: var(--font-size-lg);
         font-weight: var(--font-weight-semibold);
         color: var(--color-warning);
+
+        .van-icon {
+          color: var(--color-warning);
+        }
       }
 
       .detail-weekday {

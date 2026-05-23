@@ -36,7 +36,7 @@ const props = defineProps({
   h4 {
     font-size: 16px;
     font-weight: 600;
-    color: #000000;
+    color: var(--color-text-primary);
     margin: 0 0 var(--spacing-md) 0;
   }
 
@@ -50,17 +50,17 @@ const props = defineProps({
       flex-direction: column;
       gap: 6px;
       padding: var(--spacing-md);
-      background: rgba(0, 0, 0, 0.02);
+      background: var(--color-bg-tertiary);
       border-radius: 8px;
 
       .label {
         font-size: 13px;
-        color: #b2b2b2;
+        color: var(--color-text-tertiary);
       }
 
       .value {
         font-size: 14px;
-        color: #333333;
+        color: var(--color-text-primary);
       }
     }
   }

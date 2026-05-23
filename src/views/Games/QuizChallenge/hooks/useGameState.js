@@ -57,7 +57,6 @@ export function useGameState() {
 
     // 开始游戏
     gameStarted.value = true;
-    console.log('[答题挑战] 游戏开始，题目已打乱');
   };
 
   /**
@@ -66,7 +65,6 @@ export function useGameState() {
    */
   const setTotalQuestions = count => {
     totalQuestions.value = count;
-    console.log(`[答题挑战] 设置题目总数为: ${count}`);
   };
 
   /**
@@ -89,7 +87,6 @@ export function useGameState() {
    */
   const endGame = () => {
     gameEnded.value = true;
-    console.log('[答题挑战] 游戏结束，获得积分:', earnedPoints.value);
   };
 
   /**
@@ -121,7 +118,7 @@ export function useGameState() {
     if (showResult.value) return;
 
     selectedAnswer.value = index;
-    
+
     // 记录当前题目的选择
     questionAnswers.value[currentQuestionIndex.value] = index;
   };
@@ -134,7 +131,7 @@ export function useGameState() {
   const recordAnswer = (questionIndex, isCorrect) => {
     // 检查是否已经记录过该题目
     const existingIndex = answeredQuestions.value.findIndex(q => q.index === questionIndex);
-    
+
     if (existingIndex !== -1) {
       // 更新已有记录
       answeredQuestions.value[existingIndex].status = isCorrect ? 'correct' : 'wrong';
@@ -142,7 +139,7 @@ export function useGameState() {
       // 添加新记录
       answeredQuestions.value.push({
         index: questionIndex,
-        status: isCorrect ? 'correct' : 'wrong'
+        status: isCorrect ? 'correct' : 'wrong',
       });
     }
   };
@@ -159,7 +156,10 @@ export function useGameState() {
     }
 
     // 保存当前题目的选择（如果有的话）
-    if (selectedAnswer.value !== null && !answeredQuestions.value.find(q => q.index === currentQuestionIndex.value)) {
+    if (
+      selectedAnswer.value !== null &&
+      !answeredQuestions.value.find(q => q.index === currentQuestionIndex.value)
+    ) {
       questionAnswers.value[currentQuestionIndex.value] = selectedAnswer.value;
     }
 
@@ -170,7 +170,7 @@ export function useGameState() {
 
     // 跳转到目标题目
     currentQuestionIndex.value = targetIndex;
-    
+
     // 恢复该题目的选择状态
     const savedAnswer = questionAnswers.value[targetIndex];
     if (savedAnswer !== undefined) {
@@ -178,7 +178,7 @@ export function useGameState() {
     } else {
       selectedAnswer.value = null;
     }
-    
+
     // 检查该题是否已作答
     const hasAnswered = answeredQuestions.value.find(q => q.index === targetIndex);
     if (hasAnswered) {
@@ -192,8 +192,6 @@ export function useGameState() {
       // 退出回顾模式
       isReviewMode.value = false;
     }
-    
-    console.log('[答题挑战] 跳转到题目:', targetIndex + 1, '已作答:', !!hasAnswered);
   };
 
   /**
@@ -202,10 +200,10 @@ export function useGameState() {
   const backToAnswer = () => {
     // 退出回顾模式
     isReviewMode.value = false;
-    
+
     // 返回到之前保存的题目索引
     const targetIndex = previousQuestionIndex.value;
-    
+
     // 验证索引范围
     if (targetIndex < 0 || targetIndex >= totalQuestions.value) {
       console.warn('[答题挑战] 无效的题目索引:', targetIndex);
@@ -214,7 +212,7 @@ export function useGameState() {
 
     // 跳转到目标题目
     currentQuestionIndex.value = targetIndex;
-    
+
     // 恢复该题目的选择状态
     const savedAnswer = questionAnswers.value[targetIndex];
     if (savedAnswer !== undefined) {
@@ -222,7 +220,7 @@ export function useGameState() {
     } else {
       selectedAnswer.value = null;
     }
-    
+
     // 检查该题是否已作答
     const hasAnswered = answeredQuestions.value.find(q => q.index === targetIndex);
     if (hasAnswered) {
@@ -232,8 +230,6 @@ export function useGameState() {
       // 未作答，隐藏结果
       showResult.value = false;
     }
-    
-    console.log('[答题挑战] 返回答题，回到题目:', targetIndex + 1);
   };
 
   /**
