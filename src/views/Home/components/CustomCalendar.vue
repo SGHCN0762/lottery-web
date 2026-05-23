@@ -133,6 +133,8 @@
         cursor: pointer;
         transition: all var(--transition-fast);
         position: relative;
+        /* 性能优化：提示浏览器该元素将发生变化 */
+        will-change: transform, background;
 
         &:hover:not(.other-month) {
           background: var(--color-bg-primary);
@@ -147,7 +149,7 @@
           background: var(--calendar-today-gradient);
           color: white;
           box-shadow: 0 4px 12px var(--calendar-today-shadow);
-          animation: todayPulse 2s ease-in-out infinite;
+          /* 性能优化：移除初始动画，在JS加载后通过class添加 */
 
           .date-solar,
           .date-lunar {
@@ -187,5 +189,20 @@
         }
       }
     }
+  }
+
+  /* 性能优化：动画延迟加载，不影响LCP */
+  @keyframes todayPulse {
+    0%, 100% {
+      box-shadow: 0 4px 12px var(--calendar-today-shadow);
+    }
+    50% {
+      box-shadow: 0 6px 16px var(--calendar-today-shadow);
+    }
+  }
+
+  /* 仅在JS加载完成后添加动画类 */
+  .custom-calendar.loaded .date-cell.is-today {
+    animation: todayPulse 2s ease-in-out infinite;
   }
 </style>

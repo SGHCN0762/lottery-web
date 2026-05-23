@@ -16,8 +16,10 @@ import router from './router';
 // 国际化
 import i18n from './i18n';
 
-// 调试工具
-import vConsole from './utils/vconsole';
+// 调试工具（仅在开发环境加载）
+if (import.meta.env.DEV) {
+  import('./utils/vconsole');
+}
 
 // Vant 组件按需导入
 import {
@@ -88,7 +90,7 @@ app.use(Popup);
 app.use(Progress);
 
 // ========================================
-// 初始化主题系统
+// 初始化主题系统（同步执行，避免闪烁）
 // ========================================
 const themeStore = useThemeStore();
 themeStore.initTheme();
@@ -123,6 +125,38 @@ watch(
 );
 
 // ========================================
-// 挂载应用
+// 挂载应用（使用 requestIdleCallback 优化非关键任务）
 // ========================================
-app.mount('#app');
+const mountApp = () => {
+  app.mount('#app');
+  
+  // 性能优化：在下一帧添加loaded类，触发动画
+  requestAnimationFrame(() => {
+    document.querySelector('.custom-calendar')?.classList.add('loaded');
+  });
+  
+  // 性能监控：记录FCP时间
+  if ('performance' in window) {
+    const observer = new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        if (entry.name === 'first-contentful-paint') {
+          console.log(`FCP: ${entry.startTime.toFixed(2)}ms`);
+        }
+        if (entry.name === 'largest-contentful-paint') {
+          console.log(`LCP: ${entry.startTime.toFixed(2)}ms`);
+        }
+      }
+    });
+    
+    observer.observe({ type: 'paint', buffered: true });
+    observer.observe({ type: 'largest-contentful-paint', buffered: true });
+  }
+};
+
+// 如果浏览器支持 requestIdleCallback，在空闲时挂载
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(mountApp);
+} else {
+  // 降级方案：立即挂载
+  setTimeout(mountApp, 0);
+}

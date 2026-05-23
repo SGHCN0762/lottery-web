@@ -21,7 +21,8 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: () => import('@/views/Home/index.vue'),
+    // 性能优化：使用webpackChunkName指定chunk名称，便于预加载
+    component: () => import(/* webpackChunkName: "home" */ '@/views/Home/index.vue'),
     meta: {
       layout: 'AppLayout',
       keepAlive: true,
@@ -33,7 +34,7 @@ const routes = [
   {
     path: '/games',
     name: 'Games',
-    component: () => import('@/views/Games/index.vue'),
+    component: () => import(/* webpackChunkName: "games" */ '@/views/Games/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'navigation.games',
@@ -44,7 +45,7 @@ const routes = [
   {
     path: '/profile',
     name: 'Profile',
-    component: () => import('@/views/Profile/index.vue'),
+    component: () => import(/* webpackChunkName: "profile" */ '@/views/Profile/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'navigation.profile',
@@ -55,7 +56,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import('@/views/About/index.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '@/views/About/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'navigation.about',
@@ -69,7 +70,7 @@ const routes = [
   {
     path: '/games/number-guess',
     name: 'NumberGuess',
-    component: () => import('@/views/Games/NumberGuess/index.vue'),
+    component: () => import(/* webpackChunkName: "game-number-guess" */ '@/views/Games/NumberGuess/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'games.numberGuess',
@@ -80,7 +81,7 @@ const routes = [
   {
     path: '/games/lucky-wheel',
     name: 'LuckyWheel',
-    component: () => import('@/views/Games/LuckyWheel/index.vue'),
+    component: () => import(/* webpackChunkName: "game-lucky-wheel" */ '@/views/Games/LuckyWheel/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'games.luckyWheel',
@@ -91,7 +92,7 @@ const routes = [
   {
     path: '/games/quiz-challenge',
     name: 'QuizChallenge',
-    component: () => import('@/views/Games/QuizChallenge/index.vue'),
+    component: () => import(/* webpackChunkName: "game-quiz-challenge" */ '@/views/Games/QuizChallenge/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'games.quizChallenge',
@@ -102,7 +103,7 @@ const routes = [
   {
     path: '/games/daily-checkin',
     name: 'DailyCheckIn',
-    component: () => import('@/views/Games/DailyCheckIn/index.vue'),
+    component: () => import(/* webpackChunkName: "game-daily-checkin" */ '@/views/Games/DailyCheckIn/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'games.dailyCheckIn',
@@ -116,7 +117,7 @@ const routes = [
   {
     path: '/profile/records',
     name: 'ProfileRecords',
-    component: () => import('@/views/Profile/Records/index.vue'),
+    component: () => import(/* webpackChunkName: "profile-records" */ '@/views/Profile/Records/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'records.title',
@@ -127,7 +128,7 @@ const routes = [
   {
     path: '/profile/points',
     name: 'ProfilePoints',
-    component: () => import('@/views/Profile/Points/index.vue'),
+    component: () => import(/* webpackChunkName: "profile-points" */ '@/views/Profile/Points/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'points.title',
@@ -138,7 +139,7 @@ const routes = [
   {
     path: '/profile/settings',
     name: 'ProfileSettings',
-    component: () => import('@/views/Profile/Settings/index.vue'),
+    component: () => import(/* webpackChunkName: "profile-settings" */ '@/views/Profile/Settings/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'settings.title',
@@ -149,7 +150,7 @@ const routes = [
   {
     path: '/profile/help',
     name: 'ProfileHelp',
-    component: () => import('@/views/Profile/Help/index.vue'),
+    component: () => import(/* webpackChunkName: "profile-help" */ '@/views/Profile/Help/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'help.title',
@@ -160,7 +161,7 @@ const routes = [
   {
     path: '/profile/exchange',
     name: 'ProfileExchange',
-    component: () => import('@/views/Profile/Exchange/index.vue'),
+    component: () => import(/* webpackChunkName: "profile-exchange" */ '@/views/Profile/Exchange/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'exchange.title',
@@ -171,7 +172,7 @@ const routes = [
   {
     path: '/profile/badges',
     name: 'ProfileBadges',
-    component: () => import('@/views/Profile/Badges/index.vue'),
+    component: () => import(/* webpackChunkName: "profile-badges" */ '@/views/Profile/Badges/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'badges.title',
@@ -182,7 +183,7 @@ const routes = [
   {
     path: '/profile/invite',
     name: 'ProfileInvite',
-    component: () => import('@/views/Profile/Invite/index.vue'),
+    component: () => import(/* webpackChunkName: "profile-invite" */ '@/views/Profile/Invite/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'invite.title',
@@ -196,7 +197,7 @@ const routes = [
   {
     path: '/profile/help/online-service',
     name: 'HelpOnlineService',
-    component: () => import('@/views/Profile/Help/OnlineService/index.vue'),
+    component: () => import(/* webpackChunkName: "help-online-service" */ '@/views/Profile/Help/OnlineService/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'help.onlineService.title',
@@ -207,7 +208,7 @@ const routes = [
   {
     path: '/profile/help/feedback',
     name: 'HelpFeedback',
-    component: () => import('@/views/Profile/Help/Feedback/index.vue'),
+    component: () => import(/* webpackChunkName: "help-feedback" */ '@/views/Profile/Help/Feedback/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'help.feedback',
@@ -218,7 +219,7 @@ const routes = [
   {
     path: '/profile/help/report',
     name: 'HelpReport',
-    component: () => import('@/views/Profile/Help/Report/index.vue'),
+    component: () => import(/* webpackChunkName: "help-report" */ '@/views/Profile/Help/Report/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'help.report',
@@ -232,7 +233,7 @@ const routes = [
   {
     path: '/new-year-eve',
     name: 'NewYearEve',
-    component: () => import('@/views/NewYearEve/index.vue'),
+    component: () => import(/* webpackChunkName: "new-year-eve" */ '@/views/NewYearEve/index.vue'),
     meta: {
       layout: 'PageLayout',
       title: 'newYearEve.title',
@@ -246,7 +247,7 @@ const routes = [
   {
     path: '/home/almanac-detail',
     name: 'AlmanacDetail',
-    component: () => import('@/views/Home/AlmanacDetail/index.vue'),
+    component: () => import(/* webpackChunkName: "almanac-detail" */ '@/views/Home/AlmanacDetail/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'almanac.detail',
@@ -260,7 +261,7 @@ const routes = [
   {
     path: '/auth/login',
     name: 'Login',
-    component: () => import('@/views/Auth/Login/index.vue'),
+    component: () => import(/* webpackChunkName: "auth-login" */ '@/views/Auth/Login/index.vue'),
     meta: {
       layout: 'PageLayout',
       title: 'auth.login',
@@ -272,7 +273,7 @@ const routes = [
   {
     path: '/auth/register',
     name: 'Register',
-    component: () => import('@/views/Auth/Register/index.vue'),
+    component: () => import(/* webpackChunkName: "auth-register" */ '@/views/Auth/Register/index.vue'),
     meta: {
       layout: 'PageLayout',
       title: 'auth.register',

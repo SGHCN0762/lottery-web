@@ -20,15 +20,17 @@
     <!-- 即将到来的节日列表 -->
     <UpcomingFestivals :festivals="upcomingFestivals" @festival-click="handleFestivalClick" />
 
-    <!-- 日期详情弹窗 -->
+    <!-- 日期详情弹窗（异步加载） -->
     <DateDetailModal
+      v-if="showDateDetail"
       v-model:show="showDateDetail"
       :date="selectedDate"
       @view-almanac="handleViewAlmanac"
     />
 
-    <!-- 节日/节气详情弹窗 -->
+    <!-- 节日/节气详情弹窗（异步加载） -->
     <FestivalDetailModal
+      v-if="showFestivalDetail"
       v-model:show="showFestivalDetail"
       :date="selectedDate"
       :name="selectedFestivalName"
@@ -38,7 +40,7 @@
 </template>
 
 <script setup>
-  import { ref, defineAsyncComponent } from 'vue';
+  import { ref, defineAsyncComponent, shallowRef } from 'vue';
   import { useRouter } from 'vue-router';
   import { showToast } from 'vant';
   import CustomCalendar from './components/CustomCalendar.vue';
@@ -52,11 +54,29 @@
   import { useNewYearEve } from '../../hooks/useNewYearEve';
   import { getFestivalOrSolarTermInfo } from './data/festivalInfo';
 
-  // 异步加载弹窗组件 - 优化FCP
-  const DateDetailModal = defineAsyncComponent(() => import('./components/DateDetailModal.vue'));
-  const FestivalDetailModal = defineAsyncComponent(
-    () => import('./components/FestivalDetailModal.vue')
-  );
+  // ========================================
+  // 性能优化：异步加载弹窗组件 - 优化FCP
+  // 使用 shallowRef 减少响应式开销
+  // ========================================
+  const DateDetailModal = shallowRef(null);
+  const FestivalDetailModal = shallowRef(null);
+
+  // 仅在需要时加载弹窗组件
+  const loadDateDetailModal = () => {
+    if (!DateDetailModal.value) {
+      import('./components/DateDetailModal.vue').then(module => {
+        DateDetailModal.value = module.default;
+      });
+    }
+  };
+
+  const loadFestivalDetailModal = () => {
+    if (!FestivalDetailModal.value) {
+      import('./components/FestivalDetailModal.vue').then(module => {
+        FestivalDetailModal.value = module.default;
+      });
+    }
+  };
 
   const router = useRouter();
 
@@ -94,6 +114,8 @@
     selectedDate.value = null;
     selectedFestivalName.value = festival.name;
     showFestivalDetail.value = true;
+    // 预加载节日详情弹窗
+    loadFestivalDetailModal();
   };
 
   // 处理日期点击（来自日历）
@@ -103,9 +125,13 @@
     if ((date.festival && getFestivalOrSolarTermInfo(date.festival)) || date.solarTerm) {
       selectedFestivalName.value = date.festival || date.solarTerm;
       showFestivalDetail.value = true;
+      // 预加载节日详情弹窗
+      loadFestivalDetailModal();
     } else {
       // 否则显示日期详情弹窗
       showDateDetail.value = true;
+      // 预加载日期详情弹窗
+      loadDateDetailModal();
     }
   };
 

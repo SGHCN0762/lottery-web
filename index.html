@@ -17,10 +17,29 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="瑶光" />
     
+    <!-- ========================================
+         性能优化：预加载关键资源
+         ======================================== -->
+    
+    <!-- 预加载首屏关键CSS -->
+    <link rel="preload" href="/src/style.css" as="style" />
+    
+    <!-- 预加载 Vant 核心样式 -->
+    <link rel="preload" href="/node_modules/vant/lib/index.css" as="style" crossorigin />
+    
+    <!-- 预加载主入口JS -->
+    <link rel="modulepreload" href="/src/main.js" />
+    
     <!-- 禁止缓存（开发环境） -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    
+    <!-- ========================================
+         性能优化：DNS预取和预连接
+         ======================================== -->
+    <link rel="dns-prefetch" href="//unpkg.com" />
+    <link rel="preconnect" href="//unpkg.com" crossorigin />
   </head>
   <body>
     <div id="app"></div>
