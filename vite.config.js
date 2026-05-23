@@ -4,8 +4,6 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
-  // 加载环境变量
-  const env = loadEnv(mode, process.cwd(), '');
   const isProd = mode === 'production';
 
   return {
@@ -144,7 +142,7 @@ export default defineConfig(({ mode }) => {
       // 预构建依赖
       include: ['vue', 'vue-router', 'pinia', 'vue-i18n', 'vant'],
       // 排除不需要预构建的依赖
-      exclude: ['lunar-javascript'], // 较大的库，延迟加载
+      exclude: isProd ? ['lunar-javascript'] : [], // 较大的库，延迟加载
     },
 
     // ========================================
