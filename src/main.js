@@ -39,6 +39,7 @@ import {
   Popup,
   Locale,
   Progress,
+  Tag,
 } from 'vant';
 
 // 导入 Vant 语言包
@@ -88,6 +89,7 @@ app.use(Field);
 app.use(Toast);
 app.use(Popup);
 app.use(Progress);
+app.use(Tag);
 
 // ========================================
 // 初始化主题系统（同步执行，避免闪烁）
@@ -129,15 +131,15 @@ watch(
 // ========================================
 const mountApp = () => {
   app.mount('#app');
-  
+
   // 性能优化：在下一帧添加loaded类，触发动画
   requestAnimationFrame(() => {
     document.querySelector('.custom-calendar')?.classList.add('loaded');
   });
-  
+
   // 性能监控：记录FCP时间
   if ('performance' in window) {
-    const observer = new PerformanceObserver((list) => {
+    const observer = new PerformanceObserver(list => {
       for (const entry of list.getEntries()) {
         if (entry.name === 'first-contentful-paint') {
           console.log(`FCP: ${entry.startTime.toFixed(2)}ms`);
@@ -147,7 +149,7 @@ const mountApp = () => {
         }
       }
     });
-    
+
     observer.observe({ type: 'paint', buffered: true });
     observer.observe({ type: 'largest-contentful-paint', buffered: true });
   }
