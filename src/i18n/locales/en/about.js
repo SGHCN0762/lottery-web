@@ -1,6 +1,5 @@
 // Module
 export default {
-
   version: 'Version',
   description:
     'A pure entertainment casual game app that offers a variety of fun mini-games to help users relax. All points are virtual items for entertainment purposes only.',
@@ -24,6 +23,7 @@ export default {
     email: 'Customer Service Email',
     phone: 'Service Hotline',
     workTime: 'Working Hours',
+    workTimeValue: 'Monday to Friday 9:00-18:00', // 添加这行
   },
   popup: {
     privacy:
@@ -34,5 +34,4 @@ export default {
       '1. All content in this app is a virtual scenario simulation<br>2. Points and items have no real value<br>3. Strictly prohibited for gambling or illegal activities<br>4. Users must be at least 18 years old<br>5. Please participate rationally and do not become addicted',
   },
   emailCopied: 'Email copied',
-
-}
+};

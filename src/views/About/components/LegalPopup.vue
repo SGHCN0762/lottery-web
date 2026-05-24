@@ -18,103 +18,101 @@
         <p v-else-if="type === 'agreement'">
           {{ t('about.popup.agreement') }}
         </p>
-        <p v-else-if="type === 'disclaimer'">
-          {{ t('about.popup.disclaimer') }}
-        </p>
+        <p v-else-if="type === 'disclaimer'" v-html="t('about.popup.disclaimer')" />
       </div>
     </div>
   </van-popup>
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { Icon as VanIcon, Popup as VanPopup } from 'vant'
+  import { computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
+  import { Icon as VanIcon, Popup as VanPopup } from 'vant';
 
-const props = defineProps({
-  show: {
-    type: Boolean,
-    default: false
-  },
-  type: {
-    type: String,
-    default: '',
-    validator: (value) => value === '' || ['privacy', 'agreement', 'disclaimer'].includes(value)
-  }
-})
+  const props = defineProps({
+    show: {
+      type: Boolean,
+      default: false,
+    },
+    type: {
+      type: String,
+      default: '',
+      validator: value => value === '' || ['privacy', 'agreement', 'disclaimer'].includes(value),
+    },
+  });
 
-const emit = defineEmits(['update:show'])
+  const emit = defineEmits(['update:show']);
 
-const { t } = useI18n()
+  const { t } = useI18n();
 
-const visible = computed({
-  get: () => props.show,
-  set: (value) => emit('update:show', value)
-})
+  const visible = computed({
+    get: () => props.show,
+    set: value => emit('update:show', value),
+  });
 
-const title = computed(() => {
-  const titles = {
-    privacy: t('about.legal.privacy'),
-    agreement: t('about.legal.agreement'),
-    disclaimer: t('about.legal.disclaimer')
-  }
-  return titles[props.type] || ''
-})
+  const title = computed(() => {
+    const titles = {
+      privacy: t('about.legal.privacy'),
+      agreement: t('about.legal.agreement'),
+      disclaimer: t('about.legal.disclaimer'),
+    };
+    return titles[props.type] || '';
+  });
 
-const close = () => {
-  emit('update:show', false)
-}
+  const close = () => {
+    emit('update:show', false);
+  };
 
-const handleUpdateShow = (value) => {
-  emit('update:show', value)
-}
+  const handleUpdateShow = value => {
+    emit('update:show', value);
+  };
 </script>
 
 <style lang="less" scoped>
-.popup-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-
-  .popup-header {
+  .popup-container {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-lg) var(--spacing-xl);
-    border-bottom: 1px solid var(--color-border-light);
+    flex-direction: column;
 
-    h3 {
-      font-size: var(--font-size-lg);
-      font-weight: var(--font-weight-semibold);
-      color: var(--color-text-primary);
-      margin: 0;
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--spacing-lg) var(--spacing-xl);
+      border-bottom: 1px solid var(--color-border-light);
+
+      h3 {
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-text-primary);
+        margin: 0;
+      }
+
+      .van-icon {
+        font-size: 20px;
+        color: var(--color-text-tertiary);
+        cursor: pointer;
+        padding: var(--spacing-xs);
+      }
     }
 
-    .van-icon {
-      font-size: 20px;
-      color: var(--color-text-tertiary);
-      cursor: pointer;
-      padding: var(--spacing-xs);
-    }
-  }
+    .popup-body {
+      flex: 1;
+      padding: var(--spacing-xl);
+      overflow-y: auto;
 
-  .popup-body {
-    flex: 1;
-    padding: var(--spacing-xl);
-    overflow-y: auto;
+      p {
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-relaxed);
+        color: var(--color-text-secondary);
+        margin: 0;
 
-    p {
-      font-size: var(--font-size-sm);
-      line-height: var(--line-height-relaxed);
-      color: var(--color-text-secondary);
-      margin: 0;
-
-      br {
-        display: block;
-        content: '';
-        margin: var(--spacing-sm) 0;
+        br {
+          display: block;
+          content: '';
+          margin: var(--spacing-sm) 0;
+        }
       }
     }
   }
-}
 </style>

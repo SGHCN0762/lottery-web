@@ -1,8 +1,8 @@
 // 关于我们
 export default {
-
   version: '版本',
-  description: '一款纯娱乐休闲游戏应用，提供多种趣味小游戏，帮助用户放松身心。所有积分均为虚拟物品，仅供娱乐使用。',
+  description:
+    '一款纯娱乐休闲游戏应用，提供多种趣味小游戏，帮助用户放松身心。所有积分均为虚拟物品，仅供娱乐使用。',
   health: {
     title: '健康游戏倡议',
     timeManagement: '合理安排时间',
@@ -23,6 +23,7 @@ export default {
     email: '客服邮箱',
     phone: '服务热线',
     workTime: '工作时间',
+    workTimeValue: '周一至周五 9:00-18:00',
   },
   popup: {
     privacy:
@@ -33,5 +34,4 @@ export default {
       '1. 本应用所有内容均为虚拟场景模拟<br>2. 积分和道具不具有真实价值<br>3. 严禁用于赌博或违法活动<br>4. 用户需年满18周岁<br>5. 请理性参与，切勿沉迷',
   },
   emailCopied: '邮箱已复制',
-
-}
+};
