@@ -161,6 +161,7 @@
 
 <script setup>
   import { ref, computed, nextTick, onMounted } from 'vue';
+  import dayjs from 'dayjs';
   import { useI18n } from 'vue-i18n';
   import { showToast, showConfirmDialog } from 'vant';
   import {
@@ -259,10 +260,7 @@
    * 格式化时间
    */
   const formatTime = timestamp => {
-    const date = new Date(timestamp);
-    const hours = String(date.getHours()).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    return `${hours}:${minutes}`;
+    return dayjs(timestamp).format('HH:mm');
   };
 
   /**

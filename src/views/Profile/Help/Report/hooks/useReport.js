@@ -34,33 +34,6 @@ export function useReport() {
     { text: '其他违规', value: '其他违规' },
   ];
 
-  // ========================================
-  // 工具函数
-  // ========================================
-
-  /**
-   * 格式化时间
-   */
-  const formatTime = timestamp => {
-    const date = new Date(timestamp);
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    return `${month}-${day}`;
-  };
-
-  /**
-   * 格式化完整时间
-   */
-  const formatFullTime = timestamp => {
-    const date = new Date(timestamp);
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    const hours = String(date.getHours()).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    return `${year}-${month}-${day} ${hours}:${minutes}`;
-  };
-
   /**
    * 获取类型标签样式
    */
@@ -252,10 +225,6 @@ export function useReport() {
     reportList,
     formData,
     typeOptions,
-
-    // 方法
-    formatTime,
-    formatFullTime,
     getTypeTagType,
     getStatusTagType,
     loadReportList,

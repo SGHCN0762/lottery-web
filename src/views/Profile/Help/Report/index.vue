@@ -1,9 +1,12 @@
 <template>
   <div class="report-page">
-    <!-- 举报说明卡片 -->
-    <ReportIntro />
+    <IntroCard
+      icon="warning-o"
+      icon-color="var(--color-danger)"
+      title="违规举报"
+      description="如发现违规行为或不良内容，请及时向我们举报，我们将尽快处理"
+    />
 
-    <!-- 举报表单 -->
     <ReportForm
       :form-data="formData"
       :file-list="fileList"
@@ -11,20 +14,20 @@
       @submit="onSubmit"
       @type-picker-open="showTypePicker = true"
       @after-read="afterRead"
-      @update:form-data="(value) => Object.assign(formData, value)"
-      @update:file-list="(value) => fileList.splice(0, fileList.length, ...value)"
+      @update:form-data="value => Object.assign(formData, value)"
+      @update:file-list="value => fileList.splice(0, fileList.length, ...value)"
     />
 
-    <!-- 举报记录 -->
-    <ReportHistory
-      :report-list="reportList"
-      :format-time="formatTime"
+    <RecordHistory
+      title="我的举报记录"
+      :record-list="reportList"
+      empty-text="暂无举报记录"
+      preview-field="reason"
       :get-type-tag-type="getTypeTagType"
       :get-status-tag-type="getStatusTagType"
-      @detail-click="showReportDetail"
+      @view-detail="showReportDetail"
     />
 
-    <!-- 举报类型选择器 -->
     <van-popup v-model:show="showTypePicker" position="bottom" round>
       <van-picker
         :columns="typeOptions"
@@ -33,11 +36,16 @@
       />
     </van-popup>
 
-    <!-- 举报详情弹窗 -->
-    <ReportDetailPopup
-      v-model="showDetailPopup"
-      :current-report="currentReport"
-      :format-full-time="formatFullTime"
+    <DetailPopup
+      v-model:show="showDetailPopup"
+      :record="currentReport"
+      title="举报详情"
+      type-label="举报类型"
+      target-label="被举报对象"
+      description-label="举报原因"
+      reply-label="处理结果"
+      images-label="证据截图"
+      :show-target="true"
       :get-type-tag-type="getTypeTagType"
       :get-status-tag-type="getStatusTagType"
       @close="closeDetailPopup"
@@ -49,12 +57,11 @@
   import { onMounted } from 'vue';
   import { Popup as VanPopup, Picker as VanPicker } from 'vant';
   import { useReport } from './hooks/useReport';
-  import ReportIntro from './components/ReportIntro.vue';
+  import IntroCard from '../components/IntroCard.vue';
+  import RecordHistory from '../components/RecordHistory.vue';
+  import DetailPopup from '../components/DetailPopup.vue';
   import ReportForm from './components/ReportForm.vue';
-  import ReportHistory from './components/ReportHistory.vue';
-  import ReportDetailPopup from './components/ReportDetailPopup.vue';
 
-  // 使用 hook 获取所有状态和方法
   const {
     showTypePicker,
     showDetailPopup,
@@ -64,8 +71,6 @@
     reportList,
     formData,
     typeOptions,
-    formatTime,
-    formatFullTime,
     getTypeTagType,
     getStatusTagType,
     loadReportList,
@@ -76,9 +81,6 @@
     closeDetailPopup,
   } = useReport();
 
-  // ========================================
-  // 生命周期
-  // ========================================
   onMounted(() => {
     loadReportList();
   });

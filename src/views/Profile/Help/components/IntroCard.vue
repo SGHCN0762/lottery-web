@@ -1,13 +1,32 @@
 <template>
   <section class="intro-card">
-    <van-icon name="warning-o" size="32" color="var(--color-danger)" />
-    <h3>违规举报</h3>
-    <p>如发现违规行为或不良内容,请及时向我们举报,我们将尽快处理</p>
+    <van-icon :name="icon" :size="32" :color="iconColor" />
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
   </section>
 </template>
 
 <script setup>
   import { Icon as VanIcon } from 'vant';
+
+  defineProps({
+    icon: {
+      type: String,
+      default: 'edit',
+    },
+    iconColor: {
+      type: String,
+      default: 'var(--color-primary)',
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+  });
 </script>
 
 <style lang="less" scoped>
