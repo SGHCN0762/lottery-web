@@ -1,10 +1,13 @@
-import { ref, reactive } from 'vue';
+import { ref, reactive, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { showToast, showSuccessToast } from 'vant';
 
 /**
  * 举报页面业务逻辑 Hook
  */
 export function useReport() {
+  const { t } = useI18n();
+
   // ========================================
   // 响应式数据
   // ========================================
@@ -26,26 +29,27 @@ export function useReport() {
   // ========================================
   // 配置选项
   // ========================================
-  const typeOptions = [
-    { text: '违规内容', value: '违规内容' },
-    { text: '欺诈行为', value: '欺诈行为' },
-    { text: '恶意刷分', value: '恶意刷分' },
-    { text: '骚扰他人', value: '骚扰他人' },
-    { text: '其他违规', value: '其他违规' },
-  ];
+  const typeOptions = computed(() => [
+    { text: t('help.report.typeOptions.violation'), value: t('help.report.typeOptions.violation') },
+    { text: t('help.report.typeOptions.fraud'), value: t('help.report.typeOptions.fraud') },
+    { text: t('help.report.typeOptions.cheating'), value: t('help.report.typeOptions.cheating') },
+    { text: t('help.report.typeOptions.harassment'), value: t('help.report.typeOptions.harassment') },
+    { text: t('help.report.typeOptions.other'), value: t('help.report.typeOptions.other') },
+  ]);
 
   /**
    * 获取类型标签样式
    */
+  const typeTagMapping = computed(() => ({
+    [t('help.report.typeOptions.violation')]: 'danger',
+    [t('help.report.typeOptions.fraud')]: 'danger',
+    [t('help.report.typeOptions.cheating')]: 'warning',
+    [t('help.report.typeOptions.harassment')]: 'primary',
+    [t('help.report.typeOptions.other')]: 'default',
+  }));
+
   const getTypeTagType = type => {
-    const types = {
-      违规内容: 'danger',
-      欺诈行为: 'danger',
-      恶意刷分: 'warning',
-      骚扰他人: 'primary',
-      其他违规: 'default',
-    };
-    return types[type] || 'default';
+    return typeTagMapping.value[type] || 'default';
   };
 
   /**
@@ -86,31 +90,7 @@ export function useReport() {
    * 保存举报记录
    */
   const saveReportList = () => {
-    try {
-      // 限制最多保存50条记录，避免localStorage溢出
-      const maxRecords = 50;
-      if (reportList.value.length > maxRecords) {
-        reportList.value = reportList.value.slice(0, maxRecords);
-      }
-
-      // 创建不包含图片数据的副本用于存储（图片base64太占空间）
-      const storageData = reportList.value.map(item => ({
-        ...item,
-        images: item.images && item.images.length > 0 ? ['[已上传]'] : [], // 仅标记有图片，不存实际数据
-      }));
-
-      localStorage.setItem('reportList', JSON.stringify(storageData));
-    } catch (error) {
-      console.error('保存举报记录失败:', error);
-      if (error.name === 'QuotaExceededError') {
-        showToast({ type: 'fail', message: '存储空间不足，请清理部分历史记录' });
-        // 清空最旧的记录
-        if (reportList.value.length > 10) {
-          reportList.value = reportList.value.slice(0, 10);
-          saveReportList();
-        }
-      }
-    }
+    localStorage.setItem('reportList', JSON.stringify(reportList.value));
   };
 
   // ========================================
@@ -147,9 +127,9 @@ export function useReport() {
         target: formData.target,
         reason: formData.reason,
         contact: formData.contact,
-        images: fileList.value.length > 0 ? ['[已上传]'] : [], // 仅标记有图片，实际图片应上传服务器
+        images: fileList.value.map(f => f.content || f.url),
         status: 'pending',
-        statusText: '待处理',
+        statusText: t('help.report.status.pending'),
         time: Date.now(),
         reply: '',
       };
@@ -162,7 +142,7 @@ export function useReport() {
         saveReportList();
       } catch (error) {
         console.error('保存失败:', error);
-        showToast({ type: 'fail', message: '保存失败，请清理部分历史记录后重试' });
+        showToast({ type: 'fail', message: t('help.report.validation.saveFailed') });
         submitting.value = false;
         return;
       }
@@ -175,13 +155,13 @@ export function useReport() {
       fileList.value = [];
 
       submitting.value = false;
-      showSuccessToast('举报提交成功!我们会尽快核实处理');
+      showSuccessToast(t('help.report.success.submit'));
 
       // 显示感谢提示
       setTimeout(() => {
         showToast({
           type: 'success',
-          message: '感谢您的监督!',
+          message: t('help.report.success.thanks'),
           duration: 2000,
         });
       }, 500);

@@ -3,13 +3,13 @@
     <van-form @submit="handleSubmit">
       <!-- 反馈类型 -->
       <div class="form-section">
-        <div class="section-label">反馈类型 <span class="required">*</span></div>
+        <div class="section-label">{{ t('help.feedback.type') }} <span class="required">*</span></div>
         <van-cell-group inset>
           <van-field
             v-model="formData.type"
             is-link
             readonly
-            placeholder="请选择反馈类型"
+            :placeholder="t('help.feedback.validation.selectType')"
             @click="showTypePicker = true"
           />
         </van-cell-group>
@@ -18,9 +18,9 @@
       <!-- 问题描述 -->
       <div class="form-section">
         <div class="section-label">
-          问题描述
+          {{ t('help.feedback.descriptionLabel') }}
           <span class="required">*</span>
-          <span class="tip-text">（至少10个字符）</span>
+          <span class="tip-text">（{{ t('help.feedback.validation.descriptionLength') }}）</span>
         </div>
         <van-cell-group inset>
           <van-field
@@ -29,23 +29,23 @@
             rows="4"
             maxlength="500"
             show-word-limit
-            placeholder="请详细描述您遇到的问题或建议，包括：&#10;1. 具体是什么问题？&#10;2. 在什么情况下发生的？&#10;3. 您期望的改进方案..."
-            :rules="[{ required: true, message: '请填写问题描述' }]"
+            :placeholder="t('help.feedback.descriptionPlaceholder')"
+            :rules="[{ required: true, message: t('help.feedback.validation.enterDescription') }]"
           />
         </van-cell-group>
       </div>
 
       <!-- 联系方式 -->
       <div class="form-section">
-        <div class="section-label">联系方式（选填）</div>
+        <div class="section-label">{{ t('help.feedback.contactLabel') }}</div>
         <van-cell-group inset>
-          <van-field v-model="formData.contact" placeholder="手机号或邮箱，方便我们回复您" />
+          <van-field v-model="formData.contact" :placeholder="t('help.feedback.contactPlaceholder')" />
         </van-cell-group>
       </div>
 
       <!-- 图片上传 -->
       <div class="form-section">
-        <div class="section-label">上传截图（选填）</div>
+        <div class="section-label">{{ t('help.feedback.uploadImages') }}</div>
         <van-cell-group inset>
           <van-field>
             <template #input>
@@ -57,13 +57,13 @@
               >
                 <div class="upload-placeholder">
                   <van-icon name="photograph" size="24" />
-                  <p>上传图片</p>
+                  <p>{{ t('help.feedback.uploadPlaceholder') }}</p>
                 </div>
               </van-uploader>
             </template>
           </van-field>
         </van-cell-group>
-        <p class="upload-tip">最多上传3张图片，支持jpg、png格式</p>
+        <p class="upload-tip">{{ t('help.feedback.uploadTip') }}</p>
       </div>
 
       <!-- 提交按钮 -->
@@ -74,10 +74,10 @@
           type="primary"
           native-type="submit"
           :loading="submitting"
-          loading-text="提交中..."
+          :loading-text="t('help.feedback.submitting')"
         >
           <van-icon name="send-o" />
-          提交反馈
+          {{ t('help.feedback.submit') }}
         </van-button>
       </div>
     </van-form>
@@ -94,7 +94,8 @@
 </template>
 
 <script setup>
-  import { ref, reactive } from 'vue';
+  import { ref, reactive, computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
   import { showToast, showSuccessToast } from 'vant';
   import {
     Form as VanForm,
@@ -106,6 +107,8 @@
     Popup as VanPopup,
     Picker as VanPicker,
   } from 'vant';
+
+  const { t } = useI18n();
 
   // ========================================
   // Props & Emits
@@ -135,13 +138,13 @@
   // ========================================
   // 配置选项
   // ========================================
-  const typeOptions = [
-    { text: '功能建议', value: '功能建议' },
-    { text: 'Bug反馈', value: 'Bug反馈' },
-    { text: '体验优化', value: '体验优化' },
-    { text: '内容问题', value: '内容问题' },
-    { text: '其他', value: '其他' },
-  ];
+  const typeOptions = computed(() => [
+    { text: t('help.feedback.typeOptions.featureSuggestion'), value: t('help.feedback.typeOptions.featureSuggestion') },
+    { text: t('help.feedback.typeOptions.bugReport'), value: t('help.feedback.typeOptions.bugReport') },
+    { text: t('help.feedback.typeOptions.experienceImprovement'), value: t('help.feedback.typeOptions.experienceImprovement') },
+    { text: t('help.feedback.typeOptions.contentIssue'), value: t('help.feedback.typeOptions.contentIssue') },
+    { text: t('help.feedback.typeOptions.other'), value: t('help.feedback.typeOptions.other') },
+  ]);
 
   // ========================================
   // 方法
@@ -167,17 +170,17 @@
    */
   const handleSubmit = () => {
     if (!formData.type) {
-      showToast({ type: 'fail', message: '请选择反馈类型' });
+      showToast({ type: 'fail', message: t('help.feedback.validation.selectType') });
       return;
     }
 
     if (!formData.description.trim()) {
-      showToast({ type: 'fail', message: '请填写问题描述' });
+      showToast({ type: 'fail', message: t('help.feedback.validation.enterDescription') });
       return;
     }
 
     if (formData.description.trim().length < 10) {
-      showToast({ type: 'fail', message: '问题描述至少需要10个字符' });
+      showToast({ type: 'fail', message: t('help.feedback.validation.descriptionLength') });
       return;
     }
 
@@ -191,13 +194,13 @@
       formData.contact = '';
       fileList.value = [];
 
-      showSuccessToast('反馈提交成功！我们会尽快处理您的建议');
+      showSuccessToast(t('help.feedback.success.submit'));
 
       // 显示感谢提示
       setTimeout(() => {
         showToast({
           type: 'success',
-          message: '感谢您的宝贵意见！',
+          message: t('help.feedback.success.thanks'),
           duration: 2000,
         });
       }, 500);

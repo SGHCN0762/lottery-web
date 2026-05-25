@@ -60,8 +60,8 @@
           is-link
           @click="handleOnlineService"
         />
-        <van-cell :title="t('help.feedback')" icon="edit" is-link @click="handleFeedback" />
-        <van-cell :title="t('help.report')" icon="warning-o" is-link @click="handleReport" />
+        <van-cell :title="t('help.feedback.title')" icon="edit" is-link @click="handleFeedback" />
+        <van-cell :title="t('help.report.title')" icon="warning-o" is-link @click="handleReport" />
       </van-cell-group>
     </section>
 

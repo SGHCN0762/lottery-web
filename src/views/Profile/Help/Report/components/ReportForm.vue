@@ -3,14 +3,14 @@
     <van-form ref="formRef" @submit="handleSubmit">
       <!-- 举报类型 -->
       <div class="form-section">
-        <div class="section-label">举报类型 <span class="required">*</span></div>
+        <div class="section-label">{{ t('help.report.type') }} <span class="required">*</span></div>
         <van-cell-group inset>
           <van-field
             v-model="formType"
             is-link
             readonly
-            placeholder="请选择举报类型"
-            :rules="[{ required: true, message: '请选择举报类型' }]"
+            :placeholder="t('help.report.validation.selectType')"
+            :rules="[{ required: true, message: t('help.report.validation.selectType') }]"
             @click="$emit('type-picker-open')"
           />
         </van-cell-group>
@@ -18,12 +18,12 @@
 
       <!-- 被举报对象 -->
       <div class="form-section">
-        <div class="section-label">被举报对象 <span class="required">*</span></div>
+        <div class="section-label">{{ t('help.report.target') }} <span class="required">*</span></div>
         <van-cell-group inset>
           <van-field
             v-model="formTarget"
-            placeholder="请输入用户名、ID或相关链接"
-            :rules="[{ required: true, message: '请填写被举报对象' }]"
+            :placeholder="t('help.report.targetPlaceholder')"
+            :rules="[{ required: true, message: t('help.report.validation.enterTarget') }]"
           />
         </van-cell-group>
       </div>
@@ -31,9 +31,9 @@
       <!-- 举报原因 -->
       <div class="form-section">
         <div class="section-label">
-          举报原因
+          {{ t('help.report.reason') }}
           <span class="required">*</span>
-          <span class="tip-text">(至少10个字符)</span>
+          <span class="tip-text">({{ t('help.report.validation.reasonLength') }})</span>
         </div>
         <van-cell-group inset>
           <van-field
@@ -42,10 +42,10 @@
             rows="4"
             maxlength="500"
             show-word-limit
-            placeholder="请详细描述举报原因,包括:&#10;1. 具体是什么违规行为?&#10;2. 发生的时间和位置&#10;3. 相关证据说明..."
+            :placeholder="t('help.report.reasonPlaceholder')"
             :rules="[
-              { required: true, message: '请填写举报原因' },
-              { validator: validateReasonLength, message: '举报原因至少需要10个字符' }
+              { required: true, message: t('help.report.validation.enterReason') },
+              { validator: validateReasonLength, message: t('help.report.validation.reasonLength') }
             ]"
           />
         </van-cell-group>
@@ -53,15 +53,15 @@
 
       <!-- 联系方式 -->
       <div class="form-section">
-        <div class="section-label">联系方式(选填)</div>
+        <div class="section-label">{{ t('help.report.contactLabel') }}</div>
         <van-cell-group inset>
-          <van-field v-model="formContact" placeholder="手机号或邮箱,方便我们联系您" />
+          <van-field v-model="formContact" :placeholder="t('help.report.contactPlaceholder')" />
         </van-cell-group>
       </div>
 
       <!-- 证据上传 -->
       <div class="form-section">
-        <div class="section-label">上传证据(选填)</div>
+        <div class="section-label">{{ t('help.report.uploadEvidence') }}</div>
         <van-cell-group inset>
           <van-field>
             <template #input>
@@ -73,13 +73,13 @@
               >
                 <div class="upload-placeholder">
                   <van-icon name="photograph" size="24" />
-                  <p>上传图片</p>
+                  <p>{{ t('help.report.uploadPlaceholder') }}</p>
                 </div>
               </van-uploader>
             </template>
           </van-field>
         </van-cell-group>
-        <p class="upload-tip">最多上传5张图片,支持jpg、png格式</p>
+        <p class="upload-tip">{{ t('help.report.uploadTip') }}</p>
       </div>
 
       <!-- 提交按钮 -->
@@ -90,10 +90,10 @@
           type="danger"
           native-type="submit"
           :loading="submitting"
-          loading-text="提交中..."
+          :loading-text="t('help.report.submitting')"
         >
           <van-icon name="warning-o" />
-          提交举报
+          {{ t('help.report.submit') }}
         </van-button>
       </div>
     </van-form>
@@ -102,6 +102,7 @@
 
 <script setup>
   import { ref, computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
   import { showToast } from 'vant';
   import {
     Form as VanForm,
@@ -111,6 +112,8 @@
     Uploader as VanUploader,
     Icon as VanIcon,
   } from 'vant';
+
+  const { t } = useI18n();
 
   const props = defineProps({
     formData: {

@@ -3,8 +3,8 @@
     <IntroCard
       icon="warning-o"
       icon-color="var(--color-danger)"
-      title="违规举报"
-      description="如发现违规行为或不良内容，请及时向我们举报，我们将尽快处理"
+      :title="t('help.report.title')"
+      :description="t('help.report.description')"
     />
 
     <ReportForm
@@ -19,11 +19,10 @@
     />
 
     <RecordHistory
-      title="我的举报记录"
+      :title="t('help.report.myReports')"
       :record-list="reportList"
-      empty-text="暂无举报记录"
+      :empty-text="t('help.report.noReports')"
       preview-field="reason"
-      :get-type-tag-type="getTypeTagType"
       :get-status-tag-type="getStatusTagType"
       @view-detail="showReportDetail"
     />
@@ -39,12 +38,12 @@
     <DetailPopup
       v-model:show="showDetailPopup"
       :record="currentReport"
-      title="举报详情"
-      type-label="举报类型"
-      target-label="被举报对象"
-      description-label="举报原因"
-      reply-label="处理结果"
-      images-label="证据截图"
+      :title="t('help.report.reportDetail')"
+      :type-label="t('help.report.reportType')"
+      :target-label="t('help.report.target')"
+      :description-label="t('help.report.reason')"
+      :reply-label="t('help.report.processedResult')"
+      :images-label="t('help.report.uploadEvidence')"
       :show-target="true"
       :get-type-tag-type="getTypeTagType"
       :get-status-tag-type="getStatusTagType"
@@ -55,12 +54,15 @@
 
 <script setup>
   import { onMounted } from 'vue';
+  import { useI18n } from 'vue-i18n';
   import { Popup as VanPopup, Picker as VanPicker } from 'vant';
   import { useReport } from './hooks/useReport';
   import IntroCard from '../components/IntroCard.vue';
   import RecordHistory from '../components/RecordHistory.vue';
   import DetailPopup from '../components/DetailPopup.vue';
   import ReportForm from './components/ReportForm.vue';
+
+  const { t } = useI18n();
 
   const {
     showTypePicker,

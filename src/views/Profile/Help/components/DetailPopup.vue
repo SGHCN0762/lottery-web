@@ -9,12 +9,12 @@
   >
     <div class="detail-popup" v-if="record">
       <div class="popup-header">
-        <h3>{{ title }}</h3>
+        <h3>{{ displayTitle }}</h3>
       </div>
 
       <div class="popup-content">
         <div class="detail-item">
-          <div class="label">{{ typeLabel }}</div>
+          <div class="label">{{ displayTypeLabel }}</div>
           <div class="value">
             <van-tag :type="getTypeTagType(record.type)">
               {{ record.type }}
@@ -23,12 +23,12 @@
         </div>
 
         <div class="detail-item">
-          <div class="label">提交时间</div>
+          <div class="label">{{ t('help.components.submitTime') }}</div>
           <div class="value">{{ formatFullTime(record.time) }}</div>
         </div>
 
         <div class="detail-item">
-          <div class="label">处理状态</div>
+          <div class="label">{{ t('help.components.processStatus') }}</div>
           <div class="value">
             <van-tag :type="getStatusTagType(record.status)">
               {{ record.statusText }}
@@ -37,27 +37,27 @@
         </div>
 
         <div class="detail-item" v-if="showTarget && record.target">
-          <div class="label">{{ targetLabel }}</div>
+          <div class="label">{{ displayTargetLabel }}</div>
           <div class="value">{{ record.target }}</div>
         </div>
 
         <div class="detail-item">
-          <div class="label">{{ descriptionLabel }}</div>
+          <div class="label">{{ displayDescriptionLabel }}</div>
           <div class="value description">{{ record.description || record.reason }}</div>
         </div>
 
         <div class="detail-item" v-if="record.contact">
-          <div class="label">联系方式</div>
+          <div class="label">{{ t('help.components.contact') }}</div>
           <div class="value">{{ record.contact }}</div>
         </div>
 
         <div class="detail-item" v-if="record.reply">
-          <div class="label">{{ replyLabel }}</div>
+          <div class="label">{{ displayReplyLabel }}</div>
           <div class="value reply">{{ record.reply }}</div>
         </div>
 
         <div class="detail-item" v-if="record.images && record.images.length > 0">
-          <div class="label">{{ imagesLabel }}</div>
+          <div class="label">{{ displayImagesLabel }}</div>
           <div class="value">
             <van-image
               v-for="(img, index) in record.images"
@@ -78,8 +78,11 @@
 
 <script setup>
   import { computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
   import dayjs from 'dayjs';
   import { Popup as VanPopup, Tag as VanTag, Image as VanImage } from 'vant';
+
+  const { t } = useI18n();
 
   const props = defineProps({
     show: {
@@ -92,27 +95,21 @@
     },
     title: {
       type: String,
-      default: '详情',
     },
     typeLabel: {
       type: String,
-      default: '类型',
     },
     targetLabel: {
       type: String,
-      default: '对象',
     },
     descriptionLabel: {
       type: String,
-      default: '描述',
     },
     replyLabel: {
       type: String,
-      default: '回复',
     },
     imagesLabel: {
       type: String,
-      default: '图片',
     },
     showTarget: {
       type: Boolean,
@@ -140,6 +137,14 @@
     get: () => props.show,
     set: value => emit('update:show', value),
   });
+
+  // 计算属性提供默认的国际化值
+  const displayTitle = computed(() => props.title || t('help.components.detail'));
+  const displayTypeLabel = computed(() => props.typeLabel || t('help.components.type'));
+  const displayTargetLabel = computed(() => props.targetLabel || t('help.components.target'));
+  const displayDescriptionLabel = computed(() => props.descriptionLabel || t('help.components.description'));
+  const displayReplyLabel = computed(() => props.replyLabel || t('help.components.reply'));
+  const displayImagesLabel = computed(() => props.imagesLabel || t('help.components.images'));
 </script>
 
 <style lang="less" scoped>

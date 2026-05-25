@@ -226,7 +226,7 @@ const routes = [
       import(/* webpackChunkName: "help-feedback" */ '@/views/Profile/Help/Feedback/index.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'help.feedback',
+      title: 'help.feedback.title',
       showBack: true,
       showTabbar: false,
     },
@@ -238,7 +238,7 @@ const routes = [
       import(/* webpackChunkName: "help-report" */ '@/views/Profile/Help/Report/index.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'help.report',
+      title: 'help.report.title',
       showBack: true,
       showTabbar: false,
     },

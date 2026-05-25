@@ -1,7 +1,7 @@
 <template>
   <section class="record-history">
-    <div class="section-title">{{ title }}</div>
-    <van-empty v-if="recordList.length === 0" :description="emptyText" />
+    <div class="section-title">{{ displayTitle }}</div>
+    <van-empty v-if="recordList.length === 0" :description="displayEmptyText" />
 
     <van-cell-group v-else inset>
       <van-cell
@@ -35,6 +35,8 @@
 </template>
 
 <script setup>
+  import { computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
   import {
     Empty as VanEmpty,
     CellGroup as VanCellGroup,
@@ -43,10 +45,11 @@
   } from 'vant';
   import dayjs from 'dayjs';
 
+  const { t } = useI18n();
+
   const props = defineProps({
     title: {
       type: String,
-      default: '我的记录',
     },
     recordList: {
       type: Array,
@@ -54,7 +57,6 @@
     },
     emptyText: {
       type: String,
-      default: '暂无记录',
     },
     previewField: {
       type: String,
@@ -66,10 +68,6 @@
         return dayjs(timestamp).format('YYYY-MM-DD HH:mm');
       },
     },
-    getTypeTagType: {
-      type: Function,
-      required: true,
-    },
     getStatusTagType: {
       type: Function,
       required: true,
@@ -77,6 +75,12 @@
   });
 
   defineEmits(['view-detail']);
+
+  const defaultTitle = computed(() => t('help.components.myRecords'));
+  const defaultEmptyText = computed(() => t('help.components.noRecords'));
+
+  const displayTitle = computed(() => props.title || defaultTitle.value);
+  const displayEmptyText = computed(() => props.emptyText || defaultEmptyText.value);
 
   const getPreviewText = item => {
     return item[props.previewField] || '';
