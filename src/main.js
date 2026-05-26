@@ -16,11 +16,6 @@ import router from './router';
 // 国际化
 import i18n from './i18n';
 
-// 调试工具（仅在开发环境加载）
-if (import.meta.env.DEV) {
-  import('./utils/vconsole');
-}
-
 // Vant 组件按需导入
 import {
   ConfigProvider,
