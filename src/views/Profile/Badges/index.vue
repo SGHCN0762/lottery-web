@@ -37,13 +37,15 @@
 <script setup>
   import { ref, computed, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
+  import dayjs from 'dayjs';
   import { Empty as VanEmpty } from 'vant';
-  
+
   // 导入子组件
   import StatsCard from './components/StatsCard.vue';
   import FilterTabs from './components/FilterTabs.vue';
   import BadgeItem from './components/BadgeItem.vue';
   import BadgeDetail from './components/BadgeDetail.vue';
+  import { useAppData } from '@/hooks/useAppData';
 
   // ========================================
   // i18n
@@ -51,14 +53,16 @@
   const { t } = useI18n();
 
   // ========================================
+  // 统一数据管理
+  // ========================================
+  const { records, loadAllData } = useAppData();
+
+  // ========================================
   // 响应式数据
   // ========================================
   const activeFilter = ref('all');
   const showDetailPopup = ref(false);
   const currentBadge = ref(null);
-  
-  // 存储用户动态状态 (id -> state mapping)
-  const userBadgeStates = ref({});
 
   // ========================================
   // 计算属性
@@ -78,6 +82,8 @@
         requirement: t('badges.badges.firstGame.requirement'),
         reward: 10,
         tips: t('badges.badges.firstGame.tips'),
+        condition: (stats) => stats.totalGames > 0,
+        getProgress: (stats) => stats.totalGames,
       },
       {
         id: 2,
@@ -153,28 +159,82 @@
   });
 
   /**
-   * 合并配置和状态数据，生成最终的成就列表
-   * 使用 computed 确保在语言切换时，文本部分能自动更新
+   * 根据游戏记录计算统计数据
+   */
+  const gameStats = computed(() => {
+    const totalGames = records.value.length;
+    const gameTypes = new Set(records.value.map(r => r.gameType));
+    const checkInRecords = records.value.filter(r => r.gameType === 'dailyCheckIn');
+    const uniqueCheckInDays = new Set(checkInRecords.map(r => {
+      return dayjs(r.timestamp).format('YYYY-MM-DD');
+    })).size;
+    const luckyWheelCount = records.value.filter(r => r.gameType === 'luckyWheel').length;
+    const quizWins = records.value.filter(r => r.gameType === 'quizChallenge' && r.result === 'win').length;
+    const numberGuessWins = records.value.filter(r => r.gameType === 'numberGuess' && r.result === 'win').length;
+    const totalPoints = records.value.reduce((sum, r) => sum + r.pointsChange, 0);
+
+    return {
+      totalGames,
+      gameTypesCount: gameTypes.size,
+      checkInDays: uniqueCheckInDays,
+      luckyWheelCount,
+      quizWins,
+      numberGuessWins,
+      totalPoints,
+    };
+  });
+
+  /**
+   * 基于游戏记录自动计算徽章状态
    */
   const allBadges = computed(() => {
+    const stats = gameStats.value;
     const configs = badgeConfigs.value;
+
     return configs.map(config => {
-      const state = userBadgeStates.value[config.id];
-      if (state) {
-        // 合并动态状态
-        return {
-          ...config,
-          unlocked: state.unlocked,
-          unlockDate: state.unlockDate,
-          progress: state.progress,
-        };
+      let unlocked = false;
+      let progress = 0;
+
+      // 根据徽章 ID 判断是否解锁
+      switch (config.id) {
+        case 1: // 首次游戏
+          unlocked = stats.totalGames > 0;
+          progress = stats.totalGames;
+          break;
+        case 2: // 签到7天
+          unlocked = stats.checkInDays >= 7;
+          progress = Math.min(stats.checkInDays, 7);
+          break;
+        case 3: // 答题大师
+          unlocked = stats.quizWins >= 10;
+          progress = Math.min(stats.quizWins, 10);
+          break;
+        case 4: // 幸运星
+          unlocked = stats.luckyWheelCount >= 10;
+          progress = Math.min(stats.luckyWheelCount, 10);
+          break;
+        case 5: // 猜数字大师
+          unlocked = stats.numberGuessWins >= 10;
+          progress = Math.min(stats.numberGuessWins, 10);
+          break;
+        case 6: // 积分富豪
+          unlocked = stats.totalPoints >= 500;
+          progress = Math.min(stats.totalPoints, 500);
+          break;
+        case 7: // 游戏专家
+          unlocked = stats.gameTypesCount >= 4;
+          progress = Math.min(stats.gameTypesCount, 4);
+          break;
+        case 8: // 社交达人（暂不支持）
+          unlocked = false;
+          progress = 0;
+          break;
       }
-      // 默认未解锁状态
+
       return {
         ...config,
-        unlocked: false,
-        unlockDate: null,
-        progress: null,
+        unlocked,
+        progress,
       };
     });
   });
@@ -207,39 +267,6 @@
   // ========================================
 
   /**
-   * 加载成就状态数据（只加载动态部分）
-   */
-  const loadBadgeStates = () => {
-    const stored = localStorage.getItem('userBadges');
-    
-    if (stored) {
-      try {
-        const statesArray = JSON.parse(stored);
-        // 将数组转换为对象映射 { id: state }
-        const statesMap = {};
-        statesArray.forEach(state => {
-          statesMap[state.id] = state;
-        });
-        userBadgeStates.value = statesMap;
-      } catch (e) {
-        // 如果解析失败，使用空对象
-        userBadgeStates.value = {};
-      }
-    } else {
-      // 首次使用，所有成就都未解锁
-      userBadgeStates.value = {};
-    }
-  };
-
-  /**
-   * 保存成就状态数据（只保存动态部分）
-   */
-  const saveBadgeStates = () => {
-    const statesToSave = Object.values(userBadgeStates.value);
-    localStorage.setItem('userBadges', JSON.stringify(statesToSave));
-  };
-
-  /**
    * 显示成就详情
    */
   const showBadgeDetail = (badge) => {
@@ -251,7 +278,7 @@
   // 生命周期
   // ========================================
   onMounted(() => {
-    loadBadgeStates();
+    loadAllData();
   });
 </script>
 

@@ -5,7 +5,7 @@
       <section class="balance-card">
         <div class="balance-info">
           <div class="label">{{ t('exchange.availablePoints') }}</div>
-          <div class="value">{{ availablePoints }}</div>
+          <div class="value">{{ userPoints }}</div>
         </div>
         <van-button type="primary" size="small" round @click="showRechargeDialog = true">
           {{ t('exchange.rechargePoints') }}
@@ -58,7 +58,7 @@
                   type="primary"
                   size="mini"
                   round
-                  :disabled="availablePoints < product.price"
+                  :disabled="!hasEnoughPoints(product.price)"
                   @click.stop="handleExchange(product)"
                 >
                   {{ t('exchange.exchangeNow') }}
@@ -164,6 +164,8 @@
   import { ref, computed, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast, showSuccessToast } from 'vant';
+  import dayjs from 'dayjs';
+  import { useAppData } from '@/hooks/useAppData';
   import {
     Tabs as VanTabs,
     Tab as VanTab,
@@ -179,13 +181,17 @@
   // ========================================
   // 国际化
   // ========================================
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
+
+  // ========================================
+  // 统一数据管理
+  // ========================================
+  const { userPoints, addPoints, deductPoints, hasEnoughPoints, addRecord, loadAllData } = useAppData();
 
   // ========================================
   // 响应式数据
   // ========================================
   const activeCategory = ref('all');
-  const availablePoints = ref(0);
   const showDetailPopup = ref(false);
   const showConfirmDialog = ref(false);
   const showRechargeDialog = ref(false);
@@ -278,14 +284,8 @@
    * 加载数据
    */
   const loadData = () => {
-    // 加载用户积分
-    const userInfo = localStorage.getItem('userInfo');
-    if (userInfo) {
-      const user = JSON.parse(userInfo);
-      availablePoints.value = user.points || 1580;
-    } else {
-      availablePoints.value = 1580;
-    }
+    // 加载所有数据
+    loadAllData();
 
     // 加载商品列表
     allProducts.value = generateProducts();
@@ -308,7 +308,7 @@
    * 处理兑换
    */
   const handleExchange = product => {
-    if (availablePoints.value < product.price) {
+    if (!hasEnoughPoints(product.price)) {
       showToast(t('exchange.insufficientPoints'));
       return;
     }
@@ -324,21 +324,27 @@
   const confirmExchange = () => {
     if (!currentProduct.value) return;
 
-    // 扣除积分
-    availablePoints.value -= currentProduct.value.price;
-
-    // 更新 localStorage
-    const userInfo = localStorage.getItem('userInfo');
-    if (userInfo) {
-      const user = JSON.parse(userInfo);
-      user.points = availablePoints.value;
-      localStorage.setItem('userInfo', JSON.stringify(user));
+    // 扣除积分（使用共享 hook）
+    const success = deductPoints(currentProduct.value.price);
+    if (!success) {
+      showToast(t('exchange.insufficientPoints'));
+      showConfirmDialog.value = false;
+      return;
     }
+
+    // 添加到游戏记录
+    addRecord({
+      gameType: 'exchange',
+      gameName: t('exchange.title'),
+      result: `exchange:${currentProduct.value.name}`,
+      pointsChange: -currentProduct.value.price,
+      timestamp: dayjs().valueOf()
+    });
 
     showSuccessToast(t('exchange.exchangeSuccess'));
     showConfirmDialog.value = false;
 
-    // TODO: 添加兑换记录
+    // 添加到本地兑换记录
     addExchangeRecord(currentProduct.value);
   };
 
@@ -348,10 +354,10 @@
   const addExchangeRecord = product => {
     const records = JSON.parse(localStorage.getItem('exchangeRecords') || '[]');
     records.unshift({
-      id: Date.now(),
+      id: dayjs().valueOf(),
       productName: product.name,
       price: product.price,
-      time: Date.now(),
+      time: dayjs().valueOf(),
       status: 'pending',
     });
     localStorage.setItem('exchangeRecords', JSON.stringify(records));
@@ -361,17 +367,8 @@
    * 处理充值
    */
   const handleRecharge = () => {
-    // 测试期间免费赠送100积分
-    availablePoints.value += 100;
-
-    // 更新 localStorage
-    const userInfo = localStorage.getItem('userInfo');
-    if (userInfo) {
-      const user = JSON.parse(userInfo);
-      user.points = availablePoints.value;
-      localStorage.setItem('userInfo', JSON.stringify(user));
-    }
-
+    // 使用共享 hook 添加积分
+    addPoints(100);
     showSuccessToast(t('exchange.rechargeSuccess'));
   };
 

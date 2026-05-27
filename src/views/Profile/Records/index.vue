@@ -29,11 +29,11 @@
 
     <!-- 记录列表 -->
     <section class="records-list">
-      <van-empty v-if="records.length === 0" :description="t('records.noRecords')" />
-      
+      <van-empty v-if="filteredRecords.length === 0" :description="t('records.noRecords')" />
+
       <van-cell-group v-else inset>
         <van-cell
-          v-for="record in records"
+          v-for="record in filteredRecords"
           :key="record.id"
           class="record-item"
         >
@@ -42,7 +42,7 @@
               <van-icon :name="getGameIcon(record.gameType)" size="20" />
               <span class="game-name">{{ record.gameName }}</span>
               <van-tag :type="getResultTagType(record.result)">
-                {{ record.result }}
+                {{ getDisplayResult(record.result) }}
               </van-tag>
             </div>
           </template>
@@ -51,7 +51,7 @@
             <div class="record-details">
               <div class="detail-row">
                 <span class="detail-label">{{ t('records.time') }}：</span>
-                <span class="detail-value">{{ formatTime(record.time) }}</span>
+                <span class="detail-value">{{ formatTime(record.timestamp) }}</span>
               </div>
               <div class="detail-row">
                 <span class="detail-label">{{ t('records.pointsChange') }}：</span>
@@ -69,7 +69,7 @@
     </section>
 
     <!-- 加载更多 -->
-      <div class="load-more" v-if="hasMore && records.length > 0">
+      <div class="load-more" v-if="hasMore && filteredRecords.length > 0">
         <van-button block round @click="loadMore">{{ t('records.loadMore') }}</van-button>
       </div>
     </div>
@@ -79,7 +79,8 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { 
+import dayjs from 'dayjs'
+import {
   DropdownMenu as VanDropdownMenu,
   DropdownItem as VanDropdownItem,
   CellGroup as VanCellGroup,
@@ -89,6 +90,7 @@ import {
   Empty as VanEmpty,
   Button as VanButton
 } from 'vant'
+import { useAppData } from '@/hooks/useAppData'
 
 // ========================================
 // i18n
@@ -96,13 +98,17 @@ import {
 const { t } = useI18n()
 
 // ========================================
+// 统一数据管理
+// ========================================
+const { records, loadAllData, getRecordsByGameType, getRecordsByTimeRange } = useAppData()
+
+// ========================================
 // 响应式数据
 // ========================================
 const gameType = ref('all')
 const timeRange = ref('week')
-const records = ref([])
 const currentPage = ref(1)
-const hasMore = ref(true)
+const hasMore = ref(false)
 
 // ========================================
 // 配置选项
@@ -124,15 +130,39 @@ const timeRangeOptions = computed(() => [
 // ========================================
 // 计算属性
 // ========================================
-const totalGames = computed(() => records.value.length)
+const filteredRecords = computed(() => {
+  let result = records.value
+
+  // 按游戏类型筛选
+  if (gameType.value !== 'all') {
+    result = result.filter(r => r.gameType === gameType.value)
+  }
+
+  // 按时间范围筛选
+  const now = dayjs().valueOf()
+  const ranges = {
+    week: 7 * 24 * 60 * 60 * 1000,
+    month: 30 * 24 * 60 * 60 * 1000,
+    threeMonths: 90 * 24 * 60 * 60 * 1000
+  }
+  const cutoff = now - (ranges[timeRange.value] || ranges.week)
+  result = result.filter(r => r.timestamp >= cutoff)
+
+  return result
+})
+
+const totalGames = computed(() => filteredRecords.value.length)
 const winRate = computed(() => {
-  if (records.value.length === 0) return 0
-  const wins = records.value.filter(r => r.result === '胜利').length
-  return Math.round((wins / records.value.length) * 100)
+  if (filteredRecords.value.length === 0) return 0
+  const wins = filteredRecords.value.filter(r => r.result === 'win').length
+  return Math.round((wins / filteredRecords.value.length) * 100)
 })
 const totalPoints = computed(() => {
-  return records.value.reduce((sum, r) => sum + r.pointsChange, 0)
+  return filteredRecords.value.reduce((sum, r) => sum + r.pointsChange, 0)
 })
+
+// 保持 records 兼容
+const records_data = computed(() => filteredRecords.value)
 
 // ========================================
 // 工具函数
@@ -156,91 +186,65 @@ const getGameIcon = (gameType) => {
  */
 const getResultTagType = (result) => {
   const types = {
-    '胜利': 'success',
-    '失败': 'danger',
-    '平局': 'primary',
-    '签到': 'warning'
+    'win': 'success',
+    'lose': 'danger',
+    'draw': 'primary',
+    'checkin': 'warning'
+  }
+  // 检查是否是兑换记录
+  if (result && result.startsWith('exchange:')) {
+    return 'primary'
   }
   return types[result] || 'default'
+}
+
+/**
+ * 获取显示的结果文本
+ */
+const getDisplayResult = (result) => {
+  // 检查是否是兑换记录
+  if (result && result.startsWith('exchange:')) {
+    const productName = result.replace('exchange:', '')
+    return `${t('exchange.exchangePrefix')}: ${productName}`
+  }
+  // 检查是否是胜利/失败
+  if (result === 'win') {
+    return t('common.win')
+  }
+  if (result === 'lose') {
+    return t('common.lose')
+  }
+  return result
 }
 
 /**
  * 格式化时间
  */
 const formatTime = (timestamp) => {
-  const date = new Date(timestamp)
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  const hours = String(date.getHours()).padStart(2, '0')
-  const minutes = String(date.getMinutes()).padStart(2, '0')
-  return `${month}-${day} ${hours}:${minutes}`
+  return dayjs(timestamp).format('MM-DD HH:mm')
 }
 
 /**
  * 加载游戏记录
  */
-const loadRecords = () => {
-  // 从 localStorage 读取模拟数据
-  const stored = localStorage.getItem('gameRecords')
-  if (stored) {
-    records.value = JSON.parse(stored)
-  } else {
-    // 生成模拟数据
-    records.value = generateMockRecords()
-    localStorage.setItem('gameRecords', JSON.stringify(records.value))
-  }
-}
-
-/**
- * 生成模拟记录数据
- */
-const generateMockRecords = () => {
-  const games = [
-    { type: 'number-guess', name: '数字猜猜猜' },
-    { type: 'lucky-wheel', name: '幸运转盘' },
-    { type: 'quiz-challenge', name: '答题挑战' },
-    { type: 'daily-checkin', name: '每日签到' }
-  ]
-  
-  const results = ['胜利', '失败', '平局', '签到']
-  const mockData = []
-  
-  for (let i = 0; i < 20; i++) {
-    const game = games[Math.floor(Math.random() * games.length)]
-    const result = game.type === 'daily-checkin' ? '签到' : results[Math.floor(Math.random() * 3)]
-    const pointsChange = result === '胜利' ? Math.floor(Math.random() * 50) + 10 : 
-                        result === '失败' ? -Math.floor(Math.random() * 20) : 
-                        result === '签到' ? 10 : 0
-    
-    mockData.push({
-      id: i + 1,
-      gameType: game.type,
-      gameName: game.name,
-      result: result,
-      pointsChange: pointsChange,
-      time: Date.now() - Math.floor(Math.random() * 7 * 24 * 60 * 60 * 1000)
-    })
-  }
-  
-  return mockData.sort((a, b) => b.time - a.time)
+const loadRecordsWrapper = () => {
+  // 调用统一加载方法
+  loadAllData()
 }
 
 /**
  * 加载更多
  */
 const loadMore = () => {
-  currentPage.value++
-  // TODO: 实现分页加载逻辑
-  setTimeout(() => {
-    hasMore.value = false
-  }, 500)
+  // 分页功能预留
+  hasMore.value = false
 }
 
 // ========================================
 // 生命周期
 // ========================================
 onMounted(() => {
-  loadRecords()
+  loadRecordsWrapper()
 })
 </script>
 

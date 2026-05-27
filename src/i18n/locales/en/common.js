@@ -35,5 +35,7 @@ export default {
   points: 'Points',
   spinning: 'Spinning...',
   start: 'Start',
+  win: 'Win',
+  lose: 'Lose',
 
 }

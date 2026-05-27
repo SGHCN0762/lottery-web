@@ -3,6 +3,7 @@
  * 处理签到日历的生成和展示逻辑
  */
 import { computed, ref } from 'vue'
+import dayjs from 'dayjs'
 
 export function useCheckInCalendar(checkedInDates) {
   // 确保 checkedInDates 是一个 ref 对象
@@ -88,8 +89,5 @@ export function useCheckInCalendar(checkedInDates) {
  * @returns {string} 格式化后的日期字符串
  */
 function formatDate(date) {
-  const year = date.getFullYear()
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  return `${year}-${month}-${day}`
+  return dayjs(date).format('YYYY-MM-DD')
 }

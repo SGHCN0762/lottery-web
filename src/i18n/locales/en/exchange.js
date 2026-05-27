@@ -73,5 +73,6 @@ export default {
   noProducts: 'No products available',
   stock: 'Stock',
   pieces: 'pcs',
+  exchangePrefix: 'Exchange',
 
 }

@@ -23,53 +23,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="瑶光" />
 
-    <!-- ========================================
-         性能优化：添加骨架屏样式，提升 LCP
-         ======================================== -->
+    <!-- 基础样式 -->
     <style>
-      /* 骨架屏样式 */
-      .skeleton-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .skeleton-logo {
-        width: 80px;
-        height: 80px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        margin-bottom: 20px;
-        animation: pulse 1.5s ease-in-out infinite;
-      }
-
-      .skeleton-text {
-        width: 120px;
-        height: 24px;
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 12px;
-        animation: pulse 1.5s ease-in-out infinite 0.3s;
-      }
-
-      @keyframes pulse {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.5;
-        }
-      }
-
-      /* 基础样式，确保背景一致 */
       body {
         margin: 0;
         padding: 0;
@@ -78,46 +33,7 @@
     </style>
   </head>
   <body>
-    <!-- 骨架屏 - 提升 LCP 体验 -->
-    <div id="skeleton" class="skeleton-container">
-      <div class="skeleton-logo"></div>
-      <div class="skeleton-text"></div>
-    </div>
-
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-
-    <!-- 移除骨架屏脚本 -->
-    <script>
-      // 监听 DOM 变化，当 #app 有内容时移除骨架屏
-      const observer = new MutationObserver(() => {
-        const app = document.getElementById('app');
-        if (app && app.children.length > 0) {
-          const skeleton = document.getElementById('skeleton');
-          if (skeleton) {
-            skeleton.style.opacity = '0';
-            skeleton.style.transition = 'opacity 0.3s ease';
-            setTimeout(() => skeleton.remove(), 300);
-            observer.disconnect();
-          }
-        }
-      });
-
-      const app = document.getElementById('app');
-      if (app) {
-        observer.observe(app, { childList: true, subtree: true });
-      }
-
-      // 超时保护，2秒后强制移除骨架屏
-      setTimeout(() => {
-        const skeleton = document.getElementById('skeleton');
-        if (skeleton) {
-          skeleton.style.opacity = '0';
-          skeleton.style.transition = 'opacity 0.3s ease';
-          setTimeout(() => skeleton.remove(), 300);
-          observer.disconnect();
-        }
-      }, 2000);
-    </script>
   </body>
 </html>

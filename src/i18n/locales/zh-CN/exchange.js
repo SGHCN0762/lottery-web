@@ -73,5 +73,6 @@ export default {
   noProducts: '暂无商品',
   stock: '库存',
   pieces: '件',
+  exchangePrefix: '兑换',
 
 }

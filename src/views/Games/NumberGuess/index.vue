@@ -3,8 +3,10 @@
     <div class="page-content">
       <!-- 游戏信息栏 -->
       <GameInfoBar
-        :remainingAttempts="remainingAttempts"
-        :userPoints="userPoints"
+        :items="[
+          { label: t('numberGuess.remainingAttempts'), value: remainingAttempts },
+          { label: t('numberGuess.myPoints'), value: userPoints }
+        ]"
       />
 
       <!-- 游戏规则 -->
@@ -48,7 +50,8 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n'
-import GameInfoBar from './components/GameInfoBar.vue'
+import { watch } from 'vue'
+import GameInfoBar from '@/components/GameInfoBar/index.vue'
 import GameRules from '../components/GameRules.vue'
 import GameStartScreen from './components/GameStartScreen.vue'
 import GamePlayingScreen from './components/GamePlayingScreen.vue'
@@ -84,8 +87,16 @@ const {
   handleWin,
   handleLose,
   resetGame,
-  loadUserPoints
+  loadUserPoints,
+  addGameRecord
 } = useNumberGuess()
+
+// 监听游戏结束，添加记录
+watch(gameEnded, (ended) => {
+  if (ended) {
+    addGameRecord(winStatus.value, rewardPoints.value)
+  }
+})
 </script>
 
 <style lang="less" scoped>

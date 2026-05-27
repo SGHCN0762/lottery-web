@@ -5,7 +5,7 @@
       <section class="overview-card">
         <div class="current-points">
           <div class="label">{{ t('points.currentPoints') }}</div>
-          <div class="value">{{ currentPoints }}</div>
+          <div class="value">{{ userPoints }}</div>
         </div>
         <div class="points-trend">
           <div class="trend-item">
@@ -73,9 +73,11 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { 
+import dayjs from 'dayjs'
+import { useAppData } from '@/hooks/useAppData'
+import {
   Tabs as VanTabs,
   Tab as VanTab,
   CellGroup as VanCellGroup,
@@ -91,10 +93,34 @@ import {
 const { t } = useI18n()
 
 // ========================================
+// 统一数据管理
+// ========================================
+const { userPoints, records, loadAllData } = useAppData()
+
+// ========================================
+// 辅助函数
+// ========================================
+
+/**
+ * 获取显示用的描述文本
+ */
+const getRecordDescription = (record) => {
+  // 如果有 gameName，直接使用
+  if (record.gameName) {
+    return record.gameName
+  }
+  // 检查是否是兑换记录
+  if (record.result && record.result.startsWith('exchange:')) {
+    const productName = record.result.replace('exchange:', '')
+    return `${t('exchange.exchangePrefix')}: ${productName}`
+  }
+  return record.result || ''
+}
+
+// ========================================
 // 响应式数据
 // ========================================
 const activeTab = ref('all')
-const currentPoints = ref(0)
 const monthIncome = ref(0)
 const monthExpense = ref(0)
 const allRecords = ref([])
@@ -133,33 +159,24 @@ const getRecordIcon = (type) => {
  * 格式化时间
  */
 const formatTime = (timestamp) => {
-  const date = new Date(timestamp)
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  const hours = String(date.getHours()).padStart(2, '0')
-  const minutes = String(date.getMinutes()).padStart(2, '0')
-  return `${month}-${day} ${hours}:${minutes}`
+  return dayjs(timestamp).format('MM-DD HH:mm')
 }
 
 /**
  * 加载积分数据
  */
 const loadPointsData = () => {
-  // 从 localStorage 读取用户信息
-  const userInfo = localStorage.getItem('userInfo')
-  if (userInfo) {
-    const user = JSON.parse(userInfo)
-    currentPoints.value = user.points || 1580
-  }
+  // 加载所有数据（积分和记录）
+  loadAllData()
 
-  // 加载积分记录
-  const stored = localStorage.getItem('pointsRecords')
-  if (stored) {
-    allRecords.value = JSON.parse(stored)
-  } else {
-    allRecords.value = generateMockRecords()
-    localStorage.setItem('pointsRecords', JSON.stringify(allRecords.value))
-  }
+  // 使用统一的记录
+  allRecords.value = records.value.map(r => ({
+    id: r.id,
+    type: r.pointsChange >= 0 ? 'income' : 'expense',
+    description: r.result,
+    amount: r.pointsChange,
+    timestamp: r.timestamp
+  }))
 
   // 计算本月收支
   calculateMonthStats()
@@ -186,7 +203,7 @@ const generateMockRecords = () => {
     mockData.push({
       id: i + 1,
       ...template,
-      time: Date.now() - Math.floor(Math.random() * 30 * 24 * 60 * 60 * 1000)
+      time: dayjs().subtract(Math.floor(Math.random() * 30), 'day').valueOf()
     })
   }
 
@@ -197,8 +214,7 @@ const generateMockRecords = () => {
  * 计算本月统计
  */
 const calculateMonthStats = () => {
-  const now = new Date()
-  const monthStart = new Date(now.getFullYear(), now.getMonth(), 1).getTime()
+  const monthStart = dayjs().startOf('month').valueOf()
   
   const monthRecords = allRecords.value.filter(r => r.time >= monthStart)
   monthIncome.value = monthRecords
@@ -232,8 +248,8 @@ const loadMore = () => {
 // ========================================
 // 生命周期
 // ========================================
-onMounted(() => {
-  loadPointsData()
+onMounted(async () => {
+  await loadPointsData()
 })
 </script>
 

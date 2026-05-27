@@ -23,9 +23,10 @@
         <div v-else-if="!gameEnded" class="game-playing-screen">
           <!-- 游戏信息栏 -->
           <GameInfoBar
-            :user-points="userPoints"
-            :current-question-index="currentQuestionIndex"
-            :total-questions="totalQuestions"
+            :items="[
+              { label: t('quizChallenge.myPoints'), value: userPoints },
+              { label: t('quizChallenge.currentQuestion'), value: `${currentQuestionIndex + 1}/${totalQuestions}` }
+            ]"
           />
 
           <!-- 答题统计组件 -->
@@ -88,7 +89,8 @@
   import { computed, onMounted, watch } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast, closeToast } from 'vant';
-  import GameInfoBar from './components/GameInfoBar.vue';
+  import GameInfoBar from '@/components/GameInfoBar/index.vue';
+  import dayjs from 'dayjs';
   import GameRules from '../components/GameRules.vue';
   import StartScreen from './components/StartScreen.vue';
   import QuestionCard from './components/QuestionCard.vue';
@@ -98,7 +100,7 @@
   import { useGameState } from './hooks/useGameState';
   import { useScoring } from './hooks/useScoring';
   import { useQuestions } from './hooks/useQuestions';
-  import { useUserPoints } from './hooks/useUserPoints';
+  import { useAppData } from '@/hooks/useAppData';
 
   // ========================================
   // i18n
@@ -149,7 +151,7 @@
   } = useQuestions();
 
   // 用户积分管理
-  const { userPoints, loadUserPoints, addPoints } = useUserPoints();
+  const { userPoints, addPoints, addRecord, loadAllData } = useAppData();
 
   // ========================================
   // 计算属性
@@ -181,10 +183,10 @@
   // ========================================
 
   /**
-   * 组件挂载时加载用户积分并初始化所有分类题目
+   * 组件挂载时加载数据并初始化所有分类题目
    */
   onMounted(() => {
-    loadUserPoints();
+    loadAllData();
     // 页面进入时立即开始并发加载所有分类的题目
     initializeAllCategories();
   });
@@ -197,16 +199,29 @@
    * 监听游戏结束，执行积分结算和提示
    */
   watch(gameEnded, newValue => {
-    if (newValue && earnedPoints.value > 0) {
+    if (newValue) {
       // 将本局获得的积分添加到用户总积分
-      addPoints(earnedPoints.value);
+      if (earnedPoints.value > 0) {
+        addPoints(earnedPoints.value);
+      }
+
+      // 添加到游戏记录
+      addRecord({
+        gameType: 'quizChallenge',
+        gameName: t('lottery.quizChallenge'),
+        result: correctCount.value >= totalQuestions.value / 2 ? 'win' : 'lose',
+        pointsChange: earnedPoints.value,
+        timestamp: dayjs().valueOf()
+      });
 
       // 显示总结提示
-      showToast({
-        message: t('quizChallenge.success', { points: earnedPoints.value }),
-        type: 'success',
-        duration: 2000,
-      });
+      if (earnedPoints.value > 0) {
+        showToast({
+          message: t('quizChallenge.success', { points: earnedPoints.value }),
+          type: 'success',
+          duration: 2000,
+        });
+      }
     }
   });
 

@@ -2,7 +2,12 @@
   <div class="daily-checkin-game">
     <div class="page-content">
       <!-- 游戏信息栏 -->
-      <GameInfoBar :userPoints="userPoints" :consecutiveDays="consecutiveDays" />
+      <GameInfoBar
+        :items="[
+          { label: t('dailyCheckIn.myPoints'), value: userPoints },
+          { label: t('dailyCheckIn.consecutiveDays'), value: `${consecutiveDays} ${t('dailyCheckIn.days')}`, valueClass: 'streak' }
+        ]"
+      />
 
       <!-- 游戏规则 -->
       <GameRules 
@@ -46,7 +51,7 @@
 <script setup>
 import { onMounted } from "vue";
 import { useI18n } from "vue-i18n";
-import GameInfoBar from "./components/GameInfoBar.vue";
+import GameInfoBar from '@/components/GameInfoBar/index.vue';
 import GameRules from "../components/GameRules.vue";
 import CheckInCalendar from "./components/CheckInCalendar.vue";
 import RewardsDisplay from "./components/RewardsDisplay.vue";

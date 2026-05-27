@@ -1,5 +1,6 @@
 <template>
   <div id="app" :class="appThemeClass">
+    <Skeleton />
     <component
       :is="layouts[route.meta.layout]"
       :title="route.meta.title || t('app.title')"
@@ -21,6 +22,7 @@ import { useI18n } from "vue-i18n";
 import { useThemeStore } from "./stores/theme";
 import AppLayout from "@/components/AppLayout/index.vue";
 import PageLayout from "@/components/PageLayout/index.vue";
+import Skeleton from "@/components/Skeleton/index.vue";
 
 const layouts = {
   AppLayout,

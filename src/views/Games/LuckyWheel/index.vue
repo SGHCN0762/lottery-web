@@ -2,7 +2,12 @@
   <div class="lucky-wheel-game">
     <div class="page-content">
       <!-- 游戏信息栏 -->
-      <GameInfoBar :userPoints="userPoints" />
+      <GameInfoBar
+        :items="[
+          { label: t('luckyWheel.myPoints'), value: userPoints },
+          { label: t('luckyWheel.cost'), value: `10 ${t('common.points')}`, valueClass: 'cost' }
+        ]"
+      />
 
       <!-- 游戏规则 -->
       <GameRules
@@ -35,14 +40,14 @@
   import { ref, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast } from 'vant';
-  import GameInfoBar from './components/GameInfoBar.vue';
-  import GameRules from '../components/GameRules.vue';
+  import GameInfoBar from '@/components/GameInfoBar/index.vue';
+import GameRules from '../components/GameRules.vue';
   import LuckyWheel from './components/LuckyWheel.vue';
   import SpinHistory from './components/SpinHistory.vue';
-  import { useUserPoints } from './hooks/useUserPoints';
   import { useSpinHistory } from './hooks/useSpinHistory';
   import { useWheelRotation } from './hooks/useWheelRotation';
   import { useLottery } from './hooks/useLottery';
+  import { useAppData } from '@/hooks/useAppData';
 
   // ========================================
   // i18n
@@ -63,14 +68,14 @@
   ]);
 
   // ========================================
-  // 使用hooks管理用户积分
+  // 使用hooks管理用户积分和游戏记录（使用统一数据管理）
   // ========================================
-  const { userPoints, loadUserPoints } = useUserPoints();
+  const { userPoints, addPoints, deductPoints, addRecord, loadAllData } = useAppData();
 
   // ========================================
   // 使用hooks管理抽奖历史
   // ========================================
-  const { spinHistory, loadSpinHistory } = useSpinHistory();
+  const { spinHistory, loadSpinHistory, addSpinRecord } = useSpinHistory();
 
   // ========================================
   // 使用hooks管理转盘旋转
@@ -78,27 +83,26 @@
   const { wheelRotation, isSpinning, spinDuration } = useWheelRotation(prizes);
 
   // ========================================
+  // 积分更新函数（使用统一的addPoints方法以确保持久化）
+  // ========================================
+  const updateUserPoints = (amount) => {
+    if (amount > 0) {
+      addPoints(amount);
+    } else {
+      deductPoints(Math.abs(amount));
+    }
+  };
+
+  // ========================================
   // 使用hooks管理抽奖核心逻辑
   // ========================================
   const { startSpin } = useLottery(
     {
       userPoints,
-      updateUserPoints: amount => {
-        userPoints.value += amount;
-      },
+      updateUserPoints,
     },
     {
-      addSpinRecord: prize => {
-        const record = {
-          prize,
-          time: new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' }),
-          timestamp: Date.now(),
-        };
-        spinHistory.value.unshift(record);
-        if (spinHistory.value.length > 10) {
-          spinHistory.value = spinHistory.value.slice(0, 10);
-        }
-      },
+      addSpinRecord,
     },
     {
       isSpinning,
@@ -121,6 +125,7 @@
         isSpinning.value = false;
       },
     },
+    { addRecord },
     prizes.value,
     t
   );
@@ -133,7 +138,7 @@
    * 组件挂载时加载用户数据
    */
   onMounted(() => {
-    loadUserPoints();
+    loadAllData();
     loadSpinHistory();
   });
 </script>

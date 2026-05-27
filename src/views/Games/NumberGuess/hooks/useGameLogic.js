@@ -2,13 +2,11 @@
  * 游戏核心逻辑处理hook
  * 处理猜测、胜负判断等核心游戏逻辑
  */
-import { useUserPoints } from './useUserPoints'
 import { showToast } from 'vant'
 import { useI18n } from 'vue-i18n'
 
-export function useGameLogic(gameState) {
+export function useGameLogic(gameState, addPoints) {
   const { t } = useI18n()
-  const { updatePoints } = useUserPoints()
 
   /**
    * 提交用户的猜测
@@ -79,7 +77,7 @@ export function useGameLogic(gameState) {
     }
 
     // 更新用户总积分
-    updatePoints(gameState.rewardPoints.value)
+    addPoints(gameState.rewardPoints.value)
 
     // 显示成功提示
     showToast({

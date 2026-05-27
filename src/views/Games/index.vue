@@ -29,8 +29,8 @@
   import { ref, computed } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { useRouter } from 'vue-router';
-  import PageHeader from './components/PageHeader.vue';
-  import GameCard from './components/GameCard.vue';
+  import PageHeader from '@/components/PageHeader/index.vue';
+import GameCard from './components/GameCard.vue';
   import Leaderboard from './components/Leaderboard.vue';
 
   // ========================================

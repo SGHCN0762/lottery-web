@@ -1,4 +1,6 @@
 import { ref } from 'vue'
+import dayjs from 'dayjs'
+import { STORAGE_KEYS, RECORD_LIMITS } from '@/constants'
 
 /**
  * 抽奖历史记录管理 Hook
@@ -13,7 +15,7 @@ export function useSpinHistory() {
    */
   const loadSpinHistory = () => {
     try {
-      const saved = localStorage.getItem('lottery_spin_history')
+      const saved = localStorage.getItem(STORAGE_KEYS.SPIN_HISTORY)
       if (saved) {
         spinHistory.value = JSON.parse(saved)
       }
@@ -28,7 +30,7 @@ export function useSpinHistory() {
    */
   const saveSpinHistory = () => {
     try {
-      localStorage.setItem('lottery_spin_history', JSON.stringify(spinHistory.value))
+      localStorage.setItem(STORAGE_KEYS.SPIN_HISTORY, JSON.stringify(spinHistory.value))
     } catch (error) {
       console.error('保存历史失败:', error)
     }
@@ -43,15 +45,15 @@ export function useSpinHistory() {
     const record = {
       prize,
       time: formatTime(),
-      timestamp: Date.now()
+      timestamp: dayjs().valueOf()
     }
 
     // 添加到历史记录开头
     spinHistory.value.unshift(record)
 
     // 只保留最近10条记录，避免数据过多
-    if (spinHistory.value.length > 10) {
-      spinHistory.value = spinHistory.value.slice(0, 10)
+    if (spinHistory.value.length > RECORD_LIMITS.SPIN_HISTORY) {
+      spinHistory.value = spinHistory.value.slice(0, RECORD_LIMITS.SPIN_HISTORY)
     }
     saveSpinHistory()
   }
@@ -61,8 +63,7 @@ export function useSpinHistory() {
    * @returns {string} 格式化后的时间字符串
    */
   const formatTime = () => {
-    const now = new Date()
-    return `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`
+    return dayjs().format('HH:mm')
   }
 
   return {

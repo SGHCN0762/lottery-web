@@ -9,12 +9,10 @@
 
 import { defineStore } from 'pinia'
 import { ref, computed, watch } from 'vue'
-
-// localStorage 键名常量
-const STORAGE_KEY = 'theme-mode'
+import { STORAGE_KEYS, THEMES } from '@/constants'
 
 // 有效的主题模式列表
-const VALID_THEMES = ['light', 'dark', 'auto']
+const VALID_THEMES = [THEMES.LIGHT, THEMES.DARK, THEMES.AUTO]
 
 export const useThemeStore = defineStore('theme', () => {
   // ========================================
@@ -25,7 +23,7 @@ export const useThemeStore = defineStore('theme', () => {
    * 当前主题模式
    * @type {'light' | 'dark' | 'auto'}
    */
-  const themeMode = ref('auto')
+  const themeMode = ref(THEMES.AUTO)
   
   // ========================================
   // 计算属性
@@ -38,12 +36,12 @@ export const useThemeStore = defineStore('theme', () => {
    * @returns {boolean}
    */
   const isDark = computed(() => {
-    if (themeMode.value === 'auto') {
-      // 检测系统深色模式偏好
-      return window.matchMedia('(prefers-color-scheme: dark)').matches
-    }
-    return themeMode.value === 'dark'
-  })
+  if (themeMode.value === THEMES.AUTO) {
+    // 检测系统深色模式偏好
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+  }
+  return themeMode.value === THEMES.DARK
+})
 
   // ========================================
   // 核心方法
@@ -54,16 +52,16 @@ export const useThemeStore = defineStore('theme', () => {
    * @param {'light' | 'dark' | 'auto'} mode - 主题模式
    */
   const setThemeMode = (mode) => {
-    // 验证输入
-    if (!VALID_THEMES.includes(mode)) {
-      console.warn(`无效的主题模式: ${mode}，使用默认值 auto`)
-      mode = 'auto'
-    }
-    
-    themeMode.value = mode
-    saveToStorage()
-    applyThemeToDOM()
+  // 验证输入
+  if (!VALID_THEMES.includes(mode)) {
+    console.warn(`无效的主题模式: ${mode}，使用默认值 auto`)
+    mode = THEMES.AUTO
   }
+  
+  themeMode.value = mode
+  saveToStorage()
+  applyThemeToDOM()
+}
 
   /**
    * 将主题应用到 DOM（通过 data-theme 属性）
@@ -82,27 +80,27 @@ export const useThemeStore = defineStore('theme', () => {
    * 保存主题设置到 localStorage
    */
   const saveToStorage = () => {
-    try {
-      localStorage.setItem(STORAGE_KEY, themeMode.value)
-    } catch (error) {
-      console.error('保存主题设置失败:', error)
-    }
+  try {
+    localStorage.setItem(STORAGE_KEYS.THEME_MODE, themeMode.value)
+  } catch (error) {
+    console.error('保存主题设置失败:', error)
   }
+}
 
   /**
    * 从 localStorage 加载主题设置
    */
   const loadFromStorage = () => {
-    try {
-      const savedTheme = localStorage.getItem(STORAGE_KEY)
-      
-      if (savedTheme && VALID_THEMES.includes(savedTheme)) {
-        themeMode.value = savedTheme
-      }
-    } catch (error) {
-      console.error('读取主题设置失败:', error)
+  try {
+    const savedTheme = localStorage.getItem(STORAGE_KEYS.THEME_MODE)
+    
+    if (savedTheme && VALID_THEMES.includes(savedTheme)) {
+      themeMode.value = savedTheme
     }
+  } catch (error) {
+    console.error('读取主题设置失败:', error)
   }
+}
 
   /**
    * 设置系统主题变化监听器
@@ -119,11 +117,11 @@ export const useThemeStore = defineStore('theme', () => {
    * 系统主题变化处理函数
    */
   const handleSystemThemeChange = () => {
-    // 仅在 auto 模式下响应系统变化
-    if (themeMode.value === 'auto') {
-      applyThemeToDOM()
-    }
+  // 仅在 auto 模式下响应系统变化
+  if (themeMode.value === THEMES.AUTO) {
+    applyThemeToDOM()
   }
+}
 
   /**
    * 初始化主题（应用启动时调用）

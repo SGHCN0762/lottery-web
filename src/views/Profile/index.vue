@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-  import { ref, computed } from 'vue';
+  import { ref, computed, onMounted, watch } from 'vue';
   import { useRouter } from 'vue-router';
   import { useI18n } from 'vue-i18n';
 
@@ -22,6 +22,7 @@
   import UserCard from './components/UserCard.vue';
   import QuickActions from './components/QuickActions.vue';
   import MenuList from './components/MenuList.vue';
+  import { useAppData } from '@/hooks/useAppData';
 
   // ========================================
   // i18n
@@ -34,14 +35,22 @@
   const router = useRouter();
 
   // ========================================
+  // 统一数据管理
+  // ========================================
+  const { userPoints, records, loadAllData, calculateStats, getUnlockedBadgeCount } = useAppData();
+
+  // ========================================
   // 用户信息
   // ========================================
-  const userInfo = ref({
-    id: '10086',
-    name: '娱乐达人',
-    points: 1580,
-    gamesPlayed: 128,
-    badges: 12,
+  const userInfo = computed(() => {
+    const stats = calculateStats();
+    return {
+      id: '10086',
+      name: '娱乐达人',
+      points: userPoints.value,
+      gamesPlayed: stats.totalGames,
+      badges: getUnlockedBadgeCount(),
+    };
   });
 
   // ========================================
@@ -158,6 +167,13 @@
         console.warn('未知的菜单动作:', item.action);
     }
   };
+
+  // ========================================
+  // 生命周期钩子
+  // ========================================
+  onMounted(() => {
+    loadAllData();
+  });
 </script>
 
 <style lang="less" scoped>

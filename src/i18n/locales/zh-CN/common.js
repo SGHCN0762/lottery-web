@@ -35,5 +35,7 @@ export default {
   points: '积分',
   spinning: '抽奖中...',
   start: '开始',
+  win: '胜利',
+  lose: '失败',
 
 }
