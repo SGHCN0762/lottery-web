@@ -6,7 +6,9 @@
         class="wheel"
         :style="{
           transform: `rotate(${wheelRotation}deg)`,
-          transition: isSpinning ? `transform ${spinDuration}s cubic-bezier(0.23, 1, 0.32, 1)` : 'none'
+          transition: isSpinning
+            ? `transform ${spinDuration}s cubic-bezier(0.23, 1, 0.32, 1)`
+            : 'none',
         }"
       >
         <!-- 使用conic-gradient绘制精确扇形背景 -->
@@ -32,9 +34,10 @@
           type="primary"
           size="small"
           round
-          @click="$emit('spin')"
+          @click="handleSpinClick"
           :disabled="isSpinning || userPoints < 10"
           class="spin-button"
+          :class="{ 'spin-button-disabled': isSpinning || userPoints < 10 }"
         >
           {{ isSpinning ? t('common.spinning') : t('luckyWheel.start') }}
         </van-button>
@@ -47,174 +50,213 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
+  import { computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n()
+  const { t } = useI18n();
 
-const props = defineProps({
-  prizes: {
-    type: Array,
-    required: true
-  },
-  wheelRotation: {
-    type: Number,
-    required: true
-  },
-  isSpinning: {
-    type: Boolean,
-    required: true
-  },
-  spinDuration: {
-    type: Number,
-    required: true
-  },
-  userPoints: {
-    type: Number,
-    required: true
-  }
-})
+  const props = defineProps({
+    prizes: {
+      type: Array,
+      required: true,
+    },
+    wheelRotation: {
+      type: Number,
+      required: true,
+    },
+    isSpinning: {
+      type: Boolean,
+      required: true,
+    },
+    spinDuration: {
+      type: Number,
+      required: true,
+    },
+    userPoints: {
+      type: Number,
+      required: true,
+    },
+  });
 
-defineEmits(['spin'])
+  const emit = defineEmits(['spin']);
 
-/**
- * 生成转盘背景渐变
- * 使用conic-gradient精确绘制6个扇形，每个扇形60度
- * @returns {string} CSS conic-gradient字符串
- */
-const wheelBackground = computed(() => {
-  const segmentAngle = 360 / props.prizes.length
-  let gradient = 'conic-gradient('
-
-  props.prizes.forEach((prize, index) => {
-    const startAngle = index * segmentAngle
-    const endAngle = (index + 1) * segmentAngle
-
-    if (index > 0) {
-      gradient += ', '
+  /**
+   * 优化INP：立即提供点击反馈，再执行实际逻辑
+   */
+  const handleSpinClick = (event) => {
+    // 保存 DOM 引用，避免异步回调时 event.currentTarget 变为 null
+    const target = event.currentTarget;
+    
+    // 立即添加视觉反馈（CSS动画，不阻塞主线程）
+    if (target) {
+      target.classList.add('spin-button-clicking');
     }
-    gradient += `${prize.color} ${startAngle}deg ${endAngle}deg`
-  })
+    
+    // 使用 requestAnimationFrame 确保在下一帧执行实际逻辑
+    requestAnimationFrame(() => {
+      emit('spin');
+      
+      // 动画结束后移除反馈类
+      setTimeout(() => {
+        if (target) {
+          target.classList.remove('spin-button-clicking');
+        }
+      }, 150);
+    });
+  };
 
-  gradient += ')'
-  return gradient
-})
+  /**
+   * 生成转盘背景渐变
+   * 使用conic-gradient精确绘制6个扇形，每个扇形60度
+   * @returns {string} CSS conic-gradient字符串
+   */
+  const wheelBackground = computed(() => {
+    const segmentAngle = 360 / props.prizes.length;
+    let gradient = 'conic-gradient(';
 
-/**
- * 计算奖品扇形的旋转样式
- * 将文字定位到每个扇形的中心位置
- * @param {number} index - 奖品索引
- * @returns {Object} CSS transform样式对象
- */
-const getSegmentStyle = (index) => {
-  const segmentAngle = 360 / props.prizes.length
-  // 旋转到扇形中心：起始角度 + 半个扇形角度
-  const rotate = index * segmentAngle + segmentAngle / 2
+    props.prizes.forEach((prize, index) => {
+      const startAngle = index * segmentAngle;
+      const endAngle = (index + 1) * segmentAngle;
 
-  return {
-    transform: `rotate(${rotate}deg)`
-  }
-}
+      if (index > 0) {
+        gradient += ', ';
+      }
+      gradient += `${prize.color} ${startAngle}deg ${endAngle}deg`;
+    });
+
+    gradient += ')';
+    return gradient;
+  });
+
+  /**
+   * 计算奖品扇形的旋转样式
+   * 将文字定位到每个扇形的中心位置
+   * @param {number} index - 奖品索引
+   * @returns {Object} CSS transform样式对象
+   */
+  const getSegmentStyle = index => {
+    const segmentAngle = 360 / props.prizes.length;
+    // 旋转到扇形中心：起始角度 + 半个扇形角度
+    const rotate = index * segmentAngle + segmentAngle / 2;
+
+    return {
+      transform: `rotate(${rotate}deg)`,
+    };
+  };
 </script>
 
 <style lang="less" scoped>
-.wheel-section {
-  margin-bottom: var(--spacing-xl);
+  .wheel-section {
+    margin-bottom: var(--spacing-xl);
 
-  .wheel-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    contain: layout style paint;
+    .wheel-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      contain: layout style paint;
 
-    .wheel {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      overflow: hidden;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      border: 8px solid #fff;
-      will-change: transform;
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform-style: preserve-3d;
-
-      .wheel-background {
+      .wheel {
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         border-radius: 50%;
-      }
+        overflow: hidden;
+        border: 8px solid #fff;
+        will-change: transform;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
 
-      .wheel-segment {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 50%;
-        transform-origin: bottom center;
-        z-index: 1;
-
-        .segment-content {
+        .wheel-background {
           position: absolute;
-          top: 18%;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+
+        .wheel-segment {
+          position: absolute;
+          top: 0;
           left: 50%;
-          transform: translateX(-50%);
-          text-align: center;
-          width: 80px;
+          width: 0;
+          height: 50%;
+          transform-origin: bottom center;
+          z-index: 1;
 
-          .segment-icon {
-            font-size: 1.5rem;
-            margin-bottom: 4px;
-          }
+          .segment-content {
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 80px;
 
-          .segment-text {
-            font-size: var(--font-size-xs);
-            color: #fff;
-            font-weight: var(--font-weight-bold);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-            white-space: nowrap;
+            .segment-icon {
+              font-size: 1.5rem;
+              margin-bottom: 4px;
+            }
+
+            .segment-text {
+              font-size: var(--font-size-xs);
+              color: #fff;
+              font-weight: var(--font-weight-bold);
+              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+              white-space: nowrap;
+            }
           }
         }
       }
-    }
 
-    .wheel-center {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
+      .wheel-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
 
-      .spin-button {
-        min-width: 80px;
-        height: 80px;
-        font-size: var(--font-size-base);
-        font-weight: var(--font-weight-bold);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        .spin-button {
+          min-width: 80px;
+          height: 80px;
+          font-size: var(--font-size-base);
+          font-weight: var(--font-weight-bold);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          transition: transform 0.1s ease, box-shadow 0.1s ease;
+          /* 优化INP：使用GPU加速 */
+          transform: translateZ(0);
+          will-change: transform;
+          
+          /* 点击反馈动画 */
+          &.spin-button-clicking {
+            transform: translateZ(0) scale(0.95);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+          }
+          
+          &.spin-button-disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+          }
+        }
+      }
+
+      .wheel-pointer {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 30px solid #ff4757;
+        z-index: 20;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
       }
     }
-
-    .wheel-pointer {
-      position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 30px solid #FF4757;
-      z-index: 20;
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    }
   }
-}
 </style>

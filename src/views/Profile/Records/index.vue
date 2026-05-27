@@ -1,12 +1,13 @@
 <template>
   <div class="records-page">
-    <!-- 筛选器 -->
-    <section class="filter-section">
-      <van-dropdown-menu>
-        <van-dropdown-item v-model="gameType" :options="gameTypeOptions" />
-        <van-dropdown-item v-model="timeRange" :options="timeRangeOptions" />
-      </van-dropdown-menu>
-    </section>
+    <div class="page-content">
+      <!-- 筛选器 -->
+      <section class="filter-section">
+        <van-dropdown-menu>
+          <van-dropdown-item v-model="gameType" :options="gameTypeOptions" />
+          <van-dropdown-item v-model="timeRange" :options="timeRangeOptions" />
+        </van-dropdown-menu>
+      </section>
 
     <!-- 统计卡片 -->
     <section class="stats-card">
@@ -68,8 +69,9 @@
     </section>
 
     <!-- 加载更多 -->
-    <div class="load-more" v-if="hasMore && records.length > 0">
-      <van-button block round @click="loadMore">{{ t('records.loadMore') }}</van-button>
+      <div class="load-more" v-if="hasMore && records.length > 0">
+        <van-button block round @click="loadMore">{{ t('records.loadMore') }}</van-button>
+      </div>
     </div>
   </div>
 </template>
@@ -246,7 +248,12 @@ onMounted(() => {
 .records-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-lg);
+}
+
+.page-content {
+  padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+  display: flow-root;
 }
 
 /* ========================================

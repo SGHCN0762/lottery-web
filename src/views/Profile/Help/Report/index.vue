@@ -1,11 +1,12 @@
 <template>
   <div class="report-page">
-    <IntroCard
-      icon="warning-o"
-      icon-color="var(--color-danger)"
-      :title="t('help.report.title')"
-      :description="t('help.report.description')"
-    />
+    <div class="page-content">
+      <IntroCard
+        icon="warning-o"
+        icon-color="var(--color-danger)"
+        :title="t('help.report.title')"
+        :description="t('help.report.description')"
+      />
 
     <ReportForm
       :form-data="formData"
@@ -36,19 +37,20 @@
     </van-popup>
 
     <DetailPopup
-      v-model:show="showDetailPopup"
-      :record="currentReport"
-      :title="t('help.report.reportDetail')"
-      :type-label="t('help.report.reportType')"
-      :target-label="t('help.report.target')"
-      :description-label="t('help.report.reason')"
-      :reply-label="t('help.report.processedResult')"
-      :images-label="t('help.report.uploadEvidence')"
-      :show-target="true"
-      :get-type-tag-type="getTypeTagType"
-      :get-status-tag-type="getStatusTagType"
-      @close="closeDetailPopup"
-    />
+        v-model:show="showDetailPopup"
+        :record="currentReport"
+        :title="t('help.report.reportDetail')"
+        :type-label="t('help.report.reportType')"
+        :target-label="t('help.report.target')"
+        :description-label="t('help.report.reason')"
+        :reply-label="t('help.report.processedResult')"
+        :images-label="t('help.report.uploadEvidence')"
+        :show-target="true"
+        :get-type-tag-type="getTypeTagType"
+        :get-status-tag-type="getStatusTagType"
+        @close="closeDetailPopup"
+      />
+    </div>
   </div>
 </template>
 
@@ -92,6 +94,11 @@
   .report-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: var(--spacing-lg);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 </style>

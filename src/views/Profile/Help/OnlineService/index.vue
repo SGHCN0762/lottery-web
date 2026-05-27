@@ -1,35 +1,36 @@
 <template>
   <div class="online-service-page">
-    <!-- 客服状态卡片 -->
-    <section class="service-status-card">
-      <div class="status-header">
-        <div class="avatar-wrapper">
-          <div class="avatar">
-            <van-icon name="service" size="32" color="white" />
+    <div class="page-content">
+      <!-- 客服状态卡片 -->
+      <section class="service-status-card">
+        <div class="status-header">
+          <div class="avatar-wrapper">
+            <div class="avatar">
+              <van-icon name="service" size="32" color="white" />
+            </div>
+            <div class="online-indicator"></div>
           </div>
-          <div class="online-indicator"></div>
+          <div class="status-info">
+            <h3>{{ t('help.onlineService.title') }}</h3>
+            <p class="status-text">
+              <span class="dot" :style="{ background: serviceStatusColor }"></span>
+              {{ serviceStatusText }}
+            </p>
+            <p class="service-time">{{ t('help.onlineService.serviceHours') }}</p>
+          </div>
         </div>
-        <div class="status-info">
-          <h3>{{ t('help.onlineService.title') }}</h3>
-          <p class="status-text">
-            <span class="dot" :style="{ background: serviceStatusColor }"></span>
-            {{ serviceStatusText }}
-          </p>
-          <p class="service-time">{{ t('help.onlineService.serviceHours') }}</p>
-        </div>
-      </div>
 
-      <div class="quick-actions">
-        <van-button type="primary" round size="small" @click="startChat">
-          <van-icon name="chat-o" />
-          {{ t('help.onlineService.startChat') }}
-        </van-button>
-        <van-button round size="small" @click="showFAQ = true">
-          <van-icon name="question-o" />
-          {{ t('help.faq') }}
-        </van-button>
-      </div>
-    </section>
+        <div class="quick-actions">
+          <van-button type="primary" round size="small" @click="startChat">
+            <van-icon name="chat-o" />
+            {{ t('help.onlineService.startChat') }}
+          </van-button>
+          <van-button round size="small" @click="showFAQ = true">
+            <van-icon name="question-o" />
+            {{ t('help.faq') }}
+          </van-button>
+        </div>
+      </section>
 
     <!-- 快捷问题 -->
     <section class="quick-questions">
@@ -137,25 +138,26 @@
     </van-popup>
 
     <!-- FAQ弹窗 -->
-    <van-popup v-model:show="showFAQ" position="bottom" :style="{ height: '70%' }" round closeable>
-      <div class="faq-popup">
-        <div class="popup-header">
-          <h3>{{ t('help.faq') }}</h3>
+      <van-popup v-model:show="showFAQ" position="bottom" :style="{ height: '70%' }" round closeable>
+        <div class="faq-popup">
+          <div class="popup-header">
+            <h3>{{ t('help.faq') }}</h3>
+          </div>
+          <div class="popup-content">
+            <van-collapse v-model="activeFAQ">
+              <van-collapse-item
+                v-for="item in faqList"
+                :key="item.id"
+                :title="item.question"
+                :name="item.id"
+              >
+                <div class="answer">{{ item.answer }}</div>
+              </van-collapse-item>
+            </van-collapse>
+          </div>
         </div>
-        <div class="popup-content">
-          <van-collapse v-model="activeFAQ">
-            <van-collapse-item
-              v-for="item in faqList"
-              :key="item.id"
-              :title="item.question"
-              :name="item.id"
-            >
-              <div class="answer">{{ item.answer }}</div>
-            </van-collapse-item>
-          </van-collapse>
-        </div>
-      </div>
-    </van-popup>
+      </van-popup>
+    </div>
   </div>
 </template>
 
@@ -427,7 +429,12 @@
   .online-service-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: var(--spacing-xl);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 
   /* ========================================

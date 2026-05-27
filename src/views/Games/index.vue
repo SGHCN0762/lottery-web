@@ -1,25 +1,27 @@
 <template>
   <div class="lottery-page">
-    <!-- 页面标题区域 -->
-    <PageHeader :title="t('lottery.title')" :subtitle="t('lottery.subtitle')" />
+    <div class="page-content">
+      <!-- 页面标题区域 -->
+      <PageHeader :title="t('lottery.title')" :subtitle="t('lottery.subtitle')" />
 
-    <!-- 游戏类型卡片列表 -->
-    <section class="game-types-section">
-      <GameCard
-        v-for="gameType in gameTypes"
-        :key="gameType.id"
-        :game-type="gameType"
-        :reward-label="t('lottery.reward')"
-        @select="handleSelectGame"
+      <!-- 游戏类型卡片列表 -->
+      <section class="game-types-section">
+        <GameCard
+          v-for="gameType in gameTypes"
+          :key="gameType.id"
+          :game-type="gameType"
+          :reward-label="t('lottery.reward')"
+          @select="handleSelectGame"
+        />
+      </section>
+
+      <!-- 积分排行榜 -->
+      <Leaderboard
+        :players="topPlayers"
+        :title="t('lottery.leaderboard')"
+        :points-label="t('common.points')"
       />
-    </section>
-
-    <!-- 积分排行榜 -->
-    <Leaderboard
-      :players="topPlayers"
-      :title="t('lottery.leaderboard')"
-      :points-label="t('common.points')"
-    />
+    </div>
   </div>
 </template>
 
@@ -112,26 +114,29 @@
 
 <style lang="less" scoped>
   .lottery-page {
-    /* ========================================
-     游戏类型卡片区域
-     ======================================== */
-    .game-types-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: var(--spacing-lg);
-      margin-bottom: var(--spacing-3xl);
-    }
+    min-height: 100%;
+    background: var(--color-bg-primary);
   }
 
-  /* ========================================
-   响应式设计
-   ======================================== */
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    display: flow-root;
+  }
+
+  .game-types-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-3xl);
+  }
+
   @media (max-width: 768px) {
-    .lottery-page {
-      .game-types-section {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-md);
-      }
+    .game-types-section {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-md);
     }
   }
 </style>

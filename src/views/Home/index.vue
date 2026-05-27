@@ -1,41 +1,43 @@
 <template>
   <div class="calendar-page">
-    <!-- 顶部信息卡片 -->
-    <HeaderCard :current-date="currentDate" />
+    <div class="page-content">
+      <!-- 顶部信息卡片 -->
+      <HeaderCard :current-date="currentDate" />
 
-    <!-- 日历主体 -->
-    <custom-calendar
-      :week-days="weekDays"
-      :display-year="displayYear"
-      :display-month="displayMonth"
-      :calendar-dates="calendarDates"
-      @prev="prevMonth"
-      @next="nextMonth"
-      @date-click="handleDateClick"
-    />
+      <!-- 日历主体 -->
+      <custom-calendar
+        :week-days="weekDays"
+        :display-year="displayYear"
+        :display-month="displayMonth"
+        :calendar-dates="calendarDates"
+        @prev="prevMonth"
+        @next="nextMonth"
+        @date-click="handleDateClick"
+      />
 
-    <!-- 除夕倒计时入口卡片 -->
-    <NewYearEveEntry :target-date="newYearEveDate" @click="goToNewYearEve" />
+      <!-- 除夕倒计时入口卡片 -->
+      <NewYearEveEntry :target-date="newYearEveDate" @click="goToNewYearEve" />
 
-    <!-- 即将到来的节日列表 -->
-    <UpcomingFestivals :festivals="upcomingFestivals" @festival-click="handleFestivalClick" />
+      <!-- 即将到来的节日列表 -->
+      <UpcomingFestivals :festivals="upcomingFestivals" @festival-click="handleFestivalClick" />
 
-    <!-- 日期详情弹窗（异步加载） -->
-    <DateDetailModal
-      v-if="showDateDetail"
-      v-model:show="showDateDetail"
-      :date="selectedDate"
-      @view-almanac="handleViewAlmanac"
-    />
+      <!-- 日期详情弹窗（异步加载） -->
+      <DateDetailModal
+        v-if="showDateDetail"
+        v-model:show="showDateDetail"
+        :date="selectedDate"
+        @view-almanac="handleViewAlmanac"
+      />
 
-    <!-- 节日/节气详情弹窗（异步加载） -->
-    <FestivalDetailModal
-      v-if="showFestivalDetail"
-      v-model:show="showFestivalDetail"
-      :date="selectedDate"
-      :name="selectedFestivalName"
-      @view-almanac="handleViewAlmanac"
-    />
+      <!-- 节日/节气详情弹窗（异步加载） -->
+      <FestivalDetailModal
+        v-if="showFestivalDetail"
+        v-model:show="showFestivalDetail"
+        :date="selectedDate"
+        :name="selectedFestivalName"
+        @view-almanac="handleViewAlmanac"
+      />
+    </div>
   </div>
 </template>
 
@@ -147,3 +149,16 @@
     });
   };
 </script>
+
+<style lang="less" scoped>
+  .calendar-page {
+    min-height: 100%;
+    background: var(--color-bg-primary);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
+  }
+</style>

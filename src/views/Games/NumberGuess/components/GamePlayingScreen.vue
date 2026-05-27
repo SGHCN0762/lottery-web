@@ -8,7 +8,7 @@
         :placeholder="t('numberGuess.inputPlaceholder')"
         :disabled="isProcessing"
         class="guess-input"
-        @input="$emit('update:currentGuess', $event.target.value)"
+        @input="handleInput"
         @keyup.enter="submitGuess"
       />
       <van-button
@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import GameHistory from './GameHistory.vue'
 
@@ -51,6 +51,11 @@ const props = defineProps({
 
 const emit = defineEmits(['submit-guess', 'update:currentGuess'])
 
+// 优化：使用防抖避免频繁触发更新
+const handleInput = useDebounceFn((event) => {
+  emit('update:currentGuess', event.target.value)
+}, 50)
+
 const isValidGuess = computed(() => {
   const num = parseInt(props.currentGuess)
   return !isNaN(num) && num >= 1 && num <= 100
@@ -58,6 +63,18 @@ const isValidGuess = computed(() => {
 
 const submitGuess = () => {
   emit('submit-guess')
+}
+
+// 防抖工具函数
+function useDebounceFn(fn, delay = 100) {
+  let timeout = null
+  
+  return function(...args) {
+    clearTimeout(timeout)
+    timeout = setTimeout(() => {
+      fn.apply(this, args)
+    }, delay)
+  }
 }
 </script>
 

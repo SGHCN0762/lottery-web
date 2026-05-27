@@ -122,38 +122,54 @@ watch(
 );
 
 // ========================================
-// 挂载应用（使用 requestIdleCallback 优化非关键任务）
+// 立即挂载应用，优化 LCP
 // ========================================
-const mountApp = () => {
-  app.mount('#app');
+app.mount('#app');
 
-  // 性能优化：在下一帧添加loaded类，触发动画
-  requestAnimationFrame(() => {
-    document.querySelector('.custom-calendar')?.classList.add('loaded');
-  });
+// 性能优化：在下一帧添加loaded类，触发动画
+requestAnimationFrame(() => {
+  document.querySelector('.custom-calendar')?.classList.add('loaded');
+});
 
-  // 性能监控：记录FCP时间
-  if ('performance' in window) {
-    const observer = new PerformanceObserver(list => {
+// ========================================
+// INP (Interaction to Next Paint) 性能监控
+// ========================================
+if ('PerformanceObserver' in window) {
+  // 监控首次输入延迟 (FID)
+  try {
+    const fidObserver = new PerformanceObserver(list => {
       for (const entry of list.getEntries()) {
-        if (entry.name === 'first-contentful-paint') {
-          console.log(`FCP: ${entry.startTime.toFixed(2)}ms`);
-        }
-        if (entry.name === 'largest-contentful-paint') {
-          console.log(`LCP: ${entry.startTime.toFixed(2)}ms`);
+        if (entry.cancelable) {
+          console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
         }
       }
     });
-
-    observer.observe({ type: 'paint', buffered: true });
-    observer.observe({ type: 'largest-contentful-paint', buffered: true });
+    fidObserver.observe({ type: 'first-input', buffered: true });
+  } catch (e) {
+    console.warn('FID observation not supported');
   }
-};
 
-// 如果浏览器支持 requestIdleCallback，在空闲时挂载
-if ('requestIdleCallback' in window) {
-  requestIdleCallback(mountApp);
-} else {
-  // 降级方案：立即挂载
-  setTimeout(mountApp, 0);
+  // 监控长任务 (Long Tasks)
+  try {
+    const longTaskObserver = new PerformanceObserver(list => {
+      for (const entry of list.getEntries()) {
+        console.warn(`Long task detected: ${entry.duration.toFixed(2)}ms at ${entry.startTime.toFixed(2)}ms`);
+      }
+    });
+    longTaskObserver.observe({ type: 'longtask', buffered: true });
+  } catch (e) {
+    console.warn('Long task observation not supported');
+  }
+
+  // 监控 LCP
+  try {
+    const lcpObserver = new PerformanceObserver(list => {
+      const entries = list.getEntries();
+      const lastEntry = entries[entries.length - 1];
+      console.log(`LCP: ${lastEntry.startTime.toFixed(2)}ms`);
+    });
+    lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
+  } catch (e) {
+    console.warn('LCP observation not supported');
+  }
 }

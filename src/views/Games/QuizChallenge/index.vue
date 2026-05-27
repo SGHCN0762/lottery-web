@@ -1,84 +1,86 @@
 <template>
   <div class="quiz-challenge-game">
-    <!-- 游戏主区域 -->
-    <section class="game-main">
-      <div v-if="!gameStarted">
-        <!-- 游戏规则 -->
-        <GameRules
-          title-key="quizChallenge.rules.title"
-          :rule-keys="[
-            'quizChallenge.rules.rule1',
-            'quizChallenge.rules.rule2',
-            'quizChallenge.rules.rule3',
-            'quizChallenge.rules.rule4',
-          ]"
-        />
-
-        <!-- 游戏未开始 -->
-        <StartScreen :categories="availableCategories" @start="handleStartGame" />
-      </div>
-
-      <!-- 游戏中 -->
-      <div v-else-if="!gameEnded" class="game-playing-screen">
-        <!-- 游戏信息栏 -->
-        <GameInfoBar
-          :user-points="userPoints"
-          :current-question-index="currentQuestionIndex"
-          :total-questions="totalQuestions"
-        />
-
-        <!-- 答题统计组件 -->
-        <AnswerStats
-          :correct-count="correctCount"
-          :total-questions="totalQuestions"
-          :current-index="currentQuestionIndex"
-          :answered-questions="answeredQuestions"
-          :questions="questions"
-          @jump-to-question="handleJumpToQuestion"
-        />
-
-        <!-- 进度条 -->
-        <div class="progress-section">
-          <van-progress
-            :percentage="progressPercentage"
-            stroke-width="8"
-            color="linear-gradient(to right, #1989fa, #07c160)"
+    <div class="page-content">
+      <!-- 游戏主区域 -->
+      <section class="game-main">
+        <div v-if="!gameStarted">
+          <!-- 游戏规则 -->
+          <GameRules
+            title-key="quizChallenge.rules.title"
+            :rule-keys="[
+              'quizChallenge.rules.rule1',
+              'quizChallenge.rules.rule2',
+              'quizChallenge.rules.rule3',
+              'quizChallenge.rules.rule4',
+            ]"
           />
-          <div class="progress-text">
-            {{ t('quizChallenge.progress') }}: {{ displayQuestionIndex + 1 }} / {{ totalQuestions }}
-          </div>
+
+          <!-- 游戏未开始 -->
+          <StartScreen :categories="availableCategories" @start="handleStartGame" />
         </div>
 
-        <!-- 题目卡片 -->
-        <QuestionCard
-          :question="currentQuestion"
-          :selected-answer="selectedAnswer"
-          :show-result="showResult"
-          :is-last-question="isLastQuestion"
-          :is-review-mode="isReviewMode"
-          @select-answer="selectAnswer"
-          @submit="submitAnswer"
-          @next="nextQuestion"
-          @back="handleBackToAnswer"
-        />
+        <!-- 游戏中 -->
+        <div v-else-if="!gameEnded" class="game-playing-screen">
+          <!-- 游戏信息栏 -->
+          <GameInfoBar
+            :user-points="userPoints"
+            :current-question-index="currentQuestionIndex"
+            :total-questions="totalQuestions"
+          />
 
-        <!-- 连续答对提示 -->
-        <StreakBadge
-          v-if="consecutiveCorrect > 0 && showResult && !isReviewMode"
-          :streak-count="consecutiveCorrect"
-        />
-      </div>
+          <!-- 答题统计组件 -->
+          <AnswerStats
+            :correct-count="correctCount"
+            :total-questions="totalQuestions"
+            :current-index="currentQuestionIndex"
+            :answered-questions="answeredQuestions"
+            :questions="questions"
+            @jump-to-question="handleJumpToQuestion"
+          />
 
-      <!-- 游戏结束 -->
-      <GameEndScreen
-        v-else
-        :correct-count="correctCount"
-        :total-questions="totalQuestions"
-        :earned-points="earnedPoints"
-        :max-streak="maxStreak"
-        @reset="resetGame"
-      />
-    </section>
+          <!-- 进度条 -->
+          <div class="progress-section">
+            <van-progress
+              :percentage="progressPercentage"
+              stroke-width="8"
+              color="linear-gradient(to right, #1989fa, #07c160)"
+            />
+            <div class="progress-text">
+              {{ t('quizChallenge.progress') }}: {{ displayQuestionIndex + 1 }} / {{ totalQuestions }}
+            </div>
+          </div>
+
+          <!-- 题目卡片 -->
+          <QuestionCard
+            :question="currentQuestion"
+            :selected-answer="selectedAnswer"
+            :show-result="showResult"
+            :is-last-question="isLastQuestion"
+            :is-review-mode="isReviewMode"
+            @select-answer="selectAnswer"
+            @submit="submitAnswer"
+            @next="nextQuestion"
+            @back="handleBackToAnswer"
+          />
+
+          <!-- 连续答对提示 -->
+          <StreakBadge
+            v-if="consecutiveCorrect > 0 && showResult && !isReviewMode"
+            :streak-count="consecutiveCorrect"
+          />
+        </div>
+
+        <!-- 游戏结束 -->
+        <GameEndScreen
+          v-else
+          :correct-count="correctCount"
+          :total-questions="totalQuestions"
+          :earned-points="earnedPoints"
+          :max-streak="maxStreak"
+          @reset="resetGame"
+        />
+      </section>
+    </div>
   </div>
 </template>
 
@@ -328,25 +330,32 @@
   @import '@/styles/game-animations.less';
 
   .quiz-challenge-game {
-    /* ========================================
-     游戏主区域
-     ======================================== */
-    .game-main {
-      min-height: 400px;
+    min-height: 100%;
+    background: var(--color-bg-primary);
+  }
 
-      /* 游戏进行中 */
-      .game-playing-screen {
-        animation: gameSlideIn 0.4s ease-out;
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    display: flow-root;
+  }
 
-        .progress-section {
-          margin-bottom: var(--spacing-lg);
+  .game-main {
+    min-height: 400px;
 
-          .progress-text {
-            text-align: center;
-            font-size: var(--font-size-xs);
-            color: var(--color-text-secondary);
-            margin-top: var(--spacing-xs);
-          }
+    .game-playing-screen {
+      animation: gameSlideIn 0.4s ease-out;
+
+      .progress-section {
+        margin-bottom: var(--spacing-lg);
+
+        .progress-text {
+          text-align: center;
+          font-size: var(--font-size-xs);
+          color: var(--color-text-secondary);
+          margin-top: var(--spacing-xs);
         }
       }
     }

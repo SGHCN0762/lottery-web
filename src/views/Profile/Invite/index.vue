@@ -1,24 +1,25 @@
 <template>
   <div class="invite-page">
-    <!-- 邀请奖励卡片 -->
-    <section class="reward-card">
-      <div class="reward-header">
-        <van-icon name="gift-o" size="32" color="white" />
-        <h2>{{ t('invite.inviteFriendsEarnPoints') }}</h2>
-      </div>
-      <p class="reward-desc" v-html="t('invite.perInviteReward', { points: 50 })"></p>
-      <div class="reward-stats">
-        <div class="stat-item">
-          <div class="stat-value">{{ invitedCount }}</div>
-          <div class="stat-label">{{ t('invite.invitedCount') }}</div>
+    <div class="page-content">
+      <!-- 邀请奖励卡片 -->
+      <section class="reward-card">
+        <div class="reward-header">
+          <van-icon name="gift-o" size="32" color="white" />
+          <h2>{{ t('invite.inviteFriendsEarnPoints') }}</h2>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <div class="stat-value">{{ totalReward }}</div>
-          <div class="stat-label">{{ t('invite.earnedPoints') }}</div>
+        <p class="reward-desc" v-html="t('invite.perInviteReward', { points: 50 })"></p>
+        <div class="reward-stats">
+          <div class="stat-item">
+            <div class="stat-value">{{ invitedCount }}</div>
+            <div class="stat-label">{{ t('invite.invitedCount') }}</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value">{{ totalReward }}</div>
+            <div class="stat-label">{{ t('invite.earnedPoints') }}</div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- 邀请方式 -->
     <section class="invite-methods">
@@ -125,44 +126,45 @@
     </section>
 
     <!-- 邀请海报弹窗 -->
-    <van-popup v-model:show="showPoster" round position="bottom" :style="{ height: '80%' }">
-      <div class="poster-popup">
-        <div class="popup-header">
-          <h3>{{ t('invite.title') }}</h3>
-          <van-icon name="cross" @click="showPoster = false" />
-        </div>
+      <van-popup v-model:show="showPoster" round position="bottom" :style="{ height: '80%' }">
+        <div class="poster-popup">
+          <div class="popup-header">
+            <h3>{{ t('invite.title') }}</h3>
+            <van-icon name="cross" @click="showPoster = false" />
+          </div>
 
-        <div class="popup-content">
-          <div class="poster-container" ref="posterRef">
-            <div class="poster-bg">
-              <div class="poster-title">{{ t('app.name') }}</div>
-              <div class="poster-subtitle">{{ t('invite.inviteFriendsEarnPoints') }}</div>
+          <div class="popup-content">
+            <div class="poster-container" ref="posterRef">
+              <div class="poster-bg">
+                <div class="poster-title">{{ t('app.name') }}</div>
+                <div class="poster-subtitle">{{ t('invite.inviteFriendsEarnPoints') }}</div>
 
-              <div class="poster-qrcode">
-                <van-icon name="qr" size="120" color="var(--color-primary)" />
-              </div>
+                <div class="poster-qrcode">
+                  <van-icon name="qr" size="120" color="var(--color-primary)" />
+                </div>
 
-              <div class="poster-invite-code">
-                <span>{{ t('invite.copyLink') }}：</span>
-                <strong>{{ inviteCode }}</strong>
-              </div>
+                <div class="poster-invite-code">
+                  <span>{{ t('invite.copyLink') }}：</span>
+                  <strong>{{ inviteCode }}</strong>
+                </div>
 
-              <div class="poster-reward-info">
-                <van-icon name="gift-o" size="20" />
-                <span v-html="t('invite.perInviteReward', { points: 50 })"></span>
+                <div class="poster-reward-info">
+                  <van-icon name="gift-o" size="20" />
+                  <span v-html="t('invite.perInviteReward', { points: 50 })"></span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="poster-actions">
-            <van-button block round type="primary" @click="handleSavePoster">
-              <van-icon name="down" />
-              {{ t('common.download') }}
-            </van-button>
+            <div class="poster-actions">
+              <van-button block round type="primary" @click="handleSavePoster">
+                <van-icon name="down" />
+                {{ t('common.download') }}
+              </van-button>
+            </div>
           </div>
         </div>
-      </div>
-    </van-popup>
+      </van-popup>
+    </div>
   </div>
 </template>
 
@@ -324,7 +326,12 @@
   .invite-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: var(--spacing-lg);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 
   /* ========================================

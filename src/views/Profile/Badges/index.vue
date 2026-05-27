@@ -1,34 +1,36 @@
 <template>
   <div class="badges-page">
-    <!-- 顶部统计卡片 -->
-    <StatsCard 
-      :unlocked-count="unlockedBadges.length"
-      :completion-rate="completionRate"
-      :total-count="totalCount"
-    />
+    <div class="page-content">
+      <!-- 顶部统计卡片 -->
+      <StatsCard 
+        :unlocked-count="unlockedBadges.length"
+        :completion-rate="completionRate"
+        :total-count="totalCount"
+      />
 
-    <!-- 筛选标签 -->
-    <FilterTabs v-model="activeFilter" />
+      <!-- 筛选标签 -->
+      <FilterTabs v-model="activeFilter" />
 
-    <!-- 成就列表 -->
-    <section class="badges-list">
-      <van-empty v-if="filteredBadges.length === 0" :description="t('badges.empty')" image="search" />
+      <!-- 成就列表 -->
+      <section class="badges-list">
+        <van-empty v-if="filteredBadges.length === 0" :description="t('badges.empty')" image="search" />
 
-      <div v-else class="badges-container">
-        <BadgeItem
-          v-for="badge in filteredBadges"
-          :key="badge.id"
-          :badge="badge"
-          @click="showBadgeDetail"
-        />
-      </div>
-    </section>
+        <div v-else class="badges-container">
+          <BadgeItem
+            v-for="badge in filteredBadges"
+            :key="badge.id"
+            :badge="badge"
+            @click="showBadgeDetail"
+          />
+        </div>
+      </section>
 
-    <!-- 成就详情弹窗 -->
-    <BadgeDetail
-      v-model="showDetailPopup"
-      :badge="currentBadge"
-    />
+      <!-- 成就详情弹窗 -->
+      <BadgeDetail
+        v-model="showDetailPopup"
+        :badge="currentBadge"
+      />
+    </div>
   </div>
 </template>
 
@@ -257,8 +259,13 @@
   .badges-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: 20px;
     transition: background-color var(--transition-base);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 
   /* ========================================

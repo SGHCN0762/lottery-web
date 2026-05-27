@@ -1,28 +1,30 @@
 <template>
   <div class="about-page">
-    <!-- 应用信息卡片 -->
-    <AppCard />
+    <div class="page-content">
+      <!-- 应用信息卡片 -->
+      <AppCard />
 
-    <!-- 健康游戏倡议 -->
-    <HealthSection />
+      <!-- 健康游戏倡议 -->
+      <HealthSection />
 
-    <!-- 法律条款 -->
-    <LegalSection @show-popup="showPopup" />
+      <!-- 法律条款 -->
+      <LegalSection @show-popup="showPopup" />
 
-    <!-- 联系我们 -->
-    <ContactSection
-      :contact-info="contactInfo"
-      @copy-email="handleCopyEmail"
-      @call-phone="handleCallPhone"
-    />
+      <!-- 联系我们 -->
+      <ContactSection
+        :contact-info="contactInfo"
+        @copy-email="handleCopyEmail"
+        @call-phone="handleCallPhone"
+      />
 
-    <!-- 弹窗组件 - 异步加载 -->
-    <component
-      v-if="popupVisible && LegalPopup"
-      :is="LegalPopup"
-      v-model:show="popupVisible"
-      :type="currentPopup"
-    />
+      <!-- 弹窗组件 - 异步加载 -->
+      <component
+        v-if="popupVisible && LegalPopup"
+        :is="LegalPopup"
+        v-model:show="popupVisible"
+        :type="currentPopup"
+      />
+    </div>
   </div>
 </template>
 
@@ -87,6 +89,11 @@
   .about-page {
     min-height: 100%;
     background: var(--color-bg-primary);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
     padding-bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 </style>

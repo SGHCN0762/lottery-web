@@ -1,14 +1,15 @@
 <template>
   <div class="help-page">
-    <!-- 搜索框 -->
-    <section class="search-section">
-      <van-search
-        v-model="searchKeyword"
-        :placeholder="t('help.searchPlaceholder')"
-        shape="round"
-        background="transparent"
-      />
-    </section>
+    <div class="page-content">
+      <!-- 搜索框 -->
+      <section class="search-section">
+        <van-search
+          v-model="searchKeyword"
+          :placeholder="t('help.searchPlaceholder')"
+          shape="round"
+          background="transparent"
+        />
+      </section>
 
     <!-- 常见问题 -->
     <section class="faq-section">
@@ -90,34 +91,35 @@
     </van-popup>
 
     <!-- 积分规则弹窗 -->
-    <van-popup v-model:show="showPointsPopup" round position="bottom" :style="{ height: '50%' }">
-      <div class="points-popup">
-        <div class="popup-header">
-          <h3>{{ t('help.pointsPopup.title') }}</h3>
-          <van-icon name="cross" @click="showPointsPopup = false" />
+      <van-popup v-model:show="showPointsPopup" round position="bottom" :style="{ height: '50%' }">
+        <div class="points-popup">
+          <div class="popup-header">
+            <h3>{{ t('help.pointsPopup.title') }}</h3>
+            <van-icon name="cross" @click="showPointsPopup = false" />
+          </div>
+          <div class="popup-content">
+            <div v-if="currentPointsRule === 'earn'">
+              <h4>{{ pointsRules.earn.title }}</h4>
+              <ul>
+                <li v-for="(item, index) in pointsRules.earn.items" :key="index">{{ item }}</li>
+              </ul>
+            </div>
+            <div v-else-if="currentPointsRule === 'use'">
+              <h4>{{ pointsRules.use.title }}</h4>
+              <ul>
+                <li v-for="(item, index) in pointsRules.use.items" :key="index">{{ item }}</li>
+              </ul>
+            </div>
+            <div v-else>
+              <h4>{{ pointsRules.expire.title }}</h4>
+              <ul>
+                <li v-for="(item, index) in pointsRules.expire.items" :key="index">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="popup-content">
-          <div v-if="currentPointsRule === 'earn'">
-            <h4>{{ pointsRules.earn.title }}</h4>
-            <ul>
-              <li v-for="(item, index) in pointsRules.earn.items" :key="index">{{ item }}</li>
-            </ul>
-          </div>
-          <div v-else-if="currentPointsRule === 'use'">
-            <h4>{{ pointsRules.use.title }}</h4>
-            <ul>
-              <li v-for="(item, index) in pointsRules.use.items" :key="index">{{ item }}</li>
-            </ul>
-          </div>
-          <div v-else>
-            <h4>{{ pointsRules.expire.title }}</h4>
-            <ul>
-              <li v-for="(item, index) in pointsRules.expire.items" :key="index">{{ item }}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </van-popup>
+      </van-popup>
+    </div>
   </div>
 </template>
 
@@ -278,7 +280,12 @@
   .help-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: var(--spacing-lg);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 
   /* ========================================

@@ -1,34 +1,36 @@
 <template>
   <div class="feedback-page">
-    <IntroCard
-      icon="edit"
-      icon-color="var(--color-primary)"
-      :title="t('help.feedback.title')"
-      :description="t('help.feedback.description')"
-    />
+    <div class="page-content">
+      <IntroCard
+        icon="edit"
+        icon-color="var(--color-primary)"
+        :title="t('help.feedback.title')"
+        :description="t('help.feedback.description')"
+      />
 
-    <FeedbackForm :submitting="submitting" @submit="onSubmit" />
+      <FeedbackForm :submitting="submitting" @submit="onSubmit" />
 
-    <RecordHistory
-      :title="t('help.feedback.myFeedback')"
-      :record-list="feedbackList"
-      :empty-text="t('help.feedback.noFeedback')"
-      preview-field="description"
-      :get-status-tag-type="getStatusTagType"
-      @view-detail="showFeedbackDetail"
-    />
+      <RecordHistory
+        :title="t('help.feedback.myFeedback')"
+        :record-list="feedbackList"
+        :empty-text="t('help.feedback.noFeedback')"
+        preview-field="description"
+        :get-status-tag-type="getStatusTagType"
+        @view-detail="showFeedbackDetail"
+      />
 
-    <DetailPopup
-      v-model:show="showDetailPopup"
-      :record="currentFeedback"
-      :title="t('help.feedback.feedbackDetail')"
-      :type-label="t('help.feedback.feedbackType')"
-      :description-label="t('help.feedback.descriptionLabel')"
-      :reply-label="t('help.feedback.reply')"
-      :images-label="t('help.feedback.uploadImages')"
-      :get-type-tag-type="getTypeTagType"
-      :get-status-tag-type="getStatusTagType"
-    />
+      <DetailPopup
+        v-model:show="showDetailPopup"
+        :record="currentFeedback"
+        :title="t('help.feedback.feedbackDetail')"
+        :type-label="t('help.feedback.feedbackType')"
+        :description-label="t('help.feedback.descriptionLabel')"
+        :reply-label="t('help.feedback.reply')"
+        :images-label="t('help.feedback.uploadImages')"
+        :get-type-tag-type="getTypeTagType"
+        :get-status-tag-type="getStatusTagType"
+      />
+    </div>
   </div>
 </template>
 
@@ -131,6 +133,11 @@
   .feedback-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: var(--spacing-lg);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 </style>

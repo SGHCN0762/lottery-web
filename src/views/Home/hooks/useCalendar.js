@@ -2,6 +2,12 @@ import { ref, computed } from "vue";
 import { getLunarDate, getLunarDay } from "./useLunar";
 import { useFestivals } from "./useFestivals";
 
+// ========================================
+// 性能优化：日历数据缓存（避免重复计算）
+// ========================================
+const lunarCache = new Map();
+const CACHE_MAX_SIZE = 100;
+
 export const useCalendar = () => {
   const displayYear = ref(new Date().getFullYear());
   const displayMonth = ref(new Date().getMonth() + 1);
@@ -9,6 +15,26 @@ export const useCalendar = () => {
   const showDateDetail = ref(false);
 
   const { getFestivalOnDate, getSolarTermOnDate } = useFestivals();
+
+  // 优化：带缓存的农历日期获取
+  const getLunarDateCached = (date) => {
+    const key = date.getTime();
+    
+    if (lunarCache.has(key)) {
+      return lunarCache.get(key);
+    }
+    
+    const lunar = getLunarDate(date);
+    
+    // 缓存管理：超出限制时清除旧数据
+    if (lunarCache.size >= CACHE_MAX_SIZE) {
+      const firstKey = lunarCache.keys().next().value;
+      lunarCache.delete(firstKey);
+    }
+    
+    lunarCache.set(key, lunar);
+    return lunar;
+  };
 
   const prevMonth = () => {
     if (displayMonth.value === 1) {
@@ -28,6 +54,7 @@ export const useCalendar = () => {
     }
   };
 
+  // 优化：使用缓存避免重复计算
   const calendarDates = computed(() => {
     const dates = [];
     const firstDay = new Date(displayYear.value, displayMonth.value - 1, 1);
@@ -45,10 +72,11 @@ export const useCalendar = () => {
     const prevMonthYear = displayMonth.value === 1 ? displayYear.value - 1 : displayYear.value;
     const prevMonthLastDay = new Date(prevMonthYear, prevMonth, 0).getDate();
 
+    // 优化：批量处理上个月日期
     for (let i = startDayOfWeek - 1; i >= 0; i--) {
       const day = prevMonthLastDay - i;
       const date = new Date(prevMonthYear, prevMonth - 1, day);
-      const lunar = getLunarDate(date);
+      const lunar = getLunarDateCached(date);
 
       dates.push({
         year: date.getFullYear(),
@@ -63,11 +91,12 @@ export const useCalendar = () => {
       });
     }
 
+    // 优化：批量处理当月日期
     for (let day = 1; day <= daysInMonth; day++) {
       const date = new Date(displayYear.value, displayMonth.value - 1, day);
-      const lunar = getLunarDate(date);
+      const lunar = getLunarDateCached(date);
       const festival = getFestivalOnDate(date);
-      const solarTerm = getSolarTermOnDate(date); // 获取节气
+      const solarTerm = getSolarTermOnDate(date);
       const isToday = displayYear.value === todayYear && displayMonth.value === todayMonth && day === todayDay;
 
       dates.push({
@@ -79,7 +108,7 @@ export const useCalendar = () => {
         lunar: lunar.lunarText.slice(-2),
         lunarFull: lunar.lunarText,
         festival: festival,
-        solarTerm: solarTerm, // 添加节气信息
+        solarTerm: solarTerm,
         weekdayIndex: date.getDay(),
       });
     }
@@ -88,9 +117,10 @@ export const useCalendar = () => {
     const nextMonth = displayMonth.value === 12 ? 1 : displayMonth.value + 1;
     const nextMonthYear = displayMonth.value === 12 ? displayYear.value + 1 : displayYear.value;
 
+    // 优化：批量处理下个月日期
     for (let day = 1; day <= remainingCells; day++) {
       const date = new Date(nextMonthYear, nextMonth - 1, day);
-      const lunar = getLunarDate(date);
+      const lunar = getLunarDateCached(date);
 
       dates.push({
         year: date.getFullYear(),

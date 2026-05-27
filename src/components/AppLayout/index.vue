@@ -106,43 +106,13 @@
     background: var(--color-bg-primary);
     font-family: var(--font-family-base);
 
-    /* ========================================
-     主内容区域
-     ======================================== */
     .main-content {
       flex: 1;
-      /* 顶部内边距：基础间距 + 顶部安全区域 */
-      padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
-      /*
-      底部安全区域计算：
-      - Vant Tabbar 高度：约 50px
-      - 额外视觉间距：16px（减小）
-      - 设备底部安全区域：env(safe-area-inset-bottom)
-      总计：约 66px + 安全区域（iPhone 约 100px）
-    */
-      padding-bottom: calc(var(--spacing-2xl) + 16px + env(safe-area-inset-bottom, 0px));
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: calc(50px + env(safe-area-inset-bottom, 0px));
       overflow-y: auto;
       background: var(--color-bg-primary);
-      -webkit-overflow-scrolling: touch; /* iOS 平滑滚动 */
-    }
-  }
-
-  /* ========================================
-   响应式设计
-   ======================================== */
-  @media (min-width: 768px) {
-    .app-layout {
-      .main-content {
-        /* 平板端更大的顶部内边距 */
-        padding-top: calc(var(--spacing-md) + env(safe-area-inset-top, 0px));
-        /*
-        平板端底部安全区域：
-        - Vant Tabbar 高度：约 50px
-        - 额外视觉间距：16px（减小）
-        - 设备底部安全区域：env(safe-area-inset-bottom)
-      */
-        padding-bottom: calc(var(--spacing-2xl) + 16px + env(safe-area-inset-bottom, 0px));
-      }
+      -webkit-overflow-scrolling: touch;
     }
   }
 </style>

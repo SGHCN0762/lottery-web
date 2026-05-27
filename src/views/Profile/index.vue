@@ -1,13 +1,15 @@
 <template>
   <div class="profile-page">
-    <!-- 用户信息卡片 -->
-    <UserCard :userInfo="userInfo" />
+    <div class="page-content">
+      <!-- 用户信息卡片 -->
+      <UserCard :userInfo="userInfo" />
 
-    <!-- 快捷操作 -->
-    <QuickActions :actions="quickActions" @action-click="handleActionClick" />
+      <!-- 快捷操作 -->
+      <QuickActions :actions="quickActions" @action-click="handleActionClick" />
 
-    <!-- 功能菜单 -->
-    <MenuList :items="menuItems" @menu-click="handleMenuClick" />
+      <!-- 功能菜单 -->
+      <MenuList :items="menuItems" @menu-click="handleMenuClick" />
+    </div>
   </div>
 </template>
 
@@ -162,6 +164,11 @@
   .profile-page {
     min-height: 100%;
     background: var(--color-bg-primary);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
     padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 </style>

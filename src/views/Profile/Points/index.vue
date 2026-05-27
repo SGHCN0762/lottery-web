@@ -1,71 +1,73 @@
 <template>
   <div class="points-page">
-    <!-- 积分概览卡片 -->
-    <section class="overview-card">
-      <div class="current-points">
-        <div class="label">{{ t('points.currentPoints') }}</div>
-        <div class="value">{{ currentPoints }}</div>
-      </div>
-      <div class="points-trend">
-        <div class="trend-item">
-          <van-icon name="arrow-up" color="#52c41a" />
-          <span>{{ t('points.monthIncome') }} {{ monthIncome }}</span>
+    <div class="page-content">
+      <!-- 积分概览卡片 -->
+      <section class="overview-card">
+        <div class="current-points">
+          <div class="label">{{ t('points.currentPoints') }}</div>
+          <div class="value">{{ currentPoints }}</div>
         </div>
-        <div class="trend-item">
-          <van-icon name="arrow-down" color="#ff4d4f" />
-          <span>{{ t('points.monthExpense') }} {{ monthExpense }}</span>
+        <div class="points-trend">
+          <div class="trend-item">
+            <van-icon name="arrow-up" color="#52c41a" />
+            <span>{{ t('points.monthIncome') }} {{ monthIncome }}</span>
+          </div>
+          <div class="trend-item">
+            <van-icon name="arrow-down" color="#ff4d4f" />
+            <span>{{ t('points.monthExpense') }} {{ monthExpense }}</span>
+          </div>
         </div>
+      </section>
+
+      <!-- 时间筛选 -->
+      <section class="filter-section">
+        <van-tabs v-model:active="activeTab" @change="handleTabChange">
+          <van-tab :title="t('points.tabs.all')" name="all" />
+          <van-tab :title="t('points.tabs.income')" name="income" />
+          <van-tab :title="t('points.tabs.expense')" name="expense" />
+        </van-tabs>
+      </section>
+
+      <!-- 积分明细列表 -->
+      <section class="points-list">
+        <van-empty v-if="filteredRecords.length === 0" :description="t('points.noRecords')" />
+        
+        <van-cell-group v-else inset>
+          <van-cell
+            v-for="record in filteredRecords"
+            :key="record.id"
+            class="point-item"
+          >
+            <template #icon>
+              <div class="point-icon" :class="record.type">
+                <van-icon :name="getRecordIcon(record.type)" size="20" />
+              </div>
+            </template>
+            
+            <template #title>
+              <div class="point-title">{{ record.description }}</div>
+            </template>
+            
+            <template #label>
+              <div class="point-time">{{ formatTime(record.time) }}</div>
+            </template>
+            
+            <template #right-icon>
+              <div 
+                class="point-amount"
+                :class="{ positive: record.amount > 0, negative: record.amount < 0 }"
+              >
+                {{ record.amount > 0 ? '+' : '' }}{{ record.amount }}
+              </div>
+            </template>
+          </van-cell>
+        </van-cell-group>
+      </section>
+
+      <!-- 加载更多 -->
+      <div class="load-more" v-if="hasMore && filteredRecords.length > 0">
+        <van-button block round @click="loadMore">{{ t('points.loadMore') }}</van-button>
       </div>
-    </section>
-
-    <!-- 时间筛选 -->
-    <section class="filter-section">
-      <van-tabs v-model:active="activeTab" @change="handleTabChange">
-        <van-tab :title="t('points.tabs.all')" name="all" />
-        <van-tab :title="t('points.tabs.income')" name="income" />
-        <van-tab :title="t('points.tabs.expense')" name="expense" />
-      </van-tabs>
-    </section>
-
-    <!-- 积分明细列表 -->
-    <section class="points-list">
-      <van-empty v-if="filteredRecords.length === 0" :description="t('points.noRecords')" />
-      
-      <van-cell-group v-else inset>
-        <van-cell
-          v-for="record in filteredRecords"
-          :key="record.id"
-          class="point-item"
-        >
-          <template #icon>
-            <div class="point-icon" :class="record.type">
-              <van-icon :name="getRecordIcon(record.type)" size="20" />
-            </div>
-          </template>
-          
-          <template #title>
-            <div class="point-title">{{ record.description }}</div>
-          </template>
-          
-          <template #label>
-            <div class="point-time">{{ formatTime(record.time) }}</div>
-          </template>
-          
-          <template #right-icon>
-            <div 
-              class="point-amount"
-              :class="{ positive: record.amount > 0, negative: record.amount < 0 }"
-            >
-              {{ record.amount > 0 ? '+' : '' }}{{ record.amount }}
-            </div>
-          </template>
-        </van-cell>
-      </van-cell-group>
-    </section>
-
-    <!-- 加载更多 -->
-    <div class="load-more" v-if="hasMore && filteredRecords.length > 0">
-      <van-button block round @click="loadMore">{{ t('points.loadMore') }}</van-button>
     </div>
   </div>
 </template>
@@ -239,7 +241,12 @@ onMounted(() => {
 .points-page {
   min-height: 100%;
   background: var(--color-bg-primary);
-  padding-bottom: var(--spacing-lg);
+}
+
+.page-content {
+  padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+  display: flow-root;
 }
 
 /* ========================================

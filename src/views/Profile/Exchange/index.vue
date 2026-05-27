@@ -1,160 +1,162 @@
 <template>
   <div class="exchange-page">
-    <!-- 积分余额卡片 -->
-    <section class="balance-card">
-      <div class="balance-info">
-        <div class="label">{{ t('exchange.availablePoints') }}</div>
-        <div class="value">{{ availablePoints }}</div>
-      </div>
-      <van-button type="primary" size="small" round @click="showRechargeDialog = true">
-        {{ t('exchange.rechargePoints') }}
-      </van-button>
-    </section>
+    <div class="page-content">
+      <!-- 积分余额卡片 -->
+      <section class="balance-card">
+        <div class="balance-info">
+          <div class="label">{{ t('exchange.availablePoints') }}</div>
+          <div class="value">{{ availablePoints }}</div>
+        </div>
+        <van-button type="primary" size="small" round @click="showRechargeDialog = true">
+          {{ t('exchange.rechargePoints') }}
+        </van-button>
+      </section>
 
-    <!-- 分类标签 -->
-    <section class="category-tabs">
-      <van-tabs v-model:active="activeCategory" @change="handleCategoryChange">
-        <van-tab :title="t('exchange.categories.all')" name="all" />
-        <van-tab :title="t('exchange.categories.physical')" name="physical" />
-        <van-tab :title="t('exchange.categories.virtual')" name="virtual" />
-        <van-tab :title="t('exchange.categories.privilege')" name="privilege" />
-      </van-tabs>
-    </section>
+      <!-- 分类标签 -->
+      <section class="category-tabs">
+        <van-tabs v-model:active="activeCategory" @change="handleCategoryChange">
+          <van-tab :title="t('exchange.categories.all')" name="all" />
+          <van-tab :title="t('exchange.categories.physical')" name="physical" />
+          <van-tab :title="t('exchange.categories.virtual')" name="virtual" />
+          <van-tab :title="t('exchange.categories.privilege')" name="privilege" />
+        </van-tabs>
+      </section>
 
-    <!-- 兑换商品列表 -->
-    <section class="products-list">
-      <van-empty v-if="filteredProducts.length === 0" :description="t('exchange.noExchangeableProducts')" />
+      <!-- 兑换商品列表 -->
+      <section class="products-list">
+        <van-empty v-if="filteredProducts.length === 0" :description="t('exchange.noExchangeableProducts')" />
 
-      <div v-else class="products-grid">
-        <div
-          v-for="product in filteredProducts"
-          :key="product.id"
-          class="product-card"
-          @click="showProductDetail(product)"
-        >
-          <div class="product-image">
+        <div v-else class="products-grid">
+          <div
+            v-for="product in filteredProducts"
+            :key="product.id"
+            class="product-card"
+            @click="showProductDetail(product)"
+          >
+            <div class="product-image">
+              <van-image
+                width="100%"
+                height="120"
+                :src="product.image"
+                fit="cover"
+                radius="var(--radius-md)"
+              >
+                <template v-slot:error>{{ t('exchange.loadFailed') }}</template>
+              </van-image>
+              <van-tag v-if="product.hot" type="danger" class="hot-tag"> {{ t('exchange.hot') }} </van-tag>
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">{{ product.name }}</h3>
+              <p class="product-desc">{{ product.description }}</p>
+              <div class="product-footer">
+                <div class="product-price">
+                  <van-icon name="gold-coin-o" />
+                  <span>{{ product.price }}</span>
+                </div>
+                <van-button
+                  type="primary"
+                  size="mini"
+                  round
+                  :disabled="availablePoints < product.price"
+                  @click.stop="handleExchange(product)"
+                >
+                  {{ t('exchange.exchangeNow') }}
+                </van-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 商品详情弹窗 -->
+      <van-popup v-model:show="showDetailPopup" round position="bottom" :style="{ height: '70%' }">
+        <div class="detail-popup" v-if="currentProduct">
+          <div class="popup-header">
+            <h3>{{ t('exchange.productDetails') }}</h3>
+            <van-icon name="cross" @click="showDetailPopup = false" />
+          </div>
+
+          <div class="popup-content">
             <van-image
               width="100%"
-              height="120"
-              :src="product.image"
-              fit="cover"
+              height="200"
+              :src="currentProduct.image"
+              fit="contain"
               radius="var(--radius-md)"
-            >
-              <template v-slot:error>{{ t('exchange.loadFailed') }}</template>
-            </van-image>
-            <van-tag v-if="product.hot" type="danger" class="hot-tag"> {{ t('exchange.hot') }} </van-tag>
-          </div>
+            />
 
-          <div class="product-info">
-            <h3 class="product-name">{{ product.name }}</h3>
-            <p class="product-desc">{{ product.description }}</p>
-            <div class="product-footer">
-              <div class="product-price">
-                <van-icon name="gold-coin-o" />
-                <span>{{ product.price }}</span>
+            <div class="detail-info">
+              <h2 class="detail-name">{{ currentProduct.name }}</h2>
+              <p class="detail-desc">{{ currentProduct.description }}</p>
+
+              <div class="detail-specs">
+                <h4>{{ t('exchange.specifications') }}</h4>
+                <p>{{ currentProduct.specs || t('exchange.standardEdition') }}</p>
               </div>
-              <van-button
-                type="primary"
-                size="mini"
-                round
-                :disabled="availablePoints < product.price"
-                @click.stop="handleExchange(product)"
-              >
-                {{ t('exchange.exchangeNow') }}
-              </van-button>
+
+              <div class="detail-rules">
+                <h4>{{ t('exchange.rules') }}</h4>
+                <ul>
+                  <li>{{ t('exchange.exchangeRulesList.noRefund') }}</li>
+                  <li>{{ t('exchange.exchangeRulesList.physicalShipping') }}</li>
+                  <li>{{ t('exchange.exchangeRulesList.virtualDelivery') }}</li>
+                  <li>{{ t('exchange.exchangeRulesList.contactSupport') }}</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- 商品详情弹窗 -->
-    <van-popup v-model:show="showDetailPopup" round position="bottom" :style="{ height: '70%' }">
-      <div class="detail-popup" v-if="currentProduct">
-        <div class="popup-header">
-          <h3>{{ t('exchange.productDetails') }}</h3>
-          <van-icon name="cross" @click="showDetailPopup = false" />
-        </div>
-
-        <div class="popup-content">
-          <van-image
-            width="100%"
-            height="200"
-            :src="currentProduct.image"
-            fit="contain"
-            radius="var(--radius-md)"
-          />
-
-          <div class="detail-info">
-            <h2 class="detail-name">{{ currentProduct.name }}</h2>
-            <p class="detail-desc">{{ currentProduct.description }}</p>
-
-            <div class="detail-specs">
-              <h4>{{ t('exchange.specifications') }}</h4>
-              <p>{{ currentProduct.specs || t('exchange.standardEdition') }}</p>
+          <div class="popup-footer">
+            <div class="footer-price">
+              <van-icon name="gold-coin-o" />
+              <span>{{ currentProduct.price }} {{ t('exchange.pointsUnit') }}</span>
             </div>
+            <van-button
+              type="primary"
+              round
+              :disabled="availablePoints < currentProduct.price"
+              @click="handleExchange(currentProduct)"
+            >
+              {{ t('exchange.exchangeNow') }}
+            </van-button>
+          </div>
+        </div>
+      </van-popup>
 
-            <div class="detail-rules">
-              <h4>{{ t('exchange.rules') }}</h4>
-              <ul>
-                <li>{{ t('exchange.exchangeRulesList.noRefund') }}</li>
-                <li>{{ t('exchange.exchangeRulesList.physicalShipping') }}</li>
-                <li>{{ t('exchange.exchangeRulesList.virtualDelivery') }}</li>
-                <li>{{ t('exchange.exchangeRulesList.contactSupport') }}</li>
-              </ul>
+      <!-- 确认兑换弹窗 -->
+      <van-dialog
+        v-model:show="showConfirmDialog"
+        :title="t('exchange.confirmExchangeTitle')"
+        show-cancel-button
+        @confirm="confirmExchange"
+      >
+        <div class="confirm-content" v-if="currentProduct">
+          <p>{{ t('exchange.confirmExchangeMessage') }}</p>
+          <div class="confirm-product">
+            <strong>{{ currentProduct.name }}</strong>
+            <div class="confirm-price">
+              <van-icon name="gold-coin-o" />
+              <span>{{ currentProduct.price }} {{ t('exchange.pointsUnit') }}</span>
             </div>
           </div>
+          <p class="confirm-tip">{{ t('exchange.confirmExchangeTip') }}</p>
         </div>
+      </van-dialog>
 
-        <div class="popup-footer">
-          <div class="footer-price">
-            <van-icon name="gold-coin-o" />
-            <span>{{ currentProduct.price }} {{ t('exchange.pointsUnit') }}</span>
-          </div>
-          <van-button
-            type="primary"
-            round
-            :disabled="availablePoints < currentProduct.price"
-            @click="handleExchange(currentProduct)"
-          >
-            {{ t('exchange.exchangeNow') }}
-          </van-button>
+      <!-- 充值对话框 -->
+      <van-dialog
+        v-model:show="showRechargeDialog"
+        :title="t('exchange.rechargeDialogTitle')"
+        show-cancel-button
+        @confirm="handleRecharge"
+      >
+        <div class="recharge-content">
+          <p>{{ t('exchange.rechargeDialogMessage1') }}</p>
+          <p>{{ t('exchange.rechargeDialogMessage2') }}</p>
         </div>
-      </div>
-    </van-popup>
-
-    <!-- 确认兑换弹窗 -->
-    <van-dialog
-      v-model:show="showConfirmDialog"
-      :title="t('exchange.confirmExchangeTitle')"
-      show-cancel-button
-      @confirm="confirmExchange"
-    >
-      <div class="confirm-content" v-if="currentProduct">
-        <p>{{ t('exchange.confirmExchangeMessage') }}</p>
-        <div class="confirm-product">
-          <strong>{{ currentProduct.name }}</strong>
-          <div class="confirm-price">
-            <van-icon name="gold-coin-o" />
-            <span>{{ currentProduct.price }} {{ t('exchange.pointsUnit') }}</span>
-          </div>
-        </div>
-        <p class="confirm-tip">{{ t('exchange.confirmExchangeTip') }}</p>
-      </div>
-    </van-dialog>
-
-    <!-- 充值对话框 -->
-    <van-dialog
-      v-model:show="showRechargeDialog"
-      :title="t('exchange.rechargeDialogTitle')"
-      show-cancel-button
-      @confirm="handleRecharge"
-    >
-      <div class="recharge-content">
-        <p>{{ t('exchange.rechargeDialogMessage1') }}</p>
-        <p>{{ t('exchange.rechargeDialogMessage2') }}</p>
-      </div>
-    </van-dialog>
+      </van-dialog>
+    </div>
   </div>
 </template>
 
@@ -385,7 +387,12 @@
   .exchange-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: var(--spacing-lg);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 
   /* ========================================

@@ -1,46 +1,48 @@
 <template>
   <div class="number-guess-game">
-    <!-- 游戏信息栏 -->
-    <GameInfoBar
-      :remainingAttempts="remainingAttempts"
-      :userPoints="userPoints"
-    />
-
-    <!-- 游戏规则 -->
-    <GameRules 
-      title-key="numberGuess.rules.title"
-      :rule-keys="[
-        'numberGuess.rules.rule1',
-        'numberGuess.rules.rule2',
-        'numberGuess.rules.rule3',
-        'numberGuess.rules.rule4'
-      ]"
-    />
-
-    <!-- 游戏主区域 -->
-    <section class="game-main">
-      <!-- 游戏未开始 -->
-      <GameStartScreen v-if="!gameStarted" @start-game="startGame" />
-
-      <!-- 游戏中 -->
-      <GamePlayingScreen
-        v-else-if="!gameEnded"
-        v-model:currentGuess="currentGuess"
-        :isProcessing="isProcessing"
-        :guessHistory="guessHistory"
-        @submit-guess="submitGuess"
+    <div class="page-content">
+      <!-- 游戏信息栏 -->
+      <GameInfoBar
+        :remainingAttempts="remainingAttempts"
+        :userPoints="userPoints"
       />
 
-      <!-- 游戏结束 -->
-      <GameEndScreen
-        v-else
-        :winStatus="winStatus"
-        :winMessage="winMessage"
-        :rewardPoints="rewardPoints"
-        :targetNumber="targetNumber"
-        @reset-game="resetGame"
+      <!-- 游戏规则 -->
+      <GameRules 
+        title-key="numberGuess.rules.title"
+        :rule-keys="[
+          'numberGuess.rules.rule1',
+          'numberGuess.rules.rule2',
+          'numberGuess.rules.rule3',
+          'numberGuess.rules.rule4'
+        ]"
       />
-    </section>
+
+      <!-- 游戏主区域 -->
+      <section class="game-main">
+        <!-- 游戏未开始 -->
+        <GameStartScreen v-if="!gameStarted" @start-game="startGame" />
+
+        <!-- 游戏中 -->
+        <GamePlayingScreen
+          v-else-if="!gameEnded"
+          v-model:currentGuess="currentGuess"
+          :isProcessing="isProcessing"
+          :guessHistory="guessHistory"
+          @submit-guess="submitGuess"
+        />
+
+        <!-- 游戏结束 -->
+        <GameEndScreen
+          v-else
+          :winStatus="winStatus"
+          :winMessage="winMessage"
+          :rewardPoints="rewardPoints"
+          :targetNumber="targetNumber"
+          @reset-game="resetGame"
+        />
+      </section>
+    </div>
   </div>
 </template>
 
@@ -90,15 +92,19 @@ const {
 @import '@/styles/game-animations.less';
 
 .number-guess-game {
-  /* ========================================
-     游戏主区域
-     ======================================== */
-  .game-main {
-    min-height: 400px;
-  }
+  min-height: 100%;
+  background: var(--color-bg-primary);
 }
 
-/* ========================================
-   动画定义（已通过 @import 引入）
-   ======================================== */
+.page-content {
+  padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  display: flow-root;
+}
+
+.game-main {
+  min-height: 400px;
+}
 </style>

@@ -1,7 +1,8 @@
 <template>
   <div class="settings-page">
-    <!-- 个人信息 -->
-    <PersonalInfoSection
+    <div class="page-content">
+      <!-- 个人信息 -->
+      <PersonalInfoSection
       :user-info="userInfo"
       @edit-avatar="showAvatarPicker = true"
       @edit-nickname="showNicknameEdit = true"
@@ -74,6 +75,7 @@
 
     <!-- 主题选择器 -->
     <ThemePickerModal v-model:visible="showThemePicker" />
+    </div>
   </div>
 </template>
 
@@ -82,6 +84,9 @@
   import { useRouter } from 'vue-router';
   import { useI18n } from 'vue-i18n';
   import { showToast, showConfirmDialog } from 'vant';
+  import { useIndexedDBCache } from '@/hooks/useIndexedDBCache';
+
+  const { clearAllCache: clearQuizCache } = useIndexedDBCache('QuizQuestionsDB', 1, 'questions');
 
   // 导入组件
   import PersonalInfoSection from './components/PersonalInfoSection.vue';
@@ -249,9 +254,21 @@
         message: t('settings.cacheClearMessage'),
       });
 
-      localStorage.removeItem('gameRecords');
-      localStorage.removeItem('pointsRecords');
-      localStorage.removeItem('checkinRecords');
+      const token = localStorage.getItem('token');
+      const userInfo = localStorage.getItem('userInfo');
+
+      localStorage.clear();
+
+      sessionStorage.clear();
+
+      await clearQuizCache();
+
+      if (token) {
+        localStorage.setItem('token', token);
+      }
+      if (userInfo) {
+        localStorage.setItem('userInfo', userInfo);
+      }
 
       cacheSize.value = '0MB';
       showToast(t('settings.cacheCleared'));
@@ -308,6 +325,11 @@
   .settings-page {
     min-height: 100%;
     background: var(--color-bg-primary);
-    padding-bottom: var(--spacing-lg);
+  }
+
+  .page-content {
+    padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+    display: flow-root;
   }
 </style>

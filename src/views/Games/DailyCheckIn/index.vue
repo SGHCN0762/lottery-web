@@ -1,43 +1,45 @@
 <template>
   <div class="daily-checkin-game">
-    <!-- 游戏信息栏 -->
-    <GameInfoBar :userPoints="userPoints" :consecutiveDays="consecutiveDays" />
+    <div class="page-content">
+      <!-- 游戏信息栏 -->
+      <GameInfoBar :userPoints="userPoints" :consecutiveDays="consecutiveDays" />
 
-    <!-- 游戏规则 -->
-    <GameRules 
-      title-key="dailyCheckIn.rules.title"
-      :rule-keys="[
-        'dailyCheckIn.rules.rule1',
-        'dailyCheckIn.rules.rule2',
-        'dailyCheckIn.rules.rule3',
-        'dailyCheckIn.rules.rule4'
-      ]"
-    />
+      <!-- 游戏规则 -->
+      <GameRules 
+        title-key="dailyCheckIn.rules.title"
+        :rule-keys="[
+          'dailyCheckIn.rules.rule1',
+          'dailyCheckIn.rules.rule2',
+          'dailyCheckIn.rules.rule3',
+          'dailyCheckIn.rules.rule4'
+        ]"
+      />
 
-    <!-- 签到日历 -->
-    <CheckInCalendar :calendarDays="calendarDays" />
+      <!-- 签到日历 -->
+      <CheckInCalendar :calendarDays="calendarDays" />
 
-    <!-- 签到奖励展示 -->
-    <RewardsDisplay
-      :milestones="milestones"
-      :consecutiveDays="consecutiveDays"
-      :getMilestoneStatus="getMilestoneStatus"
-    />
+      <!-- 签到奖励展示 -->
+      <RewardsDisplay
+        :milestones="milestones"
+        :consecutiveDays="consecutiveDays"
+        :getMilestoneStatus="getMilestoneStatus"
+      />
 
-    <!-- 签到按钮区域 -->
-    <CheckInAction
-      :canCheckIn="canCheckIn"
-      :isCheckingIn="isCheckingIn"
-      :hasCheckedInToday="hasCheckedInToday"
-      :nextCheckInTime="nextCheckInTime"
-      :handleCheckIn="handleCheckIn"
-    />
+      <!-- 签到按钮区域 -->
+      <CheckInAction
+        :canCheckIn="canCheckIn"
+        :isCheckingIn="isCheckingIn"
+        :hasCheckedInToday="hasCheckedInToday"
+        :nextCheckInTime="nextCheckInTime"
+        :handleCheckIn="handleCheckIn"
+      />
 
-    <!-- 签到历史记录 -->
-    <CheckInHistory
-      v-if="checkInHistory.length > 0"
-      :checkInHistory="checkInHistory"
-    />
+      <!-- 签到历史记录 -->
+      <CheckInHistory
+        v-if="checkInHistory.length > 0"
+        :checkInHistory="checkInHistory"
+      />
+    </div>
   </div>
 </template>
 
@@ -112,6 +114,15 @@ onMounted(() => {
 @import '@/styles/game-animations.less';
 
 .daily-checkin-game {
-  // 全局动画已通过 @import 引入
+  min-height: 100%;
+  background: var(--color-bg-primary);
+}
+
+.page-content {
+  padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  display: flow-root;
 }
 </style>
