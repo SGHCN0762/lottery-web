@@ -6,6 +6,7 @@
     round
     closeable
     @close="handleClose"
+    @open="loadDevices"
   >
     <div class="device-manage-popup">
       <div class="popup-header">
@@ -111,15 +112,6 @@
   const { t } = useI18n();
 
   const devices = ref([]);
-
-  watch(
-    () => props.visible,
-    val => {
-      if (val) {
-        loadDevices();
-      }
-    }
-  );
 
   const loadDevices = () => {
     const storedDevices = localStorage.getItem('loginDevices');

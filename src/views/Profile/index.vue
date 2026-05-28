@@ -14,15 +14,14 @@
 </template>
 
 <script setup>
-  import { ref, computed, onMounted, watch } from 'vue';
+  import { ref, computed, onMounted } from 'vue';
   import { useRouter } from 'vue-router';
   import { useI18n } from 'vue-i18n';
-
-  // 引入子组件
+  import { storeToRefs } from 'pinia';
+  import { useAppDataStore } from '@/stores/appData';
   import UserCard from './components/UserCard.vue';
   import QuickActions from './components/QuickActions.vue';
   import MenuList from './components/MenuList.vue';
-  import { useAppData } from '@/hooks/useAppData';
 
   // ========================================
   // i18n
@@ -35,21 +34,22 @@
   const router = useRouter();
 
   // ========================================
-  // 统一数据管理
+  // 使用 storeToRefs 正确解包 store 中的响应式属性
   // ========================================
-  const { userPoints, records, loadAllData, calculateStats, getUnlockedBadgeCount } = useAppData();
+  const appDataStore = useAppDataStore();
+  const { userPoints, records, gameStats, unlockedBadgeCount } = storeToRefs(appDataStore);
+  const { loadAllData } = appDataStore;
 
   // ========================================
   // 用户信息
   // ========================================
   const userInfo = computed(() => {
-    const stats = calculateStats();
     return {
       id: '10086',
       name: '娱乐达人',
       points: userPoints.value,
-      gamesPlayed: stats.totalGames,
-      badges: getUnlockedBadgeCount(),
+      gamesPlayed: gameStats.value.totalGames,
+      badges: unlockedBadgeCount.value,
     };
   });
 

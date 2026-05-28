@@ -165,7 +165,7 @@
   import { useI18n } from 'vue-i18n';
   import { showToast, showSuccessToast } from 'vant';
   import dayjs from 'dayjs';
-  import { useAppData } from '@/hooks/useAppData';
+  import { useAppDataStore } from '@/stores/appData';
   import {
     Tabs as VanTabs,
     Tab as VanTab,
@@ -186,7 +186,8 @@
   // ========================================
   // 统一数据管理
   // ========================================
-  const { userPoints, addPoints, deductPoints, hasEnoughPoints, addRecord, loadAllData } = useAppData();
+  const appDataStore = useAppDataStore();
+  const { userPoints, addPoints, deductPoints, hasEnoughPoints, addRecord, loadAllData } = appDataStore;
 
   // ========================================
   // 响应式数据

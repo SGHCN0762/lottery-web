@@ -39,6 +39,7 @@
 <script setup>
   import { ref, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
+  import { storeToRefs } from 'pinia';
   import { showToast } from 'vant';
   import GameInfoBar from '@/components/GameInfoBar/index.vue';
 import GameRules from '../components/GameRules.vue';
@@ -47,7 +48,7 @@ import GameRules from '../components/GameRules.vue';
   import { useSpinHistory } from './hooks/useSpinHistory';
   import { useWheelRotation } from './hooks/useWheelRotation';
   import { useLottery } from './hooks/useLottery';
-  import { useAppData } from '@/hooks/useAppData';
+  import { useAppDataStore } from '@/stores/appData';
 
   // ========================================
   // i18n
@@ -68,9 +69,11 @@ import GameRules from '../components/GameRules.vue';
   ]);
 
   // ========================================
-  // 使用hooks管理用户积分和游戏记录（使用统一数据管理）
+  // 使用hooks管理用户积分和游戏记录（使用 Pinia Store）
   // ========================================
-  const { userPoints, addPoints, deductPoints, addRecord, loadAllData } = useAppData();
+  const appDataStore = useAppDataStore();
+  const { userPoints } = storeToRefs(appDataStore);
+  const { addPoints, deductPoints, addRecord, loadAllData } = appDataStore;
 
   // ========================================
   // 使用hooks管理抽奖历史

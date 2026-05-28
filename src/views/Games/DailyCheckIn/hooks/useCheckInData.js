@@ -4,16 +4,19 @@
  */
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { storeToRefs } from 'pinia'
 import { showToast } from 'vant'
 import dayjs from 'dayjs'
-import { useAppData } from '@/hooks/useAppData'
+import { useAppDataStore } from '@/stores/appData'
 import { STORAGE_KEYS, RECORD_LIMITS, CHECKIN_CONFIG } from '@/constants'
 
 export function useCheckInData() {
   const { t } = useI18n()
 
-  // 使用统一的数据管理 hook
-  const { userPoints, addPoints, addRecord, loadAllData } = useAppData()
+  // 使用 Pinia Store
+  const appDataStore = useAppDataStore()
+  const { userPoints } = storeToRefs(appDataStore)
+  const { addPoints, addRecord, loadAllData } = appDataStore
 
   // 响应式数据
   const consecutiveDays = ref(0)

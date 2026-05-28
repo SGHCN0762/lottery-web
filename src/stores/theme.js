@@ -8,7 +8,7 @@
  */
 
 import { defineStore } from 'pinia'
-import { ref, computed, watch } from 'vue'
+import { ref, computed } from 'vue'
 import { STORAGE_KEYS, THEMES } from '@/constants'
 
 // 有效的主题模式列表
@@ -131,15 +131,6 @@ export const useThemeStore = defineStore('theme', () => {
     applyThemeToDOM()
     setupSystemThemeListener()
   }
-
-  // ========================================
-  // 监听器
-  // ========================================
-  
-  /** 监听 isDark 变化，自动更新 DOM */
-  watch(isDark, () => {
-    applyThemeToDOM()
-  })
 
   // ========================================
   // 导出 API

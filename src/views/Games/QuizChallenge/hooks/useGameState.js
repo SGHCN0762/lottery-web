@@ -64,11 +64,12 @@ export function useGameState() {
 
   /**
    * 进入下一题或结束游戏
+   * @param {Function} onEnd - 游戏结束后的回调函数
    */
-  const nextQuestion = () => {
+  const nextQuestion = (onEnd) => {
     if (isLastQuestion.value) {
       // 已经是最后一题，结束游戏
-      endGame();
+      endGame(onEnd);
     } else {
       // 进入下一题
       currentQuestionIndex.value++;
@@ -79,9 +80,13 @@ export function useGameState() {
 
   /**
    * 结束游戏
+   * @param {Function} onEnd - 游戏结束后的回调函数
    */
-  const endGame = () => {
+  const endGame = (onEnd) => {
     gameEnded.value = true;
+    if (typeof onEnd === 'function') {
+      onEnd();
+    }
   };
 
   /**

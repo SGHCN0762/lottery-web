@@ -6,6 +6,7 @@
     round
     closeable
     @close="handleClose"
+    @open="resetForm"
   >
     <div class="change-password-popup">
       <div class="popup-header">
@@ -67,7 +68,7 @@
 </template>
 
 <script setup>
-  import { reactive, watch, ref } from 'vue';
+  import { reactive, ref } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast } from 'vant';
   import {
@@ -98,16 +99,11 @@
 
   const submitting = ref(false);
 
-  watch(
-    () => props.visible,
-    val => {
-      if (val) {
-        form.oldPassword = '';
-        form.newPassword = '';
-        form.confirmPassword = '';
-      }
-    }
-  );
+  const resetForm = () => {
+    form.oldPassword = '';
+    form.newPassword = '';
+    form.confirmPassword = '';
+  };
 
   const validateConfirmPassword = value => {
     return value === form.newPassword;

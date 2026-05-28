@@ -3,10 +3,7 @@
     <div class="page-content">
       <!-- 游戏信息栏 -->
       <GameInfoBar
-        :items="[
-          { label: t('dailyCheckIn.myPoints'), value: userPoints },
-          { label: t('dailyCheckIn.consecutiveDays'), value: `${consecutiveDays} ${t('dailyCheckIn.days')}`, valueClass: 'streak' }
-        ]"
+        :items="gameInfoItems"
       />
 
       <!-- 游戏规则 -->
@@ -49,7 +46,7 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import { ref, computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import GameInfoBar from '@/components/GameInfoBar/index.vue';
 import GameRules from "../components/GameRules.vue";
@@ -90,6 +87,18 @@ const { calendarDays, nextCheckInTime } = useCheckInCalendar(checkedInDates);
 
 // 使用操作状态 hook
 const { isCheckingIn, executeCheckIn } = useCheckInAction();
+
+// ========================================
+// 计算属性 - 使用 computed 确保响应式更新
+// ========================================
+
+/**
+ * 游戏信息栏数据 - 使用 computed 确保 userPoints 更新时重新渲染
+ */
+const gameInfoItems = computed(() => [
+  { label: t('dailyCheckIn.myPoints'), value: userPoints.value },
+  { label: t('dailyCheckIn.consecutiveDays'), value: `${consecutiveDays.value} ${t('dailyCheckIn.days')}`, valueClass: 'streak' }
+]);
 
 // ========================================
 // 组合使用 hooks

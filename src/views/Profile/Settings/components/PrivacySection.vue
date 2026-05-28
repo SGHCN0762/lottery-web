@@ -4,13 +4,13 @@
     <van-cell-group inset>
       <van-cell :title="t('settings.showOnlineStatus')">
         <template #right-icon>
-          <van-switch v-model="localSettings.showOnlineStatus" size="20" />
+          <van-switch v-model="localSettings.showOnlineStatus" size="20" @change="handleSettingChange" />
         </template>
       </van-cell>
 
       <van-cell :title="t('settings.allowViewRecords')">
         <template #right-icon>
-          <van-switch v-model="localSettings.allowViewRecords" size="20" />
+          <van-switch v-model="localSettings.allowViewRecords" size="20" @change="handleSettingChange" />
         </template>
       </van-cell>
     </van-cell-group>
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-  import { reactive, watch } from 'vue';
+  import { reactive } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { CellGroup as VanCellGroup, Cell as VanCell, Switch as VanSwitch } from 'vant';
 
@@ -38,13 +38,9 @@
     allowViewRecords: props.settings.allowViewRecords,
   });
 
-  watch(
-    localSettings,
-    newVal => {
-      emit('update', { ...props.settings, ...newVal });
-    },
-    { deep: true }
-  );
+  const handleSettingChange = () => {
+    emit('update', { ...props.settings, ...localSettings });
+  };
 </script>
 
 <style lang="less" scoped>

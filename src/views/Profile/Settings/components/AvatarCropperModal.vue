@@ -6,6 +6,7 @@
     round
     closeable
     @close="handleClose"
+    @open="resetCrop"
   >
     <div class="cropper-popup">
       <div class="popup-header">
@@ -45,7 +46,7 @@
 </template>
 
 <script setup>
-  import { ref, computed, watch } from 'vue';
+  import { ref, computed } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast } from 'vant';
   import { Popup as VanPopup, Button as VanButton, Slider as VanSlider } from 'vant';
@@ -68,15 +69,10 @@
   const scale = ref(1);
   const rotate = ref(0);
 
-  watch(
-    () => props.visible,
-    val => {
-      if (val) {
-        scale.value = 1;
-        rotate.value = 0;
-      }
-    }
-  );
+  const resetCrop = () => {
+    scale.value = 1;
+    rotate.value = 0;
+  };
 
   const imageStyle = computed(() => ({
     transform: `scale(${scale.value}) rotate(${rotate.value}deg)`,

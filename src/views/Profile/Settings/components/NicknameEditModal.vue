@@ -5,6 +5,7 @@
     show-cancel-button
     @update:show="handleClose"
     @confirm="handleConfirm"
+    @open="initNickname"
   >
     <van-field
       v-model="tempNickname"
@@ -16,7 +17,7 @@
 </template>
 
 <script setup>
-  import { ref, watch } from 'vue';
+  import { ref } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast } from 'vant';
   import { Dialog as VanDialog, Field as VanField } from 'vant';
@@ -38,14 +39,9 @@
 
   const tempNickname = ref('');
 
-  watch(
-    () => props.visible,
-    val => {
-      if (val) {
-        tempNickname.value = props.currentNickname;
-      }
-    }
-  );
+  const initNickname = () => {
+    tempNickname.value = props.currentNickname;
+  };
 
   const handleClose = () => {
     emit('update:visible', false);

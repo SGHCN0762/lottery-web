@@ -5,7 +5,7 @@
 import { showToast } from 'vant'
 import { useI18n } from 'vue-i18n'
 
-export function useGameLogic(gameState, addPoints) {
+export function useGameLogic(gameState, addPoints, onGameEnd) {
   const { t } = useI18n()
 
   /**
@@ -27,12 +27,12 @@ export function useGameLogic(gameState, addPoints) {
       // 猜对了
       hint = '🎉 正确！'
       status = 'correct'
-      handleWin()
+      handleWin(onGameEnd)
     } else if (gameState.remainingAttempts.value <= 1) {
       // 最后一次机会且猜错了
       hint = guess > gameState.targetNumber.value ? '❌ 太大了' : '❌ 太小了'
       status = 'wrong'
-      handleLose()
+      handleLose(onGameEnd)
     } else {
       // 还没猜对，但还有机会
       hint = guess > gameState.targetNumber.value ? '⬇️ 太大了' : '⬆️ 太小了'
@@ -59,8 +59,9 @@ export function useGameLogic(gameState, addPoints) {
   /**
    * 处理胜利情况
    * 根据尝试次数计算奖励并发放积分
+   * @param {Function} onEnd - 游戏结束后的回调函数
    */
-  const handleWin = () => {
+  const handleWin = (onEnd) => {
     gameState.gameEnded.value = true
     gameState.winStatus.value = 'win'
 
@@ -85,13 +86,19 @@ export function useGameLogic(gameState, addPoints) {
       type: 'success',
       duration: 2000
     })
+
+    // 调用结束回调
+    if (typeof onEnd === 'function') {
+      onEnd()
+    }
   }
 
   /**
    * 处理失败情况
    * 游戏结束，机会用完
+   * @param {Function} onEnd - 游戏结束后的回调函数
    */
-  const handleLose = () => {
+  const handleLose = (onEnd) => {
     gameState.gameEnded.value = true
     gameState.winStatus.value = 'lose'
     gameState.remainingAttempts.value = 0
@@ -101,6 +108,11 @@ export function useGameLogic(gameState, addPoints) {
       type: 'fail',
       duration: 2000
     })
+
+    // 调用结束回调
+    if (typeof onEnd === 'function') {
+      onEnd()
+    }
   }
 
   return {

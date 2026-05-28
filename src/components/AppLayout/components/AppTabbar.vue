@@ -19,8 +19,8 @@
 </template>
 
 <script setup>
-  import { ref, watch, computed } from 'vue';
-  import { useRoute } from 'vue-router';
+  import { ref, computed, onMounted, onUnmounted } from 'vue';
+  import { useRoute, onBeforeRouteUpdate } from 'vue-router';
   import { useI18n } from 'vue-i18n';
   import { Tabbar as VanTabbar, TabbarItem as VanTabbarItem } from 'vant';
 
@@ -62,19 +62,16 @@
     }))
   );
 
-  // ========================================
-  // 监听器
-  // ========================================
-
-  /** 监听路由变化，同步激活标签 */
-  watch(
-    () => route.name,
-    newName => {
-      if (newName) {
-        activeTab.value = newName;
-      }
+  /** 同步路由变化到激活标签 */
+  const syncRouteToTab = (to) => {
+    if (to.name) {
+      activeTab.value = to.name;
     }
-  );
+  };
+
+  onBeforeRouteUpdate((to) => {
+    syncRouteToTab(to);
+  });
 
   /** 标签页切换 */
   const handleTabChange = name => {

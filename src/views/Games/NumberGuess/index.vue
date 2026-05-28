@@ -50,18 +50,32 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { watch } from 'vue'
 import GameInfoBar from '@/components/GameInfoBar/index.vue'
 import GameRules from '../components/GameRules.vue'
 import GameStartScreen from './components/GameStartScreen.vue'
 import GamePlayingScreen from './components/GamePlayingScreen.vue'
 import GameEndScreen from './components/GameEndScreen.vue'
 import { useNumberGuess } from './hooks/useNumberGuess'
+import { useAppDataStore } from '@/stores/appData'
 
 // ========================================
 // i18n
 // ========================================
 const { t } = useI18n()
+
+// ========================================
+// 游戏结束回调函数
+// ========================================
+const handleGameEnd = () => {
+  // 添加游戏记录
+  const appDataStore = useAppDataStore()
+  appDataStore.addRecord({
+    gameType: 'numberGuess',
+    gameName: t('lottery.numberGuess'),
+    result: winStatus.value === 'win' ? 'win' : 'lose',
+    pointsChange: winStatus.value === 'win' ? rewardPoints.value : 0
+  })
+}
 
 // ========================================
 // 使用组合hook获取所有游戏功能
@@ -87,16 +101,8 @@ const {
   handleWin,
   handleLose,
   resetGame,
-  loadUserPoints,
-  addGameRecord
-} = useNumberGuess()
-
-// 监听游戏结束，添加记录
-watch(gameEnded, (ended) => {
-  if (ended) {
-    addGameRecord(winStatus.value, rewardPoints.value)
-  }
-})
+  loadUserPoints
+} = useNumberGuess(handleGameEnd)
 </script>
 
 <style lang="less" scoped>

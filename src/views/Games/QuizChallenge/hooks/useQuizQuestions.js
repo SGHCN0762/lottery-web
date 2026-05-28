@@ -1,5 +1,5 @@
 import { ref } from 'vue';
-import { useIndexedDBCache } from '@/hooks/useIndexedDBCache';
+import { useCacheStore } from '@/stores/cache';
 
 const categoryConfig = {
   css: { name: 'CSS', dir: 'questions/css_questions', totalFiles: 20 },
@@ -15,11 +15,8 @@ const categoryConfig = {
 };
 
 export function useQuizQuestions() {
-  const { readFromCache, writeToCache, checkFileVersion } = useIndexedDBCache(
-    'QuizQuestionsDB',
-    1,
-    'questions'
-  );
+  const cacheStore = useCacheStore();
+  const { readFromCache, writeToCache, checkFileVersion } = cacheStore;
 
   const allQuestions = ref({});
   const loadedCategories = ref(new Set());

@@ -112,14 +112,12 @@ const initVantLocale = () => {
 // 初始设置 Vant 语言
 initVantLocale();
 
+// ========================================
 // 监听语言变化，更新 Vant 语言
-import { watch } from 'vue';
-watch(
-  () => i18n.global.locale.value,
-  () => {
-    initVantLocale();
-  }
-);
+// ========================================
+i18n.global.onLanguageChange = (locale) => {
+  initVantLocale();
+};
 
 // ========================================
 // 立即挂载应用，优化 LCP

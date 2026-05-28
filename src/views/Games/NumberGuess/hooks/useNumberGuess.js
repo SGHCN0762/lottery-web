@@ -4,22 +4,24 @@
  */
 import { onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { storeToRefs } from 'pinia'
 import { useGameState } from './useGameState'
 import { useGameLogic } from './useGameLogic'
-import { useAppData } from '@/hooks/useAppData'
+import { useAppDataStore } from '@/stores/appData'
 
-export function useNumberGuess() {
+export function useNumberGuess(onGameEnd) {
   const { t } = useI18n()
 
-  // 使用统一数据管理
-  const appData = useAppData()
-  const { userPoints, addPoints, addRecord } = appData
+  // 使用 Pinia Store
+  const appDataStore = useAppDataStore()
+  const { userPoints } = storeToRefs(appDataStore)
+  const { addPoints, addRecord, loadAllData } = appDataStore
 
   // 初始化游戏状态
   const gameState = useGameState()
 
-  // 初始化游戏逻辑（传入 addPoints）
-  const gameLogic = useGameLogic(gameState, addPoints)
+  // 初始化游戏逻辑（传入 addPoints 和 onGameEnd）
+  const gameLogic = useGameLogic(gameState, addPoints, onGameEnd)
 
   // 添加游戏记录
   const addGameRecord = (winStatus, rewardPoints = 0) => {
@@ -33,7 +35,9 @@ export function useNumberGuess() {
 
   // 生命周期钩子
   onMounted(() => {
-    appData.loadAllData()
+    if (!appDataStore.isLoaded) {
+      loadAllData()
+    }
   })
 
   return {

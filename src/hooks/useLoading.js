@@ -1,10 +1,11 @@
 import { showLoadingToast, closeToast } from 'vant';
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 
 export const useLoading = () => {
   const loading = ref(false);
 
-  watch(loading, val => {
+  const setLoading = (val) => {
+    loading.value = val;
     if (val) {
       showLoadingToast({
         message: '加载中...',
@@ -14,9 +15,10 @@ export const useLoading = () => {
     } else {
       closeToast();
     }
-  });
+  };
 
   return {
     loading,
+    setLoading,
   };
 };

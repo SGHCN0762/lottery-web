@@ -80,17 +80,18 @@
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import dayjs from 'dayjs'
+import { storeToRefs } from 'pinia'
+import { useAppDataStore } from '@/stores/appData'
 import {
-  DropdownMenu as VanDropdownMenu,
-  DropdownItem as VanDropdownItem,
-  CellGroup as VanCellGroup,
   Cell as VanCell,
+  CellGroup as VanCellGroup,
+  Tabs as VanTabs,
+  Tab as VanTab,
   Tag as VanTag,
   Icon as VanIcon,
   Empty as VanEmpty,
   Button as VanButton
 } from 'vant'
-import { useAppData } from '@/hooks/useAppData'
 
 // ========================================
 // i18n
@@ -100,7 +101,9 @@ const { t } = useI18n()
 // ========================================
 // 统一数据管理
 // ========================================
-const { records, loadAllData, getRecordsByGameType, getRecordsByTimeRange } = useAppData()
+const appDataStore = useAppDataStore()
+const { records } = storeToRefs(appDataStore)
+const { loadAllData, getRecordsByGameType, getRecordsByTimeRange } = appDataStore
 
 // ========================================
 // 响应式数据

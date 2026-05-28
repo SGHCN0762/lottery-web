@@ -76,7 +76,8 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import dayjs from 'dayjs'
-import { useAppData } from '@/hooks/useAppData'
+import { storeToRefs } from 'pinia'
+import { useAppDataStore } from '@/stores/appData'
 import {
   Tabs as VanTabs,
   Tab as VanTab,
@@ -95,7 +96,9 @@ const { t } = useI18n()
 // ========================================
 // 统一数据管理
 // ========================================
-const { userPoints, records, loadAllData } = useAppData()
+const appDataStore = useAppDataStore()
+const { userPoints, records } = storeToRefs(appDataStore)
+const { loadAllData } = appDataStore
 
 // ========================================
 // 辅助函数

@@ -48,7 +48,21 @@
     return ['日', '一', '二', '三', '四', '五', '六'][props.date.weekdayIndex];
   });
 
-  const handleViewAlmanac = () => {
+  const handleViewAlmanac = async () => {
+    if (props.date?.year && props.date?.month && props.date?.day) {
+      try {
+        const { getAlmanacInfo, getLunarDate } = await import('@/views/Home/hooks/useLunar');
+        const targetDate = new Date(
+          props.date.year,
+          props.date.month - 1,
+          props.date.day
+        );
+        getAlmanacInfo(targetDate);
+        getLunarDate(targetDate);
+      } catch (error) {
+        console.warn('预加载黄历数据失败:', error);
+      }
+    }
     emit('view-almanac', props.date);
   };
 </script>

@@ -80,13 +80,13 @@
 </template>
 
 <script setup>
-  import { ref, reactive, onMounted, watch } from 'vue';
+  import { ref, reactive, onMounted } from 'vue';
   import { useRouter } from 'vue-router';
   import { useI18n } from 'vue-i18n';
   import { showToast, showConfirmDialog } from 'vant';
-  import { useIndexedDBCache } from '@/hooks/useIndexedDBCache';
+  import { useCacheStore } from '@/stores/cache';
 
-  const { clearAllCache: clearQuizCache } = useIndexedDBCache('QuizQuestionsDB', 1, 'questions');
+  const cacheStore = useCacheStore();
 
   // 导入组件
   import PersonalInfoSection from './components/PersonalInfoSection.vue';
@@ -184,6 +184,7 @@
    */
   const updateSettings = newSettings => {
     Object.assign(settings, newSettings);
+    saveSettings();
   };
 
   /**
@@ -261,7 +262,7 @@
 
       sessionStorage.clear();
 
-      await clearQuizCache();
+      await cacheStore.clearAllCache();
 
       if (token) {
         localStorage.setItem('token', token);
@@ -300,18 +301,6 @@
       }, 1500);
     } catch {}
   };
-
-  // ========================================
-  // 监听器
-  // ========================================
-
-  watch(
-    settings,
-    () => {
-      saveSettings();
-    },
-    { deep: true }
-  );
 
   // ========================================
   // 生命周期

@@ -60,7 +60,7 @@
             :is-review-mode="isReviewMode"
             @select-answer="selectAnswer"
             @submit="submitAnswer"
-            @next="nextQuestion"
+            @next="handleNextQuestion"
             @back="handleBackToAnswer"
           />
 
@@ -86,8 +86,9 @@
 </template>
 
 <script setup>
-  import { computed, onMounted, watch } from 'vue';
+  import { computed, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
+  import { storeToRefs } from 'pinia';
   import { showToast, closeToast } from 'vant';
   import GameInfoBar from '@/components/GameInfoBar/index.vue';
   import dayjs from 'dayjs';
@@ -100,7 +101,7 @@
   import { useGameState } from './hooks/useGameState';
   import { useScoring } from './hooks/useScoring';
   import { useQuestions } from './hooks/useQuestions';
-  import { useAppData } from '@/hooks/useAppData';
+  import { useAppDataStore } from '@/stores/appData';
 
   // ========================================
   // i18n
@@ -151,7 +152,9 @@
   } = useQuestions();
 
   // 用户积分管理
-  const { userPoints, addPoints, addRecord, loadAllData } = useAppData();
+  const appDataStore = useAppDataStore();
+  const { userPoints } = storeToRefs(appDataStore);
+  const { addPoints, addRecord, loadAllData } = appDataStore;
 
   // ========================================
   // 计算属性
@@ -192,38 +195,43 @@
   });
 
   // ========================================
-  // 监听游戏结束状态
+  // 游戏结束处理
   // ========================================
 
   /**
-   * 监听游戏结束，执行积分结算和提示
+   * 处理游戏结束，执行积分结算和提示
    */
-  watch(gameEnded, newValue => {
-    if (newValue) {
-      // 将本局获得的积分添加到用户总积分
-      if (earnedPoints.value > 0) {
-        addPoints(earnedPoints.value);
-      }
-
-      // 添加到游戏记录
-      addRecord({
-        gameType: 'quizChallenge',
-        gameName: t('lottery.quizChallenge'),
-        result: correctCount.value >= totalQuestions.value / 2 ? 'win' : 'lose',
-        pointsChange: earnedPoints.value,
-        timestamp: dayjs().valueOf()
-      });
-
-      // 显示总结提示
-      if (earnedPoints.value > 0) {
-        showToast({
-          message: t('quizChallenge.success', { points: earnedPoints.value }),
-          type: 'success',
-          duration: 2000,
-        });
-      }
+  const handleGameEnd = () => {
+    // 将本局获得的积分添加到用户总积分
+    if (earnedPoints.value > 0) {
+      addPoints(earnedPoints.value);
     }
-  });
+
+    // 添加到游戏记录
+    addRecord({
+      gameType: 'quizChallenge',
+      gameName: t('lottery.quizChallenge'),
+      result: correctCount.value >= totalQuestions.value / 2 ? 'win' : 'lose',
+      pointsChange: earnedPoints.value,
+      timestamp: dayjs().valueOf()
+    });
+
+    // 显示总结提示
+    if (earnedPoints.value > 0) {
+      showToast({
+        message: t('quizChallenge.success', { points: earnedPoints.value }),
+        type: 'success',
+        duration: 2000,
+      });
+    }
+  };
+
+  /**
+   * 处理下一题点击
+   */
+  const handleNextQuestion = () => {
+    nextQuestion(handleGameEnd);
+  };
 
   // ========================================
   // 游戏核心逻辑

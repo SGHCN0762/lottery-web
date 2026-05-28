@@ -7,30 +7,33 @@
 </template>
 
 <script setup>
-  import { ref, onMounted, watch } from 'vue';
+  import { ref, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
 
   const { t } = useI18n();
   const visible = ref(true);
 
-  onMounted(() => {
-    setTimeout(
-      () => {
-        visible.value = false;
-      },
-      500 + Math.random() * 800
-    );
-  });
-
-  watch(visible, (newVal) => {
-    if (newVal) {
+  const setVisible = (val) => {
+    visible.value = val;
+    if (val) {
       document.documentElement.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
     } else {
       document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
     }
-  }, { immediate: true });
+  };
+
+  setVisible(true);
+
+  onMounted(() => {
+    setTimeout(
+      () => {
+        setVisible(false);
+      },
+      500 + Math.random() * 800
+    );
+  });
 </script>
 
 <style scoped>

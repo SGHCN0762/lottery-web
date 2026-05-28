@@ -6,6 +6,7 @@
     round
     closeable
     @close="handleClose"
+    @open="resetForm"
   >
     <div class="bind-phone-popup">
       <div class="popup-header">
@@ -104,16 +105,11 @@
   const countdown = ref(0);
   const submitting = ref(false);
 
-  watch(
-    () => props.visible,
-    val => {
-      if (val) {
-        form.phone = props.userInfo.phone || '';
-        form.code = '';
-        countdown.value = 0;
-      }
-    }
-  );
+  const resetForm = () => {
+    form.phone = props.userInfo.phone || '';
+    form.code = '';
+    countdown.value = 0;
+  };
 
   const handleClose = () => {
     emit('update:visible', false);

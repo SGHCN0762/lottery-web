@@ -38,14 +38,12 @@
   import { ref, computed, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
   import dayjs from 'dayjs';
-  import { Empty as VanEmpty } from 'vant';
-
-  // 导入子组件
+  import { storeToRefs } from 'pinia';
+  import { useAppDataStore } from '@/stores/appData';
   import StatsCard from './components/StatsCard.vue';
   import FilterTabs from './components/FilterTabs.vue';
   import BadgeItem from './components/BadgeItem.vue';
   import BadgeDetail from './components/BadgeDetail.vue';
-  import { useAppData } from '@/hooks/useAppData';
 
   // ========================================
   // i18n
@@ -53,9 +51,11 @@
   const { t } = useI18n();
 
   // ========================================
-  // 统一数据管理
+  // 使用 Store 中的计算属性，避免重复计算
   // ========================================
-  const { records, loadAllData } = useAppData();
+  const appDataStore = useAppDataStore();
+  const { records, gameStats } = storeToRefs(appDataStore);
+  const { loadAllData } = appDataStore;
 
   // ========================================
   // 响应式数据
@@ -156,32 +156,6 @@
         tips: t('badges.badges.socialExpert.tips'),
       },
     ];
-  });
-
-  /**
-   * 根据游戏记录计算统计数据
-   */
-  const gameStats = computed(() => {
-    const totalGames = records.value.length;
-    const gameTypes = new Set(records.value.map(r => r.gameType));
-    const checkInRecords = records.value.filter(r => r.gameType === 'dailyCheckIn');
-    const uniqueCheckInDays = new Set(checkInRecords.map(r => {
-      return dayjs(r.timestamp).format('YYYY-MM-DD');
-    })).size;
-    const luckyWheelCount = records.value.filter(r => r.gameType === 'luckyWheel').length;
-    const quizWins = records.value.filter(r => r.gameType === 'quizChallenge' && r.result === 'win').length;
-    const numberGuessWins = records.value.filter(r => r.gameType === 'numberGuess' && r.result === 'win').length;
-    const totalPoints = records.value.reduce((sum, r) => sum + r.pointsChange, 0);
-
-    return {
-      totalGames,
-      gameTypesCount: gameTypes.size,
-      checkInDays: uniqueCheckInDays,
-      luckyWheelCount,
-      quizWins,
-      numberGuessWins,
-      totalPoints,
-    };
   });
 
   /**
