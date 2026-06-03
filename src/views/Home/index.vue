@@ -1,6 +1,8 @@
 <template>
   <div class="calendar-page">
     <div class="page-content">
+      <MapCard />
+
       <!-- 顶部信息卡片 -->
       <HeaderCard :current-date="currentDate" />
 
@@ -42,7 +44,7 @@
 </template>
 
 <script setup>
-  import { ref, defineAsyncComponent, shallowRef } from 'vue';
+  import { ref, shallowRef } from 'vue';
   import { useRouter } from 'vue-router';
   import { showToast } from 'vant';
   import CustomCalendar from './components/CustomCalendar.vue';
@@ -55,6 +57,7 @@
   import { useCurrentDate } from './hooks/useCurrentDate';
   import { useNewYearEve } from '../../hooks/useNewYearEve';
   import { getFestivalOrSolarTermInfo } from './data/festivalInfo';
+  import MapCard from '@/components/MapCard/index.vue';
 
   // ========================================
   // 性能优化：异步加载弹窗组件 - 优化FCP
