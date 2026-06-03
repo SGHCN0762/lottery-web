@@ -158,6 +158,7 @@
 
   // 设置定位事件监听
   const setupGeolocationListener = ({ modules, geolocation, positionFeature, view } = {}) => {
+    let hasLocated = false;
     geolocation.on('change:position', function () {
       const coordinates = geolocation.getPosition();
       if (coordinates) {
@@ -168,12 +169,15 @@
         
         positionFeature.setGeometry(new modules.Point(webMercatorCoord));
 
-        // 缩放到定位点
-        view.animate({
-          center: webMercatorCoord,
-          zoom: 17,
-          duration: 1000,
-        });
+        // 仅在首次定位时缩放到定位点，后续位置更新不再强制缩放，避免覆盖用户操作
+        if (!hasLocated) {
+          view.animate({
+            center: webMercatorCoord,
+            zoom: 17,
+            duration: 1000,
+          });
+          hasLocated = true;
+        }
       } else {
         positionFeature.setGeometry(null);
       }

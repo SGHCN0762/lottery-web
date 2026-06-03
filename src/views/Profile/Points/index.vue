@@ -73,7 +73,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import dayjs from 'dayjs'
 import { storeToRefs } from 'pinia'

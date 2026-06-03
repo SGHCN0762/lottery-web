@@ -89,7 +89,7 @@
 </template>
 
 <script setup>
-  import { ref, watch } from 'vue';
+  import { ref } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast, showConfirmDialog } from 'vant';
   import {

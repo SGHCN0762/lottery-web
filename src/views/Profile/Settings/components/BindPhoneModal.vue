@@ -70,7 +70,7 @@
 </template>
 
 <script setup>
-  import { ref, reactive, watch } from 'vue';
+  import { ref, reactive } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { showToast } from 'vant';
   import {

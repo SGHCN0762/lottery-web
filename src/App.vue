@@ -23,7 +23,6 @@ import { useThemeStore } from "./stores/theme";
 import AppLayout from "@/components/AppLayout/index.vue";
 import PageLayout from "@/components/PageLayout/index.vue";
 import Skeleton from "@/components/Skeleton/index.vue";
-import { getLocation } from "@/utils/location";
 
 const layouts = {
   AppLayout,
@@ -52,11 +51,4 @@ const themeStore = useThemeStore();
 const appThemeClass = computed(() => {
   return `theme-${themeStore.themeMode}`;
 });
-
-const init = async () => {
-  const location = await getLocation();
-  console.log('location', location);
-};
-
-init();
 </script>
