@@ -1,42 +1,57 @@
 <template>
   <div class="map-canvas">
     <div ref="mapTarget" class="map-target"></div>
-    <MapZoom class="zoom-controls" :zoom-in="handleZoomIn" :zoom-out="handleZoomOut" />
+    <MapLocation class="location-controls" :back-to-location="backToLocation" />
+    <MapLayerSwitcher class="layer-switcher-controls" @change="handleLayerChange" />
   </div>
 </template>
 
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue';
-  import MapZoom from './MapZoom.vue';
-  import { wgs84ToGcj02  } from '@/utils/crood.js';
+  import MapLocation from './MapLocation.vue';
+  import MapLayerSwitcher from './MapLayerSwitcher.vue';
+  import { wgs84ToGcj02 } from '@/utils/crood.js';
 
   const emit = defineEmits(['click', 'dblclick']);
 
   const mapTarget = ref(null);
   let mapInstance = null;
+  let baseTileLayer = null;
   let vectorLayer = null;
   let olModules = null;
 
-  const handleZoomIn = () => {
+  const backToLocation = () => {
     if (mapInstance) {
       const view = mapInstance.getView();
-      const zoom = view.getZoom();
-      view.animate({
-        zoom: zoom + 1,
-        duration: 250,
+      // 获取当前位置点
+      const positionFeature = vectorLayer.getSource().getFeatures().find(feature => {
+        return feature.getGeometry() instanceof olModules.Point;
       });
+      
+      if (positionFeature && positionFeature.getGeometry()) {
+        const center = positionFeature.getGeometry().getCoordinates();
+        view.animate({
+          center: center,
+          zoom: 17,
+          duration: 1000,
+        });
+      }
     }
   };
 
-  const handleZoomOut = () => {
-    if (mapInstance) {
-      const view = mapInstance.getView();
-      const zoom = view.getZoom();
-      view.animate({
-        zoom: zoom - 1,
-        duration: 250,
-      });
-    }
+  const handleLayerChange = type => {
+    if (!baseTileLayer || !olModules) return;
+    const styleMap = {
+      satellite: 6,
+      road: 7,
+      label: 8,
+    };
+    const styleValue = styleMap[type] || 6;
+    const newSource = new olModules.XYZSource({
+      url: `https://webst01.is.autonavi.com/appmaptile?style=${styleValue}&x={x}&y={y}&z={z}`,
+      crossOrigin: 'anonymous',
+    });
+    baseTileLayer.setSource(newSource);
   };
 
   const loadOlModules = async () => {
@@ -108,21 +123,20 @@
 
   // 创建基础地图实例
   const createBaseMap = ({ modules, target, view } = {}) => {
+    baseTileLayer = new modules.TileLayer({
+      source: new modules.XYZSource({
+        url: 'https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
+        crossOrigin: 'anonymous',
+      }),
+    });
+
     return new modules.Map({
       target: target,
       controls: modules.defaultControls({
         attribution: false,
         zoom: false,
       }),
-      layers: [
-        new modules.TileLayer({
-          source: new modules.XYZSource({
-            url: 'https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
-            // 可选：设置跨域
-            crossOrigin: 'anonymous',
-          }),
-        }),
-      ],
+      layers: [baseTileLayer],
       view,
     });
   };
@@ -166,7 +180,7 @@
         const gcj02Coord = wgs84ToGcj02(coordinates[0], coordinates[1]);
         // 2. GCJ02坐标 -> EPSG:3857（Web Mercator）
         const webMercatorCoord = modules.fromLonLat(gcj02Coord);
-        
+
         positionFeature.setGeometry(new modules.Point(webMercatorCoord));
 
         // 仅在首次定位时缩放到定位点，后续位置更新不再强制缩放，避免覆盖用户操作
@@ -265,9 +279,16 @@
       height: 100%;
     }
 
-    .zoom-controls {
+    .location-controls {
       position: absolute;
       bottom: var(--spacing-md);
+      right: var(--spacing-md);
+      z-index: 100;
+    }
+
+    .layer-switcher-controls {
+      position: absolute;
+      top: var(--spacing-md);
       right: var(--spacing-md);
       z-index: 100;
     }
