@@ -189,12 +189,14 @@ const jumpToQuestion = (index) => {
     &.correct {
       .stats-icon {
         color: #52c41a;
+        text-shadow: 0 0 8px rgba(82, 196, 26, 0.8);
       }
     }
 
     &.wrong {
       .stats-icon {
-        color: #ff4d4f;
+        color: #ff7875;
+        text-shadow: 0 0 8px rgba(255, 120, 117, 0.8);
       }
     }
   }

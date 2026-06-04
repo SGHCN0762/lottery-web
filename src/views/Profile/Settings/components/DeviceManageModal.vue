@@ -32,7 +32,7 @@
               <van-icon
                 :name="getDeviceIcon(device.type)"
                 size="32"
-                :color="device.isCurrent ? 'var(--color-primary)' : '#999'"
+                :color="device.isCurrent ? 'var(--color-primary)' : 'var(--color-text-tertiary)'"
               />
             </div>
 
@@ -259,7 +259,7 @@
         message: t('settings.removeAllDevicesMessage').replace('{count}', otherDevices.length),
         confirmButtonText: t('settings.confirmRemove'),
         cancelButtonText: t('common.cancel'),
-        confirmButtonColor: '#ff4d4f',
+        confirmButtonColor: 'var(--color-danger)',
       });
 
       devices.value = devices.value.filter(d => d.isCurrent);
@@ -312,7 +312,7 @@
 
         &.current-device {
           border: 1px solid var(--color-primary);
-          background: linear-gradient(135deg, rgba(0, 122, 255, 0.05), rgba(0, 122, 255, 0.02));
+          background: linear-gradient(135deg, rgba(25, 137, 250, 0.05), rgba(25, 137, 250, 0.02));
         }
 
         &:active {

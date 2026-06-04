@@ -36,7 +36,7 @@ export function useSaveImage() {
     const html2canvas = await loadHtml2Canvas();
 
     const defaultOptions = {
-      backgroundColor: '#ffffff',
+      backgroundColor: 'var(--color-bg-secondary)',
       useCORS: true,
       scale: window.devicePixelRatio || 2,
       logging: false,

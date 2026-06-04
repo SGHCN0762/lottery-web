@@ -9,11 +9,11 @@
         </div>
         <div class="points-trend">
           <div class="trend-item">
-            <van-icon name="arrow-up" color="#52c41a" />
+            <van-icon name="arrow-up" color="var(--color-success)" />
             <span>{{ t('points.monthIncome') }} {{ monthIncome }}</span>
           </div>
           <div class="trend-item">
-            <van-icon name="arrow-down" color="#ff4d4f" />
+            <van-icon name="arrow-down" color="var(--color-danger)" />
             <span>{{ t('points.monthExpense') }} {{ monthExpense }}</span>
           </div>
         </div>
@@ -351,7 +351,7 @@ onMounted(async () => {
       justify-content: center;
       
       &.income {
-        background: rgba(82, 196, 26, 0.1);
+        background: rgba(7, 193, 96, 0.1);
         color: var(--color-success);
       }
       

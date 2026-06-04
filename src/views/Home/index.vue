@@ -1,7 +1,8 @@
 <template>
   <div class="calendar-page">
     <div class="page-content">
-      <MapCard />
+      <!-- 性能优化：MapCard 懒加载 -->
+      <MapCard v-if="MapCardLoaded" />
 
       <!-- 顶部信息卡片 -->
       <HeaderCard :current-date="currentDate" />
@@ -25,7 +26,7 @@
 
       <!-- 日期详情弹窗（异步加载） -->
       <DateDetailModal
-        v-if="showDateDetail"
+        v-if="showDateDetail && DateDetailModal"
         v-model:show="showDateDetail"
         :date="selectedDate"
         @view-almanac="handleViewAlmanac"
@@ -33,7 +34,7 @@
 
       <!-- 节日/节气详情弹窗（异步加载） -->
       <FestivalDetailModal
-        v-if="showFestivalDetail"
+        v-if="showFestivalDetail && FestivalDetailModal"
         v-model:show="showFestivalDetail"
         :date="selectedDate"
         :name="selectedFestivalName"
@@ -44,7 +45,7 @@
 </template>
 
 <script setup>
-  import { ref, shallowRef } from 'vue';
+  import { ref, shallowRef, onMounted } from 'vue';
   import { useRouter } from 'vue-router';
   import { showToast } from 'vant';
   import CustomCalendar from './components/CustomCalendar.vue';
@@ -57,16 +58,30 @@
   import { useCurrentDate } from './hooks/useCurrentDate';
   import { useNewYearEve } from '../../hooks/useNewYearEve';
   import { getFestivalOrSolarTermInfo } from './data/festivalInfo';
-  import MapCard from '@/components/MapCard/index.vue';
+  import Skeleton from '@/components/Skeleton/index.vue';
 
   // ========================================
-  // 性能优化：异步加载弹窗组件 - 优化FCP
-  // 使用 shallowRef 减少响应式开销
+  // 性能优化：懒加载组件
   // ========================================
+  const MapCard = shallowRef(null);
   const DateDetailModal = shallowRef(null);
   const FestivalDetailModal = shallowRef(null);
+  const MapCardLoaded = ref(false);
 
-  // 仅在需要时加载弹窗组件
+  // 延迟加载 MapCard（非首屏关键组件）
+  const loadMapCard = async () => {
+    try {
+      // 等待页面渲染完成后再加载地图组件
+      await new Promise(resolve => setTimeout(resolve, 500));
+      const module = await import('@/components/MapCard/index.vue');
+      MapCard.value = module.default;
+      MapCardLoaded.value = true;
+    } catch (e) {
+      console.error('Failed to load MapCard:', e);
+    }
+  };
+
+  // 加载日期详情弹窗
   const loadDateDetailModal = () => {
     if (!DateDetailModal.value) {
       import('./components/DateDetailModal.vue').then(module => {
@@ -75,6 +90,7 @@
     }
   };
 
+  // 加载节日详情弹窗
   const loadFestivalDetailModal = () => {
     if (!FestivalDetailModal.value) {
       import('./components/FestivalDetailModal.vue').then(module => {
@@ -86,7 +102,6 @@
   const router = useRouter();
 
   const goToNewYearEve = () => {
-    // 跳转到新年倒计时页面
     router.push('/new-year-eve');
   };
 
@@ -112,30 +127,24 @@
   // 处理节日点击（来自列表）
   const handleFestivalClick = festival => {
     if (!getFestivalOrSolarTermInfo(festival.name)) {
-      // 如果没有找到详情，显示提示
       showToast('暂无相关信息');
       return;
     }
     selectedDate.value = null;
     selectedFestivalName.value = festival.name;
     showFestivalDetail.value = true;
-    // 预加载节日详情弹窗
     loadFestivalDetailModal();
   };
 
   // 处理日期点击（来自日历）
   const handleDateClick = date => {
     selectedDate.value = date;
-    // 如果有节日或节气，显示详情弹窗
     if ((date.festival && getFestivalOrSolarTermInfo(date.festival)) || date.solarTerm) {
       selectedFestivalName.value = date.festival || date.solarTerm;
       showFestivalDetail.value = true;
-      // 预加载节日详情弹窗
       loadFestivalDetailModal();
     } else {
-      // 否则显示日期详情弹窗
       showDateDetail.value = true;
-      // 预加载日期详情弹窗
       loadDateDetailModal();
     }
   };
@@ -151,6 +160,16 @@
       },
     });
   };
+
+  // 组件挂载后延迟加载非关键组件
+  onMounted(() => {
+    // 使用 requestIdleCallback 或 setTimeout 延迟加载 MapCard
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadMapCard, { timeout: 2000 });
+    } else {
+      setTimeout(loadMapCard, 500);
+    }
+  });
 </script>
 
 <style lang="less" scoped>

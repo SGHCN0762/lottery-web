@@ -362,12 +362,13 @@
 
     .reward-desc {
       font-size: 12px;
-      opacity: 0.9;
+      color: rgba(255, 255, 255, 0.95);
       margin: 0 0 var(--spacing-md) 0;
 
       strong {
         font-size: var(--font-size-md);
-        color: #ffd700;
+        color: #ffd666;
+        text-shadow: 0 0 8px rgba(255, 214, 102, 0.6);
       }
     }
 

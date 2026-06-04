@@ -2,7 +2,7 @@
   <!-- 查看黄历按钮 -->
   <div class="almanac-card" @click="$emit('click')">
     <div class="almanac-icon">
-      <van-icon name="calendar-o" size="24" color="#FF9500" />
+      <van-icon name="calendar-o" size="24" color="var(--color-warning)" />
     </div>
     <div class="almanac-content">
       <h4>黄历宜忌</h4>
@@ -19,16 +19,16 @@
     display: flex;
     align-items: center;
     padding: var(--spacing-md);
-    background: linear-gradient(135deg, rgba(255, 149, 0, 0.1) 0%, rgba(255, 149, 0, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(255, 151, 106, 0.1) 0%, rgba(255, 151, 106, 0.05) 100%);
     border-radius: var(--radius-md);
     margin-top: var(--spacing-md);
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 149, 0, 0.2);
+    border: 1px solid rgba(255, 151, 106, 0.2);
 
     &:active {
       transform: scale(0.98);
-      background: linear-gradient(135deg, rgba(255, 149, 0, 0.15) 0%, rgba(255, 149, 0, 0.1) 100%);
+      background: linear-gradient(135deg, rgba(255, 151, 106, 0.15) 0%, rgba(255, 151, 106, 0.1) 100%);
     }
 
     .almanac-icon {
@@ -38,7 +38,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(255, 149, 0, 0.1);
+      background-color: rgba(255, 151, 106, 0.1);
       border-radius: var(--radius-sm);
       margin-right: var(--spacing-md);
     }

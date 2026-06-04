@@ -66,7 +66,7 @@ const {
 <style lang="less" scoped>
 .new-year-eve-entry {
   margin: var(--spacing-md);
-  background: linear-gradient(135deg, #1a237e 0%, #4a148c 100%);
+  background: var(--gradient-primary);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
   display: flex;
@@ -113,7 +113,7 @@ const {
     .entry-title {
       font-size: var(--font-size-lg);
       font-weight: var(--font-weight-bold);
-      color: #e1bee7;
+      color:  white;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
@@ -148,7 +148,7 @@ const {
 
   .entry-arrow {
     font-size: 24px;
-    color: #e1bee7;
+    color: var(--color-primary-light);
     z-index: 1;
     transition: transform var(--transition-fast);
   }

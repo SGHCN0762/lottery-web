@@ -1,11 +1,12 @@
 <template>
-  <div class="custom-card tech-card">
-    <div class="card-icon-container">
-      <div class="card-icon">{{ icon }}</div>
+  <div class="food-card tech-card">
+    <div class="food-image-container">
+      <div class="food-image">{{ icon }}</div>
       <div class="tech-glow"></div>
+      <div class="tech-corner"></div>
     </div>
-    <div class="card-content">
-      <h3>{{ title }}</h3>
+    <div class="food-content">
+      <h3>{{ name }}</h3>
       <p>{{ description }}</p>
     </div>
     <div class="tech-border"></div>
@@ -18,7 +19,7 @@ defineProps({
     type: String,
     required: true
   },
-  title: {
+  name: {
     type: String,
     required: true
   },
@@ -30,7 +31,7 @@ defineProps({
 </script>
 
 <style lang="less" scoped>
-.custom-card {
+.food-card {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   border-radius: var(--radius-lg);
@@ -72,11 +73,11 @@ defineProps({
     }
   }
 
-  .card-icon-container {
+  .food-image-container {
     position: relative;
     flex-shrink: 0;
     
-    .card-icon {
+    .food-image {
       font-size: 28px;
       background: rgba(0, 0, 0, 0.4);
       width: 48px;
@@ -102,18 +103,38 @@ defineProps({
       opacity: 0;
       transition: all 0.3s ease;
     }
+    
+    .tech-corner {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border: 1px solid rgba(0, 255, 255, 0.6);
+      border-radius: calc(var(--radius-md) + 2px);
+      opacity: 0;
+      z-index: 0;
+      transition: all 0.3s ease;
+      background: linear-gradient(45deg, transparent 40%, rgba(0, 255, 255, 0.2) 50%, transparent 60%);
+      background-size: 200% 200%;
+    }
   }
   
-  &:hover .card-icon-container .tech-glow {
+  &:hover .food-image-container .tech-glow {
     opacity: 1;
   }
   
-  &:hover .card-icon {
+  &:hover .food-image-container .tech-corner {
+    opacity: 1;
+    animation: tech-corner-move 3s linear infinite;
+  }
+  
+  &:hover .food-image {
     transform: scale(1.1);
     filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8));
   }
 
-  .card-content {
+  .food-content {
     flex: 1;
     min-width: 0;
     position: relative;
@@ -124,18 +145,17 @@ defineProps({
       font-weight: var(--font-weight-medium);
       margin: 0 0 4px 0;
       line-height: 1.4;
-      color: #fff;
-      text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+      color: #ffffff;
+      text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
     }
 
     p {
       font-size: 12px;
-      opacity: 0.8;
       margin: 0;
       line-height: 1.5;
       word-wrap: break-word;
       overflow-wrap: break-word;
-      color: rgba(0, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.9);
     }
   }
 }
@@ -150,6 +170,15 @@ defineProps({
   }
   100% {
     box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  }
+}
+
+@keyframes tech-corner-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
   }
 }
 </style>

@@ -88,7 +88,7 @@ defineProps({
       }
 
       &.checked-in {
-        background: rgba(82, 196, 26, 0.1);
+        background: rgba(7, 193, 96, 0.1);
 
         .day-number {
           color: var(--color-success);

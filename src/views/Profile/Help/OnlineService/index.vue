@@ -208,7 +208,7 @@
    * 服务状态颜色
    */
   const serviceStatusColor = computed(() => {
-    return isServiceTime.value ? '#52c41a' : '#d9d9d9';
+    return isServiceTime.value ? 'var(--color-success)' : '#d9d9d9';
   });
 
   // ========================================
@@ -501,7 +501,7 @@
           .dot {
             width: 8px;
             height: 8px;
-            background: #52c41a;
+            background: var(--color-success);
             border-radius: var(--radius-full);
             animation: pulse 2s infinite;
           }

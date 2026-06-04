@@ -62,10 +62,10 @@
     box-shadow: var(--shadow-card);
 
     /* 日历特定颜色变量 */
-    --calendar-today-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --calendar-today-shadow: rgba(102, 126, 234, 0.4);
-    --calendar-festival-gradient: linear-gradient(135deg, rgba(255, 149, 0, 0.1) 0%, rgba(255, 149, 0, 0.05) 100%);
-    --calendar-solar-term-color: #07c160;
+    --calendar-today-gradient: var(--gradient-primary);
+    --calendar-today-shadow: rgba(25, 137, 250, 0.4);
+    --calendar-festival-gradient: linear-gradient(135deg, rgba(255, 151, 106, 0.1) 0%, rgba(255, 151, 106, 0.05) 100%);
+    --calendar-solar-term-color: var(--color-success);
     --calendar-solar-term-gradient: linear-gradient(135deg, rgba(7, 193, 96, 0.1) 0%, rgba(7, 193, 96, 0.05) 100%);
 
     .calendar-header {

@@ -72,7 +72,7 @@ const formatRecord = (record) => {
       animation: slideIn 0.3s ease-out;
 
       &.correct {
-        background: rgba(82, 196, 26, 0.1);
+        background: rgba(7, 193, 96, 0.1);
         border: 1px solid var(--color-success);
       }
 

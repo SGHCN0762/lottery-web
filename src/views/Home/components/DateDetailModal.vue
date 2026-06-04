@@ -7,7 +7,7 @@
       </div>
       <div class="modal-content">
         <div v-if="festival" class="detail-festival">
-          <van-icon name="gift-o" size="24" color="#FF9500" />
+          <van-icon name="gift-o" size="24" color="var(--color-warning)" />
           <span>{{ festival }}</span>
         </div>
         <div v-if="weekdayText" class="detail-weekday">

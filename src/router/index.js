@@ -249,7 +249,7 @@ const routes = [
   {
     path: '/new-year-eve',
     name: 'NewYearEve',
-    component: () => import(/* webpackChunkName: "new-year-eve" */ '@/views/NewYearEve/index.vue'),
+    component: () => import(/* webpackChunkName: "new-year-eve" */ '@/views/Home/NewYearEve/index.vue'),
     meta: {
       layout: 'PageLayout',
       title: 'newYearEve.title',

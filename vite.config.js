@@ -87,7 +87,7 @@ export default defineConfig(({ mode }) => {
                 return 'vendor-vant';
               }
 
-              // 农历计算库（较大，单独拆分）
+              // 农历计算库（较大，单独拆分）- 延迟加载
               if (id.includes('lunar-javascript')) {
                 return 'vendor-lunar';
               }
@@ -100,6 +100,11 @@ export default defineConfig(({ mode }) => {
               // 日期处理库
               if (id.includes('dayjs')) {
                 return 'vendor-dayjs';
+              }
+
+              // 数字格式化库
+              if (id.includes(' numeral') || id.includes('format')) {
+                return 'vendor-format';
               }
             }
           },
@@ -139,10 +144,15 @@ export default defineConfig(({ mode }) => {
 
     // 预加载配置
     optimizeDeps: {
-      // 预构建依赖
-      include: ['vue', 'vue-router', 'pinia', 'vue-i18n', 'vant'],
-      // 排除不需要预构建的依赖
-      exclude: isProd ? ['lunar-javascript'] : [], // 较大的库，延迟加载
+      // 预构建依赖 - 包含 lunar-javascript（CommonJS 需要预构建）
+      include: [
+        'vue',
+        'vue-router',
+        'pinia',
+        'vant',
+        'dayjs',
+        'lunar-javascript',
+      ],
     },
 
     // ========================================

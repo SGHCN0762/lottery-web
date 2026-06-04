@@ -68,7 +68,7 @@ const daysToWeekend = computed(() => {
 .header-card {
   margin: var(--spacing-md);
   padding: var(--spacing-xl);
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-primary);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   color: white;

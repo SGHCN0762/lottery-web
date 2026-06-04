@@ -1,4 +1,5 @@
-import { Solar } from 'lunar-javascript';
+import * as LunarModule from 'lunar-javascript';
+const { Solar } = LunarModule;
 
 /**
  * 获取农历日期

@@ -154,8 +154,8 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: rgba(0, 255, 255, 0.9);
-      text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      color: #ffffff;
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
       position: relative;
       z-index: 1;
     }
@@ -178,7 +178,8 @@
       .countdown-separator {
         font-size: 36px;
         font-weight: bold;
-        color: rgba(0, 255, 255, 0.8);
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
         animation: pulse 1s ease-in-out infinite;
         flex-shrink: 0;
         margin: 0 5px;
@@ -209,10 +210,9 @@
 
         .countdown-label {
           font-size: 16px;
-          opacity: 0.8;
           text-transform: uppercase;
           letter-spacing: 0.5px;
-          color: rgba(0, 255, 255, 0.9);
+          color: #ffffff;
           font-weight: 600;
         }
       }
@@ -220,8 +220,7 @@
 
     .countdown-date {
       font-size: 16px;
-      opacity: 0.9;
-      color: rgba(0, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.95);
       text-transform: uppercase;
       letter-spacing: 1px;
       position: relative;
@@ -237,9 +236,9 @@
         height: 1px;
         background: linear-gradient(
           90deg,
-          rgba(0, 255, 255, 0) 0%,
-          rgba(0, 255, 255, 0.8) 50%,
-          rgba(0, 255, 255, 0) 100%
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(255, 255, 255, 0) 100%
         );
         transform: translateX(-50%);
       }

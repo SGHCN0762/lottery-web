@@ -67,7 +67,7 @@ defineProps({
       transition: all var(--transition-fast);
 
       &.achieved {
-        background: linear-gradient(135deg, rgba(82, 196, 26, 0.1) 0%, rgba(82, 196, 26, 0.05) 100%);
+        background: linear-gradient(135deg, rgba(7, 193, 96, 0.1) 0%, rgba(7, 193, 96, 0.05) 100%);
         border-color: var(--color-success);
 
         .milestone-days {

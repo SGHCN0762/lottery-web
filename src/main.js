@@ -13,7 +13,7 @@ import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import router from './router';
 
-// 国际化
+// 国际化 - 同步加载（App.vue 中使用 useI18n）
 import i18n from './i18n';
 
 // Vant 组件按需导入
@@ -35,11 +35,18 @@ import {
   Locale,
   Progress,
   Tag,
+  DropdownMenu,
+  DropdownItem,
+  Empty,
+  Switch,
+  Tabs,
+  Tab,
+  Dialog,
+  Picker,
+  Form,
+  Checkbox,
+  Image,
 } from 'vant';
-
-// 导入 Vant 语言包
-import vantZhCN from 'vant/es/locale/lang/zh-CN';
-import vantEnUS from 'vant/es/locale/lang/en-US';
 
 // 主题管理
 import { useThemeStore } from './stores/theme';
@@ -85,6 +92,17 @@ app.use(Toast);
 app.use(Popup);
 app.use(Progress);
 app.use(Tag);
+app.use(DropdownMenu);
+app.use(DropdownItem);
+app.use(Empty);
+app.use(Switch);
+app.use(Tabs);
+app.use(Tab);
+app.use(Dialog);
+app.use(Picker);
+app.use(Form);
+app.use(Checkbox);
+app.use(Image);
 
 // ========================================
 // 初始化主题系统（同步执行，避免闪烁）
@@ -97,15 +115,16 @@ themeStore.initTheme();
 // ========================================
 const initVantLocale = () => {
   const currentLocale = i18n.global.locale.value;
-  switch (currentLocale) {
-    case 'zh-CN':
-      Locale.use('zh-CN', vantZhCN);
-      break;
-    case 'en':
-      Locale.use('en-US', vantEnUS);
-      break;
-    default:
-      Locale.use('zh-CN', vantZhCN);
+
+  // 动态导入 Vant 语言包
+  if (currentLocale === 'zh-CN') {
+    import('vant/es/locale/lang/zh-CN').then(vantZhCN => {
+      Locale.use('zh-CN', vantZhCN.default);
+    });
+  } else if (currentLocale === 'en') {
+    import('vant/es/locale/lang/en-US').then(vantEnUS => {
+      Locale.use('en-US', vantEnUS.default);
+    });
   }
 };
 
@@ -115,7 +134,7 @@ initVantLocale();
 // ========================================
 // 监听语言变化，更新 Vant 语言
 // ========================================
-i18n.global.onLanguageChange = (locale) => {
+i18n.global.onLanguageChange = () => {
   initVantLocale();
 };
 
@@ -130,44 +149,40 @@ requestAnimationFrame(() => {
 });
 
 // ========================================
-// INP (Interaction to Next Paint) 性能监控
+// 性能监控（仅开发环境）
 // ========================================
-if ('PerformanceObserver' in window) {
-  // 监控首次输入延迟 (FID)
-  try {
-    const fidObserver = new PerformanceObserver(list => {
-      for (const entry of list.getEntries()) {
-        if (entry.cancelable) {
-          console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
-        }
-      }
-    });
-    fidObserver.observe({ type: 'first-input', buffered: true });
-  } catch (e) {
-    console.warn('FID observation not supported');
-  }
+if (process.env.NODE_ENV === 'development' && 'PerformanceObserver' in window) {
+  const observers = [];
 
-  // 监控长任务 (Long Tasks)
-  try {
-    const longTaskObserver = new PerformanceObserver(list => {
-      for (const entry of list.getEntries()) {
-        console.warn(`Long task detected: ${entry.duration.toFixed(2)}ms at ${entry.startTime.toFixed(2)}ms`);
-      }
-    });
-    longTaskObserver.observe({ type: 'longtask', buffered: true });
-  } catch (e) {
-    console.warn('Long task observation not supported');
-  }
+  const createObserver = (type, callback, buffered = true) => {
+    try {
+      const observer = new PerformanceObserver(list => {
+        callback(list.getEntries());
+      });
+      observer.observe({ type, buffered });
+      observers.push({ observer, type });
+    } catch (e) {
+      console.warn(`${type} observation not supported`);
+    }
+  };
 
-  // 监控 LCP
-  try {
-    const lcpObserver = new PerformanceObserver(list => {
-      const entries = list.getEntries();
-      const lastEntry = entries[entries.length - 1];
+  createObserver('first-input', entries => {
+    const entry = entries.find(e => e.cancelable);
+    if (entry) {
+      console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+    }
+  });
+
+  createObserver('longtask', entries => {
+    entries.forEach(entry => {
+      console.warn(`Long task: ${entry.duration.toFixed(2)}ms at ${entry.startTime.toFixed(2)}ms`);
+    });
+  });
+
+  createObserver('largest-contentful-paint', entries => {
+    const lastEntry = entries[entries.length - 1];
+    if (lastEntry) {
       console.log(`LCP: ${lastEntry.startTime.toFixed(2)}ms`);
-    });
-    lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
-  } catch (e) {
-    console.warn('LCP observation not supported');
-  }
+    }
+  });
 }

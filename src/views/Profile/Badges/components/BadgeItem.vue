@@ -175,7 +175,7 @@
 
         .badge-desc {
           font-size: 13px;
-          color: var(--color-text-tertiary);
+          color: var(--color-text-secondary);
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -186,7 +186,7 @@
         .progress-text {
           display: block;
           font-size: 12px;
-          color: var(--color-text-tertiary);
+          color: #646566;
           margin-top: 6px;
           text-align: right;
         }
@@ -197,9 +197,9 @@
         align-items: center;
         gap: 4px;
         font-size: 12px;
-        color: var(--color-text-tertiary);
+        color: #646566;
         padding: 4px 8px;
-        background: var(--color-bg-tertiary);
+        background: #eeeeef;
         border-radius: 4px;
       }
     }

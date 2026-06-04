@@ -34,7 +34,7 @@ const switchLayer = (type) => {
 <style lang="less" scoped>
 .map-layer-switcher {
   display: flex;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: var(--color-bg-card);
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -42,23 +42,23 @@ const switchLayer = (type) => {
   .layer-btn {
     padding: 6px 12px;
     border: none;
-    background: transparent;
+    background-color: var(--color-bg-secondary);
     cursor: pointer;
     font-size: 12px;
-    color: #333;
+    color: var(--color-text-primary);
     transition: background-color 0.3s;
 
     &:not(:last-child) {
-      border-right: 1px solid #e0e0e0;
+      border-right: 1px solid var(--color-border);
     }
 
     &.active {
-      background-color: #1890ff;
-      color: #fff;
+      background-color: var(--color-primary);
+      color: var(--color-text-primary);
     }
 
     &:hover:not(.active) {
-      background-color: #f5f5f5;
+      background-color: var(--color-bg-primary);
     }
   }
 }

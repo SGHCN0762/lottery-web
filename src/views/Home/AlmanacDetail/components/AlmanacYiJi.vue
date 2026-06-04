@@ -82,9 +82,9 @@
         }
 
         .ji-tag {
-          background: var(--color-bg-tertiary);
-          border: 1px solid var(--color-border);
-          color: var(--color-text-primary);
+          background: rgba(238, 68, 68, 0.08);
+          border: 1px solid rgba(238, 68, 68, 0.25);
+          color: #cc3333;
         }
 
         .empty-text {
@@ -95,10 +95,10 @@
     }
 
     .yi-block .icon {
-      color: #52c41a;
+      color: var(--color-success);
     }
     .ji-block .icon {
-      color: #ff4d4f;
+      color: var(--color-danger);
     }
   }
 </style>

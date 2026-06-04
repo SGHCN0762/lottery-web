@@ -52,7 +52,10 @@
   import { Popup as VanPopup } from 'vant';
   import { getFestivalOrSolarTermInfo } from '../data/festivalInfo';
   import AlmancCard from './AlmancCard.vue';
-  import { isEmpty } from 'lodash-es';
+  const isEmpty = (obj) => {
+  if (!obj) return true;
+  return Object.keys(obj).length === 0;
+};
 
   const props = defineProps({
     show: {
@@ -163,15 +166,15 @@
 
           .custom-tag {
             padding: 6px 12px;
-            background: rgba(255, 149, 0, 0.08);
-            border: 1px solid rgba(255, 149, 0, 0.2);
+            background: rgba(255, 151, 106, 0.08);
+            border: 1px solid rgba(255, 151, 106, 0.2);
             border-radius: 6px;
             font-size: 13px;
-            color: var(--color-warning);
+            color: #d67600;
             transition: all 0.15s ease;
 
             &:active {
-              opacity: 0.7;
+              opacity: 0.85;
               transform: scale(0.98);
             }
           }
@@ -182,11 +185,11 @@
             border: 1px solid rgba(7, 193, 96, 0.2);
             border-radius: 6px;
             font-size: 13px;
-            color: #07c160;
+            color: #009944;
             transition: all 0.15s ease;
 
             &:active {
-              opacity: 0.7;
+              opacity: 0.85;
               transform: scale(0.98);
             }
           }

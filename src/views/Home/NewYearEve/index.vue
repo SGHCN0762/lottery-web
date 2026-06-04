@@ -133,7 +133,7 @@
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
-    background: linear-gradient(135deg, #0a0e27 0%, #1a237e 50%, #4a148c 100%);
+    background: var(--gradient-primary);
     color: #fff;
 
     // 添加科技感光效

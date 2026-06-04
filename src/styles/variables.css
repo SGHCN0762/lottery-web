@@ -1,0 +1,217 @@
+/**
+ * 主题变量定义文件 - 基于 Vant 4.x 官方设计规范
+ * 
+ * 设计规范：https://vant-ui.github.io/vant/#/zh-CN/design
+ * 
+ * 所有颜色变量都通过 CSS Custom Properties 定义，便于后续多主题功能扩展
+ */
+
+:root {
+  /* ========================================
+     Vant 官方色彩规范
+     ======================================== */
+
+  /* ---- 主色 / Primary ---- */
+  --van-primary-color: #1989fa;
+  --van-blue: #1989fa;
+  --van-blue-1: #e9f3ff;
+  --van-blue-2: #b4d2fd;
+  --van-blue-3: #80abfc;
+  --van-blue-4: #4d85fa;
+  --van-blue-5: #1a5ef8;
+  --van-blue-6: #0052d7;
+  --van-blue-7: #003eb3;
+  --van-blue-8: #002e8f;
+  --van-blue-9: #001f6b;
+
+  /* ---- 功能色 / Functional Colors ---- */
+  --van-success-color: #07c160;
+  --van-green: #07c160;
+  --van-green-1: #e8fff3;
+  --van-green-2: #bbf5d6;
+  --van-green-3: #8ceab9;
+  --van-green-4: #5edf9c;
+  --van-green-5: #30d47e;
+  --van-green-6: #18c964;
+  --van-green-7: #07c160
+  --van-green-8: #06994d;
+  --van-green-9: #04723a;
+
+  --van-warning-color: #ff976a;
+  --van-orange: #ff976a;
+  --van-orange-1: #fff4ed;
+  --van-orange-2: #ffe0d1;
+  --van-orange-3: #ffcbb4;
+  --van-orange-4: #ffb697;
+  --van-orange-5: #ffa17a;
+  --van-orange-6: #ff8c5d;
+  --van-orange-7: #ff7a44;
+  --van-orange-8: #f6682b;
+  --van-orange-9: #d65612;
+
+  --van-danger-color: #ee0a24;
+  --van-red: #ee0a24;
+  --van-red-1: #fff1f0;
+  --van-red-2: #ffd6d6;
+  --van-red-3: #ffbab8;
+  --van-red-4: #ff9b99;
+  --van-red-5: #fd7a77;
+  --van-red-6: #f65454;
+  --van-red-7: #ee2f2f;
+  --van-red-8: #d50e0e;
+  --van-red-9: #bb0d0d;
+
+  /* ---- 中性色 / Neutral Colors ---- */
+  --van-gray-1: #f7f8fa;
+  --van-gray-2: #eeeeef;
+  --van-gray-3: #e5e5e6;
+  --van-gray-4: #dcdee0;
+  --van-gray-5: #c8c9cc;
+  --van-gray-6: #969799;
+  --van-gray-7: #646566;
+  --van-gray-8: #323233;
+
+  /* ========================================
+     项目统一色彩变量（基于 Vant 规范）
+     ======================================== */
+
+  /* 主色调 - 使用 Vant 品牌色 */
+  --color-primary: var(--van-primary-color);
+  --color-primary-light: #69b1ff;
+  --color-primary-dark: #096dd9;
+
+  /* 功能色系 - 使用 Vant 标准色 */
+  --color-success: var(--van-success-color);
+  --color-warning: var(--van-warning-color);
+  --color-danger: var(--van-danger-color);
+  --color-info: var(--van-primary-color);
+
+  /* 渐变背景 */
+  --gradient-primary: linear-gradient(135deg, var(--van-primary-color) 0%, var(--van-blue-6) 100%);
+  --gradient-primary-light: linear-gradient(135deg, var(--van-blue-4) 0%, var(--van-primary-color) 100%);
+
+  /* 中性色系（浅色主题） */
+  --color-text-primary: #323233;
+  --color-text-secondary: #646566;
+  --color-text-tertiary: #969799;
+  --color-text-quaternary: #c8c9cc;
+  --color-text-placeholder: #c8c9cc;
+
+  --color-bg-primary: #f7f8fa;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #eeeeef;
+  --color-bg-card: #ffffff;
+
+  --color-border: #ebedf0;
+  --color-border-light: #f7f8fa;
+
+  /* ========================================
+     阴影系统
+     ======================================== */
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  /* ========================================
+     间距系统（基于8px网格）
+     ======================================== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 28px;
+
+  /* ========================================
+     圆角系统
+     ======================================== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     字体系统
+     ======================================== */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-mono: ui-monospace, Consolas, Monaco, monospace;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 40px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.6;
+
+  /* ========================================
+     过渡动画
+     ======================================== */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ========================================
+     Z-index 层级
+     ======================================== */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+}
+
+/* ========================================
+   深色主题变量
+   ======================================== */
+
+[data-theme="dark"] {
+  /* 主色调 - 适配深色模式 */
+  --color-primary: #4d85fa;
+  --color-primary-light: #80abfc;
+  --color-primary-dark: #1989fa;
+
+  /* 渐变背景 */
+  --gradient-primary: linear-gradient(135deg, #4d85fa 0%, #1989fa 100%);
+  --gradient-primary-light: linear-gradient(135deg, #80abfc 0%, #4d85fa 100%);
+
+  /* 中性色系（深色主题） */
+  --color-text-primary: #f7f8fa;
+  --color-text-secondary: #c8c9cc;
+  --color-text-tertiary: #969799;
+  --color-text-quaternary: #646566;
+  --color-text-placeholder: #646566;
+
+  --color-bg-primary: #0f0f0f;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-tertiary: #252525;
+  --color-bg-card: #1a1a1a;
+
+  --color-border: #2a2a2a;
+  --color-border-light: #1a1a1a;
+
+  /* 阴影调整（深色模式更柔和） */
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.3);
+}

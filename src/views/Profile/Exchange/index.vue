@@ -527,7 +527,7 @@
       .van-icon {
         font-size: 18px;
         cursor: pointer;
-        color: var(--color-text-secondary);
+        color: #646566;
       }
     }
 
@@ -541,27 +541,27 @@
 
         .detail-name {
           font-size: var(--font-size-lg);
-          color: var(--color-text-primary);
+          color: #323233;
           margin: 0 0 var(--spacing-xs) 0;
         }
 
         .detail-desc {
           font-size: 13px;
-          color: var(--color-text-secondary);
+          color: #646566;
           line-height: 1.6;
           margin: 0 0 var(--spacing-md) 0;
         }
 
         h4 {
           font-size: var(--font-size-sm);
-          color: var(--color-text-primary);
+          color: #323233;
           margin: 0 0 var(--spacing-xs) 0;
           font-weight: var(--font-weight-semibold);
         }
 
         p {
           font-size: 13px;
-          color: var(--color-text-secondary);
+          color: #646566;
           line-height: 1.6;
           margin: 0 0 var(--spacing-md) 0;
         }
@@ -572,7 +572,7 @@
 
           li {
             font-size: 13px;
-            color: var(--color-text-secondary);
+            color: #646566;
             line-height: 1.8;
           }
         }
@@ -584,14 +584,14 @@
       justify-content: space-between;
       align-items: center;
       padding: var(--spacing-md);
-      border-top: 1px solid var(--color-border);
-      background: var(--color-bg-secondary);
+      border-top: 1px solid #ebedf0;
+      background: #ffffff;
 
       .footer-price {
         display: flex;
         align-items: center;
         gap: var(--spacing-xs);
-        color: var(--color-warning);
+        color: #ff976a;
         font-size: var(--font-size-lg);
         font-weight: var(--font-weight-bold);
       }

@@ -39,7 +39,7 @@
           <!-- 成就奖励 -->
           <div class="info-card" v-if="badge.reward">
             <div class="card-header">
-              <van-icon name="gold-coin-o" size="18" color="#faad14" />
+              <van-icon name="gold-coin-o" size="18" color="var(--color-warning)" />
               <span>{{ t('badges.detail.reward') }}</span>
             </div>
             <div class="card-content reward-value">
@@ -51,7 +51,7 @@
           <!-- 小贴士 -->
           <div class="info-card tips-card">
             <div class="card-header">
-              <van-icon name="bulb-o" size="18" color="#52c41a" />
+              <van-icon name="bulb-o" size="18" color="var(--color-success)" />
               <span>{{ t('badges.detail.tips') }}</span>
             </div>
             <p class="card-content">{{ badge.tips || t('badges.detail.defaultTips') }}</p>
@@ -127,8 +127,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 16px 20px;
-      background: var(--color-bg-secondary);
-      border-bottom: 1px solid var(--color-border-light);
+      border-bottom: 1px solid #f7f8fa;
       transition: all var(--transition-base);
 
       h3 {
@@ -141,7 +140,7 @@
       .van-icon {
         font-size: 20px;
         cursor: pointer;
-        color: var(--color-text-tertiary);
+        color: #969799;
         padding: 4px;
       }
     }
@@ -179,7 +178,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          color: white;
+          color: var(--color-text-primary);
           border: 2px solid var(--color-bg-secondary);
         }
 
@@ -194,7 +193,7 @@
 
           .info-desc {
             font-size: 14px;
-            color: var(--color-text-tertiary);
+            color: var(--color-text-secondary);
             line-height: 1.6;
           }
         }
@@ -235,12 +234,12 @@
               gap: 4px;
               font-size: 24px;
               font-weight: 600;
-              color: var(--color-warning);
+              color: #ff976a;
 
               .points-label {
                 font-size: 14px;
                 font-weight: 400;
-                color: var(--color-text-tertiary);
+                color: #969799;
               }
             }
           }
@@ -248,10 +247,10 @@
           &.tips-card {
             background: linear-gradient(
               135deg,
-              rgba(82, 196, 26, 0.08) 0%,
+              rgba(7, 193, 96, 0.08) 0%,
               rgba(115, 209, 61, 0.08) 100%
             );
-            border: 1px solid rgba(82, 196, 26, 0.15);
+            border: 1px solid rgba(7, 193, 96, 0.15);
           }
         }
       }

@@ -1,8 +1,9 @@
 <template>
   <div class="almanac-detail-page" ref="pageRef">
-    <template v-if="almanac">
+    <template v-if="almanac && isComponentsLoaded">
       <!-- 头部信息 -->
-      <AlmanacHeader
+      <component
+        :is="AlmanacHeader"
         :date-str="dateStr"
         :almanac="almanac"
         :lunar-info="lunarInfo"
@@ -12,16 +13,16 @@
       <!-- 内容区 -->
       <div class="page-content">
         <!-- 宜忌 -->
-        <AlmanacYiJi :almanac="almanac" />
+        <component :is="AlmanacYiJi" :almanac="almanac" />
 
         <!-- 冲煞 -->
-        <AlmanacChongSha :almanac="almanac" />
+        <component :is="AlmanacChongSha" :almanac="almanac" />
 
         <!-- 详细信息 -->
-        <AlmanacDetail :almanac="almanac" />
+        <component :is="AlmanacDetail" :almanac="almanac" />
 
         <!-- 彭祖百忌 -->
-        <AlmanacPengZu :almanac="almanac" />
+        <component :is="AlmanacPengZu" :almanac="almanac" />
       </div>
     </template>
 
@@ -41,6 +42,7 @@
   const AlmanacChongSha = shallowRef(null);
   const AlmanacDetail = shallowRef(null);
   const AlmanacPengZu = shallowRef(null);
+  const isComponentsLoaded = ref(false);
 
   const loadComponents = async () => {
     const [
@@ -62,6 +64,7 @@
     AlmanacChongSha.value = ChongSha;
     AlmanacDetail.value = Detail;
     AlmanacPengZu.value = PengZu;
+    isComponentsLoaded.value = true;
   };
 
   onMounted(() => {
