@@ -10,7 +10,7 @@
   import { ref, onMounted, onUnmounted } from 'vue';
   import MapLocation from './MapLocation.vue';
   import MapLayerSwitcher from './MapLayerSwitcher.vue';
-  import { wgs84ToGcj02 } from '@/utils/crood.js';
+  import { wgs84ToGcj02 } from '@/utils/coord.js';
 
   const emit = defineEmits(['click', 'dblclick']);
 

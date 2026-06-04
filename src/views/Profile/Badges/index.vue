@@ -273,7 +273,7 @@
      成就列表容器
      ======================================== */
   .badges-list {
-    padding: 0 16px;
+    margin: 0 var(--spacing-sm) var(--spacing-md);
 
     .badges-container {
       display: flex;

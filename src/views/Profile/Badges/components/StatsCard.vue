@@ -1,35 +1,23 @@
 <template>
-  <section class="stats-section">
-    <div class="stats-container">
-      <!-- 总数 -->
-      <div class="stat-card tertiary">
-        <div class="stat-content">
-          <div class="stat-number">{{ totalCount }}</div>
-          <div class="stat-text">{{ t('badges.total') }}</div>
-        </div>
-      </div>
-
-      <!-- 已解锁 -->
-      <div class="stat-card primary">
-        <div class="stat-content">
-          <div class="stat-number">{{ unlockedCount }}</div>
-          <div class="stat-text">{{ t('badges.unlocked') }}</div>
-        </div>
-      </div>
-
-      <!-- 完成率 -->
-      <div class="stat-card secondary">
-        <div class="stat-content">
-          <div class="stat-number">{{ completionRate }}%</div>
-          <div class="stat-text">{{ t('badges.completionRate') }}</div>
-        </div>
-      </div>
+  <section class="stats-card">
+    <div class="stat-item">
+      <div class="stat-value">{{ totalCount }}</div>
+      <div class="stat-label">{{ t('badges.total') }}</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-value">{{ unlockedCount }}</div>
+      <div class="stat-label">{{ t('badges.unlocked') }}</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-value">{{ completionRate }}%</div>
+      <div class="stat-label">{{ t('badges.completionRate') }}</div>
     </div>
   </section>
 </template>
 
 <script setup>
-  import { Icon as VanIcon } from 'vant';
   import { useI18n } from 'vue-i18n';
 
   // ========================================
@@ -60,41 +48,36 @@
 </script>
 
 <style lang="less" scoped>
-  .stats-section {
-    .stats-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+  .stats-card {
+    margin: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+    .stat-item {
+      text-align: center;
+      flex: 1;
+
+      .stat-value {
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-bold);
+        margin-bottom: 2px;
+      }
+
+      .stat-label {
+        font-size: 11px;
+        opacity: 0.85;
+      }
     }
 
-    .stat-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 8px;
-      border-radius: 12px;
-      transition: all var(--transition-base);
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-
-      .stat-content {
-        .stat-number {
-          font-size: 24px;
-          font-weight: 700;
-          line-height: 1;
-          margin-bottom: 4px;
-          letter-spacing: -0.3px;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .stat-text {
-          font-size: 11px;
-          opacity: 0.9;
-          font-weight: 500;
-        }
-      }
+    .stat-divider {
+      width: 1px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.2);
     }
   }
 </style>

@@ -92,10 +92,7 @@ export default defineConfig(({ mode }) => {
                 return 'vendor-lunar';
               }
 
-              // Lodash 工具库
-              if (id.includes('lodash-es')) {
-                return 'vendor-lodash';
-              }
+              
 
               // 日期处理库
               if (id.includes('dayjs')) {

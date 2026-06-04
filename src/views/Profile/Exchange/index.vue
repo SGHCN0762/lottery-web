@@ -13,18 +13,18 @@
       </section>
 
       <!-- 分类标签 -->
-      <section class="category-tabs">
-        <van-tabs v-model:active="activeCategory" @change="handleCategoryChange">
-          <van-tab :title="t('exchange.categories.all')" name="all" />
-          <van-tab :title="t('exchange.categories.physical')" name="physical" />
-          <van-tab :title="t('exchange.categories.virtual')" name="virtual" />
-          <van-tab :title="t('exchange.categories.privilege')" name="privilege" />
-        </van-tabs>
-      </section>
+      <FilterTabs
+        v-model="activeCategory"
+        :tabs="categoryTabs"
+        @update:model-value="handleCategoryChange"
+      />
 
       <!-- 兑换商品列表 -->
       <section class="products-list">
-        <van-empty v-if="filteredProducts.length === 0" :description="t('exchange.noExchangeableProducts')" />
+        <van-empty
+          v-if="filteredProducts.length === 0"
+          :description="t('exchange.noExchangeableProducts')"
+        />
 
         <div v-else class="products-grid">
           <div
@@ -43,7 +43,9 @@
               >
                 <template v-slot:error>{{ t('exchange.loadFailed') }}</template>
               </van-image>
-              <van-tag v-if="product.hot" type="danger" class="hot-tag"> {{ t('exchange.hot') }} </van-tag>
+              <van-tag v-if="product.hot" type="danger" class="hot-tag">
+                {{ t('exchange.hot') }}
+              </van-tag>
             </div>
 
             <div class="product-info">
@@ -166,9 +168,8 @@
   import { showToast, showSuccessToast } from 'vant';
   import dayjs from 'dayjs';
   import { useAppDataStore } from '@/stores/appData';
+  import FilterTabs from '@/components/FilterTabs/index.vue';
   import {
-    Tabs as VanTabs,
-    Tab as VanTab,
     Image as VanImage,
     Tag as VanTag,
     Button as VanButton,
@@ -187,7 +188,8 @@
   // 统一数据管理
   // ========================================
   const appDataStore = useAppDataStore();
-  const { userPoints, addPoints, deductPoints, hasEnoughPoints, addRecord, loadAllData } = appDataStore;
+  const { userPoints, addPoints, deductPoints, hasEnoughPoints, addRecord, loadAllData } =
+    appDataStore;
 
   // ========================================
   // 响应式数据
@@ -208,6 +210,16 @@
     }
     return allProducts.value.filter(p => p.category === activeCategory.value);
   });
+
+  // ========================================
+  // 分类标签数据
+  // ========================================
+  const categoryTabs = [
+    { value: 'all', label: t('exchange.categories.all') },
+    { value: 'physical', label: t('exchange.categories.physical') },
+    { value: 'virtual', label: t('exchange.categories.virtual') },
+    { value: 'privilege', label: t('exchange.categories.privilege') },
+  ];
 
   // ========================================
   // 商品数据
@@ -339,7 +351,7 @@
       gameName: t('exchange.title'),
       result: `exchange:${currentProduct.value.name}`,
       pointsChange: -currentProduct.value.price,
-      timestamp: dayjs().valueOf()
+      timestamp: dayjs().valueOf(),
     });
 
     showSuccessToast(t('exchange.exchangeSuccess'));
@@ -418,13 +430,6 @@
         font-weight: var(--font-weight-bold);
       }
     }
-  }
-
-  /* ========================================
-   分类标签
-   ======================================== */
-  .category-tabs {
-    margin: 0 var(--spacing-sm) var(--spacing-sm);
   }
 
   /* ========================================

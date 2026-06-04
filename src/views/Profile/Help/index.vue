@@ -2,95 +2,98 @@
   <div class="help-page">
     <div class="page-content">
       <!-- 搜索框 -->
-      <section class="search-section">
-        <van-search
-          v-model="searchKeyword"
-          :placeholder="t('help.searchPlaceholder')"
-          shape="round"
-          background="transparent"
-        />
+      <van-search
+        v-model="searchKeyword"
+        :placeholder="t('help.searchPlaceholder')"
+        shape="round"
+        background="transparent"
+      />
+
+      <!-- 常见问题 -->
+      <section class="faq-section">
+        <div class="section-title">{{ t('help.faq') }}</div>
+        <van-collapse v-model="activeNames" accordion>
+          <van-collapse-item
+            v-for="item in faqList"
+            :key="item.id"
+            :title="item.question"
+            :name="item.id"
+          >
+            <div class="answer-content">{{ item.answer }}</div>
+          </van-collapse-item>
+        </van-collapse>
       </section>
 
-    <!-- 常见问题 -->
-    <section class="faq-section">
-      <div class="section-title">{{ t('help.faq') }}</div>
-      <van-collapse v-model="activeNames" accordion>
-        <van-collapse-item
-          v-for="item in faqList"
-          :key="item.id"
-          :title="item.question"
-          :name="item.id"
-        >
-          <div class="answer-content">{{ item.answer }}</div>
-        </van-collapse-item>
-      </van-collapse>
-    </section>
+      <!-- 游戏说明 -->
+      <section class="guide-section">
+        <div class="section-title">{{ t('help.gameGuide') }}</div>
+        <van-cell-group inset>
+          <van-cell
+            v-for="game in gameGuides"
+            :key="game.id"
+            :title="game.name"
+            :icon="game.icon"
+            is-link
+            @click="showGameGuide(game)"
+          />
+        </van-cell-group>
+      </section>
 
-    <!-- 游戏说明 -->
-    <section class="guide-section">
-      <div class="section-title">{{ t('help.gameGuide') }}</div>
-      <van-cell-group inset>
-        <van-cell
-          v-for="game in gameGuides"
-          :key="game.id"
-          :title="game.name"
-          :icon="game.icon"
-          is-link
-          @click="showGameGuide(game)"
-        />
-      </van-cell-group>
-    </section>
+      <!-- 积分规则 -->
+      <section class="rules-section">
+        <div class="section-title">{{ t('help.pointsRules') }}</div>
+        <van-cell-group inset>
+          <van-cell :title="t('help.howToEarn')" is-link @click="showPointsRule('earn')" />
+          <van-cell :title="t('help.howToUse')" is-link @click="showPointsRule('use')" />
+          <van-cell :title="t('help.expireRule')" is-link @click="showPointsRule('expire')" />
+        </van-cell-group>
+      </section>
 
-    <!-- 积分规则 -->
-    <section class="rules-section">
-      <div class="section-title">{{ t('help.pointsRules') }}</div>
-      <van-cell-group inset>
-        <van-cell :title="t('help.howToEarn')" is-link @click="showPointsRule('earn')" />
-        <van-cell :title="t('help.howToUse')" is-link @click="showPointsRule('use')" />
-        <van-cell :title="t('help.expireRule')" is-link @click="showPointsRule('expire')" />
-      </van-cell-group>
-    </section>
+      <!-- 联系我们 -->
+      <section class="contact-section">
+        <div class="section-title">{{ t('help.contactUs') }}</div>
+        <van-cell-group inset>
+          <van-cell
+            :title="t('help.onlineService.title')"
+            icon="service-o"
+            is-link
+            @click="handleOnlineService"
+          />
+          <van-cell :title="t('help.feedback.title')" icon="edit" is-link @click="handleFeedback" />
+          <van-cell
+            :title="t('help.report.title')"
+            icon="warning-o"
+            is-link
+            @click="handleReport"
+          />
+        </van-cell-group>
+      </section>
 
-    <!-- 联系我们 -->
-    <section class="contact-section">
-      <div class="section-title">{{ t('help.contactUs') }}</div>
-      <van-cell-group inset>
-        <van-cell
-          :title="t('help.onlineService.title')"
-          icon="service-o"
-          is-link
-          @click="handleOnlineService"
-        />
-        <van-cell :title="t('help.feedback.title')" icon="edit" is-link @click="handleFeedback" />
-        <van-cell :title="t('help.report.title')" icon="warning-o" is-link @click="handleReport" />
-      </van-cell-group>
-    </section>
-
-    <!-- 游戏说明弹窗 -->
-    <van-popup v-model:show="showGuidePopup" round position="bottom" :style="{ height: '60%' }">
-      <div class="guide-popup" v-if="currentGame">
-        <div class="popup-header">
-          <h3>{{ currentGame.name }}</h3>
-          <van-icon name="cross" @click="showGuidePopup = false" />
-        </div>
-        <div class="popup-content">
-          <div class="guide-item">
-            <h4>{{ t('help.guidePopup.rules') }}</h4>
-            <p>{{ currentGame.rules }}</p>
+      <!-- 游戏说明弹窗 -->
+      <van-popup v-model:show="showGuidePopup" round position="bottom" :style="{ height: '60%' }">
+        <div class="guide-popup" v-if="currentGame">
+          <div class="popup-header">
+            <h3>{{ currentGame.name }}</h3>
+            <van-icon name="cross" @click="showGuidePopup = false" />
           </div>
-          <div class="guide-item">
-            <h4>{{ t('help.guidePopup.rewards') }}</h4>
-            <p>{{ currentGame.rewards }}</p>
-          </div>
-          <div class="guide-item">
-            <h4>{{ t('help.guidePopup.notes') }}</h4>
-            <p>{{ currentGame.notes }}</p>
+          <div class="popup-content">
+            <div class="guide-item">
+              <h4>{{ t('help.guidePopup.rules') }}</h4>
+              <p>{{ currentGame.rules }}</p>
+            </div>
+            <div class="guide-item">
+              <h4>{{ t('help.guidePopup.rewards') }}</h4>
+              <p>{{ currentGame.rewards }}</p>
+            </div>
+            <div class="guide-item">
+              <h4>{{ t('help.guidePopup.notes') }}</h4>
+              <p>{{ currentGame.notes }}</p>
+            </div>
           </div>
         </div>
-      </div>
-    </van-popup>
+      </van-popup>
 
-    <!-- 积分规则弹窗 -->
+      <!-- 积分规则弹窗 -->
       <van-popup v-model:show="showPointsPopup" round position="bottom" :style="{ height: '50%' }">
         <div class="points-popup">
           <div class="popup-header">
@@ -286,13 +289,6 @@
     padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
     padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
     display: flow-root;
-  }
-
-  /* ========================================
-   搜索区域
-   ======================================== */
-  .search-section {
-    margin: 0 var(--spacing-sm) var(--spacing-sm);
   }
 
   /* ========================================

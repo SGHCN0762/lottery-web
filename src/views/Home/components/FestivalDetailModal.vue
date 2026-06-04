@@ -51,7 +51,7 @@
   import { computed } from 'vue';
   import { Popup as VanPopup } from 'vant';
   import { getFestivalOrSolarTermInfo } from '../data/festivalInfo';
-  import AlmancCard from './AlmancCard.vue';
+  import AlmanacCard from './AlmanacCard.vue';
   const isEmpty = (obj) => {
   if (!obj) return true;
   return Object.keys(obj).length === 0;

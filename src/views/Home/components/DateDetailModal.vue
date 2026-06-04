@@ -23,7 +23,7 @@
 <script setup>
   import { computed } from 'vue';
   import { Icon as VanIcon, Popup as VanPopup } from 'vant';
-  import AlmancCard from './AlmancCard.vue';
+  import AlmanacCard from './AlmanacCard.vue';
 
   const props = defineProps({
     show: {

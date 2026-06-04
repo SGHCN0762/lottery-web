@@ -46,6 +46,7 @@ import {
   Form,
   Checkbox,
   Image,
+  List,
 } from 'vant';
 
 // 主题管理
@@ -103,6 +104,7 @@ app.use(Picker);
 app.use(Form);
 app.use(Checkbox);
 app.use(Image);
+app.use(List);
 
 // ========================================
 // 初始化主题系统（同步执行，避免闪烁）
