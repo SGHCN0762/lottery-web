@@ -147,13 +147,13 @@
 
         &.is-today {
           background: var(--calendar-today-gradient);
-          color: white;
+          color: var(--calendar-today-text-color);
           box-shadow: 0 4px 12px var(--calendar-today-shadow);
           /* 性能优化：移除初始动画，在JS加载后通过class添加 */
 
           .date-solar,
           .date-lunar {
-            color: white;
+            color: var(--calendar-today-text-color);
           }
         }
 

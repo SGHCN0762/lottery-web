@@ -30,7 +30,7 @@
           <van-cell v-for="record in filteredRecords" :key="record.id" class="point-item">
             <template #icon>
               <div class="point-icon" :class="record.type">
-                <van-icon :name="getRecordIcon(record.type)" size="20" />
+                <van-icon :name="getRecordIcon(record.type)" size="16" />
               </div>
             </template>
 
@@ -359,18 +359,17 @@
 
     .point-item {
       margin-bottom: var(--spacing-xs);
-
-      :deep(.van-cell__left-icon) {
-        margin-right: var(--spacing-xs);
-      }
+      display: flex;
+      align-items: center;
 
       .point-icon {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         border-radius: var(--radius-full);
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: var(--spacing-lg);
 
         &.income {
           background: rgba(7, 193, 96, 0.1);

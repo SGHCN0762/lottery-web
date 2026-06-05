@@ -41,7 +41,7 @@
         </div>
 
         <!-- 黄历按钮 -->
-        <almanc-card v-if="!isEmpty(date)" @click="handleViewAlmanac" />
+        <almanac-card v-if="!isEmpty(date)" @click="handleViewAlmanac" />
       </div>
     </div>
   </van-popup>
