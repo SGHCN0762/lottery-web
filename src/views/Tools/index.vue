@@ -1,0 +1,149 @@
+<template>
+  <div class="tools-page">
+    <div class="page-content">
+      <!-- 页面标题区域 -->
+      <PageHeader :title="t('tools.title')" :subtitle="t('tools.subtitle')" />
+
+      <!-- 工具列表 -->
+      <section class="tools-section">
+        <div
+          v-for="tool in tools"
+          :key="tool.id"
+          class="tool-card"
+          @click="handleSelectTool(tool)"
+          role="button"
+          tabindex="0"
+        >
+          <div class="tool-icon">{{ tool.icon }}</div>
+          <div class="tool-info">
+            <h3 class="tool-name">{{ tool.name }}</h3>
+            <p class="tool-description">{{ tool.description }}</p>
+          </div>
+          <van-icon name="arrow" class="tool-arrow" />
+        </div>
+      </section>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { useRouter } from 'vue-router';
+import { Icon as VanIcon } from 'vant';
+import PageHeader from '@/components/PageHeader/index.vue';
+
+// ========================================
+// i18n
+// ========================================
+const { t } = useI18n();
+
+// ========================================
+// 路由实例
+// ========================================
+const router = useRouter();
+
+// ========================================
+// 数据定义
+// ========================================
+
+/** 工具列表 */
+const tools = computed(() => [
+  {
+    id: 'resume-editor',
+    name: t('tools.resumeEditor.name'),
+    icon: '📄',
+    description: t('tools.resumeEditor.description'),
+    route: 'ResumeEditor',
+  },
+  // 可以继续添加更多工具
+]);
+
+// ========================================
+// 事件处理函数
+// ========================================
+
+/**
+ * 选择工具并跳转
+ * @param {Object} tool - 选中的工具对象
+ */
+const handleSelectTool = (tool) => {
+  if (tool.route) {
+    router.push({ name: tool.route });
+  }
+};
+</script>
+
+<style lang="less" scoped>
+.tools-page {
+  min-height: 100%;
+  background: var(--color-bg-primary);
+}
+
+.page-content {
+  padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  display: flow-root;
+}
+
+.tools-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.tool-card {
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-base);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  .tool-icon {
+    font-size: 2.5rem;
+    margin-right: var(--spacing-lg);
+    flex-shrink: 0;
+  }
+
+  .tool-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .tool-name {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .tool-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-base);
+    margin: 0;
+  }
+
+  .tool-arrow {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+  }
+}
+</style>

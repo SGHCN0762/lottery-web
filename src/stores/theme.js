@@ -35,13 +35,7 @@ export const useThemeStore = defineStore('theme', () => {
    * - light/dark 模式：直接使用设定值
    * @returns {boolean}
    */
-  const isDark = computed(() => {
-  if (themeMode.value === THEMES.AUTO) {
-    // 检测系统深色模式偏好
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-  }
-  return themeMode.value === THEMES.DARK
-})
+  const isDark = computed(() => themeMode.value === THEMES.DARK)
 
   // ========================================
   // 核心方法

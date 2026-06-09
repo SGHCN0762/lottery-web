@@ -9,7 +9,10 @@
       />
 
       <!-- 筛选标签 -->
-      <FilterTabs v-model="activeFilter" />
+      <FilterTabs 
+        v-model="activeFilter"
+        :tabs="tabs"
+      />
 
       <!-- 成就列表 -->
       <section class="badges-list">
@@ -37,11 +40,10 @@
 <script setup>
   import { ref, computed, onMounted } from 'vue';
   import { useI18n } from 'vue-i18n';
-  import dayjs from 'dayjs';
   import { storeToRefs } from 'pinia';
+  import FilterTabs from '@/components/FilterTabs/index.vue';
   import { useAppDataStore } from '@/stores/appData';
   import StatsCard from './components/StatsCard.vue';
-  import FilterTabs from './components/FilterTabs.vue';
   import BadgeItem from './components/BadgeItem.vue';
   import BadgeDetail from './components/BadgeDetail.vue';
 
@@ -56,6 +58,13 @@
   const appDataStore = useAppDataStore();
   const { records, gameStats } = storeToRefs(appDataStore);
   const { loadAllData } = appDataStore;
+
+  // 标签数据
+  const tabs = [
+    { value: 'all', label: t('badges.filter.all') },
+    { value: 'unlocked', label: t('badges.filter.unlocked') },
+    { value: 'locked', label: t('badges.filter.locked') },
+  ];
 
   // ========================================
   // 响应式数据
@@ -205,10 +214,27 @@
           break;
       }
 
+      // 定义每个徽章的目标值
+      const targetMap = {
+        1: 1,    // 首次游戏
+        2: 7,    // 签到7天
+        3: 10,   // 答题大师
+        4: 10,   // 幸运星
+        5: 10,   // 猜数字大师
+        6: 500,  // 积分富豪
+        7: 4,    // 游戏专家
+        8: 5,    // 社交达人
+      };
+      const total = targetMap[config.id] || 1;
+
       return {
         ...config,
         unlocked,
-        progress,
+        progress: {
+          current: progress,
+          total,
+          percentage: Math.round((progress / total) * 100),
+        },
       };
     });
   });

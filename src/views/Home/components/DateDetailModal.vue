@@ -14,7 +14,7 @@
           <span>星期{{ weekdayText }}</span>
         </div>
         <!-- 黄历按钮 -->
-        <almanc-card @click="handleViewAlmanac" />
+        <almanac-card @click="handleViewAlmanac" />
       </div>
     </div>
   </van-popup>

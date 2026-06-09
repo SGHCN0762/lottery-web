@@ -58,7 +58,6 @@
   import { useCurrentDate } from './hooks/useCurrentDate';
   import { useNewYearEve } from '../../hooks/useNewYearEve';
   import { getFestivalOrSolarTermInfo } from './data/festivalInfo';
-  import Skeleton from '@/components/Skeleton/index.vue';
 
   // ========================================
   // 性能优化：懒加载组件

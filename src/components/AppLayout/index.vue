@@ -72,6 +72,7 @@
       default: () => [
         { name: 'Home', label: 'navigation.home', icon: 'home-o' },
         { name: 'Games', label: 'navigation.games', icon: 'apps-o' },
+        { name: 'Tools', label: 'navigation.tools', icon: 'setting-o' },
         { name: 'Profile', label: 'navigation.profile', icon: 'user-o' },
       ],
     },

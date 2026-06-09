@@ -24,6 +24,8 @@ import dailyCheckIn from './dailyCheckIn'
 import about from './about'
 import newYearEve from './newYearEve'
 import almanac from './almanac'
+import tools from './tools'
+import resume from './resume'
 
 export default {
   app,
@@ -51,4 +53,6 @@ export default {
   about,
   newYearEve,
   almanac,
+  tools,
+  resume,
 }

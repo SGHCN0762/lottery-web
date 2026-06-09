@@ -43,6 +43,17 @@ const routes = [
     },
   },
   {
+    path: '/tools',
+    name: 'Tools',
+    component: () => import(/* webpackChunkName: "tools" */ '@/views/Tools/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'navigation.tools',
+      showBack: false,
+      showTabbar: true,
+    },
+  },
+  {
     path: '/profile',
     name: 'Profile',
     component: () => import(/* webpackChunkName: "profile" */ '@/views/Profile/index.vue'),
@@ -60,6 +71,21 @@ const routes = [
     meta: {
       layout: 'AppLayout',
       title: 'navigation.about',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  // ========================================
+  // 工具详情页面路由
+  // ========================================
+  {
+    path: '/tools/resume-editor',
+    name: 'ResumeEditor',
+    component: () =>
+      import(/* webpackChunkName: "tool-resume-editor" */ '@/views/Tools/ResumeEditor/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.resumeEditor.name',
       showBack: true,
       showTabbar: false,
     },
