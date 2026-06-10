@@ -70,9 +70,23 @@ const shouldShowBack = computed(() => {
 // 事件处理函数
 // ========================================
 
-/** 返回上一页 */
+/** 返回上一页，没有上一页时跳回首页 */
 const handleGoBack = () => {
-  router.go(-1);
+  const currentPath = router.currentRoute.value.fullPath;
+  
+  // 如果当前已经是首页，不需要跳转
+  if (currentPath === '/' || currentPath === '/home') {
+    return;
+  }
+
+  // 检查历史记录长度
+  if (window.history.length <= 2) {
+    // 没有足够的历史记录，跳转到首页
+    router.replace({ name: 'Home' });
+  } else {
+    // 尝试回退
+    router.go(-1);
+  }
 };
 </script>
 
