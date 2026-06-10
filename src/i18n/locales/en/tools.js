@@ -9,6 +9,7 @@ export default {
   imageCompressor: {
     name: 'Image Compressor',
     description: 'Compress images online, reduce file size',
+    settings: 'Settings',
     uploadTip: 'Click to upload images',
     quality: 'Quality',
     maxWidth: 'Max Width',

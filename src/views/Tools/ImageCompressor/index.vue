@@ -7,7 +7,6 @@
     />
 
     <ImageSettings
-      v-if="images.length > 0"
       v-model:quality="quality"
       v-model:max-width="maxWidth"
       v-model:format="format"
@@ -16,7 +15,6 @@
     />
 
     <ImageList
-      v-if="images.length > 0"
       :images="images"
       :format-size="formatSize"
       @compress-all="compressAll"
@@ -28,7 +26,8 @@
     />
 
     <div v-if="hasCompressedImages" class="batch-download">
-      <van-button type="primary" block @click="downloadAll">
+      <van-button type="primary" size="large"  @click="downloadAll">
+        <van-icon name="down" />
         {{ t('tools.imageCompressor.downloadAll') }}
       </van-button>
     </div>
@@ -37,7 +36,7 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { Button as VanButton } from 'vant';
+import { Button as VanButton, Icon as VanIcon } from 'vant';
 import ImageUploader from './components/ImageUploader.vue';
 import ImageSettings from './components/ImageSettings.vue';
 import ImageList from './components/ImageList.vue';
@@ -73,6 +72,21 @@ const {
 }
 
 .batch-download {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+
+  :deep(.van-button) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    height: 48px;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    box-shadow: 0 4px 16px rgba(var(--color-primary-rgb), 0.3);
+
+    .van-icon {
+      font-size: 18px;
+    }
+  }
 }
 </style>

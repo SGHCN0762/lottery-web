@@ -1,12 +1,18 @@
 <template>
   <div class="image-list">
     <div class="list-header">
-      <span>{{ t('tools.imageCompressor.imageList') }} ({{ images.length }})</span>
+      <div class="header-left">
+        <van-icon name="photo-o" class="header-icon" />
+        <span class="header-title">{{ t('tools.imageCompressor.imageList') }}</span>
+        <span class="header-count">{{ images.length }} {{ t('common.items') }}</span>
+      </div>
       <div class="header-actions">
         <van-button size="small" type="primary" @click="$emit('compress-all')">
+          <van-icon name="compress" />
           {{ t('tools.imageCompressor.compressAll') }}
         </van-button>
         <van-button size="small" type="danger" plain @click="$emit('clear-all')">
+          <van-icon name="delete-o" />
           {{ t('tools.imageCompressor.clearAll') }}
         </van-button>
       </div>
@@ -29,7 +35,7 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { Button as VanButton } from 'vant';
+import { Button as VanButton, Icon as VanIcon } from 'vant';
 import ImageCard from './ImageCard.vue';
 
 const { t } = useI18n();
@@ -54,20 +60,61 @@ defineEmits(['compress-all', 'clear-all', 'download', 'preview', 'compress', 're
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--spacing-md);
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+
+      .header-icon {
+        font-size: 18px;
+        color: var(--color-primary);
+      }
+
+      .header-title {
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-text-primary);
+      }
+
+      .header-count {
+        padding: 2px 8px;
+        background: var(--color-bg-tertiary);
+        border-radius: var(--radius-sm);
+        font-size: var(--font-size-xs);
+        color: var(--color-text-secondary);
+      }
+    }
 
     .header-actions {
       display: flex;
       gap: var(--spacing-sm);
+
+      :deep(.van-button) {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .van-icon {
+          font-size: 14px;
+        }
+      }
     }
   }
 
   .image-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
+
+    @media (max-width: 375px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>

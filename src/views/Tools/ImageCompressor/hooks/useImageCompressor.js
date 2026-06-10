@@ -13,10 +13,10 @@ export function useImageCompressor() {
   const keepExif = ref(false);
 
   const formatOptions = computed(() => [
-    { text: t('tools.imageCompressor.originalFormat'), value: 'original' },
-    { text: 'JPEG', value: 'jpeg' },
-    { text: 'PNG', value: 'png' },
-    { text: 'WebP', value: 'webp' },
+    { name: t('tools.imageCompressor.originalFormat'), value: 'original' },
+    { name: 'JPEG', value: 'jpeg' },
+    { name: 'PNG', value: 'png' },
+    { name: 'WebP', value: 'webp' },
   ]);
 
   const hasCompressedImages = computed(() => {
@@ -47,12 +47,17 @@ export function useImageCompressor() {
 
   const handleDelete = (file, detail) => {
     const index = detail.index;
-    if (images.value[index]) {
-      URL.revokeObjectURL(images.value[index].url);
-      if (images.value[index].compressedUrl) {
-        URL.revokeObjectURL(images.value[index].compressedUrl);
+    if (fileList.value[index]) {
+      const fileName = fileList.value[index].name;
+      const imgIndex = images.value.findIndex(img => img.name === fileName);
+      if (imgIndex !== -1) {
+        URL.revokeObjectURL(images.value[imgIndex].url);
+        if (images.value[imgIndex].compressedUrl) {
+          URL.revokeObjectURL(images.value[imgIndex].compressedUrl);
+        }
+        images.value.splice(imgIndex, 1);
       }
-      images.value.splice(index, 1);
+      fileList.value.splice(index, 1);
     }
   };
 
@@ -63,6 +68,11 @@ export function useImageCompressor() {
       URL.revokeObjectURL(img.compressedUrl);
     }
     images.value.splice(index, 1);
+    
+    const fileIndex = fileList.value.findIndex(f => f.name === img.name);
+    if (fileIndex !== -1) {
+      fileList.value.splice(fileIndex, 1);
+    }
   };
 
   const clearAll = () => {

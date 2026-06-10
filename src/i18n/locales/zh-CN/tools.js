@@ -9,6 +9,7 @@ export default {
   imageCompressor: {
     name: '图片压缩',
     description: '在线压缩图片，减小文件体积',
+    settings: '压缩设置',
     uploadTip: '点击上传图片，支持多选',
     quality: '压缩质量',
     maxWidth: '最大宽度',
