@@ -90,6 +90,42 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/image-compressor',
+    name: 'ImageCompressor',
+    component: () =>
+      import(/* webpackChunkName: "tool-image-compressor" */ '@/views/Tools/ImageCompressor/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.imageCompressor.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/qr-code',
+    name: 'QrCodeGenerator',
+    component: () =>
+      import(/* webpackChunkName: "tool-qr-code" */ '@/views/Tools/QrCodeGenerator/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.qrCode.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/json-formatter',
+    name: 'JsonFormatter',
+    component: () =>
+      import(/* webpackChunkName: "tool-json-formatter" */ '@/views/Tools/JsonFormatter/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.jsonFormatter.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

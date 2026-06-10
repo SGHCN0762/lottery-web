@@ -56,7 +56,27 @@ const tools = computed(() => [
     description: t('tools.resumeEditor.description'),
     route: 'ResumeEditor',
   },
-  // 可以继续添加更多工具
+  {
+    id: 'image-compressor',
+    name: t('tools.imageCompressor.name'),
+    icon: '🖼️',
+    description: t('tools.imageCompressor.description'),
+    route: 'ImageCompressor',
+  },
+  {
+    id: 'qr-code',
+    name: t('tools.qrCode.name'),
+    icon: '📱',
+    description: t('tools.qrCode.description'),
+    route: 'QrCodeGenerator',
+  },
+  {
+    id: 'json-formatter',
+    name: t('tools.jsonFormatter.name'),
+    icon: '🔧',
+    description: t('tools.jsonFormatter.description'),
+    route: 'JsonFormatter',
+  },
 ]);
 
 // ========================================
