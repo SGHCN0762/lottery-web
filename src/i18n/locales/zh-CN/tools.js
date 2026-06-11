@@ -84,7 +84,6 @@ export default {
     scan: {
       placeholder: '扫描二维码或上传图片识别',
       start: '开始扫描',
-      stop: '停止',
       result: '识别结果',
       copy: '复制',
       open: '打开链接',
@@ -100,6 +99,7 @@ export default {
       noQrFound: '未找到二维码',
       copied: '已复制',
       copyFailed: '复制失败',
+      timeout: '扫描超时，请重试',
     },
   },
   jsonFormatter: {

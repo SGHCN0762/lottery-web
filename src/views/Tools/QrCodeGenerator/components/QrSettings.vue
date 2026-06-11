@@ -11,9 +11,9 @@
         <label>{{ t('tools.qrCode.generate.size') }}</label>
         <van-slider
           :model-value="size"
-          :min="100"
-          :max="400"
-          :step="50"
+          :min="0"
+          :max="500"
+          :step="1"
           @update:model-value="handleSizeChange"
         >
           <template #button>
@@ -111,6 +111,12 @@ const toggleSettings = () => {
 };
 
 const handleSizeChange = (value) => {
+  if(value < 100) {
+    value = 100;
+  }
+  if(value > 400) {
+    value = 400;
+  }
   emit('update:size', value);
   emit('change');
 };

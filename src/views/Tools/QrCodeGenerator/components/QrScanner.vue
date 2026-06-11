@@ -13,9 +13,9 @@
       <!-- 扫描中状态 -->
       <ScannerVideo
         v-if="scanning"
-        :video-ref="videoRef"
+        :set-video-element="setVideoElement"
+        :init-camera="initCamera"
         @stop="handleStopScan"
-        @upload="handleTriggerUploadWhileScanning"
       />
 
       <!-- 识别结果状态 -->
@@ -34,7 +34,6 @@
       ref="fileInputRef"
       type="file"
       accept="image/*"
-      capture="environment"
       style="display: none"
       @change="handleFileSelect"
     />
@@ -48,16 +47,16 @@ import ScannerVideo from './ScannerVideo.vue';
 import ScannerResult from './ScannerResult.vue';
 
 const {
-  videoRef,
   fileInputRef,
   scanning,
   scannedResult,
   isUrl,
   checkCameraSupport,
+  setVideoElement,
   handleFileSelect,
   startScanning,
+  initCamera,
   stopScanning,
-  triggerUploadWhileScanning,
   copyResult,
   openUrl,
   scanAgain,
@@ -73,10 +72,6 @@ const handleStopScan = () => {
 
 const handleTriggerUpload = () => {
   fileInputRef.value?.click();
-};
-
-const handleTriggerUploadWhileScanning = () => {
-  triggerUploadWhileScanning();
 };
 
 const handleCopyResult = () => {

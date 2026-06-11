@@ -28,7 +28,7 @@ import { Uploader as VanUploader, Icon as VanIcon } from 'vant';
 
 const { t } = useI18n();
 
-defineProps({
+const props = defineProps({
   fileList: {
     type: Array,
     default: () => [],
@@ -46,7 +46,7 @@ const handleAfterRead = (file) => {
     url: URL.createObjectURL(f.file),
   }));
   
-  emit('update:fileList', [...fileList, ...newFiles]);
+  emit('update:fileList', [...props.fileList, ...newFiles]);
 };
 
 const handleDelete = (file, detail) => {

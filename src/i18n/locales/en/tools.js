@@ -84,7 +84,6 @@ export default {
     scan: {
       placeholder: 'Scan QR code or upload image',
       start: 'Start Scanning',
-      stop: 'Stop',
       result: 'Result',
       copy: 'Copy',
       open: 'Open Link',
@@ -100,6 +99,7 @@ export default {
       noQrFound: 'No QR code found',
       copied: 'Copied',
       copyFailed: 'Copy failed',
+      timeout: 'Scan timeout, please try again',
     },
   },
   jsonFormatter: {

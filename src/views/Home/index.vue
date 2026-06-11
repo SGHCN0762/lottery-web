@@ -163,11 +163,11 @@
   // 组件挂载后延迟加载非关键组件
   onMounted(() => {
     // 使用 requestIdleCallback 或 setTimeout 延迟加载 MapCard
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(loadMapCard, { timeout: 2000 });
-    } else {
-      setTimeout(loadMapCard, 500);
-    }
+    // if ('requestIdleCallback' in window) {
+    //   requestIdleCallback(loadMapCard, { timeout: 2000 });
+    // } else {
+    //   setTimeout(loadMapCard, 500);
+    // }
   });
 </script>
 

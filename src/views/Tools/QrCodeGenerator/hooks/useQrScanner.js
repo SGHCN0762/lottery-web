@@ -7,12 +7,21 @@ export function useQrScanner() {
   const { t } = useI18n();
 
   // 状态
-  const videoRef = ref(null);
+  let videoElement = null;
   const fileInputRef = ref(null);
   const scanning = ref(false);
   const scannedResult = ref('');
   let mediaStream = null;
   let animationFrameId = null;
+  let timeoutTimer = null;
+  
+  // 扫描超时时间（秒）
+  const SCAN_TIMEOUT = 60;
+
+  // 设置视频元素
+  const setVideoElement = (element) => {
+    videoElement = element;
+  };
 
   // 是否是URL
   const isUrl = computed(() => {
@@ -100,15 +109,39 @@ export function useQrScanner() {
     }
   };
 
-  // 开始扫描
-  const startScanning = async () => {
+  // 开始扫描（显示视频组件）
+  const startScanning = () => {
     if (!checkCameraSupport()) {
       showFailToast(t('tools.qrCode.scan.notSupported'));
       return;
     }
+    
+    // 停止之前的扫描循环
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+      animationFrameId = null;
+    }
+    
+    // 停止之前的媒体流
+    if (mediaStream) {
+      mediaStream.getTracks().forEach(track => track.stop());
+      mediaStream = null;
+    }
+    
+    // 清除之前的超时计时器
+    if (timeoutTimer) {
+      clearTimeout(timeoutTimer);
+      timeoutTimer = null;
+    }
+    
+    scannedResult.value = '';
+    scanning.value = true;
+  };
 
-    if (!isSecureContext()) {
-      showFailToast(t('tools.qrCode.scan.httpsRequired'));
+  // 初始化摄像头（在视频组件挂载后调用）
+  const initCamera = async () => {
+    if (!videoElement) {
+      console.error('Video element not found');
       return;
     }
 
@@ -129,29 +162,24 @@ export function useQrScanner() {
       }
 
       mediaStream = stream;
-
-      if (videoRef.value) {
-        videoRef.value.srcObject = mediaStream;
-
-        videoRef.value.play().then(() => {
-          scanning.value = true;
-          scannedResult.value = '';
-          scanLoop();
-        }).catch((playError) => {
-          console.error('Video play error:', playError);
-          videoRef.value.muted = true;
-          videoRef.value.play().then(() => {
-            scanning.value = true;
-            scannedResult.value = '';
-            scanLoop();
-          }).catch(() => {
-            stopScanning();
-            showFailToast(t('tools.qrCode.scan.cameraError'));
-          });
-        });
-      }
+      videoElement.srcObject = mediaStream;
+      
+      videoElement.play().then(() => {
+        // 启动超时计时器
+        timeoutTimer = setTimeout(() => {
+          stopScanning();
+          showFailToast(t('tools.qrCode.scan.timeout'));
+        }, SCAN_TIMEOUT * 1000);
+        
+        scanLoop();
+      }).catch((playError) => {
+        console.error('Video play error:', playError);
+        stopScanning();
+        showFailToast(t('tools.qrCode.scan.cameraError'));
+      });
     } catch (error) {
       console.error('Camera error:', error);
+      scanning.value = false;
 
       if (error.name === 'NotAllowedError') {
         showFailToast(t('tools.qrCode.scan.permissionDenied'));
@@ -167,9 +195,16 @@ export function useQrScanner() {
 
   // 扫描循环
   const scanLoop = () => {
-    if (!scanning.value || !videoRef.value) return;
+    if (!scanning.value || !videoElement) return;
 
-    const video = videoRef.value;
+    const video = videoElement;
+    
+    // 确保视频已准备好
+    if (!video.videoWidth || !video.videoHeight) {
+      animationFrameId = requestAnimationFrame(scanLoop);
+      return;
+    }
+
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
 
@@ -181,7 +216,7 @@ export function useQrScanner() {
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const code = jsQR(imageData.data, imageData.width, imageData.height);
 
-    if (code) {
+    if (code && code.data) {
       scannedResult.value = code.data;
       stopScanning();
       showSuccessToast(t('tools.qrCode.scan.success'));
@@ -203,14 +238,12 @@ export function useQrScanner() {
       mediaStream.getTracks().forEach(track => track.stop());
       mediaStream = null;
     }
-  };
-
-  // 扫描时触发上传
-  const triggerUploadWhileScanning = () => {
-    stopScanning();
-    setTimeout(() => {
-      fileInputRef.value?.click();
-    }, 300);
+    
+    // 清除超时计时器
+    if (timeoutTimer) {
+      clearTimeout(timeoutTimer);
+      timeoutTimer = null;
+    }
   };
 
   // 复制结果
@@ -242,7 +275,6 @@ export function useQrScanner() {
 
   return {
     // Ref
-    videoRef,
     fileInputRef,
 
     // 状态
@@ -252,11 +284,12 @@ export function useQrScanner() {
 
     // 方法
     checkCameraSupport,
+    setVideoElement,
     triggerUpload,
     handleFileSelect,
     startScanning,
+    initCamera,
     stopScanning,
-    triggerUploadWhileScanning,
     copyResult,
     openUrl,
     scanAgain,

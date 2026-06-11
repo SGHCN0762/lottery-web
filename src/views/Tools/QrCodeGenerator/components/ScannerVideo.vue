@@ -1,6 +1,6 @@
 <template>
   <div class="scanner-video-wrapper">
-    <video ref="videoRef" class="scanner-video"></video>
+    <video ref="localVideoRef" class="scanner-video" autoplay playsinline muted></video>
 
     <div class="scanner-overlay">
       <div class="scanner-frame">
@@ -12,52 +12,48 @@
       </div>
     </div>
 
-    <div class="scanning-actions">
-      <van-button
-        type="danger"
-        size="small"
-        @click="handleStop"
-      >
-        {{ t('tools.qrCode.scan.stop') }}
-      </van-button>
-      <van-button
-        size="small"
-        icon="photo-o"
-        @click="handleUpload"
-      >
-        {{ t('tools.qrCode.scan.uploadTip') }}
-      </van-button>
-    </div>
+    <van-icon class="stop-btn" name="clear" size="24" color="white" @click="handleStop" />
   </div>
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-import { Button as VanButton } from 'vant';
+import { ref, onMounted } from 'vue';
+import { Icon as VanIcon } from 'vant';
 
 const props = defineProps({
-  videoRef: {
-    type: Object,
+  setVideoElement: {
+    type: Function,
+    default: null,
+  },
+  initCamera: {
+    type: Function,
     default: null,
   },
 });
 
 const emit = defineEmits(['stop', 'upload']);
 
-const { t } = useI18n();
+const localVideoRef = ref(null);
+
+onMounted(() => {
+  if (props.setVideoElement && localVideoRef.value) {
+    props.setVideoElement(localVideoRef.value);
+  }
+  
+  if (props.initCamera) {
+    props.initCamera();
+  }
+});
 
 const handleStop = () => {
   emit('stop');
-};
-
-const handleUpload = () => {
-  emit('upload');
 };
 </script>
 
 <style lang="less" scoped>
 .scanner-video-wrapper {
   position: relative;
+  width: calc(100vw - 2 * var(--spacing-md));
   aspect-ratio: 4/3;
   min-height: 300px;
 
@@ -126,23 +122,16 @@ const handleUpload = () => {
         height: 2px;
         background: var(--color-primary);
         box-shadow: 0 0 10px var(--color-primary);
-        animation: scanMove 2s linear infinite;
+        animation: scanMove 1.5s ease-in-out infinite;
       }
     }
   }
 
-  .scanning-actions {
+  .stop-btn {
     position: absolute;
-    bottom: var(--spacing-md);
-    left: var(--spacing-md);
+    top: var(--spacing-md);
     right: var(--spacing-md);
-    display: flex;
-    gap: var(--spacing-sm);
-
-    :deep(.van-button) {
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-medium);
-    }
+    z-index: 1;
   }
 }
 
