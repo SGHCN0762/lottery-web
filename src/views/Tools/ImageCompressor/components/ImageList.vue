@@ -8,11 +8,9 @@
       </div>
       <div class="header-actions">
         <van-button size="small" type="primary" @click="$emit('compress-all')">
-          <van-icon name="compress" />
           {{ t('tools.imageCompressor.compressAll') }}
         </van-button>
         <van-button size="small" type="danger" plain @click="$emit('clear-all')">
-          <van-icon name="delete-o" />
           {{ t('tools.imageCompressor.clearAll') }}
         </van-button>
       </div>
@@ -34,87 +32,89 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-import { Button as VanButton, Icon as VanIcon } from 'vant';
-import ImageCard from './ImageCard.vue';
+  import { useI18n } from 'vue-i18n';
+  import { Button as VanButton, Icon as VanIcon } from 'vant';
+  import ImageCard from './ImageCard.vue';
 
-const { t } = useI18n();
+  const { t } = useI18n();
 
-defineProps({
-  images: {
-    type: Array,
-    default: () => [],
-  },
-  formatSize: {
-    type: Function,
-    required: true,
-  },
-});
+  defineProps({
+    images: {
+      type: Array,
+      default: () => [],
+    },
+    formatSize: {
+      type: Function,
+      required: true,
+    },
+  });
 
-defineEmits(['compress-all', 'clear-all', 'download', 'preview', 'compress', 'remove']);
+  defineEmits(['compress-all', 'clear-all', 'download', 'preview', 'compress', 'remove']);
 </script>
 
 <style lang="less" scoped>
-.image-list {
-  .list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--spacing-lg);
+  .image-list {
     padding: var(--spacing-md) var(--spacing-lg);
     background: var(--color-bg-secondary);
     border-radius: var(--radius-xl);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 
-    .header-left {
+    .list-header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: var(--spacing-sm);
+      margin-bottom: var(--spacing-lg);
+      padding-bottom: var(--spacing-md);
+      border-bottom: 1px solid var(--color-border);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text-primary);
 
-      .header-icon {
-        font-size: 18px;
-        color: var(--color-primary);
-      }
-
-      .header-title {
-        font-size: var(--font-size-base);
-        font-weight: var(--font-weight-semibold);
-        color: var(--color-text-primary);
-      }
-
-      .header-count {
-        padding: 2px 8px;
-        background: var(--color-bg-tertiary);
-        border-radius: var(--radius-sm);
-        font-size: var(--font-size-xs);
-        color: var(--color-text-secondary);
-      }
-    }
-
-    .header-actions {
-      display: flex;
-      gap: var(--spacing-sm);
-
-      :deep(.van-button) {
+      .header-left {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: var(--spacing-sm);
 
-        .van-icon {
-          font-size: 14px;
+        .header-icon {
+          font-size: 18px;
+          color: var(--color-primary);
+        }
+
+        .header-title {
+          font-size: var(--font-size-base);
+          font-weight: var(--font-weight-semibold);
+          color: var(--color-text-primary);
+        }
+
+        .header-count {
+          padding: 2px 8px;
+          background: var(--color-bg-tertiary);
+          border-radius: var(--radius-sm);
+          font-size: var(--font-size-xs);
+          color: var(--color-text-secondary);
+        }
+      }
+
+      .header-actions {
+        display: flex;
+        gap: var(--spacing-sm);
+
+        :deep(.van-button) {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          .van-icon {
+            font-size: 14px;
+          }
         }
       }
     }
-  }
 
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
-
-    @media (max-width: 375px) {
-      grid-template-columns: 1fr;
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-md);
     }
   }
-}
 </style>

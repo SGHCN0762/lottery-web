@@ -27,7 +27,6 @@
 
     <div v-if="hasCompressedImages" class="batch-download">
       <van-button type="primary" size="large"  @click="downloadAll">
-        <van-icon name="down" />
         {{ t('tools.imageCompressor.downloadAll') }}
       </van-button>
     </div>
@@ -36,7 +35,7 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { Button as VanButton, Icon as VanIcon } from 'vant';
+import { Button as VanButton } from 'vant';
 import ImageUploader from './components/ImageUploader.vue';
 import ImageSettings from './components/ImageSettings.vue';
 import ImageList from './components/ImageList.vue';

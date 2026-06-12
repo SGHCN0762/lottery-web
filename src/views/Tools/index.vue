@@ -71,6 +71,13 @@ const tools = computed(() => [
     route: 'QrCodeGenerator',
   },
   {
+    id: 'image-watermark',
+    name: t('tools.imageWatermark.name'),
+    icon: '🏷️',
+    description: t('tools.imageWatermark.description'),
+    route: 'ImageWatermark',
+  },
+  {
     id: 'json-formatter',
     name: t('tools.jsonFormatter.name'),
     icon: '🔧',

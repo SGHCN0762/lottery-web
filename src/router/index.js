@@ -115,6 +115,18 @@ const routes = [
     },
   },
   {
+    path: '/tools/image-watermark',
+    name: 'ImageWatermark',
+    component: () =>
+      import(/* webpackChunkName: "tool-image-watermark" */ '@/views/Tools/ImageWatermark/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.imageWatermark.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/json-formatter',
     name: 'JsonFormatter',
     component: () =>

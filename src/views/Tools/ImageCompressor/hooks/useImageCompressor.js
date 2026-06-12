@@ -144,6 +144,14 @@ export function useImageCompressor() {
     const img = images.value[index];
     if (!img || img.compressing) return;
 
+    // 先清除之前的压缩结果
+    if (img.compressedUrl) {
+      URL.revokeObjectURL(img.compressedUrl);
+      img.compressedUrl = null;
+      img.compressedSize = null;
+      img.ratio = null;
+    }
+
     img.compressing = true;
 
     try {
@@ -168,7 +176,14 @@ export function useImageCompressor() {
 
     for (let i = 0; i < images.value.length; i++) {
       const img = images.value[i];
-      if (!img.compressedUrl && !img.compressing) {
+      if (!img.compressing) {
+        // 先清除之前的压缩结果，确保重新压缩
+        if (img.compressedUrl) {
+          URL.revokeObjectURL(img.compressedUrl);
+          img.compressedUrl = null;
+          img.compressedSize = null;
+          img.ratio = null;
+        }
         await compressOne(i);
       }
     }
@@ -178,38 +193,60 @@ export function useImageCompressor() {
   };
 
   const downloadImage = (img) => {
-    if (!img.compressedUrl) return;
+    return new Promise((resolve) => {
+      if (!img.compressedUrl) {
+        resolve(false);
+        return;
+      }
 
-    fetch(img.compressedUrl)
-      .then(response => response.blob())
-      .then(blob => {
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        const ext = format.value === 'original' ? img.name.split('.').pop() : format.value;
-        link.download = `compressed_${img.name.replace(/\.[^.]+$/, '')}.${ext}`;
-        link.style.display = 'none';
-        document.body.appendChild(link);
-        
-        try {
-          link.dispatchEvent(new MouseEvent('click', {
-            bubbles: true,
-            cancelable: true,
-            view: window
-          }));
-        } catch (e) {
-          link.click();
-        }
-        
-        setTimeout(() => {
-          document.body.removeChild(link);
-          URL.revokeObjectURL(url);
-        }, 100);
-      })
-      .catch(error => {
-        console.error('Download error:', error);
-        showFailToast(t('tools.imageCompressor.downloadFailed'));
-      });
+      const ext = format.value === 'original' ? img.name.split('.').pop() : format.value;
+      const fileName = `compressed_${img.name.replace(/\.[^.]+$/, '')}.${ext}`;
+
+      fetch(img.compressedUrl)
+        .then(response => response.blob())
+        .then(blob => {
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          
+          if (isMobile && navigator.share) {
+            const file = new File([blob], fileName, { type: blob.type });
+            navigator.share({
+              files: [file],
+              title: fileName,
+            }).then(() => {
+              resolve(true);
+            }).catch(() => {
+              resolve(downloadBlob(blob, fileName));
+            });
+          } else {
+            resolve(downloadBlob(blob, fileName));
+          }
+        })
+        .catch(() => {
+          resolve(false);
+        });
+    });
+  };
+
+  const downloadBlob = (blob, fileName) => {
+    try {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = fileName;
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      
+      setTimeout(() => {
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      }, 100);
+      
+      return true;
+    } catch (e) {
+      console.error('Download error:', e);
+      return false;
+    }
   };
 
   const previewImage = (img) => {
@@ -221,10 +258,44 @@ export function useImageCompressor() {
 
   const downloadAll = async () => {
     const compressedImages = images.value.filter(img => img.compressedUrl);
+    
+    if (compressedImages.length === 0) {
+      showFailToast(t('tools.imageCompressor.noImagesToDownload'));
+      return;
+    }
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    if (isMobile && compressedImages.length > 1 && navigator.share) {
+      try {
+        const files = await Promise.all(
+          compressedImages.map(async (img) => {
+            const response = await fetch(img.compressedUrl);
+            const blob = await response.blob();
+            const ext = format.value === 'original' ? img.name.split('.').pop() : format.value;
+            const fileName = `compressed_${img.name.replace(/\.[^.]+$/, '')}.${ext}`;
+            return new File([blob], fileName, { type: blob.type });
+          })
+        );
+        
+        await navigator.share({
+          files: files,
+          title: 'Compressed Images',
+        });
+        
+        showSuccessToast(t('tools.imageCompressor.downloadAllSuccess'));
+        return;
+      } catch (e) {
+        if (e.name !== 'AbortError') {
+          console.error('Share error:', e);
+        }
+      }
+    }
 
     for (let i = 0; i < compressedImages.length; i++) {
       downloadImage(compressedImages[i]);
-      await new Promise(resolve => setTimeout(resolve, 300));
+      const delay = isMobile ? 1000 : 300;
+      await new Promise(resolve => setTimeout(resolve, delay));
     }
   };
 

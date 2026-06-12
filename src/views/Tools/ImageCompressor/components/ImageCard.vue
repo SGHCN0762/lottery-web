@@ -1,13 +1,13 @@
 <template>
-  <div class="image-card" :class="{ 'is-compressed': image.compressedUrl }">
-    <div class="card-preview">
-      <img :src="image.url" class="preview-img" />
+  <div class="image-card">
+    <div class="card-preview" @click="$emit('preview', image)">
+      <img :src="image.compressedUrl || image.url" class="preview-img" />
       <div v-if="image.compressing" class="compressing-overlay">
         <van-loading type="spinner" color="#fff" size="32px" />
         <span>{{ t('tools.imageCompressor.compressing') }}</span>
       </div>
-      <div class="remove-btn" @click="$emit('remove')">
-        <van-icon name="cross" />
+      <div v-if="image.compressedUrl" class="compressed-badge">
+        {{ t('tools.imageCompressor.compressed') }}
       </div>
     </div>
 
@@ -22,21 +22,16 @@
           <span :class="['value', image.ratio > 0 ? 'success' : 'danger']">
             {{ formatSize(image.compressedSize) }}
           </span>
-          <span :class="['ratio-badge', image.ratio > 0 ? 'success' : 'danger']"
-            >{{ image.ratio }}%</span
-          >
         </div>
       </div>
 
       <div class="card-actions">
         <template v-if="image.compressedUrl">
-          <van-button size="small" type="primary" plain @click="$emit('download', image)">
-            <van-icon name="down" />
-            {{ t('tools.imageCompressor.download') }}
-          </van-button>
-          <van-button size="small" plain @click="$emit('preview', image)">
-            <van-icon name="eye-o" />
-            {{ t('tools.imageCompressor.preview') }}
+          <van-button size="small" type="primary" @click="$emit('download', image)">
+          {{ t('tools.imageCompressor.download') }}
+        </van-button>
+          <van-button size="small" type="danger" plain @click="$emit('remove')">
+            {{ t('tools.imageCompressor.remove') }}
           </van-button>
         </template>
         <van-button
@@ -46,7 +41,6 @@
           :loading="image.compressing"
           @click="$emit('compress')"
         >
-          <van-icon name="compress" />
           {{ t('tools.imageCompressor.compress') }}
         </van-button>
       </div>
@@ -56,7 +50,7 @@
 
 <script setup>
   import { useI18n } from 'vue-i18n';
-  import { Button as VanButton, Icon as VanIcon } from 'vant';
+  import { Button as VanButton } from 'vant';
 
   const { t } = useI18n();
 
@@ -81,15 +75,12 @@
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid var(--color-border);
+    cursor: pointer;
 
     &:hover {
       border-color: var(--color-primary-light);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
       transform: translateY(-2px);
-    }
-
-    &.is-compressed {
-      border-color: var(--color-success-light);
     }
 
     .card-preview {
@@ -102,7 +93,7 @@
       .preview-img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
         transition: transform 0.3s ease;
       }
 
@@ -123,31 +114,15 @@
         font-size: var(--font-size-sm);
       }
 
-      .remove-btn {
+      .compressed-badge {
         position: absolute;
-        top: var(--spacing-sm);
-        right: var(--spacing-sm);
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.5);
+        top: var(--spacing-xs);
+        right: var(--spacing-xs);
+        padding: 2px 6px;
+        background: var(--color-success);
         color: white;
-        border-radius: 50%;
-        cursor: pointer;
-        opacity: 0;
-        transition: all 0.2s ease;
-        font-size: 12px;
-
-        &:hover {
-          background: var(--color-danger);
-          transform: scale(1.1);
-        }
-      }
-
-      &:hover .remove-btn {
-        opacity: 1;
+        font-size: var(--font-size-xs);
+        border-radius: var(--radius-sm);
       }
     }
 
@@ -178,23 +153,6 @@
 
             &.danger {
               color: var(--color-danger);
-            }
-          }
-
-          .ratio-badge {
-            margin-left: auto;
-            padding: 2px 8px;
-            color: white;
-            border-radius: var(--radius-sm);
-            font-size: var(--font-size-xs);
-            font-weight: var(--font-weight-semibold);
-
-            &.success {
-              background: var(--color-success);
-            }
-
-            &.danger {
-              background: var(--color-danger);
             }
           }
 
