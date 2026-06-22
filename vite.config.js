@@ -137,6 +137,8 @@ export default defineConfig(({ mode }) => {
       },
       // 开启 gzip 压缩（开发环境模拟生产环境）
       compress: true,
+      port: 8888,
+      host: '0.0.0.0', // 允许外部访问
     },
 
     // 预加载配置

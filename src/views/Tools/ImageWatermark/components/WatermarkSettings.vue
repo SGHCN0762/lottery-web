@@ -286,14 +286,7 @@
               :label="t('tools.imageWatermark.color')"
             >
               <template #input>
-                <div class="color-picker">
-                  <input 
-                    type="color" 
-                    :value="watermarkColor" 
-                    @change="handleColorChange"
-                  />
-                  <span>{{ watermarkColor.toUpperCase() }}</span>
-                </div>
+                <ColorPicker :model-value="watermarkColor" @update:model-value="$emit('update:watermark-color', $event)" />
               </template>
             </van-field>
           </div>
@@ -337,6 +330,7 @@ import {
   Field as VanField,
   Uploader as VanUploader,
 } from 'vant';
+import ColorPicker from '@/views/Tools/LogoDesigner/components/ColorPicker.vue';
 
 const { t } = useI18n();
 
@@ -413,10 +407,6 @@ const handlePositionSelect = (option) => {
 
 const handleFormatSelect = (option) => {
   emit('update:output-format', option.value);
-};
-
-const handleColorChange = (event) => {
-  emit('update:watermark-color', event.target.value);
 };
 
 const handleLogoRead = (file) => {

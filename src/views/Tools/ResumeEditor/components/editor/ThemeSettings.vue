@@ -427,6 +427,7 @@
     padding: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
     transition: all 0.2s ease;
+    background-color: var(--color-bg-primary);
 
     &:last-child {
       border-bottom: none;
@@ -435,7 +436,7 @@
     &:hover {
       background-color: var(--color-bg-secondary);
     }
-
+    
     .drag-icon {
       color: var(--color-text-light);
       cursor: grab;

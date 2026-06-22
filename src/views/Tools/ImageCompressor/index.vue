@@ -36,7 +36,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { Button as VanButton } from 'vant';
-import ImageUploader from './components/ImageUploader.vue';
+import ImageUploader from '../components/ImageUploader.vue';
 import ImageSettings from './components/ImageSettings.vue';
 import ImageList from './components/ImageList.vue';
 import { useImageCompressor } from './hooks/useImageCompressor';

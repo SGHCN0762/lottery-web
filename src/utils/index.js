@@ -33,37 +33,6 @@ export function formatNumber(num) {
 }
 
 /**
- * 防抖函数
- * @param {Function} func - 要执行的函数
- * @param {number} wait - 等待时间（毫秒）
- * @returns {Function} 防抖后的函数
- */
-export function debounce(func, wait = 300) {
-  let timeout
-  return function (...args) {
-    clearTimeout(timeout)
-    timeout = setTimeout(() => func.apply(this, args), wait)
-  }
-}
-
-/**
- * 节流函数
- * @param {Function} func - 要执行的函数
- * @param {number} limit - 时间限制（毫秒）
- * @returns {Function} 节流后的函数
- */
-export function throttle(func, limit = 100) {
-  let inThrottle
-  return function (...args) {
-    if (!inThrottle) {
-      func.apply(this, args)
-      inThrottle = true
-      setTimeout(() => (inThrottle = false), limit)
-    }
-  }
-}
-
-/**
  * 深拷贝
  * @param {any} obj - 要拷贝的对象
  * @returns {any} 拷贝后的对象

@@ -50,7 +50,7 @@
 
 <script setup>
   import { useI18n } from 'vue-i18n';
-  import { Button as VanButton } from 'vant';
+  import { Button as VanButton, Loading as VanLoading } from 'vant';
 
   const { t } = useI18n();
 

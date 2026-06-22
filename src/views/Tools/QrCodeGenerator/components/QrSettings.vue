@@ -27,19 +27,11 @@
         <label>{{ t('tools.qrCode.generate.color') }}</label>
         <div class="color-row">
           <div class="color-option">
-            <input
-              type="color"
-              :value="darkColor"
-              @input="handleDarkColorChange"
-            />
+            <ColorPicker :model-value="darkColor" @update:model-value="handleDarkColorChange" />
             <span>{{ t('tools.qrCode.generate.fgColor') }}</span>
           </div>
           <div class="color-option">
-            <input
-              type="color"
-              :value="lightColor"
-              @input="handleLightColorChange"
-            />
+            <ColorPicker :model-value="lightColor" @update:model-value="handleLightColorChange" />
             <span>{{ t('tools.qrCode.generate.bgColor') }}</span>
           </div>
         </div>
@@ -67,6 +59,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { Slider as VanSlider, Icon as VanIcon } from 'vant';
+import ColorPicker from '@/views/Tools/LogoDesigner/components/ColorPicker.vue';
 
 const props = defineProps({
   showSettings: {
@@ -121,13 +114,13 @@ const handleSizeChange = (value) => {
   emit('change');
 };
 
-const handleDarkColorChange = (e) => {
-  emit('update:darkColor', e.target.value);
+const handleDarkColorChange = (value) => {
+  emit('update:darkColor', value);
   emit('change');
 };
 
-const handleLightColorChange = (e) => {
-  emit('update:lightColor', e.target.value);
+const handleLightColorChange = (value) => {
+  emit('update:lightColor', value);
   emit('change');
 };
 
@@ -154,10 +147,6 @@ const handleErrorLevelChange = (value) => {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-primary);
-
-  &:hover {
-    background: var(--color-bg-tertiary);
-  }
 }
 
 .settings-content {

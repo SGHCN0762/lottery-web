@@ -1,5 +1,5 @@
 <template>
-  <div class="image-list">
+  <div v-if="images.length > 0" class="image-list">
     <div class="list-header">
       <div class="header-left">
         <van-icon name="photo-o" class="header-icon" />
@@ -27,6 +27,12 @@
         @compress="$emit('compress', index)"
         @remove="$emit('remove', index)"
       />
+    </div>
+  </div>
+  <div v-else class="image-list"> 
+    <div class="empty-state">
+      <van-icon name="image-o" size="72" />
+      <p>{{ t('tools.imageCompressor.empty') }}</p>
     </div>
   </div>
 </template>
@@ -115,6 +121,23 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: var(--spacing-md);
+    }
+    
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: calc(var(--spacing-xl) * 2);
+      color: var(--color-text-tertiary);
+
+      .van-icon {
+        margin-bottom: var(--spacing-md);
+      }
+
+      p {
+        margin: 0;
+      }
     }
   }
 </style>

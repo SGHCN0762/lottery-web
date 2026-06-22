@@ -48,7 +48,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { Button as VanButton } from 'vant';
-import ImageUploader from '../ImageCompressor/components/ImageUploader.vue';
+import ImageUploader from '../components/ImageUploader.vue';
 import WatermarkSettings from './components/WatermarkSettings.vue';
 import ImageList from './components/ImageList.vue';
 import { useImageWatermark } from './hooks/useImageWatermark';

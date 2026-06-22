@@ -138,6 +138,18 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/logo-designer',
+    name: 'LogoDesigner',
+    component: () =>
+      import(/* webpackChunkName: "tool-logo-designer" */ '@/views/Tools/LogoDesigner/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.logoDesigner.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

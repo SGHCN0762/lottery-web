@@ -78,6 +78,13 @@ const tools = computed(() => [
     route: 'ImageWatermark',
   },
   {
+    id: 'logo-designer',
+    name: t('tools.logoDesigner.name'),
+    icon: '🎨',
+    description: t('tools.logoDesigner.description'),
+    route: 'LogoDesigner',
+  },
+  {
     id: 'json-formatter',
     name: t('tools.jsonFormatter.name'),
     icon: '🔧',
