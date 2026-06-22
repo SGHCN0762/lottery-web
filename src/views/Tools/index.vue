@@ -91,6 +91,13 @@ const tools = computed(() => [
     description: t('tools.jsonFormatter.description'),
     route: 'JsonFormatter',
   },
+  {
+    id: 'dj-mixer',
+    name: t('tools.djMixer.name'),
+    icon: '🎧',
+    description: t('tools.djMixer.description'),
+    route: 'DJMixer',
+  },
 ]);
 
 // ========================================

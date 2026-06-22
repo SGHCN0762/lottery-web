@@ -324,6 +324,10 @@ export default {
     undo: '撤销',
     redo: '重做',
   },
+  djMixer: {
+    name: 'DJ打碟器',
+    description: '专业双转盘DJ混音控制台',
+  },
   common: {
     clickToUpload: '点击上传图片',
     supportedFormats: 'JPG, PNG, WebP, GIF',

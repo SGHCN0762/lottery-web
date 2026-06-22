@@ -150,6 +150,18 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/dj-mixer',
+    name: 'DJMixer',
+    component: () =>
+      import(/* webpackChunkName: "tool-dj-mixer" */ '@/views/Tools/DJMixer/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.djMixer.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

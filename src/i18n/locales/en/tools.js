@@ -324,6 +324,10 @@ export default {
     undo: 'Undo',
     redo: 'Redo',
   },
+  djMixer: {
+    name: 'DJ Mixer',
+    description: 'Professional dual turntable DJ mixing console',
+  },
   common: {
     clickToUpload: 'Click to upload image',
     supportedFormats: 'JPG, PNG, WebP, GIF',
