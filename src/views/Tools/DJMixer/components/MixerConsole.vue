@@ -14,6 +14,7 @@
               max="100"
               :value="volumeA * 100"
               @input="onVolumeAChange"
+              @wheel.prevent
               orient="vertical"
             />
             <div class="fader-track">
@@ -77,6 +78,7 @@
               max="100"
               :value="volumeB * 100"
               @input="onVolumeBChange"
+              @wheel.prevent
               orient="vertical"
             />
             <div class="fader-track">
@@ -262,6 +264,7 @@ function onEQChange(deck, band, event) {
   background: transparent;
   cursor: pointer;
   z-index: 2;
+  touch-action: none;
 
   &::-webkit-slider-runnable-track {
     height: 5px;
