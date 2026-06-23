@@ -2,7 +2,6 @@
   <div class="effects-panel">
     <div class="panel-title">EFFECTS</div>
 
-    <!-- Filter Section -->
     <div class="effect-group">
       <div class="effect-row">
         <span class="effect-label">HIGH PASS</span>
@@ -12,7 +11,7 @@
           min="0"
           max="100"
           :value="effectsState.filterHighPass * 100"
-          @input="onFilterChange('highPass', $event)"
+          @input="onFilterChange('filterHighPass', $event)"
         />
         <span class="effect-value">{{ Math.round(effectsState.filterHighPass * 100) }}</span>
       </div>
@@ -24,13 +23,12 @@
           min="0"
           max="100"
           :value="effectsState.filterLowPass * 100"
-          @input="onFilterChange('lowPass', $event)"
+          @input="onFilterChange('filterLowPass', $event)"
         />
         <span class="effect-value">{{ Math.round(effectsState.filterLowPass * 100) }}</span>
       </div>
     </div>
 
-    <!-- Echo Section -->
     <div class="effect-group">
       <div class="effect-header">
         <label class="effect-toggle">
@@ -42,6 +40,7 @@
           <span class="toggle-switch"></span>
         </label>
         <span class="effect-name">ECHO</span>
+        <span v-if="effectsState.echo.enabled" class="effect-active">ON</span>
       </div>
       <div class="effect-row" v-if="effectsState.echo.enabled">
         <span class="effect-label">TIME</span>
@@ -69,7 +68,6 @@
       </div>
     </div>
 
-    <!-- Reverb Section -->
     <div class="effect-group">
       <div class="effect-header">
         <label class="effect-toggle">
@@ -81,6 +79,7 @@
           <span class="toggle-switch"></span>
         </label>
         <span class="effect-name">REVERB</span>
+        <span v-if="effectsState.reverb.enabled" class="effect-active">ON</span>
       </div>
       <div class="effect-row" v-if="effectsState.reverb.enabled">
         <span class="effect-label">TIME</span>
@@ -108,7 +107,6 @@
       </div>
     </div>
 
-    <!-- Flanger Section -->
     <div class="effect-group">
       <div class="effect-header">
         <label class="effect-toggle">
@@ -120,6 +118,7 @@
           <span class="toggle-switch"></span>
         </label>
         <span class="effect-name">FLANGER</span>
+        <span v-if="effectsState.flanger.enabled" class="effect-active">ON</span>
       </div>
       <div class="effect-row" v-if="effectsState.flanger.enabled">
         <span class="effect-label">TIME</span>
@@ -152,63 +151,69 @@
 <script setup>
 import { useAudioEngine } from '../composables/useAudioEngine'
 
-const { effectsState } = useAudioEngine()
+const { effectsState, setEffect } = useAudioEngine()
 
 const emit = defineEmits(['effect-change'])
 
 function onFilterChange(type, event) {
   const value = parseFloat(event.target.value) / 100
-  if (type === 'highPass') {
-    effectsState.value.filterHighPass = value
-  } else {
-    effectsState.value.filterLowPass = value
-  }
+  effectsState.value[type] = value
+  setEffect(type, true, { value })
   emit('effect-change', type, value)
 }
 
 function onEchoToggle() {
-  effectsState.value.echo.enabled = !effectsState.value.echo.enabled
-  emit('effect-change', 'echo', effectsState.value.echo)
+  const enabled = !effectsState.value.echo.enabled
+  setEffect('echo', enabled, effectsState.value.echo)
+  emit('effect-change', 'echo', { ...effectsState.value.echo, enabled })
 }
 
 function onEchoChange(prop, event) {
   const value = parseFloat(event.target.value)
+  const newParams = { ...effectsState.value.echo }
   if (prop === 'time') {
-    effectsState.value.echo.time = value / 100
+    newParams.time = value / 100
   } else {
-    effectsState.value.echo.feedback = value / 100
+    newParams.feedback = value / 100
   }
-  emit('effect-change', 'echo', effectsState.value.echo)
+  setEffect('echo', effectsState.value.echo.enabled, newParams)
+  emit('effect-change', 'echo', newParams)
 }
 
 function onReverbToggle() {
-  effectsState.value.reverb.enabled = !effectsState.value.reverb.enabled
-  emit('effect-change', 'reverb', effectsState.value.reverb)
+  const enabled = !effectsState.value.reverb.enabled
+  setEffect('reverb', enabled, effectsState.value.reverb)
+  emit('effect-change', 'reverb', { ...effectsState.value.reverb, enabled })
 }
 
 function onReverbChange(prop, event) {
   const value = parseFloat(event.target.value)
+  const newParams = { ...effectsState.value.reverb }
   if (prop === 'time') {
-    effectsState.value.reverb.time = value / 10
+    newParams.time = value / 10
   } else {
-    effectsState.value.reverb.mix = value / 100
+    newParams.mix = value / 100
   }
-  emit('effect-change', 'reverb', effectsState.value.reverb)
+  setEffect('reverb', effectsState.value.reverb.enabled, newParams)
+  emit('effect-change', 'reverb', newParams)
 }
 
 function onFlangerToggle() {
-  effectsState.value.flanger.enabled = !effectsState.value.flanger.enabled
-  emit('effect-change', 'flanger', effectsState.value.flanger)
+  const enabled = !effectsState.value.flanger.enabled
+  setEffect('flanger', enabled, effectsState.value.flanger)
+  emit('effect-change', 'flanger', { ...effectsState.value.flanger, enabled })
 }
 
 function onFlangerChange(prop, event) {
   const value = parseFloat(event.target.value)
+  const newParams = { ...effectsState.value.flanger }
   if (prop === 'time') {
-    effectsState.value.flanger.time = value / 1000
+    newParams.time = value / 1000
   } else {
-    effectsState.value.flanger.depth = value / 100
+    newParams.depth = value / 100
   }
-  emit('effect-change', 'flanger', effectsState.value.flanger)
+  setEffect('flanger', effectsState.value.flanger.enabled, newParams)
+  emit('effect-change', 'flanger', newParams)
 }
 </script>
 
@@ -257,6 +262,12 @@ function onFlangerChange(prop, event) {
   margin-bottom: 4px;
 }
 
+.effect-toggle {
+  input {
+    display: none;
+  }
+}
+
 .toggle-switch {
   display: block;
   width: 24px;
@@ -294,6 +305,16 @@ function onFlangerChange(prop, event) {
   letter-spacing: 1px;
 }
 
+.effect-active {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 8px;
+  color: #00ff00;
+  background: rgba(0, 255, 0, 0.1);
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-left: auto;
+}
+
 .effect-row {
   display: flex;
   align-items: center;
@@ -310,11 +331,11 @@ function onFlangerChange(prop, event) {
   font-size: 7px;
   color: rgba(255, 255, 255, 0.4);
   letter-spacing: 1px;
-  min-width: 36px;
+  min-width: 48px;
 }
 
 .effect-slider {
-  flex: 1;
+  max-width: calc(100% - 54px);
   height: 4px;
   -webkit-appearance: none;
   appearance: none;

@@ -4,23 +4,25 @@
     <div class="channels-row">
       <!-- Deck A 音量 -->
       <div class="channel a">
-        <div class="channel-label">A</div>
-        <div class="fader-container">
-          <input
-            type="range"
-            class="volume-fader"
-            min="0"
-            max="100"
-            :value="volumeA * 100"
-            @input="onVolumeAChange"
-            orient="vertical"
-          />
-          <div class="fader-track">
-            <div class="fader-fill" :style="{ height: volumeA * 100 + '%' }"></div>
-            <div class="fader-handle" :style="{ bottom: volumeA * 100 + '%' }"></div>
+        <div class="channel-volume">
+          <div class="channel-label">A</div>
+          <div class="fader-container">
+            <input
+              type="range"
+              class="volume-fader"
+              min="0"
+              max="100"
+              :value="volumeA * 100"
+              @input="onVolumeAChange"
+              orient="vertical"
+            />
+            <div class="fader-track">
+              <div class="fader-fill" :style="{ height: volumeA * 100 + '%' }"></div>
+              <div class="fader-handle" :style="{ bottom: volumeA * 100 + '%' }"></div>
+            </div>
           </div>
+          <div class="volume-value">{{ Math.round(volumeA * 100) }}</div>
         </div>
-        <div class="volume-value">{{ Math.round(volumeA * 100) }}</div>
 
         <!-- EQ -->
         <div class="eq-section">
@@ -65,23 +67,25 @@
 
       <!-- Deck B 音量 -->
       <div class="channel b">
-        <div class="channel-label">B</div>
-        <div class="fader-container">
-          <input
-            type="range"
-            class="volume-fader"
-            min="0"
-            max="100"
-            :value="volumeB * 100"
-            @input="onVolumeBChange"
-            orient="vertical"
-          />
-          <div class="fader-track">
-            <div class="fader-fill" :style="{ height: volumeB * 100 + '%' }"></div>
-            <div class="fader-handle" :style="{ bottom: volumeB * 100 + '%' }"></div>
+        <div class="channel-volume">
+          <div class="channel-label">B</div>
+          <div class="fader-container">
+            <input
+              type="range"
+              class="volume-fader"
+              min="0"
+              max="100"
+              :value="volumeB * 100"
+              @input="onVolumeBChange"
+              orient="vertical"
+            />
+            <div class="fader-track">
+              <div class="fader-fill" :style="{ height: volumeB * 100 + '%' }"></div>
+              <div class="fader-handle" :style="{ bottom: volumeB * 100 + '%' }"></div>
+            </div>
           </div>
+          <div class="volume-value">{{ Math.round(volumeB * 100) }}</div>
         </div>
-        <div class="volume-value">{{ Math.round(volumeB * 100) }}</div>
 
         <!-- EQ -->
         <div class="eq-section">
@@ -200,7 +204,7 @@ function onEQChange(deck, band, event) {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 8px;
+  padding: 24px 8px 16px;
   background: linear-gradient(180deg, @bg-secondary, @bg-dark);
   border-radius: 10px;
   border: 1px solid rgba(0, 255, 245, 0.1);
@@ -219,11 +223,12 @@ function onEQChange(deck, band, event) {
 
 .channel {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 4px;
-  flex: 1;
   min-width: 0;
+}
+
+.channel-volume {
+  padding: 8px;
 }
 
 .channel-label {
@@ -232,6 +237,7 @@ function onEQChange(deck, band, event) {
   font-weight: bold;
   color: @neon-cyan;
   text-shadow: 0 0 6px rgba(@neon-cyan, 0.5);
+  margin-left: 8px;
 
   .b & {
     color: @neon-magenta;
@@ -313,19 +319,16 @@ function onEQChange(deck, band, event) {
 }
 
 .eq-section {
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 6px;
-  margin-top: 4px;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .eq-knob {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 8px;
   flex: 1;
 
   label {
@@ -333,12 +336,12 @@ function onEQChange(deck, band, event) {
     font-size: 8px;
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: 1px;
+    width: 20px;
   }
 }
 
 .eq-slider {
-  width: 100%;
-  max-width: 50px;
+  width: calc(100% - 56px);
   height: 4px;
   -webkit-appearance: none;
   appearance: none;
@@ -361,6 +364,7 @@ function onEQChange(deck, band, event) {
   font-family: 'Orbitron', monospace;
   font-size: 9px;
   color: rgba(255, 255, 255, 0.7);
+  width: 20px;
 }
 
 .crossfader-section {
@@ -383,8 +387,7 @@ function onEQChange(deck, band, event) {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 100%;
-  max-width: 300px;
+  width: calc(100% - 16px);
 }
 
 .cross-label {

@@ -1,6 +1,5 @@
 <template>
   <div class="turntable" :class="{ 'is-playing': isPlaying }">
-    <!-- 大型加载区域 - 放在最显眼位置 -->
     <label v-if="!hasTrack" class="big-load-btn">
       <input type="file" accept="audio/*" @change="onFileSelect" hidden />
       <span class="big-plus">+</span>
@@ -8,9 +7,7 @@
     </label>
 
     <template v-else>
-      <!-- 转盘底座 -->
       <div class="turntable-base">
-        <!-- 唱片 -->
         <div
           class="vinyl"
           :class="{ spinning: isPlaying }"
@@ -18,29 +15,26 @@
         >
           <div class="vinyl-label">
             <span class="deck-label">{{ deckId }}</span>
+            <span v-if="loopEnabled" class="loop-indicator">LOOP</span>
           </div>
           <div class="vinyl-grooves"></div>
         </div>
 
-        <!-- 中心点 -->
         <div class="turntable-center">
           <div class="center-dot"></div>
         </div>
 
-        <!-- 播放按钮 -->
         <button class="play-btn" @click="togglePlay" :class="{ playing: isPlaying }">
           <span class="play-icon" v-if="!isPlaying"></span>
           <span class="pause-icon" v-else></span>
         </button>
 
-        <!-- 切换音乐按钮 -->
         <label class="switch-btn">
           <input type="file" accept="audio/*" @change="onFileSelect" hidden />
           <span>↻</span>
         </label>
       </div>
 
-      <!-- 曲目信息 -->
       <div class="track-info">
         <div class="track-name">{{ trackName || 'Drop a track' }}</div>
         <div class="track-time">
@@ -50,28 +44,66 @@
         </div>
       </div>
 
-      <!-- 进度条 -->
       <div class="progress-container">
         <div class="progress-bar" @click="onProgressClick">
           <div class="progress-fill" :style="{ width: progressPercent + '%' }"></div>
           <div class="progress-head" :style="{ left: progressPercent + '%' }"></div>
+          <div
+            v-if="loopEnabled"
+            class="loop-marker start"
+            :style="{ left: loopStartPercent + '%' }"
+          ></div>
+          <div
+            v-if="loopEnabled"
+            class="loop-marker end"
+            :style="{ left: loopEndPercent + '%' }"
+          ></div>
+          <div
+            v-if="loopEnabled"
+            class="loop-region"
+            :style="{ left: loopStartPercent + '%', width: (loopEndPercent - loopStartPercent) + '%' }"
+          ></div>
         </div>
       </div>
 
-      <!-- 转速控制 -->
-      <div class="pitch-control">
-        <span class="pitch-label">转速</span>
-        <input
-          type="range"
-          class="pitch-slider"
-          min="-50"
-          max="50"
-          :value="pitch"
-          @input="onPitchChange"
-        />
-        <span class="pitch-value" :class="{ positive: pitch > 0, negative: pitch < 0 }">
-          {{ pitch > 0 ? '+' : '' }}{{ pitch }}%
-        </span>
+      <div class="turntable-controls">
+        <div class="pitch-control">
+          <span class="pitch-label">转速</span>
+          <input
+            type="range"
+            class="pitch-slider"
+            min="-50"
+            max="50"
+            :value="pitch"
+            @input="onPitchChange"
+          />
+          <span class="pitch-value" :class="{ positive: pitch > 0, negative: pitch < 0 }">
+            {{ pitch > 0 ? '+' : '' }}{{ pitch }}%
+          </span>
+        </div>
+
+        <div class="loop-control">
+          <button
+            class="loop-btn"
+            :class="{ active: loopEnabled }"
+            @click="toggleLoop"
+          >
+            LOOP
+          </button>
+          <button class="cue-btn" @click="setCuePoint">CUE</button>
+        </div>
+      </div>
+
+      <div v-if="cuePoints.length > 0" class="cue-list">
+        <button
+          v-for="(cue, index) in cuePoints"
+          :key="index"
+          class="cue-item"
+          @click="goToCue(index)"
+        >
+          {{ cue.label }}
+          <span class="cue-time">{{ formatTime(cue.time) }}</span>
+        </button>
       </div>
     </template>
   </div>
@@ -92,9 +124,20 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmits(['load-track', 'play', 'pause', 'seek', 'pitch-change'])
+const emit = defineEmits(['load-track', 'play', 'pause', 'seek', 'pitch-change', 'loop-change'])
 
-const { deckAState, deckBState, play, pause, seek, setPitch } = useAudioEngine()
+const {
+  deckAState,
+  deckBState,
+  play,
+  pause,
+  seek,
+  setPitch,
+  setLoop,
+  setCuePoint: engineSetCuePoint,
+  goToCuePoint,
+  clearCuePoints,
+} = useAudioEngine()
 
 const deckState = computed(() => (props.deckId === 'A' ? deckAState.value : deckBState.value))
 
@@ -104,17 +147,27 @@ const duration = computed(() => deckState.value.duration)
 const trackName = computed(() => deckState.value.trackName)
 const pitch = computed(() => deckState.value.pitch)
 const hasTrack = computed(() => !!deckState.value.trackName)
+const loopEnabled = computed(() => deckState.value.loop.enabled)
+const cuePoints = computed(() => deckState.value.cuePoints)
 
 const progressPercent = computed(() => {
   if (duration.value === 0) return 0
   return (currentTime.value / duration.value) * 100
 })
 
-// 根据 BPM 计算旋转周期，120 BPM = 1秒一圈
+const loopStartPercent = computed(() => {
+  if (duration.value === 0) return 0
+  return (deckState.value.loop.start / duration.value) * 100
+})
+
+const loopEndPercent = computed(() => {
+  if (duration.value === 0) return 0
+  return (deckState.value.loop.end / duration.value) * 100
+})
+
 const rotationDuration = computed(() => {
   const bpm = deckState.value.bpm || 120
   const secondsPerBeat = 60 / bpm
-  // 一圈 = 2拍
   return `${secondsPerBeat * 2}s`
 })
 
@@ -131,6 +184,7 @@ function togglePlay() {
 function onFileSelect(event) {
   const file = event.target.files?.[0]
   if (file) {
+    clearCuePoints(props.deckId)
     emit('load-track', props.deckId, file)
     event.target.value = ''
   }
@@ -149,6 +203,27 @@ function onPitchChange(event) {
   emit('pitch-change', props.deckId, value)
 }
 
+function toggleLoop() {
+  const enabled = !loopEnabled.value
+  if (enabled) {
+    const start = currentTime.value
+    const end = Math.min(currentTime.value + 8, duration.value)
+    setLoop(props.deckId, true, start, end)
+  } else {
+    setLoop(props.deckId, false)
+  }
+  emit('loop-change', props.deckId, enabled)
+}
+
+function setCuePoint() {
+  const label = `CUE ${cuePoints.value.length + 1}`
+  engineSetCuePoint(props.deckId, currentTime.value, label)
+}
+
+function goToCue(index) {
+  goToCuePoint(props.deckId, index)
+}
+
 function formatTime(seconds) {
   if (!seconds || isNaN(seconds)) return '0:00'
   const mins = Math.floor(seconds / 60)
@@ -163,6 +238,7 @@ function formatTime(seconds) {
 @bg-dark: #0a0a0f;
 @bg-secondary: #1a1a2e;
 @track-bg: #2a2a4a;
+@led-green: #00ff00;
 
 .turntable {
   display: flex;
@@ -178,7 +254,6 @@ function formatTime(seconds) {
   min-width: 0;
 }
 
-/* 大型加载按钮 - 极简状态 */
 .big-load-btn {
   display: flex;
   flex-direction: column;
@@ -186,7 +261,7 @@ function formatTime(seconds) {
   justify-content: center;
   gap: 8px;
   width: 100%;
-  aspect-ratio: 1;
+  height: 100%;
   max-width: 180px;
   margin: 0 auto;
   background: rgba(0, 255, 245, 0.05);
@@ -275,6 +350,7 @@ function formatTime(seconds) {
   border-radius: 50%;
   background: linear-gradient(135deg, @neon-cyan, @neon-magenta);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 15px rgba(@neon-cyan, 0.5);
@@ -285,6 +361,17 @@ function formatTime(seconds) {
   font-size: 18px;
   font-weight: bold;
   color: @bg-dark;
+}
+
+.loop-indicator {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 6px;
+  color: @bg-dark;
+  font-weight: bold;
+  background: @led-green;
+  padding: 1px 3px;
+  border-radius: 2px;
+  margin-top: 2px;
 }
 
 .turntable-center {
@@ -309,14 +396,6 @@ function formatTime(seconds) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.controls-overlay {
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
 }
 
 .play-btn {
@@ -348,7 +427,6 @@ function formatTime(seconds) {
   }
 }
 
-/* 切换音乐按钮 */
 .switch-btn {
   position: absolute;
   top: 4px;
@@ -389,32 +467,6 @@ function formatTime(seconds) {
   height: 8px;
   background: @neon-magenta;
   border-radius: 2px;
-}
-
-.load-btn {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: @bg-secondary;
-  border: 1px solid rgba(@neon-cyan, 0.3);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  z-index: 20;
-
-  &:hover {
-    border-color: @neon-cyan;
-    box-shadow: 0 0 6px rgba(@neon-cyan, 0.3);
-  }
-}
-
-.plus-icon {
-  display: none;
 }
 
 .track-info {
@@ -473,7 +525,33 @@ function formatTime(seconds) {
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 0 6px rgba(@neon-cyan, 0.8);
-  margin-top: -1px;
+}
+
+.loop-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 12px;
+  background: @led-green;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.loop-region {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 255, 0, 0.2);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.turntable-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .pitch-control {
@@ -488,11 +566,12 @@ function formatTime(seconds) {
   font-size: 9px;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 1px;
+  min-width: 24px;
 }
 
 .pitch-slider {
-  flex: 1;
   height: 4px;
+  width: calc(100% - 66px);
   -webkit-appearance: none;
   appearance: none;
   background: @track-bg;
@@ -509,23 +588,13 @@ function formatTime(seconds) {
     cursor: pointer;
     box-shadow: 0 0 8px rgba(@neon-cyan, 0.5);
   }
-
-  &::-moz-range-thumb {
-    width: 14px;
-    height: 14px;
-    background: linear-gradient(145deg, @neon-cyan, @neon-magenta);
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 0 8px rgba(@neon-cyan, 0.5);
-  }
 }
 
 .pitch-value {
   font-family: 'Orbitron', monospace;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.8);
-  min-width: 45px;
+  width: 24px;
   text-align: right;
 
   &.positive {
@@ -535,6 +604,89 @@ function formatTime(seconds) {
   &.negative {
     color: @neon-magenta;
   }
+}
+
+.loop-control {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.loop-btn,
+.cue-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  border: 1px solid transparent;
+}
+
+.loop-btn {
+  background: rgba(0, 255, 0, 0.1);
+  border-color: rgba(0, 255, 0, 0.3);
+  color: rgba(0, 255, 0, 0.7);
+
+  &:active {
+    background: rgba(0, 255, 0, 0.2);
+    transform: scale(0.95);
+  }
+
+  &.active {
+    background: rgba(0, 255, 0, 0.3);
+    border-color: @led-green;
+    color: @led-green;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.4);
+  }
+}
+
+.cue-btn {
+  background: rgba(@neon-magenta, 0.1);
+  border-color: rgba(@neon-magenta, 0.3);
+  color: rgba(@neon-magenta, 0.7);
+
+  &:active {
+    background: rgba(@neon-magenta, 0.2);
+    transform: scale(0.95);
+  }
+}
+
+.cue-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.cue-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background: rgba(@neon-magenta, 0.1);
+  border: 1px solid rgba(@neon-magenta, 0.3);
+  border-radius: 4px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 8px;
+  color: @neon-magenta;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+
+  &:active {
+    background: rgba(@neon-magenta, 0.2);
+    transform: scale(0.95);
+  }
+}
+
+.cue-time {
+  font-size: 7px;
+  opacity: 0.7;
 }
 
 @keyframes spin {

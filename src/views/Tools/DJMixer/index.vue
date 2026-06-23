@@ -95,7 +95,7 @@
       <div class="help-content">
         <div class="help-header">
           <h2>DJ 打碟器使用指南</h2>
-          <button class="close-btn" @click="showHelp = false">×</button>
+          <van-button class="close-btn" plain size="mini" @click="showHelp = false" icon="cross"></van-button>
         </div>
         <div class="help-body">
           <div class="help-step">
@@ -509,21 +509,13 @@ onMounted(() => {
 }
 
 .close-btn {
-  width: 28px;
-  height: 28px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
   background: rgba(255, 0, 255, 0.2);
   border: 1px solid @neon-magenta;
   color: @neon-magenta;
-  font-size: 20px;
-  font-weight: bold;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  padding: 0;
-  -webkit-tap-highlight-color: transparent;
 
   &:active {
     transform: scale(0.9);
