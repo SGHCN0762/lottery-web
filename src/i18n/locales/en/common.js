@@ -26,7 +26,7 @@ export default {
   select: 'Select',
   all: 'All',
   total: 'Total',
-  items: 'items',
+  images: 'images',
   page: 'Page',
   prev: 'Previous',
   next: 'Next',

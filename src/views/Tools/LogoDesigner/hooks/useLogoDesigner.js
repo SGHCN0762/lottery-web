@@ -737,10 +737,10 @@ export function useLogoDesigner() {
   /**
    * 切换图层锁定状态
    * 锁定图层后自动取消选中
+   * 注意：锁定状态不影响导出结果，不记录到历史
    * @param {string} layerId - 图层ID
    */
   const toggleLayerLock = (layerId) => {
-    saveSnapshot();
     const layer = layers.value.find(l => l.id === layerId);
     if (layer) {
       layer.locked = !layer.locked;
@@ -771,11 +771,15 @@ export function useLogoDesigner() {
 
   /**
    * 更新图层名称
+   * 注意：图层名称不影响导出结果，不记录到历史
    * @param {string} layerId - 图层ID
    * @param {string} name - 新名称
    */
   const updateLayerName = (layerId, name) => {
-    updateLayer(layerId, { name });
+    const layer = layers.value.find(l => l.id === layerId);
+    if (layer) {
+      layer.name = name;
+    }
   };
 
   /**

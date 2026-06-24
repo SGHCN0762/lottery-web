@@ -30,10 +30,26 @@ export function useImageWatermark() {
   let isSyncing = false;
   
   const parseColorWithOpacity = (color, opacity) => {
+    // 处理 rgba 格式
     const rgbaMatch = color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/);
     if (rgbaMatch) {
       return `rgba(${rgbaMatch[1]}, ${rgbaMatch[2]}, ${rgbaMatch[3]}, ${opacity})`;
     }
+
+    // 处理十六进制格式 (#RGB 或 #RRGGBB)
+    const hexMatch = color.match(/^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/);
+    if (hexMatch) {
+      let hex = hexMatch[1];
+      if (hex.length === 3) {
+        // 将 #RGB 转换为 #RRGGBB
+        hex = hex.split('').map(c => c + c).join('');
+      }
+      const r = parseInt(hex.substring(0, 2), 16);
+      const g = parseInt(hex.substring(2, 4), 16);
+      const b = parseInt(hex.substring(4, 6), 16);
+      return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+    }
+
     return color;
   };
   

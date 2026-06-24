@@ -4,7 +4,7 @@
       <div class="header-left">
         <van-icon name="photo-o" class="header-icon" />
         <span class="header-title">{{ t('tools.imageWatermark.imageList') }}</span>
-        <span class="header-count">{{ images.length }} {{ t('tools.imageWatermark.images') }}</span>
+        <span class="header-count">{{ images.length }} {{ t('common.images') }}</span>
       </div>
       <div class="header-actions">
         <van-button size="small" type="primary" @click="$emit('watermark-all')">

@@ -26,7 +26,7 @@ export default {
   select: '选择',
   all: '全部',
   total: '共',
-  items: '条',
+  images: '张',
   page: '页',
   prev: '上一页',
   next: '下一页',

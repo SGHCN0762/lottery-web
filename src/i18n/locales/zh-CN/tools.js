@@ -159,7 +159,6 @@ export default {
     downloadFailed: '下载失败',
     selectLogoFirst: '请先选择Logo图片',
     empty: '暂无图片，请上传图片',
-    images: '张图片',
     completed: '已完成',
     pending: '待处理',
     processing: '处理中...',

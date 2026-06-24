@@ -159,7 +159,6 @@ export default {
     downloadFailed: 'Download failed',
     selectLogoFirst: 'Please select logo image first',
     empty: 'No images, please upload',
-    images: 'images',
     completed: 'Completed',
     pending: 'Pending',
     processing: 'Processing...',
