@@ -77,7 +77,7 @@ export function useImageFormatConverter() {
         canvas.width = img.naturalWidth;
         canvas.height = img.naturalHeight;
 
-        const ctx = canvas.getContext('2d');
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
         ctx.drawImage(img, 0, 0);
 
         const mimeType = `image/${format}`;

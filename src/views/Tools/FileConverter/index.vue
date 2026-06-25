@@ -1,13 +1,15 @@
 <template>
   <div class="file-converter">
     <van-tabs v-model:active="activeTab" class="converter-tabs">
+      <!-- 图片格式转换 -->
       <van-tab :title="t('tools.fileConverter.tabs.imageFormat')" name="imageFormat">
         <div class="tab-content">
-          <ImageUploader
-            :file-list="imageFileList"
+          <FileUploader
+            accept="image/*"
+            icon-type="image"
             :upload-tip="t('tools.common.clickToUpload')"
-            @after-read="handleImageAfterRead"
-            @delete="handleImageDelete"
+            :hint="t('tools.common.supportedFormats')"
+            @change="handleImageAfterRead"
           />
 
           <ImageFormatSettings
@@ -32,13 +34,15 @@
         </div>
       </van-tab>
 
+      <!-- 图片转PDF -->
       <van-tab :title="t('tools.fileConverter.tabs.imageToPdf')" name="imageToPdf">
         <div class="tab-content">
-          <ImageUploader
-            :file-list="pdfImageFileList"
+          <FileUploader
+            accept="image/*"
+            icon-type="image"
             :upload-tip="t('tools.common.clickToUpload')"
-            @after-read="handlePdfImageAfterRead"
-            @delete="handlePdfImageDelete"
+            :hint="t('tools.common.supportedFormats')"
+            @change="handlePdfImageAfterRead"
           />
 
           <ImageToPdfSettings
@@ -60,6 +64,7 @@
         </div>
       </van-tab>
 
+      <!-- PDF转图片 -->
       <van-tab :title="t('tools.fileConverter.tabs.pdfToImage')" name="pdfToImage">
         <div class="tab-content">
           <div class="upload-section">
@@ -111,6 +116,165 @@
           </div>
         </div>
       </van-tab>
+
+      <!-- PDF合并 -->
+      <van-tab :title="t('tools.fileConverter.tabs.pdfMerge')" name="pdfMerge">
+        <div class="tab-content">
+          <FileUploader
+            accept=".pdf,application/pdf"
+            icon-type="pdf"
+            :upload-tip="t('tools.fileConverter.pdfMerge.uploadTip')"
+            @change="handleMergePdfFilesChange"
+          />
+
+          <FileList
+            v-if="mergePdfFiles.length > 0"
+            :files="mergePdfFiles"
+            :title="t('tools.fileConverter.pdfMerge.fileList')"
+            @remove="removeMergePdf"
+            @clear-all="clearMergePdfs"
+          />
+
+          <div v-if="mergePdfFiles.length > 0" class="batch-download">
+            <van-button type="primary" size="large" :loading="merging" @click="handleMergePdfs">
+              {{ t('tools.fileConverter.pdfMerge.merge') }}
+            </van-button>
+          </div>
+        </div>
+      </van-tab>
+
+      <!-- 图片拼接 -->
+      <van-tab :title="t('tools.fileConverter.tabs.imageStitch')" name="imageStitch">
+        <div class="tab-content">
+          <FileUploader
+            accept="image/*"
+            icon-type="image"
+            :upload-tip="t('tools.common.clickToUpload')"
+            :hint="t('tools.common.supportedFormats')"
+            @change="handleStitchImagesChange"
+          />
+
+          <ImageStitchSettings
+            v-model:layout="stitchLayout"
+            v-model:grid-cols="stitchGridCols"
+            v-model:spacing="stitchSpacing"
+            v-model:background-color="stitchBgColor"
+          />
+
+          <FileList
+            v-if="stitchImages.length > 0"
+            :files="stitchImages"
+            :title="t('tools.fileConverter.common.imageList')"
+            @remove="handleStitchImageRemove"
+            @clear-all="clearStitchImages"
+          />
+
+          <div v-if="stitchImages.length >= 2" class="batch-download">
+            <van-button type="primary" size="large" :loading="stitching" @click="handleStitchImages">
+              {{ t('tools.fileConverter.imageStitch.stitch') }}
+            </van-button>
+          </div>
+        </div>
+      </van-tab>
+
+      <!-- GIF生成 -->
+      <van-tab :title="t('tools.fileConverter.tabs.gifMaker')" name="gifMaker">
+        <div class="tab-content">
+          <FileUploader
+            accept="image/*"
+            icon-type="image"
+            :upload-tip="t('tools.common.clickToUpload')"
+            :hint="t('tools.common.supportedFormats')"
+            @change="handleGifImagesChange"
+          />
+
+          <GifMakerSettings
+            v-model:frame-delay="gifFrameDelay"
+            v-model:loop="gifLoop"
+            v-model:gif-width="gifWidth"
+          />
+
+          <PdfImageList
+            v-if="gifImages.length > 0"
+            :images="gifImages"
+            @update:images="handleGifReorder"
+            @clear-all="clearGifImages"
+          />
+
+          <div v-if="gifImages.length >= 2" class="batch-download">
+            <van-button type="primary" size="large" :loading="makingGif" @click="handleMakeGif">
+              {{ t('tools.fileConverter.gifMaker.make') }}
+            </van-button>
+          </div>
+        </div>
+      </van-tab>
+
+      <!-- PDF拆分 -->
+      <van-tab :title="t('tools.fileConverter.tabs.pdfSplit')" name="pdfSplit">
+        <div class="tab-content">
+          <div class="upload-section">
+            <label class="upload-area">
+              <input
+                type="file"
+                accept=".pdf,application/pdf"
+                class="upload-input"
+                @change="handleSplitPdfChange"
+              />
+              <div class="upload-icon">
+                <img :src="pdfIcon" alt="PDF" />
+              </div>
+              <p class="upload-title">{{ t('tools.fileConverter.pdfSplit.uploadTip') }}</p>
+              <div v-if="splitPdfFile" class="file-info">
+                <div class="file-name">{{ splitPdfFile.name }}</div>
+                <div class="file-meta">
+                  <span>{{ formatFileSize(splitPdfFile.size) }}</span>
+                  <span v-if="splitTotalPages > 0">{{ t('tools.fileConverter.pdfSplit.totalPages') }}: {{ splitTotalPages }}</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <PdfPageSelector
+            v-if="splitPdfPages.length > 0"
+            :pages="splitPdfPages"
+            :selected-pages="splitSelectedPages"
+            @toggle="handleSplitTogglePage"
+            @select-all="handleSplitSelectAll"
+            @deselect-all="handleSplitDeselectAll"
+          />
+
+          <div v-if="splitPdfPages.length > 0" class="batch-download">
+            <van-button type="primary" size="large" :loading="splitting" @click="handleSplitPdf">
+              {{ t('tools.fileConverter.pdfSplit.split') }}
+            </van-button>
+          </div>
+        </div>
+      </van-tab>
+
+      <!-- 文件压缩 -->
+      <van-tab :title="t('tools.fileConverter.tabs.fileCompress')" name="fileCompress">
+        <div class="tab-content">
+          <FileUploader
+            icon-type="file"
+            :upload-tip="t('tools.fileConverter.fileCompress.uploadTip')"
+            @change="handleCompressFilesChangeHook"
+          />
+
+          <FileList
+            v-if="compressFiles.length > 0"
+            :files="compressFiles"
+            :title="t('tools.fileConverter.fileCompress.fileList')"
+            @remove="handleCompressFileRemove"
+            @clear-all="clearCompressFiles"
+          />
+
+          <div v-if="compressFiles.length > 0" class="batch-download">
+            <van-button type="primary" size="large" :loading="compressing" @click="handleCompressFiles">
+              {{ t('tools.fileConverter.fileCompress.compress') }}
+            </van-button>
+          </div>
+        </div>
+      </van-tab>
     </van-tabs>
   </div>
 </template>
@@ -122,21 +286,32 @@ import {
   Tabs as VanTabs,
   Tab as VanTab,
   Button as VanButton,
+  Icon as VanIcon,
   showConfirmDialog,
   showImagePreview,
 } from 'vant';
-import ImageUploader from '../components/ImageUploader.vue';
+import FileUploader from '../components/FileUploader.vue';
 import ImageFormatSettings from './components/ImageFormatSettings.vue';
 import ImageToPdfSettings from './components/ImageToPdfSettings.vue';
 import PdfToImageSettings from './components/PdfToImageSettings.vue';
 import ConvertImageList from './components/ConvertImageList.vue';
 import PdfImageList from './components/PdfImageList.vue';
 import PdfPageList from './components/PdfPageList.vue';
+import FileList from './components/FileList.vue';
+import ImageStitchSettings from './components/ImageStitchSettings.vue';
+import GifMakerSettings from './components/GifMakerSettings.vue';
+import PdfPageSelector from './components/PdfPageSelector.vue';
 import { useImageFormatConverter } from './hooks/useImageFormatConverter';
 import { useImageToPdfConverter } from './hooks/useImageToPdfConverter';
 import { usePdfToImageConverter } from './hooks/usePdfToImageConverter';
+import { usePdfMerger } from './hooks/usePdfMerger';
+import { useImageStitcher } from './hooks/useImageStitcher';
+import { useGifMaker } from './hooks/useGifMaker';
+import { usePdfSplitter } from './hooks/usePdfSplitter';
+import { useFileCompressor } from './hooks/useFileCompressor';
 import { formatFileSize } from './utils';
-import pdfIcon from './assets/pdf.svg';
+import pdfIcon from '@/views/Tools/assets/pdf.svg';
+import fileIcon from '@/views/Tools/assets/file.svg';
 
 const { t } = useI18n();
 
@@ -182,6 +357,76 @@ const {
   downloadAllPdfPages,
   clearPdfPages: doClearPdfPages,
 } = usePdfToImageConverter();
+
+// PDF合并
+const {
+  pdfFiles: mergePdfFiles,
+  merging,
+  handlePdfFilesChange: handleMergePdfFilesChange,
+  removePdf: removeMergePdf,
+  clearAll: clearMergePdfs,
+  mergePdfs,
+} = usePdfMerger();
+
+// 图片拼接
+const {
+  imageFiles: stitchImages,
+  layout: stitchLayout,
+  gridCols: stitchGridCols,
+  spacing: stitchSpacing,
+  backgroundColor: stitchBgColor,
+  stitching,
+  handleImagesChange: handleStitchImagesChange,
+  removeImage: handleStitchImageRemove,
+  clearAll: clearStitchImages,
+  stitchImages: doStitchImages,
+} = useImageStitcher();
+
+// GIF生成
+const {
+  imageFiles: gifImages,
+  frameDelay: gifFrameDelay,
+  loop: gifLoop,
+  gifWidth,
+  making: makingGif,
+  handleImagesChange: handleGifImagesChange,
+  removeImage: handleGifImageRemove,
+  clearAll: clearGifImages,
+  reorderImages: handleGifReorder,
+  makeGif,
+} = useGifMaker();
+
+// PDF拆分
+const {
+  pdfFile: splitPdfFile,
+  pdfPages: splitPdfPages,
+  selectedPages: splitSelectedPages,
+  splitting,
+  totalPages: splitTotalPages,
+  handlePdfChange: handleSplitPdfChangeHook,
+  togglePage: handleSplitTogglePage,
+  selectAll: handleSplitSelectAll,
+  deselectAll: handleSplitDeselectAll,
+  splitPdf,
+} = usePdfSplitter();
+
+const handleSplitPdfChange = (event) => {
+  const file = event.target.files?.[0];
+  if (file) {
+    handleSplitPdfChangeHook({ file });
+  }
+  event.target.value = '';
+};
+
+// 文件压缩
+const {
+  files: compressFiles,
+  compressing,
+  handleFilesChange: handleCompressFilesChangeHook,
+  removeFile: handleCompressFileRemove,
+  clearAll: clearCompressFiles,
+  compressToZip,
+} = useFileCompressor();
 
 const handlePdfFileChange = (event) => {
   const file = event.target.files?.[0];
@@ -247,6 +492,30 @@ const handleDownloadPage = (page, index) => {
 
 const handleDownloadAllPdfPages = () => {
   downloadAllPdfPages();
+};
+
+const handleMergePdfs = () => {
+  mergePdfs();
+};
+
+// 图片拼接
+const handleStitchImages = () => {
+  doStitchImages();
+};
+
+// GIF生成
+const handleMakeGif = () => {
+  makeGif();
+};
+
+// PDF拆分
+const handleSplitPdf = () => {
+  splitPdf();
+};
+
+// 文件压缩
+const handleCompressFiles = () => {
+  compressToZip();
 };
 </script>
 

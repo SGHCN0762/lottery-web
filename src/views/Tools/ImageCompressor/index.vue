@@ -1,9 +1,10 @@
 <template>
   <div class="image-compressor">
-    <ImageUploader
-      :file-list="fileList"
-      @after-read="handleAfterRead"
-      @delete="handleDelete"
+    <FileUploader
+      accept="image/*"
+      icon-type="image"
+      :hint="t('tools.common.supportedFormats')"
+      @change="handleAfterRead"
     />
 
     <ImageSettings
@@ -36,7 +37,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { Button as VanButton } from 'vant';
-import ImageUploader from '../components/ImageUploader.vue';
+import FileUploader from '../components/FileUploader.vue';
 import ImageSettings from './components/ImageSettings.vue';
 import ImageList from './components/ImageList.vue';
 import { useImageCompressor } from './hooks/useImageCompressor';

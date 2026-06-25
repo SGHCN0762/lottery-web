@@ -63,7 +63,7 @@ export function usePdfToImageConverter() {
         canvas.width = viewport.width;
         canvas.height = viewport.height;
 
-        const ctx = canvas.getContext('2d');
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
         await page.render({
           canvasContext: ctx,
           viewport,

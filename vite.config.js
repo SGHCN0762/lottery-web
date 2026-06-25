@@ -151,6 +151,8 @@ export default defineConfig(({ mode }) => {
         'vant',
         'dayjs',
         'lunar-javascript',
+        'pdf-lib',
+        'jspdf',
       ],
     },
 

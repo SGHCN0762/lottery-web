@@ -1,9 +1,10 @@
 <template>
   <div class="image-watermark">
-    <ImageUploader
-      :file-list="fileList"
-      @after-read="handleAfterRead"
-      @delete="handleDelete"
+    <FileUploader
+      accept="image/*"
+      icon-type="image"
+      :hint="t('tools.common.supportedFormats')"
+      @change="handleAfterRead"
     />
 
     <WatermarkSettings
@@ -48,7 +49,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { Button as VanButton } from 'vant';
-import ImageUploader from '../components/ImageUploader.vue';
+import FileUploader from '../components/FileUploader.vue';
 import WatermarkSettings from './components/WatermarkSettings.vue';
 import ImageList from './components/ImageList.vue';
 import { useImageWatermark } from './hooks/useImageWatermark';
