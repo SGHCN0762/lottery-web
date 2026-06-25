@@ -162,6 +162,18 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/file-converter',
+    name: 'FileConverter',
+    component: () =>
+      import(/* webpackChunkName: "tool-file-converter" */ '@/views/Tools/FileConverter/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.fileConverter.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

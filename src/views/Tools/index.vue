@@ -98,6 +98,13 @@ const tools = computed(() => [
     description: t('tools.djMixer.description'),
     route: 'DJMixer',
   },
+  {
+    id: 'file-converter',
+    name: t('tools.fileConverter.name'),
+    icon: '🔄',
+    description: t('tools.fileConverter.description'),
+    route: 'FileConverter',
+  },
 ]);
 
 // ========================================

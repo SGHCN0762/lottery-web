@@ -10,11 +10,11 @@
       :preview-image="false"
     >
       <template #default>
-        <div class="upload-area" :class="{ 'has-files': fileList.length > 0 }">
+        <div class="upload-area">
           <div class="upload-icon">
             <van-icon name="photo-o" size="72" />
           </div>
-          <p class="upload-title">{{ t('tools.imageCompressor.uploadTip') }}</p>
+          <p class="upload-title">{{ uploadTip || t('tools.imageCompressor.uploadTip') }}</p>
           <p class="upload-hint">JPG, PNG, WebP, GIF, BMP</p>
         </div>
       </template>
@@ -33,20 +33,16 @@ const props = defineProps({
     type: Array,
     default: () => [],
   },
+  uploadTip: {
+    type: String,
+    default: '',
+  },
 });
 
-const emit = defineEmits(['update:fileList', 'after-read', 'delete']);
+const emit = defineEmits(['after-read', 'delete']);
 
 const handleAfterRead = (file) => {
   emit('after-read', file);
-  
-  const files = Array.isArray(file) ? file : [file];
-  const newFiles = files.map(f => ({
-    name: f.file.name,
-    url: URL.createObjectURL(f.file),
-  }));
-  
-  emit('update:fileList', [...props.fileList, ...newFiles]);
 };
 
 const handleDelete = (file, detail) => {
@@ -81,40 +77,10 @@ const handleDelete = (file, detail) => {
     transition: all 0.3s ease;
     cursor: pointer;
 
-    &:hover {
-      border-color: var(--color-primary);
-      background: linear-gradient(135deg, var(--color-bg-tertiary) 0%, var(--color-bg-secondary) 100%);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(var(--color-primary-rgb), 0.12);
-
-      .upload-icon {
-        background: var(--color-primary);
-        color: white;
-        transform: scale(1.1);
-      }
-    }
-
-    &.has-files {
-      min-height: 100px;
-      padding: var(--spacing-lg);
-
-      .upload-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-      }
-
-      .upload-title {
-        font-size: var(--font-size-sm);
-      }
-    }
-
     .upload-icon {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: var(--color-bg-primary);
-      border-radius: 50%;
       margin-bottom: var(--spacing-md);
       color: var(--color-primary);
       transition: all 0.3s ease;
