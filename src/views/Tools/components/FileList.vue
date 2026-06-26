@@ -123,9 +123,9 @@ const computedActions = computed(() => {
   if (props.actionItems.length > 0) {
     return props.actionItems;
   }
-  const actions = [...defaultActions.value];
+  let actions = [...defaultActions.value];
   if (!props.previewable) {
-    return actions.filter(a => a.key !== 'preview');
+    actions = actions.filter(a => a.key !== 'preview');
   }
   return actions;
 });

@@ -76,7 +76,6 @@
             icon="photo-o"
             :draggable="true"
             :show-actions="false"
-            :show-remove="false"
           />
 
           <div v-if="pdfImageList.length > 0" class="batch-download">
@@ -227,8 +226,7 @@
             :title="t('tools.fileConverter.common.imageList')"
             icon="photo-o"
             :draggable="true"
-            :show-actions="false"
-            :show-remove="false"
+            :show-actions="true"
           />
 
           <div v-if="gifImages.length >= 2" class="batch-download">
@@ -620,7 +618,6 @@ const handleCompressFiles = () => {
       justify-content: center;
       width: 80px;
       height: 80px;
-      margin-bottom: var(--spacing-md);
       transition: all 0.3s ease;
 
       img {
