@@ -41,6 +41,7 @@ export default {
     generate: {
       placeholder: '输入文字或链接生成二维码',
       previewPlaceholder: '输入内容后自动生成',
+      preview: '二维码预览',
       content: '内容',
       size: '尺寸',
       color: '颜色',
@@ -85,6 +86,7 @@ export default {
     },
     scan: {
       placeholder: '扫描二维码或上传图片识别',
+      title: '扫码识别',
       start: '开始扫描',
       result: '识别结果',
       copy: '复制',
@@ -432,14 +434,18 @@ export default {
     common: {
       settings: '设置',
       imageList: '图片列表',
-      empty: '暂无图片，请上传图片',
+      empty: '暂无文件，请上传',
       clearAll: '清空',
       download: '下载',
       downloadAll: '下载全部',
       noFilesToDownload: '没有可下载的文件',
       downloadAllSuccess: '全部下载完成',
       processing: '处理中...',
-      confirmClearAll: '确定要清空所有图片吗？',
+      confirmClearAll: '确定要清空所有文件吗？',
+      preview: '预览',
+      unsupportedPreview: '该文件类型暂不支持预览',
+      unsupportedPreviewTip: '该文件类型暂不支持预览，是否下载？',
+      remove: '删除',
     },
   },
   common: {

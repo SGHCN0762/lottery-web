@@ -82,10 +82,13 @@ export function usePdfToImageConverter() {
 
         const url = URL.createObjectURL(blob);
         pages.push({
+          id: Date.now() + Math.random() + i,
+          name: `page_${i}.${pdfOutputFormat.value}`,
           url,
           blob,
           width: canvas.width,
           height: canvas.height,
+          type: `image/${pdfOutputFormat.value}`,
         });
       }
 

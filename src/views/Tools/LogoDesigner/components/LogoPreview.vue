@@ -1,14 +1,13 @@
 <template>
-  <div class="logo-preview">
-    <div class="preview-header">
-      <div class="header-title">
-        <van-icon name="eye-o" class="header-icon" />
-        <span>{{ t('tools.logoDesigner.preview') }}</span>
-      </div>
-      <div class="header-suffix">
-        <slot name="header-suffix"></slot>
-      </div>
-    </div>
+  <ToolCard
+    icon="eye-o"
+    :title="t('tools.logoDesigner.preview')"
+    class="logo-preview-card"
+  >
+    <template #headerRight>
+      <slot name="header-suffix"></slot>
+    </template>
+
     <div class="preview-container">
       <canvas
         ref="canvasRef"
@@ -17,13 +16,14 @@
         @touchstart="handlePointerDown"
       />
     </div>
-  </div>
+  </ToolCard>
 </template>
 
 <script setup>
   import { ref, watch, onMounted, nextTick, onUnmounted } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { LAYER_SIZE_LIMITS } from '../js/constants';
+  import ToolCard from '../../components/ToolCard.vue';
 
   const { t } = useI18n();
 
@@ -1368,59 +1368,30 @@
 </script>
 
 <style lang="less" scoped>
-  .logo-preview {
-    background: var(--color-bg-secondary);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--color-border);
-    overflow: hidden;
+  .logo-preview-card {
     margin-bottom: var(--spacing-md);
 
-    .preview-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: var(--spacing-md);
-      cursor: pointer;
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-semibold);
-      color: var(--color-text-primary);
-      border-bottom: 1px solid var(--color-border);
-
-      .header-title { 
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-sm);
-      }
-
-      .header-suffix {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-sm);
-      }
-
-      .header-icon {
-        font-size: 18px;
-        color: var(--color-primary);
-      }
+    :deep(.card-body) {
+      padding: 0;
     }
+  }
 
-    .preview-container {
-      display: flex;
-      justify-content: center;
-      padding: var(--spacing-md);
-      background: repeating-conic-gradient(
-          var(--color-bg-tertiary) 0% 25%,
-          var(--color-bg-secondary) 0% 50%
-        )
-        50% / 16px 16px;
-      border-radius: var(--radius-lg);
-      align-items: center;
+  .preview-container {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: repeating-conic-gradient(
+        var(--color-bg-tertiary) 0% 25%,
+        var(--color-bg-secondary) 0% 50%
+      )
+      50% / 16px 16px;
+    border-radius: var(--radius-lg);
+    align-items: center;
 
-      canvas {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-      }
+    canvas {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
     }
   }
 </style>

@@ -11,6 +11,7 @@
     "test:run": "vitest run"
   },
   "dependencies": {
+    "@open-file-viewer/vue": "^0.1.15",
     "dayjs": "^1.11.20",
     "gif.js": "^0.2.0",
     "html2canvas": "^1.4.1",
@@ -21,7 +22,7 @@
     "lunar-javascript": "^1.7.7",
     "ol": "^10.9.0",
     "pdf-lib": "^1.17.1",
-    "pdfjs-dist": "^4.7.76",
+    "pdfjs-dist": "^4.10.38",
     "pinia": "^3.0.4",
     "qrcode": "^1.5.4",
     "vant": "^4.9.24",

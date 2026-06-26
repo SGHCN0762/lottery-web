@@ -17,6 +17,7 @@ export function useGifMaker() {
     newFiles.forEach(f => {
       const url = URL.createObjectURL(f.file);
       imageFiles.value.push({
+        id: Date.now() + Math.random(),
         name: f.file.name,
         url,
         file: f.file,

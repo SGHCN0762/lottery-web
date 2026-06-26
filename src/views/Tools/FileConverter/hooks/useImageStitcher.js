@@ -16,6 +16,7 @@ export function useImageStitcher() {
     newFiles.forEach(f => {
       const url = URL.createObjectURL(f.file);
       imageFiles.value.push({
+        id: Date.now() + Math.random(),
         name: f.file.name,
         url,
         file: f.file,
@@ -34,6 +35,10 @@ export function useImageStitcher() {
   const clearAll = async () => {
     imageFiles.value.forEach(f => URL.revokeObjectURL(f.url));
     imageFiles.value = [];
+  };
+
+  const updateImageList = (newList) => {
+    imageFiles.value = newList;
   };
 
   const stitchImages = async () => {
@@ -113,15 +118,15 @@ export function useImageStitcher() {
           link.download = `stitched_${Date.now()}.png`;
           link.click();
           URL.revokeObjectURL(url);
-          showSuccessToast(t('tools.fileConverter.imageStitch.success'));
+          showSuccessToast(t('tools.fileConverter.imageStitch.stitchSuccess'));
         } else {
-          showFailToast(t('tools.fileConverter.imageStitch.failed'));
+          showFailToast(t('tools.fileConverter.imageStitch.stitchFailed'));
         }
         stitching.value = false;
       }, 'image/png');
     } catch (error) {
       console.error('Stitch error:', error);
-      showFailToast(t('tools.fileConverter.imageStitch.failed'));
+      showFailToast(t('tools.fileConverter.imageStitch.stitchFailed'));
       stitching.value = false;
     }
   };
@@ -197,6 +202,7 @@ export function useImageStitcher() {
     handleImagesChange,
     removeImage,
     clearAll,
+    updateImageList,
     stitchImages,
     previewStitched,
   };

@@ -41,6 +41,7 @@ export default {
     generate: {
       placeholder: 'Enter text or URL to generate QR code',
       previewPlaceholder: 'Auto-generate after entering content',
+      preview: 'QR Preview',
       content: 'Content',
       size: 'Size',
       color: 'Color',
@@ -85,6 +86,7 @@ export default {
     },
     scan: {
       placeholder: 'Scan QR code or upload image',
+      title: 'QR Scanner',
       start: 'Start Scanning',
       result: 'Result',
       copy: 'Copy',
@@ -432,14 +434,18 @@ export default {
     common: {
       settings: 'Settings',
       imageList: 'Image List',
-      empty: 'No images, please upload',
+      empty: 'No files, please upload',
       clearAll: 'Clear All',
       download: 'Download',
       downloadAll: 'Download All',
       noFilesToDownload: 'No files to download',
       downloadAllSuccess: 'All downloaded',
       processing: 'Processing...',
-      confirmClearAll: 'Are you sure you want to clear all images?',
+      confirmClearAll: 'Are you sure you want to clear all files?',
+      preview: 'Preview',
+      unsupportedPreview: 'This file type is not supported for preview',
+      unsupportedPreviewTip: 'This file type is not supported for preview, download instead?',
+      remove: 'Remove',
     },
   },
   common: {

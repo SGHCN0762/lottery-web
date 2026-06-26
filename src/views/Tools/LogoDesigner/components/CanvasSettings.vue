@@ -1,14 +1,12 @@
 <template>
-  <div class="canvas-settings">
-    <div class="settings-header" @click="showSettings = !showSettings">
-      <div class="header-title">
-        <van-icon name="description-o" class="header-icon" />
-        <span>{{ t('tools.logoDesigner.settings') }}</span>
-      </div>
-      <van-icon :name="showSettings ? 'arrow-up' : 'arrow-down'" />
-    </div>
-
-    <div v-show="showSettings" class="settings-content">
+  <ToolCard
+    icon="description-o"
+    :title="t('tools.logoDesigner.settings')"
+    collapsible
+    default-collapsed
+    class="canvas-settings-card"
+  >
+    <div class="settings-content">
       <div class="setting-field">
         <van-field
           :model-value="currentPresetName"
@@ -147,14 +145,13 @@
       :actions="ratioOptions"
       @select="onRatioSelect"
     />
-  </div>
+  </ToolCard>
 </template>
 
 <script setup>
 import { ref, watch, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import {
-  Icon as VanIcon,
   Field as VanField,
   Switch as VanSwitch,
   ActionSheet as VanActionSheet,
@@ -163,6 +160,7 @@ import { debounce } from '@/utils/lodash/debounce';
 import { RATIO_OPTIONS, SIZE_CHANGE_DEBOUNCE, CANVAS_PRESET_OPTIONS, BORDER_RADIUS_LIMITS } from '../js/constants';
 import SettingSlider from './SettingSlider.vue';
 import ColorPicker from './ColorPicker.vue';
+import ToolCard from '../../components/ToolCard.vue';
 
 const { t } = useI18n();
 
@@ -223,9 +221,6 @@ const emit = defineEmits([
   'ratioSelect',
   'presetSelect',
 ]);
-
-/** 设置面板展开状态 */
-const showSettings = ref(false);
 
 /** 本地宽度值（用于双向绑定） */
 const localWidth = ref(props.canvasWidth);
@@ -391,84 +386,55 @@ function percentFromPx(px, w, h) {
 </script>
 
 <style lang="less" scoped>
-.canvas-settings {
-  background: var(--color-bg-secondary);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  overflow: hidden;
+.canvas-settings-card {
   margin-bottom: var(--spacing-md);
+}
 
-  .settings-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md);
-    cursor: pointer;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-primary);
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
 
-    .header-title {
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-sm);
-      color: var(--color-text-primary);
+.preset-size-info {
+  padding: var(--spacing-sm);
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
 
-      .header-icon {
-        font-size: 18px;
-        color: var(--color-primary);
-      }
+.setting-field {
+  :deep(.van-field) {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+
+    &::after {
+      display: none !important;
     }
-  }
 
-  .settings-content {
-    padding: var(--spacing-md);
-    border-top: 1px solid var(--color-border);
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-  }
+    .van-field__label {
+      font-size: var(--font-size-sm) !important;
+      color: var(--color-text-secondary) !important;
+      width: auto !important;
+      min-width: 80px !important;
+    }
 
-  .preset-size-info {
-    padding: var(--spacing-sm);
-    background: var(--color-bg-tertiary);
-    border-radius: var(--radius-md);
-    text-align: center;
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
-  }
+    .van-field__value {
+      font-size: var(--font-size-sm) !important;
+      color: var(--color-text-primary) !important;
+    }
 
-  .setting-field {
-    :deep(.van-field) {
-      margin: 0 !important;
-      padding: 0 !important;
-      background: transparent !important;
-      border: none !important;
+    .van-field__right-icon {
+      font-size: 14px !important;
+      color: var(--color-text-tertiary) !important;
+    }
 
-      &::after {
-        display: none !important;
-      }
-
-      .van-field__label {
-        font-size: var(--font-size-sm) !important;
-        color: var(--color-text-secondary) !important;
-        width: auto !important;
-        min-width: 80px !important;
-      }
-
-      .van-field__value {
-        font-size: var(--font-size-sm) !important;
-        color: var(--color-text-primary) !important;
-      }
-
-      .van-field__right-icon {
-        font-size: 14px !important;
-        color: var(--color-text-tertiary) !important;
-      }
-
-      .van-field__control {
-        text-align: right !important;
-      }
+    .van-field__control {
+      text-align: right !important;
     }
   }
 }

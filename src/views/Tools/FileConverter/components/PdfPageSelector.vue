@@ -1,11 +1,16 @@
 <template>
-  <div v-if="pages.length > 0" class="page-selector">
-    <div class="selector-header">
-      <span class="title">{{ t('tools.fileConverter.pdfSplit.selectPages') }}</span>
+  <ToolCard
+    v-if="pages.length > 0"
+    icon="description-o"
+    :title="t('tools.fileConverter.pdfSplit.selectPages')"
+    class="page-selector"
+  >
+    <template #headerRight>
       <span class="selected-count">
         {{ selectedPages.length }} / {{ pages.length }}
       </span>
-    </div>
+    </template>
+
     <div class="selector-actions">
       <van-button size="small" @click="$emit('select-all')">
         {{ t('tools.fileConverter.pdfSplit.selectAll') }}
@@ -26,12 +31,13 @@
         <van-icon v-if="page.selected" name="success" class="check-icon" />
       </div>
     </div>
-  </div>
+  </ToolCard>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { Button as VanButton, Icon as VanIcon } from 'vant';
+import ToolCard from '../../components/ToolCard.vue';
 
 defineProps({
   pages: {
@@ -52,22 +58,6 @@ const { t } = useI18n();
 <style lang="less" scoped>
 .page-selector {
   margin-top: 16px;
-  background: var(--color-bg-secondary);
-  border-radius: var(--radius-xl);
-  padding: 16px;
-}
-
-.selector-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.title {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-primary);
-  font-weight: 500;
 }
 
 .selected-count {

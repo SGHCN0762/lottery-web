@@ -1,11 +1,6 @@
 <template>
   <div class="settings-section">
-    <div class="settings-card">
-      <div class="card-header">
-        <van-icon name="setting-o" class="header-icon" />
-        <span>{{ t('tools.fileConverter.common.settings') }}</span>
-      </div>
-
+    <ToolCard icon="setting-o" :title="t('tools.fileConverter.common.settings')">
       <div class="settings-content">
         <div class="setting-item">
           <div class="setting-label">
@@ -42,16 +37,14 @@
         </div>
 
       </div>
-    </div>
+    </ToolCard>
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import {
-  Icon as VanIcon,
-} from 'vant';
+import ToolCard from '../../components/ToolCard.vue';
 
 const { t } = useI18n();
 
@@ -87,70 +80,46 @@ const updateOrientation = val => emit('update:orientation', val);
 .settings-section {
   margin-bottom: var(--spacing-lg);
 
-  .settings-card {
-    background: var(--color-bg-secondary);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-lg);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  .settings-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
 
-    .card-header {
+  .setting-item {
+    .setting-label {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: var(--spacing-sm);
-      margin-bottom: var(--spacing-lg);
-      padding-bottom: var(--spacing-md);
-      border-bottom: 1px solid var(--color-border);
-      font-size: var(--font-size-base);
-      font-weight: var(--font-weight-semibold);
-      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-sm);
 
-      .header-icon {
-        font-size: 18px;
-        color: var(--color-primary);
+      .label-text {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-secondary);
       }
+
     }
 
-    .settings-content {
+    .radio-group {
       display: flex;
-      flex-direction: column;
-      gap: var(--spacing-lg);
-    }
+      gap: var(--spacing-sm);
 
-    .setting-item {
-      .setting-label {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: var(--spacing-sm);
+      .radio-item {
+        flex: 1;
+        text-align: center;
+        padding: var(--spacing-sm) var(--spacing-md);
+        background: var(--color-bg-primary);
+        border-radius: var(--radius-md);
+        font-size: var(--font-size-sm);
+        color: var(--color-text-secondary);
+        border: 1px solid var(--color-border);
+        cursor: pointer;
+        transition: all 0.2s ease;
 
-        .label-text {
-          font-size: var(--font-size-sm);
-          color: var(--color-text-secondary);
-        }
-
-      }
-
-      .radio-group {
-        display: flex;
-        gap: var(--spacing-sm);
-
-        .radio-item {
-          flex: 1;
-          text-align: center;
-          padding: var(--spacing-sm) var(--spacing-md);
-          background: var(--color-bg-primary);
-          border-radius: var(--radius-md);
-          font-size: var(--font-size-sm);
-          color: var(--color-text-secondary);
-          border: 1px solid var(--color-border);
-          cursor: pointer;
-          transition: all 0.2s ease;
-
-          &.active {
-            background: rgba(var(--color-primary-rgb), 0.1);
-            color: var(--color-primary);
-            border-color: var(--color-primary);
-          }
+        &.active {
+          background: rgba(var(--color-primary-rgb), 0.1);
+          color: var(--color-primary);
+          border-color: var(--color-primary);
         }
       }
     }

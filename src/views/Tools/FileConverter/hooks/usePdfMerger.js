@@ -14,6 +14,7 @@ export function usePdfMerger() {
     newFiles.forEach(f => {
       const url = URL.createObjectURL(f.file);
       pdfFiles.value.push({
+        id: Date.now() + Math.random(),
         name: f.file.name,
         url,
         file: f.file,

@@ -1,11 +1,6 @@
 <template>
   <div class="settings-section">
-    <div class="settings-card">
-      <div class="card-header">
-        <van-icon name="setting-o" class="header-icon" />
-        <span>{{ t('tools.imageCompressor.settings') }}</span>
-      </div>
-
+    <ToolCard icon="setting-o" :title="t('tools.imageCompressor.settings')">
       <div class="settings-content">
         <div class="setting-item">
           <div class="setting-label">
@@ -80,7 +75,7 @@
           </van-field>
         </div>
       </div>
-    </div>
+    </ToolCard>
 
     <van-action-sheet
       v-model:show="showFormatSheet"
@@ -96,12 +91,12 @@
   import { ref, computed } from 'vue';
   import { useI18n } from 'vue-i18n';
   import {
-    Icon as VanIcon,
     Slider as VanSlider,
     Switch as VanSwitch,
     ActionSheet as VanActionSheet,
     Field as VanField,
   } from 'vant';
+  import ToolCard from '../../components/ToolCard.vue';
 
   const { t } = useI18n();
 
@@ -155,34 +150,10 @@
 <style lang="less" scoped>
   .settings-section {
     margin-bottom: var(--spacing-lg);
-
-    .settings-card {
-      background: var(--color-bg-secondary);
-      border-radius: var(--radius-xl);
-      padding: var(--spacing-lg);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-
-      .card-header {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-sm);
-        margin-bottom: var(--spacing-lg);
-        padding-bottom: var(--spacing-md);
-        border-bottom: 1px solid var(--color-border);
-        font-size: var(--font-size-base);
-        font-weight: var(--font-weight-semibold);
-        color: var(--color-text-primary);
-
-        .header-icon {
-          font-size: 18px;
-          color: var(--color-primary);
-        }
-      }
-
-      .settings-content {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-lg);
+    .settings-content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
 
       .setting-item {
         .setting-label {
@@ -223,29 +194,29 @@
 
       .format-field {
         margin-bottom: var(--spacing-sm);
-        
+
         :deep(.van-field) {
           margin: 0 !important;
           padding: 0 !important;
           background: transparent !important;
           border: none !important;
-          
+
           &::after {
             display: none !important;
           }
-          
+
           .van-field__label {
             font-size: var(--font-size-sm) !important;
             color: var(--color-text-secondary) !important;
             width: auto !important;
             min-width: 80px !important;
           }
-          
+
           .van-field__value {
             font-size: var(--font-size-sm) !important;
             color: var(--color-text-primary) !important;
           }
-          
+
           .van-field__right-icon {
             font-size: 14px !important;
             color: var(--color-text-tertiary) !important;
@@ -254,5 +225,4 @@
       }
     }
   }
-}
 </style>

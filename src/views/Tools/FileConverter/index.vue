@@ -17,14 +17,34 @@
             v-model:quality="imageQuality"
           />
 
-          <ConvertImageList
-            :images="imageConvertList"
-            :output-format="imageOutputFormat"
-            @convert-all="convertImageFormat"
-            @clear-all="clearImageList"
-            @preview="previewImage"
-            @download="handleDownloadImage"
-          />
+          <FileListCard
+            v-model="imageConvertList"
+            :title="t('tools.fileConverter.common.imageList')"
+            icon="photo-o"
+            :show-clear-all="true"
+            :get-download-url="getImageDownloadUrl"
+          >
+            <template #headerRight>
+              <van-button size="small" type="primary" @click="convertImageFormat">
+                {{ t('tools.fileConverter.imageFormat.convertAll') }}
+              </van-button>
+            </template>
+            <template #itemMeta="{ file }">
+              <span v-if="file.originalName || file.name" class="format-badge">
+                {{ getOriginalFormat(file.originalName || file.name) }} → {{ imageOutputFormat.toUpperCase() }}
+              </span>
+            </template>
+            <template #itemSuffix="{ file }">
+              <van-button
+                v-if="file.convertedUrl"
+                size="small"
+                type="primary"
+                @click.stop="handleDownloadImage(file)"
+              >
+                {{ t('tools.fileConverter.common.download') }}
+              </van-button>
+            </template>
+          </FileListCard>
 
           <div v-if="hasConvertedImages" class="batch-download">
             <van-button type="primary" size="large" @click="handleDownloadAllImages">
@@ -50,10 +70,13 @@
             v-model:orientation="pdfOrientation"
           />
 
-          <PdfImageList
-            :images="pdfImageList"
-            @update:images="updatePdfImageList"
-            @clear-all="clearPdfImageList"
+          <FileListCard
+            v-model="pdfImageList"
+            :title="t('tools.fileConverter.common.imageList')"
+            icon="photo-o"
+            :draggable="true"
+            :show-actions="false"
+            :show-remove="false"
           />
 
           <div v-if="pdfImageList.length > 0" class="batch-download">
@@ -100,14 +123,20 @@
             </van-button>
           </div>
 
-          <PdfPageList
+          <FileListCard
             v-if="pdfPages.length > 0"
-            :pages="pdfPages"
-            :output-format="pdfOutputFormat"
-            @clear-all="clearPdfPages"
-            @preview="previewPage"
-            @download="handleDownloadPage"
-          />
+            v-model="pdfPages"
+            :title="t('tools.fileConverter.pdfToImage.pages')"
+            icon="photo-o"
+            :show-clear-all="true"
+            :get-download-url="getPageDownloadUrl"
+          >
+            <template #itemSuffix="{ file, index }">
+              <van-button size="small" type="primary" @click.stop="handleDownloadPage(file, index)">
+                {{ t('tools.fileConverter.common.download') }}
+              </van-button>
+            </template>
+          </FileListCard>
 
           <div v-if="pdfPages.length > 0" class="batch-download">
             <van-button type="primary" size="large" @click="handleDownloadAllPdfPages">
@@ -127,12 +156,11 @@
             @change="handleMergePdfFilesChange"
           />
 
-          <FileList
+          <FileListCard
             v-if="mergePdfFiles.length > 0"
-            :files="mergePdfFiles"
+            v-model="mergePdfFiles"
+            :draggable="true"
             :title="t('tools.fileConverter.pdfMerge.fileList')"
-            @remove="removeMergePdf"
-            @clear-all="clearMergePdfs"
           />
 
           <div v-if="mergePdfFiles.length > 0" class="batch-download">
@@ -161,12 +189,11 @@
             v-model:background-color="stitchBgColor"
           />
 
-          <FileList
+          <FileListCard
             v-if="stitchImages.length > 0"
-            :files="stitchImages"
+            v-model="stitchImages"
+            :draggable="true"
             :title="t('tools.fileConverter.common.imageList')"
-            @remove="handleStitchImageRemove"
-            @clear-all="clearStitchImages"
           />
 
           <div v-if="stitchImages.length >= 2" class="batch-download">
@@ -194,11 +221,14 @@
             v-model:gif-width="gifWidth"
           />
 
-          <PdfImageList
+          <FileListCard
             v-if="gifImages.length > 0"
-            :images="gifImages"
-            @update:images="handleGifReorder"
-            @clear-all="clearGifImages"
+            v-model="gifImages"
+            :title="t('tools.fileConverter.common.imageList')"
+            icon="photo-o"
+            :draggable="true"
+            :show-actions="false"
+            :show-remove="false"
           />
 
           <div v-if="gifImages.length >= 2" class="batch-download">
@@ -260,12 +290,10 @@
             @change="handleCompressFilesChangeHook"
           />
 
-          <FileList
+          <FileListCard
             v-if="compressFiles.length > 0"
-            :files="compressFiles"
+            v-model="compressFiles"
             :title="t('tools.fileConverter.fileCompress.fileList')"
-            @remove="handleCompressFileRemove"
-            @clear-all="clearCompressFiles"
           />
 
           <div v-if="compressFiles.length > 0" class="batch-download">
@@ -294,10 +322,7 @@ import FileUploader from '../components/FileUploader.vue';
 import ImageFormatSettings from './components/ImageFormatSettings.vue';
 import ImageToPdfSettings from './components/ImageToPdfSettings.vue';
 import PdfToImageSettings from './components/PdfToImageSettings.vue';
-import ConvertImageList from './components/ConvertImageList.vue';
-import PdfImageList from './components/PdfImageList.vue';
-import PdfPageList from './components/PdfPageList.vue';
-import FileList from './components/FileList.vue';
+import FileListCard from '../components/FileListCard.vue';
 import ImageStitchSettings from './components/ImageStitchSettings.vue';
 import GifMakerSettings from './components/GifMakerSettings.vue';
 import PdfPageSelector from './components/PdfPageSelector.vue';
@@ -309,7 +334,7 @@ import { useImageStitcher } from './hooks/useImageStitcher';
 import { useGifMaker } from './hooks/useGifMaker';
 import { usePdfSplitter } from './hooks/usePdfSplitter';
 import { useFileCompressor } from './hooks/useFileCompressor';
-import { formatFileSize } from './utils';
+import { formatFileSize, getOriginalFormat } from './utils';
 import pdfIcon from '@/views/Tools/assets/pdf.svg';
 import fileIcon from '@/views/Tools/assets/file.svg';
 
@@ -435,6 +460,9 @@ const handlePdfFileChange = (event) => {
     event.target.value = '';
   }
 };
+
+const getImageDownloadUrl = (file) => file.convertedUrl || file.url || file.originalUrl;
+const getPageDownloadUrl = (page) => page.url;
 
 const previewImage = (img) => {
   const urls = [img.originalUrl || img.url, img.convertedUrl].filter(Boolean);

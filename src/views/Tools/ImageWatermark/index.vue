@@ -28,15 +28,39 @@
       @update:logo="handleLogoUpdate"
     />
 
-    <ImageList
-      :images="images"
-      @watermark-all="addWatermarkAll"
-      @clear-all="clearAll"
-      @watermark="addWatermarkOne"
-      @download="downloadImage"
+    <FileListCard
+      v-model="images"
+      :title="t('tools.imageWatermark.imageList')"
+      icon="photo-o"
+      :show-clear-all="true"
+      :get-download-url="getDownloadUrl"
       @preview="previewImage"
-      @remove="removeImage"
-    />
+    >
+      <template #headerRight>
+        <van-button size="small" type="primary" @click="addWatermarkAll">
+          {{ t('tools.imageWatermark.watermarkAll') }}
+        </van-button>
+      </template>
+      <template #itemSuffix="{ file, index }">
+        <template v-if="file.watermarkedUrl">
+          <van-button size="small" type="primary" @click.stop="downloadImage(file)">
+            {{ t('tools.imageWatermark.download') }}
+          </van-button>
+          <van-button size="small" type="warning" plain @click.stop="addWatermarkOne(index)">
+            {{ t('tools.imageWatermark.redo') }}
+          </van-button>
+        </template>
+        <van-button
+          v-else
+          size="small"
+          type="primary"
+          :loading="file.watermarking"
+          @click.stop="addWatermarkOne(index)"
+        >
+          {{ t('tools.imageWatermark.watermark') }}
+        </van-button>
+      </template>
+    </FileListCard>
 
     <div v-if="hasWatermarkedImages" class="batch-download">
       <van-button type="primary" size="large" @click="downloadAll">
@@ -50,11 +74,13 @@
 import { useI18n } from 'vue-i18n';
 import { Button as VanButton } from 'vant';
 import FileUploader from '../components/FileUploader.vue';
+import FileListCard from '../components/FileListCard.vue';
 import WatermarkSettings from './components/WatermarkSettings.vue';
-import ImageList from './components/ImageList.vue';
 import { useImageWatermark } from './hooks/useImageWatermark';
 
 const { t } = useI18n();
+
+const getDownloadUrl = (file) => file.watermarkedUrl || file.url || file.preview;
 
 const {
   fileList,

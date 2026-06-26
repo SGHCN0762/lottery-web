@@ -15,19 +15,50 @@
       :format-options="formatOptions"
     />
 
-    <ImageList
-      :images="images"
-      :format-size="formatSize"
-      @compress-all="compressAll"
-      @clear-all="clearAll"
-      @download="downloadImage"
+    <FileListCard
+      v-model="images"
+      :title="t('tools.imageCompressor.imageList')"
+      icon="photo-o"
+      :show-clear-all="true"
+      :get-download-url="getDownloadUrl"
       @preview="previewImage"
-      @compress="compressOne"
-      @remove="removeImage"
-    />
+    >
+      <template #headerRight>
+        <van-button size="small" type="primary" @click="compressAll">
+          {{ t('tools.imageCompressor.compressAll') }}
+        </van-button>
+      </template>
+      <template #itemMeta="{ file }">
+        <span v-if="file.originalSize" class="size-info">
+          {{ formatSize(file.originalSize) }}
+          <template v-if="file.compressedSize">
+            → <span :class="file.ratio > 0 ? 'success' : 'danger'">{{ formatSize(file.compressedSize) }}</span>
+          </template>
+        </span>
+      </template>
+      <template #itemSuffix="{ file, index }">
+        <template v-if="file.compressedUrl">
+          <van-button size="small" type="primary" @click.stop="downloadImage(file)">
+            {{ t('tools.imageCompressor.download') }}
+          </van-button>
+          <van-button size="small" type="danger" plain @click.stop="removeImage(index)">
+            {{ t('tools.imageCompressor.remove') }}
+          </van-button>
+        </template>
+        <van-button
+          v-else
+          size="small"
+          type="primary"
+          :loading="file.compressing"
+          @click.stop="compressOne(index)"
+        >
+          {{ t('tools.imageCompressor.compress') }}
+        </van-button>
+      </template>
+    </FileListCard>
 
     <div v-if="hasCompressedImages" class="batch-download">
-      <van-button type="primary" size="large"  @click="downloadAll">
+      <van-button type="primary" size="large" @click="downloadAll">
         {{ t('tools.imageCompressor.downloadAll') }}
       </van-button>
     </div>
@@ -38,11 +69,13 @@
 import { useI18n } from 'vue-i18n';
 import { Button as VanButton } from 'vant';
 import FileUploader from '../components/FileUploader.vue';
+import FileListCard from '../components/FileListCard.vue';
 import ImageSettings from './components/ImageSettings.vue';
-import ImageList from './components/ImageList.vue';
 import { useImageCompressor } from './hooks/useImageCompressor';
 
 const { t } = useI18n();
+
+const getDownloadUrl = (file) => file.compressedUrl || file.url || file.preview;
 
 const {
   fileList,
@@ -87,6 +120,19 @@ const {
     .van-icon {
       font-size: 18px;
     }
+  }
+}
+
+.size-info {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+
+  .success {
+    color: var(--color-success);
+  }
+
+  .danger {
+    color: var(--color-danger);
   }
 }
 </style>

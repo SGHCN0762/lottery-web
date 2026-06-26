@@ -1,14 +1,13 @@
 <template>
-  <div class="layer-settings" v-if="layer">
-    <div class="settings-header" @click="showSettings = !showSettings">
-      <div class="header-title">
-        <van-icon name="records-o" class="header-icon" />
-        <span>{{ t('tools.logoDesigner.layerSettings') }}</span>
-      </div>
-      <van-icon :name="showSettings ? 'arrow-up' : 'arrow-down'" />
-    </div>
-
-    <div v-show="showSettings" class="settings-content">
+  <ToolCard
+    v-if="layer"
+    icon="records-o"
+    :title="t('tools.logoDesigner.layerSettings')"
+    collapsible
+    default-collapsed
+    class="layer-settings-card"
+  >
+    <div class="settings-content">
       <div class="setting-field">
         <van-field
           :label="t('tools.logoDesigner.layerName')"
@@ -256,14 +255,13 @@
       :actions="iconOptions"
       @select="handleIconSelect"
     />
-  </div>
+  </ToolCard>
 </template>
 
 <script setup>
 import { ref, computed, watch, toRef } from 'vue';
 import { useI18n } from 'vue-i18n';
 import {
-  Icon as VanIcon,
   Field as VanField,
   ActionSheet as VanActionSheet,
   Uploader as VanUploader,
@@ -271,6 +269,7 @@ import {
 import SettingSlider from './SettingSlider.vue';
 import ColorPicker from './ColorPicker.vue';
 import { LAYER_SIZE_LIMITS } from '../js/constants';
+import ToolCard from '../../components/ToolCard.vue';
 
 const { t } = useI18n();
 
@@ -302,9 +301,6 @@ const props = defineProps({
  * @event imageUpload - 图片上传
  */
 const emit = defineEmits(['updateLayer', 'imageUpload']);
-
-/** 设置面板展开状态 */
-const showSettings = ref(false);
 
 /** 本地位置X（百分比） */
 const localPositionX = ref(50);
@@ -580,100 +576,71 @@ const handleImageDelete = () => {
 </script>
 
 <style lang="less" scoped>
-.layer-settings {
-  background: var(--color-bg-secondary);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  overflow: hidden;
+.layer-settings-card {
   margin-bottom: var(--spacing-md);
+}
 
-  .settings-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md);
-    cursor: pointer;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-primary);
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
 
-    .header-title {
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-sm);
-      color: var(--color-text-primary);
+.setting-field {
+  :deep(.van-field) {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
 
-      .header-icon {
-        font-size: 18px;
-        color: var(--color-primary);
-      }
+    &::after {
+      display: none !important;
+    }
+
+    .van-field__label {
+      font-size: var(--font-size-sm) !important;
+      color: var(--color-text-secondary) !important;
+      width: auto !important;
+      min-width: 80px !important;
+    }
+
+    .van-field__value {
+      font-size: var(--font-size-sm) !important;
+      color: var(--color-text-primary) !important;
+    }
+
+    .van-field__right-icon {
+      font-size: 14px !important;
+      color: var(--color-text-tertiary) !important;
+    }
+
+    .van-field__control {
+      text-align: right !important;
     }
   }
+}
 
-  .settings-content {
-    padding: var(--spacing-md);
-    border-top: 1px solid var(--color-border);
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
+.upload-btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-tertiary);
+
+  .van-icon-plus {
+    font-size: 20px;
+    color: var(--color-text-tertiary);
   }
+}
 
-  .setting-field {
-    :deep(.van-field) {
-      margin: 0 !important;
-      padding: 0 !important;
-      background: transparent !important;
-      border: none !important;
+:deep(.van-uploader__preview) {
+  margin: 0;
 
-      &::after {
-        display: none !important;
-      }
-
-      .van-field__label {
-        font-size: var(--font-size-sm) !important;
-        color: var(--color-text-secondary) !important;
-        width: auto !important;
-        min-width: 80px !important;
-      }
-
-      .van-field__value {
-        font-size: var(--font-size-sm) !important;
-        color: var(--color-text-primary) !important;
-      }
-
-      .van-field__right-icon {
-        font-size: 14px !important;
-        color: var(--color-text-tertiary) !important;
-      }
-
-      .van-field__control {
-        text-align: right !important;
-      }
-    }
-  }
-
-  .upload-btn-small {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border: 2px dashed var(--color-border);
+  .van-uploader__preview-image {
     border-radius: var(--radius-md);
-    background: var(--color-bg-tertiary);
-
-    .van-icon-plus {
-      font-size: 20px;
-      color: var(--color-text-tertiary);
-    }
-  }
-
-  :deep(.van-uploader__preview) {
-    margin: 0;
-
-    .van-uploader__preview-image {
-      border-radius: var(--radius-md);
-    }
   }
 }
 </style>

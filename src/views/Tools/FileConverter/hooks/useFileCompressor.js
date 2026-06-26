@@ -42,6 +42,7 @@ export function useFileCompressor() {
       if (f.file) {
         const url = URL.createObjectURL(f.file);
         files.value.push({
+          id: Date.now() + Math.random(),
           name: f.file.name,
           url,
           file: f.file,
@@ -93,10 +94,10 @@ export function useFileCompressor() {
       link.click();
       URL.revokeObjectURL(url);
 
-      showSuccessToast(t('tools.fileConverter.fileCompress.success'));
+      showSuccessToast(t('tools.fileConverter.fileCompress.compressSuccess'));
     } catch (error) {
       console.error('Compress error:', error);
-      showFailToast(t('tools.fileConverter.fileCompress.failed'));
+      showFailToast(t('tools.fileConverter.fileCompress.compressFailed'));
     } finally {
       compressing.value = false;
     }

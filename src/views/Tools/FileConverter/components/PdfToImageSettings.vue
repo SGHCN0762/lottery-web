@@ -1,11 +1,6 @@
 <template>
   <div class="settings-section">
-    <div class="settings-card">
-      <div class="card-header">
-        <van-icon name="setting-o" class="header-icon" />
-        <span>{{ t('tools.fileConverter.common.settings') }}</span>
-      </div>
-
+    <ToolCard icon="setting-o" :title="t('tools.fileConverter.common.settings')">
       <div class="settings-content">
         <div class="format-field">
           <van-field
@@ -42,7 +37,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </ToolCard>
 
     <van-action-sheet
       v-model:show="showFormatSheet"
@@ -58,11 +53,11 @@
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import {
-  Icon as VanIcon,
   Slider as VanSlider,
   ActionSheet as VanActionSheet,
   Field as VanField,
 } from 'vant';
+import ToolCard from '../../components/ToolCard.vue';
 
 const { t } = useI18n();
 
@@ -103,98 +98,74 @@ const handleFormatSelect = option => {
 .settings-section {
   margin-bottom: var(--spacing-lg);
 
-  .settings-card {
-    background: var(--color-bg-secondary);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-lg);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  .settings-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
 
-    .card-header {
+  .setting-item {
+    .setting-label {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: var(--spacing-sm);
-      margin-bottom: var(--spacing-lg);
-      padding-bottom: var(--spacing-md);
-      border-bottom: 1px solid var(--color-border);
-      font-size: var(--font-size-base);
-      font-weight: var(--font-weight-semibold);
-      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-sm);
 
-      .header-icon {
-        font-size: 18px;
+      .label-text {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-secondary);
+      }
+
+      .quality-value {
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-semibold);
         color: var(--color-primary);
       }
     }
 
-    .settings-content {
+    .quality-hints {
       display: flex;
-      flex-direction: column;
-      gap: var(--spacing-lg);
+      justify-content: space-between;
+      margin-top: var(--spacing-xs);
+      font-size: var(--font-size-xs);
+      color: var(--color-text-tertiary);
     }
 
-    .setting-item {
-      .setting-label {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: var(--spacing-sm);
-
-        .label-text {
-          font-size: var(--font-size-sm);
-          color: var(--color-text-secondary);
-        }
-
-        .quality-value {
-          font-size: var(--font-size-sm);
-          font-weight: var(--font-weight-semibold);
-          color: var(--color-primary);
-        }
-      }
-
-      .quality-hints {
-        display: flex;
-        justify-content: space-between;
-        margin-top: var(--spacing-xs);
-        font-size: var(--font-size-xs);
-        color: var(--color-text-tertiary);
-      }
-
-      .slider-button {
-        width: 20px;
-        height: 20px;
-        background: var(--color-primary);
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.4);
-      }
+    .slider-button {
+      width: 20px;
+      height: 20px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.4);
     }
+  }
 
-    .format-field {
-      :deep(.van-field) {
-        margin: 0 !important;
-        padding: 0 !important;
-        background: transparent !important;
-        border: none !important;
+  .format-field {
+    :deep(.van-field) {
+      margin: 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+      border: none !important;
 
-        &::after {
-          display: none !important;
-        }
+      &::after {
+        display: none !important;
+      }
 
-        .van-field__label {
-          font-size: var(--font-size-sm) !important;
-          color: var(--color-text-secondary) !important;
-          width: auto !important;
-          min-width: 80px !important;
-        }
+      .van-field__label {
+        font-size: var(--font-size-sm) !important;
+        color: var(--color-text-secondary) !important;
+        width: auto !important;
+        min-width: 80px !important;
+      }
 
-        .van-field__value {
-          font-size: var(--font-size-sm) !important;
-          color: var(--color-text-primary) !important;
-        }
+      .van-field__value {
+        font-size: var(--font-size-sm) !important;
+        color: var(--color-text-primary) !important;
+      }
 
-        .van-field__right-icon {
-          font-size: 14px !important;
-          color: var(--color-text-tertiary) !important;
-        }
+      .van-field__right-icon {
+        font-size: 14px !important;
+        color: var(--color-text-tertiary) !important;
       }
     }
   }

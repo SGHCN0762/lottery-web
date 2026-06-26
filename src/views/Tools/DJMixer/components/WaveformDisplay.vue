@@ -1,14 +1,16 @@
 <template>
-  <div class="waveform-display" :class="deck">
-    <div class="waveform-label">{{ deck === 'A' ? 'DECK A' : 'DECK B' }}</div>
-    <div class="waveform-container">
-      <canvas ref="canvasRef" class="waveform-canvas"></canvas>
+  <ToolCard icon="graphic" :title="`波形 ${deck}`" class="waveform-card" :class="deck">
+    <div class="waveform-display">
+      <div class="waveform-container">
+        <canvas ref="canvasRef" class="waveform-canvas"></canvas>
+      </div>
     </div>
-  </div>
+  </ToolCard>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted, watch } from 'vue'
+import ToolCard from '../../components/ToolCard.vue'
 import { useWaveform } from '../composables/useWaveform'
 import { useAudioEngine } from '../composables/useAudioEngine'
 
@@ -69,38 +71,14 @@ watch(
 @bg-dark: #0a0a0f;
 @bg-secondary: #1a1a2e;
 
+.waveform-card {
+  width: 100%;
+}
+
 .waveform-display {
-  padding: 6px 8px;
-  background: linear-gradient(180deg, @bg-secondary, @bg-dark);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 255, 245, 0.1);
   width: 100%;
   box-sizing: border-box;
   min-width: 0;
-
-  &.A {
-    border-color: rgba(0, 255, 245, 0.2);
-  }
-
-  &.B {
-    border-color: rgba(255, 0, 255, 0.2);
-  }
-}
-
-.waveform-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 8px;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 1.5px;
-  margin-bottom: 2px;
-
-  .A & {
-    color: rgba(0, 255, 245, 0.7);
-  }
-
-  .B & {
-    color: rgba(255, 0, 255, 0.7);
-  }
 }
 
 .waveform-container {

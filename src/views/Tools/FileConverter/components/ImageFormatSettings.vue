@@ -1,11 +1,6 @@
 <template>
   <div class="settings-section">
-    <div class="settings-card">
-      <div class="card-header">
-        <van-icon name="setting-o" class="header-icon" />
-        <span>{{ t('tools.fileConverter.common.settings') }}</span>
-      </div>
-
+    <ToolCard icon="setting-o" :title="t('tools.fileConverter.common.settings')">
       <div class="settings-content">
         <div class="format-field">
           <van-field
@@ -42,89 +37,62 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <van-action-sheet
-      v-model:show="showFormatSheet"
-      :actions="formatOptions"
-      :cancel-text="t('common.cancel')"
-      close-on-click-action
-      @select="handleFormatSelect"
-    />
+      <van-action-sheet
+        v-model:show="showFormatSheet"
+        :actions="formatOptions"
+        :cancel-text="t('common.cancel')"
+        close-on-click-action
+        @select="handleFormatSelect"
+      />
+    </ToolCard>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-import { useI18n } from 'vue-i18n';
-import {
-  Icon as VanIcon,
-  Slider as VanSlider,
-  ActionSheet as VanActionSheet,
-  Field as VanField,
-} from 'vant';
+  import { ref, computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
+  import { Slider as VanSlider, ActionSheet as VanActionSheet, Field as VanField } from 'vant';
+  import ToolCard from '../../components/ToolCard.vue';
 
-const { t } = useI18n();
+  const { t } = useI18n();
 
-const props = defineProps({
-  format: {
-    type: String,
-    default: 'jpeg',
-  },
-  quality: {
-    type: Number,
-    default: 80,
-  },
-});
+  const props = defineProps({
+    format: {
+      type: String,
+      default: 'jpeg',
+    },
+    quality: {
+      type: Number,
+      default: 80,
+    },
+  });
 
-const emit = defineEmits(['update:format', 'update:quality']);
+  const emit = defineEmits(['update:format', 'update:quality']);
 
-const showFormatSheet = ref(false);
+  const showFormatSheet = ref(false);
 
-const formatOptions = computed(() => [
-  { name: 'JPEG', value: 'jpeg' },
-  { name: 'PNG', value: 'png' },
-  { name: 'WebP', value: 'webp' },
-]);
+  const formatOptions = computed(() => [
+    { name: 'JPEG', value: 'jpeg' },
+    { name: 'PNG', value: 'png' },
+    { name: 'WebP', value: 'webp' },
+  ]);
 
-const currentFormatLabel = computed(() => {
-  const option = formatOptions.value.find(opt => opt.value === props.format);
-  return option ? option.name : props.format;
-});
+  const currentFormatLabel = computed(() => {
+    const option = formatOptions.value.find(opt => opt.value === props.format);
+    return option ? option.name : props.format;
+  });
 
-const updateQuality = val => emit('update:quality', val);
+  const updateQuality = val => emit('update:quality', val);
 
-const handleFormatSelect = option => {
-  emit('update:format', option.value);
-};
+  const handleFormatSelect = option => {
+    emit('update:format', option.value);
+  };
 </script>
 
 <style lang="less" scoped>
-.settings-section {
-  margin-bottom: var(--spacing-lg);
-
-  .settings-card {
-    background: var(--color-bg-secondary);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-lg);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-sm);
-      margin-bottom: var(--spacing-lg);
-      padding-bottom: var(--spacing-md);
-      border-bottom: 1px solid var(--color-border);
-      font-size: var(--font-size-base);
-      font-weight: var(--font-weight-semibold);
-      color: var(--color-text-primary);
-
-      .header-icon {
-        font-size: 18px;
-        color: var(--color-primary);
-      }
-    }
+  .settings-section {
+    margin-bottom: var(--spacing-lg);
 
     .settings-content {
       display: flex;
@@ -198,5 +166,4 @@ const handleFormatSelect = option => {
       }
     }
   }
-}
 </style>

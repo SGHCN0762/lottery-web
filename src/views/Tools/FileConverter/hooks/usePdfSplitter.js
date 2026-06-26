@@ -84,7 +84,7 @@ export function usePdfSplitter() {
 
   const splitPdf = async () => {
     if (!pdfFile.value || selectedPages.value.length === 0) {
-      showFailToast(t('tools.fileConverter.pdfSplit.selectPages'));
+      showFailToast(t('tools.fileConverter.pdfSplit.selectPagesTip'));
       return;
     }
 
@@ -121,10 +121,10 @@ export function usePdfSplitter() {
         await new Promise(resolve => setTimeout(resolve, 300));
       }
 
-      showSuccessToast(t('tools.fileConverter.pdfSplit.success'));
+      showSuccessToast(t('tools.fileConverter.pdfSplit.splitSuccess'));
     } catch (error) {
       console.error('Split error:', error);
-      showFailToast(t('tools.fileConverter.pdfSplit.failed'));
+      showFailToast(t('tools.fileConverter.pdfSplit.splitFailed'));
     } finally {
       splitting.value = false;
     }

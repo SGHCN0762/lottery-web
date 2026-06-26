@@ -1,11 +1,6 @@
 <template>
   <div class="settings-section">
-    <div class="settings-card">
-      <div class="card-header">
-        <van-icon name="setting-o" class="header-icon" />
-        <span>{{ t('tools.imageWatermark.settings') }}</span>
-      </div>
-
+    <ToolCard icon="setting-o" :title="t('tools.imageWatermark.settings')">
       <div class="settings-content">
         <div class="setting-field">
           <van-field
@@ -176,7 +171,12 @@
           </div>
         </template>
 
-        <template v-if="(watermarkType === 'single' || watermarkType === 'logo') && watermarkPosition === 'custom'">
+        <template
+          v-if="
+            (watermarkType === 'single' || watermarkType === 'logo') &&
+            watermarkPosition === 'custom'
+          "
+        >
           <div class="setting-item">
             <div class="setting-label">
               <span class="label-text">{{ t('tools.imageWatermark.positionX') }}</span>
@@ -282,17 +282,18 @@
 
         <template v-if="watermarkType !== 'logo'">
           <div class="setting-field">
-            <van-field
-              :label="t('tools.imageWatermark.color')"
-            >
+            <van-field :label="t('tools.imageWatermark.color')">
               <template #input>
-                <ColorPicker :model-value="watermarkColor" @update:model-value="$emit('update:watermark-color', $event)" />
+                <ColorPicker
+                  :model-value="watermarkColor"
+                  @update:model-value="$emit('update:watermark-color', $event)"
+                />
               </template>
             </van-field>
           </div>
         </template>
       </div>
-    </div>
+    </ToolCard>
 
     <van-action-sheet
       v-model:show="showTypeSheet"
@@ -321,296 +322,272 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-import { useI18n } from 'vue-i18n';
-import {
-  Icon as VanIcon,
-  Slider as VanSlider,
-  ActionSheet as VanActionSheet,
-  Field as VanField,
-  Uploader as VanUploader,
-} from 'vant';
-import ColorPicker from '@/views/Tools/LogoDesigner/components/ColorPicker.vue';
+  import { ref, computed } from 'vue';
+  import { useI18n } from 'vue-i18n';
+  import {
+    Icon as VanIcon,
+    Slider as VanSlider,
+    ActionSheet as VanActionSheet,
+    Field as VanField,
+    Uploader as VanUploader,
+  } from 'vant';
+  import ToolCard from '../../components/ToolCard.vue';
+  import ColorPicker from '@/views/Tools/LogoDesigner/components/ColorPicker.vue';
 
-const { t } = useI18n();
+  const { t } = useI18n();
 
-const props = defineProps({
-  watermarkType: String,
-  watermarkTypeOptions: Array,
-  watermarkText: String,
-  watermarkSize: Number,
-  watermarkAngle: Number,
-  watermarkOpacity: Number,
-  watermarkColor: String,
-  watermarkPosition: String,
-  positionOptions: Array,
-  watermarkMargin: Number,
-  customPositionX: Number,
-  customPositionY: Number,
-  logoUrl: String,
-  logoWidth: Number,
-  logoHeight: Number,
-  outputFormat: String,
-  formatOptions: Array,
-});
+  const props = defineProps({
+    watermarkType: String,
+    watermarkTypeOptions: Array,
+    watermarkText: String,
+    watermarkSize: Number,
+    watermarkAngle: Number,
+    watermarkOpacity: Number,
+    watermarkColor: String,
+    watermarkPosition: String,
+    positionOptions: Array,
+    watermarkMargin: Number,
+    customPositionX: Number,
+    customPositionY: Number,
+    logoUrl: String,
+    logoWidth: Number,
+    logoHeight: Number,
+    outputFormat: String,
+    formatOptions: Array,
+  });
 
-const emit = defineEmits([
-  'update:watermark-type',
-  'update:watermark-text',
-  'update:watermark-size',
-  'update:watermark-angle',
-  'update:watermark-opacity',
-  'update:watermark-color',
-  'update:watermark-position',
-  'update:watermark-margin',
-  'update:custom-position-x',
-  'update:custom-position-y',
-  'update:logo-width',
-  'update:logo-height',
-  'update:output-format',
-  'update:logo',
-]);
+  const emit = defineEmits([
+    'update:watermark-type',
+    'update:watermark-text',
+    'update:watermark-size',
+    'update:watermark-angle',
+    'update:watermark-opacity',
+    'update:watermark-color',
+    'update:watermark-position',
+    'update:watermark-margin',
+    'update:custom-position-x',
+    'update:custom-position-y',
+    'update:logo-width',
+    'update:logo-height',
+    'update:output-format',
+    'update:logo',
+  ]);
 
-const showTypeSheet = ref(false);
-const showPositionSheet = ref(false);
-const showFormatSheet = ref(false);
-const logoFileList = ref([]);
+  const showTypeSheet = ref(false);
+  const showPositionSheet = ref(false);
+  const showFormatSheet = ref(false);
+  const logoFileList = ref([]);
 
-const typeOptions = computed(() => [
-  { name: t('tools.imageWatermark.typeTile'), value: 'tile' },
-  { name: t('tools.imageWatermark.typeSingle'), value: 'single' },
-  { name: t('tools.imageWatermark.typeLogo'), value: 'logo' },
-]);
+  const typeOptions = computed(() => [
+    { name: t('tools.imageWatermark.typeTile'), value: 'tile' },
+    { name: t('tools.imageWatermark.typeSingle'), value: 'single' },
+    { name: t('tools.imageWatermark.typeLogo'), value: 'logo' },
+  ]);
 
-const currentTypeLabel = computed(() => {
-  const option = typeOptions.value.find(opt => opt.value === props.watermarkType);
-  return option ? option.name : props.watermarkType;
-});
+  const currentTypeLabel = computed(() => {
+    const option = typeOptions.value.find(opt => opt.value === props.watermarkType);
+    return option ? option.name : props.watermarkType;
+  });
 
-const currentPositionLabel = computed(() => {
-  const option = props.positionOptions.find(opt => opt.value === props.watermarkPosition);
-  return option ? option.name : props.watermarkPosition;
-});
+  const currentPositionLabel = computed(() => {
+    const option = props.positionOptions.find(opt => opt.value === props.watermarkPosition);
+    return option ? option.name : props.watermarkPosition;
+  });
 
-const currentFormatLabel = computed(() => {
-  const option = props.formatOptions.find(opt => opt.value === props.outputFormat);
-  return option ? option.name : props.outputFormat;
-});
+  const currentFormatLabel = computed(() => {
+    const option = props.formatOptions.find(opt => opt.value === props.outputFormat);
+    return option ? option.name : props.outputFormat;
+  });
 
-const handleTypeSelect = (option) => {
-  emit('update:watermark-type', option.value);
-};
+  const handleTypeSelect = option => {
+    emit('update:watermark-type', option.value);
+  };
 
-const handlePositionSelect = (option) => {
-  emit('update:watermark-position', option.value);
-};
+  const handlePositionSelect = option => {
+    emit('update:watermark-position', option.value);
+  };
 
-const handleFormatSelect = (option) => {
-  emit('update:output-format', option.value);
-};
+  const handleFormatSelect = option => {
+    emit('update:output-format', option.value);
+  };
 
-const handleLogoRead = (file) => {
-  logoFileList.value = [file];
-  emit('update:logo', file);
-};
+  const handleLogoRead = file => {
+    logoFileList.value = [file];
+    emit('update:logo', file);
+  };
 
-const handleLogoDelete = () => {
-  logoFileList.value = [];
-  emit('update:logo', null);
-};
+  const handleLogoDelete = () => {
+    logoFileList.value = [];
+    emit('update:logo', null);
+  };
 </script>
 
 <style lang="less" scoped>
-.settings-section {
-  margin-bottom: var(--spacing-lg);
-
-  .settings-card {
-    background: var(--color-bg-secondary);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-lg);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-sm);
-      margin-bottom: var(--spacing-lg);
-      padding-bottom: var(--spacing-md);
-      border-bottom: 1px solid var(--color-border);
-      font-size: var(--font-size-base);
-      font-weight: var(--font-weight-semibold);
-      color: var(--color-text-primary);
-
-      .header-icon {
-        font-size: 18px;
-        color: var(--color-primary);
-      }
-    }
-
+  .settings-section {
+    margin-bottom: var(--spacing-lg);
     .settings-content {
       display: flex;
       flex-direction: column;
       gap: var(--spacing-lg);
-    }
 
-    .setting-field {
-      margin-bottom: var(--spacing-sm);
-      
-      :deep(.van-field) {
-        margin: 0 !important;
-        padding: 0 !important;
-        background: transparent !important;
-        border: none !important;
+      .setting-field {
+        margin-bottom: var(--spacing-sm);
 
-        &::after {
-          display: none !important;
+        :deep(.van-field) {
+          margin: 0 !important;
+          padding: 0 !important;
+          background: transparent !important;
+          border: none !important;
+
+          &::after {
+            display: none !important;
+          }
+
+          .van-field__label {
+            font-size: var(--font-size-sm) !important;
+            color: var(--color-text-secondary) !important;
+            width: auto !important;
+            min-width: 80px !important;
+          }
+
+          .van-field__value {
+            font-size: var(--font-size-sm) !important;
+            color: var(--color-text-primary) !important;
+          }
+
+          .van-field__right-icon {
+            font-size: 14px !important;
+            color: var(--color-text-tertiary) !important;
+          }
+
+          .van-field__control {
+            text-align: right !important;
+          }
         }
 
-        .van-field__label {
-          font-size: var(--font-size-sm) !important;
-          color: var(--color-text-secondary) !important;
-          width: auto !important;
-          min-width: 80px !important;
-        }
-
-        .van-field__value {
-          font-size: var(--font-size-sm) !important;
-          color: var(--color-text-primary) !important;
-        }
-
-        .van-field__right-icon {
-          font-size: 14px !important;
-          color: var(--color-text-tertiary) !important;
-        }
-
-        .van-field__control {
-          text-align: right !important;
+        .unit-text {
+          font-size: var(--font-size-sm);
+          color: var(--color-text-tertiary);
         }
       }
 
-      .unit-text {
-        font-size: var(--font-size-sm);
-        color: var(--color-text-tertiary);
-      }
-    }
+      .setting-item {
+        .setting-label {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: var(--spacing-sm);
 
-    .setting-item {
-      .setting-label {
+          .label-text {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+          }
+
+          .value-text {
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-primary);
+          }
+        }
+
+        .value-hints {
+          display: flex;
+          justify-content: space-between;
+          margin-top: var(--spacing-xs);
+          font-size: var(--font-size-xs);
+          color: var(--color-text-tertiary);
+        }
+
+        .slider-button {
+          width: 20px;
+          height: 20px;
+          background: var(--color-primary);
+          border-radius: 50%;
+          box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.4);
+        }
+      }
+
+      .auto-switch {
+        .setting-label {
+          margin-bottom: var(--spacing-xs);
+        }
+
+        .auto-tip {
+          font-size: var(--font-size-xs);
+          color: var(--color-text-tertiary);
+          line-height: 1.4;
+        }
+      }
+
+      .logo-upload {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: var(--spacing-sm);
 
         .label-text {
           font-size: var(--font-size-sm);
           color: var(--color-text-secondary);
         }
 
-        .value-text {
-          font-size: var(--font-size-sm);
-          font-weight: var(--font-weight-semibold);
-          color: var(--color-primary);
+        :deep(.van-uploader) {
+          display: flex;
+          gap: var(--spacing-sm);
+        }
+
+        :deep(.van-uploader__upload) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 80px;
+          height: 80px;
+          border: 2px dashed var(--color-border);
+          border-radius: var(--radius-md);
+          background: var(--color-bg-tertiary);
+        }
+
+        .upload-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 80px;
+          height: 80px;
+          border: 2px dashed var(--color-border);
+          border-radius: var(--radius-md);
+          background: var(--color-bg-tertiary);
+          color: var(--color-text-tertiary);
+        }
+
+        :deep(.van-uploader__preview) {
+          margin: 0;
+        }
+
+        :deep(.van-uploader__preview-image) {
+          width: 80px;
+          height: 80px;
+          padding: 0;
+          margin: 0;
         }
       }
 
-      .value-hints {
+      .color-picker {
         display: flex;
-        justify-content: space-between;
-        margin-top: var(--spacing-xs);
-        font-size: var(--font-size-xs);
-        color: var(--color-text-tertiary);
-      }
-
-      .slider-button {
-        width: 20px;
-        height: 20px;
-        background: var(--color-primary);
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.4);
-      }
-    }
-
-    .auto-switch {
-      .setting-label {
-        margin-bottom: var(--spacing-xs);
-      }
-
-      .auto-tip {
-        font-size: var(--font-size-xs);
-        color: var(--color-text-tertiary);
-        line-height: 1.4;
-      }
-    }
-
-    .logo-upload {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .label-text {
-        font-size: var(--font-size-sm);
-        color: var(--color-text-secondary);
-      }
-
-      :deep(.van-uploader) {
-        display: flex;
+        align-items: center;
         gap: var(--spacing-sm);
-      }
 
-      :deep(.van-uploader__upload) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80px;
-        height: 80px;
-        border: 2px dashed var(--color-border);
-        border-radius: var(--radius-md);
-        background: var(--color-bg-tertiary);
-      }
+        input[type='color'] {
+          width: 32px;
+          height: 32px;
+          border: 1px solid var(--color-border);
+          border-radius: 4px;
+          padding: 0;
+          cursor: pointer;
+        }
 
-      .upload-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80px;
-        height: 80px;
-        border: 2px dashed var(--color-border);
-        border-radius: var(--radius-md);
-        background: var(--color-bg-tertiary);
-        color: var(--color-text-tertiary);
-      }
-
-      :deep(.van-uploader__preview) {
-        margin: 0;
-      }
-
-      :deep(.van-uploader__preview-image) {
-        width: 80px;
-        height: 80px;
-        padding: 0;
-        margin: 0;
-      }
-    }
-
-    .color-picker {
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-sm);
-
-      input[type="color"] {
-        width: 32px;
-        height: 32px;
-        border: 1px solid var(--color-border);
-        border-radius: 4px;
-        padding: 0;
-        cursor: pointer;
-      }
-
-      span {
-        font-size: var(--font-size-xs);
-        color: var(--color-text-secondary);
+        span {
+          font-size: var(--font-size-xs);
+          color: var(--color-text-secondary);
+        }
       }
     }
   }
-}
 </style>

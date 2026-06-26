@@ -1,10 +1,6 @@
 <template>
   <div class="theme-settings">
-    <div class="setting-section">
-      <div class="section-title">
-        <van-icon name="palette-o" />
-        <span>{{ t('resume.theme.title') }}</span>
-      </div>
+    <ToolCard icon="palette-o" :title="t('resume.theme.title')" collapsible class="setting-card">
       <div class="theme-grid">
         <div
           v-for="(theme, key) in themes"
@@ -28,13 +24,9 @@
           <van-icon v-if="currentTheme === key" name="success" class="check-icon" />
         </div>
       </div>
-    </div>
+    </ToolCard>
 
-    <div class="setting-section">
-      <div class="section-title">
-        <van-icon name="photo-o" />
-        <span>{{ t('resume.background.title') }}</span>
-      </div>
+    <ToolCard icon="photo-o" :title="t('resume.background.title')" collapsible class="setting-card">
       <div class="background-grid">
         <div
           v-for="(bg, key) in backgrounds"
@@ -49,13 +41,9 @@
           <van-icon v-if="currentBackground === key" name="success" class="check-icon" />
         </div>
       </div>
-    </div>
+    </ToolCard>
 
-    <div class="setting-section">
-      <div class="section-title">
-        <van-icon name="cluster-o" />
-        <span>{{ t('resume.decoration.title') }}</span>
-      </div>
+    <ToolCard icon="cluster-o" :title="t('resume.decoration.title')" collapsible class="setting-card">
       <div class="decoration-grid">
         <div
           v-for="(deco, key) in decorations"
@@ -68,12 +56,10 @@
           <van-icon v-if="currentDecoration === key" name="success" class="check-icon" />
         </div>
       </div>
-    </div>
+    </ToolCard>
 
-    <div class="setting-section">
-      <div class="section-title">
-        <van-icon name="apps-o" />
-        <span>{{ t('resume.layout.title') }}</span>
+    <ToolCard icon="apps-o" :title="t('resume.layout.title')" collapsible class="setting-card">
+      <template #headerRight>
         <div class="lock-icon" @click="toggleLock">
           <svg v-if="isLocked" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
@@ -84,7 +70,7 @@
             <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
           </svg>
         </div>
-      </div>
+      </template>
       <div class="lock-tip" v-if="isLocked">
         <van-icon name="info-o" />
         <span>点击右上角锁图标解锁后拖拽排序</span>
@@ -107,7 +93,7 @@
           </template>
         </draggable>
       </div>
-    </div>
+    </ToolCard>
   </div>
 </template>
 
@@ -116,6 +102,7 @@
   import { useI18n } from 'vue-i18n';
   import { Icon as VanIcon, Switch as VanSwitch } from 'vant';
   import draggable from 'vuedraggable';
+  import ToolCard from '../../../components/ToolCard.vue';
   import { resumeThemes, resumeBackgrounds, resumeDecorations } from '../../constants/resumeConstants';
 
   const { t } = useI18n();
@@ -203,25 +190,13 @@
 
 <style lang="less" scoped>
   .theme-settings {
-  }
-
-  .setting-section {
-    margin-bottom: var(--spacing-xl);
-    background: var(--color-bg-secondary);
-    border-radius: 12px;
-    padding: var(--spacing-md);
-  }
-
-  .section-title {
     display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-primary);
-    margin-bottom: var(--spacing-md);
-    padding-bottom: var(--spacing-sm);
-    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    gap: var(--spacing-xl);
+  }
+
+  .setting-card {
+    margin-bottom: 0;
   }
 
   .theme-grid {
