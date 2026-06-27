@@ -174,6 +174,138 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/exam-prep',
+    name: 'ExamPrep',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep" */ '@/views/Tools/ExamPrep/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/practice',
+    name: 'ExamPrepPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-practice" */ '@/views/Tools/ExamPrep/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.practice.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/wrong-questions',
+    name: 'ExamPrepWrongQuestions',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-wrong" */ '@/views/Tools/ExamPrep/pages/WrongQuestionsPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.wrongQuestions.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/collections',
+    name: 'ExamPrepCollections',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-collections" */ '@/views/Tools/ExamPrep/pages/CollectionPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.collections.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/statistics',
+    name: 'ExamPrepStatistics',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-statistics" */ '@/views/Tools/ExamPrep/pages/StatisticsPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.statistics.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/exam',
+    name: 'ExamPrepExam',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-exam" */ '@/views/Tools/ExamPrep/pages/ExamPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.exam.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/exam/result/:recordId',
+    name: 'ExamPrepExamResult',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-exam-result" */ '@/views/Tools/ExamPrep/pages/ExamResultPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.result.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/settings',
+    name: 'ExamPrepSettings',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-settings" */ '@/views/Tools/ExamPrep/pages/SettingsPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.settings.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/backup',
+    name: 'ExamPrepBackup',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-backup" */ '@/views/Tools/ExamPrep/pages/BackupPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.backup.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/about',
+    name: 'ExamPrepAbout',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-about" */ '@/views/Tools/ExamPrep/pages/AboutPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.about.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/exam-prep/knowledge',
+    name: 'ExamPrepKnowledge',
+    component: () =>
+      import(/* webpackChunkName: "tool-exam-prep-knowledge" */ '@/views/Tools/ExamPrep/pages/KnowledgePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.examPrep.knowledge.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

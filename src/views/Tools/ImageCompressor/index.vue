@@ -21,7 +21,6 @@
       icon="photo-o"
       :show-clear-all="true"
       :get-download-url="getDownloadUrl"
-      @preview="previewImage"
     >
       <template #headerRight>
         <van-button size="small" type="primary" @click="compressAll">
@@ -93,7 +92,6 @@ const {
   compressOne,
   compressAll,
   downloadImage,
-  previewImage,
   downloadAll,
   formatSize,
 } = useImageCompressor();

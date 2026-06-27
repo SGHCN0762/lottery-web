@@ -46,13 +46,6 @@
     </div>
   </ToolCard>
 
-  <div v-else-if="!hideEmpty" class="empty-state">
-    <slot name="empty">
-      <van-icon name="description-o" size="72" />
-      <p>{{ emptyText || emptyDefaultText }}</p>
-    </slot>
-  </div>
-
   <van-popup
     v-model:show="previewVisible"
     position="bottom"
@@ -65,8 +58,9 @@
       <van-icon name="cross" class="preview-close" @click="previewVisible = false" />
     </div>
     <div class="preview-content">
-      <OpenFileViewer
-        v-if="previewFile"
+      <component
+        v-if="previewFile && OpenFileViewer"
+        :is="OpenFileViewer"
         :file="previewFile"
         :file-name="previewFileName"
         :width="'100%'"
@@ -91,10 +85,6 @@ import {
   Popup as VanPopup,
   Loading as VanLoading,
 } from 'vant';
-import { OpenFileViewer } from '@open-file-viewer/vue';
-import { imagePlugin, pdfPlugin, textPlugin, officePlugin } from '@open-file-viewer/core';
-import '@open-file-viewer/core/style.css';
-import pdfWorkerSrc from 'pdfjs-dist/build/pdf.worker.mjs?url';
 import ToolCard from './ToolCard.vue';
 import FileList from './FileList.vue';
 import {
@@ -105,14 +95,25 @@ import {
 const { t } = useI18n();
 
 const clearAllText = t('tools.fileConverter.common.clearAll');
-const emptyDefaultText = t('tools.fileConverter.common.empty');
 
-const plugins = [
-  imagePlugin(),
-  textPlugin(),
-  pdfPlugin({ workerSrc: pdfWorkerSrc }),
-  officePlugin(),
-];
+let OpenFileViewer = null;
+let plugins = null;
+
+const loadViewer = async () => {
+  if (!OpenFileViewer) {
+    const { OpenFileViewer: Viewer } = await import('@open-file-viewer/vue');
+    const { imagePlugin, pdfPlugin, textPlugin, officePlugin } = await import('@open-file-viewer/core');
+    await import('@open-file-viewer/core/style.css');
+    const pdfWorkerSrc = await import('pdfjs-dist/build/pdf.worker.mjs?url');
+    OpenFileViewer = Viewer;
+    plugins = [
+      imagePlugin(),
+      textPlugin(),
+      pdfPlugin({ workerSrc: pdfWorkerSrc.default }),
+      officePlugin(),
+    ];
+  }
+};
 
 const props = defineProps({
   modelValue: {
@@ -147,14 +148,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  hideEmpty: {
-    type: Boolean,
-    default: false,
-  },
-  emptyText: {
-    type: String,
-    default: '',
-  },
   actionItems: {
     type: Array,
     default: () => [],
@@ -182,7 +175,6 @@ const emit = defineEmits([
   'update:modelValue',
   'clear-all',
   'sort',
-  'preview',
   'action',
   'item-click',
 ]);
@@ -200,8 +192,6 @@ const previewFileName = ref('');
 const handlePreview = async (file) => {
   if (!props.previewable) return;
 
-  emit('preview', file);
-
   const url = getFileUrl(file);
   const name = getFileName(file);
 
@@ -210,6 +200,7 @@ const handlePreview = async (file) => {
   previewVisible.value = true;
 
   try {
+    await loadViewer();
     const response = await fetch(url);
     const blob = await response.blob();
     previewFile.value = new File([blob], name, { type: blob.type });
@@ -239,23 +230,6 @@ const handleSort = (files) => {
 .file-list-body {
   max-height: 300px;
   overflow-y: auto;
-}
-
-.empty-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: calc(var(--spacing-xl) * 2);
-  color: var(--color-text-tertiary);
-
-  .van-icon {
-    margin-bottom: var(--spacing-md);
-  }
-
-  p {
-    margin: 0;
-  }
 }
 
 .file-preview-popup {

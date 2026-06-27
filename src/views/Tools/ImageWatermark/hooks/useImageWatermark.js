@@ -1,6 +1,6 @@
 import { ref, computed, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { showImagePreview, showSuccessToast, showFailToast, showLoadingToast } from 'vant';
+import { showSuccessToast, showFailToast, showLoadingToast } from 'vant';
 
 export function useImageWatermark() {
   const { t } = useI18n();
@@ -584,13 +584,6 @@ export function useImageWatermark() {
     }
   };
 
-  const previewImage = (img) => {
-    showImagePreview({
-      images: [img.originalUrl, img.watermarkedUrl].filter(Boolean),
-      startPosition: img.watermarkedUrl ? 1 : 0,
-    });
-  };
-
   const downloadAll = async () => {
     const watermarkedImages = images.value.filter(img => img.watermarkedUrl);
     
@@ -693,7 +686,6 @@ export function useImageWatermark() {
     addWatermarkOne,
     addWatermarkAll,
     downloadImage,
-    previewImage,
     downloadAll,
   };
 }

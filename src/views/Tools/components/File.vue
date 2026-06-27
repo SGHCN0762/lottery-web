@@ -6,12 +6,11 @@
   >
     <slot name="itemPrefix" :file="file" />
 
-    <div class="file-preview">
+    <div class="file-preview" @click.stop="$emit('preview', file)">
       <img
         v-if="isImage(file) && file.url"
         :src="file.url"
         alt=""
-        @click.stop="$emit('preview', file)"
       />
       <div v-else class="file-icon">
         <img :src="fileIconSrc" alt="" />

@@ -1,7 +1,11 @@
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { showImagePreview, showSuccessToast, showFailToast, showLoadingToast } from 'vant';
+import { showSuccessToast, showFailToast, showLoadingToast } from 'vant';
 
+/**
+ * 图片压缩工具函数
+ * 用于处理图片上传、压缩、预览和下载等功能
+ */
 export function useImageCompressor() {
   const { t } = useI18n();
 
@@ -249,13 +253,6 @@ export function useImageCompressor() {
     }
   };
 
-  const previewImage = (img) => {
-    showImagePreview({
-      images: [img.originalUrl, img.compressedUrl].filter(Boolean),
-      startPosition: 1,
-    });
-  };
-
   const downloadAll = async () => {
     const compressedImages = images.value.filter(img => img.compressedUrl);
     
@@ -321,7 +318,6 @@ export function useImageCompressor() {
     compressOne,
     compressAll,
     downloadImage,
-    previewImage,
     downloadAll,
     formatSize,
   };

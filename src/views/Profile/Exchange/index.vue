@@ -590,7 +590,7 @@
       align-items: center;
       padding: var(--spacing-md);
       border-top: 1px solid #ebedf0;
-      background: #ffffff;
+      background: var(--color-bg-secondary);
 
       .footer-price {
         display: flex;

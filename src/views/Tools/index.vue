@@ -105,6 +105,13 @@ const tools = computed(() => [
     description: t('tools.fileConverter.description'),
     route: 'FileConverter',
   },
+  {
+    id: 'exam-prep',
+    name: t('tools.examPrep.name'),
+    icon: '📚',
+    description: t('tools.examPrep.description'),
+    route: 'ExamPrep',
+  },
 ]);
 
 // ========================================

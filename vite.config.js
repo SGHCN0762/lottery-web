@@ -1,16 +1,20 @@
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
 import path from 'path';
 
-// https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
 
   return {
-    // GitHub Pages 部署配置：仓库名作为基础路径
     base: '/lottery-web/',
 
-    plugins: [vue()],
+    plugins: [
+      vue(),
+      nodePolyfills({
+        include: ['buffer', 'util'],
+      }),
+    ],
 
     resolve: {
       alias: {
@@ -19,8 +23,8 @@ export default defineConfig(({ mode }) => {
     },
 
     build: {
-      // 提高代码块大小警告阈值到 1000KB (压缩前)
-      chunkSizeWarningLimit: 1000,
+      // 提高代码块大小警告阈值到 2000KB (压缩前) - heic2any 和 pptx-renderer 是第三方库，已动态导入
+      chunkSizeWarningLimit: 2000,
 
       // 启用 CSS 代码分割
       cssCodeSplit: true,
