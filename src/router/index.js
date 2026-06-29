@@ -318,6 +318,18 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/knowledge-flash',
+    name: 'KnowledgeFlash',
+    component: () =>
+      import(/* webpackChunkName: "tool-knowledge-flash" */ '@/views/Tools/KnowledgeFlash/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.knowledgeFlash.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

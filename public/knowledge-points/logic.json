@@ -1,0 +1,447 @@
+{
+  "name": "判断推理",
+  "icon": "🧠",
+  "color": "#9c27b0",
+  "subcategories": {
+    "logic-graph": {
+      "name": "图形推理",
+      "icon": "🔺",
+      "topics": {
+        "logic-position": {
+          "name": "位置规律",
+          "description": "图形元素的位置变化规律，包括平移、旋转、翻转等。",
+          "mnemonic": "平移旋转和翻转，位置变化要分清，方向步数仔细辨，周期规律记心中",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='100' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='60' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>平移</text><text x='60' y='55' text-anchor='middle' font-size='9' fill='#666'>方向+步数</text><rect x='120' y='10' width='100' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='170' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>旋转</text><text x='170' y='55' text-anchor='middle' font-size='9' fill='#666'>顺时针/逆时针+角度</text><rect x='230' y='10' width='100' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='280' y='35' text-anchor='middle' font-size='11' fill='#e65100'>翻转</text><text x='280' y='55' text-anchor='middle' font-size='9' fill='#666'>上下/左右翻转</text><rect x='340' y='10' width='50' height='60' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='365' y='35' text-anchor='middle' font-size='11' fill='#880e4f'>遍历</text><text x='365' y='55' text-anchor='middle' font-size='9' fill='#666'>缺什么补什么</text><rect x='10' y='80' width='380' height='50' fill='#efebe9' stroke='#5d4037' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#5d4037'>解题思路</text><text x='100' y='120' font-size='9' fill='#666'>1. 元素相同 2. 位置变化 3. 找方向步数</text><text x='300' y='120' font-size='9' fill='#666'>4. 周期循环 5. 验证规律</text></svg>",
+          "keyPoints": [
+            "平移：元素在格子内移动，注意方向（上下左右）和步数（每次移动几格）",
+            "旋转：元素绕中心点转动，注意方向（顺时针/逆时针）和角度（45°/90°/180°）",
+            "翻转：元素沿轴线对折，注意是上下翻转还是左右翻转",
+            "周期规律：平移可能循环，如16宫格中走圈",
+            "相邻比较：比较前一幅图和后一幅图的变化"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】黑块每次向右移动1格，循环移动 → 找准起点和周期",
+            "【例2】图形每次顺时针旋转90° → 旋转角度一致",
+            "【例3】两个元素分别向不同方向平移 → 分别追踪每个元素",
+            "【例4】16宫格中外圈黑块顺时针移动 → 注意移动路径",
+            "【例5】图形左右翻转后旋转 → 翻转和旋转叠加",
+            "【例6】九宫格中某行/列元素依次右移 → 行列规律结合",
+            "【例7】相邻图形对比找平移方向 → 逐帧分析",
+            "【例8】两个三角形每次旋转60° → 旋转角度累积",
+            "【例9】图形每次向下移动一行 → 步数固定",
+            "【例10】多个元素不同步移动 → 分别追踪"
+          ],
+          "pitfalls": [
+            "方向判断错误：平移方向搞反",
+            "步数计算错误：没有考虑循环",
+            "混淆旋转和翻转",
+            "多元素移动时遗漏追踪"
+          ]
+        },
+        "logic-style": {
+          "name": "样式规律",
+          "description": "图形的外观特征规律，包括叠加、遍历、求同求异等。",
+          "mnemonic": "叠加运算要小心，黑色白色分开看，遍历规律缺什么，求同求异辨分明",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='90' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='55' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>叠加</text><text x='55' y='55' font-size='9' fill='#666'>黑+黑=白</text><text x='55' y='65' font-size='9' fill='#666'>黑+白=黑</text><rect x='110' y='10' width='90' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='155' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>遍历</text><text x='155' y='55' font-size='9' fill='#666'>每行/列都有</text><text x='155' y='65' font-size='9' fill='#666'>各元素一次</text><rect x='210' y='10' width='90' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='255' y='35' text-anchor='middle' font-size='11' fill='#e65100'>求同</text><text x='255' y='55' font-size='9' fill='#666'>保留共同特征</text><text x='255' y='65' font-size='9' fill='#666'>去掉不同特征</text><rect x='310' y='10' width='80' height='60' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='350' y='35' text-anchor='middle' font-size='11' fill='#880e4f'>求异</text><text x='350' y='55' font-size='9' fill='#666'>去掉共同特征</text><text x='350' y='65' font-size='9' fill='#666'>保留不同特征</text><rect x='10' y='80' width='380' height='50' fill='#efebe9' stroke='#5d4037' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#5d4037'>叠加规则</text><text x='100' y='120' font-size='9' fill='#666'>白+白=白 黑+黑=黑</text><text x='280' y='120' font-size='9' fill='#666'>黑+白=黑 白+黑=黑</text></svg>",
+          "keyPoints": [
+            "叠加运算：两个图形叠加在一起，按规则生成新图形",
+            "黑白叠加：常用规则是'黑+黑=白'，'黑+白=黑'，'白+白=白'",
+            "遍历规律：每行/每列都要出现某几种元素，缺什么补什么",
+            "求同规律：几个图形共同特征保留，不同特征去掉",
+            "求异规律：几个图形共同特征去掉，不同特征保留"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】第一图+第二图=第三图，按此规律选答案",
+            "【例2】九宫格每行都有○△□☆四种符号，缺什么选什么",
+            "【例3】三幅图都有五角星，去掉五角星后剩余部分叠加",
+            "【例4】前两图叠加去同存异得到第三图",
+            "【例5】每行图形元素种类和数量相同，只是排列不同",
+            "【例6】三个图形叠加，黑白运算规则需要从已知推导",
+            "【例7】九宫格第一行缺△，从选项中找有△的",
+            "【例8】图形轮廓相同，内部填充不同，按叠加规律",
+            "【例9】第一列和第二列叠加得到第三列",
+            "【例10】所有图形都有共同的线段，提取出来"
+          ],
+          "pitfalls": [
+            "叠加规则记错",
+            "黑白运算方向搞混",
+            "遍历规律漏看某行/列",
+            "求同求异混淆"
+          ]
+        },
+        "logic-attribute": {
+          "name": "属性规律",
+          "description": "图形的对称性、凹凸性、曲直性等属性特征。",
+          "mnemonic": "对称轴数要记清，轴对称来中心对称，曲直性来分分明，凹凸封闭要弄清",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>对称性</text><text x='70' y='55' font-size='9' fill='#666'>轴对称：沿轴对折重合</text><text x='70' y='68' font-size='9' fill='#666'>中心对称：旋转180°重合</text><rect x='140' y='10' width='120' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>曲直性</text><text x='200' y='55' font-size='9' fill='#666'>曲线图形</text><text x='200' y='68' font-size='9' fill='#666'>直线图形</text><rect x='270' y='10' width='120' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>开闭合</text><text x='330' y='55' font-size='9' fill='#666'>开放图形</text><text x='330' y='68' font-size='9' fill='#666'>封闭图形</text><rect x='10' y='90' width='380' height='60' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#880e4f'>常见对称图形</text><text x='80' y='138' font-size='9' fill='#666'>轴对称：等腰△、等边△</text><text x='200' y='138' font-size='9' fill='#666'>中心对称：平行四边形、○</text><text x='320' y='138' font-size='9' fill='#666'>两者皆有：正方形、○</text></svg>",
+          "keyPoints": [
+            "轴对称：存在一条对称轴，左右或上下沿轴对折能完全重合",
+            "中心对称：存在中心点，旋转180°后能与原图形重合",
+            "对称轴数量：1条、2条、3条、多条（正三角形3条，正方形4条）",
+            "曲直性：图形由曲线还是直线组成",
+            "开闭合：图形是否封闭"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】五角星有几条对称轴？→ 5条",
+            "【例2】平行四边形是中心对称图形吗？→ 是",
+            "【例3】图形按曲、直、曲、直交替 → 找规律",
+            "【例4】第一组都是轴对称，第二组都是中心对称",
+            "【例5】等边三角形有几条对称轴？→ 3条",
+            "【例6】图形对称轴数量依次为1、2、3、？→ 4",
+            "【例7】字母A、B、C中哪些是轴对称？→ A、H",
+            "【例8】圆既是轴对称又是中心对称",
+            "【例9】图形由外部直线和内部曲线组成",
+            "【例10】九宫格中所有图形都是轴对称图形"
+          ],
+          "pitfalls": [
+            "对称轴数量数错",
+            "轴对称和中心对称混淆",
+            "曲直性判断不准确",
+            "忽略复合属性"
+          ]
+        },
+        "logic数量规律": {
+          "name": "数量规律",
+          "description": "图形中元素的数量变化规律，包括点、线、面、角等。",
+          "mnemonic": "点线角面数量算，递增递减等差变，等比周期要分辨，交集并集莫混淆",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='90' height='55' fill='#ffebee' stroke='#c62828' rx='8'/><text x='55' y='30' text-anchor='middle' font-size='11' fill='#c62828'>点</text><text x='55' y='48' font-size='9' fill='#666'>交点数</text><rect x='110' y='10' width='90' height='55' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='155' y='30' text-anchor='middle' font-size='11' fill='#1565c0'>线</text><text x='155' y='48' font-size='9' fill='#666'>直线/曲线/笔画</text><rect x='210' y='10' width='90' height='55' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='255' y='30' text-anchor='middle' font-size='11' fill='#2e7d32'>面</text><text x='255' y='48' font-size='9' fill='#666'>封闭区域数</text><rect x='310' y='10' width='80' height='55' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='350' y='30' text-anchor='middle' font-size='11' fill='#e65100'>角</text><text x='350' y='48' font-size='9' fill='#666'>直角/锐角/钝角</text><rect x='10' y='75' width='380' height='55' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='200' y='100' text-anchor='middle' font-size='11' fill='#6a1b9a'>数量变化规律</text><text x='100' y='118' font-size='9' fill='#666'>等差：1,3,5,7...</text><text x='200' y='118' font-size='9' fill='#666'>等比：1,2,4,8...</text><text x='300' y='118' font-size='9' fill='#666'>周期：1,2,1,2...</text></svg>",
+          "keyPoints": [
+            "点：交点数量（线与线的交叉点）",
+            "线：直线段数量、曲线数量、笔画数（一笔画问题）",
+            "面：封闭区域数量（封闭多边形的个数）",
+            "角：特定角度（直角、锐角、钝角）的数量",
+            "数量变化：等差递增、等比递增、周期循环"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】图形交点数量为2、4、6、？→ 8（等差递增）",
+            "【例2】封闭区域数量为1、2、3、？→ 4",
+            "【例3】汉字笔画数为3、5、7、？→ 9",
+            "【例4】每个图形都有3个直角",
+            "【例5】图形直线数为2、3、4、？→ 5",
+            "【例6】一笔画图形：○、□都能一笔画成",
+            "【例7】图形曲线数为0、1、1、2、3、？→ 5（和数列）",
+            "【例8】每个图形都有2个封闭区域",
+            "【例9】图形顶点数依次为4、5、6、？→ 7",
+            "【例10】线条数量周期变化：3、3、4、4、5、5..."
+          ],
+          "pitfalls": [
+            "交点数漏数",
+            "一笔画和非一笔画判断错误",
+            "数量变化规律找错",
+            "封闭区域数遗漏"
+          ]
+        },
+        "logic-space": {
+          "name": "空间重构",
+          "description": "正方体展开图、立体图形的三视图和截面问题。",
+          "mnemonic": "展开图要还原，三视图看投影，截面想象切一刀，相对相邻要分清",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='70' y='30' text-anchor='middle' font-size='11' fill='#1565c0'>展开图还原</text><text x='70' y='50' font-size='9' fill='#666'>'1-4-1'/'2-3-1'型</text><rect x='140' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='30' text-anchor='middle' font-size='11' fill='#2e7d32'>三视图</text><text x='200' y='50' font-size='9' fill='#666'>正视/侧视/俯视</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='30' text-anchor='middle' font-size='11' fill='#e65100'>相对面</text><text x='330' y='50' font-size='9' fill='#666'>在展开图中不相邻</text><rect x='10' y='80' width='380' height='50' fill='#efebe9' stroke='#5d4037' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#5d4037'>六面体展开图规律</text><text x='100' y='120' font-size='9' fill='#666'>'田'字形4个连排不是正方体</text><text x='300' y='120' font-size='9' fill='#666'>'1-4-1'型可以折叠成正方体</text></svg>",
+          "keyPoints": [
+            "正方体展开图：'1-4-1'型、'2-3-1'型、'3-3'型能折成正方体",
+            "'田'字形和'凹'字形展开图不能折成正方体",
+            "相对面：在展开图中间隔一个面或呈'Z'字形两端",
+            "相邻面：展开图中相邻的面，折后会相邻",
+            "箭头法：利用箭头确定左右方向"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】判断哪个展开图可以折成正方体",
+            "【例2】'田'字形展开图能折成正方体吗？→ 不能",
+            "【例3】在正方体中，与A面相邻的有几个面？→ 4个",
+            "【例4】正方体展开图中，相对面不可能相邻",
+            "【例5】'1-4-1'型展开图中间4个连排",
+            "【例6】用箭头法确定图形左右位置关系",
+            "【例7】三视图显示图形的主视图、左视图、俯视图",
+            "【例8】截面题：用一个平面切正方体，截面是什么形状",
+            "【例9】正方体中，与黑色面相邻的面的颜色",
+            "【例10】'Z'字形两端的面在正方体中是相对面"
+          ],
+          "pitfalls": [
+            "展开图判断错误",
+            "相对面相邻搞混",
+            "箭头法方向判断错误",
+            "截面形状想象错误"
+          ]
+        }
+      }
+    },
+    "logic-class": {
+      "name": "定义判断",
+      "icon": "📋",
+      "topics": {
+        "logic-class-single": {
+          "name": "单定义判断",
+          "description": "给出一个定义，判断选项是否符合该定义。",
+          "mnemonic": "定义要件要抓准，关键词语不能漏，对照选项细比较，符合要件才是对",
+          "svgDiagram": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='100' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>解题步骤</text><text x='100' y='58' font-size='9' fill='#666'>1. 准确理解定义</text><text x='100' y='73' font-size='9' fill='#666'>2. 提取定义关键词</text><text x='100' y='88' font-size='9' fill='#666'>3. 逐一核对选项</text><text x='100' y='100' font-size='9' fill='#666'>4. 不符合即排除</text><rect x='210' y='10' width='180' height='100' fill='#ffebee' stroke='#c62828' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='11' fill='#c62828'>常见陷阱</text><text x='300' y='58' font-size='9' fill='#666'>• 偷换概念</text><text x='300' y='73' font-size='9' fill='#666'>• 要件缺失</text><text x='300' y='88' font-size='9' fill='#666'>• 过度推断</text><text x='300' y='100' font-size='9' fill='#666'>• 无中生有</text></svg>",
+          "keyPoints": [
+            "找准定义的关键信息：主体、客体、行为、条件等",
+            "识别定义中的限定词：'必须'、'应当'、'可以'等",
+            "注意定义中的数量词：'两个以上'、'30%以上'等",
+            "逐项核对选项是否符合所有要件",
+            "排除法：只要有一项不符就排除"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】定义：'共同犯罪'指两人以上共同故意犯罪。选项是否符合 → 看是否两人以上、是否共同故意",
+            "【例2】定义：'累犯'指被判处有期徒刑以上刑罚，刑满释放后五年内又犯... → 看时间条件和刑罚条件",
+            "【例3】定义：'行政许可'指行政机关应申请人请求... → 识别行政主体和相对人",
+            "【例4】定义：'要约'指当事人一方向对方提出... → 找构成要件",
+            "【例5】定义：'共同侵权'指两人以上共同造成他人损害 → 看主体数量和行为后果"
+          ],
+          "pitfalls": [
+            "关键词遗漏",
+            "偷换概念",
+            "要件缺失",
+            "过度推断"
+          ]
+        },
+        "logic-class-multi": {
+          "name": "多定义判断",
+          "description": "给出多个定义，判断选项属于哪个定义或不符合哪个定义。",
+          "mnemonic": "多个定义要分清，辨清概念再比对，符合哪个找哪个，不符定义即排除",
+          "svgDiagram": "<svg viewBox='0 0 400 100' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='80' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>定义A</text><text x='70' y='55' font-size='9' fill='#666'>关键词1</text><text x='70' y='70' font-size='9' fill='#666'>关键词2</text><text x='70' y='82' font-size='9' fill='#666'>关键词3</text><rect x='140' y='10' width='120' height='80' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>定义B</text><text x='200' y='55' font-size='9' fill='#666'>关键词1</text><text x='200' y='70' font-size='9' fill='#666'>关键词2</text><text x='200' y='82' font-size='9' fill='#666'>关键词3</text><rect x='270' y='10' width='120' height='80' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>定义C</text><text x='330' y='55' font-size='9' fill='#666'>关键词1</text><text x='330' y='70' font-size='9' fill='#666'>关键词2</text><text x='330' y='82' font-size='9' fill='#666'>关键词3</text></svg>",
+          "keyPoints": [
+            "先快速浏览所有定义，区分各定义的关键词",
+            "注意区分相似定义之间的差异点",
+            "选项可能符合多个定义，也可能都不符合",
+            "问'属于'时，找符合定义的选项",
+            "问'不属于'时，找不符合所有定义的选项"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】定义A和定义B的区别在于行为目的不同 → 区分关键差异",
+            "【例2】选项符合定义A但不符合定义B → 准确归类",
+            "【例3】问属于哪个定义 → 找关键词匹配度最高的",
+            "【例4】问不属于任何定义 → 逐一核对后排除",
+            "【例5】多个定义有交叉 → 找最准确的归类"
+          ],
+          "pitfalls": [
+            "定义混淆",
+            "差异点识别不清",
+            "选项归类错误",
+            "问法理解错误"
+          ]
+        }
+      }
+    },
+    "logic-judgment": {
+      "name": "类比推理",
+      "icon": "⚖️",
+      "topics": {
+        "logic-analogy-basic": {
+          "name": "基本关系",
+          "description": "概念之间的基本逻辑关系，包括全同、包含、交叉、矛盾、反对等。",
+          "mnemonic": "全同包含和交叉，矛盾反对要分清，属性关系和对应，造句检验最实用",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='90' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='55' y='35' text-anchor='middle' font-size='10' fill='#2e7d32'>全同关系</text><text x='55' y='55' font-size='8' fill='#666'>等同关系</text><text x='55' y='68' font-size='8' fill='#666'>番茄=西红柿</text><rect x='110' y='10' width='90' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='155' y='35' text-anchor='middle' font-size='10' fill='#1565c0'>包含关系</text><text x='155' y='55' font-size='8' fill='#666'>种属关系</text><text x='155' y='68' font-size='8' fill='#666'>苹果-水果</text><rect x='210' y='10' width='90' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='255' y='35' text-anchor='middle' font-size='10' fill='#e65100'>交叉关系</text><text x='255' y='55' font-size='8' fill='#666'>部分重合</text><text x='255' y='68' font-size='8' fill='#666'>党员-教师</text><rect x='310' y='10' width='80' height='70' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='350' y='35' text-anchor='middle' font-size='10' fill='#880e4f'>矛盾关系</text><text x='350' y='55' font-size='8' fill='#666'>非此即彼</text><text x='350' y='68' font-size='8' fill='#666'>男-女</text><rect x='10' y='90' width='90' height='60' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='55' y='115' text-anchor='middle' font-size='10' fill='#6a1b9a'>反对关系</text><text x='55' y='135' font-size='8' fill='#666'>还有第三种</text><text x='55' y='145' font-size='8' fill='#666'>黑-白-红</text><rect x='110' y='90' width='280' height='60' fill='#efebe9' stroke='#5d4037' rx='8'/><text x='250' y='115' text-anchor='middle' font-size='10' fill='#5d4037'>其他关系</text><text x='170' y='135' font-size='8' fill='#666'>因果: 努力-成功</text><text x='260' y='135' font-size='8' fill='#666'>配套: 钢笔-墨水</text><text x='350' y='135' font-size='8' fill='#666'>场所: 医院-医生</text></svg>",
+          "keyPoints": [
+            "全同关系：两个概念内涵完全相同，如'番茄'和'西红柿'",
+            "包含关系：一个概念是另一个的种概念，如'苹果'和'水果'",
+            "交叉关系：两个概念有部分重合，如'党员'和'教师'",
+            "矛盾关系：非此即彼，没有第三种可能，如'男'和'女'",
+            "反对关系：除了两者还有第三种可能，如'黑'和'白'（还有红）"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】番茄：西红柿 → 全同关系",
+            "【例2】苹果：水果 → 包含关系（苹果是水果的一种）",
+            "【例3】党员：教师 → 交叉关系（有些党员是教师）",
+            "【例4】男人：女人 → 矛盾关系",
+            "【例5】大学生：中学生 → 反对关系（还有小学生等）",
+            "【例6】努力：成功 → 因果关系",
+            "【例7】钢笔：墨水 → 配套关系",
+            "【例8】医院：医生 → 场所关系",
+            "【例9】哺乳动物：老虎 → 包含关系",
+            "【例10】左手：右手 → 矛盾关系"
+          ],
+          "pitfalls": [
+            "包含和交叉混淆",
+            "矛盾和反对混淆",
+            "关系判断错误",
+            "造句不当导致误判"
+          ]
+        },
+        "logic-analogy-comprehensive": {
+          "name": "综合关系",
+          "description": "更复杂的类比关系，包括言语关系、经验常识等。",
+          "mnemonic": "言语关系要记清，褒义贬义要分明，加工关系和职业，顺序对应最要紧",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='10' fill='#2e7d32'>言语关系</text><text x='70' y='55' font-size='8' fill='#666'>近义词/反义词</text><text x='70' y='68' font-size='8' fill='#666'>褒义词/贬义词</text><rect x='140' y='10' width='120' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='10' fill='#1565c0'>加工关系</text><text x='200' y='55' font-size='8' fill='#666'>原材料-成品</text><text x='200' y='68' font-size='8' fill='#666'>棉花-衣服</text><rect x='270' y='10' width='120' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='10' fill='#e65100'>职业关系</text><text x='330' y='55' font-size='8' fill='#666'>职业-工具</text><text x='330' y='68' font-size='8' fill='#666'>医生-手术刀</text><rect x='10' y='90' width='120' height='60' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='70' y='115' text-anchor='middle' font-size='10' fill='#880e4f'>顺序关系</text><text x='70' y='135' font-size='8' fill='#666'>时间顺序</text><text x='70' y='145' font-size='8' fill='#666'>发芽-开花-结果</text><rect x='140' y='90' width='120' height='60' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='10' fill='#6a1b9a'>地理关系</text><text x='200' y='135' font-size='8' fill='#666'>省份-省会</text><text x='200' y='145' font-size='8' fill='#666'>广东-广州</text><rect x='270' y='90' width='120' height='60' fill='#efebe9' stroke='#5d4037' rx='8'/><text x='330' y='115' text-anchor='middle' font-size='10' fill='#5d4037'>对应关系</text><text x='330' y='135' font-size='8' fill='#666'>事物-属性</text><text x='330' y='145' font-size='8' fill='#666'>盐-咸</text></svg>",
+          "keyPoints": [
+            "言语关系：近义词、反义词、褒贬义词",
+            "加工关系：原材料与成品的关系",
+            "职业关系：职业与其使用的工具、场所",
+            "顺序关系：事物发展的先后顺序",
+            "地理关系：省份与省会、国家与首都",
+            "对应关系：事物与其属性的对应"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】开心：难过 → 反义关系",
+            "【例2】小麦：面包 → 原材料与成品关系",
+            "【例3】医生：手术刀 → 职业与工具关系",
+            "【例4】播种：发芽：开花 → 时间顺序关系",
+            "【例5】四川：成都 → 省份与省会关系",
+            "【例6】盐：咸 → 事物与属性关系",
+            "【例7】骄傲：自满 → 近义关系",
+            "【例8】泥土：砖块 → 原材料与成品关系",
+            "【例9】作家：笔 → 职业与工具关系",
+            "【例10】北京：中国 → 首都与国家关系",
+            "【例11】电脑：电器 → 包含关系",
+            "【例12】下雨：地湿 → 因果关系",
+            "【例13】老师：学生 → 对应关系",
+            "【例14】红色：颜色 → 属性关系",
+            "【例15】上课：下课：放学 → 顺序关系"
+          ],
+          "pitfalls": [
+            "近义反义判断错误",
+            "加工关系搞反",
+            "顺序关系错排",
+            "职业关系混淆"
+          ]
+        }
+      }
+    },
+    "logic-judge": {
+      "name": "逻辑判断",
+      "icon": "🔍",
+      "topics": {
+        "logic-translation": {
+          "name": "翻译推理",
+          "description": "将命题翻译成逻辑表达式，根据规则进行推理。",
+          "mnemonic": "前推后来后推前，逆否等价要记全，否后否前逻辑错，肯前肯后是必然",
+          "svgDiagram": "<svg viewBox='0 0 400 180' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='80' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>前→后</text><text x='100' y='58' font-size='9' fill='#666'>如果A，那么B</text><text x='100' y='72' font-size='9' fill='#666'>只要A，就B</text><text x='100' y='86' font-size='9' fill='#666'>A必须B / 所有A是B</text><rect x='210' y='10' width='180' height='80' fill='#ffebee' stroke='#c62828' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='11' fill='#c62828'>后→前</text><text x='300' y='58' font-size='9' fill='#666'>只有A，才B</text><text x='300' y='72' font-size='9' fill='#666'>除非A，否则不B</text><text x='300' y='86' font-size='9' fill='#666'>A是B的必要条件</text><rect x='10' y='100' width='180' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='100' y='125' text-anchor='middle' font-size='11' fill='#2e7d32'>推理规则</text><text x='100' y='148' font-size='9' fill='#666'>肯前肯后：必然为真</text><text x='100' y='162' font-size='9' fill='#666'>否后否前：必然为真</text><rect x='210' y='100' width='180' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='300' y='125' text-anchor='middle' font-size='11' fill='#e65100'>逆否等价</text><text x='300' y='148' font-size='9' fill='#666'>A→B 等价于 非B→非A</text><text x='300' y='162' font-size='9' fill='#666'>肯后否前：可能真可能假</text></svg>",
+          "keyPoints": [
+            "前→后（充分条件）：如果A，那么B；只要A，就B；A必须B；所有A是B",
+            "后→前（必要条件）：只有A，才B；除非A，否则不B；A是B的必要条件",
+            "肯前必肯后：肯定前件，必然肯定后件",
+            "否后必否前：否定后件，必然否定前件",
+            "逆否等价：A→B ⟺ ¬B→¬A"
+          ],
+          "formulas": [
+            "前→后：如果A→B，那么¬B→¬A（逆否等价）",
+            "肯前肯后：已知A，得出B",
+            "否后否前：已知¬B，得出¬A",
+            "且(A∧B)：A和B同时成立",
+            "或(A∨B)：A或B至少一个成立"
+          ],
+          "examples": [
+            "【例1】如果下雨，那么地面湿。下雨了 → 地面一定湿（肯前肯后）",
+            "【例2】如果下雨，那么地面湿。地面没湿 → 一定没下雨（否后否前）",
+            "【例3】只有年满18岁，才有选举权。有选举权 → 年满18岁（肯后肯前，正确）",
+            "【例4】只要努力，就能成功。成功了 → 一定努力了吗？→ 不一定（肯后未必肯前）",
+            "【例5】所有金属都能导电。铜是金属 → 铜能导电（所有A是B）",
+            "【例6】除非吃药，否则病不好。病好了 → 吃药了（逆否：病不好→没吃药）",
+            "【例7】如果A且B，则C。A和B都成立 → C成立",
+            "【例8】如果A或B，则C。A成立 → C成立（相容选言）",
+            "【例9】甲或乙至少一人来，甲来了 → 乙？→ 不确定",
+            "【例10】要么A要么B，A不成立 → B成立（不相容选言）"
+          ],
+          "pitfalls": [
+            "前推后后推前混淆",
+            "肯后肯前错误",
+            "否前否后错误",
+            "逆否等价搞反"
+          ]
+        },
+        "logic-geli": {
+          "name": "削弱加强",
+          "description": "论证的削弱和加强方法，包括论据、论证方式、论点等。",
+          "mnemonic": "削弱找漏洞，加强补缺口，论据论证和论点，三者配合最有效",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='70' fill='#ffebee' stroke='#c62828' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#c62828'>削弱方式</text><text x='70' y='55' font-size='9' fill='#666'>反驳论据</text><text x='70' y='68' font-size='9' fill='#666'>质疑论证</text><rect x='140' y='10' width='120' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>加强方式</text><text x='200' y='55' font-size='9' fill='#666'>补充论据</text><text x='200' y='68' font-size='9' fill='#666'>建立联系</text><rect x='270' y='10' width='120' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>论证结构</text><text x='330' y='55' font-size='9' fill='#666'>论据→论证→论点</text><text x='330' y='68' font-size='9' fill='#666'>前提→结论</text><rect x='10' y='90' width='380' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#e65100'>常见削弱加强</text><text x='80' y='138' font-size='9' fill='#666'>削弱: 举反例/否定前提</text><text x='210' y='138' font-size='9' fill='#666'>加强: 补充论据/排除他因</text><text x='340' y='138' font-size='9' fill='#666'>削弱: 断开联系</text></svg>",
+          "keyPoints": [
+            "削弱方式：反驳论据、质疑论证方式、否定论点、举反例",
+            "加强方式：补充论据、完善论证方式、建立论据与论点的联系",
+            "最强削弱：指出论证的漏洞或举出反例",
+            "最强加强：直接支持论点或弥补论证缺陷",
+            "无关选项：与论证无关的选项不能削弱或加强"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】论点：'吃水果有益健康' 削弱：'有人吃水果过敏' → 举反例",
+            "【例2】论点：'吸烟致癌' 削弱：'有些人吸了一辈子烟没得癌' → 举反例",
+            "【例3】论点：'学历高收入高' 削弱：'学历不高但收入高的人很多' → 举反例",
+            "【例4】加强论点：补充论据说明因果关系",
+            "【例5】削弱论证：指出论据和论点之间没有必然联系",
+            "【例6】加强论证：排除其他可能的解释",
+            "【例7】无关选项：与论点无关的选项不选",
+            "【例8】最强削弱：否定论证的前提条件"
+          ],
+          "pitfalls": [
+            "无关选项误选",
+            "削弱加强方向搞反",
+            "削弱力度判断错误",
+            "忽略论证漏洞"
+          ]
+        },
+        "logic-closure": {
+          "name": "结论推出",
+          "description": "根据给定信息推出结论，包括排除法、代入法等。",
+          "mnemonic": "信息提炼排顺序，排除代入是法宝，肯定否定要看清，结论必然才可靠",
+          "svgDiagram": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='100' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>排除法</text><text x='100' y='58' font-size='9' fill='#666'>1. 列出已知条件</text><text x='100' y='73' font-size='9' fill='#666'>2. 逐项排除不可能性</text><text x='100' y='88' font-size='9' fill='#666'>3. 得出确定结论</text><rect x='210' y='10' width='180' height='100' fill='#ffebee' stroke='#c62828' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='11' fill='#c62828'>代入法</text><text x='300' y='58' font-size='9' fill='#666'>1. 假设某选项成立</text><text x='300' y='73' font-size='9' fill='#666'>2. 代入所有条件验证</text><text x='300' y='88' font-size='9' fill='#666'>3. 矛盾则排除，相符则成立</text></svg>",
+          "keyPoints": [
+            "排除法：根据已知条件逐一排除不可能性",
+            "代入法：假设某个选项正确，代入验证是否满足所有条件",
+            "信息排序：将零散信息按逻辑顺序排列",
+            "注意'只能'、'唯一'等限定词",
+            "推出结论必须是必然的，不能是可能的"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】甲比乙高，乙比丙高 → 甲比丙高（传递性）",
+            "【例2】A在B左边，B在C左边 → A在C左边",
+            "【例3】甲、乙、丙三人，甲不是最矮，乙不是最高 → 丙最高，甲最矮",
+            "【例4】四人各做一事，已知甲不做A → 用排除法确定各人分工",
+            "【例5】代入验证法：假设甲做A，验证是否与所有条件矛盾",
+            "【例6】甲、乙、丙、丁与四种职业对应，用代入法逐项验证",
+            "【例7】'只有B不是第二' → B一定是第二或其他",
+            "【例8】甲乙丙丁戊五人比赛，甲不是第一，乙不是第二 → 确定各人名次",
+            "【例9】'A和B中间隔一人' → 排列位置受限",
+            "【例10】'每个人都恰好对一个' → 互斥条件可用排除法"
+          ],
+          "pitfalls": [
+            "推出可能而非必然的结论",
+            "忽略限定词'只能'",
+            "代入法假设错误",
+            "传递性推理错误"
+          ]
+        },
+        "logic-analysis": {
+          "name": "分析推理",
+          "description": "复杂条件下的排列、对应和分组问题。",
+          "mnemonic": "条件罗列找关系，突破口要准又快，假设推理试一试，矛盾排除真相来",
+          "svgDiagram": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='100' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>排列问题</text><text x='70' y='58' font-size='9' fill='#666'>• 先后顺序</text><text x='70' y='73' font-size='9' fill='#666'>• 位置关系</text><text x='70' y='88' font-size='9' fill='#666'>• 间隔条件</text><rect x='140' y='10' width='120' height='100' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>对应问题</text><text x='200' y='58' font-size='9' fill='#666'>• 人物-职业</text><text x='200' y='73' font-size='9' fill='#666'>• 物品-属性</text><text x='200' y='88' font-size='9' fill='#666'>• 地点-活动</text><rect x='270' y='10' width='120' height='100' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>分组问题</text><text x='330' y='58' font-size='9' fill='#666'>• 同组条件</text><text x='330' y='73' font-size='9' fill='#666'>• 互斥条件</text><text x='330' y='88' font-size='9' fill='#666'>• 最大最小组</text></svg>",
+          "keyPoints": [
+            "找准突破口：出现次数最多的信息、确定的信息",
+            "画图法：将条件转化为位置图或关系图",
+            "假设法：假设某条件成立，推理验证是否矛盾",
+            "注意条件之间的连锁关系",
+            "分组问题注意人数限制"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】甲乙丙丁戊坐一排，甲不在两端，乙在丙左边 → 确定甲位置",
+            "【例2】四人对应四种职业，已知教师有学生，医生有同事 → 对应关系",
+            "【例3】甲乙丙丁分三组，甲必须和乙一组 → 分组条件",
+            "【例4】从最多信息的人入手推理",
+            "【例5】假设甲在第一位置，验证是否满足所有条件",
+            "【例6】'A和B中间隔两人' → 列出可能位置",
+            "【例7】'最多有两人参加同一活动' → 限制分组人数",
+            "【例8】五人选ABC三门课，至少两门 → 分组和对应",
+            "【例9】'甲和乙都不和丙相邻' → 位置限制",
+            "【例10】连锁条件：甲>乙>丙>丁 → 推理传递"
+          ],
+          "pitfalls": [
+            "突破口找错",
+            "假设推理时假设错误",
+            "忽略条件连锁",
+            "分组人数限制没注意"
+          ]
+        }
+      }
+    }
+  }
+}

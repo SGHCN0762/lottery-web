@@ -1,13 +1,5 @@
 <template>
   <div class="backup-page">
-    <!-- 顶部导航栏 -->
-    <van-nav-bar
-      :title="t('tools.examPrep.backup.title')"
-      left-arrow
-      fixed
-      @click-left="handleBack"
-    />
-
     <div class="backup-content">
       <!-- 数据概览 -->
       <ToolCard class="backup-card" :title="t('tools.examPrep.backup.dataOverview')" icon="chart">

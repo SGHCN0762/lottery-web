@@ -1,0 +1,565 @@
+{
+  "name": "常识判断",
+  "icon": "💡",
+  "color": "#ee0a24",
+  "subcategories": {
+    "common-politics": {
+      "name": "政治常识",
+      "icon": "🏛️",
+      "topics": {
+        "common-party": {
+          "name": "党史与党建",
+          "description": "中国共产党历史、重要会议和党的建设理论知识。",
+          "mnemonic": "一大二大定纲领，革命建设改革路，两个百年奋斗目标",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='380' height='120' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='12' fill='#880e4f'>党的重要会议</text><line x1='10' y1='50' x2='390' y2='50' stroke='#c2185b'/><text x='80' y='75' font-size='10' fill='#333'>一大1921: 建党</text><text x='80' y='95' font-size='10' fill='#333'>七大1945: 确立毛泽东思想</text><text x='80' y='115' font-size='10' fill='#333'>十五大1997: 确立邓小平理论</text><text x='280' y='75' font-size='10' fill='#333'>十九大2017: 新时代中国特色社会主义</text><text x='280' y='95' font-size='10' fill='#333'>二十大2022: 中国式现代化</text><text x='280' y='115' font-size='10' fill='#333'>两个百年奋斗目标</text></svg>",
+          "keyPoints": [
+            "一大(1921)：中国共产党成立，标志中国革命新阶段",
+            "七大(1945)：确立毛泽东思想为全党指导思想",
+            "十一届三中全会(1978)：改革开放的起点",
+            "十五大(1997)：确立邓小平理论为指导思想",
+            "十八大(2012)：全面建成小康社会",
+            "十九大(2017)：中国特色社会主义进入新时代",
+            "二十大(2022)：中国式现代化全面推进"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】中国共产党的成立时间是？→ 1921年7月",
+            "【例2】毛泽东思想确立为指导思想是在？→ 中共七大(1945年)",
+            "【例3】改革开放的起点是？→ 1978年十一届三中全会",
+            "【例4】邓小平理论确立为指导思想是在？→ 中共十五大(1997年)",
+            "【例5】中国特色社会主义进入新时代是？→ 中共十九大(2017年)",
+            "【例6】中国式现代化是哪个会议提出的？→ 中共二十大(2022年)",
+            "【例7】两个百年奋斗目标是什么？→ 第一个百年全面建成小康社会，第二个百年建成社会主义现代化强国",
+            "【例8】五位一体总体布局是？→ 经济建设、政治建设、文化建设、社会建设、生态文明建设",
+            "【例9】四个全面战略布局是？→ 全面建成社会主义现代化国家、全面深化改革、全面依法治国、全面从严治党",
+            "【例10】新发展理念是？→ 创新、协调、绿色、开放、共享"
+          ],
+          "pitfalls": [
+            "重要会议时间记错",
+            "会议内容混淆",
+            "理论成果顺序记错",
+            "目标内容记忆不准确"
+          ]
+        },
+        "common-marxism": {
+          "name": "马克思主义哲学",
+          "description": "辩证唯物主义和历史唯物主义基本原理。",
+          "mnemonic": "唯物辩证三规律，对立统一量变质变，否定之否定要记清",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>唯物论</text><text x='70' y='55' font-size='9' fill='#666'>物质决定意识</text><text x='70' y='68' font-size='9' fill='#666'>意识具有能动作用</text><rect x='140' y='10' width='120' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>辩证法</text><text x='200' y='55' font-size='9' fill='#666'>对立统一</text><text x='200' y='68' font-size='9' fill='#666'>量变质变</text><rect x='270' y='10' width='120' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>认识论</text><text x='330' y='55' font-size='9' fill='#666'>实践决定认识</text><text x='330' y='68' font-size='9' fill='#666'>认识发展规律</text><rect x='10' y='90' width='380' height='60' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#880e4f'>唯物史观</text><text x='100' y='138' font-size='9' fill='#666'>社会存在决定社会意识</text><text x='280' y='138' font-size='9' fill='#666'>人民群众是历史的创造者</text></svg>",
+          "keyPoints": [
+            "唯物论：物质决定意识，意识对物质具有能动作用",
+            "对立统一：矛盾是普遍存在的，矛盾有主要方面和次要方面",
+            "量变质变：量变积累到一定程度引起质变",
+            "否定之否定：事物发展是螺旋式上升的过程",
+            "认识论：实践决定认识，认识有感性认识和理性认识两个阶段",
+            "唯物史观：社会存在决定社会意识，人民群众是历史的创造者"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】'守株待兔'违背的哲学原理是？→ 必然与偶然的关系",
+            "【例2】'揠苗助长'违背的哲学原理是？→ 量变与质变的关系",
+            "【例3】矛盾的基本属性是？→ 同一性和斗争性",
+            "【例4】实践是认识的什么？→ 实践是认识的基础和来源",
+            "【例5】社会发展的根本动力是？→ 社会基本矛盾（生产力与生产关系、经济基础与上层建筑）",
+            "【例6】认识的两次飞跃是？→ 从感性认识到理性认识，从理性认识到实践",
+            "【例7】主要矛盾和次要矛盾的关系是？→ 在事物发展过程中，主要矛盾处于支配地位",
+            "【例8】'塞翁失马'体现的哲学原理是？→ 矛盾双方在一定条件下相互转化",
+            "【例9】'温水煮青蛙'违背的哲学原理是？→ 量变与质变的关系（渐变引起质变）",
+            "【例10】认识的来源是？→ 实践"
+          ],
+          "pitfalls": [
+            "唯物唯心混淆",
+            "辩证法三大规律记错",
+            "认识论阶段顺序搞错",
+            "矛盾分析法不会用"
+          ]
+        },
+        "common-economics": {
+          "name": "社会主义市场经济",
+          "description": "社会主义市场经济体制、基本经济制度和宏观调控政策。",
+          "mnemonic": "公有制为主体多种并存，按劳分配为主体效率优先，市场决定资源配置",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>基本经济制度</text><text x='70' y='55' font-size='9' fill='#666'>公有制为主体</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>分配制度</text><text x='200' y='55' font-size='9' fill='#666'>按劳分配为主体</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>市场机制</text><text x='330' y='55' font-size='9' fill='#666'>市场决定资源配置</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>宏观调控</text><text x='120' y='122' font-size='9' fill='#666'>财政政策/货币政策</text><text x='280' y='122' font-size='9' fill='#666'>计划/产业政策</text></svg>",
+          "keyPoints": [
+            "公有制为主体、多种所有制经济共同发展是社会主义基本经济制度",
+            "按劳分配为主体、多种分配方式并存是分配制度",
+            "社会主义市场经济体制：市场在国家宏观调控下对资源配置起决定性作用",
+            "宏观调控目标：促进经济增长、增加就业、稳定物价、保持国际收支平衡",
+            "财政政策：财政收入和支出政策，包括税收、政府支出等",
+            "货币政策：货币供给和利率政策，包括存款准备金率、利率等"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】社会主义基本经济制度是？→ 公有制为主体、多种所有制经济共同发展",
+            "【例2】按劳分配的前提是？→ 生产资料公有制",
+            "【例3】市场对资源配置起什么作用？→ 决定性作用",
+            "【例4】宏观调控的目标包括？→ 促进经济增长、增加就业、稳定物价、保持国际收支平衡",
+            "【例5】货币政策工具包括？→ 存款准备金率、公开市场操作、再贴现率",
+            "【例6】积极的财政政策属于？→ 扩张性财政政策",
+            "【例7】GDP的中文名称是？→ 国内生产总值",
+            "【例8】基尼系数是衡量什么的指标？→ 居民收入差距",
+            "【例9】 CPI的中文名称是？→ 居民消费价格指数",
+            "【例10】恩格尔系数是衡量什么的指标？→ 居民生活水平（食品支出占消费支出比重）"
+          ],
+          "pitfalls": [
+            "基本经济制度和分配制度混淆",
+            "市场作用表述错误",
+            "宏观调控目标记不全",
+            "财政政策和货币政策工具混淆"
+          ]
+        }
+      }
+    },
+    "common-law": {
+      "name": "法律常识",
+      "icon": "⚖️",
+      "topics": {
+        "common-constitution": {
+          "name": "宪法",
+          "description": "宪法的基本原则、国家机构和公民基本权利义务。",
+          "mnemonic": "宪法国法最大，公民权利义务，国家机构职权",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>基本原则</text><text x='70' y='55' font-size='9' fill='#666'>人民主权/三权分立</text><rect x='140' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>国家机构</text><text x='200' y='55' font-size='9' fill='#666'>人大/政府/法院/检察院</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>公民权利</text><text x='330' y='55' font-size='9' fill='#666'>平等/政治/人身/财产</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>公民义务</text><text x='120' y='122' font-size='9' fill='#666'>维护国家统一/遵纪守法</text><text x='300' y='122' font-size='9' fill='#666'>依法纳税/服兵役</text></svg>",
+          "keyPoints": [
+            "宪法的地位：国家根本大法，具有最高法律效力",
+            "基本原则：人民主权原则、基本人权原则、法治原则、权力制衡原则",
+            "国家机构：全国人民代表大会（最高国家权力机关）、国务院（最高行政机关）、国家主席、中央军委、最高人民法院、最高人民检察院",
+            "公民基本权利：平等权、政治权利和自由、宗教信仰自由、人身自由、社会经济权利等",
+            "公民基本义务：维护国家统一和民族团结、遵守宪法和法律、保守国家秘密、维护国家安全等"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】宪法的根本法地位体现在？→ 具有最高法律效力，修改程序最严格",
+            "【例2】全国人民代表大会是？→ 最高国家权力机关",
+            "【例3】国家主席的职权是？→ 公布法律、任免国务院总理等",
+            "【例4】公民的基本政治权利是？→ 选举权和被选举权",
+            "【例5】公民的人身自由包括？→ 人身自由、人格尊严、住宅不受侵犯、通信自由和秘密",
+            "【例6】公民的基本义务包括？→ 维护国家统一、遵纪守法、依法纳税、服兵役",
+            "【例7】国务院是？→ 最高国家行政机关",
+            "【例8】人民法院是？→ 国家审判机关",
+            "【例9】人民检察院是？→ 国家法律监督机关",
+            "【例10】宪法的修改需要全国人民代表大会常务委员会或者多少代表提议？→ 五分之一以上"
+          ],
+          "pitfalls": [
+            "国家机构职权混淆",
+            "公民权利义务记不全",
+            "宪法基本原则记错",
+            "立法程序搞混"
+          ]
+        },
+        "common-civil": {
+          "name": "民法典",
+          "description": "民法典总则、物权、合同、人格权等基本内容。",
+          "mnemonic": "民事主体平等，自愿公平等价有偿，物权债权要分清",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>总则</text><text x='70' y='55' font-size='9' fill='#666'>民事主体/民事法律行为</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>物权</text><text x='200' y='55' font-size='9' fill='#666'>所有权/用益物权/担保物权</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>合同</text><text x='330' y='55' font-size='9' fill='#666'>买卖/租赁/借贷/委托</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>人格权与婚姻家庭</text><text x='120' y='122' font-size='9' fill='#666'>生命权/身体权/婚姻自由</text><text x='300' y='122' font-size='9' fill='#666'>继承/侵权责任</text></svg>",
+          "keyPoints": [
+            "民事主体：自然人、法人、非法人组织",
+            "民事法律行为有效要件：行为人具有相应民事行为能力、意思表示真实、不违反法律强制性规定和公序良俗",
+            "物权：所有权、用益物权（建设用地使用权等）、担保物权（抵押权、质权、留置权）",
+            "合同：当事人之间设立、变更、终止民事法律关系的协议",
+            "侵权责任：过错责任原则为主，无过错责任为例外",
+            "诉讼时效：向人民法院请求保护民事权利的诉讼时效期间为三年"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】民事主体包括？→ 自然人、法人、非法人组织",
+            "【例2】民事法律行为有效的条件是？→ 行为人具有相应民事行为能力、意思表示真实、不违反法律规定",
+            "【例3】所有权的权能包括？→ 占有、使用、收益、处分",
+            "【例4】抵押权和质权的区别是？→ 抵押不移转占有，质押移转占有",
+            "【例5】合同的订立需要什么？→ 要约和承诺",
+            "【例6】侵权责任的归责原则是？→ 过错责任为主，无过错责任为例外",
+            "【例7】普通诉讼时效期间是？→ 3年",
+            "【例8】18周岁以上的自然人是？→ 完全民事行为能力人",
+            "【例9】物权公示原则是？→ 不动产登记、动产交付",
+            "【例10】婚姻无效的情形包括？→ 重婚、未到法定婚龄、有禁止结婚的亲属关系、患有医学上认为不应当结婚的疾病"
+          ],
+          "pitfalls": [
+            "民事主体类型混淆",
+            "物权类型记不全",
+            "诉讼时效期间记错",
+            "侵权归责原则不清"
+          ]
+        },
+        "common-administrative": {
+          "name": "行政法",
+          "description": "行政法基本原则、行政许可、行政处罚、行政复议等。",
+          "mnemonic": "合法行政合理行政，程序正当高效便民，权责一致监督行政",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>基本原则</text><text x='70' y='55' font-size='9' fill='#666'>合法/合理/程序/效率</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>行政许可</text><text x='200' y='55' font-size='9' fill='#666'>设定/实施/程序</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>行政处罚</text><text x='330' y='55' font-size='9' fill='#666'>设定/种类/程序</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>行政复议与诉讼</text><text x='120' y='122' font-size='9' fill='#666'>行政复议60日</text><text x='280' y='122' font-size='9' fill='#666'>行政诉讼6个月</text></svg>",
+          "keyPoints": [
+            "行政法基本原则：合法行政、合理行政、程序正当、高效便民、权责一致",
+            "行政许可：行政机关根据公民、法人申请，经依法审查，准予其从事特定活动的行为",
+            "行政处罚：警告、罚款、没收违法所得、没收非法财物、责令停产停业、行政拘留等",
+            "行政复议：公民、法人对具体行政行为不服，向行政复议机关申请审查",
+            "行政诉讼：公民、法人对具体行政行为不服，向人民法院提起诉讼"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】行政处罚的种类包括？→ 警告、罚款、没收违法所得、责令停产停业、行政拘留等",
+            "【例2】行政许可的设定权限是怎样的？→ 法律可以设定各类许可，行政法规可设定部分许可",
+            "【例3】行政复议的申请期限是？→ 知道具体行政行为之日起60日内",
+            "【例4】行政诉讼的起诉期限是？→ 知道具体行政行为之日起6个月",
+            "【例5】行政复议机关是？→ 作出具体行政行为的机关的上一级机关或本级政府",
+            "【例6】行政处罚的程序包括？→ 简易程序、一般程序、听证程序",
+            "【例7】行政诉讼的管辖是？→ 被告所在地人民法院管辖",
+            "【例8】行政复议和行政诉讼的关系是？→ 复议前置或自由选择（视具体情况）",
+            "【例9】行政机关作出行政处罚前应告知当事人？→ 作出处罚决定的事实、理由及依据，并告知当事人依法享有的权利",
+            "【例10】一事不再罚原则是指？→ 对当事人的同一个违法行为，不得给予两次以上罚款的行政处罚"
+          ],
+          "pitfalls": [
+            "复议和诉讼期限记错",
+            "处罚种类混淆",
+            "管辖规定不清",
+            "程序要求记忆错误"
+          ]
+        },
+        "common-criminal": {
+          "name": "刑法",
+          "description": "刑法的基本原则、犯罪构成、刑罚种类和常见罪名。",
+          "mnemonic": "罪刑法定疑罪从无，犯罪主体客体主观客观，正当防卫紧急避险",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>基本原则</text><text x='70' y='55' font-size='9' fill='#666'>罪刑法定/适用刑法人人平等</text><text x='70' y='68' font-size='9' fill='#666'>罪责刑相适应</text><rect x='140' y='10' width='120' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>犯罪构成</text><text x='200' y='55' font-size='9' fill='#666'>主体/主观/客体/客观</text><text x='200' y='68' font-size='9' fill='#666'>四要件说</text><rect x='270' y='10' width='120' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>刑罚种类</text><text x='330' y='55' font-size='9' fill='#666'>主刑：管制拘役有期徒刑无期死刑</text><text x='330' y='68' font-size='9' fill='#666'>附加刑：罚金剥夺政治权利没收财产</text><rect x='10' y='90' width='380' height='60' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#880e4f'>正当防卫与紧急避险</text><text x='120' y='138' font-size='9' fill='#666'>正当防卫：对正在进行的不法侵害采取防卫行为</text><text x='300' y='138' font-size='9' fill='#666'>紧急避险：为了使他人人身财产安全采取避险行为</text></svg>",
+          "keyPoints": [
+            "刑法的基本原则：罪刑法定、适用刑法人人平等、罪责刑相适应",
+            "犯罪构成四要件：犯罪主体、犯罪主观方面、犯罪客体、犯罪客观方面",
+            "主刑：管制、拘役、有期徒刑、无期徒刑、死刑",
+            "附加刑：罚金、剥夺政治权利、没收财产、驱逐出境",
+            "正当防卫：为制止不法侵害而采取的防卫行为，造成损害的不负刑事责任",
+            "紧急避险：为使他人人身财产安全而采取的避险行为，造成损害的可减轻或免除处罚"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】刑法的基本原则是？→ 罪刑法定、适用刑法人人平等、罪责刑相适应",
+            "【例2】正当防卫的条件是？→ 不法侵害正在进行、防卫行为针对侵害人、防卫没有明显超过必要限度",
+            "【例3】犯罪主体包括？→ 自然人和单位",
+            "【例4】故意犯罪的形态包括？→ 犯罪预备、犯罪未遂、犯罪中止、犯罪既遂",
+            "【例5】共同犯罪是指？→ 二人以上共同故意犯罪",
+            "【例6】累犯是指？→ 被判处有期徒刑以上刑罚，刑满释放后五年内又犯应判处有期徒刑以上刑罚之罪",
+            "【例7】自首是指？→ 犯罪以后自动投案并如实供述自己的罪行",
+            "【例8】死缓的适用条件是？→ 罪当判处死刑，但不是必须立即执行的",
+            "【例9】数罪并罚的原则是？→ 限制加重原则为主，并科原则和吸收原则为补充",
+            "【例10】正当防卫明显超过必要限度造成重大损害的，应当？→ 负刑事责任，但是应当减轻或者免除处罚"
+          ],
+          "pitfalls": [
+            "正当防卫和紧急避险条件混淆",
+            "犯罪停止形态判断错误",
+            "刑罚种类记不全",
+            "共同犯罪认定错误"
+          ]
+        }
+      }
+    },
+    "common-history": {
+      "name": "历史常识",
+      "icon": "📜",
+      "topics": {
+        "common-china-history": {
+          "name": "中国历史",
+          "description": "中国古代史、近现代史重要历史事件和人物。",
+          "mnemonic": "朝代更替记顺序，重大事件要清晰，著名人物及其贡献",
+          "svgDiagram": "<svg viewBox='0 0 400 180' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='80' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>古代史</text><text x='100' y='55' font-size='9' fill='#666'>夏商周/秦汉/唐宋元明清</text><text x='100' y='70' font-size='9' fill='#666'>重要制度: 井田制/郡县制/科举制</text><text x='100' y='82' font-size='9' fill='#666'>四大发明: 造纸/印刷/火药/指南针</text><rect x='210' y='10' width='180' height='80' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>近代史</text><text x='300' y='55' font-size='9' fill='#666'>鸦片战争/甲午战争/八国联军</text><text x='300' y='70' font-size='9' fill='#666'>洋务运动/戊戌变法/辛亥革命</text><text x='300' y='82' font-size='9' fill='#666'>五四运动/中国共产党成立</text><rect x='10' y='100' width='380' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='200' y='125' text-anchor='middle' font-size='11' fill='#e65100'>现代史</text><text x='100' y='148' font-size='9' fill='#666'>新民主主义革命(1919-1949)</text><text x='280' y='148' font-size='9' fill='#666'>社会主义革命和建设</text><text x='200' y='162' font-size='9' fill='#666'>改革开放/中国特色社会主义新时代</text></svg>",
+          "keyPoints": [
+            "夏商周：青铜器时代，分封制、井田制",
+            "秦：统一六国，郡县制，统一文字货币度量衡",
+            "汉：丝绸之路，独尊儒术",
+            "唐：科举制度，三省六部制",
+            "宋：经济重心南移，活字印刷术",
+            "明清：八股文，闭关锁国",
+            "鸦片战争(1840)：中国近代史开端",
+            "辛亥革命(1911)：推翻封建帝制",
+            "五四运动(1919)：新民主主义革命开端",
+            "新中国成立(1949)：开辟中国历史新纪元",
+            "改革开放(1978)：开启现代化建设新时期"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】中国第一个奴隶制王朝是？→ 夏朝",
+            "【例2】秦朝统一六国后实行的制度是？→ 郡县制",
+            "【例3】科举制度正式确立于？→ 隋炀帝时期",
+            "【例4】郑和下西洋发生在？→ 明朝",
+            "【例5】鸦片战争发生在哪一年？→ 1840年",
+            "【例6】辛亥革命的指导思想是？→ 三民主义",
+            "【例7】五四运动的导火索是？→ 巴黎和会上中国外交失败",
+            "【例8】中国共产党成立于？→ 1921年",
+            "【例9】抗日战争的起点是？→ 九一八事变(1931)或七七事变(1937)",
+            "【例10】新中国成立的时间是？→ 1949年10月1日",
+            "【例11】改革开放的决策是？→ 1978年十一届三中全会",
+            "【例12】中国加入世界贸易组织(WTO)的时间是？→ 2001年",
+            "【例13】'贞观之治'出现在？→ 唐朝李世民时期",
+            "【例14】'康乾盛世'出现在？→ 清朝康熙、雍正、乾隆时期",
+            "【例15】中国近代史的开端是？→ 鸦片战争"
+          ],
+          "pitfalls": [
+            "朝代顺序记错",
+            "历史事件时间混淆",
+            "历史人物对应关系错误",
+            "历史意义理解错误"
+          ]
+        },
+        "common-world-history": {
+          "name": "世界历史",
+          "description": "世界古代史、近代史、现代史重要历史事件。",
+          "mnemonic": "文艺复兴启蒙运动，工业革命改变世界，两次大战影响深远",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>古代文明</text><text x='70' y='55' font-size='9' fill='#666'>两河/埃及/希腊/罗马</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>近代史</text><text x='200' y='55' font-size='9' fill='#666'>文艺复兴/启蒙运动</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>现代史</text><text x='330' y='55' font-size='9' fill='#666'>两次世界大战/冷战</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>重要时间节点</text><text x='100' y='122' font-size='9' fill='#666'>1640英国资产阶级革命</text><text x='280' y='122' font-size='9' fill='#666'>1776美国独立/1789法国大革命</text></svg>",
+          "keyPoints": [
+            "古埃及：金字塔、木乃伊、象形文字",
+            "古希腊：民主制度、哲学、城邦政治",
+            "古罗马：罗马法、帝国制度",
+            "文艺复兴(14-17世纪)：人文主义，提倡人性",
+            "启蒙运动(17-18世纪)：理性主义，批判专制",
+            "英国资产阶级革命(1640)：世界近代史开端",
+            "美国独立战争(1775-1783)：建立联邦制国家",
+            "法国大革命(1789)：自由平等博爱",
+            "工业革命(18世纪中期-19世纪)：机器代替手工",
+            "两次世界大战：20世纪重大历史事件",
+            "冷战：二战后美苏对峙时期"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】工业革命首先发生在？→ 英国",
+            "【例2】美国独立战争的导火索是？→ 波士顿倾茶事件",
+            "【例3】法国大革命的开始标志是？→ 攻占巴士底狱(1789年7月14日)",
+            "【例4】马克思主义诞生的标志是？→ 《共产党宣言》发表(1848年)",
+            "【例5】第一次世界大战的导火索是？→ 萨拉热窝事件",
+            "【例6】第二次世界大战的爆发时间是？→ 1939年9月1日(德国入侵波兰)",
+            "【例7】联合国的创始时间是？→ 1945年",
+            "【例8】欧盟的前身是？→ 欧洲共同体",
+            "【例9】文艺复兴发源于？→ 意大利",
+            "【例10】启蒙运动的中心是？→ 法国"
+          ],
+          "pitfalls": [
+            "历史事件时间记错",
+            "重要历史意义理解错误",
+            "历史人物贡献混淆",
+            "因果关系判断错误"
+          ]
+        }
+      }
+    },
+    "common-science": {
+      "name": "科技常识",
+      "icon": "🔬",
+      "topics": {
+        "common-physics": {
+          "name": "物理知识",
+          "description": "力学、热学、光学、电磁学等物理学基础知识。",
+          "mnemonic": "力学分析受力平衡，热学掌握能量转化，光学明白反射折射，电磁了解电生磁磁生电",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='90' height='65' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='55' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>力学</text><text x='55' y='55' font-size='9' fill='#666'>牛顿三定律</text><text x='55' y='68' font-size='9' fill='#666'>F=ma/重力/摩擦力</text><rect x='110' y='10' width='90' height='65' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='155' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>热学</text><text x='155' y='55' font-size='9' fill='#666'>热力学第一定律</text><text x='155' y='68' font-size='9' fill='#666'>物态变化</text><rect x='210' y='10' width='90' height='65' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='255' y='35' text-anchor='middle' font-size='11' fill='#e65100'>光学</text><text x='255' y='55' font-size='9' fill='#666'>光的反射折射</text><text x='255' y='68' font-size='9' fill='#666'>凸透镜凹透镜</text><rect x='310' y='10' width='80' height='65' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='350' y='35' text-anchor='middle' font-size='11' fill='#880e4f'>电磁</text><text x='350' y='55' font-size='9' fill='#666'>欧姆定律</text><text x='350' y='68' font-size='9' fill='#666'>电磁感应</text><rect x='10' y='85' width='380' height='65' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='200' y='110' text-anchor='middle' font-size='11' fill='#6a1b9a'>重要公式</text><text x='80' y='135' font-size='9' fill='#666'>F=ma(牛顿第二定律)</text><text x='200' y='135' font-size='9' fill='#666'>Q=cmΔt(热量)</text><text x='320' y='135' font-size='9' fill='#666'>I=U/R(欧姆定律)</text></svg>",
+          "keyPoints": [
+            "牛顿第一定律：一切物体在没有外力作用时，保持静止或匀速直线运动",
+            "牛顿第二定律：F=ma，力等于质量乘以加速度",
+            "牛顿第三定律：力的作用是相互的，作用力和反作用力大小相等方向相反",
+            "光的反射：反射角等于入射角",
+            "光的折射：光从一种介质进入另一种介质时发生偏折",
+            "欧姆定律：I=U/R，电流等于电压除以电阻",
+            "能量守恒定律：能量既不会凭空产生，也不会凭空消失"
+          ],
+          "formulas": [
+            "速度：v=s/t",
+            "力：F=ma",
+            "功：W=Fs",
+            "功率：P=W/t",
+            "热量：Q=cmΔt",
+            "欧姆定律：I=U/R",
+            "密度：ρ=m/V",
+            "压强：P=F/S"
+          ],
+          "examples": [
+            "【例1】牛顿第一定律又称为？→ 惯性定律",
+            "【例2】光的反射定律是？→ 反射角等于入射角",
+            "【例3】水的比热容是？→ 4.2×10³ J/(kg·℃)",
+            "【例4】电磁感应现象是谁发现的？→ 法拉第",
+            "【例5】电阻的单位是？→ 欧姆(Ω)",
+            "【例6】声音在空气中传播速度约为？→ 340m/s",
+            "【例7】光的折射中，入射角大于折射角的介质是？→ 光密介质到光疏介质",
+            "【例8】物体的惯性大小与什么有关？→ 质量",
+            "【例9】电压的单位是？→ 伏特(V)",
+            "【例10】能量的单位是？→ 焦耳(J)"
+          ],
+          "pitfalls": [
+            "力学公式记错",
+            "光学定律混淆",
+            "电磁关系搞不清",
+            "单位换算错误"
+          ]
+        },
+        "common-chemistry": {
+          "name": "化学知识",
+          "description": "物质结构、化学反应、元素周期表等化学基础知识。",
+          "mnemonic": "元素周期有规律，化学反应分类型，氧化还原要记清，有机无机要分明",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>物质结构</text><text x='70' y='55' font-size='9' fill='#666'>原子结构/元素周期律</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>化学反应</text><text x='200' y='55' font-size='9' fill='#666'>化合/分解/置换/复分解</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>溶液</text><text x='330' y='55' font-size='9' fill='#666'>溶解度/浓度计算</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>氧化还原反应</text><text x='100' y='122' font-size='9' fill='#666'>升失氧(氧化反应):化合价升高,失去电子</text><text x='300' y='122' font-size='9' fill='#666'>降得还(还原反应):化合价降低,得到电子</text></svg>",
+          "keyPoints": [
+            "原子结构：原子核（质子、中子）和核外电子",
+            "元素周期律：原子序数等于核电荷数，性质呈周期性变化",
+            "化学反应类型：化合反应、分解反应、置换反应、复分解反应",
+            "氧化还原反应：化合价升高失电子（氧化反应），化合价降低得电子（还原反应）",
+            "溶液：由溶质和溶剂组成，浓度表示方法有质量分数、物质的量浓度等",
+            "质量守恒定律：化学反应前后原子种类和数目不变"
+          ],
+          "formulas": [
+            "质量分数 = 溶质质量 ÷ 溶液质量 × 100%",
+            "物质的量浓度 = 溶质的物质的量 ÷ 溶液体积",
+            "溶解度：在一定温度下，100g溶剂中最多溶解的溶质质量",
+            "化学反应速率 = 浓度变化 ÷ 时间"
+          ],
+          "examples": [
+            "【例1】元素周期表中，原子序数等于？→ 核电荷数（质子数）",
+            "【例2】复分解反应的条件是？→ 生成沉淀、气体或水",
+            "【例3】氧化反应中，元素化合价如何变化？→ 升高",
+            "【例4】溶液的pH值小于7表示？→ 酸性",
+            "【例5】二氧化碳的分子式是？→ CO₂",
+            "【例6】水的化学式是？→ H₂O",
+            "【例7】质量守恒定律的内容是？→ 化学反应前后原子种类和数目不变",
+            "【例8】燃烧的三个条件是？→ 可燃物、氧气、达到着火点",
+            "【例9】中和反应是哪种反应类型？→ 复分解反应",
+            "【例10】铁锈的主要成分是？→ Fe₂O₃"
+          ],
+          "pitfalls": [
+            "氧化还原反应判断错误",
+            "化学反应类型混淆",
+            "溶液浓度计算错误",
+            "元素周期律理解不清"
+          ]
+        },
+        "common-biology": {
+          "name": "生物知识",
+          "description": "细胞结构、生物分类、人体生理等生物学基础知识。",
+          "mnemonic": "细胞是生命基本单位，植物动物微生物，遗传变异是根本",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>细胞结构</text><text x='70' y='55' font-size='9' fill='#666'>细胞壁/膜/核/质</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>生物分类</text><text x='200' y='55' font-size='9' fill='#666'>界/门/纲/目/科/属/种</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>遗传变异</text><text x='330' y='55' font-size='9' fill='#666'>DNA/基因/染色体</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>人体系统</text><text x='100' y='122' font-size='9' fill='#666'>消化/呼吸/循环/神经/免疫</text><text x='280' y='122' font-size='9' fill='#666'>运动/内分泌/泌尿/生殖</text></svg>",
+          "keyPoints": [
+            "细胞是生物体结构和功能的基本单位",
+            "细胞膜：控制物质进出细胞",
+            "细胞核：含有遗传物质DNA，控制细胞活动",
+            "生物分类：界、门、纲、目、科、属、种",
+            "遗传：DNA是遗传物质，基因是DNA上有遗传效应的片段",
+            "变异：可遗传变异和不可遗传变异",
+            "光合作用：二氧化碳+水→有机物+氧气",
+            "呼吸作用：有机物+氧气→二氧化碳+水+能量"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】细胞中遗传物质DNA主要存在于？→ 细胞核",
+            "【例2】植物光合作用的场所是？→ 叶绿体",
+            "【例3】人的ABO血型是由什么决定的？→ 红细胞表面的抗原",
+            "【例4】基因是DNA上具有什么功能的片段？→ 遗传效应",
+            "【例5】染色体由什么组成？→ DNA和蛋白质",
+            "【例6】人体最大的器官是？→ 皮肤",
+            "【例7】血液循环包括？→ 体循环和肺循环",
+            "【例8】呼吸作用的实质是？→ 分解有机物释放能量",
+            "【例9】光合作用的实质是？→ 合成有机物储存能量",
+            "【例10】人体的免疫系统包括？→ 特异性免疫和非特异性免疫"
+          ],
+          "pitfalls": [
+            "细胞器功能混淆",
+            "光合作用呼吸作用关系不清",
+            "遗传规律理解错误",
+            "人体系统功能混淆"
+          ]
+        },
+        "common-tech": {
+          "name": "高新技术",
+          "description": "信息技术、人工智能、航天技术等现代科技知识。",
+          "mnemonic": "计算机网络互联网，人工智能大数据，航天航空新能源",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>信息技术</text><text x='70' y='55' font-size='9' fill='#666'>计算机/网络/通信</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>人工智能</text><text x='200' y='55' font-size='9' fill='#666'>机器学习/深度学习</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>航天技术</text><text x='330' y='55' font-size='9' fill='#666'>卫星/火箭/空间站</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>新能源技术</text><text x='100' y='122' font-size='9' fill='#666'>太阳能/风能/核能</text><text x='280' y='122' font-size='9' fill='#666'>氢能/潮汐能/地热能</text></svg>",
+          "keyPoints": [
+            "计算机：硬件（CPU、内存、硬盘）和软件（系统软件、应用软件）",
+            "互联网：TCP/IP协议是互联网的基础协议",
+            "人工智能：机器学习、深度学习、自然语言处理、计算机视觉",
+            "5G技术：第五代移动通信技术，具有高速度、低时延、大连接特点",
+            "北斗卫星导航系统：中国自主研发的全球卫星导航系统",
+            "新能源：太阳能、风能、核能、氢能等清洁能源",
+            "量子通信：利用量子纠缠实现信息传输的通信方式"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】计算机的基本原理是基于？→ 冯·诺依曼体系结构",
+            "【例2】互联网的基础协议是？→ TCP/IP协议",
+            "【例3】人工智能的核心技术包括？→ 机器学习、深度学习、自然语言处理",
+            "【例4】中国北斗卫星导航系统有几个卫星？→ 30余颗",
+            "【例5】5G网络的特点是？→ 高速度、低时延、大连接",
+            "【例6】量子通信利用的原理是？→ 量子纠缠",
+            "【例7】新能源包括哪些？→ 太阳能、风能、核能、氢能等",
+            "【例8】中国空间站叫什么？→ 天宫空间站",
+            "【例9】区块链的核心技术是？→ 分布式账本、加密算法、共识机制",
+            "【例10】大数据的基本特征是？→ Volume（大量）、Velocity（高速）、Variety（多样）、Value（价值）"
+          ],
+          "pitfalls": [
+            "技术概念混淆",
+            "专业术语理解错误",
+            "技术原理记忆不清",
+            "最新科技进展不了解"
+          ]
+        }
+      }
+    },
+    "common-culture": {
+      "name": "人文地理",
+      "icon": "🌍",
+      "topics": {
+        "common-geography": {
+          "name": "自然地理",
+          "description": "地球运动、气候类型、自然灾害等地理知识。",
+          "mnemonic": "地球自转昼夜分，公转产生四季变，气候类型要记清，自然灾害防护好",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>地球运动</text><text x='70' y='55' font-size='9' fill='#666'>自转: 昼夜交替/24h</text><text x='70' y='68' font-size='9' fill='#666'>公转: 四季变化/365天</text><rect x='140' y='10' width='120' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>气候类型</text><text x='200' y='55' font-size='9' fill='#666'>热带/温带/寒带</text><text x='200' y='68' font-size='9' fill='#666'>季风气候/地中海气候</text><rect x='270' y='10' width='120' height='70' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>自然灾害</text><text x='330' y='55' font-size='9' fill='#666'>气象: 台风/暴雨/干旱</text><text x='330' y='68' font-size='9' fill='#666'>地质: 地震/滑坡/泥石流</text><rect x='10' y='90' width='380' height='60' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#880e4f'>中国地理</text><text x='100' y='138' font-size='9' fill='#666'>地形: 三级阶梯/四大高原</text><text x='280' y='138' font-size='9' fill='#666'>气候: 季风气候为主</text></svg>",
+          "keyPoints": [
+            "地球自转：方向自西向东，周期24小时，产生昼夜交替",
+            "地球公转：方向自西向东，周期365天（回归年），产生四季变化",
+            "气候类型：热带雨林气候、热带季风气候、亚热带季风气候、温带季风气候、温带大陆性气候、寒带气候",
+            "中国地形：呈三级阶梯分布，青藏高原、内蒙古高原、黄土高原、云贵高原四大高原",
+            "中国气候：以季风气候为主，雨热同期",
+            "自然灾害：气象灾害（台风、暴雨、干旱）和地质灾害（地震、滑坡、泥石流）"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】地球自转周期是？→ 24小时",
+            "【例2】地球公转周期是？→ 365天（回归年）",
+            "【例3】中国地势特点是？→ 西高东低，呈三级阶梯分布",
+            "【例4】长江入海口的城市是？→ 上海",
+            "【例5】中国最大的淡水湖是？→ 鄱阳湖",
+            "【例6】世界最高峰是？→ 珠穆朗玛峰(8848米)",
+            "【例7】地震震级和烈度的关系是？→ 震级反映能量大小，烈度反映破坏程度",
+            "【例8】季风气候的特点是？→ 雨热同期",
+            "【例9】中国有几大平原？→ 东北平原、华北平原、长江中下游平原",
+            "【例10】寒流和暖流的交汇处容易形成？→ 渔场"
+          ],
+          "pitfalls": [
+            "地球运动方向混淆",
+            "气候类型分布记错",
+            "中国地理分区不清",
+            "自然灾害成因理解错误"
+          ]
+        },
+        "common-culture-china": {
+          "name": "中国文化",
+          "description": "中华优秀传统文化、文学艺术成就、传统节日等。",
+          "mnemonic": "诗词歌赋是瑰宝，琴棋书画显风骚，二十四史记春秋，传统节日要传承",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>诗词文学</text><text x='70' y='55' font-size='9' fill='#666'>诗经/楚辞/唐诗/宋词</text><rect x='140' y='10' width='120' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>传统艺术</text><text x='200' y='55' font-size='9' fill='#666'>书法/绘画/戏曲</text><rect x='270' y='10' width='120' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>传统节日</text><text x='330' y='55' font-size='9' fill='#666'>春节/清明/端午/中秋</text><rect x='10' y='80' width='380' height='50' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#880e4f'>四大发明</text><text x='100' y='122' font-size='9' fill='#666'>造纸术/印刷术/火药/指南针</text><text x='280' y='122' font-size='9' fill='#666'>对世界文明影响深远</text></svg>",
+          "keyPoints": [
+            "诗经：中国最早的诗歌总集，分为风、雅、颂三部分",
+            "楚辞：战国时期屈原创造的诗歌体裁",
+            "唐诗：中国古典诗歌的黄金时代，代表人物李白、杜甫、白居易",
+            "宋词：词始于唐，盛于宋，代表人物苏轼、辛弃疾、李清照",
+            "书法：楷书、草书、行书、隶书、篆书五种书体",
+            "四大发明：造纸术、印刷术、火药、指南针",
+            "传统节日：春节、元宵节、清明节、端午节、七夕节、中秋节、重阳节"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】中国第一部诗歌总集是？→ 《诗经》",
+            "【例2】'诗仙'是指？→ 李白",
+            "【例3】'诗圣'是指？→ 杜甫",
+            "【例4】《红楼梦》的作者是？→ 曹雪芹",
+            "【例5】中国书法中，哪种书体在汉代最为盛行？→ 隶书",
+            "【例6】'文房四宝'是指？→ 笔、墨、纸、砚",
+            "【例7】端午节的习俗包括？→ 赛龙舟、吃粽子、挂艾草",
+            "【例8】四大发明中，发明最早的是？→ 造纸术（西汉）",
+            "【例9】被称为'史家之绝唱，无韵之离骚'的是？→ 《史记》",
+            "【例10】元宵节的习俗是？→ 赏花灯、吃元宵、猜灯谜"
+          ],
+          "pitfalls": [
+            "文学作品作者张冠李戴",
+            "传统节日习俗混淆",
+            "历史人物成就记忆错误",
+            "文化常识了解不全面"
+          ]
+        }
+      }
+    }
+  }
+}

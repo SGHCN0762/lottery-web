@@ -1,0 +1,434 @@
+{
+  "name": "言语理解与表达",
+  "icon": "📝",
+  "color": "#1989fa",
+  "subcategories": {
+    "verbal-logic-fill": {
+      "name": "逻辑填空",
+      "icon": "✏️",
+      "topics": {
+        "verbal-entity": {
+          "name": "实词辨析",
+          "description": "辨析近义实词的含义和使用语境，准确区分词义轻重、搭配对象、感情色彩和语体风格。",
+          "mnemonic": "词义轻重看程度，搭配对象要记清，感情色彩辨褒贬，语体风格分场合",
+          "svgDiagram": "<svg viewBox='0 0 400 200' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='80' fill='#e3f2fd' stroke='#1976d2' rx='8'/><text x='100' y='40' text-anchor='middle' font-size='12' fill='#1565c0'>程度轻重</text><text x='100' y='60' text-anchor='middle' font-size='10' fill='#1565c0'>批评→批判→抨击</text><rect x='210' y='10' width='180' height='80' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='300' y='40' text-anchor='middle' font-size='12' fill='#6a1b9a'>感情色彩</text><text x='300' y='60' text-anchor='middle' font-size='10' fill='#6a1b9a'>褒义/中性/贬义</text><rect x='10' y='110' width='180' height='80' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='100' y='140' text-anchor='middle' font-size='12' fill='#e65100'>搭配对象</text><text x='100' y='160' text-anchor='middle' font-size='10' fill='#e65100'>爱戴(人)/爱护(物)</text><rect x='210' y='110' width='180' height='80' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='300' y='140' text-anchor='middle' font-size='12' fill='#2e7d32'>语体风格</text><text x='300' y='160' text-anchor='middle' font-size='10' fill='#2e7d32'>口语/书面</text></svg>",
+          "keyPoints": [
+            "程度轻重：词语表示的程度由轻到重，适用语境不同",
+            "搭配对象：不同词语有固定的搭配对象，不能混淆",
+            "感情色彩：褒义词、贬义词、中性词要准确区分",
+            "语体风格：口语词用于日常交谈，书面语用于正式场合"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】领导对下属的错误行为进行了严厉的_____。(A.批评 B.批判 C.抨击) → B（程度最重）",
+            "【例2】他_____了下属的工作。(A.关心 B.关怀 C.关爱) → A（关心可对人也可对事）",
+            "【例3】这个_____的工作完成了。(A.重要 B.主要 C.重大) → A（形容工作本身重要）",
+            "【例4】我们应该_____环保意识。(A.增强 B.提高 C.加强) → A（增强意识/观念）",
+            "【例5】这是他_____的决定。(A.重大 B.重要 C.主要) → B（形容决定有意义）",
+            "【例6】会议_____了。(A.开始 B.开幕 C.召开) → C（会议用召开）",
+            "【例7】两国_____了和平条约。(A.签订 B.签署 C.签定) → B（条约用签署）",
+            "【例8】他_____地说出了真相。(A.无奈 B.遗憾 C.后悔) → A（无奈地说话）",
+            "【例9】这真是一个_____的消息。(A.遗憾 B.可惜 C.惋惜) → A（遗憾用于正式场合）",
+            "【例10】他_____地接受了批评。(A.诚恳 B.真诚 C.真挚) → A（诚恳用于接受态度）",
+            "【例11】我们要_____节约用水。(A.大力 B.大肆 C.大肆) → A（大力用于正面）",
+            "【例12】_____解决问题。(A.彻底 B.完全 C.全部) → A（彻底强调不留余地）",
+            "【例13】取得_____胜利。(A.伟大 B.巨大 C.宏大) → A（伟大形容重大成就）",
+            "【例14】_____困难重重。(A.确实 B.的确 C.诚然) → B（的确语气更肯定）"
+          ],
+          "pitfalls": [
+            "望文生义：不理解词义就选择",
+            "搭配不当：词语搭配对象错误",
+            "感情色彩误用：褒贬不分",
+            "语体风格混淆：口语书面混用"
+          ]
+        },
+        "verbal-idiom": {
+          "name": "成语辨析",
+          "description": "理解成语的本义、引申义和比喻义，辨析易混淆成语的使用场景。",
+          "mnemonic": "成语本义要记准，感情色彩辨分明，适用对象莫搞错，前后矛盾要避免",
+          "svgDiagram": "<svg viewBox='0 0 400 200' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='360' height='160' fill='none' stroke='#e0e0e0' rx='10'/><text x='200' y='50' text-anchor='middle' font-size='14' fill='#333'>易混淆成语辨析</text><line x1='200' y1='60' x2='200' y2='80' stroke='#ccc'/><text x='100' y='100' text-anchor='middle' font-size='11' fill='#e53935'>南辕北辙</text><text x='100' y='115' text-anchor='middle' font-size='10' fill='#666'>行动方向相反</text><text x='200' y='100' text-anchor='middle' font-size='11' fill='#43a047'>背道而驰</text><text x='200' y='115' text-anchor='middle' font-size='10' fill='#666'>目标方向相反</text><text x='300' y='100' text-anchor='middle' font-size='11' fill='#1e88e5'>大相径庭</text><text x='300' y='115' text-anchor='middle' font-size='10' fill='#666'>相差很大</text><text x='100' y='145' text-anchor='middle' font-size='11' fill='#8e24aa'>截然不同</text><text x='100' y='160' text-anchor='middle' font-size='10' fill='#666'>完全不同</text><text x='200' y='145' text-anchor='middle' font-size='11' fill='#f4511e'>天壤之别</text><text x='200' y='160' text-anchor='middle' font-size='10' fill='#666'>差别极大</text><text x='300' y='145' text-anchor='middle' font-size='11' fill='#00acc1'>判若云泥</text><text x='300' y='160' text-anchor='middle' font-size='10' fill='#666'>高低悬殊</text></svg>",
+          "keyPoints": [
+            "望文生义类：万人空巷（人山人海）、首当其冲（最先受害）、文不加点（一气呵成）",
+            "褒贬误用类：趋之若鹜（贬义）、满城风雨（贬义）、面目全非（贬义）",
+            "对象错配类：炙手可热（权势大）、豆蔻年华（女子十三四岁）、振聋发聩（言论）",
+            "语义重复类：忍俊不禁地笑（忍俊不禁含笑意）、贻笑大方（被内行笑话）"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】他的计划与目标_____，注定失败。(A.南辕北辙 B.背道而驰) → A（强调行动与目标相反）",
+            "【例2】两人的观点_____，无法调和。(A.截然不同 B.大相径庭) → A（完全对立）",
+            "【例3】这个消息让整个城市_____。(A.满城风雨 B.洛阳纸贵) → A（议论纷纷，贬义）",
+            "【例4】这部电影的票房_____。(A.惨淡 B.惨白) → A（惨淡经营/生意不好）",
+            "【例5】他的才华_____。(A.淋漓尽致 B.酣畅淋漓) → A（表达充分彻底）",
+            "【例6】场面令人_____。(A.叹为观止 B.登峰造极) → A（赞美事物好到极点）",
+            "【例7】他的解释_____。(A.不容置喙 B.不容置疑) → B（不容怀疑）",
+            "【例8】情况_____。(A.迫在眉睫 B.危在旦夕) → A（紧急但未发生）",
+            "【例9】问题_____地摆在面前。(A.首当其冲 B.迫不及待) → A（最先受到冲击）",
+            "【例10】_____的少女时代。(A.豆蔻年华 B.碧玉年华) → A（十三四岁）",
+            "【例11】他的演讲_____。(A.振聋发聩 B.石破天惊) → A（唤醒糊涂的人）",
+            "【例12】场面_____。(A.热火朝天 B.方兴未艾) → A（正在热烈进行）",
+            "【例13】他的态度_____。(A.模棱两可 B.含糊其辞) → A（可做两种理解）",
+            "【例14】事情的发展_____。(A.出人意料 B.事与愿违) → B（结果与愿望相反）",
+            "【例15】建筑群依山而建，层次分明，_____。(A.鳞次栉比 B.错落有致) → B（有层次变化）"
+          ],
+          "pitfalls": [
+            "望文生义：按字面意思理解成语",
+            "感情色彩：褒贬义判断错误",
+            "语义重复：与句子其他词语意思重复",
+            "对象误用：成语适用对象搞错"
+          ]
+        },
+        "verbal-connector": {
+          "name": "关联词辨析",
+          "description": "辨析不同关联词表达的逻辑关系，包括因果、转折、递进、假设、条件、并列等。",
+          "mnemonic": "因果关系找因此，转折关系用但是，递进关系用而且，假设关系用如果",
+          "svgDiagram": "<svg viewBox='0 0 400 180' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='90' height='70' fill='#ffebee' stroke='#c62828' rx='8'/><text x='55' y='35' text-anchor='middle' font-size='11' fill='#c62828'>因果关系</text><text x='55' y='55' text-anchor='middle' font-size='9' fill='#666'>因为...所以</text><text x='55' y='68' text-anchor='middle' font-size='9' fill='#666'>因此/于是</text><rect x='110' y='10' width='90' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='155' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>转折关系</text><text x='155' y='55' text-anchor='middle' font-size='9' fill='#666'>虽然...但是</text><text x='155' y='68' text-anchor='middle' font-size='9' fill='#666'>然而/却</text><rect x='210' y='10' width='90' height='70' fill='#fff3e0' stroke='#ef6c00' rx='8'/><text x='255' y='35' text-anchor='middle' font-size='11' fill='#ef6c00'>递进关系</text><text x='255' y='55' text-anchor='middle' font-size='9' fill='#666'>不但...而且</text><text x='255' y='68' text-anchor='middle' font-size='9' fill='#666'>甚至/更</text><rect x='310' y='10' width='80' height='70' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='350' y='35' text-anchor='middle' font-size='11' fill='#7b1fa2'>假设关系</text><text x='350' y='55' text-anchor='middle' font-size='9' fill='#666'>如果...就</text><text x='350' y='68' text-anchor='middle' font-size='9' fill='#666'>万一</text><rect x='10' y='100' width='90' height='70' fill='#e8f5e9' stroke='#2e7d32' rx='8'/><text x='55' y='125' text-anchor='middle' font-size='11' fill='#2e7d32'>条件关系</text><text x='55' y='145' text-anchor='middle' font-size='9' fill='#666'>只要...就</text><text x='55' y='158' text-anchor='middle' font-size='9' fill='#666'>只有...才</text><rect x='110' y='100' width='90' height='70' fill='#e0f7fa' stroke='#00838f' rx='8'/><text x='155' y='125' text-anchor='middle' font-size='11' fill='#00838f'>并列关系</text><text x='155' y='145' text-anchor='middle' font-size='9' fill='#666'>既...又</text><text x='155' y='158' text-anchor='middle' font-size='9' fill='#666'>一边...一边</text><rect x='210' y='100' width='90' height='70' fill='#fce4ec' stroke='#ad1457' rx='8'/><text x='255' y='125' text-anchor='middle' font-size='11' fill='#ad1457'>选择关系</text><text x='255' y='145' text-anchor='middle' font-size='9' fill='#666'>或者...或者</text><text x='255' y='158' text-anchor='middle' font-size='9' fill='#666'>宁可...也不</text><rect x='310' y='100' width='80' height='70' fill='#efebe9' stroke='#5d4037' rx='8'/><text x='350' y='125' text-anchor='middle' font-size='11' fill='#5d4037'>目的关系</text><text x='350' y='145' text-anchor='middle' font-size='9' fill='#666'>为了/以便</text><text x='350' y='158' text-anchor='middle' font-size='9' fill='#666'>以免/省得</text></svg>",
+          "keyPoints": [
+            "因果关系：原因→结果，注意区分因果与条件",
+            "转折关系：前重后轻用虽然...但是，前轻后重用尽管...但",
+            "递进关系：程度递进用甚至，范围递进用而且",
+            "假设关系：与事实相反用如果/假如，与事实相符用即使",
+            "条件关系：充分条件用只要...就，必要条件用只有...才",
+            "并列关系：同时存在用既...又...，二选一用或者"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】_____努力，_____能成功。(A.如果...就 B.只要...就) → B（充分条件）",
+            "【例2】_____天气下雨，_____活动照常进行。(A.虽然...但 B.尽管...仍) → A",
+            "【例3】_____学习_____学习好，_____要讲究方法。(A.既...又... B.一边...一边) → A（两者并存）",
+            "【例4】_____有困难，_____要告诉我。(A.万一 B.如果) → A（可能性小的假设）",
+            "【例5】他_____聪明_____勤奋。(A.不但...而且 B.或者...或者) → A（递进）",
+            "【例6】_____你去，_____我去，总得有人去。(A.要么...要么 B.既...又) → A（选择）",
+            "【例7】_____认真听课，_____能取得好成绩。(A.只有...才 B.只要...就) → A（必要条件）",
+            "【例8】_____条件再好，_____不努力也不行。(A.如果...就 B.即使...也) → B（退步假设）",
+            "【例9】_____节约用水，_____浪费水资源。(A.要...不要 B.既...又) → A",
+            "【例10】这个计划_____可行，_____需要改进。(A.虽然...但是 B.不但...而且) → B（递进）",
+            "【例11】_____接受这份工作，_____留在原岗位。(A.要么...要么 B.宁可...也不) → A（选择）",
+            "【例12】他_____唱歌_____跳舞。(A.一边...一边 B.或者...或者) → A（同时进行）",
+            "【例13】_____下雨，_____比赛延期。(A.因为...所以 B.虽然...但是) → A（因果）",
+            "【例14】_____条件多苛刻，_____从不抱怨。(A.无论...都 B.只要...就) → A（条件不限）"
+          ],
+          "pitfalls": [
+            "逻辑关系错误：因果、条件、转折混淆",
+            "搭配不当：关联词搭配错误",
+            "滥用关联词：不需要关联词的地方强行使用",
+            "位置错误：关联词位置不当导致病句"
+          ]
+        },
+        "verbal-context": {
+          "name": "语境分析",
+          "description": "通过上下文语境理解词义，准确判断词语在具体语境中的含义和用法。",
+          "mnemonic": "前后呼应找线索，感情色彩看语境，语义轻重定程度，搭配习惯要遵循",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='380' height='40' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='12' fill='#2e7d32'>解释关系标志词</text><text x='80' y='55' font-size='10' fill='#666'>冒号、破折号、即、就是、</text><text x='280' y='55' font-size='10' fill='#666'>也就是说、换句话说</text><rect x='10' y='65' width='380' height='40' fill='#e3f2fd' stroke='#1976d2' rx='8'/><text x='200' y='90' text-anchor='middle' font-size='12' fill='#1565c0'>转折关系标志词</text><text x='80' y='110' font-size='10' fill='#666'>但、却、然而、可是、不过、</text><text x='280' y='110' font-size='10' fill='#666'>只是、却、反而</text><rect x='10' y='120' width='380' height='35' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='200' y='142' text-anchor='middle' font-size='12' fill='#e65100'>递进/因果关系标志词</text></svg>",
+          "keyPoints": [
+            "解释关系：空格前后是对空格内容的解释说明",
+            "转折关系：空格前后语义相反或相对",
+            "递进关系：空格前后程度加深或范围扩大",
+            "并列关系：空格前后语义相近或相关",
+            "因果关系：空格前后存在原因和结果"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】他的说法_____，让人无法接受。(A.荒谬 B.荒诞 C.荒废) → A（语境要求填贬义词）",
+            "【例2】这次考试_____，比上次进步了。(A.显著 B.卓著 C.杰出) → A（与'进步'搭配）",
+            "【例3】面对困难，我们不能_____，而要迎难而上。(A.退缩 B.退却 C.退步) → B（退却更书面）",
+            "【例4】他的表演_____，赢得了观众的掌声。(A.精彩 B.精妙 C.精辟) → A（表演用精彩）",
+            "【例5】这部小说_____了中国传统文化的魅力。(A.彰显 B.明显 C.显然) → A（彰显书面语）",
+            "【例6】他的观点_____，有独到见解。(A.独特 B.独到 C.独断) → B（独到形容见解）",
+            "【例7】_____的山水画令人神往。(A.幽静 B.幽美 C.幽雅) → B（幽美形容风景）",
+            "【例8】他对这个问题有_____的研究。(A.深入 B.深邃 C.深刻) → A（深入研究）",
+            "【例9】这个决定_____了大家的利益。(A.伤害 B.损害 C.危害) → B（损害程度适中）",
+            "【例10】我们应该_____这些宝贵经验。(A.珍惜 B.珍视 C.珍重) → A（珍惜经验）",
+            "【例11】他的回答_____了大家的疑问。(A.解除 B.解除 C.解释) → A（解除疑问）",
+            "【例12】这项技术达到了_____水平。(A.国际 B.世界 C.全球) → B（世界水平）",
+            "【例13】他对工作_____负责。(A.极为 B.极其 C.极端) → A（极为负责）",
+            "【例14】这是一个_____的问题。(A.棘手 B.辣手 C.辣手) → A（棘手形容难处理）"
+          ],
+          "pitfalls": [
+            "忽略语境线索：没有充分利用上下文信息",
+            "过度推断：根据片面信息强行推断",
+            "词语搭配不当：没有考虑词语的搭配习惯",
+            "感情色彩错误：没有注意语境的褒贬倾向"
+          ]
+        }
+      }
+    },
+    "verbal-reading": {
+      "name": "片段阅读",
+      "icon": "📖",
+      "topics": {
+        "verbal-main-point": {
+          "name": "主旨观点题",
+          "description": "概括文段的主旨和作者的观点态度，这是言语理解中最核心的题型。",
+          "mnemonic": "首尾句原则找中心，关联词后看重点，高频词语是关键，对策优先选",
+          "svgDiagram": "<svg viewBox='0 0 400 180' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='160' fill='#ffebee' stroke='#c62828' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='12' fill='#c62828'>总分结构</text><text x='70' y='60' text-anchor='middle' font-size='9' fill='#666'>第一句总起</text><text x='70' y='75' text-anchor='middle' font-size='9' fill='#666'>后面分述</text><path d='M130 90 L150 90' stroke='#c62828' stroke-width='2' marker-end='url(#arrow1)'/><rect x='150' y='10' width='120' height='160' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='210' y='35' text-anchor='middle' font-size='12' fill='#1565c0'>分总结构</text><text x='210' y='60' text-anchor='middle' font-size='9' fill='#666'>前面分述</text><text x='210' y='75' text-anchor='middle' font-size='9' fill='#666'>最后总结</text><path d='M270 90 L290 90' stroke='#1565c0' stroke-width='2' marker-end='url(#arrow1)'/><rect x='290' y='10' width='100' height='160' fill='#fff3e0' stroke='#ef6c00' rx='8'/><text x='340' y='35' text-anchor='middle' font-size='12' fill='#ef6c00'>总分总</text><text x='340' y='60' text-anchor='middle' font-size='9' fill='#666'>首尾呼应</text><text x='340' y='75' text-anchor='middle' font-size='9' fill='#666'>中间展开</text><text x='70' y='120' font-size='10' fill='#333'>中心句：首句</text><text x='70' y='140' font-size='10' fill='#333'>关键词：因此/所以/总之</text><text x='210' y='120' font-size='10' fill='#333'>中心句：尾句</text><text x='210' y='140' font-size='10' fill='#333'>关键词：总之/综上所述</text><text x='340' y='120' font-size='10' fill='#333'>中心句：首尾</text><text x='340' y='140' font-size='10' fill='#333'>关键词：重复出现的词</text></svg>",
+          "keyPoints": [
+            "总分结构：首句是中心，后面展开说明，答案在首句",
+            "分总结构：前文分析，尾句总结，答案在尾句",
+            "总分总结构：首尾呼应，中心在开头或用词重复判断",
+            "转折结构：转折后是重点，转折词包括然而、但是、不过",
+            "对策优先：当文段提出问题时，对策句往往是答案"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】文段首句：'教育是国家发展的基石'，后面详细论述教育的重要性。中心是：教育的重要性",
+            "【例2】文段尾句：'因此，我们应该重视青少年的心理健康'。中心是：重视青少年心理健康",
+            "【例3】文段转折：'虽然经济发展迅速，_____生态环境却日益恶化'。中心是：生态环境问题",
+            "【例4】文段提出问题：'当前学术不端行为频发'，后面提出对策。中心是：如何解决学术不端",
+            "【例5】高频词：文段多次提到'创新'，则中心与创新相关",
+            "【例6】'因此'后面：'因此，加强监管是当务之急'。中心是：加强监管",
+            "【例7】对策标志：'应该/必须/需要/建议'后面的内容是重点",
+            "【例8】结论标志：'综上所述/总之/可见'前面的内容是重点",
+            "【例9】文段开头提出观点，后面举例说明。中心是：开头的观点",
+            "【例10】并列结构：几个方面同等重要，概括要全面不能偏废"
+          ],
+          "pitfalls": [
+            "以偏概全：只关注了部分内容",
+            "绝对化表述：过于绝对的选项通常是错的",
+            "偷换概念：选项表述与原文不符",
+            "无中生有：选项内容原文没有提及",
+            "推断过度：超出原文信息的合理推断"
+          ]
+        },
+        "verbal-detail": {
+          "name": "细节判断题",
+          "description": "识别文段中的具体信息、时间和数字，区分正确选项和错误选项。",
+          "mnemonic": "选项原文逐句对，偷换概念要注意，无中生有是陷阱，时态数量看仔细",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='65' fill='#ffebee' stroke='#c62828' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='11' fill='#c62828'>偷换类型</text><text x='100' y='55' text-anchor='middle' font-size='9' fill='#666'>偷换概念/时态/数量/语气</text><text x='100' y='68' text-anchor='middle' font-size='9' fill='#666'>偷换逻辑/因果/范围</text><rect x='210' y='10' width='180' height='65' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>常见陷阱</text><text x='300' y='55' text-anchor='middle' font-size='9' fill='#666'>无中生有/正话反说</text><text x='300' y='68' text-anchor='middle' font-size='9' fill='#666'>绝对化/强加因果</text><rect x='10' y='90' width='380' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#2e7d32'>正确选项特征</text><text x='80' y='135' font-size='9' fill='#666'>与原文表述一致</text><text x='200' y='135' font-size='9' fill='#666'>同义替换准确</text><text x='320' y='135' font-size='9' fill='#666'>未改变范围和程度</text></svg>",
+          "keyPoints": [
+            "偷换概念：将A事物说成B事物，张冠李戴",
+            "偷换时态：过去→现在→将来，或已然→未然的混淆",
+            "偷换数量：全部↔部分↔个别，绝对化表述",
+            "偷换语气：确定↔不确定，可能↔一定",
+            "偷换逻辑：因果倒置，并列变条件，充分变必要"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】原文：'部分学生' → 选项：'所有学生' → 偷换数量",
+            "【例2】原文：'可能' → 选项：'一定' → 偷换语气",
+            "【例3】原文：'经济发展导致' → 选项：'经济发展因为' → 偷换因果",
+            "【例4】原文：'小明和小红' → 选项：'小明或小红' → 偷换范围",
+            "【例5】原文：'正在改善' → 选项：'已经改善' → 偷换时态",
+            "【例6】原文没有提到的内容 → 选项中出现 → 无中生有",
+            "【例7】原文表达积极 → 选项表达消极 → 正话反说",
+            "【例8】原文：'应该' → 选项：'必须' → 语气程度加重",
+            "【例9】原文：'A和B' → 选项：'A或B' → 偷换逻辑关系",
+            "【例10】原文：'约50人' → 选项：'正好50人' → 偷换数量精确度",
+            "【例11】原文讨论教育 → 选项讨论经济 → 话题偷换",
+            "【例12】原文：'支持' → 选项：'极力支持' → 程度加重"
+          ],
+          "pitfalls": [
+            "过度推断：超出原文信息的合理范围",
+            "同义替换错误：看似相同实则不同",
+            "忽略限定词：遗漏了原文中的修饰成分",
+            "记忆偏差：对原文内容记忆不准确"
+          ]
+        },
+        "verbal-word-sentence": {
+          "name": "词句理解题",
+          "description": "理解指定词语或句子的含义，包括本义、引申义、比喻义和语境义。",
+          "mnemonic": "定位原文找语境，前后句子找解释，比喻指代要还原，排除字面意思",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='120' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>语境分析</text><text x='70' y='55' font-size='9' fill='#666'>定位词语位置</text><text x='70' y='70' font-size='9' fill='#666'>分析上下文</text><text x='70' y='85' font-size='9' fill='#666'>找出解释说明</text><text x='70' y='100' font-size='9' fill='#666'>确定含义</text><text x='70' y='115' font-size='9' fill='#666'>排除干扰项</text><rect x='140' y='10' width='120' height='120' fill='#fff3e0' stroke='#ef6c00' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#ef6c00'>比喻理解</text><text x='200' y='55' font-size='9' fill='#666'>比喻词：像/如/仿佛</text><text x='200' y='70' font-size='9' fill='#666'>还原本体</text><text x='200' y='85' font-size='9' fill='#666'>理解喻义</text><text x='200' y='100' font-size='9' fill='#666'>不能只说本体</text><text x='200' y='115' font-size='9' fill='#666'>要说明比喻义</text><rect x='270' y='10' width='120' height='120' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#7b1fa2'>指代理解</text><text x='330' y='55' font-size='9' fill='#666'>代词：这/那/它</text><text x='330' y='70' font-size='9' fill='#666'>向前找指代对象</text><text x='330' y='85' font-size='9' fill='#666'>注意指代范围</text><text x='330' y='100' font-size='9' fill='#666'>有时需概括</text><text x='330' y='115' font-size='9' fill='#666'>前文内容</text></svg>",
+          "keyPoints": [
+            "定位原文：找到指定词语或句子在文段中的确切位置",
+            "联系上下文：看前后句子对指定内容的解释说明",
+            "注意标志词：即、就是、也就是说、换句话说、比如",
+            "比喻还原：将比喻手法还原为其表达的实际含义",
+            "指代确定：代词指代向前找，注意指代范围"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】'这'在文中指代前一句或前几句的内容",
+            "【例2】比喻'学习如逆水行舟'的寓意：学习需要不断努力，否则会后退",
+            "【例3】词语'瓶颈'在文中的意思是：阻碍发展的关键环节",
+            "【例4】'画龙点睛'用于文章，指文章最精彩的部分",
+            "【例5】'他山之石'指其他地方的先进经验",
+            "【例6】'推陈出新'指去掉旧事物的糟粕，吸取精华，创造新事物",
+            "【例7】'薪火相传'比喻学问技艺代代相传",
+            "【例8】'浮光掠影'形容印象不深，观察不仔细",
+            "【例9】'相得益彰'指两个人或两件事物互相配合，双方的能力和作用更能显示出来",
+            "【例10】'举重若轻'比喻能力强，能够轻松地处理困难的工作",
+            "【例11】'未雨绸缪'比喻事先做好准备工作，预防意外的事发生",
+            "【例12】'求同存异'指找出共同点，保留不同点"
+          ],
+          "pitfalls": [
+            "字面理解：只理解词语的表面意思",
+            "脱离语境：不结合上下文分析含义",
+            "比喻理解不全：只说本体不说喻义",
+            "指代范围错误：扩大或缩小了指代范围"
+          ]
+        },
+        "verbal-infer": {
+          "name": "推断下文题",
+          "description": "根据文段内容推断接下来会讲述什么，考查对文章发展方向的把握。",
+          "mnemonic": "尾句原则定方向，排除前文已述事，保持话题一致性，逻辑连贯是关键",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='380' height='50' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='12' fill='#1565c0'>推断下文四原则</text><rect x='10' y='70' width='90' height='60' fill='#ffebee' stroke='#c62828' rx='8'/><text x='55' y='95' text-anchor='middle' font-size='10' fill='#c62828'>尾句原则</text><text x='55' y='112' text-anchor='middle' font-size='9' fill='#666'>尾句是起点</text><text x='55' y='125' text-anchor='middle' font-size='9' fill='#666'>话题延续</text><rect x='110' y='70' width='90' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='155' y='95' text-anchor='middle' font-size='10' fill='#388e3c'>排除已述</text><text x='155' y='112' text-anchor='middle' font-size='9' fill='#666'>不重复</text><text x='155' y='125' text-anchor='middle' font-size='9' fill='#666'>已有内容</text><rect x='210' y='70' width='90' height='60' fill='#fff3e0' stroke='#ef6c00' rx='8'/><text x='255' y='95' text-anchor='middle' font-size='10' fill='#ef6c00'>话题一致</text><text x='255' y='112' text-anchor='middle' font-size='9' fill='#666'>保持</text><text x='255' y='125' text-anchor='middle' font-size='9' fill='#666'>主题连贯</text><rect x='310' y='70' width='80' height='60' fill='#f3e5f5' stroke='#7b1fa2' rx='8'/><text x='350' y='95' text-anchor='middle' font-size='10' fill='#7b1fa2'>逻辑连贯</text><text x='350' y='112' text-anchor='middle' font-size='9' fill='#666'>符合</text><text x='350' y='125' text-anchor='middle' font-size='9' fill='#666'>行文规律</text></svg>",
+          "keyPoints": [
+            "关注尾句：尾句提出的话题、问题或观点是下文的起点",
+            "排除已述：排除文中已经详细讲过的内容",
+            "保持话题：下文内容应与文段最后的话题保持一致",
+            "逻辑连贯：符合提出问题→分析问题→解决问题的逻辑",
+            "注意标志：提问、引用、数据、新话题往往是下文起点"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】尾句提出问题'如何解决城市拥堵？' → 下文应讲解决方案",
+            "【例2】尾句介绍新概念'可持续发展' → 下文应解释或展开",
+            "【例3】尾句引用数据'占GDP的30%' → 下文可能分析原因或影响",
+            "【例4】尾句：'这种现象值得深思' → 下文应深入分析",
+            "【例5】尾句：'那么，应该怎么办呢？' → 下文提出对策",
+            "【例6】尾句提出观点 → 下文应论证或举例",
+            "【例7】尾句引入新事物 → 下文应介绍其特点",
+            "【例8】文段讲完原因 → 下文应讲结果或影响",
+            "【例9】文段讲完正面 → 下文可能讲反面或补充",
+            "【例10】文段讲完理论 → 下文应联系实际"
+          ],
+          "pitfalls": [
+            "偏离主题：推断内容与原文话题不符",
+            "重复前文：推断的内容是前文已经说过的",
+            "推断过度：超出原文信息的合理范围",
+            "逻辑断裂：推断内容与原文缺乏逻辑联系"
+          ]
+        },
+        "verbal-title": {
+          "name": "标题选择题",
+          "description": "选择最适合作为文段标题的选项，要兼顾概括性和吸引力。",
+          "mnemonic": "标题要能概括主旨，短小精悍吸引人，体现主体和事件，避免片面和夸张",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='120' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='12' fill='#2e7d32'>标题要求</text><text x='100' y='60' font-size='10' fill='#333'>✓ 概括主旨</text><text x='100' y='78' font-size='10' fill='#333'>✓ 短小精悍</text><text x='100' y='96' font-size='10' fill='#333'>✓ 体现主体</text><text x='100' y='114' font-size='10' fill='#333'>✓ 吸引读者</text><rect x='210' y='10' width='180' height='120' fill='#ffebee' stroke='#c62828' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='12' fill='#c62828'>排除选项</text><text x='300' y='60' font-size='10' fill='#333'>✗ 过于宽泛</text><text x='300' y='78' font-size='10' fill='#333'>✗ 过于片面</text><text x='300' y='96' font-size='10' fill='#333'>✗ 夸张不实</text><text x='300' y='114' font-size='10' fill='#333'>✗ 偏离主题</text></svg>",
+          "keyPoints": [
+            "概括主旨：标题必须能够概括文章的主要内容",
+            "短小精悍：标题要简洁有力，一般不超过15字",
+            "体现主体：标题中应包含文段讨论的核心对象",
+            "吸引力：适当运用修辞手法增加吸引力",
+            "新闻类标题：何人+何事，一般包含时间地点",
+            "议论文标题：直接点明论点"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】文段讲教育问题 → 标题应包含'教育'",
+            "【例2】文段讲经济发展 → 标题可以是'经济发展与...的关系'",
+            "【例3】文段分析雾霾成因 → 标题应包含'雾霾'或'空气污染'",
+            "【例4】文段介绍学习方法 → 标题可以是'高效学习方法'",
+            "【例5】标题过于宽泛：'论发展' → 应具体化为'论教育发展'",
+            "【例6】标题过于片面：只提到一个方面 → 应概括全部要点",
+            "【例7】标题夸张：'最伟大的发现' → 应客观准确",
+            "【例8】新闻类：'某某会议在某地召开' → 何时何地何事",
+            "【例9】科普类：'什么是人工智能' → 直接说明主题",
+            "【例10】议论文：'坚持就是胜利' → 表达核心论点"
+          ],
+          "pitfalls": [
+            "过于宽泛：标题范围大于文段内容",
+            "过于片面：只概括了文段的部分内容",
+            "夸张不实：标题与实际内容不符",
+            "缺乏核心：标题没有体现文段的核心话题"
+          ]
+        }
+      }
+    },
+    "verbal-sentence": {
+      "name": "语句表达",
+      "icon": "📝",
+      "topics": {
+        "verbal-sentence-sort": {
+          "name": "句子排序题",
+          "description": "将打乱的句子重新排列成连贯文段，考查对文章结构和逻辑的把握。",
+          "mnemonic": "先定首尾找特征，关联词配对排顺序，时空逻辑顺承看，话题一致连成片",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='65' fill='#ffebee' stroke='#c62828' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='11' fill='#c62828'>确定首句</text><text x='100' y='55' font-size='9' fill='#666'>排除：指代不明句</text><text x='100' y='68' font-size='9' fill='#666'>排除：关联词后半句</text><rect x='210' y='10' width='180' height='65' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>确定尾句</text><text x='300' y='55' font-size='9' fill='#666'>结论性句子：总之/因此</text><text x='300' y='68' font-size='9' fill='#666'>总结性句子：综上所述</text><rect x='10' y='90' width='180' height='60' fill='#fff3e0' stroke='#ef6c00' rx='8'/><text x='100' y='115' text-anchor='middle' font-size='11' fill='#ef6c00'>关联词配对</text><text x='100' y='135' font-size='9' fill='#666'>虽然...但是/因为...所以</text><rect x='210' y='90' width='180' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='300' y='115' text-anchor='middle' font-size='11' fill='#388e3c'>话题连贯</text><text x='300' y='135' font-size='9' fill='#666'>相邻句子话题一致</text></svg>",
+          "keyPoints": [
+            "确定首句：排除指代不明的句子（如'这、那'开头）、关联词后半句（如'但是、因此'开头）",
+            "确定尾句：结论性句子（总之、因此、所以）、总结性句子（综上所述、可见）",
+            "关联词配对：虽然...但是...、因为...所以...、不但...而且...",
+            "时空顺序：时间先后、空间转移的顺序",
+            "话题一致：相邻句子话题相同，通过话题链排序",
+            "代词指代：确定代词指代的对象来连接句子"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】①这件事让我很失望 ②因为他的承诺从未兑现 → ②做首句，①做尾句",
+            "【例2】①他去了图书馆 ②然后回家 ③先去超市买东西 → ③①②（时间顺序）",
+            "【例3】①这花真美 ②那朵更美 ③我最喜欢牡丹 → ③①②（由总到分）",
+            "【例4】①解决这个问题 ②首先分析原因 ③其次提出对策 → ②③①（分析问题顺序）",
+            "【例5】①东南沿海地区 ②向西延伸到内地 ③经济带从广州 → ③①②（空间顺序）",
+            "【例6】①小明的成绩提高了 ②这得益于他的努力 ③小明更自信了 → ①③②",
+            "【例7】①不但价格便宜 ②而且质量很好 → ①在前②在后",
+            "【例8】①综上所述 ②我们应该这样做 → ②在前①在后（总结）",
+            "【例9】①他喜欢打篮球 ②也喜欢踢足球 ③还喜欢跑步 → ①②③（递进）",
+            "【例10】①春天来了 ②万物复苏 ③花儿开放 → ①②③（时间顺序）"
+          ],
+          "pitfalls": [
+            "忽略逻辑顺序：没有考虑时间和空间顺序",
+            "强行配对：强行把不相关的句子放在一起",
+            "首句判断错误：没有正确排除不能做首句的句子",
+            "忽视话题链：没有通过话题一致性来排序"
+          ]
+        },
+        "verbal-sentence-fill": {
+          "name": "句子填空题",
+          "description": "在文段空白处填入恰当的句子，使文段连贯完整。",
+          "mnemonic": "看空前看空后，话题一致是关键，承上启下要衔接，逻辑连贯不能断",
+          "svgDiagram": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='380' height='100' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='12' fill='#1565c0'>句子填空解题步骤</text><line x1='10' y1='50' x2='380' y2='50' stroke='#1565c0' stroke-dasharray='5,5'/><text x='80' y='70' text-anchor='middle' font-size='10' fill='#333'>看空前</text><text x='80' y='88' text-anchor='middle' font-size='9' fill='#666'>了解上文内容</text><text x='200' y='70' text-anchor='middle' font-size='10' fill='#333'>看空后</text><text x='200' y='88' text-anchor='middle' font-size='9' fill='#666'>了解下文内容</text><text x='320' y='70' text-anchor='middle' font-size='10' fill='#333'>看空前</text><text x='320' y='88' text-anchor='middle' font-size='9' fill='#666'>确定填空内容</text></svg>",
+          "keyPoints": [
+            "看空前：了解上文已经讲述的内容和话题",
+            "看空后：了解下文要讲述的内容和方向",
+            "话题一致：填空内容应与上下文话题相同",
+            "承上启下：既承接上文内容，又引出下文话题",
+            "逻辑连贯：符合文段的行文逻辑和论证思路",
+            "位置判断：开头是总起，中间是过渡，结尾是总结"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】_____，主要有三个原因：第一...第二...第三... → 总起句，概括后文",
+            "【例2】经济发展迅速，_____，社会进步明显 → 过渡句，承接经济引出社会",
+            "【例3】综上所述，_____ → 总结句，概括全文观点",
+            "【例4】虽然条件艰苦，_____，但最终取得了成功 → 转折前的内容",
+            "【例5】这个问题很重要，_____，需要认真对待 → 强调问题的句子",
+            "【例6】什么是创新？_____？这就是我们需要思考的问题 → 提出问题",
+            "【例7】一方面...另一方面..._____ → 总结前面的两个方面",
+            "【例8】历史告诉我们，_____ → 引出历史教训或启示",
+            "【例9】实践证明，_____ → 引出实践证明的结论",
+            "【例10】除了以上方法，_____ → 引出新的方法或补充"
+          ],
+          "pitfalls": [
+            "话题偏离：填空内容与上下文话题不一致",
+            "逻辑断裂：填空内容破坏了文段的逻辑连贯",
+            "过度推断：填入的内容超出原文信息范围",
+            "位置判断错误：没有正确判断填空的位置类型"
+          ]
+        },
+        "verbal-conclusion": {
+          "name": "结语推断题",
+          "description": "根据文段内容推断文章结尾会讲述什么，考查对文章发展方向的预测能力。",
+          "mnemonic": "尾句分析定方向，总结前文或延伸，保持逻辑连贯性，避免突兀和偏离",
+          "svgDiagram": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='100' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#388e3c'>总结前文</text><text x='70' y='55' font-size='9' fill='#666'>概括全文</text><text x='70' y='70' font-size='9' fill='#666'>得出结论</text><text x='70' y='85' font-size='9' fill='#666'>升华主题</text><rect x='140' y='10' width='120' height='100' fill='#fff3e0' stroke='#ef6c00' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#ef6c00'>延伸论述</text><text x='200' y='55' font-size='9' fill='#666'>对尾句话题</text><text x='200' y='70' font-size='9' fill='#666'>进一步展开</text><text x='200' y='85' font-size='9' fill='#666'>提出建议</text><rect x='270' y='10' width='120' height='100' fill='#ffebee' stroke='#c62828' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#c62828'>避免</text><text x='330' y='55' font-size='9' fill='#666'>引入新话题</text><text x='330' y='70' font-size='9' fill='#666'>偏离主题</text><text x='330' y='85' font-size='9' fill='#666'>逻辑断裂</text></svg>",
+          "keyPoints": [
+            "分析尾句：确定尾句的核心话题和论述方向",
+            "总结前文：结尾对全文内容进行概括总结",
+            "延伸论述：对尾句提出的观点或问题进行深入讨论",
+            "保持连贯：结尾内容应与前文逻辑保持一致",
+            "避免突兀：不要引入前文完全没有提及的新话题",
+            "提出建议：有时需要对前文问题提出解决方案"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】尾句提出问题'如何解决？' → 结尾应给出解决方案",
+            "【例2】尾句总结观点 → 结尾升华主题或呼吁行动",
+            "【例3】尾句引用数据 → 结尾分析原因或预测趋势",
+            "【例4】尾句提出倡议 → 结尾号召人们行动起来",
+            "【例5】尾句介绍现象 → 结尾分析影响或提出对策",
+            "【例6】文段讲完原因分析 → 结尾应讲影响或结论",
+            "【例7】文段讲完正面论述 → 结尾可能补充注意事项",
+            "【例8】文段提出问题分析问题 → 结尾必须解决问题",
+            "【例9】文段介绍多种观点 → 结尾应表明立场",
+            "【例10】文段讲完理论 → 结尾应联系实际举例"
+          ],
+          "pitfalls": [
+            "引入新话题：结尾内容与前文话题无关",
+            "偏离主题：结尾没有围绕核心话题展开",
+            "逻辑断裂：结尾与前文缺乏逻辑联系",
+            "过度总结：总结过于空泛没有针对性"
+          ]
+        }
+      }
+    }
+  }
+}

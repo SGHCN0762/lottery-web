@@ -119,6 +119,13 @@ const tools = computed(() => [
     description: t('tools.civilServantExam.description'),
     route: 'CivilServantExam',
   },
+  {
+    id: 'knowledge-flash',
+    name: t('tools.knowledgeFlash.name'),
+    icon: '💡',
+    description: t('tools.knowledgeFlash.description'),
+    route: 'KnowledgeFlash',
+  },
 ]);
 
 // ========================================

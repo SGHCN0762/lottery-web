@@ -1,0 +1,312 @@
+{
+  "name": "资料分析",
+  "icon": "📈",
+  "color": "#f57c00",
+  "subcategories": {
+    "data-basic": {
+      "name": "统计术语",
+      "icon": "📊",
+      "topics": {
+        "data-term": {
+          "name": "核心统计术语",
+          "description": "资料分析中常用的统计指标和概念，包括基期、现期、增长率、比重等。",
+          "mnemonic": "基期现期要分清，增长下降看同比，环比定基比，比重计算分子分母",
+          "svgDiagram": "<svg viewBox='0 0 400 180' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='80' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>基期与现期</text><text x='70' y='55' text-anchor='middle' font-size='9' fill='#666'>基期：作为比较基准的时期</text><text x='70' y='70' text-anchor='middle' font-size='9' fill='#666'>现期：正在研究的时期</text><text x='70' y='82' text-anchor='middle' font-size='9' fill='#666'>现期=基期×(1+r)</text><rect x='140' y='10' width='120' height='80' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>增长率</text><text x='200' y='55' text-anchor='middle' font-size='9' fill='#666'>r=(现期-基期)/基期</text><text x='200' y='70' text-anchor='middle' font-size='9' fill='#666'>r=现期/基期-1</text><text x='200' y='82' text-anchor='middle' font-size='9' fill='#666'>增长量=基期×r</text><rect x='270' y='10' width='120' height='80' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>比重</text><text x='330' y='55' text-anchor='middle' font-size='9' fill='#666'>比重=部分/总体×100%</text><text x='330' y='70' text-anchor='middle' font-size='9' fill='#666'>贡献率=部分增量/总体增量</text><text x='330' y='82' text-anchor='middle' font-size='9' fill='#666'>拉动增长=部分增长/总体基期</text><rect x='10' y='100' width='380' height='70' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='125' text-anchor='middle' font-size='11' fill='#880e4f'>其他重要术语</text><text x='80' y='148' font-size='9' fill='#666'>倍数=A是B的n倍</text><text x='200' y='148' font-size='9' fill='#666'>翻番=2ⁿ倍</text><text x='320' y='148' font-size='9' fill='#666'>平均数=总量/个数</text></svg>",
+          "keyPoints": [
+            "基期：作为比较基准的时期；现期：与基期对比的时期",
+            "增长率=（现期-基期）÷基期=现期÷基期-1",
+            "增长量=基期×增长率=现期-基期",
+            "比重=部分÷总体×100%",
+            "平均数=总量÷个数（注意时间段）",
+            "倍数：A是B的n倍 = A÷B",
+            "翻番：翻一番是2倍，翻两番是4倍"
+          ],
+          "formulas": [
+            "增长率r = (现期值-基期值) ÷ 基期值",
+            "增长量 = 基期值 × r",
+            "现期值 = 基期值 × (1+r)",
+            "比重 = 部分量 ÷ 总体量 × 100%",
+            "平均数 = 总量 ÷ 个数",
+            "贡献率 = 部分增量 ÷ 总体增量 × 100%",
+            "拉动增长 = 部分增量 ÷ 总体基期值 × 100%"
+          ],
+          "examples": [
+            "【例1】2019年产值100万，2020年120万，增长率？→ (120-100)/100=20%",
+            "【例2】2018年收入50万，2019年收入60万，基期是？→ 2018年",
+            "【例3】2019年比重30%，2020年比重35%，比重变化？→ 5个百分点（不是5%）",
+            "【例4】2019年A值100，增长率20%，2020年A值？→ 120",
+            "【例5】2018年人均GDP 5万，人口1000万，GDP总量？→ 5000亿",
+            "【例6】A是B的3倍，B是C的2倍，A是C的？→ 6倍",
+            "【例7】产量翻一番，从100到？→ 200",
+            "【例8】某公司利润2019年100万，2020年增长10%，2021年增长20%，2021年？→ 100×1.1×1.2=132万",
+            "【例9】第一产业占比20%，第二产业占比40%，第三产业占比？→ 40%",
+            "【例10】城镇人口200万，农村人口300万，城镇化率？→ 200/500=40%",
+            "【例11】某商品价格从50元涨到60元，涨幅？→ 20%",
+            "【例12】某企业2018年收入增长30%，2019年收入增长20%，两年累计增长？→ (1.3×1.2-1)=56%",
+            "【例13】平均每月用电量=年用电量÷12",
+            "【例14】GDP增速10%，其中第一产业贡献2个百分点，第一产业拉动？→ 2%",
+            "【例15】某商品降价20%后为80元，原价？→ 80÷0.8=100元"
+          ],
+          "pitfalls": [
+            "增长率和增长量混淆",
+            "百分比和百分点混淆",
+            "倍数和番数计算错误",
+            "基期现期判断错误"
+          ]
+        },
+        "data-index": {
+          "name": "指数与系数",
+          "description": "指数、比例系数、发展速度等相对指标的含义和计算。",
+          "mnemonic": "定基指数以基期100，环比指数以上期100，发展速度是现期比基期",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='180' height='60' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='100' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>定基指数</text><text x='100' y='55' font-size='9' fill='#666'>以固定时期为基期</text><text x='100' y='65' font-size='9' fill='#666'>通常基期=100</text><rect x='210' y='10' width='180' height='60' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='300' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>环比指数</text><text x='300' y='55' font-size='9' fill='#666'>以上期为基期</text><text x='300' y='65' font-size='9' fill='#666'>逐期比较</text><rect x='10' y='80' width='380' height='50' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='200' y='105' text-anchor='middle' font-size='11' fill='#e65100'>计算公式</text><text x='100' y='120' font-size='9' fill='#666'>发展速度=现期/基期×100</text><text x='280' y='120' font-size='9' fill='#666'>增长速度=发展速度-100</text></svg>",
+          "keyPoints": [
+            "定基指数：以固定时期（通常为100）为基数计算的指数",
+            "环比指数：以前一期为基数（100）计算的指数",
+            "发展速度=现期÷基期×100",
+            "增长速度（增长率）=发展速度-100（%）",
+            "指数不能直接加减，只能比较大小"
+          ],
+          "formulas": [
+            "定基发展速度 = 各期数值 ÷ 固定基期数值 × 100",
+            "环比发展速度 = 本期数值 ÷ 上期数值 × 100",
+            "定基增长速度 = 定基发展速度 - 100",
+            "环比增长速度 = 环比发展速度 - 100",
+            "平均发展速度 = n期连乘积的n次方根"
+          ],
+          "examples": [
+            "【例1】2015年指数100，2016年指数110，2017年指数121，发展速度？→ 110/100=1.1，121/100=1.21",
+            "【例2】某指标2018年指数120，2019年指数132，增长？→ (132-120)/120=10%",
+            "【例3】环比发展速度连续三年为110%、120%、130%，年平均发展速度？→ (1.1×1.2×1.3)^(1/3)=1.198",
+            "【例4】2010年GDP指数200（以2000年为100），GDP翻了几番？→ 200/100=2，翻一番",
+            "【例5】某商品价格指数：2018年120，2019年132，2020年145，三年累计涨幅？→ 45%（不是直接相减）",
+            "【例6】居民消费价格指数CPI从105涨到110，涨幅？→ 约4.76%",
+            "【例7】用定基指数计算平均增长率 = [(期末/期初)^(1/n)-1]×100%",
+            "【例8】工业增加值指数2019年比2018年增长15%，则发展速度是115"
+          ],
+          "pitfalls": [
+            "指数之间直接相减",
+            "定基和环比混淆",
+            "平均发展速度计算错误",
+            "指数不能直接用于加减运算"
+          ]
+        }
+      }
+    },
+    "data-calculation": {
+      "name": "计算技巧",
+      "icon": "🧮",
+      "topics": {
+        "data-estimate": {
+          "name": "估算法",
+          "description": "资料分析中快速估算的方法，包括首数法、差分法、同位比较法等。",
+          "mnemonic": "估算法要快又准，首数差分同位帮，直除放缩巧变形，结合选项来计算",
+          "svgDiagram": "<svg viewBox='0 0 400 180' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='80' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>首数法</text><text x='70' y='55' text-anchor='middle' font-size='9' fill='#666'>只看答案前几位</text><text x='70' y='70' text-anchor='middle' font-size='9' fill='#666'>计算到能区分选项</text><text x='70' y='82' text-anchor='middle' font-size='9' fill='#666'>不适合接近的选项</text><rect x='140' y='10' width='120' height='80' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>差分法</text><text x='200' y='55' text-anchor='middle' font-size='9' fill='#666'>分子分母同大同小</text><text x='200' y='70' text-anchor='middle' font-size='9' fill='#666'>差分数与原分数比较</text><text x='200' y='82' text-anchor='middle' font-size='9' fill='#666'>比较分数大小</text><rect x='270' y='10' width='120' height='80' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>同位比较</text><text x='330' y='55' text-anchor='middle' font-size='9' fill='#666'>分子分母同位比较</text><text x='330' y='70' text-anchor='middle' font-size='9' fill='#666'>A/B和C/D比较</text><text x='330' y='82' text-anchor='middle' font-size='9' fill='#666'>看A/C和B/D</text><rect x='10' y='100' width='380' height='70' fill='#fce4ec' stroke='#c2185b' rx='8'/><text x='200' y='125' text-anchor='middle' font-size='11' fill='#880e4f'>其他技巧</text><text x='80' y='148' font-size='9' fill='#666'>直除法: 直接除到能选答案</text><text x='220' y='148' font-size='9' fill='#666'>放缩法: 放大缩小找范围</text><text x='340' y='148' font-size='9' fill='#666'>凑整法: 凑成整数简化</text></svg>",
+          "keyPoints": [
+            "首数法：计算到前几位能区分选项即可",
+            "差分法：两个分数比较时，用差分数与原分数比较",
+            "同位比较法：比较A/B和C/D时，比较A/C和B/D的大小关系",
+            "直除法：直接除，保留足够精度",
+            "放缩法：把数值放大或缩小到容易计算的范围"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】比较1234/5678和1245/5690 → 分子分母同大同小，用差分法",
+            "【例2】计算 6789/12345 ≈ → 保留两位约0.55",
+            "【例3】比较 123/456 和 234/567 → 用同位比较法",
+            "【例4】估算 199×31 ≈ 200×30=6000，实际约6169",
+            "【例5】比较 45%和 2/5 → 2/5=40%，所以45%更大",
+            "【例6】计算 123456÷789 ≈ → 保留三位约156.5",
+            "【例7】比较 8/15 和 9/16 → 8/15=0.533，9/16=0.5625",
+            "【例8】放缩法：估算 1234×567，1234×500=617000，1234×600=740400",
+            "【例9】比较分数大小时，分子加分母大的分数值更大（当分母相近时）",
+            "【例10】用直除法计算增长率：(1234-1000)/1000=23.4%"
+          ],
+          "pitfalls": [
+            "估算精度不够选错答案",
+            "差分法应用错误",
+            "同位比较条件不满足",
+            "放缩方向搞反"
+          ]
+        },
+        "data-special": {
+          "name": "特殊题型技巧",
+          "description": "比重变化、平均值变化、隔年增长等特殊题型的快速解法。",
+          "mnemonic": "比重变化看百分点，平均增长分子分母，隔年增长用复利，十字交叉配比例",
+          "svgDiagram": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='70' fill='#ffebee' stroke='#c62828' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#c62828'>比重变化</text><text x='70' y='55' text-anchor='middle' font-size='9' fill='#666'>判断比重上升下降</text><text x='70' y='68' text-anchor='middle' font-size='9' fill='#666'>部分增速>总体增速→上升</text><rect x='140' y='10' width='120' height='70' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>平均数变化</text><text x='200' y='55' text-anchor='middle' font-size='9' fill='#666'>分子增速>分母增速→上升</text><text x='200' y='68' text-anchor='middle' font-size='9' fill='#666'>计算方法同比重</text><rect x='270' y='10' width='120' height='70' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>隔年增长</text><text x='330' y='55' text-anchor='middle' font-size='9' fill='#666'>r隔=r₁+r₂+r₁×r₂</text><text x='330' y='68' text-anchor='middle' font-size='9' fill='#666'>两年增长率叠加</text><rect x='10' y='90' width='380' height='60' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#e65100'>十字交叉</text><text x='100' y='135' font-size='9' fill='#666'>混合增长率=(r₁×v₁+r₂×v₂)/(v₁+v₂)</text><text x='300' y='135' font-size='9' fill='#666'>用于部分与整体的关系</text></svg>",
+          "keyPoints": [
+            "比重变化：部分增速>总体增速→比重上升；部分增速<总体增速→比重下降",
+            "比重变化幅度≈（部分增速-总体增速）×基期比重（粗略估算）",
+            "平均数变化：分子增速>分母增速→平均数上升",
+            "隔年增长率：r隔=r₁+r₂+r₁×r₂（两期增长率代入）",
+            "十字交叉：用于求混合比例或增长率"
+          ],
+          "formulas": [
+            "比重变化量 = 现期比重 - 基期比重",
+            "比重变化判断：部分增长率 > 总体增长率 → 比重上升",
+            "隔年增长率：r = r₁ + r₂ + r₁ × r₂",
+            "隔年基期值 = 现期值 ÷ (1+r₁) ÷ (1+r₂)",
+            "平均数增长率 = (分子增长率 - 分母增长率) ÷ (1 + 分母增长率)",
+            "十字交叉：A×a + B×b = (A+B)×r"
+          ],
+          "examples": [
+            "【例1】2019年部分增长20%，总体增长10%，比重？→ 上升",
+            "【例2】2019年比重30%，2020年比重32%，变化？→ 上升2个百分点",
+            "【例3】2018年收入增长10%，2019年收入增长20%，两年累计增长？→ 10%+20%+10%×20%=32%",
+            "【例4】2019年现期值234，隔年增长率32%（2017→2018增长10%），2017年基期？→ 234÷1.1÷1.2≈177",
+            "【例5】2019年人数增长15%，总收入增长25%，人均收入增长？→ (125%-115%)÷1.15≈8.7%",
+            "【例6】部分增长25%，总体增长15%，原比重20%，新比重？→ 约21.7%",
+            "【例7】甲乙两组，甲平均10人增长5%，乙平均20人增长15%，总体增长？→ 11.7%",
+            "【例8】2020年某指标比2019年增长8%，2019年比2018年增长12%，两年增长？→ 20.96%",
+            "【例9】城镇收入增长10%，农村增长15%，城镇占比60%，总体增长？→ 12%",
+            "【例10】男生平均分75增长10%，女生平均分80增长5%，总体平均分增长？→ 7.6%",
+            "【例11】第一产业比重从10%变为12%，增速20%，总体增速？→ 约11.7%",
+            "【例12】企业数量增长30%，产值增长50%，平均产值增长？→ 15.4%",
+            "【例13】2018→2019增长15%，2019→2020增长20%，2020是2018的？→ 1.38倍",
+            "【例14】进口增长10%，出口增长20%，贸易顺差增长？→ 用十字交叉",
+            "【例15】上半年增长10%，下半年增长20%，全年增长？→ 15.2%"
+          ],
+          "pitfalls": [
+            "比重变化和增长率变化混淆",
+            "百分点和百分比混淆",
+            "隔年增长率公式记错",
+            "十字交叉比例搞反"
+          ]
+        }
+      }
+    },
+    "data-interpretation": {
+      "name": "材料解读",
+      "icon": "📄",
+      "topics": {
+        "data-table": {
+          "name": "表格型材料",
+          "description": "统计表格的阅读方法、数据定位和计算技巧。",
+          "mnemonic": "表格先看标题行，数据定位按行列，计算之前找准数，单位指标要统一",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='380' height='120' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>表格阅读步骤</text><line x1='10' y1='50' x2='390' y2='50' stroke='#1565c0'/><text x='100' y='70' font-size='9' fill='#333'>① 看标题：了解表格主题</text><text x='280' y='70' font-size='9' fill='#333'>② 看行标题：分类依据</text><text x='100' y='90' font-size='9' fill='#333'>③ 看列标题：时间/地区/指标</text><text x='280' y='90' font-size='9' fill='#333'>④ 看数据：数值和单位</text><text x='100' y='110' font-size='9' fill='#333'>⑤ 看备注：特殊说明</text><text x='280' y='110' font-size='9' fill='#333'>⑥ 定位数据：行列交叉</text></svg>",
+          "keyPoints": [
+            "先看标题：了解表格描述的是什么内容",
+            "再看行列标题：确定行是地区还是指标，列是时间还是类别",
+            "注意单位：万元/亿元、%/%o等",
+            "找准数据位置：行列交叉定位",
+            "注意合计和总计行的区别"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】表格标题'2015-2020年各省GDP'，行标题是？→ 省份",
+            "【例2】表格中某格显示'--'，表示？→ 无数据或数据缺失",
+            "【例3】表格单位'亿元'，数据为1234，表示？→ 1234亿元",
+            "【例4】找出2018年GDP最高的省份 → 比较各省份2018年列",
+            "【例5】计算某省2015-2020年GDP总和 → 将该省各年数据相加",
+            "【例6】表格中有'增速'列，数据是？→ 同比增长率",
+            "【例7】注意表格中的'合计'行是否包含所有数据",
+            "【例8】数据有正负，表示？→ 负值表示减少",
+            "【例9】时间跨度大时，注意数据可比性",
+            "【例10】表格数据要四舍五入，注意精度"
+          ],
+          "pitfalls": [
+            "行列标题看错",
+            "单位没有统一",
+            "数据定位错误",
+            "合计行误用"
+          ]
+        },
+        "data-graph": {
+          "name": "图形型材料",
+          "description": "柱状图、折线图、饼图等统计图形的阅读和分析。",
+          "mnemonic": "柱状看高低，折线看趋势，饼图看比例，坐标轴线要分清",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='90' height='55' fill='#ffebee' stroke='#c62828' rx='8'/><text x='55' y='35' text-anchor='middle' font-size='11' fill='#c62828'>柱状图</text><text x='55' y='52' font-size='9' fill='#666'>比较大小</text><rect x='110' y='10' width='90' height='55' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='155' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>折线图</text><text x='155' y='52' font-size='9' fill='#666'>看趋势变化</text><rect x='210' y='10' width='90' height='55' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='255' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>饼图</text><text x='255' y='52' font-size='9' fill='#666'>看占比关系</text><rect x='310' y='10' width='80' height='55' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='350' y='35' text-anchor='middle' font-size='11' fill='#e65100'>复合图</text><text x='350' y='52' font-size='9' fill='#666'>柱+线组合</text><rect x='10' y='75' width='380' height='55' fill='#efebe9' stroke='#5d4037' rx='8'/><text x='200' y='100' font-size='9' fill='#5d4037'>读图要点：①标题②图例③坐标轴④数据标注</text><text x='200' y='118' font-size='9' fill='#5d4037'>注意：坐标起点、数值单位、图例颜色对应</text></svg>",
+          "keyPoints": [
+            "柱状图：比较同类数据大小，高低代表数量多少",
+            "折线图：表示数据随时间的变化趋势",
+            "饼图：表示各部分占总体的比例关系",
+            "注意坐标轴起点：有时不是从0开始",
+            "注意图例颜色对应关系"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】柱状图显示某年数值最高 → 找最高柱子对应的数值",
+            "【例2】折线图上升趋势明显 → 该指标持续增长",
+            "【例3】饼图中最大扇形占比？→ 估算或计算该扇形圆心角/360°",
+            "【例4】柱状图坐标轴从50开始 → 实际差距比看起来小",
+            "【例5】多条折线对比 → 看趋势差异",
+            "【例6】堆叠柱状图 → 看各部分数量和总量",
+            "【例7】环形饼图 → 中心空白可显示总量或平均",
+            "【例8】柱状图柱子一样高 → 数据相同",
+            "【例9】折线图有下降段 → 对应时期数据减少",
+            "【例10】图例显示两种颜色 → 分别代表两个指标"
+          ],
+          "pitfalls": [
+            "坐标轴起点不是0",
+            "图例颜色混淆",
+            "饼图比例估算错误",
+            "堆叠柱状图各部分看错"
+          ]
+        },
+        "data-text": {
+          "name": "文字型材料",
+          "description": "文字型统计资料的阅读、定位和综合分析。",
+          "mnemonic": "文字材料先略读，结构层次要把握，数据定位关键词，干扰信息要排除",
+          "svgDiagram": "<svg viewBox='0 0 400 140' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='380' height='120' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>文字材料阅读顺序</text><line x1='10' y1='50' x2='390' y2='50' stroke='#388e3c'/><text x='100' y='70' font-size='9' fill='#333'>① 首段：了解材料主题和时间</text><text x='280' y='70' font-size='9' fill='#333'>② 结构：总分/分总/并列</text><text x='100' y='90' font-size='9' fill='#333'>③ 重点词：增长/下降/占/比</text><text x='280' y='90' font-size='9' fill='#333'>④ 数据：定位并标注单位</text><text x='100' y='110' font-size='9' fill='#333'>⑤ 尾段：往往有总结或结论</text><text x='280' y='110' font-size='9' fill='#333'>⑥ 关键词定位数据</text></svg>",
+          "keyPoints": [
+            "先读首句：了解材料主题、时间范围",
+            "识别结构：总分结构、分总结构、并列结构",
+            "找关键词：增长、下降、占、比、达到等",
+            "数据标注：年份、地区、数值、单位",
+            "排除干扰：注意'但是'、'然而'后的转折信息"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】'2019年，我国GDP达到99万亿元' → 时间2019年，数值99万亿",
+            "【例2】'其中，第三产业增长最快' → 第三产业是重点",
+            "【例3】'但是，增速比去年下降了2个百分点' → 转折信息，增速下降",
+            "【例4】'2019年人均GDP突破1万美元' → 人均概念",
+            "【例5】'东部地区占比60%' → 东部是主要部分",
+            "【例6】多个年份数据出现 → 找出每年的数据",
+            "【例7】文字中有'比' → 注意是谁和谁比",
+            "【例8】'首次超过' → 里程碑式突破",
+            "【例9】'预计' → 未来预测数据",
+            "【例10】注意'约'、'左右'等词表示近似值"
+          ],
+          "pitfalls": [
+            "时间范围看错",
+            "增长量还是增长率混淆",
+            "转折信息忽略",
+            "数据定位错误段落"
+          ]
+        },
+        "data-comprehensive": {
+          "name": "综合型材料",
+          "description": "图文表混合材料的阅读和多材料数据的关联分析。",
+          "mnemonic": "综合材料分段读，图文表数据对照，前后呼应找联系，验证数据要准确",
+          "svgDiagram": "<svg viewBox='0 0 400 100' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='120' height='80' fill='#e3f2fd' stroke='#1565c0' rx='8'/><text x='70' y='35' text-anchor='middle' font-size='11' fill='#1565c0'>分段阅读</text><text x='70' y='55' text-anchor='middle' font-size='9' fill='#666'>先读文字理解主题</text><text x='70' y='68' text-anchor='middle' font-size='9' fill='#666'>再看图表定位数据</text><text x='70' y='78' text-anchor='middle' font-size='9' fill='#666'>最后对照验证</text><rect x='140' y='10' width='120' height='80' fill='#e8f5e9' stroke='#388e3c' rx='8'/><text x='200' y='35' text-anchor='middle' font-size='11' fill='#2e7d32'>数据关联</text><text x='200' y='55' text-anchor='middle' font-size='9' fill='#666'>文字数据与图表对照</text><text x='200' y='68' text-anchor='middle' font-size='9' fill='#666'>验证数据一致性</text><text x='200' y='78' text-anchor='middle' font-size='9' fill='#666'>注意数据出处</text><rect x='270' y='10' width='120' height='80' fill='#fff3e0' stroke='#f57c00' rx='8'/><text x='330' y='35' text-anchor='middle' font-size='11' fill='#e65100'>常见陷阱</text><text x='330' y='55' text-anchor='middle' font-size='9' fill='#666'>不同来源数据不同</text><text x='330' y='68' text-anchor='middle' font-size='9' fill='#666'>时间范围不一致</text><text x='330' y='78' text-anchor='middle' font-size='9' fill='#666'>指标定义有差异</text></svg>",
+          "keyPoints": [
+            "分段阅读：每段文字对应一个图表，先文字后图表",
+            "数据关联：文字中的数据要到对应图表中验证",
+            "时间对应：注意各材料的时间范围是否一致",
+            "指标统一：同一个指标在不同材料中定义是否一致",
+            "互相验证：利用一个材料的数据验证另一个"
+          ],
+          "formulas": [],
+          "examples": [
+            "【例1】文字说'2019年增长20%'，图表验证 → 看图表2019年数据是否匹配",
+            "【例2】表格和柱状图数据不同 → 以文字描述为准或注意时间范围",
+            "【例3】多个地区数据 → 找出需要的地区对应数据",
+            "【例4】文字'占比最大' → 在饼图或表格中找最大数值",
+            "【例5】材料给出累计和分项 → 验证是否一致",
+            "【例6】图表标题显示时间范围 → 与文字材料对照",
+            "【例7】不同段落描述不同指标 → 分别定位",
+            "【例8】图表有注释说明 → 注意数据调整因素",
+            "【例9】前后数据验证 → 计算是否自洽",
+            "【例10】表格下方有备注 → 重要说明不要忽略"
+          ],
+          "pitfalls": [
+            "不同材料数据冲突时判断错误",
+            "时间范围不统一",
+            "忽略材料之间的关联",
+            "数据单位不统一"
+          ]
+        }
+      }
+    }
+  }
+}
