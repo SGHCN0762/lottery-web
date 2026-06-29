@@ -7,10 +7,9 @@
         <FileList
           :model-value="filteredFiles"
           :config="listConfig"
-          :previewable="true"
+          :previewable="false"
           :get-download-url="getFileUrl"
           :get-download-file-name="getFileName"
-          @preview="handlePreview"
         />
       </div>
 
@@ -18,18 +17,14 @@
         {{ t('tools.civilServantExam.noFiles') }}
       </div>
     </div>
-
-    <PdfPreview v-model:visible="previewVisible" :file="previewFile" />
   </div>
 </template>
 
 <script setup>
-  import { ref } from 'vue';
   import { useI18n } from 'vue-i18n';
   import FileList from '../components/FileList.vue';
   import { useCivilServantExam } from './hooks/useCivilServantExam';
   import CategoryTabs from './components/CategoryTabs.vue';
-  import PdfPreview from './components/PdfPreview.vue';
 
   const { t } = useI18n();
 
@@ -42,14 +37,6 @@
     showFileSize: false,
     fileNameWrap: true,
     showRemove: false,
-  };
-
-  const previewVisible = ref(false);
-  const previewFile = ref(null);
-
-  const handlePreview = file => {
-    previewFile.value = file;
-    previewVisible.value = true;
   };
 </script>
 
