@@ -447,6 +447,11 @@ export default {
       remove: '删除',
     },
   },
+  civilServantExam: {
+    name: '国考试题',
+    description: '历年国考真题PDF预览',
+    noFiles: '暂无文件',
+  },
   examPrep: {
     name: '公考备考助手',
     description: '公务员考试备考练习工具',

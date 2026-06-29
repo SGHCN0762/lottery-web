@@ -447,6 +447,11 @@ export default {
       remove: 'Remove',
     },
   },
+  civilServantExam: {
+    name: 'Civil Servant Exam',
+    description: 'Civil Service Exam PDF Preview',
+    noFiles: 'No files',
+  },
   examPrep: {
     name: 'Exam Prep Assistant',
     description: 'Civil Service Exam Preparation Tool',

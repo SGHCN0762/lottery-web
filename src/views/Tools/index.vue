@@ -112,6 +112,13 @@ const tools = computed(() => [
     description: t('tools.examPrep.description'),
     route: 'ExamPrep',
   },
+  {
+    id: 'civil-servant-exam',
+    name: t('tools.civilServantExam.name'),
+    icon: '📋',
+    description: t('tools.civilServantExam.description'),
+    route: 'CivilServantExam',
+  },
 ]);
 
 // ========================================
