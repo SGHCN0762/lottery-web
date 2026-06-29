@@ -87,6 +87,9 @@ const props = defineProps({
       draggable: false,
       showActions: true,
       layout: 'list',
+      showFileSize: true,
+      fileNameWrap: false,
+      showRemove: true,
     }),
   },
   actionItems: {
@@ -126,6 +129,9 @@ const computedActions = computed(() => {
   let actions = [...defaultActions.value];
   if (!props.previewable) {
     actions = actions.filter(a => a.key !== 'preview');
+  }
+  if (!props.config.showRemove) {
+    actions = actions.filter(a => a.key !== 'remove');
   }
   return actions;
 });

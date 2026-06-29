@@ -31,7 +31,7 @@ export function getFileName(file) {
 }
 
 export function getFileUrl(file) {
-  return file.url || file.convertedUrl || file.compressedUrl || file.watermarkedUrl || '';
+  return file.convertedUrl || file.compressedUrl || file.watermarkedUrl || file.url || '';
 }
 
 export function isImage(file) {

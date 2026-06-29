@@ -18,9 +18,9 @@
     </div>
 
     <div class="file-info">
-      <div class="file-name">{{ fileNameStr }}</div>
-      <div class="file-meta">
-        <span>{{ fileSizeStr }}</span>
+      <div class="file-name" :class="{ 'is-wrap': config.fileNameWrap }">{{ fileNameStr }}</div>
+      <div class="file-meta" v-if="config.showFileSize || $slots.itemMeta">
+        <span v-if="config.showFileSize">{{ fileSizeStr }}</span>
         <slot name="itemMeta" :file="file" />
         <span v-if="file.convertedUrl" class="status-tag converted">
           {{ convertedText }}
@@ -92,6 +92,8 @@ const props = defineProps({
       draggable: false,
       showActions: true,
       layout: 'list',
+      showFileSize: true,
+      fileNameWrap: false,
     }),
   },
 });
@@ -184,6 +186,12 @@ const isImage = (file) => {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  &.is-wrap {
+    white-space: normal;
+    word-break: break-all;
+    line-height: 1.4;
+  }
 }
 
 .file-meta {
