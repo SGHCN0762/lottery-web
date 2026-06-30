@@ -6,11 +6,16 @@ const BASE_URL = import.meta.env.BASE_URL;
 const getFullUrl = path => `${BASE_URL}${path}`;
 
 const examJsonFiles = [
-  {
-    year: '2000',
-    name: '2000年国家公务员考试行测真题',
-    path: `${BASE_PATH}/2000-2026国考行测PDF/json/2000年国家公务员考试行测真题.json`,
-  },
+  { year: '2000', name: '2000年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2000年国家公务员考试行测真题.json` },
+  { year: '2001', name: '2001年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2001年国家公务员考试行测真题.json` },
+  { year: '2003', name: '2003年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2003年国家公务员考试行测真题.json` },
+  { year: '2006', name: '2006年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2006年国家公务员考试行测真题.json` },
+  { year: '2008', name: '2008年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2008年国家公务员考试行测真题.json` },
+  { year: '2009', name: '2009年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2009年国家公务员考试行测真题.json` },
+  { year: '2022', name: '2022年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2022年国家公务员考试行测真题.json` },
+  { year: '2024', name: '2024年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2024年国家公务员考试行测真题.json` },
+  { year: '2025', name: '2025年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2025年国家公务员考试行测真题.json` },
+  { year: '2026', name: '2026年国家公务员考试行测真题', path: `${BASE_PATH}/2000-2026国考行测PDF/json/2026年国家公务员考试行测真题.json` },
 ];
 
 const processFiles = (files, categoryId) => {
@@ -140,7 +145,25 @@ const xingceZentiArr = [
 const xingceZhentiFiles = processFiles(
   xingceZentiArr.map(name => {
     const year = name.replace(yearRegex, '$1');
-    const jsonFile = examJsonFiles.find(jf => jf.year === year);
+    let jsonFile = null;
+    
+    const versionPatterns = ['副省级', '地市级', '市地级', '行政执法', '行政执法卷', '省级', 'A卷', 'B卷', '（一）', '（二）'];
+    let matchedVersion = '';
+    for (const pattern of versionPatterns) {
+      if (name.includes(pattern)) {
+        matchedVersion = pattern;
+        break;
+      }
+    }
+    
+    if (matchedVersion) {
+      jsonFile = examJsonFiles.find(jf => jf.year === year && jf.name.includes(matchedVersion));
+    }
+    
+    if (!jsonFile) {
+      jsonFile = examJsonFiles.find(jf => jf.year === year);
+    }
+    
     return {
       year,
       name,

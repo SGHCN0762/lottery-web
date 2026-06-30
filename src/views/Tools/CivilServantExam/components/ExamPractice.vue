@@ -170,6 +170,7 @@ const remainingTime = ref(7200); // 默认120分钟倒计时
 const showAnswerSheet = ref(false);
 const showActionSheet = ref(false);
 const examYear = ref(route.query.year || '2000');
+const examFileName = ref(route.query.fileName ? decodeURIComponent(route.query.fileName) : `${examYear.value}年国家公务员考试行测真题`);
 const isLoading = ref(true);
 const loadError = ref(false);
 
@@ -225,7 +226,7 @@ const loadQuestions = async () => {
   loadError.value = false;
   showLoadingToast({ message: t('tools.civilServantExam.practice.loading'), duration: 0 });
   try {
-    const jsonFileName = `${examYear.value}年国家公务员考试行测真题.json`;
+    const jsonFileName = `${examFileName.value}.json`;
     const response = await fetch(`${import.meta.env.BASE_URL}civil-servant-exam/2000-2026国考行测PDF/json/${jsonFileName}`);
 
     if (!response.ok) {
@@ -247,7 +248,7 @@ const loadQuestions = async () => {
       analysis: item.解析 || '',
       image: item.题图 || '',
       data: item.资料 || '',
-    })).filter(q => q.id && q.title);
+    }));
 
     if (questions.value.length === 0) {
       throw new Error('有效的试题数据为空');
@@ -304,6 +305,7 @@ const isSwiping = ref(false);
 
 const handleTouchStart = (e) => {
   touchStartX.value = e.touches[0].clientX;
+  touchEndX.value = e.touches[0].clientX;
   isSwiping.value = true;
 };
 
