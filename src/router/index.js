@@ -187,6 +187,18 @@ const routes = [
     },
   },
   {
+    path: '/tools/civil-servant-exam/practice',
+    name: 'CivilServantExamPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-civil-servant-exam-practice" */ '@/views/Tools/CivilServantExam/components/ExamPractice.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.civilServantExam.practice.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/exam-prep',
     name: 'ExamPrep',
     component: () =>

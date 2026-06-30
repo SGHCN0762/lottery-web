@@ -93,7 +93,7 @@ const props = defineProps({
     }),
   },
   actionItems: {
-    type: Array,
+    type: [Array, Function],
     default: () => [],
   },
   previewable: {
@@ -123,7 +123,10 @@ const defaultActions = computed(() => [
 ]);
 
 const computedActions = computed(() => {
-  if (props.actionItems.length > 0) {
+  if (typeof props.actionItems === 'function' && currentFile.value) {
+    return props.actionItems(currentFile.value);
+  }
+  if (Array.isArray(props.actionItems) && props.actionItems.length > 0) {
     return props.actionItems;
   }
   let actions = [...defaultActions.value];

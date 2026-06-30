@@ -5,6 +5,14 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 const getFullUrl = path => `${BASE_URL}${path}`;
 
+const examJsonFiles = [
+  {
+    year: '2000',
+    name: '2000年国家公务员考试行测真题',
+    path: `${BASE_PATH}/2000-2026国考行测PDF/json/2000年国家公务员考试行测真题.json`,
+  },
+];
+
 const processFiles = (files, categoryId) => {
   return files.map((f, index) => ({
     ...f,
@@ -130,11 +138,16 @@ const xingceZentiArr = [
   '2026年国家公务员录用考试《行测》题（行政执法卷）.pdf',
 ];
 const xingceZhentiFiles = processFiles(
-  xingceZentiArr.map(name => ({
-    year: name.replace(yearRegex, '$1'),
-    name,
-    path: `${BASE_PATH}/2000-2026国考行测PDF/行测-真题/${name}`,
-  })),
+  xingceZentiArr.map(name => {
+    const year = name.replace(yearRegex, '$1');
+    const jsonFile = examJsonFiles.find(jf => jf.year === year);
+    return {
+      year,
+      name,
+      path: `${BASE_PATH}/2000-2026国考行测PDF/行测-真题/${name}`,
+      examJsonFile: jsonFile || null,
+    };
+  }),
   'xingce-zhenti'
 );
 
@@ -228,10 +241,28 @@ export function useCivilServantExam() {
 
   const getFileName = file => file.name || '';
 
+  const loadExamData = async (fileIndex = 0) => {
+    const examFile = examJsonFiles[fileIndex];
+    if (!examFile) {
+      throw new Error('未找到对应的试题文件');
+    }
+    const response = await fetch(getFullUrl(examFile.path));
+    const data = await response.json();
+    return data;
+  };
+
+  const getExamFileUrl = (fileIndex = 0) => {
+    const examFile = examJsonFiles[fileIndex];
+    return examFile ? getFullUrl(examFile.path) : '';
+  };
+
   return {
     activeCategory,
     filteredFiles,
     getFileUrl,
     getFileName,
+    loadExamData,
+    examJsonFiles,
+    getExamFileUrl,
   };
 }

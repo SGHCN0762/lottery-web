@@ -10,6 +10,8 @@
           :previewable="false"
           :get-download-url="getFileUrl"
           :get-download-file-name="getFileName"
+          :action-items="getActionItems"
+          @action="handleAction"
         />
       </div>
 
@@ -22,11 +24,13 @@
 
 <script setup>
   import { useI18n } from 'vue-i18n';
+  import { useRouter } from 'vue-router';
   import FileList from '../components/FileList.vue';
   import { useCivilServantExam } from './hooks/useCivilServantExam';
   import CategoryTabs from './components/CategoryTabs.vue';
 
   const { t } = useI18n();
+  const router = useRouter();
 
   const { activeCategory, filteredFiles, getFileUrl, getFileName } = useCivilServantExam();
 
@@ -38,12 +42,37 @@
     fileNameWrap: true,
     showRemove: false,
   };
+
+  const getActionItems = (file) => {
+    const actions = [
+      { name: t('tools.fileConverter.common.download'), key: 'download' },
+    ];
+    
+    if (file.examJsonFile) {
+      actions.push({ name: t('tools.civilServantExam.practice.title'), key: 'practice', color: '#1989fa' });
+    }
+    
+    return actions;
+  };
+
+  const handleAction = ({ key, file }) => {
+    if (key === 'practice' && file.examJsonFile) {
+      router.push({ 
+        name: 'CivilServantExamPractice',
+        query: { 
+          year: file.examJsonFile.year,
+          fileName: encodeURIComponent(file.examJsonFile.name)
+        }
+      });
+    }
+  };
 </script>
 
 <style lang="less" scoped>
   .civil-servant-exam-page {
     .page-content {
       .file-list-container {
+        padding: 0 var(--spacing-md);
       }
 
       .empty-tip {
