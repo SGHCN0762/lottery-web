@@ -38,6 +38,22 @@ export const knowledgeCategories = {
               '"因此"与"从而"的区别',
               '"然而"与"可是"的用法辨析'
             ]
+          },
+          'verbal-function-word': {
+            name: '虚词辨析',
+            description: '辨析介词、连词、助词等虚词的用法',
+            examples: [
+              '"对于"与"关于"的用法区别',
+              '"的、地、得"的正确使用'
+            ]
+          },
+          'verbal-context': {
+            name: '语境分析',
+            description: '根据上下文语境选择最恰当的词语',
+            examples: [
+              '解释关系的识别与应用',
+              '反对关系的判断与词语选择'
+            ]
           }
         }
       },
@@ -77,6 +93,22 @@ export const knowledgeCategories = {
               '排除与前文无关的选项',
               '识别文章的话题延续'
             ]
+          },
+          'verbal-title': {
+            name: '标题添加题',
+            description: '为文段选择最恰当的标题',
+            examples: [
+              '概括文段核心内容',
+              '选择既准确又吸引人的标题'
+            ]
+          },
+          'verbal-attitude': {
+            name: '态度观点题',
+            description: '判断作者或文段中某个人物的态度',
+            examples: [
+              '识别褒贬性词语',
+              '判断支持、反对或中立的态度'
+            ]
           }
         }
       },
@@ -107,6 +139,22 @@ export const knowledgeCategories = {
             examples: [
               '总结全文得出结论',
               '预测作者下一步的建议'
+            ]
+          },
+          'verbal-illness': {
+            name: '病句辨析',
+            description: '识别并修改有语病的句子',
+            examples: [
+              '搭配不当的识别与修改',
+              '成分残缺与赘余的判断'
+            ]
+          },
+          'verbal-ambiguity': {
+            name: '歧义句辨析',
+            description: '识别有歧义的句子并判断歧义原因',
+            examples: [
+              '词汇歧义与语法歧义',
+              '指代歧义的识别与消除'
             ]
           }
         }
@@ -164,6 +212,30 @@ export const knowledgeCategories = {
               '正方体展开图的折叠',
               '视图与立体图的对应'
             ]
+          },
+          'logic-function': {
+            name: '功能元素',
+            description: '图形中功能元素的指向作用',
+            examples: [
+              '箭头的指向功能',
+              '小黑点的标记功能'
+            ]
+          },
+          'logic-plane': {
+            name: '平面拼合',
+            description: '将零散图形拼合成完整图形',
+            examples: [
+              '平行等长消去法',
+              '特殊边的拼合'
+            ]
+          },
+          'logic-view': {
+            name: '三视图与截面',
+            description: '立体图形的视图和截面图',
+            examples: [
+              '主视图、俯视图、侧视图',
+              '常见立体图形的截面形状'
+            ]
           }
         }
       },
@@ -218,6 +290,30 @@ export const knowledgeCategories = {
               '因果关系的类比',
               '目的与手段的类比'
             ]
+          },
+          'logic-analogy-relation': {
+            name: '逻辑关系',
+            description: '词项之间的各种逻辑关系',
+            examples: [
+              '并列关系与矛盾关系',
+              '交叉关系与全同关系'
+            ]
+          },
+          'logic-analogy-grammar': {
+            name: '语法关系',
+            description: '词语之间的语法结构关系',
+            examples: [
+              '主谓关系与动宾关系',
+              '偏正关系与并列关系'
+            ]
+          },
+          'logic-analogy-semantic': {
+            name: '语义关系',
+            description: '词语之间的意义关联',
+            examples: [
+              '近义关系与反义关系',
+              '象征关系与比喻关系'
+            ]
           }
         }
       },
@@ -265,6 +361,30 @@ export const knowledgeCategories = {
               '搭桥与拆桥的方法',
               '否定论据与否定论点'
             ]
+          },
+          'logic-premise': {
+            name: '前提假设',
+            description: '寻找论证成立的必要前提',
+            examples: [
+              '搭桥法寻找前提',
+              '反向验证法的应用'
+            ]
+          },
+          'logic-explain': {
+            name: '解释评价',
+            description: '解释现象或评价论证方式',
+            examples: [
+              '解释矛盾现象',
+              '评价论证结构'
+            ]
+          },
+          'logic-conclusion': {
+            name: '结论型',
+            description: '从题干信息推出合理结论',
+            examples: [
+              '从题干直接推出结论',
+              '避免过度推断'
+            ]
           }
         }
       }
@@ -296,6 +416,30 @@ export const knowledgeCategories = {
             examples: [
               '一元二次方程的求解',
               '二元一次方程组的解法'
+            ]
+          },
+          'math-period': {
+            name: '周期问题',
+            description: '利用周期规律解决问题',
+            examples: [
+              '日期中的周期循环',
+              '数列的周期规律'
+            ]
+          },
+          'math-week': {
+            name: '星期日期问题',
+            description: '日期与星期的推算',
+            examples: [
+              '已知日期推算星期',
+              '闰年平年的判断'
+            ]
+          },
+          'math-clock': {
+            name: '钟表问题',
+            description: '钟表指针的运动规律',
+            examples: [
+              '时针与分针的夹角',
+              '快慢钟问题'
             ]
           }
         }
@@ -368,6 +512,62 @@ export const knowledgeCategories = {
               '三角形与四边形的面积',
               '长方体与圆柱体的体积'
             ]
+          },
+          'math-concentration': {
+            name: '浓度问题',
+            description: '溶液浓度的计算与混合',
+            examples: [
+              '溶液混合的十字交叉法',
+              '蒸发稀释的浓度变化'
+            ]
+          },
+          'math-tree': {
+            name: '植树问题',
+            description: '植树的间隔与数量关系',
+            examples: [
+              '两端植树与一端植树',
+              '环形植树的计算'
+            ]
+          },
+          'math-square': {
+            name: '方阵问题',
+            description: '方阵人数与层数的关系',
+            examples: [
+              '实心方阵的总人数',
+              '空心方阵的人数计算'
+            ]
+          },
+          'math-cow': {
+            name: '牛吃草问题',
+            description: '草生长与牛消耗的平衡问题',
+            examples: [
+              '典型牛吃草问题',
+              '牛吃草的变形应用'
+            ]
+          },
+          'math-chicken': {
+            name: '鸡兔同笼',
+            description: '两类事物的数量关系计算',
+            examples: [
+              '假设法解鸡兔同笼',
+              '鸡兔同笼的变形应用'
+            ]
+          },
+          'math-drawer': {
+            name: '抽屉原理',
+            description: '至少保证问题的解题方法',
+            examples: [
+              '最不利原则的应用',
+              '抽屉原理的构造方法'
+            ]
+          },
+          'math-max-min': {
+            name: '最值问题',
+            description: '求最大值或最小值的问题',
+            examples: [
+              '和定最值与最不利构造',
+              '函数最值的求解'
+            ]
           }
         }
       }
@@ -425,6 +625,30 @@ export const knowledgeCategories = {
               '倍数的基本计算',
               '"增长N倍"与"是N倍"的区别'
             ]
+          },
+          'data-index': {
+            name: '指数',
+            description: '指数的含义与计算应用',
+            examples: [
+              '指数与增长率的关系',
+              '指数的同比环比应用'
+            ]
+          },
+          'data-pull': {
+            name: '拉动增长',
+            description: '部分拉动整体增长的百分点',
+            examples: [
+              '拉动增长率的计算',
+              '拉动增长与贡献率的关系'
+            ]
+          },
+          'data-contribution': {
+            name: '贡献率',
+            description: '部分增长量占整体增长量的比重',
+            examples: [
+              '贡献率的计算公式',
+              '贡献率与拉动增长的转换'
+            ]
           }
         }
       },
@@ -455,6 +679,30 @@ export const knowledgeCategories = {
             examples: [
               '判断说法正误',
               '多数据关系的综合分析'
+            ]
+          },
+          'data-speed': {
+            name: '速算技巧',
+            description: '快速计算的方法和技巧',
+            examples: [
+              '截位直除法',
+              '特殊分数转化法'
+            ]
+          },
+          'data-diff': {
+            name: '差分法',
+            description: '比较分数大小的差分方法',
+            examples: [
+              '差分数的计算',
+              '用差分法比较大小'
+            ]
+          },
+          'data-cross': {
+            name: '十字交叉法',
+            description: '混合增长率的快速计算',
+            examples: [
+              '溶液混合十字交叉',
+              '增长率混合十字交叉'
             ]
           }
         }
@@ -496,6 +744,22 @@ export const knowledgeCategories = {
               '重要文件精神',
               '重大会议内容'
             ]
+          },
+          'common-philosophy': {
+            name: '马克思主义哲学',
+            description: '马克思主义哲学基本原理',
+            examples: [
+              '唯物辩证法三大规律',
+              '认识论与历史唯物主义'
+            ]
+          },
+          'common-mao': {
+            name: '毛泽东思想',
+            description: '毛泽东思想的主要内容',
+            examples: [
+              '新民主主义革命理论',
+              '社会主义改造理论'
+            ]
           }
         }
       },
@@ -535,6 +799,22 @@ export const knowledgeCategories = {
               '行政复议与行政诉讼',
               '公务员法的主要内容'
             ]
+          },
+          'common-jurisprudence': {
+            name: '法理学',
+            description: '法学基本理论和概念',
+            examples: [
+              '法的本质与特征',
+              '法律关系与法律责任'
+            ]
+          },
+          'common-labor': {
+            name: '劳动法',
+            description: '劳动法律关系与权益保护',
+            examples: [
+              '劳动合同的订立与解除',
+              '劳动争议的解决途径'
+            ]
           }
         }
       },
@@ -566,6 +846,22 @@ export const knowledgeCategories = {
               '诗词曲赋的基本知识',
               '传统节日与习俗'
             ]
+          },
+          'common-world-history': {
+            name: '世界历史',
+            description: '世界历史重要事件与人物',
+            examples: [
+              '文艺复兴与启蒙运动',
+              '两次世界大战的影响'
+            ]
+          },
+          'common-literature': {
+            name: '文学常识',
+            description: '中外文学名著与作家',
+            examples: [
+              '中国古典四大名著',
+              '世界文学名家与代表作'
+            ]
           }
         }
       },
@@ -596,6 +892,14 @@ export const knowledgeCategories = {
             examples: [
               '气候类型与分布',
               '自然灾害的成因'
+            ]
+          },
+          'common-national': {
+            name: '地理国情',
+            description: '中国基本地理国情知识',
+            examples: [
+              '中国的疆域与邻国',
+              '中国的人口与民族'
             ]
           }
         }
@@ -636,6 +940,22 @@ export const knowledgeCategories = {
               '航天航空成就',
               '信息技术发展'
             ]
+          },
+          'common-it': {
+            name: '信息技术',
+            description: '计算机与网络技术知识',
+            examples: [
+              '计算机基本组成',
+              '网络安全与隐私保护'
+            ]
+          },
+          'common-new-energy': {
+            name: '新能源技术',
+            description: '新能源与环保技术',
+            examples: [
+              '太阳能与风能利用',
+              '新能源汽车技术'
+            ]
           }
         }
       },
@@ -658,6 +978,14 @@ export const knowledgeCategories = {
             examples: [
               'GDP与经济增长',
               '货币政策与财政政策'
+            ]
+          },
+          'common-international': {
+            name: '国际经济',
+            description: '国际贸易与金融知识',
+            examples: [
+              '汇率与外汇市场',
+              '国际贸易组织与协定'
             ]
           }
         }
