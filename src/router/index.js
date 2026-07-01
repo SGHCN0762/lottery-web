@@ -184,6 +184,7 @@ const routes = [
       title: 'tools.civilServantExam.name',
       showBack: true,
       showTabbar: false,
+      keepAlive: true,
     },
   },
   {
