@@ -213,7 +213,7 @@ const formatTime = (seconds) => {
 
 const getImageUrl = (filename) => {
   if (!filename) return '';
-  return `${import.meta.env.BASE_URL}civil-servant-exam/json/images/${examYear.value}/${filename}`;
+  return `${import.meta.env.BASE_URL}civil-servant-exam/json/${filename}`;
 };
 
 const handleImageError = (e) => {
