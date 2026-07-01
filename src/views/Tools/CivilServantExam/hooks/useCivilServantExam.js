@@ -68,8 +68,8 @@ const examJsonFiles = examJsonArr.map(name => ({
 }));
 
 export const categories = [
-  { id: 'shenlun', name: '申论真题' },
   { id: 'xingce-zhenti', name: '行测真题' },
+  { id: 'shenlun', name: '申论真题' },
   { id: 'xingce-answer', name: '行测答案' },
   { id: 'answer-sheet', name: '答题卡' },
 ];
@@ -304,7 +304,7 @@ const allFiles = {
 };
 
 export function useCivilServantExam() {
-  const activeCategory = ref('shenlun');
+  const activeCategory = ref('xingce-zhenti');
 
   const filteredFiles = computed(() => {
     return allFiles[activeCategory.value] || [];

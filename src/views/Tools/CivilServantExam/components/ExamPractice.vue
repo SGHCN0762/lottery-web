@@ -41,6 +41,10 @@
 
         <div class="question-content">{{ currentQuestion.title }}</div>
 
+        <div v-if="currentQuestion.optionsImage" class="options-image">
+          <img :src="getImageUrl(currentQuestion.optionsImage)" alt="选项图" @error="handleImageError" />
+        </div>
+
         <div class="options-list">
           <div
             v-for="(option, key) in currentQuestion.options"
@@ -243,6 +247,7 @@ const loadQuestions = async () => {
       id: item.题号 || 0,
       section: item.部分 || '',
       title: item.题目 || '',
+      optionsImage: item.选项图 || '',
       options: item.选项 || {},
       answer: item.答案 || '',
       analysis: item.解析 || '',
@@ -479,7 +484,7 @@ const startTimer = () => {
     }
   }
 
-  .question-image {
+  .question-image, .options-image {
     margin-bottom: 12px;
     border-radius: 12px;
     overflow: hidden;
