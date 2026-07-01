@@ -213,7 +213,7 @@ const formatTime = (seconds) => {
 
 const getImageUrl = (filename) => {
   if (!filename) return '';
-  return `${import.meta.env.BASE_URL}civil-servant-exam/2000-2026国考行测PDF/json/images/${examYear.value}/${filename}`;
+  return `${import.meta.env.BASE_URL}civil-servant-exam/json/images/${examYear.value}/${filename}`;
 };
 
 const handleImageError = (e) => {
@@ -227,7 +227,7 @@ const loadQuestions = async () => {
   showLoadingToast({ message: t('tools.civilServantExam.practice.loading'), duration: 0 });
   try {
     const jsonFileName = `${examFileName.value}.json`;
-    const response = await fetch(`${import.meta.env.BASE_URL}civil-servant-exam/2000-2026国考行测PDF/json/${jsonFileName}`);
+    const response = await fetch(`${import.meta.env.BASE_URL}civil-servant-exam/json/${jsonFileName}`);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
