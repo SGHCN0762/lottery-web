@@ -35,17 +35,17 @@
 
         <div v-if="currentQuestion.data" class="question-data">
           <div class="data-label">{{ t('tools.civilServantExam.practice.data') }}</div>
-          <div class="data-content">{{ currentQuestion.data }}</div>
+          <div class="data-content" v-html="currentQuestion.data" />
         </div>
 
         <div v-if="currentQuestion.image" class="question-image">
-          <img :src="getImageUrl(currentQuestion.image)" alt="题图" @error="handleImageError" />
+          <img :src="currentQuestion.image" alt="题图" @error="handleImageError" />
         </div>
 
-        <div class="question-content">{{ currentQuestion.title }}</div>
+        <div class="question-content" v-html="currentQuestion.title" />
 
         <div v-if="currentQuestion.optionsImage" class="options-image">
-          <img :src="getImageUrl(currentQuestion.optionsImage)" alt="选项图" @error="handleImageError" />
+          <img :src="currentQuestion.optionsImage" alt="选项图" @error="handleImageError" />
         </div>
 
         <div class="options-list">
@@ -61,7 +61,7 @@
             @click="selectOption(key)"
           >
             <div class="option-key">{{ key }}</div>
-            <div class="option-content">{{ option }}</div>
+            <div class="option-content" v-html="option" />
             <van-icon v-if="(isAnswered || isViewMode) && isCorrectAnswer(key)" name="success" class="option-icon correct" />
             <van-icon v-if="isAnswered && isSelected(key) && !isCorrectAnswer(key)" name="cross" class="option-icon wrong" />
           </div>
@@ -78,7 +78,7 @@
             <span class="analysis-label">{{ t('tools.civilServantExam.practice.analysis') }}</span>
             <span class="correct-answer">{{ t('tools.civilServantExam.practice.correctAnswer', { answer: formatAnswer(currentQuestion.answer) }) }}</span>
           </div>
-          <div class="analysis-content">{{ currentQuestion.analysis }}</div>
+          <div class="analysis-content" v-html="currentQuestion.analysis"></div>
         </div>
       </div>
 
@@ -318,11 +318,6 @@ const formatTime = (seconds) => {
   return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 };
 
-const getImageUrl = (filename) => {
-  if (!filename) return '';
-  return `${import.meta.env.BASE_URL}civil-servant-exam/json/${filename}`;
-};
-
 const handleImageError = (e) => {
   // 图片加载失败时隐藏图片
   e.target.style.display = 'none';
@@ -334,7 +329,9 @@ const loadQuestions = async () => {
   showLoadingToast({ message: t('tools.civilServantExam.practice.loading'), duration: 0 });
   try {
     const jsonFileName = `${examFileName.value}.json`;
-    const response = await fetch(`${import.meta.env.BASE_URL}civil-servant-exam/json/${jsonFileName}`);
+    const filePrefixed = `${import.meta.env.BASE_URL}civil-servant-exam/json`;
+    const imagePrefiexd = `${import.meta.env.BASE_URL}civil-servant-exam/json/images/${examFileName.value}`;
+    const response = await fetch(`${filePrefixed}/${jsonFileName}`);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -366,6 +363,21 @@ const loadQuestions = async () => {
 
     questions.value = rawData.map(item => {
       const category = item.题型 || '单选题';
+
+      // 如果 题目、解析、资料 存在 <img-name>QQ20260702-212838.png</img-name> 这种替换成 `<img src="${imagePrefiexd}/QQ20260702-212838.png" />`
+      const regex = /<img-name>([^<]+)<\/img-name>/img;
+      item.题目 = item.题目?.replace(regex, `<img src="${imagePrefiexd}/$1" />`);
+      item.解析 = item.解析?.replace(regex, `<img src="${imagePrefiexd}/$1" />`);  
+      item.资料 = item.资料?.replace(regex, `<img src="${imagePrefiexd}/$1" />`);
+
+      // 题图、选项图 做拼接
+      if(item.题图) {
+        item.题图 = `${imagePrefiexd}/${item.题图}`;
+      }
+      if(item.选项图) {
+        item.选项图 = `${imagePrefiexd}/${item.选项图}`;
+      }
+
       return {
         id: item.题号 || 0,
         section: item.部分 || '',

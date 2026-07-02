@@ -9,7 +9,7 @@
       </AppNavbar>
 
       <!-- 主内容区域 -->
-      <main class="main-content">
+      <main :class="['main-content', { 'has-tabbar': $route.meta.showTabbar }]">
         <slot></slot>
       </main>
 
@@ -110,10 +110,14 @@
     .main-content {
       flex: 1;
       padding-top: env(safe-area-inset-top, 0px);
-      padding-bottom: calc(50px + env(safe-area-inset-bottom, 0px));
+      padding-bottom: env(safe-area-inset-bottom, 0px);
       overflow-y: auto;
       background: var(--color-bg-primary);
       -webkit-overflow-scrolling: touch;
+
+      &.has-tabbar {
+        padding-bottom: calc(50px + env(safe-area-inset-bottom, 0px));
+      }
     }
   }
 </style>
