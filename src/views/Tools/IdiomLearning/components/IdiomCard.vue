@@ -8,8 +8,13 @@
       <p class="idiom-meaning">{{ idiom.meaning }}</p>
     </div>
     <div class="card-footer">
-      <div class="difficulty-badge" :class="idiom.difficulty">
-        {{ difficultyText }}
+      <div class="tags-wrapper">
+        <span v-for="tag in displayTags" :key="tag.key" class="tag" :class="tag.key">
+          {{ tag.name }}
+        </span>
+        <span class="difficulty-badge" :class="idiom.difficulty">
+          {{ difficultyText }}
+        </span>
       </div>
       <div class="status-icons">
         <span v-if="isMastered" class="status-icon mastered" title="已掌握">✓</span>
@@ -38,6 +43,21 @@ const props = defineProps({
 });
 
 defineEmits(['click']);
+
+const tagConfig = {
+  primary: { name: '小学' },
+  middle: { name: '初中' },
+  high: { name: '高中' },
+  civil: { name: '公考' }
+};
+
+const displayTags = computed(() => {
+  const tags = props.idiom.tags || [];
+  return tags.map(tag => ({
+    key: tag,
+    ...tagConfig[tag]
+  })).filter(t => t.name);
+});
 
 const difficultyText = computed(() => {
   const map = {
@@ -107,6 +127,39 @@ const difficultyText = computed(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  font-size: var(--font-size-xs);
+  padding: 2px var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+
+  &.primary {
+    background: rgba(7, 194, 144, 0.1);
+    color: var(--color-success);
+  }
+
+  &.middle {
+    background: rgba(25, 137, 250, 0.1);
+    color: var(--color-primary);
+  }
+
+  &.high {
+    background: rgba(255, 167, 38, 0.1);
+    color: var(--color-warning);
+  }
+
+  &.civil {
+    background: rgba(255, 87, 87, 0.1);
+    color: var(--color-danger);
+  }
 }
 
 .difficulty-badge {

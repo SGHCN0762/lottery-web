@@ -1,5 +1,5 @@
 import { ref, computed, onMounted } from 'vue';
-import { initIdioms, getIdioms, getIdiomCategories, getIdiomsByCategory, searchIdioms, getIdiomById, getTotalCount, getCountByCategory } from '../data/idioms';
+import { initIdioms, getIdioms, searchIdioms, getIdiomById, getTotalCount } from '../data/idioms';
 
 const LEARNED_KEY = 'idiom_learned_ids';
 const MASTERED_KEY = 'idiom_mastered_ids';
@@ -21,7 +21,7 @@ const saveStoredIds = (key, ids) => {
 const learnedIds = ref(getStoredIds(LEARNED_KEY));
 const masteredIds = ref(getStoredIds(MASTERED_KEY));
 const practiceRecords = ref(getStoredIds(PRACTICE_RECORDS_KEY));
-const activeCategory = ref('all');
+const activeTag = ref('all');
 const searchKeyword = ref('');
 const currentView = ref('browse');
 const selectedIdiom = ref(null);
@@ -32,12 +32,23 @@ const loading = ref(true);
 
 export function useIdiomLearning() {
   const idioms = computed(() => getIdioms());
-  const idiomCategories = computed(() => getIdiomCategories());
 
   const filteredIdioms = computed(() => {
-    let result = getIdiomsByCategory(activeCategory.value);
+    let result = getIdioms();
+    if (activeTag.value !== 'all') {
+      result = result.filter(idiom => {
+        const tags = idiom.tags || [];
+        return tags.includes(activeTag.value);
+      });
+    }
     if (searchKeyword.value) {
       result = searchIdioms(searchKeyword.value);
+      if (activeTag.value !== 'all') {
+        result = result.filter(idiom => {
+          const tags = idiom.tags || [];
+          return tags.includes(activeTag.value);
+        });
+      }
     }
     return result;
   });
@@ -49,24 +60,6 @@ export function useIdiomLearning() {
   const progressPercent = computed(() => {
     if (totalCount.value === 0) return 0;
     return Math.round((masteredIds.value.length / totalCount.value) * 100);
-  });
-
-  const categoryProgress = computed(() => {
-    const progress = {};
-    const categories = getIdiomCategories();
-    Object.keys(categories).forEach(key => {
-      const total = getCountByCategory(key);
-      const mastered = masteredIds.value.filter(id => {
-        const idiom = getIdiomById(id);
-        return idiom && idiom.category === key;
-      }).length;
-      progress[key] = {
-        total,
-        mastered,
-        percent: total > 0 ? Math.round((mastered / total) * 100) : 0
-      };
-    });
-    return progress;
   });
 
   const isLearned = (id) => learnedIds.value.includes(id);
@@ -95,8 +88,8 @@ export function useIdiomLearning() {
     saveStoredIds(MASTERED_KEY, masteredIds.value);
   };
 
-  const setActiveCategory = (category) => {
-    activeCategory.value = category;
+  const setActiveTag = (tag) => {
+    activeTag.value = tag;
   };
 
   const setSearchKeyword = (keyword) => {
@@ -201,9 +194,8 @@ export function useIdiomLearning() {
 
   return {
     idioms,
-    idiomCategories,
     filteredIdioms,
-    activeCategory,
+    activeTag,
     searchKeyword,
     currentView,
     selectedIdiom,
@@ -214,14 +206,13 @@ export function useIdiomLearning() {
     learnedCount,
     masteredCount,
     progressPercent,
-    categoryProgress,
     loading,
     isLearned,
     isMastered,
     markLearned,
     markMastered,
     unmarkMastered,
-    setActiveCategory,
+    setActiveTag,
     setSearchKeyword,
     setCurrentView,
     selectIdiom,

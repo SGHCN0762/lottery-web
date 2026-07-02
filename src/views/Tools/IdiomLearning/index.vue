@@ -21,19 +21,14 @@
         />
       </div>
 
-      <CategoryTabs v-model="activeCategory" :categories="idiomCategories" />
+      <CategoryTabs v-model="activeTag" :categories="idiomCategories" />
 
       <div class="idioms-list">
-        <div v-if="filteredIdioms.length > 0" class="idioms-grid">
-          <IdiomCard
-            v-for="idiom in filteredIdioms"
-            :key="idiom.id"
-            :idiom="idiom"
-            :is-learned="isLearned(idiom.id)"
-            :is-mastered="isMastered(idiom.id)"
-            @click="handleIdiomClick"
-          />
-        </div>
+        <IdiomVirtualList
+          v-if="filteredIdioms.length > 0"
+          :items="filteredIdioms"
+          @item-click="handleIdiomClick"
+        />
         <div v-else class="empty-tip">
           <p>没有找到相关成语</p>
         </div>
@@ -55,6 +50,7 @@ import { useI18n } from 'vue-i18n';
 import { Search as VanSearch, Loading as VanLoading } from 'vant';
 import CategoryTabs from './components/CategoryTabs.vue';
 import IdiomCard from './components/IdiomCard.vue';
+import IdiomVirtualList from './components/IdiomVirtualList.vue';
 import IdiomDetail from './components/IdiomDetail.vue';
 import PracticeMode from './components/PracticeMode.vue';
 import { useIdiomLearning } from './hooks/useIdiomLearning';
@@ -63,7 +59,7 @@ const { t } = useI18n();
 
 const {
   filteredIdioms,
-  activeCategory,
+  activeTag,
   searchKeyword,
   currentView,
   selectedIdiom,
@@ -79,9 +75,15 @@ const {
   startPractice,
   nextPracticeIdiom,
   recordPractice,
-  idiomCategories,
   loading,
 } = useIdiomLearning();
+
+const idiomCategories = {
+  primary: { name: '小学', icon: '👶', description: '小学必会成语' },
+  middle: { name: '初中', icon: '🧑', description: '初中必会成语' },
+  high: { name: '高中', icon: '👨', description: '高中必会成语' },
+  civil: { name: '公考', icon: '💼', description: '公务员考试常考' }
+};
 
 const handleIdiomClick = (idiom) => {
   selectIdiom(idiom);
@@ -114,21 +116,21 @@ const handlePracticeSubmit = (id, correct) => {
 }
 
 .browse-content {
-  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .search-section {
   padding: var(--spacing-md);
+  flex-shrink: 0;
 }
 
 .idioms-list {
+  flex: 1;
   padding: 0 var(--spacing-md);
-}
-
-.idioms-grid {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
+  padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
+  overflow: hidden;
 }
 
 .empty-tip {

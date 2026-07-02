@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "total": 30827,
+    "num_files": 10,
+    "updated_at": "2026-07-02T13:15:16.040Z",
+    "source": "中华成语大词典",
+    "version": "2.0.0"
+  },
+  "files": [
+    {
+      "file": "idioms_01.json",
+      "count": 3083,
+      "index": 1
+    },
+    {
+      "file": "idioms_02.json",
+      "count": 3083,
+      "index": 2
+    },
+    {
+      "file": "idioms_03.json",
+      "count": 3083,
+      "index": 3
+    },
+    {
+      "file": "idioms_04.json",
+      "count": 3083,
+      "index": 4
+    },
+    {
+      "file": "idioms_05.json",
+      "count": 3083,
+      "index": 5
+    },
+    {
+      "file": "idioms_06.json",
+      "count": 3083,
+      "index": 6
+    },
+    {
+      "file": "idioms_07.json",
+      "count": 3083,
+      "index": 7
+    },
+    {
+      "file": "idioms_08.json",
+      "count": 3082,
+      "index": 8
+    },
+    {
+      "file": "idioms_09.json",
+      "count": 3082,
+      "index": 9
+    },
+    {
+      "file": "idioms_10.json",
+      "count": 3082,
+      "index": 10
+    }
+  ]
+}
