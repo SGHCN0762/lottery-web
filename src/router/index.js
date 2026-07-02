@@ -343,6 +343,18 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/idiom-learning',
+    name: 'IdiomLearning',
+    component: () =>
+      import(/* webpackChunkName: "tool-idiom-learning" */ '@/views/Tools/IdiomLearning/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.idiomLearning.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

@@ -27,7 +27,10 @@
       <div class="question-card">
         <div class="question-header">
           <span class="question-number">{{ t('tools.civilServantExam.practice.questionNumber', { number: currentIndex + 1 }) }}</span>
-          <span class="question-type">{{ currentQuestion.section }}</span>
+          <div class="question-tags">
+            <span class="question-type">{{ currentQuestion.section }}</span>
+            <span class="question-category" :class="currentQuestion.category">{{ currentQuestion.category }}</span>
+          </div>
         </div>
 
         <div v-if="currentQuestion.data" class="question-data">
@@ -51,23 +54,29 @@
             :key="key"
             class="option-item"
             :class="{
-              selected: userAnswers[currentQuestion.id] === key,
-              correct: (userAnswers[currentQuestion.id] || isViewMode) && key === currentQuestion.answer,
-              wrong: userAnswers[currentQuestion.id] === key && key !== currentQuestion.answer,
+              selected: isSelected(key),
+              correct: (isAnswered || isViewMode) && isCorrectAnswer(key),
+              wrong: isAnswered && isSelected(key) && !isCorrectAnswer(key),
             }"
             @click="selectOption(key)"
           >
             <div class="option-key">{{ key }}</div>
             <div class="option-content">{{ option }}</div>
-            <van-icon v-if="(userAnswers[currentQuestion.id] || isViewMode) && key === currentQuestion.answer" name="success" class="option-icon correct" />
-            <van-icon v-if="userAnswers[currentQuestion.id] === key && key !== currentQuestion.answer" name="cross" class="option-icon wrong" />
+            <van-icon v-if="(isAnswered || isViewMode) && isCorrectAnswer(key)" name="success" class="option-icon correct" />
+            <van-icon v-if="isAnswered && isSelected(key) && !isCorrectAnswer(key)" name="cross" class="option-icon wrong" />
           </div>
         </div>
 
-        <div v-if="(userAnswers[currentQuestion.id] || isViewMode) && currentQuestion.analysis" class="answer-analysis">
+        <div v-if="currentQuestion.category === '多选题' && !isAnswered && userAnswers[currentQuestion.id] && userAnswers[currentQuestion.id].length > 0" class="submit-area">
+          <van-button type="primary" block @click="submitAnswer">
+            {{ t('tools.civilServantExam.practice.submitAnswer') }}
+          </van-button>
+        </div>
+
+        <div v-if="(isAnswered || isViewMode) && currentQuestion.analysis" class="answer-analysis">
           <div class="analysis-header">
             <span class="analysis-label">{{ t('tools.civilServantExam.practice.analysis') }}</span>
-            <span class="correct-answer">{{ t('tools.civilServantExam.practice.correctAnswer', { answer: currentQuestion.answer }) }}</span>
+            <span class="correct-answer">{{ t('tools.civilServantExam.practice.correctAnswer', { answer: formatAnswer(currentQuestion.answer) }) }}</span>
           </div>
           <div class="analysis-content">{{ currentQuestion.analysis }}</div>
         </div>
@@ -143,9 +152,9 @@
             class="nav-item"
             :class="{
               active: currentIndex === index,
-              answered: userAnswers[q.id],
-              correct: userAnswers[q.id] === q.answer,
-              wrong: userAnswers[q.id] && userAnswers[q.id] !== q.answer,
+              answered: isAnswerAnswered(q.id),
+              correct: isAnswerCorrect(q),
+              wrong: isAnswerAnswered(q.id) && !isAnswerCorrect(q),
             }"
             @click="goToQuestion(index)"
           >
@@ -177,12 +186,94 @@ const examYear = ref(route.query.year || '2000');
 const examFileName = ref(route.query.fileName ? decodeURIComponent(route.query.fileName) : `${examYear.value}年国家公务员考试行测真题`);
 const isLoading = ref(true);
 const loadError = ref(false);
+const submittedAnswers = ref(new Set());
 
 let timer = null;
 
 const currentQuestion = computed(() => questions.value[currentIndex.value] || null);
 
-const answeredCount = computed(() => Object.keys(userAnswers.value).length);
+const answeredCount = computed(() => {
+  let count = 0;
+  questions.value.forEach(q => {
+    if (!q || !q.id) return;
+    if (q.category === '多选题') {
+      if (submittedAnswers.value.has(q.id)) {
+        count++;
+      }
+    } else {
+      const answer = userAnswers.value[q.id];
+      if (answer !== undefined && answer !== null) {
+        count++;
+      }
+    }
+  });
+  return count;
+});
+
+const isAnswered = computed(() => {
+  if (!currentQuestion.value || !currentQuestion.value.id) return false;
+  const qId = currentQuestion.value.id;
+  
+  if (currentQuestion.value.category === '多选题') {
+    return submittedAnswers.value.has(qId);
+  } else {
+    const answer = userAnswers.value[qId];
+    return answer !== undefined && answer !== null;
+  }
+});
+
+const isSelected = (key) => {
+  if (!currentQuestion.value || !currentQuestion.value.id) return false;
+  const answer = userAnswers.value[currentQuestion.value.id];
+  if (Array.isArray(answer)) {
+    return answer.includes(key);
+  }
+  return answer === key;
+};
+
+const isCorrectAnswer = (key) => {
+  if (!currentQuestion.value || !currentQuestion.value.answer) return false;
+  const correctAnswer = currentQuestion.value.answer;
+  if (Array.isArray(correctAnswer)) {
+    return correctAnswer.includes(key);
+  }
+  return correctAnswer === key;
+};
+
+const formatAnswer = (answer) => {
+  if (!answer) return '';
+  if (Array.isArray(answer)) {
+    return answer.sort().join('、');
+  }
+  return answer;
+};
+
+const isAnswerAnswered = (qId) => {
+  const q = questions.value.find(item => item.id === qId);
+  if (!q) return false;
+  
+  if (q.category === '多选题') {
+    return submittedAnswers.value.has(qId);
+  } else {
+    const answer = userAnswers.value[qId];
+    if (!answer) return false;
+    if (Array.isArray(answer)) return answer.length > 0;
+    return true;
+  }
+};
+
+const isAnswerCorrect = (q) => {
+  if (!q || !q.id || !q.answer) return false;
+  const userAnswer = userAnswers.value[q.id];
+  if (!userAnswer) return false;
+  
+  if (Array.isArray(q.answer)) {
+    return Array.isArray(userAnswer) && 
+           q.answer.length === userAnswer.length &&
+           q.answer.every(a => userAnswer.includes(a));
+  }
+  return userAnswer === q.answer;
+};
 
 const progressPercent = computed(() => {
   if (questions.value.length === 0) return 0;
@@ -199,8 +290,20 @@ const menuActions = computed(() => [
 const correctCount = computed(() => {
   let count = 0;
   questions.value.forEach(q => {
-    if (q && q.id && q.answer && userAnswers.value[q.id] === q.answer) {
-      count++;
+    if (!q || !q.id || !q.answer) return;
+    const userAnswer = userAnswers.value[q.id];
+    if (!userAnswer) return;
+    
+    if (Array.isArray(q.answer)) {
+      if (Array.isArray(userAnswer) && 
+          q.answer.length === userAnswer.length &&
+          q.answer.every(a => userAnswer.includes(a))) {
+        count++;
+      }
+    } else {
+      if (userAnswer === q.answer) {
+        count++;
+      }
     }
   });
   return count;
@@ -243,17 +346,39 @@ const loadQuestions = async () => {
       throw new Error('试题数据为空或格式错误');
     }
 
-    questions.value = rawData.map(item => ({
-      id: item.题号 || 0,
-      section: item.部分 || '',
-      title: item.题目 || '',
-      optionsImage: item.选项图 || '',
-      options: item.选项 || {},
-      answer: item.答案 || '',
-      analysis: item.解析 || '',
-      image: item.题图 || '',
-      data: item.资料 || '',
-    }));
+    const parseAnswer = (answer, category) => {
+      if (!answer) return '';
+      const trimmed = answer.trim();
+      if (trimmed.includes('、')) {
+        return trimmed.split('、').map(a => a.trim()).filter(a => a);
+      }
+      if (trimmed.includes(',')) {
+        return trimmed.split(',').map(a => a.trim()).filter(a => a);
+      }
+      if (trimmed.includes('，')) {
+        return trimmed.split('，').map(a => a.trim()).filter(a => a);
+      }
+      if (category === '多选题' && trimmed.length > 1) {
+        return trimmed.split('');
+      }
+      return trimmed;
+    };
+
+    questions.value = rawData.map(item => {
+      const category = item.题型 || '单选题';
+      return {
+        id: item.题号 || 0,
+        section: item.部分 || '',
+        title: item.题目 || '',
+        optionsImage: item.选项图 || '',
+        options: item.选项 || {},
+        answer: parseAnswer(item.答案 || '', category),
+        analysis: item.解析 || '',
+        image: item.题图 || '',
+        data: item.资料 || '',
+        category: category,
+      };
+    });
 
     if (questions.value.length === 0) {
       throw new Error('有效的试题数据为空');
@@ -272,7 +397,33 @@ const loadQuestions = async () => {
 
 const selectOption = (key) => {
   if (!currentQuestion.value || !currentQuestion.value.id) return;
-  userAnswers.value[currentQuestion.value.id] = key;
+  const qId = currentQuestion.value.id;
+  
+  if (currentQuestion.value.category === '多选题') {
+    let current = userAnswers.value[qId];
+    if (!current) {
+      current = [];
+    }
+    const index = current.indexOf(key);
+    if (index > -1) {
+      current.splice(index, 1);
+    } else {
+      current.push(key);
+    }
+    userAnswers.value[qId] = current.length > 0 ? [...current] : null;
+  } else {
+    userAnswers.value[qId] = key;
+  }
+};
+
+const submitAnswer = () => {
+  if (!currentQuestion.value || !currentQuestion.value.id) return;
+  const qId = currentQuestion.value.id;
+  const answer = userAnswers.value[qId];
+  if (answer && Array.isArray(answer) && answer.length > 0) {
+    userAnswers.value[qId] = [...answer].sort();
+    submittedAnswers.value.add(qId);
+  }
 };
 
 const onMenuSelect = (action) => {
@@ -442,25 +593,47 @@ const startTimer = () => {
   box-shadow: var(--shadow-card);
 
   .question-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
 
-    .question-number {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--color-primary);
-    }
+            .question-number {
+              font-size: 14px;
+              font-weight: 600;
+              color: var(--color-primary);
+            }
 
-    .question-type {
-      font-size: 12px;
-      color: var(--color-text-tertiary);
-      background: var(--color-bg-tertiary);
-      padding: 4px 10px;
-      border-radius: 20px;
-    }
-  }
+            .question-tags {
+              display: flex;
+              gap: 8px;
+            }
+
+            .question-type {
+              font-size: 12px;
+              color: var(--color-text-tertiary);
+              background: var(--color-bg-tertiary);
+              padding: 4px 10px;
+              border-radius: 20px;
+            }
+
+            .question-category {
+              font-size: 12px;
+              font-weight: 600;
+              padding: 4px 10px;
+              border-radius: 20px;
+
+              &.单选题 {
+                color: var(--color-primary);
+                background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+              }
+
+              &.多选题 {
+                color: var(--color-warning);
+                background: color-mix(in srgb, var(--color-warning) 10%, transparent);
+              }
+            }
+          }
 
   .question-data {
     margin-bottom: 12px;
@@ -592,6 +765,12 @@ const startTimer = () => {
         }
       }
     }
+  }
+
+  .submit-area {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-border);
   }
 
   .answer-analysis {

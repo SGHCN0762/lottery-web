@@ -126,6 +126,13 @@ const tools = computed(() => [
     description: t('tools.knowledgeFlash.description'),
     route: 'KnowledgeFlash',
   },
+  {
+    id: 'idiom-learning',
+    name: t('tools.idiomLearning.name'),
+    icon: '📖',
+    description: t('tools.idiomLearning.description'),
+    route: 'IdiomLearning',
+  },
 ]);
 
 // ========================================
