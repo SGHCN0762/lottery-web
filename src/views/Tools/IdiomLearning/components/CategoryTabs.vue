@@ -8,7 +8,7 @@
         :class="{ active: modelValue === key }"
         @click="$emit('update:modelValue', key)"
       >
-        <span class="tab-icon">{{ category.icon }}</span>
+        <span class="tab-icon" v-if="category.icon">{{ category.icon }}</span>
         <span class="tab-name">{{ category.name }}</span>
       </div>
     </div>
@@ -40,15 +40,15 @@ const allCategories = computed(() => ({
 <style lang="less" scoped>
 .category-tabs {
   background: var(--color-bg-secondary);
-  padding: var(--spacing-sm) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
 }
 
 .tabs-scroll {
   display: flex;
   overflow-x: auto;
-  padding: 0 var(--spacing-md);
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
@@ -59,36 +59,49 @@ const allCategories = computed(() => ({
 .tab-item {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: 4px;
   padding: var(--spacing-sm) var(--spacing-md);
-  background: var(--color-bg-primary);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-full);
+  background: transparent;
   border: 1px solid transparent;
   white-space: nowrap;
   transition: all var(--transition-base);
   cursor: pointer;
+  position: relative;
 
   &.active {
-    background: var(--color-primary);
-    border-color: var(--color-primary);
+    background: var(--van-blue-1);
+    border-color: var(--van-blue-2);
 
     .tab-name {
-      color: #fff;
+      color: var(--van-blue-6);
+      font-weight: var(--font-weight-semibold);
+    }
+
+    .tab-icon {
+      filter: none;
     }
   }
 
-  &:hover {
-    border-color: var(--color-primary);
+  &:hover:not(.active) {
+    background: var(--color-bg-primary);
+
+    .tab-name {
+      color: var(--color-text-primary);
+    }
   }
 
   .tab-icon {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-sm);
+    filter: grayscale(0.3);
+    transition: filter var(--transition-base);
   }
 
   .tab-name {
     font-size: var(--font-size-sm);
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
     font-weight: var(--font-weight-medium);
+    transition: color var(--transition-base);
   }
 }
 </style>

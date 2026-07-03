@@ -1,24 +1,29 @@
 <template>
-  <div class="idiom-card" @click="$emit('click', idiom)">
-    <div class="card-header">
-      <span class="idiom-word">{{ idiom.word }}</span>
-      <span class="idiom-pinyin">{{ idiom.pinyin }}</span>
-    </div>
-    <div class="card-body">
-      <p class="idiom-meaning">{{ idiom.meaning }}</p>
-    </div>
-    <div class="card-footer">
-      <div class="tags-wrapper">
-        <span v-for="tag in displayTags" :key="tag.key" class="tag" :class="tag.key">
-          {{ tag.name }}
-        </span>
+  <div class="idiom-card" :class="idiom.difficulty" @click="$emit('click', idiom)">
+    <div class="card-accent"></div>
+    <div class="card-inner">
+      <div class="card-header">
+        <div class="word-group">
+          <span class="idiom-word">{{ idiom.word }}</span>
+          <span class="idiom-pinyin">{{ idiom.pinyin }}</span>
+        </div>
+        <div class="status-icons">
+          <span v-if="isMastered" class="status-dot mastered" title="已掌握"></span>
+          <span v-else-if="isLearned" class="status-dot learned" title="已学习"></span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="idiom-meaning">{{ idiom.meaning }}</p>
+      </div>
+      <div class="card-footer">
+        <div class="tags-wrapper">
+          <span v-for="tag in displayTags" :key="tag.key" class="tag" :class="tag.key">
+            {{ tag.name }}
+          </span>
+        </div>
         <span class="difficulty-badge" :class="idiom.difficulty">
           {{ difficultyText }}
         </span>
-      </div>
-      <div class="status-icons">
-        <span v-if="isMastered" class="status-icon mastered" title="已掌握">✓</span>
-        <span v-else-if="isLearned" class="status-icon learned" title="已学习">○</span>
       </div>
     </div>
   </div>
@@ -71,22 +76,45 @@ const difficultyText = computed(() => {
 
 <style lang="less" scoped>
 .idiom-card {
+  position: relative;
   background: var(--color-bg-secondary);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-md);
   border: 1px solid var(--color-border);
-  transition: all var(--transition-base);
+  overflow: hidden;
   cursor: pointer;
+  transition: all var(--transition-base);
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
   }
 
   &:active {
     transform: translateY(0);
   }
+}
+
+.card-accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+
+  .idiom-card.easy & {
+    background: var(--color-success);
+  }
+  .idiom-card.medium & {
+    background: var(--color-warning);
+  }
+  .idiom-card.hard & {
+    background: var(--color-danger);
+  }
+}
+
+.card-inner {
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) calc(var(--spacing-md) + 4px);
 }
 
 .card-header {
@@ -96,15 +124,23 @@ const difficultyText = computed(() => {
   margin-bottom: var(--spacing-sm);
 }
 
+.word-group {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
 .idiom-word {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
+  letter-spacing: 2px;
 }
 
 .idiom-pinyin {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
   font-style: italic;
 }
 
@@ -115,7 +151,7 @@ const difficultyText = computed(() => {
 .idiom-meaning {
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
-  line-height: var(--line-height-base);
+  line-height: var(--line-height-relaxed);
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -127,6 +163,7 @@ const difficultyText = computed(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-sm);
 }
 
 .tags-wrapper {
@@ -136,78 +173,77 @@ const difficultyText = computed(() => {
 }
 
 .tag {
-  font-size: var(--font-size-xs);
-  padding: 2px var(--spacing-sm);
+  font-size: 11px;
+  padding: 2px 6px;
   border-radius: var(--radius-sm);
   font-weight: var(--font-weight-medium);
+  line-height: 1.4;
 
   &.primary {
-    background: rgba(7, 194, 144, 0.1);
-    color: var(--color-success);
+    background: var(--van-green-1);
+    color: var(--van-green-7);
   }
 
   &.middle {
-    background: rgba(25, 137, 250, 0.1);
-    color: var(--color-primary);
+    background: var(--van-blue-1);
+    color: var(--van-blue-6);
   }
 
   &.high {
-    background: rgba(255, 167, 38, 0.1);
-    color: var(--color-warning);
+    background: var(--van-orange-1);
+    color: var(--van-orange-8);
   }
 
   &.civil {
-    background: rgba(255, 87, 87, 0.1);
-    color: var(--color-danger);
+    background: var(--van-red-1);
+    color: var(--van-red-7);
   }
 }
 
 .difficulty-badge {
-  font-size: var(--font-size-xs);
-  padding: 2px var(--spacing-sm);
+  font-size: 11px;
+  padding: 2px 6px;
   border-radius: var(--radius-sm);
   font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  flex-shrink: 0;
 
   &.easy {
-    background: rgba(7, 194, 144, 0.1);
-    color: var(--color-success);
+    background: var(--van-green-1);
+    color: var(--van-green-7);
   }
 
   &.medium {
-    background: rgba(255, 167, 38, 0.1);
-    color: var(--color-warning);
+    background: var(--van-orange-1);
+    color: var(--van-orange-8);
   }
 
   &.hard {
-    background: rgba(255, 87, 87, 0.1);
-    color: var(--color-danger);
+    background: var(--van-red-1);
+    color: var(--van-red-7);
   }
 }
 
 .status-icons {
   display: flex;
   gap: var(--spacing-xs);
+  flex-shrink: 0;
 }
 
-.status-icon {
-  width: 20px;
-  height: 20px;
+.status-dot {
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-size-xs);
-  font-weight: bold;
+  flex-shrink: 0;
 
   &.mastered {
     background: var(--color-success);
-    color: #fff;
+    box-shadow: 0 0 0 3px rgba(7, 194, 144, 0.15);
   }
 
   &.learned {
-    background: rgba(25, 137, 250, 0.1);
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
+    background: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(25, 137, 250, 0.15);
   }
 }
 </style>
