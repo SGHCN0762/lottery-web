@@ -355,6 +355,90 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/idiom-learning/learn',
+    name: 'IdiomLearningLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-idiom-learning-learn" */ '@/views/Tools/IdiomLearning/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.idiomLearning.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/idiom-learning/practice',
+    name: 'IdiomLearningPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-idiom-learning-practice" */ '@/views/Tools/IdiomLearning/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.idiomLearning.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/quote-poem',
+    name: 'QuotePoemLearning',
+    component: () =>
+      import(/* webpackChunkName: "tool-quote-poem" */ '@/views/Tools/QuotePoemLearning/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.quotePoem.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/quote-poem/learn',
+    name: 'QuotePoemLearningLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-quote-poem-learn" */ '@/views/Tools/QuotePoemLearning/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.quotePoem.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/quote-poem/practice',
+    name: 'QuotePoemLearningPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-quote-poem-practice" */ '@/views/Tools/QuotePoemLearning/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.quotePoem.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/video-player',
+    name: 'VideoPlayer',
+    component: () =>
+      import(/* webpackChunkName: "tool-video-player" */ '@/views/Tools/VideoPlayer/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.videoPlayer.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/video-player/play/:id',
+    name: 'VideoPlayerPlay',
+    component: () =>
+      import(/* webpackChunkName: "tool-video-player-play" */ '@/views/Tools/VideoPlayer/pages/PlayPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.videoPlayer.playTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

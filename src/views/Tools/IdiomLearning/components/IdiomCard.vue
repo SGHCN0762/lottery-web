@@ -53,7 +53,10 @@ const tagConfig = {
   primary: { name: '小学' },
   middle: { name: '初中' },
   high: { name: '高中' },
-  civil: { name: '公考' }
+  civil: { name: '公考' },
+  positive: { name: '褒义' },
+  negative: { name: '贬义' },
+  neutral: { name: '中性' }
 };
 
 const displayTags = computed(() => {
@@ -197,6 +200,24 @@ const difficultyText = computed(() => {
   &.civil {
     background: var(--van-red-1);
     color: var(--van-red-7);
+  }
+
+  &.positive {
+    background: rgba(7, 194, 144, 0.08);
+    color: var(--color-success);
+    border: 1px solid rgba(7, 194, 144, 0.2);
+  }
+
+  &.negative {
+    background: rgba(255, 87, 87, 0.08);
+    color: var(--color-danger);
+    border: 1px solid rgba(255, 87, 87, 0.2);
+  }
+
+  &.neutral {
+    background: rgba(144, 147, 153, 0.08);
+    color: var(--color-text-tertiary);
+    border: 1px solid rgba(144, 147, 153, 0.2);
   }
 }
 

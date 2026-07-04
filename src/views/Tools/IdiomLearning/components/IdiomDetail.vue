@@ -12,6 +12,16 @@
         <div class="header-left">
           <h2 class="idiom-word">{{ idiom.word }}</h2>
           <span class="idiom-pinyin">{{ idiom.pinyin }}</span>
+          <div class="header-tags">
+            <span
+              v-for="tag in sentimentTags"
+              :key="tag.key"
+              class="sentiment-tag"
+              :class="tag.key"
+            >
+              {{ tag.name }}
+            </span>
+          </div>
         </div>
         <button
           class="master-btn"
@@ -56,6 +66,7 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
 import { Popup as VanPopup } from 'vant';
 
 const props = defineProps({
@@ -74,6 +85,20 @@ const props = defineProps({
 });
 
 const emit = defineEmits(['update:show', 'toggle-master']);
+
+const sentimentConfig = {
+  positive: { name: '褒义' },
+  negative: { name: '贬义' },
+  neutral: { name: '中性' }
+};
+
+const sentimentTags = computed(() => {
+  if (!props.idiom) return [];
+  const tags = props.idiom.tags || [];
+  return tags
+    .filter(tag => ['positive', 'negative', 'neutral'].includes(tag))
+    .map(tag => ({ key: tag, ...sentimentConfig[tag] }));
+});
 
 const toggleMaster = () => {
   emit('toggle-master', props.idiom.id);
@@ -113,6 +138,38 @@ const toggleMaster = () => {
   font-size: var(--font-size-sm);
   color: var(--color-text-tertiary);
   font-style: italic;
+}
+
+.header-tags {
+  display: flex;
+  gap: 4px;
+  margin-top: var(--spacing-sm);
+}
+
+.sentiment-tag {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+
+  &.positive {
+    background: rgba(7, 194, 144, 0.08);
+    color: var(--color-success);
+    border: 1px solid rgba(7, 194, 144, 0.2);
+  }
+
+  &.negative {
+    background: rgba(255, 87, 87, 0.08);
+    color: var(--color-danger);
+    border: 1px solid rgba(255, 87, 87, 0.2);
+  }
+
+  &.neutral {
+    background: rgba(144, 147, 153, 0.08);
+    color: var(--color-text-tertiary);
+    border: 1px solid rgba(144, 147, 153, 0.2);
+  }
 }
 
 .master-btn {

@@ -2,15 +2,6 @@
   <div class="learn-mode">
     <!-- 阶段选择 -->
     <div v-if="!selectedStage" class="stage-select">
-      <div class="learn-header">
-        <button class="back-btn" @click="$emit('back')">← 返回</button>
-        <h2 class="title">选择学习阶段</h2>
-      </div>
-
-      <div class="stage-intro">
-        <p class="intro-text">根据你的考试阶段，系统学习对应成语</p>
-      </div>
-
       <div class="stage-list">
         <div
           v-for="stage in stages"
@@ -45,14 +36,6 @@
 
     <!-- 学习内容 -->
     <div v-else class="study-content">
-      <div class="study-header">
-        <button class="back-btn" @click="exitStage">← 返回</button>
-        <div class="study-stats">
-          <span class="stage-badge" :class="selectedStage">{{ currentStageInfo.name }}</span>
-          <span class="position-text">{{ currentIndex + 1 }} / {{ stageIdioms.length }}</span>
-        </div>
-      </div>
-
       <div class="study-progress-bar">
         <div class="progress-fill" :style="{ width: studyProgress + '%' }"></div>
       </div>
@@ -142,19 +125,6 @@
 import { ref, computed, watch } from 'vue';
 import { getIdioms } from '../data/idioms';
 
-const props = defineProps({
-  learnedIds: {
-    type: Array,
-    default: () => [],
-  },
-  masteredIds: {
-    type: Array,
-    default: () => [],
-  },
-});
-
-const emit = defineEmits(['back', 'mark-learned', 'toggle-mastered']);
-
 const stages = [
   { key: 'primary', name: '小学', icon: '👶', description: '小学阶段必会成语' },
   { key: 'middle', name: '初中', icon: '🧑', description: '初中阶段必会成语' },
@@ -164,6 +134,9 @@ const stages = [
 
 const selectedStage = ref(null);
 const currentIndex = ref(0);
+
+const learnedIds = JSON.parse(localStorage.getItem('idiom_learned_ids') || '[]');
+const masteredIds = JSON.parse(localStorage.getItem('idiom_mastered_ids') || '[]');
 
 const stageIdioms = computed(() => {
   if (!selectedStage.value) return [];
@@ -182,11 +155,11 @@ const currentIdiom = computed(() => {
 });
 
 const isCurrentLearned = computed(() => {
-  return currentIdiom.value ? props.learnedIds.includes(currentIdiom.value.id) : false;
+  return currentIdiom.value ? learnedIds.includes(currentIdiom.value.id) : false;
 });
 
 const isCurrentMastered = computed(() => {
-  return currentIdiom.value ? props.masteredIds.includes(currentIdiom.value.id) : false;
+  return currentIdiom.value ? masteredIds.includes(currentIdiom.value.id) : false;
 });
 
 const studyProgress = computed(() => {
@@ -219,7 +192,7 @@ const getStageLearnedCount = (stageKey) => {
   const stageIdiomIds = getIdioms()
     .filter(idiom => (idiom.tags || []).includes(stageKey))
     .map(idiom => idiom.id);
-  return props.learnedIds.filter(id => stageIdiomIds.includes(id)).length;
+  return learnedIds.filter(id => stageIdiomIds.includes(id)).length;
 };
 
 const getStageProgress = (stageKey) => {
@@ -233,20 +206,35 @@ const selectStage = (stageKey) => {
   currentIndex.value = 0;
 };
 
-const exitStage = () => {
-  selectedStage.value = null;
-  currentIndex.value = 0;
+const markLearned = (id) => {
+  const ids = JSON.parse(localStorage.getItem('idiom_learned_ids') || '[]');
+  if (!ids.includes(id)) {
+    ids.push(id);
+    localStorage.setItem('idiom_learned_ids', JSON.stringify(ids));
+  }
+};
+
+const toggleMaster = (id) => {
+  const ids = JSON.parse(localStorage.getItem('idiom_mastered_ids') || '[]');
+  const index = ids.indexOf(id);
+  if (index > -1) {
+    ids.splice(index, 1);
+  } else {
+    ids.push(id);
+  }
+  localStorage.setItem('idiom_mastered_ids', JSON.stringify(ids));
+  location.reload();
 };
 
 const markCurrentLearned = () => {
   if (currentIdiom.value && !isCurrentLearned.value) {
-    emit('mark-learned', currentIdiom.value.id);
+    markLearned(currentIdiom.value.id);
   }
 };
 
 const toggleMasterCurrent = () => {
   if (currentIdiom.value) {
-    emit('toggle-mastered', currentIdiom.value.id);
+    toggleMaster(currentIdiom.value.id);
   }
 };
 
@@ -276,49 +264,6 @@ watch(currentIdiom, () => {
 }
 
 /* ===== 阶段选择 ===== */
-.learn-header {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  padding: calc(var(--spacing-md) + env(safe-area-inset-top, 0px)) var(--spacing-lg) var(--spacing-md);
-  background: var(--color-bg-secondary);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.title {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
-  margin: 0;
-}
-
-.back-btn {
-  padding: var(--spacing-xs) var(--spacing-md);
-  border-radius: var(--radius-md);
-  font-size: var(--font-size-sm);
-  background: var(--color-bg-primary);
-  color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
-  cursor: pointer;
-  transition: all var(--transition-base);
-  white-space: nowrap;
-
-  &:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
-  }
-}
-
-.stage-intro {
-  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-sm);
-}
-
-.intro-text {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-tertiary);
-  margin: 0;
-}
-
 .stage-list {
   display: flex;
   flex-direction: column;
@@ -463,39 +408,6 @@ watch(currentIdiom, () => {
 }
 
 /* ===== 学习内容 ===== */
-.study-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: calc(var(--spacing-md) + env(safe-area-inset-top, 0px)) var(--spacing-lg) var(--spacing-md);
-  background: var(--color-bg-secondary);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.study-stats {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-}
-
-.stage-badge {
-  font-size: var(--font-size-xs);
-  padding: 3px var(--spacing-sm);
-  border-radius: var(--radius-sm);
-  font-weight: var(--font-weight-medium);
-
-  &.primary { background: var(--van-green-1); color: var(--van-green-7); }
-  &.middle { background: var(--van-blue-1); color: var(--van-blue-6); }
-  &.high { background: var(--van-orange-1); color: var(--van-orange-8); }
-  &.civil { background: var(--van-red-1); color: var(--van-red-7); }
-}
-
-.position-text {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  font-weight: var(--font-weight-medium);
-}
-
 .study-progress-bar {
   height: 3px;
   background: var(--color-border);
@@ -587,8 +499,8 @@ watch(currentIdiom, () => {
   border: 1.5px solid var(--color-border);
   background: transparent;
   color: var(--color-text-tertiary);
-  cursor: pointer;
   transition: all var(--transition-base);
+  cursor: pointer;
   flex-shrink: 0;
 
   &.active {
@@ -601,11 +513,6 @@ watch(currentIdiom, () => {
     border-color: var(--color-success);
     color: var(--color-success);
   }
-}
-
-.toggle-icon {
-  font-size: var(--font-size-sm);
-  font-weight: bold;
 }
 
 .card-sections {

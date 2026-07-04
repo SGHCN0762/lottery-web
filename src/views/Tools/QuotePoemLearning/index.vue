@@ -1,13 +1,14 @@
 <template>
-  <div class="idiom-learning-page">
+  <div class="quote-poem-page">
     <van-loading v-if="loading" class="loading-center" />
 
-    <div v-else class="browse-content">
+    <div v-else class="page-content">
+      <!-- 统计头部 -->
       <div class="page-header">
         <div class="stats-bar">
           <div class="stat-item">
             <span class="stat-value">{{ totalCount }}</span>
-            <span class="stat-label">总成语</span>
+            <span class="stat-label">总条目</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
@@ -19,6 +20,11 @@
             <span class="stat-value mastered">{{ masteredCount }}</span>
             <span class="stat-label">已掌握</span>
           </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-value favorite">{{ favoriteCount }}</span>
+            <span class="stat-label">收藏</span>
+          </div>
         </div>
         <div class="progress-ring" v-if="totalCount > 0">
           <div class="ring-track"></div>
@@ -27,21 +33,23 @@
         </div>
       </div>
 
+      <!-- 搜索框 -->
       <div class="search-section">
         <van-search
           v-model="searchKeyword"
-          :placeholder="t('tools.idiomLearning.searchPlaceholder')"
+          placeholder="搜索名言、诗词、文言文..."
           shape="round"
         />
       </div>
 
+      <!-- 模式入口 -->
       <div class="mode-buttons">
         <button class="mode-btn learn-btn" @click="goToLearn">
           <div class="mode-btn-content">
             <span class="mode-icon">📖</span>
             <div class="mode-text-group">
               <span class="mode-title">学习模式</span>
-              <span class="mode-desc">分阶段系统学习</span>
+              <span class="mode-desc">按阶段系统学习</span>
             </div>
           </div>
         </button>
@@ -50,95 +58,133 @@
             <span class="mode-icon">✍️</span>
             <div class="mode-text-group">
               <span class="mode-title">练习模式</span>
-              <span class="mode-desc">选择题巩固练习</span>
+              <span class="mode-desc">填空选择巩固</span>
             </div>
           </div>
         </button>
       </div>
 
-      <CategoryTabs v-model="activeTag" :categories="idiomCategories" />
+      <!-- 分类统计 -->
+      <div class="category-stats">
+        <div class="category-row">
+          <div class="category-item" @click="setActiveType('quote')">
+            <span class="category-icon">💬</span>
+            <span class="category-name">名人名言</span>
+            <span class="category-count">{{ quoteCount }}</span>
+          </div>
+          <div class="category-item" @click="setActiveType('poem')">
+            <span class="category-icon">📜</span>
+            <span class="category-name">古诗词</span>
+            <span class="category-count">{{ poemCount }}</span>
+          </div>
+          <div class="category-item" @click="setActiveType('essay')">
+            <span class="category-icon">📖</span>
+            <span class="category-name">文言文</span>
+            <span class="category-count">{{ essayCount }}</span>
+          </div>
+        </div>
+      </div>
 
-      <div class="idioms-list">
-        <IdiomVirtualList
-          v-if="filteredIdioms.length > 0"
-          :items="filteredIdioms"
-          @item-click="handleIdiomClick"
-        />
+      <!-- 筛选标签 -->
+      <FilterTabs
+        v-model:activeType="activeType"
+        v-model:activeStage="activeStage"
+      />
+
+      <!-- 列表区域 -->
+      <div class="items-list">
+        <div v-if="filteredItems.length > 0" class="items-grid">
+          <ItemCard
+            v-for="item in filteredItems"
+            :key="item.id"
+            :item="item"
+            :mastered="isMastered(item.id)"
+            @click="handleItemClick(item)"
+          />
+        </div>
         <div v-else class="empty-tip">
-          <p>没有找到相关成语</p>
+          <van-empty description="没有找到相关内容" />
         </div>
       </div>
     </div>
 
-    <IdiomDetail
-      :show="!!selectedIdiom"
-      :idiom="selectedIdiom"
-      :is-mastered="selectedIdiom ? isMastered(selectedIdiom.id) : false"
-      @update:show="selectIdiom(null)"
+    <!-- 详情弹窗 -->
+    <ItemDetail
+      :show="!!selectedItem"
+      :item="selectedItem"
+      :isMastered="selectedItem ? isMastered(selectedItem.id) : false"
+      :isFavorite="selectedItem ? isFavorite(selectedItem.id) : false"
+      @update:show="selectItem(null)"
       @toggle-master="handleToggleMaster"
+      @toggle-favorite="handleToggleFavorite"
     />
   </div>
 </template>
 
 <script setup>
 import { useRouter } from 'vue-router';
-import { useI18n } from 'vue-i18n';
-import { Search as VanSearch, Loading as VanLoading } from 'vant';
-import CategoryTabs from './components/CategoryTabs.vue';
-import IdiomCard from './components/IdiomCard.vue';
-import IdiomVirtualList from './components/IdiomVirtualList.vue';
-import IdiomDetail from './components/IdiomDetail.vue';
-import { useIdiomLearning } from './hooks/useIdiomLearning';
+import { Search as VanSearch, Loading as VanLoading, Empty as VanEmpty } from 'vant';
+import FilterTabs from './components/FilterTabs.vue';
+import ItemCard from './components/ItemCard.vue';
+import ItemDetail from './components/ItemDetail.vue';
+import { useQuotePoemLearning } from './hooks/useQuotePoemLearning';
 
 const router = useRouter();
-const { t } = useI18n();
 
 const {
-  filteredIdioms,
-  activeTag,
+  filteredItems,
+  activeType,
+  activeStage,
   searchKeyword,
-  selectedIdiom,
+  selectedItem,
   totalCount,
   learnedCount,
   masteredCount,
+  favoriteCount,
   progressPercent,
+  quoteCount,
+  poemCount,
+  essayCount,
   isMastered,
+  isFavorite,
   markMastered,
   unmarkMastered,
-  selectIdiom,
+  toggleFavorite,
+  setActiveType,
+  setActiveStage,
+  selectItem,
   loading,
-} = useIdiomLearning();
-
-const idiomCategories = {
-  primary: { name: '小学', icon: '👶', description: '小学必会成语' },
-  middle: { name: '初中', icon: '🧑', description: '初中必会成语' },
-  high: { name: '高中', icon: '👨', description: '高中必会成语' },
-  civil: { name: '公考', icon: '💼', description: '公务员考试常考' }
-};
+} = useQuotePoemLearning();
 
 const goToLearn = () => {
-  router.push('/tools/idiom-learning/learn');
+  router.push('/tools/quote-poem/learn');
 };
 
 const goToPractice = () => {
-  router.push('/tools/idiom-learning/practice');
+  router.push('/tools/quote-poem/practice');
 };
 
-const handleIdiomClick = (idiom) => {
-  selectIdiom(idiom);
+const handleItemClick = (item) => {
+  selectItem(item);
 };
 
-const handleToggleMaster = (id) => {
-  if (isMastered(id)) {
-    unmarkMastered(id);
+const handleToggleMaster = () => {
+  if (!selectedItem.value) return;
+  if (isMastered(selectedItem.value.id)) {
+    unmarkMastered(selectedItem.value.id);
   } else {
-    markMastered(id);
+    markMastered(selectedItem.value.id);
   }
+};
+
+const handleToggleFavorite = () => {
+  if (!selectedItem.value) return;
+  toggleFavorite(selectedItem.value.id);
 };
 </script>
 
 <style lang="less" scoped>
-.idiom-learning-page {
+.quote-poem-page {
   min-height: 100%;
   background: var(--color-bg-primary);
 }
@@ -150,7 +196,7 @@ const handleToggleMaster = (id) => {
   transform: translate(-50%, -50%);
 }
 
-.browse-content {
+.page-content {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -169,7 +215,7 @@ const handleToggleMaster = (id) => {
 .stats-bar {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .stat-item {
@@ -192,10 +238,14 @@ const handleToggleMaster = (id) => {
   &.mastered {
     color: var(--color-success);
   }
+
+  &.favorite {
+    color: var(--van-red-500);
+  }
 }
 
 .stat-label {
-  font-size: var(--font-size-xs);
+  font-size: 10px;
   color: var(--color-text-tertiary);
 }
 
@@ -234,7 +284,7 @@ const handleToggleMaster = (id) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-xs);
+    font-size: 10px;
     font-weight: var(--font-weight-semibold);
     color: var(--color-text-primary);
   }
@@ -345,17 +395,65 @@ const handleToggleMaster = (id) => {
   color: var(--color-success);
 }
 
-.idioms-list {
+.category-stats {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  flex-shrink: 0;
+}
+
+.category-row {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.category-item {
   flex: 1;
-  padding: 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--spacing-sm);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-base);
+
+  &:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+}
+
+.category-icon {
+  font-size: 1.25rem;
+}
+
+.category-name {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.category-count {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.items-list {
+  flex: 1;
+  padding: var(--spacing-md);
   padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
-  overflow: hidden;
+  overflow-y: auto;
+}
+
+.items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
 .empty-tip {
   text-align: center;
   padding: var(--spacing-xl) 0;
-  color: var(--color-text-tertiary);
-  font-size: var(--font-size-sm);
 }
 </style>

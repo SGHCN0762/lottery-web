@@ -133,6 +133,20 @@ const tools = computed(() => [
     description: t('tools.idiomLearning.description'),
     route: 'IdiomLearning',
   },
+  {
+    id: 'quote-poem',
+    name: t('tools.quotePoem.name'),
+    icon: '📚',
+    description: t('tools.quotePoem.description'),
+    route: 'QuotePoemLearning',
+  },
+  {
+    id: 'video-player',
+    name: t('tools.videoPlayer.name'),
+    icon: '📺',
+    description: t('tools.videoPlayer.description'),
+    route: 'VideoPlayer',
+  },
 ]);
 
 // ========================================
