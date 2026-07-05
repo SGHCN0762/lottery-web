@@ -161,6 +161,13 @@ const tools = computed(() => [
     description: t('tools.videoPlayer.description'),
     route: 'VideoPlayer',
   },
+  {
+    id: 'physics-tool',
+    name: t('tools.physicsTool.name'),
+    icon: '⚛️',
+    description: t('tools.physicsTool.description'),
+    route: 'PhysicsTool',
+  },
 ]);
 
 // ========================================

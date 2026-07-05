@@ -79,11 +79,15 @@
   --color-primary: var(--van-primary-color);
   --color-primary-light: #69b1ff;
   --color-primary-dark: #096dd9;
+  --color-primary-rgb: 25, 137, 250;
 
   /* 功能色系 - 使用 Vant 标准色 */
   --color-success: var(--van-success-color);
+  --color-success-rgb: 7, 193, 96;
   --color-warning: var(--van-warning-color);
+  --color-warning-rgb: 255, 151, 106;
   --color-danger: var(--van-danger-color);
+  --color-danger-rgb: 238, 10, 36;
   --color-info: var(--van-primary-color);
 
   /* 渐变背景 */
@@ -187,6 +191,12 @@
   --color-primary: #4d85fa;
   --color-primary-light: #80abfc;
   --color-primary-dark: #1989fa;
+  --color-primary-rgb: 77, 133, 250;
+
+  /* 功能色系 - 适配深色模式 */
+  --color-success-rgb: 7, 193, 96;
+  --color-warning-rgb: 255, 151, 106;
+  --color-danger-rgb: 238, 10, 36;
 
   /* 渐变背景 */
   --gradient-primary: linear-gradient(135deg, #4d85fa 0%, #1989fa 100%);

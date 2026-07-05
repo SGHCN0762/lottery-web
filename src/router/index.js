@@ -511,6 +511,42 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/physics-tool',
+    name: 'PhysicsTool',
+    component: () =>
+      import(/* webpackChunkName: "tool-physics-tool" */ '@/views/Tools/PhysicsTool/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.physicsTool.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/physics-tool/learn',
+    name: 'PhysicsToolLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-physics-tool-learn" */ '@/views/Tools/PhysicsTool/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.physicsTool.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/physics-tool/practice',
+    name: 'PhysicsToolPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-physics-tool-practice" */ '@/views/Tools/PhysicsTool/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.physicsTool.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================
