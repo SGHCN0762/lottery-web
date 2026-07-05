@@ -380,37 +380,109 @@ const routes = [
     },
   },
   {
-    path: '/tools/quote-poem',
-    name: 'QuotePoemLearning',
+    path: '/tools/famous-quotes',
+    name: 'FamousQuotes',
     component: () =>
-      import(/* webpackChunkName: "tool-quote-poem" */ '@/views/Tools/QuotePoemLearning/index.vue'),
+      import(/* webpackChunkName: "tool-famous-quotes" */ '@/views/Tools/FamousQuotes/index.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.quotePoem.name',
+      title: 'tools.famousQuotes.name',
       showBack: true,
       showTabbar: false,
     },
   },
   {
-    path: '/tools/quote-poem/learn',
-    name: 'QuotePoemLearningLearn',
+    path: '/tools/famous-quotes/learn',
+    name: 'FamousQuotesLearn',
     component: () =>
-      import(/* webpackChunkName: "tool-quote-poem-learn" */ '@/views/Tools/QuotePoemLearning/pages/LearnPage.vue'),
+      import(/* webpackChunkName: "tool-famous-quotes-learn" */ '@/views/Tools/FamousQuotes/pages/LearnPage.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.quotePoem.learnTitle',
+      title: 'tools.famousQuotes.learnTitle',
       showBack: true,
       showTabbar: false,
     },
   },
   {
-    path: '/tools/quote-poem/practice',
-    name: 'QuotePoemLearningPractice',
+    path: '/tools/famous-quotes/practice',
+    name: 'FamousQuotesPractice',
     component: () =>
-      import(/* webpackChunkName: "tool-quote-poem-practice" */ '@/views/Tools/QuotePoemLearning/pages/PracticePage.vue'),
+      import(/* webpackChunkName: "tool-famous-quotes-practice" */ '@/views/Tools/FamousQuotes/pages/PracticePage.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.quotePoem.practiceTitle',
+      title: 'tools.famousQuotes.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/classical-poems',
+    name: 'ClassicalPoems',
+    component: () =>
+      import(/* webpackChunkName: "tool-classical-poems" */ '@/views/Tools/ClassicalPoems/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.classicalPoems.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/classical-poems/learn',
+    name: 'ClassicalPoemsLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-classical-poems-learn" */ '@/views/Tools/ClassicalPoems/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.classicalPoems.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/classical-poems/practice',
+    name: 'ClassicalPoemsPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-classical-poems-practice" */ '@/views/Tools/ClassicalPoems/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.classicalPoems.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/classical-essays',
+    name: 'ClassicalEssays',
+    component: () =>
+      import(/* webpackChunkName: "tool-classical-essays" */ '@/views/Tools/ClassicalEssays/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.classicalEssays.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/classical-essays/learn',
+    name: 'ClassicalEssaysLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-classical-essays-learn" */ '@/views/Tools/ClassicalEssays/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.classicalEssays.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/classical-essays/practice',
+    name: 'ClassicalEssaysPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-classical-essays-practice" */ '@/views/Tools/ClassicalEssays/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.classicalEssays.practiceTitle',
       showBack: true,
       showTabbar: false,
     },

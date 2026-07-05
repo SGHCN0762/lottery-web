@@ -1,21 +1,6 @@
 <template>
   <div class="filter-container">
     <div class="filter-section">
-      <div class="filter-label">类型</div>
-      <div class="filter-tabs">
-        <div
-          v-for="(category, key) in typeCategories"
-          :key="key"
-          class="filter-tab"
-          :class="{ active: activeType === key }"
-          @click="$emit('update:activeType', key)"
-        >
-          <span class="tab-icon" v-if="category.icon">{{ category.icon }}</span>
-          <span class="tab-name">{{ category.name }}</span>
-        </div>
-      </div>
-    </div>
-    <div class="filter-section">
       <div class="filter-tabs">
         <div
           v-for="(category, key) in stageCategories"
@@ -34,31 +19,20 @@
 
 <script setup>
 defineProps({
-  activeType: {
-    type: String,
-    default: 'all',
-  },
   activeStage: {
     type: String,
     default: 'all',
   },
 });
 
-defineEmits(['update:activeType', 'update:activeStage']);
-
-const typeCategories = {
-  all: { name: '全部', icon: '📚' },
-  quote: { name: '名言', icon: '💬' },
-  poem: { name: '诗词', icon: '📜' },
-  essay: { name: '文言', icon: '📖' },
-};
+defineEmits(['update:activeStage']);
 
 const stageCategories = {
-  all: { name: '全部阶段', icon: '🎯' },
+  all: { name: '全部', icon: '🎯' },
   primary: { name: '小学', icon: '👶' },
   middle: { name: '初中', icon: '🧑' },
   high: { name: '高中', icon: '👨' },
-  civil: { name: '公考', icon: '💼' },
+  civil: { name: '公务员', icon: '💼' },
 };
 </script>
 
@@ -67,9 +41,6 @@ const stageCategories = {
   background: var(--color-bg-secondary);
   padding: var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
   flex-shrink: 0;
 }
 
