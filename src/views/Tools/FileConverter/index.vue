@@ -182,8 +182,7 @@
           />
 
           <ImageStitchSettings
-            v-model:layout="stitchLayout"
-            v-model:grid-cols="stitchGridCols"
+            v-model:direction="stitchDirection"
             v-model:spacing="stitchSpacing"
             v-model:background-color="stitchBgColor"
           />
@@ -262,18 +261,81 @@
             </label>
           </div>
 
-          <PdfPageSelector
-            v-if="splitPdfPages.length > 0"
-            :pages="splitPdfPages"
-            :selected-pages="splitSelectedPages"
-            @toggle="handleSplitTogglePage"
-            @select-all="handleSplitSelectAll"
-            @deselect-all="handleSplitDeselectAll"
-          />
+          <ToolCard
+            v-if="splitPdfFile"
+            icon="description-o"
+            :title="t('tools.fileConverter.pdfSplit.rangeInput')"
+          >
+            <div class="range-input-section">
+              <van-field
+                v-model="splitRanges"
+                :placeholder="t('tools.fileConverter.pdfSplit.rangePlaceholder')"
+                clearable
+              />
+              <p class="range-tip">{{ t('tools.fileConverter.pdfSplit.rangeTip') }}</p>
+            </div>
+          </ToolCard>
 
-          <div v-if="splitPdfPages.length > 0" class="batch-download">
+          <div v-if="splitPdfFile" class="batch-download">
             <van-button type="primary" size="large" :loading="splitting" @click="handleSplitPdf">
               {{ t('tools.fileConverter.pdfSplit.split') }}
+            </van-button>
+          </div>
+        </div>
+      </van-tab>
+
+      <!-- PDF删除页面 -->
+      <van-tab :title="t('tools.fileConverter.tabs.pdfDeletePages')" name="pdfDeletePages">
+        <div class="tab-content">
+          <div class="upload-section">
+            <label class="upload-area">
+              <input
+                type="file"
+                accept=".pdf,application/pdf"
+                class="upload-input"
+                @change="handleDeletePdfChange"
+              />
+              <div class="upload-icon">
+                <img :src="pdfIcon" alt="PDF" />
+              </div>
+              <p class="upload-title">{{ t('tools.fileConverter.pdfDeletePages.uploadTip') }}</p>
+              <div v-if="deletePdfFile" class="file-info">
+                <div class="file-name">{{ deletePdfFile.name }}</div>
+                <div class="file-meta">
+                  <span>{{ formatFileSize(deletePdfFile.size) }}</span>
+                  <span v-if="deleteTotalPages > 0">{{ t('tools.fileConverter.pdfDeletePages.totalPages') }}: {{ deleteTotalPages }}</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <ToolCard
+            v-if="deletePdfPages.length > 0"
+            icon="delete-o"
+            :title="t('tools.fileConverter.pdfDeletePages.selectDeletePages')"
+            class="page-selector"
+          >
+            <template #headerRight>
+              <span class="selected-count">
+                {{ deleteDeletedPages.length }} / {{ deletePdfPages.length }}
+              </span>
+            </template>
+            <div class="page-grid">
+              <div
+                v-for="(page, index) in deletePdfPages"
+                :key="index"
+                class="page-item"
+                :class="{ deleted: page.deleted }"
+                @click="handleDeleteTogglePage(index)"
+              >
+                <div class="page-number">{{ index + 1 }}</div>
+              </div>
+            </div>
+          </ToolCard>
+
+          <div v-if="deletePdfPages.length > 0" class="batch-download">
+            <van-button type="danger" size="large" :loading="deleting" @click="handleDeletePagesAndExport">
+              {{ t('tools.fileConverter.pdfDeletePages.export') }}
             </van-button>
           </div>
         </div>
@@ -324,6 +386,7 @@ import FileListCard from '../components/FileListCard.vue';
 import ImageStitchSettings from './components/ImageStitchSettings.vue';
 import GifMakerSettings from './components/GifMakerSettings.vue';
 import PdfPageSelector from './components/PdfPageSelector.vue';
+import ToolCard from '../components/ToolCard.vue';
 import { useImageFormatConverter } from './hooks/useImageFormatConverter';
 import { useImageToPdfConverter } from './hooks/useImageToPdfConverter';
 import { usePdfToImageConverter } from './hooks/usePdfToImageConverter';
@@ -331,6 +394,7 @@ import { usePdfMerger } from './hooks/usePdfMerger';
 import { useImageStitcher } from './hooks/useImageStitcher';
 import { useGifMaker } from './hooks/useGifMaker';
 import { usePdfSplitter } from './hooks/usePdfSplitter';
+import { usePdfPageDeleter } from './hooks/usePdfPageDeleter';
 import { useFileCompressor } from './hooks/useFileCompressor';
 import { formatFileSize, getOriginalFormat } from './utils';
 import pdfIcon from '@/views/Tools/assets/pdf.svg';
@@ -394,8 +458,7 @@ const {
 // 图片拼接
 const {
   imageFiles: stitchImages,
-  layout: stitchLayout,
-  gridCols: stitchGridCols,
+  direction: stitchDirection,
   spacing: stitchSpacing,
   backgroundColor: stitchBgColor,
   stitching,
@@ -422,14 +485,10 @@ const {
 // PDF拆分
 const {
   pdfFile: splitPdfFile,
-  pdfPages: splitPdfPages,
-  selectedPages: splitSelectedPages,
+  splitRanges,
   splitting,
   totalPages: splitTotalPages,
   handlePdfChange: handleSplitPdfChangeHook,
-  togglePage: handleSplitTogglePage,
-  selectAll: handleSplitSelectAll,
-  deselectAll: handleSplitDeselectAll,
   splitPdf,
 } = usePdfSplitter();
 
@@ -439,6 +498,30 @@ const handleSplitPdfChange = (event) => {
     handleSplitPdfChangeHook({ file });
   }
   event.target.value = '';
+};
+
+// PDF删除页面
+const {
+  pdfFile: deletePdfFile,
+  pdfPages: deletePdfPages,
+  deletedPages: deleteDeletedPages,
+  deleting,
+  totalPages: deleteTotalPages,
+  handlePdfChange: handleDeletePdfChangeHook,
+  togglePage: handleDeleteTogglePage,
+  deletePagesAndExport,
+} = usePdfPageDeleter();
+
+const handleDeletePdfChange = (event) => {
+  const file = event.target.files?.[0];
+  if (file) {
+    handleDeletePdfChangeHook({ file });
+  }
+  event.target.value = '';
+};
+
+const handleDeletePagesAndExport = () => {
+  deletePagesAndExport();
 };
 
 // 文件压缩
@@ -684,6 +767,49 @@ const handleCompressFiles = () => {
     .van-icon {
       font-size: 18px;
     }
+  }
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.page-item {
+  aspect-ratio: 1;
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &.deleted {
+    border-color: var(--color-danger);
+    background: rgba(var(--color-danger-rgb), 0.1);
+
+    .page-number {
+      color: var(--color-danger);
+    }
+  }
+}
+
+.range-input-section {
+  .range-tip {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    margin-top: var(--spacing-sm);
+    line-height: 1.5;
   }
 }
 </style>

@@ -7,16 +7,16 @@
         </div>
         <div class="progress-info">
           <span class="progress-text">{{ answeredCount }} / {{ totalQuestions }}</span>
-          <span class="score-text">{{ t('tools.chemistryTool.practice.score') }}: {{ score }}</span>
+          <span class="score-text">{{ t('tools.physics.practice.score') }}: {{ score }}</span>
         </div>
       </div>
 
       <div class="question-card" v-if="currentQuestion">
         <div class="question-header">
           <span class="question-index">
-            {{ t('tools.chemistryTool.practice.question') }} {{ currentQuestionIndex + 1 }}
+            {{ t('tools.physics.practice.question') }} {{ currentQuestionIndex + 1 }}
           </span>
-          <span class="question-type">{{ t('tools.chemistryTool.practice.choice') }}</span>
+          <span class="question-type">{{ t('tools.physics.practice.choice') }}</span>
         </div>
 
         <div class="question-content">
@@ -43,7 +43,7 @@
         </div>
 
         <div v-if="showResult" class="explanation-section">
-          <h4 class="explanation-title">{{ t('tools.chemistryTool.practice.explanation') }}</h4>
+          <h4 class="explanation-title">{{ t('tools.physics.practice.explanation') }}</h4>
           <p class="explanation-text">{{ currentQuestion.explanation }}</p>
         </div>
       </div>
@@ -56,7 +56,7 @@
           @click="submitAnswer(selectedAnswer)"
           class="submit-btn"
         >
-          {{ t('tools.chemistryTool.practice.submit') }}
+          {{ t('tools.physics.practice.submit') }}
         </van-button>
         <van-button
           v-else
@@ -64,7 +64,7 @@
           @click="nextQuestion"
           class="next-btn"
         >
-          {{ currentQuestionIndex === totalQuestions - 1 ? t('tools.chemistryTool.practice.finish') : t('tools.chemistryTool.practice.next') }}
+          {{ currentQuestionIndex === totalQuestions - 1 ? t('tools.physics.practice.finish') : t('tools.physics.practice.next') }}
         </van-button>
       </div>
     </div>
@@ -74,7 +74,7 @@
         <div class="result-icon">
           <van-icon name="trophy" :color="scoreColor" />
         </div>
-        <h2 class="result-title">{{ t('tools.chemistryTool.practice.completed') }}</h2>
+        <h2 class="result-title">{{ t('tools.physics.practice.completed') }}</h2>
         <div class="result-score">
           <span class="score-value" :style="{ color: scoreColor }">{{ score }}</span>
           <span class="score-total">/ {{ totalQuestions }}</span>
@@ -84,25 +84,25 @@
         <div class="result-stats">
           <div class="stat-item">
             <span class="stat-value correct">{{ score }}</span>
-            <span class="stat-label">{{ t('tools.chemistryTool.practice.correct') }}</span>
+            <span class="stat-label">{{ t('tools.physics.practice.correct') }}</span>
           </div>
           <div class="stat-item">
             <span class="stat-value wrong">{{ totalQuestions - score }}</span>
-            <span class="stat-label">{{ t('tools.chemistryTool.practice.wrong') }}</span>
+            <span class="stat-label">{{ t('tools.physics.practice.wrong') }}</span>
           </div>
           <div class="stat-item">
             <span class="stat-value rate">{{ Math.round((score / totalQuestions) * 100) }}%</span>
-            <span class="stat-label">{{ t('tools.chemistryTool.practice.rate') }}</span>
+            <span class="stat-label">{{ t('tools.physics.practice.rate') }}</span>
           </div>
         </div>
       </div>
 
       <div class="result-actions">
         <van-button type="default" @click="$router.back()" class="back-btn">
-          {{ t('tools.chemistryTool.actions.back') }}
+          {{ t('tools.physics.actions.back') }}
         </van-button>
         <van-button type="primary" @click="retry" class="retry-btn">
-          {{ t('tools.chemistryTool.practice.retry') }}
+          {{ t('tools.physics.practice.retry') }}
         </van-button>
       </div>
     </div>
@@ -114,7 +114,7 @@ import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { NavBar as VanNavBar, Button as VanButton, Icon as VanIcon } from 'vant';
-import { useChemistryPractice } from '../hooks/useChemistryTool';
+import { usePhysicsPractice } from '../hooks/usePhysics';
 
 const router = useRouter();
 const { t } = useI18n();
@@ -132,7 +132,7 @@ const {
   submitAnswer,
   nextQuestion,
   retry
-} = useChemistryPractice();
+} = usePhysicsPractice();
 
 const scoreColor = computed(() => {
   const rate = totalQuestions.value > 0 ? score.value / totalQuestions.value : 0;
@@ -143,10 +143,10 @@ const scoreColor = computed(() => {
 
 const resultDesc = computed(() => {
   const rate = totalQuestions.value > 0 ? score.value / totalQuestions.value : 0;
-  if (rate >= 0.8) return t('tools.chemistryTool.practice.excellent');
-  if (rate >= 0.6) return t('tools.chemistryTool.practice.good');
-  if (rate >= 0.4) return t('tools.chemistryTool.practice.pass');
-  return t('tools.chemistryTool.practice.needWork');
+  if (rate >= 0.8) return t('tools.physics.practice.excellent');
+  if (rate >= 0.6) return t('tools.physics.practice.good');
+  if (rate >= 0.4) return t('tools.physics.practice.pass');
+  return t('tools.physics.practice.needWork');
 });
 
 const handleOptionClick = (index) => {

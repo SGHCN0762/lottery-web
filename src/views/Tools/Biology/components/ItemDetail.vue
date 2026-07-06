@@ -32,7 +32,7 @@
           class="master-btn"
         >
           <van-icon :name="isMastered ? 'check-circle' : 'circle'" />
-          {{ isMastered ? t('tools.chemistryTool.actions.unmarkMaster') : t('tools.chemistryTool.actions.markMaster') }}
+          {{ isMastered ? t('tools.biology.actions.unmarkMaster') : t('tools.biology.actions.markMaster') }}
         </van-button>
       </div>
     </div>
@@ -80,8 +80,8 @@ const stageIcon = computed(() => {
 const stageText = computed(() => {
   if (!props.item) return '';
   const texts = {
-    middle: t('tools.chemistryTool.stages.middle'),
-    high: t('tools.chemistryTool.stages.high')
+    middle: t('tools.biology.stages.middle'),
+    high: t('tools.biology.stages.high')
   };
   return texts[props.item.stage] || '';
 });

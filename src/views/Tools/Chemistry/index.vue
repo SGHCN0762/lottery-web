@@ -7,17 +7,17 @@
         <div class="stats-bar">
           <div class="stat-item">
             <span class="stat-value">{{ totalCount }}</span>
-            <span class="stat-label">{{ t('tools.chemistryTool.stats.total') }}</span>
+            <span class="stat-label">{{ t('tools.chemistry.stats.total') }}</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
             <span class="stat-value learned">{{ learnedCount }}</span>
-            <span class="stat-label">{{ t('tools.chemistryTool.stats.learned') }}</span>
+            <span class="stat-label">{{ t('tools.chemistry.stats.learned') }}</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
             <span class="stat-value mastered">{{ masteredCount }}</span>
-            <span class="stat-label">{{ t('tools.chemistryTool.stats.mastered') }}</span>
+            <span class="stat-label">{{ t('tools.chemistry.stats.mastered') }}</span>
           </div>
         </div>
         <div class="progress-ring" v-if="totalCount > 0">
@@ -30,7 +30,7 @@
       <div class="search-section">
         <van-search
           v-model="searchKeyword"
-          :placeholder="t('tools.chemistryTool.searchPlaceholder')"
+          :placeholder="t('tools.chemistry.searchPlaceholder')"
           shape="round"
         />
       </div>
@@ -40,8 +40,8 @@
           <div class="mode-btn-content">
             <span class="mode-icon">📖</span>
             <div class="mode-text-group">
-              <span class="mode-title">{{ t('tools.chemistryTool.modes.learn') }}</span>
-              <span class="mode-desc">{{ t('tools.chemistryTool.modes.learnDesc') }}</span>
+              <span class="mode-title">{{ t('tools.chemistry.modes.learn') }}</span>
+              <span class="mode-desc">{{ t('tools.chemistry.modes.learnDesc') }}</span>
             </div>
           </div>
         </button>
@@ -49,8 +49,8 @@
           <div class="mode-btn-content">
             <span class="mode-icon">✍️</span>
             <div class="mode-text-group">
-              <span class="mode-title">{{ t('tools.chemistryTool.modes.practice') }}</span>
-              <span class="mode-desc">{{ t('tools.chemistryTool.modes.practiceDesc') }}</span>
+              <span class="mode-title">{{ t('tools.chemistry.modes.practice') }}</span>
+              <span class="mode-desc">{{ t('tools.chemistry.modes.practiceDesc') }}</span>
             </div>
           </div>
         </button>
@@ -72,7 +72,7 @@
           />
         </div>
         <div v-else class="empty-tip">
-          <van-empty :description="t('tools.chemistryTool.empty')" />
+          <van-empty :description="t('tools.chemistry.empty')" />
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@ import { Search as VanSearch, Loading as VanLoading, Empty as VanEmpty } from 'v
 import FilterTabs from './components/FilterTabs.vue';
 import ItemCard from './components/ItemCard.vue';
 import ItemDetail from './components/ItemDetail.vue';
-import { useChemistryTool } from './hooks/useChemistryTool';
+import { useChemistry } from './hooks/useChemistry.js';
 
 const router = useRouter();
 const { t } = useI18n();
@@ -118,7 +118,7 @@ const {
   toggleFavorite,
   selectItem,
   loading,
-} = useChemistryTool();
+} = useChemistry();
 
 const goToLearn = () => {
   router.push('/tools/chemistry-tool/learn');

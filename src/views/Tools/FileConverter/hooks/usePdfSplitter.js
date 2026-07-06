@@ -1,29 +1,23 @@
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { showSuccessToast, showFailToast } from 'vant';
-import * as pdfjsLib from 'pdfjs-dist';
-import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
-import { jsPDF } from 'jspdf';
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
+import { PDFDocument } from 'pdf-lib';
 
 export function usePdfSplitter() {
   const { t } = useI18n();
 
   const pdfFile = ref(null);
-  const pdfPages = ref([]);
-  const selectedPages = ref([]);
-  const splitting = ref(false);
   const totalPages = ref(0);
+  const splitRanges = ref('');
+  const splitting = ref(false);
 
   const handlePdfChange = (file) => {
     if (file && file.file && file.file.type === 'application/pdf') {
       if (pdfFile.value) {
         URL.revokeObjectURL(pdfFile.value.url);
       }
-      pdfPages.value = [];
-      selectedPages.value = [];
       totalPages.value = 0;
+      splitRanges.value = '';
 
       const url = URL.createObjectURL(file.file);
       pdfFile.value = {
@@ -33,7 +27,7 @@ export function usePdfSplitter() {
         size: file.file.size,
       };
 
-      loadPdfInfo(file.file);
+      loadPdfInfo();
     }
   };
 
@@ -42,49 +36,48 @@ export function usePdfSplitter() {
 
     try {
       const arrayBuffer = await pdfFile.value.file.arrayBuffer();
-      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
-      totalPages.value = pdf.numPages;
-
-      pdfPages.value = [];
-      selectedPages.value = [];
-
-      for (let i = 1; i <= pdf.numPages; i++) {
-        pdfPages.value.push({
-          index: i,
-          selected: true,
-        });
-        selectedPages.value.push(i);
-      }
+      const pdfDoc = await PDFDocument.load(arrayBuffer, { ignoreEncryption: true });
+      totalPages.value = pdfDoc.getPageCount();
     } catch (error) {
       console.error('Load PDF error:', error);
     }
   };
 
-  const togglePage = (index) => {
-    const pageIndex = index + 1;
-    const pos = selectedPages.value.indexOf(pageIndex);
-    if (pos > -1) {
-      selectedPages.value.splice(pos, 1);
-    } else {
-      selectedPages.value.push(pageIndex);
+  const parseRanges = (input) => {
+    const ranges = [];
+    const parts = input.split(/[,，]/).map(s => s.trim()).filter(s => s);
+
+    for (const part of parts) {
+      if (part.includes('-')) {
+        const [start, end] = part.split('-').map(s => parseInt(s.trim()));
+        if (!isNaN(start) && !isNaN(end) && start <= end && start > 0 && end <= totalPages.value) {
+          ranges.push({ start, end });
+        }
+      } else {
+        const page = parseInt(part.trim());
+        if (!isNaN(page) && page > 0 && page <= totalPages.value) {
+          ranges.push({ start: page, end: page });
+        }
+      }
     }
-    selectedPages.value.sort((a, b) => a - b);
-    pdfPages.value[index].selected = selectedPages.value.includes(pageIndex);
-  };
 
-  const selectAll = () => {
-    selectedPages.value = pdfPages.value.map((_, i) => i + 1);
-    pdfPages.value.forEach(p => p.selected = true);
-  };
-
-  const deselectAll = () => {
-    selectedPages.value = [];
-    pdfPages.value.forEach(p => p.selected = false);
+    return ranges;
   };
 
   const splitPdf = async () => {
-    if (!pdfFile.value || selectedPages.value.length === 0) {
-      showFailToast(t('tools.fileConverter.pdfSplit.selectPagesTip'));
+    if (!pdfFile.value) {
+      showFailToast(t('tools.fileConverter.pdfSplit.selectFileFirst'));
+      return;
+    }
+
+    if (!splitRanges.value.trim()) {
+      showFailToast(t('tools.fileConverter.pdfSplit.inputRangesTip'));
+      return;
+    }
+
+    const ranges = parseRanges(splitRanges.value);
+    if (ranges.length === 0) {
+      showFailToast(t('tools.fileConverter.pdfSplit.invalidRanges'));
       return;
     }
 
@@ -92,31 +85,34 @@ export function usePdfSplitter() {
 
     try {
       const arrayBuffer = await pdfFile.value.file.arrayBuffer();
-      const originalPdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      const sourcePdf = await PDFDocument.load(arrayBuffer, { ignoreEncryption: true });
 
-      for (const pageNum of selectedPages.value) {
-        const page = await originalPdf.getPage(pageNum);
-        const viewport = page.getViewport({ scale: 1.5 });
+      for (let i = 0; i < ranges.length; i++) {
+        const { start, end } = ranges[i];
+        const newPdf = await PDFDocument.create();
 
-        const canvas = document.createElement('canvas');
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        const pageIndices = [];
+        for (let j = start - 1; j < end; j++) {
+          pageIndices.push(j);
+        }
 
-        await page.render({ canvasContext: ctx, viewport }).promise;
+        const copiedPages = await newPdf.copyPages(sourcePdf, pageIndices);
+        copiedPages.forEach(page => newPdf.addPage(page));
 
-        const imgData = canvas.toDataURL('image/jpeg', 0.92);
-        const orientation = viewport.width > viewport.height ? 'landscape' : 'portrait';
-        const doc = new jsPDF({
-          orientation,
-          unit: 'pt',
-          format: [viewport.width, viewport.height],
-        });
+        const pdfBytes = await newPdf.save();
 
-        doc.addImage(imgData, 'JPEG', 0, 0, viewport.width, viewport.height);
+        const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+        const url = URL.createObjectURL(blob);
 
         const baseName = pdfFile.value.name.replace(/\.[^.]+$/, '');
-        doc.save(`${baseName}_page_${pageNum}.pdf`);
+        const rangeLabel = start === end ? `page_${start}` : `pages_${start}-${end}`;
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `${baseName}_${rangeLabel}.pdf`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
 
         await new Promise(resolve => setTimeout(resolve, 300));
       }
@@ -135,21 +131,16 @@ export function usePdfSplitter() {
       URL.revokeObjectURL(pdfFile.value.url);
       pdfFile.value = null;
     }
-    pdfPages.value = [];
-    selectedPages.value = [];
     totalPages.value = 0;
+    splitRanges.value = '';
   };
 
   return {
     pdfFile,
-    pdfPages,
-    selectedPages,
-    splitting,
     totalPages,
+    splitRanges,
+    splitting,
     handlePdfChange,
-    togglePage,
-    selectAll,
-    deselectAll,
     splitPdf,
     clearAll,
   };

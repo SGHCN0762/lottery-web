@@ -163,17 +163,31 @@ const tools = computed(() => [
   },
   {
     id: 'physics-tool',
-    name: t('tools.physicsTool.name'),
+    name: t('tools.physics.name'),
     icon: '⚛️',
-    description: t('tools.physicsTool.description'),
-    route: 'PhysicsTool',
+    description: t('tools.physics.description'),
+    route: 'Physics',
   },
   {
     id: 'chemistry-tool',
-    name: t('tools.chemistryTool.name'),
+    name: t('tools.chemistry.name'),
     icon: '⚗️',
-    description: t('tools.chemistryTool.description'),
-    route: 'ChemistryTool',
+    description: t('tools.chemistry.description'),
+    route: 'Chemistry',
+  },
+  {
+    id: 'biology-tool',
+    name: t('tools.biology.name'),
+    icon: '🧬',
+    description: t('tools.biology.description'),
+    route: 'Biology',
+  },
+  {
+    id: 'textbook',
+    name: t('tools.textbook.name'),
+    icon: '📘',
+    description: t('tools.textbook.description'),
+    route: 'Textbook',
   },
 ]);
 

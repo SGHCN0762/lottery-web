@@ -304,7 +304,7 @@ const allFiles = {
 };
 
 export function useCivilServantExam() {
-  const activeCategory = ref('xingce-zhenti');
+  const activeCategory = ref('xingce-zhenti');  
 
   const filteredFiles = computed(() => {
     return allFiles[activeCategory.value] || [];

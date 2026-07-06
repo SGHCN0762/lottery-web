@@ -513,72 +513,120 @@ const routes = [
   },
   {
     path: '/tools/physics-tool',
-    name: 'PhysicsTool',
+    name: 'Physics',
     component: () =>
-      import(/* webpackChunkName: "tool-physics-tool" */ '@/views/Tools/PhysicsTool/index.vue'),
+      import(/* webpackChunkName: "tool-physics-tool" */ '@/views/Tools/Physics/index.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.physicsTool.name',
+      title: 'tools.physics.name',
       showBack: true,
       showTabbar: false,
     },
   },
   {
     path: '/tools/physics-tool/learn',
-    name: 'PhysicsToolLearn',
+    name: 'PhysicsLearn',
     component: () =>
-      import(/* webpackChunkName: "tool-physics-tool-learn" */ '@/views/Tools/PhysicsTool/pages/LearnPage.vue'),
+      import(/* webpackChunkName: "tool-physics-tool-learn" */ '@/views/Tools/Physics/pages/LearnPage.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.physicsTool.learnTitle',
+      title: 'tools.physics.learnTitle',
       showBack: true,
       showTabbar: false,
     },
   },
   {
     path: '/tools/physics-tool/practice',
-    name: 'PhysicsToolPractice',
+    name: 'PhysicsPractice',
     component: () =>
-      import(/* webpackChunkName: "tool-physics-tool-practice" */ '@/views/Tools/PhysicsTool/pages/PracticePage.vue'),
+      import(/* webpackChunkName: "tool-physics-tool-practice" */ '@/views/Tools/Physics/pages/PracticePage.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.physicsTool.practiceTitle',
+      title: 'tools.physics.practiceTitle',
       showBack: true,
       showTabbar: false,
     },
   },
   {
     path: '/tools/chemistry-tool',
-    name: 'ChemistryTool',
+    name: 'Chemistry',
     component: () =>
-      import(/* webpackChunkName: "tool-chemistry-tool" */ '@/views/Tools/ChemistryTool/index.vue'),
+      import(/* webpackChunkName: "tool-chemistry-tool" */ '@/views/Tools/Chemistry/index.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.chemistryTool.name',
+      title: 'tools.chemistry.name',
       showBack: true,
       showTabbar: false,
     },
   },
   {
     path: '/tools/chemistry-tool/learn',
-    name: 'ChemistryToolLearn',
+    name: 'ChemistryLearn',
     component: () =>
-      import(/* webpackChunkName: "tool-chemistry-tool-learn" */ '@/views/Tools/ChemistryTool/pages/LearnPage.vue'),
+      import(/* webpackChunkName: "tool-chemistry-tool-learn" */ '@/views/Tools/Chemistry/pages/LearnPage.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.chemistryTool.learnTitle',
+      title: 'tools.chemistry.learnTitle',
       showBack: true,
       showTabbar: false,
     },
   },
   {
     path: '/tools/chemistry-tool/practice',
-    name: 'ChemistryToolPractice',
+    name: 'ChemistryPractice',
     component: () =>
-      import(/* webpackChunkName: "tool-chemistry-tool-practice" */ '@/views/Tools/ChemistryTool/pages/PracticePage.vue'),
+      import(/* webpackChunkName: "tool-chemistry-tool-practice" */ '@/views/Tools/Chemistry/pages/PracticePage.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.chemistryTool.practiceTitle',
+      title: 'tools.chemistry.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/biology-tool',
+    name: 'Biology',
+    component: () =>
+      import(/* webpackChunkName: "tool-biology-tool" */ '@/views/Tools/Biology/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.biology.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/biology-tool/learn',
+    name: 'BiologyLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-biology-tool-learn" */ '@/views/Tools/Biology/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.biology.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/biology-tool/practice',
+    name: 'BiologyPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-biology-tool-practice" */ '@/views/Tools/Biology/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.biology.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/textbook',
+    name: 'Textbook',
+    component: () =>
+      import(/* webpackChunkName: "tool-textbook" */ '@/views/Tools/Textbook/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.textbook.name',
       showBack: true,
       showTabbar: false,
     },

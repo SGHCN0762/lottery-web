@@ -33,9 +33,9 @@ const { t } = useI18n();
 
 const stageName = (key) => {
   const names = {
-    all: t('tools.chemistryTool.stages.all'),
-    middle: t('tools.chemistryTool.stages.middle'),
-    high: t('tools.chemistryTool.stages.high')
+    all: t('tools.physics.stages.all'),
+    middle: t('tools.physics.stages.middle'),
+    high: t('tools.physics.stages.high')
   };
   return names[key] || '';
 };

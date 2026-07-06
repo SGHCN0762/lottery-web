@@ -1,11 +1,11 @@
 import { ref, computed, onMounted } from 'vue';
-import { physicsKnowledgePoints, stages, practiceQuestions } from '../data/physicsData';
+import { biologyKnowledgePoints, stages, practiceQuestions } from '../data/biologyData';
 
 const STORAGE_KEYS = {
-  mastered: 'physics_mastered_ids',
-  learned: 'physics_learned_ids',
-  favorites: 'physics_favorite_ids',
-  practiceRecords: 'physics_practice_records'
+  mastered: 'biology_mastered_ids',
+  learned: 'biology_learned_ids',
+  favorites: 'biology_favorite_ids',
+  practiceRecords: 'biology_practice_records'
 };
 
 const getStoredIds = (key) => {
@@ -25,7 +25,7 @@ const saveIds = (key, ids) => {
   }
 };
 
-export const usePhysicsTool = () => {
+export const useBiology = () => {
   const loading = ref(false);
   const searchKeyword = ref('');
   const activeStage = ref('all');
@@ -35,7 +35,7 @@ export const usePhysicsTool = () => {
   const learnedIds = ref(getStoredIds(STORAGE_KEYS.learned));
   const favoriteIds = ref(getStoredIds(STORAGE_KEYS.favorites));
 
-  const allItems = ref(physicsKnowledgePoints);
+  const allItems = ref(biologyKnowledgePoints);
 
   const totalCount = computed(() => allItems.value.length);
 
@@ -148,7 +148,7 @@ export const usePhysicsTool = () => {
   };
 };
 
-export const usePhysicsPractice = () => {
+export const useBiologyPractice = () => {
   const currentQuestionIndex = ref(0);
   const selectedAnswer = ref(null);
   const showResult = ref(false);
@@ -162,7 +162,7 @@ export const usePhysicsPractice = () => {
     let questions = practiceQuestions;
 
     if (targetStage.value !== 'all') {
-      const targetPoints = physicsKnowledgePoints.filter(p => p.stage === targetStage.value);
+      const targetPoints = biologyKnowledgePoints.filter(p => p.stage === targetStage.value);
       const targetPointIds = targetPoints.map(p => p.id);
       questions = questions.filter(q => targetPointIds.includes(q.pointId));
     }
@@ -183,7 +183,7 @@ export const usePhysicsPractice = () => {
 
   const currentKnowledgePoint = computed(() => {
     if (!currentQuestion.value) return null;
-    return physicsKnowledgePoints.find(p => p.id === currentQuestion.value.pointId);
+    return biologyKnowledgePoints.find(p => p.id === currentQuestion.value.pointId);
   });
 
   const answeredCount = computed(() => answeredQuestions.value.length);
@@ -264,13 +264,13 @@ export const usePhysicsPractice = () => {
   };
 };
 
-export const usePhysicsLearn = () => {
+export const useBiologyLearn = () => {
   const currentIndex = ref(0);
   const masteredList = ref(getStoredIds(STORAGE_KEYS.mastered));
   const learnedList = ref(getStoredIds(STORAGE_KEYS.learned));
 
   const filteredPoints = computed(() => {
-    let points = physicsKnowledgePoints;
+    let points = biologyKnowledgePoints;
     return points;
   });
 

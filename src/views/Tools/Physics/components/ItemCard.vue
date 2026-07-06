@@ -55,8 +55,8 @@ const stageIcon = computed(() => {
 
 const stageText = computed(() => {
   const texts = {
-    middle: t('tools.chemistryTool.stages.middle'),
-    high: t('tools.chemistryTool.stages.high')
+    middle: t('tools.physics.stages.middle'),
+    high: t('tools.physics.stages.high')
   };
   return texts[props.item.stage] || '';
 });

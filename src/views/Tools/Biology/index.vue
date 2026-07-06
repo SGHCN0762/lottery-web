@@ -1,5 +1,5 @@
 <template>
-  <div class="physics-tool-page">
+  <div class="biology-tool-page">
     <van-loading v-if="loading" class="loading-center" />
 
     <div v-else class="page-content">
@@ -7,17 +7,17 @@
         <div class="stats-bar">
           <div class="stat-item">
             <span class="stat-value">{{ totalCount }}</span>
-            <span class="stat-label">{{ t('tools.physicsTool.stats.total') }}</span>
+            <span class="stat-label">{{ t('tools.biology.stats.total') }}</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
             <span class="stat-value learned">{{ learnedCount }}</span>
-            <span class="stat-label">{{ t('tools.physicsTool.stats.learned') }}</span>
+            <span class="stat-label">{{ t('tools.biology.stats.learned') }}</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
             <span class="stat-value mastered">{{ masteredCount }}</span>
-            <span class="stat-label">{{ t('tools.physicsTool.stats.mastered') }}</span>
+            <span class="stat-label">{{ t('tools.biology.stats.mastered') }}</span>
           </div>
         </div>
         <div class="progress-ring" v-if="totalCount > 0">
@@ -30,7 +30,7 @@
       <div class="search-section">
         <van-search
           v-model="searchKeyword"
-          :placeholder="t('tools.physicsTool.searchPlaceholder')"
+          :placeholder="t('tools.biology.searchPlaceholder')"
           shape="round"
         />
       </div>
@@ -40,8 +40,8 @@
           <div class="mode-btn-content">
             <span class="mode-icon">📖</span>
             <div class="mode-text-group">
-              <span class="mode-title">{{ t('tools.physicsTool.modes.learn') }}</span>
-              <span class="mode-desc">{{ t('tools.physicsTool.modes.learnDesc') }}</span>
+              <span class="mode-title">{{ t('tools.biology.modes.learn') }}</span>
+              <span class="mode-desc">{{ t('tools.biology.modes.learnDesc') }}</span>
             </div>
           </div>
         </button>
@@ -49,8 +49,8 @@
           <div class="mode-btn-content">
             <span class="mode-icon">✍️</span>
             <div class="mode-text-group">
-              <span class="mode-title">{{ t('tools.physicsTool.modes.practice') }}</span>
-              <span class="mode-desc">{{ t('tools.physicsTool.modes.practiceDesc') }}</span>
+              <span class="mode-title">{{ t('tools.biology.modes.practice') }}</span>
+              <span class="mode-desc">{{ t('tools.biology.modes.practiceDesc') }}</span>
             </div>
           </div>
         </button>
@@ -72,7 +72,7 @@
           />
         </div>
         <div v-else class="empty-tip">
-          <van-empty :description="t('tools.physicsTool.empty')" />
+          <van-empty :description="t('tools.biology.empty')" />
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@ import { Search as VanSearch, Loading as VanLoading, Empty as VanEmpty } from 'v
 import FilterTabs from './components/FilterTabs.vue';
 import ItemCard from './components/ItemCard.vue';
 import ItemDetail from './components/ItemDetail.vue';
-import { usePhysicsTool } from './hooks/usePhysicsTool';
+import { useBiology } from './hooks/useBiology.js';
 
 const router = useRouter();
 const { t } = useI18n();
@@ -118,14 +118,14 @@ const {
   toggleFavorite,
   selectItem,
   loading,
-} = usePhysicsTool();
+} = useBiology();
 
 const goToLearn = () => {
-  router.push('/tools/physics-tool/learn');
+  router.push('/tools/biology-tool/learn');
 };
 
 const goToPractice = () => {
-  router.push('/tools/physics-tool/practice');
+  router.push('/tools/biology-tool/practice');
 };
 
 const handleItemClick = (item) => {
@@ -148,7 +148,7 @@ const handleToggleFavorite = () => {
 </script>
 
 <style lang="less" scoped>
-.physics-tool-page {
+.biology-tool-page {
   min-height: 100%;
   background: var(--color-bg-primary);
 }

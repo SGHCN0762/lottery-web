@@ -29,7 +29,7 @@
           class="nav-btn prev-btn"
         >
           <van-icon name="arrow-left" />
-          {{ t('tools.physicsTool.actions.prev') }}
+          {{ t('tools.physics.actions.prev') }}
         </van-button>
         <van-button
           :type="isMastered(currentPoint.id) ? 'default' : 'primary'"
@@ -37,7 +37,7 @@
           class="master-btn"
         >
           <van-icon :name="isMastered(currentPoint.id) ? 'check-circle' : 'circle'" />
-          {{ isMastered(currentPoint.id) ? t('tools.physicsTool.actions.unmarkMaster') : t('tools.physicsTool.actions.markMaster') }}
+          {{ isMastered(currentPoint.id) ? t('tools.physics.actions.unmarkMaster') : t('tools.physics.actions.markMaster') }}
         </van-button>
         <van-button
           :disabled="isLast"
@@ -45,7 +45,7 @@
           @click="goToNext"
           class="nav-btn next-btn"
         >
-          {{ t('tools.physicsTool.actions.next') }}
+          {{ t('tools.physics.actions.next') }}
           <van-icon name="arrow" />
         </van-button>
       </div>
@@ -58,7 +58,7 @@ import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { NavBar as VanNavBar, Button as VanButton, Icon as VanIcon } from 'vant';
-import { usePhysicsLearn } from '../hooks/usePhysicsTool';
+import { usePhysicsLearn } from '../hooks/usePhysics';
 import MarkdownRenderer from '../components/MarkdownRenderer.vue';
 
 const router = useRouter();
@@ -90,8 +90,8 @@ const stageIcon = computed(() => {
 const stageText = computed(() => {
   if (!currentPoint.value) return '';
   const texts = {
-    middle: t('tools.physicsTool.stages.middle'),
-    high: t('tools.physicsTool.stages.high')
+    middle: t('tools.physics.stages.middle'),
+    high: t('tools.physics.stages.high')
   };
   return texts[currentPoint.value.stage] || '';
 });
