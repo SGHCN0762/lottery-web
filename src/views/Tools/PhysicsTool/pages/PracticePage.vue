@@ -1,11 +1,5 @@
 <template>
   <div class="practice-page">
-    <van-nav-bar
-      :title="t('tools.physicsTool.practiceTitle')"
-      left-arrow
-      @click-left="$router.back()"
-    />
-
     <div class="practice-content" v-if="!isFinished">
       <div class="progress-section">
         <div class="progress-bar">

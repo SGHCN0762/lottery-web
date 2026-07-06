@@ -163,5 +163,41 @@ onUnmounted(() => {
     overflow-x: auto;
     overflow-y: hidden;
   }
+
+  ::v-deep(svg) {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--spacing-md) 0;
+  }
+
+  ::v-deep(svg .stroke-primary) {
+    stroke: var(--color-primary);
+  }
+
+  ::v-deep(svg .fill-primary) {
+    fill: var(--color-primary);
+  }
+
+  ::v-deep(svg .stroke-text) {
+    stroke: var(--color-text-primary);
+  }
+
+  ::v-deep(svg .fill-text) {
+    fill: var(--color-text-primary);
+  }
+
+  ::v-deep(svg .stroke-border) {
+    stroke: var(--color-border);
+  }
+
+  ::v-deep(svg .fill-bg) {
+    fill: var(--color-bg-secondary);
+  }
+
+  ::v-deep(svg text) {
+    fill: var(--color-text-primary);
+    font-size: 12px;
+  }
 }
 </style>

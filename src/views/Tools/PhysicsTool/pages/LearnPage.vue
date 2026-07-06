@@ -1,11 +1,5 @@
 <template>
   <div class="learn-page">
-    <van-nav-bar
-      :title="t('tools.physicsTool.learnTitle')"
-      left-arrow
-      @click-left="$router.back()"
-    />
-
     <div class="learn-content" v-if="currentPoint">
       <div class="progress-section">
         <div class="progress-bar">
