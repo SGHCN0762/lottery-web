@@ -547,6 +547,42 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/chemistry-tool',
+    name: 'ChemistryTool',
+    component: () =>
+      import(/* webpackChunkName: "tool-chemistry-tool" */ '@/views/Tools/ChemistryTool/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.chemistryTool.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/chemistry-tool/learn',
+    name: 'ChemistryToolLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-chemistry-tool-learn" */ '@/views/Tools/ChemistryTool/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.chemistryTool.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/chemistry-tool/practice',
+    name: 'ChemistryToolPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-chemistry-tool-practice" */ '@/views/Tools/ChemistryTool/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.chemistryTool.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

@@ -168,6 +168,13 @@ const tools = computed(() => [
     description: t('tools.physicsTool.description'),
     route: 'PhysicsTool',
   },
+  {
+    id: 'chemistry-tool',
+    name: t('tools.chemistryTool.name'),
+    icon: '⚗️',
+    description: t('tools.chemistryTool.description'),
+    route: 'ChemistryTool',
+  },
 ]);
 
 // ========================================

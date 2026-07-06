@@ -3649,11 +3649,11 @@ $$ h = \\frac{v_0^2}{2g} = \\frac{36}{20} = 1.8m $$
   }
 ];
 
-export const stages = [
-  { label: '全部', value: 'all' },
-  { label: '初中', value: 'middle' },
-  { label: '高中', value: 'high' }
-];
+export const stages = {
+  all: { icon: '📚' },
+  middle: { icon: '📖' },
+  high: { icon: '🔬' }
+};
 
 export const practiceQuestions = [
   {
