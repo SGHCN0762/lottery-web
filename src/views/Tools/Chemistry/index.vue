@@ -1,5 +1,5 @@
 <template>
-  <div class="chemistry-tool-page">
+  <div class="chemistry-page">
     <van-loading v-if="loading" class="loading-center" />
 
     <div v-else class="page-content">
@@ -121,11 +121,11 @@ const {
 } = useChemistry();
 
 const goToLearn = () => {
-  router.push('/tools/chemistry-tool/learn');
+  router.push('/tools/chemistry/learn');
 };
 
 const goToPractice = () => {
-  router.push('/tools/chemistry-tool/practice');
+  router.push('/tools/chemistry/practice');
 };
 
 const handleItemClick = (item) => {
@@ -148,7 +148,7 @@ const handleToggleFavorite = () => {
 </script>
 
 <style lang="less" scoped>
-.chemistry-tool-page {
+.chemistry-page {
   min-height: 100%;
   background: var(--color-bg-primary);
 }

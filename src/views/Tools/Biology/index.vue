@@ -1,5 +1,5 @@
 <template>
-  <div class="biology-tool-page">
+  <div class="biology-page">
     <van-loading v-if="loading" class="loading-center" />
 
     <div v-else class="page-content">
@@ -121,11 +121,11 @@ const {
 } = useBiology();
 
 const goToLearn = () => {
-  router.push('/tools/biology-tool/learn');
+  router.push('/tools/biology/learn');
 };
 
 const goToPractice = () => {
-  router.push('/tools/biology-tool/practice');
+  router.push('/tools/biology/practice');
 };
 
 const handleItemClick = (item) => {
@@ -148,7 +148,7 @@ const handleToggleFavorite = () => {
 </script>
 
 <style lang="less" scoped>
-.biology-tool-page {
+.biology-page {
   min-height: 100%;
   background: var(--color-bg-primary);
 }

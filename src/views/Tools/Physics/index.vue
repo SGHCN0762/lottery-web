@@ -1,5 +1,5 @@
 <template>
-  <div class="physics-tool-page">
+  <div class="physics-page">
     <van-loading v-if="loading" class="loading-center" />
 
     <div v-else class="page-content">
@@ -121,11 +121,11 @@ const {
 } = usePhysics();
 
 const goToLearn = () => {
-  router.push('/tools/physics-tool/learn');
+  router.push('/tools/physics/learn');
 };
 
 const goToPractice = () => {
-  router.push('/tools/physics-tool/practice');
+  router.push('/tools/physics/practice');
 };
 
 const handleItemClick = (item) => {
@@ -148,7 +148,7 @@ const handleToggleFavorite = () => {
 </script>
 
 <style lang="less" scoped>
-.physics-tool-page {
+.physics-page {
   min-height: 100%;
   background: var(--color-bg-primary);
 }

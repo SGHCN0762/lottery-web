@@ -1,7 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
-import md from 'vite-plugin-md';
 import path from 'path';
 
 export default defineConfig(({ mode }) => {
@@ -12,13 +11,6 @@ export default defineConfig(({ mode }) => {
 
     plugins: [
       vue(),
-      md({
-        markdownItOptions: {
-          html: true,
-          linkify: true,
-          typographer: true,
-        },
-      }),
       nodePolyfills({
         include: ['buffer', 'util'],
       }),

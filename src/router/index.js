@@ -512,10 +512,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/physics-tool',
+    path: '/tools/physics',
     name: 'Physics',
     component: () =>
-      import(/* webpackChunkName: "tool-physics-tool" */ '@/views/Tools/Physics/index.vue'),
+      import(/* webpackChunkName: "tool-physics" */ '@/views/Tools/Physics/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.physics.name',
@@ -524,10 +524,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/physics-tool/learn',
+    path: '/tools/physics/learn',
     name: 'PhysicsLearn',
     component: () =>
-      import(/* webpackChunkName: "tool-physics-tool-learn" */ '@/views/Tools/Physics/pages/LearnPage.vue'),
+      import(/* webpackChunkName: "tool-physics-learn" */ '@/views/Tools/Physics/pages/LearnPage.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.physics.learnTitle',
@@ -536,10 +536,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/physics-tool/practice',
+    path: '/tools/physics/practice',
     name: 'PhysicsPractice',
     component: () =>
-      import(/* webpackChunkName: "tool-physics-tool-practice" */ '@/views/Tools/Physics/pages/PracticePage.vue'),
+      import(/* webpackChunkName: "tool-physics-practice" */ '@/views/Tools/Physics/pages/PracticePage.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.physics.practiceTitle',
@@ -548,10 +548,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/chemistry-tool',
+    path: '/tools/chemistry',
     name: 'Chemistry',
     component: () =>
-      import(/* webpackChunkName: "tool-chemistry-tool" */ '@/views/Tools/Chemistry/index.vue'),
+      import(/* webpackChunkName: "tool-chemistry" */ '@/views/Tools/Chemistry/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.chemistry.name',
@@ -560,10 +560,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/chemistry-tool/learn',
+    path: '/tools/chemistry/learn',
     name: 'ChemistryLearn',
     component: () =>
-      import(/* webpackChunkName: "tool-chemistry-tool-learn" */ '@/views/Tools/Chemistry/pages/LearnPage.vue'),
+      import(/* webpackChunkName: "tool-chemistry-learn" */ '@/views/Tools/Chemistry/pages/LearnPage.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.chemistry.learnTitle',
@@ -572,10 +572,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/chemistry-tool/practice',
+    path: '/tools/chemistry/practice',
     name: 'ChemistryPractice',
     component: () =>
-      import(/* webpackChunkName: "tool-chemistry-tool-practice" */ '@/views/Tools/Chemistry/pages/PracticePage.vue'),
+      import(/* webpackChunkName: "tool-chemistry-practice" */ '@/views/Tools/Chemistry/pages/PracticePage.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.chemistry.practiceTitle',
@@ -584,10 +584,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/biology-tool',
+    path: '/tools/biology',
     name: 'Biology',
     component: () =>
-      import(/* webpackChunkName: "tool-biology-tool" */ '@/views/Tools/Biology/index.vue'),
+      import(/* webpackChunkName: "tool-biology" */ '@/views/Tools/Biology/index.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.biology.name',
@@ -596,10 +596,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/biology-tool/learn',
+    path: '/tools/biology/learn',
     name: 'BiologyLearn',
     component: () =>
-      import(/* webpackChunkName: "tool-biology-tool-learn" */ '@/views/Tools/Biology/pages/LearnPage.vue'),
+      import(/* webpackChunkName: "tool-biology-learn" */ '@/views/Tools/Biology/pages/LearnPage.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.biology.learnTitle',
@@ -608,10 +608,10 @@ const routes = [
     },
   },
   {
-    path: '/tools/biology-tool/practice',
+    path: '/tools/biology/practice',
     name: 'BiologyPractice',
     component: () =>
-      import(/* webpackChunkName: "tool-biology-tool-practice" */ '@/views/Tools/Biology/pages/PracticePage.vue'),
+      import(/* webpackChunkName: "tool-biology-practice" */ '@/views/Tools/Biology/pages/PracticePage.vue'),
     meta: {
       layout: 'AppLayout',
       title: 'tools.biology.practiceTitle',
