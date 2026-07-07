@@ -1732,6 +1732,79 @@ $$ m = \\frac{Q}{cΔt} = \\frac{8.4×10^6}{4.2×10^3 × (60-20)} = \\frac{8.4×1
 - 未来能源发展方向：大力发展可再生能源，减少对化石能源的依赖。`
   },
   {
+    id: 'physics_025a',
+    title: '热学',
+    stage: 'middle',
+    chapter: '热学',
+    tags: ['热学', '内能', '热量', '比热容', '热机'],
+    content: `## 热学
+
+### 核心概念
+
+**温度**：表示物体冷热程度的物理量，单位是摄氏度(°C)或开尔文(K)。
+
+**内能**：物体内所有分子动能和势能的总和。温度越高，分子热运动越剧烈，内能越大。
+
+**热量**：在热传递过程中，传递能量的多少，单位是焦耳(J)。
+
+**比热容**：单位质量的某种物质温度升高(或降低)1°C所吸收(或放出)的热量，是物质的一种特性。
+
+**热传递**：热量从高温物体传到低温物体，或从物体的高温部分传到低温部分的过程。
+
+**热机**：利用内能做功的机械，将内能转化为机械能。
+
+### 公式总结
+
+| 公式 | 说明 |
+|------|------|
+| $Q = cmΔt$ | 热量计算公式 |
+| $c_{水} = 4.2×10^3J/(kg·°C)$ | 水的比热容 |
+| $η = \\frac{W_{有用}}{Q_{吸}}$ | 热机效率 |
+| $Q_{吸} = Q_{放}$ | 热平衡方程（不计热量损失） |
+
+### 物理示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <rect x="40" y="50" width="60" height="80" fill="#FF6B6B" opacity="0.6" stroke="#FF6B6B" />
+  <text x="70" y="100" font-size="12" text-anchor="middle" fill="#fff">高温物体</text>
+  <text x="70" y="145" font-size="10" text-anchor="middle" fill="#FF6B6B">T₁</text>
+  <rect x="200" y="70" width="60" height="60" fill="#4ECDC4" opacity="0.6" stroke="#4ECDC4" />
+  <text x="230" y="100" font-size="12" text-anchor="middle" fill="#fff">低温物体</text>
+  <text x="230" y="145" font-size="10" text-anchor="middle" fill="#4ECDC4">T₂</text>
+  <path d="M100 90 L150 90" stroke="#FF6B6B" stroke-width="3" marker-end="url(#heatArrow)" />
+  <text x="125" y="85" font-size="11" text-anchor="middle" fill="#FF6B6B">Q（热量）</text>
+  <text x="150" y="170" font-size="11" text-anchor="middle" fill="var(--color-text-secondary)">热传递：从高温到低温</text>
+  <defs>
+    <marker id="heatArrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#FF6B6B" />
+    </marker>
+  </defs>
+</svg>
+
+### 例题解析
+
+**问题**：质量为2kg的水，温度从20°C升高到100°C，需要吸收多少热量？（$c_{水} = 4.2×10^3J/(kg·°C)$）
+
+**解答**：
+
+$$ Q_{吸} = cmΔt = 4.2×10^3 × 2 × (100-20) = 4.2×10^3 × 2 × 80 = 6.72×10^5J $$
+
+### 举一反三
+
+**练习1**：质量为500g的铁块，温度从100°C降低到20°C，放出多少热量？（$c_{铁} = 0.46×10^3J/(kg·°C)$）
+- 答案：$Q_{放} = 0.46×10^3 × 0.5 × 80 = 1.84×10^4J$
+
+**练习2**：将2kg的水从20°C加热到沸腾（标准大气压下），需要吸收多少热量？
+- 答案：$Q_{吸} = 4.2×10^3 × 2 × 80 = 6.72×10^5J$
+
+### 拓展知识
+
+- 比热容越大的物质，温度变化越难，如水的比热容较大，沿海地区昼夜温差小。
+- 热传递的三种方式：**传导**、**对流**、**辐射**。
+- 热机效率永远小于1，因为总有一部分热量散失到低温环境。
+- 热平衡方程在混合问题中经常用到：$Q_{吸} = Q_{放}$。`
+  },
+  {
     id: 'physics_026',
     title: '运动的描述',
     stage: 'high',
@@ -2177,6 +2250,92 @@ $$ x = v_0 t + \\frac{1}{2}at^2 = 0 + \\frac{1}{2} \\times 2 \\times 3^2 = 9m $$
 - 开普勒第三定律：所有行星绕太阳运动的轨道半长轴的三次方跟它的公转周期的二次方的比都相等，即$\\frac{a^3}{T^2} = k$。
 - 同步卫星的轨道必须在赤道平面内，距离地面的高度约为$36000km$，相对地面静止。
 - 卫星的轨道高度越高，运行速度越小，周期越大。近地卫星的速度最大（等于第一宇宙速度），周期最小。`
+  },
+  {
+    id: 'physics_031a',
+    title: '机械能守恒定律',
+    stage: 'high',
+    chapter: '机械能守恒定律',
+    tags: ['机械能守恒', '动能', '势能', '功能关系', '能量转化'],
+    content: `## 机械能守恒定律
+
+### 核心概念
+
+**动能**：物体由于运动而具有的能量，$E_k = \\frac{1}{2}mv^2$。
+
+**重力势能**：物体由于被举高而具有的能量，$E_p = mgh$，与零势能面的选择有关。
+
+**弹性势能**：物体由于发生弹性形变而具有的能量，$E_p = \\frac{1}{2}kx^2$。
+
+**机械能**：动能与势能的总和，$E = E_k + E_p$。
+
+**机械能守恒定律**：在只有重力或弹力做功的物体系统内，动能与势能可以相互转化，而总的机械能保持不变。
+
+**功能关系**：功是能量转化的量度。重力做功等于重力势能的变化量，弹力做功等于弹性势能的变化量，合外力做功等于动能的变化量。
+
+### 公式总结
+
+| 公式 | 说明 |
+|------|------|
+| $E_k = \\frac{1}{2}mv^2$ | 动能公式 |
+| $E_p = mgh$ | 重力势能公式 |
+| $E_p = \\frac{1}{2}kx^2$ | 弹性势能公式 |
+| $E_{k1} + E_{p1} = E_{k2} + E_{p2}$ | 机械能守恒（只有重力或弹力做功） |
+| $W_G = -\\Delta E_p$ | 重力做功与势能变化 |
+| $W_{合} = \\Delta E_k$ | 动能定理 |
+
+### 物理示意图
+
+<svg width="300" height="200" viewBox="0 0 300 200">
+  <line x1="50" y1="170" x2="250" y2="170" stroke="var(--color-border)" stroke-width="2" />
+  <path d="M50 170 Q100 80 150 130 Q200 50 250 170" stroke="var(--color-primary)" stroke-width="2" fill="none" />
+  <circle cx="80" cy="140" r="10" fill="var(--color-primary)" opacity="0.8" />
+  <text x="80" y="145" font-size="10" text-anchor="middle" fill="#fff">A</text>
+  <circle cx="220" cy="140" r="10" fill="var(--color-primary)" opacity="0.8" />
+  <text x="220" y="145" font-size="10" text-anchor="middle" fill="#fff">C</text>
+  <circle cx="150" cy="80" r="10" fill="var(--color-primary)" opacity="0.6" />
+  <text x="150" y="85" font-size="10" text-anchor="middle" fill="#fff">B</text>
+  <line x1="80" y1="170" x2="80" y2="140" stroke="var(--color-text-secondary)" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="70" y="155" font-size="9" fill="var(--color-text-secondary)">h₁</text>
+  <line x1="150" y1="170" x2="150" y2="80" stroke="var(--color-text-secondary)" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="140" y="125" font-size="9" fill="var(--color-text-secondary)">h₂</text>
+  <text x="150" y="35" font-size="12" text-anchor="middle" fill="var(--color-text-primary)">机械能守恒：E_A = E_B = E_C</text>
+  <text x="80" y="185" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">低势能高动能</text>
+  <text x="150" y="185" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">高势能低动能</text>
+</svg>
+
+### 例题解析
+
+**问题**：一个小球从高度$h = 4m$处自由下落，求落地时的速度。（忽略空气阻力，$g$取$10m/s^2$）
+
+**解答**：
+
+由机械能守恒定律，以地面为零势能面：
+
+初始机械能（只有势能）：$E_1 = mgh$
+
+末态机械能（只有动能）：$E_2 = \\frac{1}{2}mv^2$
+
+由$E_1 = E_2$：
+
+$$ mgh = \\frac{1}{2}mv^2 $$
+
+$$ v = \\sqrt{2gh} = \\sqrt{2×10×4} = \\sqrt{80} ≈ 8.94m/s $$
+
+### 举一反三
+
+**练习1**：一个物体从$10m$高处自由下落，落地时速度是多少？（$g$取$10m/s^2$）
+- 答案：$v = \\sqrt{2gh} = \\sqrt{2×10×10} = 10\\sqrt{2} ≈ 14.14m/s$
+
+**练习2**：一个质量为$2kg$的物体从$5m$高处自由下落，落地时的动能是多少？
+- 答案：$E_k = mgh = 2×10×5 = 100J$
+
+### 拓展知识
+
+- 机械能守恒的条件是**只有重力或弹力做功**，其他力不做功或做功之和为零。
+- 如果有摩擦力等非保守力做功，机械能不守恒，但总能量仍然守恒。
+- 机械能守恒定律是能量守恒定律的特例，适用于宏观低速运动。
+- 解题时选择合适的零势能面可以简化问题，通常选择地面或最低点为零势能面。`
   },
   // ===== 高中物理 - 电磁学 =====
   {
@@ -2654,6 +2813,94 @@ $$ T = \\frac{1}{f} = \\frac{1}{50} = 0.02s $$
 - **高压输电的优势**：电压提高$n$倍，输电线上电流减小为$1/n$，功率损耗减小为$1/n^2$，因此远距离输电采用**超高压**（如$500kV$）甚至**特高压**（如$1000kV$）。`
   },
   {
+    id: 'physics_036a',
+    title: '传感器',
+    stage: 'high',
+    chapter: '传感器',
+    tags: ['传感器', '热敏电阻', '光敏电阻', '霍尔元件', '传感器应用'],
+    content: `## 传感器
+
+### 核心概念
+
+**传感器**：能将被测的非电学量（如温度、光强、压力等）转换为电学量（如电压、电流）的元件。
+
+**敏感元件**：传感器中能直接感受被测非电学量的元件。
+
+**转换元件**：将敏感元件输出的物理量转换为电学量的元件。
+
+**热敏电阻**：电阻随温度变化的电阻器，分为正温度系数（PTC）和负温度系数（NTC）热敏电阻。
+
+**光敏电阻**：电阻随光照强度变化的电阻器，光照越强，电阻越小。
+
+**霍尔元件**：利用霍尔效应将磁信号转换为电信号的元件，用于测量磁场。
+
+**应变片**：电阻随形变（拉伸或压缩）变化的元件，用于测量压力和力。
+
+**传感器的应用**：温度测量、光控开关、声控开关、电子秤、自动门、遥控器等。
+
+### 公式总结
+
+| 公式 | 说明 |
+|------|------|
+| $R = R_0(1 + αΔt)$ | 金属电阻随温度变化（α为温度系数） |
+| $U_H = \\frac{IB}{nqd}$ | 霍尔电压（I为电流，B为磁场，n为载流子浓度） |
+| $R = ρ\\frac{L}{S}$ | 电阻定律（应变片原理） |
+
+### 物理示意图
+
+<svg width="300" height="200" viewBox="0 0 300 200">
+  <text x="150" y="22" font-size="13" text-anchor="middle" fill="var(--color-text-primary)">传感器工作原理</text>
+  <rect x="40" y="45" width="80" height="50" fill="var(--color-primary)" opacity="0.2" stroke="var(--color-primary)" rx="4" />
+  <text x="80" y="75" font-size="12" text-anchor="middle" fill="var(--color-text-primary)">非电学量输入</text>
+  <text x="80" y="55" font-size="10" text-anchor="middle" fill="var(--color-text-secondary)">温度/光/压力</text>
+  <path d="M120 70 L160 70" stroke="var(--color-primary)" stroke-width="2" marker-end="url(#sensorArrow)" />
+  <rect x="165" y="45" width="70" height="50" fill="var(--color-primary)" opacity="0.4" stroke="var(--color-primary)" rx="4" />
+  <text x="200" y="75" font-size="12" text-anchor="middle" fill="var(--color-text-primary)">传感器</text>
+  <path d="M235 70 L275 70" stroke="var(--color-primary)" stroke-width="2" marker-end="url(#sensorArrow)" />
+  <rect x="275" y="45" width="80" height="50" fill="var(--color-primary)" opacity="0.2" stroke="var(--color-primary)" rx="4" />
+  <text x="315" y="75" font-size="12" text-anchor="middle" fill="var(--color-text-primary)">电学量输出</text>
+  <text x="315" y="55" font-size="10" text-anchor="middle" fill="var(--color-text-secondary)">电压/电流</text>
+  <circle cx="100" cy="130" r="20" fill="var(--color-primary)" opacity="0.3" stroke="var(--color-primary)" />
+  <text x="100" y="135" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">热敏电阻</text>
+  <circle cx="200" cy="130" r="20" fill="var(--color-primary)" opacity="0.3" stroke="var(--color-primary)" />
+  <text x="200" y="135" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">光敏电阻</text>
+  <circle cx="300" cy="130" r="20" fill="var(--color-primary)" opacity="0.3" stroke="var(--color-primary)" />
+  <text x="300" y="135" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">霍尔元件</text>
+  <text x="200" y="175" font-size="11" text-anchor="middle" fill="var(--color-text-secondary)">将非电学量转换为电学量</text>
+  <defs>
+    <marker id="sensorArrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="var(--color-primary)" />
+    </marker>
+  </defs>
+</svg>
+
+### 例题解析
+
+**问题**：一个热敏电阻在20°C时的电阻为100Ω，温度系数α = 0.003°C⁻¹，求温度升高到100°C时的电阻。
+
+**解答**：
+
+$$ R = R_0(1 + αΔt) = 100 × (1 + 0.003 × (100-20)) $$
+
+$$ R = 100 × (1 + 0.003 × 80) = 100 × (1 + 0.24) = 124Ω $$
+
+### 举一反三
+
+**练习1**：一个热敏电阻在0°C时电阻为500Ω，温度系数α = -0.004°C⁻¹（负温度系数），求温度升高到50°C时的电阻。
+- 答案：$R = 500 × (1 - 0.004 × 50) = 500 × 0.8 = 400Ω$
+
+**练习2**：光敏电阻的特性是什么？
+- 答案：光照越强，电阻越小；光照越弱，电阻越大。
+
+### 拓展知识
+
+- 传感器是现代信息技术的三大支柱之一（传感器、通信、计算机）。
+- 热敏电阻常用于**温度计**和**温度控制**电路。
+- 光敏电阻常用于**路灯自动控制**和**照相机测光**。
+- 霍尔元件常用于**测量磁场强度**和**无刷电机**中。
+- 传感器技术在物联网、智能家居、工业自动化中广泛应用。`
+  },
+  {
     id: 'physics_037',
     title: '分子动理论',
     stage: 'high',
@@ -3104,6 +3351,96 @@ $$ \\Delta x = \\frac{l}{d}\\lambda = \\frac{1}{0.2×10^{-3}} × 600×10^{-9} = 
 - 托马斯·杨的双缝干涉实验首次证明了光的波动性。
 - 薄膜干涉（如肥皂泡上的彩色条纹）是光在薄膜前后表面反射光叠加形成的。
 - 偏振片常用于摄影中消除反光、液晶显示器等。`
+  },
+  {
+    id: 'physics_042a',
+    title: '光的折射与全反射',
+    stage: 'high',
+    chapter: '光的折射与全反射',
+    tags: ['光的折射', '全反射', '折射率', '临界角', '光导纤维'],
+    content: `## 光的折射与全反射
+
+### 核心概念
+
+**光的折射**：光从一种介质进入另一种介质时，传播方向发生改变的现象。
+
+**折射率**：描述介质对光的折射能力，$n = \\frac{c}{v}$，其中$c$为真空中光速，$v$为光在介质中的速度。
+
+**斯涅尔定律**：光从介质1进入介质2时，$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$，其中$\\theta_1$为入射角，$\\theta_2$为折射角。
+
+**全反射**：当光从光密介质射入光疏介质时，入射角大于等于临界角时，光全部反射回原介质，不再发生折射的现象。
+
+**临界角**：刚好发生全反射时的入射角，$\\sin C = \\frac{n_2}{n_1}$。
+
+**光导纤维**：利用全反射原理传输光信号的纤维状材料，由内芯和外套组成，内芯折射率大于外套。
+
+### 公式总结
+
+| 公式 | 说明 |
+|------|------|
+| $n = \\frac{c}{v}$ | 折射率定义式 |
+| $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$ | 斯涅尔定律 |
+| $\\sin C = \\frac{n_2}{n_1}$ | 全反射临界角（$n_1 > n_2$） |
+| $v = \\frac{c}{n}$ | 光在介质中的速度 |
+
+### 物理示意图
+
+<svg width="300" height="200" viewBox="0 0 300 200">
+  <line x1="150" y1="20" x2="150" y2="180" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="155" y="100" font-size="10" fill="var(--color-text-secondary)">法线</text>
+  <line x1="30" y1="100" x2="270" y2="100" stroke="var(--color-primary)" stroke-width="2" />
+  <text x="275" y="105" font-size="10" fill="var(--color-text-secondary)">界面</text>
+  <rect x="0" y="0" width="300" height="100" fill="var(--color-bg-secondary)" opacity="0.3" />
+  <text x="20" y="20" font-size="12" fill="var(--color-text-secondary)">空气(n=1)</text>
+  <rect x="0" y="100" width="300" height="100" fill="var(--color-primary)" opacity="0.1" />
+  <text x="20" y="120" font-size="12" fill="var(--color-text-secondary)">水(n=1.33)</text>
+  <path d="M80 60 L150 100" stroke="var(--color-primary)" stroke-width="2" marker-end="url(#refArrow)" />
+  <text x="100" y="75" font-size="10" fill="var(--color-text-secondary)">入射光线</text>
+  <path d="M150 100 L220 130" stroke="var(--color-primary)" stroke-width="2" marker-end="url(#refArrow)" />
+  <text x="190" y="115" font-size="10" fill="var(--color-text-secondary)">折射光线</text>
+  <circle cx="150" cy="100" r="5" fill="var(--color-primary)" />
+  <text x="150" y="105" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">O</text>
+  <text x="125" y="75" font-size="10" fill="var(--color-text-secondary)">θ₁</text>
+  <text x="175" y="110" font-size="10" fill="var(--color-text-secondary)">θ₂</text>
+  <path d="M150 100 L180 70" stroke="var(--color-text-secondary)" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#refArrow)" />
+  <text x="170" y="60" font-size="9" fill="var(--color-text-secondary)">反射光线</text>
+  <defs>
+    <marker id="refArrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="var(--color-primary)" />
+    </marker>
+  </defs>
+</svg>
+
+### 例题解析
+
+**问题**：光从空气(n=1)射入水中(n=1.33)，入射角为45°，求折射角。
+
+**解答**：
+
+由斯涅尔定律：
+
+$$ n_1\\sin\\theta_1 = n_2\\sin\\theta_2 $$
+
+$$ 1 × \\sin45° = 1.33 × \\sin\\theta_2 $$
+
+$$ \\sin\\theta_2 = \\frac{\\sin45°}{1.33} = \\frac{\\frac{\\sqrt{2}}{2}}{1.33} ≈ \\frac{0.707}{1.33} ≈ 0.531 $$
+
+$$ \\theta_2 ≈ 32° $$
+
+### 举一反三
+
+**练习1**：光从水(n=1.33)射入空气(n=1)，求全反射的临界角。
+- 答案：$\\sin C = \\frac{n_2}{n_1} = \\frac{1}{1.33} ≈ 0.752$，$C ≈ 48.8°$
+
+**练习2**：光从光密介质射入光疏介质时，折射角和入射角的关系如何？
+- 答案：折射角大于入射角。
+
+### 拓展知识
+
+- 全反射现象的条件：①光从光密介质射入光疏介质；②入射角大于等于临界角。
+- 光导纤维是全反射现象的重要应用，可用于通信、医疗内窥镜等。
+- 海市蜃楼是全反射现象的自然实例，由空气折射率随温度变化造成。
+- 钻石的璀璨光芒正是利用了全反射原理，其临界角很小，光线在内部多次全反射后从切面射出。`
   },
   {
     id: 'physics_043',

@@ -4457,6 +4457,475 @@ $$CH_2OH(CHOH)_4CHO + 2[Ag(NH_3)_2]OH \\xrightarrow{\\Delta} CH_2OH(CHOH)_4COONH
 - 必需氨基酸有8种，人体不能自身合成，必须从食物中获取。
 - 蛋白质的盐析可用于分离提纯蛋白质；重金属盐使蛋白质变性，因此重金属中毒时可喝牛奶或生蛋清解毒。
 - 酶是生物催化剂，本质是蛋白质，具有高效性、专一性和温和性。`
+  },
+  {
+    id: 'chem_052',
+    title: '化学与生活',
+    stage: 'middle',
+    chapter: '化学与生活',
+    tags: ['营养物质', '化学与健康', '化学与材料', '化学与环境'],
+    content: `## 化学与生活
+
+### 核心概念
+
+**人类重要的营养物质**：蛋白质、糖类、油脂、维生素、无机盐和水是人类维持生命活动所需的六大营养素。
+
+**蛋白质**：构成细胞的基本物质，是机体生长及修补受损组织的主要原料。富含蛋白质的食物：肉、蛋、奶、豆类。
+
+**糖类**：主要的供能物质，包括淀粉、葡萄糖、蔗糖等。富含糖类的食物：米饭、馒头、土豆等。
+
+**油脂**：重要的储能物质，提供能量，保护内脏。分为动物油脂（脂肪）和植物油脂（油）。
+
+**维生素**：调节新陈代谢、预防疾病、维持身体健康。缺乏维生素会引起各种疾病（如缺维生素C会患坏血病）。
+
+**化学元素与人体健康**：人体必需元素分为常量元素（如Ca、P、K等）和微量元素（如Fe、Zn、Se等）。
+
+### 化学方程式或公式总结
+
+| 营养素 | 主要作用 | 食物来源 |
+|--------|---------|---------|
+| 蛋白质 | 构成细胞、提供能量 | 肉、蛋、奶、豆制品 |
+| 糖类 | 主要供能物质 | 米饭、面粉、土豆 |
+| 油脂 | 储能、供能、保护内脏 | 植物油、动物脂肪 |
+| 维生素A | 保护视力 | 胡萝卜、动物肝脏 |
+| 维生素C | 预防坏血病 | 新鲜蔬菜、水果 |
+| 钙(Ca) | 骨骼和牙齿的主要成分 | 牛奶、豆制品 |
+| 铁(Fe) | 预防贫血 | 肝脏、瘦肉、菠菜 |
+| 碘(I) | 预防甲状腺肿大 | 海带、加碘盐 |
+
+### 实验示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">六大营养素</text>
+  <rect x="30" y="40" width="70" height="45" rx="5" fill="var(--color-primary)" opacity="0.2" stroke="var(--color-text-primary)" stroke-width="2" />
+  <text x="65" y="58" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">蛋白质</text>
+  <text x="65" y="75" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">构成细胞</text>
+  <rect x="115" y="40" width="70" height="45" rx="5" fill="var(--color-text-secondary)" opacity="0.2" stroke="var(--color-text-primary)" stroke-width="2" />
+  <text x="150" y="58" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">糖类</text>
+  <text x="150" y="75" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">主要供能</text>
+  <rect x="200" y="40" width="70" height="45" rx="5" fill="var(--color-primary)" opacity="0.3" stroke="var(--color-text-primary)" stroke-width="2" />
+  <text x="235" y="58" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">油脂</text>
+  <text x="235" y="75" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">储能物质</text>
+  <rect x="30" y="105" width="70" height="45" rx="5" fill="var(--color-text-secondary)" opacity="0.3" stroke="var(--color-text-primary)" stroke-width="2" />
+  <text x="65" y="123" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">维生素</text>
+  <text x="65" y="140" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">调节代谢</text>
+  <rect x="115" y="105" width="70" height="45" rx="5" fill="var(--color-primary)" opacity="0.4" stroke="var(--color-text-primary)" stroke-width="2" />
+  <text x="150" y="123" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">无机盐</text>
+  <text x="150" y="140" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">维持生理功能</text>
+  <rect x="200" y="105" width="70" height="45" rx="5" fill="var(--color-text-secondary)" opacity="0.4" stroke="var(--color-text-primary)" stroke-width="2" />
+  <text x="235" y="123" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">水</text>
+  <text x="235" y="140" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">生命之源</text>
+</svg>
+
+### 例题解析
+
+**问题**：请分析以下食品中富含哪些营养素：①米饭 ②牛奶 ③花生油 ④苹果
+
+**解答**：
+
+- ①米饭：主要成分是**淀粉**（属于糖类），是人体主要的供能物质。
+- ②牛奶：富含**蛋白质**、**钙**（无机盐）和水，蛋白质是构成细胞的基本物质。
+- ③花生油：属于**油脂**，是重要的储能物质。
+- ④苹果：富含**维生素C**和水，维生素C能预防坏血病。
+
+### 举一反三
+
+**练习1**：下列说法正确的是（ ）
+A. 蛋白质是主要的供能物质
+B. 缺乏维生素A会患坏血病
+C. 碘是人体必需的微量元素
+D. 油脂对人体健康有害
+
+- 答案：C。A糖类是主要供能物质；B缺乏维生素C会患坏血病；D适量油脂对健康有益。
+
+**练习2**：人体缺少铁元素会引起什么疾病？应如何补充？
+
+- 答案：缺铁会引起**贫血**。应多吃富含铁的食物如动物肝脏、瘦肉、菠菜等。
+
+### 拓展知识
+
+- **吸烟有害健康**：香烟烟气中含有CO、尼古丁、焦油等有害物质，会损害呼吸系统和心血管系统。
+- **毒品危害**：鸦片、海洛因、冰毒等毒品对人体危害极大，会破坏神经系统和免疫系统。
+- **食品安全**：注意食品添加剂的使用，不吃霉变食物，合理饮食。
+- **有机食品**：指在生产过程中不使用化学合成的农药、化肥等的食品。`
+  },
+  {
+    id: 'chem_053',
+    title: '原子结构与性质',
+    stage: 'high',
+    chapter: '物质结构与性质',
+    tags: ['电子云', '原子轨道', '电离能', '电负性'],
+    content: `## 原子结构与性质
+
+### 核心概念
+
+**电子云**：描述电子在原子核外空间出现概率分布的图形，电子云中的小黑点表示电子出现的概率。
+
+**原子轨道**：电子云的形状，常见的有s、p、d、f轨道。s轨道为球形，p轨道为哑铃形（3个相互垂直）。
+
+**能级**：电子在原子核外按能量高低分层排布，同一能层又分为不同能级（s、p、d、f）。
+
+**电离能**：气态原子失去电子所需的能量，电离能越大，原子越难失去电子，金属性越弱。
+
+**电负性**：原子在化合物中吸引电子的能力，电负性越大，非金属性越强。
+
+**电子排布式**：用数字和字母表示电子在各能级的排布，如Na：1s²2s²2p⁶3s¹。
+
+### 化学方程式或公式总结
+
+| 符号 | 意义 | 示例 |
+|------|------|------|
+| 1s、2s、3s | s能级（球形） | 每个s能级最多容纳2个电子 |
+| 2p、3p | p能级（哑铃形） | 每个p能级最多容纳6个电子（3个轨道） |
+| 3d | d能级 | 每个d能级最多容纳10个电子（5个轨道） |
+| I₁ | 第一电离能 | 气态基态原子失去1个电子所需能量 |
+| I₂ | 第二电离能 | 气态离子失去第2个电子所需能量 |
+| χ | 电负性 | 原子吸引电子的能力，F最大(4.0) |
+
+**电子排布规律**：
+- 能量最低原理：电子优先占据能量最低的轨道
+- 泡利不相容原理：每个轨道最多容纳2个电子，自旋方向相反
+- 洪特规则：电子在能量相同的轨道上排布时，尽可能分占不同轨道且自旋方向相同
+
+### 实验示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">原子轨道示意图</text>
+  <circle cx="60" cy="90" r="30" fill="var(--color-primary)" opacity="0.3" stroke="var(--color-primary)" stroke-width="2" />
+  <text x="60" y="95" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">s轨道</text>
+  <text x="60" y="115" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">球形</text>
+  <ellipse cx="150" cy="90" rx="40" ry="15" fill="none" stroke="var(--color-text-secondary)" stroke-width="2" />
+  <ellipse cx="150" cy="90" rx="15" ry="40" fill="none" stroke="var(--color-text-secondary)" stroke-width="2" />
+  <text x="150" y="95" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">p轨道</text>
+  <text x="150" y="115" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">哑铃形</text>
+  <circle cx="240" cy="90" r="8" fill="var(--color-primary)" />
+  <text x="240" y="75" font-size="8" fill="var(--color-text-secondary)">d轨道</text>
+  <text x="240" y="115" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">花瓣形(5个)</text>
+  <text x="150" y="165" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">s(1轨道) p(3轨道) d(5轨道)</text>
+</svg>
+
+### 例题解析
+
+**问题**：写出下列元素的电子排布式：(1)Na(原子序数11) (2)Cl(原子序数17) (3)Fe(原子序数26)
+
+**解答**：
+
+(1) Na（11个电子）：1s²2s²2p⁶3s¹
+
+(2) Cl（17个电子）：1s²2s²2p⁶3s²3p⁵
+
+(3) Fe（26个电子）：1s²2s²2p⁶3s²3p⁶3d⁶4s²
+
+注意：3d轨道能量高于4s轨道，电子先排4s再排3d。Fe的3d轨道有6个电子，符合洪特规则（半满或全满稳定）。
+
+### 举一反三
+
+**练习1**：比较Na、Mg、Al的第一电离能大小顺序。
+
+- 答案：Mg > Al > Na。Mg的3s轨道全满（3s²），能量较低，第一电离能最大；Al失去的是3p电子，能量较高；Na失去的是3s电子，但Na的原子半径大，电离能最小。
+
+**练习2**：下列元素中电负性最大的是（ ）
+A. O B. F C. N D. Cl
+
+- 答案：B。F的电负性为4.0，是所有元素中最大的。同周期从左到右电负性增大，同主族从上到下电负性减小。
+
+### 拓展知识
+
+- 电子云图中小黑点的疏密表示电子出现概率的大小，并非电子的实际位置。
+- 第一电离能的周期性变化：同周期从左到右增大（ⅡA和ⅤA反常），同主族从上到下减小。
+- 电负性的周期性变化：同周期从左到右增大，同主族从上到下减小。
+- 对角线规则：某些元素性质相似，如Li与Mg、Be与Al、B与Si。
+- 原子的电子排布式可以简化表示，如Na：[Ne]3s¹（[Ne]表示氖的电子排布）。`
+  },
+  {
+    id: 'chem_054',
+    title: '化学键与分子结构',
+    stage: 'high',
+    chapter: '物质结构与性质',
+    tags: ['共价键类型', '杂化轨道', '分子构型', '氢键'],
+    content: `## 化学键与分子结构
+
+### 核心概念
+
+**σ键**：原子轨道沿键轴方向以"头碰头"方式重叠形成的共价键，键能较大，稳定性高。
+
+**π键**：原子轨道以"肩并肩"方式重叠形成的共价键，键能较小，易断裂，活泼性较高。
+
+**杂化轨道**：原子在形成分子时，若干不同类型的原子轨道混合重新组合成能量相同的新轨道。
+
+**sp杂化**：1个s轨道和1个p轨道杂化，形成2个sp杂化轨道，夹角180°，直线形。
+
+**sp²杂化**：1个s轨道和2个p轨道杂化，形成3个sp²杂化轨道，夹角120°，平面三角形。
+
+**sp³杂化**：1个s轨道和3个p轨道杂化，形成4个sp³杂化轨道，夹角109°28'，正四面体形。
+
+**氢键**：特殊的分子间作用力，比范德华力强，比化学键弱，存在于含N-H、O-H、F-H键的分子之间。
+
+### 化学方程式或公式总结
+
+| 杂化类型 | 轨道数 | 空间构型 | 实例 |
+|---------|-------|---------|------|
+| sp | 2 | 直线形 | BeCl₂、CO₂、C₂H₂ |
+| sp² | 3 | 平面三角形 | BF₃、BCl₃、C₂H₄ |
+| sp³ | 4 | 四面体形 | CH₄、NH₃、H₂O |
+| sp³不等性 | 4 | 三角锥形/角形 | NH₃(三角锥)、H₂O(V形) |
+
+| 分子 | 中心原子杂化 | 分子构型 | 键角 |
+|------|------------|---------|------|
+| CH₄ | sp³ | 正四面体 | 109°28' |
+| NH₃ | sp³不等性 | 三角锥形 | 107° |
+| H₂O | sp³不等性 | V形 | 105° |
+| CO₂ | sp | 直线形 | 180° |
+
+### 实验示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">σ键与π键示意图</text>
+  <rect x="20" y="40" width="120" height="110" fill="none" stroke="var(--color-border)" stroke-width="1" />
+  <text x="80" y="35" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">σ键(头碰头)</text>
+  <circle cx="45" cy="90" r="12" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <circle cx="115" cy="90" r="12" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <line x1="57" y1="90" x2="103" y2="90" stroke="var(--color-primary)" stroke-width="2" />
+  <circle cx="80" cy="90" r="6" fill="var(--color-primary)" opacity="0.5" />
+  <text x="80" y="115" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">重叠程度大</text>
+  <text x="80" y="130" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">键能大,稳定</text>
+  <rect x="160" y="40" width="120" height="110" fill="none" stroke="var(--color-border)" stroke-width="1" />
+  <text x="220" y="35" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">π键(肩并肩)</text>
+  <ellipse cx="185" cy="90" rx="8" ry="15" fill="none" stroke="var(--color-text-secondary)" stroke-width="2" />
+  <ellipse cx="255" cy="90" rx="8" ry="15" fill="none" stroke="var(--color-text-secondary)" stroke-width="2" />
+  <ellipse cx="220" cy="90" rx="12" ry="8" fill="var(--color-text-secondary)" opacity="0.3" />
+  <text x="220" y="115" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">重叠程度小</text>
+  <text x="220" y="130" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">键能小,活泼</text>
+</svg>
+
+### 例题解析
+
+**问题**：分析乙烯(C₂H₄)分子中碳原子的杂化方式和化学键类型。
+
+**解答**：
+
+乙烯分子中每个碳原子形成3个σ键（2个C-H键和1个C-C键），没有孤对电子，所以碳原子采取**sp²杂化**。
+
+杂化过程：2s轨道和2pₓ、2pᵧ轨道杂化形成3个sp²杂化轨道，分别与2个H和另一个C形成σ键。剩余的2pz轨道未参与杂化，两个碳原子的2pz轨道以"肩并肩"方式重叠形成**π键**。
+
+所以C=C双键由1个σ键和1个π键组成。π键易断裂，使乙烯容易发生加成反应。
+
+### 举一反三
+
+**练习1**：分析NH₃和H₂O分子的杂化方式和键角差异。
+
+- 答案：NH₃和H₂O的中心原子都是sp³杂化。NH₃有1对孤对电子，H₂O有2对孤对电子。孤对电子对成键电子对的排斥力大于成键电子对之间的排斥力，所以H₂O的键角(105°)小于NH₃的键角(107°)。
+
+**练习2**：比较HF、HCl、HBr、HI的沸点高低。
+
+- 答案：HF > HI > HBr > HCl。HF因分子间存在氢键，沸点最高；其余按相对分子质量增大，范德华力增大，沸点升高。
+
+### 拓展知识
+
+- σ键可以自由旋转，π键不能自由旋转，导致烯烃存在顺反异构。
+- 配位键是一种特殊的共价键，共用电子对由一方提供，如NH₄⁺中N→H配位键。
+- 氢键分为分子间氢键和分子内氢键，分子间氢键使物质沸点升高，分子内氢键使物质沸点降低。
+- 氢键对物质的溶解度有影响：能与水形成氢键的物质易溶于水（如乙醇、氨气）。
+- 价层电子对互斥理论（VSEPR）可预测分子的空间构型，考虑成键电子对和孤对电子对的排斥。`
+  },
+  {
+    id: 'chem_055',
+    title: '晶体结构与性质',
+    stage: 'high',
+    chapter: '物质结构与性质',
+    tags: ['晶体类型', '晶胞', '晶体性质'],
+    content: `## 晶体结构与性质
+
+### 核心概念
+
+**晶体**：具有规则几何外形的固体，内部粒子（原子、分子、离子）在三维空间呈周期性有序排列。
+
+**晶胞**：晶体结构的基本单元，晶体可看作晶胞在空间重复排列形成。
+
+**离子晶体**：由阴、阳离子通过离子键结合形成的晶体，如NaCl、CaF₂。
+
+**原子晶体**：由原子通过共价键结合形成的晶体，如金刚石、SiO₂。
+
+**分子晶体**：由分子通过分子间作用力结合形成的晶体，如冰、干冰。
+
+**金属晶体**：由金属阳离子和自由电子通过金属键结合形成的晶体，如Fe、Cu。
+
+**晶格能**：气态离子形成1mol离子晶体时释放的能量，晶格能越大，离子晶体越稳定。
+
+### 化学方程式或公式总结
+
+| 晶体类型 | 构成粒子 | 粒子间作用力 | 熔沸点 | 硬度 | 导电性 | 实例 |
+|---------|---------|------------|-------|------|--------|------|
+| 离子晶体 | 阴、阳离子 | 离子键 | 高 | 硬而脆 | 固态不导电，熔融导电 | NaCl、KOH |
+| 原子晶体 | 原子 | 共价键 | 很高 | 很硬 | 一般不导电 | 金刚石、SiO₂ |
+| 分子晶体 | 分子 | 分子间作用力 | 低 | 软 | 一般不导电 | H₂O、CO₂ |
+| 金属晶体 | 金属阳离子+自由电子 | 金属键 | 差异大 | 差异大 | 良好 | Fe、Cu、Hg |
+
+### 实验示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">晶体结构示意图</text>
+  <rect x="20" y="40" width="70" height="55" fill="none" stroke="var(--color-border)" stroke-width="1" />
+  <text x="55" y="35" font-size="9" text-anchor="middle" fill="var(--color-text-primary)">离子晶体</text>
+  <circle cx="35" cy="60" r="6" fill="var(--color-primary)" />
+  <circle cx="55" cy="80" r="6" fill="var(--color-text-secondary)" />
+  <circle cx="75" cy="60" r="6" fill="var(--color-primary)" />
+  <circle cx="55" cy="50" r="6" fill="var(--color-text-secondary)" />
+  <text x="55" y="110" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">NaCl</text>
+  <rect x="100" y="40" width="70" height="55" fill="none" stroke="var(--color-border)" stroke-width="1" />
+  <text x="135" y="35" font-size="9" text-anchor="middle" fill="var(--color-text-primary)">原子晶体</text>
+  <circle cx="115" cy="60" r="4" fill="var(--color-text-secondary)" />
+  <circle cx="135" cy="80" r="4" fill="var(--color-text-secondary)" />
+  <circle cx="155" cy="60" r="4" fill="var(--color-text-secondary)" />
+  <line x1="115" y1="60" x2="135" y2="80" stroke="var(--color-text-primary)" stroke-width="1" />
+  <line x1="135" y1="80" x2="155" y2="60" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="135" y="110" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">金刚石</text>
+  <rect x="180" y="40" width="70" height="55" fill="none" stroke="var(--color-border)" stroke-width="1" />
+  <text x="215" y="35" font-size="9" text-anchor="middle" fill="var(--color-text-primary)">分子晶体</text>
+  <circle cx="215" cy="70" r="10" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <circle cx="195" cy="55" r="10" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <circle cx="235" cy="55" r="10" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <text x="215" y="110" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">干冰</text>
+  <rect x="50" y="120" width="200" height="45" fill="var(--color-bg-secondary)" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="150" y="140" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">晶胞：晶体结构的基本重复单元</text>
+  <text x="150" y="158" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">晶胞通过平移在空间无限延伸形成晶体</text>
+</svg>
+
+### 例题解析
+
+**问题**：比较金刚石、氯化钠、干冰三种晶体的熔沸点高低，并说明原因。
+
+**解答**：
+
+熔沸点：**金刚石 > NaCl > 干冰**
+
+- 金刚石是原子晶体，碳原子间通过共价键结合形成空间网状结构，共价键很强，需要很高能量才能破坏，所以熔沸点最高。
+- NaCl是离子晶体，Na⁺和Cl⁻通过离子键结合，离子键较强，但弱于共价键，所以熔沸点较高。
+- 干冰是分子晶体，CO₂分子间通过范德华力结合，范德华力很弱，容易破坏，所以熔沸点最低。
+
+### 举一反三
+
+**练习1**：下列物质中属于原子晶体的是（ ）
+A. CO₂ B. NaCl C. SiO₂ D. Cu
+
+- 答案：C。SiO₂是原子晶体，由Si和O原子通过共价键形成空间网状结构。
+
+**练习2**：金属晶体为什么具有良好的导电性和导热性？
+
+- 答案：金属晶体中存在自由电子，自由电子在外加电场作用下定向移动形成电流，所以导电性好；自由电子还能传递热量，所以导热性好。
+
+### 拓展知识
+
+- 离子晶体的熔点与晶格能有关：离子电荷越高、离子半径越小，晶格能越大，熔点越高。
+- 石墨是混合型晶体，层内是共价键，层间是范德华力，所以石墨硬度小、能导电。
+- 晶胞中粒子数的计算：顶点粒子贡献1/8，棱上粒子贡献1/4，面上粒子贡献1/2，体内粒子贡献1。
+- 晶体的缺陷会影响晶体的性质，如半导体材料中的掺杂。
+- 液晶是介于晶体和液体之间的物质状态，具有各向异性。`
+  },
+  {
+    id: 'chem_056',
+    title: '有机化学基础拓展',
+    stage: 'high',
+    chapter: '有机化学基础',
+    tags: ['卤代烃', '醇酚', '醛酮', '合成材料'],
+    content: `## 有机化学基础拓展
+
+### 核心概念
+
+**卤代烃**：烃分子中的氢原子被卤素原子取代生成的化合物，如CH₃Cl、C₂H₅Br。
+
+**醇**：烃分子中的氢原子被羟基(-OH)取代生成的化合物，如乙醇、丙醇。
+
+**酚**：羟基直接连在苯环上的化合物，如苯酚(C₆H₅OH)。
+
+**醛**：含有醛基(-CHO)的化合物，如甲醛(HCHO)、乙醛(CH₃CHO)。
+
+**酮**：含有羰基(>C=O)的化合物，如丙酮(CH₃COCH₃)。
+
+**合成材料**：人工合成的有机高分子材料，包括塑料、合成纤维、合成橡胶。
+
+**加聚反应**：含有碳碳双键的化合物通过加成聚合生成高分子化合物的反应。
+
+**缩聚反应**：单体间通过缩合反应生成高分子化合物，同时生成小分子（如H₂O）的反应。
+
+### 化学方程式或公式总结
+
+| 反应类型 | 化学方程式 | 备注 |
+|---------|-----------|------|
+| 卤代烃水解 | $C_2H_5Br + NaOH \\xrightarrow{H_2O} C_2H_5OH + NaBr$ | 取代反应 |
+| 卤代烃消去 | $C_2H_5Br + NaOH \\xrightarrow{醇} CH_2=CH_2 + NaBr + H_2O$ | 消去反应 |
+| 乙醇与Na | $2C_2H_5OH + 2Na \\to 2C_2H_5ONa + H_2\\uparrow$ | 置换反应 |
+| 苯酚与NaOH | $C_6H_5OH + NaOH \\to C_6H_5ONa + H_2O$ | 酸性比乙醇强 |
+| 乙醛氧化 | $2CH_3CHO + O_2 \\xrightarrow{催化剂} 2CH_3COOH$ | 催化氧化 |
+| 乙醛银镜反应 | $CH_3CHO + 2[Ag(NH_3)_2]OH \\to CH_3COONH_4 + 2Ag\\downarrow + 3NH_3 + H_2O$ | 检验醛基 |
+| 乙烯加聚 | $nCH_2=CH_2 \\xrightarrow{催化剂} -[-CH_2-CH_2-]_n-$ | 聚乙烯 |
+| 氯乙烯加聚 | $nCH_2=CHCl \\xrightarrow{催化剂} -[-CH_2-CHCl-]_n-$ | 聚氯乙烯(PVC) |
+
+### 实验示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">有机化合物分类与官能团</text>
+  <rect x="20" y="40" width="65" height="40" rx="4" fill="var(--color-primary)" opacity="0.2" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="52" y="55" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">卤代烃</text>
+  <text x="52" y="70" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">-X(F/Cl/Br/I)</text>
+  <rect x="95" y="40" width="65" height="40" rx="4" fill="var(--color-text-secondary)" opacity="0.2" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="127" y="55" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">醇</text>
+  <text x="127" y="70" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">-OH(链烃基)</text>
+  <rect x="170" y="40" width="65" height="40" rx="4" fill="var(--color-primary)" opacity="0.3" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="202" y="55" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">酚</text>
+  <text x="202" y="70" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">-OH(苯环)</text>
+  <rect x="45" y="100" width="65" height="40" rx="4" fill="var(--color-text-secondary)" opacity="0.3" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="77" y="115" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">醛</text>
+  <text x="77" y="130" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">-CHO</text>
+  <rect x="120" y="100" width="65" height="40" rx="4" fill="var(--color-primary)" opacity="0.4" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="152" y="115" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">酮</text>
+  <text x="152" y="130" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">>C=O</text>
+  <rect x="195" y="100" width="65" height="40" rx="4" fill="var(--color-text-secondary)" opacity="0.4" stroke="var(--color-text-primary)" stroke-width="1" />
+  <text x="227" y="115" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">羧酸</text>
+  <text x="227" y="130" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">-COOH</text>
+  <text x="150" y="160" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">官能团决定有机物的化学性质</text>
+</svg>
+
+### 例题解析
+
+**问题**：设计实验鉴别乙醇、苯酚和乙醛三种物质。
+
+**解答**：
+
+鉴别方案：
+
+1. **第一步：加溴水**
+   - 乙醇：无明显现象（混溶）
+   - 苯酚：产生**白色沉淀**（三溴苯酚）
+   - 乙醛：溴水褪色（乙醛被氧化）
+
+2. **第二步：区分乙醇和乙醛**
+   - 加入银氨溶液水浴加热，产生**银镜**的是乙醛，无现象的是乙醇。
+   - 或加入新制Cu(OH)₂悬浊液加热，产生**砖红色沉淀**(Cu₂O)的是乙醛。
+
+相关方程式：
+- 苯酚与溴水：$C_6H_5OH + 3Br_2 \\to C_6H_2Br_3OH\\downarrow + 3HBr$
+- 乙醛银镜反应：$CH_3CHO + 2[Ag(NH_3)_2]OH \\to CH_3COONH_4 + 2Ag\\downarrow + 3NH_3 + H_2O$
+
+### 举一反三
+
+**练习1**：写出由乙烯制取聚乙烯的化学方程式，并说明聚乙烯塑料的性质。
+
+- 答案：$nCH_2=CH_2 \\xrightarrow{催化剂} -[-CH_2-CH_2-]_n-$。聚乙烯是热塑性塑料，无毒，可用于食品包装。
+
+**练习2**：下列物质中，不能发生银镜反应的是（ ）
+A. 甲醛 B. 乙醛 C. 丙酮 D. 葡萄糖
+
+- 答案：C。丙酮是酮，不含醛基，不能发生银镜反应。
+
+### 拓展知识
+
+- 卤代烃的水解反应是制备醇的重要方法，消去反应是制备烯烃的方法。
+- 苯酚的酸性比乙醇强，但比碳酸弱，所以苯酚能与NaOH反应但不能与NaHCO₃反应。
+- 甲醛是重要的化工原料，用于制造酚醛树脂、脲醛树脂等。
+- 合成纤维包括涤纶（聚酯纤维）、锦纶（聚酰胺纤维）、腈纶（聚丙烯腈）等。
+- 白色污染指废弃塑料造成的环境污染，解决方法包括回收利用、降解塑料等。
+- 绿色化学倡导原子经济性，即反应物中的原子尽可能全部转化为产物。`
   }
 ];
 
@@ -4710,5 +5179,181 @@ export const practiceQuestions = [
     options: ['乙醚', '乙酸乙酯', '乙醛', '乙烯'],
     answer: 1,
     explanation: '酯化反应：CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O'
+  },
+  {
+    id: 'q029',
+    pointId: 'chem_052',
+    question: '人体必需的六大营养素不包括？',
+    options: ['蛋白质', '糖类', '油脂', '氧气'],
+    answer: 3,
+    explanation: '六大营养素：蛋白质、糖类、油脂、维生素、无机盐、水'
+  },
+  {
+    id: 'q030',
+    pointId: 'chem_052',
+    question: '下列食物中富含蛋白质的是？',
+    options: ['米饭', '牛奶', '花生油', '苹果'],
+    answer: 1,
+    explanation: '牛奶富含蛋白质，米饭含糖类，花生油含油脂，苹果含维生素'
+  },
+  {
+    id: 'q031',
+    pointId: 'chem_053',
+    question: '钠原子的电子排布式是？',
+    options: ['1s²2s²2p⁶', '1s²2s²2p⁶3s¹', '1s²2s²2p⁵', '1s²2s¹'],
+    answer: 1,
+    explanation: '钠原子序数11，电子排布：1s²2s²2p⁶3s¹'
+  },
+  {
+    id: 'q032',
+    pointId: 'chem_053',
+    question: '下列元素中电负性最大的是？',
+    options: ['O', 'F', 'N', 'Cl'],
+    answer: 1,
+    explanation: 'F的电负性为4.0，是所有元素中最大的'
+  },
+  {
+    id: 'q033',
+    pointId: 'chem_054',
+    question: '甲烷分子中碳原子的杂化方式是？',
+    options: ['sp', 'sp²', 'sp³', 'sp³d'],
+    answer: 2,
+    explanation: 'CH4中C形成4个σ键，无孤对电子，sp³杂化'
+  },
+  {
+    id: 'q034',
+    pointId: 'chem_054',
+    question: '下列分子中属于直线形的是？',
+    options: ['H2O', 'NH3', 'CO2', 'CH4'],
+    answer: 2,
+    explanation: 'CO2中C采取sp杂化，分子为直线形'
+  },
+  {
+    id: 'q035',
+    pointId: 'chem_055',
+    question: '下列物质属于原子晶体的是？',
+    options: ['CO2', 'NaCl', 'SiO2', 'Cu'],
+    answer: 2,
+    explanation: 'SiO2是原子晶体，由Si和O通过共价键形成空间网状结构'
+  },
+  {
+    id: 'q036',
+    pointId: 'chem_055',
+    question: '离子晶体的特点是？',
+    options: ['熔沸点低', '硬度小', '固态不导电、熔融导电', '易溶于有机溶剂'],
+    answer: 2,
+    explanation: '离子晶体固态时离子不能自由移动，不导电；熔融时离子可移动，导电'
+  },
+  {
+    id: 'q037',
+    pointId: 'chem_056',
+    question: '下列物质中含有醛基的是？',
+    options: ['乙醇', '乙醛', '乙酸', '丙酮'],
+    answer: 1,
+    explanation: '乙醛(CH3CHO)含有醛基(-CHO)'
+  },
+  {
+    id: 'q038',
+    pointId: 'chem_056',
+    question: '聚乙烯的合成反应类型是？',
+    options: ['加成反应', '加聚反应', '缩聚反应', '取代反应'],
+    answer: 1,
+    explanation: '乙烯通过加聚反应生成聚乙烯：nCH2=CH2 → [-CH2-CH2-]n'
+  },
+  {
+    id: 'q039',
+    pointId: 'chem_035',
+    question: '下列离子中，检验时使用KSCN溶液的是？',
+    options: ['Fe²+', 'Fe³+', 'Cu²+', 'Al³+'],
+    answer: 1,
+    explanation: 'Fe³+与SCN-反应生成血红色的Fe(SCN)3'
+  },
+  {
+    id: 'q040',
+    pointId: 'chem_038',
+    question: '下列关于氨气的性质，错误的是？',
+    options: ['极易溶于水', '水溶液呈碱性', '比空气轻', '不能与酸反应'],
+    answer: 3,
+    explanation: '氨气能与酸反应生成铵盐，如NH3 + HCl = NH4Cl'
+  },
+  {
+    id: 'q041',
+    pointId: 'chem_043',
+    question: '化学平衡状态的特征是？',
+    options: ['反应停止', '正反应速率等于逆反应速率', '反应物浓度为零', '温度升高'],
+    answer: 1,
+    explanation: '化学平衡是动态平衡，v正 = v逆 ≠ 0'
+  },
+  {
+    id: 'q042',
+    pointId: 'chem_045',
+    question: '25°C时，pH=12的溶液中c(OH-)是？',
+    options: ['1×10⁻¹²mol/L', '1×10⁻²mol/L', '1×10⁻⁷mol/L', '1×10⁻¹⁴mol/L'],
+    answer: 1,
+    explanation: 'pH=12，c(H+)=10⁻¹²，c(OH-)=Kw/c(H+)=10⁻¹⁴/10⁻¹²=10⁻²mol/L'
+  },
+  {
+    id: 'q043',
+    pointId: 'chem_046',
+    question: 'Na2CO3溶液呈碱性的原因是？',
+    options: ['Na+水解', 'CO3²-水解', 'NaOH电离', 'Na2CO3本身呈碱性'],
+    answer: 1,
+    explanation: 'CO3²- + H2O ⇌ HCO3- + OH-，水解使溶液呈碱性'
+  },
+  {
+    id: 'q044',
+    pointId: 'chem_049',
+    question: '能使溴水褪色的是？',
+    options: ['甲烷', '乙烯', '苯', '乙烷'],
+    answer: 1,
+    explanation: '乙烯含碳碳双键，能与溴水发生加成反应使其褪色'
+  },
+  {
+    id: 'q045',
+    pointId: 'chem_051',
+    question: '淀粉遇碘会呈现什么颜色？',
+    options: ['红色', '蓝色', '紫色', '黄色'],
+    answer: 1,
+    explanation: '淀粉遇碘变蓝色，是淀粉的特征反应'
+  },
+  {
+    id: 'q046',
+    pointId: 'chem_030',
+    question: '检验Cl-常用的试剂是？',
+    options: ['AgNO3溶液', 'BaCl2溶液', '稀盐酸', '石蕊试液'],
+    answer: 0,
+    explanation: 'Cl-与Ag+反应生成白色AgCl沉淀，加稀硝酸不溶解'
+  },
+  {
+    id: 'q047',
+    pointId: 'chem_037',
+    question: '浓硫酸不能干燥的气体是？',
+    options: ['H2', 'CO2', 'NH3', 'SO2'],
+    answer: 2,
+    explanation: 'NH3是碱性气体，会与浓硫酸反应，不能用浓硫酸干燥'
+  },
+  {
+    id: 'q048',
+    pointId: 'chem_040',
+    question: '同周期元素从左到右，原子半径变化规律是？',
+    options: ['逐渐增大', '逐渐减小', '先增大后减小', '不变'],
+    answer: 1,
+    explanation: '同周期电子层数相同，核电荷数增大，原子半径减小'
+  },
+  {
+    id: 'q049',
+    pointId: 'chem_053',
+    question: '第一电离能最大的元素是？',
+    options: ['Na', 'Mg', 'Al', 'Si'],
+    answer: 1,
+    explanation: 'Mg的3s轨道全满(3s²)，能量较低，第一电离能最大'
+  },
+  {
+    id: 'q050',
+    pointId: 'chem_055',
+    question: '金属晶体具有良好导电性的原因是？',
+    options: ['离子自由移动', '自由电子存在', '分子间作用力', '共价键'],
+    answer: 1,
+    explanation: '金属晶体中存在自由电子，在外加电场作用下定向移动形成电流'
   }
 ];
