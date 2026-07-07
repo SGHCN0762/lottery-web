@@ -1,11 +1,11 @@
 <template>
   <SubjectLearnPage
-    subject-key="biology"
-    :all-data="biologyData"
+    subject-key="math"
+    :all-data="mathData"
   />
 </template>
 
 <script setup>
 import SubjectLearnPage from '@/components/SubjectLearning/SubjectLearnPage.vue';
-import biologyData from '../data/biologyData.js';
+import mathData from '../data/mathData.js';
 </script>

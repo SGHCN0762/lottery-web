@@ -548,6 +548,42 @@ const routes = [
     },
   },
   {
+    path: '/tools/math',
+    name: 'Mathematics',
+    component: () =>
+      import(/* webpackChunkName: "tool-math" */ '@/views/Tools/Mathematics/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.math.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/math/learn',
+    name: 'MathLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-math-learn" */ '@/views/Tools/Mathematics/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.math.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/math/practice',
+    name: 'MathPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-math-practice" */ '@/views/Tools/Mathematics/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.math.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/chemistry',
     name: 'Chemistry',
     component: () =>

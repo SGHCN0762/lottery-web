@@ -4326,6 +4326,319 @@ DNA复制时，首先解开双螺旋，以每条母链为模板，按照碱基�
 - 试管婴儿技术帮助许多不孕不育夫妇实现生育愿望。
 - 胚胎分割可以快速繁殖优良品种。
 - 胚胎干细胞在医学研究中有广阔前景。`
+  },
+  {
+    id: 'bio_046',
+    title: '生物圈中的动物',
+    stage: 'middle',
+    chapter: '生物圈中的动物',
+    tags: ['动物', '无脊椎动物', '脊椎动物', '动物行为', '动物在生物圈中的作用'],
+    content: `## 生物圈中的动物
+
+### 核心概念
+
+**无脊椎动物**：体内没有脊椎骨的动物，包括腔肠动物、扁形动物、线形动物、环节动物、软体动物、节肢动物等。
+
+**脊椎动物**：体内有脊椎骨的动物，包括鱼类、两栖类、爬行类、鸟类、哺乳类。
+
+**动物行为**：动物所进行的一系列有利于它们存活和繁殖后代的活动，包括觅食行为、防御行为、繁殖行为、迁徙行为等。
+
+**动物在生物圈中的作用**：维持生态平衡、促进物质循环、帮助植物传粉和传播种子。
+
+### 知识总结表
+
+| 动物类群 | 主要特征 | 代表动物 |
+|---------|---------|---------|
+| 腔肠动物 | 身体辐射对称，有口无肛门 | 水螅、水母 |
+| 扁形动物 | 身体扁平，有口无肛门 | 涡虫、血吸虫 |
+| 线形动物 | 身体细长，体表有角质层 | 蛔虫、线虫 |
+| 环节动物 | 身体由许多体节构成 | 蚯蚓、沙蚕 |
+| 软体动物 | 身体柔软，有外套膜 | 蜗牛、河蚌 |
+| 节肢动物 | 身体分节，体表有外骨骼 | 蝗虫、蜘蛛 |
+| 鱼类 | 生活在水中，用鳃呼吸 | 鲫鱼、鲨鱼 |
+| 两栖类 | 幼体水生，成体陆生 | 青蛙、蟾蜍 |
+| 爬行类 | 体表有鳞片或甲 | 蜥蜴、蛇 |
+| 鸟类 | 体表被羽，前肢特化为翼 | 鸽子、鹰 |
+| 哺乳类 | 体表被毛，胎生哺乳 | 猫、狗 |
+
+### 生物示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="14" text-anchor="middle" fill="var(--color-text-primary)" font-weight="bold">动物类群</text>
+  
+  <rect x="30" y="40" width="120" height="70" rx="4" fill="var(--color-primary)" opacity="0.05" stroke="var(--color-primary)" />
+  <text x="90" y="58" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">无脊椎动物</text>
+  <text x="90" y="78" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">腔肠、扁形、线形</text>
+  <text x="90" y="95" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">环节、软体、节肢</text>
+  
+  <rect x="150" y="40" width="120" height="70" rx="4" fill="var(--color-success)" opacity="0.05" stroke="var(--color-success)" />
+  <text x="210" y="58" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">脊椎动物</text>
+  <text x="210" y="78" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">鱼类、两栖类、爬行类</text>
+  <text x="210" y="95" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">鸟类、哺乳类</text>
+  
+  <text x="150" y="140" font-size="11" text-anchor="middle" fill="var(--color-text-secondary)">动物在生物圈中维持生态平衡</text>
+</svg>
+
+### 例题解析
+
+**问题**：蚯蚓属于哪类动物？它对人类有什么益处？
+
+**解答**：
+
+蚯蚓属于环节动物。
+
+蚯蚓对人类的益处：
+1. 蚯蚓在土壤中活动，使土壤疏松，有利于植物生长；
+2. 蚯蚓的粪便富含氮、磷、钾等养分，能提高土壤肥力；
+3. 蚯蚓可以处理有机废物，改善环境。
+
+### 举一反三
+
+**练习1**：蝗虫属于哪类动物？它的身体分为几部分？
+- 答案：蝗虫属于节肢动物，身体分为头、胸、腹三部分。
+
+**练习2**：家鸽适应飞行的特征有哪些？
+- 答案：身体呈流线型、前肢特化为翼、骨骼轻而坚固、有气囊辅助呼吸。
+
+### 拓展知识
+
+- 昆虫是种类最多的动物类群，超过100万种。
+- 大熊猫、金丝猴等是我国特有的珍稀哺乳动物。
+- 动物的行为分为先天性行为和学习行为。`
+  },
+  {
+    id: 'bio_047',
+    title: '微生物',
+    stage: 'middle',
+    chapter: '微生物',
+    tags: ['微生物', '细菌', '真菌', '病毒', '微生物与人类的关系'],
+    content: `## 微生物
+
+### 核心概念
+
+**微生物**：个体微小、结构简单的生物，包括细菌、真菌、病毒等。
+
+**细菌**：单细胞生物，没有成形的细胞核，属于原核生物。
+
+**真菌**：有成形的细胞核，属于真核生物，包括酵母菌、霉菌、蘑菇等。
+
+**病毒**：没有细胞结构，由蛋白质外壳和内部的遗传物质组成，必须寄生在活细胞内才能生活。
+
+**微生物与人类的关系**：有些微生物对人类有益，如酵母菌用于酿酒、乳酸菌用于制作酸奶；有些微生物对人类有害，如结核杆菌引起结核病。
+
+### 知识总结表
+
+| 微生物类型 | 结构特点 | 营养方式 | 代表生物 |
+|-----------|---------|---------|---------|
+| 细菌 | 单细胞，无成形细胞核 | 异养或自养 | 大肠杆菌、乳酸菌 |
+| 真菌 | 有成形细胞核 | 异养 | 酵母菌、霉菌、蘑菇 |
+| 病毒 | 无细胞结构 | 寄生 | 流感病毒、艾滋病病毒 |
+
+### 生物示意图
+
+<svg width="300" height="150" viewBox="0 0 300 150">
+  <rect x="30" y="40" width="80" height="60" rx="4" fill="var(--color-primary)" opacity="0.05" stroke="var(--color-primary)" />
+  <text x="70" y="58" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">细菌</text>
+  <circle cx="70" cy="75" r="15" fill="none" stroke="var(--color-primary)" />
+  <text x="70" y="78" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">原核</text>
+  
+  <rect x="110" y="40" width="80" height="60" rx="4" fill="var(--color-success)" opacity="0.05" stroke="var(--color-success)" />
+  <text x="150" y="58" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">真菌</text>
+  <circle cx="150" cy="75" r="15" fill="none" stroke="var(--color-success)" />
+  <circle cx="150" cy="75" r="8" fill="none" stroke="var(--color-success)" />
+  <text x="150" y="78" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">真核</text>
+  
+  <rect x="190" y="40" width="80" height="60" rx="4" fill="var(--color-warning)" opacity="0.05" stroke="var(--color-warning)" />
+  <text x="230" y="58" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">病毒</text>
+  <rect x="215" y="65" width="30" height="20" fill="none" stroke="var(--color-warning)" />
+  <text x="230" y="78" font-size="8" text-anchor="middle" fill="var(--color-text-secondary)">无细胞</text>
+</svg>
+
+### 例题解析
+
+**问题**：酵母菌和乳酸菌在结构上有什么主要区别？
+
+**解答**：
+
+酵母菌属于真菌，有成形的细胞核，属于真核生物；乳酸菌属于细菌，没有成形的细胞核，属于原核生物。
+
+主要区别：酵母菌有成形的细胞核，乳酸菌没有成形的细胞核。
+
+### 举一反三
+
+**练习1**：病毒为什么不能独立生活？
+- 答案：病毒没有细胞结构，不能独立进行生命活动，必须寄生在活细胞内。
+
+**练习2**：制作酸奶利用的是哪种微生物？它的作用是什么？
+- 答案：乳酸菌。乳酸菌在无氧条件下将牛奶中的葡萄糖转化为乳酸，使牛奶变酸凝固。
+
+### 拓展知识
+
+- 细菌的繁殖方式是分裂生殖，速度非常快。
+- 青霉素是从青霉菌中提取的抗生素。
+- 病毒的遗传物质可以是DNA或RNA。`
+  },
+  {
+    id: 'bio_048',
+    title: '内环境稳态',
+    stage: 'high',
+    chapter: '必修三：稳态与环境',
+    tags: ['内环境', '稳态', '血浆', '组织液', '淋巴', '稳态调节'],
+    content: `## 内环境稳态
+
+### 核心概念
+
+**内环境**：由细胞外液构成的液体环境，包括血浆、组织液和淋巴。
+
+**血浆**：血细胞直接生活的环境，是血液的液体部分。
+
+**组织液**：存在于组织细胞间隙的液体，是大多数细胞直接生活的环境。
+
+**淋巴**：淋巴管内流动的液体，是淋巴细胞和吞噬细胞直接生活的环境。
+
+**稳态**：正常机体通过调节作用，使各个器官、系统协调活动，共同维持内环境的相对稳定状态。
+
+**稳态调节**：神经-体液-免疫调节网络是机体维持稳态的主要调节机制。
+
+### 知识总结表
+
+| 成分 | 存在部位 | 主要功能 |
+|------|---------|---------|
+| 血浆 | 血管内 | 运输营养物质和代谢废物 |
+| 组织液 | 组织细胞间隙 | 为细胞提供营养和氧气 |
+| 淋巴 | 淋巴管内 | 运输淋巴细胞和抗体 |
+
+### 生物示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="14" text-anchor="middle" fill="var(--color-text-primary)" font-weight="bold">内环境组成</text>
+  
+  <rect x="50" y="40" width="200" height="50" rx="8" fill="var(--color-primary)" opacity="0.1" stroke="var(--color-primary)" />
+  <text x="150" y="68" font-size="12" text-anchor="middle" fill="var(--color-text-primary)">血浆（血管内）</text>
+  
+  <rect x="30" y="100" width="240" height="50" rx="8" fill="var(--color-success)" opacity="0.1" stroke="var(--color-success)" />
+  <text x="150" y="128" font-size="12" text-anchor="middle" fill="var(--color-text-primary)">组织液（组织间隙）</text>
+  
+  <path d="M50 90 L150 90 L150 100" stroke="var(--color-border)" stroke-width="1" />
+  <path d="M250 90 L150 90" stroke="var(--color-border)" stroke-width="1" />
+  
+  <text x="80" y="95" font-size="9" fill="var(--color-text-secondary)">毛细血管壁</text>
+  <text x="200" y="95" font-size="9" fill="var(--color-text-secondary)">毛细淋巴管壁</text>
+  
+  <circle cx="200" cy="125" r="6" fill="var(--color-warning)" />
+  <text x="215" y="128" font-size="10" fill="var(--color-text-secondary)">组织细胞</text>
+</svg>
+
+### 例题解析
+
+**问题**：什么是内环境稳态？稳态的意义是什么？
+
+**解答**：
+
+内环境稳态是指正常机体通过调节作用，使各个器官、系统协调活动，共同维持内环境的相对稳定状态。
+
+稳态的意义：
+1. 内环境稳态是机体进行正常生命活动的必要条件；
+2. 细胞代谢需要各种物质和条件，只有保持内环境稳态，细胞才能正常代谢；
+3. 稳态失调会导致疾病。
+
+### 举一反三
+
+**练习1**：内环境的三种成分之间有什么关系？
+- 答案：血浆和组织液可以相互渗透，组织液可以渗入毛细淋巴管形成淋巴，淋巴最终回流到血浆。
+
+**练习2**：维持内环境稳态的调节机制是什么？
+- 答案：神经-体液-免疫调节网络。
+
+### 拓展知识
+
+- 内环境的理化性质包括温度、pH值、渗透压等。
+- 人体的体温一般维持在37°C左右，血浆pH维持在7.35-7.45之间。
+- 稳态是一种动态平衡，不是绝对不变的。`
+  },
+  {
+    id: 'bio_049',
+    title: '生物科学与社会',
+    stage: 'high',
+    chapter: '选修二：生物科学与社会',
+    tags: ['生物科学', '社会', '人口问题', '环境问题', '生物多样性保护', '农业生物技术'],
+    content: `## 生物科学与社会
+
+### 核心概念
+
+**人口问题**：人口增长过快带来的资源短缺、环境污染等问题。
+
+**环境问题**：人类活动对环境造成的破坏，包括水污染、大气污染、土壤污染等。
+
+**生物多样性保护**：保护生物多样性，维护生态平衡。
+
+**农业生物技术**：利用生物技术改良农作物和家畜，提高农业生产效率。
+
+**生物伦理**：生物技术应用中涉及的伦理问题，如基因检测、克隆技术等。
+
+### 知识总结表
+
+| 领域 | 主要问题 | 解决措施 |
+|------|---------|---------|
+| 人口 | 人口增长过快 | 计划生育、提高人口素质 |
+| 环境 | 污染、破坏 | 环境保护、可持续发展 |
+| 生物多样性 | 物种灭绝 | 建立自然保护区、迁地保护 |
+| 农业 | 粮食短缺 | 转基因技术、杂交育种 |
+| 伦理 | 生物技术伦理 | 制定法规、伦理审查 |
+
+### 生物示意图
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+  <text x="150" y="20" font-size="14" text-anchor="middle" fill="var(--color-text-primary)" font-weight="bold">生物科学与社会</text>
+  
+  <rect x="30" y="40" width="120" height="50" rx="4" fill="var(--color-primary)" opacity="0.05" stroke="var(--color-primary)" />
+  <text x="90" y="58" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">人口与环境</text>
+  <text x="90" y="78" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">资源、污染、可持续发展</text>
+  
+  <rect x="150" y="40" width="120" height="50" rx="4" fill="var(--color-success)" opacity="0.05" stroke="var(--color-success)" />
+  <text x="210" y="58" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">生物多样性</text>
+  <text x="210" y="78" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">保护、生态、物种</text>
+  
+  <rect x="30" y="100" width="120" height="50" rx="4" fill="var(--color-warning)" opacity="0.05" stroke="var(--color-warning)" />
+  <text x="90" y="118" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">农业生物技术</text>
+  <text x="90" y="138" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">转基因、杂交、育种</text>
+  
+  <rect x="150" y="100" width="120" height="50" rx="4" fill="var(--color-danger)" opacity="0.05" stroke="var(--color-danger)" />
+  <text x="210" y="118" font-size="11" text-anchor="middle" fill="var(--color-text-primary)">生物伦理</text>
+  <text x="210" y="138" font-size="9" text-anchor="middle" fill="var(--color-text-secondary)">基因、克隆、伦理审查</text>
+</svg>
+
+### 例题解析
+
+**问题**：生物多样性面临威胁的主要原因是什么？如何保护生物多样性？
+
+**解答**：
+
+生物多样性面临威胁的主要原因：
+1. 栖息地破坏和丧失；
+2. 掠夺式的开发利用；
+3. 环境污染；
+4. 外来物种入侵。
+
+保护措施：
+1. 建立自然保护区；
+2. 迁地保护；
+3. 加强教育和宣传；
+4. 制定法律法规。
+
+### 举一反三
+
+**练习1**：转基因技术有什么优点和潜在风险？
+- 答案：优点：提高产量、抗病虫害、改善品质。潜在风险：生态风险、食品安全、伦理问题。
+
+**练习2**：什么是可持续发展？它的核心思想是什么？
+- 答案：可持续发展是指既满足当代人的需求，又不损害后代人满足其需求的能力的发展。核心思想是经济发展与环境保护相协调。
+
+### 拓展知识
+
+- 我国是生物多样性最丰富的国家之一，有许多珍稀动植物。
+- 转基因食品的安全性是一个备受关注的话题。
+- 生物科学技术的发展带来了许多伦理问题，需要社会各界共同探讨。`
   }
 ];
 
@@ -4457,3 +4770,5 @@ export const practiceQuestions = [
     explanation: '淀粉在口腔中被唾液淀粉酶初步消化。'
   },
 ];
+
+export default biologyKnowledgePoints;

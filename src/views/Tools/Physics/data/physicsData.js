@@ -3983,6 +3983,72 @@ $$ h = \\frac{v_0^2}{2g} = \\frac{36}{20} = 1.8m $$
 - 在光滑水平面上，弹簧连接的两个物体总动量守恒、机械能也守恒，弹簧弹性势能与动能相互转化。
 - "传送带模型"和"板块模型"是动量与能量综合的典型问题，关键是分析相对位移和摩擦生热。
 - 子弹打木块问题中，系统动量守恒但机械能不守恒，损失的机械能转化为内能。`
+  },
+  {
+    id: 'physics_049',
+    title: '电磁振荡',
+    stage: 'high',
+    chapter: '选修一·电磁振荡',
+    tags: ['电磁振荡', 'LC振荡电路', '振荡周期', '振荡频率', '电场能', '磁场能'],
+    content: `## 电磁振荡
+
+### 核心概念
+
+**电磁振荡**：在LC电路中，电场能和磁场能周期性相互转化的现象。
+
+**LC振荡电路**：由电感L和电容C组成的电路。
+
+**振荡周期**：完成一次全振荡所需的时间。
+
+**振荡频率**：单位时间内完成的全振荡次数。
+
+**电场能**：储存在电容器电场中的能量。
+
+**磁场能**：储存在电感器磁场中的能量。
+
+### 公式总结
+
+| 公式 | 说明 |
+|------|------|
+| $T = 2\\pi\\sqrt{LC}$ | LC振荡电路周期 |
+| $f = \\frac{1}{2\\pi\\sqrt{LC}}$ | LC振荡电路频率 |
+| $W_e = \\frac{1}{2}CU^2$ | 电场能 |
+| $W_m = \\frac{1}{2}LI^2$ | 磁场能 |
+
+### 物理示意图
+
+<svg width="300" height="150" viewBox="0 0 300 150">
+  <rect x="50" y="50" width="40" height="60" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <line x1="90" y1="80" x2="130" y2="80" stroke="var(--color-primary)" stroke-width="2" />
+  <circle cx="150" cy="80" r="20" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <line x1="170" y1="80" x2="210" y2="80" stroke="var(--color-primary)" stroke-width="2" />
+  <rect x="210" y="50" width="40" height="60" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <text x="150" y="140" font-size="12" text-anchor="middle" fill="var(--color-text-secondary)">LC振荡电路</text>
+</svg>
+
+### 例题解析
+
+**问题**：LC振荡电路中，电感L = 1mH，电容C = 1μF，求振荡周期和频率。
+
+**解答**：
+
+$$ T = 2\\pi\\sqrt{LC} = 2\\pi\\sqrt{1 \\times 10^{-3} \\times 1 \\times 10^{-6}} = 2\\pi\\sqrt{10^{-9}} = 2\\pi \\times 10^{-4.5} \\approx 6.28 \\times 3.16 \\times 10^{-5} \\approx 2 \\times 10^{-4}s $$
+
+$$ f = \\frac{1}{T} \\approx 5000Hz = 5kHz $$
+
+### 举一反三
+
+**练习1**：LC振荡电路中，电容增大为原来的4倍，振荡频率如何变化？
+- 答案：频率变为原来的1/2。
+
+**练习2**：LC振荡电路中，电场能最大时，电流是多大？
+- 答案：电场能最大时，电流为零。
+
+### 拓展知识
+
+- LC振荡电路是电磁波发射的基础。
+- 振荡过程中，电场能和磁场能相互转化，总能量守恒。
+- 实际振荡电路中存在电阻，会产生阻尼振荡。`
   }
 ];
 
@@ -4223,3 +4289,5 @@ export const practiceQuestions = [
     explanation: '核能来自于质量亏损，由爱因斯坦质能方程E = mc²描述'
   }
 ];
+
+export default physicsKnowledgePoints;

@@ -27,9 +27,16 @@ const escapeHtml = (str) => {
   return div.innerHTML;
 };
 
+const unescapeHtml = (str) => {
+  const div = document.createElement('div');
+  div.innerHTML = str;
+  return div.textContent;
+};
+
 const renderKatex = (latex, displayMode = false) => {
   try {
-    return katex.renderToString(latex, {
+    const decodedLatex = unescapeHtml(latex);
+    return katex.renderToString(decodedLatex, {
       displayMode,
       throwOnError: false,
       errorColor: '#cc0000'

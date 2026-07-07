@@ -1,37 +1,42 @@
 <template>
-  <van-popup :show="show" position="bottom" :style="{ height: '90%' }" round @update:show="$emit('update:show', $event)">
-    <div class="popup-content" v-if="item">
-      <div class="popup-header">
+  <van-popup
+    :show="show"
+    position="bottom"
+    class="item-detail-popup"
+    @update:show="$emit('update:show', $event)"
+  >
+    <div v-if="item" class="detail-content">
+      <div class="detail-header">
         <div class="header-left">
           <span class="stage-tag" :class="item.stage">
-            <span class="stage-icon">{{ stageIcon }}</span>
-            <span class="stage-text">{{ stageText }}</span>
+            {{ item.stage === 'middle' ? '初中' : '高中' }}
           </span>
           <span class="chapter-badge">{{ item.chapter }}</span>
         </div>
-        <div class="header-right">
+        <div class="header-actions">
           <van-icon
             :name="isFavorite ? 'star' : 'star-o'"
-            :color="isFavorite ? '#ffb400' : 'inherit'"
-            class="favorite-icon"
+            :color="isFavorite ? '#ffc800' : '#999'"
+            size="20"
             @click.stop="$emit('toggle-favorite')"
+            class="favorite-icon"
           />
-          <van-icon name="cross" class="close-icon" @click="$emit('update:show', false)" />
+          <van-icon name="cross" size="20" @click.stop="$emit('update:show', false)" />
         </div>
       </div>
 
-      <div class="popup-body">
+      <div class="detail-body">
         <MarkdownRenderer :content="item.content" />
       </div>
 
-      <div class="popup-footer">
+      <div class="detail-footer">
         <van-button
           :type="isMastered ? 'default' : 'primary'"
           @click="$emit('toggle-master')"
           class="master-btn"
         >
           <van-icon :name="isMastered ? 'check-circle' : 'circle'" />
-          {{ isMastered ? t('tools.physics.actions.unmarkMaster') : t('tools.physics.actions.markMaster') }}
+          {{ isMastered ? '取消掌握' : '标记掌握' }}
         </van-button>
       </div>
     </div>
@@ -39,12 +44,10 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { useI18n } from 'vue-i18n';
 import { Popup as VanPopup, Icon as VanIcon, Button as VanButton } from 'vant';
 import MarkdownRenderer from '@/components/MarkdownRenderer/MarkdownRenderer.vue';
 
-const props = defineProps({
+defineProps({
   show: {
     type: Boolean,
     default: false
@@ -64,56 +67,29 @@ const props = defineProps({
 });
 
 defineEmits(['update:show', 'toggle-master', 'toggle-favorite']);
-
-const { t } = useI18n();
-
-const stageIcon = computed(() => {
-  if (!props.item) return '';
-  const icons = {
-    middle: '🏫',
-    high: '🎓'
-  };
-  return icons[props.item.stage] || '📚';
-});
-
-const stageText = computed(() => {
-  if (!props.item) return '';
-  const texts = {
-    middle: t('tools.physics.stages.middle'),
-    high: t('tools.physics.stages.high')
-  };
-  return texts[props.item.stage] || '';
-});
 </script>
 
 <style lang="less" scoped>
-.popup-content {
-  width: 100%;
-  max-height: 90vh;
-  background: var(--color-bg-primary);
-  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+.item-detail-popup {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--color-border);
-  animation: slideUp 0.3s ease;
 }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
+.detail-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 }
 
-.popup-header {
+.detail-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
-  background: var(--color-bg-secondary);
   flex-shrink: 0;
 }
 
@@ -124,75 +100,57 @@ const stageText = computed(() => {
 }
 
 .stage-tag {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
+  padding: 2px 8px;
   border-radius: var(--radius-full);
   font-size: var(--font-size-xs);
 
   &.middle {
     background: rgba(var(--color-primary-rgb), 0.1);
     color: var(--color-primary);
-    border: 1px solid rgba(var(--color-primary-rgb), 0.15);
   }
 
   &.high {
     background: rgba(var(--color-warning-rgb), 0.1);
     color: var(--color-warning);
-    border: 1px solid rgba(var(--color-warning-rgb), 0.15);
   }
 }
 
-.stage-icon {
-  font-size: var(--font-size-xs);
-}
-
-.stage-text {
-  font-weight: var(--font-weight-medium);
-}
-
 .chapter-badge {
-  padding: 4px 8px;
+  padding: 2px 8px;
   background: var(--color-bg-tertiary);
   border-radius: var(--radius-full);
   font-size: var(--font-size-xs);
   color: var(--color-text-tertiary);
 }
 
-.header-right {
+.header-actions {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
 }
 
 .favorite-icon {
-  font-size: var(--font-size-lg);
   cursor: pointer;
 }
 
-.close-icon {
+.detail-title {
   font-size: var(--font-size-lg);
-  cursor: pointer;
-}
-
-.popup-body {
-  flex: 1;
-  overflow-y: auto;
-  padding: 0 var(--spacing-lg);
-}
-
-.item-title {
-  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
-  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  margin: 0;
+  flex-shrink: 0;
 }
 
-.popup-footer {
+.detail-body {
+  flex: 1;
+  padding: 0 var(--spacing-md);
+  overflow-y: auto;
+}
+
+.detail-footer {
   padding: var(--spacing-md);
   border-top: 1px solid var(--color-border);
-  background: var(--color-bg-secondary);
   padding-bottom: calc(var(--spacing-md) + env(safe-area-inset-bottom, 0px));
   flex-shrink: 0;
 

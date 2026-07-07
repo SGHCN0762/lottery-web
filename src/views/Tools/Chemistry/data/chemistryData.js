@@ -1,4 +1,4 @@
-export const chemistryKnowledgePoints = [
+﻿export const chemistryKnowledgePoints = [
   {
     id: 'chem_001',
     title: '物质的变化和性质',
@@ -2498,6 +2498,78 @@ $2NH_4Cl + Ca(OH)_2 = CaCl_2 + 2NH_3↑ + 2H_2O$
   },
   {
     id: 'chem_031',
+    title: '物质的量',
+    stage: 'high',
+    chapter: '物质的量',
+    tags: ['物质的量', '摩尔', '阿伏伽德罗常数', '摩尔质量', '气体摩尔体积', '物质的量浓度'],
+    content: `## 物质的量
+
+### 核心概念
+
+**物质的量**：表示含有一定数目粒子的集合体，符号为n，单位为摩尔(mol)。
+
+**摩尔**：物质的量的单位，1mol任何粒子的粒子数等于阿伏伽德罗常数。
+
+**阿伏伽德罗常数**：1mol任何粒子所含的粒子数，符号为$N_A$，数值约为$6.02 \\times 10^{23}mol^{-1}$。
+
+**摩尔质量**：单位物质的量的物质所具有的质量，符号为M，单位为g/mol。
+
+**气体摩尔体积**：单位物质的量的气体所占的体积，符号为$V_m$，标准状况下约为22.4L/mol。
+
+**物质的量浓度**：单位体积溶液中所含溶质的物质的量，符号为c，单位为mol/L。
+
+### 化学方程式或公式总结
+
+| 公式 | 说明 |
+|------|------|
+| $n = \\frac{N}{N_A}$ | 物质的量与粒子数关系 |
+| $n = \\frac{m}{M}$ | 物质的量与质量关系 |
+| $n = \\frac{V}{V_m}$ | 物质的量与气体体积关系 |
+| $c = \\frac{n}{V}$ | 物质的量浓度公式 |
+| $M = \\frac{m}{n}$ | 摩尔质量计算 |
+
+### 实验示意图
+
+<svg width="300" height="150" viewBox="0 0 300 150">
+  <rect x="50" y="40" width="60" height="80" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+  <rect x="55" y="100" width="50" height="20" fill="var(--color-primary)" opacity="0.3" />
+  <text x="80" y="65" font-size="10" text-anchor="middle" fill="var(--color-text-secondary)">容量瓶</text>
+  <text x="80" y="90" font-size="10" text-anchor="middle" fill="var(--color-text-secondary)">250mL</text>
+  <line x1="110" y1="80" x2="140" y2="80" stroke="var(--color-text-primary)" stroke-width="1" />
+  <rect x="140" y="20" width="40" height="30" fill="none" stroke="var(--color-text-primary)" stroke-width="2" />
+  <text x="160" y="40" font-size="10" text-anchor="middle" fill="var(--color-text-primary)">烧杯</text>
+  <text x="200" y="80" font-size="12" text-anchor="middle" fill="var(--color-text-secondary)">溶液配制</text>
+</svg>
+
+### 例题解析
+
+**问题**：16g氧气的物质的量是多少？含有多少个氧分子？
+
+**解答**：
+
+氧气的摩尔质量$M(O_2) = 32g/mol$
+
+$$ n = \\frac{m}{M} = \\frac{16g}{32g/mol} = 0.5mol $$
+
+$$ N = n \\times N_A = 0.5mol \\times 6.02 \\times 10^{23}mol^{-1} = 3.01 \\times 10^{23} $$
+
+### 举一反三
+
+**练习1**：标准状况下，44.8L氢气的物质的量是多少？
+- 答案：$n = V/V_m = 44.8L/22.4L/mol = 2mol$
+
+**练习2**：配制100mL 0.1mol/L的NaCl溶液，需要NaCl的质量是多少？
+- 答案：$n = cV = 0.1mol/L \\times 0.1L = 0.01mol$，$m = nM = 0.01mol \\times 58.5g/mol = 0.585g$
+
+### 拓展知识
+
+- 物质的量是连接微观粒子和宏观物质的桥梁。
+- 使用摩尔时必须指明粒子种类（原子、分子、离子等）。
+- 标准状况指0°C（273K）、101kPa。
+- 溶液稀释时，溶质的物质的量不变：$c_1V_1 = c_2V_2$。`
+  },
+  {
+    id: 'chem_032',
     title: '离子反应',
     stage: 'high',
     chapter: '离子反应',
@@ -2577,7 +2649,7 @@ $$Ba^{2+} + 2OH^- + 2H^+ + SO_4^{2-} = BaSO_4\\downarrow + 2H_2O$$
 - 强电解质包括强酸(HCl、H₂SO₄、HNO₃)、强碱(NaOH、KOH、Ba(OH)₂)和大多数盐。`
   },
   {
-    id: 'chem_032',
+    id: 'chem_033',
     title: '氧化还原反应',
     stage: 'high',
     chapter: '氧化还原反应',
@@ -2668,7 +2740,7 @@ $$Cu \\xrightarrow[-2e^-]{\\text{氧化反应}} Cu^{2+} \\quad \\quad H_2SO_4(�
 - 配平方法：化合价升降法(电子得失法)，使化合价升高总数等于降低总数。`
   },
   {
-    id: 'chem_033',
+    id: 'chem_034',
     title: '钠及其化合物',
     stage: 'high',
     chapter: '钠及其化合物',
@@ -2753,7 +2825,7 @@ $$\\frac{46}{2.3} = \\frac{80}{x} = \\frac{2}{y}$$
 - Na₂CO₃广泛用于玻璃、造纸、纺织等工业，侯氏制碱法以NaCl、CO₂、NH₃为原料制备NaHCO₃。`
   },
   {
-    id: 'chem_034',
+    id: 'chem_035',
     title: '铝及其化合物',
     stage: 'high',
     chapter: '铝及其化合物',
@@ -2836,7 +2908,7 @@ $$Al^{3+} + 3NH_3·H_2O = Al(OH)_3\\downarrow + 3NH_4^+$$
 - 明矾[KAl(SO₄)₂·12H₂O]可用作净水剂，原理是Al³⁺水解生成Al(OH)₃胶体吸附杂质。`
   },
   {
-    id: 'chem_035',
+    id: 'chem_036',
     title: '铁及其化合物',
     stage: 'high',
     chapter: '铁及其化合物',
@@ -2927,7 +2999,7 @@ $$Fe^{3+} + 3SCN^- = Fe(SCN)_3(血红色)$$
 - 氢氧化亚铁在空气中氧化过程：白色→灰绿色→红褐色：$4Fe(OH)_2 + O_2 + 2H_2O = 4Fe(OH)_3$。`
   },
   {
-    id: 'chem_036',
+    id: 'chem_037',
     title: '氯及其化合物',
     stage: 'high',
     chapter: '氯及其化合物',
@@ -3011,7 +3083,7 @@ $$Fe^{3+} + 3SCN^- = Fe(SCN)_3(血红色)$$
 - 漂白性比较：HClO的漂白是氧化性漂白(不可逆)，SO₂的漂白是化合性漂白(可逆)。`
   },
   {
-    id: 'chem_037',
+    id: 'chem_038',
     title: '硫及其化合物',
     stage: 'high',
     chapter: '硫及其化合物',
@@ -3099,7 +3171,7 @@ $$SO_3^{2-} + 2H^+ = H_2O + SO_2\\uparrow$$
 - BaSO₄不溶于酸，医疗上用作"钡餐"进行肠胃透视，而BaCO₃可溶于胃酸有毒。`
   },
   {
-    id: 'chem_038',
+    id: 'chem_039',
     title: '氮及其化合物',
     stage: 'high',
     chapter: '氮及其化合物',
@@ -3187,7 +3259,7 @@ $$3NO_2 + H_2O = 2HNO_3 + NO$$
 - 汽车尾气中的NOₓ是光化学烟雾的成因，可用催化转化器处理。`
   },
   {
-    id: 'chem_039',
+    id: 'chem_040',
     title: '元素周期表',
     stage: 'high',
     chapter: '元素周期表',
@@ -3287,7 +3359,7 @@ $$\\overset{+16}{\\boxed{\\phantom{+16}}} \\quad 2 \\quad 8 \\quad 6$$
 - 同主族元素从上到下，金属性增强，非金属性减弱；同周期从左到右，非金属性增强，金属性减弱。`
   },
   {
-    id: 'chem_040',
+    id: 'chem_041',
     title: '元素周期律',
     stage: 'high',
     chapter: '元素周期律',
@@ -3392,7 +3464,7 @@ X(+1) < Y(+3) < Z(+6)
 - 原子半径变化原因：同周期电子层数相同，核电荷数增大，原子核对电子吸引力增强，半径减小。`
   },
   {
-    id: 'chem_041',
+    id: 'chem_042',
     title: '化学键',
     stage: 'high',
     chapter: '化学键',
@@ -3489,7 +3561,7 @@ X(+1) < Y(+3) < Z(+6)
 - 金属键是金属阳离子与自由电子之间的相互作用，是金属具有导电导热延展性的原因。`
   },
   {
-    id: 'chem_042',
+    id: 'chem_043',
     title: '化学反应与能量',
     stage: 'high',
     chapter: '化学反应与能量',
@@ -3587,7 +3659,7 @@ $$\\Delta H = E_{吸} - E_{放} = 1370 - 1852 = -482(kJ/mol)$$
 - 化学反应速率的测定方法：观察气泡产生快慢、测定颜色变化、测定压强变化等。`
   },
   {
-    id: 'chem_043',
+    id: 'chem_044',
     title: '化学平衡',
     stage: 'high',
     chapter: '化学平衡',
@@ -3679,7 +3751,7 @@ $$\\Delta H = E_{吸} - E_{放} = 1370 - 1852 = -482(kJ/mol)$$
 - 勒夏特列原理适用于已达到平衡的体系，不适用于未达到平衡的体系。`
   },
   {
-    id: 'chem_044',
+    id: 'chem_045',
     title: '弱电解质的电离',
     stage: 'high',
     chapter: '弱电解质的电离',
@@ -3772,7 +3844,7 @@ $$\\Delta H = E_{吸} - E_{放} = 1370 - 1852 = -482(kJ/mol)$$
 - 弱酸酸性的比较：$HF > HCOOH > CH_3COOH > H_2CO_3 > HClO$(根据电离常数大小)。`
   },
   {
-    id: 'chem_045',
+    id: 'chem_046',
     title: '水的电离和溶液的酸碱性',
     stage: 'high',
     chapter: '水的电离和溶液的酸碱性',
@@ -3876,7 +3948,7 @@ $$pH = -\\lg(5 \\times 10^{-3}) = 3 - \\lg 5 = 2.3$$
 - 溶液pH的测定方法：pH试纸(粗测)、pH计(精确测定)、酸碱指示剂(定性判断)。`
   },
   {
-    id: 'chem_046',
+    id: 'chem_047',
     title: '盐类的水解',
     stage: 'high',
     chapter: '盐类的水解',
@@ -3968,7 +4040,7 @@ $$pH = -\\lg(5 \\times 10^{-3}) = 3 - \\lg 5 = 2.3$$
 - 完全双水解的离子对：Al³⁺与CO₃²⁻、HCO₃⁻、S²⁻、HS⁻；Fe³⁺与CO₃²⁻、HCO₃⁻等。`
   },
   {
-    id: 'chem_047',
+    id: 'chem_048',
     title: '原电池',
     stage: 'high',
     chapter: '原电池',
@@ -4066,7 +4138,7 @@ $$Fe + 2H^+ = Fe^{2+} + H_2\\uparrow$$
 - 铅蓄电池可反复充放电，是常见的二次电池；锂离子电池广泛用于手机、电动汽车。`
   },
   {
-    id: 'chem_048',
+    id: 'chem_049',
     title: '电解池',
     stage: 'high',
     chapter: '电解池',
@@ -4162,7 +4234,7 @@ $$2NaCl + 2H_2O \\xrightarrow{通电} 2NaOH + H_2\\uparrow + Cl_2\\uparrow$$
 - 电解过程中，阳极若为活泼金属，则金属优先失去电子被氧化溶解。`
   },
   {
-    id: 'chem_049',
+    id: 'chem_050',
     title: '烃',
     stage: 'high',
     chapter: '烃',
@@ -4266,7 +4338,7 @@ $$nCH_2=CH_2 \\xrightarrow{催化剂} \\left[-CH_2-CH_2-\\right]_n(聚乙烯)$$
 - 烃的分类：烷烃(CnH2n+2)、烯烃(CnH2n)、炔烃(CnH2n-2)、芳香烃。`
   },
   {
-    id: 'chem_050',
+    id: 'chem_051',
     title: '烃的衍生物',
     stage: 'high',
     chapter: '烃的衍生物',
@@ -4357,7 +4429,7 @@ $$CH_3COOH + CH_3CH_2OH \\rightleftharpoons CH_3COOCH_2CH_3 + H_2O$$
 - 油脂是高级脂肪酸的甘油酯，属于酯类，在碱性条件下水解生成肥皂(皂化反应)。`
   },
   {
-    id: 'chem_051',
+    id: 'chem_052',
     title: '糖类油脂蛋白质',
     stage: 'high',
     chapter: '糖类油脂蛋白质',
@@ -4459,7 +4531,7 @@ $$CH_2OH(CHOH)_4CHO + 2[Ag(NH_3)_2]OH \\xrightarrow{\\Delta} CH_2OH(CHOH)_4COONH
 - 酶是生物催化剂，本质是蛋白质，具有高效性、专一性和温和性。`
   },
   {
-    id: 'chem_052',
+    id: 'chem_053',
     title: '化学与生活',
     stage: 'middle',
     chapter: '化学与生活',
@@ -4550,7 +4622,7 @@ D. 油脂对人体健康有害
 - **有机食品**：指在生产过程中不使用化学合成的农药、化肥等的食品。`
   },
   {
-    id: 'chem_053',
+    id: 'chem_054',
     title: '原子结构与性质',
     stage: 'high',
     chapter: '物质结构与性质',
@@ -4638,7 +4710,7 @@ A. O B. F C. N D. Cl
 - 原子的电子排布式可以简化表示，如Na：[Ne]3s¹（[Ne]表示氖的电子排布）。`
   },
   {
-    id: 'chem_054',
+    id: 'chem_055',
     title: '化学键与分子结构',
     stage: 'high',
     chapter: '物质结构与性质',
@@ -4729,7 +4801,7 @@ A. O B. F C. N D. Cl
 - 价层电子对互斥理论（VSEPR）可预测分子的空间构型，考虑成键电子对和孤对电子对的排斥。`
   },
   {
-    id: 'chem_055',
+    id: 'chem_056',
     title: '晶体结构与性质',
     stage: 'high',
     chapter: '物质结构与性质',
@@ -4823,7 +4895,7 @@ A. CO₂ B. NaCl C. SiO₂ D. Cu
 - 液晶是介于晶体和液体之间的物质状态，具有各向异性。`
   },
   {
-    id: 'chem_056',
+    id: 'chem_032',
     title: '有机化学基础拓展',
     stage: 'high',
     chapter: '有机化学基础',
@@ -5357,3 +5429,5 @@ export const practiceQuestions = [
     explanation: '金属晶体中存在自由电子，在外加电场作用下定向移动形成电流'
   }
 ];
+
+export default chemistryKnowledgePoints;

@@ -183,6 +183,13 @@ const tools = computed(() => [
     route: 'Biology',
   },
   {
+    id: 'math',
+    name: t('tools.math.name'),
+    icon: '📐',
+    description: t('tools.math.description'),
+    route: 'Mathematics',
+  },
+  {
     id: 'textbook',
     name: t('tools.textbook.name'),
     icon: '📘',
