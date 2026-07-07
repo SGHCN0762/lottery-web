@@ -17,7 +17,6 @@
           <span class="chapter-badge">{{ currentPoint.chapter }}</span>
         </div>
 
-        <h1 class="point-title">{{ currentPoint.title }}</h1>
         <MarkdownRenderer :content="currentPoint.content" />
       </div>
 
@@ -59,7 +58,7 @@ import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { NavBar as VanNavBar, Button as VanButton, Icon as VanIcon } from 'vant';
 import { useBiologyLearn } from '../hooks/useBiology';
-import MarkdownRenderer from '../components/MarkdownRenderer.vue';
+import MarkdownRenderer from '@/components/MarkdownRenderer/MarkdownRenderer.vue';
 
 const router = useRouter();
 const { t } = useI18n();

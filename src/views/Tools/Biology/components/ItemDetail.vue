@@ -21,7 +21,6 @@
       </div>
 
       <div class="popup-body">
-        <h2 class="item-title">{{ item.title }}</h2>
         <MarkdownRenderer :content="item.content" />
       </div>
 
@@ -43,7 +42,7 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Popup as VanPopup, Icon as VanIcon, Button as VanButton } from 'vant';
-import MarkdownRenderer from './MarkdownRenderer.vue';
+import MarkdownRenderer from '@/components/MarkdownRenderer/MarkdownRenderer.vue';
 
 const props = defineProps({
   show: {
@@ -180,7 +179,7 @@ const stageText = computed(() => {
 .popup-body {
   flex: 1;
   overflow-y: auto;
-  padding: var(--spacing-lg);
+  padding: 0 var(--spacing-lg);
 }
 
 .item-title {

@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue';
 
-const BASE_PATH = 'textbook';
-const BASE_URL = import.meta.env.BASE_URL;
+const BASE_PATH = '';
+const BASE_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/textbook@v1.0.0';
 
 const getFullUrl = path => `${BASE_URL}${path}`;
 
