@@ -631,6 +631,18 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/national-two-sessions',
+    name: 'NationalTwoSessions',
+    component: () =>
+      import(/* webpackChunkName: "tool-national-two-sessions" */ '@/views/Tools/NationalTwoSessions/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.nationalTwoSessions.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

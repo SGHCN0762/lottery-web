@@ -189,6 +189,13 @@ const tools = computed(() => [
     description: t('tools.textbook.description'),
     route: 'Textbook',
   },
+  {
+    id: 'national-two-sessions',
+    name: t('tools.nationalTwoSessions.name'),
+    icon: '📋',
+    description: t('tools.nationalTwoSessions.description'),
+    route: 'NationalTwoSessions',
+  },
 ]);
 
 // ========================================

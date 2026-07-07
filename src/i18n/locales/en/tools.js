@@ -1227,6 +1227,10 @@ export default {
       questionNumber: 'Question {number}',
     },
   },
+  nationalTwoSessions: {
+    name: 'Two Sessions Materials',
+    description: 'Government work reports, speeches, and hot topics from the past 20 years',
+  },
   common: {
     clickToUpload: 'Click to upload image',
     supportedFormats: 'JPG, PNG, WebP, GIF',

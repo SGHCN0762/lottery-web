@@ -1414,6 +1414,10 @@ export default {
     download: '下载',
     noFiles: '暂无教科书文件',
   },
+  nationalTwoSessions: {
+    name: '两会材料',
+    description: '近20年政府工作报告、重要讲话、热点话题整理展示',
+  },
   common: {
     clickToUpload: '点击上传图片',
     supportedFormats: 'JPG, PNG, WebP, GIF',
