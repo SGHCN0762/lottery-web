@@ -716,6 +716,30 @@ const routes = [
     },
   },
   {
+    path: '/tools/national-two-sessions/learn',
+    name: 'NationalTwoSessionsLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-national-two-sessions-learn" */ '@/views/Tools/NationalTwoSessions/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.nationalTwoSessions.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/national-two-sessions/practice',
+    name: 'NationalTwoSessionsPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-national-two-sessions-practice" */ '@/views/Tools/NationalTwoSessions/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.nationalTwoSessions.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/party-history',
     name: 'PartyHistory',
     component: () =>

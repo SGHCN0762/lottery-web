@@ -98,7 +98,11 @@ const stageIcon = computed(() => {
     revolution: '🔴',
     construction: '🔧',
     reform: '🚀',
-    new_era: '⭐'
+    new_era: '⭐',
+    recent: '📅',
+    transition: '🔄',
+    early: '📈',
+    foundation: '🏛️'
   };
   return icons[currentPoint.value.stage] || '📚';
 });
@@ -115,7 +119,11 @@ const stageText = computed(() => {
     revolution: '新民主主义革命时期',
     construction: '社会主义革命和建设时期',
     reform: '改革开放和现代化建设新时期',
-    new_era: '中国特色社会主义新时代'
+    new_era: '中国特色社会主义新时代',
+    recent: '新时代（2021年至今）',
+    transition: '转型期（2011-2020年）',
+    early: '发展期（2005-2010年）',
+    foundation: '建国初期（1949-1955年）'
   };
   return texts[currentPoint.value.stage] || '';
 });

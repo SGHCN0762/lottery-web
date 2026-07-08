@@ -79,7 +79,11 @@ const getStageLabel = (stage) => {
     revolution: '革命时期',
     construction: '建设时期',
     reform: '改革开放',
-    new_era: '新时代'
+    new_era: '新时代',
+    recent: '新时代（2021年至今）',
+    transition: '转型期（2011-2020年）',
+    early: '发展期（2005-2010年）',
+    foundation: '建国初期（1949-1955年）'
   };
   return stageLabels[stage] || stage;
 };

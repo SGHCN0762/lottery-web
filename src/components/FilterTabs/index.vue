@@ -1,7 +1,7 @@
 <template>
   <section class="filter-section">
     <div class="filter-tabs-wrapper">
-      <div class="filter-tabs">
+      <div class="filter-tabs" ref="filterTabs">
         <div
           v-for="tab in tabs"
           :key="tab.value"
@@ -17,6 +17,8 @@
 </template>
 
 <script setup>
+  import { nextTick, watch, useTemplateRef } from 'vue';
+
   const props = defineProps({
     modelValue: {
       type: [String, Number],
@@ -34,6 +36,17 @@
   });
 
   defineEmits(['update:modelValue']);
+
+  const filterTabs = useTemplateRef('filterTabs');
+
+  watch(() => props.modelValue, () => {
+    nextTick(() => {
+      const activeTab = filterTabs.value?.querySelector('.filter-tab.active');
+      if (activeTab) {
+        activeTab.scrollIntoView({ behavior: "smooth", inline: "center" });
+      }
+    });
+  }, { immediate: true });
 </script>
 
 <style lang="less" scoped>
@@ -44,6 +57,7 @@
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
+      border-radius: 8px;
 
       &::-webkit-scrollbar {
         display: none;
@@ -53,7 +67,6 @@
     .filter-tabs {
       display: inline-flex;
       background: var(--color-bg-tertiary);
-      border-radius: 8px;
       padding: 3px;
       transition: background-color var(--transition-base);
       white-space: nowrap;
@@ -73,8 +86,8 @@
         white-space: nowrap;
 
         &.active {
-          background: var(--color-bg-secondary);
-          color: var(--color-text-primary);
+          background: var(--color-primary);
+          color: #fff;
           font-weight: 500;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }

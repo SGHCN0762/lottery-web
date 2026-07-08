@@ -161,11 +161,11 @@
   .stats-card {
     display: flex;
     align-items: center;
-    background: #fff;
+    background: var(--color-bg-card);
     border-radius: var(--radius-lg);
     padding: var(--spacing-md);
     margin: var(--spacing-md);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-light);
   }
 
   .stat-col {
@@ -221,7 +221,7 @@
     padding: 8px 16px;
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
-    background: #fff;
+    background: var(--color-bg-tertiary);
     color: var(--color-text-secondary);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);

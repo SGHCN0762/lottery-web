@@ -1,13 +1,13 @@
 <template>
   <SubjectPracticePage
-    subject-key="police"
+    subject-key="nationalTwoSessions"
     :practice-questions="allPracticeQuestions"
   />
 </template>
 
 <script setup>
 import SubjectPracticePage from '@/components/SubjectLearning/SubjectPracticePage.vue';
-import policeData from '../data/policeData.js';
+import { twoSessionsDataNew } from '../data/twoSessionsDataNew.js';
 
-const allPracticeQuestions = policeData.flatMap(item => item.exercises || []);
+const allPracticeQuestions = twoSessionsDataNew.flatMap(item => item.exercises || []);
 </script>
