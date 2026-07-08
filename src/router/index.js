@@ -656,6 +656,42 @@ const routes = [
     },
   },
   {
+    path: '/tools/police',
+    name: 'PoliceExam',
+    component: () =>
+      import(/* webpackChunkName: "tool-police" */ '@/views/Tools/PoliceExam/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.police.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/police/learn',
+    name: 'PoliceExamLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-police-learn" */ '@/views/Tools/PoliceExam/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.police.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/police/practice',
+    name: 'PoliceExamPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-police-practice" */ '@/views/Tools/PoliceExam/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.police.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/textbook',
     name: 'Textbook',
     component: () =>

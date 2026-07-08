@@ -11,11 +11,26 @@ export function useSubjectLearning(subjectKey, allData) {
   const favoriteIds = ref(JSON.parse(localStorage.getItem(`${subjectKey}_favorite_ids`) || '[]'));
 
   const stages = computed(() => {
-    return {
+    const stageMap = {
       all: '全部',
       middle: '初中',
-      high: '高中'
+      high: '高中',
+      junior: '基础篇',
+      senior: '进阶篇',
+      primary: '小学',
+      civil: '公务员'
     };
+    const existingStages = ['all'];
+    allData.forEach(item => {
+      if (item.stage && !existingStages.includes(item.stage)) {
+        existingStages.push(item.stage);
+      }
+    });
+    const result = {};
+    existingStages.forEach(stage => {
+      result[stage] = stageMap[stage] || stage;
+    });
+    return result;
   });
 
   const filteredItems = computed(() => {

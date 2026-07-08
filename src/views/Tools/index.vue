@@ -190,6 +190,13 @@ const tools = computed(() => [
     route: 'Mathematics',
   },
   {
+    id: 'police',
+    name: t('tools.police.name'),
+    icon: '👮',
+    description: t('tools.police.description'),
+    route: 'PoliceExam',
+  },
+  {
     id: 'textbook',
     name: t('tools.textbook.name'),
     icon: '📘',
