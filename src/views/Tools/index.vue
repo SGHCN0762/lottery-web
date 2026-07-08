@@ -210,6 +210,13 @@ const tools = computed(() => [
     description: t('tools.nationalTwoSessions.description'),
     route: 'NationalTwoSessions',
   },
+  {
+    id: 'party-history',
+    name: t('tools.partyHistory.name'),
+    icon: '🔴',
+    description: t('tools.partyHistory.description'),
+    route: 'PartyHistory',
+  },
 ]);
 
 // ========================================

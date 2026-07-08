@@ -715,6 +715,42 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/party-history',
+    name: 'PartyHistory',
+    component: () =>
+      import(/* webpackChunkName: "tool-party-history" */ '@/views/Tools/PartyHistory/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.partyHistory.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/party-history/learn',
+    name: 'PartyHistoryLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-party-history-learn" */ '@/views/Tools/PartyHistory/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.partyHistory.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/party-history/practice',
+    name: 'PartyHistoryPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-party-history-practice" */ '@/views/Tools/PartyHistory/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.partyHistory.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================

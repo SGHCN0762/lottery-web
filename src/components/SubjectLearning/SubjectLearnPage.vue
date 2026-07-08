@@ -90,7 +90,15 @@ const stageIcon = computed(() => {
   if (!currentPoint.value) return '';
   const icons = {
     middle: '🏫',
-    high: '🎓'
+    high: '🎓',
+    junior: '📖',
+    senior: '📚',
+    primary: '🏠',
+    civil: '💼',
+    revolution: '🔴',
+    construction: '🔧',
+    reform: '🚀',
+    new_era: '⭐'
   };
   return icons[currentPoint.value.stage] || '📚';
 });
@@ -99,7 +107,15 @@ const stageText = computed(() => {
   if (!currentPoint.value) return '';
   const texts = {
     middle: t('tools.' + props.subjectKey + '.stages.middle'),
-    high: t('tools.' + props.subjectKey + '.stages.high')
+    high: t('tools.' + props.subjectKey + '.stages.high'),
+    junior: t('tools.' + props.subjectKey + '.stages.junior'),
+    senior: t('tools.' + props.subjectKey + '.stages.senior'),
+    primary: t('tools.' + props.subjectKey + '.stages.primary'),
+    civil: t('tools.' + props.subjectKey + '.stages.civil'),
+    revolution: '新民主主义革命时期',
+    construction: '社会主义革命和建设时期',
+    reform: '改革开放和现代化建设新时期',
+    new_era: '中国特色社会主义新时代'
   };
   return texts[currentPoint.value.stage] || '';
 });

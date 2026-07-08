@@ -6,7 +6,7 @@
     <div class="card-title-row">
       <h3 class="card-title">{{ item.title }}</h3>
       <span class="stage-tag" :class="item.stage">
-        {{ item.stage === 'middle' ? '初中' : '高中' }}
+        {{ getStageLabel(item.stage) }}
       </span>
     </div>
     <p class="card-chapter">{{ item.chapter }}</p>
@@ -29,6 +29,22 @@ defineProps({
 });
 
 defineEmits(['click']);
+
+const getStageLabel = (stage) => {
+  const stageLabels = {
+    middle: '初中',
+    high: '高中',
+    junior: '基础篇',
+    senior: '进阶篇',
+    primary: '小学',
+    civil: '公务员',
+    revolution: '革命时期',
+    construction: '建设时期',
+    reform: '改革开放',
+    new_era: '新时代'
+  };
+  return stageLabels[stage] || stage;
+};
 </script>
 
 <style lang="less" scoped>

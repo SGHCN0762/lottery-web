@@ -18,7 +18,11 @@ export function useSubjectLearning(subjectKey, allData) {
       junior: '基础篇',
       senior: '进阶篇',
       primary: '小学',
-      civil: '公务员'
+      civil: '公务员',
+      revolution: '新民主主义革命时期',
+      construction: '社会主义革命和建设时期',
+      reform: '改革开放和现代化建设新时期',
+      new_era: '中国特色社会主义新时代'
     };
     const existingStages = ['all'];
     allData.forEach(item => {
