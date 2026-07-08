@@ -1,8 +1,8 @@
 import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_005, CHEMISTRY_006, CHEMISTRY_007, CHEMISTRY_008, CHEMISTRY_009, CHEMISTRY_010, CHEMISTRY_011, CHEMISTRY_012, CHEMISTRY_013, CHEMISTRY_014, CHEMISTRY_015, CHEMISTRY_016, CHEMISTRY_017, CHEMISTRY_018, CHEMISTRY_019, CHEMISTRY_020, CHEMISTRY_021, CHEMISTRY_022, CHEMISTRY_023, CHEMISTRY_024, CHEMISTRY_025, CHEMISTRY_026, CHEMISTRY_027, CHEMISTRY_028, CHEMISTRY_029, CHEMISTRY_030, CHEMISTRY_031, CHEMISTRY_032, CHEMISTRY_033, CHEMISTRY_034, CHEMISTRY_035, CHEMISTRY_036, CHEMISTRY_037, CHEMISTRY_038, CHEMISTRY_039, CHEMISTRY_040, CHEMISTRY_041, CHEMISTRY_042, CHEMISTRY_043, CHEMISTRY_044, CHEMISTRY_045, CHEMISTRY_046, CHEMISTRY_047, CHEMISTRY_048, CHEMISTRY_049, CHEMISTRY_050, CHEMISTRY_051, CHEMISTRY_052, CHEMISTRY_053, CHEMISTRY_054, CHEMISTRY_055, CHEMISTRY_056, CHEMISTRY_057 } from '../constants/chemistry.js';
 
-﻿export const chemistryKnowledgePoints = [
+export const chemistryKnowledgePoints = [
   {
-    id: 'chem_001',
+    id: 'chemistry_001',
     title: '物质的变化和性质',
     stage: 'middle',
     chapter: '走进化学世界',
@@ -10,7 +10,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_001
   },
   {
-    id: 'chem_002',
+    id: 'chemistry_002',
     title: '化学实验基础',
     stage: 'middle',
     chapter: '走进化学世界',
@@ -18,7 +18,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_002
   },
   {
-    id: 'chem_003',
+    id: 'chemistry_003',
     title: '空气',
     stage: 'middle',
     chapter: '我们周围的空气',
@@ -26,7 +26,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_003
   },
   {
-    id: 'chem_004',
+    id: 'chemistry_004',
     title: '氧气',
     stage: 'middle',
     chapter: '我们周围的空气',
@@ -34,7 +34,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_004
   },
   {
-    id: 'chem_005',
+    id: 'chemistry_005',
     title: '制取氧气',
     stage: 'middle',
     chapter: '我们周围的空气',
@@ -42,7 +42,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_005
   },
   {
-    id: 'chem_006',
+    id: 'chemistry_006',
     title: '分子和原子',
     stage: 'middle',
     chapter: '物质构成的奥秘',
@@ -50,7 +50,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_006
   },
   {
-    id: 'chem_007',
+    id: 'chemistry_007',
     title: '原子的结构',
     stage: 'middle',
     chapter: '物质构成的奥秘',
@@ -58,7 +58,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_007
   },
   {
-    id: 'chem_008',
+    id: 'chemistry_008',
     title: '元素',
     stage: 'middle',
     chapter: '物质构成的奥秘',
@@ -66,7 +66,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_008
   },
   {
-    id: 'chem_009',
+    id: 'chemistry_009',
     title: '爱护水资源',
     stage: 'middle',
     chapter: '自然界的水',
@@ -74,7 +74,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_009
   },
   {
-    id: 'chem_010',
+    id: 'chemistry_010',
     title: '水的净化',
     stage: 'middle',
     chapter: '自然界的水',
@@ -82,7 +82,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_010
   },
   {
-    id: 'chem_011',
+    id: 'chemistry_011',
     title: '水的组成',
     stage: 'middle',
     chapter: '自然界的水',
@@ -90,7 +90,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_011
   },
   {
-    id: 'chem_012',
+    id: 'chemistry_012',
     title: '化学式与化合价',
     stage: 'middle',
     chapter: '自然界的水',
@@ -98,7 +98,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_012
   },
   {
-    id: 'chem_013',
+    id: 'chemistry_013',
     title: '质量守恒定律',
     stage: 'middle',
     chapter: '化学方程式',
@@ -106,7 +106,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_013
   },
   {
-    id: 'chem_014',
+    id: 'chemistry_014',
     title: '化学方程式',
     stage: 'middle',
     chapter: '化学方程式',
@@ -114,7 +114,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_014
   },
   {
-    id: 'chem_015',
+    id: 'chemistry_015',
     title: '碳单质',
     stage: 'middle',
     chapter: '碳和碳的氧化物',
@@ -122,7 +122,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_015
   },
   {
-    id: 'chem_016',
+    id: 'chemistry_016',
     title: '二氧化碳',
     stage: 'middle',
     chapter: '碳和碳的氧化物',
@@ -130,7 +130,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_016
   },
   {
-    id: 'chem_017',
+    id: 'chemistry_017',
     title: '一氧化碳',
     stage: 'middle',
     chapter: '碳和碳的氧化物',
@@ -138,7 +138,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_017
   },
   {
-    id: 'chem_018',
+    id: 'chemistry_018',
     title: '燃烧与灭火',
     stage: 'middle',
     chapter: '燃料及其利用',
@@ -146,7 +146,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_018
   },
   {
-    id: 'chem_019',
+    id: 'chemistry_019',
     title: '能源',
     stage: 'middle',
     chapter: '燃料及其利用',
@@ -154,7 +154,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_019
   },
   {
-    id: 'chem_020',
+    id: 'chemistry_020',
     title: '金属材料',
     stage: 'middle',
     chapter: '金属和金属材料',
@@ -162,7 +162,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_020
   },
   {
-    id: 'chem_021',
+    id: 'chemistry_021',
     title: '金属的化学性质',
     stage: 'middle',
     chapter: '金属和金属材料',
@@ -170,7 +170,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_021
   },
   {
-    id: 'chem_022',
+    id: 'chemistry_022',
     title: '金属资源的利用和保护',
     stage: 'middle',
     chapter: '金属和金属材料',
@@ -178,7 +178,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_022
   },
   {
-    id: 'chem_023',
+    id: 'chemistry_023',
     title: '溶液',
     stage: 'middle',
     chapter: '溶液',
@@ -186,7 +186,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_023
   },
   {
-    id: 'chem_024',
+    id: 'chemistry_024',
     title: '溶解度',
     stage: 'middle',
     chapter: '溶液',
@@ -194,7 +194,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_024
   },
   {
-    id: 'chem_025',
+    id: 'chemistry_025',
     title: '溶液的浓度',
     stage: 'middle',
     chapter: '溶液',
@@ -202,7 +202,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_025
   },
   {
-    id: 'chem_026',
+    id: 'chemistry_026',
     title: '常见的酸和碱',
     stage: 'middle',
     chapter: '酸和碱',
@@ -210,7 +210,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_026
   },
   {
-    id: 'chem_027',
+    id: 'chemistry_027',
     title: '中和反应及其应用',
     stage: 'middle',
     chapter: '酸和碱',
@@ -218,7 +218,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_027
   },
   {
-    id: 'chem_028',
+    id: 'chemistry_028',
     title: '生活中常见的盐',
     stage: 'middle',
     chapter: '盐 化肥',
@@ -226,7 +226,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_028
   },
   {
-    id: 'chem_029',
+    id: 'chemistry_029',
     title: '化学肥料',
     stage: 'middle',
     chapter: '盐 化肥',
@@ -234,7 +234,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_029
   },
   {
-    id: 'chem_030',
+    id: 'chemistry_030',
     title: '化学实验基本方法',
     stage: 'high',
     chapter: '化学实验基本方法',
@@ -242,7 +242,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_030
   },
   {
-    id: 'chem_031',
+    id: 'chemistry_031',
     title: '物质的量',
     stage: 'high',
     chapter: '物质的量',
@@ -250,7 +250,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_031
   },
   {
-    id: 'chem_032',
+    id: 'chemistry_032',
     title: '离子反应',
     stage: 'high',
     chapter: '离子反应',
@@ -258,7 +258,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_032
   },
   {
-    id: 'chem_033',
+    id: 'chemistry_033',
     title: '氧化还原反应',
     stage: 'high',
     chapter: '氧化还原反应',
@@ -266,7 +266,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_033
   },
   {
-    id: 'chem_034',
+    id: 'chemistry_034',
     title: '钠及其化合物',
     stage: 'high',
     chapter: '钠及其化合物',
@@ -274,7 +274,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_034
   },
   {
-    id: 'chem_035',
+    id: 'chemistry_035',
     title: '铝及其化合物',
     stage: 'high',
     chapter: '铝及其化合物',
@@ -282,7 +282,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_035
   },
   {
-    id: 'chem_036',
+    id: 'chemistry_036',
     title: '铁及其化合物',
     stage: 'high',
     chapter: '铁及其化合物',
@@ -290,7 +290,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_036
   },
   {
-    id: 'chem_037',
+    id: 'chemistry_037',
     title: '氯及其化合物',
     stage: 'high',
     chapter: '氯及其化合物',
@@ -298,7 +298,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_037
   },
   {
-    id: 'chem_038',
+    id: 'chemistry_038',
     title: '硫及其化合物',
     stage: 'high',
     chapter: '硫及其化合物',
@@ -306,7 +306,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_038
   },
   {
-    id: 'chem_039',
+    id: 'chemistry_039',
     title: '氮及其化合物',
     stage: 'high',
     chapter: '氮及其化合物',
@@ -314,7 +314,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_039
   },
   {
-    id: 'chem_040',
+    id: 'chemistry_040',
     title: '元素周期表',
     stage: 'high',
     chapter: '元素周期表',
@@ -322,7 +322,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_040
   },
   {
-    id: 'chem_041',
+    id: 'chemistry_041',
     title: '元素周期律',
     stage: 'high',
     chapter: '元素周期律',
@@ -330,7 +330,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_041
   },
   {
-    id: 'chem_042',
+    id: 'chemistry_042',
     title: '化学键',
     stage: 'high',
     chapter: '化学键',
@@ -338,7 +338,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_042
   },
   {
-    id: 'chem_043',
+    id: 'chemistry_043',
     title: '化学反应与能量',
     stage: 'high',
     chapter: '化学反应与能量',
@@ -346,7 +346,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_043
   },
   {
-    id: 'chem_044',
+    id: 'chemistry_044',
     title: '化学平衡',
     stage: 'high',
     chapter: '化学平衡',
@@ -354,7 +354,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_044
   },
   {
-    id: 'chem_045',
+    id: 'chemistry_045',
     title: '弱电解质的电离',
     stage: 'high',
     chapter: '弱电解质的电离',
@@ -362,7 +362,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_045
   },
   {
-    id: 'chem_046',
+    id: 'chemistry_046',
     title: '水的电离和溶液的酸碱性',
     stage: 'high',
     chapter: '水的电离和溶液的酸碱性',
@@ -370,7 +370,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_046
   },
   {
-    id: 'chem_047',
+    id: 'chemistry_047',
     title: '盐类的水解',
     stage: 'high',
     chapter: '盐类的水解',
@@ -378,7 +378,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_047
   },
   {
-    id: 'chem_048',
+    id: 'chemistry_048',
     title: '原电池',
     stage: 'high',
     chapter: '原电池',
@@ -386,7 +386,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_048
   },
   {
-    id: 'chem_049',
+    id: 'chemistry_049',
     title: '电解池',
     stage: 'high',
     chapter: '电解池',
@@ -394,7 +394,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_049
   },
   {
-    id: 'chem_050',
+    id: 'chemistry_050',
     title: '烃',
     stage: 'high',
     chapter: '烃',
@@ -402,7 +402,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_050
   },
   {
-    id: 'chem_051',
+    id: 'chemistry_051',
     title: '烃的衍生物',
     stage: 'high',
     chapter: '烃的衍生物',
@@ -410,7 +410,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_051
   },
   {
-    id: 'chem_052',
+    id: 'chemistry_052',
     title: '糖类油脂蛋白质',
     stage: 'high',
     chapter: '糖类油脂蛋白质',
@@ -418,7 +418,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_052
   },
   {
-    id: 'chem_053',
+    id: 'chemistry_053',
     title: '化学与生活',
     stage: 'middle',
     chapter: '化学与生活',
@@ -426,7 +426,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_053
   },
   {
-    id: 'chem_054',
+    id: 'chemistry_054',
     title: '原子结构与性质',
     stage: 'high',
     chapter: '物质结构与性质',
@@ -434,7 +434,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_054
   },
   {
-    id: 'chem_055',
+    id: 'chemistry_055',
     title: '化学键与分子结构',
     stage: 'high',
     chapter: '物质结构与性质',
@@ -442,7 +442,7 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_055
   },
   {
-    id: 'chem_056',
+    id: 'chemistry_056',
     title: '晶体结构与性质',
     stage: 'high',
     chapter: '物质结构与性质',
@@ -450,13 +450,13 @@ import { CHEMISTRY_001, CHEMISTRY_002, CHEMISTRY_003, CHEMISTRY_004, CHEMISTRY_0
     content: CHEMISTRY_056
   },
   {
-    id: 'chem_032',
+    id: 'chemistry_057',
     title: '有机化学基础拓展',
     stage: 'high',
     chapter: '有机化学基础',
     tags: ['卤代烃', '醇酚', '醛酮', '合成材料'],
     content: CHEMISTRY_057
-  }
+  },
 ];
 
 export const stages = {

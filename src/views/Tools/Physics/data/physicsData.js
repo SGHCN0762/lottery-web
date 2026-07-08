@@ -91,14 +91,6 @@ export const physicsKnowledgePoints = [
   },
   {
     id: 'physics_012',
-    title: '牛顿第二定律',
-    stage: 'middle',
-    chapter: '运动和力',
-    tags: ['牛顿第二定律', '加速度', '力'],
-    content: PHYSICS_012
-  },
-  {
-    id: 'physics_013',
     title: '压强',
     stage: 'middle',
     chapter: '压强',
@@ -106,7 +98,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_013
   },
   {
-    id: 'physics_014',
+    id: 'physics_013',
     title: '浮力',
     stage: 'middle',
     chapter: '浮力',
@@ -114,7 +106,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_014
   },
   {
-    id: 'physics_015',
+    id: 'physics_014',
     title: '功和功率',
     stage: 'middle',
     chapter: '功和机械能',
@@ -122,7 +114,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_015
   },
   {
-    id: 'physics_016',
+    id: 'physics_015',
     title: '机械能',
     stage: 'middle',
     chapter: '功和机械能',
@@ -130,7 +122,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_016
   },
   {
-    id: 'physics_017',
+    id: 'physics_016',
     title: '电流与电路',
     stage: 'middle',
     chapter: '电流和电路',
@@ -138,7 +130,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_017
   },
   {
-    id: 'physics_018',
+    id: 'physics_017',
     title: '欧姆定律',
     stage: 'middle',
     chapter: '欧姆定律',
@@ -146,7 +138,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_018
   },
   {
-    id: 'physics_019',
+    id: 'physics_018',
     title: '电功率',
     stage: 'middle',
     chapter: '电功率',
@@ -154,7 +146,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_019
   },
   {
-    id: 'physics_020',
+    id: 'physics_019',
     title: '安全用电',
     stage: 'middle',
     chapter: '安全用电',
@@ -162,7 +154,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_020
   },
   {
-    id: 'physics_021',
+    id: 'physics_020',
     title: '电流的磁效应',
     stage: 'middle',
     chapter: '电与磁',
@@ -170,7 +162,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_021
   },
   {
-    id: 'physics_022',
+    id: 'physics_021',
     title: '磁场对电流的作用',
     stage: 'middle',
     chapter: '电与磁',
@@ -178,12 +170,20 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_022
   },
   {
-    id: 'physics_023',
+    id: 'physics_022',
     title: '电磁感应',
     stage: 'middle',
     chapter: '电与磁',
     tags: ['电磁感应', '发电机', '法拉第'],
     content: PHYSICS_023
+  },
+  {
+    id: 'physics_023',
+    title: '电磁感应',
+    stage: 'high',
+    chapter: '电磁感应',
+    tags: ['电磁感应', '法拉第电磁感应定律', '楞次定律', '自感', '互感'],
+    content: PHYSICS_037
   },
   {
     id: 'physics_024',
@@ -200,14 +200,6 @@ export const physicsKnowledgePoints = [
     chapter: '能源与可持续发展',
     tags: ['能源', '核能', '太阳能', '可持续发展'],
     content: PHYSICS_025
-  },
-  {
-    id: 'physics_025a',
-    title: '热学',
-    stage: 'middle',
-    chapter: '热学',
-    tags: ['热学', '内能', '热量', '比热容', '热机'],
-    content: PHYSICS_026
   },
   {
     id: 'physics_026',
@@ -243,6 +235,14 @@ export const physicsKnowledgePoints = [
   },
   {
     id: 'physics_030',
+    title: '牛顿第二定律',
+    stage: 'middle',
+    chapter: '运动和力',
+    tags: ['牛顿第二定律', '加速度', '力'],
+    content: PHYSICS_012
+  },
+  {
+    id: 'physics_031',
     title: '曲线运动',
     stage: 'high',
     chapter: '曲线运动',
@@ -250,7 +250,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_031
   },
   {
-    id: 'physics_031',
+    id: 'physics_032',
     title: '万有引力与航天',
     stage: 'high',
     chapter: '万有引力与航天',
@@ -258,128 +258,15 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_032
   },
   {
-    id: 'physics_031a',
+    id: 'physics_033',
     title: '机械能守恒定律',
     stage: 'high',
     chapter: '机械能守恒定律',
     tags: ['机械能守恒', '动能', '势能', '功能关系', '能量转化'],
     content: PHYSICS_033
   },
-  // ===== 高中物理 - 电磁学 =====
-  {
-    id: 'physics_032',
-    title: '静电场',
-    stage: 'high',
-    chapter: '静电场',
-    tags: ['静电场', '库仑定律', '电场强度', '电势', '电容'],
-    content: PHYSICS_034
-  },
-  {
-    id: 'physics_033',
-    title: '恒定电流',
-    stage: 'high',
-    chapter: '恒定电流',
-    tags: ['恒定电流', '欧姆定律', '串并联电路', '电功率', '闭合电路欧姆定律'],
-    content: PHYSICS_035
-  },
   {
     id: 'physics_034',
-    title: '磁场',
-    stage: 'high',
-    chapter: '磁场',
-    tags: ['磁场', '磁感应强度', '安培力', '洛伦兹力', '带电粒子运动'],
-    content: PHYSICS_036
-  },
-  {
-    id: 'physics_035',
-    title: '电磁感应',
-    stage: 'high',
-    chapter: '电磁感应',
-    tags: ['电磁感应', '法拉第电磁感应定律', '楞次定律', '自感', '互感'],
-    content: PHYSICS_037
-  },
-  {
-    id: 'physics_036',
-    title: '交变电流',
-    stage: 'high',
-    chapter: '交变电流',
-    tags: ['交变电流', '有效值', '变压器', '远距离输电'],
-    content: PHYSICS_038
-  },
-  {
-    id: 'physics_036a',
-    title: '传感器',
-    stage: 'high',
-    chapter: '传感器',
-    tags: ['传感器', '热敏电阻', '光敏电阻', '霍尔元件', '传感器应用'],
-    content: PHYSICS_039
-  },
-  {
-    id: 'physics_037',
-    title: '分子动理论',
-    stage: 'high',
-    chapter: '分子动理论',
-    tags: ['分子动理论', '阿伏伽德罗常数', '布朗运动', '分子力'],
-    content: PHYSICS_040
-  },
-  {
-    id: 'physics_038',
-    title: '气体',
-    stage: 'high',
-    chapter: '气体',
-    tags: ['气体', '玻意耳定律', '查理定律', '理想气体状态方程'],
-    content: PHYSICS_041
-  },
-  {
-    id: 'physics_039',
-    title: '热力学定律',
-    stage: 'high',
-    chapter: '热力学定律',
-    tags: ['热力学定律', '能量守恒', '热力学第二定律', '熵'],
-    content: PHYSICS_042
-  },
-  {
-    id: 'physics_040',
-    title: '机械振动',
-    stage: 'high',
-    chapter: '机械振动',
-    tags: ['机械振动', '简谐运动', '单摆', '共振'],
-    content: PHYSICS_043
-  },
-  {
-    id: 'physics_041',
-    title: '机械波',
-    stage: 'high',
-    chapter: '机械波',
-    tags: ['机械波', '横波', '干涉', '衍射', '多普勒效应'],
-    content: PHYSICS_044
-  },
-  {
-    id: 'physics_042',
-    title: '光的波动性',
-    stage: 'high',
-    chapter: '光的波动性',
-    tags: ['光的波动性', '干涉', '衍射', '偏振'],
-    content: PHYSICS_045
-  },
-  {
-    id: 'physics_042a',
-    title: '光的折射与全反射',
-    stage: 'high',
-    chapter: '光的折射与全反射',
-    tags: ['光的折射', '全反射', '折射率', '临界角', '光导纤维'],
-    content: PHYSICS_046
-  },
-  {
-    id: 'physics_043',
-    title: '电磁波与相对论',
-    stage: 'high',
-    chapter: '电磁波与相对论',
-    tags: ['电磁波', '相对论', '电磁波谱', '时间膨胀'],
-    content: PHYSICS_047
-  },
-  {
-    id: 'physics_044',
     title: '动量与动量守恒',
     stage: 'high',
     chapter: '动量与动量守恒',
@@ -387,31 +274,7 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_048
   },
   {
-    id: 'physics_045',
-    title: '波粒二象性',
-    stage: 'high',
-    chapter: '波粒二象性',
-    tags: ['波粒二象性', '光电效应', '康普顿效应', '德布罗意波', '不确定性关系'],
-    content: PHYSICS_049
-  },
-  {
-    id: 'physics_046',
-    title: '原子结构',
-    stage: 'high',
-    chapter: '原子结构',
-    tags: ['原子结构', '电子的发现', '核式结构模型', '玻尔模型', '氢原子光谱'],
-    content: PHYSICS_050
-  },
-  {
-    id: 'physics_047',
-    title: '原子核',
-    stage: 'high',
-    chapter: '原子核',
-    tags: ['原子核', '天然放射现象', '核力', '结合能', '核裂变', '核聚变'],
-    content: PHYSICS_051
-  },
-  {
-    id: 'physics_048',
+    id: 'physics_035',
     title: '机械能与动量综合',
     stage: 'high',
     chapter: '机械能与动量综合',
@@ -419,13 +282,149 @@ export const physicsKnowledgePoints = [
     content: PHYSICS_052
   },
   {
-    id: 'physics_049',
+    id: 'physics_036',
+    title: '静电场',
+    stage: 'high',
+    chapter: '静电场',
+    tags: ['静电场', '库仑定律', '电场强度', '电势', '电容'],
+    content: PHYSICS_034
+  },
+  {
+    id: 'physics_037',
+    title: '恒定电流',
+    stage: 'high',
+    chapter: '恒定电流',
+    tags: ['恒定电流', '欧姆定律', '串并联电路', '电功率', '闭合电路欧姆定律'],
+    content: PHYSICS_035
+  },
+  {
+    id: 'physics_038',
+    title: '磁场',
+    stage: 'high',
+    chapter: '磁场',
+    tags: ['磁场', '磁感应强度', '安培力', '洛伦兹力', '带电粒子运动'],
+    content: PHYSICS_036
+  },
+  {
+    id: 'physics_039',
+    title: '交变电流',
+    stage: 'high',
+    chapter: '交变电流',
+    tags: ['交变电流', '有效值', '变压器', '远距离输电'],
+    content: PHYSICS_038
+  },
+  {
+    id: 'physics_040',
     title: '电磁振荡',
     stage: 'high',
     chapter: '选修一·电磁振荡',
     tags: ['电磁振荡', 'LC振荡电路', '振荡周期', '振荡频率', '电场能', '磁场能'],
     content: PHYSICS_053
-  }
+  },
+  {
+    id: 'physics_041',
+    title: '传感器',
+    stage: 'high',
+    chapter: '传感器',
+    tags: ['传感器', '热敏电阻', '光敏电阻', '霍尔元件', '传感器应用'],
+    content: PHYSICS_039
+  },
+  {
+    id: 'physics_042',
+    title: '分子动理论',
+    stage: 'high',
+    chapter: '分子动理论',
+    tags: ['分子动理论', '阿伏伽德罗常数', '布朗运动', '分子力'],
+    content: PHYSICS_040
+  },
+  {
+    id: 'physics_043',
+    title: '气体',
+    stage: 'high',
+    chapter: '气体',
+    tags: ['气体', '玻意耳定律', '查理定律', '理想气体状态方程'],
+    content: PHYSICS_041
+  },
+  {
+    id: 'physics_044',
+    title: '热力学定律',
+    stage: 'high',
+    chapter: '热力学定律',
+    tags: ['热力学定律', '能量守恒', '热力学第二定律', '熵'],
+    content: PHYSICS_042
+  },
+  {
+    id: 'physics_045',
+    title: '热学',
+    stage: 'middle',
+    chapter: '热学',
+    tags: ['热学', '内能', '热量', '比热容', '热机'],
+    content: PHYSICS_026
+  },
+  {
+    id: 'physics_046',
+    title: '机械振动',
+    stage: 'high',
+    chapter: '机械振动',
+    tags: ['机械振动', '简谐运动', '单摆', '共振'],
+    content: PHYSICS_043
+  },
+  {
+    id: 'physics_047',
+    title: '机械波',
+    stage: 'high',
+    chapter: '机械波',
+    tags: ['机械波', '横波', '干涉', '衍射', '多普勒效应'],
+    content: PHYSICS_044
+  },
+  {
+    id: 'physics_048',
+    title: '光的波动性',
+    stage: 'high',
+    chapter: '光的波动性',
+    tags: ['光的波动性', '干涉', '衍射', '偏振'],
+    content: PHYSICS_045
+  },
+  {
+    id: 'physics_049',
+    title: '光的折射与全反射',
+    stage: 'high',
+    chapter: '光的折射与全反射',
+    tags: ['光的折射', '全反射', '折射率', '临界角', '光导纤维'],
+    content: PHYSICS_046
+  },
+  {
+    id: 'physics_050',
+    title: '电磁波与相对论',
+    stage: 'high',
+    chapter: '电磁波与相对论',
+    tags: ['电磁波', '相对论', '电磁波谱', '时间膨胀'],
+    content: PHYSICS_047
+  },
+  {
+    id: 'physics_051',
+    title: '波粒二象性',
+    stage: 'high',
+    chapter: '波粒二象性',
+    tags: ['波粒二象性', '光电效应', '康普顿效应', '德布罗意波', '不确定性关系'],
+    content: PHYSICS_049
+  },
+  {
+    id: 'physics_052',
+    title: '原子结构',
+    stage: 'high',
+    chapter: '原子结构',
+    tags: ['原子结构', '电子的发现', '核式结构模型', '玻尔模型', '氢原子光谱'],
+    content: PHYSICS_050
+  },
+  {
+    id: 'physics_053',
+    title: '原子核',
+    stage: 'high',
+    chapter: '原子核',
+    tags: ['原子核', '天然放射现象', '核力', '结合能', '核裂变', '核聚变'],
+    content: PHYSICS_051
+  },
 ];
 
 export const stages = {
