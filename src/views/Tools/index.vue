@@ -197,6 +197,13 @@ const tools = computed(() => [
     route: 'PoliceExam',
   },
   {
+    id: 'police-law',
+    name: t('tools.policeLaw.name'),
+    icon: '⚖️',
+    description: t('tools.policeLaw.description'),
+    route: 'PoliceLaw',
+  },
+  {
     id: 'textbook',
     name: t('tools.textbook.name'),
     icon: '📘',

@@ -692,6 +692,42 @@ const routes = [
     },
   },
   {
+    path: '/tools/police-law',
+    name: 'PoliceLaw',
+    component: () =>
+      import(/* webpackChunkName: "tool-police-law" */ '@/views/Tools/PoliceLaw/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.policeLaw.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/police-law/learn',
+    name: 'PoliceLawLearn',
+    component: () =>
+      import(/* webpackChunkName: "tool-police-law-learn" */ '@/views/Tools/PoliceLaw/pages/LearnPage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.policeLaw.learnTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/police-law/practice',
+    name: 'PoliceLawPractice',
+    component: () =>
+      import(/* webpackChunkName: "tool-police-law-practice" */ '@/views/Tools/PoliceLaw/pages/PracticePage.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.policeLaw.practiceTitle',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/textbook',
     name: 'Textbook',
     component: () =>
