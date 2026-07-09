@@ -1588,7 +1588,7 @@ export default {
   },
   textbook: {
     name: '电子课本',
-    description: '初高中各科人教版电子课本',
+    description: '小学/初中/高中各科电子课本',
     preview: '在线预览',
     download: '下载',
     noFiles: '暂无教科书文件',

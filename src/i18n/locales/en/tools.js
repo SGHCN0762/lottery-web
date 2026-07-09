@@ -1406,6 +1406,13 @@ export default {
       needWork: 'Needs Work!',
     },
   },
+  textbook: {
+    name: 'E-Textbook',
+    description: 'Primary/Junior/Senior school e-textbooks',
+    preview: 'Preview',
+    download: 'Download',
+    noFiles: 'No textbook files',
+  },
   nationalTwoSessions: {
     name: 'Two Sessions Materials',
     description: 'Government work reports, speeches, and hot topics from 1949 to present',
