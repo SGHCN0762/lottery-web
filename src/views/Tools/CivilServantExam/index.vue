@@ -1,7 +1,15 @@
 <template>
   <div class="civil-servant-exam-page">
     <div class="page-content">
-      <CategoryTabs v-model="activeCategory" />
+      <div class="search-section">
+        <van-search
+          v-model="searchKeyword"
+          placeholder="搜索年份、省份、考试名称..."
+          shape="round"
+        />
+      </div>
+
+      <FilterTabs v-model="activeCategory" :tabs="categoryTabs" />
 
       <div v-if="filteredFiles.length > 0" class="file-list-container">
         <FileList
@@ -25,14 +33,17 @@
 <script setup>
   import { useI18n } from 'vue-i18n';
   import { useRouter } from 'vue-router';
+  import { Search as VanSearch } from 'vant';
   import FileList from '../components/FileList.vue';
-  import { useCivilServantExam } from './hooks/useCivilServantExam';
-  import CategoryTabs from './components/CategoryTabs.vue';
+  import { useCivilServantExam, categories } from './hooks/useCivilServantExam';
+  import FilterTabs from '@/components/FilterTabs/index.vue';
 
   const { t } = useI18n();
   const router = useRouter();
 
-  const { activeCategory, filteredFiles, getFileUrl, getFileName } = useCivilServantExam();
+  const { activeCategory, searchKeyword, filteredFiles, getFileUrl, getFileName } = useCivilServantExam();
+
+  const categoryTabs = categories;
 
   const listConfig = {
     draggable: false,
@@ -80,6 +91,11 @@
 <style lang="less" scoped>
   .civil-servant-exam-page {
     .page-content {
+      .search-section {
+        padding: var(--spacing-md);
+        flex-shrink: 0;
+      }
+
       .file-list-container {
         padding: 0 var(--spacing-md);
       }

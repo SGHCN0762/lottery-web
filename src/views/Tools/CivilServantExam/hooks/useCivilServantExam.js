@@ -1,9 +1,15 @@
 import { ref, computed } from 'vue';
+import { provinceXingceZhentiArr, provinceXingceAnswerArr } from './provinceFiles';
+import { provinceShenlunZhentiArr, provinceShenlunAnswerArr } from './provinceShenlunFiles';
 
 const BASE_PATH = 'civil-servant-exam';
 const BASE_URL = import.meta.env.BASE_URL;
+const PROVINCE_XINGCE_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-service-exam-first@v1.0.0/';
+const PROVINCE_SHENLUN_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-service-exam-second@v1.0.0/';
 
 const getFullUrl = path => `${BASE_URL}${path}`;
+const getProvinceXingceUrl = fileName => `${PROVINCE_XINGCE_CDN_URL}${encodeURIComponent(fileName)}`;
+const getProvinceShenlunUrl = fileName => `${PROVINCE_SHENLUN_CDN_URL}${encodeURIComponent(fileName)}`;
 
 const processFiles = (files, categoryId) => {
   return files.map((f, index) => ({
@@ -68,10 +74,13 @@ const examJsonFiles = examJsonArr.map(name => ({
 }));
 
 export const categories = [
-  { id: 'xingce-zhenti', name: '行测真题' },
-  { id: 'shenlun', name: '申论真题' },
-  { id: 'xingce-answer', name: '行测答案' },
-  { id: 'answer-sheet', name: '答题卡' },
+  { label: '国考行测', value: 'xingce-zhenti' },
+  { label: '国考行测答案', value: 'xingce-answer' },
+  { label: '国考申论', value: 'shenlun' },
+  { label: '省考行测', value: 'province-xingce' },
+  { label: '省考行测答案', value: 'province-xingce-answer' },
+  { label: '省考申论', value: 'province-shenlun' },
+  { label: '答题卡', value: 'answer-sheet' },
 ];
 
 const shenlunArr = [
@@ -296,18 +305,61 @@ const answerSheetFiles = processFiles(
   'answer-sheet'
 );
 
+const provinceXingceZhentiFiles = provinceXingceZhentiArr.map((name, index) => ({
+  id: `province-xingce-zhenti-${index}-${name.replace(yearRegex, '$1')}`,
+  name,
+  year: name.replace(yearRegex, '$1'),
+  url: getProvinceXingceUrl(name),
+})).sort((pre, next) => next.year - pre.year);
+
+const provinceXingceAnswerFiles = provinceXingceAnswerArr.map((name, index) => ({
+  id: `province-xingce-answer-${index}-${name.replace(yearRegex, '$1')}`,
+  name,
+  year: name.replace(yearRegex, '$1'),
+  url: getProvinceXingceUrl(name),
+})).sort((pre, next) => next.year - pre.year);
+
+const provinceShenlunZhentiFiles = provinceShenlunZhentiArr.map((name, index) => ({
+  id: `province-shenlun-zhenti-${index}-${name.replace(yearRegex, '$1')}`,
+  name,
+  year: name.replace(yearRegex, '$1'),
+  url: getProvinceShenlunUrl(name),
+}));
+
+const provinceShenlunAnswerFiles = provinceShenlunAnswerArr.map((name, index) => ({
+  id: `province-shenlun-answer-${index}-${name.replace(yearRegex, '$1')}`,
+  name,
+  year: name.replace(yearRegex, '$1'),
+  url: getProvinceShenlunUrl(name),
+}));
+
+const provinceShenlunFiles = [...provinceShenlunZhentiFiles, ...provinceShenlunAnswerFiles].sort((pre, next) => next.year - pre.year);
+
 const allFiles = {
   shenlun: shenlunFiles.sort((pre, next) => next.year - pre.year),
   'xingce-zhenti': xingceZhentiFiles.sort((pre, next) => next.year - pre.year),
+  'province-xingce': provinceXingceZhentiFiles,
+  'province-xingce-answer': provinceXingceAnswerFiles,
+  'province-shenlun': provinceShenlunFiles,
   'xingce-answer': xingceAnswerFiles.sort((pre, next) => next.year - pre.year),
   'answer-sheet': answerSheetFiles,
 };
 
 export function useCivilServantExam() {
   const activeCategory = ref('xingce-zhenti');  
+  const searchKeyword = ref('');
 
   const filteredFiles = computed(() => {
-    return allFiles[activeCategory.value] || [];
+    let files = allFiles[activeCategory.value] || [];
+    
+    if (searchKeyword.value.trim()) {
+      const keyword = searchKeyword.value.trim().toLowerCase();
+      files = files.filter(file => 
+        file.name.toLowerCase().includes(keyword)
+      );
+    }
+    
+    return files;
   });
 
   const getFileUrl = file => file.url || '';
@@ -331,6 +383,7 @@ export function useCivilServantExam() {
 
   return {
     activeCategory,
+    searchKeyword,
     filteredFiles,
     getFileUrl,
     getFileName,

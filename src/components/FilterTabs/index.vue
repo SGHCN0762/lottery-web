@@ -43,7 +43,7 @@
     nextTick(() => {
       const activeTab = filterTabs.value?.querySelector('.filter-tab.active');
       if (activeTab) {
-        activeTab.scrollIntoView({ behavior: "smooth", inline: "center" });
+        activeTab.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
       }
     });
   }, { immediate: true });
@@ -66,7 +66,7 @@
 
     .filter-tabs {
       display: inline-flex;
-      background: var(--color-bg-tertiary);
+      background: var(--color-bg-card);
       padding: 3px;
       transition: background-color var(--transition-base);
       white-space: nowrap;
