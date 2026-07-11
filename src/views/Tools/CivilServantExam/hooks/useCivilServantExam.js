@@ -4,8 +4,8 @@ import { provinceShenlunZhentiArr, provinceShenlunAnswerArr } from './provinceSh
 
 const BASE_PATH = 'civil-servant-exam';
 const BASE_URL = import.meta.env.BASE_URL;
-const PROVINCE_XINGCE_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-service-exam-first@v1.0.0/';
-const PROVINCE_SHENLUN_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-service-exam-second@v1.0.0/';
+const PROVINCE_XINGCE_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-provice-exam-xingce@v1.0.0/';
+const PROVINCE_SHENLUN_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-provice-exam-shenlun@v1.0.0/';
 
 const getFullUrl = path => `${BASE_URL}${path}`;
 const getProvinceXingceUrl = fileName => `${PROVINCE_XINGCE_CDN_URL}${encodeURIComponent(fileName)}`;

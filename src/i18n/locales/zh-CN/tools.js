@@ -457,6 +457,7 @@ export default {
       processing: '处理中...',
       confirmClearAll: '确定要清空所有文件吗？',
       preview: '预览',
+      previewFailed: '预览失败',
       unsupportedPreview: '该文件类型暂不支持预览',
       unsupportedPreviewTip: '该文件类型暂不支持预览，是否下载？',
       remove: '删除',
@@ -1589,7 +1590,7 @@ export default {
   textbook: {
     name: '电子课本',
     description: '小学/初中/高中各科电子课本',
-    preview: '在线预览',
+    preview: '预览',
     download: '下载',
     noFiles: '暂无教科书文件',
   },

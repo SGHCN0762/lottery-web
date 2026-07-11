@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <FilterTabs v-model="activeStage" :tabs="filterTabs" />
+        <FilterTabs v-model="activeStage" :tabs="filterTabs" class="tabs" />
       </div>
 
       <div class="items-list">
@@ -166,6 +166,10 @@
     padding: var(--spacing-md);
     margin: var(--spacing-md);
     box-shadow: var(--shadow-light);
+  }
+
+  .tabs {
+    margin: 0 var(--spacing-md) var(--spacing-md);
   }
 
   .stat-col {

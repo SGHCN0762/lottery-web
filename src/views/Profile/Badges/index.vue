@@ -12,6 +12,7 @@
       <FilterTabs 
         v-model="activeFilter"
         :tabs="tabs"
+        class="tabs"
       />
 
       <!-- 成就列表 -->
@@ -293,6 +294,10 @@
     padding-top: calc(var(--spacing-sm) + env(safe-area-inset-top, 0px));
     padding-bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom, 0px));
     display: flow-root;
+  }
+  
+  .tabs {
+    margin: 0 var(--spacing-md) var(--spacing-md);
   }
 
   /* ========================================

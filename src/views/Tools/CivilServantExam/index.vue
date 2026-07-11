@@ -9,16 +9,17 @@
         />
       </div>
 
-      <FilterTabs v-model="activeCategory" :tabs="categoryTabs" />
+      <FilterTabs v-model="activeCategory" :tabs="categoryTabs" class="tabs" />
 
       <div v-if="filteredFiles.length > 0" class="file-list-container">
         <FileList
           :model-value="filteredFiles"
           :config="listConfig"
-          :previewable="false"
+          :previewable="true"
           :get-download-url="getFileUrl"
           :get-download-file-name="getFileName"
           :action-items="getActionItems"
+          @preview="handlePreview"
           @action="handleAction"
         />
       </div>
@@ -27,14 +28,22 @@
         {{ t('tools.civilServantExam.noFiles') }}
       </div>
     </div>
+
+    <FilePreview
+      v-model:visible="previewVisible"
+      :file-name="previewFileName"
+      :file-url="previewFileUrl"
+    />
   </div>
 </template>
 
 <script setup>
-  import { useI18n } from 'vue-i18n';
+  import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
   import { useRouter } from 'vue-router';
   import { Search as VanSearch } from 'vant';
   import FileList from '../components/FileList.vue';
+  import FilePreview from '../components/FilePreview.vue';
   import { useCivilServantExam, categories } from './hooks/useCivilServantExam';
   import FilterTabs from '@/components/FilterTabs/index.vue';
 
@@ -54,9 +63,23 @@
     showRemove: false,
   };
 
+  const previewVisible = ref(false);
+  const previewFileName = ref('');
+  const previewFileUrl = ref('');
+
+  const handlePreview = async (file) => {
+    const url = getFileUrl(file);
+    const name = getFileName(file);
+
+    previewFileName.value = name;
+    previewFileUrl.value = url;
+    previewVisible.value = true;
+  };
+
   const getActionItems = (file) => {
     const actions = [
       { name: t('tools.fileConverter.common.download'), key: 'download' },
+      { name: t('tools.fileConverter.common.preview'), key: 'preview' },
     ];
     
     if (file.examJsonFile) {
@@ -84,6 +107,8 @@
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
+    } else if (key === 'preview') {
+      handlePreview(file);
     }
   };
 </script>
@@ -94,6 +119,10 @@
       .search-section {
         padding: var(--spacing-md);
         flex-shrink: 0;
+      }
+          
+      .tabs {
+        margin: 0 var(--spacing-md) var(--spacing-md);
       }
 
       .file-list-container {

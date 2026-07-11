@@ -3,9 +3,9 @@ import { ref, computed } from 'vue';
 const CDN_BASE = 'https://cdn.jsdelivr.net/gh/SGHCN0762';
 
 const REPOS = {
-  primary: `${CDN_BASE}/primary-school-textbook@v1.0.0`,
-  junior: `${CDN_BASE}/junior-high-school-textbooks@v1.0.0`,
-  senior: `${CDN_BASE}/high-school-textbook@v1.0.0`,
+  primary: `${CDN_BASE}/textbook-primary-school@v1.0.0`,
+  junior: `${CDN_BASE}/textbook-junior-high-school@v1.0.0`,
+  senior: `${CDN_BASE}/textbook-high-school@v1.0.0`,
 };
 
 const getFullUrl = (repoUrl, filename) => `${repoUrl}/${encodeURI(filename)}`;

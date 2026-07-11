@@ -67,3 +67,9 @@ const themeVars = computed(() => ({
   radius: '8px',
 }));
 </script>
+
+<style scoped lang="less"> 
+:deep(.van-config-provider) {
+  height: 100%;
+}
+</style>

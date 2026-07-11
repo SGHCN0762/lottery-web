@@ -7,10 +7,11 @@
         <FileList
           :model-value="filteredFiles"
           :config="listConfig"
-          :previewable="false"
+          :previewable="true"
           :get-download-url="getFileUrl"
           :get-download-file-name="getFileName"
           :action-items="getActionItems"
+          @preview="handlePreview"
           @action="handleAction"
         />
       </div>
@@ -19,12 +20,20 @@
         {{ t('tools.textbook.noFiles') }}
       </div>
     </div>
+
+    <FilePreview
+      v-model:visible="previewVisible"
+      :file-name="previewFileName"
+      :file-url="previewFileUrl"
+    />
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import FileList from '../components/FileList.vue';
+import FilePreview from '../components/FilePreview.vue';
 import { useTextbook } from './hooks/useTextbook.js';
 import SubjectTabs from './components/SubjectTabs.vue';
 
@@ -41,17 +50,26 @@ const listConfig = {
   showRemove: false,
 };
 
+const previewVisible = ref(false);
+const previewFileName = ref('');
+const previewFileUrl = ref('');
+
+const handlePreview = (file) => {
+  previewFileName.value = getFileName(file);
+  previewFileUrl.value = getFileUrl(file);
+  previewVisible.value = true;
+};
+
 const getActionItems = (file) => {
   return [
-    { name: t('tools.textbook.preview'), key: 'preview', color: '#1989fa' },
+    { name: t('tools.textbook.preview'), key: 'preview' },
     { name: t('tools.textbook.download'), key: 'download' },
   ];
 };
 
 const handleAction = ({ key, file }) => {
   if (key === 'preview') {
-    const url = getFileUrl(file);
-    window.open(url, '_blank');
+    handlePreview(file);
   } else if (key === 'download') {
     const url = getFileUrl(file);
     const name = getFileName(file);

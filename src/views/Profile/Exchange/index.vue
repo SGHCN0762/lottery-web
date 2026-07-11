@@ -16,6 +16,7 @@
       <FilterTabs
         v-model="activeCategory"
         :tabs="categoryTabs"
+        class="tabs"
         @update:model-value="handleCategoryChange"
       />
 
@@ -430,6 +431,10 @@
         font-weight: var(--font-weight-bold);
       }
     }
+  }
+
+  .tabs {
+    margin: 0 var(--spacing-md) var(--spacing-md);
   }
 
   /* ========================================

@@ -51,8 +51,6 @@
 
 <style lang="less" scoped>
   .filter-section {
-    margin: 0 var(--spacing-md) var(--spacing-md);
-
     .filter-tabs-wrapper {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;

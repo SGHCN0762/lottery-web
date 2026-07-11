@@ -20,7 +20,7 @@
       </section>
 
       <!-- 时间筛选 -->
-      <FilterTabs v-model="activeTab" :tabs="pointTabs" @update:model-value="handleTabChange" />
+      <FilterTabs v-model="activeTab" :tabs="pointTabs" class="tabs" @update:model-value="handleTabChange" />
 
       <!-- 积分明细列表 -->
       <section class="points-list">
@@ -337,6 +337,10 @@
         opacity: 0.9;
       }
     }
+  }
+
+  .tabs {
+    margin: 0 var(--spacing-md) var(--spacing-md);
   }
 
   /* ========================================

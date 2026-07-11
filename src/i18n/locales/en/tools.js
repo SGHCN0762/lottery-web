@@ -442,6 +442,7 @@ export default {
       processing: 'Processing...',
       confirmClearAll: 'Are you sure you want to clear all files?',
       preview: 'Preview',
+      previewFailed: 'Preview failed',
       unsupportedPreview: 'This file type is not supported for preview',
       unsupportedPreviewTip: 'This file type is not supported for preview, download instead?',
       remove: 'Remove',

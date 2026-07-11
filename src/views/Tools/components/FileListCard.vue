@@ -46,47 +46,20 @@
     </div>
   </ToolCard>
 
-  <van-popup
-    v-model:show="previewVisible"
-    position="bottom"
-    round
-    :style="{ height: '85%' }"
-    class="file-preview-popup"
-  >
-    <div class="preview-header">
-      <span class="preview-title">{{ previewFileName }}</span>
-      <van-icon name="cross" class="preview-close" @click="previewVisible = false" />
-    </div>
-    <div class="preview-content">
-      <component
-        v-if="previewFile && OpenFileViewer"
-        :is="OpenFileViewer"
-        :file="previewFile"
-        :file-name="previewFileName"
-        :width="'100%'"
-        :height="'100%'"
-        :plugins="plugins"
-        fit="contain"
-        toolbar
-      />
-      <div v-else class="preview-loading">
-        <van-loading type="spinner" size="32px" />
-      </div>
-    </div>
-  </van-popup>
+  <FilePreview
+    v-model:visible="previewVisible"
+    :file-name="previewFileName"
+    :file-url="previewFileUrl"
+  />
 </template>
 
 <script setup>
 import { ref, computed as vueComputed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import {
-  Button as VanButton,
-  Icon as VanIcon,
-  Popup as VanPopup,
-  Loading as VanLoading,
-} from 'vant';
+import { Button as VanButton } from 'vant';
 import ToolCard from './ToolCard.vue';
 import FileList from './FileList.vue';
+import FilePreview from './FilePreview.vue';
 import {
   getFileName,
   getFileUrl,
@@ -95,25 +68,6 @@ import {
 const { t } = useI18n();
 
 const clearAllText = t('tools.fileConverter.common.clearAll');
-
-let OpenFileViewer = null;
-let plugins = null;
-
-const loadViewer = async () => {
-  if (!OpenFileViewer) {
-    const { OpenFileViewer: Viewer } = await import('@open-file-viewer/vue');
-    const { imagePlugin, pdfPlugin, textPlugin, officePlugin } = await import('@open-file-viewer/core');
-    await import('@open-file-viewer/core/style.css');
-    const pdfWorkerSrc = await import('pdfjs-dist/build/pdf.worker.mjs?url');
-    OpenFileViewer = Viewer;
-    plugins = [
-      imagePlugin(),
-      textPlugin(),
-      pdfPlugin({ workerSrc: pdfWorkerSrc.default }),
-      officePlugin(),
-    ];
-  }
-};
 
 const props = defineProps({
   modelValue: {
@@ -186,28 +140,18 @@ const listConfig = vueComputed(() => ({
 }));
 
 const previewVisible = ref(false);
-const previewFile = ref(null);
 const previewFileName = ref('');
+const previewFileUrl = ref('');
 
-const handlePreview = async (file) => {
+const handlePreview = (file) => {
   if (!props.previewable) return;
 
   const url = getFileUrl(file);
   const name = getFileName(file);
 
-  previewFile.value = null;
   previewFileName.value = name;
+  previewFileUrl.value = url;
   previewVisible.value = true;
-
-  try {
-    await loadViewer();
-    const response = await fetch(url);
-    const blob = await response.blob();
-    previewFile.value = new File([blob], name, { type: blob.type });
-  } catch (error) {
-    console.error('Failed to fetch file for preview:', error);
-    previewVisible.value = false;
-  }
 };
 
 const clearAll = () => {
@@ -230,49 +174,5 @@ const handleSort = (files) => {
 .file-list-body {
   max-height: 300px;
   overflow-y: auto;
-}
-
-.file-preview-popup {
-  display: flex;
-  flex-direction: column;
-
-  .preview-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md) var(--spacing-lg);
-    border-bottom: 1px solid var(--color-border);
-
-    .preview-title {
-      font-size: var(--font-size-base);
-      font-weight: var(--font-weight-medium);
-      color: var(--color-text-primary);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      max-width: 80%;
-    }
-
-    .preview-close {
-      font-size: 20px;
-      color: var(--color-text-secondary);
-      cursor: pointer;
-    }
-  }
-
-  .preview-content {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-
-    .preview-loading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      color: var(--color-text-tertiary);
-    }
-  }
 }
 </style>
