@@ -17,6 +17,7 @@ export default {
   info: 'Info',
   noData: 'No Data',
   refresh: 'Refresh',
+  retry: 'Retry',
   more: 'More',
   close: 'Close',
   copy: 'Copy',

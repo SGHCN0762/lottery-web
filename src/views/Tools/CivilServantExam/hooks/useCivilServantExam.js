@@ -1,15 +1,19 @@
 import { ref, computed } from 'vue';
-import { provinceXingceZhentiArr, provinceXingceAnswerArr } from './provinceFiles';
+import { provinceXingceZhentiArr, provinceXingceAnswerArr } from './provinceXingceFiles';
 import { provinceShenlunZhentiArr, provinceShenlunAnswerArr } from './provinceShenlunFiles';
 
 const BASE_PATH = 'civil-servant-exam';
 const BASE_URL = import.meta.env.BASE_URL;
 const PROVINCE_XINGCE_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-provice-exam-xingce@v1.0.0/';
 const PROVINCE_SHENLUN_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-provice-exam-shenlun@v1.0.0/';
+const COUNTRY_XINGCE_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-country-exam-xingce@v1.0.0/';
+const COUNTRY_SHENLUN_CDN_URL = 'https://cdn.jsdelivr.net/gh/SGHCN0762/civil-country-exam-shenlun@v1.0.0/';
 
 const getFullUrl = path => `${BASE_URL}${path}`;
 const getProvinceXingceUrl = fileName => `${PROVINCE_XINGCE_CDN_URL}${encodeURIComponent(fileName)}`;
 const getProvinceShenlunUrl = fileName => `${PROVINCE_SHENLUN_CDN_URL}${encodeURIComponent(fileName)}`;
+const getCountryXingceUrl = fileName => `${COUNTRY_XINGCE_CDN_URL}${encodeURIComponent(fileName)}`;
+const getCountryShenlunUrl = fileName => `${COUNTRY_SHENLUN_CDN_URL}${encodeURIComponent(fileName)}`;
 
 const processFiles = (files, categoryId) => {
   return files.map((f, index) => ({
@@ -132,14 +136,12 @@ const shenlunArr = [
   '2025年国家公务员考试申论真题（行政执法）.pdf',
   '2026年国家公务员考试申论真题（行政执法）.pdf',
 ];
-const shenlunFiles = processFiles(
-  shenlunArr.map(name => ({
-    year: name.replace(yearRegex, '$1'),
-    name,
-    path: `${BASE_PATH}/申论-真题/${name}`,
-  })),
-  'shenlun'
-);
+const shenlunFiles = shenlunArr.map((name, index) => ({
+  id: `shenlun-${index}-${name.replace(yearRegex, '$1')}`,
+  year: name.replace(yearRegex, '$1'),
+  name,
+  url: getCountryShenlunUrl(name),
+})).sort((pre, next) => next.year - pre.year);
 
 const xingceZentiArr = [
   '2000年国家公务员考试行测真题.pdf',
@@ -191,47 +193,45 @@ const xingceZentiArr = [
   '2026年国家公务员考试行测真题（地市级）.pdf',
   '2026年国家公务员考试行测真题（行政执法）.pdf',
 ];
-const xingceZhentiFiles = processFiles(
-  xingceZentiArr.map(name => {
-    const year = name.replace(yearRegex, '$1');
-    let jsonFile = null;
+const xingceZhentiFiles = xingceZentiArr.map((name, index) => {
+  const year = name.replace(yearRegex, '$1');
+  let jsonFile = null;
 
-    const versionPatterns = [
-      '副省级',
-      '地市级',
-      '市地级',
-      '行政执法',
-      '省级',
-      'A卷',
-      'B卷',
-      '（一）',
-      '（二）',
-    ];
-    let matchedVersion = '';
-    for (const pattern of versionPatterns) {
-      if (name.includes(pattern)) {
-        matchedVersion = pattern;
-        break;
-      }
+  const versionPatterns = [
+    '副省级',
+    '地市级',
+    '市地级',
+    '行政执法',
+    '省级',
+    'A卷',
+    'B卷',
+    '（一）',
+    '（二）',
+  ];
+  let matchedVersion = '';
+  for (const pattern of versionPatterns) {
+    if (name.includes(pattern)) {
+      matchedVersion = pattern;
+      break;
     }
+  }
 
-    if (matchedVersion) {
-      jsonFile = examJsonFiles.find(jf => jf.year === year && jf.name.includes(matchedVersion));
-    }
+  if (matchedVersion) {
+    jsonFile = examJsonFiles.find(jf => jf.year === year && jf.name.includes(matchedVersion));
+  }
 
-    if (!jsonFile) {
-      jsonFile = examJsonFiles.find(jf => jf.year === year);
-    }
+  if (!jsonFile) {
+    jsonFile = examJsonFiles.find(jf => jf.year === year);
+  }
 
-    return {
-      year,
-      name,
-      path: `${BASE_PATH}/行测-真题/${name}`,
-      examJsonFile: jsonFile || null,
-    };
-  }),
-  'xingce-zhenti'
-);
+  return {
+    id: `xingce-zhenti-${index}-${year}`,
+    year,
+    name,
+    url: getCountryXingceUrl(name),
+    examJsonFile: jsonFile || null,
+  };
+}).sort((pre, next) => next.year - pre.year);
 
 const xingceAnswerArr = [
   '2000年国家公务员考试行测真题_答案解析.pdf',
@@ -283,14 +283,12 @@ const xingceAnswerArr = [
   '2026年国家公务员考试行测真题（地市级）_答案解析.pdf',
   '2026年国家公务员考试行测真题（行政执法）_答案解析.pdf',
 ];
-const xingceAnswerFiles = processFiles(
-  xingceAnswerArr.map(name => ({
-    year: name.replace(yearRegex, '$1'),
-    name,
-    path: `${BASE_PATH}/行测-答案解析/${name}`,
-  })),
-  'xingce-answer'
-);
+const xingceAnswerFiles = xingceAnswerArr.map((name, index) => ({
+  id: `xingce-answer-${index}-${name.replace(yearRegex, '$1')}`,
+  year: name.replace(yearRegex, '$1'),
+  name,
+  url: getCountryXingceUrl(name),
+})).sort((pre, next) => next.year - pre.year);
 
 const answerSheetArr = [
   '申论标准答题纸.pdf',

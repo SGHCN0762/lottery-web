@@ -200,6 +200,18 @@ const routes = [
     },
   },
   {
+    path: '/tools/civil-servant-exam/shenlun',
+    name: 'CivilServantExamShenlun',
+    component: () =>
+      import(/* webpackChunkName: "tool-civil-servant-exam-shenlun" */ '@/views/Tools/CivilServantExam/components/ShenlunPractice.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.civilServantExam.shenlun.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/exam-prep',
     name: 'ExamPrep',
     component: () =>

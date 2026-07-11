@@ -86,6 +86,10 @@ import { useI18n } from 'vue-i18n';
       actions.push({ name: t('tools.civilServantExam.practice.title'), key: 'practice', color: '#1989fa' });
     }
     
+    if (activeCategory.value === 'shenlun' || activeCategory.value === 'province-shenlun') {
+      actions.push({ name: t('tools.civilServantExam.shenlun.practiceTitle'), key: 'shenlun', color: '#07c160' });
+    }
+    
     return actions;
   };
 
@@ -96,6 +100,13 @@ import { useI18n } from 'vue-i18n';
         query: { 
           year: file.examJsonFile.year,
           fileName: encodeURIComponent(file.examJsonFile.name)
+        }
+      });
+    } else if (key === 'shenlun') {
+      router.push({ 
+        name: 'CivilServantExamShenlun',
+        query: { 
+          fileName: encodeURIComponent(file.name)
         }
       });
     } else if (key === 'download') {

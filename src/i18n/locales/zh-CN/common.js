@@ -17,6 +17,7 @@ export default {
   info: '提示',
   noData: '暂无数据',
   refresh: '刷新',
+  retry: '重试',
   more: '更多',
   close: '关闭',
   copy: '复制',
