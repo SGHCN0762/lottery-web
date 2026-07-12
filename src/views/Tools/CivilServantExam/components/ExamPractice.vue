@@ -171,6 +171,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { Icon as VanIcon, Popup as VanPopup, Button as VanButton, ActionSheet as VanActionSheet, showLoadingToast, closeToast, showToast } from 'vant';
+import { getCountryXingceJsonUrl, getProvinceXingceJsonUrl } from '../hooks/useCivilServantExam';
 
 const route = useRoute();
 const { t } = useI18n();
@@ -179,11 +180,12 @@ const questions = ref([]);
 const currentIndex = ref(0);
 const userAnswers = ref({});
 const isViewMode = ref(false);
-const remainingTime = ref(7200); // 默认120分钟倒计时
+const remainingTime = ref(7200);
 const showAnswerSheet = ref(false);
 const showActionSheet = ref(false);
 const examYear = ref(route.query.year || '2000');
 const examFileName = ref(route.query.fileName ? decodeURIComponent(route.query.fileName) : `${examYear.value}年国家公务员考试行测真题`);
+const examType = ref(route.query.type || 'country');
 const isLoading = ref(true);
 const loadError = ref(false);
 const submittedAnswers = ref(new Set());
@@ -329,9 +331,24 @@ const loadQuestions = async () => {
   showLoadingToast({ message: t('tools.civilServantExam.practice.loading'), duration: 0 });
   try {
     const jsonFileName = `${examFileName.value}.json`;
-    const filePrefixed = `${import.meta.env.BASE_URL}civil-servant-exam/json`;
-    const imagePrefiexd = `${import.meta.env.BASE_URL}civil-servant-exam/json/images/${examFileName.value}`;
-    const response = await fetch(`${filePrefixed}/${jsonFileName}`);
+    const useLocal = route.query.useLocal === 'true';
+    
+    let jsonUrl;
+    let imagePrefiexd;
+    
+    if (useLocal) {
+      const filePrefixed = `${import.meta.env.BASE_URL}civil-servant-exam/json`;
+      jsonUrl = `${filePrefixed}/${jsonFileName}`;
+      imagePrefiexd = `${import.meta.env.BASE_URL}civil-servant-exam/json/images/${examFileName.value}`;
+    } else {
+      const isProvince = examType.value === 'province';
+      jsonUrl = isProvince 
+        ? getProvinceXingceJsonUrl(jsonFileName)
+        : getCountryXingceJsonUrl(jsonFileName);
+      imagePrefiexd = `${import.meta.env.BASE_URL}civil-servant-exam/json/images/${examFileName.value}`;
+    }
+    
+    const response = await fetch(jsonUrl);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -364,13 +381,11 @@ const loadQuestions = async () => {
     questions.value = rawData.map(item => {
       const category = item.题型 || '单选题';
 
-      // 如果 题目、解析、资料 存在 <img-name>QQ20260702-212838.png</img-name> 这种替换成 `<img src="${imagePrefiexd}/QQ20260702-212838.png" />`
       const regex = /<img-name>([^<]+)<\/img-name>/img;
       item.题目 = item.题目?.replace(regex, `<img src="${imagePrefiexd}/$1" />`);
       item.解析 = item.解析?.replace(regex, `<img src="${imagePrefiexd}/$1" />`);  
       item.资料 = item.资料?.replace(regex, `<img src="${imagePrefiexd}/$1" />`);
 
-      // 题图、选项图 做拼接
       if(item.题图) {
         item.题图 = `${imagePrefiexd}/${item.题图}`;
       }

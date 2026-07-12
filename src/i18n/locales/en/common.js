@@ -39,4 +39,18 @@ export default {
   win: 'Win',
   lose: 'Lose',
 
+  pdfPreview: {
+    title: 'File Preview',
+    previous: 'Previous',
+    next: 'Next',
+    zoomOut: 'Zoom Out',
+    zoomIn: 'Zoom In',
+    fit: 'Fit Screen',
+    rotate: 'Rotate',
+    download: 'Download',
+    print: 'Print',
+    printFailed: 'Print Failed',
+    downloadFailed: 'Download Failed',
+  },
+
 }

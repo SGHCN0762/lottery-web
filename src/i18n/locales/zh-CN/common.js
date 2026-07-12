@@ -39,4 +39,18 @@ export default {
   win: '胜利',
   lose: '失败',
 
+  pdfPreview: {
+    title: '文件预览',
+    previous: '上一页',
+    next: '下一页',
+    zoomOut: '缩小',
+    zoomIn: '放大',
+    fit: '适应屏幕',
+    rotate: '旋转',
+    download: '下载',
+    print: '打印',
+    printFailed: '打印失败',
+    downloadFailed: '下载失败',
+  },
+
 }

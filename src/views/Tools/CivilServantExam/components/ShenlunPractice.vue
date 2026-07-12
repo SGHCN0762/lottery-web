@@ -160,6 +160,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { Icon as VanIcon, Popup as VanPopup, Button as VanButton, ActionSheet as VanActionSheet, Loading as VanLoading, showLoadingToast, closeToast, showToast } from 'vant';
+import { getCountryShenlunJsonUrl, getProvinceShenlunJsonUrl } from '../hooks/useCivilServantExam';
 
 const route = useRoute();
 const router = useRouter();
@@ -301,12 +302,16 @@ const loadQuestions = async () => {
   try {
     let data = null;
     const fileName = route.query.fileName ? decodeURIComponent(route.query.fileName) : null;
+    const examType = route.query.type || 'country';
 
     if (fileName) {
       try {
         const jsonFileName = fileName.replace(/\.pdf$/i, '.json');
-        const filePrefixed = `${import.meta.env.BASE_URL}civil-servant-exam/json`;
-        const response = await fetch(`${filePrefixed}/${jsonFileName}`);
+        const isProvince = examType === 'province';
+        const jsonUrl = isProvince 
+          ? getProvinceShenlunJsonUrl(jsonFileName)
+          : getCountryShenlunJsonUrl(jsonFileName);
+        const response = await fetch(jsonUrl);
         if (response.ok) {
           data = await response.json();
         }

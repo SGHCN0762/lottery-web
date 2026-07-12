@@ -212,6 +212,18 @@ const routes = [
     },
   },
   {
+    path: '/pdf-preview',
+    name: 'PdfPreview',
+    component: () =>
+      import(/* webpackChunkName: "pdf-preview" */ '@/views/PdfPreview/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'common.pdfPreview.title',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/exam-prep',
     name: 'ExamPrep',
     component: () =>

@@ -28,53 +28,45 @@
         {{ t('tools.civilServantExam.noFiles') }}
       </div>
     </div>
-
-    <FilePreview
-      v-model:visible="previewVisible"
-      :file-name="previewFileName"
-      :file-url="previewFileUrl"
-    />
   </div>
 </template>
 
 <script setup>
-  import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-  import { useRouter } from 'vue-router';
-  import { Search as VanSearch } from 'vant';
-  import FileList from '../components/FileList.vue';
-  import FilePreview from '../components/FilePreview.vue';
-  import { useCivilServantExam, categories } from './hooks/useCivilServantExam';
-  import FilterTabs from '@/components/FilterTabs/index.vue';
+import { useRouter } from 'vue-router';
+import { Search as VanSearch } from 'vant';
+import FileList from '../components/FileList.vue';
+import { useCivilServantExam, categories } from './hooks/useCivilServantExam';
+import FilterTabs from '@/components/FilterTabs/index.vue';
 
-  const { t } = useI18n();
-  const router = useRouter();
+const { t } = useI18n();
+const router = useRouter();
 
-  const { activeCategory, searchKeyword, filteredFiles, getFileUrl, getFileName } = useCivilServantExam();
+const { activeCategory, searchKeyword, filteredFiles, getFileUrl, getFileName } = useCivilServantExam();
 
-  const categoryTabs = categories;
+const categoryTabs = categories;
 
-  const listConfig = {
-    draggable: false,
-    showActions: true,
-    layout: 'list',
-    showFileSize: false,
-    fileNameWrap: true,
-    showRemove: false,
-  };
+const listConfig = {
+  draggable: false,
+  showActions: true,
+  layout: 'list',
+  showFileSize: false,
+  fileNameWrap: true,
+  showRemove: false,
+};
 
-  const previewVisible = ref(false);
-  const previewFileName = ref('');
-  const previewFileUrl = ref('');
+const handlePreview = async (file) => {
+  const url = getFileUrl(file);
+  const name = getFileName(file);
 
-  const handlePreview = async (file) => {
-    const url = getFileUrl(file);
-    const name = getFileName(file);
-
-    previewFileName.value = name;
-    previewFileUrl.value = url;
-    previewVisible.value = true;
-  };
+  router.push({
+    name: 'PdfPreview',
+    query: {
+      url: encodeURIComponent(url),
+      fileName: encodeURIComponent(name),
+    },
+  });
+};
 
   const getActionItems = (file) => {
     const actions = [
@@ -84,6 +76,7 @@ import { useI18n } from 'vue-i18n';
     
     if (file.examJsonFile) {
       actions.push({ name: t('tools.civilServantExam.practice.title'), key: 'practice', color: '#1989fa' });
+      actions.push({ name: '做题（旧）', key: 'practice-old', color: '#999' });
     }
     
     if (activeCategory.value === 'shenlun' || activeCategory.value === 'province-shenlun') {
@@ -95,18 +88,31 @@ import { useI18n } from 'vue-i18n';
 
   const handleAction = ({ key, file }) => {
     if (key === 'practice' && file.examJsonFile) {
+      const isProvince = activeCategory.value === 'province-xingce' || activeCategory.value === 'province-xingce-answer';
       router.push({ 
         name: 'CivilServantExamPractice',
         query: { 
           year: file.examJsonFile.year,
-          fileName: encodeURIComponent(file.examJsonFile.name)
+          fileName: encodeURIComponent(file.examJsonFile.name),
+          type: isProvince ? 'province' : 'country'
+        }
+      });
+    } else if (key === 'practice-old' && file.examJsonFile) {
+      router.push({ 
+        name: 'CivilServantExamPractice',
+        query: { 
+          year: file.examJsonFile.year,
+          fileName: encodeURIComponent(file.examJsonFile.name),
+          useLocal: 'true'
         }
       });
     } else if (key === 'shenlun') {
+      const isProvince = activeCategory.value === 'province-shenlun';
       router.push({ 
         name: 'CivilServantExamShenlun',
         query: { 
-          fileName: encodeURIComponent(file.name)
+          fileName: encodeURIComponent(file.name),
+          type: isProvince ? 'province' : 'country'
         }
       });
     } else if (key === 'download') {
