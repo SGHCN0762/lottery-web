@@ -1,4 +1,5 @@
-﻿export const provinceShenlunZhentiArr = [  '2005年江苏公务员考试《申论》真题及解析.pdf',
+﻿export const provinceShenlunZhentiArr = [
+  '2005年江苏公务员考试《申论》真题及解析.pdf',
   '2006年江苏公务员考试《申论》真题及解析.pdf',
   '2007年江苏公务员考试《申论》真题及解析.pdf',
   '2008年江苏公务员考试《申论》真题及解析.pdf',
@@ -48,7 +49,8 @@
   '2023年公务员多省联考《申论》真题（山西省市卷）.pdf',
   '2023年公务员多省联考《申论》真题（山西县乡卷）.pdf',
 ];
-export const provinceShenlunAnswerArr = [  '2002年山东公务员考试《申论》真题及答案.pdf',
+export const provinceShenlunAnswerArr = [
+  '2002年山东公务员考试《申论》真题及答案.pdf',
   '2003年安徽省公务员考试《申论》真题及参考答案.pdf',
   '2003年广东公务员考试《申论》真题卷及答案.pdf',
   '2003年山东公务员考试《申论》真题及答案.pdf',

@@ -1,5 +1,6 @@
 // 省考行测真题文件列表
-export const provinceXingceZhentiArr = [  '2004年广东公务员考试《行测》真题(上半年）.pdf',
+export const provinceXingceZhentiArr = [
+  '2004年广东公务员考试《行测》真题(上半年）.pdf',
   '2004年广东公务员考试《行测》真题（下半年）.pdf',
   '2005年广东公务员考试《行测》真题(上半年）.pdf',
   '2005年广东公务员考试《行测》真题（下半年）.pdf',
@@ -689,7 +690,8 @@ export const provinceXingceZhentiArr = [  '2004年广东公务员考试《行测
   '2025年重庆市公务员录用考试《行测》题.pdf',
 ];
 // 省考行测答案文件列表
-export const provinceXingceAnswerArr = [  '2003年云南省公务员考试《行测》真题及答案（无解析，不建议打印和练习）.pdf',
+export const provinceXingceAnswerArr = [
+  '2003年云南省公务员考试《行测》真题及答案（无解析，不建议打印和练习）.pdf',
   '2004年广东公务员考试《行测》真题(上半年）答案及解析.pdf',
   '2004年广东公务员考试《行测》真题(下半年）答案及解析.pdf',
   '2004年云南省公务员考试《行测》真题及答案（无解析，不建议打印和练习）.pdf',

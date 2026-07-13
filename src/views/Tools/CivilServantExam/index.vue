@@ -76,7 +76,9 @@ const handlePreview = async (file) => {
     
     if (file.examJsonFile) {
       actions.push({ name: t('tools.civilServantExam.practice.title'), key: 'practice', color: '#1989fa' });
-      actions.push({ name: '做题（旧）', key: 'practice-old', color: '#999' });
+      if (activeCategory.value === 'xingce-zhenti') {
+        actions.push({ name: '做题（旧）', key: 'practice-old', color: '#999' });
+      }
     }
     
     if (activeCategory.value === 'shenlun' || activeCategory.value === 'province-shenlun') {

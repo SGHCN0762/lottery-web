@@ -224,6 +224,13 @@ const tools = computed(() => [
     description: t('tools.partyHistory.description'),
     route: 'PartyHistory',
   },
+  {
+    id: 'quote-poem',
+    name: t('tools.quotePoemLearning.name'),
+    icon: '📚',
+    description: t('tools.quotePoemLearning.description'),
+    route: 'QuotePoemLearning',
+  },
 ]);
 
 // ========================================
