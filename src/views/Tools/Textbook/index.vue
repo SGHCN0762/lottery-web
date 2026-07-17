@@ -20,23 +20,18 @@
         {{ t('tools.textbook.noFiles') }}
       </div>
     </div>
-
-    <FilePreview
-      v-model:visible="previewVisible"
-      :file-name="previewFileName"
-      :file-url="previewFileUrl"
-    />
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
+import { showToast } from 'vant';
 import FileList from '../components/FileList.vue';
-import FilePreview from '../components/FilePreview.vue';
 import { useTextbook } from './hooks/useTextbook.js';
 import SubjectTabs from './components/SubjectTabs.vue';
 
+const router = useRouter();
 const { t } = useI18n();
 
 const { activeCategory, filteredFiles, getFileUrl, getFileName } = useTextbook();
@@ -50,20 +45,23 @@ const listConfig = {
   showRemove: false,
 };
 
-const previewVisible = ref(false);
-const previewFileName = ref('');
-const previewFileUrl = ref('');
-
 const handlePreview = (file) => {
-  previewFileName.value = getFileName(file);
-  previewFileUrl.value = getFileUrl(file);
-  previewVisible.value = true;
+  const url = getFileUrl(file);
+  const name = getFileName(file);
+  router.push({
+    name: 'PdfPreview',
+    query: {
+      url: encodeURIComponent(url),
+      fileName: encodeURIComponent(name),
+    },
+  });
 };
 
 const getActionItems = (file) => {
   return [
     { name: t('tools.textbook.preview'), key: 'preview' },
     { name: t('tools.textbook.download'), key: 'download' },
+    { name: t('tools.textbook.copyLink'), key: 'copyLink' },
   ];
 };
 
@@ -79,6 +77,21 @@ const handleAction = ({ key, file }) => {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+  } else if (key === 'copyLink') {
+    const url = getFileUrl(file);
+    navigator.clipboard.writeText(url).then(() => {
+      showToast({
+        message: t('tools.textbook.linkCopied'),
+        icon: 'success',
+        duration: 2000,
+      });
+    }).catch(() => {
+      showToast({
+        message: t('tools.textbook.copyFailed'),
+        icon: 'fail',
+        duration: 2000,
+      });
+    });
   }
 };
 </script>

@@ -34,7 +34,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
-import { Search as VanSearch } from 'vant';
+import { Search as VanSearch, showToast } from 'vant';
 import FileList from '../components/FileList.vue';
 import { useCivilServantExam, categories } from './hooks/useCivilServantExam';
 import FilterTabs from '@/components/FilterTabs/index.vue';
@@ -72,6 +72,7 @@ const handlePreview = async (file) => {
     const actions = [
       { name: t('tools.fileConverter.common.download'), key: 'download' },
       { name: t('tools.fileConverter.common.preview'), key: 'preview' },
+      { name: t('tools.civilServantExam.copyLink'), key: 'copyLink' },
     ];
     
     if (file.examJsonFile) {
@@ -128,6 +129,21 @@ const handlePreview = async (file) => {
       document.body.removeChild(a);
     } else if (key === 'preview') {
       handlePreview(file);
+    } else if (key === 'copyLink') {
+      const url = getFileUrl(file);
+      navigator.clipboard.writeText(url).then(() => {
+        showToast({
+          message: t('tools.civilServantExam.linkCopied'),
+          icon: 'success',
+          duration: 2000,
+        });
+      }).catch(() => {
+        showToast({
+          message: t('tools.civilServantExam.copyFailed'),
+          icon: 'fail',
+          duration: 2000,
+        });
+      });
     }
   };
 </script>

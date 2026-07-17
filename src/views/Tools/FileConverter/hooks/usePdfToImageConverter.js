@@ -3,8 +3,16 @@ import { useI18n } from 'vue-i18n';
 import { showSuccessToast, showFailToast } from 'vant';
 import * as pdfjsLib from 'pdfjs-dist';
 import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+import jbig2WasmUrl from 'pdfjs-dist/wasm/jbig2.wasm?url';
+import openjpegWasmUrl from 'pdfjs-dist/wasm/openjpeg.wasm?url';
+import qcmsWasmUrl from 'pdfjs-dist/wasm/qcms_bg.wasm?url';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
+pdfjsLib.GlobalWorkerOptions.wasmUrl = {
+  jbig2: jbig2WasmUrl,
+  openjpeg: openjpegWasmUrl,
+  qcms: qcmsWasmUrl,
+};
 
 export function usePdfToImageConverter() {
   const { t } = useI18n();

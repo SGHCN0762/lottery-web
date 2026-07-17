@@ -64,6 +64,15 @@ const loadViewer = async () => {
       await import('@open-file-viewer/core/style.css');
       const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
       const pdfWorkerSrc = await import('pdfjs-dist/legacy/build/pdf.worker.min.mjs?url');
+      const jbig2WasmUrl = await import('pdfjs-dist/wasm/jbig2.wasm?url');
+      const openjpegWasmUrl = await import('pdfjs-dist/wasm/openjpeg.wasm?url');
+      const qcmsWasmUrl = await import('pdfjs-dist/wasm/qcms_bg.wasm?url');
+
+      pdfjs.GlobalWorkerOptions.wasmUrl = {
+        jbig2: jbig2WasmUrl.default,
+        openjpeg: openjpegWasmUrl.default,
+        qcms: qcmsWasmUrl.default,
+      };
 
       const plugins = [];
       const safeInit = (name, fn) => {

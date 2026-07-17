@@ -154,41 +154,7 @@ const tools = computed(() => [
     description: t('tools.classicalEssays.description'),
     route: 'ClassicalEssays',
   },
-  {
-    id: 'video-player',
-    name: t('tools.videoPlayer.name'),
-    icon: '📺',
-    description: t('tools.videoPlayer.description'),
-    route: 'VideoPlayer',
-  },
-  {
-    id: 'physics',
-    name: t('tools.physics.name'),
-    icon: '⚛️',
-    description: t('tools.physics.description'),
-    route: 'Physics',
-  },
-  {
-    id: 'chemistry',
-    name: t('tools.chemistry.name'),
-    icon: '⚗️',
-    description: t('tools.chemistry.description'),
-    route: 'Chemistry',
-  },
-  {
-    id: 'biology',
-    name: t('tools.biology.name'),
-    icon: '🧬',
-    description: t('tools.biology.description'),
-    route: 'Biology',
-  },
-  {
-    id: 'math',
-    name: t('tools.math.name'),
-    icon: '📐',
-    description: t('tools.math.description'),
-    route: 'Mathematics',
-  },
+  
   {
     id: 'police',
     name: t('tools.police.name'),
@@ -224,14 +190,7 @@ const tools = computed(() => [
     description: t('tools.partyHistory.description'),
     route: 'PartyHistory',
   },
-  {
-    id: 'quote-poem',
-    name: t('tools.quotePoemLearning.name'),
-    icon: '📚',
-    description: t('tools.quotePoemLearning.description'),
-    route: 'QuotePoemLearning',
-  },
-]);
+  ]);
 
 // ========================================
 // 事件处理函数
