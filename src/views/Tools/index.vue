@@ -190,6 +190,13 @@ const tools = computed(() => [
     description: t('tools.partyHistory.description'),
     route: 'PartyHistory',
   },
+  {
+    id: 'music-player',
+    name: t('tools.musicPlayer.name'),
+    icon: '🎵',
+    description: t('tools.musicPlayer.description'),
+    route: 'MusicPlayer',
+  },
   ]);
 
 // ========================================

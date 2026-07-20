@@ -29,14 +29,17 @@
       </div>
 
       <div class="items-list">
-        <div v-if="filteredItems.length > 0" class="items-grid">
-          <ItemCard
-            v-for="item in filteredItems"
-            :key="item.id"
-            :item="item"
-            :mastered="isMastered(item.id)"
-            @click="handleItemClick(item)"
-          />
+        <div v-if="filteredItems.length > 0" class="items-list-scroll">
+          <VirtualList :items="filteredItems" :item-height="80">
+            <template #default="{ item }">
+              <ItemCard
+                :key="item.id"
+                :item="item"
+                :mastered="isMastered(item.id)"
+                @click="handleItemClick(item)"
+              />
+            </template>
+          </VirtualList>
         </div>
         <div v-else class="empty-tip">
           <van-empty :description="t('tools.' + subjectKey + '.empty')" />
@@ -64,6 +67,7 @@
   import FilterTabs from '@/components/FilterTabs/index.vue';
   import ItemCard from './components/ItemCard.vue';
   import ItemDetail from './components/ItemDetail.vue';
+  import VirtualList from './components/VirtualList.vue';
   import { useSubjectLearning } from './hooks/useSubjectLearning.js';
 
   const props = defineProps({
@@ -241,7 +245,11 @@
   .items-list {
     flex: 1;
     padding: 0 var(--spacing-md) var(--spacing-md);
-    overflow-y: auto;
+    overflow: hidden;
+  }
+
+  .items-list-scroll {
+    height: 100%;
   }
 
   .items-grid {

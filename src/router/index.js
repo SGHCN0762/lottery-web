@@ -668,6 +668,18 @@ const routes = [
       showTabbar: false,
     },
   },
+  {
+    path: '/tools/music-player',
+    name: 'MusicPlayer',
+    component: () =>
+      import(/* webpackChunkName: "tool-music-player" */ '@/views/Tools/MusicPlayer/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.musicPlayer.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
   // ========================================
   // 游戏详情页面路由
   // ========================================
