@@ -1,6 +1,13 @@
-export const CDN_BASE = 'https://cdn.jsdelivr.net/gh/SGHCN0762/music-zhoujielun@v1.0.0'
-
-export const albums = [
+export const artists = [
+  {
+    id: 'zhoujielun',
+    name: '周杰伦',
+    desc: '华语乐坛天王',
+    fans: '3652万',
+    plays: '128亿',
+    cover: '🎤',
+    cdnBase: 'https://cdn.jsdelivr.net/gh/SGHCN0762/music-zhoujielun@v1.0.0',
+    albums: [
   {
     "id": "jay",
     "name": "Jay",
@@ -1195,46 +1202,63 @@ export const albums = [
       }
     ]
   }
+    ]
+  }
 ]
 
-export const getSongUrl = (albumName, songTitle, subFolder = '') => {
-  const fileName = `周杰伦 - ${songTitle}`
+export const getSongUrl = (artistName, albumName, songTitle, subFolder = '') => {
+  const fileName = `${artistName} - ${songTitle}`
   const albumPath = encodeURIComponent(albumName)
   const filePath = subFolder ? `${albumPath}/${encodeURIComponent(subFolder)}` : albumPath
-  return `${CDN_BASE}/${filePath}/${encodeURIComponent(fileName)}.mp3`
+  const artist = artists.find(a => a.name === artistName)
+  const cdnBase = artist?.cdnBase || 'https://cdn.jsdelivr.net/gh/SGHCN0762/music-zhoujielun@v1.0.0'
+  return `${cdnBase}/${filePath}/${encodeURIComponent(fileName)}.mp3`
 }
 
-export const getLyricUrl = (albumName, songTitle, subFolder = '') => {
-  const fileName = `周杰伦 - ${songTitle}`
+export const getLyricUrl = (artistName, albumName, songTitle, subFolder = '') => {
+  const fileName = `${artistName} - ${songTitle}`
   const albumPath = encodeURIComponent(albumName)
   const filePath = subFolder ? `${albumPath}/${encodeURIComponent(subFolder)}` : albumPath
-  return `${CDN_BASE}/${filePath}/${encodeURIComponent(fileName)}.lrc`
+  const artist = artists.find(a => a.name === artistName)
+  const cdnBase = artist?.cdnBase || 'https://cdn.jsdelivr.net/gh/SGHCN0762/music-zhoujielun@v1.0.0'
+  return `${cdnBase}/${filePath}/${encodeURIComponent(fileName)}.lrc`
 }
 
-export const getAllSongs = () => {
+export const getAllSongs = (artistName = null) => {
   const songs = []
-  albums.forEach(album => {
-    if (album.subFolders) {
-      album.subFolders.forEach(sub => {
-        sub.songs.forEach(song => {
+  const targetArtists = artistName ? artists.filter(a => a.name === artistName) : artists
+  
+  targetArtists.forEach(artist => {
+    artist.albums.forEach(album => {
+      if (album.subFolders) {
+        album.subFolders.forEach(sub => {
+          sub.songs.forEach(song => {
+            songs.push({
+              ...song,
+              artist: artist.name,
+              album: album.name,
+              subFolder: sub.name,
+              fullTitle: song.title,
+            })
+          })
+        })
+      } else {
+        album.songs.forEach(song => {
           songs.push({
             ...song,
+            artist: artist.name,
             album: album.name,
-            subFolder: sub.name,
+            subFolder: '',
             fullTitle: song.title,
           })
         })
-      })
-    } else {
-      album.songs.forEach(song => {
-        songs.push({
-          ...song,
-          album: album.name,
-          subFolder: '',
-          fullTitle: song.title,
-        })
-      })
-    }
+      }
+    })
   })
   return songs
+}
+
+export const getArtistAlbums = (artistName) => {
+  const artist = artists.find(a => a.name === artistName)
+  return artist?.albums || []
 }
