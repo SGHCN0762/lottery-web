@@ -1484,6 +1484,16 @@ export default {
     copyFailed: 'Copy failed',
     noFiles: 'No textbook files',
   },
+  turingBooks: {
+    name: 'Turing Books',
+    description: 'Turing programming series eBooks preview and download',
+    preview: 'Preview',
+    download: 'Download',
+    copyLink: 'Copy Link',
+    linkCopied: 'Link copied',
+    copyFailed: 'Copy failed',
+    noFiles: 'No book files',
+  },
   nationalTwoSessions: {
     name: 'Two Sessions Materials',
     description: 'Government work reports, speeches, and hot topics from 1949 to present',

@@ -177,6 +177,13 @@ const tools = computed(() => [
     route: 'Textbook',
   },
   {
+    id: 'turing-books',
+    name: t('tools.turingBooks.name'),
+    icon: '📗',
+    description: t('tools.turingBooks.description'),
+    route: 'TuringBooks',
+  },
+  {
     id: 'national-two-sessions',
     name: t('tools.nationalTwoSessions.name'),
     icon: '📋',

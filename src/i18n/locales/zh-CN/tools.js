@@ -1486,6 +1486,16 @@ export default {
     copyFailed: '复制失败',
     noFiles: '暂无教科书文件',
   },
+  turingBooks: {
+    name: '图灵丛书',
+    description: '图灵程序设计丛书等系列电子书在线预览与下载',
+    preview: '预览',
+    download: '下载',
+    copyLink: '复制链接',
+    linkCopied: '链接已复制',
+    copyFailed: '复制失败',
+    noFiles: '暂无电子书文件',
+  },
   nationalTwoSessions: {
     name: '两会材料',
     description: '建国至今政府工作报告、重要讲话、热点话题整理展示',

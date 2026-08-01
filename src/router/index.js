@@ -597,6 +597,30 @@ const routes = [
     },
   },
   {
+    path: '/tools/turing-books',
+    name: 'TuringBooks',
+    component: () =>
+      import(/* webpackChunkName: "tool-turing-books" */ '@/views/Tools/TuringBooks/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.turingBooks.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
+    path: '/tools/turing-books',
+    name: 'TuringBooks',
+    component: () =>
+      import(/* webpackChunkName: "tool-turing-books" */ '@/views/Tools/TuringBooks/index.vue'),
+    meta: {
+      layout: 'AppLayout',
+      title: 'tools.turingBooks.name',
+      showBack: true,
+      showTabbar: false,
+    },
+  },
+  {
     path: '/tools/national-two-sessions',
     name: 'NationalTwoSessions',
     component: () =>
