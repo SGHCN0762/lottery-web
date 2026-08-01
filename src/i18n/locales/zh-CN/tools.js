@@ -1496,6 +1496,16 @@ export default {
     copyFailed: '复制失败',
     noFiles: '暂无电子书文件',
   },
+  lawsRegulations: {
+    name: '法律法规',
+    description: '现行法律法规全文，按公安专业及法律部门自动分类',
+    preview: '预览',
+    download: '下载',
+    copyLink: '复制链接',
+    linkCopied: '链接已复制',
+    copyFailed: '复制失败',
+    noFiles: '暂无法律法规文件',
+  },
   nationalTwoSessions: {
     name: '两会材料',
     description: '建国至今政府工作报告、重要讲话、热点话题整理展示',

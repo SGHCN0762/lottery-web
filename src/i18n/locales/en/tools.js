@@ -1494,6 +1494,16 @@ export default {
     copyFailed: 'Copy failed',
     noFiles: 'No book files',
   },
+  lawsRegulations: {
+    name: 'Laws & Regulations',
+    description: 'Current laws and regulations, auto-categorized by public security and legal departments',
+    preview: 'Preview',
+    download: 'Download',
+    copyLink: 'Copy Link',
+    linkCopied: 'Link copied',
+    copyFailed: 'Copy failed',
+    noFiles: 'No law files',
+  },
   nationalTwoSessions: {
     name: 'Two Sessions Materials',
     description: 'Government work reports, speeches, and hot topics from 1949 to present',

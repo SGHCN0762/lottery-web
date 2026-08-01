@@ -609,13 +609,13 @@ const routes = [
     },
   },
   {
-    path: '/tools/turing-books',
-    name: 'TuringBooks',
+    path: '/tools/laws-regulations',
+    name: 'LawsRegulations',
     component: () =>
-      import(/* webpackChunkName: "tool-turing-books" */ '@/views/Tools/TuringBooks/index.vue'),
+      import(/* webpackChunkName: "tool-laws-regulations" */ '@/views/Tools/LawsRegulations/index.vue'),
     meta: {
       layout: 'AppLayout',
-      title: 'tools.turingBooks.name',
+      title: 'tools.lawsRegulations.name',
       showBack: true,
       showTabbar: false,
     },
