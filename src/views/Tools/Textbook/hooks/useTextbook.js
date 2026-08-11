@@ -4,8 +4,8 @@ const CDN_BASE = 'https://cdn.jsdelivr.net/gh/SGHCN0762';
 
 const REPOS = {
   primary: `${CDN_BASE}/textbook-primary-school@v1.0.0`,
-  junior: `${CDN_BASE}/textbook-junior-high-school@v1.0.0`,
-  senior: `${CDN_BASE}/textbook-high-school@v1.0.0`,
+  junior: `${CDN_BASE}/textbook-junior-high-school@v1.0.2`,
+  senior: `${CDN_BASE}/textbook-high-school@v1.0.1`,
 };
 
 const getFullUrl = (repoUrl, filename) => `${repoUrl}/${encodeURI(filename)}`;
